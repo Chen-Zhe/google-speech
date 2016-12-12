@@ -26,6 +26,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base64.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base64.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9e0ef7cb-b88e-4343-866d-83b265be26d9}</ProjectGuid>
     <Keyword>Linux</Keyword>
@@ -60,13 +67,6 @@
   <ImportGroup Label="Shared" />
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
-  <ItemGroup>
-    <ClInclude Include="parse_arguments.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="parse_arguments.cc" />
-    <ClCompile Include="streaming_transcribe.cc" />
-  </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)/headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
