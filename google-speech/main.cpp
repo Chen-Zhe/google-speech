@@ -1,6 +1,8 @@
 #include "base64.h"
 #include <iostream>
 #include <fstream>
+#include <cstring>
+#include "web_client.h"
 using namespace std;
 
 int main() {
@@ -35,15 +37,40 @@ int main() {
 		char data[4] = { 'd', 'a', 't', 'a' };
 		uint32_t dataSize;// data size.
 
-	};
-	waveHeader* ptr =(waveHeader*) fileContent;
-	ptr->riffSize = contentSize + 36;
-	ptr->dataSize = contentSize;
+	} header;
 
-	//std::string encoded = base64_encode(reinterpret_cast<const unsigned char*>(fileContent), fileSize);
+	header.riffSize = contentSize + 36;
+	header.dataSize = contentSize;
+	memcpy(fileContent, &header, 44);
+
+	std::string encoded = base64_encode(reinterpret_cast<const unsigned char*>(fileContent), contentSize + 44);
+
+	/*
 	std::ofstream outfile("voice.wav", ofstream::binary);
 	cout << "writing..." << endl;
-	outfile.write((const char*)fileContent, contentSize);
+	outfile.write((const char*)fileContent, contentSize+44);
 	outfile.close();
+	*/
 
+	sprec_server_response *resp;
+	int err;
+	char *text;
+
+	/*
+	* ...and send it to Google
+	*/
+	resp = sprec_send_audio_data(buf, len, apikey);
+
+	if (resp == NULL) {
+		return NULL;
+	}
+
+	/*
+	* Get the JSON from the response object,
+	* then parse it to get the actual text and confidence
+	*/
+	text = strdup(resp->data);
+	sprec_free_response(resp);
+
+	cout << text << endl;
 }

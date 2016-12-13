@@ -1,10 +1,3 @@
-#ifndef __SPREC_WEB_CLIENT_H__
-#define __SPREC_WEB_CLIENT_H__
-
-#ifdef __cplusplus
-extern "C" {
-#endif /* __cplusplus */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -25,17 +18,9 @@ typedef struct sprec_server_response {
  */
 sprec_server_response *
 sprec_send_audio_data(
-	const void *data,
+	const char *data,
 	size_t length,
-	const char *apikey,
-	const char *language,
-	uint32_t sample_rate
+	const char *apikey
 );
 
 void sprec_free_response(sprec_server_response *resp);
-
-#ifdef __cplusplus
-}
-#endif /* __cplusplus */
-
-#endif /* !__SPREC_WEB_CLIENT_H__ */

@@ -10,11 +10,9 @@ static size_t http_callback(char *ptr, size_t count, size_t blocksize, void *use
 
 sprec_server_response *
 sprec_send_audio_data(
-	const void *data,
+	const char *data,
 	size_t length,
-	const char *apikey,
-	const char *language,
-	uint32_t sample_rate
+	const char *apikey
 )
 {
 	CURL *conn_hndl;
@@ -38,10 +36,10 @@ sprec_send_audio_data(
 		sizeof url,
 		"https://www.google.com/speech-api/v2/recognize?output=json&key=%s&lang=%s",
 		apikey,
-		language ? language : "en-US"
+		"en-US"
 	);
 
-	resp = malloc(sizeof *resp);
+	resp = (sprec_server_response*)malloc(sizeof *resp);
 	if (resp == NULL) {
 		return NULL;
 	}
