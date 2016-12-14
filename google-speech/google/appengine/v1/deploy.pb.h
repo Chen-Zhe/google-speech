@@ -24,33 +24,13 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/map.h>
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace appengine {
-namespace v1 {
-class ContainerInfo;
-class ContainerInfoDefaultTypeInternal;
-extern ContainerInfoDefaultTypeInternal _ContainerInfo_default_instance_;
-class Deployment;
-class DeploymentDefaultTypeInternal;
-extern DeploymentDefaultTypeInternal _Deployment_default_instance_;
-class FileInfo;
-class FileInfoDefaultTypeInternal;
-extern FileInfoDefaultTypeInternal _FileInfo_default_instance_;
-class ZipInfo;
-class ZipInfoDefaultTypeInternal;
-extern ZipInfoDefaultTypeInternal _ZipInfo_default_instance_;
-}  // namespace v1
-}  // namespace appengine
-}  // namespace google
 
 namespace google {
 namespace appengine {
@@ -59,11 +39,15 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fappengine_2fv1_2fdeploy_2eproto();
 void protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto();
+void protobuf_AssignDesc_google_2fappengine_2fv1_2fdeploy_2eproto();
+void protobuf_ShutdownFile_google_2fappengine_2fv1_2fdeploy_2eproto();
+
+class ContainerInfo;
+class Deployment;
+class FileInfo;
+class ZipInfo;
 
 // ===================================================================
-
-
-// -------------------------------------------------------------------
 
 class Deployment : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.Deployment) */ {
  public:
@@ -80,52 +64,49 @@ class Deployment : public ::google::protobuf::Message /* @@protoc_insertion_poin
   static const ::google::protobuf::Descriptor* descriptor();
   static const Deployment& default_instance();
 
-  static inline const Deployment* internal_default_instance() {
-    return reinterpret_cast<const Deployment*>(
-               &_Deployment_default_instance_);
-  }
+  static const Deployment* internal_default_instance();
 
   void Swap(Deployment* other);
 
   // implements Message ----------------------------------------------
 
-  inline Deployment* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Deployment* New() const { return New(NULL); }
 
-  Deployment* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Deployment* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Deployment& from);
   void MergeFrom(const Deployment& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Deployment* other);
+  void UnsafeMergeFrom(const Deployment& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -141,7 +122,7 @@ class Deployment : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::google::protobuf::Map< ::std::string, ::google::appengine::v1::FileInfo >*
       mutable_files();
 
-  // .google.appengine.v1.ContainerInfo container = 2;
+  // optional .google.appengine.v1.ContainerInfo container = 2;
   bool has_container() const;
   void clear_container();
   static const int kContainerFieldNumber = 2;
@@ -150,7 +131,7 @@ class Deployment : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::google::appengine::v1::ContainerInfo* release_container();
   void set_allocated_container(::google::appengine::v1::ContainerInfo* container);
 
-  // .google.appengine.v1.ZipInfo zip = 3;
+  // optional .google.appengine.v1.ZipInfo zip = 3;
   bool has_zip() const;
   void clear_zip();
   static const int kZipFieldNumber = 3;
@@ -179,10 +160,13 @@ class Deployment : public ::google::protobuf::Message /* @@protoc_insertion_poin
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fdeploy_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fdeploy_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fdeploy_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fdeploy_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Deployment> Deployment_default_instance_;
+
 // -------------------------------------------------------------------
 
 class FileInfo : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.FileInfo) */ {
@@ -200,58 +184,55 @@ class FileInfo : public ::google::protobuf::Message /* @@protoc_insertion_point(
   static const ::google::protobuf::Descriptor* descriptor();
   static const FileInfo& default_instance();
 
-  static inline const FileInfo* internal_default_instance() {
-    return reinterpret_cast<const FileInfo*>(
-               &_FileInfo_default_instance_);
-  }
+  static const FileInfo* internal_default_instance();
 
   void Swap(FileInfo* other);
 
   // implements Message ----------------------------------------------
 
-  inline FileInfo* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline FileInfo* New() const { return New(NULL); }
 
-  FileInfo* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  FileInfo* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const FileInfo& from);
   void MergeFrom(const FileInfo& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(FileInfo* other);
+  void UnsafeMergeFrom(const FileInfo& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string source_url = 1;
+  // optional string source_url = 1;
   void clear_source_url();
   static const int kSourceUrlFieldNumber = 1;
   const ::std::string& source_url() const;
@@ -262,7 +243,7 @@ class FileInfo : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_source_url();
   void set_allocated_source_url(::std::string* source_url);
 
-  // string sha1_sum = 2;
+  // optional string sha1_sum = 2;
   void clear_sha1_sum();
   static const int kSha1SumFieldNumber = 2;
   const ::std::string& sha1_sum() const;
@@ -273,7 +254,7 @@ class FileInfo : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_sha1_sum();
   void set_allocated_sha1_sum(::std::string* sha1_sum);
 
-  // string mime_type = 3;
+  // optional string mime_type = 3;
   void clear_mime_type();
   static const int kMimeTypeFieldNumber = 3;
   const ::std::string& mime_type() const;
@@ -294,10 +275,13 @@ class FileInfo : public ::google::protobuf::Message /* @@protoc_insertion_point(
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fdeploy_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fdeploy_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fdeploy_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fdeploy_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<FileInfo> FileInfo_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ContainerInfo : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.ContainerInfo) */ {
@@ -315,58 +299,55 @@ class ContainerInfo : public ::google::protobuf::Message /* @@protoc_insertion_p
   static const ::google::protobuf::Descriptor* descriptor();
   static const ContainerInfo& default_instance();
 
-  static inline const ContainerInfo* internal_default_instance() {
-    return reinterpret_cast<const ContainerInfo*>(
-               &_ContainerInfo_default_instance_);
-  }
+  static const ContainerInfo* internal_default_instance();
 
   void Swap(ContainerInfo* other);
 
   // implements Message ----------------------------------------------
 
-  inline ContainerInfo* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ContainerInfo* New() const { return New(NULL); }
 
-  ContainerInfo* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ContainerInfo* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ContainerInfo& from);
   void MergeFrom(const ContainerInfo& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ContainerInfo* other);
+  void UnsafeMergeFrom(const ContainerInfo& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string image = 1;
+  // optional string image = 1;
   void clear_image();
   static const int kImageFieldNumber = 1;
   const ::std::string& image() const;
@@ -385,10 +366,13 @@ class ContainerInfo : public ::google::protobuf::Message /* @@protoc_insertion_p
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fdeploy_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fdeploy_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fdeploy_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fdeploy_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ContainerInfo> ContainerInfo_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ZipInfo : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.ZipInfo) */ {
@@ -406,58 +390,55 @@ class ZipInfo : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   static const ::google::protobuf::Descriptor* descriptor();
   static const ZipInfo& default_instance();
 
-  static inline const ZipInfo* internal_default_instance() {
-    return reinterpret_cast<const ZipInfo*>(
-               &_ZipInfo_default_instance_);
-  }
+  static const ZipInfo* internal_default_instance();
 
   void Swap(ZipInfo* other);
 
   // implements Message ----------------------------------------------
 
-  inline ZipInfo* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ZipInfo* New() const { return New(NULL); }
 
-  ZipInfo* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ZipInfo* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ZipInfo& from);
   void MergeFrom(const ZipInfo& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ZipInfo* other);
+  void UnsafeMergeFrom(const ZipInfo& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string source_url = 3;
+  // optional string source_url = 3;
   void clear_source_url();
   static const int kSourceUrlFieldNumber = 3;
   const ::std::string& source_url() const;
@@ -468,7 +449,7 @@ class ZipInfo : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_source_url();
   void set_allocated_source_url(::std::string* source_url);
 
-  // int32 files_count = 4;
+  // optional int32 files_count = 4;
   void clear_files_count();
   static const int kFilesCountFieldNumber = 4;
   ::google::protobuf::int32 files_count() const;
@@ -483,18 +464,19 @@ class ZipInfo : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fdeploy_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fdeploy_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fdeploy_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fdeploy_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ZipInfo> ZipInfo_default_instance_;
+
 // ===================================================================
 
 
 // ===================================================================
 
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // Deployment
 
 // map<string, .google.appengine.v1.FileInfo> files = 1;
@@ -515,7 +497,7 @@ Deployment::mutable_files() {
   return files_.MutableMap();
 }
 
-// .google.appengine.v1.ContainerInfo container = 2;
+// optional .google.appengine.v1.ContainerInfo container = 2;
 inline bool Deployment::has_container() const {
   return this != internal_default_instance() && container_ != NULL;
 }
@@ -554,7 +536,7 @@ inline void Deployment::set_allocated_container(::google::appengine::v1::Contain
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Deployment.container)
 }
 
-// .google.appengine.v1.ZipInfo zip = 3;
+// optional .google.appengine.v1.ZipInfo zip = 3;
 inline bool Deployment::has_zip() const {
   return this != internal_default_instance() && zip_ != NULL;
 }
@@ -593,17 +575,20 @@ inline void Deployment::set_allocated_zip(::google::appengine::v1::ZipInfo* zip)
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Deployment.zip)
 }
 
+inline const Deployment* Deployment::internal_default_instance() {
+  return &Deployment_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // FileInfo
 
-// string source_url = 1;
+// optional string source_url = 1;
 inline void FileInfo::clear_source_url() {
   source_url_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& FileInfo::source_url() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.FileInfo.source_url)
-  return source_url_.GetNoArena();
+  return source_url_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void FileInfo::set_source_url(const ::std::string& value) {
   
@@ -641,13 +626,13 @@ inline void FileInfo::set_allocated_source_url(::std::string* source_url) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.FileInfo.source_url)
 }
 
-// string sha1_sum = 2;
+// optional string sha1_sum = 2;
 inline void FileInfo::clear_sha1_sum() {
   sha1_sum_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& FileInfo::sha1_sum() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.FileInfo.sha1_sum)
-  return sha1_sum_.GetNoArena();
+  return sha1_sum_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void FileInfo::set_sha1_sum(const ::std::string& value) {
   
@@ -685,13 +670,13 @@ inline void FileInfo::set_allocated_sha1_sum(::std::string* sha1_sum) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.FileInfo.sha1_sum)
 }
 
-// string mime_type = 3;
+// optional string mime_type = 3;
 inline void FileInfo::clear_mime_type() {
   mime_type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& FileInfo::mime_type() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.FileInfo.mime_type)
-  return mime_type_.GetNoArena();
+  return mime_type_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void FileInfo::set_mime_type(const ::std::string& value) {
   
@@ -729,17 +714,20 @@ inline void FileInfo::set_allocated_mime_type(::std::string* mime_type) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.FileInfo.mime_type)
 }
 
+inline const FileInfo* FileInfo::internal_default_instance() {
+  return &FileInfo_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ContainerInfo
 
-// string image = 1;
+// optional string image = 1;
 inline void ContainerInfo::clear_image() {
   image_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ContainerInfo::image() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ContainerInfo.image)
-  return image_.GetNoArena();
+  return image_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ContainerInfo::set_image(const ::std::string& value) {
   
@@ -777,17 +765,20 @@ inline void ContainerInfo::set_allocated_image(::std::string* image) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.ContainerInfo.image)
 }
 
+inline const ContainerInfo* ContainerInfo::internal_default_instance() {
+  return &ContainerInfo_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ZipInfo
 
-// string source_url = 3;
+// optional string source_url = 3;
 inline void ZipInfo::clear_source_url() {
   source_url_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ZipInfo::source_url() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ZipInfo.source_url)
-  return source_url_.GetNoArena();
+  return source_url_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ZipInfo::set_source_url(const ::std::string& value) {
   
@@ -825,7 +816,7 @@ inline void ZipInfo::set_allocated_source_url(::std::string* source_url) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.ZipInfo.source_url)
 }
 
-// int32 files_count = 4;
+// optional int32 files_count = 4;
 inline void ZipInfo::clear_files_count() {
   files_count_ = 0;
 }
@@ -839,9 +830,10 @@ inline void ZipInfo::set_files_count(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.appengine.v1.ZipInfo.files_count)
 }
 
+inline const ZipInfo* ZipInfo::internal_default_instance() {
+  return &ZipInfo_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -850,7 +842,6 @@ inline void ZipInfo::set_files_count(::google::protobuf::int32 value) {
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace appengine

@@ -23,14 +23,10 @@
 #include <google/protobuf/arenastring.h>
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/generated_enum_reflection.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace type {
-}  // namespace type
-}  // namespace google
 
 namespace google {
 namespace type {
@@ -38,6 +34,9 @@ namespace type {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2ftype_2fdayofweek_2eproto();
 void protobuf_InitDefaults_google_2ftype_2fdayofweek_2eproto();
+void protobuf_AssignDesc_google_2ftype_2fdayofweek_2eproto();
+void protobuf_ShutdownFile_google_2ftype_2fdayofweek_2eproto();
+
 
 enum DayOfWeek {
   DAY_OF_WEEK_UNSPECIFIED = 0,
@@ -78,7 +77,6 @@ inline bool DayOfWeek_Parse(
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace type
 }  // namespace google

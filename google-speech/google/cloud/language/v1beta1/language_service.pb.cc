@@ -21,101 +21,187 @@ namespace google {
 namespace cloud {
 namespace language {
 namespace v1beta1 {
-class DocumentDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Document> {};
-DocumentDefaultTypeInternal _Document_default_instance_;
-class SentenceDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Sentence> {};
-SentenceDefaultTypeInternal _Sentence_default_instance_;
-class EntityDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Entity> {};
-EntityDefaultTypeInternal _Entity_default_instance_;
-class TokenDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Token> {};
-TokenDefaultTypeInternal _Token_default_instance_;
-class SentimentDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Sentiment> {};
-SentimentDefaultTypeInternal _Sentiment_default_instance_;
-class PartOfSpeechDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<PartOfSpeech> {};
-PartOfSpeechDefaultTypeInternal _PartOfSpeech_default_instance_;
-class DependencyEdgeDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<DependencyEdge> {};
-DependencyEdgeDefaultTypeInternal _DependencyEdge_default_instance_;
-class EntityMentionDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<EntityMention> {};
-EntityMentionDefaultTypeInternal _EntityMention_default_instance_;
-class TextSpanDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<TextSpan> {};
-TextSpanDefaultTypeInternal _TextSpan_default_instance_;
-class AnalyzeSentimentRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<AnalyzeSentimentRequest> {};
-AnalyzeSentimentRequestDefaultTypeInternal _AnalyzeSentimentRequest_default_instance_;
-class AnalyzeSentimentResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<AnalyzeSentimentResponse> {};
-AnalyzeSentimentResponseDefaultTypeInternal _AnalyzeSentimentResponse_default_instance_;
-class AnalyzeEntitiesRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<AnalyzeEntitiesRequest> {};
-AnalyzeEntitiesRequestDefaultTypeInternal _AnalyzeEntitiesRequest_default_instance_;
-class AnalyzeEntitiesResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<AnalyzeEntitiesResponse> {};
-AnalyzeEntitiesResponseDefaultTypeInternal _AnalyzeEntitiesResponse_default_instance_;
-class AnalyzeSyntaxRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<AnalyzeSyntaxRequest> {};
-AnalyzeSyntaxRequestDefaultTypeInternal _AnalyzeSyntaxRequest_default_instance_;
-class AnalyzeSyntaxResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<AnalyzeSyntaxResponse> {};
-AnalyzeSyntaxResponseDefaultTypeInternal _AnalyzeSyntaxResponse_default_instance_;
-class AnnotateTextRequest_FeaturesDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<AnnotateTextRequest_Features> {};
-AnnotateTextRequest_FeaturesDefaultTypeInternal _AnnotateTextRequest_Features_default_instance_;
-class AnnotateTextRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<AnnotateTextRequest> {};
-AnnotateTextRequestDefaultTypeInternal _AnnotateTextRequest_default_instance_;
-class AnnotateTextResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<AnnotateTextResponse> {};
-AnnotateTextResponseDefaultTypeInternal _AnnotateTextResponse_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[19];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[17];
+const ::google::protobuf::Descriptor* Document_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Document_reflection_ = NULL;
 struct DocumentOneofInstance {
   ::google::protobuf::internal::ArenaStringPtr content_;
   ::google::protobuf::internal::ArenaStringPtr gcs_content_uri_;
-} Document_default_oneof_instance_;
+}* Document_default_oneof_instance_ = NULL;
+const ::google::protobuf::EnumDescriptor* Document_Type_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* Sentence_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Sentence_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Entity_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Entity_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Entity_MetadataEntry_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* Entity_Type_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* Token_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Token_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Sentiment_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Sentiment_reflection_ = NULL;
+const ::google::protobuf::Descriptor* PartOfSpeech_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  PartOfSpeech_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* PartOfSpeech_Tag_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* PartOfSpeech_Aspect_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* PartOfSpeech_Case_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* PartOfSpeech_Form_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* PartOfSpeech_Gender_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* PartOfSpeech_Mood_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* PartOfSpeech_Number_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* PartOfSpeech_Person_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* PartOfSpeech_Proper_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* PartOfSpeech_Reciprocity_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* PartOfSpeech_Tense_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* PartOfSpeech_Voice_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* DependencyEdge_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  DependencyEdge_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* DependencyEdge_Label_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* EntityMention_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  EntityMention_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* EntityMention_Type_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* TextSpan_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TextSpan_reflection_ = NULL;
+const ::google::protobuf::Descriptor* AnalyzeSentimentRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  AnalyzeSentimentRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* AnalyzeSentimentResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  AnalyzeSentimentResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* AnalyzeEntitiesRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  AnalyzeEntitiesRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* AnalyzeEntitiesResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  AnalyzeEntitiesResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* AnalyzeSyntaxRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  AnalyzeSyntaxRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* AnalyzeSyntaxResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  AnalyzeSyntaxResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* AnnotateTextRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  AnnotateTextRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* AnnotateTextRequest_Features_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  AnnotateTextRequest_Features_reflection_ = NULL;
+const ::google::protobuf::Descriptor* AnnotateTextResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  AnnotateTextResponse_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* EncodingType_descriptor_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Document, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Document, _oneof_case_[0]),
+void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto() {
+  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/cloud/language/v1beta1/language_service.proto");
+  GOOGLE_CHECK(file != NULL);
+  Document_descriptor_ = file->message_type(0);
+  static const int Document_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Document, type_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Document_default_oneof_instance_), content_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Document_default_oneof_instance_), gcs_content_uri_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Document_default_oneof_instance_, content_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Document_default_oneof_instance_, gcs_content_uri_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Document, language_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Document, source_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Sentence, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Document_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Document_descriptor_,
+      Document::internal_default_instance(),
+      Document_offsets_,
+      -1,
+      -1,
+      -1,
+      Document_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Document, _oneof_case_[0]),
+      sizeof(Document),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Document, _internal_metadata_));
+  Document_Type_descriptor_ = Document_descriptor_->enum_type(0);
+  Sentence_descriptor_ = file->message_type(1);
+  static const int Sentence_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Sentence, text_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Sentence, sentiment_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Entity, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Sentence_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Sentence_descriptor_,
+      Sentence::internal_default_instance(),
+      Sentence_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Sentence),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Sentence, _internal_metadata_));
+  Entity_descriptor_ = file->message_type(2);
+  static const int Entity_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Entity, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Entity, type_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Entity, metadata_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Entity, salience_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Entity, mentions_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Token, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Entity_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Entity_descriptor_,
+      Entity::internal_default_instance(),
+      Entity_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Entity),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Entity, _internal_metadata_));
+  Entity_MetadataEntry_descriptor_ = Entity_descriptor_->nested_type(0);
+  Entity_Type_descriptor_ = Entity_descriptor_->enum_type(0);
+  Token_descriptor_ = file->message_type(3);
+  static const int Token_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Token, text_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Token, part_of_speech_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Token, dependency_edge_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Token, lemma_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Sentiment, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Token_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Token_descriptor_,
+      Token::internal_default_instance(),
+      Token_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Token),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Token, _internal_metadata_));
+  Sentiment_descriptor_ = file->message_type(4);
+  static const int Sentiment_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Sentiment, polarity_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Sentiment, magnitude_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Sentiment, score_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PartOfSpeech, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Sentiment_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Sentiment_descriptor_,
+      Sentiment::internal_default_instance(),
+      Sentiment_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Sentiment),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Sentiment, _internal_metadata_));
+  PartOfSpeech_descriptor_ = file->message_type(5);
+  static const int PartOfSpeech_offsets_[12] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PartOfSpeech, tag_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PartOfSpeech, aspect_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PartOfSpeech, case__),
@@ -128,442 +214,557 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PartOfSpeech, reciprocity_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PartOfSpeech, tense_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PartOfSpeech, voice_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DependencyEdge, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  PartOfSpeech_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      PartOfSpeech_descriptor_,
+      PartOfSpeech::internal_default_instance(),
+      PartOfSpeech_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(PartOfSpeech),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PartOfSpeech, _internal_metadata_));
+  PartOfSpeech_Tag_descriptor_ = PartOfSpeech_descriptor_->enum_type(0);
+  PartOfSpeech_Aspect_descriptor_ = PartOfSpeech_descriptor_->enum_type(1);
+  PartOfSpeech_Case_descriptor_ = PartOfSpeech_descriptor_->enum_type(2);
+  PartOfSpeech_Form_descriptor_ = PartOfSpeech_descriptor_->enum_type(3);
+  PartOfSpeech_Gender_descriptor_ = PartOfSpeech_descriptor_->enum_type(4);
+  PartOfSpeech_Mood_descriptor_ = PartOfSpeech_descriptor_->enum_type(5);
+  PartOfSpeech_Number_descriptor_ = PartOfSpeech_descriptor_->enum_type(6);
+  PartOfSpeech_Person_descriptor_ = PartOfSpeech_descriptor_->enum_type(7);
+  PartOfSpeech_Proper_descriptor_ = PartOfSpeech_descriptor_->enum_type(8);
+  PartOfSpeech_Reciprocity_descriptor_ = PartOfSpeech_descriptor_->enum_type(9);
+  PartOfSpeech_Tense_descriptor_ = PartOfSpeech_descriptor_->enum_type(10);
+  PartOfSpeech_Voice_descriptor_ = PartOfSpeech_descriptor_->enum_type(11);
+  DependencyEdge_descriptor_ = file->message_type(6);
+  static const int DependencyEdge_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DependencyEdge, head_token_index_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DependencyEdge, label_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EntityMention, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  DependencyEdge_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      DependencyEdge_descriptor_,
+      DependencyEdge::internal_default_instance(),
+      DependencyEdge_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(DependencyEdge),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DependencyEdge, _internal_metadata_));
+  DependencyEdge_Label_descriptor_ = DependencyEdge_descriptor_->enum_type(0);
+  EntityMention_descriptor_ = file->message_type(7);
+  static const int EntityMention_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EntityMention, text_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EntityMention, type_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TextSpan, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  EntityMention_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      EntityMention_descriptor_,
+      EntityMention::internal_default_instance(),
+      EntityMention_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(EntityMention),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EntityMention, _internal_metadata_));
+  EntityMention_Type_descriptor_ = EntityMention_descriptor_->enum_type(0);
+  TextSpan_descriptor_ = file->message_type(8);
+  static const int TextSpan_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TextSpan, content_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TextSpan, begin_offset_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSentimentRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  TextSpan_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      TextSpan_descriptor_,
+      TextSpan::internal_default_instance(),
+      TextSpan_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(TextSpan),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TextSpan, _internal_metadata_));
+  AnalyzeSentimentRequest_descriptor_ = file->message_type(9);
+  static const int AnalyzeSentimentRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSentimentRequest, document_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSentimentRequest, encoding_type_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSentimentResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  AnalyzeSentimentRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      AnalyzeSentimentRequest_descriptor_,
+      AnalyzeSentimentRequest::internal_default_instance(),
+      AnalyzeSentimentRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(AnalyzeSentimentRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSentimentRequest, _internal_metadata_));
+  AnalyzeSentimentResponse_descriptor_ = file->message_type(10);
+  static const int AnalyzeSentimentResponse_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSentimentResponse, document_sentiment_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSentimentResponse, language_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSentimentResponse, sentences_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeEntitiesRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  AnalyzeSentimentResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      AnalyzeSentimentResponse_descriptor_,
+      AnalyzeSentimentResponse::internal_default_instance(),
+      AnalyzeSentimentResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(AnalyzeSentimentResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSentimentResponse, _internal_metadata_));
+  AnalyzeEntitiesRequest_descriptor_ = file->message_type(11);
+  static const int AnalyzeEntitiesRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeEntitiesRequest, document_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeEntitiesRequest, encoding_type_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeEntitiesResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  AnalyzeEntitiesRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      AnalyzeEntitiesRequest_descriptor_,
+      AnalyzeEntitiesRequest::internal_default_instance(),
+      AnalyzeEntitiesRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(AnalyzeEntitiesRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeEntitiesRequest, _internal_metadata_));
+  AnalyzeEntitiesResponse_descriptor_ = file->message_type(12);
+  static const int AnalyzeEntitiesResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeEntitiesResponse, entities_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeEntitiesResponse, language_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSyntaxRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  AnalyzeEntitiesResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      AnalyzeEntitiesResponse_descriptor_,
+      AnalyzeEntitiesResponse::internal_default_instance(),
+      AnalyzeEntitiesResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(AnalyzeEntitiesResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeEntitiesResponse, _internal_metadata_));
+  AnalyzeSyntaxRequest_descriptor_ = file->message_type(13);
+  static const int AnalyzeSyntaxRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSyntaxRequest, document_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSyntaxRequest, encoding_type_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSyntaxResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  AnalyzeSyntaxRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      AnalyzeSyntaxRequest_descriptor_,
+      AnalyzeSyntaxRequest::internal_default_instance(),
+      AnalyzeSyntaxRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(AnalyzeSyntaxRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSyntaxRequest, _internal_metadata_));
+  AnalyzeSyntaxResponse_descriptor_ = file->message_type(14);
+  static const int AnalyzeSyntaxResponse_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSyntaxResponse, sentences_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSyntaxResponse, tokens_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSyntaxResponse, language_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextRequest_Features, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextRequest_Features, extract_syntax_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextRequest_Features, extract_entities_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextRequest_Features, extract_document_sentiment_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  AnalyzeSyntaxResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      AnalyzeSyntaxResponse_descriptor_,
+      AnalyzeSyntaxResponse::internal_default_instance(),
+      AnalyzeSyntaxResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(AnalyzeSyntaxResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnalyzeSyntaxResponse, _internal_metadata_));
+  AnnotateTextRequest_descriptor_ = file->message_type(15);
+  static const int AnnotateTextRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextRequest, document_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextRequest, features_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextRequest, encoding_type_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  AnnotateTextRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      AnnotateTextRequest_descriptor_,
+      AnnotateTextRequest::internal_default_instance(),
+      AnnotateTextRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(AnnotateTextRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextRequest, _internal_metadata_));
+  AnnotateTextRequest_Features_descriptor_ = AnnotateTextRequest_descriptor_->nested_type(0);
+  static const int AnnotateTextRequest_Features_offsets_[3] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextRequest_Features, extract_syntax_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextRequest_Features, extract_entities_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextRequest_Features, extract_document_sentiment_),
+  };
+  AnnotateTextRequest_Features_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      AnnotateTextRequest_Features_descriptor_,
+      AnnotateTextRequest_Features::internal_default_instance(),
+      AnnotateTextRequest_Features_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(AnnotateTextRequest_Features),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextRequest_Features, _internal_metadata_));
+  AnnotateTextResponse_descriptor_ = file->message_type(16);
+  static const int AnnotateTextResponse_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextResponse, sentences_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextResponse, tokens_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextResponse, entities_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextResponse, document_sentiment_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextResponse, language_),
   };
-  return offsets;
+  AnnotateTextResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      AnnotateTextResponse_descriptor_,
+      AnnotateTextResponse::internal_default_instance(),
+      AnnotateTextResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(AnnotateTextResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AnnotateTextResponse, _internal_metadata_));
+  EncodingType_descriptor_ = file->enum_type(0);
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(Document)},
-  { 9, -1, sizeof(Sentence)},
-  { 15, -1, sizeof(Entity)},
-  { 24, -1, sizeof(Token)},
-  { 32, -1, sizeof(Sentiment)},
-  { 39, -1, sizeof(PartOfSpeech)},
-  { 55, -1, sizeof(DependencyEdge)},
-  { 61, -1, sizeof(EntityMention)},
-  { 67, -1, sizeof(TextSpan)},
-  { 73, -1, sizeof(AnalyzeSentimentRequest)},
-  { 79, -1, sizeof(AnalyzeSentimentResponse)},
-  { 86, -1, sizeof(AnalyzeEntitiesRequest)},
-  { 92, -1, sizeof(AnalyzeEntitiesResponse)},
-  { 98, -1, sizeof(AnalyzeSyntaxRequest)},
-  { 104, -1, sizeof(AnalyzeSyntaxResponse)},
-  { 111, -1, sizeof(AnnotateTextRequest_Features)},
-  { 118, -1, sizeof(AnnotateTextRequest)},
-  { 125, -1, sizeof(AnnotateTextResponse)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Document_default_instance_), &Document_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Sentence_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Entity_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Token_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Sentiment_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_PartOfSpeech_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_DependencyEdge_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_EntityMention_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_TextSpan_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_AnalyzeSentimentRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_AnalyzeSentimentResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_AnalyzeEntitiesRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_AnalyzeEntitiesResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_AnalyzeSyntaxRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_AnalyzeSyntaxResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_AnnotateTextRequest_Features_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_AnnotateTextRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_AnnotateTextResponse_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/cloud/language/v1beta1/language_service.proto", schemas, file_default_instances, protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto(), factory,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 19);
-  const ::google::protobuf::Descriptor* Entity_MetadataEntry_descriptor = file_level_metadata[2].descriptor;
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-        Entity_MetadataEntry_descriptor,
+      Document_descriptor_, Document::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Sentence_descriptor_, Sentence::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Entity_descriptor_, Entity::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+        Entity_MetadataEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
             ::std::string,
             ::std::string,
             ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
             ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
             0>::CreateDefaultInstance(
-                Entity_MetadataEntry_descriptor));
+                Entity_MetadataEntry_descriptor_));
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Token_descriptor_, Token::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Sentiment_descriptor_, Sentiment::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      PartOfSpeech_descriptor_, PartOfSpeech::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      DependencyEdge_descriptor_, DependencyEdge::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      EntityMention_descriptor_, EntityMention::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      TextSpan_descriptor_, TextSpan::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      AnalyzeSentimentRequest_descriptor_, AnalyzeSentimentRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      AnalyzeSentimentResponse_descriptor_, AnalyzeSentimentResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      AnalyzeEntitiesRequest_descriptor_, AnalyzeEntitiesRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      AnalyzeEntitiesResponse_descriptor_, AnalyzeEntitiesResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      AnalyzeSyntaxRequest_descriptor_, AnalyzeSyntaxRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      AnalyzeSyntaxResponse_descriptor_, AnalyzeSyntaxResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      AnnotateTextRequest_descriptor_, AnnotateTextRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      AnnotateTextRequest_Features_descriptor_, AnnotateTextRequest_Features::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      AnnotateTextResponse_descriptor_, AnnotateTextResponse::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto() {
-  _Document_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _Sentence_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _Entity_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _Token_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
-  _Sentiment_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
-  _PartOfSpeech_default_instance_.Shutdown();
-  delete file_level_metadata[6].reflection;
-  _DependencyEdge_default_instance_.Shutdown();
-  delete file_level_metadata[7].reflection;
-  _EntityMention_default_instance_.Shutdown();
-  delete file_level_metadata[8].reflection;
-  _TextSpan_default_instance_.Shutdown();
-  delete file_level_metadata[9].reflection;
-  _AnalyzeSentimentRequest_default_instance_.Shutdown();
-  delete file_level_metadata[10].reflection;
-  _AnalyzeSentimentResponse_default_instance_.Shutdown();
-  delete file_level_metadata[11].reflection;
-  _AnalyzeEntitiesRequest_default_instance_.Shutdown();
-  delete file_level_metadata[12].reflection;
-  _AnalyzeEntitiesResponse_default_instance_.Shutdown();
-  delete file_level_metadata[13].reflection;
-  _AnalyzeSyntaxRequest_default_instance_.Shutdown();
-  delete file_level_metadata[14].reflection;
-  _AnalyzeSyntaxResponse_default_instance_.Shutdown();
-  delete file_level_metadata[15].reflection;
-  _AnnotateTextRequest_Features_default_instance_.Shutdown();
-  delete file_level_metadata[16].reflection;
-  _AnnotateTextRequest_default_instance_.Shutdown();
-  delete file_level_metadata[17].reflection;
-  _AnnotateTextResponse_default_instance_.Shutdown();
-  delete file_level_metadata[18].reflection;
+  Document_default_instance_.Shutdown();
+  delete Document_default_oneof_instance_;
+  delete Document_reflection_;
+  Sentence_default_instance_.Shutdown();
+  delete Sentence_reflection_;
+  Entity_default_instance_.Shutdown();
+  delete Entity_reflection_;
+  Token_default_instance_.Shutdown();
+  delete Token_reflection_;
+  Sentiment_default_instance_.Shutdown();
+  delete Sentiment_reflection_;
+  PartOfSpeech_default_instance_.Shutdown();
+  delete PartOfSpeech_reflection_;
+  DependencyEdge_default_instance_.Shutdown();
+  delete DependencyEdge_reflection_;
+  EntityMention_default_instance_.Shutdown();
+  delete EntityMention_reflection_;
+  TextSpan_default_instance_.Shutdown();
+  delete TextSpan_reflection_;
+  AnalyzeSentimentRequest_default_instance_.Shutdown();
+  delete AnalyzeSentimentRequest_reflection_;
+  AnalyzeSentimentResponse_default_instance_.Shutdown();
+  delete AnalyzeSentimentResponse_reflection_;
+  AnalyzeEntitiesRequest_default_instance_.Shutdown();
+  delete AnalyzeEntitiesRequest_reflection_;
+  AnalyzeEntitiesResponse_default_instance_.Shutdown();
+  delete AnalyzeEntitiesResponse_reflection_;
+  AnalyzeSyntaxRequest_default_instance_.Shutdown();
+  delete AnalyzeSyntaxRequest_reflection_;
+  AnalyzeSyntaxResponse_default_instance_.Shutdown();
+  delete AnalyzeSyntaxResponse_reflection_;
+  AnnotateTextRequest_default_instance_.Shutdown();
+  delete AnnotateTextRequest_reflection_;
+  AnnotateTextRequest_Features_default_instance_.Shutdown();
+  delete AnnotateTextRequest_Features_reflection_;
+  AnnotateTextResponse_default_instance_.Shutdown();
+  delete AnnotateTextResponse_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _Document_default_instance_.DefaultConstruct();
-  _Sentence_default_instance_.DefaultConstruct();
-  _Entity_default_instance_.DefaultConstruct();
-  _Token_default_instance_.DefaultConstruct();
-  _Sentiment_default_instance_.DefaultConstruct();
-  _PartOfSpeech_default_instance_.DefaultConstruct();
-  _DependencyEdge_default_instance_.DefaultConstruct();
-  _EntityMention_default_instance_.DefaultConstruct();
-  _TextSpan_default_instance_.DefaultConstruct();
-  _AnalyzeSentimentRequest_default_instance_.DefaultConstruct();
-  _AnalyzeSentimentResponse_default_instance_.DefaultConstruct();
-  _AnalyzeEntitiesRequest_default_instance_.DefaultConstruct();
-  _AnalyzeEntitiesResponse_default_instance_.DefaultConstruct();
-  _AnalyzeSyntaxRequest_default_instance_.DefaultConstruct();
-  _AnalyzeSyntaxResponse_default_instance_.DefaultConstruct();
-  _AnnotateTextRequest_Features_default_instance_.DefaultConstruct();
-  _AnnotateTextRequest_default_instance_.DefaultConstruct();
-  _AnnotateTextResponse_default_instance_.DefaultConstruct();
-  Document_default_oneof_instance_.content_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  Document_default_oneof_instance_.gcs_content_uri_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _Sentence_default_instance_.get_mutable()->text_ = const_cast< ::google::cloud::language::v1beta1::TextSpan*>(
-      ::google::cloud::language::v1beta1::TextSpan::internal_default_instance());
-  _Sentence_default_instance_.get_mutable()->sentiment_ = const_cast< ::google::cloud::language::v1beta1::Sentiment*>(
-      ::google::cloud::language::v1beta1::Sentiment::internal_default_instance());
-  _Token_default_instance_.get_mutable()->text_ = const_cast< ::google::cloud::language::v1beta1::TextSpan*>(
-      ::google::cloud::language::v1beta1::TextSpan::internal_default_instance());
-  _Token_default_instance_.get_mutable()->part_of_speech_ = const_cast< ::google::cloud::language::v1beta1::PartOfSpeech*>(
-      ::google::cloud::language::v1beta1::PartOfSpeech::internal_default_instance());
-  _Token_default_instance_.get_mutable()->dependency_edge_ = const_cast< ::google::cloud::language::v1beta1::DependencyEdge*>(
-      ::google::cloud::language::v1beta1::DependencyEdge::internal_default_instance());
-  _EntityMention_default_instance_.get_mutable()->text_ = const_cast< ::google::cloud::language::v1beta1::TextSpan*>(
-      ::google::cloud::language::v1beta1::TextSpan::internal_default_instance());
-  _AnalyzeSentimentRequest_default_instance_.get_mutable()->document_ = const_cast< ::google::cloud::language::v1beta1::Document*>(
-      ::google::cloud::language::v1beta1::Document::internal_default_instance());
-  _AnalyzeSentimentResponse_default_instance_.get_mutable()->document_sentiment_ = const_cast< ::google::cloud::language::v1beta1::Sentiment*>(
-      ::google::cloud::language::v1beta1::Sentiment::internal_default_instance());
-  _AnalyzeEntitiesRequest_default_instance_.get_mutable()->document_ = const_cast< ::google::cloud::language::v1beta1::Document*>(
-      ::google::cloud::language::v1beta1::Document::internal_default_instance());
-  _AnalyzeSyntaxRequest_default_instance_.get_mutable()->document_ = const_cast< ::google::cloud::language::v1beta1::Document*>(
-      ::google::cloud::language::v1beta1::Document::internal_default_instance());
-  _AnnotateTextRequest_default_instance_.get_mutable()->document_ = const_cast< ::google::cloud::language::v1beta1::Document*>(
-      ::google::cloud::language::v1beta1::Document::internal_default_instance());
-  _AnnotateTextRequest_default_instance_.get_mutable()->features_ = const_cast< ::google::cloud::language::v1beta1::AnnotateTextRequest_Features*>(
-      ::google::cloud::language::v1beta1::AnnotateTextRequest_Features::internal_default_instance());
-  _AnnotateTextResponse_default_instance_.get_mutable()->document_sentiment_ = const_cast< ::google::cloud::language::v1beta1::Sentiment*>(
-      ::google::cloud::language::v1beta1::Sentiment::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  Document_default_instance_.DefaultConstruct();
+  Document_default_oneof_instance_ = new DocumentOneofInstance();
+  Sentence_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Entity_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ::google::protobuf::internal::GetEmptyString();
+  Token_default_instance_.DefaultConstruct();
+  Sentiment_default_instance_.DefaultConstruct();
+  PartOfSpeech_default_instance_.DefaultConstruct();
+  DependencyEdge_default_instance_.DefaultConstruct();
+  EntityMention_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  TextSpan_default_instance_.DefaultConstruct();
+  AnalyzeSentimentRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  AnalyzeSentimentResponse_default_instance_.DefaultConstruct();
+  AnalyzeEntitiesRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  AnalyzeEntitiesResponse_default_instance_.DefaultConstruct();
+  AnalyzeSyntaxRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  AnalyzeSyntaxResponse_default_instance_.DefaultConstruct();
+  AnnotateTextRequest_default_instance_.DefaultConstruct();
+  AnnotateTextRequest_Features_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  AnnotateTextResponse_default_instance_.DefaultConstruct();
+  Document_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Sentence_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Entity_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Token_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Sentiment_default_instance_.get_mutable()->InitAsDefaultInstance();
+  PartOfSpeech_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DependencyEdge_default_instance_.get_mutable()->InitAsDefaultInstance();
+  EntityMention_default_instance_.get_mutable()->InitAsDefaultInstance();
+  TextSpan_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AnalyzeSentimentRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AnalyzeSentimentResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AnalyzeEntitiesRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AnalyzeEntitiesResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AnalyzeSyntaxRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AnalyzeSyntaxResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AnnotateTextRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AnnotateTextRequest_Features_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AnnotateTextResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_once_);
 void protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  static const char descriptor[] = {
-      "\n4google/cloud/language/v1beta1/language"
-      "_service.proto\022\035google.cloud.language.v1"
-      "beta1\032\034google/api/annotations.proto\"\310\001\n\010"
-      "Document\022:\n\004type\030\001 \001(\0162,.google.cloud.la"
-      "nguage.v1beta1.Document.Type\022\021\n\007content\030"
-      "\002 \001(\tH\000\022\031\n\017gcs_content_uri\030\003 \001(\tH\000\022\020\n\010la"
-      "nguage\030\004 \001(\t\"6\n\004Type\022\024\n\020TYPE_UNSPECIFIED"
-      "\020\000\022\016\n\nPLAIN_TEXT\020\001\022\010\n\004HTML\020\002B\010\n\006source\"~"
-      "\n\010Sentence\0225\n\004text\030\001 \001(\0132\'.google.cloud."
-      "language.v1beta1.TextSpan\022;\n\tsentiment\030\002"
-      " \001(\0132(.google.cloud.language.v1beta1.Sen"
-      "timent\"\225\003\n\006Entity\022\014\n\004name\030\001 \001(\t\0228\n\004type\030"
-      "\002 \001(\0162*.google.cloud.language.v1beta1.En"
-      "tity.Type\022E\n\010metadata\030\003 \003(\01323.google.clo"
-      "ud.language.v1beta1.Entity.MetadataEntry"
-      "\022\020\n\010salience\030\004 \001(\002\022>\n\010mentions\030\005 \003(\0132,.g"
-      "oogle.cloud.language.v1beta1.EntityMenti"
-      "on\032/\n\rMetadataEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005valu"
-      "e\030\002 \001(\t:\0028\001\"y\n\004Type\022\013\n\007UNKNOWN\020\000\022\n\n\006PERS"
-      "ON\020\001\022\014\n\010LOCATION\020\002\022\020\n\014ORGANIZATION\020\003\022\t\n\005"
-      "EVENT\020\004\022\017\n\013WORK_OF_ART\020\005\022\021\n\rCONSUMER_GOO"
-      "D\020\006\022\t\n\005OTHER\020\007\"\332\001\n\005Token\0225\n\004text\030\001 \001(\0132\'"
-      ".google.cloud.language.v1beta1.TextSpan\022"
-      "C\n\016part_of_speech\030\002 \001(\0132+.google.cloud.l"
-      "anguage.v1beta1.PartOfSpeech\022F\n\017dependen"
-      "cy_edge\030\003 \001(\0132-.google.cloud.language.v1"
-      "beta1.DependencyEdge\022\r\n\005lemma\030\004 \001(\t\"\?\n\tS"
-      "entiment\022\020\n\010polarity\030\001 \001(\002\022\021\n\tmagnitude\030"
-      "\002 \001(\002\022\r\n\005score\030\003 \001(\002\"\337\020\n\014PartOfSpeech\022<\n"
-      "\003tag\030\001 \001(\0162/.google.cloud.language.v1bet"
-      "a1.PartOfSpeech.Tag\022B\n\006aspect\030\002 \001(\01622.go"
-      "ogle.cloud.language.v1beta1.PartOfSpeech"
-      ".Aspect\022>\n\004case\030\003 \001(\01620.google.cloud.lan"
-      "guage.v1beta1.PartOfSpeech.Case\022>\n\004form\030"
-      "\004 \001(\01620.google.cloud.language.v1beta1.Pa"
-      "rtOfSpeech.Form\022B\n\006gender\030\005 \001(\01622.google"
-      ".cloud.language.v1beta1.PartOfSpeech.Gen"
-      "der\022>\n\004mood\030\006 \001(\01620.google.cloud.languag"
-      "e.v1beta1.PartOfSpeech.Mood\022B\n\006number\030\007 "
-      "\001(\01622.google.cloud.language.v1beta1.Part"
-      "OfSpeech.Number\022B\n\006person\030\010 \001(\01622.google"
-      ".cloud.language.v1beta1.PartOfSpeech.Per"
-      "son\022B\n\006proper\030\t \001(\01622.google.cloud.langu"
-      "age.v1beta1.PartOfSpeech.Proper\022L\n\013recip"
-      "rocity\030\n \001(\01627.google.cloud.language.v1b"
-      "eta1.PartOfSpeech.Reciprocity\022@\n\005tense\030\013"
-      " \001(\01621.google.cloud.language.v1beta1.Par"
-      "tOfSpeech.Tense\022@\n\005voice\030\014 \001(\01621.google."
-      "cloud.language.v1beta1.PartOfSpeech.Voic"
-      "e\"\215\001\n\003Tag\022\013\n\007UNKNOWN\020\000\022\007\n\003ADJ\020\001\022\007\n\003ADP\020\002"
-      "\022\007\n\003ADV\020\003\022\010\n\004CONJ\020\004\022\007\n\003DET\020\005\022\010\n\004NOUN\020\006\022\007"
-      "\n\003NUM\020\007\022\010\n\004PRON\020\010\022\007\n\003PRT\020\t\022\t\n\005PUNCT\020\n\022\010\n"
-      "\004VERB\020\013\022\005\n\001X\020\014\022\t\n\005AFFIX\020\r\"O\n\006Aspect\022\022\n\016A"
-      "SPECT_UNKNOWN\020\000\022\016\n\nPERFECTIVE\020\001\022\020\n\014IMPER"
-      "FECTIVE\020\002\022\017\n\013PROGRESSIVE\020\003\"\370\001\n\004Case\022\020\n\014C"
-      "ASE_UNKNOWN\020\000\022\016\n\nACCUSATIVE\020\001\022\r\n\tADVERBI"
-      "AL\020\002\022\021\n\rCOMPLEMENTIVE\020\003\022\n\n\006DATIVE\020\004\022\014\n\010G"
-      "ENITIVE\020\005\022\020\n\014INSTRUMENTAL\020\006\022\014\n\010LOCATIVE\020"
-      "\007\022\016\n\nNOMINATIVE\020\010\022\013\n\007OBLIQUE\020\t\022\r\n\tPARTIT"
-      "IVE\020\n\022\021\n\rPREPOSITIONAL\020\013\022\022\n\016REFLEXIVE_CA"
-      "SE\020\014\022\021\n\rRELATIVE_CASE\020\r\022\014\n\010VOCATIVE\020\016\"\257\001"
-      "\n\004Form\022\020\n\014FORM_UNKNOWN\020\000\022\014\n\010ADNOMIAL\020\001\022\r"
-      "\n\tAUXILIARY\020\002\022\022\n\016COMPLEMENTIZER\020\003\022\020\n\014FIN"
-      "AL_ENDING\020\004\022\n\n\006GERUND\020\005\022\n\n\006REALIS\020\006\022\014\n\010I"
-      "RREALIS\020\007\022\t\n\005SHORT\020\010\022\010\n\004LONG\020\t\022\t\n\005ORDER\020"
-      "\n\022\014\n\010SPECIFIC\020\013\"E\n\006Gender\022\022\n\016GENDER_UNKN"
-      "OWN\020\000\022\014\n\010FEMININE\020\001\022\r\n\tMASCULINE\020\002\022\n\n\006NE"
-      "UTER\020\003\"\177\n\004Mood\022\020\n\014MOOD_UNKNOWN\020\000\022\024\n\020COND"
-      "ITIONAL_MOOD\020\001\022\016\n\nIMPERATIVE\020\002\022\016\n\nINDICA"
-      "TIVE\020\003\022\021\n\rINTERROGATIVE\020\004\022\013\n\007JUSSIVE\020\005\022\017"
-      "\n\013SUBJUNCTIVE\020\006\"@\n\006Number\022\022\n\016NUMBER_UNKN"
-      "OWN\020\000\022\014\n\010SINGULAR\020\001\022\n\n\006PLURAL\020\002\022\010\n\004DUAL\020"
-      "\003\"T\n\006Person\022\022\n\016PERSON_UNKNOWN\020\000\022\t\n\005FIRST"
-      "\020\001\022\n\n\006SECOND\020\002\022\t\n\005THIRD\020\003\022\024\n\020REFLEXIVE_P"
-      "ERSON\020\004\"8\n\006Proper\022\022\n\016PROPER_UNKNOWN\020\000\022\n\n"
-      "\006PROPER\020\001\022\016\n\nNOT_PROPER\020\002\"J\n\013Reciprocity"
-      "\022\027\n\023RECIPROCITY_UNKNOWN\020\000\022\016\n\nRECIPROCAL\020"
-      "\001\022\022\n\016NON_RECIPROCAL\020\002\"s\n\005Tense\022\021\n\rTENSE_"
-      "UNKNOWN\020\000\022\025\n\021CONDITIONAL_TENSE\020\001\022\n\n\006FUTU"
-      "RE\020\002\022\010\n\004PAST\020\003\022\013\n\007PRESENT\020\004\022\r\n\tIMPERFECT"
-      "\020\005\022\016\n\nPLUPERFECT\020\006\"B\n\005Voice\022\021\n\rVOICE_UNK"
-      "NOWN\020\000\022\n\n\006ACTIVE\020\001\022\r\n\tCAUSATIVE\020\002\022\013\n\007PAS"
-      "SIVE\020\003\"\335\007\n\016DependencyEdge\022\030\n\020head_token_"
-      "index\030\001 \001(\005\022B\n\005label\030\002 \001(\01623.google.clou"
-      "d.language.v1beta1.DependencyEdge.Label\""
-      "\354\006\n\005Label\022\013\n\007UNKNOWN\020\000\022\n\n\006ABBREV\020\001\022\t\n\005AC"
-      "OMP\020\002\022\t\n\005ADVCL\020\003\022\n\n\006ADVMOD\020\004\022\010\n\004AMOD\020\005\022\t"
-      "\n\005APPOS\020\006\022\010\n\004ATTR\020\007\022\007\n\003AUX\020\010\022\013\n\007AUXPASS\020"
-      "\t\022\006\n\002CC\020\n\022\t\n\005CCOMP\020\013\022\010\n\004CONJ\020\014\022\t\n\005CSUBJ\020"
-      "\r\022\r\n\tCSUBJPASS\020\016\022\007\n\003DEP\020\017\022\007\n\003DET\020\020\022\r\n\tDI"
-      "SCOURSE\020\021\022\010\n\004DOBJ\020\022\022\010\n\004EXPL\020\023\022\014\n\010GOESWIT"
-      "H\020\024\022\010\n\004IOBJ\020\025\022\010\n\004MARK\020\026\022\007\n\003MWE\020\027\022\007\n\003MWV\020"
-      "\030\022\007\n\003NEG\020\031\022\006\n\002NN\020\032\022\014\n\010NPADVMOD\020\033\022\t\n\005NSUB"
-      "J\020\034\022\r\n\tNSUBJPASS\020\035\022\007\n\003NUM\020\036\022\n\n\006NUMBER\020\037\022"
-      "\005\n\001P\020 \022\r\n\tPARATAXIS\020!\022\013\n\007PARTMOD\020\"\022\t\n\005PC"
-      "OMP\020#\022\010\n\004POBJ\020$\022\010\n\004POSS\020%\022\013\n\007POSTNEG\020&\022\013"
-      "\n\007PRECOMP\020\'\022\013\n\007PRECONJ\020(\022\n\n\006PREDET\020)\022\010\n\004"
-      "PREF\020*\022\010\n\004PREP\020+\022\t\n\005PRONL\020,\022\007\n\003PRT\020-\022\006\n\002"
-      "PS\020.\022\014\n\010QUANTMOD\020/\022\t\n\005RCMOD\0200\022\014\n\010RCMODRE"
-      "L\0201\022\t\n\005RDROP\0202\022\007\n\003REF\0203\022\013\n\007REMNANT\0204\022\016\n\n"
-      "REPARANDUM\0205\022\010\n\004ROOT\0206\022\010\n\004SNUM\0207\022\010\n\004SUFF"
-      "\0208\022\010\n\004TMOD\0209\022\t\n\005TOPIC\020:\022\010\n\004VMOD\020;\022\014\n\010VOC"
-      "ATIVE\020<\022\t\n\005XCOMP\020=\022\n\n\006SUFFIX\020>\022\t\n\005TITLE\020"
-      "\?\022\014\n\010ADVPHMOD\020@\022\013\n\007AUXCAUS\020A\022\t\n\005AUXVV\020B\022"
-      "\t\n\005DTMOD\020C\022\013\n\007FOREIGN\020D\022\006\n\002KW\020E\022\010\n\004LIST\020"
-      "F\022\010\n\004NOMC\020G\022\014\n\010NOMCSUBJ\020H\022\020\n\014NOMCSUBJPAS"
-      "S\020I\022\010\n\004NUMC\020J\022\007\n\003COP\020K\022\016\n\nDISLOCATED\020L\"\271"
-      "\001\n\rEntityMention\0225\n\004text\030\001 \001(\0132\'.google."
-      "cloud.language.v1beta1.TextSpan\022\?\n\004type\030"
-      "\002 \001(\01621.google.cloud.language.v1beta1.En"
-      "tityMention.Type\"0\n\004Type\022\020\n\014TYPE_UNKNOWN"
-      "\020\000\022\n\n\006PROPER\020\001\022\n\n\006COMMON\020\002\"1\n\010TextSpan\022\017"
-      "\n\007content\030\001 \001(\t\022\024\n\014begin_offset\030\002 \001(\005\"\230\001"
-      "\n\027AnalyzeSentimentRequest\0229\n\010document\030\001 "
-      "\001(\0132\'.google.cloud.language.v1beta1.Docu"
-      "ment\022B\n\rencoding_type\030\002 \001(\0162+.google.clo"
-      "ud.language.v1beta1.EncodingType\"\256\001\n\030Ana"
-      "lyzeSentimentResponse\022D\n\022document_sentim"
-      "ent\030\001 \001(\0132(.google.cloud.language.v1beta"
-      "1.Sentiment\022\020\n\010language\030\002 \001(\t\022:\n\tsentenc"
-      "es\030\003 \003(\0132\'.google.cloud.language.v1beta1"
-      ".Sentence\"\227\001\n\026AnalyzeEntitiesRequest\0229\n\010"
-      "document\030\001 \001(\0132\'.google.cloud.language.v"
-      "1beta1.Document\022B\n\rencoding_type\030\002 \001(\0162+"
-      ".google.cloud.language.v1beta1.EncodingT"
-      "ype\"d\n\027AnalyzeEntitiesResponse\0227\n\010entiti"
-      "es\030\001 \003(\0132%.google.cloud.language.v1beta1"
-      ".Entity\022\020\n\010language\030\002 \001(\t\"\225\001\n\024AnalyzeSyn"
-      "taxRequest\0229\n\010document\030\001 \001(\0132\'.google.cl"
-      "oud.language.v1beta1.Document\022B\n\rencodin"
-      "g_type\030\002 \001(\0162+.google.cloud.language.v1b"
-      "eta1.EncodingType\"\233\001\n\025AnalyzeSyntaxRespo"
-      "nse\022:\n\tsentences\030\001 \003(\0132\'.google.cloud.la"
-      "nguage.v1beta1.Sentence\0224\n\006tokens\030\002 \003(\0132"
-      "$.google.cloud.language.v1beta1.Token\022\020\n"
-      "\010language\030\003 \001(\t\"\305\002\n\023AnnotateTextRequest\022"
-      "9\n\010document\030\001 \001(\0132\'.google.cloud.languag"
-      "e.v1beta1.Document\022M\n\010features\030\002 \001(\0132;.g"
-      "oogle.cloud.language.v1beta1.AnnotateTex"
-      "tRequest.Features\022B\n\rencoding_type\030\003 \001(\016"
-      "2+.google.cloud.language.v1beta1.Encodin"
-      "gType\032`\n\010Features\022\026\n\016extract_syntax\030\001 \001("
-      "\010\022\030\n\020extract_entities\030\002 \001(\010\022\"\n\032extract_d"
-      "ocument_sentiment\030\003 \001(\010\"\231\002\n\024AnnotateText"
-      "Response\022:\n\tsentences\030\001 \003(\0132\'.google.clo"
-      "ud.language.v1beta1.Sentence\0224\n\006tokens\030\002"
-      " \003(\0132$.google.cloud.language.v1beta1.Tok"
-      "en\0227\n\010entities\030\003 \003(\0132%.google.cloud.lang"
-      "uage.v1beta1.Entity\022D\n\022document_sentimen"
-      "t\030\004 \001(\0132(.google.cloud.language.v1beta1."
-      "Sentiment\022\020\n\010language\030\005 \001(\t*8\n\014EncodingT"
-      "ype\022\010\n\004NONE\020\000\022\010\n\004UTF8\020\001\022\t\n\005UTF16\020\002\022\t\n\005UT"
-      "F32\020\0032\311\005\n\017LanguageService\022\263\001\n\020AnalyzeSen"
-      "timent\0226.google.cloud.language.v1beta1.A"
-      "nalyzeSentimentRequest\0327.google.cloud.la"
-      "nguage.v1beta1.AnalyzeSentimentResponse\""
-      ".\202\323\344\223\002(\"#/v1beta1/documents:analyzeSenti"
-      "ment:\001*\022\257\001\n\017AnalyzeEntities\0225.google.clo"
-      "ud.language.v1beta1.AnalyzeEntitiesReque"
-      "st\0326.google.cloud.language.v1beta1.Analy"
-      "zeEntitiesResponse\"-\202\323\344\223\002\'\"\"/v1beta1/doc"
-      "uments:analyzeEntities:\001*\022\247\001\n\rAnalyzeSyn"
-      "tax\0223.google.cloud.language.v1beta1.Anal"
-      "yzeSyntaxRequest\0324.google.cloud.language"
-      ".v1beta1.AnalyzeSyntaxResponse\"+\202\323\344\223\002%\" "
-      "/v1beta1/documents:analyzeSyntax:\001*\022\243\001\n\014"
-      "AnnotateText\0222.google.cloud.language.v1b"
-      "eta1.AnnotateTextRequest\0323.google.cloud."
-      "language.v1beta1.AnnotateTextResponse\"*\202"
-      "\323\344\223\002$\"\037/v1beta1/documents:annotateText:\001"
-      "*B\202\001\n!com.google.cloud.language.v1beta1B"
-      "\024LanguageServiceProtoP\001ZEgoogle.golang.o"
-      "rg/genproto/googleapis/cloud/language/v1"
-      "beta1;languageb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 6942);
+    "\n4google/cloud/language/v1beta1/language"
+    "_service.proto\022\035google.cloud.language.v1"
+    "beta1\032\034google/api/annotations.proto\"\310\001\n\010"
+    "Document\022:\n\004type\030\001 \001(\0162,.google.cloud.la"
+    "nguage.v1beta1.Document.Type\022\021\n\007content\030"
+    "\002 \001(\tH\000\022\031\n\017gcs_content_uri\030\003 \001(\tH\000\022\020\n\010la"
+    "nguage\030\004 \001(\t\"6\n\004Type\022\024\n\020TYPE_UNSPECIFIED"
+    "\020\000\022\016\n\nPLAIN_TEXT\020\001\022\010\n\004HTML\020\002B\010\n\006source\"~"
+    "\n\010Sentence\0225\n\004text\030\001 \001(\0132\'.google.cloud."
+    "language.v1beta1.TextSpan\022;\n\tsentiment\030\002"
+    " \001(\0132(.google.cloud.language.v1beta1.Sen"
+    "timent\"\225\003\n\006Entity\022\014\n\004name\030\001 \001(\t\0228\n\004type\030"
+    "\002 \001(\0162*.google.cloud.language.v1beta1.En"
+    "tity.Type\022E\n\010metadata\030\003 \003(\01323.google.clo"
+    "ud.language.v1beta1.Entity.MetadataEntry"
+    "\022\020\n\010salience\030\004 \001(\002\022>\n\010mentions\030\005 \003(\0132,.g"
+    "oogle.cloud.language.v1beta1.EntityMenti"
+    "on\032/\n\rMetadataEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005valu"
+    "e\030\002 \001(\t:\0028\001\"y\n\004Type\022\013\n\007UNKNOWN\020\000\022\n\n\006PERS"
+    "ON\020\001\022\014\n\010LOCATION\020\002\022\020\n\014ORGANIZATION\020\003\022\t\n\005"
+    "EVENT\020\004\022\017\n\013WORK_OF_ART\020\005\022\021\n\rCONSUMER_GOO"
+    "D\020\006\022\t\n\005OTHER\020\007\"\332\001\n\005Token\0225\n\004text\030\001 \001(\0132\'"
+    ".google.cloud.language.v1beta1.TextSpan\022"
+    "C\n\016part_of_speech\030\002 \001(\0132+.google.cloud.l"
+    "anguage.v1beta1.PartOfSpeech\022F\n\017dependen"
+    "cy_edge\030\003 \001(\0132-.google.cloud.language.v1"
+    "beta1.DependencyEdge\022\r\n\005lemma\030\004 \001(\t\"\?\n\tS"
+    "entiment\022\020\n\010polarity\030\001 \001(\002\022\021\n\tmagnitude\030"
+    "\002 \001(\002\022\r\n\005score\030\003 \001(\002\"\337\020\n\014PartOfSpeech\022<\n"
+    "\003tag\030\001 \001(\0162/.google.cloud.language.v1bet"
+    "a1.PartOfSpeech.Tag\022B\n\006aspect\030\002 \001(\01622.go"
+    "ogle.cloud.language.v1beta1.PartOfSpeech"
+    ".Aspect\022>\n\004case\030\003 \001(\01620.google.cloud.lan"
+    "guage.v1beta1.PartOfSpeech.Case\022>\n\004form\030"
+    "\004 \001(\01620.google.cloud.language.v1beta1.Pa"
+    "rtOfSpeech.Form\022B\n\006gender\030\005 \001(\01622.google"
+    ".cloud.language.v1beta1.PartOfSpeech.Gen"
+    "der\022>\n\004mood\030\006 \001(\01620.google.cloud.languag"
+    "e.v1beta1.PartOfSpeech.Mood\022B\n\006number\030\007 "
+    "\001(\01622.google.cloud.language.v1beta1.Part"
+    "OfSpeech.Number\022B\n\006person\030\010 \001(\01622.google"
+    ".cloud.language.v1beta1.PartOfSpeech.Per"
+    "son\022B\n\006proper\030\t \001(\01622.google.cloud.langu"
+    "age.v1beta1.PartOfSpeech.Proper\022L\n\013recip"
+    "rocity\030\n \001(\01627.google.cloud.language.v1b"
+    "eta1.PartOfSpeech.Reciprocity\022@\n\005tense\030\013"
+    " \001(\01621.google.cloud.language.v1beta1.Par"
+    "tOfSpeech.Tense\022@\n\005voice\030\014 \001(\01621.google."
+    "cloud.language.v1beta1.PartOfSpeech.Voic"
+    "e\"\215\001\n\003Tag\022\013\n\007UNKNOWN\020\000\022\007\n\003ADJ\020\001\022\007\n\003ADP\020\002"
+    "\022\007\n\003ADV\020\003\022\010\n\004CONJ\020\004\022\007\n\003DET\020\005\022\010\n\004NOUN\020\006\022\007"
+    "\n\003NUM\020\007\022\010\n\004PRON\020\010\022\007\n\003PRT\020\t\022\t\n\005PUNCT\020\n\022\010\n"
+    "\004VERB\020\013\022\005\n\001X\020\014\022\t\n\005AFFIX\020\r\"O\n\006Aspect\022\022\n\016A"
+    "SPECT_UNKNOWN\020\000\022\016\n\nPERFECTIVE\020\001\022\020\n\014IMPER"
+    "FECTIVE\020\002\022\017\n\013PROGRESSIVE\020\003\"\370\001\n\004Case\022\020\n\014C"
+    "ASE_UNKNOWN\020\000\022\016\n\nACCUSATIVE\020\001\022\r\n\tADVERBI"
+    "AL\020\002\022\021\n\rCOMPLEMENTIVE\020\003\022\n\n\006DATIVE\020\004\022\014\n\010G"
+    "ENITIVE\020\005\022\020\n\014INSTRUMENTAL\020\006\022\014\n\010LOCATIVE\020"
+    "\007\022\016\n\nNOMINATIVE\020\010\022\013\n\007OBLIQUE\020\t\022\r\n\tPARTIT"
+    "IVE\020\n\022\021\n\rPREPOSITIONAL\020\013\022\022\n\016REFLEXIVE_CA"
+    "SE\020\014\022\021\n\rRELATIVE_CASE\020\r\022\014\n\010VOCATIVE\020\016\"\257\001"
+    "\n\004Form\022\020\n\014FORM_UNKNOWN\020\000\022\014\n\010ADNOMIAL\020\001\022\r"
+    "\n\tAUXILIARY\020\002\022\022\n\016COMPLEMENTIZER\020\003\022\020\n\014FIN"
+    "AL_ENDING\020\004\022\n\n\006GERUND\020\005\022\n\n\006REALIS\020\006\022\014\n\010I"
+    "RREALIS\020\007\022\t\n\005SHORT\020\010\022\010\n\004LONG\020\t\022\t\n\005ORDER\020"
+    "\n\022\014\n\010SPECIFIC\020\013\"E\n\006Gender\022\022\n\016GENDER_UNKN"
+    "OWN\020\000\022\014\n\010FEMININE\020\001\022\r\n\tMASCULINE\020\002\022\n\n\006NE"
+    "UTER\020\003\"\177\n\004Mood\022\020\n\014MOOD_UNKNOWN\020\000\022\024\n\020COND"
+    "ITIONAL_MOOD\020\001\022\016\n\nIMPERATIVE\020\002\022\016\n\nINDICA"
+    "TIVE\020\003\022\021\n\rINTERROGATIVE\020\004\022\013\n\007JUSSIVE\020\005\022\017"
+    "\n\013SUBJUNCTIVE\020\006\"@\n\006Number\022\022\n\016NUMBER_UNKN"
+    "OWN\020\000\022\014\n\010SINGULAR\020\001\022\n\n\006PLURAL\020\002\022\010\n\004DUAL\020"
+    "\003\"T\n\006Person\022\022\n\016PERSON_UNKNOWN\020\000\022\t\n\005FIRST"
+    "\020\001\022\n\n\006SECOND\020\002\022\t\n\005THIRD\020\003\022\024\n\020REFLEXIVE_P"
+    "ERSON\020\004\"8\n\006Proper\022\022\n\016PROPER_UNKNOWN\020\000\022\n\n"
+    "\006PROPER\020\001\022\016\n\nNOT_PROPER\020\002\"J\n\013Reciprocity"
+    "\022\027\n\023RECIPROCITY_UNKNOWN\020\000\022\016\n\nRECIPROCAL\020"
+    "\001\022\022\n\016NON_RECIPROCAL\020\002\"s\n\005Tense\022\021\n\rTENSE_"
+    "UNKNOWN\020\000\022\025\n\021CONDITIONAL_TENSE\020\001\022\n\n\006FUTU"
+    "RE\020\002\022\010\n\004PAST\020\003\022\013\n\007PRESENT\020\004\022\r\n\tIMPERFECT"
+    "\020\005\022\016\n\nPLUPERFECT\020\006\"B\n\005Voice\022\021\n\rVOICE_UNK"
+    "NOWN\020\000\022\n\n\006ACTIVE\020\001\022\r\n\tCAUSATIVE\020\002\022\013\n\007PAS"
+    "SIVE\020\003\"\335\007\n\016DependencyEdge\022\030\n\020head_token_"
+    "index\030\001 \001(\005\022B\n\005label\030\002 \001(\01623.google.clou"
+    "d.language.v1beta1.DependencyEdge.Label\""
+    "\354\006\n\005Label\022\013\n\007UNKNOWN\020\000\022\n\n\006ABBREV\020\001\022\t\n\005AC"
+    "OMP\020\002\022\t\n\005ADVCL\020\003\022\n\n\006ADVMOD\020\004\022\010\n\004AMOD\020\005\022\t"
+    "\n\005APPOS\020\006\022\010\n\004ATTR\020\007\022\007\n\003AUX\020\010\022\013\n\007AUXPASS\020"
+    "\t\022\006\n\002CC\020\n\022\t\n\005CCOMP\020\013\022\010\n\004CONJ\020\014\022\t\n\005CSUBJ\020"
+    "\r\022\r\n\tCSUBJPASS\020\016\022\007\n\003DEP\020\017\022\007\n\003DET\020\020\022\r\n\tDI"
+    "SCOURSE\020\021\022\010\n\004DOBJ\020\022\022\010\n\004EXPL\020\023\022\014\n\010GOESWIT"
+    "H\020\024\022\010\n\004IOBJ\020\025\022\010\n\004MARK\020\026\022\007\n\003MWE\020\027\022\007\n\003MWV\020"
+    "\030\022\007\n\003NEG\020\031\022\006\n\002NN\020\032\022\014\n\010NPADVMOD\020\033\022\t\n\005NSUB"
+    "J\020\034\022\r\n\tNSUBJPASS\020\035\022\007\n\003NUM\020\036\022\n\n\006NUMBER\020\037\022"
+    "\005\n\001P\020 \022\r\n\tPARATAXIS\020!\022\013\n\007PARTMOD\020\"\022\t\n\005PC"
+    "OMP\020#\022\010\n\004POBJ\020$\022\010\n\004POSS\020%\022\013\n\007POSTNEG\020&\022\013"
+    "\n\007PRECOMP\020\'\022\013\n\007PRECONJ\020(\022\n\n\006PREDET\020)\022\010\n\004"
+    "PREF\020*\022\010\n\004PREP\020+\022\t\n\005PRONL\020,\022\007\n\003PRT\020-\022\006\n\002"
+    "PS\020.\022\014\n\010QUANTMOD\020/\022\t\n\005RCMOD\0200\022\014\n\010RCMODRE"
+    "L\0201\022\t\n\005RDROP\0202\022\007\n\003REF\0203\022\013\n\007REMNANT\0204\022\016\n\n"
+    "REPARANDUM\0205\022\010\n\004ROOT\0206\022\010\n\004SNUM\0207\022\010\n\004SUFF"
+    "\0208\022\010\n\004TMOD\0209\022\t\n\005TOPIC\020:\022\010\n\004VMOD\020;\022\014\n\010VOC"
+    "ATIVE\020<\022\t\n\005XCOMP\020=\022\n\n\006SUFFIX\020>\022\t\n\005TITLE\020"
+    "\?\022\014\n\010ADVPHMOD\020@\022\013\n\007AUXCAUS\020A\022\t\n\005AUXVV\020B\022"
+    "\t\n\005DTMOD\020C\022\013\n\007FOREIGN\020D\022\006\n\002KW\020E\022\010\n\004LIST\020"
+    "F\022\010\n\004NOMC\020G\022\014\n\010NOMCSUBJ\020H\022\020\n\014NOMCSUBJPAS"
+    "S\020I\022\010\n\004NUMC\020J\022\007\n\003COP\020K\022\016\n\nDISLOCATED\020L\"\271"
+    "\001\n\rEntityMention\0225\n\004text\030\001 \001(\0132\'.google."
+    "cloud.language.v1beta1.TextSpan\022\?\n\004type\030"
+    "\002 \001(\01621.google.cloud.language.v1beta1.En"
+    "tityMention.Type\"0\n\004Type\022\020\n\014TYPE_UNKNOWN"
+    "\020\000\022\n\n\006PROPER\020\001\022\n\n\006COMMON\020\002\"1\n\010TextSpan\022\017"
+    "\n\007content\030\001 \001(\t\022\024\n\014begin_offset\030\002 \001(\005\"\230\001"
+    "\n\027AnalyzeSentimentRequest\0229\n\010document\030\001 "
+    "\001(\0132\'.google.cloud.language.v1beta1.Docu"
+    "ment\022B\n\rencoding_type\030\002 \001(\0162+.google.clo"
+    "ud.language.v1beta1.EncodingType\"\256\001\n\030Ana"
+    "lyzeSentimentResponse\022D\n\022document_sentim"
+    "ent\030\001 \001(\0132(.google.cloud.language.v1beta"
+    "1.Sentiment\022\020\n\010language\030\002 \001(\t\022:\n\tsentenc"
+    "es\030\003 \003(\0132\'.google.cloud.language.v1beta1"
+    ".Sentence\"\227\001\n\026AnalyzeEntitiesRequest\0229\n\010"
+    "document\030\001 \001(\0132\'.google.cloud.language.v"
+    "1beta1.Document\022B\n\rencoding_type\030\002 \001(\0162+"
+    ".google.cloud.language.v1beta1.EncodingT"
+    "ype\"d\n\027AnalyzeEntitiesResponse\0227\n\010entiti"
+    "es\030\001 \003(\0132%.google.cloud.language.v1beta1"
+    ".Entity\022\020\n\010language\030\002 \001(\t\"\225\001\n\024AnalyzeSyn"
+    "taxRequest\0229\n\010document\030\001 \001(\0132\'.google.cl"
+    "oud.language.v1beta1.Document\022B\n\rencodin"
+    "g_type\030\002 \001(\0162+.google.cloud.language.v1b"
+    "eta1.EncodingType\"\233\001\n\025AnalyzeSyntaxRespo"
+    "nse\022:\n\tsentences\030\001 \003(\0132\'.google.cloud.la"
+    "nguage.v1beta1.Sentence\0224\n\006tokens\030\002 \003(\0132"
+    "$.google.cloud.language.v1beta1.Token\022\020\n"
+    "\010language\030\003 \001(\t\"\305\002\n\023AnnotateTextRequest\022"
+    "9\n\010document\030\001 \001(\0132\'.google.cloud.languag"
+    "e.v1beta1.Document\022M\n\010features\030\002 \001(\0132;.g"
+    "oogle.cloud.language.v1beta1.AnnotateTex"
+    "tRequest.Features\022B\n\rencoding_type\030\003 \001(\016"
+    "2+.google.cloud.language.v1beta1.Encodin"
+    "gType\032`\n\010Features\022\026\n\016extract_syntax\030\001 \001("
+    "\010\022\030\n\020extract_entities\030\002 \001(\010\022\"\n\032extract_d"
+    "ocument_sentiment\030\003 \001(\010\"\231\002\n\024AnnotateText"
+    "Response\022:\n\tsentences\030\001 \003(\0132\'.google.clo"
+    "ud.language.v1beta1.Sentence\0224\n\006tokens\030\002"
+    " \003(\0132$.google.cloud.language.v1beta1.Tok"
+    "en\0227\n\010entities\030\003 \003(\0132%.google.cloud.lang"
+    "uage.v1beta1.Entity\022D\n\022document_sentimen"
+    "t\030\004 \001(\0132(.google.cloud.language.v1beta1."
+    "Sentiment\022\020\n\010language\030\005 \001(\t*8\n\014EncodingT"
+    "ype\022\010\n\004NONE\020\000\022\010\n\004UTF8\020\001\022\t\n\005UTF16\020\002\022\t\n\005UT"
+    "F32\020\0032\311\005\n\017LanguageService\022\263\001\n\020AnalyzeSen"
+    "timent\0226.google.cloud.language.v1beta1.A"
+    "nalyzeSentimentRequest\0327.google.cloud.la"
+    "nguage.v1beta1.AnalyzeSentimentResponse\""
+    ".\202\323\344\223\002(\"#/v1beta1/documents:analyzeSenti"
+    "ment:\001*\022\257\001\n\017AnalyzeEntities\0225.google.clo"
+    "ud.language.v1beta1.AnalyzeEntitiesReque"
+    "st\0326.google.cloud.language.v1beta1.Analy"
+    "zeEntitiesResponse\"-\202\323\344\223\002\'\"\"/v1beta1/doc"
+    "uments:analyzeEntities:\001*\022\247\001\n\rAnalyzeSyn"
+    "tax\0223.google.cloud.language.v1beta1.Anal"
+    "yzeSyntaxRequest\0324.google.cloud.language"
+    ".v1beta1.AnalyzeSyntaxResponse\"+\202\323\344\223\002%\" "
+    "/v1beta1/documents:analyzeSyntax:\001*\022\243\001\n\014"
+    "AnnotateText\0222.google.cloud.language.v1b"
+    "eta1.AnnotateTextRequest\0323.google.cloud."
+    "language.v1beta1.AnnotateTextResponse\"*\202"
+    "\323\344\223\002$\"\037/v1beta1/documents:annotateText:\001"
+    "*B\202\001\n!com.google.cloud.language.v1beta1B"
+    "\024LanguageServiceProtoP\001ZEgoogle.golang.o"
+    "rg/genproto/googleapis/cloud/language/v1"
+    "beta1;languageb\006proto3", 6942);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/cloud/language/v1beta1/language_service.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -581,9 +782,38 @@ struct StaticDescriptorInitializer_google_2fcloud_2flanguage_2fv1beta1_2flanguag
     protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   }
 } static_descriptor_initializer_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_;
+const ::google::protobuf::EnumDescriptor* EncodingType_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return EncodingType_descriptor_;
+}
+bool EncodingType_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+      return true;
+    default:
+      return false;
+  }
+}
+
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
+// ===================================================================
+
 const ::google::protobuf::EnumDescriptor* Document_Type_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
+  return Document_Type_descriptor_;
 }
 bool Document_Type_IsValid(int value) {
   switch (value) {
@@ -604,9 +834,1021 @@ const Document_Type Document::Type_MIN;
 const Document_Type Document::Type_MAX;
 const int Document::Type_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int Document::kTypeFieldNumber;
+const int Document::kContentFieldNumber;
+const int Document::kGcsContentUriFieldNumber;
+const int Document::kLanguageFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+Document::Document()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.Document)
+}
+
+void Document::InitAsDefaultInstance() {
+  Document_default_oneof_instance_->content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  Document_default_oneof_instance_->gcs_content_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+Document::Document(const Document& from)
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.Document)
+}
+
+void Document::SharedCtor() {
+  language_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  type_ = 0;
+  clear_has_source();
+  _cached_size_ = 0;
+}
+
+Document::~Document() {
+  // @@protoc_insertion_point(destructor:google.cloud.language.v1beta1.Document)
+  SharedDtor();
+}
+
+void Document::SharedDtor() {
+  language_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (has_source()) {
+    clear_source();
+  }
+}
+
+void Document::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* Document::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return Document_descriptor_;
+}
+
+const Document& Document::default_instance() {
+  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  return *internal_default_instance();
+}
+
+::google::protobuf::internal::ExplicitlyConstructed<Document> Document_default_instance_;
+
+Document* Document::New(::google::protobuf::Arena* arena) const {
+  Document* n = new Document;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void Document::clear_source() {
+// @@protoc_insertion_point(one_of_clear_start:google.cloud.language.v1beta1.Document)
+  switch (source_case()) {
+    case kContent: {
+      source_.content_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+      break;
+    }
+    case kGcsContentUri: {
+      source_.gcs_content_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+      break;
+    }
+    case SOURCE_NOT_SET: {
+      break;
+    }
+  }
+  _oneof_case_[0] = SOURCE_NOT_SET;
+}
+
+
+void Document::Clear() {
+// @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.Document)
+  type_ = 0;
+  language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  clear_source();
+}
+
+bool Document::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.Document)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional .google.cloud.language.v1beta1.Document.Type type = 1;
+      case 1: {
+        if (tag == 8) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_type(static_cast< ::google::cloud::language::v1beta1::Document_Type >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(18)) goto parse_content;
+        break;
+      }
+
+      // optional string content = 2;
+      case 2: {
+        if (tag == 18) {
+         parse_content:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_content()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->content().data(), this->content().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "google.cloud.language.v1beta1.Document.content"));
+        } else {
+          goto handle_unusual;
+        }
+        goto after_gcs_content_uri;
+        break;
+      }
+
+      // optional string gcs_content_uri = 3;
+      case 3: {
+        if (tag == 26) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_gcs_content_uri()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->gcs_content_uri().data(), this->gcs_content_uri().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "google.cloud.language.v1beta1.Document.gcs_content_uri"));
+        } else {
+          goto handle_unusual;
+        }
+       after_gcs_content_uri:
+        if (input->ExpectTag(34)) goto parse_language;
+        break;
+      }
+
+      // optional string language = 4;
+      case 4: {
+        if (tag == 34) {
+         parse_language:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_language()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->language().data(), this->language().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "google.cloud.language.v1beta1.Document.language"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:google.cloud.language.v1beta1.Document)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:google.cloud.language.v1beta1.Document)
+  return false;
+#undef DO_
+}
+
+void Document::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.Document)
+  // optional .google.cloud.language.v1beta1.Document.Type type = 1;
+  if (this->type() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      1, this->type(), output);
+  }
+
+  // optional string content = 2;
+  if (has_content()) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->content().data(), this->content().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.cloud.language.v1beta1.Document.content");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->content(), output);
+  }
+
+  // optional string gcs_content_uri = 3;
+  if (has_gcs_content_uri()) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->gcs_content_uri().data(), this->gcs_content_uri().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.cloud.language.v1beta1.Document.gcs_content_uri");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      3, this->gcs_content_uri(), output);
+  }
+
+  // optional string language = 4;
+  if (this->language().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->language().data(), this->language().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.cloud.language.v1beta1.Document.language");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      4, this->language(), output);
+  }
+
+  // @@protoc_insertion_point(serialize_end:google.cloud.language.v1beta1.Document)
+}
+
+::google::protobuf::uint8* Document::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.Document)
+  // optional .google.cloud.language.v1beta1.Document.Type type = 1;
+  if (this->type() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      1, this->type(), target);
+  }
+
+  // optional string content = 2;
+  if (has_content()) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->content().data(), this->content().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.cloud.language.v1beta1.Document.content");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        2, this->content(), target);
+  }
+
+  // optional string gcs_content_uri = 3;
+  if (has_gcs_content_uri()) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->gcs_content_uri().data(), this->gcs_content_uri().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.cloud.language.v1beta1.Document.gcs_content_uri");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        3, this->gcs_content_uri(), target);
+  }
+
+  // optional string language = 4;
+  if (this->language().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->language().data(), this->language().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.cloud.language.v1beta1.Document.language");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        4, this->language(), target);
+  }
+
+  // @@protoc_insertion_point(serialize_to_array_end:google.cloud.language.v1beta1.Document)
+  return target;
+}
+
+size_t Document::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.Document)
+  size_t total_size = 0;
+
+  // optional .google.cloud.language.v1beta1.Document.Type type = 1;
+  if (this->type() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
+  }
+
+  // optional string language = 4;
+  if (this->language().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->language());
+  }
+
+  switch (source_case()) {
+    // optional string content = 2;
+    case kContent: {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->content());
+      break;
+    }
+    // optional string gcs_content_uri = 3;
+    case kGcsContentUri: {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->gcs_content_uri());
+      break;
+    }
+    case SOURCE_NOT_SET: {
+      break;
+    }
+  }
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void Document::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.Document)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Document* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const Document>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.cloud.language.v1beta1.Document)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.Document)
+    UnsafeMergeFrom(*source);
+  }
+}
+
+void Document::MergeFrom(const Document& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.Document)
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Document::UnsafeMergeFrom(const Document& from) {
+  GOOGLE_DCHECK(&from != this);
+  switch (from.source_case()) {
+    case kContent: {
+      set_content(from.content());
+      break;
+    }
+    case kGcsContentUri: {
+      set_gcs_content_uri(from.gcs_content_uri());
+      break;
+    }
+    case SOURCE_NOT_SET: {
+      break;
+    }
+  }
+  if (from.type() != 0) {
+    set_type(from.type());
+  }
+  if (from.language().size() > 0) {
+
+    language_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.language_);
+  }
+}
+
+void Document::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:google.cloud.language.v1beta1.Document)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Document::CopyFrom(const Document& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.Document)
+  if (&from == this) return;
+  Clear();
+  UnsafeMergeFrom(from);
+}
+
+bool Document::IsInitialized() const {
+
+  return true;
+}
+
+void Document::Swap(Document* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Document::InternalSwap(Document* other) {
+  std::swap(type_, other->type_);
+  language_.Swap(&other->language_);
+  std::swap(source_, other->source_);
+  std::swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata Document::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Document_descriptor_;
+  metadata.reflection = Document_reflection_;
+  return metadata;
+}
+
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Document
+
+// optional .google.cloud.language.v1beta1.Document.Type type = 1;
+void Document::clear_type() {
+  type_ = 0;
+}
+::google::cloud::language::v1beta1::Document_Type Document::type() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Document.type)
+  return static_cast< ::google::cloud::language::v1beta1::Document_Type >(type_);
+}
+void Document::set_type(::google::cloud::language::v1beta1::Document_Type value) {
+  
+  type_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Document.type)
+}
+
+// optional string content = 2;
+bool Document::has_content() const {
+  return source_case() == kContent;
+}
+void Document::set_has_content() {
+  _oneof_case_[0] = kContent;
+}
+void Document::clear_content() {
+  if (has_content()) {
+    source_.content_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+    clear_has_source();
+  }
+}
+const ::std::string& Document::content() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Document.content)
+  if (has_content()) {
+    return source_.content_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  }
+  return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
+}
+void Document::set_content(const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Document.content)
+  if (!has_content()) {
+    clear_source();
+    set_has_content();
+    source_.content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  }
+  source_.content_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Document.content)
+}
+void Document::set_content(const char* value) {
+  if (!has_content()) {
+    clear_source();
+    set_has_content();
+    source_.content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  }
+  source_.content_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:google.cloud.language.v1beta1.Document.content)
+}
+void Document::set_content(const char* value, size_t size) {
+  if (!has_content()) {
+    clear_source();
+    set_has_content();
+    source_.content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  }
+  source_.content_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+      reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:google.cloud.language.v1beta1.Document.content)
+}
+::std::string* Document::mutable_content() {
+  if (!has_content()) {
+    clear_source();
+    set_has_content();
+    source_.content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  }
+  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Document.content)
+  return source_.content_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+::std::string* Document::release_content() {
+  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Document.content)
+  if (has_content()) {
+    clear_has_source();
+    return source_.content_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  } else {
+    return NULL;
+  }
+}
+void Document::set_allocated_content(::std::string* content) {
+  if (!has_content()) {
+    source_.content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  }
+  clear_source();
+  if (content != NULL) {
+    set_has_content();
+    source_.content_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+        content);
+  }
+  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Document.content)
+}
+
+// optional string gcs_content_uri = 3;
+bool Document::has_gcs_content_uri() const {
+  return source_case() == kGcsContentUri;
+}
+void Document::set_has_gcs_content_uri() {
+  _oneof_case_[0] = kGcsContentUri;
+}
+void Document::clear_gcs_content_uri() {
+  if (has_gcs_content_uri()) {
+    source_.gcs_content_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+    clear_has_source();
+  }
+}
+const ::std::string& Document::gcs_content_uri() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Document.gcs_content_uri)
+  if (has_gcs_content_uri()) {
+    return source_.gcs_content_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  }
+  return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
+}
+void Document::set_gcs_content_uri(const ::std::string& value) {
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Document.gcs_content_uri)
+  if (!has_gcs_content_uri()) {
+    clear_source();
+    set_has_gcs_content_uri();
+    source_.gcs_content_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  }
+  source_.gcs_content_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Document.gcs_content_uri)
+}
+void Document::set_gcs_content_uri(const char* value) {
+  if (!has_gcs_content_uri()) {
+    clear_source();
+    set_has_gcs_content_uri();
+    source_.gcs_content_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  }
+  source_.gcs_content_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:google.cloud.language.v1beta1.Document.gcs_content_uri)
+}
+void Document::set_gcs_content_uri(const char* value, size_t size) {
+  if (!has_gcs_content_uri()) {
+    clear_source();
+    set_has_gcs_content_uri();
+    source_.gcs_content_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  }
+  source_.gcs_content_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+      reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:google.cloud.language.v1beta1.Document.gcs_content_uri)
+}
+::std::string* Document::mutable_gcs_content_uri() {
+  if (!has_gcs_content_uri()) {
+    clear_source();
+    set_has_gcs_content_uri();
+    source_.gcs_content_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  }
+  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Document.gcs_content_uri)
+  return source_.gcs_content_uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+::std::string* Document::release_gcs_content_uri() {
+  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Document.gcs_content_uri)
+  if (has_gcs_content_uri()) {
+    clear_has_source();
+    return source_.gcs_content_uri_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  } else {
+    return NULL;
+  }
+}
+void Document::set_allocated_gcs_content_uri(::std::string* gcs_content_uri) {
+  if (!has_gcs_content_uri()) {
+    source_.gcs_content_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  }
+  clear_source();
+  if (gcs_content_uri != NULL) {
+    set_has_gcs_content_uri();
+    source_.gcs_content_uri_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+        gcs_content_uri);
+  }
+  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Document.gcs_content_uri)
+}
+
+// optional string language = 4;
+void Document::clear_language() {
+  language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+const ::std::string& Document::language() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Document.language)
+  return language_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Document::set_language(const ::std::string& value) {
+  
+  language_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Document.language)
+}
+void Document::set_language(const char* value) {
+  
+  language_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:google.cloud.language.v1beta1.Document.language)
+}
+void Document::set_language(const char* value, size_t size) {
+  
+  language_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:google.cloud.language.v1beta1.Document.language)
+}
+::std::string* Document::mutable_language() {
+  
+  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Document.language)
+  return language_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+::std::string* Document::release_language() {
+  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Document.language)
+  
+  return language_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Document::set_allocated_language(::std::string* language) {
+  if (language != NULL) {
+    
+  } else {
+    
+  }
+  language_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), language);
+  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Document.language)
+}
+
+bool Document::has_source() const {
+  return source_case() != SOURCE_NOT_SET;
+}
+void Document::clear_has_source() {
+  _oneof_case_[0] = SOURCE_NOT_SET;
+}
+Document::SourceCase Document::source_case() const {
+  return Document::SourceCase(_oneof_case_[0]);
+}
+inline const Document* Document::internal_default_instance() {
+  return &Document_default_instance_.get();
+}
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int Sentence::kTextFieldNumber;
+const int Sentence::kSentimentFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+Sentence::Sentence()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.Sentence)
+}
+
+void Sentence::InitAsDefaultInstance() {
+  text_ = const_cast< ::google::cloud::language::v1beta1::TextSpan*>(
+      ::google::cloud::language::v1beta1::TextSpan::internal_default_instance());
+  sentiment_ = const_cast< ::google::cloud::language::v1beta1::Sentiment*>(
+      ::google::cloud::language::v1beta1::Sentiment::internal_default_instance());
+}
+
+Sentence::Sentence(const Sentence& from)
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.Sentence)
+}
+
+void Sentence::SharedCtor() {
+  text_ = NULL;
+  sentiment_ = NULL;
+  _cached_size_ = 0;
+}
+
+Sentence::~Sentence() {
+  // @@protoc_insertion_point(destructor:google.cloud.language.v1beta1.Sentence)
+  SharedDtor();
+}
+
+void Sentence::SharedDtor() {
+  if (this != &Sentence_default_instance_.get()) {
+    delete text_;
+    delete sentiment_;
+  }
+}
+
+void Sentence::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* Sentence::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return Sentence_descriptor_;
+}
+
+const Sentence& Sentence::default_instance() {
+  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  return *internal_default_instance();
+}
+
+::google::protobuf::internal::ExplicitlyConstructed<Sentence> Sentence_default_instance_;
+
+Sentence* Sentence::New(::google::protobuf::Arena* arena) const {
+  Sentence* n = new Sentence;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void Sentence::Clear() {
+// @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.Sentence)
+  if (GetArenaNoVirtual() == NULL && text_ != NULL) delete text_;
+  text_ = NULL;
+  if (GetArenaNoVirtual() == NULL && sentiment_ != NULL) delete sentiment_;
+  sentiment_ = NULL;
+}
+
+bool Sentence::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.Sentence)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional .google.cloud.language.v1beta1.TextSpan text = 1;
+      case 1: {
+        if (tag == 10) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_text()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(18)) goto parse_sentiment;
+        break;
+      }
+
+      // optional .google.cloud.language.v1beta1.Sentiment sentiment = 2;
+      case 2: {
+        if (tag == 18) {
+         parse_sentiment:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_sentiment()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:google.cloud.language.v1beta1.Sentence)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:google.cloud.language.v1beta1.Sentence)
+  return false;
+#undef DO_
+}
+
+void Sentence::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.Sentence)
+  // optional .google.cloud.language.v1beta1.TextSpan text = 1;
+  if (this->has_text()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, *this->text_, output);
+  }
+
+  // optional .google.cloud.language.v1beta1.Sentiment sentiment = 2;
+  if (this->has_sentiment()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, *this->sentiment_, output);
+  }
+
+  // @@protoc_insertion_point(serialize_end:google.cloud.language.v1beta1.Sentence)
+}
+
+::google::protobuf::uint8* Sentence::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.Sentence)
+  // optional .google.cloud.language.v1beta1.TextSpan text = 1;
+  if (this->has_text()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageNoVirtualToArray(
+        1, *this->text_, false, target);
+  }
+
+  // optional .google.cloud.language.v1beta1.Sentiment sentiment = 2;
+  if (this->has_sentiment()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageNoVirtualToArray(
+        2, *this->sentiment_, false, target);
+  }
+
+  // @@protoc_insertion_point(serialize_to_array_end:google.cloud.language.v1beta1.Sentence)
+  return target;
+}
+
+size_t Sentence::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.Sentence)
+  size_t total_size = 0;
+
+  // optional .google.cloud.language.v1beta1.TextSpan text = 1;
+  if (this->has_text()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->text_);
+  }
+
+  // optional .google.cloud.language.v1beta1.Sentiment sentiment = 2;
+  if (this->has_sentiment()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->sentiment_);
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void Sentence::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.Sentence)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Sentence* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const Sentence>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.cloud.language.v1beta1.Sentence)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.Sentence)
+    UnsafeMergeFrom(*source);
+  }
+}
+
+void Sentence::MergeFrom(const Sentence& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.Sentence)
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Sentence::UnsafeMergeFrom(const Sentence& from) {
+  GOOGLE_DCHECK(&from != this);
+  if (from.has_text()) {
+    mutable_text()->::google::cloud::language::v1beta1::TextSpan::MergeFrom(from.text());
+  }
+  if (from.has_sentiment()) {
+    mutable_sentiment()->::google::cloud::language::v1beta1::Sentiment::MergeFrom(from.sentiment());
+  }
+}
+
+void Sentence::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:google.cloud.language.v1beta1.Sentence)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Sentence::CopyFrom(const Sentence& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.Sentence)
+  if (&from == this) return;
+  Clear();
+  UnsafeMergeFrom(from);
+}
+
+bool Sentence::IsInitialized() const {
+
+  return true;
+}
+
+void Sentence::Swap(Sentence* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Sentence::InternalSwap(Sentence* other) {
+  std::swap(text_, other->text_);
+  std::swap(sentiment_, other->sentiment_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata Sentence::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Sentence_descriptor_;
+  metadata.reflection = Sentence_reflection_;
+  return metadata;
+}
+
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Sentence
+
+// optional .google.cloud.language.v1beta1.TextSpan text = 1;
+bool Sentence::has_text() const {
+  return this != internal_default_instance() && text_ != NULL;
+}
+void Sentence::clear_text() {
+  if (GetArenaNoVirtual() == NULL && text_ != NULL) delete text_;
+  text_ = NULL;
+}
+const ::google::cloud::language::v1beta1::TextSpan& Sentence::text() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Sentence.text)
+  return text_ != NULL ? *text_
+                         : *::google::cloud::language::v1beta1::TextSpan::internal_default_instance();
+}
+::google::cloud::language::v1beta1::TextSpan* Sentence::mutable_text() {
+  
+  if (text_ == NULL) {
+    text_ = new ::google::cloud::language::v1beta1::TextSpan;
+  }
+  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Sentence.text)
+  return text_;
+}
+::google::cloud::language::v1beta1::TextSpan* Sentence::release_text() {
+  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Sentence.text)
+  
+  ::google::cloud::language::v1beta1::TextSpan* temp = text_;
+  text_ = NULL;
+  return temp;
+}
+void Sentence::set_allocated_text(::google::cloud::language::v1beta1::TextSpan* text) {
+  delete text_;
+  text_ = text;
+  if (text) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Sentence.text)
+}
+
+// optional .google.cloud.language.v1beta1.Sentiment sentiment = 2;
+bool Sentence::has_sentiment() const {
+  return this != internal_default_instance() && sentiment_ != NULL;
+}
+void Sentence::clear_sentiment() {
+  if (GetArenaNoVirtual() == NULL && sentiment_ != NULL) delete sentiment_;
+  sentiment_ = NULL;
+}
+const ::google::cloud::language::v1beta1::Sentiment& Sentence::sentiment() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Sentence.sentiment)
+  return sentiment_ != NULL ? *sentiment_
+                         : *::google::cloud::language::v1beta1::Sentiment::internal_default_instance();
+}
+::google::cloud::language::v1beta1::Sentiment* Sentence::mutable_sentiment() {
+  
+  if (sentiment_ == NULL) {
+    sentiment_ = new ::google::cloud::language::v1beta1::Sentiment;
+  }
+  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Sentence.sentiment)
+  return sentiment_;
+}
+::google::cloud::language::v1beta1::Sentiment* Sentence::release_sentiment() {
+  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Sentence.sentiment)
+  
+  ::google::cloud::language::v1beta1::Sentiment* temp = sentiment_;
+  sentiment_ = NULL;
+  return temp;
+}
+void Sentence::set_allocated_sentiment(::google::cloud::language::v1beta1::Sentiment* sentiment) {
+  delete sentiment_;
+  sentiment_ = sentiment;
+  if (sentiment) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Sentence.sentiment)
+}
+
+inline const Sentence* Sentence::internal_default_instance() {
+  return &Sentence_default_instance_.get();
+}
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
 const ::google::protobuf::EnumDescriptor* Entity_Type_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[1];
+  return Entity_Type_descriptor_;
 }
 bool Entity_Type_IsValid(int value) {
   switch (value) {
@@ -637,9 +1879,1580 @@ const Entity_Type Entity::Type_MIN;
 const Entity_Type Entity::Type_MAX;
 const int Entity::Type_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int Entity::kNameFieldNumber;
+const int Entity::kTypeFieldNumber;
+const int Entity::kMetadataFieldNumber;
+const int Entity::kSalienceFieldNumber;
+const int Entity::kMentionsFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+Entity::Entity()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.Entity)
+}
+
+void Entity::InitAsDefaultInstance() {
+}
+
+Entity::Entity(const Entity& from)
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.Entity)
+}
+
+void Entity::SharedCtor() {
+  metadata_.SetAssignDescriptorCallback(
+      protobuf_AssignDescriptorsOnce);
+  metadata_.SetEntryDescriptor(
+      &::google::cloud::language::v1beta1::Entity_MetadataEntry_descriptor_);
+  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(&type_, 0, reinterpret_cast<char*>(&salience_) -
+    reinterpret_cast<char*>(&type_) + sizeof(salience_));
+  _cached_size_ = 0;
+}
+
+Entity::~Entity() {
+  // @@protoc_insertion_point(destructor:google.cloud.language.v1beta1.Entity)
+  SharedDtor();
+}
+
+void Entity::SharedDtor() {
+  name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+void Entity::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* Entity::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return Entity_descriptor_;
+}
+
+const Entity& Entity::default_instance() {
+  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  return *internal_default_instance();
+}
+
+::google::protobuf::internal::ExplicitlyConstructed<Entity> Entity_default_instance_;
+
+Entity* Entity::New(::google::protobuf::Arena* arena) const {
+  Entity* n = new Entity;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void Entity::Clear() {
+// @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.Entity)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(Entity, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<Entity*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(type_, salience_);
+  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+
+#undef ZR_HELPER_
+#undef ZR_
+
+  metadata_.Clear();
+  mentions_.Clear();
+}
+
+bool Entity::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.Entity)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional string name = 1;
+      case 1: {
+        if (tag == 10) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_name()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->name().data(), this->name().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "google.cloud.language.v1beta1.Entity.name"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(16)) goto parse_type;
+        break;
+      }
+
+      // optional .google.cloud.language.v1beta1.Entity.Type type = 2;
+      case 2: {
+        if (tag == 16) {
+         parse_type:
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_type(static_cast< ::google::cloud::language::v1beta1::Entity_Type >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(26)) goto parse_metadata;
+        break;
+      }
+
+      // map<string, string> metadata = 3;
+      case 3: {
+        if (tag == 26) {
+         parse_metadata:
+          DO_(input->IncrementRecursionDepth());
+         parse_loop_metadata:
+          Entity_MetadataEntry::Parser< ::google::protobuf::internal::MapField<
+              ::std::string, ::std::string,
+              ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+              ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
+              0 >,
+            ::google::protobuf::Map< ::std::string, ::std::string > > parser(&metadata_);
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+              input, &parser));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            parser.key().data(), parser.key().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "google.cloud.language.v1beta1.Entity.MetadataEntry.key"));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            parser.value().data(), parser.value().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "google.cloud.language.v1beta1.Entity.MetadataEntry.value"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(26)) goto parse_loop_metadata;
+        input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(37)) goto parse_salience;
+        break;
+      }
+
+      // optional float salience = 4;
+      case 4: {
+        if (tag == 37) {
+         parse_salience:
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &salience_)));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(42)) goto parse_mentions;
+        break;
+      }
+
+      // repeated .google.cloud.language.v1beta1.EntityMention mentions = 5;
+      case 5: {
+        if (tag == 42) {
+         parse_mentions:
+          DO_(input->IncrementRecursionDepth());
+         parse_loop_mentions:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
+                input, add_mentions()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(42)) goto parse_loop_mentions;
+        input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:google.cloud.language.v1beta1.Entity)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:google.cloud.language.v1beta1.Entity)
+  return false;
+#undef DO_
+}
+
+void Entity::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.Entity)
+  // optional string name = 1;
+  if (this->name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->name().data(), this->name().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.cloud.language.v1beta1.Entity.name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->name(), output);
+  }
+
+  // optional .google.cloud.language.v1beta1.Entity.Type type = 2;
+  if (this->type() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      2, this->type(), output);
+  }
+
+  // map<string, string> metadata = 3;
+  if (!this->metadata().empty()) {
+    typedef ::google::protobuf::Map< ::std::string, ::std::string >::const_pointer
+        ConstPtr;
+    typedef ConstPtr SortItem;
+    typedef ::google::protobuf::internal::CompareByDerefFirst<SortItem> Less;
+    struct Utf8Check {
+      static void Check(ConstPtr p) {
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          p->first.data(), p->first.length(),
+          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+          "google.cloud.language.v1beta1.Entity.MetadataEntry.key");
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          p->second.data(), p->second.length(),
+          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+          "google.cloud.language.v1beta1.Entity.MetadataEntry.value");
+      }
+    };
+
+    if (output->IsSerializationDeterminstic() &&
+        this->metadata().size() > 1) {
+      ::google::protobuf::scoped_array<SortItem> items(
+          new SortItem[this->metadata().size()]);
+      typedef ::google::protobuf::Map< ::std::string, ::std::string >::size_type size_type;
+      size_type n = 0;
+      for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
+          it = this->metadata().begin();
+          it != this->metadata().end(); ++it, ++n) {
+        items[n] = SortItem(&*it);
+      }
+      ::std::sort(&items[0], &items[n], Less());
+      ::google::protobuf::scoped_ptr<Entity_MetadataEntry> entry;
+      for (size_type i = 0; i < n; i++) {
+        entry.reset(metadata_.NewEntryWrapper(
+            items[i]->first, items[i]->second));
+        ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+            3, *entry, output);
+        Utf8Check::Check(items[i]);
+      }
+    } else {
+      ::google::protobuf::scoped_ptr<Entity_MetadataEntry> entry;
+      for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
+          it = this->metadata().begin();
+          it != this->metadata().end(); ++it) {
+        entry.reset(metadata_.NewEntryWrapper(
+            it->first, it->second));
+        ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+            3, *entry, output);
+        Utf8Check::Check(&*it);
+      }
+    }
+  }
+
+  // optional float salience = 4;
+  if (this->salience() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(4, this->salience(), output);
+  }
+
+  // repeated .google.cloud.language.v1beta1.EntityMention mentions = 5;
+  for (unsigned int i = 0, n = this->mentions_size(); i < n; i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      5, this->mentions(i), output);
+  }
+
+  // @@protoc_insertion_point(serialize_end:google.cloud.language.v1beta1.Entity)
+}
+
+::google::protobuf::uint8* Entity::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.Entity)
+  // optional string name = 1;
+  if (this->name().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->name().data(), this->name().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.cloud.language.v1beta1.Entity.name");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        1, this->name(), target);
+  }
+
+  // optional .google.cloud.language.v1beta1.Entity.Type type = 2;
+  if (this->type() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      2, this->type(), target);
+  }
+
+  // map<string, string> metadata = 3;
+  if (!this->metadata().empty()) {
+    typedef ::google::protobuf::Map< ::std::string, ::std::string >::const_pointer
+        ConstPtr;
+    typedef ConstPtr SortItem;
+    typedef ::google::protobuf::internal::CompareByDerefFirst<SortItem> Less;
+    struct Utf8Check {
+      static void Check(ConstPtr p) {
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          p->first.data(), p->first.length(),
+          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+          "google.cloud.language.v1beta1.Entity.MetadataEntry.key");
+        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+          p->second.data(), p->second.length(),
+          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+          "google.cloud.language.v1beta1.Entity.MetadataEntry.value");
+      }
+    };
+
+    if (deterministic &&
+        this->metadata().size() > 1) {
+      ::google::protobuf::scoped_array<SortItem> items(
+          new SortItem[this->metadata().size()]);
+      typedef ::google::protobuf::Map< ::std::string, ::std::string >::size_type size_type;
+      size_type n = 0;
+      for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
+          it = this->metadata().begin();
+          it != this->metadata().end(); ++it, ++n) {
+        items[n] = SortItem(&*it);
+      }
+      ::std::sort(&items[0], &items[n], Less());
+      ::google::protobuf::scoped_ptr<Entity_MetadataEntry> entry;
+      for (size_type i = 0; i < n; i++) {
+        entry.reset(metadata_.NewEntryWrapper(
+            items[i]->first, items[i]->second));
+        target = ::google::protobuf::internal::WireFormatLite::
+                   InternalWriteMessageNoVirtualToArray(
+                       3, *entry, deterministic, target);
+;
+        Utf8Check::Check(items[i]);
+      }
+    } else {
+      ::google::protobuf::scoped_ptr<Entity_MetadataEntry> entry;
+      for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
+          it = this->metadata().begin();
+          it != this->metadata().end(); ++it) {
+        entry.reset(metadata_.NewEntryWrapper(
+            it->first, it->second));
+        target = ::google::protobuf::internal::WireFormatLite::
+                   InternalWriteMessageNoVirtualToArray(
+                       3, *entry, deterministic, target);
+;
+        Utf8Check::Check(&*it);
+      }
+    }
+  }
+
+  // optional float salience = 4;
+  if (this->salience() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(4, this->salience(), target);
+  }
+
+  // repeated .google.cloud.language.v1beta1.EntityMention mentions = 5;
+  for (unsigned int i = 0, n = this->mentions_size(); i < n; i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageNoVirtualToArray(
+        5, this->mentions(i), false, target);
+  }
+
+  // @@protoc_insertion_point(serialize_to_array_end:google.cloud.language.v1beta1.Entity)
+  return target;
+}
+
+size_t Entity::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.Entity)
+  size_t total_size = 0;
+
+  // optional string name = 1;
+  if (this->name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->name());
+  }
+
+  // optional .google.cloud.language.v1beta1.Entity.Type type = 2;
+  if (this->type() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
+  }
+
+  // optional float salience = 4;
+  if (this->salience() != 0) {
+    total_size += 1 + 4;
+  }
+
+  // map<string, string> metadata = 3;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->metadata_size());
+  {
+    ::google::protobuf::scoped_ptr<Entity_MetadataEntry> entry;
+    for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
+        it = this->metadata().begin();
+        it != this->metadata().end(); ++it) {
+      entry.reset(metadata_.NewEntryWrapper(it->first, it->second));
+      total_size += ::google::protobuf::internal::WireFormatLite::
+          MessageSizeNoVirtual(*entry);
+    }
+  }
+
+  // repeated .google.cloud.language.v1beta1.EntityMention mentions = 5;
+  {
+    unsigned int count = this->mentions_size();
+    total_size += 1UL * count;
+    for (unsigned int i = 0; i < count; i++) {
+      total_size +=
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->mentions(i));
+    }
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void Entity::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.Entity)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Entity* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const Entity>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.cloud.language.v1beta1.Entity)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.Entity)
+    UnsafeMergeFrom(*source);
+  }
+}
+
+void Entity::MergeFrom(const Entity& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.Entity)
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Entity::UnsafeMergeFrom(const Entity& from) {
+  GOOGLE_DCHECK(&from != this);
+  metadata_.MergeFrom(from.metadata_);
+  mentions_.MergeFrom(from.mentions_);
+  if (from.name().size() > 0) {
+
+    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
+  }
+  if (from.type() != 0) {
+    set_type(from.type());
+  }
+  if (from.salience() != 0) {
+    set_salience(from.salience());
+  }
+}
+
+void Entity::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:google.cloud.language.v1beta1.Entity)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Entity::CopyFrom(const Entity& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.Entity)
+  if (&from == this) return;
+  Clear();
+  UnsafeMergeFrom(from);
+}
+
+bool Entity::IsInitialized() const {
+
+  return true;
+}
+
+void Entity::Swap(Entity* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Entity::InternalSwap(Entity* other) {
+  name_.Swap(&other->name_);
+  std::swap(type_, other->type_);
+  metadata_.Swap(&other->metadata_);
+  std::swap(salience_, other->salience_);
+  mentions_.UnsafeArenaSwap(&other->mentions_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata Entity::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Entity_descriptor_;
+  metadata.reflection = Entity_reflection_;
+  return metadata;
+}
+
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Entity
+
+// optional string name = 1;
+void Entity::clear_name() {
+  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+const ::std::string& Entity::name() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Entity.name)
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Entity::set_name(const ::std::string& value) {
+  
+  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Entity.name)
+}
+void Entity::set_name(const char* value) {
+  
+  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:google.cloud.language.v1beta1.Entity.name)
+}
+void Entity::set_name(const char* value, size_t size) {
+  
+  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:google.cloud.language.v1beta1.Entity.name)
+}
+::std::string* Entity::mutable_name() {
+  
+  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Entity.name)
+  return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+::std::string* Entity::release_name() {
+  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Entity.name)
+  
+  return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Entity::set_allocated_name(::std::string* name) {
+  if (name != NULL) {
+    
+  } else {
+    
+  }
+  name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name);
+  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Entity.name)
+}
+
+// optional .google.cloud.language.v1beta1.Entity.Type type = 2;
+void Entity::clear_type() {
+  type_ = 0;
+}
+::google::cloud::language::v1beta1::Entity_Type Entity::type() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Entity.type)
+  return static_cast< ::google::cloud::language::v1beta1::Entity_Type >(type_);
+}
+void Entity::set_type(::google::cloud::language::v1beta1::Entity_Type value) {
+  
+  type_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Entity.type)
+}
+
+// map<string, string> metadata = 3;
+int Entity::metadata_size() const {
+  return metadata_.size();
+}
+void Entity::clear_metadata() {
+  metadata_.Clear();
+}
+ const ::google::protobuf::Map< ::std::string, ::std::string >&
+Entity::metadata() const {
+  // @@protoc_insertion_point(field_map:google.cloud.language.v1beta1.Entity.metadata)
+  return metadata_.GetMap();
+}
+ ::google::protobuf::Map< ::std::string, ::std::string >*
+Entity::mutable_metadata() {
+  // @@protoc_insertion_point(field_mutable_map:google.cloud.language.v1beta1.Entity.metadata)
+  return metadata_.MutableMap();
+}
+
+// optional float salience = 4;
+void Entity::clear_salience() {
+  salience_ = 0;
+}
+float Entity::salience() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Entity.salience)
+  return salience_;
+}
+void Entity::set_salience(float value) {
+  
+  salience_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Entity.salience)
+}
+
+// repeated .google.cloud.language.v1beta1.EntityMention mentions = 5;
+int Entity::mentions_size() const {
+  return mentions_.size();
+}
+void Entity::clear_mentions() {
+  mentions_.Clear();
+}
+const ::google::cloud::language::v1beta1::EntityMention& Entity::mentions(int index) const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Entity.mentions)
+  return mentions_.Get(index);
+}
+::google::cloud::language::v1beta1::EntityMention* Entity::mutable_mentions(int index) {
+  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Entity.mentions)
+  return mentions_.Mutable(index);
+}
+::google::cloud::language::v1beta1::EntityMention* Entity::add_mentions() {
+  // @@protoc_insertion_point(field_add:google.cloud.language.v1beta1.Entity.mentions)
+  return mentions_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::google::cloud::language::v1beta1::EntityMention >*
+Entity::mutable_mentions() {
+  // @@protoc_insertion_point(field_mutable_list:google.cloud.language.v1beta1.Entity.mentions)
+  return &mentions_;
+}
+const ::google::protobuf::RepeatedPtrField< ::google::cloud::language::v1beta1::EntityMention >&
+Entity::mentions() const {
+  // @@protoc_insertion_point(field_list:google.cloud.language.v1beta1.Entity.mentions)
+  return mentions_;
+}
+
+inline const Entity* Entity::internal_default_instance() {
+  return &Entity_default_instance_.get();
+}
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int Token::kTextFieldNumber;
+const int Token::kPartOfSpeechFieldNumber;
+const int Token::kDependencyEdgeFieldNumber;
+const int Token::kLemmaFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+Token::Token()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.Token)
+}
+
+void Token::InitAsDefaultInstance() {
+  text_ = const_cast< ::google::cloud::language::v1beta1::TextSpan*>(
+      ::google::cloud::language::v1beta1::TextSpan::internal_default_instance());
+  part_of_speech_ = const_cast< ::google::cloud::language::v1beta1::PartOfSpeech*>(
+      ::google::cloud::language::v1beta1::PartOfSpeech::internal_default_instance());
+  dependency_edge_ = const_cast< ::google::cloud::language::v1beta1::DependencyEdge*>(
+      ::google::cloud::language::v1beta1::DependencyEdge::internal_default_instance());
+}
+
+Token::Token(const Token& from)
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.Token)
+}
+
+void Token::SharedCtor() {
+  lemma_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  text_ = NULL;
+  part_of_speech_ = NULL;
+  dependency_edge_ = NULL;
+  _cached_size_ = 0;
+}
+
+Token::~Token() {
+  // @@protoc_insertion_point(destructor:google.cloud.language.v1beta1.Token)
+  SharedDtor();
+}
+
+void Token::SharedDtor() {
+  lemma_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (this != &Token_default_instance_.get()) {
+    delete text_;
+    delete part_of_speech_;
+    delete dependency_edge_;
+  }
+}
+
+void Token::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* Token::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return Token_descriptor_;
+}
+
+const Token& Token::default_instance() {
+  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  return *internal_default_instance();
+}
+
+::google::protobuf::internal::ExplicitlyConstructed<Token> Token_default_instance_;
+
+Token* Token::New(::google::protobuf::Arena* arena) const {
+  Token* n = new Token;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void Token::Clear() {
+// @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.Token)
+  if (GetArenaNoVirtual() == NULL && text_ != NULL) delete text_;
+  text_ = NULL;
+  if (GetArenaNoVirtual() == NULL && part_of_speech_ != NULL) delete part_of_speech_;
+  part_of_speech_ = NULL;
+  if (GetArenaNoVirtual() == NULL && dependency_edge_ != NULL) delete dependency_edge_;
+  dependency_edge_ = NULL;
+  lemma_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
+bool Token::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.Token)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional .google.cloud.language.v1beta1.TextSpan text = 1;
+      case 1: {
+        if (tag == 10) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_text()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(18)) goto parse_part_of_speech;
+        break;
+      }
+
+      // optional .google.cloud.language.v1beta1.PartOfSpeech part_of_speech = 2;
+      case 2: {
+        if (tag == 18) {
+         parse_part_of_speech:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_part_of_speech()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(26)) goto parse_dependency_edge;
+        break;
+      }
+
+      // optional .google.cloud.language.v1beta1.DependencyEdge dependency_edge = 3;
+      case 3: {
+        if (tag == 26) {
+         parse_dependency_edge:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_dependency_edge()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(34)) goto parse_lemma;
+        break;
+      }
+
+      // optional string lemma = 4;
+      case 4: {
+        if (tag == 34) {
+         parse_lemma:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_lemma()));
+          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+            this->lemma().data(), this->lemma().length(),
+            ::google::protobuf::internal::WireFormatLite::PARSE,
+            "google.cloud.language.v1beta1.Token.lemma"));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:google.cloud.language.v1beta1.Token)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:google.cloud.language.v1beta1.Token)
+  return false;
+#undef DO_
+}
+
+void Token::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.Token)
+  // optional .google.cloud.language.v1beta1.TextSpan text = 1;
+  if (this->has_text()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      1, *this->text_, output);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech part_of_speech = 2;
+  if (this->has_part_of_speech()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      2, *this->part_of_speech_, output);
+  }
+
+  // optional .google.cloud.language.v1beta1.DependencyEdge dependency_edge = 3;
+  if (this->has_dependency_edge()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      3, *this->dependency_edge_, output);
+  }
+
+  // optional string lemma = 4;
+  if (this->lemma().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->lemma().data(), this->lemma().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.cloud.language.v1beta1.Token.lemma");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      4, this->lemma(), output);
+  }
+
+  // @@protoc_insertion_point(serialize_end:google.cloud.language.v1beta1.Token)
+}
+
+::google::protobuf::uint8* Token::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.Token)
+  // optional .google.cloud.language.v1beta1.TextSpan text = 1;
+  if (this->has_text()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageNoVirtualToArray(
+        1, *this->text_, false, target);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech part_of_speech = 2;
+  if (this->has_part_of_speech()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageNoVirtualToArray(
+        2, *this->part_of_speech_, false, target);
+  }
+
+  // optional .google.cloud.language.v1beta1.DependencyEdge dependency_edge = 3;
+  if (this->has_dependency_edge()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageNoVirtualToArray(
+        3, *this->dependency_edge_, false, target);
+  }
+
+  // optional string lemma = 4;
+  if (this->lemma().size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+      this->lemma().data(), this->lemma().length(),
+      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
+      "google.cloud.language.v1beta1.Token.lemma");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        4, this->lemma(), target);
+  }
+
+  // @@protoc_insertion_point(serialize_to_array_end:google.cloud.language.v1beta1.Token)
+  return target;
+}
+
+size_t Token::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.Token)
+  size_t total_size = 0;
+
+  // optional .google.cloud.language.v1beta1.TextSpan text = 1;
+  if (this->has_text()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->text_);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech part_of_speech = 2;
+  if (this->has_part_of_speech()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->part_of_speech_);
+  }
+
+  // optional .google.cloud.language.v1beta1.DependencyEdge dependency_edge = 3;
+  if (this->has_dependency_edge()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->dependency_edge_);
+  }
+
+  // optional string lemma = 4;
+  if (this->lemma().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->lemma());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void Token::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.Token)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Token* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const Token>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.cloud.language.v1beta1.Token)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.Token)
+    UnsafeMergeFrom(*source);
+  }
+}
+
+void Token::MergeFrom(const Token& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.Token)
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Token::UnsafeMergeFrom(const Token& from) {
+  GOOGLE_DCHECK(&from != this);
+  if (from.has_text()) {
+    mutable_text()->::google::cloud::language::v1beta1::TextSpan::MergeFrom(from.text());
+  }
+  if (from.has_part_of_speech()) {
+    mutable_part_of_speech()->::google::cloud::language::v1beta1::PartOfSpeech::MergeFrom(from.part_of_speech());
+  }
+  if (from.has_dependency_edge()) {
+    mutable_dependency_edge()->::google::cloud::language::v1beta1::DependencyEdge::MergeFrom(from.dependency_edge());
+  }
+  if (from.lemma().size() > 0) {
+
+    lemma_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.lemma_);
+  }
+}
+
+void Token::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:google.cloud.language.v1beta1.Token)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Token::CopyFrom(const Token& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.Token)
+  if (&from == this) return;
+  Clear();
+  UnsafeMergeFrom(from);
+}
+
+bool Token::IsInitialized() const {
+
+  return true;
+}
+
+void Token::Swap(Token* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Token::InternalSwap(Token* other) {
+  std::swap(text_, other->text_);
+  std::swap(part_of_speech_, other->part_of_speech_);
+  std::swap(dependency_edge_, other->dependency_edge_);
+  lemma_.Swap(&other->lemma_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata Token::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Token_descriptor_;
+  metadata.reflection = Token_reflection_;
+  return metadata;
+}
+
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Token
+
+// optional .google.cloud.language.v1beta1.TextSpan text = 1;
+bool Token::has_text() const {
+  return this != internal_default_instance() && text_ != NULL;
+}
+void Token::clear_text() {
+  if (GetArenaNoVirtual() == NULL && text_ != NULL) delete text_;
+  text_ = NULL;
+}
+const ::google::cloud::language::v1beta1::TextSpan& Token::text() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Token.text)
+  return text_ != NULL ? *text_
+                         : *::google::cloud::language::v1beta1::TextSpan::internal_default_instance();
+}
+::google::cloud::language::v1beta1::TextSpan* Token::mutable_text() {
+  
+  if (text_ == NULL) {
+    text_ = new ::google::cloud::language::v1beta1::TextSpan;
+  }
+  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Token.text)
+  return text_;
+}
+::google::cloud::language::v1beta1::TextSpan* Token::release_text() {
+  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Token.text)
+  
+  ::google::cloud::language::v1beta1::TextSpan* temp = text_;
+  text_ = NULL;
+  return temp;
+}
+void Token::set_allocated_text(::google::cloud::language::v1beta1::TextSpan* text) {
+  delete text_;
+  text_ = text;
+  if (text) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Token.text)
+}
+
+// optional .google.cloud.language.v1beta1.PartOfSpeech part_of_speech = 2;
+bool Token::has_part_of_speech() const {
+  return this != internal_default_instance() && part_of_speech_ != NULL;
+}
+void Token::clear_part_of_speech() {
+  if (GetArenaNoVirtual() == NULL && part_of_speech_ != NULL) delete part_of_speech_;
+  part_of_speech_ = NULL;
+}
+const ::google::cloud::language::v1beta1::PartOfSpeech& Token::part_of_speech() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Token.part_of_speech)
+  return part_of_speech_ != NULL ? *part_of_speech_
+                         : *::google::cloud::language::v1beta1::PartOfSpeech::internal_default_instance();
+}
+::google::cloud::language::v1beta1::PartOfSpeech* Token::mutable_part_of_speech() {
+  
+  if (part_of_speech_ == NULL) {
+    part_of_speech_ = new ::google::cloud::language::v1beta1::PartOfSpeech;
+  }
+  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Token.part_of_speech)
+  return part_of_speech_;
+}
+::google::cloud::language::v1beta1::PartOfSpeech* Token::release_part_of_speech() {
+  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Token.part_of_speech)
+  
+  ::google::cloud::language::v1beta1::PartOfSpeech* temp = part_of_speech_;
+  part_of_speech_ = NULL;
+  return temp;
+}
+void Token::set_allocated_part_of_speech(::google::cloud::language::v1beta1::PartOfSpeech* part_of_speech) {
+  delete part_of_speech_;
+  part_of_speech_ = part_of_speech;
+  if (part_of_speech) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Token.part_of_speech)
+}
+
+// optional .google.cloud.language.v1beta1.DependencyEdge dependency_edge = 3;
+bool Token::has_dependency_edge() const {
+  return this != internal_default_instance() && dependency_edge_ != NULL;
+}
+void Token::clear_dependency_edge() {
+  if (GetArenaNoVirtual() == NULL && dependency_edge_ != NULL) delete dependency_edge_;
+  dependency_edge_ = NULL;
+}
+const ::google::cloud::language::v1beta1::DependencyEdge& Token::dependency_edge() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Token.dependency_edge)
+  return dependency_edge_ != NULL ? *dependency_edge_
+                         : *::google::cloud::language::v1beta1::DependencyEdge::internal_default_instance();
+}
+::google::cloud::language::v1beta1::DependencyEdge* Token::mutable_dependency_edge() {
+  
+  if (dependency_edge_ == NULL) {
+    dependency_edge_ = new ::google::cloud::language::v1beta1::DependencyEdge;
+  }
+  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Token.dependency_edge)
+  return dependency_edge_;
+}
+::google::cloud::language::v1beta1::DependencyEdge* Token::release_dependency_edge() {
+  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Token.dependency_edge)
+  
+  ::google::cloud::language::v1beta1::DependencyEdge* temp = dependency_edge_;
+  dependency_edge_ = NULL;
+  return temp;
+}
+void Token::set_allocated_dependency_edge(::google::cloud::language::v1beta1::DependencyEdge* dependency_edge) {
+  delete dependency_edge_;
+  dependency_edge_ = dependency_edge;
+  if (dependency_edge) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Token.dependency_edge)
+}
+
+// optional string lemma = 4;
+void Token::clear_lemma() {
+  lemma_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+const ::std::string& Token::lemma() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Token.lemma)
+  return lemma_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Token::set_lemma(const ::std::string& value) {
+  
+  lemma_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Token.lemma)
+}
+void Token::set_lemma(const char* value) {
+  
+  lemma_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:google.cloud.language.v1beta1.Token.lemma)
+}
+void Token::set_lemma(const char* value, size_t size) {
+  
+  lemma_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:google.cloud.language.v1beta1.Token.lemma)
+}
+::std::string* Token::mutable_lemma() {
+  
+  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Token.lemma)
+  return lemma_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+::std::string* Token::release_lemma() {
+  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Token.lemma)
+  
+  return lemma_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Token::set_allocated_lemma(::std::string* lemma) {
+  if (lemma != NULL) {
+    
+  } else {
+    
+  }
+  lemma_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), lemma);
+  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Token.lemma)
+}
+
+inline const Token* Token::internal_default_instance() {
+  return &Token_default_instance_.get();
+}
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int Sentiment::kPolarityFieldNumber;
+const int Sentiment::kMagnitudeFieldNumber;
+const int Sentiment::kScoreFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+Sentiment::Sentiment()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.Sentiment)
+}
+
+void Sentiment::InitAsDefaultInstance() {
+}
+
+Sentiment::Sentiment(const Sentiment& from)
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.Sentiment)
+}
+
+void Sentiment::SharedCtor() {
+  ::memset(&polarity_, 0, reinterpret_cast<char*>(&score_) -
+    reinterpret_cast<char*>(&polarity_) + sizeof(score_));
+  _cached_size_ = 0;
+}
+
+Sentiment::~Sentiment() {
+  // @@protoc_insertion_point(destructor:google.cloud.language.v1beta1.Sentiment)
+  SharedDtor();
+}
+
+void Sentiment::SharedDtor() {
+}
+
+void Sentiment::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* Sentiment::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return Sentiment_descriptor_;
+}
+
+const Sentiment& Sentiment::default_instance() {
+  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  return *internal_default_instance();
+}
+
+::google::protobuf::internal::ExplicitlyConstructed<Sentiment> Sentiment_default_instance_;
+
+Sentiment* Sentiment::New(::google::protobuf::Arena* arena) const {
+  Sentiment* n = new Sentiment;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void Sentiment::Clear() {
+// @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.Sentiment)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(Sentiment, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<Sentiment*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(polarity_, score_);
+
+#undef ZR_HELPER_
+#undef ZR_
+
+}
+
+bool Sentiment::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.Sentiment)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional float polarity = 1;
+      case 1: {
+        if (tag == 13) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &polarity_)));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(21)) goto parse_magnitude;
+        break;
+      }
+
+      // optional float magnitude = 2;
+      case 2: {
+        if (tag == 21) {
+         parse_magnitude:
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &magnitude_)));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(29)) goto parse_score;
+        break;
+      }
+
+      // optional float score = 3;
+      case 3: {
+        if (tag == 29) {
+         parse_score:
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, &score_)));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:google.cloud.language.v1beta1.Sentiment)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:google.cloud.language.v1beta1.Sentiment)
+  return false;
+#undef DO_
+}
+
+void Sentiment::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.Sentiment)
+  // optional float polarity = 1;
+  if (this->polarity() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(1, this->polarity(), output);
+  }
+
+  // optional float magnitude = 2;
+  if (this->magnitude() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(2, this->magnitude(), output);
+  }
+
+  // optional float score = 3;
+  if (this->score() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->score(), output);
+  }
+
+  // @@protoc_insertion_point(serialize_end:google.cloud.language.v1beta1.Sentiment)
+}
+
+::google::protobuf::uint8* Sentiment::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.Sentiment)
+  // optional float polarity = 1;
+  if (this->polarity() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(1, this->polarity(), target);
+  }
+
+  // optional float magnitude = 2;
+  if (this->magnitude() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(2, this->magnitude(), target);
+  }
+
+  // optional float score = 3;
+  if (this->score() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->score(), target);
+  }
+
+  // @@protoc_insertion_point(serialize_to_array_end:google.cloud.language.v1beta1.Sentiment)
+  return target;
+}
+
+size_t Sentiment::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.Sentiment)
+  size_t total_size = 0;
+
+  // optional float polarity = 1;
+  if (this->polarity() != 0) {
+    total_size += 1 + 4;
+  }
+
+  // optional float magnitude = 2;
+  if (this->magnitude() != 0) {
+    total_size += 1 + 4;
+  }
+
+  // optional float score = 3;
+  if (this->score() != 0) {
+    total_size += 1 + 4;
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void Sentiment::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.Sentiment)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Sentiment* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const Sentiment>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.cloud.language.v1beta1.Sentiment)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.Sentiment)
+    UnsafeMergeFrom(*source);
+  }
+}
+
+void Sentiment::MergeFrom(const Sentiment& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.Sentiment)
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Sentiment::UnsafeMergeFrom(const Sentiment& from) {
+  GOOGLE_DCHECK(&from != this);
+  if (from.polarity() != 0) {
+    set_polarity(from.polarity());
+  }
+  if (from.magnitude() != 0) {
+    set_magnitude(from.magnitude());
+  }
+  if (from.score() != 0) {
+    set_score(from.score());
+  }
+}
+
+void Sentiment::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:google.cloud.language.v1beta1.Sentiment)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Sentiment::CopyFrom(const Sentiment& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.Sentiment)
+  if (&from == this) return;
+  Clear();
+  UnsafeMergeFrom(from);
+}
+
+bool Sentiment::IsInitialized() const {
+
+  return true;
+}
+
+void Sentiment::Swap(Sentiment* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Sentiment::InternalSwap(Sentiment* other) {
+  std::swap(polarity_, other->polarity_);
+  std::swap(magnitude_, other->magnitude_);
+  std::swap(score_, other->score_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata Sentiment::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Sentiment_descriptor_;
+  metadata.reflection = Sentiment_reflection_;
+  return metadata;
+}
+
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Sentiment
+
+// optional float polarity = 1;
+void Sentiment::clear_polarity() {
+  polarity_ = 0;
+}
+float Sentiment::polarity() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Sentiment.polarity)
+  return polarity_;
+}
+void Sentiment::set_polarity(float value) {
+  
+  polarity_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Sentiment.polarity)
+}
+
+// optional float magnitude = 2;
+void Sentiment::clear_magnitude() {
+  magnitude_ = 0;
+}
+float Sentiment::magnitude() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Sentiment.magnitude)
+  return magnitude_;
+}
+void Sentiment::set_magnitude(float value) {
+  
+  magnitude_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Sentiment.magnitude)
+}
+
+// optional float score = 3;
+void Sentiment::clear_score() {
+  score_ = 0;
+}
+float Sentiment::score() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Sentiment.score)
+  return score_;
+}
+void Sentiment::set_score(float value) {
+  
+  score_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Sentiment.score)
+}
+
+inline const Sentiment* Sentiment::internal_default_instance() {
+  return &Sentiment_default_instance_.get();
+}
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
 const ::google::protobuf::EnumDescriptor* PartOfSpeech_Tag_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[2];
+  return PartOfSpeech_Tag_descriptor_;
 }
 bool PartOfSpeech_Tag_IsValid(int value) {
   switch (value) {
@@ -684,7 +3497,7 @@ const int PartOfSpeech::Tag_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* PartOfSpeech_Aspect_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[3];
+  return PartOfSpeech_Aspect_descriptor_;
 }
 bool PartOfSpeech_Aspect_IsValid(int value) {
   switch (value) {
@@ -709,7 +3522,7 @@ const int PartOfSpeech::Aspect_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* PartOfSpeech_Case_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[4];
+  return PartOfSpeech_Case_descriptor_;
 }
 bool PartOfSpeech_Case_IsValid(int value) {
   switch (value) {
@@ -756,7 +3569,7 @@ const int PartOfSpeech::Case_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* PartOfSpeech_Form_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[5];
+  return PartOfSpeech_Form_descriptor_;
 }
 bool PartOfSpeech_Form_IsValid(int value) {
   switch (value) {
@@ -797,7 +3610,7 @@ const int PartOfSpeech::Form_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* PartOfSpeech_Gender_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[6];
+  return PartOfSpeech_Gender_descriptor_;
 }
 bool PartOfSpeech_Gender_IsValid(int value) {
   switch (value) {
@@ -822,7 +3635,7 @@ const int PartOfSpeech::Gender_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* PartOfSpeech_Mood_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[7];
+  return PartOfSpeech_Mood_descriptor_;
 }
 bool PartOfSpeech_Mood_IsValid(int value) {
   switch (value) {
@@ -853,7 +3666,7 @@ const int PartOfSpeech::Mood_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* PartOfSpeech_Number_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[8];
+  return PartOfSpeech_Number_descriptor_;
 }
 bool PartOfSpeech_Number_IsValid(int value) {
   switch (value) {
@@ -878,7 +3691,7 @@ const int PartOfSpeech::Number_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* PartOfSpeech_Person_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[9];
+  return PartOfSpeech_Person_descriptor_;
 }
 bool PartOfSpeech_Person_IsValid(int value) {
   switch (value) {
@@ -905,7 +3718,7 @@ const int PartOfSpeech::Person_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* PartOfSpeech_Proper_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[10];
+  return PartOfSpeech_Proper_descriptor_;
 }
 bool PartOfSpeech_Proper_IsValid(int value) {
   switch (value) {
@@ -928,7 +3741,7 @@ const int PartOfSpeech::Proper_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* PartOfSpeech_Reciprocity_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[11];
+  return PartOfSpeech_Reciprocity_descriptor_;
 }
 bool PartOfSpeech_Reciprocity_IsValid(int value) {
   switch (value) {
@@ -951,7 +3764,7 @@ const int PartOfSpeech::Reciprocity_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* PartOfSpeech_Tense_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[12];
+  return PartOfSpeech_Tense_descriptor_;
 }
 bool PartOfSpeech_Tense_IsValid(int value) {
   switch (value) {
@@ -982,7 +3795,7 @@ const int PartOfSpeech::Tense_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* PartOfSpeech_Voice_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[13];
+  return PartOfSpeech_Voice_descriptor_;
 }
 bool PartOfSpeech_Voice_IsValid(int value) {
   switch (value) {
@@ -1005,9 +3818,860 @@ const PartOfSpeech_Voice PartOfSpeech::Voice_MIN;
 const PartOfSpeech_Voice PartOfSpeech::Voice_MAX;
 const int PartOfSpeech::Voice_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int PartOfSpeech::kTagFieldNumber;
+const int PartOfSpeech::kAspectFieldNumber;
+const int PartOfSpeech::kCaseFieldNumber;
+const int PartOfSpeech::kFormFieldNumber;
+const int PartOfSpeech::kGenderFieldNumber;
+const int PartOfSpeech::kMoodFieldNumber;
+const int PartOfSpeech::kNumberFieldNumber;
+const int PartOfSpeech::kPersonFieldNumber;
+const int PartOfSpeech::kProperFieldNumber;
+const int PartOfSpeech::kReciprocityFieldNumber;
+const int PartOfSpeech::kTenseFieldNumber;
+const int PartOfSpeech::kVoiceFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+PartOfSpeech::PartOfSpeech()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.PartOfSpeech)
+}
+
+void PartOfSpeech::InitAsDefaultInstance() {
+}
+
+PartOfSpeech::PartOfSpeech(const PartOfSpeech& from)
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.PartOfSpeech)
+}
+
+void PartOfSpeech::SharedCtor() {
+  ::memset(&tag_, 0, reinterpret_cast<char*>(&voice_) -
+    reinterpret_cast<char*>(&tag_) + sizeof(voice_));
+  _cached_size_ = 0;
+}
+
+PartOfSpeech::~PartOfSpeech() {
+  // @@protoc_insertion_point(destructor:google.cloud.language.v1beta1.PartOfSpeech)
+  SharedDtor();
+}
+
+void PartOfSpeech::SharedDtor() {
+}
+
+void PartOfSpeech::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* PartOfSpeech::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return PartOfSpeech_descriptor_;
+}
+
+const PartOfSpeech& PartOfSpeech::default_instance() {
+  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  return *internal_default_instance();
+}
+
+::google::protobuf::internal::ExplicitlyConstructed<PartOfSpeech> PartOfSpeech_default_instance_;
+
+PartOfSpeech* PartOfSpeech::New(::google::protobuf::Arena* arena) const {
+  PartOfSpeech* n = new PartOfSpeech;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void PartOfSpeech::Clear() {
+// @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.PartOfSpeech)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(PartOfSpeech, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<PartOfSpeech*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(tag_, person_);
+  ZR_(proper_, voice_);
+
+#undef ZR_HELPER_
+#undef ZR_
+
+}
+
+bool PartOfSpeech::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.PartOfSpeech)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional .google.cloud.language.v1beta1.PartOfSpeech.Tag tag = 1;
+      case 1: {
+        if (tag == 8) {
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_tag(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Tag >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(16)) goto parse_aspect;
+        break;
+      }
+
+      // optional .google.cloud.language.v1beta1.PartOfSpeech.Aspect aspect = 2;
+      case 2: {
+        if (tag == 16) {
+         parse_aspect:
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_aspect(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Aspect >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(24)) goto parse_case;
+        break;
+      }
+
+      // optional .google.cloud.language.v1beta1.PartOfSpeech.Case case = 3;
+      case 3: {
+        if (tag == 24) {
+         parse_case:
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_case_(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Case >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(32)) goto parse_form;
+        break;
+      }
+
+      // optional .google.cloud.language.v1beta1.PartOfSpeech.Form form = 4;
+      case 4: {
+        if (tag == 32) {
+         parse_form:
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_form(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Form >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(40)) goto parse_gender;
+        break;
+      }
+
+      // optional .google.cloud.language.v1beta1.PartOfSpeech.Gender gender = 5;
+      case 5: {
+        if (tag == 40) {
+         parse_gender:
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_gender(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Gender >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(48)) goto parse_mood;
+        break;
+      }
+
+      // optional .google.cloud.language.v1beta1.PartOfSpeech.Mood mood = 6;
+      case 6: {
+        if (tag == 48) {
+         parse_mood:
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_mood(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Mood >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(56)) goto parse_number;
+        break;
+      }
+
+      // optional .google.cloud.language.v1beta1.PartOfSpeech.Number number = 7;
+      case 7: {
+        if (tag == 56) {
+         parse_number:
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_number(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Number >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(64)) goto parse_person;
+        break;
+      }
+
+      // optional .google.cloud.language.v1beta1.PartOfSpeech.Person person = 8;
+      case 8: {
+        if (tag == 64) {
+         parse_person:
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_person(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Person >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(72)) goto parse_proper;
+        break;
+      }
+
+      // optional .google.cloud.language.v1beta1.PartOfSpeech.Proper proper = 9;
+      case 9: {
+        if (tag == 72) {
+         parse_proper:
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_proper(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Proper >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(80)) goto parse_reciprocity;
+        break;
+      }
+
+      // optional .google.cloud.language.v1beta1.PartOfSpeech.Reciprocity reciprocity = 10;
+      case 10: {
+        if (tag == 80) {
+         parse_reciprocity:
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_reciprocity(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Reciprocity >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(88)) goto parse_tense;
+        break;
+      }
+
+      // optional .google.cloud.language.v1beta1.PartOfSpeech.Tense tense = 11;
+      case 11: {
+        if (tag == 88) {
+         parse_tense:
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_tense(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Tense >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(96)) goto parse_voice;
+        break;
+      }
+
+      // optional .google.cloud.language.v1beta1.PartOfSpeech.Voice voice = 12;
+      case 12: {
+        if (tag == 96) {
+         parse_voice:
+          int value;
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
+                 input, &value)));
+          set_voice(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Voice >(value));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:google.cloud.language.v1beta1.PartOfSpeech)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:google.cloud.language.v1beta1.PartOfSpeech)
+  return false;
+#undef DO_
+}
+
+void PartOfSpeech::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.PartOfSpeech)
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Tag tag = 1;
+  if (this->tag() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      1, this->tag(), output);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Aspect aspect = 2;
+  if (this->aspect() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      2, this->aspect(), output);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Case case = 3;
+  if (this->case_() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      3, this->case_(), output);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Form form = 4;
+  if (this->form() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      4, this->form(), output);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Gender gender = 5;
+  if (this->gender() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      5, this->gender(), output);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Mood mood = 6;
+  if (this->mood() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      6, this->mood(), output);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Number number = 7;
+  if (this->number() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      7, this->number(), output);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Person person = 8;
+  if (this->person() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      8, this->person(), output);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Proper proper = 9;
+  if (this->proper() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      9, this->proper(), output);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Reciprocity reciprocity = 10;
+  if (this->reciprocity() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      10, this->reciprocity(), output);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Tense tense = 11;
+  if (this->tense() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      11, this->tense(), output);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Voice voice = 12;
+  if (this->voice() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteEnum(
+      12, this->voice(), output);
+  }
+
+  // @@protoc_insertion_point(serialize_end:google.cloud.language.v1beta1.PartOfSpeech)
+}
+
+::google::protobuf::uint8* PartOfSpeech::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.PartOfSpeech)
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Tag tag = 1;
+  if (this->tag() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      1, this->tag(), target);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Aspect aspect = 2;
+  if (this->aspect() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      2, this->aspect(), target);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Case case = 3;
+  if (this->case_() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      3, this->case_(), target);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Form form = 4;
+  if (this->form() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      4, this->form(), target);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Gender gender = 5;
+  if (this->gender() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      5, this->gender(), target);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Mood mood = 6;
+  if (this->mood() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      6, this->mood(), target);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Number number = 7;
+  if (this->number() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      7, this->number(), target);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Person person = 8;
+  if (this->person() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      8, this->person(), target);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Proper proper = 9;
+  if (this->proper() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      9, this->proper(), target);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Reciprocity reciprocity = 10;
+  if (this->reciprocity() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      10, this->reciprocity(), target);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Tense tense = 11;
+  if (this->tense() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      11, this->tense(), target);
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Voice voice = 12;
+  if (this->voice() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
+      12, this->voice(), target);
+  }
+
+  // @@protoc_insertion_point(serialize_to_array_end:google.cloud.language.v1beta1.PartOfSpeech)
+  return target;
+}
+
+size_t PartOfSpeech::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.PartOfSpeech)
+  size_t total_size = 0;
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Tag tag = 1;
+  if (this->tag() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->tag());
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Aspect aspect = 2;
+  if (this->aspect() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->aspect());
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Case case = 3;
+  if (this->case_() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->case_());
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Form form = 4;
+  if (this->form() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->form());
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Gender gender = 5;
+  if (this->gender() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->gender());
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Mood mood = 6;
+  if (this->mood() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->mood());
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Number number = 7;
+  if (this->number() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->number());
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Person person = 8;
+  if (this->person() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->person());
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Proper proper = 9;
+  if (this->proper() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->proper());
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Reciprocity reciprocity = 10;
+  if (this->reciprocity() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->reciprocity());
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Tense tense = 11;
+  if (this->tense() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->tense());
+  }
+
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Voice voice = 12;
+  if (this->voice() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->voice());
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void PartOfSpeech::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.PartOfSpeech)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const PartOfSpeech* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const PartOfSpeech>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.cloud.language.v1beta1.PartOfSpeech)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.PartOfSpeech)
+    UnsafeMergeFrom(*source);
+  }
+}
+
+void PartOfSpeech::MergeFrom(const PartOfSpeech& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.PartOfSpeech)
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void PartOfSpeech::UnsafeMergeFrom(const PartOfSpeech& from) {
+  GOOGLE_DCHECK(&from != this);
+  if (from.tag() != 0) {
+    set_tag(from.tag());
+  }
+  if (from.aspect() != 0) {
+    set_aspect(from.aspect());
+  }
+  if (from.case_() != 0) {
+    set_case_(from.case_());
+  }
+  if (from.form() != 0) {
+    set_form(from.form());
+  }
+  if (from.gender() != 0) {
+    set_gender(from.gender());
+  }
+  if (from.mood() != 0) {
+    set_mood(from.mood());
+  }
+  if (from.number() != 0) {
+    set_number(from.number());
+  }
+  if (from.person() != 0) {
+    set_person(from.person());
+  }
+  if (from.proper() != 0) {
+    set_proper(from.proper());
+  }
+  if (from.reciprocity() != 0) {
+    set_reciprocity(from.reciprocity());
+  }
+  if (from.tense() != 0) {
+    set_tense(from.tense());
+  }
+  if (from.voice() != 0) {
+    set_voice(from.voice());
+  }
+}
+
+void PartOfSpeech::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:google.cloud.language.v1beta1.PartOfSpeech)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void PartOfSpeech::CopyFrom(const PartOfSpeech& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.PartOfSpeech)
+  if (&from == this) return;
+  Clear();
+  UnsafeMergeFrom(from);
+}
+
+bool PartOfSpeech::IsInitialized() const {
+
+  return true;
+}
+
+void PartOfSpeech::Swap(PartOfSpeech* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void PartOfSpeech::InternalSwap(PartOfSpeech* other) {
+  std::swap(tag_, other->tag_);
+  std::swap(aspect_, other->aspect_);
+  std::swap(case__, other->case__);
+  std::swap(form_, other->form_);
+  std::swap(gender_, other->gender_);
+  std::swap(mood_, other->mood_);
+  std::swap(number_, other->number_);
+  std::swap(person_, other->person_);
+  std::swap(proper_, other->proper_);
+  std::swap(reciprocity_, other->reciprocity_);
+  std::swap(tense_, other->tense_);
+  std::swap(voice_, other->voice_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata PartOfSpeech::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = PartOfSpeech_descriptor_;
+  metadata.reflection = PartOfSpeech_reflection_;
+  return metadata;
+}
+
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// PartOfSpeech
+
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Tag tag = 1;
+void PartOfSpeech::clear_tag() {
+  tag_ = 0;
+}
+::google::cloud::language::v1beta1::PartOfSpeech_Tag PartOfSpeech::tag() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.tag)
+  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Tag >(tag_);
+}
+void PartOfSpeech::set_tag(::google::cloud::language::v1beta1::PartOfSpeech_Tag value) {
+  
+  tag_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.tag)
+}
+
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Aspect aspect = 2;
+void PartOfSpeech::clear_aspect() {
+  aspect_ = 0;
+}
+::google::cloud::language::v1beta1::PartOfSpeech_Aspect PartOfSpeech::aspect() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.aspect)
+  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Aspect >(aspect_);
+}
+void PartOfSpeech::set_aspect(::google::cloud::language::v1beta1::PartOfSpeech_Aspect value) {
+  
+  aspect_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.aspect)
+}
+
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Case case = 3;
+void PartOfSpeech::clear_case_() {
+  case__ = 0;
+}
+::google::cloud::language::v1beta1::PartOfSpeech_Case PartOfSpeech::case_() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.case)
+  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Case >(case__);
+}
+void PartOfSpeech::set_case_(::google::cloud::language::v1beta1::PartOfSpeech_Case value) {
+  
+  case__ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.case)
+}
+
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Form form = 4;
+void PartOfSpeech::clear_form() {
+  form_ = 0;
+}
+::google::cloud::language::v1beta1::PartOfSpeech_Form PartOfSpeech::form() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.form)
+  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Form >(form_);
+}
+void PartOfSpeech::set_form(::google::cloud::language::v1beta1::PartOfSpeech_Form value) {
+  
+  form_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.form)
+}
+
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Gender gender = 5;
+void PartOfSpeech::clear_gender() {
+  gender_ = 0;
+}
+::google::cloud::language::v1beta1::PartOfSpeech_Gender PartOfSpeech::gender() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.gender)
+  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Gender >(gender_);
+}
+void PartOfSpeech::set_gender(::google::cloud::language::v1beta1::PartOfSpeech_Gender value) {
+  
+  gender_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.gender)
+}
+
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Mood mood = 6;
+void PartOfSpeech::clear_mood() {
+  mood_ = 0;
+}
+::google::cloud::language::v1beta1::PartOfSpeech_Mood PartOfSpeech::mood() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.mood)
+  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Mood >(mood_);
+}
+void PartOfSpeech::set_mood(::google::cloud::language::v1beta1::PartOfSpeech_Mood value) {
+  
+  mood_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.mood)
+}
+
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Number number = 7;
+void PartOfSpeech::clear_number() {
+  number_ = 0;
+}
+::google::cloud::language::v1beta1::PartOfSpeech_Number PartOfSpeech::number() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.number)
+  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Number >(number_);
+}
+void PartOfSpeech::set_number(::google::cloud::language::v1beta1::PartOfSpeech_Number value) {
+  
+  number_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.number)
+}
+
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Person person = 8;
+void PartOfSpeech::clear_person() {
+  person_ = 0;
+}
+::google::cloud::language::v1beta1::PartOfSpeech_Person PartOfSpeech::person() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.person)
+  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Person >(person_);
+}
+void PartOfSpeech::set_person(::google::cloud::language::v1beta1::PartOfSpeech_Person value) {
+  
+  person_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.person)
+}
+
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Proper proper = 9;
+void PartOfSpeech::clear_proper() {
+  proper_ = 0;
+}
+::google::cloud::language::v1beta1::PartOfSpeech_Proper PartOfSpeech::proper() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.proper)
+  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Proper >(proper_);
+}
+void PartOfSpeech::set_proper(::google::cloud::language::v1beta1::PartOfSpeech_Proper value) {
+  
+  proper_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.proper)
+}
+
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Reciprocity reciprocity = 10;
+void PartOfSpeech::clear_reciprocity() {
+  reciprocity_ = 0;
+}
+::google::cloud::language::v1beta1::PartOfSpeech_Reciprocity PartOfSpeech::reciprocity() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.reciprocity)
+  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Reciprocity >(reciprocity_);
+}
+void PartOfSpeech::set_reciprocity(::google::cloud::language::v1beta1::PartOfSpeech_Reciprocity value) {
+  
+  reciprocity_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.reciprocity)
+}
+
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Tense tense = 11;
+void PartOfSpeech::clear_tense() {
+  tense_ = 0;
+}
+::google::cloud::language::v1beta1::PartOfSpeech_Tense PartOfSpeech::tense() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.tense)
+  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Tense >(tense_);
+}
+void PartOfSpeech::set_tense(::google::cloud::language::v1beta1::PartOfSpeech_Tense value) {
+  
+  tense_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.tense)
+}
+
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Voice voice = 12;
+void PartOfSpeech::clear_voice() {
+  voice_ = 0;
+}
+::google::cloud::language::v1beta1::PartOfSpeech_Voice PartOfSpeech::voice() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.voice)
+  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Voice >(voice_);
+}
+void PartOfSpeech::set_voice(::google::cloud::language::v1beta1::PartOfSpeech_Voice value) {
+  
+  voice_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.voice)
+}
+
+inline const PartOfSpeech* PartOfSpeech::internal_default_instance() {
+  return &PartOfSpeech_default_instance_.get();
+}
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
 const ::google::protobuf::EnumDescriptor* DependencyEdge_Label_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[14];
+  return DependencyEdge_Label_descriptor_;
 }
 bool DependencyEdge_Label_IsValid(int value) {
   switch (value) {
@@ -1176,3329 +4840,6 @@ const DependencyEdge_Label DependencyEdge::Label_MIN;
 const DependencyEdge_Label DependencyEdge::Label_MAX;
 const int DependencyEdge::Label_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-const ::google::protobuf::EnumDescriptor* EntityMention_Type_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[15];
-}
-bool EntityMention_Type_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const EntityMention_Type EntityMention::TYPE_UNKNOWN;
-const EntityMention_Type EntityMention::PROPER;
-const EntityMention_Type EntityMention::COMMON;
-const EntityMention_Type EntityMention::Type_MIN;
-const EntityMention_Type EntityMention::Type_MAX;
-const int EntityMention::Type_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-const ::google::protobuf::EnumDescriptor* EncodingType_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[16];
-}
-bool EncodingType_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
-
-// ===================================================================
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int Document::kTypeFieldNumber;
-const int Document::kContentFieldNumber;
-const int Document::kGcsContentUriFieldNumber;
-const int Document::kLanguageFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-Document::Document()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.Document)
-}
-Document::Document(const Document& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  language_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.language().size() > 0) {
-    language_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.language_);
-  }
-  type_ = from.type_;
-  clear_has_source();
-  switch (from.source_case()) {
-    case kContent: {
-      set_content(from.content());
-      break;
-    }
-    case kGcsContentUri: {
-      set_gcs_content_uri(from.gcs_content_uri());
-      break;
-    }
-    case SOURCE_NOT_SET: {
-      break;
-    }
-  }
-  // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.Document)
-}
-
-void Document::SharedCtor() {
-  language_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  type_ = 0;
-  clear_has_source();
-  _cached_size_ = 0;
-}
-
-Document::~Document() {
-  // @@protoc_insertion_point(destructor:google.cloud.language.v1beta1.Document)
-  SharedDtor();
-}
-
-void Document::SharedDtor() {
-  language_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (has_source()) {
-    clear_source();
-  }
-}
-
-void Document::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-}
-const ::google::protobuf::Descriptor* Document::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
-}
-
-const Document& Document::default_instance() {
-  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  return *internal_default_instance();
-}
-
-Document* Document::New(::google::protobuf::Arena* arena) const {
-  Document* n = new Document;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
-
-void Document::clear_source() {
-// @@protoc_insertion_point(one_of_clear_start:google.cloud.language.v1beta1.Document)
-  switch (source_case()) {
-    case kContent: {
-      source_.content_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-      break;
-    }
-    case kGcsContentUri: {
-      source_.gcs_content_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-      break;
-    }
-    case SOURCE_NOT_SET: {
-      break;
-    }
-  }
-  _oneof_case_[0] = SOURCE_NOT_SET;
-}
-
-
-void Document::Clear() {
-// @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.Document)
-  language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  type_ = 0;
-  clear_source();
-}
-
-bool Document::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.Document)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.cloud.language.v1beta1.Document.Type type = 1;
-      case 1: {
-        if (tag == 8u) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_type(static_cast< ::google::cloud::language::v1beta1::Document_Type >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string content = 2;
-      case 2: {
-        if (tag == 18u) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_content()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->content().data(), this->content().length(),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "google.cloud.language.v1beta1.Document.content"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string gcs_content_uri = 3;
-      case 3: {
-        if (tag == 26u) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_gcs_content_uri()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->gcs_content_uri().data(), this->gcs_content_uri().length(),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "google.cloud.language.v1beta1.Document.gcs_content_uri"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string language = 4;
-      case 4: {
-        if (tag == 34u) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_language()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->language().data(), this->language().length(),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "google.cloud.language.v1beta1.Document.language"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0 ||
-            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:google.cloud.language.v1beta1.Document)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:google.cloud.language.v1beta1.Document)
-  return false;
-#undef DO_
-}
-
-void Document::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.Document)
-  // .google.cloud.language.v1beta1.Document.Type type = 1;
-  if (this->type() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->type(), output);
-  }
-
-  // string content = 2;
-  if (has_content()) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->content().data(), this->content().length(),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "google.cloud.language.v1beta1.Document.content");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->content(), output);
-  }
-
-  // string gcs_content_uri = 3;
-  if (has_gcs_content_uri()) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->gcs_content_uri().data(), this->gcs_content_uri().length(),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "google.cloud.language.v1beta1.Document.gcs_content_uri");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      3, this->gcs_content_uri(), output);
-  }
-
-  // string language = 4;
-  if (this->language().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->language().data(), this->language().length(),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "google.cloud.language.v1beta1.Document.language");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      4, this->language(), output);
-  }
-
-  // @@protoc_insertion_point(serialize_end:google.cloud.language.v1beta1.Document)
-}
-
-::google::protobuf::uint8* Document::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.Document)
-  // .google.cloud.language.v1beta1.Document.Type type = 1;
-  if (this->type() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->type(), target);
-  }
-
-  // string content = 2;
-  if (has_content()) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->content().data(), this->content().length(),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "google.cloud.language.v1beta1.Document.content");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        2, this->content(), target);
-  }
-
-  // string gcs_content_uri = 3;
-  if (has_gcs_content_uri()) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->gcs_content_uri().data(), this->gcs_content_uri().length(),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "google.cloud.language.v1beta1.Document.gcs_content_uri");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        3, this->gcs_content_uri(), target);
-  }
-
-  // string language = 4;
-  if (this->language().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->language().data(), this->language().length(),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "google.cloud.language.v1beta1.Document.language");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        4, this->language(), target);
-  }
-
-  // @@protoc_insertion_point(serialize_to_array_end:google.cloud.language.v1beta1.Document)
-  return target;
-}
-
-size_t Document::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.Document)
-  size_t total_size = 0;
-
-  // string language = 4;
-  if (this->language().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->language());
-  }
-
-  // .google.cloud.language.v1beta1.Document.Type type = 1;
-  if (this->type() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
-  }
-
-  switch (source_case()) {
-    // string content = 2;
-    case kContent: {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::StringSize(
-          this->content());
-      break;
-    }
-    // string gcs_content_uri = 3;
-    case kGcsContentUri: {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::StringSize(
-          this->gcs_content_uri());
-      break;
-    }
-    case SOURCE_NOT_SET: {
-      break;
-    }
-  }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-  return total_size;
-}
-
-void Document::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.Document)
-  GOOGLE_DCHECK_NE(&from, this);
-  const Document* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Document>(
-          &from);
-  if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.cloud.language.v1beta1.Document)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.Document)
-    MergeFrom(*source);
-  }
-}
-
-void Document::MergeFrom(const Document& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.Document)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.language().size() > 0) {
-
-    language_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.language_);
-  }
-  if (from.type() != 0) {
-    set_type(from.type());
-  }
-  switch (from.source_case()) {
-    case kContent: {
-      set_content(from.content());
-      break;
-    }
-    case kGcsContentUri: {
-      set_gcs_content_uri(from.gcs_content_uri());
-      break;
-    }
-    case SOURCE_NOT_SET: {
-      break;
-    }
-  }
-}
-
-void Document::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:google.cloud.language.v1beta1.Document)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void Document::CopyFrom(const Document& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.Document)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool Document::IsInitialized() const {
-  return true;
-}
-
-void Document::Swap(Document* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void Document::InternalSwap(Document* other) {
-  language_.Swap(&other->language_);
-  std::swap(type_, other->type_);
-  std::swap(source_, other->source_);
-  std::swap(_oneof_case_[0], other->_oneof_case_[0]);
-  std::swap(_cached_size_, other->_cached_size_);
-}
-
-::google::protobuf::Metadata Document::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
-}
-
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// Document
-
-// .google.cloud.language.v1beta1.Document.Type type = 1;
-void Document::clear_type() {
-  type_ = 0;
-}
-::google::cloud::language::v1beta1::Document_Type Document::type() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Document.type)
-  return static_cast< ::google::cloud::language::v1beta1::Document_Type >(type_);
-}
-void Document::set_type(::google::cloud::language::v1beta1::Document_Type value) {
-  
-  type_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Document.type)
-}
-
-// string content = 2;
-bool Document::has_content() const {
-  return source_case() == kContent;
-}
-void Document::set_has_content() {
-  _oneof_case_[0] = kContent;
-}
-void Document::clear_content() {
-  if (has_content()) {
-    source_.content_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-    clear_has_source();
-  }
-}
-const ::std::string& Document::content() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Document.content)
-  if (has_content()) {
-    return source_.content_.GetNoArena();
-  }
-  return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
-}
-void Document::set_content(const ::std::string& value) {
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Document.content)
-  if (!has_content()) {
-    clear_source();
-    set_has_content();
-    source_.content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  }
-  source_.content_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Document.content)
-}
-void Document::set_content(const char* value) {
-  if (!has_content()) {
-    clear_source();
-    set_has_content();
-    source_.content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  }
-  source_.content_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:google.cloud.language.v1beta1.Document.content)
-}
-void Document::set_content(const char* value, size_t size) {
-  if (!has_content()) {
-    clear_source();
-    set_has_content();
-    source_.content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  }
-  source_.content_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
-      reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:google.cloud.language.v1beta1.Document.content)
-}
-::std::string* Document::mutable_content() {
-  if (!has_content()) {
-    clear_source();
-    set_has_content();
-    source_.content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  }
-  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Document.content)
-  return source_.content_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* Document::release_content() {
-  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Document.content)
-  if (has_content()) {
-    clear_has_source();
-    return source_.content_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  } else {
-    return NULL;
-  }
-}
-void Document::set_allocated_content(::std::string* content) {
-  if (!has_content()) {
-    source_.content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  }
-  clear_source();
-  if (content != NULL) {
-    set_has_content();
-    source_.content_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-        content);
-  }
-  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Document.content)
-}
-
-// string gcs_content_uri = 3;
-bool Document::has_gcs_content_uri() const {
-  return source_case() == kGcsContentUri;
-}
-void Document::set_has_gcs_content_uri() {
-  _oneof_case_[0] = kGcsContentUri;
-}
-void Document::clear_gcs_content_uri() {
-  if (has_gcs_content_uri()) {
-    source_.gcs_content_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-    clear_has_source();
-  }
-}
-const ::std::string& Document::gcs_content_uri() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Document.gcs_content_uri)
-  if (has_gcs_content_uri()) {
-    return source_.gcs_content_uri_.GetNoArena();
-  }
-  return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
-}
-void Document::set_gcs_content_uri(const ::std::string& value) {
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Document.gcs_content_uri)
-  if (!has_gcs_content_uri()) {
-    clear_source();
-    set_has_gcs_content_uri();
-    source_.gcs_content_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  }
-  source_.gcs_content_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Document.gcs_content_uri)
-}
-void Document::set_gcs_content_uri(const char* value) {
-  if (!has_gcs_content_uri()) {
-    clear_source();
-    set_has_gcs_content_uri();
-    source_.gcs_content_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  }
-  source_.gcs_content_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:google.cloud.language.v1beta1.Document.gcs_content_uri)
-}
-void Document::set_gcs_content_uri(const char* value, size_t size) {
-  if (!has_gcs_content_uri()) {
-    clear_source();
-    set_has_gcs_content_uri();
-    source_.gcs_content_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  }
-  source_.gcs_content_uri_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
-      reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:google.cloud.language.v1beta1.Document.gcs_content_uri)
-}
-::std::string* Document::mutable_gcs_content_uri() {
-  if (!has_gcs_content_uri()) {
-    clear_source();
-    set_has_gcs_content_uri();
-    source_.gcs_content_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  }
-  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Document.gcs_content_uri)
-  return source_.gcs_content_uri_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* Document::release_gcs_content_uri() {
-  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Document.gcs_content_uri)
-  if (has_gcs_content_uri()) {
-    clear_has_source();
-    return source_.gcs_content_uri_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  } else {
-    return NULL;
-  }
-}
-void Document::set_allocated_gcs_content_uri(::std::string* gcs_content_uri) {
-  if (!has_gcs_content_uri()) {
-    source_.gcs_content_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  }
-  clear_source();
-  if (gcs_content_uri != NULL) {
-    set_has_gcs_content_uri();
-    source_.gcs_content_uri_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-        gcs_content_uri);
-  }
-  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Document.gcs_content_uri)
-}
-
-// string language = 4;
-void Document::clear_language() {
-  language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-const ::std::string& Document::language() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Document.language)
-  return language_.GetNoArena();
-}
-void Document::set_language(const ::std::string& value) {
-  
-  language_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Document.language)
-}
-void Document::set_language(const char* value) {
-  
-  language_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:google.cloud.language.v1beta1.Document.language)
-}
-void Document::set_language(const char* value, size_t size) {
-  
-  language_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:google.cloud.language.v1beta1.Document.language)
-}
-::std::string* Document::mutable_language() {
-  
-  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Document.language)
-  return language_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* Document::release_language() {
-  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Document.language)
-  
-  return language_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void Document::set_allocated_language(::std::string* language) {
-  if (language != NULL) {
-    
-  } else {
-    
-  }
-  language_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), language);
-  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Document.language)
-}
-
-bool Document::has_source() const {
-  return source_case() != SOURCE_NOT_SET;
-}
-void Document::clear_has_source() {
-  _oneof_case_[0] = SOURCE_NOT_SET;
-}
-Document::SourceCase Document::source_case() const {
-  return Document::SourceCase(_oneof_case_[0]);
-}
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int Sentence::kTextFieldNumber;
-const int Sentence::kSentimentFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-Sentence::Sentence()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.Sentence)
-}
-Sentence::Sentence(const Sentence& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_text()) {
-    text_ = new ::google::cloud::language::v1beta1::TextSpan(*from.text_);
-  } else {
-    text_ = NULL;
-  }
-  if (from.has_sentiment()) {
-    sentiment_ = new ::google::cloud::language::v1beta1::Sentiment(*from.sentiment_);
-  } else {
-    sentiment_ = NULL;
-  }
-  // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.Sentence)
-}
-
-void Sentence::SharedCtor() {
-  ::memset(&text_, 0, reinterpret_cast<char*>(&sentiment_) -
-    reinterpret_cast<char*>(&text_) + sizeof(sentiment_));
-  _cached_size_ = 0;
-}
-
-Sentence::~Sentence() {
-  // @@protoc_insertion_point(destructor:google.cloud.language.v1beta1.Sentence)
-  SharedDtor();
-}
-
-void Sentence::SharedDtor() {
-  if (this != internal_default_instance()) {
-    delete text_;
-  }
-  if (this != internal_default_instance()) {
-    delete sentiment_;
-  }
-}
-
-void Sentence::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-}
-const ::google::protobuf::Descriptor* Sentence::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
-}
-
-const Sentence& Sentence::default_instance() {
-  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  return *internal_default_instance();
-}
-
-Sentence* Sentence::New(::google::protobuf::Arena* arena) const {
-  Sentence* n = new Sentence;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
-
-void Sentence::Clear() {
-// @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.Sentence)
-  if (GetArenaNoVirtual() == NULL && text_ != NULL) {
-    delete text_;
-  }
-  text_ = NULL;
-  if (GetArenaNoVirtual() == NULL && sentiment_ != NULL) {
-    delete sentiment_;
-  }
-  sentiment_ = NULL;
-}
-
-bool Sentence::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.Sentence)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.cloud.language.v1beta1.TextSpan text = 1;
-      case 1: {
-        if (tag == 10u) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
-               input, mutable_text()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .google.cloud.language.v1beta1.Sentiment sentiment = 2;
-      case 2: {
-        if (tag == 18u) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
-               input, mutable_sentiment()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0 ||
-            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:google.cloud.language.v1beta1.Sentence)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:google.cloud.language.v1beta1.Sentence)
-  return false;
-#undef DO_
-}
-
-void Sentence::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.Sentence)
-  // .google.cloud.language.v1beta1.TextSpan text = 1;
-  if (this->has_text()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, *this->text_, output);
-  }
-
-  // .google.cloud.language.v1beta1.Sentiment sentiment = 2;
-  if (this->has_sentiment()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, *this->sentiment_, output);
-  }
-
-  // @@protoc_insertion_point(serialize_end:google.cloud.language.v1beta1.Sentence)
-}
-
-::google::protobuf::uint8* Sentence::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.Sentence)
-  // .google.cloud.language.v1beta1.TextSpan text = 1;
-  if (this->has_text()) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageNoVirtualToArray(
-        1, *this->text_, false, target);
-  }
-
-  // .google.cloud.language.v1beta1.Sentiment sentiment = 2;
-  if (this->has_sentiment()) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageNoVirtualToArray(
-        2, *this->sentiment_, false, target);
-  }
-
-  // @@protoc_insertion_point(serialize_to_array_end:google.cloud.language.v1beta1.Sentence)
-  return target;
-}
-
-size_t Sentence::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.Sentence)
-  size_t total_size = 0;
-
-  // .google.cloud.language.v1beta1.TextSpan text = 1;
-  if (this->has_text()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->text_);
-  }
-
-  // .google.cloud.language.v1beta1.Sentiment sentiment = 2;
-  if (this->has_sentiment()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->sentiment_);
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-  return total_size;
-}
-
-void Sentence::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.Sentence)
-  GOOGLE_DCHECK_NE(&from, this);
-  const Sentence* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Sentence>(
-          &from);
-  if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.cloud.language.v1beta1.Sentence)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.Sentence)
-    MergeFrom(*source);
-  }
-}
-
-void Sentence::MergeFrom(const Sentence& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.Sentence)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_text()) {
-    mutable_text()->::google::cloud::language::v1beta1::TextSpan::MergeFrom(from.text());
-  }
-  if (from.has_sentiment()) {
-    mutable_sentiment()->::google::cloud::language::v1beta1::Sentiment::MergeFrom(from.sentiment());
-  }
-}
-
-void Sentence::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:google.cloud.language.v1beta1.Sentence)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void Sentence::CopyFrom(const Sentence& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.Sentence)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool Sentence::IsInitialized() const {
-  return true;
-}
-
-void Sentence::Swap(Sentence* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void Sentence::InternalSwap(Sentence* other) {
-  std::swap(text_, other->text_);
-  std::swap(sentiment_, other->sentiment_);
-  std::swap(_cached_size_, other->_cached_size_);
-}
-
-::google::protobuf::Metadata Sentence::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
-}
-
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// Sentence
-
-// .google.cloud.language.v1beta1.TextSpan text = 1;
-bool Sentence::has_text() const {
-  return this != internal_default_instance() && text_ != NULL;
-}
-void Sentence::clear_text() {
-  if (GetArenaNoVirtual() == NULL && text_ != NULL) delete text_;
-  text_ = NULL;
-}
-const ::google::cloud::language::v1beta1::TextSpan& Sentence::text() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Sentence.text)
-  return text_ != NULL ? *text_
-                         : *::google::cloud::language::v1beta1::TextSpan::internal_default_instance();
-}
-::google::cloud::language::v1beta1::TextSpan* Sentence::mutable_text() {
-  
-  if (text_ == NULL) {
-    text_ = new ::google::cloud::language::v1beta1::TextSpan;
-  }
-  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Sentence.text)
-  return text_;
-}
-::google::cloud::language::v1beta1::TextSpan* Sentence::release_text() {
-  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Sentence.text)
-  
-  ::google::cloud::language::v1beta1::TextSpan* temp = text_;
-  text_ = NULL;
-  return temp;
-}
-void Sentence::set_allocated_text(::google::cloud::language::v1beta1::TextSpan* text) {
-  delete text_;
-  text_ = text;
-  if (text) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Sentence.text)
-}
-
-// .google.cloud.language.v1beta1.Sentiment sentiment = 2;
-bool Sentence::has_sentiment() const {
-  return this != internal_default_instance() && sentiment_ != NULL;
-}
-void Sentence::clear_sentiment() {
-  if (GetArenaNoVirtual() == NULL && sentiment_ != NULL) delete sentiment_;
-  sentiment_ = NULL;
-}
-const ::google::cloud::language::v1beta1::Sentiment& Sentence::sentiment() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Sentence.sentiment)
-  return sentiment_ != NULL ? *sentiment_
-                         : *::google::cloud::language::v1beta1::Sentiment::internal_default_instance();
-}
-::google::cloud::language::v1beta1::Sentiment* Sentence::mutable_sentiment() {
-  
-  if (sentiment_ == NULL) {
-    sentiment_ = new ::google::cloud::language::v1beta1::Sentiment;
-  }
-  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Sentence.sentiment)
-  return sentiment_;
-}
-::google::cloud::language::v1beta1::Sentiment* Sentence::release_sentiment() {
-  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Sentence.sentiment)
-  
-  ::google::cloud::language::v1beta1::Sentiment* temp = sentiment_;
-  sentiment_ = NULL;
-  return temp;
-}
-void Sentence::set_allocated_sentiment(::google::cloud::language::v1beta1::Sentiment* sentiment) {
-  delete sentiment_;
-  sentiment_ = sentiment;
-  if (sentiment) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Sentence.sentiment)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
-
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int Entity::kNameFieldNumber;
-const int Entity::kTypeFieldNumber;
-const int Entity::kMetadataFieldNumber;
-const int Entity::kSalienceFieldNumber;
-const int Entity::kMentionsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-Entity::Entity()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.Entity)
-}
-Entity::Entity(const Entity& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      mentions_(from.mentions_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  const ::google::protobuf::Descriptor*& Entity_MetadataEntry_descriptor = file_level_metadata[2].descriptor;
-  metadata_.SetAssignDescriptorCallback(
-      protobuf_AssignDescriptorsOnce);
-  metadata_.SetEntryDescriptor(
-      &Entity_MetadataEntry_descriptor);
-  metadata_.MergeFrom(from.metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  ::memcpy(&type_, &from.type_,
-    reinterpret_cast<char*>(&salience_) -
-    reinterpret_cast<char*>(&type_) + sizeof(salience_));
-  // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.Entity)
-}
-
-void Entity::SharedCtor() {
-  const ::google::protobuf::Descriptor*& Entity_MetadataEntry_descriptor = file_level_metadata[2].descriptor;
-  metadata_.SetAssignDescriptorCallback(
-      protobuf_AssignDescriptorsOnce);
-  metadata_.SetEntryDescriptor(
-      &Entity_MetadataEntry_descriptor);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&type_, 0, reinterpret_cast<char*>(&salience_) -
-    reinterpret_cast<char*>(&type_) + sizeof(salience_));
-  _cached_size_ = 0;
-}
-
-Entity::~Entity() {
-  // @@protoc_insertion_point(destructor:google.cloud.language.v1beta1.Entity)
-  SharedDtor();
-}
-
-void Entity::SharedDtor() {
-  name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-
-void Entity::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-}
-const ::google::protobuf::Descriptor* Entity::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
-}
-
-const Entity& Entity::default_instance() {
-  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  return *internal_default_instance();
-}
-
-Entity* Entity::New(::google::protobuf::Arena* arena) const {
-  Entity* n = new Entity;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
-
-void Entity::Clear() {
-// @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.Entity)
-  metadata_.Clear();
-  mentions_.Clear();
-  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&type_, 0, reinterpret_cast<char*>(&salience_) -
-    reinterpret_cast<char*>(&type_) + sizeof(salience_));
-}
-
-bool Entity::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.Entity)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
-      case 1: {
-        if (tag == 10u) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_name()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->name().data(), this->name().length(),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "google.cloud.language.v1beta1.Entity.name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .google.cloud.language.v1beta1.Entity.Type type = 2;
-      case 2: {
-        if (tag == 16u) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_type(static_cast< ::google::cloud::language::v1beta1::Entity_Type >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // map<string, string> metadata = 3;
-      case 3: {
-        if (tag == 26u) {
-          DO_(input->IncrementRecursionDepth());
-          Entity_MetadataEntry::Parser< ::google::protobuf::internal::MapField<
-              ::std::string, ::std::string,
-              ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
-              ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
-              0 >,
-            ::google::protobuf::Map< ::std::string, ::std::string > > parser(&metadata_);
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
-              input, &parser));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            parser.key().data(), parser.key().length(),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "google.cloud.language.v1beta1.Entity.MetadataEntry.key"));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            parser.value().data(), parser.value().length(),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "google.cloud.language.v1beta1.Entity.MetadataEntry.value"));
-        } else {
-          goto handle_unusual;
-        }
-        input->UnsafeDecrementRecursionDepth();
-        break;
-      }
-
-      // float salience = 4;
-      case 4: {
-        if (tag == 37u) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &salience_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated .google.cloud.language.v1beta1.EntityMention mentions = 5;
-      case 5: {
-        if (tag == 42u) {
-          DO_(input->IncrementRecursionDepth());
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
-                input, add_mentions()));
-        } else {
-          goto handle_unusual;
-        }
-        input->UnsafeDecrementRecursionDepth();
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0 ||
-            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:google.cloud.language.v1beta1.Entity)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:google.cloud.language.v1beta1.Entity)
-  return false;
-#undef DO_
-}
-
-void Entity::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.Entity)
-  // string name = 1;
-  if (this->name().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->name().data(), this->name().length(),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "google.cloud.language.v1beta1.Entity.name");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      1, this->name(), output);
-  }
-
-  // .google.cloud.language.v1beta1.Entity.Type type = 2;
-  if (this->type() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->type(), output);
-  }
-
-  // map<string, string> metadata = 3;
-  if (!this->metadata().empty()) {
-    typedef ::google::protobuf::Map< ::std::string, ::std::string >::const_pointer
-        ConstPtr;
-    typedef ConstPtr SortItem;
-    typedef ::google::protobuf::internal::CompareByDerefFirst<SortItem> Less;
-    struct Utf8Check {
-      static void Check(ConstPtr p) {
-        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-          p->first.data(), p->first.length(),
-          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-          "google.cloud.language.v1beta1.Entity.MetadataEntry.key");
-        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-          p->second.data(), p->second.length(),
-          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-          "google.cloud.language.v1beta1.Entity.MetadataEntry.value");
-      }
-    };
-
-    if (output->IsSerializationDeterministic() &&
-        this->metadata().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
-          new SortItem[this->metadata().size()]);
-      typedef ::google::protobuf::Map< ::std::string, ::std::string >::size_type size_type;
-      size_type n = 0;
-      for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
-          it = this->metadata().begin();
-          it != this->metadata().end(); ++it, ++n) {
-        items[n] = SortItem(&*it);
-      }
-      ::std::sort(&items[0], &items[n], Less());
-      ::google::protobuf::scoped_ptr<Entity_MetadataEntry> entry;
-      for (size_type i = 0; i < n; i++) {
-        entry.reset(metadata_.NewEntryWrapper(
-            items[i]->first, items[i]->second));
-        ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-            3, *entry, output);
-        Utf8Check::Check(items[i]);
-      }
-    } else {
-      ::google::protobuf::scoped_ptr<Entity_MetadataEntry> entry;
-      for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
-          it = this->metadata().begin();
-          it != this->metadata().end(); ++it) {
-        entry.reset(metadata_.NewEntryWrapper(
-            it->first, it->second));
-        ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-            3, *entry, output);
-        Utf8Check::Check(&*it);
-      }
-    }
-  }
-
-  // float salience = 4;
-  if (this->salience() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(4, this->salience(), output);
-  }
-
-  // repeated .google.cloud.language.v1beta1.EntityMention mentions = 5;
-  for (unsigned int i = 0, n = this->mentions_size(); i < n; i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, this->mentions(i), output);
-  }
-
-  // @@protoc_insertion_point(serialize_end:google.cloud.language.v1beta1.Entity)
-}
-
-::google::protobuf::uint8* Entity::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.Entity)
-  // string name = 1;
-  if (this->name().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->name().data(), this->name().length(),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "google.cloud.language.v1beta1.Entity.name");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        1, this->name(), target);
-  }
-
-  // .google.cloud.language.v1beta1.Entity.Type type = 2;
-  if (this->type() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->type(), target);
-  }
-
-  // map<string, string> metadata = 3;
-  if (!this->metadata().empty()) {
-    typedef ::google::protobuf::Map< ::std::string, ::std::string >::const_pointer
-        ConstPtr;
-    typedef ConstPtr SortItem;
-    typedef ::google::protobuf::internal::CompareByDerefFirst<SortItem> Less;
-    struct Utf8Check {
-      static void Check(ConstPtr p) {
-        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-          p->first.data(), p->first.length(),
-          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-          "google.cloud.language.v1beta1.Entity.MetadataEntry.key");
-        ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-          p->second.data(), p->second.length(),
-          ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-          "google.cloud.language.v1beta1.Entity.MetadataEntry.value");
-      }
-    };
-
-    if (deterministic &&
-        this->metadata().size() > 1) {
-      ::google::protobuf::scoped_array<SortItem> items(
-          new SortItem[this->metadata().size()]);
-      typedef ::google::protobuf::Map< ::std::string, ::std::string >::size_type size_type;
-      size_type n = 0;
-      for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
-          it = this->metadata().begin();
-          it != this->metadata().end(); ++it, ++n) {
-        items[n] = SortItem(&*it);
-      }
-      ::std::sort(&items[0], &items[n], Less());
-      ::google::protobuf::scoped_ptr<Entity_MetadataEntry> entry;
-      for (size_type i = 0; i < n; i++) {
-        entry.reset(metadata_.NewEntryWrapper(
-            items[i]->first, items[i]->second));
-        target = ::google::protobuf::internal::WireFormatLite::
-                   InternalWriteMessageNoVirtualToArray(
-                       3, *entry, deterministic, target);
-;
-        Utf8Check::Check(items[i]);
-      }
-    } else {
-      ::google::protobuf::scoped_ptr<Entity_MetadataEntry> entry;
-      for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
-          it = this->metadata().begin();
-          it != this->metadata().end(); ++it) {
-        entry.reset(metadata_.NewEntryWrapper(
-            it->first, it->second));
-        target = ::google::protobuf::internal::WireFormatLite::
-                   InternalWriteMessageNoVirtualToArray(
-                       3, *entry, deterministic, target);
-;
-        Utf8Check::Check(&*it);
-      }
-    }
-  }
-
-  // float salience = 4;
-  if (this->salience() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(4, this->salience(), target);
-  }
-
-  // repeated .google.cloud.language.v1beta1.EntityMention mentions = 5;
-  for (unsigned int i = 0, n = this->mentions_size(); i < n; i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageNoVirtualToArray(
-        5, this->mentions(i), false, target);
-  }
-
-  // @@protoc_insertion_point(serialize_to_array_end:google.cloud.language.v1beta1.Entity)
-  return target;
-}
-
-size_t Entity::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.Entity)
-  size_t total_size = 0;
-
-  // map<string, string> metadata = 3;
-  total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->metadata_size());
-  {
-    ::google::protobuf::scoped_ptr<Entity_MetadataEntry> entry;
-    for (::google::protobuf::Map< ::std::string, ::std::string >::const_iterator
-        it = this->metadata().begin();
-        it != this->metadata().end(); ++it) {
-      entry.reset(metadata_.NewEntryWrapper(it->first, it->second));
-      total_size += ::google::protobuf::internal::WireFormatLite::
-          MessageSizeNoVirtual(*entry);
-    }
-  }
-
-  // repeated .google.cloud.language.v1beta1.EntityMention mentions = 5;
-  {
-    unsigned int count = this->mentions_size();
-    total_size += 1UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-          this->mentions(i));
-    }
-  }
-
-  // string name = 1;
-  if (this->name().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->name());
-  }
-
-  // .google.cloud.language.v1beta1.Entity.Type type = 2;
-  if (this->type() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
-  }
-
-  // float salience = 4;
-  if (this->salience() != 0) {
-    total_size += 1 + 4;
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-  return total_size;
-}
-
-void Entity::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.Entity)
-  GOOGLE_DCHECK_NE(&from, this);
-  const Entity* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Entity>(
-          &from);
-  if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.cloud.language.v1beta1.Entity)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.Entity)
-    MergeFrom(*source);
-  }
-}
-
-void Entity::MergeFrom(const Entity& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.Entity)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  metadata_.MergeFrom(from.metadata_);
-  mentions_.MergeFrom(from.mentions_);
-  if (from.name().size() > 0) {
-
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  if (from.type() != 0) {
-    set_type(from.type());
-  }
-  if (from.salience() != 0) {
-    set_salience(from.salience());
-  }
-}
-
-void Entity::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:google.cloud.language.v1beta1.Entity)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void Entity::CopyFrom(const Entity& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.Entity)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool Entity::IsInitialized() const {
-  return true;
-}
-
-void Entity::Swap(Entity* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void Entity::InternalSwap(Entity* other) {
-  metadata_.Swap(&other->metadata_);
-  mentions_.UnsafeArenaSwap(&other->mentions_);
-  name_.Swap(&other->name_);
-  std::swap(type_, other->type_);
-  std::swap(salience_, other->salience_);
-  std::swap(_cached_size_, other->_cached_size_);
-}
-
-::google::protobuf::Metadata Entity::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
-}
-
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// Entity
-
-// string name = 1;
-void Entity::clear_name() {
-  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-const ::std::string& Entity::name() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Entity.name)
-  return name_.GetNoArena();
-}
-void Entity::set_name(const ::std::string& value) {
-  
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Entity.name)
-}
-void Entity::set_name(const char* value) {
-  
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:google.cloud.language.v1beta1.Entity.name)
-}
-void Entity::set_name(const char* value, size_t size) {
-  
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:google.cloud.language.v1beta1.Entity.name)
-}
-::std::string* Entity::mutable_name() {
-  
-  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Entity.name)
-  return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* Entity::release_name() {
-  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Entity.name)
-  
-  return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void Entity::set_allocated_name(::std::string* name) {
-  if (name != NULL) {
-    
-  } else {
-    
-  }
-  name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name);
-  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Entity.name)
-}
-
-// .google.cloud.language.v1beta1.Entity.Type type = 2;
-void Entity::clear_type() {
-  type_ = 0;
-}
-::google::cloud::language::v1beta1::Entity_Type Entity::type() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Entity.type)
-  return static_cast< ::google::cloud::language::v1beta1::Entity_Type >(type_);
-}
-void Entity::set_type(::google::cloud::language::v1beta1::Entity_Type value) {
-  
-  type_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Entity.type)
-}
-
-// map<string, string> metadata = 3;
-int Entity::metadata_size() const {
-  return metadata_.size();
-}
-void Entity::clear_metadata() {
-  metadata_.Clear();
-}
- const ::google::protobuf::Map< ::std::string, ::std::string >&
-Entity::metadata() const {
-  // @@protoc_insertion_point(field_map:google.cloud.language.v1beta1.Entity.metadata)
-  return metadata_.GetMap();
-}
- ::google::protobuf::Map< ::std::string, ::std::string >*
-Entity::mutable_metadata() {
-  // @@protoc_insertion_point(field_mutable_map:google.cloud.language.v1beta1.Entity.metadata)
-  return metadata_.MutableMap();
-}
-
-// float salience = 4;
-void Entity::clear_salience() {
-  salience_ = 0;
-}
-float Entity::salience() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Entity.salience)
-  return salience_;
-}
-void Entity::set_salience(float value) {
-  
-  salience_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Entity.salience)
-}
-
-// repeated .google.cloud.language.v1beta1.EntityMention mentions = 5;
-int Entity::mentions_size() const {
-  return mentions_.size();
-}
-void Entity::clear_mentions() {
-  mentions_.Clear();
-}
-const ::google::cloud::language::v1beta1::EntityMention& Entity::mentions(int index) const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Entity.mentions)
-  return mentions_.Get(index);
-}
-::google::cloud::language::v1beta1::EntityMention* Entity::mutable_mentions(int index) {
-  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Entity.mentions)
-  return mentions_.Mutable(index);
-}
-::google::cloud::language::v1beta1::EntityMention* Entity::add_mentions() {
-  // @@protoc_insertion_point(field_add:google.cloud.language.v1beta1.Entity.mentions)
-  return mentions_.Add();
-}
-::google::protobuf::RepeatedPtrField< ::google::cloud::language::v1beta1::EntityMention >*
-Entity::mutable_mentions() {
-  // @@protoc_insertion_point(field_mutable_list:google.cloud.language.v1beta1.Entity.mentions)
-  return &mentions_;
-}
-const ::google::protobuf::RepeatedPtrField< ::google::cloud::language::v1beta1::EntityMention >&
-Entity::mentions() const {
-  // @@protoc_insertion_point(field_list:google.cloud.language.v1beta1.Entity.mentions)
-  return mentions_;
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int Token::kTextFieldNumber;
-const int Token::kPartOfSpeechFieldNumber;
-const int Token::kDependencyEdgeFieldNumber;
-const int Token::kLemmaFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-Token::Token()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.Token)
-}
-Token::Token(const Token& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  lemma_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.lemma().size() > 0) {
-    lemma_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.lemma_);
-  }
-  if (from.has_text()) {
-    text_ = new ::google::cloud::language::v1beta1::TextSpan(*from.text_);
-  } else {
-    text_ = NULL;
-  }
-  if (from.has_part_of_speech()) {
-    part_of_speech_ = new ::google::cloud::language::v1beta1::PartOfSpeech(*from.part_of_speech_);
-  } else {
-    part_of_speech_ = NULL;
-  }
-  if (from.has_dependency_edge()) {
-    dependency_edge_ = new ::google::cloud::language::v1beta1::DependencyEdge(*from.dependency_edge_);
-  } else {
-    dependency_edge_ = NULL;
-  }
-  // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.Token)
-}
-
-void Token::SharedCtor() {
-  lemma_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&text_, 0, reinterpret_cast<char*>(&dependency_edge_) -
-    reinterpret_cast<char*>(&text_) + sizeof(dependency_edge_));
-  _cached_size_ = 0;
-}
-
-Token::~Token() {
-  // @@protoc_insertion_point(destructor:google.cloud.language.v1beta1.Token)
-  SharedDtor();
-}
-
-void Token::SharedDtor() {
-  lemma_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
-    delete text_;
-  }
-  if (this != internal_default_instance()) {
-    delete part_of_speech_;
-  }
-  if (this != internal_default_instance()) {
-    delete dependency_edge_;
-  }
-}
-
-void Token::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-}
-const ::google::protobuf::Descriptor* Token::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
-}
-
-const Token& Token::default_instance() {
-  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  return *internal_default_instance();
-}
-
-Token* Token::New(::google::protobuf::Arena* arena) const {
-  Token* n = new Token;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
-
-void Token::Clear() {
-// @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.Token)
-  lemma_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && text_ != NULL) {
-    delete text_;
-  }
-  text_ = NULL;
-  if (GetArenaNoVirtual() == NULL && part_of_speech_ != NULL) {
-    delete part_of_speech_;
-  }
-  part_of_speech_ = NULL;
-  if (GetArenaNoVirtual() == NULL && dependency_edge_ != NULL) {
-    delete dependency_edge_;
-  }
-  dependency_edge_ = NULL;
-}
-
-bool Token::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.Token)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.cloud.language.v1beta1.TextSpan text = 1;
-      case 1: {
-        if (tag == 10u) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
-               input, mutable_text()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .google.cloud.language.v1beta1.PartOfSpeech part_of_speech = 2;
-      case 2: {
-        if (tag == 18u) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
-               input, mutable_part_of_speech()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .google.cloud.language.v1beta1.DependencyEdge dependency_edge = 3;
-      case 3: {
-        if (tag == 26u) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
-               input, mutable_dependency_edge()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string lemma = 4;
-      case 4: {
-        if (tag == 34u) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
-                input, this->mutable_lemma()));
-          DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-            this->lemma().data(), this->lemma().length(),
-            ::google::protobuf::internal::WireFormatLite::PARSE,
-            "google.cloud.language.v1beta1.Token.lemma"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0 ||
-            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:google.cloud.language.v1beta1.Token)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:google.cloud.language.v1beta1.Token)
-  return false;
-#undef DO_
-}
-
-void Token::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.Token)
-  // .google.cloud.language.v1beta1.TextSpan text = 1;
-  if (this->has_text()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, *this->text_, output);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech part_of_speech = 2;
-  if (this->has_part_of_speech()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, *this->part_of_speech_, output);
-  }
-
-  // .google.cloud.language.v1beta1.DependencyEdge dependency_edge = 3;
-  if (this->has_dependency_edge()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, *this->dependency_edge_, output);
-  }
-
-  // string lemma = 4;
-  if (this->lemma().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->lemma().data(), this->lemma().length(),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "google.cloud.language.v1beta1.Token.lemma");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
-      4, this->lemma(), output);
-  }
-
-  // @@protoc_insertion_point(serialize_end:google.cloud.language.v1beta1.Token)
-}
-
-::google::protobuf::uint8* Token::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.Token)
-  // .google.cloud.language.v1beta1.TextSpan text = 1;
-  if (this->has_text()) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageNoVirtualToArray(
-        1, *this->text_, false, target);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech part_of_speech = 2;
-  if (this->has_part_of_speech()) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageNoVirtualToArray(
-        2, *this->part_of_speech_, false, target);
-  }
-
-  // .google.cloud.language.v1beta1.DependencyEdge dependency_edge = 3;
-  if (this->has_dependency_edge()) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageNoVirtualToArray(
-        3, *this->dependency_edge_, false, target);
-  }
-
-  // string lemma = 4;
-  if (this->lemma().size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-      this->lemma().data(), this->lemma().length(),
-      ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "google.cloud.language.v1beta1.Token.lemma");
-    target =
-      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
-        4, this->lemma(), target);
-  }
-
-  // @@protoc_insertion_point(serialize_to_array_end:google.cloud.language.v1beta1.Token)
-  return target;
-}
-
-size_t Token::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.Token)
-  size_t total_size = 0;
-
-  // string lemma = 4;
-  if (this->lemma().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->lemma());
-  }
-
-  // .google.cloud.language.v1beta1.TextSpan text = 1;
-  if (this->has_text()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->text_);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech part_of_speech = 2;
-  if (this->has_part_of_speech()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->part_of_speech_);
-  }
-
-  // .google.cloud.language.v1beta1.DependencyEdge dependency_edge = 3;
-  if (this->has_dependency_edge()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->dependency_edge_);
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-  return total_size;
-}
-
-void Token::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.Token)
-  GOOGLE_DCHECK_NE(&from, this);
-  const Token* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Token>(
-          &from);
-  if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.cloud.language.v1beta1.Token)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.Token)
-    MergeFrom(*source);
-  }
-}
-
-void Token::MergeFrom(const Token& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.Token)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.lemma().size() > 0) {
-
-    lemma_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.lemma_);
-  }
-  if (from.has_text()) {
-    mutable_text()->::google::cloud::language::v1beta1::TextSpan::MergeFrom(from.text());
-  }
-  if (from.has_part_of_speech()) {
-    mutable_part_of_speech()->::google::cloud::language::v1beta1::PartOfSpeech::MergeFrom(from.part_of_speech());
-  }
-  if (from.has_dependency_edge()) {
-    mutable_dependency_edge()->::google::cloud::language::v1beta1::DependencyEdge::MergeFrom(from.dependency_edge());
-  }
-}
-
-void Token::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:google.cloud.language.v1beta1.Token)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void Token::CopyFrom(const Token& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.Token)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool Token::IsInitialized() const {
-  return true;
-}
-
-void Token::Swap(Token* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void Token::InternalSwap(Token* other) {
-  lemma_.Swap(&other->lemma_);
-  std::swap(text_, other->text_);
-  std::swap(part_of_speech_, other->part_of_speech_);
-  std::swap(dependency_edge_, other->dependency_edge_);
-  std::swap(_cached_size_, other->_cached_size_);
-}
-
-::google::protobuf::Metadata Token::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
-}
-
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// Token
-
-// .google.cloud.language.v1beta1.TextSpan text = 1;
-bool Token::has_text() const {
-  return this != internal_default_instance() && text_ != NULL;
-}
-void Token::clear_text() {
-  if (GetArenaNoVirtual() == NULL && text_ != NULL) delete text_;
-  text_ = NULL;
-}
-const ::google::cloud::language::v1beta1::TextSpan& Token::text() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Token.text)
-  return text_ != NULL ? *text_
-                         : *::google::cloud::language::v1beta1::TextSpan::internal_default_instance();
-}
-::google::cloud::language::v1beta1::TextSpan* Token::mutable_text() {
-  
-  if (text_ == NULL) {
-    text_ = new ::google::cloud::language::v1beta1::TextSpan;
-  }
-  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Token.text)
-  return text_;
-}
-::google::cloud::language::v1beta1::TextSpan* Token::release_text() {
-  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Token.text)
-  
-  ::google::cloud::language::v1beta1::TextSpan* temp = text_;
-  text_ = NULL;
-  return temp;
-}
-void Token::set_allocated_text(::google::cloud::language::v1beta1::TextSpan* text) {
-  delete text_;
-  text_ = text;
-  if (text) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Token.text)
-}
-
-// .google.cloud.language.v1beta1.PartOfSpeech part_of_speech = 2;
-bool Token::has_part_of_speech() const {
-  return this != internal_default_instance() && part_of_speech_ != NULL;
-}
-void Token::clear_part_of_speech() {
-  if (GetArenaNoVirtual() == NULL && part_of_speech_ != NULL) delete part_of_speech_;
-  part_of_speech_ = NULL;
-}
-const ::google::cloud::language::v1beta1::PartOfSpeech& Token::part_of_speech() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Token.part_of_speech)
-  return part_of_speech_ != NULL ? *part_of_speech_
-                         : *::google::cloud::language::v1beta1::PartOfSpeech::internal_default_instance();
-}
-::google::cloud::language::v1beta1::PartOfSpeech* Token::mutable_part_of_speech() {
-  
-  if (part_of_speech_ == NULL) {
-    part_of_speech_ = new ::google::cloud::language::v1beta1::PartOfSpeech;
-  }
-  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Token.part_of_speech)
-  return part_of_speech_;
-}
-::google::cloud::language::v1beta1::PartOfSpeech* Token::release_part_of_speech() {
-  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Token.part_of_speech)
-  
-  ::google::cloud::language::v1beta1::PartOfSpeech* temp = part_of_speech_;
-  part_of_speech_ = NULL;
-  return temp;
-}
-void Token::set_allocated_part_of_speech(::google::cloud::language::v1beta1::PartOfSpeech* part_of_speech) {
-  delete part_of_speech_;
-  part_of_speech_ = part_of_speech;
-  if (part_of_speech) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Token.part_of_speech)
-}
-
-// .google.cloud.language.v1beta1.DependencyEdge dependency_edge = 3;
-bool Token::has_dependency_edge() const {
-  return this != internal_default_instance() && dependency_edge_ != NULL;
-}
-void Token::clear_dependency_edge() {
-  if (GetArenaNoVirtual() == NULL && dependency_edge_ != NULL) delete dependency_edge_;
-  dependency_edge_ = NULL;
-}
-const ::google::cloud::language::v1beta1::DependencyEdge& Token::dependency_edge() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Token.dependency_edge)
-  return dependency_edge_ != NULL ? *dependency_edge_
-                         : *::google::cloud::language::v1beta1::DependencyEdge::internal_default_instance();
-}
-::google::cloud::language::v1beta1::DependencyEdge* Token::mutable_dependency_edge() {
-  
-  if (dependency_edge_ == NULL) {
-    dependency_edge_ = new ::google::cloud::language::v1beta1::DependencyEdge;
-  }
-  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Token.dependency_edge)
-  return dependency_edge_;
-}
-::google::cloud::language::v1beta1::DependencyEdge* Token::release_dependency_edge() {
-  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Token.dependency_edge)
-  
-  ::google::cloud::language::v1beta1::DependencyEdge* temp = dependency_edge_;
-  dependency_edge_ = NULL;
-  return temp;
-}
-void Token::set_allocated_dependency_edge(::google::cloud::language::v1beta1::DependencyEdge* dependency_edge) {
-  delete dependency_edge_;
-  dependency_edge_ = dependency_edge;
-  if (dependency_edge) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Token.dependency_edge)
-}
-
-// string lemma = 4;
-void Token::clear_lemma() {
-  lemma_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-const ::std::string& Token::lemma() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Token.lemma)
-  return lemma_.GetNoArena();
-}
-void Token::set_lemma(const ::std::string& value) {
-  
-  lemma_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Token.lemma)
-}
-void Token::set_lemma(const char* value) {
-  
-  lemma_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:google.cloud.language.v1beta1.Token.lemma)
-}
-void Token::set_lemma(const char* value, size_t size) {
-  
-  lemma_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:google.cloud.language.v1beta1.Token.lemma)
-}
-::std::string* Token::mutable_lemma() {
-  
-  // @@protoc_insertion_point(field_mutable:google.cloud.language.v1beta1.Token.lemma)
-  return lemma_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* Token::release_lemma() {
-  // @@protoc_insertion_point(field_release:google.cloud.language.v1beta1.Token.lemma)
-  
-  return lemma_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void Token::set_allocated_lemma(::std::string* lemma) {
-  if (lemma != NULL) {
-    
-  } else {
-    
-  }
-  lemma_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), lemma);
-  // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Token.lemma)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int Sentiment::kPolarityFieldNumber;
-const int Sentiment::kMagnitudeFieldNumber;
-const int Sentiment::kScoreFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-Sentiment::Sentiment()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.Sentiment)
-}
-Sentiment::Sentiment(const Sentiment& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&polarity_, &from.polarity_,
-    reinterpret_cast<char*>(&score_) -
-    reinterpret_cast<char*>(&polarity_) + sizeof(score_));
-  // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.Sentiment)
-}
-
-void Sentiment::SharedCtor() {
-  ::memset(&polarity_, 0, reinterpret_cast<char*>(&score_) -
-    reinterpret_cast<char*>(&polarity_) + sizeof(score_));
-  _cached_size_ = 0;
-}
-
-Sentiment::~Sentiment() {
-  // @@protoc_insertion_point(destructor:google.cloud.language.v1beta1.Sentiment)
-  SharedDtor();
-}
-
-void Sentiment::SharedDtor() {
-}
-
-void Sentiment::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-}
-const ::google::protobuf::Descriptor* Sentiment::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
-}
-
-const Sentiment& Sentiment::default_instance() {
-  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  return *internal_default_instance();
-}
-
-Sentiment* Sentiment::New(::google::protobuf::Arena* arena) const {
-  Sentiment* n = new Sentiment;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
-
-void Sentiment::Clear() {
-// @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.Sentiment)
-  ::memset(&polarity_, 0, reinterpret_cast<char*>(&score_) -
-    reinterpret_cast<char*>(&polarity_) + sizeof(score_));
-}
-
-bool Sentiment::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.Sentiment)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // float polarity = 1;
-      case 1: {
-        if (tag == 13u) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &polarity_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // float magnitude = 2;
-      case 2: {
-        if (tag == 21u) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &magnitude_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // float score = 3;
-      case 3: {
-        if (tag == 29u) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 input, &score_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0 ||
-            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:google.cloud.language.v1beta1.Sentiment)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:google.cloud.language.v1beta1.Sentiment)
-  return false;
-#undef DO_
-}
-
-void Sentiment::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.Sentiment)
-  // float polarity = 1;
-  if (this->polarity() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(1, this->polarity(), output);
-  }
-
-  // float magnitude = 2;
-  if (this->magnitude() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(2, this->magnitude(), output);
-  }
-
-  // float score = 3;
-  if (this->score() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->score(), output);
-  }
-
-  // @@protoc_insertion_point(serialize_end:google.cloud.language.v1beta1.Sentiment)
-}
-
-::google::protobuf::uint8* Sentiment::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.Sentiment)
-  // float polarity = 1;
-  if (this->polarity() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(1, this->polarity(), target);
-  }
-
-  // float magnitude = 2;
-  if (this->magnitude() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(2, this->magnitude(), target);
-  }
-
-  // float score = 3;
-  if (this->score() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->score(), target);
-  }
-
-  // @@protoc_insertion_point(serialize_to_array_end:google.cloud.language.v1beta1.Sentiment)
-  return target;
-}
-
-size_t Sentiment::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.Sentiment)
-  size_t total_size = 0;
-
-  // float polarity = 1;
-  if (this->polarity() != 0) {
-    total_size += 1 + 4;
-  }
-
-  // float magnitude = 2;
-  if (this->magnitude() != 0) {
-    total_size += 1 + 4;
-  }
-
-  // float score = 3;
-  if (this->score() != 0) {
-    total_size += 1 + 4;
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-  return total_size;
-}
-
-void Sentiment::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.Sentiment)
-  GOOGLE_DCHECK_NE(&from, this);
-  const Sentiment* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Sentiment>(
-          &from);
-  if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.cloud.language.v1beta1.Sentiment)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.Sentiment)
-    MergeFrom(*source);
-  }
-}
-
-void Sentiment::MergeFrom(const Sentiment& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.Sentiment)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.polarity() != 0) {
-    set_polarity(from.polarity());
-  }
-  if (from.magnitude() != 0) {
-    set_magnitude(from.magnitude());
-  }
-  if (from.score() != 0) {
-    set_score(from.score());
-  }
-}
-
-void Sentiment::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:google.cloud.language.v1beta1.Sentiment)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void Sentiment::CopyFrom(const Sentiment& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.Sentiment)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool Sentiment::IsInitialized() const {
-  return true;
-}
-
-void Sentiment::Swap(Sentiment* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void Sentiment::InternalSwap(Sentiment* other) {
-  std::swap(polarity_, other->polarity_);
-  std::swap(magnitude_, other->magnitude_);
-  std::swap(score_, other->score_);
-  std::swap(_cached_size_, other->_cached_size_);
-}
-
-::google::protobuf::Metadata Sentiment::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
-}
-
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// Sentiment
-
-// float polarity = 1;
-void Sentiment::clear_polarity() {
-  polarity_ = 0;
-}
-float Sentiment::polarity() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Sentiment.polarity)
-  return polarity_;
-}
-void Sentiment::set_polarity(float value) {
-  
-  polarity_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Sentiment.polarity)
-}
-
-// float magnitude = 2;
-void Sentiment::clear_magnitude() {
-  magnitude_ = 0;
-}
-float Sentiment::magnitude() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Sentiment.magnitude)
-  return magnitude_;
-}
-void Sentiment::set_magnitude(float value) {
-  
-  magnitude_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Sentiment.magnitude)
-}
-
-// float score = 3;
-void Sentiment::clear_score() {
-  score_ = 0;
-}
-float Sentiment::score() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Sentiment.score)
-  return score_;
-}
-void Sentiment::set_score(float value) {
-  
-  score_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Sentiment.score)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int PartOfSpeech::kTagFieldNumber;
-const int PartOfSpeech::kAspectFieldNumber;
-const int PartOfSpeech::kCaseFieldNumber;
-const int PartOfSpeech::kFormFieldNumber;
-const int PartOfSpeech::kGenderFieldNumber;
-const int PartOfSpeech::kMoodFieldNumber;
-const int PartOfSpeech::kNumberFieldNumber;
-const int PartOfSpeech::kPersonFieldNumber;
-const int PartOfSpeech::kProperFieldNumber;
-const int PartOfSpeech::kReciprocityFieldNumber;
-const int PartOfSpeech::kTenseFieldNumber;
-const int PartOfSpeech::kVoiceFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-PartOfSpeech::PartOfSpeech()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.PartOfSpeech)
-}
-PartOfSpeech::PartOfSpeech(const PartOfSpeech& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&tag_, &from.tag_,
-    reinterpret_cast<char*>(&voice_) -
-    reinterpret_cast<char*>(&tag_) + sizeof(voice_));
-  // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.PartOfSpeech)
-}
-
-void PartOfSpeech::SharedCtor() {
-  ::memset(&tag_, 0, reinterpret_cast<char*>(&voice_) -
-    reinterpret_cast<char*>(&tag_) + sizeof(voice_));
-  _cached_size_ = 0;
-}
-
-PartOfSpeech::~PartOfSpeech() {
-  // @@protoc_insertion_point(destructor:google.cloud.language.v1beta1.PartOfSpeech)
-  SharedDtor();
-}
-
-void PartOfSpeech::SharedDtor() {
-}
-
-void PartOfSpeech::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-}
-const ::google::protobuf::Descriptor* PartOfSpeech::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6].descriptor;
-}
-
-const PartOfSpeech& PartOfSpeech::default_instance() {
-  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  return *internal_default_instance();
-}
-
-PartOfSpeech* PartOfSpeech::New(::google::protobuf::Arena* arena) const {
-  PartOfSpeech* n = new PartOfSpeech;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
-
-void PartOfSpeech::Clear() {
-// @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.PartOfSpeech)
-  ::memset(&tag_, 0, reinterpret_cast<char*>(&voice_) -
-    reinterpret_cast<char*>(&tag_) + sizeof(voice_));
-}
-
-bool PartOfSpeech::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.PartOfSpeech)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.cloud.language.v1beta1.PartOfSpeech.Tag tag = 1;
-      case 1: {
-        if (tag == 8u) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_tag(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Tag >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .google.cloud.language.v1beta1.PartOfSpeech.Aspect aspect = 2;
-      case 2: {
-        if (tag == 16u) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_aspect(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Aspect >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .google.cloud.language.v1beta1.PartOfSpeech.Case case = 3;
-      case 3: {
-        if (tag == 24u) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_case_(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Case >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .google.cloud.language.v1beta1.PartOfSpeech.Form form = 4;
-      case 4: {
-        if (tag == 32u) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_form(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Form >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .google.cloud.language.v1beta1.PartOfSpeech.Gender gender = 5;
-      case 5: {
-        if (tag == 40u) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_gender(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Gender >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .google.cloud.language.v1beta1.PartOfSpeech.Mood mood = 6;
-      case 6: {
-        if (tag == 48u) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_mood(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Mood >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .google.cloud.language.v1beta1.PartOfSpeech.Number number = 7;
-      case 7: {
-        if (tag == 56u) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_number(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Number >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .google.cloud.language.v1beta1.PartOfSpeech.Person person = 8;
-      case 8: {
-        if (tag == 64u) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_person(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Person >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .google.cloud.language.v1beta1.PartOfSpeech.Proper proper = 9;
-      case 9: {
-        if (tag == 72u) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_proper(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Proper >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .google.cloud.language.v1beta1.PartOfSpeech.Reciprocity reciprocity = 10;
-      case 10: {
-        if (tag == 80u) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_reciprocity(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Reciprocity >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .google.cloud.language.v1beta1.PartOfSpeech.Tense tense = 11;
-      case 11: {
-        if (tag == 88u) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_tense(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Tense >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .google.cloud.language.v1beta1.PartOfSpeech.Voice voice = 12;
-      case 12: {
-        if (tag == 96u) {
-          int value;
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_voice(static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Voice >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0 ||
-            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:google.cloud.language.v1beta1.PartOfSpeech)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:google.cloud.language.v1beta1.PartOfSpeech)
-  return false;
-#undef DO_
-}
-
-void PartOfSpeech::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.PartOfSpeech)
-  // .google.cloud.language.v1beta1.PartOfSpeech.Tag tag = 1;
-  if (this->tag() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      1, this->tag(), output);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Aspect aspect = 2;
-  if (this->aspect() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      2, this->aspect(), output);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Case case = 3;
-  if (this->case_() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      3, this->case_(), output);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Form form = 4;
-  if (this->form() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      4, this->form(), output);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Gender gender = 5;
-  if (this->gender() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      5, this->gender(), output);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Mood mood = 6;
-  if (this->mood() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      6, this->mood(), output);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Number number = 7;
-  if (this->number() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      7, this->number(), output);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Person person = 8;
-  if (this->person() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      8, this->person(), output);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Proper proper = 9;
-  if (this->proper() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      9, this->proper(), output);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Reciprocity reciprocity = 10;
-  if (this->reciprocity() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      10, this->reciprocity(), output);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Tense tense = 11;
-  if (this->tense() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      11, this->tense(), output);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Voice voice = 12;
-  if (this->voice() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteEnum(
-      12, this->voice(), output);
-  }
-
-  // @@protoc_insertion_point(serialize_end:google.cloud.language.v1beta1.PartOfSpeech)
-}
-
-::google::protobuf::uint8* PartOfSpeech::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.PartOfSpeech)
-  // .google.cloud.language.v1beta1.PartOfSpeech.Tag tag = 1;
-  if (this->tag() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      1, this->tag(), target);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Aspect aspect = 2;
-  if (this->aspect() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      2, this->aspect(), target);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Case case = 3;
-  if (this->case_() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      3, this->case_(), target);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Form form = 4;
-  if (this->form() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      4, this->form(), target);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Gender gender = 5;
-  if (this->gender() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      5, this->gender(), target);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Mood mood = 6;
-  if (this->mood() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      6, this->mood(), target);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Number number = 7;
-  if (this->number() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      7, this->number(), target);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Person person = 8;
-  if (this->person() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      8, this->person(), target);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Proper proper = 9;
-  if (this->proper() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      9, this->proper(), target);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Reciprocity reciprocity = 10;
-  if (this->reciprocity() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      10, this->reciprocity(), target);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Tense tense = 11;
-  if (this->tense() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      11, this->tense(), target);
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Voice voice = 12;
-  if (this->voice() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
-      12, this->voice(), target);
-  }
-
-  // @@protoc_insertion_point(serialize_to_array_end:google.cloud.language.v1beta1.PartOfSpeech)
-  return target;
-}
-
-size_t PartOfSpeech::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.PartOfSpeech)
-  size_t total_size = 0;
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Tag tag = 1;
-  if (this->tag() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->tag());
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Aspect aspect = 2;
-  if (this->aspect() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->aspect());
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Case case = 3;
-  if (this->case_() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->case_());
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Form form = 4;
-  if (this->form() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->form());
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Gender gender = 5;
-  if (this->gender() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->gender());
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Mood mood = 6;
-  if (this->mood() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->mood());
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Number number = 7;
-  if (this->number() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->number());
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Person person = 8;
-  if (this->person() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->person());
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Proper proper = 9;
-  if (this->proper() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->proper());
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Reciprocity reciprocity = 10;
-  if (this->reciprocity() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->reciprocity());
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Tense tense = 11;
-  if (this->tense() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->tense());
-  }
-
-  // .google.cloud.language.v1beta1.PartOfSpeech.Voice voice = 12;
-  if (this->voice() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->voice());
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-  return total_size;
-}
-
-void PartOfSpeech::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.PartOfSpeech)
-  GOOGLE_DCHECK_NE(&from, this);
-  const PartOfSpeech* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const PartOfSpeech>(
-          &from);
-  if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.cloud.language.v1beta1.PartOfSpeech)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.PartOfSpeech)
-    MergeFrom(*source);
-  }
-}
-
-void PartOfSpeech::MergeFrom(const PartOfSpeech& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.PartOfSpeech)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.tag() != 0) {
-    set_tag(from.tag());
-  }
-  if (from.aspect() != 0) {
-    set_aspect(from.aspect());
-  }
-  if (from.case_() != 0) {
-    set_case_(from.case_());
-  }
-  if (from.form() != 0) {
-    set_form(from.form());
-  }
-  if (from.gender() != 0) {
-    set_gender(from.gender());
-  }
-  if (from.mood() != 0) {
-    set_mood(from.mood());
-  }
-  if (from.number() != 0) {
-    set_number(from.number());
-  }
-  if (from.person() != 0) {
-    set_person(from.person());
-  }
-  if (from.proper() != 0) {
-    set_proper(from.proper());
-  }
-  if (from.reciprocity() != 0) {
-    set_reciprocity(from.reciprocity());
-  }
-  if (from.tense() != 0) {
-    set_tense(from.tense());
-  }
-  if (from.voice() != 0) {
-    set_voice(from.voice());
-  }
-}
-
-void PartOfSpeech::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:google.cloud.language.v1beta1.PartOfSpeech)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void PartOfSpeech::CopyFrom(const PartOfSpeech& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.PartOfSpeech)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool PartOfSpeech::IsInitialized() const {
-  return true;
-}
-
-void PartOfSpeech::Swap(PartOfSpeech* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void PartOfSpeech::InternalSwap(PartOfSpeech* other) {
-  std::swap(tag_, other->tag_);
-  std::swap(aspect_, other->aspect_);
-  std::swap(case__, other->case__);
-  std::swap(form_, other->form_);
-  std::swap(gender_, other->gender_);
-  std::swap(mood_, other->mood_);
-  std::swap(number_, other->number_);
-  std::swap(person_, other->person_);
-  std::swap(proper_, other->proper_);
-  std::swap(reciprocity_, other->reciprocity_);
-  std::swap(tense_, other->tense_);
-  std::swap(voice_, other->voice_);
-  std::swap(_cached_size_, other->_cached_size_);
-}
-
-::google::protobuf::Metadata PartOfSpeech::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6];
-}
-
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// PartOfSpeech
-
-// .google.cloud.language.v1beta1.PartOfSpeech.Tag tag = 1;
-void PartOfSpeech::clear_tag() {
-  tag_ = 0;
-}
-::google::cloud::language::v1beta1::PartOfSpeech_Tag PartOfSpeech::tag() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.tag)
-  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Tag >(tag_);
-}
-void PartOfSpeech::set_tag(::google::cloud::language::v1beta1::PartOfSpeech_Tag value) {
-  
-  tag_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.tag)
-}
-
-// .google.cloud.language.v1beta1.PartOfSpeech.Aspect aspect = 2;
-void PartOfSpeech::clear_aspect() {
-  aspect_ = 0;
-}
-::google::cloud::language::v1beta1::PartOfSpeech_Aspect PartOfSpeech::aspect() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.aspect)
-  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Aspect >(aspect_);
-}
-void PartOfSpeech::set_aspect(::google::cloud::language::v1beta1::PartOfSpeech_Aspect value) {
-  
-  aspect_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.aspect)
-}
-
-// .google.cloud.language.v1beta1.PartOfSpeech.Case case = 3;
-void PartOfSpeech::clear_case_() {
-  case__ = 0;
-}
-::google::cloud::language::v1beta1::PartOfSpeech_Case PartOfSpeech::case_() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.case)
-  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Case >(case__);
-}
-void PartOfSpeech::set_case_(::google::cloud::language::v1beta1::PartOfSpeech_Case value) {
-  
-  case__ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.case)
-}
-
-// .google.cloud.language.v1beta1.PartOfSpeech.Form form = 4;
-void PartOfSpeech::clear_form() {
-  form_ = 0;
-}
-::google::cloud::language::v1beta1::PartOfSpeech_Form PartOfSpeech::form() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.form)
-  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Form >(form_);
-}
-void PartOfSpeech::set_form(::google::cloud::language::v1beta1::PartOfSpeech_Form value) {
-  
-  form_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.form)
-}
-
-// .google.cloud.language.v1beta1.PartOfSpeech.Gender gender = 5;
-void PartOfSpeech::clear_gender() {
-  gender_ = 0;
-}
-::google::cloud::language::v1beta1::PartOfSpeech_Gender PartOfSpeech::gender() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.gender)
-  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Gender >(gender_);
-}
-void PartOfSpeech::set_gender(::google::cloud::language::v1beta1::PartOfSpeech_Gender value) {
-  
-  gender_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.gender)
-}
-
-// .google.cloud.language.v1beta1.PartOfSpeech.Mood mood = 6;
-void PartOfSpeech::clear_mood() {
-  mood_ = 0;
-}
-::google::cloud::language::v1beta1::PartOfSpeech_Mood PartOfSpeech::mood() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.mood)
-  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Mood >(mood_);
-}
-void PartOfSpeech::set_mood(::google::cloud::language::v1beta1::PartOfSpeech_Mood value) {
-  
-  mood_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.mood)
-}
-
-// .google.cloud.language.v1beta1.PartOfSpeech.Number number = 7;
-void PartOfSpeech::clear_number() {
-  number_ = 0;
-}
-::google::cloud::language::v1beta1::PartOfSpeech_Number PartOfSpeech::number() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.number)
-  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Number >(number_);
-}
-void PartOfSpeech::set_number(::google::cloud::language::v1beta1::PartOfSpeech_Number value) {
-  
-  number_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.number)
-}
-
-// .google.cloud.language.v1beta1.PartOfSpeech.Person person = 8;
-void PartOfSpeech::clear_person() {
-  person_ = 0;
-}
-::google::cloud::language::v1beta1::PartOfSpeech_Person PartOfSpeech::person() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.person)
-  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Person >(person_);
-}
-void PartOfSpeech::set_person(::google::cloud::language::v1beta1::PartOfSpeech_Person value) {
-  
-  person_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.person)
-}
-
-// .google.cloud.language.v1beta1.PartOfSpeech.Proper proper = 9;
-void PartOfSpeech::clear_proper() {
-  proper_ = 0;
-}
-::google::cloud::language::v1beta1::PartOfSpeech_Proper PartOfSpeech::proper() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.proper)
-  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Proper >(proper_);
-}
-void PartOfSpeech::set_proper(::google::cloud::language::v1beta1::PartOfSpeech_Proper value) {
-  
-  proper_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.proper)
-}
-
-// .google.cloud.language.v1beta1.PartOfSpeech.Reciprocity reciprocity = 10;
-void PartOfSpeech::clear_reciprocity() {
-  reciprocity_ = 0;
-}
-::google::cloud::language::v1beta1::PartOfSpeech_Reciprocity PartOfSpeech::reciprocity() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.reciprocity)
-  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Reciprocity >(reciprocity_);
-}
-void PartOfSpeech::set_reciprocity(::google::cloud::language::v1beta1::PartOfSpeech_Reciprocity value) {
-  
-  reciprocity_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.reciprocity)
-}
-
-// .google.cloud.language.v1beta1.PartOfSpeech.Tense tense = 11;
-void PartOfSpeech::clear_tense() {
-  tense_ = 0;
-}
-::google::cloud::language::v1beta1::PartOfSpeech_Tense PartOfSpeech::tense() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.tense)
-  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Tense >(tense_);
-}
-void PartOfSpeech::set_tense(::google::cloud::language::v1beta1::PartOfSpeech_Tense value) {
-  
-  tense_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.tense)
-}
-
-// .google.cloud.language.v1beta1.PartOfSpeech.Voice voice = 12;
-void PartOfSpeech::clear_voice() {
-  voice_ = 0;
-}
-::google::cloud::language::v1beta1::PartOfSpeech_Voice PartOfSpeech::voice() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.PartOfSpeech.voice)
-  return static_cast< ::google::cloud::language::v1beta1::PartOfSpeech_Voice >(voice_);
-}
-void PartOfSpeech::set_voice(::google::cloud::language::v1beta1::PartOfSpeech_Voice value) {
-  
-  voice_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.voice)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
-
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int DependencyEdge::kHeadTokenIndexFieldNumber;
 const int DependencyEdge::kLabelFieldNumber;
@@ -4506,20 +4847,19 @@ const int DependencyEdge::kLabelFieldNumber;
 
 DependencyEdge::DependencyEdge()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.DependencyEdge)
 }
+
+void DependencyEdge::InitAsDefaultInstance() {
+}
+
 DependencyEdge::DependencyEdge(const DependencyEdge& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&head_token_index_, &from.head_token_index_,
-    reinterpret_cast<char*>(&label_) -
-    reinterpret_cast<char*>(&head_token_index_) + sizeof(label_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.DependencyEdge)
 }
 
@@ -4544,13 +4884,15 @@ void DependencyEdge::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* DependencyEdge::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7].descriptor;
+  return DependencyEdge_descriptor_;
 }
 
 const DependencyEdge& DependencyEdge::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<DependencyEdge> DependencyEdge_default_instance_;
 
 DependencyEdge* DependencyEdge::New(::google::protobuf::Arena* arena) const {
   DependencyEdge* n = new DependencyEdge;
@@ -4562,8 +4904,27 @@ DependencyEdge* DependencyEdge::New(::google::protobuf::Arena* arena) const {
 
 void DependencyEdge::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.DependencyEdge)
-  ::memset(&head_token_index_, 0, reinterpret_cast<char*>(&label_) -
-    reinterpret_cast<char*>(&head_token_index_) + sizeof(label_));
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(DependencyEdge, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<DependencyEdge*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(head_token_index_, label_);
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool DependencyEdge::MergePartialFromCodedStream(
@@ -4572,13 +4933,13 @@ bool DependencyEdge::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.DependencyEdge)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 head_token_index = 1;
+      // optional int32 head_token_index = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -4586,12 +4947,14 @@ bool DependencyEdge::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_label;
         break;
       }
 
-      // .google.cloud.language.v1beta1.DependencyEdge.Label label = 2;
+      // optional .google.cloud.language.v1beta1.DependencyEdge.Label label = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_label:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -4600,6 +4963,7 @@ bool DependencyEdge::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4627,12 +4991,12 @@ failure:
 void DependencyEdge::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.DependencyEdge)
-  // int32 head_token_index = 1;
+  // optional int32 head_token_index = 1;
   if (this->head_token_index() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->head_token_index(), output);
   }
 
-  // .google.cloud.language.v1beta1.DependencyEdge.Label label = 2;
+  // optional .google.cloud.language.v1beta1.DependencyEdge.Label label = 2;
   if (this->label() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       2, this->label(), output);
@@ -4645,12 +5009,12 @@ void DependencyEdge::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.DependencyEdge)
-  // int32 head_token_index = 1;
+  // optional int32 head_token_index = 1;
   if (this->head_token_index() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->head_token_index(), target);
   }
 
-  // .google.cloud.language.v1beta1.DependencyEdge.Label label = 2;
+  // optional .google.cloud.language.v1beta1.DependencyEdge.Label label = 2;
   if (this->label() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       2, this->label(), target);
@@ -4664,14 +5028,14 @@ size_t DependencyEdge::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.DependencyEdge)
   size_t total_size = 0;
 
-  // int32 head_token_index = 1;
+  // optional int32 head_token_index = 1;
   if (this->head_token_index() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->head_token_index());
   }
 
-  // .google.cloud.language.v1beta1.DependencyEdge.Label label = 2;
+  // optional .google.cloud.language.v1beta1.DependencyEdge.Label label = 2;
   if (this->label() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->label());
@@ -4686,7 +5050,7 @@ size_t DependencyEdge::ByteSizeLong() const {
 
 void DependencyEdge::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.DependencyEdge)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const DependencyEdge* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DependencyEdge>(
           &from);
@@ -4695,14 +5059,21 @@ void DependencyEdge::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.DependencyEdge)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DependencyEdge::MergeFrom(const DependencyEdge& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.DependencyEdge)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void DependencyEdge::UnsafeMergeFrom(const DependencyEdge& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.head_token_index() != 0) {
     set_head_token_index(from.head_token_index());
   }
@@ -4722,10 +5093,11 @@ void DependencyEdge::CopyFrom(const DependencyEdge& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.DependencyEdge)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DependencyEdge::IsInitialized() const {
+
   return true;
 }
 
@@ -4736,18 +5108,22 @@ void DependencyEdge::Swap(DependencyEdge* other) {
 void DependencyEdge::InternalSwap(DependencyEdge* other) {
   std::swap(head_token_index_, other->head_token_index_);
   std::swap(label_, other->label_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DependencyEdge::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = DependencyEdge_descriptor_;
+  metadata.reflection = DependencyEdge_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // DependencyEdge
 
-// int32 head_token_index = 1;
+// optional int32 head_token_index = 1;
 void DependencyEdge::clear_head_token_index() {
   head_token_index_ = 0;
 }
@@ -4761,7 +5137,7 @@ void DependencyEdge::set_head_token_index(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.DependencyEdge.head_token_index)
 }
 
-// .google.cloud.language.v1beta1.DependencyEdge.Label label = 2;
+// optional .google.cloud.language.v1beta1.DependencyEdge.Label label = 2;
 void DependencyEdge::clear_label() {
   label_ = 0;
 }
@@ -4775,10 +5151,36 @@ void DependencyEdge::set_label(::google::cloud::language::v1beta1::DependencyEdg
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.DependencyEdge.label)
 }
 
+inline const DependencyEdge* DependencyEdge::internal_default_instance() {
+  return &DependencyEdge_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* EntityMention_Type_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return EntityMention_Type_descriptor_;
+}
+bool EntityMention_Type_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const EntityMention_Type EntityMention::TYPE_UNKNOWN;
+const EntityMention_Type EntityMention::PROPER;
+const EntityMention_Type EntityMention::COMMON;
+const EntityMention_Type EntityMention::Type_MIN;
+const EntityMention_Type EntityMention::Type_MAX;
+const int EntityMention::Type_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EntityMention::kTextFieldNumber;
 const int EntityMention::kTypeFieldNumber;
@@ -4786,29 +5188,27 @@ const int EntityMention::kTypeFieldNumber;
 
 EntityMention::EntityMention()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.EntityMention)
 }
+
+void EntityMention::InitAsDefaultInstance() {
+  text_ = const_cast< ::google::cloud::language::v1beta1::TextSpan*>(
+      ::google::cloud::language::v1beta1::TextSpan::internal_default_instance());
+}
+
 EntityMention::EntityMention(const EntityMention& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_text()) {
-    text_ = new ::google::cloud::language::v1beta1::TextSpan(*from.text_);
-  } else {
-    text_ = NULL;
-  }
-  type_ = from.type_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.EntityMention)
 }
 
 void EntityMention::SharedCtor() {
-  ::memset(&text_, 0, reinterpret_cast<char*>(&type_) -
-    reinterpret_cast<char*>(&text_) + sizeof(type_));
+  text_ = NULL;
+  type_ = 0;
   _cached_size_ = 0;
 }
 
@@ -4818,7 +5218,7 @@ EntityMention::~EntityMention() {
 }
 
 void EntityMention::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &EntityMention_default_instance_.get()) {
     delete text_;
   }
 }
@@ -4830,13 +5230,15 @@ void EntityMention::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* EntityMention::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8].descriptor;
+  return EntityMention_descriptor_;
 }
 
 const EntityMention& EntityMention::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<EntityMention> EntityMention_default_instance_;
 
 EntityMention* EntityMention::New(::google::protobuf::Arena* arena) const {
   EntityMention* n = new EntityMention;
@@ -4848,9 +5250,7 @@ EntityMention* EntityMention::New(::google::protobuf::Arena* arena) const {
 
 void EntityMention::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.EntityMention)
-  if (GetArenaNoVirtual() == NULL && text_ != NULL) {
-    delete text_;
-  }
+  if (GetArenaNoVirtual() == NULL && text_ != NULL) delete text_;
   text_ = NULL;
   type_ = 0;
 }
@@ -4861,24 +5261,26 @@ bool EntityMention::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.EntityMention)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.cloud.language.v1beta1.TextSpan text = 1;
+      // optional .google.cloud.language.v1beta1.TextSpan text = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_text()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_type;
         break;
       }
 
-      // .google.cloud.language.v1beta1.EntityMention.Type type = 2;
+      // optional .google.cloud.language.v1beta1.EntityMention.Type type = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_type:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -4887,6 +5289,7 @@ bool EntityMention::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4914,13 +5317,13 @@ failure:
 void EntityMention::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.EntityMention)
-  // .google.cloud.language.v1beta1.TextSpan text = 1;
+  // optional .google.cloud.language.v1beta1.TextSpan text = 1;
   if (this->has_text()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->text_, output);
   }
 
-  // .google.cloud.language.v1beta1.EntityMention.Type type = 2;
+  // optional .google.cloud.language.v1beta1.EntityMention.Type type = 2;
   if (this->type() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       2, this->type(), output);
@@ -4933,14 +5336,14 @@ void EntityMention::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.EntityMention)
-  // .google.cloud.language.v1beta1.TextSpan text = 1;
+  // optional .google.cloud.language.v1beta1.TextSpan text = 1;
   if (this->has_text()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->text_, false, target);
   }
 
-  // .google.cloud.language.v1beta1.EntityMention.Type type = 2;
+  // optional .google.cloud.language.v1beta1.EntityMention.Type type = 2;
   if (this->type() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       2, this->type(), target);
@@ -4954,14 +5357,14 @@ size_t EntityMention::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.EntityMention)
   size_t total_size = 0;
 
-  // .google.cloud.language.v1beta1.TextSpan text = 1;
+  // optional .google.cloud.language.v1beta1.TextSpan text = 1;
   if (this->has_text()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->text_);
   }
 
-  // .google.cloud.language.v1beta1.EntityMention.Type type = 2;
+  // optional .google.cloud.language.v1beta1.EntityMention.Type type = 2;
   if (this->type() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
@@ -4976,7 +5379,7 @@ size_t EntityMention::ByteSizeLong() const {
 
 void EntityMention::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.EntityMention)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const EntityMention* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const EntityMention>(
           &from);
@@ -4985,14 +5388,21 @@ void EntityMention::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.EntityMention)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void EntityMention::MergeFrom(const EntityMention& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.EntityMention)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void EntityMention::UnsafeMergeFrom(const EntityMention& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_text()) {
     mutable_text()->::google::cloud::language::v1beta1::TextSpan::MergeFrom(from.text());
   }
@@ -5012,10 +5422,11 @@ void EntityMention::CopyFrom(const EntityMention& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.EntityMention)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool EntityMention::IsInitialized() const {
+
   return true;
 }
 
@@ -5026,18 +5437,22 @@ void EntityMention::Swap(EntityMention* other) {
 void EntityMention::InternalSwap(EntityMention* other) {
   std::swap(text_, other->text_);
   std::swap(type_, other->type_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata EntityMention::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = EntityMention_descriptor_;
+  metadata.reflection = EntityMention_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // EntityMention
 
-// .google.cloud.language.v1beta1.TextSpan text = 1;
+// optional .google.cloud.language.v1beta1.TextSpan text = 1;
 bool EntityMention::has_text() const {
   return this != internal_default_instance() && text_ != NULL;
 }
@@ -5076,7 +5491,7 @@ void EntityMention::set_allocated_text(::google::cloud::language::v1beta1::TextS
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.EntityMention.text)
 }
 
-// .google.cloud.language.v1beta1.EntityMention.Type type = 2;
+// optional .google.cloud.language.v1beta1.EntityMention.Type type = 2;
 void EntityMention::clear_type() {
   type_ = 0;
 }
@@ -5090,6 +5505,9 @@ void EntityMention::set_type(::google::cloud::language::v1beta1::EntityMention_T
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.EntityMention.type)
 }
 
+inline const EntityMention* EntityMention::internal_default_instance() {
+  return &EntityMention_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5101,22 +5519,19 @@ const int TextSpan::kBeginOffsetFieldNumber;
 
 TextSpan::TextSpan()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.TextSpan)
 }
+
+void TextSpan::InitAsDefaultInstance() {
+}
+
 TextSpan::TextSpan(const TextSpan& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  content_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.content().size() > 0) {
-    content_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.content_);
-  }
-  begin_offset_ = from.begin_offset_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.TextSpan)
 }
 
@@ -5142,13 +5557,15 @@ void TextSpan::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* TextSpan::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9].descriptor;
+  return TextSpan_descriptor_;
 }
 
 const TextSpan& TextSpan::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<TextSpan> TextSpan_default_instance_;
 
 TextSpan* TextSpan::New(::google::protobuf::Arena* arena) const {
   TextSpan* n = new TextSpan;
@@ -5170,13 +5587,13 @@ bool TextSpan::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.TextSpan)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string content = 1;
+      // optional string content = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_content()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -5186,12 +5603,14 @@ bool TextSpan::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_begin_offset;
         break;
       }
 
-      // int32 begin_offset = 2;
+      // optional int32 begin_offset = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_begin_offset:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -5199,6 +5618,7 @@ bool TextSpan::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -5226,7 +5646,7 @@ failure:
 void TextSpan::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.TextSpan)
-  // string content = 1;
+  // optional string content = 1;
   if (this->content().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->content().data(), this->content().length(),
@@ -5236,7 +5656,7 @@ void TextSpan::SerializeWithCachedSizes(
       1, this->content(), output);
   }
 
-  // int32 begin_offset = 2;
+  // optional int32 begin_offset = 2;
   if (this->begin_offset() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->begin_offset(), output);
   }
@@ -5248,7 +5668,7 @@ void TextSpan::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.TextSpan)
-  // string content = 1;
+  // optional string content = 1;
   if (this->content().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->content().data(), this->content().length(),
@@ -5259,7 +5679,7 @@ void TextSpan::SerializeWithCachedSizes(
         1, this->content(), target);
   }
 
-  // int32 begin_offset = 2;
+  // optional int32 begin_offset = 2;
   if (this->begin_offset() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->begin_offset(), target);
   }
@@ -5272,14 +5692,14 @@ size_t TextSpan::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.TextSpan)
   size_t total_size = 0;
 
-  // string content = 1;
+  // optional string content = 1;
   if (this->content().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->content());
   }
 
-  // int32 begin_offset = 2;
+  // optional int32 begin_offset = 2;
   if (this->begin_offset() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
@@ -5295,7 +5715,7 @@ size_t TextSpan::ByteSizeLong() const {
 
 void TextSpan::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.TextSpan)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const TextSpan* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const TextSpan>(
           &from);
@@ -5304,14 +5724,21 @@ void TextSpan::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.TextSpan)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void TextSpan::MergeFrom(const TextSpan& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.TextSpan)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void TextSpan::UnsafeMergeFrom(const TextSpan& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.content().size() > 0) {
 
     content_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.content_);
@@ -5332,10 +5759,11 @@ void TextSpan::CopyFrom(const TextSpan& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.TextSpan)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool TextSpan::IsInitialized() const {
+
   return true;
 }
 
@@ -5346,24 +5774,28 @@ void TextSpan::Swap(TextSpan* other) {
 void TextSpan::InternalSwap(TextSpan* other) {
   content_.Swap(&other->content_);
   std::swap(begin_offset_, other->begin_offset_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata TextSpan::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TextSpan_descriptor_;
+  metadata.reflection = TextSpan_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // TextSpan
 
-// string content = 1;
+// optional string content = 1;
 void TextSpan::clear_content() {
   content_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& TextSpan::content() const {
   // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.TextSpan.content)
-  return content_.GetNoArena();
+  return content_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void TextSpan::set_content(const ::std::string& value) {
   
@@ -5401,7 +5833,7 @@ void TextSpan::set_allocated_content(::std::string* content) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.TextSpan.content)
 }
 
-// int32 begin_offset = 2;
+// optional int32 begin_offset = 2;
 void TextSpan::clear_begin_offset() {
   begin_offset_ = 0;
 }
@@ -5415,6 +5847,9 @@ void TextSpan::set_begin_offset(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.TextSpan.begin_offset)
 }
 
+inline const TextSpan* TextSpan::internal_default_instance() {
+  return &TextSpan_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5426,29 +5861,27 @@ const int AnalyzeSentimentRequest::kEncodingTypeFieldNumber;
 
 AnalyzeSentimentRequest::AnalyzeSentimentRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.AnalyzeSentimentRequest)
 }
+
+void AnalyzeSentimentRequest::InitAsDefaultInstance() {
+  document_ = const_cast< ::google::cloud::language::v1beta1::Document*>(
+      ::google::cloud::language::v1beta1::Document::internal_default_instance());
+}
+
 AnalyzeSentimentRequest::AnalyzeSentimentRequest(const AnalyzeSentimentRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_document()) {
-    document_ = new ::google::cloud::language::v1beta1::Document(*from.document_);
-  } else {
-    document_ = NULL;
-  }
-  encoding_type_ = from.encoding_type_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.AnalyzeSentimentRequest)
 }
 
 void AnalyzeSentimentRequest::SharedCtor() {
-  ::memset(&document_, 0, reinterpret_cast<char*>(&encoding_type_) -
-    reinterpret_cast<char*>(&document_) + sizeof(encoding_type_));
+  document_ = NULL;
+  encoding_type_ = 0;
   _cached_size_ = 0;
 }
 
@@ -5458,7 +5891,7 @@ AnalyzeSentimentRequest::~AnalyzeSentimentRequest() {
 }
 
 void AnalyzeSentimentRequest::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &AnalyzeSentimentRequest_default_instance_.get()) {
     delete document_;
   }
 }
@@ -5470,13 +5903,15 @@ void AnalyzeSentimentRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* AnalyzeSentimentRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10].descriptor;
+  return AnalyzeSentimentRequest_descriptor_;
 }
 
 const AnalyzeSentimentRequest& AnalyzeSentimentRequest::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<AnalyzeSentimentRequest> AnalyzeSentimentRequest_default_instance_;
 
 AnalyzeSentimentRequest* AnalyzeSentimentRequest::New(::google::protobuf::Arena* arena) const {
   AnalyzeSentimentRequest* n = new AnalyzeSentimentRequest;
@@ -5488,9 +5923,7 @@ AnalyzeSentimentRequest* AnalyzeSentimentRequest::New(::google::protobuf::Arena*
 
 void AnalyzeSentimentRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.AnalyzeSentimentRequest)
-  if (GetArenaNoVirtual() == NULL && document_ != NULL) {
-    delete document_;
-  }
+  if (GetArenaNoVirtual() == NULL && document_ != NULL) delete document_;
   document_ = NULL;
   encoding_type_ = 0;
 }
@@ -5501,24 +5934,26 @@ bool AnalyzeSentimentRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.AnalyzeSentimentRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.cloud.language.v1beta1.Document document = 1;
+      // optional .google.cloud.language.v1beta1.Document document = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_document()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_encoding_type;
         break;
       }
 
-      // .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+      // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_encoding_type:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -5527,6 +5962,7 @@ bool AnalyzeSentimentRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -5554,13 +5990,13 @@ failure:
 void AnalyzeSentimentRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.AnalyzeSentimentRequest)
-  // .google.cloud.language.v1beta1.Document document = 1;
+  // optional .google.cloud.language.v1beta1.Document document = 1;
   if (this->has_document()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->document_, output);
   }
 
-  // .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+  // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
   if (this->encoding_type() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       2, this->encoding_type(), output);
@@ -5573,14 +6009,14 @@ void AnalyzeSentimentRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.AnalyzeSentimentRequest)
-  // .google.cloud.language.v1beta1.Document document = 1;
+  // optional .google.cloud.language.v1beta1.Document document = 1;
   if (this->has_document()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->document_, false, target);
   }
 
-  // .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+  // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
   if (this->encoding_type() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       2, this->encoding_type(), target);
@@ -5594,14 +6030,14 @@ size_t AnalyzeSentimentRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.AnalyzeSentimentRequest)
   size_t total_size = 0;
 
-  // .google.cloud.language.v1beta1.Document document = 1;
+  // optional .google.cloud.language.v1beta1.Document document = 1;
   if (this->has_document()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->document_);
   }
 
-  // .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+  // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
   if (this->encoding_type() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->encoding_type());
@@ -5616,7 +6052,7 @@ size_t AnalyzeSentimentRequest::ByteSizeLong() const {
 
 void AnalyzeSentimentRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.AnalyzeSentimentRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const AnalyzeSentimentRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AnalyzeSentimentRequest>(
           &from);
@@ -5625,14 +6061,21 @@ void AnalyzeSentimentRequest::MergeFrom(const ::google::protobuf::Message& from)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.AnalyzeSentimentRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AnalyzeSentimentRequest::MergeFrom(const AnalyzeSentimentRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.AnalyzeSentimentRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void AnalyzeSentimentRequest::UnsafeMergeFrom(const AnalyzeSentimentRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_document()) {
     mutable_document()->::google::cloud::language::v1beta1::Document::MergeFrom(from.document());
   }
@@ -5652,10 +6095,11 @@ void AnalyzeSentimentRequest::CopyFrom(const AnalyzeSentimentRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.AnalyzeSentimentRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AnalyzeSentimentRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -5666,18 +6110,22 @@ void AnalyzeSentimentRequest::Swap(AnalyzeSentimentRequest* other) {
 void AnalyzeSentimentRequest::InternalSwap(AnalyzeSentimentRequest* other) {
   std::swap(document_, other->document_);
   std::swap(encoding_type_, other->encoding_type_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata AnalyzeSentimentRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = AnalyzeSentimentRequest_descriptor_;
+  metadata.reflection = AnalyzeSentimentRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // AnalyzeSentimentRequest
 
-// .google.cloud.language.v1beta1.Document document = 1;
+// optional .google.cloud.language.v1beta1.Document document = 1;
 bool AnalyzeSentimentRequest::has_document() const {
   return this != internal_default_instance() && document_ != NULL;
 }
@@ -5716,7 +6164,7 @@ void AnalyzeSentimentRequest::set_allocated_document(::google::cloud::language::
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnalyzeSentimentRequest.document)
 }
 
-// .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+// optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
 void AnalyzeSentimentRequest::clear_encoding_type() {
   encoding_type_ = 0;
 }
@@ -5730,6 +6178,9 @@ void AnalyzeSentimentRequest::set_encoding_type(::google::cloud::language::v1bet
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.AnalyzeSentimentRequest.encoding_type)
 }
 
+inline const AnalyzeSentimentRequest* AnalyzeSentimentRequest::internal_default_instance() {
+  return &AnalyzeSentimentRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5742,27 +6193,21 @@ const int AnalyzeSentimentResponse::kSentencesFieldNumber;
 
 AnalyzeSentimentResponse::AnalyzeSentimentResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.AnalyzeSentimentResponse)
 }
+
+void AnalyzeSentimentResponse::InitAsDefaultInstance() {
+  document_sentiment_ = const_cast< ::google::cloud::language::v1beta1::Sentiment*>(
+      ::google::cloud::language::v1beta1::Sentiment::internal_default_instance());
+}
+
 AnalyzeSentimentResponse::AnalyzeSentimentResponse(const AnalyzeSentimentResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      sentences_(from.sentences_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  language_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.language().size() > 0) {
-    language_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.language_);
-  }
-  if (from.has_document_sentiment()) {
-    document_sentiment_ = new ::google::cloud::language::v1beta1::Sentiment(*from.document_sentiment_);
-  } else {
-    document_sentiment_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.AnalyzeSentimentResponse)
 }
 
@@ -5779,7 +6224,7 @@ AnalyzeSentimentResponse::~AnalyzeSentimentResponse() {
 
 void AnalyzeSentimentResponse::SharedDtor() {
   language_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &AnalyzeSentimentResponse_default_instance_.get()) {
     delete document_sentiment_;
   }
 }
@@ -5791,13 +6236,15 @@ void AnalyzeSentimentResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* AnalyzeSentimentResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11].descriptor;
+  return AnalyzeSentimentResponse_descriptor_;
 }
 
 const AnalyzeSentimentResponse& AnalyzeSentimentResponse::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<AnalyzeSentimentResponse> AnalyzeSentimentResponse_default_instance_;
 
 AnalyzeSentimentResponse* AnalyzeSentimentResponse::New(::google::protobuf::Arena* arena) const {
   AnalyzeSentimentResponse* n = new AnalyzeSentimentResponse;
@@ -5809,12 +6256,10 @@ AnalyzeSentimentResponse* AnalyzeSentimentResponse::New(::google::protobuf::Aren
 
 void AnalyzeSentimentResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.AnalyzeSentimentResponse)
-  sentences_.Clear();
-  language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && document_sentiment_ != NULL) {
-    delete document_sentiment_;
-  }
+  if (GetArenaNoVirtual() == NULL && document_sentiment_ != NULL) delete document_sentiment_;
   document_sentiment_ = NULL;
+  language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  sentences_.Clear();
 }
 
 bool AnalyzeSentimentResponse::MergePartialFromCodedStream(
@@ -5823,24 +6268,26 @@ bool AnalyzeSentimentResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.AnalyzeSentimentResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.cloud.language.v1beta1.Sentiment document_sentiment = 1;
+      // optional .google.cloud.language.v1beta1.Sentiment document_sentiment = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_document_sentiment()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_language;
         break;
       }
 
-      // string language = 2;
+      // optional string language = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_language:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_language()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -5850,19 +6297,24 @@ bool AnalyzeSentimentResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_sentences;
         break;
       }
 
       // repeated .google.cloud.language.v1beta1.Sentence sentences = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_sentences:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_sentences:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_sentences()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_loop_sentences;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -5890,13 +6342,13 @@ failure:
 void AnalyzeSentimentResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.AnalyzeSentimentResponse)
-  // .google.cloud.language.v1beta1.Sentiment document_sentiment = 1;
+  // optional .google.cloud.language.v1beta1.Sentiment document_sentiment = 1;
   if (this->has_document_sentiment()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->document_sentiment_, output);
   }
 
-  // string language = 2;
+  // optional string language = 2;
   if (this->language().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->language().data(), this->language().length(),
@@ -5919,14 +6371,14 @@ void AnalyzeSentimentResponse::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.AnalyzeSentimentResponse)
-  // .google.cloud.language.v1beta1.Sentiment document_sentiment = 1;
+  // optional .google.cloud.language.v1beta1.Sentiment document_sentiment = 1;
   if (this->has_document_sentiment()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->document_sentiment_, false, target);
   }
 
-  // string language = 2;
+  // optional string language = 2;
   if (this->language().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->language().data(), this->language().length(),
@@ -5952,6 +6404,20 @@ size_t AnalyzeSentimentResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.AnalyzeSentimentResponse)
   size_t total_size = 0;
 
+  // optional .google.cloud.language.v1beta1.Sentiment document_sentiment = 1;
+  if (this->has_document_sentiment()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->document_sentiment_);
+  }
+
+  // optional string language = 2;
+  if (this->language().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->language());
+  }
+
   // repeated .google.cloud.language.v1beta1.Sentence sentences = 3;
   {
     unsigned int count = this->sentences_size();
@@ -5963,20 +6429,6 @@ size_t AnalyzeSentimentResponse::ByteSizeLong() const {
     }
   }
 
-  // string language = 2;
-  if (this->language().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->language());
-  }
-
-  // .google.cloud.language.v1beta1.Sentiment document_sentiment = 1;
-  if (this->has_document_sentiment()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->document_sentiment_);
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -5986,7 +6438,7 @@ size_t AnalyzeSentimentResponse::ByteSizeLong() const {
 
 void AnalyzeSentimentResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.AnalyzeSentimentResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const AnalyzeSentimentResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AnalyzeSentimentResponse>(
           &from);
@@ -5995,21 +6447,28 @@ void AnalyzeSentimentResponse::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.AnalyzeSentimentResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AnalyzeSentimentResponse::MergeFrom(const AnalyzeSentimentResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.AnalyzeSentimentResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void AnalyzeSentimentResponse::UnsafeMergeFrom(const AnalyzeSentimentResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   sentences_.MergeFrom(from.sentences_);
+  if (from.has_document_sentiment()) {
+    mutable_document_sentiment()->::google::cloud::language::v1beta1::Sentiment::MergeFrom(from.document_sentiment());
+  }
   if (from.language().size() > 0) {
 
     language_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.language_);
-  }
-  if (from.has_document_sentiment()) {
-    mutable_document_sentiment()->::google::cloud::language::v1beta1::Sentiment::MergeFrom(from.document_sentiment());
   }
 }
 
@@ -6024,10 +6483,11 @@ void AnalyzeSentimentResponse::CopyFrom(const AnalyzeSentimentResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.AnalyzeSentimentResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AnalyzeSentimentResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -6036,21 +6496,25 @@ void AnalyzeSentimentResponse::Swap(AnalyzeSentimentResponse* other) {
   InternalSwap(other);
 }
 void AnalyzeSentimentResponse::InternalSwap(AnalyzeSentimentResponse* other) {
-  sentences_.UnsafeArenaSwap(&other->sentences_);
-  language_.Swap(&other->language_);
   std::swap(document_sentiment_, other->document_sentiment_);
+  language_.Swap(&other->language_);
+  sentences_.UnsafeArenaSwap(&other->sentences_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata AnalyzeSentimentResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = AnalyzeSentimentResponse_descriptor_;
+  metadata.reflection = AnalyzeSentimentResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // AnalyzeSentimentResponse
 
-// .google.cloud.language.v1beta1.Sentiment document_sentiment = 1;
+// optional .google.cloud.language.v1beta1.Sentiment document_sentiment = 1;
 bool AnalyzeSentimentResponse::has_document_sentiment() const {
   return this != internal_default_instance() && document_sentiment_ != NULL;
 }
@@ -6089,13 +6553,13 @@ void AnalyzeSentimentResponse::set_allocated_document_sentiment(::google::cloud:
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnalyzeSentimentResponse.document_sentiment)
 }
 
-// string language = 2;
+// optional string language = 2;
 void AnalyzeSentimentResponse::clear_language() {
   language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& AnalyzeSentimentResponse::language() const {
   // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.AnalyzeSentimentResponse.language)
-  return language_.GetNoArena();
+  return language_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void AnalyzeSentimentResponse::set_language(const ::std::string& value) {
   
@@ -6163,6 +6627,9 @@ AnalyzeSentimentResponse::sentences() const {
   return sentences_;
 }
 
+inline const AnalyzeSentimentResponse* AnalyzeSentimentResponse::internal_default_instance() {
+  return &AnalyzeSentimentResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6174,29 +6641,27 @@ const int AnalyzeEntitiesRequest::kEncodingTypeFieldNumber;
 
 AnalyzeEntitiesRequest::AnalyzeEntitiesRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.AnalyzeEntitiesRequest)
 }
+
+void AnalyzeEntitiesRequest::InitAsDefaultInstance() {
+  document_ = const_cast< ::google::cloud::language::v1beta1::Document*>(
+      ::google::cloud::language::v1beta1::Document::internal_default_instance());
+}
+
 AnalyzeEntitiesRequest::AnalyzeEntitiesRequest(const AnalyzeEntitiesRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_document()) {
-    document_ = new ::google::cloud::language::v1beta1::Document(*from.document_);
-  } else {
-    document_ = NULL;
-  }
-  encoding_type_ = from.encoding_type_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.AnalyzeEntitiesRequest)
 }
 
 void AnalyzeEntitiesRequest::SharedCtor() {
-  ::memset(&document_, 0, reinterpret_cast<char*>(&encoding_type_) -
-    reinterpret_cast<char*>(&document_) + sizeof(encoding_type_));
+  document_ = NULL;
+  encoding_type_ = 0;
   _cached_size_ = 0;
 }
 
@@ -6206,7 +6671,7 @@ AnalyzeEntitiesRequest::~AnalyzeEntitiesRequest() {
 }
 
 void AnalyzeEntitiesRequest::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &AnalyzeEntitiesRequest_default_instance_.get()) {
     delete document_;
   }
 }
@@ -6218,13 +6683,15 @@ void AnalyzeEntitiesRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* AnalyzeEntitiesRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[12].descriptor;
+  return AnalyzeEntitiesRequest_descriptor_;
 }
 
 const AnalyzeEntitiesRequest& AnalyzeEntitiesRequest::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<AnalyzeEntitiesRequest> AnalyzeEntitiesRequest_default_instance_;
 
 AnalyzeEntitiesRequest* AnalyzeEntitiesRequest::New(::google::protobuf::Arena* arena) const {
   AnalyzeEntitiesRequest* n = new AnalyzeEntitiesRequest;
@@ -6236,9 +6703,7 @@ AnalyzeEntitiesRequest* AnalyzeEntitiesRequest::New(::google::protobuf::Arena* a
 
 void AnalyzeEntitiesRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.AnalyzeEntitiesRequest)
-  if (GetArenaNoVirtual() == NULL && document_ != NULL) {
-    delete document_;
-  }
+  if (GetArenaNoVirtual() == NULL && document_ != NULL) delete document_;
   document_ = NULL;
   encoding_type_ = 0;
 }
@@ -6249,24 +6714,26 @@ bool AnalyzeEntitiesRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.AnalyzeEntitiesRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.cloud.language.v1beta1.Document document = 1;
+      // optional .google.cloud.language.v1beta1.Document document = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_document()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_encoding_type;
         break;
       }
 
-      // .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+      // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_encoding_type:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -6275,6 +6742,7 @@ bool AnalyzeEntitiesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -6302,13 +6770,13 @@ failure:
 void AnalyzeEntitiesRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.AnalyzeEntitiesRequest)
-  // .google.cloud.language.v1beta1.Document document = 1;
+  // optional .google.cloud.language.v1beta1.Document document = 1;
   if (this->has_document()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->document_, output);
   }
 
-  // .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+  // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
   if (this->encoding_type() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       2, this->encoding_type(), output);
@@ -6321,14 +6789,14 @@ void AnalyzeEntitiesRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.AnalyzeEntitiesRequest)
-  // .google.cloud.language.v1beta1.Document document = 1;
+  // optional .google.cloud.language.v1beta1.Document document = 1;
   if (this->has_document()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->document_, false, target);
   }
 
-  // .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+  // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
   if (this->encoding_type() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       2, this->encoding_type(), target);
@@ -6342,14 +6810,14 @@ size_t AnalyzeEntitiesRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.AnalyzeEntitiesRequest)
   size_t total_size = 0;
 
-  // .google.cloud.language.v1beta1.Document document = 1;
+  // optional .google.cloud.language.v1beta1.Document document = 1;
   if (this->has_document()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->document_);
   }
 
-  // .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+  // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
   if (this->encoding_type() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->encoding_type());
@@ -6364,7 +6832,7 @@ size_t AnalyzeEntitiesRequest::ByteSizeLong() const {
 
 void AnalyzeEntitiesRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.AnalyzeEntitiesRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const AnalyzeEntitiesRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AnalyzeEntitiesRequest>(
           &from);
@@ -6373,14 +6841,21 @@ void AnalyzeEntitiesRequest::MergeFrom(const ::google::protobuf::Message& from) 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.AnalyzeEntitiesRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AnalyzeEntitiesRequest::MergeFrom(const AnalyzeEntitiesRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.AnalyzeEntitiesRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void AnalyzeEntitiesRequest::UnsafeMergeFrom(const AnalyzeEntitiesRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_document()) {
     mutable_document()->::google::cloud::language::v1beta1::Document::MergeFrom(from.document());
   }
@@ -6400,10 +6875,11 @@ void AnalyzeEntitiesRequest::CopyFrom(const AnalyzeEntitiesRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.AnalyzeEntitiesRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AnalyzeEntitiesRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -6414,18 +6890,22 @@ void AnalyzeEntitiesRequest::Swap(AnalyzeEntitiesRequest* other) {
 void AnalyzeEntitiesRequest::InternalSwap(AnalyzeEntitiesRequest* other) {
   std::swap(document_, other->document_);
   std::swap(encoding_type_, other->encoding_type_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata AnalyzeEntitiesRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[12];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = AnalyzeEntitiesRequest_descriptor_;
+  metadata.reflection = AnalyzeEntitiesRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // AnalyzeEntitiesRequest
 
-// .google.cloud.language.v1beta1.Document document = 1;
+// optional .google.cloud.language.v1beta1.Document document = 1;
 bool AnalyzeEntitiesRequest::has_document() const {
   return this != internal_default_instance() && document_ != NULL;
 }
@@ -6464,7 +6944,7 @@ void AnalyzeEntitiesRequest::set_allocated_document(::google::cloud::language::v
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnalyzeEntitiesRequest.document)
 }
 
-// .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+// optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
 void AnalyzeEntitiesRequest::clear_encoding_type() {
   encoding_type_ = 0;
 }
@@ -6478,6 +6958,9 @@ void AnalyzeEntitiesRequest::set_encoding_type(::google::cloud::language::v1beta
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.AnalyzeEntitiesRequest.encoding_type)
 }
 
+inline const AnalyzeEntitiesRequest* AnalyzeEntitiesRequest::internal_default_instance() {
+  return &AnalyzeEntitiesRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6489,22 +6972,19 @@ const int AnalyzeEntitiesResponse::kLanguageFieldNumber;
 
 AnalyzeEntitiesResponse::AnalyzeEntitiesResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.AnalyzeEntitiesResponse)
 }
+
+void AnalyzeEntitiesResponse::InitAsDefaultInstance() {
+}
+
 AnalyzeEntitiesResponse::AnalyzeEntitiesResponse(const AnalyzeEntitiesResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      entities_(from.entities_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  language_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.language().size() > 0) {
-    language_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.language_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.AnalyzeEntitiesResponse)
 }
 
@@ -6529,13 +7009,15 @@ void AnalyzeEntitiesResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* AnalyzeEntitiesResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[13].descriptor;
+  return AnalyzeEntitiesResponse_descriptor_;
 }
 
 const AnalyzeEntitiesResponse& AnalyzeEntitiesResponse::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<AnalyzeEntitiesResponse> AnalyzeEntitiesResponse_default_instance_;
 
 AnalyzeEntitiesResponse* AnalyzeEntitiesResponse::New(::google::protobuf::Arena* arena) const {
   AnalyzeEntitiesResponse* n = new AnalyzeEntitiesResponse;
@@ -6547,8 +7029,8 @@ AnalyzeEntitiesResponse* AnalyzeEntitiesResponse::New(::google::protobuf::Arena*
 
 void AnalyzeEntitiesResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.AnalyzeEntitiesResponse)
-  entities_.Clear();
   language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  entities_.Clear();
 }
 
 bool AnalyzeEntitiesResponse::MergePartialFromCodedStream(
@@ -6557,26 +7039,30 @@ bool AnalyzeEntitiesResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.AnalyzeEntitiesResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.cloud.language.v1beta1.Entity entities = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_entities:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_entities()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_entities;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_language;
         break;
       }
 
-      // string language = 2;
+      // optional string language = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_language:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_language()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -6586,6 +7072,7 @@ bool AnalyzeEntitiesResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -6619,7 +7106,7 @@ void AnalyzeEntitiesResponse::SerializeWithCachedSizes(
       1, this->entities(i), output);
   }
 
-  // string language = 2;
+  // optional string language = 2;
   if (this->language().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->language().data(), this->language().length(),
@@ -6643,7 +7130,7 @@ void AnalyzeEntitiesResponse::SerializeWithCachedSizes(
         1, this->entities(i), false, target);
   }
 
-  // string language = 2;
+  // optional string language = 2;
   if (this->language().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->language().data(), this->language().length(),
@@ -6662,6 +7149,13 @@ size_t AnalyzeEntitiesResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.AnalyzeEntitiesResponse)
   size_t total_size = 0;
 
+  // optional string language = 2;
+  if (this->language().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->language());
+  }
+
   // repeated .google.cloud.language.v1beta1.Entity entities = 1;
   {
     unsigned int count = this->entities_size();
@@ -6673,13 +7167,6 @@ size_t AnalyzeEntitiesResponse::ByteSizeLong() const {
     }
   }
 
-  // string language = 2;
-  if (this->language().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->language());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -6689,7 +7176,7 @@ size_t AnalyzeEntitiesResponse::ByteSizeLong() const {
 
 void AnalyzeEntitiesResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.AnalyzeEntitiesResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const AnalyzeEntitiesResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AnalyzeEntitiesResponse>(
           &from);
@@ -6698,14 +7185,21 @@ void AnalyzeEntitiesResponse::MergeFrom(const ::google::protobuf::Message& from)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.AnalyzeEntitiesResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AnalyzeEntitiesResponse::MergeFrom(const AnalyzeEntitiesResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.AnalyzeEntitiesResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void AnalyzeEntitiesResponse::UnsafeMergeFrom(const AnalyzeEntitiesResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   entities_.MergeFrom(from.entities_);
   if (from.language().size() > 0) {
 
@@ -6724,10 +7218,11 @@ void AnalyzeEntitiesResponse::CopyFrom(const AnalyzeEntitiesResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.AnalyzeEntitiesResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AnalyzeEntitiesResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -6738,12 +7233,16 @@ void AnalyzeEntitiesResponse::Swap(AnalyzeEntitiesResponse* other) {
 void AnalyzeEntitiesResponse::InternalSwap(AnalyzeEntitiesResponse* other) {
   entities_.UnsafeArenaSwap(&other->entities_);
   language_.Swap(&other->language_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata AnalyzeEntitiesResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[13];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = AnalyzeEntitiesResponse_descriptor_;
+  metadata.reflection = AnalyzeEntitiesResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -6779,13 +7278,13 @@ AnalyzeEntitiesResponse::entities() const {
   return entities_;
 }
 
-// string language = 2;
+// optional string language = 2;
 void AnalyzeEntitiesResponse::clear_language() {
   language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& AnalyzeEntitiesResponse::language() const {
   // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.AnalyzeEntitiesResponse.language)
-  return language_.GetNoArena();
+  return language_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void AnalyzeEntitiesResponse::set_language(const ::std::string& value) {
   
@@ -6823,6 +7322,9 @@ void AnalyzeEntitiesResponse::set_allocated_language(::std::string* language) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnalyzeEntitiesResponse.language)
 }
 
+inline const AnalyzeEntitiesResponse* AnalyzeEntitiesResponse::internal_default_instance() {
+  return &AnalyzeEntitiesResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6834,29 +7336,27 @@ const int AnalyzeSyntaxRequest::kEncodingTypeFieldNumber;
 
 AnalyzeSyntaxRequest::AnalyzeSyntaxRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.AnalyzeSyntaxRequest)
 }
+
+void AnalyzeSyntaxRequest::InitAsDefaultInstance() {
+  document_ = const_cast< ::google::cloud::language::v1beta1::Document*>(
+      ::google::cloud::language::v1beta1::Document::internal_default_instance());
+}
+
 AnalyzeSyntaxRequest::AnalyzeSyntaxRequest(const AnalyzeSyntaxRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_document()) {
-    document_ = new ::google::cloud::language::v1beta1::Document(*from.document_);
-  } else {
-    document_ = NULL;
-  }
-  encoding_type_ = from.encoding_type_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.AnalyzeSyntaxRequest)
 }
 
 void AnalyzeSyntaxRequest::SharedCtor() {
-  ::memset(&document_, 0, reinterpret_cast<char*>(&encoding_type_) -
-    reinterpret_cast<char*>(&document_) + sizeof(encoding_type_));
+  document_ = NULL;
+  encoding_type_ = 0;
   _cached_size_ = 0;
 }
 
@@ -6866,7 +7366,7 @@ AnalyzeSyntaxRequest::~AnalyzeSyntaxRequest() {
 }
 
 void AnalyzeSyntaxRequest::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &AnalyzeSyntaxRequest_default_instance_.get()) {
     delete document_;
   }
 }
@@ -6878,13 +7378,15 @@ void AnalyzeSyntaxRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* AnalyzeSyntaxRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[14].descriptor;
+  return AnalyzeSyntaxRequest_descriptor_;
 }
 
 const AnalyzeSyntaxRequest& AnalyzeSyntaxRequest::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<AnalyzeSyntaxRequest> AnalyzeSyntaxRequest_default_instance_;
 
 AnalyzeSyntaxRequest* AnalyzeSyntaxRequest::New(::google::protobuf::Arena* arena) const {
   AnalyzeSyntaxRequest* n = new AnalyzeSyntaxRequest;
@@ -6896,9 +7398,7 @@ AnalyzeSyntaxRequest* AnalyzeSyntaxRequest::New(::google::protobuf::Arena* arena
 
 void AnalyzeSyntaxRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.AnalyzeSyntaxRequest)
-  if (GetArenaNoVirtual() == NULL && document_ != NULL) {
-    delete document_;
-  }
+  if (GetArenaNoVirtual() == NULL && document_ != NULL) delete document_;
   document_ = NULL;
   encoding_type_ = 0;
 }
@@ -6909,24 +7409,26 @@ bool AnalyzeSyntaxRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.AnalyzeSyntaxRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.cloud.language.v1beta1.Document document = 1;
+      // optional .google.cloud.language.v1beta1.Document document = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_document()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_encoding_type;
         break;
       }
 
-      // .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+      // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_encoding_type:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -6935,6 +7437,7 @@ bool AnalyzeSyntaxRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -6962,13 +7465,13 @@ failure:
 void AnalyzeSyntaxRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.AnalyzeSyntaxRequest)
-  // .google.cloud.language.v1beta1.Document document = 1;
+  // optional .google.cloud.language.v1beta1.Document document = 1;
   if (this->has_document()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->document_, output);
   }
 
-  // .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+  // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
   if (this->encoding_type() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       2, this->encoding_type(), output);
@@ -6981,14 +7484,14 @@ void AnalyzeSyntaxRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.AnalyzeSyntaxRequest)
-  // .google.cloud.language.v1beta1.Document document = 1;
+  // optional .google.cloud.language.v1beta1.Document document = 1;
   if (this->has_document()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->document_, false, target);
   }
 
-  // .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+  // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
   if (this->encoding_type() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       2, this->encoding_type(), target);
@@ -7002,14 +7505,14 @@ size_t AnalyzeSyntaxRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.AnalyzeSyntaxRequest)
   size_t total_size = 0;
 
-  // .google.cloud.language.v1beta1.Document document = 1;
+  // optional .google.cloud.language.v1beta1.Document document = 1;
   if (this->has_document()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->document_);
   }
 
-  // .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+  // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
   if (this->encoding_type() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->encoding_type());
@@ -7024,7 +7527,7 @@ size_t AnalyzeSyntaxRequest::ByteSizeLong() const {
 
 void AnalyzeSyntaxRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.AnalyzeSyntaxRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const AnalyzeSyntaxRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AnalyzeSyntaxRequest>(
           &from);
@@ -7033,14 +7536,21 @@ void AnalyzeSyntaxRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.AnalyzeSyntaxRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AnalyzeSyntaxRequest::MergeFrom(const AnalyzeSyntaxRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.AnalyzeSyntaxRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void AnalyzeSyntaxRequest::UnsafeMergeFrom(const AnalyzeSyntaxRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_document()) {
     mutable_document()->::google::cloud::language::v1beta1::Document::MergeFrom(from.document());
   }
@@ -7060,10 +7570,11 @@ void AnalyzeSyntaxRequest::CopyFrom(const AnalyzeSyntaxRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.AnalyzeSyntaxRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AnalyzeSyntaxRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -7074,18 +7585,22 @@ void AnalyzeSyntaxRequest::Swap(AnalyzeSyntaxRequest* other) {
 void AnalyzeSyntaxRequest::InternalSwap(AnalyzeSyntaxRequest* other) {
   std::swap(document_, other->document_);
   std::swap(encoding_type_, other->encoding_type_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata AnalyzeSyntaxRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[14];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = AnalyzeSyntaxRequest_descriptor_;
+  metadata.reflection = AnalyzeSyntaxRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // AnalyzeSyntaxRequest
 
-// .google.cloud.language.v1beta1.Document document = 1;
+// optional .google.cloud.language.v1beta1.Document document = 1;
 bool AnalyzeSyntaxRequest::has_document() const {
   return this != internal_default_instance() && document_ != NULL;
 }
@@ -7124,7 +7639,7 @@ void AnalyzeSyntaxRequest::set_allocated_document(::google::cloud::language::v1b
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnalyzeSyntaxRequest.document)
 }
 
-// .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+// optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
 void AnalyzeSyntaxRequest::clear_encoding_type() {
   encoding_type_ = 0;
 }
@@ -7138,6 +7653,9 @@ void AnalyzeSyntaxRequest::set_encoding_type(::google::cloud::language::v1beta1:
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.AnalyzeSyntaxRequest.encoding_type)
 }
 
+inline const AnalyzeSyntaxRequest* AnalyzeSyntaxRequest::internal_default_instance() {
+  return &AnalyzeSyntaxRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7150,23 +7668,19 @@ const int AnalyzeSyntaxResponse::kLanguageFieldNumber;
 
 AnalyzeSyntaxResponse::AnalyzeSyntaxResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.AnalyzeSyntaxResponse)
 }
+
+void AnalyzeSyntaxResponse::InitAsDefaultInstance() {
+}
+
 AnalyzeSyntaxResponse::AnalyzeSyntaxResponse(const AnalyzeSyntaxResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      sentences_(from.sentences_),
-      tokens_(from.tokens_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  language_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.language().size() > 0) {
-    language_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.language_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.AnalyzeSyntaxResponse)
 }
 
@@ -7191,13 +7705,15 @@ void AnalyzeSyntaxResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* AnalyzeSyntaxResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[15].descriptor;
+  return AnalyzeSyntaxResponse_descriptor_;
 }
 
 const AnalyzeSyntaxResponse& AnalyzeSyntaxResponse::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<AnalyzeSyntaxResponse> AnalyzeSyntaxResponse_default_instance_;
 
 AnalyzeSyntaxResponse* AnalyzeSyntaxResponse::New(::google::protobuf::Arena* arena) const {
   AnalyzeSyntaxResponse* n = new AnalyzeSyntaxResponse;
@@ -7209,9 +7725,9 @@ AnalyzeSyntaxResponse* AnalyzeSyntaxResponse::New(::google::protobuf::Arena* are
 
 void AnalyzeSyntaxResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.AnalyzeSyntaxResponse)
+  language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   sentences_.Clear();
   tokens_.Clear();
-  language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 bool AnalyzeSyntaxResponse::MergePartialFromCodedStream(
@@ -7220,39 +7736,46 @@ bool AnalyzeSyntaxResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.AnalyzeSyntaxResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.cloud.language.v1beta1.Sentence sentences = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_sentences:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_sentences()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_sentences;
+        if (input->ExpectTag(18)) goto parse_loop_tokens;
         input->UnsafeDecrementRecursionDepth();
         break;
       }
 
       // repeated .google.cloud.language.v1beta1.Token tokens = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_tokens:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_tokens()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_loop_tokens;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(26)) goto parse_language;
         break;
       }
 
-      // string language = 3;
+      // optional string language = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_language:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_language()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -7262,6 +7785,7 @@ bool AnalyzeSyntaxResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -7301,7 +7825,7 @@ void AnalyzeSyntaxResponse::SerializeWithCachedSizes(
       2, this->tokens(i), output);
   }
 
-  // string language = 3;
+  // optional string language = 3;
   if (this->language().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->language().data(), this->language().length(),
@@ -7332,7 +7856,7 @@ void AnalyzeSyntaxResponse::SerializeWithCachedSizes(
         2, this->tokens(i), false, target);
   }
 
-  // string language = 3;
+  // optional string language = 3;
   if (this->language().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->language().data(), this->language().length(),
@@ -7350,6 +7874,13 @@ void AnalyzeSyntaxResponse::SerializeWithCachedSizes(
 size_t AnalyzeSyntaxResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.AnalyzeSyntaxResponse)
   size_t total_size = 0;
+
+  // optional string language = 3;
+  if (this->language().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->language());
+  }
 
   // repeated .google.cloud.language.v1beta1.Sentence sentences = 1;
   {
@@ -7373,13 +7904,6 @@ size_t AnalyzeSyntaxResponse::ByteSizeLong() const {
     }
   }
 
-  // string language = 3;
-  if (this->language().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->language());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -7389,7 +7913,7 @@ size_t AnalyzeSyntaxResponse::ByteSizeLong() const {
 
 void AnalyzeSyntaxResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.AnalyzeSyntaxResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const AnalyzeSyntaxResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AnalyzeSyntaxResponse>(
           &from);
@@ -7398,14 +7922,21 @@ void AnalyzeSyntaxResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.AnalyzeSyntaxResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AnalyzeSyntaxResponse::MergeFrom(const AnalyzeSyntaxResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.AnalyzeSyntaxResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void AnalyzeSyntaxResponse::UnsafeMergeFrom(const AnalyzeSyntaxResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   sentences_.MergeFrom(from.sentences_);
   tokens_.MergeFrom(from.tokens_);
   if (from.language().size() > 0) {
@@ -7425,10 +7956,11 @@ void AnalyzeSyntaxResponse::CopyFrom(const AnalyzeSyntaxResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.AnalyzeSyntaxResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AnalyzeSyntaxResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -7440,12 +7972,16 @@ void AnalyzeSyntaxResponse::InternalSwap(AnalyzeSyntaxResponse* other) {
   sentences_.UnsafeArenaSwap(&other->sentences_);
   tokens_.UnsafeArenaSwap(&other->tokens_);
   language_.Swap(&other->language_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata AnalyzeSyntaxResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[15];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = AnalyzeSyntaxResponse_descriptor_;
+  metadata.reflection = AnalyzeSyntaxResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -7511,13 +8047,13 @@ AnalyzeSyntaxResponse::tokens() const {
   return tokens_;
 }
 
-// string language = 3;
+// optional string language = 3;
 void AnalyzeSyntaxResponse::clear_language() {
   language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& AnalyzeSyntaxResponse::language() const {
   // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.AnalyzeSyntaxResponse.language)
-  return language_.GetNoArena();
+  return language_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void AnalyzeSyntaxResponse::set_language(const ::std::string& value) {
   
@@ -7555,6 +8091,9 @@ void AnalyzeSyntaxResponse::set_allocated_language(::std::string* language) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnalyzeSyntaxResponse.language)
 }
 
+inline const AnalyzeSyntaxResponse* AnalyzeSyntaxResponse::internal_default_instance() {
+  return &AnalyzeSyntaxResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7567,20 +8106,19 @@ const int AnnotateTextRequest_Features::kExtractDocumentSentimentFieldNumber;
 
 AnnotateTextRequest_Features::AnnotateTextRequest_Features()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.AnnotateTextRequest.Features)
 }
+
+void AnnotateTextRequest_Features::InitAsDefaultInstance() {
+}
+
 AnnotateTextRequest_Features::AnnotateTextRequest_Features(const AnnotateTextRequest_Features& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&extract_syntax_, &from.extract_syntax_,
-    reinterpret_cast<char*>(&extract_document_sentiment_) -
-    reinterpret_cast<char*>(&extract_syntax_) + sizeof(extract_document_sentiment_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.AnnotateTextRequest.Features)
 }
 
@@ -7605,13 +8143,15 @@ void AnnotateTextRequest_Features::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* AnnotateTextRequest_Features::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[16].descriptor;
+  return AnnotateTextRequest_Features_descriptor_;
 }
 
 const AnnotateTextRequest_Features& AnnotateTextRequest_Features::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<AnnotateTextRequest_Features> AnnotateTextRequest_Features_default_instance_;
 
 AnnotateTextRequest_Features* AnnotateTextRequest_Features::New(::google::protobuf::Arena* arena) const {
   AnnotateTextRequest_Features* n = new AnnotateTextRequest_Features;
@@ -7623,8 +8163,27 @@ AnnotateTextRequest_Features* AnnotateTextRequest_Features::New(::google::protob
 
 void AnnotateTextRequest_Features::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.AnnotateTextRequest.Features)
-  ::memset(&extract_syntax_, 0, reinterpret_cast<char*>(&extract_document_sentiment_) -
-    reinterpret_cast<char*>(&extract_syntax_) + sizeof(extract_document_sentiment_));
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(AnnotateTextRequest_Features, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<AnnotateTextRequest_Features*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(extract_syntax_, extract_document_sentiment_);
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool AnnotateTextRequest_Features::MergePartialFromCodedStream(
@@ -7633,13 +8192,13 @@ bool AnnotateTextRequest_Features::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.AnnotateTextRequest.Features)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // bool extract_syntax = 1;
+      // optional bool extract_syntax = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -7647,12 +8206,14 @@ bool AnnotateTextRequest_Features::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_extract_entities;
         break;
       }
 
-      // bool extract_entities = 2;
+      // optional bool extract_entities = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_extract_entities:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -7660,12 +8221,14 @@ bool AnnotateTextRequest_Features::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_extract_document_sentiment;
         break;
       }
 
-      // bool extract_document_sentiment = 3;
+      // optional bool extract_document_sentiment = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_extract_document_sentiment:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -7673,6 +8236,7 @@ bool AnnotateTextRequest_Features::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -7700,17 +8264,17 @@ failure:
 void AnnotateTextRequest_Features::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.AnnotateTextRequest.Features)
-  // bool extract_syntax = 1;
+  // optional bool extract_syntax = 1;
   if (this->extract_syntax() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(1, this->extract_syntax(), output);
   }
 
-  // bool extract_entities = 2;
+  // optional bool extract_entities = 2;
   if (this->extract_entities() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(2, this->extract_entities(), output);
   }
 
-  // bool extract_document_sentiment = 3;
+  // optional bool extract_document_sentiment = 3;
   if (this->extract_document_sentiment() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(3, this->extract_document_sentiment(), output);
   }
@@ -7722,17 +8286,17 @@ void AnnotateTextRequest_Features::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.AnnotateTextRequest.Features)
-  // bool extract_syntax = 1;
+  // optional bool extract_syntax = 1;
   if (this->extract_syntax() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(1, this->extract_syntax(), target);
   }
 
-  // bool extract_entities = 2;
+  // optional bool extract_entities = 2;
   if (this->extract_entities() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(2, this->extract_entities(), target);
   }
 
-  // bool extract_document_sentiment = 3;
+  // optional bool extract_document_sentiment = 3;
   if (this->extract_document_sentiment() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(3, this->extract_document_sentiment(), target);
   }
@@ -7745,17 +8309,17 @@ size_t AnnotateTextRequest_Features::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.AnnotateTextRequest.Features)
   size_t total_size = 0;
 
-  // bool extract_syntax = 1;
+  // optional bool extract_syntax = 1;
   if (this->extract_syntax() != 0) {
     total_size += 1 + 1;
   }
 
-  // bool extract_entities = 2;
+  // optional bool extract_entities = 2;
   if (this->extract_entities() != 0) {
     total_size += 1 + 1;
   }
 
-  // bool extract_document_sentiment = 3;
+  // optional bool extract_document_sentiment = 3;
   if (this->extract_document_sentiment() != 0) {
     total_size += 1 + 1;
   }
@@ -7769,7 +8333,7 @@ size_t AnnotateTextRequest_Features::ByteSizeLong() const {
 
 void AnnotateTextRequest_Features::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.AnnotateTextRequest.Features)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const AnnotateTextRequest_Features* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AnnotateTextRequest_Features>(
           &from);
@@ -7778,14 +8342,21 @@ void AnnotateTextRequest_Features::MergeFrom(const ::google::protobuf::Message& 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.AnnotateTextRequest.Features)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AnnotateTextRequest_Features::MergeFrom(const AnnotateTextRequest_Features& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.AnnotateTextRequest.Features)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void AnnotateTextRequest_Features::UnsafeMergeFrom(const AnnotateTextRequest_Features& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.extract_syntax() != 0) {
     set_extract_syntax(from.extract_syntax());
   }
@@ -7808,10 +8379,11 @@ void AnnotateTextRequest_Features::CopyFrom(const AnnotateTextRequest_Features& 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.AnnotateTextRequest.Features)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AnnotateTextRequest_Features::IsInitialized() const {
+
   return true;
 }
 
@@ -7823,62 +8395,20 @@ void AnnotateTextRequest_Features::InternalSwap(AnnotateTextRequest_Features* ot
   std::swap(extract_syntax_, other->extract_syntax_);
   std::swap(extract_entities_, other->extract_entities_);
   std::swap(extract_document_sentiment_, other->extract_document_sentiment_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata AnnotateTextRequest_Features::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[16];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = AnnotateTextRequest_Features_descriptor_;
+  metadata.reflection = AnnotateTextRequest_Features_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// AnnotateTextRequest_Features
 
-// bool extract_syntax = 1;
-void AnnotateTextRequest_Features::clear_extract_syntax() {
-  extract_syntax_ = false;
-}
-bool AnnotateTextRequest_Features::extract_syntax() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.AnnotateTextRequest.Features.extract_syntax)
-  return extract_syntax_;
-}
-void AnnotateTextRequest_Features::set_extract_syntax(bool value) {
-  
-  extract_syntax_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.AnnotateTextRequest.Features.extract_syntax)
-}
-
-// bool extract_entities = 2;
-void AnnotateTextRequest_Features::clear_extract_entities() {
-  extract_entities_ = false;
-}
-bool AnnotateTextRequest_Features::extract_entities() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.AnnotateTextRequest.Features.extract_entities)
-  return extract_entities_;
-}
-void AnnotateTextRequest_Features::set_extract_entities(bool value) {
-  
-  extract_entities_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.AnnotateTextRequest.Features.extract_entities)
-}
-
-// bool extract_document_sentiment = 3;
-void AnnotateTextRequest_Features::clear_extract_document_sentiment() {
-  extract_document_sentiment_ = false;
-}
-bool AnnotateTextRequest_Features::extract_document_sentiment() const {
-  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.AnnotateTextRequest.Features.extract_document_sentiment)
-  return extract_document_sentiment_;
-}
-void AnnotateTextRequest_Features::set_extract_document_sentiment(bool value) {
-  
-  extract_document_sentiment_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.AnnotateTextRequest.Features.extract_document_sentiment)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
+// -------------------------------------------------------------------
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int AnnotateTextRequest::kDocumentFieldNumber;
@@ -7888,34 +8418,30 @@ const int AnnotateTextRequest::kEncodingTypeFieldNumber;
 
 AnnotateTextRequest::AnnotateTextRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.AnnotateTextRequest)
 }
+
+void AnnotateTextRequest::InitAsDefaultInstance() {
+  document_ = const_cast< ::google::cloud::language::v1beta1::Document*>(
+      ::google::cloud::language::v1beta1::Document::internal_default_instance());
+  features_ = const_cast< ::google::cloud::language::v1beta1::AnnotateTextRequest_Features*>(
+      ::google::cloud::language::v1beta1::AnnotateTextRequest_Features::internal_default_instance());
+}
+
 AnnotateTextRequest::AnnotateTextRequest(const AnnotateTextRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_document()) {
-    document_ = new ::google::cloud::language::v1beta1::Document(*from.document_);
-  } else {
-    document_ = NULL;
-  }
-  if (from.has_features()) {
-    features_ = new ::google::cloud::language::v1beta1::AnnotateTextRequest_Features(*from.features_);
-  } else {
-    features_ = NULL;
-  }
-  encoding_type_ = from.encoding_type_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.AnnotateTextRequest)
 }
 
 void AnnotateTextRequest::SharedCtor() {
-  ::memset(&document_, 0, reinterpret_cast<char*>(&encoding_type_) -
-    reinterpret_cast<char*>(&document_) + sizeof(encoding_type_));
+  document_ = NULL;
+  features_ = NULL;
+  encoding_type_ = 0;
   _cached_size_ = 0;
 }
 
@@ -7925,10 +8451,8 @@ AnnotateTextRequest::~AnnotateTextRequest() {
 }
 
 void AnnotateTextRequest::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &AnnotateTextRequest_default_instance_.get()) {
     delete document_;
-  }
-  if (this != internal_default_instance()) {
     delete features_;
   }
 }
@@ -7940,13 +8464,15 @@ void AnnotateTextRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* AnnotateTextRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[17].descriptor;
+  return AnnotateTextRequest_descriptor_;
 }
 
 const AnnotateTextRequest& AnnotateTextRequest::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<AnnotateTextRequest> AnnotateTextRequest_default_instance_;
 
 AnnotateTextRequest* AnnotateTextRequest::New(::google::protobuf::Arena* arena) const {
   AnnotateTextRequest* n = new AnnotateTextRequest;
@@ -7958,13 +8484,9 @@ AnnotateTextRequest* AnnotateTextRequest::New(::google::protobuf::Arena* arena) 
 
 void AnnotateTextRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.AnnotateTextRequest)
-  if (GetArenaNoVirtual() == NULL && document_ != NULL) {
-    delete document_;
-  }
+  if (GetArenaNoVirtual() == NULL && document_ != NULL) delete document_;
   document_ = NULL;
-  if (GetArenaNoVirtual() == NULL && features_ != NULL) {
-    delete features_;
-  }
+  if (GetArenaNoVirtual() == NULL && features_ != NULL) delete features_;
   features_ = NULL;
   encoding_type_ = 0;
 }
@@ -7975,35 +8497,39 @@ bool AnnotateTextRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.AnnotateTextRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.cloud.language.v1beta1.Document document = 1;
+      // optional .google.cloud.language.v1beta1.Document document = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_document()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_features;
         break;
       }
 
-      // .google.cloud.language.v1beta1.AnnotateTextRequest.Features features = 2;
+      // optional .google.cloud.language.v1beta1.AnnotateTextRequest.Features features = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_features:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_features()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_encoding_type;
         break;
       }
 
-      // .google.cloud.language.v1beta1.EncodingType encoding_type = 3;
+      // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_encoding_type:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -8012,6 +8538,7 @@ bool AnnotateTextRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -8039,19 +8566,19 @@ failure:
 void AnnotateTextRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.language.v1beta1.AnnotateTextRequest)
-  // .google.cloud.language.v1beta1.Document document = 1;
+  // optional .google.cloud.language.v1beta1.Document document = 1;
   if (this->has_document()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->document_, output);
   }
 
-  // .google.cloud.language.v1beta1.AnnotateTextRequest.Features features = 2;
+  // optional .google.cloud.language.v1beta1.AnnotateTextRequest.Features features = 2;
   if (this->has_features()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->features_, output);
   }
 
-  // .google.cloud.language.v1beta1.EncodingType encoding_type = 3;
+  // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 3;
   if (this->encoding_type() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       3, this->encoding_type(), output);
@@ -8064,21 +8591,21 @@ void AnnotateTextRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.language.v1beta1.AnnotateTextRequest)
-  // .google.cloud.language.v1beta1.Document document = 1;
+  // optional .google.cloud.language.v1beta1.Document document = 1;
   if (this->has_document()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->document_, false, target);
   }
 
-  // .google.cloud.language.v1beta1.AnnotateTextRequest.Features features = 2;
+  // optional .google.cloud.language.v1beta1.AnnotateTextRequest.Features features = 2;
   if (this->has_features()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *this->features_, false, target);
   }
 
-  // .google.cloud.language.v1beta1.EncodingType encoding_type = 3;
+  // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 3;
   if (this->encoding_type() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       3, this->encoding_type(), target);
@@ -8092,21 +8619,21 @@ size_t AnnotateTextRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.AnnotateTextRequest)
   size_t total_size = 0;
 
-  // .google.cloud.language.v1beta1.Document document = 1;
+  // optional .google.cloud.language.v1beta1.Document document = 1;
   if (this->has_document()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->document_);
   }
 
-  // .google.cloud.language.v1beta1.AnnotateTextRequest.Features features = 2;
+  // optional .google.cloud.language.v1beta1.AnnotateTextRequest.Features features = 2;
   if (this->has_features()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->features_);
   }
 
-  // .google.cloud.language.v1beta1.EncodingType encoding_type = 3;
+  // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 3;
   if (this->encoding_type() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->encoding_type());
@@ -8121,7 +8648,7 @@ size_t AnnotateTextRequest::ByteSizeLong() const {
 
 void AnnotateTextRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.AnnotateTextRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const AnnotateTextRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AnnotateTextRequest>(
           &from);
@@ -8130,14 +8657,21 @@ void AnnotateTextRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.AnnotateTextRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AnnotateTextRequest::MergeFrom(const AnnotateTextRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.AnnotateTextRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void AnnotateTextRequest::UnsafeMergeFrom(const AnnotateTextRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_document()) {
     mutable_document()->::google::cloud::language::v1beta1::Document::MergeFrom(from.document());
   }
@@ -8160,10 +8694,11 @@ void AnnotateTextRequest::CopyFrom(const AnnotateTextRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.AnnotateTextRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AnnotateTextRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -8175,18 +8710,71 @@ void AnnotateTextRequest::InternalSwap(AnnotateTextRequest* other) {
   std::swap(document_, other->document_);
   std::swap(features_, other->features_);
   std::swap(encoding_type_, other->encoding_type_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata AnnotateTextRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[17];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = AnnotateTextRequest_descriptor_;
+  metadata.reflection = AnnotateTextRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
+// AnnotateTextRequest_Features
+
+// optional bool extract_syntax = 1;
+void AnnotateTextRequest_Features::clear_extract_syntax() {
+  extract_syntax_ = false;
+}
+bool AnnotateTextRequest_Features::extract_syntax() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.AnnotateTextRequest.Features.extract_syntax)
+  return extract_syntax_;
+}
+void AnnotateTextRequest_Features::set_extract_syntax(bool value) {
+  
+  extract_syntax_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.AnnotateTextRequest.Features.extract_syntax)
+}
+
+// optional bool extract_entities = 2;
+void AnnotateTextRequest_Features::clear_extract_entities() {
+  extract_entities_ = false;
+}
+bool AnnotateTextRequest_Features::extract_entities() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.AnnotateTextRequest.Features.extract_entities)
+  return extract_entities_;
+}
+void AnnotateTextRequest_Features::set_extract_entities(bool value) {
+  
+  extract_entities_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.AnnotateTextRequest.Features.extract_entities)
+}
+
+// optional bool extract_document_sentiment = 3;
+void AnnotateTextRequest_Features::clear_extract_document_sentiment() {
+  extract_document_sentiment_ = false;
+}
+bool AnnotateTextRequest_Features::extract_document_sentiment() const {
+  // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.AnnotateTextRequest.Features.extract_document_sentiment)
+  return extract_document_sentiment_;
+}
+void AnnotateTextRequest_Features::set_extract_document_sentiment(bool value) {
+  
+  extract_document_sentiment_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.AnnotateTextRequest.Features.extract_document_sentiment)
+}
+
+inline const AnnotateTextRequest_Features* AnnotateTextRequest_Features::internal_default_instance() {
+  return &AnnotateTextRequest_Features_default_instance_.get();
+}
+// -------------------------------------------------------------------
+
 // AnnotateTextRequest
 
-// .google.cloud.language.v1beta1.Document document = 1;
+// optional .google.cloud.language.v1beta1.Document document = 1;
 bool AnnotateTextRequest::has_document() const {
   return this != internal_default_instance() && document_ != NULL;
 }
@@ -8225,7 +8813,7 @@ void AnnotateTextRequest::set_allocated_document(::google::cloud::language::v1be
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnnotateTextRequest.document)
 }
 
-// .google.cloud.language.v1beta1.AnnotateTextRequest.Features features = 2;
+// optional .google.cloud.language.v1beta1.AnnotateTextRequest.Features features = 2;
 bool AnnotateTextRequest::has_features() const {
   return this != internal_default_instance() && features_ != NULL;
 }
@@ -8264,7 +8852,7 @@ void AnnotateTextRequest::set_allocated_features(::google::cloud::language::v1be
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnnotateTextRequest.features)
 }
 
-// .google.cloud.language.v1beta1.EncodingType encoding_type = 3;
+// optional .google.cloud.language.v1beta1.EncodingType encoding_type = 3;
 void AnnotateTextRequest::clear_encoding_type() {
   encoding_type_ = 0;
 }
@@ -8278,6 +8866,9 @@ void AnnotateTextRequest::set_encoding_type(::google::cloud::language::v1beta1::
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.AnnotateTextRequest.encoding_type)
 }
 
+inline const AnnotateTextRequest* AnnotateTextRequest::internal_default_instance() {
+  return &AnnotateTextRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -8292,29 +8883,21 @@ const int AnnotateTextResponse::kLanguageFieldNumber;
 
 AnnotateTextResponse::AnnotateTextResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.language.v1beta1.AnnotateTextResponse)
 }
+
+void AnnotateTextResponse::InitAsDefaultInstance() {
+  document_sentiment_ = const_cast< ::google::cloud::language::v1beta1::Sentiment*>(
+      ::google::cloud::language::v1beta1::Sentiment::internal_default_instance());
+}
+
 AnnotateTextResponse::AnnotateTextResponse(const AnnotateTextResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      sentences_(from.sentences_),
-      tokens_(from.tokens_),
-      entities_(from.entities_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  language_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.language().size() > 0) {
-    language_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.language_);
-  }
-  if (from.has_document_sentiment()) {
-    document_sentiment_ = new ::google::cloud::language::v1beta1::Sentiment(*from.document_sentiment_);
-  } else {
-    document_sentiment_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.language.v1beta1.AnnotateTextResponse)
 }
 
@@ -8331,7 +8914,7 @@ AnnotateTextResponse::~AnnotateTextResponse() {
 
 void AnnotateTextResponse::SharedDtor() {
   language_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &AnnotateTextResponse_default_instance_.get()) {
     delete document_sentiment_;
   }
 }
@@ -8343,13 +8926,15 @@ void AnnotateTextResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* AnnotateTextResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[18].descriptor;
+  return AnnotateTextResponse_descriptor_;
 }
 
 const AnnotateTextResponse& AnnotateTextResponse::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<AnnotateTextResponse> AnnotateTextResponse_default_instance_;
 
 AnnotateTextResponse* AnnotateTextResponse::New(::google::protobuf::Arena* arena) const {
   AnnotateTextResponse* n = new AnnotateTextResponse;
@@ -8361,14 +8946,12 @@ AnnotateTextResponse* AnnotateTextResponse::New(::google::protobuf::Arena* arena
 
 void AnnotateTextResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.language.v1beta1.AnnotateTextResponse)
+  if (GetArenaNoVirtual() == NULL && document_sentiment_ != NULL) delete document_sentiment_;
+  document_sentiment_ = NULL;
+  language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   sentences_.Clear();
   tokens_.Clear();
   entities_.Clear();
-  language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && document_sentiment_ != NULL) {
-    delete document_sentiment_;
-  }
-  document_sentiment_ = NULL;
 }
 
 bool AnnotateTextResponse::MergePartialFromCodedStream(
@@ -8377,63 +8960,75 @@ bool AnnotateTextResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.language.v1beta1.AnnotateTextResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.cloud.language.v1beta1.Sentence sentences = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_sentences:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_sentences()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_sentences;
+        if (input->ExpectTag(18)) goto parse_loop_tokens;
         input->UnsafeDecrementRecursionDepth();
         break;
       }
 
       // repeated .google.cloud.language.v1beta1.Token tokens = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_tokens:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_tokens()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_loop_tokens;
+        if (input->ExpectTag(26)) goto parse_loop_entities;
         input->UnsafeDecrementRecursionDepth();
         break;
       }
 
       // repeated .google.cloud.language.v1beta1.Entity entities = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_entities:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_entities()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_loop_entities;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(34)) goto parse_document_sentiment;
         break;
       }
 
-      // .google.cloud.language.v1beta1.Sentiment document_sentiment = 4;
+      // optional .google.cloud.language.v1beta1.Sentiment document_sentiment = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_document_sentiment:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_document_sentiment()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_language;
         break;
       }
 
-      // string language = 5;
+      // optional string language = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_language:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_language()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -8443,6 +9038,7 @@ bool AnnotateTextResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -8488,13 +9084,13 @@ void AnnotateTextResponse::SerializeWithCachedSizes(
       3, this->entities(i), output);
   }
 
-  // .google.cloud.language.v1beta1.Sentiment document_sentiment = 4;
+  // optional .google.cloud.language.v1beta1.Sentiment document_sentiment = 4;
   if (this->has_document_sentiment()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, *this->document_sentiment_, output);
   }
 
-  // string language = 5;
+  // optional string language = 5;
   if (this->language().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->language().data(), this->language().length(),
@@ -8532,14 +9128,14 @@ void AnnotateTextResponse::SerializeWithCachedSizes(
         3, this->entities(i), false, target);
   }
 
-  // .google.cloud.language.v1beta1.Sentiment document_sentiment = 4;
+  // optional .google.cloud.language.v1beta1.Sentiment document_sentiment = 4;
   if (this->has_document_sentiment()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         4, *this->document_sentiment_, false, target);
   }
 
-  // string language = 5;
+  // optional string language = 5;
   if (this->language().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->language().data(), this->language().length(),
@@ -8557,6 +9153,20 @@ void AnnotateTextResponse::SerializeWithCachedSizes(
 size_t AnnotateTextResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.language.v1beta1.AnnotateTextResponse)
   size_t total_size = 0;
+
+  // optional .google.cloud.language.v1beta1.Sentiment document_sentiment = 4;
+  if (this->has_document_sentiment()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->document_sentiment_);
+  }
+
+  // optional string language = 5;
+  if (this->language().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->language());
+  }
 
   // repeated .google.cloud.language.v1beta1.Sentence sentences = 1;
   {
@@ -8591,20 +9201,6 @@ size_t AnnotateTextResponse::ByteSizeLong() const {
     }
   }
 
-  // string language = 5;
-  if (this->language().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->language());
-  }
-
-  // .google.cloud.language.v1beta1.Sentiment document_sentiment = 4;
-  if (this->has_document_sentiment()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->document_sentiment_);
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -8614,7 +9210,7 @@ size_t AnnotateTextResponse::ByteSizeLong() const {
 
 void AnnotateTextResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.language.v1beta1.AnnotateTextResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const AnnotateTextResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AnnotateTextResponse>(
           &from);
@@ -8623,23 +9219,30 @@ void AnnotateTextResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.language.v1beta1.AnnotateTextResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AnnotateTextResponse::MergeFrom(const AnnotateTextResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.language.v1beta1.AnnotateTextResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void AnnotateTextResponse::UnsafeMergeFrom(const AnnotateTextResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   sentences_.MergeFrom(from.sentences_);
   tokens_.MergeFrom(from.tokens_);
   entities_.MergeFrom(from.entities_);
+  if (from.has_document_sentiment()) {
+    mutable_document_sentiment()->::google::cloud::language::v1beta1::Sentiment::MergeFrom(from.document_sentiment());
+  }
   if (from.language().size() > 0) {
 
     language_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.language_);
-  }
-  if (from.has_document_sentiment()) {
-    mutable_document_sentiment()->::google::cloud::language::v1beta1::Sentiment::MergeFrom(from.document_sentiment());
   }
 }
 
@@ -8654,10 +9257,11 @@ void AnnotateTextResponse::CopyFrom(const AnnotateTextResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.language.v1beta1.AnnotateTextResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AnnotateTextResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -8669,14 +9273,18 @@ void AnnotateTextResponse::InternalSwap(AnnotateTextResponse* other) {
   sentences_.UnsafeArenaSwap(&other->sentences_);
   tokens_.UnsafeArenaSwap(&other->tokens_);
   entities_.UnsafeArenaSwap(&other->entities_);
-  language_.Swap(&other->language_);
   std::swap(document_sentiment_, other->document_sentiment_);
+  language_.Swap(&other->language_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata AnnotateTextResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[18];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = AnnotateTextResponse_descriptor_;
+  metadata.reflection = AnnotateTextResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -8772,7 +9380,7 @@ AnnotateTextResponse::entities() const {
   return entities_;
 }
 
-// .google.cloud.language.v1beta1.Sentiment document_sentiment = 4;
+// optional .google.cloud.language.v1beta1.Sentiment document_sentiment = 4;
 bool AnnotateTextResponse::has_document_sentiment() const {
   return this != internal_default_instance() && document_sentiment_ != NULL;
 }
@@ -8811,13 +9419,13 @@ void AnnotateTextResponse::set_allocated_document_sentiment(::google::cloud::lan
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnnotateTextResponse.document_sentiment)
 }
 
-// string language = 5;
+// optional string language = 5;
 void AnnotateTextResponse::clear_language() {
   language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& AnnotateTextResponse::language() const {
   // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.AnnotateTextResponse.language)
-  return language_.GetNoArena();
+  return language_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void AnnotateTextResponse::set_language(const ::std::string& value) {
   
@@ -8855,6 +9463,9 @@ void AnnotateTextResponse::set_allocated_language(::std::string* language) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnnotateTextResponse.language)
 }
 
+inline const AnnotateTextResponse* AnnotateTextResponse::internal_default_instance() {
+  return &AnnotateTextResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

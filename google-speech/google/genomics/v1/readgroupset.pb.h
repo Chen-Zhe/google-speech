@@ -24,8 +24,8 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/map.h>
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/unknown_field_set.h>
@@ -33,37 +33,6 @@
 #include "google/genomics/v1/readgroup.pb.h"
 #include <google/protobuf/struct.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace genomics {
-namespace v1 {
-class ReadGroup;
-class ReadGroupDefaultTypeInternal;
-extern ReadGroupDefaultTypeInternal _ReadGroup_default_instance_;
-class ReadGroupSet;
-class ReadGroupSetDefaultTypeInternal;
-extern ReadGroupSetDefaultTypeInternal _ReadGroupSet_default_instance_;
-class ReadGroup_Experiment;
-class ReadGroup_ExperimentDefaultTypeInternal;
-extern ReadGroup_ExperimentDefaultTypeInternal _ReadGroup_Experiment_default_instance_;
-class ReadGroup_Program;
-class ReadGroup_ProgramDefaultTypeInternal;
-extern ReadGroup_ProgramDefaultTypeInternal _ReadGroup_Program_default_instance_;
-}  // namespace v1
-}  // namespace genomics
-namespace protobuf {
-class ListValue;
-class ListValueDefaultTypeInternal;
-extern ListValueDefaultTypeInternal _ListValue_default_instance_;
-class Struct;
-class StructDefaultTypeInternal;
-extern StructDefaultTypeInternal _Struct_default_instance_;
-class Value;
-class ValueDefaultTypeInternal;
-extern ValueDefaultTypeInternal _Value_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace genomics {
@@ -72,11 +41,12 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fgenomics_2fv1_2freadgroupset_2eproto();
 void protobuf_InitDefaults_google_2fgenomics_2fv1_2freadgroupset_2eproto();
+void protobuf_AssignDesc_google_2fgenomics_2fv1_2freadgroupset_2eproto();
+void protobuf_ShutdownFile_google_2fgenomics_2fv1_2freadgroupset_2eproto();
+
+class ReadGroupSet;
 
 // ===================================================================
-
-
-// -------------------------------------------------------------------
 
 class ReadGroupSet : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.ReadGroupSet) */ {
  public:
@@ -90,52 +60,47 @@ class ReadGroupSet : public ::google::protobuf::Message /* @@protoc_insertion_po
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ReadGroupSet& default_instance();
 
-  static inline const ReadGroupSet* internal_default_instance() {
-    return reinterpret_cast<const ReadGroupSet*>(
-               &_ReadGroupSet_default_instance_);
-  }
+  static const ReadGroupSet* internal_default_instance();
 
   void UnsafeArenaSwap(ReadGroupSet* other);
   void Swap(ReadGroupSet* other);
 
   // implements Message ----------------------------------------------
 
-  inline ReadGroupSet* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ReadGroupSet* New() const { return New(NULL); }
 
-  ReadGroupSet* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ReadGroupSet* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ReadGroupSet& from);
   void MergeFrom(const ReadGroupSet& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ReadGroupSet* other);
+  void UnsafeMergeFrom(const ReadGroupSet& from);
   protected:
   explicit ReadGroupSet(::google::protobuf::Arena* arena);
   private:
@@ -150,14 +115,14 @@ class ReadGroupSet : public ::google::protobuf::Message /* @@protoc_insertion_po
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
 
   // accessors -------------------------------------------------------
 
-  // string id = 1;
+  // optional string id = 1;
   void clear_id();
   static const int kIdFieldNumber = 1;
   const ::std::string& id() const;
@@ -171,7 +136,7 @@ class ReadGroupSet : public ::google::protobuf::Message /* @@protoc_insertion_po
   void unsafe_arena_set_allocated_id(
       ::std::string* id);
 
-  // string dataset_id = 2;
+  // optional string dataset_id = 2;
   void clear_dataset_id();
   static const int kDatasetIdFieldNumber = 2;
   const ::std::string& dataset_id() const;
@@ -185,7 +150,7 @@ class ReadGroupSet : public ::google::protobuf::Message /* @@protoc_insertion_po
   void unsafe_arena_set_allocated_dataset_id(
       ::std::string* dataset_id);
 
-  // string reference_set_id = 3;
+  // optional string reference_set_id = 3;
   void clear_reference_set_id();
   static const int kReferenceSetIdFieldNumber = 3;
   const ::std::string& reference_set_id() const;
@@ -199,7 +164,7 @@ class ReadGroupSet : public ::google::protobuf::Message /* @@protoc_insertion_po
   void unsafe_arena_set_allocated_reference_set_id(
       ::std::string* reference_set_id);
 
-  // string name = 4;
+  // optional string name = 4;
   void clear_name();
   static const int kNameFieldNumber = 4;
   const ::std::string& name() const;
@@ -213,7 +178,7 @@ class ReadGroupSet : public ::google::protobuf::Message /* @@protoc_insertion_po
   void unsafe_arena_set_allocated_name(
       ::std::string* name);
 
-  // string filename = 5;
+  // optional string filename = 5;
   void clear_filename();
   static const int kFilenameFieldNumber = 5;
   const ::std::string& filename() const;
@@ -275,27 +240,28 @@ class ReadGroupSet : public ::google::protobuf::Message /* @@protoc_insertion_po
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2freadgroupset_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2freadgroupset_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2freadgroupset_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2freadgroupset_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2freadgroupset_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ReadGroupSet> ReadGroupSet_default_instance_;
+
 // ===================================================================
 
 
 // ===================================================================
 
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // ReadGroupSet
 
-// string id = 1;
+// optional string id = 1;
 inline void ReadGroupSet::clear_id() {
   id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroupSet::id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroupSet.id)
-  return id_.Get();
+  return id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroupSet::set_id(const ::std::string& value) {
   
@@ -355,13 +321,13 @@ inline void ReadGroupSet::unsafe_arena_set_allocated_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroupSet.id)
 }
 
-// string dataset_id = 2;
+// optional string dataset_id = 2;
 inline void ReadGroupSet::clear_dataset_id() {
   dataset_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroupSet::dataset_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroupSet.dataset_id)
-  return dataset_id_.Get();
+  return dataset_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroupSet::set_dataset_id(const ::std::string& value) {
   
@@ -421,13 +387,13 @@ inline void ReadGroupSet::unsafe_arena_set_allocated_dataset_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroupSet.dataset_id)
 }
 
-// string reference_set_id = 3;
+// optional string reference_set_id = 3;
 inline void ReadGroupSet::clear_reference_set_id() {
   reference_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroupSet::reference_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroupSet.reference_set_id)
-  return reference_set_id_.Get();
+  return reference_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroupSet::set_reference_set_id(const ::std::string& value) {
   
@@ -487,13 +453,13 @@ inline void ReadGroupSet::unsafe_arena_set_allocated_reference_set_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroupSet.reference_set_id)
 }
 
-// string name = 4;
+// optional string name = 4;
 inline void ReadGroupSet::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroupSet::name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroupSet.name)
-  return name_.Get();
+  return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroupSet::set_name(const ::std::string& value) {
   
@@ -553,13 +519,13 @@ inline void ReadGroupSet::unsafe_arena_set_allocated_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroupSet.name)
 }
 
-// string filename = 5;
+// optional string filename = 5;
 inline void ReadGroupSet::clear_filename() {
   filename_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroupSet::filename() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroupSet.filename)
-  return filename_.Get();
+  return filename_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroupSet::set_filename(const ::std::string& value) {
   
@@ -667,12 +633,12 @@ ReadGroupSet::mutable_info() {
   return info_.MutableMap();
 }
 
+inline const ReadGroupSet* ReadGroupSet::internal_default_instance() {
+  return &ReadGroupSet_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace genomics

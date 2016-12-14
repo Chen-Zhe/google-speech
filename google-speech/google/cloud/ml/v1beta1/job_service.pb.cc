@@ -21,60 +21,81 @@ namespace google {
 namespace cloud {
 namespace ml {
 namespace v1beta1 {
-class TrainingInputDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<TrainingInput> {};
-TrainingInputDefaultTypeInternal _TrainingInput_default_instance_;
-class HyperparameterSpecDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<HyperparameterSpec> {};
-HyperparameterSpecDefaultTypeInternal _HyperparameterSpec_default_instance_;
-class ParameterSpecDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ParameterSpec> {};
-ParameterSpecDefaultTypeInternal _ParameterSpec_default_instance_;
-class HyperparameterOutput_HyperparameterMetricDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<HyperparameterOutput_HyperparameterMetric> {};
-HyperparameterOutput_HyperparameterMetricDefaultTypeInternal _HyperparameterOutput_HyperparameterMetric_default_instance_;
-class HyperparameterOutputDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<HyperparameterOutput> {};
-HyperparameterOutputDefaultTypeInternal _HyperparameterOutput_default_instance_;
-class TrainingOutputDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<TrainingOutput> {};
-TrainingOutputDefaultTypeInternal _TrainingOutput_default_instance_;
-class PredictionInputDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<PredictionInput> {};
-PredictionInputDefaultTypeInternal _PredictionInput_default_instance_;
-class PredictionOutputDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<PredictionOutput> {};
-PredictionOutputDefaultTypeInternal _PredictionOutput_default_instance_;
-class JobDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Job> {};
-JobDefaultTypeInternal _Job_default_instance_;
-class CreateJobRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CreateJobRequest> {};
-CreateJobRequestDefaultTypeInternal _CreateJobRequest_default_instance_;
-class ListJobsRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListJobsRequest> {};
-ListJobsRequestDefaultTypeInternal _ListJobsRequest_default_instance_;
-class ListJobsResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListJobsResponse> {};
-ListJobsResponseDefaultTypeInternal _ListJobsResponse_default_instance_;
-class GetJobRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GetJobRequest> {};
-GetJobRequestDefaultTypeInternal _GetJobRequest_default_instance_;
-class CancelJobRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CancelJobRequest> {};
-CancelJobRequestDefaultTypeInternal _CancelJobRequest_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[15];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[6];
+const ::google::protobuf::Descriptor* TrainingInput_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TrainingInput_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* TrainingInput_ScaleTier_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* HyperparameterSpec_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  HyperparameterSpec_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* HyperparameterSpec_GoalType_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* ParameterSpec_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ParameterSpec_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* ParameterSpec_ParameterType_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* ParameterSpec_ScaleType_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* HyperparameterOutput_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  HyperparameterOutput_reflection_ = NULL;
+const ::google::protobuf::Descriptor* HyperparameterOutput_HyperparameterMetric_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  HyperparameterOutput_HyperparameterMetric_reflection_ = NULL;
+const ::google::protobuf::Descriptor* HyperparameterOutput_HyperparametersEntry_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* TrainingOutput_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TrainingOutput_reflection_ = NULL;
+const ::google::protobuf::Descriptor* PredictionInput_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  PredictionInput_reflection_ = NULL;
 struct PredictionInputOneofInstance {
   ::google::protobuf::internal::ArenaStringPtr model_name_;
   ::google::protobuf::internal::ArenaStringPtr version_name_;
-} PredictionInput_default_oneof_instance_;
+}* PredictionInput_default_oneof_instance_ = NULL;
+const ::google::protobuf::EnumDescriptor* PredictionInput_DataFormat_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* PredictionOutput_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  PredictionOutput_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Job_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Job_reflection_ = NULL;
 struct JobOneofInstance {
   const ::google::cloud::ml::v1beta1::TrainingInput* training_input_;
   const ::google::cloud::ml::v1beta1::PredictionInput* prediction_input_;
   const ::google::cloud::ml::v1beta1::TrainingOutput* training_output_;
   const ::google::cloud::ml::v1beta1::PredictionOutput* prediction_output_;
-} Job_default_oneof_instance_;
+}* Job_default_oneof_instance_ = NULL;
+const ::google::protobuf::EnumDescriptor* Job_State_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* CreateJobRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CreateJobRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListJobsRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListJobsRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListJobsResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListJobsResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* GetJobRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GetJobRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* CancelJobRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CancelJobRequest_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrainingInput, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto() {
+  protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/cloud/ml/v1beta1/job_service.proto");
+  GOOGLE_CHECK(file != NULL);
+  TrainingInput_descriptor_ = file->message_type(0);
+  static const int TrainingInput_offsets_[11] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrainingInput, scale_tier_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrainingInput, master_type_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrainingInput, worker_type_),
@@ -86,18 +107,38 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fml_2fv1beta1
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrainingInput, args_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrainingInput, hyperparameters_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrainingInput, region_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterSpec, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  TrainingInput_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      TrainingInput_descriptor_,
+      TrainingInput::internal_default_instance(),
+      TrainingInput_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(TrainingInput),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrainingInput, _internal_metadata_));
+  TrainingInput_ScaleTier_descriptor_ = TrainingInput_descriptor_->enum_type(0);
+  HyperparameterSpec_descriptor_ = file->message_type(1);
+  static const int HyperparameterSpec_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterSpec, goal_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterSpec, params_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterSpec, max_trials_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterSpec, max_parallel_trials_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ParameterSpec, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  HyperparameterSpec_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      HyperparameterSpec_descriptor_,
+      HyperparameterSpec::internal_default_instance(),
+      HyperparameterSpec_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(HyperparameterSpec),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterSpec, _internal_metadata_));
+  HyperparameterSpec_GoalType_descriptor_ = HyperparameterSpec_descriptor_->enum_type(0);
+  ParameterSpec_descriptor_ = file->message_type(2);
+  static const int ParameterSpec_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ParameterSpec, parameter_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ParameterSpec, type_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ParameterSpec, min_value_),
@@ -105,191 +146,295 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fml_2fv1beta1
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ParameterSpec, categorical_values_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ParameterSpec, discrete_values_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ParameterSpec, scale_type_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterOutput_HyperparameterMetric, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterOutput_HyperparameterMetric, training_step_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterOutput_HyperparameterMetric, objective_value_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterOutput, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ParameterSpec_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ParameterSpec_descriptor_,
+      ParameterSpec::internal_default_instance(),
+      ParameterSpec_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ParameterSpec),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ParameterSpec, _internal_metadata_));
+  ParameterSpec_ParameterType_descriptor_ = ParameterSpec_descriptor_->enum_type(0);
+  ParameterSpec_ScaleType_descriptor_ = ParameterSpec_descriptor_->enum_type(1);
+  HyperparameterOutput_descriptor_ = file->message_type(3);
+  static const int HyperparameterOutput_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterOutput, trial_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterOutput, hyperparameters_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterOutput, final_metric_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterOutput, all_metrics_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrainingOutput, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  HyperparameterOutput_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      HyperparameterOutput_descriptor_,
+      HyperparameterOutput::internal_default_instance(),
+      HyperparameterOutput_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(HyperparameterOutput),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterOutput, _internal_metadata_));
+  HyperparameterOutput_HyperparameterMetric_descriptor_ = HyperparameterOutput_descriptor_->nested_type(0);
+  static const int HyperparameterOutput_HyperparameterMetric_offsets_[2] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterOutput_HyperparameterMetric, training_step_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterOutput_HyperparameterMetric, objective_value_),
+  };
+  HyperparameterOutput_HyperparameterMetric_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      HyperparameterOutput_HyperparameterMetric_descriptor_,
+      HyperparameterOutput_HyperparameterMetric::internal_default_instance(),
+      HyperparameterOutput_HyperparameterMetric_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(HyperparameterOutput_HyperparameterMetric),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HyperparameterOutput_HyperparameterMetric, _internal_metadata_));
+  HyperparameterOutput_HyperparametersEntry_descriptor_ = HyperparameterOutput_descriptor_->nested_type(1);
+  TrainingOutput_descriptor_ = file->message_type(4);
+  static const int TrainingOutput_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrainingOutput, completed_trial_count_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrainingOutput, trials_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictionInput, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictionInput, _oneof_case_[0]),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&PredictionInput_default_oneof_instance_), model_name_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&PredictionInput_default_oneof_instance_), version_name_),
+  };
+  TrainingOutput_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      TrainingOutput_descriptor_,
+      TrainingOutput::internal_default_instance(),
+      TrainingOutput_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(TrainingOutput),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TrainingOutput, _internal_metadata_));
+  PredictionInput_descriptor_ = file->message_type(5);
+  static const int PredictionInput_offsets_[8] = {
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(PredictionInput_default_oneof_instance_, model_name_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(PredictionInput_default_oneof_instance_, version_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictionInput, data_format_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictionInput, input_paths_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictionInput, output_path_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictionInput, max_worker_count_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictionInput, region_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictionInput, model_version_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictionOutput, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  PredictionInput_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      PredictionInput_descriptor_,
+      PredictionInput::internal_default_instance(),
+      PredictionInput_offsets_,
+      -1,
+      -1,
+      -1,
+      PredictionInput_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictionInput, _oneof_case_[0]),
+      sizeof(PredictionInput),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictionInput, _internal_metadata_));
+  PredictionInput_DataFormat_descriptor_ = PredictionInput_descriptor_->enum_type(0);
+  PredictionOutput_descriptor_ = file->message_type(6);
+  static const int PredictionOutput_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictionOutput, output_path_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictionOutput, prediction_count_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictionOutput, error_count_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Job, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Job, _oneof_case_[0]),
+  };
+  PredictionOutput_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      PredictionOutput_descriptor_,
+      PredictionOutput::internal_default_instance(),
+      PredictionOutput_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(PredictionOutput),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PredictionOutput, _internal_metadata_));
+  Job_descriptor_ = file->message_type(7);
+  static const int Job_offsets_[12] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Job, job_id_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Job_default_oneof_instance_), training_input_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Job_default_oneof_instance_), prediction_input_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Job_default_oneof_instance_, training_input_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Job_default_oneof_instance_, prediction_input_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Job, create_time_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Job, start_time_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Job, end_time_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Job, state_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Job, error_message_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Job_default_oneof_instance_), training_output_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Job_default_oneof_instance_), prediction_output_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Job_default_oneof_instance_, training_output_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Job_default_oneof_instance_, prediction_output_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Job, input_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Job, output_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateJobRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Job_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Job_descriptor_,
+      Job::internal_default_instance(),
+      Job_offsets_,
+      -1,
+      -1,
+      -1,
+      Job_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Job, _oneof_case_[0]),
+      sizeof(Job),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Job, _internal_metadata_));
+  Job_State_descriptor_ = Job_descriptor_->enum_type(0);
+  CreateJobRequest_descriptor_ = file->message_type(8);
+  static const int CreateJobRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateJobRequest, parent_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateJobRequest, job_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListJobsRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  CreateJobRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      CreateJobRequest_descriptor_,
+      CreateJobRequest::internal_default_instance(),
+      CreateJobRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(CreateJobRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateJobRequest, _internal_metadata_));
+  ListJobsRequest_descriptor_ = file->message_type(9);
+  static const int ListJobsRequest_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListJobsRequest, parent_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListJobsRequest, filter_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListJobsRequest, page_token_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListJobsRequest, page_size_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListJobsResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListJobsRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListJobsRequest_descriptor_,
+      ListJobsRequest::internal_default_instance(),
+      ListJobsRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListJobsRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListJobsRequest, _internal_metadata_));
+  ListJobsResponse_descriptor_ = file->message_type(10);
+  static const int ListJobsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListJobsResponse, jobs_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListJobsResponse, next_page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetJobRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListJobsResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListJobsResponse_descriptor_,
+      ListJobsResponse::internal_default_instance(),
+      ListJobsResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListJobsResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListJobsResponse, _internal_metadata_));
+  GetJobRequest_descriptor_ = file->message_type(11);
+  static const int GetJobRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetJobRequest, name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CancelJobRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  GetJobRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GetJobRequest_descriptor_,
+      GetJobRequest::internal_default_instance(),
+      GetJobRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GetJobRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetJobRequest, _internal_metadata_));
+  CancelJobRequest_descriptor_ = file->message_type(12);
+  static const int CancelJobRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CancelJobRequest, name_),
   };
-  return offsets;
+  CancelJobRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      CancelJobRequest_descriptor_,
+      CancelJobRequest::internal_default_instance(),
+      CancelJobRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(CancelJobRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CancelJobRequest, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(TrainingInput)},
-  { 15, -1, sizeof(HyperparameterSpec)},
-  { 23, -1, sizeof(ParameterSpec)},
-  { 34, -1, sizeof(HyperparameterOutput_HyperparameterMetric)},
-  { 40, -1, sizeof(HyperparameterOutput)},
-  { 48, -1, sizeof(TrainingOutput)},
-  { 54, -1, sizeof(PredictionInput)},
-  { 66, -1, sizeof(PredictionOutput)},
-  { 73, -1, sizeof(Job)},
-  { 89, -1, sizeof(CreateJobRequest)},
-  { 95, -1, sizeof(ListJobsRequest)},
-  { 103, -1, sizeof(ListJobsResponse)},
-  { 109, -1, sizeof(GetJobRequest)},
-  { 114, -1, sizeof(CancelJobRequest)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_TrainingInput_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_HyperparameterSpec_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ParameterSpec_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_HyperparameterOutput_HyperparameterMetric_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_HyperparameterOutput_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_TrainingOutput_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_PredictionInput_default_instance_), &PredictionInput_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_PredictionOutput_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Job_default_instance_), &Job_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_CreateJobRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListJobsRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListJobsResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GetJobRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_CancelJobRequest_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/cloud/ml/v1beta1/job_service.proto", schemas, file_default_instances, protobuf_Offsets_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto(), factory,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 15);
-  const ::google::protobuf::Descriptor* HyperparameterOutput_HyperparametersEntry_descriptor = file_level_metadata[4].descriptor;
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-        HyperparameterOutput_HyperparametersEntry_descriptor,
+      TrainingInput_descriptor_, TrainingInput::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      HyperparameterSpec_descriptor_, HyperparameterSpec::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ParameterSpec_descriptor_, ParameterSpec::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      HyperparameterOutput_descriptor_, HyperparameterOutput::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      HyperparameterOutput_HyperparameterMetric_descriptor_, HyperparameterOutput_HyperparameterMetric::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+        HyperparameterOutput_HyperparametersEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
             ::std::string,
             ::std::string,
             ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
             ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
             0>::CreateDefaultInstance(
-                HyperparameterOutput_HyperparametersEntry_descriptor));
+                HyperparameterOutput_HyperparametersEntry_descriptor_));
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      TrainingOutput_descriptor_, TrainingOutput::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      PredictionInput_descriptor_, PredictionInput::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      PredictionOutput_descriptor_, PredictionOutput::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Job_descriptor_, Job::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      CreateJobRequest_descriptor_, CreateJobRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListJobsRequest_descriptor_, ListJobsRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListJobsResponse_descriptor_, ListJobsResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GetJobRequest_descriptor_, GetJobRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      CancelJobRequest_descriptor_, CancelJobRequest::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto() {
-  _TrainingInput_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _HyperparameterSpec_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _ParameterSpec_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _HyperparameterOutput_HyperparameterMetric_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _HyperparameterOutput_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
-  _TrainingOutput_default_instance_.Shutdown();
-  delete file_level_metadata[6].reflection;
-  _PredictionInput_default_instance_.Shutdown();
-  delete file_level_metadata[7].reflection;
-  _PredictionOutput_default_instance_.Shutdown();
-  delete file_level_metadata[8].reflection;
-  _Job_default_instance_.Shutdown();
-  delete file_level_metadata[9].reflection;
-  _CreateJobRequest_default_instance_.Shutdown();
-  delete file_level_metadata[10].reflection;
-  _ListJobsRequest_default_instance_.Shutdown();
-  delete file_level_metadata[11].reflection;
-  _ListJobsResponse_default_instance_.Shutdown();
-  delete file_level_metadata[12].reflection;
-  _GetJobRequest_default_instance_.Shutdown();
-  delete file_level_metadata[13].reflection;
-  _CancelJobRequest_default_instance_.Shutdown();
-  delete file_level_metadata[14].reflection;
+  TrainingInput_default_instance_.Shutdown();
+  delete TrainingInput_reflection_;
+  HyperparameterSpec_default_instance_.Shutdown();
+  delete HyperparameterSpec_reflection_;
+  ParameterSpec_default_instance_.Shutdown();
+  delete ParameterSpec_reflection_;
+  HyperparameterOutput_default_instance_.Shutdown();
+  delete HyperparameterOutput_reflection_;
+  HyperparameterOutput_HyperparameterMetric_default_instance_.Shutdown();
+  delete HyperparameterOutput_HyperparameterMetric_reflection_;
+  TrainingOutput_default_instance_.Shutdown();
+  delete TrainingOutput_reflection_;
+  PredictionInput_default_instance_.Shutdown();
+  delete PredictionInput_default_oneof_instance_;
+  delete PredictionInput_reflection_;
+  PredictionOutput_default_instance_.Shutdown();
+  delete PredictionOutput_reflection_;
+  Job_default_instance_.Shutdown();
+  delete Job_default_oneof_instance_;
+  delete Job_reflection_;
+  CreateJobRequest_default_instance_.Shutdown();
+  delete CreateJobRequest_reflection_;
+  ListJobsRequest_default_instance_.Shutdown();
+  delete ListJobsRequest_reflection_;
+  ListJobsResponse_default_instance_.Shutdown();
+  delete ListJobsResponse_reflection_;
+  GetJobRequest_default_instance_.Shutdown();
+  delete GetJobRequest_reflection_;
+  CancelJobRequest_default_instance_.Shutdown();
+  delete CancelJobRequest_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto_impl() {
@@ -298,156 +443,159 @@ void protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fempty_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _TrainingInput_default_instance_.DefaultConstruct();
-  _HyperparameterSpec_default_instance_.DefaultConstruct();
-  _ParameterSpec_default_instance_.DefaultConstruct();
-  _HyperparameterOutput_HyperparameterMetric_default_instance_.DefaultConstruct();
-  _HyperparameterOutput_default_instance_.DefaultConstruct();
-  _TrainingOutput_default_instance_.DefaultConstruct();
-  _PredictionInput_default_instance_.DefaultConstruct();
-  _PredictionOutput_default_instance_.DefaultConstruct();
-  _Job_default_instance_.DefaultConstruct();
-  _CreateJobRequest_default_instance_.DefaultConstruct();
-  _ListJobsRequest_default_instance_.DefaultConstruct();
-  _ListJobsResponse_default_instance_.DefaultConstruct();
-  _GetJobRequest_default_instance_.DefaultConstruct();
-  _CancelJobRequest_default_instance_.DefaultConstruct();
-  _TrainingInput_default_instance_.get_mutable()->hyperparameters_ = const_cast< ::google::cloud::ml::v1beta1::HyperparameterSpec*>(
-      ::google::cloud::ml::v1beta1::HyperparameterSpec::internal_default_instance());
-  _HyperparameterOutput_default_instance_.get_mutable()->final_metric_ = const_cast< ::google::cloud::ml::v1beta1::HyperparameterOutput_HyperparameterMetric*>(
-      ::google::cloud::ml::v1beta1::HyperparameterOutput_HyperparameterMetric::internal_default_instance());
-  PredictionInput_default_oneof_instance_.model_name_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  PredictionInput_default_oneof_instance_.version_name_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  Job_default_oneof_instance_.training_input_ = const_cast< ::google::cloud::ml::v1beta1::TrainingInput*>(
-      ::google::cloud::ml::v1beta1::TrainingInput::internal_default_instance());
-  Job_default_oneof_instance_.prediction_input_ = const_cast< ::google::cloud::ml::v1beta1::PredictionInput*>(
-      ::google::cloud::ml::v1beta1::PredictionInput::internal_default_instance());
-  _Job_default_instance_.get_mutable()->create_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  _Job_default_instance_.get_mutable()->start_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  _Job_default_instance_.get_mutable()->end_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  Job_default_oneof_instance_.training_output_ = const_cast< ::google::cloud::ml::v1beta1::TrainingOutput*>(
-      ::google::cloud::ml::v1beta1::TrainingOutput::internal_default_instance());
-  Job_default_oneof_instance_.prediction_output_ = const_cast< ::google::cloud::ml::v1beta1::PredictionOutput*>(
-      ::google::cloud::ml::v1beta1::PredictionOutput::internal_default_instance());
-  _CreateJobRequest_default_instance_.get_mutable()->job_ = const_cast< ::google::cloud::ml::v1beta1::Job*>(
-      ::google::cloud::ml::v1beta1::Job::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  TrainingInput_default_instance_.DefaultConstruct();
+  HyperparameterSpec_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ParameterSpec_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  HyperparameterOutput_default_instance_.DefaultConstruct();
+  HyperparameterOutput_HyperparameterMetric_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  TrainingOutput_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  PredictionInput_default_instance_.DefaultConstruct();
+  PredictionInput_default_oneof_instance_ = new PredictionInputOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  PredictionOutput_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Job_default_instance_.DefaultConstruct();
+  Job_default_oneof_instance_ = new JobOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  CreateJobRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListJobsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListJobsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetJobRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  CancelJobRequest_default_instance_.DefaultConstruct();
+  TrainingInput_default_instance_.get_mutable()->InitAsDefaultInstance();
+  HyperparameterSpec_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ParameterSpec_default_instance_.get_mutable()->InitAsDefaultInstance();
+  HyperparameterOutput_default_instance_.get_mutable()->InitAsDefaultInstance();
+  HyperparameterOutput_HyperparameterMetric_default_instance_.get_mutable()->InitAsDefaultInstance();
+  TrainingOutput_default_instance_.get_mutable()->InitAsDefaultInstance();
+  PredictionInput_default_instance_.get_mutable()->InitAsDefaultInstance();
+  PredictionOutput_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Job_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CreateJobRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListJobsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListJobsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetJobRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CancelJobRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto_once_);
 void protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
-  static const char descriptor[] = {
-      "\n)google/cloud/ml/v1beta1/job_service.pr"
-      "oto\022\027google.cloud.ml.v1beta1\032\034google/api"
-      "/annotations.proto\032\033google/protobuf/empt"
-      "y.proto\032\037google/protobuf/timestamp.proto"
-      "\"\250\003\n\rTrainingInput\022D\n\nscale_tier\030\001 \001(\01620"
-      ".google.cloud.ml.v1beta1.TrainingInput.S"
-      "caleTier\022\023\n\013master_type\030\002 \001(\t\022\023\n\013worker_"
-      "type\030\003 \001(\t\022\035\n\025parameter_server_type\030\004 \001("
-      "\t\022\024\n\014worker_count\030\005 \001(\003\022\036\n\026parameter_ser"
-      "ver_count\030\006 \001(\003\022\024\n\014package_uris\030\007 \003(\t\022\025\n"
-      "\rpython_module\030\010 \001(\t\022\014\n\004args\030\n \003(\t\022D\n\017hy"
-      "perparameters\030\014 \001(\0132+.google.cloud.ml.v1"
-      "beta1.HyperparameterSpec\022\016\n\006region\030\016 \001(\t"
-      "\"A\n\tScaleTier\022\t\n\005BASIC\020\000\022\016\n\nSTANDARD_1\020\001"
-      "\022\r\n\tPREMIUM_1\020\003\022\n\n\006CUSTOM\020\005\"\204\002\n\022Hyperpar"
-      "ameterSpec\022B\n\004goal\030\001 \001(\01624.google.cloud."
-      "ml.v1beta1.HyperparameterSpec.GoalType\0226"
-      "\n\006params\030\002 \003(\0132&.google.cloud.ml.v1beta1"
-      ".ParameterSpec\022\022\n\nmax_trials\030\003 \001(\005\022\033\n\023ma"
-      "x_parallel_trials\030\004 \001(\005\"A\n\010GoalType\022\031\n\025G"
-      "OAL_TYPE_UNSPECIFIED\020\000\022\014\n\010MAXIMIZE\020\001\022\014\n\010"
-      "MINIMIZE\020\002\"\323\003\n\rParameterSpec\022\026\n\016paramete"
-      "r_name\030\001 \001(\t\022B\n\004type\030\004 \001(\01624.google.clou"
-      "d.ml.v1beta1.ParameterSpec.ParameterType"
-      "\022\021\n\tmin_value\030\002 \001(\001\022\021\n\tmax_value\030\003 \001(\001\022\032"
-      "\n\022categorical_values\030\005 \003(\t\022\027\n\017discrete_v"
-      "alues\030\006 \003(\001\022D\n\nscale_type\030\007 \001(\01620.google"
-      ".cloud.ml.v1beta1.ParameterSpec.ScaleTyp"
-      "e\"g\n\rParameterType\022\036\n\032PARAMETER_TYPE_UNS"
-      "PECIFIED\020\000\022\n\n\006DOUBLE\020\001\022\013\n\007INTEGER\020\002\022\017\n\013C"
-      "ATEGORICAL\020\003\022\014\n\010DISCRETE\020\004\"\\\n\tScaleType\022"
-      "\010\n\004NONE\020\000\022\025\n\021UNIT_LINEAR_SCALE\020\001\022\022\n\016UNIT"
-      "_LOG_SCALE\020\002\022\032\n\026UNIT_REVERSE_LOG_SCALE\020\003"
-      "\"\270\003\n\024HyperparameterOutput\022\020\n\010trial_id\030\001 "
-      "\001(\t\022[\n\017hyperparameters\030\002 \003(\0132B.google.cl"
-      "oud.ml.v1beta1.HyperparameterOutput.Hype"
-      "rparametersEntry\022X\n\014final_metric\030\003 \001(\0132B"
-      ".google.cloud.ml.v1beta1.HyperparameterO"
-      "utput.HyperparameterMetric\022W\n\013all_metric"
-      "s\030\004 \003(\0132B.google.cloud.ml.v1beta1.Hyperp"
-      "arameterOutput.HyperparameterMetric\032F\n\024H"
-      "yperparameterMetric\022\025\n\rtraining_step\030\001 \001"
-      "(\003\022\027\n\017objective_value\030\002 \001(\001\0326\n\024Hyperpara"
-      "metersEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:"
-      "\0028\001\"n\n\016TrainingOutput\022\035\n\025completed_trial"
-      "_count\030\001 \001(\003\022=\n\006trials\030\002 \003(\0132-.google.cl"
-      "oud.ml.v1beta1.HyperparameterOutput\"\306\002\n\017"
-      "PredictionInput\022\024\n\nmodel_name\030\001 \001(\tH\000\022\026\n"
-      "\014version_name\030\002 \001(\tH\000\022H\n\013data_format\030\003 \001"
-      "(\01623.google.cloud.ml.v1beta1.PredictionI"
-      "nput.DataFormat\022\023\n\013input_paths\030\004 \003(\t\022\023\n\013"
-      "output_path\030\005 \001(\t\022\030\n\020max_worker_count\030\006 "
-      "\001(\003\022\016\n\006region\030\007 \001(\t\"V\n\nDataFormat\022\033\n\027DAT"
-      "A_FORMAT_UNSPECIFIED\020\000\022\010\n\004TEXT\020\001\022\r\n\tTF_R"
-      "ECORD\020\002\022\022\n\016TF_RECORD_GZIP\020\003B\017\n\rmodel_ver"
-      "sion\"V\n\020PredictionOutput\022\023\n\013output_path\030"
-      "\001 \001(\t\022\030\n\020prediction_count\030\002 \001(\003\022\023\n\013error"
-      "_count\030\003 \001(\003\"\230\005\n\003Job\022\016\n\006job_id\030\001 \001(\t\022@\n\016"
-      "training_input\030\002 \001(\0132&.google.cloud.ml.v"
-      "1beta1.TrainingInputH\000\022D\n\020prediction_inp"
-      "ut\030\003 \001(\0132(.google.cloud.ml.v1beta1.Predi"
-      "ctionInputH\000\022/\n\013create_time\030\004 \001(\0132\032.goog"
-      "le.protobuf.Timestamp\022.\n\nstart_time\030\005 \001("
-      "\0132\032.google.protobuf.Timestamp\022,\n\010end_tim"
-      "e\030\006 \001(\0132\032.google.protobuf.Timestamp\0221\n\005s"
-      "tate\030\007 \001(\0162\".google.cloud.ml.v1beta1.Job"
-      ".State\022\025\n\rerror_message\030\010 \001(\t\022B\n\017trainin"
-      "g_output\030\t \001(\0132\'.google.cloud.ml.v1beta1"
-      ".TrainingOutputH\001\022F\n\021prediction_output\030\n"
-      " \001(\0132).google.cloud.ml.v1beta1.Predictio"
-      "nOutputH\001\"\200\001\n\005State\022\025\n\021STATE_UNSPECIFIED"
-      "\020\000\022\n\n\006QUEUED\020\001\022\r\n\tPREPARING\020\002\022\013\n\007RUNNING"
-      "\020\003\022\r\n\tSUCCEEDED\020\004\022\n\n\006FAILED\020\005\022\016\n\nCANCELL"
-      "ING\020\006\022\r\n\tCANCELLED\020\007B\007\n\005inputB\010\n\006output\""
-      "M\n\020CreateJobRequest\022\016\n\006parent\030\001 \001(\t\022)\n\003j"
-      "ob\030\002 \001(\0132\034.google.cloud.ml.v1beta1.Job\"X"
-      "\n\017ListJobsRequest\022\016\n\006parent\030\001 \001(\t\022\016\n\006fil"
-      "ter\030\002 \001(\t\022\022\n\npage_token\030\004 \001(\t\022\021\n\tpage_si"
-      "ze\030\005 \001(\005\"W\n\020ListJobsResponse\022*\n\004jobs\030\001 \003"
-      "(\0132\034.google.cloud.ml.v1beta1.Job\022\027\n\017next"
-      "_page_token\030\002 \001(\t\"\035\n\rGetJobRequest\022\014\n\004na"
-      "me\030\001 \001(\t\" \n\020CancelJobRequest\022\014\n\004name\030\001 \001"
-      "(\t2\241\004\n\nJobService\022\204\001\n\tCreateJob\022).google"
-      ".cloud.ml.v1beta1.CreateJobRequest\032\034.goo"
-      "gle.cloud.ml.v1beta1.Job\".\202\323\344\223\002(\"!/v1bet"
-      "a1/{parent=projects/*}/jobs:\003job\022\212\001\n\010Lis"
-      "tJobs\022(.google.cloud.ml.v1beta1.ListJobs"
-      "Request\032).google.cloud.ml.v1beta1.ListJo"
-      "bsResponse\")\202\323\344\223\002#\022!/v1beta1/{parent=pro"
-      "jects/*}/jobs\022y\n\006GetJob\022&.google.cloud.m"
-      "l.v1beta1.GetJobRequest\032\034.google.cloud.m"
-      "l.v1beta1.Job\")\202\323\344\223\002#\022!/v1beta1/{name=pr"
-      "ojects/*/jobs/*}\022\203\001\n\tCancelJob\022).google."
-      "cloud.ml.v1beta1.CancelJobRequest\032\026.goog"
-      "le.protobuf.Empty\"3\202\323\344\223\002-\"(/v1beta1/{nam"
-      "e=projects/*/jobs/*}:cancel:\001*Bo\n\037com.go"
-      "ogle.cloud.ml.api.v1beta1B\017JobServicePro"
-      "toP\001Z9google.golang.org/genproto/googlea"
-      "pis/cloud/ml/v1beta1;mlb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 3951);
+    "\n)google/cloud/ml/v1beta1/job_service.pr"
+    "oto\022\027google.cloud.ml.v1beta1\032\034google/api"
+    "/annotations.proto\032\033google/protobuf/empt"
+    "y.proto\032\037google/protobuf/timestamp.proto"
+    "\"\250\003\n\rTrainingInput\022D\n\nscale_tier\030\001 \001(\01620"
+    ".google.cloud.ml.v1beta1.TrainingInput.S"
+    "caleTier\022\023\n\013master_type\030\002 \001(\t\022\023\n\013worker_"
+    "type\030\003 \001(\t\022\035\n\025parameter_server_type\030\004 \001("
+    "\t\022\024\n\014worker_count\030\005 \001(\003\022\036\n\026parameter_ser"
+    "ver_count\030\006 \001(\003\022\024\n\014package_uris\030\007 \003(\t\022\025\n"
+    "\rpython_module\030\010 \001(\t\022\014\n\004args\030\n \003(\t\022D\n\017hy"
+    "perparameters\030\014 \001(\0132+.google.cloud.ml.v1"
+    "beta1.HyperparameterSpec\022\016\n\006region\030\016 \001(\t"
+    "\"A\n\tScaleTier\022\t\n\005BASIC\020\000\022\016\n\nSTANDARD_1\020\001"
+    "\022\r\n\tPREMIUM_1\020\003\022\n\n\006CUSTOM\020\005\"\204\002\n\022Hyperpar"
+    "ameterSpec\022B\n\004goal\030\001 \001(\01624.google.cloud."
+    "ml.v1beta1.HyperparameterSpec.GoalType\0226"
+    "\n\006params\030\002 \003(\0132&.google.cloud.ml.v1beta1"
+    ".ParameterSpec\022\022\n\nmax_trials\030\003 \001(\005\022\033\n\023ma"
+    "x_parallel_trials\030\004 \001(\005\"A\n\010GoalType\022\031\n\025G"
+    "OAL_TYPE_UNSPECIFIED\020\000\022\014\n\010MAXIMIZE\020\001\022\014\n\010"
+    "MINIMIZE\020\002\"\323\003\n\rParameterSpec\022\026\n\016paramete"
+    "r_name\030\001 \001(\t\022B\n\004type\030\004 \001(\01624.google.clou"
+    "d.ml.v1beta1.ParameterSpec.ParameterType"
+    "\022\021\n\tmin_value\030\002 \001(\001\022\021\n\tmax_value\030\003 \001(\001\022\032"
+    "\n\022categorical_values\030\005 \003(\t\022\027\n\017discrete_v"
+    "alues\030\006 \003(\001\022D\n\nscale_type\030\007 \001(\01620.google"
+    ".cloud.ml.v1beta1.ParameterSpec.ScaleTyp"
+    "e\"g\n\rParameterType\022\036\n\032PARAMETER_TYPE_UNS"
+    "PECIFIED\020\000\022\n\n\006DOUBLE\020\001\022\013\n\007INTEGER\020\002\022\017\n\013C"
+    "ATEGORICAL\020\003\022\014\n\010DISCRETE\020\004\"\\\n\tScaleType\022"
+    "\010\n\004NONE\020\000\022\025\n\021UNIT_LINEAR_SCALE\020\001\022\022\n\016UNIT"
+    "_LOG_SCALE\020\002\022\032\n\026UNIT_REVERSE_LOG_SCALE\020\003"
+    "\"\270\003\n\024HyperparameterOutput\022\020\n\010trial_id\030\001 "
+    "\001(\t\022[\n\017hyperparameters\030\002 \003(\0132B.google.cl"
+    "oud.ml.v1beta1.HyperparameterOutput.Hype"
+    "rparametersEntry\022X\n\014final_metric\030\003 \001(\0132B"
+    ".google.cloud.ml.v1beta1.HyperparameterO"
+    "utput.HyperparameterMetric\022W\n\013all_metric"
+    "s\030\004 \003(\0132B.google.cloud.ml.v1beta1.Hyperp"
+    "arameterOutput.HyperparameterMetric\032F\n\024H"
+    "yperparameterMetric\022\025\n\rtraining_step\030\001 \001"
+    "(\003\022\027\n\017objective_value\030\002 \001(\001\0326\n\024Hyperpara"
+    "metersEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:"
+    "\0028\001\"n\n\016TrainingOutput\022\035\n\025completed_trial"
+    "_count\030\001 \001(\003\022=\n\006trials\030\002 \003(\0132-.google.cl"
+    "oud.ml.v1beta1.HyperparameterOutput\"\306\002\n\017"
+    "PredictionInput\022\024\n\nmodel_name\030\001 \001(\tH\000\022\026\n"
+    "\014version_name\030\002 \001(\tH\000\022H\n\013data_format\030\003 \001"
+    "(\01623.google.cloud.ml.v1beta1.PredictionI"
+    "nput.DataFormat\022\023\n\013input_paths\030\004 \003(\t\022\023\n\013"
+    "output_path\030\005 \001(\t\022\030\n\020max_worker_count\030\006 "
+    "\001(\003\022\016\n\006region\030\007 \001(\t\"V\n\nDataFormat\022\033\n\027DAT"
+    "A_FORMAT_UNSPECIFIED\020\000\022\010\n\004TEXT\020\001\022\r\n\tTF_R"
+    "ECORD\020\002\022\022\n\016TF_RECORD_GZIP\020\003B\017\n\rmodel_ver"
+    "sion\"V\n\020PredictionOutput\022\023\n\013output_path\030"
+    "\001 \001(\t\022\030\n\020prediction_count\030\002 \001(\003\022\023\n\013error"
+    "_count\030\003 \001(\003\"\230\005\n\003Job\022\016\n\006job_id\030\001 \001(\t\022@\n\016"
+    "training_input\030\002 \001(\0132&.google.cloud.ml.v"
+    "1beta1.TrainingInputH\000\022D\n\020prediction_inp"
+    "ut\030\003 \001(\0132(.google.cloud.ml.v1beta1.Predi"
+    "ctionInputH\000\022/\n\013create_time\030\004 \001(\0132\032.goog"
+    "le.protobuf.Timestamp\022.\n\nstart_time\030\005 \001("
+    "\0132\032.google.protobuf.Timestamp\022,\n\010end_tim"
+    "e\030\006 \001(\0132\032.google.protobuf.Timestamp\0221\n\005s"
+    "tate\030\007 \001(\0162\".google.cloud.ml.v1beta1.Job"
+    ".State\022\025\n\rerror_message\030\010 \001(\t\022B\n\017trainin"
+    "g_output\030\t \001(\0132\'.google.cloud.ml.v1beta1"
+    ".TrainingOutputH\001\022F\n\021prediction_output\030\n"
+    " \001(\0132).google.cloud.ml.v1beta1.Predictio"
+    "nOutputH\001\"\200\001\n\005State\022\025\n\021STATE_UNSPECIFIED"
+    "\020\000\022\n\n\006QUEUED\020\001\022\r\n\tPREPARING\020\002\022\013\n\007RUNNING"
+    "\020\003\022\r\n\tSUCCEEDED\020\004\022\n\n\006FAILED\020\005\022\016\n\nCANCELL"
+    "ING\020\006\022\r\n\tCANCELLED\020\007B\007\n\005inputB\010\n\006output\""
+    "M\n\020CreateJobRequest\022\016\n\006parent\030\001 \001(\t\022)\n\003j"
+    "ob\030\002 \001(\0132\034.google.cloud.ml.v1beta1.Job\"X"
+    "\n\017ListJobsRequest\022\016\n\006parent\030\001 \001(\t\022\016\n\006fil"
+    "ter\030\002 \001(\t\022\022\n\npage_token\030\004 \001(\t\022\021\n\tpage_si"
+    "ze\030\005 \001(\005\"W\n\020ListJobsResponse\022*\n\004jobs\030\001 \003"
+    "(\0132\034.google.cloud.ml.v1beta1.Job\022\027\n\017next"
+    "_page_token\030\002 \001(\t\"\035\n\rGetJobRequest\022\014\n\004na"
+    "me\030\001 \001(\t\" \n\020CancelJobRequest\022\014\n\004name\030\001 \001"
+    "(\t2\241\004\n\nJobService\022\204\001\n\tCreateJob\022).google"
+    ".cloud.ml.v1beta1.CreateJobRequest\032\034.goo"
+    "gle.cloud.ml.v1beta1.Job\".\202\323\344\223\002(\"!/v1bet"
+    "a1/{parent=projects/*}/jobs:\003job\022\212\001\n\010Lis"
+    "tJobs\022(.google.cloud.ml.v1beta1.ListJobs"
+    "Request\032).google.cloud.ml.v1beta1.ListJo"
+    "bsResponse\")\202\323\344\223\002#\022!/v1beta1/{parent=pro"
+    "jects/*}/jobs\022y\n\006GetJob\022&.google.cloud.m"
+    "l.v1beta1.GetJobRequest\032\034.google.cloud.m"
+    "l.v1beta1.Job\")\202\323\344\223\002#\022!/v1beta1/{name=pr"
+    "ojects/*/jobs/*}\022\203\001\n\tCancelJob\022).google."
+    "cloud.ml.v1beta1.CancelJobRequest\032\026.goog"
+    "le.protobuf.Empty\"3\202\323\344\223\002-\"(/v1beta1/{nam"
+    "e=projects/*/jobs/*}:cancel:\001*Bo\n\037com.go"
+    "ogle.cloud.ml.api.v1beta1B\017JobServicePro"
+    "toP\001Z9google.golang.org/genproto/googlea"
+    "pis/cloud/ml/v1beta1;mlb\006proto3", 3951);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/cloud/ml/v1beta1/job_service.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -467,9 +615,22 @@ struct StaticDescriptorInitializer_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice
     protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   }
 } static_descriptor_initializer_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
+// ===================================================================
+
 const ::google::protobuf::EnumDescriptor* TrainingInput_ScaleTier_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
+  return TrainingInput_ScaleTier_descriptor_;
 }
 bool TrainingInput_ScaleTier_IsValid(int value) {
   switch (value) {
@@ -492,142 +653,6 @@ const TrainingInput_ScaleTier TrainingInput::ScaleTier_MIN;
 const TrainingInput_ScaleTier TrainingInput::ScaleTier_MAX;
 const int TrainingInput::ScaleTier_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-const ::google::protobuf::EnumDescriptor* HyperparameterSpec_GoalType_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[1];
-}
-bool HyperparameterSpec_GoalType_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const HyperparameterSpec_GoalType HyperparameterSpec::GOAL_TYPE_UNSPECIFIED;
-const HyperparameterSpec_GoalType HyperparameterSpec::MAXIMIZE;
-const HyperparameterSpec_GoalType HyperparameterSpec::MINIMIZE;
-const HyperparameterSpec_GoalType HyperparameterSpec::GoalType_MIN;
-const HyperparameterSpec_GoalType HyperparameterSpec::GoalType_MAX;
-const int HyperparameterSpec::GoalType_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-const ::google::protobuf::EnumDescriptor* ParameterSpec_ParameterType_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[2];
-}
-bool ParameterSpec_ParameterType_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const ParameterSpec_ParameterType ParameterSpec::PARAMETER_TYPE_UNSPECIFIED;
-const ParameterSpec_ParameterType ParameterSpec::DOUBLE;
-const ParameterSpec_ParameterType ParameterSpec::INTEGER;
-const ParameterSpec_ParameterType ParameterSpec::CATEGORICAL;
-const ParameterSpec_ParameterType ParameterSpec::DISCRETE;
-const ParameterSpec_ParameterType ParameterSpec::ParameterType_MIN;
-const ParameterSpec_ParameterType ParameterSpec::ParameterType_MAX;
-const int ParameterSpec::ParameterType_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-const ::google::protobuf::EnumDescriptor* ParameterSpec_ScaleType_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[3];
-}
-bool ParameterSpec_ScaleType_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const ParameterSpec_ScaleType ParameterSpec::NONE;
-const ParameterSpec_ScaleType ParameterSpec::UNIT_LINEAR_SCALE;
-const ParameterSpec_ScaleType ParameterSpec::UNIT_LOG_SCALE;
-const ParameterSpec_ScaleType ParameterSpec::UNIT_REVERSE_LOG_SCALE;
-const ParameterSpec_ScaleType ParameterSpec::ScaleType_MIN;
-const ParameterSpec_ScaleType ParameterSpec::ScaleType_MAX;
-const int ParameterSpec::ScaleType_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-const ::google::protobuf::EnumDescriptor* PredictionInput_DataFormat_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[4];
-}
-bool PredictionInput_DataFormat_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const PredictionInput_DataFormat PredictionInput::DATA_FORMAT_UNSPECIFIED;
-const PredictionInput_DataFormat PredictionInput::TEXT;
-const PredictionInput_DataFormat PredictionInput::TF_RECORD;
-const PredictionInput_DataFormat PredictionInput::TF_RECORD_GZIP;
-const PredictionInput_DataFormat PredictionInput::DataFormat_MIN;
-const PredictionInput_DataFormat PredictionInput::DataFormat_MAX;
-const int PredictionInput::DataFormat_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-const ::google::protobuf::EnumDescriptor* Job_State_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[5];
-}
-bool Job_State_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-    case 7:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const Job_State Job::STATE_UNSPECIFIED;
-const Job_State Job::QUEUED;
-const Job_State Job::PREPARING;
-const Job_State Job::RUNNING;
-const Job_State Job::SUCCEEDED;
-const Job_State Job::FAILED;
-const Job_State Job::CANCELLING;
-const Job_State Job::CANCELLED;
-const Job_State Job::State_MIN;
-const Job_State Job::State_MAX;
-const int Job::State_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-// ===================================================================
-
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int TrainingInput::kScaleTierFieldNumber;
 const int TrainingInput::kMasterTypeFieldNumber;
@@ -644,47 +669,21 @@ const int TrainingInput::kRegionFieldNumber;
 
 TrainingInput::TrainingInput()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.TrainingInput)
 }
+
+void TrainingInput::InitAsDefaultInstance() {
+  hyperparameters_ = const_cast< ::google::cloud::ml::v1beta1::HyperparameterSpec*>(
+      ::google::cloud::ml::v1beta1::HyperparameterSpec::internal_default_instance());
+}
+
 TrainingInput::TrainingInput(const TrainingInput& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      package_uris_(from.package_uris_),
-      args_(from.args_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  master_type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.master_type().size() > 0) {
-    master_type_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.master_type_);
-  }
-  worker_type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.worker_type().size() > 0) {
-    worker_type_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.worker_type_);
-  }
-  parameter_server_type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.parameter_server_type().size() > 0) {
-    parameter_server_type_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parameter_server_type_);
-  }
-  python_module_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.python_module().size() > 0) {
-    python_module_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.python_module_);
-  }
-  region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.region().size() > 0) {
-    region_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.region_);
-  }
-  if (from.has_hyperparameters()) {
-    hyperparameters_ = new ::google::cloud::ml::v1beta1::HyperparameterSpec(*from.hyperparameters_);
-  } else {
-    hyperparameters_ = NULL;
-  }
-  ::memcpy(&worker_count_, &from.worker_count_,
-    reinterpret_cast<char*>(&scale_tier_) -
-    reinterpret_cast<char*>(&worker_count_) + sizeof(scale_tier_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.TrainingInput)
 }
 
@@ -694,8 +693,9 @@ void TrainingInput::SharedCtor() {
   parameter_server_type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   python_module_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&hyperparameters_, 0, reinterpret_cast<char*>(&scale_tier_) -
-    reinterpret_cast<char*>(&hyperparameters_) + sizeof(scale_tier_));
+  hyperparameters_ = NULL;
+  ::memset(&worker_count_, 0, reinterpret_cast<char*>(&scale_tier_) -
+    reinterpret_cast<char*>(&worker_count_) + sizeof(scale_tier_));
   _cached_size_ = 0;
 }
 
@@ -710,7 +710,7 @@ void TrainingInput::SharedDtor() {
   parameter_server_type_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   python_module_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &TrainingInput_default_instance_.get()) {
     delete hyperparameters_;
   }
 }
@@ -722,13 +722,15 @@ void TrainingInput::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* TrainingInput::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return TrainingInput_descriptor_;
 }
 
 const TrainingInput& TrainingInput::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<TrainingInput> TrainingInput_default_instance_;
 
 TrainingInput* TrainingInput::New(::google::protobuf::Arena* arena) const {
   TrainingInput* n = new TrainingInput;
@@ -740,19 +742,36 @@ TrainingInput* TrainingInput::New(::google::protobuf::Arena* arena) const {
 
 void TrainingInput::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.ml.v1beta1.TrainingInput)
-  package_uris_.Clear();
-  args_.Clear();
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(TrainingInput, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<TrainingInput*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(worker_count_, scale_tier_);
   master_type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   worker_type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   parameter_server_type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   python_module_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && hyperparameters_ != NULL) {
-    delete hyperparameters_;
-  }
+  if (GetArenaNoVirtual() == NULL && hyperparameters_ != NULL) delete hyperparameters_;
   hyperparameters_ = NULL;
-  ::memset(&worker_count_, 0, reinterpret_cast<char*>(&scale_tier_) -
-    reinterpret_cast<char*>(&worker_count_) + sizeof(scale_tier_));
+  region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+
+#undef ZR_HELPER_
+#undef ZR_
+
+  package_uris_.Clear();
+  args_.Clear();
 }
 
 bool TrainingInput::MergePartialFromCodedStream(
@@ -761,13 +780,13 @@ bool TrainingInput::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.ml.v1beta1.TrainingInput)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.cloud.ml.v1beta1.TrainingInput.ScaleTier scale_tier = 1;
+      // optional .google.cloud.ml.v1beta1.TrainingInput.ScaleTier scale_tier = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -776,12 +795,14 @@ bool TrainingInput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_master_type;
         break;
       }
 
-      // string master_type = 2;
+      // optional string master_type = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_master_type:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_master_type()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -791,12 +812,14 @@ bool TrainingInput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_worker_type;
         break;
       }
 
-      // string worker_type = 3;
+      // optional string worker_type = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_worker_type:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_worker_type()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -806,12 +829,14 @@ bool TrainingInput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_parameter_server_type;
         break;
       }
 
-      // string parameter_server_type = 4;
+      // optional string parameter_server_type = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_parameter_server_type:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_parameter_server_type()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -821,12 +846,14 @@ bool TrainingInput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(40)) goto parse_worker_count;
         break;
       }
 
-      // int64 worker_count = 5;
+      // optional int64 worker_count = 5;
       case 5: {
-        if (tag == 40u) {
+        if (tag == 40) {
+         parse_worker_count:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -834,12 +861,14 @@ bool TrainingInput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(48)) goto parse_parameter_server_count;
         break;
       }
 
-      // int64 parameter_server_count = 6;
+      // optional int64 parameter_server_count = 6;
       case 6: {
-        if (tag == 48u) {
+        if (tag == 48) {
+         parse_parameter_server_count:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -847,12 +876,14 @@ bool TrainingInput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(58)) goto parse_package_uris;
         break;
       }
 
       // repeated string package_uris = 7;
       case 7: {
-        if (tag == 58u) {
+        if (tag == 58) {
+         parse_package_uris:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_package_uris()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -863,12 +894,15 @@ bool TrainingInput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(58)) goto parse_package_uris;
+        if (input->ExpectTag(66)) goto parse_python_module;
         break;
       }
 
-      // string python_module = 8;
+      // optional string python_module = 8;
       case 8: {
-        if (tag == 66u) {
+        if (tag == 66) {
+         parse_python_module:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_python_module()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -878,12 +912,14 @@ bool TrainingInput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(82)) goto parse_args;
         break;
       }
 
       // repeated string args = 10;
       case 10: {
-        if (tag == 82u) {
+        if (tag == 82) {
+         parse_args:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_args()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -894,23 +930,28 @@ bool TrainingInput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(82)) goto parse_args;
+        if (input->ExpectTag(98)) goto parse_hyperparameters;
         break;
       }
 
-      // .google.cloud.ml.v1beta1.HyperparameterSpec hyperparameters = 12;
+      // optional .google.cloud.ml.v1beta1.HyperparameterSpec hyperparameters = 12;
       case 12: {
-        if (tag == 98u) {
+        if (tag == 98) {
+         parse_hyperparameters:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_hyperparameters()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(114)) goto parse_region;
         break;
       }
 
-      // string region = 14;
+      // optional string region = 14;
       case 14: {
-        if (tag == 114u) {
+        if (tag == 114) {
+         parse_region:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_region()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -920,6 +961,7 @@ bool TrainingInput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -947,13 +989,13 @@ failure:
 void TrainingInput::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.ml.v1beta1.TrainingInput)
-  // .google.cloud.ml.v1beta1.TrainingInput.ScaleTier scale_tier = 1;
+  // optional .google.cloud.ml.v1beta1.TrainingInput.ScaleTier scale_tier = 1;
   if (this->scale_tier() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       1, this->scale_tier(), output);
   }
 
-  // string master_type = 2;
+  // optional string master_type = 2;
   if (this->master_type().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->master_type().data(), this->master_type().length(),
@@ -963,7 +1005,7 @@ void TrainingInput::SerializeWithCachedSizes(
       2, this->master_type(), output);
   }
 
-  // string worker_type = 3;
+  // optional string worker_type = 3;
   if (this->worker_type().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->worker_type().data(), this->worker_type().length(),
@@ -973,7 +1015,7 @@ void TrainingInput::SerializeWithCachedSizes(
       3, this->worker_type(), output);
   }
 
-  // string parameter_server_type = 4;
+  // optional string parameter_server_type = 4;
   if (this->parameter_server_type().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->parameter_server_type().data(), this->parameter_server_type().length(),
@@ -983,12 +1025,12 @@ void TrainingInput::SerializeWithCachedSizes(
       4, this->parameter_server_type(), output);
   }
 
-  // int64 worker_count = 5;
+  // optional int64 worker_count = 5;
   if (this->worker_count() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(5, this->worker_count(), output);
   }
 
-  // int64 parameter_server_count = 6;
+  // optional int64 parameter_server_count = 6;
   if (this->parameter_server_count() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(6, this->parameter_server_count(), output);
   }
@@ -1003,7 +1045,7 @@ void TrainingInput::SerializeWithCachedSizes(
       7, this->package_uris(i), output);
   }
 
-  // string python_module = 8;
+  // optional string python_module = 8;
   if (this->python_module().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->python_module().data(), this->python_module().length(),
@@ -1023,13 +1065,13 @@ void TrainingInput::SerializeWithCachedSizes(
       10, this->args(i), output);
   }
 
-  // .google.cloud.ml.v1beta1.HyperparameterSpec hyperparameters = 12;
+  // optional .google.cloud.ml.v1beta1.HyperparameterSpec hyperparameters = 12;
   if (this->has_hyperparameters()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       12, *this->hyperparameters_, output);
   }
 
-  // string region = 14;
+  // optional string region = 14;
   if (this->region().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->region().data(), this->region().length(),
@@ -1046,13 +1088,13 @@ void TrainingInput::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.ml.v1beta1.TrainingInput)
-  // .google.cloud.ml.v1beta1.TrainingInput.ScaleTier scale_tier = 1;
+  // optional .google.cloud.ml.v1beta1.TrainingInput.ScaleTier scale_tier = 1;
   if (this->scale_tier() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       1, this->scale_tier(), target);
   }
 
-  // string master_type = 2;
+  // optional string master_type = 2;
   if (this->master_type().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->master_type().data(), this->master_type().length(),
@@ -1063,7 +1105,7 @@ void TrainingInput::SerializeWithCachedSizes(
         2, this->master_type(), target);
   }
 
-  // string worker_type = 3;
+  // optional string worker_type = 3;
   if (this->worker_type().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->worker_type().data(), this->worker_type().length(),
@@ -1074,7 +1116,7 @@ void TrainingInput::SerializeWithCachedSizes(
         3, this->worker_type(), target);
   }
 
-  // string parameter_server_type = 4;
+  // optional string parameter_server_type = 4;
   if (this->parameter_server_type().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->parameter_server_type().data(), this->parameter_server_type().length(),
@@ -1085,12 +1127,12 @@ void TrainingInput::SerializeWithCachedSizes(
         4, this->parameter_server_type(), target);
   }
 
-  // int64 worker_count = 5;
+  // optional int64 worker_count = 5;
   if (this->worker_count() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(5, this->worker_count(), target);
   }
 
-  // int64 parameter_server_count = 6;
+  // optional int64 parameter_server_count = 6;
   if (this->parameter_server_count() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(6, this->parameter_server_count(), target);
   }
@@ -1105,7 +1147,7 @@ void TrainingInput::SerializeWithCachedSizes(
       WriteStringToArray(7, this->package_uris(i), target);
   }
 
-  // string python_module = 8;
+  // optional string python_module = 8;
   if (this->python_module().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->python_module().data(), this->python_module().length(),
@@ -1126,14 +1168,14 @@ void TrainingInput::SerializeWithCachedSizes(
       WriteStringToArray(10, this->args(i), target);
   }
 
-  // .google.cloud.ml.v1beta1.HyperparameterSpec hyperparameters = 12;
+  // optional .google.cloud.ml.v1beta1.HyperparameterSpec hyperparameters = 12;
   if (this->has_hyperparameters()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         12, *this->hyperparameters_, false, target);
   }
 
-  // string region = 14;
+  // optional string region = 14;
   if (this->region().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->region().data(), this->region().length(),
@@ -1152,6 +1194,68 @@ size_t TrainingInput::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.TrainingInput)
   size_t total_size = 0;
 
+  // optional .google.cloud.ml.v1beta1.TrainingInput.ScaleTier scale_tier = 1;
+  if (this->scale_tier() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->scale_tier());
+  }
+
+  // optional string master_type = 2;
+  if (this->master_type().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->master_type());
+  }
+
+  // optional string worker_type = 3;
+  if (this->worker_type().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->worker_type());
+  }
+
+  // optional string parameter_server_type = 4;
+  if (this->parameter_server_type().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->parameter_server_type());
+  }
+
+  // optional int64 worker_count = 5;
+  if (this->worker_count() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->worker_count());
+  }
+
+  // optional int64 parameter_server_count = 6;
+  if (this->parameter_server_count() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->parameter_server_count());
+  }
+
+  // optional string python_module = 8;
+  if (this->python_module().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->python_module());
+  }
+
+  // optional .google.cloud.ml.v1beta1.HyperparameterSpec hyperparameters = 12;
+  if (this->has_hyperparameters()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->hyperparameters_);
+  }
+
+  // optional string region = 14;
+  if (this->region().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->region());
+  }
+
   // repeated string package_uris = 7;
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->package_uris_size());
@@ -1168,68 +1272,6 @@ size_t TrainingInput::ByteSizeLong() const {
       this->args(i));
   }
 
-  // string master_type = 2;
-  if (this->master_type().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->master_type());
-  }
-
-  // string worker_type = 3;
-  if (this->worker_type().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->worker_type());
-  }
-
-  // string parameter_server_type = 4;
-  if (this->parameter_server_type().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->parameter_server_type());
-  }
-
-  // string python_module = 8;
-  if (this->python_module().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->python_module());
-  }
-
-  // string region = 14;
-  if (this->region().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->region());
-  }
-
-  // .google.cloud.ml.v1beta1.HyperparameterSpec hyperparameters = 12;
-  if (this->has_hyperparameters()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->hyperparameters_);
-  }
-
-  // int64 worker_count = 5;
-  if (this->worker_count() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->worker_count());
-  }
-
-  // int64 parameter_server_count = 6;
-  if (this->parameter_server_count() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->parameter_server_count());
-  }
-
-  // .google.cloud.ml.v1beta1.TrainingInput.ScaleTier scale_tier = 1;
-  if (this->scale_tier() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->scale_tier());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -1239,7 +1281,7 @@ size_t TrainingInput::ByteSizeLong() const {
 
 void TrainingInput::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.TrainingInput)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const TrainingInput* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const TrainingInput>(
           &from);
@@ -1248,16 +1290,26 @@ void TrainingInput::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.TrainingInput)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void TrainingInput::MergeFrom(const TrainingInput& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.TrainingInput)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  package_uris_.MergeFrom(from.package_uris_);
-  args_.MergeFrom(from.args_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void TrainingInput::UnsafeMergeFrom(const TrainingInput& from) {
+  GOOGLE_DCHECK(&from != this);
+  package_uris_.UnsafeMergeFrom(from.package_uris_);
+  args_.UnsafeMergeFrom(from.args_);
+  if (from.scale_tier() != 0) {
+    set_scale_tier(from.scale_tier());
+  }
   if (from.master_type().size() > 0) {
 
     master_type_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.master_type_);
@@ -1270,25 +1322,22 @@ void TrainingInput::MergeFrom(const TrainingInput& from) {
 
     parameter_server_type_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parameter_server_type_);
   }
-  if (from.python_module().size() > 0) {
-
-    python_module_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.python_module_);
-  }
-  if (from.region().size() > 0) {
-
-    region_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.region_);
-  }
-  if (from.has_hyperparameters()) {
-    mutable_hyperparameters()->::google::cloud::ml::v1beta1::HyperparameterSpec::MergeFrom(from.hyperparameters());
-  }
   if (from.worker_count() != 0) {
     set_worker_count(from.worker_count());
   }
   if (from.parameter_server_count() != 0) {
     set_parameter_server_count(from.parameter_server_count());
   }
-  if (from.scale_tier() != 0) {
-    set_scale_tier(from.scale_tier());
+  if (from.python_module().size() > 0) {
+
+    python_module_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.python_module_);
+  }
+  if (from.has_hyperparameters()) {
+    mutable_hyperparameters()->::google::cloud::ml::v1beta1::HyperparameterSpec::MergeFrom(from.hyperparameters());
+  }
+  if (from.region().size() > 0) {
+
+    region_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.region_);
   }
 }
 
@@ -1303,10 +1352,11 @@ void TrainingInput::CopyFrom(const TrainingInput& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.TrainingInput)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool TrainingInput::IsInitialized() const {
+
   return true;
 }
 
@@ -1315,29 +1365,33 @@ void TrainingInput::Swap(TrainingInput* other) {
   InternalSwap(other);
 }
 void TrainingInput::InternalSwap(TrainingInput* other) {
-  package_uris_.UnsafeArenaSwap(&other->package_uris_);
-  args_.UnsafeArenaSwap(&other->args_);
+  std::swap(scale_tier_, other->scale_tier_);
   master_type_.Swap(&other->master_type_);
   worker_type_.Swap(&other->worker_type_);
   parameter_server_type_.Swap(&other->parameter_server_type_);
-  python_module_.Swap(&other->python_module_);
-  region_.Swap(&other->region_);
-  std::swap(hyperparameters_, other->hyperparameters_);
   std::swap(worker_count_, other->worker_count_);
   std::swap(parameter_server_count_, other->parameter_server_count_);
-  std::swap(scale_tier_, other->scale_tier_);
+  package_uris_.UnsafeArenaSwap(&other->package_uris_);
+  python_module_.Swap(&other->python_module_);
+  args_.UnsafeArenaSwap(&other->args_);
+  std::swap(hyperparameters_, other->hyperparameters_);
+  region_.Swap(&other->region_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata TrainingInput::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TrainingInput_descriptor_;
+  metadata.reflection = TrainingInput_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // TrainingInput
 
-// .google.cloud.ml.v1beta1.TrainingInput.ScaleTier scale_tier = 1;
+// optional .google.cloud.ml.v1beta1.TrainingInput.ScaleTier scale_tier = 1;
 void TrainingInput::clear_scale_tier() {
   scale_tier_ = 0;
 }
@@ -1351,13 +1405,13 @@ void TrainingInput::set_scale_tier(::google::cloud::ml::v1beta1::TrainingInput_S
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.TrainingInput.scale_tier)
 }
 
-// string master_type = 2;
+// optional string master_type = 2;
 void TrainingInput::clear_master_type() {
   master_type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& TrainingInput::master_type() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.TrainingInput.master_type)
-  return master_type_.GetNoArena();
+  return master_type_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void TrainingInput::set_master_type(const ::std::string& value) {
   
@@ -1395,13 +1449,13 @@ void TrainingInput::set_allocated_master_type(::std::string* master_type) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.TrainingInput.master_type)
 }
 
-// string worker_type = 3;
+// optional string worker_type = 3;
 void TrainingInput::clear_worker_type() {
   worker_type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& TrainingInput::worker_type() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.TrainingInput.worker_type)
-  return worker_type_.GetNoArena();
+  return worker_type_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void TrainingInput::set_worker_type(const ::std::string& value) {
   
@@ -1439,13 +1493,13 @@ void TrainingInput::set_allocated_worker_type(::std::string* worker_type) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.TrainingInput.worker_type)
 }
 
-// string parameter_server_type = 4;
+// optional string parameter_server_type = 4;
 void TrainingInput::clear_parameter_server_type() {
   parameter_server_type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& TrainingInput::parameter_server_type() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.TrainingInput.parameter_server_type)
-  return parameter_server_type_.GetNoArena();
+  return parameter_server_type_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void TrainingInput::set_parameter_server_type(const ::std::string& value) {
   
@@ -1483,7 +1537,7 @@ void TrainingInput::set_allocated_parameter_server_type(::std::string* parameter
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.TrainingInput.parameter_server_type)
 }
 
-// int64 worker_count = 5;
+// optional int64 worker_count = 5;
 void TrainingInput::clear_worker_count() {
   worker_count_ = GOOGLE_LONGLONG(0);
 }
@@ -1497,7 +1551,7 @@ void TrainingInput::set_worker_count(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.TrainingInput.worker_count)
 }
 
-// int64 parameter_server_count = 6;
+// optional int64 parameter_server_count = 6;
 void TrainingInput::clear_parameter_server_count() {
   parameter_server_count_ = GOOGLE_LONGLONG(0);
 }
@@ -1566,13 +1620,13 @@ TrainingInput::mutable_package_uris() {
   return &package_uris_;
 }
 
-// string python_module = 8;
+// optional string python_module = 8;
 void TrainingInput::clear_python_module() {
   python_module_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& TrainingInput::python_module() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.TrainingInput.python_module)
-  return python_module_.GetNoArena();
+  return python_module_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void TrainingInput::set_python_module(const ::std::string& value) {
   
@@ -1665,7 +1719,7 @@ TrainingInput::mutable_args() {
   return &args_;
 }
 
-// .google.cloud.ml.v1beta1.HyperparameterSpec hyperparameters = 12;
+// optional .google.cloud.ml.v1beta1.HyperparameterSpec hyperparameters = 12;
 bool TrainingInput::has_hyperparameters() const {
   return this != internal_default_instance() && hyperparameters_ != NULL;
 }
@@ -1704,13 +1758,13 @@ void TrainingInput::set_allocated_hyperparameters(::google::cloud::ml::v1beta1::
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.TrainingInput.hyperparameters)
 }
 
-// string region = 14;
+// optional string region = 14;
 void TrainingInput::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& TrainingInput::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.TrainingInput.region)
-  return region_.GetNoArena();
+  return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void TrainingInput::set_region(const ::std::string& value) {
   
@@ -1748,10 +1802,36 @@ void TrainingInput::set_allocated_region(::std::string* region) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.TrainingInput.region)
 }
 
+inline const TrainingInput* TrainingInput::internal_default_instance() {
+  return &TrainingInput_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* HyperparameterSpec_GoalType_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return HyperparameterSpec_GoalType_descriptor_;
+}
+bool HyperparameterSpec_GoalType_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const HyperparameterSpec_GoalType HyperparameterSpec::GOAL_TYPE_UNSPECIFIED;
+const HyperparameterSpec_GoalType HyperparameterSpec::MAXIMIZE;
+const HyperparameterSpec_GoalType HyperparameterSpec::MINIMIZE;
+const HyperparameterSpec_GoalType HyperparameterSpec::GoalType_MIN;
+const HyperparameterSpec_GoalType HyperparameterSpec::GoalType_MAX;
+const int HyperparameterSpec::GoalType_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int HyperparameterSpec::kGoalFieldNumber;
 const int HyperparameterSpec::kParamsFieldNumber;
@@ -1761,21 +1841,19 @@ const int HyperparameterSpec::kMaxParallelTrialsFieldNumber;
 
 HyperparameterSpec::HyperparameterSpec()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.HyperparameterSpec)
 }
+
+void HyperparameterSpec::InitAsDefaultInstance() {
+}
+
 HyperparameterSpec::HyperparameterSpec(const HyperparameterSpec& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      params_(from.params_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&goal_, &from.goal_,
-    reinterpret_cast<char*>(&max_parallel_trials_) -
-    reinterpret_cast<char*>(&goal_) + sizeof(max_parallel_trials_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.HyperparameterSpec)
 }
 
@@ -1800,13 +1878,15 @@ void HyperparameterSpec::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* HyperparameterSpec::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return HyperparameterSpec_descriptor_;
 }
 
 const HyperparameterSpec& HyperparameterSpec::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<HyperparameterSpec> HyperparameterSpec_default_instance_;
 
 HyperparameterSpec* HyperparameterSpec::New(::google::protobuf::Arena* arena) const {
   HyperparameterSpec* n = new HyperparameterSpec;
@@ -1818,9 +1898,28 @@ HyperparameterSpec* HyperparameterSpec::New(::google::protobuf::Arena* arena) co
 
 void HyperparameterSpec::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.ml.v1beta1.HyperparameterSpec)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(HyperparameterSpec, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<HyperparameterSpec*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(goal_, max_parallel_trials_);
+
+#undef ZR_HELPER_
+#undef ZR_
+
   params_.Clear();
-  ::memset(&goal_, 0, reinterpret_cast<char*>(&max_parallel_trials_) -
-    reinterpret_cast<char*>(&goal_) + sizeof(max_parallel_trials_));
 }
 
 bool HyperparameterSpec::MergePartialFromCodedStream(
@@ -1829,13 +1928,13 @@ bool HyperparameterSpec::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.ml.v1beta1.HyperparameterSpec)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.cloud.ml.v1beta1.HyperparameterSpec.GoalType goal = 1;
+      // optional .google.cloud.ml.v1beta1.HyperparameterSpec.GoalType goal = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -1844,25 +1943,31 @@ bool HyperparameterSpec::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_params;
         break;
       }
 
       // repeated .google.cloud.ml.v1beta1.ParameterSpec params = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_params:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_params:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_params()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_loop_params;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(24)) goto parse_max_trials;
         break;
       }
 
-      // int32 max_trials = 3;
+      // optional int32 max_trials = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_max_trials:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -1870,12 +1975,14 @@ bool HyperparameterSpec::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_max_parallel_trials;
         break;
       }
 
-      // int32 max_parallel_trials = 4;
+      // optional int32 max_parallel_trials = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_max_parallel_trials:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -1883,6 +1990,7 @@ bool HyperparameterSpec::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1910,7 +2018,7 @@ failure:
 void HyperparameterSpec::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.ml.v1beta1.HyperparameterSpec)
-  // .google.cloud.ml.v1beta1.HyperparameterSpec.GoalType goal = 1;
+  // optional .google.cloud.ml.v1beta1.HyperparameterSpec.GoalType goal = 1;
   if (this->goal() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       1, this->goal(), output);
@@ -1922,12 +2030,12 @@ void HyperparameterSpec::SerializeWithCachedSizes(
       2, this->params(i), output);
   }
 
-  // int32 max_trials = 3;
+  // optional int32 max_trials = 3;
   if (this->max_trials() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->max_trials(), output);
   }
 
-  // int32 max_parallel_trials = 4;
+  // optional int32 max_parallel_trials = 4;
   if (this->max_parallel_trials() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->max_parallel_trials(), output);
   }
@@ -1939,7 +2047,7 @@ void HyperparameterSpec::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.ml.v1beta1.HyperparameterSpec)
-  // .google.cloud.ml.v1beta1.HyperparameterSpec.GoalType goal = 1;
+  // optional .google.cloud.ml.v1beta1.HyperparameterSpec.GoalType goal = 1;
   if (this->goal() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       1, this->goal(), target);
@@ -1952,12 +2060,12 @@ void HyperparameterSpec::SerializeWithCachedSizes(
         2, this->params(i), false, target);
   }
 
-  // int32 max_trials = 3;
+  // optional int32 max_trials = 3;
   if (this->max_trials() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->max_trials(), target);
   }
 
-  // int32 max_parallel_trials = 4;
+  // optional int32 max_parallel_trials = 4;
   if (this->max_parallel_trials() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->max_parallel_trials(), target);
   }
@@ -1970,6 +2078,26 @@ size_t HyperparameterSpec::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.HyperparameterSpec)
   size_t total_size = 0;
 
+  // optional .google.cloud.ml.v1beta1.HyperparameterSpec.GoalType goal = 1;
+  if (this->goal() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->goal());
+  }
+
+  // optional int32 max_trials = 3;
+  if (this->max_trials() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->max_trials());
+  }
+
+  // optional int32 max_parallel_trials = 4;
+  if (this->max_parallel_trials() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->max_parallel_trials());
+  }
+
   // repeated .google.cloud.ml.v1beta1.ParameterSpec params = 2;
   {
     unsigned int count = this->params_size();
@@ -1981,26 +2109,6 @@ size_t HyperparameterSpec::ByteSizeLong() const {
     }
   }
 
-  // .google.cloud.ml.v1beta1.HyperparameterSpec.GoalType goal = 1;
-  if (this->goal() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->goal());
-  }
-
-  // int32 max_trials = 3;
-  if (this->max_trials() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->max_trials());
-  }
-
-  // int32 max_parallel_trials = 4;
-  if (this->max_parallel_trials() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->max_parallel_trials());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -2010,7 +2118,7 @@ size_t HyperparameterSpec::ByteSizeLong() const {
 
 void HyperparameterSpec::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.HyperparameterSpec)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const HyperparameterSpec* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const HyperparameterSpec>(
           &from);
@@ -2019,14 +2127,21 @@ void HyperparameterSpec::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.HyperparameterSpec)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void HyperparameterSpec::MergeFrom(const HyperparameterSpec& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.HyperparameterSpec)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void HyperparameterSpec::UnsafeMergeFrom(const HyperparameterSpec& from) {
+  GOOGLE_DCHECK(&from != this);
   params_.MergeFrom(from.params_);
   if (from.goal() != 0) {
     set_goal(from.goal());
@@ -2050,10 +2165,11 @@ void HyperparameterSpec::CopyFrom(const HyperparameterSpec& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.HyperparameterSpec)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool HyperparameterSpec::IsInitialized() const {
+
   return true;
 }
 
@@ -2062,22 +2178,26 @@ void HyperparameterSpec::Swap(HyperparameterSpec* other) {
   InternalSwap(other);
 }
 void HyperparameterSpec::InternalSwap(HyperparameterSpec* other) {
-  params_.UnsafeArenaSwap(&other->params_);
   std::swap(goal_, other->goal_);
+  params_.UnsafeArenaSwap(&other->params_);
   std::swap(max_trials_, other->max_trials_);
   std::swap(max_parallel_trials_, other->max_parallel_trials_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata HyperparameterSpec::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = HyperparameterSpec_descriptor_;
+  metadata.reflection = HyperparameterSpec_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // HyperparameterSpec
 
-// .google.cloud.ml.v1beta1.HyperparameterSpec.GoalType goal = 1;
+// optional .google.cloud.ml.v1beta1.HyperparameterSpec.GoalType goal = 1;
 void HyperparameterSpec::clear_goal() {
   goal_ = 0;
 }
@@ -2121,7 +2241,7 @@ HyperparameterSpec::params() const {
   return params_;
 }
 
-// int32 max_trials = 3;
+// optional int32 max_trials = 3;
 void HyperparameterSpec::clear_max_trials() {
   max_trials_ = 0;
 }
@@ -2135,7 +2255,7 @@ void HyperparameterSpec::set_max_trials(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.HyperparameterSpec.max_trials)
 }
 
-// int32 max_parallel_trials = 4;
+// optional int32 max_parallel_trials = 4;
 void HyperparameterSpec::clear_max_parallel_trials() {
   max_parallel_trials_ = 0;
 }
@@ -2149,10 +2269,65 @@ void HyperparameterSpec::set_max_parallel_trials(::google::protobuf::int32 value
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.HyperparameterSpec.max_parallel_trials)
 }
 
+inline const HyperparameterSpec* HyperparameterSpec::internal_default_instance() {
+  return &HyperparameterSpec_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* ParameterSpec_ParameterType_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return ParameterSpec_ParameterType_descriptor_;
+}
+bool ParameterSpec_ParameterType_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const ParameterSpec_ParameterType ParameterSpec::PARAMETER_TYPE_UNSPECIFIED;
+const ParameterSpec_ParameterType ParameterSpec::DOUBLE;
+const ParameterSpec_ParameterType ParameterSpec::INTEGER;
+const ParameterSpec_ParameterType ParameterSpec::CATEGORICAL;
+const ParameterSpec_ParameterType ParameterSpec::DISCRETE;
+const ParameterSpec_ParameterType ParameterSpec::ParameterType_MIN;
+const ParameterSpec_ParameterType ParameterSpec::ParameterType_MAX;
+const int ParameterSpec::ParameterType_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+const ::google::protobuf::EnumDescriptor* ParameterSpec_ScaleType_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return ParameterSpec_ScaleType_descriptor_;
+}
+bool ParameterSpec_ScaleType_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const ParameterSpec_ScaleType ParameterSpec::NONE;
+const ParameterSpec_ScaleType ParameterSpec::UNIT_LINEAR_SCALE;
+const ParameterSpec_ScaleType ParameterSpec::UNIT_LOG_SCALE;
+const ParameterSpec_ScaleType ParameterSpec::UNIT_REVERSE_LOG_SCALE;
+const ParameterSpec_ScaleType ParameterSpec::ScaleType_MIN;
+const ParameterSpec_ScaleType ParameterSpec::ScaleType_MAX;
+const int ParameterSpec::ScaleType_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ParameterSpec::kParameterNameFieldNumber;
 const int ParameterSpec::kTypeFieldNumber;
@@ -2165,26 +2340,19 @@ const int ParameterSpec::kScaleTypeFieldNumber;
 
 ParameterSpec::ParameterSpec()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.ParameterSpec)
 }
+
+void ParameterSpec::InitAsDefaultInstance() {
+}
+
 ParameterSpec::ParameterSpec(const ParameterSpec& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      categorical_values_(from.categorical_values_),
-      discrete_values_(from.discrete_values_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  parameter_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.parameter_name().size() > 0) {
-    parameter_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parameter_name_);
-  }
-  ::memcpy(&min_value_, &from.min_value_,
-    reinterpret_cast<char*>(&scale_type_) -
-    reinterpret_cast<char*>(&min_value_) + sizeof(scale_type_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.ParameterSpec)
 }
 
@@ -2211,13 +2379,15 @@ void ParameterSpec::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ParameterSpec::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return ParameterSpec_descriptor_;
 }
 
 const ParameterSpec& ParameterSpec::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ParameterSpec> ParameterSpec_default_instance_;
 
 ParameterSpec* ParameterSpec::New(::google::protobuf::Arena* arena) const {
   ParameterSpec* n = new ParameterSpec;
@@ -2229,11 +2399,30 @@ ParameterSpec* ParameterSpec::New(::google::protobuf::Arena* arena) const {
 
 void ParameterSpec::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.ml.v1beta1.ParameterSpec)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(ParameterSpec, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<ParameterSpec*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(min_value_, scale_type_);
+  parameter_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+
+#undef ZR_HELPER_
+#undef ZR_
+
   categorical_values_.Clear();
   discrete_values_.Clear();
-  parameter_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&min_value_, 0, reinterpret_cast<char*>(&scale_type_) -
-    reinterpret_cast<char*>(&min_value_) + sizeof(scale_type_));
 }
 
 bool ParameterSpec::MergePartialFromCodedStream(
@@ -2242,13 +2431,13 @@ bool ParameterSpec::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.ml.v1beta1.ParameterSpec)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string parameter_name = 1;
+      // optional string parameter_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_parameter_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2258,12 +2447,14 @@ bool ParameterSpec::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(17)) goto parse_min_value;
         break;
       }
 
-      // double min_value = 2;
+      // optional double min_value = 2;
       case 2: {
-        if (tag == 17u) {
+        if (tag == 17) {
+         parse_min_value:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
@@ -2271,12 +2462,14 @@ bool ParameterSpec::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(25)) goto parse_max_value;
         break;
       }
 
-      // double max_value = 3;
+      // optional double max_value = 3;
       case 3: {
-        if (tag == 25u) {
+        if (tag == 25) {
+         parse_max_value:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
@@ -2284,12 +2477,14 @@ bool ParameterSpec::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_type;
         break;
       }
 
-      // .google.cloud.ml.v1beta1.ParameterSpec.ParameterType type = 4;
+      // optional .google.cloud.ml.v1beta1.ParameterSpec.ParameterType type = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_type:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -2298,12 +2493,14 @@ bool ParameterSpec::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_categorical_values;
         break;
       }
 
       // repeated string categorical_values = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_categorical_values:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_categorical_values()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2314,28 +2511,33 @@ bool ParameterSpec::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_categorical_values;
+        if (input->ExpectTag(50)) goto parse_discrete_values;
         break;
       }
 
       // repeated double discrete_values = 6;
       case 6: {
-        if (tag == 50u) {
+        if (tag == 50) {
+         parse_discrete_values:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, this->mutable_discrete_values())));
-        } else if (tag == 49u) {
+        } else if (tag == 49) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 1, 50u, input, this->mutable_discrete_values())));
+                 1, 50, input, this->mutable_discrete_values())));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(56)) goto parse_scale_type;
         break;
       }
 
-      // .google.cloud.ml.v1beta1.ParameterSpec.ScaleType scale_type = 7;
+      // optional .google.cloud.ml.v1beta1.ParameterSpec.ScaleType scale_type = 7;
       case 7: {
-        if (tag == 56u) {
+        if (tag == 56) {
+         parse_scale_type:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -2344,6 +2546,7 @@ bool ParameterSpec::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2371,7 +2574,7 @@ failure:
 void ParameterSpec::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.ml.v1beta1.ParameterSpec)
-  // string parameter_name = 1;
+  // optional string parameter_name = 1;
   if (this->parameter_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->parameter_name().data(), this->parameter_name().length(),
@@ -2381,17 +2584,17 @@ void ParameterSpec::SerializeWithCachedSizes(
       1, this->parameter_name(), output);
   }
 
-  // double min_value = 2;
+  // optional double min_value = 2;
   if (this->min_value() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->min_value(), output);
   }
 
-  // double max_value = 3;
+  // optional double max_value = 3;
   if (this->max_value() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->max_value(), output);
   }
 
-  // .google.cloud.ml.v1beta1.ParameterSpec.ParameterType type = 4;
+  // optional .google.cloud.ml.v1beta1.ParameterSpec.ParameterType type = 4;
   if (this->type() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       4, this->type(), output);
@@ -2417,7 +2620,7 @@ void ParameterSpec::SerializeWithCachedSizes(
       this->discrete_values(i), output);
   }
 
-  // .google.cloud.ml.v1beta1.ParameterSpec.ScaleType scale_type = 7;
+  // optional .google.cloud.ml.v1beta1.ParameterSpec.ScaleType scale_type = 7;
   if (this->scale_type() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       7, this->scale_type(), output);
@@ -2430,7 +2633,7 @@ void ParameterSpec::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.ml.v1beta1.ParameterSpec)
-  // string parameter_name = 1;
+  // optional string parameter_name = 1;
   if (this->parameter_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->parameter_name().data(), this->parameter_name().length(),
@@ -2441,17 +2644,17 @@ void ParameterSpec::SerializeWithCachedSizes(
         1, this->parameter_name(), target);
   }
 
-  // double min_value = 2;
+  // optional double min_value = 2;
   if (this->min_value() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->min_value(), target);
   }
 
-  // double max_value = 3;
+  // optional double max_value = 3;
   if (this->max_value() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->max_value(), target);
   }
 
-  // .google.cloud.ml.v1beta1.ParameterSpec.ParameterType type = 4;
+  // optional .google.cloud.ml.v1beta1.ParameterSpec.ParameterType type = 4;
   if (this->type() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       4, this->type(), target);
@@ -2481,7 +2684,7 @@ void ParameterSpec::SerializeWithCachedSizes(
       WriteDoubleNoTagToArray(this->discrete_values(i), target);
   }
 
-  // .google.cloud.ml.v1beta1.ParameterSpec.ScaleType scale_type = 7;
+  // optional .google.cloud.ml.v1beta1.ParameterSpec.ScaleType scale_type = 7;
   if (this->scale_type() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       7, this->scale_type(), target);
@@ -2494,6 +2697,35 @@ void ParameterSpec::SerializeWithCachedSizes(
 size_t ParameterSpec::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.ParameterSpec)
   size_t total_size = 0;
+
+  // optional string parameter_name = 1;
+  if (this->parameter_name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->parameter_name());
+  }
+
+  // optional .google.cloud.ml.v1beta1.ParameterSpec.ParameterType type = 4;
+  if (this->type() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
+  }
+
+  // optional double min_value = 2;
+  if (this->min_value() != 0) {
+    total_size += 1 + 8;
+  }
+
+  // optional double max_value = 3;
+  if (this->max_value() != 0) {
+    total_size += 1 + 8;
+  }
+
+  // optional .google.cloud.ml.v1beta1.ParameterSpec.ScaleType scale_type = 7;
+  if (this->scale_type() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->scale_type());
+  }
 
   // repeated string categorical_values = 5;
   total_size += 1 *
@@ -2519,35 +2751,6 @@ size_t ParameterSpec::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // string parameter_name = 1;
-  if (this->parameter_name().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->parameter_name());
-  }
-
-  // double min_value = 2;
-  if (this->min_value() != 0) {
-    total_size += 1 + 8;
-  }
-
-  // double max_value = 3;
-  if (this->max_value() != 0) {
-    total_size += 1 + 8;
-  }
-
-  // .google.cloud.ml.v1beta1.ParameterSpec.ParameterType type = 4;
-  if (this->type() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
-  }
-
-  // .google.cloud.ml.v1beta1.ParameterSpec.ScaleType scale_type = 7;
-  if (this->scale_type() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->scale_type());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -2557,7 +2760,7 @@ size_t ParameterSpec::ByteSizeLong() const {
 
 void ParameterSpec::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.ParameterSpec)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ParameterSpec* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ParameterSpec>(
           &from);
@@ -2566,28 +2769,35 @@ void ParameterSpec::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.ParameterSpec)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ParameterSpec::MergeFrom(const ParameterSpec& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.ParameterSpec)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  categorical_values_.MergeFrom(from.categorical_values_);
-  discrete_values_.MergeFrom(from.discrete_values_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ParameterSpec::UnsafeMergeFrom(const ParameterSpec& from) {
+  GOOGLE_DCHECK(&from != this);
+  categorical_values_.UnsafeMergeFrom(from.categorical_values_);
+  discrete_values_.UnsafeMergeFrom(from.discrete_values_);
   if (from.parameter_name().size() > 0) {
 
     parameter_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parameter_name_);
+  }
+  if (from.type() != 0) {
+    set_type(from.type());
   }
   if (from.min_value() != 0) {
     set_min_value(from.min_value());
   }
   if (from.max_value() != 0) {
     set_max_value(from.max_value());
-  }
-  if (from.type() != 0) {
-    set_type(from.type());
   }
   if (from.scale_type() != 0) {
     set_scale_type(from.scale_type());
@@ -2605,10 +2815,11 @@ void ParameterSpec::CopyFrom(const ParameterSpec& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.ParameterSpec)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ParameterSpec::IsInitialized() const {
+
   return true;
 }
 
@@ -2617,31 +2828,35 @@ void ParameterSpec::Swap(ParameterSpec* other) {
   InternalSwap(other);
 }
 void ParameterSpec::InternalSwap(ParameterSpec* other) {
-  categorical_values_.UnsafeArenaSwap(&other->categorical_values_);
-  discrete_values_.UnsafeArenaSwap(&other->discrete_values_);
   parameter_name_.Swap(&other->parameter_name_);
+  std::swap(type_, other->type_);
   std::swap(min_value_, other->min_value_);
   std::swap(max_value_, other->max_value_);
-  std::swap(type_, other->type_);
+  categorical_values_.UnsafeArenaSwap(&other->categorical_values_);
+  discrete_values_.UnsafeArenaSwap(&other->discrete_values_);
   std::swap(scale_type_, other->scale_type_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ParameterSpec::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ParameterSpec_descriptor_;
+  metadata.reflection = ParameterSpec_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ParameterSpec
 
-// string parameter_name = 1;
+// optional string parameter_name = 1;
 void ParameterSpec::clear_parameter_name() {
   parameter_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ParameterSpec::parameter_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.ParameterSpec.parameter_name)
-  return parameter_name_.GetNoArena();
+  return parameter_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ParameterSpec::set_parameter_name(const ::std::string& value) {
   
@@ -2679,7 +2894,7 @@ void ParameterSpec::set_allocated_parameter_name(::std::string* parameter_name) 
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.ParameterSpec.parameter_name)
 }
 
-// .google.cloud.ml.v1beta1.ParameterSpec.ParameterType type = 4;
+// optional .google.cloud.ml.v1beta1.ParameterSpec.ParameterType type = 4;
 void ParameterSpec::clear_type() {
   type_ = 0;
 }
@@ -2693,7 +2908,7 @@ void ParameterSpec::set_type(::google::cloud::ml::v1beta1::ParameterSpec_Paramet
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.ParameterSpec.type)
 }
 
-// double min_value = 2;
+// optional double min_value = 2;
 void ParameterSpec::clear_min_value() {
   min_value_ = 0;
 }
@@ -2707,7 +2922,7 @@ void ParameterSpec::set_min_value(double value) {
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.ParameterSpec.min_value)
 }
 
-// double max_value = 3;
+// optional double max_value = 3;
 void ParameterSpec::clear_max_value() {
   max_value_ = 0;
 }
@@ -2806,7 +3021,7 @@ ParameterSpec::mutable_discrete_values() {
   return &discrete_values_;
 }
 
-// .google.cloud.ml.v1beta1.ParameterSpec.ScaleType scale_type = 7;
+// optional .google.cloud.ml.v1beta1.ParameterSpec.ScaleType scale_type = 7;
 void ParameterSpec::clear_scale_type() {
   scale_type_ = 0;
 }
@@ -2820,6 +3035,9 @@ void ParameterSpec::set_scale_type(::google::cloud::ml::v1beta1::ParameterSpec_S
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.ParameterSpec.scale_type)
 }
 
+inline const ParameterSpec* ParameterSpec::internal_default_instance() {
+  return &ParameterSpec_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2831,20 +3049,19 @@ const int HyperparameterOutput_HyperparameterMetric::kObjectiveValueFieldNumber;
 
 HyperparameterOutput_HyperparameterMetric::HyperparameterOutput_HyperparameterMetric()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric)
 }
+
+void HyperparameterOutput_HyperparameterMetric::InitAsDefaultInstance() {
+}
+
 HyperparameterOutput_HyperparameterMetric::HyperparameterOutput_HyperparameterMetric(const HyperparameterOutput_HyperparameterMetric& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&training_step_, &from.training_step_,
-    reinterpret_cast<char*>(&objective_value_) -
-    reinterpret_cast<char*>(&training_step_) + sizeof(objective_value_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric)
 }
 
@@ -2869,13 +3086,15 @@ void HyperparameterOutput_HyperparameterMetric::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* HyperparameterOutput_HyperparameterMetric::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return HyperparameterOutput_HyperparameterMetric_descriptor_;
 }
 
 const HyperparameterOutput_HyperparameterMetric& HyperparameterOutput_HyperparameterMetric::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<HyperparameterOutput_HyperparameterMetric> HyperparameterOutput_HyperparameterMetric_default_instance_;
 
 HyperparameterOutput_HyperparameterMetric* HyperparameterOutput_HyperparameterMetric::New(::google::protobuf::Arena* arena) const {
   HyperparameterOutput_HyperparameterMetric* n = new HyperparameterOutput_HyperparameterMetric;
@@ -2887,8 +3106,27 @@ HyperparameterOutput_HyperparameterMetric* HyperparameterOutput_HyperparameterMe
 
 void HyperparameterOutput_HyperparameterMetric::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric)
-  ::memset(&training_step_, 0, reinterpret_cast<char*>(&objective_value_) -
-    reinterpret_cast<char*>(&training_step_) + sizeof(objective_value_));
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(HyperparameterOutput_HyperparameterMetric, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<HyperparameterOutput_HyperparameterMetric*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(training_step_, objective_value_);
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool HyperparameterOutput_HyperparameterMetric::MergePartialFromCodedStream(
@@ -2897,13 +3135,13 @@ bool HyperparameterOutput_HyperparameterMetric::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 training_step = 1;
+      // optional int64 training_step = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -2911,12 +3149,14 @@ bool HyperparameterOutput_HyperparameterMetric::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(17)) goto parse_objective_value;
         break;
       }
 
-      // double objective_value = 2;
+      // optional double objective_value = 2;
       case 2: {
-        if (tag == 17u) {
+        if (tag == 17) {
+         parse_objective_value:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
@@ -2924,6 +3164,7 @@ bool HyperparameterOutput_HyperparameterMetric::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2951,12 +3192,12 @@ failure:
 void HyperparameterOutput_HyperparameterMetric::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric)
-  // int64 training_step = 1;
+  // optional int64 training_step = 1;
   if (this->training_step() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->training_step(), output);
   }
 
-  // double objective_value = 2;
+  // optional double objective_value = 2;
   if (this->objective_value() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->objective_value(), output);
   }
@@ -2968,12 +3209,12 @@ void HyperparameterOutput_HyperparameterMetric::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric)
-  // int64 training_step = 1;
+  // optional int64 training_step = 1;
   if (this->training_step() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->training_step(), target);
   }
 
-  // double objective_value = 2;
+  // optional double objective_value = 2;
   if (this->objective_value() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->objective_value(), target);
   }
@@ -2986,14 +3227,14 @@ size_t HyperparameterOutput_HyperparameterMetric::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric)
   size_t total_size = 0;
 
-  // int64 training_step = 1;
+  // optional int64 training_step = 1;
   if (this->training_step() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->training_step());
   }
 
-  // double objective_value = 2;
+  // optional double objective_value = 2;
   if (this->objective_value() != 0) {
     total_size += 1 + 8;
   }
@@ -3007,7 +3248,7 @@ size_t HyperparameterOutput_HyperparameterMetric::ByteSizeLong() const {
 
 void HyperparameterOutput_HyperparameterMetric::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const HyperparameterOutput_HyperparameterMetric* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const HyperparameterOutput_HyperparameterMetric>(
           &from);
@@ -3016,14 +3257,21 @@ void HyperparameterOutput_HyperparameterMetric::MergeFrom(const ::google::protob
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void HyperparameterOutput_HyperparameterMetric::MergeFrom(const HyperparameterOutput_HyperparameterMetric& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void HyperparameterOutput_HyperparameterMetric::UnsafeMergeFrom(const HyperparameterOutput_HyperparameterMetric& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.training_step() != 0) {
     set_training_step(from.training_step());
   }
@@ -3043,10 +3291,11 @@ void HyperparameterOutput_HyperparameterMetric::CopyFrom(const HyperparameterOut
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool HyperparameterOutput_HyperparameterMetric::IsInitialized() const {
+
   return true;
 }
 
@@ -3057,53 +3306,20 @@ void HyperparameterOutput_HyperparameterMetric::Swap(HyperparameterOutput_Hyperp
 void HyperparameterOutput_HyperparameterMetric::InternalSwap(HyperparameterOutput_HyperparameterMetric* other) {
   std::swap(training_step_, other->training_step_);
   std::swap(objective_value_, other->objective_value_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata HyperparameterOutput_HyperparameterMetric::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = HyperparameterOutput_HyperparameterMetric_descriptor_;
+  metadata.reflection = HyperparameterOutput_HyperparameterMetric_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// HyperparameterOutput_HyperparameterMetric
 
-// int64 training_step = 1;
-void HyperparameterOutput_HyperparameterMetric::clear_training_step() {
-  training_step_ = GOOGLE_LONGLONG(0);
-}
-::google::protobuf::int64 HyperparameterOutput_HyperparameterMetric::training_step() const {
-  // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric.training_step)
-  return training_step_;
-}
-void HyperparameterOutput_HyperparameterMetric::set_training_step(::google::protobuf::int64 value) {
-  
-  training_step_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric.training_step)
-}
-
-// double objective_value = 2;
-void HyperparameterOutput_HyperparameterMetric::clear_objective_value() {
-  objective_value_ = 0;
-}
-double HyperparameterOutput_HyperparameterMetric::objective_value() const {
-  // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric.objective_value)
-  return objective_value_;
-}
-void HyperparameterOutput_HyperparameterMetric::set_objective_value(double value) {
-  
-  objective_value_ = value;
-  // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric.objective_value)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
-
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
+// -------------------------------------------------------------------
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int HyperparameterOutput::kTrialIdFieldNumber;
@@ -3114,42 +3330,29 @@ const int HyperparameterOutput::kAllMetricsFieldNumber;
 
 HyperparameterOutput::HyperparameterOutput()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.HyperparameterOutput)
 }
+
+void HyperparameterOutput::InitAsDefaultInstance() {
+  final_metric_ = const_cast< ::google::cloud::ml::v1beta1::HyperparameterOutput_HyperparameterMetric*>(
+      ::google::cloud::ml::v1beta1::HyperparameterOutput_HyperparameterMetric::internal_default_instance());
+}
+
 HyperparameterOutput::HyperparameterOutput(const HyperparameterOutput& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      all_metrics_(from.all_metrics_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  const ::google::protobuf::Descriptor*& HyperparameterOutput_HyperparametersEntry_descriptor = file_level_metadata[4].descriptor;
-  hyperparameters_.SetAssignDescriptorCallback(
-      protobuf_AssignDescriptorsOnce);
-  hyperparameters_.SetEntryDescriptor(
-      &HyperparameterOutput_HyperparametersEntry_descriptor);
-  hyperparameters_.MergeFrom(from.hyperparameters_);
-  trial_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.trial_id().size() > 0) {
-    trial_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.trial_id_);
-  }
-  if (from.has_final_metric()) {
-    final_metric_ = new ::google::cloud::ml::v1beta1::HyperparameterOutput_HyperparameterMetric(*from.final_metric_);
-  } else {
-    final_metric_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.HyperparameterOutput)
 }
 
 void HyperparameterOutput::SharedCtor() {
-  const ::google::protobuf::Descriptor*& HyperparameterOutput_HyperparametersEntry_descriptor = file_level_metadata[4].descriptor;
   hyperparameters_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   hyperparameters_.SetEntryDescriptor(
-      &HyperparameterOutput_HyperparametersEntry_descriptor);
+      &::google::cloud::ml::v1beta1::HyperparameterOutput_HyperparametersEntry_descriptor_);
   trial_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   final_metric_ = NULL;
   _cached_size_ = 0;
@@ -3162,7 +3365,7 @@ HyperparameterOutput::~HyperparameterOutput() {
 
 void HyperparameterOutput::SharedDtor() {
   trial_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &HyperparameterOutput_default_instance_.get()) {
     delete final_metric_;
   }
 }
@@ -3174,13 +3377,15 @@ void HyperparameterOutput::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* HyperparameterOutput::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
+  return HyperparameterOutput_descriptor_;
 }
 
 const HyperparameterOutput& HyperparameterOutput::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<HyperparameterOutput> HyperparameterOutput_default_instance_;
 
 HyperparameterOutput* HyperparameterOutput::New(::google::protobuf::Arena* arena) const {
   HyperparameterOutput* n = new HyperparameterOutput;
@@ -3192,13 +3397,11 @@ HyperparameterOutput* HyperparameterOutput::New(::google::protobuf::Arena* arena
 
 void HyperparameterOutput::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.ml.v1beta1.HyperparameterOutput)
+  trial_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (GetArenaNoVirtual() == NULL && final_metric_ != NULL) delete final_metric_;
+  final_metric_ = NULL;
   hyperparameters_.Clear();
   all_metrics_.Clear();
-  trial_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && final_metric_ != NULL) {
-    delete final_metric_;
-  }
-  final_metric_ = NULL;
 }
 
 bool HyperparameterOutput::MergePartialFromCodedStream(
@@ -3207,13 +3410,13 @@ bool HyperparameterOutput::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.ml.v1beta1.HyperparameterOutput)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string trial_id = 1;
+      // optional string trial_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_trial_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3223,13 +3426,16 @@ bool HyperparameterOutput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_hyperparameters;
         break;
       }
 
       // map<string, string> hyperparameters = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_hyperparameters:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_hyperparameters:
           HyperparameterOutput_HyperparametersEntry::Parser< ::google::protobuf::internal::MapField<
               ::std::string, ::std::string,
               ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
@@ -3249,31 +3455,39 @@ bool HyperparameterOutput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_loop_hyperparameters;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(26)) goto parse_final_metric;
         break;
       }
 
-      // .google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric final_metric = 3;
+      // optional .google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric final_metric = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_final_metric:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_final_metric()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_all_metrics;
         break;
       }
 
       // repeated .google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric all_metrics = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_all_metrics:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_all_metrics:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_all_metrics()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_loop_all_metrics;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3301,7 +3515,7 @@ failure:
 void HyperparameterOutput::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.ml.v1beta1.HyperparameterOutput)
-  // string trial_id = 1;
+  // optional string trial_id = 1;
   if (this->trial_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->trial_id().data(), this->trial_id().length(),
@@ -3330,7 +3544,7 @@ void HyperparameterOutput::SerializeWithCachedSizes(
       }
     };
 
-    if (output->IsSerializationDeterministic() &&
+    if (output->IsSerializationDeterminstic() &&
         this->hyperparameters().size() > 1) {
       ::google::protobuf::scoped_array<SortItem> items(
           new SortItem[this->hyperparameters().size()]);
@@ -3364,7 +3578,7 @@ void HyperparameterOutput::SerializeWithCachedSizes(
     }
   }
 
-  // .google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric final_metric = 3;
+  // optional .google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric final_metric = 3;
   if (this->has_final_metric()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *this->final_metric_, output);
@@ -3383,7 +3597,7 @@ void HyperparameterOutput::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.ml.v1beta1.HyperparameterOutput)
-  // string trial_id = 1;
+  // optional string trial_id = 1;
   if (this->trial_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->trial_id().data(), this->trial_id().length(),
@@ -3451,7 +3665,7 @@ void HyperparameterOutput::SerializeWithCachedSizes(
     }
   }
 
-  // .google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric final_metric = 3;
+  // optional .google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric final_metric = 3;
   if (this->has_final_metric()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -3472,6 +3686,20 @@ void HyperparameterOutput::SerializeWithCachedSizes(
 size_t HyperparameterOutput::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.HyperparameterOutput)
   size_t total_size = 0;
+
+  // optional string trial_id = 1;
+  if (this->trial_id().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->trial_id());
+  }
+
+  // optional .google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric final_metric = 3;
+  if (this->has_final_metric()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->final_metric_);
+  }
 
   // map<string, string> hyperparameters = 2;
   total_size += 1 *
@@ -3498,20 +3726,6 @@ size_t HyperparameterOutput::ByteSizeLong() const {
     }
   }
 
-  // string trial_id = 1;
-  if (this->trial_id().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->trial_id());
-  }
-
-  // .google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric final_metric = 3;
-  if (this->has_final_metric()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->final_metric_);
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -3521,7 +3735,7 @@ size_t HyperparameterOutput::ByteSizeLong() const {
 
 void HyperparameterOutput::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.HyperparameterOutput)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const HyperparameterOutput* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const HyperparameterOutput>(
           &from);
@@ -3530,14 +3744,21 @@ void HyperparameterOutput::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.HyperparameterOutput)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void HyperparameterOutput::MergeFrom(const HyperparameterOutput& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.HyperparameterOutput)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void HyperparameterOutput::UnsafeMergeFrom(const HyperparameterOutput& from) {
+  GOOGLE_DCHECK(&from != this);
   hyperparameters_.MergeFrom(from.hyperparameters_);
   all_metrics_.MergeFrom(from.all_metrics_);
   if (from.trial_id().size() > 0) {
@@ -3560,10 +3781,11 @@ void HyperparameterOutput::CopyFrom(const HyperparameterOutput& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.HyperparameterOutput)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool HyperparameterOutput::IsInitialized() const {
+
   return true;
 }
 
@@ -3572,28 +3794,67 @@ void HyperparameterOutput::Swap(HyperparameterOutput* other) {
   InternalSwap(other);
 }
 void HyperparameterOutput::InternalSwap(HyperparameterOutput* other) {
-  hyperparameters_.Swap(&other->hyperparameters_);
-  all_metrics_.UnsafeArenaSwap(&other->all_metrics_);
   trial_id_.Swap(&other->trial_id_);
+  hyperparameters_.Swap(&other->hyperparameters_);
   std::swap(final_metric_, other->final_metric_);
+  all_metrics_.UnsafeArenaSwap(&other->all_metrics_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata HyperparameterOutput::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = HyperparameterOutput_descriptor_;
+  metadata.reflection = HyperparameterOutput_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
+// HyperparameterOutput_HyperparameterMetric
+
+// optional int64 training_step = 1;
+void HyperparameterOutput_HyperparameterMetric::clear_training_step() {
+  training_step_ = GOOGLE_LONGLONG(0);
+}
+::google::protobuf::int64 HyperparameterOutput_HyperparameterMetric::training_step() const {
+  // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric.training_step)
+  return training_step_;
+}
+void HyperparameterOutput_HyperparameterMetric::set_training_step(::google::protobuf::int64 value) {
+  
+  training_step_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric.training_step)
+}
+
+// optional double objective_value = 2;
+void HyperparameterOutput_HyperparameterMetric::clear_objective_value() {
+  objective_value_ = 0;
+}
+double HyperparameterOutput_HyperparameterMetric::objective_value() const {
+  // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric.objective_value)
+  return objective_value_;
+}
+void HyperparameterOutput_HyperparameterMetric::set_objective_value(double value) {
+  
+  objective_value_ = value;
+  // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric.objective_value)
+}
+
+inline const HyperparameterOutput_HyperparameterMetric* HyperparameterOutput_HyperparameterMetric::internal_default_instance() {
+  return &HyperparameterOutput_HyperparameterMetric_default_instance_.get();
+}
+// -------------------------------------------------------------------
+
 // HyperparameterOutput
 
-// string trial_id = 1;
+// optional string trial_id = 1;
 void HyperparameterOutput::clear_trial_id() {
   trial_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& HyperparameterOutput::trial_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.HyperparameterOutput.trial_id)
-  return trial_id_.GetNoArena();
+  return trial_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void HyperparameterOutput::set_trial_id(const ::std::string& value) {
   
@@ -3649,7 +3910,7 @@ HyperparameterOutput::mutable_hyperparameters() {
   return hyperparameters_.MutableMap();
 }
 
-// .google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric final_metric = 3;
+// optional .google.cloud.ml.v1beta1.HyperparameterOutput.HyperparameterMetric final_metric = 3;
 bool HyperparameterOutput::has_final_metric() const {
   return this != internal_default_instance() && final_metric_ != NULL;
 }
@@ -3718,6 +3979,9 @@ HyperparameterOutput::all_metrics() const {
   return all_metrics_;
 }
 
+inline const HyperparameterOutput* HyperparameterOutput::internal_default_instance() {
+  return &HyperparameterOutput_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3729,19 +3993,19 @@ const int TrainingOutput::kTrialsFieldNumber;
 
 TrainingOutput::TrainingOutput()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.TrainingOutput)
 }
+
+void TrainingOutput::InitAsDefaultInstance() {
+}
+
 TrainingOutput::TrainingOutput(const TrainingOutput& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      trials_(from.trials_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  completed_trial_count_ = from.completed_trial_count_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.TrainingOutput)
 }
 
@@ -3765,13 +4029,15 @@ void TrainingOutput::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* TrainingOutput::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6].descriptor;
+  return TrainingOutput_descriptor_;
 }
 
 const TrainingOutput& TrainingOutput::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<TrainingOutput> TrainingOutput_default_instance_;
 
 TrainingOutput* TrainingOutput::New(::google::protobuf::Arena* arena) const {
   TrainingOutput* n = new TrainingOutput;
@@ -3783,8 +4049,8 @@ TrainingOutput* TrainingOutput::New(::google::protobuf::Arena* arena) const {
 
 void TrainingOutput::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.ml.v1beta1.TrainingOutput)
-  trials_.Clear();
   completed_trial_count_ = GOOGLE_LONGLONG(0);
+  trials_.Clear();
 }
 
 bool TrainingOutput::MergePartialFromCodedStream(
@@ -3793,13 +4059,13 @@ bool TrainingOutput::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.ml.v1beta1.TrainingOutput)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 completed_trial_count = 1;
+      // optional int64 completed_trial_count = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -3807,19 +4073,24 @@ bool TrainingOutput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_trials;
         break;
       }
 
       // repeated .google.cloud.ml.v1beta1.HyperparameterOutput trials = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_trials:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_trials:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_trials()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_loop_trials;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3847,7 +4118,7 @@ failure:
 void TrainingOutput::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.ml.v1beta1.TrainingOutput)
-  // int64 completed_trial_count = 1;
+  // optional int64 completed_trial_count = 1;
   if (this->completed_trial_count() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->completed_trial_count(), output);
   }
@@ -3865,7 +4136,7 @@ void TrainingOutput::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.ml.v1beta1.TrainingOutput)
-  // int64 completed_trial_count = 1;
+  // optional int64 completed_trial_count = 1;
   if (this->completed_trial_count() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->completed_trial_count(), target);
   }
@@ -3885,6 +4156,13 @@ size_t TrainingOutput::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.TrainingOutput)
   size_t total_size = 0;
 
+  // optional int64 completed_trial_count = 1;
+  if (this->completed_trial_count() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->completed_trial_count());
+  }
+
   // repeated .google.cloud.ml.v1beta1.HyperparameterOutput trials = 2;
   {
     unsigned int count = this->trials_size();
@@ -3896,13 +4174,6 @@ size_t TrainingOutput::ByteSizeLong() const {
     }
   }
 
-  // int64 completed_trial_count = 1;
-  if (this->completed_trial_count() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->completed_trial_count());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -3912,7 +4183,7 @@ size_t TrainingOutput::ByteSizeLong() const {
 
 void TrainingOutput::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.TrainingOutput)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const TrainingOutput* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const TrainingOutput>(
           &from);
@@ -3921,14 +4192,21 @@ void TrainingOutput::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.TrainingOutput)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void TrainingOutput::MergeFrom(const TrainingOutput& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.TrainingOutput)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void TrainingOutput::UnsafeMergeFrom(const TrainingOutput& from) {
+  GOOGLE_DCHECK(&from != this);
   trials_.MergeFrom(from.trials_);
   if (from.completed_trial_count() != 0) {
     set_completed_trial_count(from.completed_trial_count());
@@ -3946,10 +4224,11 @@ void TrainingOutput::CopyFrom(const TrainingOutput& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.TrainingOutput)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool TrainingOutput::IsInitialized() const {
+
   return true;
 }
 
@@ -3958,20 +4237,24 @@ void TrainingOutput::Swap(TrainingOutput* other) {
   InternalSwap(other);
 }
 void TrainingOutput::InternalSwap(TrainingOutput* other) {
-  trials_.UnsafeArenaSwap(&other->trials_);
   std::swap(completed_trial_count_, other->completed_trial_count_);
+  trials_.UnsafeArenaSwap(&other->trials_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata TrainingOutput::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TrainingOutput_descriptor_;
+  metadata.reflection = TrainingOutput_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // TrainingOutput
 
-// int64 completed_trial_count = 1;
+// optional int64 completed_trial_count = 1;
 void TrainingOutput::clear_completed_trial_count() {
   completed_trial_count_ = GOOGLE_LONGLONG(0);
 }
@@ -4015,10 +4298,38 @@ TrainingOutput::trials() const {
   return trials_;
 }
 
+inline const TrainingOutput* TrainingOutput::internal_default_instance() {
+  return &TrainingOutput_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* PredictionInput_DataFormat_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return PredictionInput_DataFormat_descriptor_;
+}
+bool PredictionInput_DataFormat_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const PredictionInput_DataFormat PredictionInput::DATA_FORMAT_UNSPECIFIED;
+const PredictionInput_DataFormat PredictionInput::TEXT;
+const PredictionInput_DataFormat PredictionInput::TF_RECORD;
+const PredictionInput_DataFormat PredictionInput::TF_RECORD_GZIP;
+const PredictionInput_DataFormat PredictionInput::DataFormat_MIN;
+const PredictionInput_DataFormat PredictionInput::DataFormat_MAX;
+const int PredictionInput::DataFormat_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int PredictionInput::kModelNameFieldNumber;
 const int PredictionInput::kVersionNameFieldNumber;
@@ -4031,43 +4342,21 @@ const int PredictionInput::kRegionFieldNumber;
 
 PredictionInput::PredictionInput()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.PredictionInput)
 }
+
+void PredictionInput::InitAsDefaultInstance() {
+  PredictionInput_default_oneof_instance_->model_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  PredictionInput_default_oneof_instance_->version_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
 PredictionInput::PredictionInput(const PredictionInput& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      input_paths_(from.input_paths_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  output_path_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.output_path().size() > 0) {
-    output_path_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.output_path_);
-  }
-  region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.region().size() > 0) {
-    region_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.region_);
-  }
-  ::memcpy(&max_worker_count_, &from.max_worker_count_,
-    reinterpret_cast<char*>(&data_format_) -
-    reinterpret_cast<char*>(&max_worker_count_) + sizeof(data_format_));
-  clear_has_model_version();
-  switch (from.model_version_case()) {
-    case kModelName: {
-      set_model_name(from.model_name());
-      break;
-    }
-    case kVersionName: {
-      set_version_name(from.version_name());
-      break;
-    }
-    case MODEL_VERSION_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.PredictionInput)
 }
 
@@ -4100,13 +4389,15 @@ void PredictionInput::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* PredictionInput::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7].descriptor;
+  return PredictionInput_descriptor_;
 }
 
 const PredictionInput& PredictionInput::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<PredictionInput> PredictionInput_default_instance_;
 
 PredictionInput* PredictionInput::New(::google::protobuf::Arena* arena) const {
   PredictionInput* n = new PredictionInput;
@@ -4137,11 +4428,30 @@ void PredictionInput::clear_model_version() {
 
 void PredictionInput::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.ml.v1beta1.PredictionInput)
-  input_paths_.Clear();
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(PredictionInput, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<PredictionInput*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(max_worker_count_, data_format_);
   output_path_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&max_worker_count_, 0, reinterpret_cast<char*>(&data_format_) -
-    reinterpret_cast<char*>(&max_worker_count_) + sizeof(data_format_));
+
+#undef ZR_HELPER_
+#undef ZR_
+
+  input_paths_.Clear();
   clear_model_version();
 }
 
@@ -4151,13 +4461,13 @@ bool PredictionInput::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.ml.v1beta1.PredictionInput)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string model_name = 1;
+      // optional string model_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_model_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4167,12 +4477,13 @@ bool PredictionInput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        goto after_version_name;
         break;
       }
 
-      // string version_name = 2;
+      // optional string version_name = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_version_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4182,12 +4493,15 @@ bool PredictionInput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+       after_version_name:
+        if (input->ExpectTag(24)) goto parse_data_format;
         break;
       }
 
-      // .google.cloud.ml.v1beta1.PredictionInput.DataFormat data_format = 3;
+      // optional .google.cloud.ml.v1beta1.PredictionInput.DataFormat data_format = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_data_format:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -4196,12 +4510,14 @@ bool PredictionInput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_input_paths;
         break;
       }
 
       // repeated string input_paths = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_input_paths:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_input_paths()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4212,12 +4528,15 @@ bool PredictionInput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_input_paths;
+        if (input->ExpectTag(42)) goto parse_output_path;
         break;
       }
 
-      // string output_path = 5;
+      // optional string output_path = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_output_path:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_output_path()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4227,12 +4546,14 @@ bool PredictionInput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(48)) goto parse_max_worker_count;
         break;
       }
 
-      // int64 max_worker_count = 6;
+      // optional int64 max_worker_count = 6;
       case 6: {
-        if (tag == 48u) {
+        if (tag == 48) {
+         parse_max_worker_count:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -4240,12 +4561,14 @@ bool PredictionInput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(58)) goto parse_region;
         break;
       }
 
-      // string region = 7;
+      // optional string region = 7;
       case 7: {
-        if (tag == 58u) {
+        if (tag == 58) {
+         parse_region:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_region()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4255,6 +4578,7 @@ bool PredictionInput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4282,7 +4606,7 @@ failure:
 void PredictionInput::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.ml.v1beta1.PredictionInput)
-  // string model_name = 1;
+  // optional string model_name = 1;
   if (has_model_name()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->model_name().data(), this->model_name().length(),
@@ -4292,7 +4616,7 @@ void PredictionInput::SerializeWithCachedSizes(
       1, this->model_name(), output);
   }
 
-  // string version_name = 2;
+  // optional string version_name = 2;
   if (has_version_name()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->version_name().data(), this->version_name().length(),
@@ -4302,7 +4626,7 @@ void PredictionInput::SerializeWithCachedSizes(
       2, this->version_name(), output);
   }
 
-  // .google.cloud.ml.v1beta1.PredictionInput.DataFormat data_format = 3;
+  // optional .google.cloud.ml.v1beta1.PredictionInput.DataFormat data_format = 3;
   if (this->data_format() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       3, this->data_format(), output);
@@ -4318,7 +4642,7 @@ void PredictionInput::SerializeWithCachedSizes(
       4, this->input_paths(i), output);
   }
 
-  // string output_path = 5;
+  // optional string output_path = 5;
   if (this->output_path().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->output_path().data(), this->output_path().length(),
@@ -4328,12 +4652,12 @@ void PredictionInput::SerializeWithCachedSizes(
       5, this->output_path(), output);
   }
 
-  // int64 max_worker_count = 6;
+  // optional int64 max_worker_count = 6;
   if (this->max_worker_count() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(6, this->max_worker_count(), output);
   }
 
-  // string region = 7;
+  // optional string region = 7;
   if (this->region().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->region().data(), this->region().length(),
@@ -4350,7 +4674,7 @@ void PredictionInput::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.ml.v1beta1.PredictionInput)
-  // string model_name = 1;
+  // optional string model_name = 1;
   if (has_model_name()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->model_name().data(), this->model_name().length(),
@@ -4361,7 +4685,7 @@ void PredictionInput::SerializeWithCachedSizes(
         1, this->model_name(), target);
   }
 
-  // string version_name = 2;
+  // optional string version_name = 2;
   if (has_version_name()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->version_name().data(), this->version_name().length(),
@@ -4372,7 +4696,7 @@ void PredictionInput::SerializeWithCachedSizes(
         2, this->version_name(), target);
   }
 
-  // .google.cloud.ml.v1beta1.PredictionInput.DataFormat data_format = 3;
+  // optional .google.cloud.ml.v1beta1.PredictionInput.DataFormat data_format = 3;
   if (this->data_format() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       3, this->data_format(), target);
@@ -4388,7 +4712,7 @@ void PredictionInput::SerializeWithCachedSizes(
       WriteStringToArray(4, this->input_paths(i), target);
   }
 
-  // string output_path = 5;
+  // optional string output_path = 5;
   if (this->output_path().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->output_path().data(), this->output_path().length(),
@@ -4399,12 +4723,12 @@ void PredictionInput::SerializeWithCachedSizes(
         5, this->output_path(), target);
   }
 
-  // int64 max_worker_count = 6;
+  // optional int64 max_worker_count = 6;
   if (this->max_worker_count() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(6, this->max_worker_count(), target);
   }
 
-  // string region = 7;
+  // optional string region = 7;
   if (this->region().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->region().data(), this->region().length(),
@@ -4423,6 +4747,33 @@ size_t PredictionInput::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.PredictionInput)
   size_t total_size = 0;
 
+  // optional .google.cloud.ml.v1beta1.PredictionInput.DataFormat data_format = 3;
+  if (this->data_format() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->data_format());
+  }
+
+  // optional string output_path = 5;
+  if (this->output_path().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->output_path());
+  }
+
+  // optional int64 max_worker_count = 6;
+  if (this->max_worker_count() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->max_worker_count());
+  }
+
+  // optional string region = 7;
+  if (this->region().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->region());
+  }
+
   // repeated string input_paths = 4;
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->input_paths_size());
@@ -4431,42 +4782,15 @@ size_t PredictionInput::ByteSizeLong() const {
       this->input_paths(i));
   }
 
-  // string output_path = 5;
-  if (this->output_path().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->output_path());
-  }
-
-  // string region = 7;
-  if (this->region().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->region());
-  }
-
-  // int64 max_worker_count = 6;
-  if (this->max_worker_count() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->max_worker_count());
-  }
-
-  // .google.cloud.ml.v1beta1.PredictionInput.DataFormat data_format = 3;
-  if (this->data_format() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->data_format());
-  }
-
   switch (model_version_case()) {
-    // string model_name = 1;
+    // optional string model_name = 1;
     case kModelName: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->model_name());
       break;
     }
-    // string version_name = 2;
+    // optional string version_name = 2;
     case kVersionName: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -4486,7 +4810,7 @@ size_t PredictionInput::ByteSizeLong() const {
 
 void PredictionInput::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.PredictionInput)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const PredictionInput* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const PredictionInput>(
           &from);
@@ -4495,29 +4819,22 @@ void PredictionInput::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.PredictionInput)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void PredictionInput::MergeFrom(const PredictionInput& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.PredictionInput)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  input_paths_.MergeFrom(from.input_paths_);
-  if (from.output_path().size() > 0) {
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
 
-    output_path_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.output_path_);
-  }
-  if (from.region().size() > 0) {
-
-    region_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.region_);
-  }
-  if (from.max_worker_count() != 0) {
-    set_max_worker_count(from.max_worker_count());
-  }
-  if (from.data_format() != 0) {
-    set_data_format(from.data_format());
-  }
+void PredictionInput::UnsafeMergeFrom(const PredictionInput& from) {
+  GOOGLE_DCHECK(&from != this);
+  input_paths_.UnsafeMergeFrom(from.input_paths_);
   switch (from.model_version_case()) {
     case kModelName: {
       set_model_name(from.model_name());
@@ -4530,6 +4847,20 @@ void PredictionInput::MergeFrom(const PredictionInput& from) {
     case MODEL_VERSION_NOT_SET: {
       break;
     }
+  }
+  if (from.data_format() != 0) {
+    set_data_format(from.data_format());
+  }
+  if (from.output_path().size() > 0) {
+
+    output_path_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.output_path_);
+  }
+  if (from.max_worker_count() != 0) {
+    set_max_worker_count(from.max_worker_count());
+  }
+  if (from.region().size() > 0) {
+
+    region_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.region_);
   }
 }
 
@@ -4544,10 +4875,11 @@ void PredictionInput::CopyFrom(const PredictionInput& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.PredictionInput)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool PredictionInput::IsInitialized() const {
+
   return true;
 }
 
@@ -4556,25 +4888,29 @@ void PredictionInput::Swap(PredictionInput* other) {
   InternalSwap(other);
 }
 void PredictionInput::InternalSwap(PredictionInput* other) {
+  std::swap(data_format_, other->data_format_);
   input_paths_.UnsafeArenaSwap(&other->input_paths_);
   output_path_.Swap(&other->output_path_);
-  region_.Swap(&other->region_);
   std::swap(max_worker_count_, other->max_worker_count_);
-  std::swap(data_format_, other->data_format_);
+  region_.Swap(&other->region_);
   std::swap(model_version_, other->model_version_);
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata PredictionInput::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = PredictionInput_descriptor_;
+  metadata.reflection = PredictionInput_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // PredictionInput
 
-// string model_name = 1;
+// optional string model_name = 1;
 bool PredictionInput::has_model_name() const {
   return model_version_case() == kModelName;
 }
@@ -4590,7 +4926,7 @@ void PredictionInput::clear_model_name() {
 const ::std::string& PredictionInput::model_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.PredictionInput.model_name)
   if (has_model_name()) {
-    return model_version_.model_name_.GetNoArena();
+    return model_version_.model_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -4655,7 +4991,7 @@ void PredictionInput::set_allocated_model_name(::std::string* model_name) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.PredictionInput.model_name)
 }
 
-// string version_name = 2;
+// optional string version_name = 2;
 bool PredictionInput::has_version_name() const {
   return model_version_case() == kVersionName;
 }
@@ -4671,7 +5007,7 @@ void PredictionInput::clear_version_name() {
 const ::std::string& PredictionInput::version_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.PredictionInput.version_name)
   if (has_version_name()) {
-    return model_version_.version_name_.GetNoArena();
+    return model_version_.version_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -4736,7 +5072,7 @@ void PredictionInput::set_allocated_version_name(::std::string* version_name) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.PredictionInput.version_name)
 }
 
-// .google.cloud.ml.v1beta1.PredictionInput.DataFormat data_format = 3;
+// optional .google.cloud.ml.v1beta1.PredictionInput.DataFormat data_format = 3;
 void PredictionInput::clear_data_format() {
   data_format_ = 0;
 }
@@ -4805,13 +5141,13 @@ PredictionInput::mutable_input_paths() {
   return &input_paths_;
 }
 
-// string output_path = 5;
+// optional string output_path = 5;
 void PredictionInput::clear_output_path() {
   output_path_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& PredictionInput::output_path() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.PredictionInput.output_path)
-  return output_path_.GetNoArena();
+  return output_path_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void PredictionInput::set_output_path(const ::std::string& value) {
   
@@ -4849,7 +5185,7 @@ void PredictionInput::set_allocated_output_path(::std::string* output_path) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.PredictionInput.output_path)
 }
 
-// int64 max_worker_count = 6;
+// optional int64 max_worker_count = 6;
 void PredictionInput::clear_max_worker_count() {
   max_worker_count_ = GOOGLE_LONGLONG(0);
 }
@@ -4863,13 +5199,13 @@ void PredictionInput::set_max_worker_count(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.PredictionInput.max_worker_count)
 }
 
-// string region = 7;
+// optional string region = 7;
 void PredictionInput::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& PredictionInput::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.PredictionInput.region)
-  return region_.GetNoArena();
+  return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void PredictionInput::set_region(const ::std::string& value) {
   
@@ -4916,6 +5252,9 @@ void PredictionInput::clear_has_model_version() {
 PredictionInput::ModelVersionCase PredictionInput::model_version_case() const {
   return PredictionInput::ModelVersionCase(_oneof_case_[0]);
 }
+inline const PredictionInput* PredictionInput::internal_default_instance() {
+  return &PredictionInput_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4928,24 +5267,19 @@ const int PredictionOutput::kErrorCountFieldNumber;
 
 PredictionOutput::PredictionOutput()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.PredictionOutput)
 }
+
+void PredictionOutput::InitAsDefaultInstance() {
+}
+
 PredictionOutput::PredictionOutput(const PredictionOutput& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  output_path_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.output_path().size() > 0) {
-    output_path_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.output_path_);
-  }
-  ::memcpy(&prediction_count_, &from.prediction_count_,
-    reinterpret_cast<char*>(&error_count_) -
-    reinterpret_cast<char*>(&prediction_count_) + sizeof(error_count_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.PredictionOutput)
 }
 
@@ -4972,13 +5306,15 @@ void PredictionOutput::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* PredictionOutput::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8].descriptor;
+  return PredictionOutput_descriptor_;
 }
 
 const PredictionOutput& PredictionOutput::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<PredictionOutput> PredictionOutput_default_instance_;
 
 PredictionOutput* PredictionOutput::New(::google::protobuf::Arena* arena) const {
   PredictionOutput* n = new PredictionOutput;
@@ -4990,9 +5326,28 @@ PredictionOutput* PredictionOutput::New(::google::protobuf::Arena* arena) const 
 
 void PredictionOutput::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.ml.v1beta1.PredictionOutput)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(PredictionOutput, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<PredictionOutput*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(prediction_count_, error_count_);
   output_path_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&prediction_count_, 0, reinterpret_cast<char*>(&error_count_) -
-    reinterpret_cast<char*>(&prediction_count_) + sizeof(error_count_));
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool PredictionOutput::MergePartialFromCodedStream(
@@ -5001,13 +5356,13 @@ bool PredictionOutput::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.ml.v1beta1.PredictionOutput)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string output_path = 1;
+      // optional string output_path = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_output_path()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -5017,12 +5372,14 @@ bool PredictionOutput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_prediction_count;
         break;
       }
 
-      // int64 prediction_count = 2;
+      // optional int64 prediction_count = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_prediction_count:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -5030,12 +5387,14 @@ bool PredictionOutput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_error_count;
         break;
       }
 
-      // int64 error_count = 3;
+      // optional int64 error_count = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_error_count:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -5043,6 +5402,7 @@ bool PredictionOutput::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -5070,7 +5430,7 @@ failure:
 void PredictionOutput::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.ml.v1beta1.PredictionOutput)
-  // string output_path = 1;
+  // optional string output_path = 1;
   if (this->output_path().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->output_path().data(), this->output_path().length(),
@@ -5080,12 +5440,12 @@ void PredictionOutput::SerializeWithCachedSizes(
       1, this->output_path(), output);
   }
 
-  // int64 prediction_count = 2;
+  // optional int64 prediction_count = 2;
   if (this->prediction_count() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(2, this->prediction_count(), output);
   }
 
-  // int64 error_count = 3;
+  // optional int64 error_count = 3;
   if (this->error_count() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(3, this->error_count(), output);
   }
@@ -5097,7 +5457,7 @@ void PredictionOutput::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.ml.v1beta1.PredictionOutput)
-  // string output_path = 1;
+  // optional string output_path = 1;
   if (this->output_path().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->output_path().data(), this->output_path().length(),
@@ -5108,12 +5468,12 @@ void PredictionOutput::SerializeWithCachedSizes(
         1, this->output_path(), target);
   }
 
-  // int64 prediction_count = 2;
+  // optional int64 prediction_count = 2;
   if (this->prediction_count() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(2, this->prediction_count(), target);
   }
 
-  // int64 error_count = 3;
+  // optional int64 error_count = 3;
   if (this->error_count() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(3, this->error_count(), target);
   }
@@ -5126,21 +5486,21 @@ size_t PredictionOutput::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.PredictionOutput)
   size_t total_size = 0;
 
-  // string output_path = 1;
+  // optional string output_path = 1;
   if (this->output_path().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->output_path());
   }
 
-  // int64 prediction_count = 2;
+  // optional int64 prediction_count = 2;
   if (this->prediction_count() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->prediction_count());
   }
 
-  // int64 error_count = 3;
+  // optional int64 error_count = 3;
   if (this->error_count() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
@@ -5156,7 +5516,7 @@ size_t PredictionOutput::ByteSizeLong() const {
 
 void PredictionOutput::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.PredictionOutput)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const PredictionOutput* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const PredictionOutput>(
           &from);
@@ -5165,14 +5525,21 @@ void PredictionOutput::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.PredictionOutput)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void PredictionOutput::MergeFrom(const PredictionOutput& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.PredictionOutput)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void PredictionOutput::UnsafeMergeFrom(const PredictionOutput& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.output_path().size() > 0) {
 
     output_path_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.output_path_);
@@ -5196,10 +5563,11 @@ void PredictionOutput::CopyFrom(const PredictionOutput& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.PredictionOutput)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool PredictionOutput::IsInitialized() const {
+
   return true;
 }
 
@@ -5211,24 +5579,28 @@ void PredictionOutput::InternalSwap(PredictionOutput* other) {
   output_path_.Swap(&other->output_path_);
   std::swap(prediction_count_, other->prediction_count_);
   std::swap(error_count_, other->error_count_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata PredictionOutput::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = PredictionOutput_descriptor_;
+  metadata.reflection = PredictionOutput_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // PredictionOutput
 
-// string output_path = 1;
+// optional string output_path = 1;
 void PredictionOutput::clear_output_path() {
   output_path_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& PredictionOutput::output_path() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.PredictionOutput.output_path)
-  return output_path_.GetNoArena();
+  return output_path_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void PredictionOutput::set_output_path(const ::std::string& value) {
   
@@ -5266,7 +5638,7 @@ void PredictionOutput::set_allocated_output_path(::std::string* output_path) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.PredictionOutput.output_path)
 }
 
-// int64 prediction_count = 2;
+// optional int64 prediction_count = 2;
 void PredictionOutput::clear_prediction_count() {
   prediction_count_ = GOOGLE_LONGLONG(0);
 }
@@ -5280,7 +5652,7 @@ void PredictionOutput::set_prediction_count(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.PredictionOutput.prediction_count)
 }
 
-// int64 error_count = 3;
+// optional int64 error_count = 3;
 void PredictionOutput::clear_error_count() {
   error_count_ = GOOGLE_LONGLONG(0);
 }
@@ -5294,10 +5666,46 @@ void PredictionOutput::set_error_count(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.PredictionOutput.error_count)
 }
 
+inline const PredictionOutput* PredictionOutput::internal_default_instance() {
+  return &PredictionOutput_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* Job_State_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return Job_State_descriptor_;
+}
+bool Job_State_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const Job_State Job::STATE_UNSPECIFIED;
+const Job_State Job::QUEUED;
+const Job_State Job::PREPARING;
+const Job_State Job::RUNNING;
+const Job_State Job::SUCCEEDED;
+const Job_State Job::FAILED;
+const Job_State Job::CANCELLING;
+const Job_State Job::CANCELLED;
+const Job_State Job::State_MIN;
+const Job_State Job::State_MAX;
+const int Job::State_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Job::kJobIdFieldNumber;
 const int Job::kTrainingInputFieldNumber;
@@ -5313,77 +5721,43 @@ const int Job::kPredictionOutputFieldNumber;
 
 Job::Job()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.Job)
 }
+
+void Job::InitAsDefaultInstance() {
+  Job_default_oneof_instance_->training_input_ = const_cast< ::google::cloud::ml::v1beta1::TrainingInput*>(
+      ::google::cloud::ml::v1beta1::TrainingInput::internal_default_instance());
+  Job_default_oneof_instance_->prediction_input_ = const_cast< ::google::cloud::ml::v1beta1::PredictionInput*>(
+      ::google::cloud::ml::v1beta1::PredictionInput::internal_default_instance());
+  create_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  start_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  end_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  Job_default_oneof_instance_->training_output_ = const_cast< ::google::cloud::ml::v1beta1::TrainingOutput*>(
+      ::google::cloud::ml::v1beta1::TrainingOutput::internal_default_instance());
+  Job_default_oneof_instance_->prediction_output_ = const_cast< ::google::cloud::ml::v1beta1::PredictionOutput*>(
+      ::google::cloud::ml::v1beta1::PredictionOutput::internal_default_instance());
+}
+
 Job::Job(const Job& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  job_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.job_id().size() > 0) {
-    job_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.job_id_);
-  }
-  error_message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.error_message().size() > 0) {
-    error_message_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.error_message_);
-  }
-  if (from.has_create_time()) {
-    create_time_ = new ::google::protobuf::Timestamp(*from.create_time_);
-  } else {
-    create_time_ = NULL;
-  }
-  if (from.has_start_time()) {
-    start_time_ = new ::google::protobuf::Timestamp(*from.start_time_);
-  } else {
-    start_time_ = NULL;
-  }
-  if (from.has_end_time()) {
-    end_time_ = new ::google::protobuf::Timestamp(*from.end_time_);
-  } else {
-    end_time_ = NULL;
-  }
-  state_ = from.state_;
-  clear_has_input();
-  switch (from.input_case()) {
-    case kTrainingInput: {
-      mutable_training_input()->::google::cloud::ml::v1beta1::TrainingInput::MergeFrom(from.training_input());
-      break;
-    }
-    case kPredictionInput: {
-      mutable_prediction_input()->::google::cloud::ml::v1beta1::PredictionInput::MergeFrom(from.prediction_input());
-      break;
-    }
-    case INPUT_NOT_SET: {
-      break;
-    }
-  }
-  clear_has_output();
-  switch (from.output_case()) {
-    case kTrainingOutput: {
-      mutable_training_output()->::google::cloud::ml::v1beta1::TrainingOutput::MergeFrom(from.training_output());
-      break;
-    }
-    case kPredictionOutput: {
-      mutable_prediction_output()->::google::cloud::ml::v1beta1::PredictionOutput::MergeFrom(from.prediction_output());
-      break;
-    }
-    case OUTPUT_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.Job)
 }
 
 void Job::SharedCtor() {
   job_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   error_message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&create_time_, 0, reinterpret_cast<char*>(&state_) -
-    reinterpret_cast<char*>(&create_time_) + sizeof(state_));
+  create_time_ = NULL;
+  start_time_ = NULL;
+  end_time_ = NULL;
+  state_ = 0;
   clear_has_input();
   clear_has_output();
   _cached_size_ = 0;
@@ -5397,20 +5771,16 @@ Job::~Job() {
 void Job::SharedDtor() {
   job_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   error_message_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
-    delete create_time_;
-  }
-  if (this != internal_default_instance()) {
-    delete start_time_;
-  }
-  if (this != internal_default_instance()) {
-    delete end_time_;
-  }
   if (has_input()) {
     clear_input();
   }
   if (has_output()) {
     clear_output();
+  }
+  if (this != &Job_default_instance_.get()) {
+    delete create_time_;
+    delete start_time_;
+    delete end_time_;
   }
 }
 
@@ -5421,13 +5791,15 @@ void Job::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Job::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9].descriptor;
+  return Job_descriptor_;
 }
 
 const Job& Job::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Job> Job_default_instance_;
 
 Job* Job::New(::google::protobuf::Arena* arena) const {
   Job* n = new Job;
@@ -5477,20 +5849,14 @@ void Job::clear_output() {
 void Job::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.ml.v1beta1.Job)
   job_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  error_message_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && create_time_ != NULL) {
-    delete create_time_;
-  }
+  if (GetArenaNoVirtual() == NULL && create_time_ != NULL) delete create_time_;
   create_time_ = NULL;
-  if (GetArenaNoVirtual() == NULL && start_time_ != NULL) {
-    delete start_time_;
-  }
+  if (GetArenaNoVirtual() == NULL && start_time_ != NULL) delete start_time_;
   start_time_ = NULL;
-  if (GetArenaNoVirtual() == NULL && end_time_ != NULL) {
-    delete end_time_;
-  }
+  if (GetArenaNoVirtual() == NULL && end_time_ != NULL) delete end_time_;
   end_time_ = NULL;
   state_ = 0;
+  error_message_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_input();
   clear_output();
 }
@@ -5501,13 +5867,13 @@ bool Job::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.ml.v1beta1.Job)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string job_id = 1;
+      // optional string job_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_job_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -5517,67 +5883,79 @@ bool Job::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_training_input;
         break;
       }
 
-      // .google.cloud.ml.v1beta1.TrainingInput training_input = 2;
+      // optional .google.cloud.ml.v1beta1.TrainingInput training_input = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_training_input:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_training_input()));
         } else {
           goto handle_unusual;
         }
+        goto after_prediction_input;
         break;
       }
 
-      // .google.cloud.ml.v1beta1.PredictionInput prediction_input = 3;
+      // optional .google.cloud.ml.v1beta1.PredictionInput prediction_input = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_prediction_input()));
         } else {
           goto handle_unusual;
         }
+       after_prediction_input:
+        if (input->ExpectTag(34)) goto parse_create_time;
         break;
       }
 
-      // .google.protobuf.Timestamp create_time = 4;
+      // optional .google.protobuf.Timestamp create_time = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_create_time:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_create_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_start_time;
         break;
       }
 
-      // .google.protobuf.Timestamp start_time = 5;
+      // optional .google.protobuf.Timestamp start_time = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_start_time:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_start_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(50)) goto parse_end_time;
         break;
       }
 
-      // .google.protobuf.Timestamp end_time = 6;
+      // optional .google.protobuf.Timestamp end_time = 6;
       case 6: {
-        if (tag == 50u) {
+        if (tag == 50) {
+         parse_end_time:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_end_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(56)) goto parse_state;
         break;
       }
 
-      // .google.cloud.ml.v1beta1.Job.State state = 7;
+      // optional .google.cloud.ml.v1beta1.Job.State state = 7;
       case 7: {
-        if (tag == 56u) {
+        if (tag == 56) {
+         parse_state:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -5586,12 +5964,14 @@ bool Job::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(66)) goto parse_error_message;
         break;
       }
 
-      // string error_message = 8;
+      // optional string error_message = 8;
       case 8: {
-        if (tag == 66u) {
+        if (tag == 66) {
+         parse_error_message:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_error_message()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -5601,28 +5981,33 @@ bool Job::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(74)) goto parse_training_output;
         break;
       }
 
-      // .google.cloud.ml.v1beta1.TrainingOutput training_output = 9;
+      // optional .google.cloud.ml.v1beta1.TrainingOutput training_output = 9;
       case 9: {
-        if (tag == 74u) {
+        if (tag == 74) {
+         parse_training_output:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_training_output()));
         } else {
           goto handle_unusual;
         }
+        goto after_prediction_output;
         break;
       }
 
-      // .google.cloud.ml.v1beta1.PredictionOutput prediction_output = 10;
+      // optional .google.cloud.ml.v1beta1.PredictionOutput prediction_output = 10;
       case 10: {
-        if (tag == 82u) {
+        if (tag == 82) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_prediction_output()));
         } else {
           goto handle_unusual;
         }
+       after_prediction_output:
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -5650,7 +6035,7 @@ failure:
 void Job::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.ml.v1beta1.Job)
-  // string job_id = 1;
+  // optional string job_id = 1;
   if (this->job_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->job_id().data(), this->job_id().length(),
@@ -5660,43 +6045,43 @@ void Job::SerializeWithCachedSizes(
       1, this->job_id(), output);
   }
 
-  // .google.cloud.ml.v1beta1.TrainingInput training_input = 2;
+  // optional .google.cloud.ml.v1beta1.TrainingInput training_input = 2;
   if (has_training_input()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *input_.training_input_, output);
   }
 
-  // .google.cloud.ml.v1beta1.PredictionInput prediction_input = 3;
+  // optional .google.cloud.ml.v1beta1.PredictionInput prediction_input = 3;
   if (has_prediction_input()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *input_.prediction_input_, output);
   }
 
-  // .google.protobuf.Timestamp create_time = 4;
+  // optional .google.protobuf.Timestamp create_time = 4;
   if (this->has_create_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, *this->create_time_, output);
   }
 
-  // .google.protobuf.Timestamp start_time = 5;
+  // optional .google.protobuf.Timestamp start_time = 5;
   if (this->has_start_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       5, *this->start_time_, output);
   }
 
-  // .google.protobuf.Timestamp end_time = 6;
+  // optional .google.protobuf.Timestamp end_time = 6;
   if (this->has_end_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       6, *this->end_time_, output);
   }
 
-  // .google.cloud.ml.v1beta1.Job.State state = 7;
+  // optional .google.cloud.ml.v1beta1.Job.State state = 7;
   if (this->state() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       7, this->state(), output);
   }
 
-  // string error_message = 8;
+  // optional string error_message = 8;
   if (this->error_message().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->error_message().data(), this->error_message().length(),
@@ -5706,13 +6091,13 @@ void Job::SerializeWithCachedSizes(
       8, this->error_message(), output);
   }
 
-  // .google.cloud.ml.v1beta1.TrainingOutput training_output = 9;
+  // optional .google.cloud.ml.v1beta1.TrainingOutput training_output = 9;
   if (has_training_output()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       9, *output_.training_output_, output);
   }
 
-  // .google.cloud.ml.v1beta1.PredictionOutput prediction_output = 10;
+  // optional .google.cloud.ml.v1beta1.PredictionOutput prediction_output = 10;
   if (has_prediction_output()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       10, *output_.prediction_output_, output);
@@ -5725,7 +6110,7 @@ void Job::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.ml.v1beta1.Job)
-  // string job_id = 1;
+  // optional string job_id = 1;
   if (this->job_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->job_id().data(), this->job_id().length(),
@@ -5736,48 +6121,48 @@ void Job::SerializeWithCachedSizes(
         1, this->job_id(), target);
   }
 
-  // .google.cloud.ml.v1beta1.TrainingInput training_input = 2;
+  // optional .google.cloud.ml.v1beta1.TrainingInput training_input = 2;
   if (has_training_input()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *input_.training_input_, false, target);
   }
 
-  // .google.cloud.ml.v1beta1.PredictionInput prediction_input = 3;
+  // optional .google.cloud.ml.v1beta1.PredictionInput prediction_input = 3;
   if (has_prediction_input()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         3, *input_.prediction_input_, false, target);
   }
 
-  // .google.protobuf.Timestamp create_time = 4;
+  // optional .google.protobuf.Timestamp create_time = 4;
   if (this->has_create_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         4, *this->create_time_, false, target);
   }
 
-  // .google.protobuf.Timestamp start_time = 5;
+  // optional .google.protobuf.Timestamp start_time = 5;
   if (this->has_start_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         5, *this->start_time_, false, target);
   }
 
-  // .google.protobuf.Timestamp end_time = 6;
+  // optional .google.protobuf.Timestamp end_time = 6;
   if (this->has_end_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         6, *this->end_time_, false, target);
   }
 
-  // .google.cloud.ml.v1beta1.Job.State state = 7;
+  // optional .google.cloud.ml.v1beta1.Job.State state = 7;
   if (this->state() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       7, this->state(), target);
   }
 
-  // string error_message = 8;
+  // optional string error_message = 8;
   if (this->error_message().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->error_message().data(), this->error_message().length(),
@@ -5788,14 +6173,14 @@ void Job::SerializeWithCachedSizes(
         8, this->error_message(), target);
   }
 
-  // .google.cloud.ml.v1beta1.TrainingOutput training_output = 9;
+  // optional .google.cloud.ml.v1beta1.TrainingOutput training_output = 9;
   if (has_training_output()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         9, *output_.training_output_, false, target);
   }
 
-  // .google.cloud.ml.v1beta1.PredictionOutput prediction_output = 10;
+  // optional .google.cloud.ml.v1beta1.PredictionOutput prediction_output = 10;
   if (has_prediction_output()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -5810,56 +6195,56 @@ size_t Job::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.Job)
   size_t total_size = 0;
 
-  // string job_id = 1;
+  // optional string job_id = 1;
   if (this->job_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->job_id());
   }
 
-  // string error_message = 8;
-  if (this->error_message().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->error_message());
-  }
-
-  // .google.protobuf.Timestamp create_time = 4;
+  // optional .google.protobuf.Timestamp create_time = 4;
   if (this->has_create_time()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->create_time_);
   }
 
-  // .google.protobuf.Timestamp start_time = 5;
+  // optional .google.protobuf.Timestamp start_time = 5;
   if (this->has_start_time()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->start_time_);
   }
 
-  // .google.protobuf.Timestamp end_time = 6;
+  // optional .google.protobuf.Timestamp end_time = 6;
   if (this->has_end_time()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->end_time_);
   }
 
-  // .google.cloud.ml.v1beta1.Job.State state = 7;
+  // optional .google.cloud.ml.v1beta1.Job.State state = 7;
   if (this->state() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->state());
   }
 
+  // optional string error_message = 8;
+  if (this->error_message().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->error_message());
+  }
+
   switch (input_case()) {
-    // .google.cloud.ml.v1beta1.TrainingInput training_input = 2;
+    // optional .google.cloud.ml.v1beta1.TrainingInput training_input = 2;
     case kTrainingInput: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *input_.training_input_);
       break;
     }
-    // .google.cloud.ml.v1beta1.PredictionInput prediction_input = 3;
+    // optional .google.cloud.ml.v1beta1.PredictionInput prediction_input = 3;
     case kPredictionInput: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -5871,14 +6256,14 @@ size_t Job::ByteSizeLong() const {
     }
   }
   switch (output_case()) {
-    // .google.cloud.ml.v1beta1.TrainingOutput training_output = 9;
+    // optional .google.cloud.ml.v1beta1.TrainingOutput training_output = 9;
     case kTrainingOutput: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *output_.training_output_);
       break;
     }
-    // .google.cloud.ml.v1beta1.PredictionOutput prediction_output = 10;
+    // optional .google.cloud.ml.v1beta1.PredictionOutput prediction_output = 10;
     case kPredictionOutput: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -5898,7 +6283,7 @@ size_t Job::ByteSizeLong() const {
 
 void Job::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.Job)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Job* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Job>(
           &from);
@@ -5907,34 +6292,21 @@ void Job::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.Job)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Job::MergeFrom(const Job& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.Job)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.job_id().size() > 0) {
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
 
-    job_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.job_id_);
-  }
-  if (from.error_message().size() > 0) {
-
-    error_message_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.error_message_);
-  }
-  if (from.has_create_time()) {
-    mutable_create_time()->::google::protobuf::Timestamp::MergeFrom(from.create_time());
-  }
-  if (from.has_start_time()) {
-    mutable_start_time()->::google::protobuf::Timestamp::MergeFrom(from.start_time());
-  }
-  if (from.has_end_time()) {
-    mutable_end_time()->::google::protobuf::Timestamp::MergeFrom(from.end_time());
-  }
-  if (from.state() != 0) {
-    set_state(from.state());
-  }
+void Job::UnsafeMergeFrom(const Job& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.input_case()) {
     case kTrainingInput: {
       mutable_training_input()->::google::cloud::ml::v1beta1::TrainingInput::MergeFrom(from.training_input());
@@ -5961,6 +6333,26 @@ void Job::MergeFrom(const Job& from) {
       break;
     }
   }
+  if (from.job_id().size() > 0) {
+
+    job_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.job_id_);
+  }
+  if (from.has_create_time()) {
+    mutable_create_time()->::google::protobuf::Timestamp::MergeFrom(from.create_time());
+  }
+  if (from.has_start_time()) {
+    mutable_start_time()->::google::protobuf::Timestamp::MergeFrom(from.start_time());
+  }
+  if (from.has_end_time()) {
+    mutable_end_time()->::google::protobuf::Timestamp::MergeFrom(from.end_time());
+  }
+  if (from.state() != 0) {
+    set_state(from.state());
+  }
+  if (from.error_message().size() > 0) {
+
+    error_message_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.error_message_);
+  }
 }
 
 void Job::CopyFrom(const ::google::protobuf::Message& from) {
@@ -5974,10 +6366,11 @@ void Job::CopyFrom(const Job& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.Job)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Job::IsInitialized() const {
+
   return true;
 }
 
@@ -5987,33 +6380,37 @@ void Job::Swap(Job* other) {
 }
 void Job::InternalSwap(Job* other) {
   job_id_.Swap(&other->job_id_);
-  error_message_.Swap(&other->error_message_);
   std::swap(create_time_, other->create_time_);
   std::swap(start_time_, other->start_time_);
   std::swap(end_time_, other->end_time_);
   std::swap(state_, other->state_);
+  error_message_.Swap(&other->error_message_);
   std::swap(input_, other->input_);
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
   std::swap(output_, other->output_);
   std::swap(_oneof_case_[1], other->_oneof_case_[1]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Job::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Job_descriptor_;
+  metadata.reflection = Job_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Job
 
-// string job_id = 1;
+// optional string job_id = 1;
 void Job::clear_job_id() {
   job_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Job::job_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.Job.job_id)
-  return job_id_.GetNoArena();
+  return job_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Job::set_job_id(const ::std::string& value) {
   
@@ -6051,7 +6448,7 @@ void Job::set_allocated_job_id(::std::string* job_id) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.Job.job_id)
 }
 
-// .google.cloud.ml.v1beta1.TrainingInput training_input = 2;
+// optional .google.cloud.ml.v1beta1.TrainingInput training_input = 2;
 bool Job::has_training_input() const {
   return input_case() == kTrainingInput;
 }
@@ -6099,7 +6496,7 @@ void Job::set_allocated_training_input(::google::cloud::ml::v1beta1::TrainingInp
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.Job.training_input)
 }
 
-// .google.cloud.ml.v1beta1.PredictionInput prediction_input = 3;
+// optional .google.cloud.ml.v1beta1.PredictionInput prediction_input = 3;
 bool Job::has_prediction_input() const {
   return input_case() == kPredictionInput;
 }
@@ -6147,7 +6544,7 @@ void Job::set_allocated_prediction_input(::google::cloud::ml::v1beta1::Predictio
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.Job.prediction_input)
 }
 
-// .google.protobuf.Timestamp create_time = 4;
+// optional .google.protobuf.Timestamp create_time = 4;
 bool Job::has_create_time() const {
   return this != internal_default_instance() && create_time_ != NULL;
 }
@@ -6191,7 +6588,7 @@ void Job::set_allocated_create_time(::google::protobuf::Timestamp* create_time) 
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.Job.create_time)
 }
 
-// .google.protobuf.Timestamp start_time = 5;
+// optional .google.protobuf.Timestamp start_time = 5;
 bool Job::has_start_time() const {
   return this != internal_default_instance() && start_time_ != NULL;
 }
@@ -6235,7 +6632,7 @@ void Job::set_allocated_start_time(::google::protobuf::Timestamp* start_time) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.Job.start_time)
 }
 
-// .google.protobuf.Timestamp end_time = 6;
+// optional .google.protobuf.Timestamp end_time = 6;
 bool Job::has_end_time() const {
   return this != internal_default_instance() && end_time_ != NULL;
 }
@@ -6279,7 +6676,7 @@ void Job::set_allocated_end_time(::google::protobuf::Timestamp* end_time) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.Job.end_time)
 }
 
-// .google.cloud.ml.v1beta1.Job.State state = 7;
+// optional .google.cloud.ml.v1beta1.Job.State state = 7;
 void Job::clear_state() {
   state_ = 0;
 }
@@ -6293,13 +6690,13 @@ void Job::set_state(::google::cloud::ml::v1beta1::Job_State value) {
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.Job.state)
 }
 
-// string error_message = 8;
+// optional string error_message = 8;
 void Job::clear_error_message() {
   error_message_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Job::error_message() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.Job.error_message)
-  return error_message_.GetNoArena();
+  return error_message_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Job::set_error_message(const ::std::string& value) {
   
@@ -6337,7 +6734,7 @@ void Job::set_allocated_error_message(::std::string* error_message) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.Job.error_message)
 }
 
-// .google.cloud.ml.v1beta1.TrainingOutput training_output = 9;
+// optional .google.cloud.ml.v1beta1.TrainingOutput training_output = 9;
 bool Job::has_training_output() const {
   return output_case() == kTrainingOutput;
 }
@@ -6385,7 +6782,7 @@ void Job::set_allocated_training_output(::google::cloud::ml::v1beta1::TrainingOu
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.Job.training_output)
 }
 
-// .google.cloud.ml.v1beta1.PredictionOutput prediction_output = 10;
+// optional .google.cloud.ml.v1beta1.PredictionOutput prediction_output = 10;
 bool Job::has_prediction_output() const {
   return output_case() == kPredictionOutput;
 }
@@ -6451,6 +6848,9 @@ Job::InputCase Job::input_case() const {
 Job::OutputCase Job::output_case() const {
   return Job::OutputCase(_oneof_case_[1]);
 }
+inline const Job* Job::internal_default_instance() {
+  return &Job_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6462,26 +6862,21 @@ const int CreateJobRequest::kJobFieldNumber;
 
 CreateJobRequest::CreateJobRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.CreateJobRequest)
 }
+
+void CreateJobRequest::InitAsDefaultInstance() {
+  job_ = const_cast< ::google::cloud::ml::v1beta1::Job*>(
+      ::google::cloud::ml::v1beta1::Job::internal_default_instance());
+}
+
 CreateJobRequest::CreateJobRequest(const CreateJobRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  parent_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.parent().size() > 0) {
-    parent_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parent_);
-  }
-  if (from.has_job()) {
-    job_ = new ::google::cloud::ml::v1beta1::Job(*from.job_);
-  } else {
-    job_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.CreateJobRequest)
 }
 
@@ -6498,7 +6893,7 @@ CreateJobRequest::~CreateJobRequest() {
 
 void CreateJobRequest::SharedDtor() {
   parent_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &CreateJobRequest_default_instance_.get()) {
     delete job_;
   }
 }
@@ -6510,13 +6905,15 @@ void CreateJobRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* CreateJobRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10].descriptor;
+  return CreateJobRequest_descriptor_;
 }
 
 const CreateJobRequest& CreateJobRequest::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<CreateJobRequest> CreateJobRequest_default_instance_;
 
 CreateJobRequest* CreateJobRequest::New(::google::protobuf::Arena* arena) const {
   CreateJobRequest* n = new CreateJobRequest;
@@ -6529,9 +6926,7 @@ CreateJobRequest* CreateJobRequest::New(::google::protobuf::Arena* arena) const 
 void CreateJobRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.ml.v1beta1.CreateJobRequest)
   parent_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && job_ != NULL) {
-    delete job_;
-  }
+  if (GetArenaNoVirtual() == NULL && job_ != NULL) delete job_;
   job_ = NULL;
 }
 
@@ -6541,13 +6936,13 @@ bool CreateJobRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.ml.v1beta1.CreateJobRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string parent = 1;
+      // optional string parent = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_parent()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -6557,17 +6952,20 @@ bool CreateJobRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_job;
         break;
       }
 
-      // .google.cloud.ml.v1beta1.Job job = 2;
+      // optional .google.cloud.ml.v1beta1.Job job = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_job:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_job()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -6595,7 +6993,7 @@ failure:
 void CreateJobRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.ml.v1beta1.CreateJobRequest)
-  // string parent = 1;
+  // optional string parent = 1;
   if (this->parent().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->parent().data(), this->parent().length(),
@@ -6605,7 +7003,7 @@ void CreateJobRequest::SerializeWithCachedSizes(
       1, this->parent(), output);
   }
 
-  // .google.cloud.ml.v1beta1.Job job = 2;
+  // optional .google.cloud.ml.v1beta1.Job job = 2;
   if (this->has_job()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->job_, output);
@@ -6618,7 +7016,7 @@ void CreateJobRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.ml.v1beta1.CreateJobRequest)
-  // string parent = 1;
+  // optional string parent = 1;
   if (this->parent().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->parent().data(), this->parent().length(),
@@ -6629,7 +7027,7 @@ void CreateJobRequest::SerializeWithCachedSizes(
         1, this->parent(), target);
   }
 
-  // .google.cloud.ml.v1beta1.Job job = 2;
+  // optional .google.cloud.ml.v1beta1.Job job = 2;
   if (this->has_job()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -6644,14 +7042,14 @@ size_t CreateJobRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.CreateJobRequest)
   size_t total_size = 0;
 
-  // string parent = 1;
+  // optional string parent = 1;
   if (this->parent().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->parent());
   }
 
-  // .google.cloud.ml.v1beta1.Job job = 2;
+  // optional .google.cloud.ml.v1beta1.Job job = 2;
   if (this->has_job()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -6667,7 +7065,7 @@ size_t CreateJobRequest::ByteSizeLong() const {
 
 void CreateJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.CreateJobRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const CreateJobRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CreateJobRequest>(
           &from);
@@ -6676,14 +7074,21 @@ void CreateJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.CreateJobRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CreateJobRequest::MergeFrom(const CreateJobRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.CreateJobRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void CreateJobRequest::UnsafeMergeFrom(const CreateJobRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.parent().size() > 0) {
 
     parent_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parent_);
@@ -6704,10 +7109,11 @@ void CreateJobRequest::CopyFrom(const CreateJobRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.CreateJobRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CreateJobRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -6718,24 +7124,28 @@ void CreateJobRequest::Swap(CreateJobRequest* other) {
 void CreateJobRequest::InternalSwap(CreateJobRequest* other) {
   parent_.Swap(&other->parent_);
   std::swap(job_, other->job_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CreateJobRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CreateJobRequest_descriptor_;
+  metadata.reflection = CreateJobRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // CreateJobRequest
 
-// string parent = 1;
+// optional string parent = 1;
 void CreateJobRequest::clear_parent() {
   parent_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& CreateJobRequest::parent() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.CreateJobRequest.parent)
-  return parent_.GetNoArena();
+  return parent_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void CreateJobRequest::set_parent(const ::std::string& value) {
   
@@ -6773,7 +7183,7 @@ void CreateJobRequest::set_allocated_parent(::std::string* parent) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.CreateJobRequest.parent)
 }
 
-// .google.cloud.ml.v1beta1.Job job = 2;
+// optional .google.cloud.ml.v1beta1.Job job = 2;
 bool CreateJobRequest::has_job() const {
   return this != internal_default_instance() && job_ != NULL;
 }
@@ -6812,6 +7222,9 @@ void CreateJobRequest::set_allocated_job(::google::cloud::ml::v1beta1::Job* job)
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.CreateJobRequest.job)
 }
 
+inline const CreateJobRequest* CreateJobRequest::internal_default_instance() {
+  return &CreateJobRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6825,30 +7238,19 @@ const int ListJobsRequest::kPageSizeFieldNumber;
 
 ListJobsRequest::ListJobsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.ListJobsRequest)
 }
+
+void ListJobsRequest::InitAsDefaultInstance() {
+}
+
 ListJobsRequest::ListJobsRequest(const ListJobsRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  parent_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.parent().size() > 0) {
-    parent_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parent_);
-  }
-  filter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.filter().size() > 0) {
-    filter_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.filter_);
-  }
-  page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.page_token().size() > 0) {
-    page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
-  }
-  page_size_ = from.page_size_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.ListJobsRequest)
 }
 
@@ -6878,13 +7280,15 @@ void ListJobsRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListJobsRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11].descriptor;
+  return ListJobsRequest_descriptor_;
 }
 
 const ListJobsRequest& ListJobsRequest::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListJobsRequest> ListJobsRequest_default_instance_;
 
 ListJobsRequest* ListJobsRequest::New(::google::protobuf::Arena* arena) const {
   ListJobsRequest* n = new ListJobsRequest;
@@ -6908,13 +7312,13 @@ bool ListJobsRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.ml.v1beta1.ListJobsRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string parent = 1;
+      // optional string parent = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_parent()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -6924,12 +7328,14 @@ bool ListJobsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_filter;
         break;
       }
 
-      // string filter = 2;
+      // optional string filter = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_filter:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_filter()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -6939,12 +7345,14 @@ bool ListJobsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_page_token;
         break;
       }
 
-      // string page_token = 4;
+      // optional string page_token = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -6954,12 +7362,14 @@ bool ListJobsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(40)) goto parse_page_size;
         break;
       }
 
-      // int32 page_size = 5;
+      // optional int32 page_size = 5;
       case 5: {
-        if (tag == 40u) {
+        if (tag == 40) {
+         parse_page_size:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -6967,6 +7377,7 @@ bool ListJobsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -6994,7 +7405,7 @@ failure:
 void ListJobsRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.ml.v1beta1.ListJobsRequest)
-  // string parent = 1;
+  // optional string parent = 1;
   if (this->parent().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->parent().data(), this->parent().length(),
@@ -7004,7 +7415,7 @@ void ListJobsRequest::SerializeWithCachedSizes(
       1, this->parent(), output);
   }
 
-  // string filter = 2;
+  // optional string filter = 2;
   if (this->filter().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->filter().data(), this->filter().length(),
@@ -7014,7 +7425,7 @@ void ListJobsRequest::SerializeWithCachedSizes(
       2, this->filter(), output);
   }
 
-  // string page_token = 4;
+  // optional string page_token = 4;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -7024,7 +7435,7 @@ void ListJobsRequest::SerializeWithCachedSizes(
       4, this->page_token(), output);
   }
 
-  // int32 page_size = 5;
+  // optional int32 page_size = 5;
   if (this->page_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(5, this->page_size(), output);
   }
@@ -7036,7 +7447,7 @@ void ListJobsRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.ml.v1beta1.ListJobsRequest)
-  // string parent = 1;
+  // optional string parent = 1;
   if (this->parent().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->parent().data(), this->parent().length(),
@@ -7047,7 +7458,7 @@ void ListJobsRequest::SerializeWithCachedSizes(
         1, this->parent(), target);
   }
 
-  // string filter = 2;
+  // optional string filter = 2;
   if (this->filter().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->filter().data(), this->filter().length(),
@@ -7058,7 +7469,7 @@ void ListJobsRequest::SerializeWithCachedSizes(
         2, this->filter(), target);
   }
 
-  // string page_token = 4;
+  // optional string page_token = 4;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -7069,7 +7480,7 @@ void ListJobsRequest::SerializeWithCachedSizes(
         4, this->page_token(), target);
   }
 
-  // int32 page_size = 5;
+  // optional int32 page_size = 5;
   if (this->page_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(5, this->page_size(), target);
   }
@@ -7082,28 +7493,28 @@ size_t ListJobsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.ListJobsRequest)
   size_t total_size = 0;
 
-  // string parent = 1;
+  // optional string parent = 1;
   if (this->parent().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->parent());
   }
 
-  // string filter = 2;
+  // optional string filter = 2;
   if (this->filter().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->filter());
   }
 
-  // string page_token = 4;
+  // optional string page_token = 4;
   if (this->page_token().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->page_token());
   }
 
-  // int32 page_size = 5;
+  // optional int32 page_size = 5;
   if (this->page_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
@@ -7119,7 +7530,7 @@ size_t ListJobsRequest::ByteSizeLong() const {
 
 void ListJobsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.ListJobsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListJobsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListJobsRequest>(
           &from);
@@ -7128,14 +7539,21 @@ void ListJobsRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.ListJobsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListJobsRequest::MergeFrom(const ListJobsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.ListJobsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListJobsRequest::UnsafeMergeFrom(const ListJobsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.parent().size() > 0) {
 
     parent_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parent_);
@@ -7164,10 +7582,11 @@ void ListJobsRequest::CopyFrom(const ListJobsRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.ListJobsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListJobsRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -7180,24 +7599,28 @@ void ListJobsRequest::InternalSwap(ListJobsRequest* other) {
   filter_.Swap(&other->filter_);
   page_token_.Swap(&other->page_token_);
   std::swap(page_size_, other->page_size_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListJobsRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListJobsRequest_descriptor_;
+  metadata.reflection = ListJobsRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ListJobsRequest
 
-// string parent = 1;
+// optional string parent = 1;
 void ListJobsRequest::clear_parent() {
   parent_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListJobsRequest::parent() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.ListJobsRequest.parent)
-  return parent_.GetNoArena();
+  return parent_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListJobsRequest::set_parent(const ::std::string& value) {
   
@@ -7235,13 +7658,13 @@ void ListJobsRequest::set_allocated_parent(::std::string* parent) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.ListJobsRequest.parent)
 }
 
-// string filter = 2;
+// optional string filter = 2;
 void ListJobsRequest::clear_filter() {
   filter_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListJobsRequest::filter() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.ListJobsRequest.filter)
-  return filter_.GetNoArena();
+  return filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListJobsRequest::set_filter(const ::std::string& value) {
   
@@ -7279,13 +7702,13 @@ void ListJobsRequest::set_allocated_filter(::std::string* filter) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.ListJobsRequest.filter)
 }
 
-// string page_token = 4;
+// optional string page_token = 4;
 void ListJobsRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListJobsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.ListJobsRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListJobsRequest::set_page_token(const ::std::string& value) {
   
@@ -7323,7 +7746,7 @@ void ListJobsRequest::set_allocated_page_token(::std::string* page_token) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.ListJobsRequest.page_token)
 }
 
-// int32 page_size = 5;
+// optional int32 page_size = 5;
 void ListJobsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -7337,6 +7760,9 @@ void ListJobsRequest::set_page_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.ListJobsRequest.page_size)
 }
 
+inline const ListJobsRequest* ListJobsRequest::internal_default_instance() {
+  return &ListJobsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7348,22 +7774,19 @@ const int ListJobsResponse::kNextPageTokenFieldNumber;
 
 ListJobsResponse::ListJobsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.ListJobsResponse)
 }
+
+void ListJobsResponse::InitAsDefaultInstance() {
+}
+
 ListJobsResponse::ListJobsResponse(const ListJobsResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      jobs_(from.jobs_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_page_token().size() > 0) {
-    next_page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_page_token_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.ListJobsResponse)
 }
 
@@ -7388,13 +7811,15 @@ void ListJobsResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListJobsResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[12].descriptor;
+  return ListJobsResponse_descriptor_;
 }
 
 const ListJobsResponse& ListJobsResponse::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListJobsResponse> ListJobsResponse_default_instance_;
 
 ListJobsResponse* ListJobsResponse::New(::google::protobuf::Arena* arena) const {
   ListJobsResponse* n = new ListJobsResponse;
@@ -7406,8 +7831,8 @@ ListJobsResponse* ListJobsResponse::New(::google::protobuf::Arena* arena) const 
 
 void ListJobsResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.ml.v1beta1.ListJobsResponse)
-  jobs_.Clear();
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  jobs_.Clear();
 }
 
 bool ListJobsResponse::MergePartialFromCodedStream(
@@ -7416,26 +7841,30 @@ bool ListJobsResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.ml.v1beta1.ListJobsResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.cloud.ml.v1beta1.Job jobs = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_jobs:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_jobs()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_jobs;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_next_page_token;
         break;
       }
 
-      // string next_page_token = 2;
+      // optional string next_page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_next_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -7445,6 +7874,7 @@ bool ListJobsResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -7478,7 +7908,7 @@ void ListJobsResponse::SerializeWithCachedSizes(
       1, this->jobs(i), output);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -7502,7 +7932,7 @@ void ListJobsResponse::SerializeWithCachedSizes(
         1, this->jobs(i), false, target);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -7521,6 +7951,13 @@ size_t ListJobsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.ListJobsResponse)
   size_t total_size = 0;
 
+  // optional string next_page_token = 2;
+  if (this->next_page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_page_token());
+  }
+
   // repeated .google.cloud.ml.v1beta1.Job jobs = 1;
   {
     unsigned int count = this->jobs_size();
@@ -7532,13 +7969,6 @@ size_t ListJobsResponse::ByteSizeLong() const {
     }
   }
 
-  // string next_page_token = 2;
-  if (this->next_page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_page_token());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -7548,7 +7978,7 @@ size_t ListJobsResponse::ByteSizeLong() const {
 
 void ListJobsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.ListJobsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListJobsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListJobsResponse>(
           &from);
@@ -7557,14 +7987,21 @@ void ListJobsResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.ListJobsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListJobsResponse::MergeFrom(const ListJobsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.ListJobsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListJobsResponse::UnsafeMergeFrom(const ListJobsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   jobs_.MergeFrom(from.jobs_);
   if (from.next_page_token().size() > 0) {
 
@@ -7583,10 +8020,11 @@ void ListJobsResponse::CopyFrom(const ListJobsResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.ListJobsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListJobsResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -7597,12 +8035,16 @@ void ListJobsResponse::Swap(ListJobsResponse* other) {
 void ListJobsResponse::InternalSwap(ListJobsResponse* other) {
   jobs_.UnsafeArenaSwap(&other->jobs_);
   next_page_token_.Swap(&other->next_page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListJobsResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[12];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListJobsResponse_descriptor_;
+  metadata.reflection = ListJobsResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -7638,13 +8080,13 @@ ListJobsResponse::jobs() const {
   return jobs_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 void ListJobsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListJobsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.ListJobsResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListJobsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -7682,6 +8124,9 @@ void ListJobsResponse::set_allocated_next_page_token(::std::string* next_page_to
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.ListJobsResponse.next_page_token)
 }
 
+inline const ListJobsResponse* ListJobsResponse::internal_default_instance() {
+  return &ListJobsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7692,21 +8137,19 @@ const int GetJobRequest::kNameFieldNumber;
 
 GetJobRequest::GetJobRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.GetJobRequest)
 }
+
+void GetJobRequest::InitAsDefaultInstance() {
+}
+
 GetJobRequest::GetJobRequest(const GetJobRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.GetJobRequest)
 }
 
@@ -7731,13 +8174,15 @@ void GetJobRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GetJobRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[13].descriptor;
+  return GetJobRequest_descriptor_;
 }
 
 const GetJobRequest& GetJobRequest::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GetJobRequest> GetJobRequest_default_instance_;
 
 GetJobRequest* GetJobRequest::New(::google::protobuf::Arena* arena) const {
   GetJobRequest* n = new GetJobRequest;
@@ -7758,13 +8203,13 @@ bool GetJobRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.ml.v1beta1.GetJobRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -7774,6 +8219,7 @@ bool GetJobRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -7801,7 +8247,7 @@ failure:
 void GetJobRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.ml.v1beta1.GetJobRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -7818,7 +8264,7 @@ void GetJobRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.ml.v1beta1.GetJobRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -7837,7 +8283,7 @@ size_t GetJobRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.GetJobRequest)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -7853,7 +8299,7 @@ size_t GetJobRequest::ByteSizeLong() const {
 
 void GetJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.GetJobRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GetJobRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetJobRequest>(
           &from);
@@ -7862,14 +8308,21 @@ void GetJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.GetJobRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetJobRequest::MergeFrom(const GetJobRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.GetJobRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GetJobRequest::UnsafeMergeFrom(const GetJobRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -7887,10 +8340,11 @@ void GetJobRequest::CopyFrom(const GetJobRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.GetJobRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetJobRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -7900,24 +8354,28 @@ void GetJobRequest::Swap(GetJobRequest* other) {
 }
 void GetJobRequest::InternalSwap(GetJobRequest* other) {
   name_.Swap(&other->name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GetJobRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[13];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GetJobRequest_descriptor_;
+  metadata.reflection = GetJobRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GetJobRequest
 
-// string name = 1;
+// optional string name = 1;
 void GetJobRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GetJobRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.GetJobRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GetJobRequest::set_name(const ::std::string& value) {
   
@@ -7955,6 +8413,9 @@ void GetJobRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.GetJobRequest.name)
 }
 
+inline const GetJobRequest* GetJobRequest::internal_default_instance() {
+  return &GetJobRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7965,21 +8426,19 @@ const int CancelJobRequest::kNameFieldNumber;
 
 CancelJobRequest::CancelJobRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.CancelJobRequest)
 }
+
+void CancelJobRequest::InitAsDefaultInstance() {
+}
+
 CancelJobRequest::CancelJobRequest(const CancelJobRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.CancelJobRequest)
 }
 
@@ -8004,13 +8463,15 @@ void CancelJobRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* CancelJobRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[14].descriptor;
+  return CancelJobRequest_descriptor_;
 }
 
 const CancelJobRequest& CancelJobRequest::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fjob_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<CancelJobRequest> CancelJobRequest_default_instance_;
 
 CancelJobRequest* CancelJobRequest::New(::google::protobuf::Arena* arena) const {
   CancelJobRequest* n = new CancelJobRequest;
@@ -8031,13 +8492,13 @@ bool CancelJobRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.ml.v1beta1.CancelJobRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -8047,6 +8508,7 @@ bool CancelJobRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -8074,7 +8536,7 @@ failure:
 void CancelJobRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.ml.v1beta1.CancelJobRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -8091,7 +8553,7 @@ void CancelJobRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.ml.v1beta1.CancelJobRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -8110,7 +8572,7 @@ size_t CancelJobRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.CancelJobRequest)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -8126,7 +8588,7 @@ size_t CancelJobRequest::ByteSizeLong() const {
 
 void CancelJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.CancelJobRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const CancelJobRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CancelJobRequest>(
           &from);
@@ -8135,14 +8597,21 @@ void CancelJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.CancelJobRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CancelJobRequest::MergeFrom(const CancelJobRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.CancelJobRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void CancelJobRequest::UnsafeMergeFrom(const CancelJobRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -8160,10 +8629,11 @@ void CancelJobRequest::CopyFrom(const CancelJobRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.CancelJobRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CancelJobRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -8173,24 +8643,28 @@ void CancelJobRequest::Swap(CancelJobRequest* other) {
 }
 void CancelJobRequest::InternalSwap(CancelJobRequest* other) {
   name_.Swap(&other->name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CancelJobRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[14];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CancelJobRequest_descriptor_;
+  metadata.reflection = CancelJobRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // CancelJobRequest
 
-// string name = 1;
+// optional string name = 1;
 void CancelJobRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& CancelJobRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.CancelJobRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void CancelJobRequest::set_name(const ::std::string& value) {
   
@@ -8228,6 +8702,9 @@ void CancelJobRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.CancelJobRequest.name)
 }
 
+inline const CancelJobRequest* CancelJobRequest::internal_default_instance() {
+  return &CancelJobRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

@@ -24,42 +24,14 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/map.h>
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include <google/protobuf/struct.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace genomics {
-namespace v1 {
-class ReadGroup;
-class ReadGroupDefaultTypeInternal;
-extern ReadGroupDefaultTypeInternal _ReadGroup_default_instance_;
-class ReadGroup_Experiment;
-class ReadGroup_ExperimentDefaultTypeInternal;
-extern ReadGroup_ExperimentDefaultTypeInternal _ReadGroup_Experiment_default_instance_;
-class ReadGroup_Program;
-class ReadGroup_ProgramDefaultTypeInternal;
-extern ReadGroup_ProgramDefaultTypeInternal _ReadGroup_Program_default_instance_;
-}  // namespace v1
-}  // namespace genomics
-namespace protobuf {
-class ListValue;
-class ListValueDefaultTypeInternal;
-extern ListValueDefaultTypeInternal _ListValue_default_instance_;
-class Struct;
-class StructDefaultTypeInternal;
-extern StructDefaultTypeInternal _Struct_default_instance_;
-class Value;
-class ValueDefaultTypeInternal;
-extern ValueDefaultTypeInternal _Value_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace genomics {
@@ -68,6 +40,12 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fgenomics_2fv1_2freadgroup_2eproto();
 void protobuf_InitDefaults_google_2fgenomics_2fv1_2freadgroup_2eproto();
+void protobuf_AssignDesc_google_2fgenomics_2fv1_2freadgroup_2eproto();
+void protobuf_ShutdownFile_google_2fgenomics_2fv1_2freadgroup_2eproto();
+
+class ReadGroup;
+class ReadGroup_Experiment;
+class ReadGroup_Program;
 
 // ===================================================================
 
@@ -83,52 +61,47 @@ class ReadGroup_Experiment : public ::google::protobuf::Message /* @@protoc_inse
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ReadGroup_Experiment& default_instance();
 
-  static inline const ReadGroup_Experiment* internal_default_instance() {
-    return reinterpret_cast<const ReadGroup_Experiment*>(
-               &_ReadGroup_Experiment_default_instance_);
-  }
+  static const ReadGroup_Experiment* internal_default_instance();
 
   void UnsafeArenaSwap(ReadGroup_Experiment* other);
   void Swap(ReadGroup_Experiment* other);
 
   // implements Message ----------------------------------------------
 
-  inline ReadGroup_Experiment* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ReadGroup_Experiment* New() const { return New(NULL); }
 
-  ReadGroup_Experiment* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ReadGroup_Experiment* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ReadGroup_Experiment& from);
   void MergeFrom(const ReadGroup_Experiment& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ReadGroup_Experiment* other);
+  void UnsafeMergeFrom(const ReadGroup_Experiment& from);
   protected:
   explicit ReadGroup_Experiment(::google::protobuf::Arena* arena);
   private:
@@ -143,13 +116,13 @@ class ReadGroup_Experiment : public ::google::protobuf::Message /* @@protoc_inse
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string library_id = 1;
+  // optional string library_id = 1;
   void clear_library_id();
   static const int kLibraryIdFieldNumber = 1;
   const ::std::string& library_id() const;
@@ -163,7 +136,7 @@ class ReadGroup_Experiment : public ::google::protobuf::Message /* @@protoc_inse
   void unsafe_arena_set_allocated_library_id(
       ::std::string* library_id);
 
-  // string platform_unit = 2;
+  // optional string platform_unit = 2;
   void clear_platform_unit();
   static const int kPlatformUnitFieldNumber = 2;
   const ::std::string& platform_unit() const;
@@ -177,7 +150,7 @@ class ReadGroup_Experiment : public ::google::protobuf::Message /* @@protoc_inse
   void unsafe_arena_set_allocated_platform_unit(
       ::std::string* platform_unit);
 
-  // string sequencing_center = 3;
+  // optional string sequencing_center = 3;
   void clear_sequencing_center();
   static const int kSequencingCenterFieldNumber = 3;
   const ::std::string& sequencing_center() const;
@@ -191,7 +164,7 @@ class ReadGroup_Experiment : public ::google::protobuf::Message /* @@protoc_inse
   void unsafe_arena_set_allocated_sequencing_center(
       ::std::string* sequencing_center);
 
-  // string instrument_model = 4;
+  // optional string instrument_model = 4;
   void clear_instrument_model();
   static const int kInstrumentModelFieldNumber = 4;
   const ::std::string& instrument_model() const;
@@ -219,10 +192,13 @@ class ReadGroup_Experiment : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2freadgroup_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2freadgroup_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2freadgroup_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2freadgroup_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2freadgroup_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ReadGroup_Experiment> ReadGroup_Experiment_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ReadGroup_Program : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.ReadGroup.Program) */ {
@@ -237,52 +213,47 @@ class ReadGroup_Program : public ::google::protobuf::Message /* @@protoc_inserti
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ReadGroup_Program& default_instance();
 
-  static inline const ReadGroup_Program* internal_default_instance() {
-    return reinterpret_cast<const ReadGroup_Program*>(
-               &_ReadGroup_Program_default_instance_);
-  }
+  static const ReadGroup_Program* internal_default_instance();
 
   void UnsafeArenaSwap(ReadGroup_Program* other);
   void Swap(ReadGroup_Program* other);
 
   // implements Message ----------------------------------------------
 
-  inline ReadGroup_Program* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ReadGroup_Program* New() const { return New(NULL); }
 
-  ReadGroup_Program* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ReadGroup_Program* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ReadGroup_Program& from);
   void MergeFrom(const ReadGroup_Program& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ReadGroup_Program* other);
+  void UnsafeMergeFrom(const ReadGroup_Program& from);
   protected:
   explicit ReadGroup_Program(::google::protobuf::Arena* arena);
   private:
@@ -297,13 +268,13 @@ class ReadGroup_Program : public ::google::protobuf::Message /* @@protoc_inserti
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string command_line = 1;
+  // optional string command_line = 1;
   void clear_command_line();
   static const int kCommandLineFieldNumber = 1;
   const ::std::string& command_line() const;
@@ -317,7 +288,7 @@ class ReadGroup_Program : public ::google::protobuf::Message /* @@protoc_inserti
   void unsafe_arena_set_allocated_command_line(
       ::std::string* command_line);
 
-  // string id = 2;
+  // optional string id = 2;
   void clear_id();
   static const int kIdFieldNumber = 2;
   const ::std::string& id() const;
@@ -331,7 +302,7 @@ class ReadGroup_Program : public ::google::protobuf::Message /* @@protoc_inserti
   void unsafe_arena_set_allocated_id(
       ::std::string* id);
 
-  // string name = 3;
+  // optional string name = 3;
   void clear_name();
   static const int kNameFieldNumber = 3;
   const ::std::string& name() const;
@@ -345,7 +316,7 @@ class ReadGroup_Program : public ::google::protobuf::Message /* @@protoc_inserti
   void unsafe_arena_set_allocated_name(
       ::std::string* name);
 
-  // string prev_program_id = 4;
+  // optional string prev_program_id = 4;
   void clear_prev_program_id();
   static const int kPrevProgramIdFieldNumber = 4;
   const ::std::string& prev_program_id() const;
@@ -359,7 +330,7 @@ class ReadGroup_Program : public ::google::protobuf::Message /* @@protoc_inserti
   void unsafe_arena_set_allocated_prev_program_id(
       ::std::string* prev_program_id);
 
-  // string version = 5;
+  // optional string version = 5;
   void clear_version();
   static const int kVersionFieldNumber = 5;
   const ::std::string& version() const;
@@ -388,12 +359,12 @@ class ReadGroup_Program : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2freadgroup_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2freadgroup_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2freadgroup_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2freadgroup_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2freadgroup_2eproto();
 
+  void InitAsDefaultInstance();
 };
-// -------------------------------------------------------------------
-
+extern ::google::protobuf::internal::ExplicitlyConstructed<ReadGroup_Program> ReadGroup_Program_default_instance_;
 
 // -------------------------------------------------------------------
 
@@ -409,52 +380,47 @@ class ReadGroup : public ::google::protobuf::Message /* @@protoc_insertion_point
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ReadGroup& default_instance();
 
-  static inline const ReadGroup* internal_default_instance() {
-    return reinterpret_cast<const ReadGroup*>(
-               &_ReadGroup_default_instance_);
-  }
+  static const ReadGroup* internal_default_instance();
 
   void UnsafeArenaSwap(ReadGroup* other);
   void Swap(ReadGroup* other);
 
   // implements Message ----------------------------------------------
 
-  inline ReadGroup* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ReadGroup* New() const { return New(NULL); }
 
-  ReadGroup* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ReadGroup* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ReadGroup& from);
   void MergeFrom(const ReadGroup& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ReadGroup* other);
+  void UnsafeMergeFrom(const ReadGroup& from);
   protected:
   explicit ReadGroup(::google::protobuf::Arena* arena);
   private:
@@ -469,7 +435,7 @@ class ReadGroup : public ::google::protobuf::Message /* @@protoc_insertion_point
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -478,7 +444,7 @@ class ReadGroup : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   // accessors -------------------------------------------------------
 
-  // string id = 1;
+  // optional string id = 1;
   void clear_id();
   static const int kIdFieldNumber = 1;
   const ::std::string& id() const;
@@ -492,7 +458,7 @@ class ReadGroup : public ::google::protobuf::Message /* @@protoc_insertion_point
   void unsafe_arena_set_allocated_id(
       ::std::string* id);
 
-  // string dataset_id = 2;
+  // optional string dataset_id = 2;
   void clear_dataset_id();
   static const int kDatasetIdFieldNumber = 2;
   const ::std::string& dataset_id() const;
@@ -506,7 +472,7 @@ class ReadGroup : public ::google::protobuf::Message /* @@protoc_insertion_point
   void unsafe_arena_set_allocated_dataset_id(
       ::std::string* dataset_id);
 
-  // string name = 3;
+  // optional string name = 3;
   void clear_name();
   static const int kNameFieldNumber = 3;
   const ::std::string& name() const;
@@ -520,7 +486,7 @@ class ReadGroup : public ::google::protobuf::Message /* @@protoc_insertion_point
   void unsafe_arena_set_allocated_name(
       ::std::string* name);
 
-  // string description = 4;
+  // optional string description = 4;
   void clear_description();
   static const int kDescriptionFieldNumber = 4;
   const ::std::string& description() const;
@@ -534,7 +500,7 @@ class ReadGroup : public ::google::protobuf::Message /* @@protoc_insertion_point
   void unsafe_arena_set_allocated_description(
       ::std::string* description);
 
-  // string sample_id = 5;
+  // optional string sample_id = 5;
   void clear_sample_id();
   static const int kSampleIdFieldNumber = 5;
   const ::std::string& sample_id() const;
@@ -548,7 +514,7 @@ class ReadGroup : public ::google::protobuf::Message /* @@protoc_insertion_point
   void unsafe_arena_set_allocated_sample_id(
       ::std::string* sample_id);
 
-  // .google.genomics.v1.ReadGroup.Experiment experiment = 6;
+  // optional .google.genomics.v1.ReadGroup.Experiment experiment = 6;
   bool has_experiment() const;
   void clear_experiment();
   static const int kExperimentFieldNumber = 6;
@@ -566,7 +532,7 @@ class ReadGroup : public ::google::protobuf::Message /* @@protoc_insertion_point
   void unsafe_arena_set_allocated_experiment(
       ::google::genomics::v1::ReadGroup_Experiment* experiment);
 
-  // int32 predicted_insert_size = 7;
+  // optional int32 predicted_insert_size = 7;
   void clear_predicted_insert_size();
   static const int kPredictedInsertSizeFieldNumber = 7;
   ::google::protobuf::int32 predicted_insert_size() const;
@@ -584,7 +550,7 @@ class ReadGroup : public ::google::protobuf::Message /* @@protoc_insertion_point
   const ::google::protobuf::RepeatedPtrField< ::google::genomics::v1::ReadGroup_Program >&
       programs() const;
 
-  // string reference_set_id = 11;
+  // optional string reference_set_id = 11;
   void clear_reference_set_id();
   static const int kReferenceSetIdFieldNumber = 11;
   const ::std::string& reference_set_id() const;
@@ -637,10 +603,13 @@ class ReadGroup : public ::google::protobuf::Message /* @@protoc_insertion_point
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2freadgroup_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2freadgroup_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2freadgroup_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2freadgroup_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2freadgroup_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ReadGroup> ReadGroup_default_instance_;
+
 // ===================================================================
 
 
@@ -649,13 +618,13 @@ class ReadGroup : public ::google::protobuf::Message /* @@protoc_insertion_point
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // ReadGroup_Experiment
 
-// string library_id = 1;
+// optional string library_id = 1;
 inline void ReadGroup_Experiment::clear_library_id() {
   library_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroup_Experiment::library_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroup.Experiment.library_id)
-  return library_id_.Get();
+  return library_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroup_Experiment::set_library_id(const ::std::string& value) {
   
@@ -715,13 +684,13 @@ inline void ReadGroup_Experiment::unsafe_arena_set_allocated_library_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroup.Experiment.library_id)
 }
 
-// string platform_unit = 2;
+// optional string platform_unit = 2;
 inline void ReadGroup_Experiment::clear_platform_unit() {
   platform_unit_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroup_Experiment::platform_unit() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroup.Experiment.platform_unit)
-  return platform_unit_.Get();
+  return platform_unit_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroup_Experiment::set_platform_unit(const ::std::string& value) {
   
@@ -781,13 +750,13 @@ inline void ReadGroup_Experiment::unsafe_arena_set_allocated_platform_unit(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroup.Experiment.platform_unit)
 }
 
-// string sequencing_center = 3;
+// optional string sequencing_center = 3;
 inline void ReadGroup_Experiment::clear_sequencing_center() {
   sequencing_center_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroup_Experiment::sequencing_center() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroup.Experiment.sequencing_center)
-  return sequencing_center_.Get();
+  return sequencing_center_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroup_Experiment::set_sequencing_center(const ::std::string& value) {
   
@@ -847,13 +816,13 @@ inline void ReadGroup_Experiment::unsafe_arena_set_allocated_sequencing_center(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroup.Experiment.sequencing_center)
 }
 
-// string instrument_model = 4;
+// optional string instrument_model = 4;
 inline void ReadGroup_Experiment::clear_instrument_model() {
   instrument_model_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroup_Experiment::instrument_model() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroup.Experiment.instrument_model)
-  return instrument_model_.Get();
+  return instrument_model_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroup_Experiment::set_instrument_model(const ::std::string& value) {
   
@@ -913,17 +882,20 @@ inline void ReadGroup_Experiment::unsafe_arena_set_allocated_instrument_model(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroup.Experiment.instrument_model)
 }
 
+inline const ReadGroup_Experiment* ReadGroup_Experiment::internal_default_instance() {
+  return &ReadGroup_Experiment_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ReadGroup_Program
 
-// string command_line = 1;
+// optional string command_line = 1;
 inline void ReadGroup_Program::clear_command_line() {
   command_line_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroup_Program::command_line() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroup.Program.command_line)
-  return command_line_.Get();
+  return command_line_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroup_Program::set_command_line(const ::std::string& value) {
   
@@ -983,13 +955,13 @@ inline void ReadGroup_Program::unsafe_arena_set_allocated_command_line(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroup.Program.command_line)
 }
 
-// string id = 2;
+// optional string id = 2;
 inline void ReadGroup_Program::clear_id() {
   id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroup_Program::id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroup.Program.id)
-  return id_.Get();
+  return id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroup_Program::set_id(const ::std::string& value) {
   
@@ -1049,13 +1021,13 @@ inline void ReadGroup_Program::unsafe_arena_set_allocated_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroup.Program.id)
 }
 
-// string name = 3;
+// optional string name = 3;
 inline void ReadGroup_Program::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroup_Program::name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroup.Program.name)
-  return name_.Get();
+  return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroup_Program::set_name(const ::std::string& value) {
   
@@ -1115,13 +1087,13 @@ inline void ReadGroup_Program::unsafe_arena_set_allocated_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroup.Program.name)
 }
 
-// string prev_program_id = 4;
+// optional string prev_program_id = 4;
 inline void ReadGroup_Program::clear_prev_program_id() {
   prev_program_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroup_Program::prev_program_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroup.Program.prev_program_id)
-  return prev_program_id_.Get();
+  return prev_program_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroup_Program::set_prev_program_id(const ::std::string& value) {
   
@@ -1181,13 +1153,13 @@ inline void ReadGroup_Program::unsafe_arena_set_allocated_prev_program_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroup.Program.prev_program_id)
 }
 
-// string version = 5;
+// optional string version = 5;
 inline void ReadGroup_Program::clear_version() {
   version_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroup_Program::version() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroup.Program.version)
-  return version_.Get();
+  return version_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroup_Program::set_version(const ::std::string& value) {
   
@@ -1247,19 +1219,20 @@ inline void ReadGroup_Program::unsafe_arena_set_allocated_version(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroup.Program.version)
 }
 
-// -------------------------------------------------------------------
-
+inline const ReadGroup_Program* ReadGroup_Program::internal_default_instance() {
+  return &ReadGroup_Program_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ReadGroup
 
-// string id = 1;
+// optional string id = 1;
 inline void ReadGroup::clear_id() {
   id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroup::id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroup.id)
-  return id_.Get();
+  return id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroup::set_id(const ::std::string& value) {
   
@@ -1319,13 +1292,13 @@ inline void ReadGroup::unsafe_arena_set_allocated_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroup.id)
 }
 
-// string dataset_id = 2;
+// optional string dataset_id = 2;
 inline void ReadGroup::clear_dataset_id() {
   dataset_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroup::dataset_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroup.dataset_id)
-  return dataset_id_.Get();
+  return dataset_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroup::set_dataset_id(const ::std::string& value) {
   
@@ -1385,13 +1358,13 @@ inline void ReadGroup::unsafe_arena_set_allocated_dataset_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroup.dataset_id)
 }
 
-// string name = 3;
+// optional string name = 3;
 inline void ReadGroup::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroup::name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroup.name)
-  return name_.Get();
+  return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroup::set_name(const ::std::string& value) {
   
@@ -1451,13 +1424,13 @@ inline void ReadGroup::unsafe_arena_set_allocated_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroup.name)
 }
 
-// string description = 4;
+// optional string description = 4;
 inline void ReadGroup::clear_description() {
   description_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroup::description() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroup.description)
-  return description_.Get();
+  return description_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroup::set_description(const ::std::string& value) {
   
@@ -1517,13 +1490,13 @@ inline void ReadGroup::unsafe_arena_set_allocated_description(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroup.description)
 }
 
-// string sample_id = 5;
+// optional string sample_id = 5;
 inline void ReadGroup::clear_sample_id() {
   sample_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroup::sample_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroup.sample_id)
-  return sample_id_.Get();
+  return sample_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroup::set_sample_id(const ::std::string& value) {
   
@@ -1583,7 +1556,7 @@ inline void ReadGroup::unsafe_arena_set_allocated_sample_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReadGroup.sample_id)
 }
 
-// .google.genomics.v1.ReadGroup.Experiment experiment = 6;
+// optional .google.genomics.v1.ReadGroup.Experiment experiment = 6;
 inline bool ReadGroup::has_experiment() const {
   return this != internal_default_instance() && experiment_ != NULL;
 }
@@ -1632,7 +1605,7 @@ inline  void ReadGroup::set_allocated_experiment(::google::genomics::v1::ReadGro
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.ReadGroup.experiment)
 }
 
-// int32 predicted_insert_size = 7;
+// optional int32 predicted_insert_size = 7;
 inline void ReadGroup::clear_predicted_insert_size() {
   predicted_insert_size_ = 0;
 }
@@ -1676,13 +1649,13 @@ ReadGroup::programs() const {
   return programs_;
 }
 
-// string reference_set_id = 11;
+// optional string reference_set_id = 11;
 inline void ReadGroup::clear_reference_set_id() {
   reference_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReadGroup::reference_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReadGroup.reference_set_id)
-  return reference_set_id_.Get();
+  return reference_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadGroup::set_reference_set_id(const ::std::string& value) {
   
@@ -1760,16 +1733,16 @@ ReadGroup::mutable_info() {
   return info_.MutableMap();
 }
 
+inline const ReadGroup* ReadGroup::internal_default_instance() {
+  return &ReadGroup_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace genomics

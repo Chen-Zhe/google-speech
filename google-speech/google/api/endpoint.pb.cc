@@ -19,94 +19,92 @@
 
 namespace google {
 namespace api {
-class EndpointDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Endpoint> {};
-EndpointDefaultTypeInternal _Endpoint_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[1];
+const ::google::protobuf::Descriptor* Endpoint_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Endpoint_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fendpoint_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fendpoint_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Endpoint, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fapi_2fendpoint_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fapi_2fendpoint_2eproto() {
+  protobuf_AddDesc_google_2fapi_2fendpoint_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/api/endpoint.proto");
+  GOOGLE_CHECK(file != NULL);
+  Endpoint_descriptor_ = file->message_type(0);
+  static const int Endpoint_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Endpoint, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Endpoint, aliases_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Endpoint, apis_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Endpoint, features_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Endpoint, allow_cors_),
   };
-  return offsets;
+  Endpoint_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Endpoint_descriptor_,
+      Endpoint::internal_default_instance(),
+      Endpoint_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Endpoint),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Endpoint, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(Endpoint)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Endpoint_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fapi_2fendpoint_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/api/endpoint.proto", schemas, file_default_instances, protobuf_Offsets_google_2fapi_2fendpoint_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fapi_2fendpoint_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Endpoint_descriptor_, Endpoint::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2fendpoint_2eproto() {
-  _Endpoint_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
+  Endpoint_default_instance_.Shutdown();
+  delete Endpoint_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fapi_2fendpoint_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _Endpoint_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Endpoint_default_instance_.DefaultConstruct();
+  Endpoint_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fendpoint_2eproto_once_);
 void protobuf_InitDefaults_google_2fapi_2fendpoint_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fapi_2fendpoint_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fendpoint_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fendpoint_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fapi_2fendpoint_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fapi_2fendpoint_2eproto();
-  static const char descriptor[] = {
-      "\n\031google/api/endpoint.proto\022\ngoogle.api\032"
-      "\034google/api/annotations.proto\"]\n\010Endpoin"
-      "t\022\014\n\004name\030\001 \001(\t\022\017\n\007aliases\030\002 \003(\t\022\014\n\004apis"
-      "\030\003 \003(\t\022\020\n\010features\030\004 \003(\t\022\022\n\nallow_cors\030\005"
-      " \001(\010Bo\n\016com.google.apiB\rEndpointProtoP\001Z"
-      "Egoogle.golang.org/genproto/googleapis/a"
-      "pi/serviceconfig;serviceconfig\242\002\004GAPIb\006p"
-      "roto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 285);
+    "\n\031google/api/endpoint.proto\022\ngoogle.api\032"
+    "\034google/api/annotations.proto\"]\n\010Endpoin"
+    "t\022\014\n\004name\030\001 \001(\t\022\017\n\007aliases\030\002 \003(\t\022\014\n\004apis"
+    "\030\003 \003(\t\022\020\n\010features\030\004 \003(\t\022\022\n\nallow_cors\030\005"
+    " \001(\010Bo\n\016com.google.apiB\rEndpointProtoP\001Z"
+    "Egoogle.golang.org/genproto/googleapis/a"
+    "pi/serviceconfig;serviceconfig\242\002\004GAPIb\006p"
+    "roto3", 285);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/endpoint.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -125,6 +123,16 @@ struct StaticDescriptorInitializer_google_2fapi_2fendpoint_2eproto {
   }
 } static_descriptor_initializer_google_2fapi_2fendpoint_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -137,25 +145,19 @@ const int Endpoint::kAllowCorsFieldNumber;
 
 Endpoint::Endpoint()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fendpoint_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fendpoint_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Endpoint)
 }
+
+void Endpoint::InitAsDefaultInstance() {
+}
+
 Endpoint::Endpoint(const Endpoint& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      aliases_(from.aliases_),
-      apis_(from.apis_),
-      features_(from.features_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  allow_cors_ = from.allow_cors_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Endpoint)
 }
 
@@ -181,13 +183,15 @@ void Endpoint::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Endpoint::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return Endpoint_descriptor_;
 }
 
 const Endpoint& Endpoint::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fendpoint_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Endpoint> Endpoint_default_instance_;
 
 Endpoint* Endpoint::New(::google::protobuf::Arena* arena) const {
   Endpoint* n = new Endpoint;
@@ -199,11 +203,11 @@ Endpoint* Endpoint::New(::google::protobuf::Arena* arena) const {
 
 void Endpoint::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.api.Endpoint)
+  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  allow_cors_ = false;
   aliases_.Clear();
   apis_.Clear();
   features_.Clear();
-  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  allow_cors_ = false;
 }
 
 bool Endpoint::MergePartialFromCodedStream(
@@ -212,13 +216,13 @@ bool Endpoint::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.Endpoint)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -228,12 +232,14 @@ bool Endpoint::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_aliases;
         break;
       }
 
       // repeated string aliases = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_aliases:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_aliases()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -244,12 +250,15 @@ bool Endpoint::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_aliases;
+        if (input->ExpectTag(26)) goto parse_apis;
         break;
       }
 
       // repeated string apis = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_apis:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_apis()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -260,12 +269,15 @@ bool Endpoint::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_apis;
+        if (input->ExpectTag(34)) goto parse_features;
         break;
       }
 
       // repeated string features = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_features:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_features()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -276,12 +288,15 @@ bool Endpoint::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_features;
+        if (input->ExpectTag(40)) goto parse_allow_cors;
         break;
       }
 
-      // bool allow_cors = 5;
+      // optional bool allow_cors = 5;
       case 5: {
-        if (tag == 40u) {
+        if (tag == 40) {
+         parse_allow_cors:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -289,6 +304,7 @@ bool Endpoint::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -316,7 +332,7 @@ failure:
 void Endpoint::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.api.Endpoint)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -356,7 +372,7 @@ void Endpoint::SerializeWithCachedSizes(
       4, this->features(i), output);
   }
 
-  // bool allow_cors = 5;
+  // optional bool allow_cors = 5;
   if (this->allow_cors() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(5, this->allow_cors(), output);
   }
@@ -368,7 +384,7 @@ void Endpoint::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.Endpoint)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -409,7 +425,7 @@ void Endpoint::SerializeWithCachedSizes(
       WriteStringToArray(4, this->features(i), target);
   }
 
-  // bool allow_cors = 5;
+  // optional bool allow_cors = 5;
   if (this->allow_cors() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(5, this->allow_cors(), target);
   }
@@ -421,6 +437,18 @@ void Endpoint::SerializeWithCachedSizes(
 size_t Endpoint::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.Endpoint)
   size_t total_size = 0;
+
+  // optional string name = 1;
+  if (this->name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->name());
+  }
+
+  // optional bool allow_cors = 5;
+  if (this->allow_cors() != 0) {
+    total_size += 1 + 1;
+  }
 
   // repeated string aliases = 2;
   total_size += 1 *
@@ -446,18 +474,6 @@ size_t Endpoint::ByteSizeLong() const {
       this->features(i));
   }
 
-  // string name = 1;
-  if (this->name().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->name());
-  }
-
-  // bool allow_cors = 5;
-  if (this->allow_cors() != 0) {
-    total_size += 1 + 1;
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -467,7 +483,7 @@ size_t Endpoint::ByteSizeLong() const {
 
 void Endpoint::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Endpoint)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Endpoint* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Endpoint>(
           &from);
@@ -476,17 +492,24 @@ void Endpoint::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Endpoint)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Endpoint::MergeFrom(const Endpoint& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Endpoint)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  aliases_.MergeFrom(from.aliases_);
-  apis_.MergeFrom(from.apis_);
-  features_.MergeFrom(from.features_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Endpoint::UnsafeMergeFrom(const Endpoint& from) {
+  GOOGLE_DCHECK(&from != this);
+  aliases_.UnsafeMergeFrom(from.aliases_);
+  apis_.UnsafeMergeFrom(from.apis_);
+  features_.UnsafeMergeFrom(from.features_);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -507,10 +530,11 @@ void Endpoint::CopyFrom(const Endpoint& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Endpoint)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Endpoint::IsInitialized() const {
+
   return true;
 }
 
@@ -519,29 +543,33 @@ void Endpoint::Swap(Endpoint* other) {
   InternalSwap(other);
 }
 void Endpoint::InternalSwap(Endpoint* other) {
+  name_.Swap(&other->name_);
   aliases_.UnsafeArenaSwap(&other->aliases_);
   apis_.UnsafeArenaSwap(&other->apis_);
   features_.UnsafeArenaSwap(&other->features_);
-  name_.Swap(&other->name_);
   std::swap(allow_cors_, other->allow_cors_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Endpoint::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Endpoint_descriptor_;
+  metadata.reflection = Endpoint_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Endpoint
 
-// string name = 1;
+// optional string name = 1;
 void Endpoint::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Endpoint::name() const {
   // @@protoc_insertion_point(field_get:google.api.Endpoint.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Endpoint::set_name(const ::std::string& value) {
   
@@ -744,7 +772,7 @@ Endpoint::mutable_features() {
   return &features_;
 }
 
-// bool allow_cors = 5;
+// optional bool allow_cors = 5;
 void Endpoint::clear_allow_cors() {
   allow_cors_ = false;
 }
@@ -758,6 +786,9 @@ void Endpoint::set_allow_cors(bool value) {
   // @@protoc_insertion_point(field_set:google.api.Endpoint.allow_cors)
 }
 
+inline const Endpoint* Endpoint::internal_default_instance() {
+  return &Endpoint_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

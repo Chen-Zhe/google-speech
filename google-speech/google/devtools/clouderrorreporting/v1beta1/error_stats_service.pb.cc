@@ -21,42 +21,55 @@ namespace google {
 namespace devtools {
 namespace clouderrorreporting {
 namespace v1beta1 {
-class ListGroupStatsRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListGroupStatsRequest> {};
-ListGroupStatsRequestDefaultTypeInternal _ListGroupStatsRequest_default_instance_;
-class ListGroupStatsResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListGroupStatsResponse> {};
-ListGroupStatsResponseDefaultTypeInternal _ListGroupStatsResponse_default_instance_;
-class ErrorGroupStatsDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ErrorGroupStats> {};
-ErrorGroupStatsDefaultTypeInternal _ErrorGroupStats_default_instance_;
-class TimedCountDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<TimedCount> {};
-TimedCountDefaultTypeInternal _TimedCount_default_instance_;
-class ListEventsRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListEventsRequest> {};
-ListEventsRequestDefaultTypeInternal _ListEventsRequest_default_instance_;
-class ListEventsResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListEventsResponse> {};
-ListEventsResponseDefaultTypeInternal _ListEventsResponse_default_instance_;
-class QueryTimeRangeDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<QueryTimeRange> {};
-QueryTimeRangeDefaultTypeInternal _QueryTimeRange_default_instance_;
-class ServiceContextFilterDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ServiceContextFilter> {};
-ServiceContextFilterDefaultTypeInternal _ServiceContextFilter_default_instance_;
-class DeleteEventsRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<DeleteEventsRequest> {};
-DeleteEventsRequestDefaultTypeInternal _DeleteEventsRequest_default_instance_;
-class DeleteEventsResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<DeleteEventsResponse> {};
-DeleteEventsResponseDefaultTypeInternal _DeleteEventsResponse_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[10];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[3];
+const ::google::protobuf::Descriptor* ListGroupStatsRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListGroupStatsRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListGroupStatsResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListGroupStatsResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ErrorGroupStats_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ErrorGroupStats_reflection_ = NULL;
+const ::google::protobuf::Descriptor* TimedCount_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TimedCount_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListEventsRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListEventsRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListEventsResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListEventsResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* QueryTimeRange_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  QueryTimeRange_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* QueryTimeRange_Period_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* ServiceContextFilter_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ServiceContextFilter_reflection_ = NULL;
+const ::google::protobuf::Descriptor* DeleteEventsRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  DeleteEventsRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* DeleteEventsResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  DeleteEventsResponse_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* TimedCountAlignment_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* ErrorGroupOrder_descriptor_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupStatsRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto() {
+  protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/devtools/clouderrorreporting/v1beta1/error_stats_service.proto");
+  GOOGLE_CHECK(file != NULL);
+  ListGroupStatsRequest_descriptor_ = file->message_type(0);
+  static const int ListGroupStatsRequest_offsets_[10] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupStatsRequest, project_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupStatsRequest, group_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupStatsRequest, service_filter_),
@@ -67,17 +80,35 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fclouderro
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupStatsRequest, order_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupStatsRequest, page_size_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupStatsRequest, page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupStatsResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListGroupStatsRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListGroupStatsRequest_descriptor_,
+      ListGroupStatsRequest::internal_default_instance(),
+      ListGroupStatsRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListGroupStatsRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupStatsRequest, _internal_metadata_));
+  ListGroupStatsResponse_descriptor_ = file->message_type(1);
+  static const int ListGroupStatsResponse_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupStatsResponse, error_group_stats_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupStatsResponse, next_page_token_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupStatsResponse, time_range_begin_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ErrorGroupStats, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListGroupStatsResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListGroupStatsResponse_descriptor_,
+      ListGroupStatsResponse::internal_default_instance(),
+      ListGroupStatsResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListGroupStatsResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListGroupStatsResponse, _internal_metadata_));
+  ErrorGroupStats_descriptor_ = file->message_type(2);
+  static const int ErrorGroupStats_offsets_[9] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ErrorGroupStats, group_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ErrorGroupStats, count_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ErrorGroupStats, affected_users_count_),
@@ -87,125 +118,186 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fclouderro
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ErrorGroupStats, affected_services_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ErrorGroupStats, num_affected_services_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ErrorGroupStats, representative_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimedCount, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ErrorGroupStats_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ErrorGroupStats_descriptor_,
+      ErrorGroupStats::internal_default_instance(),
+      ErrorGroupStats_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ErrorGroupStats),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ErrorGroupStats, _internal_metadata_));
+  TimedCount_descriptor_ = file->message_type(3);
+  static const int TimedCount_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimedCount, count_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimedCount, start_time_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimedCount, end_time_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListEventsRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  TimedCount_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      TimedCount_descriptor_,
+      TimedCount::internal_default_instance(),
+      TimedCount_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(TimedCount),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimedCount, _internal_metadata_));
+  ListEventsRequest_descriptor_ = file->message_type(4);
+  static const int ListEventsRequest_offsets_[6] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListEventsRequest, project_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListEventsRequest, group_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListEventsRequest, service_filter_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListEventsRequest, time_range_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListEventsRequest, page_size_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListEventsRequest, page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListEventsResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListEventsRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListEventsRequest_descriptor_,
+      ListEventsRequest::internal_default_instance(),
+      ListEventsRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListEventsRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListEventsRequest, _internal_metadata_));
+  ListEventsResponse_descriptor_ = file->message_type(5);
+  static const int ListEventsResponse_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListEventsResponse, error_events_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListEventsResponse, next_page_token_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListEventsResponse, time_range_begin_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryTimeRange, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListEventsResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListEventsResponse_descriptor_,
+      ListEventsResponse::internal_default_instance(),
+      ListEventsResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListEventsResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListEventsResponse, _internal_metadata_));
+  QueryTimeRange_descriptor_ = file->message_type(6);
+  static const int QueryTimeRange_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryTimeRange, period_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ServiceContextFilter, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  QueryTimeRange_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      QueryTimeRange_descriptor_,
+      QueryTimeRange::internal_default_instance(),
+      QueryTimeRange_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(QueryTimeRange),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryTimeRange, _internal_metadata_));
+  QueryTimeRange_Period_descriptor_ = QueryTimeRange_descriptor_->enum_type(0);
+  ServiceContextFilter_descriptor_ = file->message_type(7);
+  static const int ServiceContextFilter_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ServiceContextFilter, service_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ServiceContextFilter, version_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ServiceContextFilter, resource_type_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteEventsRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteEventsRequest, project_name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteEventsResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
   };
-  return offsets;
+  ServiceContextFilter_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ServiceContextFilter_descriptor_,
+      ServiceContextFilter::internal_default_instance(),
+      ServiceContextFilter_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ServiceContextFilter),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ServiceContextFilter, _internal_metadata_));
+  DeleteEventsRequest_descriptor_ = file->message_type(8);
+  static const int DeleteEventsRequest_offsets_[1] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteEventsRequest, project_name_),
+  };
+  DeleteEventsRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      DeleteEventsRequest_descriptor_,
+      DeleteEventsRequest::internal_default_instance(),
+      DeleteEventsRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(DeleteEventsRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteEventsRequest, _internal_metadata_));
+  DeleteEventsResponse_descriptor_ = file->message_type(9);
+  static const int DeleteEventsResponse_offsets_[1] = {
+  };
+  DeleteEventsResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      DeleteEventsResponse_descriptor_,
+      DeleteEventsResponse::internal_default_instance(),
+      DeleteEventsResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(DeleteEventsResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteEventsResponse, _internal_metadata_));
+  TimedCountAlignment_descriptor_ = file->enum_type(0);
+  ErrorGroupOrder_descriptor_ = file->enum_type(1);
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(ListGroupStatsRequest)},
-  { 14, -1, sizeof(ListGroupStatsResponse)},
-  { 21, -1, sizeof(ErrorGroupStats)},
-  { 34, -1, sizeof(TimedCount)},
-  { 41, -1, sizeof(ListEventsRequest)},
-  { 51, -1, sizeof(ListEventsResponse)},
-  { 58, -1, sizeof(QueryTimeRange)},
-  { 63, -1, sizeof(ServiceContextFilter)},
-  { 70, -1, sizeof(DeleteEventsRequest)},
-  { 75, -1, sizeof(DeleteEventsResponse)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListGroupStatsRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListGroupStatsResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ErrorGroupStats_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_TimedCount_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListEventsRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListEventsResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_QueryTimeRange_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ServiceContextFilter_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_DeleteEventsRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_DeleteEventsResponse_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/devtools/clouderrorreporting/v1beta1/error_stats_service.proto", schemas, file_default_instances, protobuf_Offsets_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto(), factory,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 10);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListGroupStatsRequest_descriptor_, ListGroupStatsRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListGroupStatsResponse_descriptor_, ListGroupStatsResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ErrorGroupStats_descriptor_, ErrorGroupStats::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      TimedCount_descriptor_, TimedCount::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListEventsRequest_descriptor_, ListEventsRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListEventsResponse_descriptor_, ListEventsResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      QueryTimeRange_descriptor_, QueryTimeRange::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ServiceContextFilter_descriptor_, ServiceContextFilter::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      DeleteEventsRequest_descriptor_, DeleteEventsRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      DeleteEventsResponse_descriptor_, DeleteEventsResponse::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto() {
-  _ListGroupStatsRequest_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _ListGroupStatsResponse_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _ErrorGroupStats_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _TimedCount_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _ListEventsRequest_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
-  _ListEventsResponse_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
-  _QueryTimeRange_default_instance_.Shutdown();
-  delete file_level_metadata[6].reflection;
-  _ServiceContextFilter_default_instance_.Shutdown();
-  delete file_level_metadata[7].reflection;
-  _DeleteEventsRequest_default_instance_.Shutdown();
-  delete file_level_metadata[8].reflection;
-  _DeleteEventsResponse_default_instance_.Shutdown();
-  delete file_level_metadata[9].reflection;
+  ListGroupStatsRequest_default_instance_.Shutdown();
+  delete ListGroupStatsRequest_reflection_;
+  ListGroupStatsResponse_default_instance_.Shutdown();
+  delete ListGroupStatsResponse_reflection_;
+  ErrorGroupStats_default_instance_.Shutdown();
+  delete ErrorGroupStats_reflection_;
+  TimedCount_default_instance_.Shutdown();
+  delete TimedCount_reflection_;
+  ListEventsRequest_default_instance_.Shutdown();
+  delete ListEventsRequest_reflection_;
+  ListEventsResponse_default_instance_.Shutdown();
+  delete ListEventsResponse_reflection_;
+  QueryTimeRange_default_instance_.Shutdown();
+  delete QueryTimeRange_reflection_;
+  ServiceContextFilter_default_instance_.Shutdown();
+  delete ServiceContextFilter_reflection_;
+  DeleteEventsRequest_default_instance_.Shutdown();
+  delete DeleteEventsRequest_reflection_;
+  DeleteEventsResponse_default_instance_.Shutdown();
+  delete DeleteEventsResponse_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto_impl() {
@@ -215,147 +307,134 @@ void protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2fe
   ::google::devtools::clouderrorreporting::v1beta1::protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2fcommon_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fduration_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _ListGroupStatsRequest_default_instance_.DefaultConstruct();
-  _ListGroupStatsResponse_default_instance_.DefaultConstruct();
-  _ErrorGroupStats_default_instance_.DefaultConstruct();
-  _TimedCount_default_instance_.DefaultConstruct();
-  _ListEventsRequest_default_instance_.DefaultConstruct();
-  _ListEventsResponse_default_instance_.DefaultConstruct();
-  _QueryTimeRange_default_instance_.DefaultConstruct();
-  _ServiceContextFilter_default_instance_.DefaultConstruct();
-  _DeleteEventsRequest_default_instance_.DefaultConstruct();
-  _DeleteEventsResponse_default_instance_.DefaultConstruct();
-  _ListGroupStatsRequest_default_instance_.get_mutable()->service_filter_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::ServiceContextFilter*>(
-      ::google::devtools::clouderrorreporting::v1beta1::ServiceContextFilter::internal_default_instance());
-  _ListGroupStatsRequest_default_instance_.get_mutable()->time_range_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::QueryTimeRange*>(
-      ::google::devtools::clouderrorreporting::v1beta1::QueryTimeRange::internal_default_instance());
-  _ListGroupStatsRequest_default_instance_.get_mutable()->timed_count_duration_ = const_cast< ::google::protobuf::Duration*>(
-      ::google::protobuf::Duration::internal_default_instance());
-  _ListGroupStatsRequest_default_instance_.get_mutable()->alignment_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  _ListGroupStatsResponse_default_instance_.get_mutable()->time_range_begin_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  _ErrorGroupStats_default_instance_.get_mutable()->group_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup*>(
-      ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup::internal_default_instance());
-  _ErrorGroupStats_default_instance_.get_mutable()->first_seen_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  _ErrorGroupStats_default_instance_.get_mutable()->last_seen_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  _ErrorGroupStats_default_instance_.get_mutable()->representative_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::ErrorEvent*>(
-      ::google::devtools::clouderrorreporting::v1beta1::ErrorEvent::internal_default_instance());
-  _TimedCount_default_instance_.get_mutable()->start_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  _TimedCount_default_instance_.get_mutable()->end_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  _ListEventsRequest_default_instance_.get_mutable()->service_filter_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::ServiceContextFilter*>(
-      ::google::devtools::clouderrorreporting::v1beta1::ServiceContextFilter::internal_default_instance());
-  _ListEventsRequest_default_instance_.get_mutable()->time_range_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::QueryTimeRange*>(
-      ::google::devtools::clouderrorreporting::v1beta1::QueryTimeRange::internal_default_instance());
-  _ListEventsResponse_default_instance_.get_mutable()->time_range_begin_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  ListGroupStatsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListGroupStatsResponse_default_instance_.DefaultConstruct();
+  ErrorGroupStats_default_instance_.DefaultConstruct();
+  TimedCount_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListEventsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListEventsResponse_default_instance_.DefaultConstruct();
+  QueryTimeRange_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ServiceContextFilter_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DeleteEventsRequest_default_instance_.DefaultConstruct();
+  DeleteEventsResponse_default_instance_.DefaultConstruct();
+  ListGroupStatsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListGroupStatsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ErrorGroupStats_default_instance_.get_mutable()->InitAsDefaultInstance();
+  TimedCount_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListEventsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListEventsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  QueryTimeRange_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ServiceContextFilter_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DeleteEventsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DeleteEventsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto_once_);
 void protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
-  static const char descriptor[] = {
-      "\nEgoogle/devtools/clouderrorreporting/v1"
-      "beta1/error_stats_service.proto\022+google."
-      "devtools.clouderrorreporting.v1beta1\032\034go"
-      "ogle/api/annotations.proto\0328google/devto"
-      "ols/clouderrorreporting/v1beta1/common.p"
-      "roto\032\036google/protobuf/duration.proto\032\037go"
-      "ogle/protobuf/timestamp.proto\"\241\004\n\025ListGr"
-      "oupStatsRequest\022\024\n\014project_name\030\001 \001(\t\022\020\n"
-      "\010group_id\030\002 \003(\t\022Y\n\016service_filter\030\003 \001(\0132"
-      "A.google.devtools.clouderrorreporting.v1"
-      "beta1.ServiceContextFilter\022O\n\ntime_range"
-      "\030\005 \001(\0132;.google.devtools.clouderrorrepor"
-      "ting.v1beta1.QueryTimeRange\0227\n\024timed_cou"
-      "nt_duration\030\006 \001(\0132\031.google.protobuf.Dura"
-      "tion\022S\n\talignment\030\007 \001(\0162@.google.devtool"
-      "s.clouderrorreporting.v1beta1.TimedCount"
-      "Alignment\0222\n\016alignment_time\030\010 \001(\0132\032.goog"
-      "le.protobuf.Timestamp\022K\n\005order\030\t \001(\0162<.g"
-      "oogle.devtools.clouderrorreporting.v1bet"
-      "a1.ErrorGroupOrder\022\021\n\tpage_size\030\013 \001(\005\022\022\n"
-      "\npage_token\030\014 \001(\t\"\300\001\n\026ListGroupStatsResp"
-      "onse\022W\n\021error_group_stats\030\001 \003(\0132<.google"
-      ".devtools.clouderrorreporting.v1beta1.Er"
-      "rorGroupStats\022\027\n\017next_page_token\030\002 \001(\t\0224"
-      "\n\020time_range_begin\030\004 \001(\0132\032.google.protob"
-      "uf.Timestamp\"\206\004\n\017ErrorGroupStats\022F\n\005grou"
-      "p\030\001 \001(\01327.google.devtools.clouderrorrepo"
-      "rting.v1beta1.ErrorGroup\022\r\n\005count\030\002 \001(\003\022"
-      "\034\n\024affected_users_count\030\003 \001(\003\022M\n\014timed_c"
-      "ounts\030\004 \003(\01327.google.devtools.clouderror"
-      "reporting.v1beta1.TimedCount\0223\n\017first_se"
-      "en_time\030\005 \001(\0132\032.google.protobuf.Timestam"
-      "p\0222\n\016last_seen_time\030\006 \001(\0132\032.google.proto"
-      "buf.Timestamp\022V\n\021affected_services\030\007 \003(\013"
-      "2;.google.devtools.clouderrorreporting.v"
-      "1beta1.ServiceContext\022\035\n\025num_affected_se"
-      "rvices\030\010 \001(\005\022O\n\016representative\030\t \001(\01327.g"
-      "oogle.devtools.clouderrorreporting.v1bet"
-      "a1.ErrorEvent\"y\n\nTimedCount\022\r\n\005count\030\001 \001"
-      "(\003\022.\n\nstart_time\030\002 \001(\0132\032.google.protobuf"
-      ".Timestamp\022,\n\010end_time\030\003 \001(\0132\032.google.pr"
-      "otobuf.Timestamp\"\216\002\n\021ListEventsRequest\022\024"
-      "\n\014project_name\030\001 \001(\t\022\020\n\010group_id\030\002 \001(\t\022Y"
-      "\n\016service_filter\030\003 \001(\0132A.google.devtools"
-      ".clouderrorreporting.v1beta1.ServiceCont"
-      "extFilter\022O\n\ntime_range\030\004 \001(\0132;.google.d"
-      "evtools.clouderrorreporting.v1beta1.Quer"
-      "yTimeRange\022\021\n\tpage_size\030\006 \001(\005\022\022\n\npage_to"
-      "ken\030\007 \001(\t\"\262\001\n\022ListEventsResponse\022M\n\014erro"
-      "r_events\030\001 \003(\01327.google.devtools.clouder"
-      "rorreporting.v1beta1.ErrorEvent\022\027\n\017next_"
-      "page_token\030\002 \001(\t\0224\n\020time_range_begin\030\004 \001"
-      "(\0132\032.google.protobuf.Timestamp\"\347\001\n\016Query"
-      "TimeRange\022R\n\006period\030\001 \001(\0162B.google.devto"
-      "ols.clouderrorreporting.v1beta1.QueryTim"
-      "eRange.Period\"\200\001\n\006Period\022\026\n\022PERIOD_UNSPE"
-      "CIFIED\020\000\022\021\n\rPERIOD_1_HOUR\020\001\022\022\n\016PERIOD_6_"
-      "HOURS\020\002\022\020\n\014PERIOD_1_DAY\020\003\022\021\n\rPERIOD_1_WE"
-      "EK\020\004\022\022\n\016PERIOD_30_DAYS\020\005\"O\n\024ServiceConte"
-      "xtFilter\022\017\n\007service\030\002 \001(\t\022\017\n\007version\030\003 \001"
-      "(\t\022\025\n\rresource_type\030\004 \001(\t\"+\n\023DeleteEvent"
-      "sRequest\022\024\n\014project_name\030\001 \001(\t\"\026\n\024Delete"
-      "EventsResponse*u\n\023TimedCountAlignment\022%\n"
-      "!ERROR_COUNT_ALIGNMENT_UNSPECIFIED\020\000\022\033\n\027"
-      "ALIGNMENT_EQUAL_ROUNDED\020\001\022\032\n\026ALIGNMENT_E"
-      "QUAL_AT_END\020\002*}\n\017ErrorGroupOrder\022\033\n\027GROU"
-      "P_ORDER_UNSPECIFIED\020\000\022\016\n\nCOUNT_DESC\020\001\022\022\n"
-      "\016LAST_SEEN_DESC\020\002\022\020\n\014CREATED_DESC\020\003\022\027\n\023A"
-      "FFECTED_USERS_DESC\020\0042\362\004\n\021ErrorStatsServi"
-      "ce\022\320\001\n\016ListGroupStats\022B.google.devtools."
-      "clouderrorreporting.v1beta1.ListGroupSta"
-      "tsRequest\032C.google.devtools.clouderrorre"
-      "porting.v1beta1.ListGroupStatsResponse\"5"
-      "\202\323\344\223\002/\022-/v1beta1/{project_name=projects/"
-      "*}/groupStats\022\300\001\n\nListEvents\022>.google.de"
-      "vtools.clouderrorreporting.v1beta1.ListE"
-      "ventsRequest\032\?.google.devtools.clouderro"
-      "rreporting.v1beta1.ListEventsResponse\"1\202"
-      "\323\344\223\002+\022)/v1beta1/{project_name=projects/*"
-      "}/events\022\306\001\n\014DeleteEvents\022@.google.devto"
-      "ols.clouderrorreporting.v1beta1.DeleteEv"
-      "entsRequest\032A.google.devtools.clouderror"
-      "reporting.v1beta1.DeleteEventsResponse\"1"
-      "\202\323\344\223\002+*)/v1beta1/{project_name=projects/"
-      "*}/eventsB\321\001\n/com.google.devtools.cloude"
-      "rrorreporting.v1beta1B\026ErrorStatsService"
-      "ProtoP\001Z^google.golang.org/genproto/goog"
-      "leapis/devtools/clouderrorreporting/v1be"
-      "ta1;clouderrorreporting\252\002#Google.Cloud.E"
-      "rrorReporting.V1Beta1b\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 3589);
+    "\nEgoogle/devtools/clouderrorreporting/v1"
+    "beta1/error_stats_service.proto\022+google."
+    "devtools.clouderrorreporting.v1beta1\032\034go"
+    "ogle/api/annotations.proto\0328google/devto"
+    "ols/clouderrorreporting/v1beta1/common.p"
+    "roto\032\036google/protobuf/duration.proto\032\037go"
+    "ogle/protobuf/timestamp.proto\"\241\004\n\025ListGr"
+    "oupStatsRequest\022\024\n\014project_name\030\001 \001(\t\022\020\n"
+    "\010group_id\030\002 \003(\t\022Y\n\016service_filter\030\003 \001(\0132"
+    "A.google.devtools.clouderrorreporting.v1"
+    "beta1.ServiceContextFilter\022O\n\ntime_range"
+    "\030\005 \001(\0132;.google.devtools.clouderrorrepor"
+    "ting.v1beta1.QueryTimeRange\0227\n\024timed_cou"
+    "nt_duration\030\006 \001(\0132\031.google.protobuf.Dura"
+    "tion\022S\n\talignment\030\007 \001(\0162@.google.devtool"
+    "s.clouderrorreporting.v1beta1.TimedCount"
+    "Alignment\0222\n\016alignment_time\030\010 \001(\0132\032.goog"
+    "le.protobuf.Timestamp\022K\n\005order\030\t \001(\0162<.g"
+    "oogle.devtools.clouderrorreporting.v1bet"
+    "a1.ErrorGroupOrder\022\021\n\tpage_size\030\013 \001(\005\022\022\n"
+    "\npage_token\030\014 \001(\t\"\300\001\n\026ListGroupStatsResp"
+    "onse\022W\n\021error_group_stats\030\001 \003(\0132<.google"
+    ".devtools.clouderrorreporting.v1beta1.Er"
+    "rorGroupStats\022\027\n\017next_page_token\030\002 \001(\t\0224"
+    "\n\020time_range_begin\030\004 \001(\0132\032.google.protob"
+    "uf.Timestamp\"\206\004\n\017ErrorGroupStats\022F\n\005grou"
+    "p\030\001 \001(\01327.google.devtools.clouderrorrepo"
+    "rting.v1beta1.ErrorGroup\022\r\n\005count\030\002 \001(\003\022"
+    "\034\n\024affected_users_count\030\003 \001(\003\022M\n\014timed_c"
+    "ounts\030\004 \003(\01327.google.devtools.clouderror"
+    "reporting.v1beta1.TimedCount\0223\n\017first_se"
+    "en_time\030\005 \001(\0132\032.google.protobuf.Timestam"
+    "p\0222\n\016last_seen_time\030\006 \001(\0132\032.google.proto"
+    "buf.Timestamp\022V\n\021affected_services\030\007 \003(\013"
+    "2;.google.devtools.clouderrorreporting.v"
+    "1beta1.ServiceContext\022\035\n\025num_affected_se"
+    "rvices\030\010 \001(\005\022O\n\016representative\030\t \001(\01327.g"
+    "oogle.devtools.clouderrorreporting.v1bet"
+    "a1.ErrorEvent\"y\n\nTimedCount\022\r\n\005count\030\001 \001"
+    "(\003\022.\n\nstart_time\030\002 \001(\0132\032.google.protobuf"
+    ".Timestamp\022,\n\010end_time\030\003 \001(\0132\032.google.pr"
+    "otobuf.Timestamp\"\216\002\n\021ListEventsRequest\022\024"
+    "\n\014project_name\030\001 \001(\t\022\020\n\010group_id\030\002 \001(\t\022Y"
+    "\n\016service_filter\030\003 \001(\0132A.google.devtools"
+    ".clouderrorreporting.v1beta1.ServiceCont"
+    "extFilter\022O\n\ntime_range\030\004 \001(\0132;.google.d"
+    "evtools.clouderrorreporting.v1beta1.Quer"
+    "yTimeRange\022\021\n\tpage_size\030\006 \001(\005\022\022\n\npage_to"
+    "ken\030\007 \001(\t\"\262\001\n\022ListEventsResponse\022M\n\014erro"
+    "r_events\030\001 \003(\01327.google.devtools.clouder"
+    "rorreporting.v1beta1.ErrorEvent\022\027\n\017next_"
+    "page_token\030\002 \001(\t\0224\n\020time_range_begin\030\004 \001"
+    "(\0132\032.google.protobuf.Timestamp\"\347\001\n\016Query"
+    "TimeRange\022R\n\006period\030\001 \001(\0162B.google.devto"
+    "ols.clouderrorreporting.v1beta1.QueryTim"
+    "eRange.Period\"\200\001\n\006Period\022\026\n\022PERIOD_UNSPE"
+    "CIFIED\020\000\022\021\n\rPERIOD_1_HOUR\020\001\022\022\n\016PERIOD_6_"
+    "HOURS\020\002\022\020\n\014PERIOD_1_DAY\020\003\022\021\n\rPERIOD_1_WE"
+    "EK\020\004\022\022\n\016PERIOD_30_DAYS\020\005\"O\n\024ServiceConte"
+    "xtFilter\022\017\n\007service\030\002 \001(\t\022\017\n\007version\030\003 \001"
+    "(\t\022\025\n\rresource_type\030\004 \001(\t\"+\n\023DeleteEvent"
+    "sRequest\022\024\n\014project_name\030\001 \001(\t\"\026\n\024Delete"
+    "EventsResponse*u\n\023TimedCountAlignment\022%\n"
+    "!ERROR_COUNT_ALIGNMENT_UNSPECIFIED\020\000\022\033\n\027"
+    "ALIGNMENT_EQUAL_ROUNDED\020\001\022\032\n\026ALIGNMENT_E"
+    "QUAL_AT_END\020\002*}\n\017ErrorGroupOrder\022\033\n\027GROU"
+    "P_ORDER_UNSPECIFIED\020\000\022\016\n\nCOUNT_DESC\020\001\022\022\n"
+    "\016LAST_SEEN_DESC\020\002\022\020\n\014CREATED_DESC\020\003\022\027\n\023A"
+    "FFECTED_USERS_DESC\020\0042\362\004\n\021ErrorStatsServi"
+    "ce\022\320\001\n\016ListGroupStats\022B.google.devtools."
+    "clouderrorreporting.v1beta1.ListGroupSta"
+    "tsRequest\032C.google.devtools.clouderrorre"
+    "porting.v1beta1.ListGroupStatsResponse\"5"
+    "\202\323\344\223\002/\022-/v1beta1/{project_name=projects/"
+    "*}/groupStats\022\300\001\n\nListEvents\022>.google.de"
+    "vtools.clouderrorreporting.v1beta1.ListE"
+    "ventsRequest\032\?.google.devtools.clouderro"
+    "rreporting.v1beta1.ListEventsResponse\"1\202"
+    "\323\344\223\002+\022)/v1beta1/{project_name=projects/*"
+    "}/events\022\306\001\n\014DeleteEvents\022@.google.devto"
+    "ols.clouderrorreporting.v1beta1.DeleteEv"
+    "entsRequest\032A.google.devtools.clouderror"
+    "reporting.v1beta1.DeleteEventsResponse\"1"
+    "\202\323\344\223\002+*)/v1beta1/{project_name=projects/"
+    "*}/eventsB\321\001\n/com.google.devtools.cloude"
+    "rrorreporting.v1beta1B\026ErrorStatsService"
+    "ProtoP\001Z^google.golang.org/genproto/goog"
+    "leapis/devtools/clouderrorreporting/v1be"
+    "ta1;clouderrorreporting\252\002#Google.Cloud.E"
+    "rrorReporting.V1Beta1b\006proto3", 3589);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/devtools/clouderrorreporting/v1beta1/error_stats_service.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -376,38 +455,9 @@ struct StaticDescriptorInitializer_google_2fdevtools_2fclouderrorreporting_2fv1b
     protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   }
 } static_descriptor_initializer_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto_;
-const ::google::protobuf::EnumDescriptor* QueryTimeRange_Period_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
-}
-bool QueryTimeRange_Period_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const QueryTimeRange_Period QueryTimeRange::PERIOD_UNSPECIFIED;
-const QueryTimeRange_Period QueryTimeRange::PERIOD_1_HOUR;
-const QueryTimeRange_Period QueryTimeRange::PERIOD_6_HOURS;
-const QueryTimeRange_Period QueryTimeRange::PERIOD_1_DAY;
-const QueryTimeRange_Period QueryTimeRange::PERIOD_1_WEEK;
-const QueryTimeRange_Period QueryTimeRange::PERIOD_30_DAYS;
-const QueryTimeRange_Period QueryTimeRange::Period_MIN;
-const QueryTimeRange_Period QueryTimeRange::Period_MAX;
-const int QueryTimeRange::Period_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::google::protobuf::EnumDescriptor* TimedCountAlignment_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[1];
+  return TimedCountAlignment_descriptor_;
 }
 bool TimedCountAlignment_IsValid(int value) {
   switch (value) {
@@ -422,7 +472,7 @@ bool TimedCountAlignment_IsValid(int value) {
 
 const ::google::protobuf::EnumDescriptor* ErrorGroupOrder_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[2];
+  return ErrorGroupOrder_descriptor_;
 }
 bool ErrorGroupOrder_IsValid(int value) {
   switch (value) {
@@ -436,6 +486,16 @@ bool ErrorGroupOrder_IsValid(int value) {
       return false;
   }
 }
+
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
 
 
 // ===================================================================
@@ -455,57 +515,39 @@ const int ListGroupStatsRequest::kPageTokenFieldNumber;
 
 ListGroupStatsRequest::ListGroupStatsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest)
 }
+
+void ListGroupStatsRequest::InitAsDefaultInstance() {
+  service_filter_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::ServiceContextFilter*>(
+      ::google::devtools::clouderrorreporting::v1beta1::ServiceContextFilter::internal_default_instance());
+  time_range_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::QueryTimeRange*>(
+      ::google::devtools::clouderrorreporting::v1beta1::QueryTimeRange::internal_default_instance());
+  timed_count_duration_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
+  alignment_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+}
+
 ListGroupStatsRequest::ListGroupStatsRequest(const ListGroupStatsRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      group_id_(from.group_id_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_name().size() > 0) {
-    project_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_name_);
-  }
-  page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.page_token().size() > 0) {
-    page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
-  }
-  if (from.has_service_filter()) {
-    service_filter_ = new ::google::devtools::clouderrorreporting::v1beta1::ServiceContextFilter(*from.service_filter_);
-  } else {
-    service_filter_ = NULL;
-  }
-  if (from.has_time_range()) {
-    time_range_ = new ::google::devtools::clouderrorreporting::v1beta1::QueryTimeRange(*from.time_range_);
-  } else {
-    time_range_ = NULL;
-  }
-  if (from.has_timed_count_duration()) {
-    timed_count_duration_ = new ::google::protobuf::Duration(*from.timed_count_duration_);
-  } else {
-    timed_count_duration_ = NULL;
-  }
-  if (from.has_alignment_time()) {
-    alignment_time_ = new ::google::protobuf::Timestamp(*from.alignment_time_);
-  } else {
-    alignment_time_ = NULL;
-  }
-  ::memcpy(&alignment_, &from.alignment_,
-    reinterpret_cast<char*>(&page_size_) -
-    reinterpret_cast<char*>(&alignment_) + sizeof(page_size_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest)
 }
 
 void ListGroupStatsRequest::SharedCtor() {
   project_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&service_filter_, 0, reinterpret_cast<char*>(&page_size_) -
-    reinterpret_cast<char*>(&service_filter_) + sizeof(page_size_));
+  service_filter_ = NULL;
+  time_range_ = NULL;
+  timed_count_duration_ = NULL;
+  alignment_time_ = NULL;
+  ::memset(&alignment_, 0, reinterpret_cast<char*>(&page_size_) -
+    reinterpret_cast<char*>(&alignment_) + sizeof(page_size_));
   _cached_size_ = 0;
 }
 
@@ -517,16 +559,10 @@ ListGroupStatsRequest::~ListGroupStatsRequest() {
 void ListGroupStatsRequest::SharedDtor() {
   project_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &ListGroupStatsRequest_default_instance_.get()) {
     delete service_filter_;
-  }
-  if (this != internal_default_instance()) {
     delete time_range_;
-  }
-  if (this != internal_default_instance()) {
     delete timed_count_duration_;
-  }
-  if (this != internal_default_instance()) {
     delete alignment_time_;
   }
 }
@@ -538,13 +574,15 @@ void ListGroupStatsRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListGroupStatsRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return ListGroupStatsRequest_descriptor_;
 }
 
 const ListGroupStatsRequest& ListGroupStatsRequest::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListGroupStatsRequest> ListGroupStatsRequest_default_instance_;
 
 ListGroupStatsRequest* ListGroupStatsRequest::New(::google::protobuf::Arena* arena) const {
   ListGroupStatsRequest* n = new ListGroupStatsRequest;
@@ -556,27 +594,39 @@ ListGroupStatsRequest* ListGroupStatsRequest::New(::google::protobuf::Arena* are
 
 void ListGroupStatsRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest)
-  group_id_.Clear();
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(ListGroupStatsRequest, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<ListGroupStatsRequest*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(alignment_, order_);
   project_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && service_filter_ != NULL) {
-    delete service_filter_;
-  }
+  if (GetArenaNoVirtual() == NULL && service_filter_ != NULL) delete service_filter_;
   service_filter_ = NULL;
-  if (GetArenaNoVirtual() == NULL && time_range_ != NULL) {
-    delete time_range_;
-  }
+  if (GetArenaNoVirtual() == NULL && time_range_ != NULL) delete time_range_;
   time_range_ = NULL;
-  if (GetArenaNoVirtual() == NULL && timed_count_duration_ != NULL) {
-    delete timed_count_duration_;
-  }
+  if (GetArenaNoVirtual() == NULL && timed_count_duration_ != NULL) delete timed_count_duration_;
   timed_count_duration_ = NULL;
-  if (GetArenaNoVirtual() == NULL && alignment_time_ != NULL) {
-    delete alignment_time_;
-  }
+  if (GetArenaNoVirtual() == NULL && alignment_time_ != NULL) delete alignment_time_;
   alignment_time_ = NULL;
-  ::memset(&alignment_, 0, reinterpret_cast<char*>(&page_size_) -
-    reinterpret_cast<char*>(&alignment_) + sizeof(page_size_));
+  page_size_ = 0;
+  page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+
+#undef ZR_HELPER_
+#undef ZR_
+
+  group_id_.Clear();
 }
 
 bool ListGroupStatsRequest::MergePartialFromCodedStream(
@@ -585,13 +635,13 @@ bool ListGroupStatsRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string project_name = 1;
+      // optional string project_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -601,12 +651,14 @@ bool ListGroupStatsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_group_id;
         break;
       }
 
       // repeated string group_id = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_group_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_group_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -617,45 +669,54 @@ bool ListGroupStatsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_group_id;
+        if (input->ExpectTag(26)) goto parse_service_filter;
         break;
       }
 
-      // .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
+      // optional .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_service_filter:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_service_filter()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_time_range;
         break;
       }
 
-      // .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 5;
+      // optional .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_time_range:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_time_range()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(50)) goto parse_timed_count_duration;
         break;
       }
 
-      // .google.protobuf.Duration timed_count_duration = 6;
+      // optional .google.protobuf.Duration timed_count_duration = 6;
       case 6: {
-        if (tag == 50u) {
+        if (tag == 50) {
+         parse_timed_count_duration:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_timed_count_duration()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(56)) goto parse_alignment;
         break;
       }
 
-      // .google.devtools.clouderrorreporting.v1beta1.TimedCountAlignment alignment = 7;
+      // optional .google.devtools.clouderrorreporting.v1beta1.TimedCountAlignment alignment = 7;
       case 7: {
-        if (tag == 56u) {
+        if (tag == 56) {
+         parse_alignment:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -664,23 +725,27 @@ bool ListGroupStatsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(66)) goto parse_alignment_time;
         break;
       }
 
-      // .google.protobuf.Timestamp alignment_time = 8;
+      // optional .google.protobuf.Timestamp alignment_time = 8;
       case 8: {
-        if (tag == 66u) {
+        if (tag == 66) {
+         parse_alignment_time:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_alignment_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(72)) goto parse_order;
         break;
       }
 
-      // .google.devtools.clouderrorreporting.v1beta1.ErrorGroupOrder order = 9;
+      // optional .google.devtools.clouderrorreporting.v1beta1.ErrorGroupOrder order = 9;
       case 9: {
-        if (tag == 72u) {
+        if (tag == 72) {
+         parse_order:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -689,12 +754,14 @@ bool ListGroupStatsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(88)) goto parse_page_size;
         break;
       }
 
-      // int32 page_size = 11;
+      // optional int32 page_size = 11;
       case 11: {
-        if (tag == 88u) {
+        if (tag == 88) {
+         parse_page_size:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -702,12 +769,14 @@ bool ListGroupStatsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(98)) goto parse_page_token;
         break;
       }
 
-      // string page_token = 12;
+      // optional string page_token = 12;
       case 12: {
-        if (tag == 98u) {
+        if (tag == 98) {
+         parse_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -717,6 +786,7 @@ bool ListGroupStatsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -744,7 +814,7 @@ failure:
 void ListGroupStatsRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest)
-  // string project_name = 1;
+  // optional string project_name = 1;
   if (this->project_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_name().data(), this->project_name().length(),
@@ -764,48 +834,48 @@ void ListGroupStatsRequest::SerializeWithCachedSizes(
       2, this->group_id(i), output);
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
+  // optional .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
   if (this->has_service_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *this->service_filter_, output);
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 5;
+  // optional .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 5;
   if (this->has_time_range()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       5, *this->time_range_, output);
   }
 
-  // .google.protobuf.Duration timed_count_duration = 6;
+  // optional .google.protobuf.Duration timed_count_duration = 6;
   if (this->has_timed_count_duration()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       6, *this->timed_count_duration_, output);
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.TimedCountAlignment alignment = 7;
+  // optional .google.devtools.clouderrorreporting.v1beta1.TimedCountAlignment alignment = 7;
   if (this->alignment() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       7, this->alignment(), output);
   }
 
-  // .google.protobuf.Timestamp alignment_time = 8;
+  // optional .google.protobuf.Timestamp alignment_time = 8;
   if (this->has_alignment_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       8, *this->alignment_time_, output);
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.ErrorGroupOrder order = 9;
+  // optional .google.devtools.clouderrorreporting.v1beta1.ErrorGroupOrder order = 9;
   if (this->order() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       9, this->order(), output);
   }
 
-  // int32 page_size = 11;
+  // optional int32 page_size = 11;
   if (this->page_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(11, this->page_size(), output);
   }
 
-  // string page_token = 12;
+  // optional string page_token = 12;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -822,7 +892,7 @@ void ListGroupStatsRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest)
-  // string project_name = 1;
+  // optional string project_name = 1;
   if (this->project_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_name().data(), this->project_name().length(),
@@ -843,52 +913,52 @@ void ListGroupStatsRequest::SerializeWithCachedSizes(
       WriteStringToArray(2, this->group_id(i), target);
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
+  // optional .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
   if (this->has_service_filter()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         3, *this->service_filter_, false, target);
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 5;
+  // optional .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 5;
   if (this->has_time_range()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         5, *this->time_range_, false, target);
   }
 
-  // .google.protobuf.Duration timed_count_duration = 6;
+  // optional .google.protobuf.Duration timed_count_duration = 6;
   if (this->has_timed_count_duration()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         6, *this->timed_count_duration_, false, target);
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.TimedCountAlignment alignment = 7;
+  // optional .google.devtools.clouderrorreporting.v1beta1.TimedCountAlignment alignment = 7;
   if (this->alignment() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       7, this->alignment(), target);
   }
 
-  // .google.protobuf.Timestamp alignment_time = 8;
+  // optional .google.protobuf.Timestamp alignment_time = 8;
   if (this->has_alignment_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         8, *this->alignment_time_, false, target);
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.ErrorGroupOrder order = 9;
+  // optional .google.devtools.clouderrorreporting.v1beta1.ErrorGroupOrder order = 9;
   if (this->order() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       9, this->order(), target);
   }
 
-  // int32 page_size = 11;
+  // optional int32 page_size = 11;
   if (this->page_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(11, this->page_size(), target);
   }
 
-  // string page_token = 12;
+  // optional string page_token = 12;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -907,73 +977,73 @@ size_t ListGroupStatsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest)
   size_t total_size = 0;
 
-  // repeated string group_id = 2;
-  total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->group_id_size());
-  for (int i = 0; i < this->group_id_size(); i++) {
-    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
-      this->group_id(i));
-  }
-
-  // string project_name = 1;
+  // optional string project_name = 1;
   if (this->project_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->project_name());
   }
 
-  // string page_token = 12;
-  if (this->page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->page_token());
-  }
-
-  // .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
+  // optional .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
   if (this->has_service_filter()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->service_filter_);
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 5;
+  // optional .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 5;
   if (this->has_time_range()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->time_range_);
   }
 
-  // .google.protobuf.Duration timed_count_duration = 6;
+  // optional .google.protobuf.Duration timed_count_duration = 6;
   if (this->has_timed_count_duration()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->timed_count_duration_);
   }
 
-  // .google.protobuf.Timestamp alignment_time = 8;
+  // optional .google.devtools.clouderrorreporting.v1beta1.TimedCountAlignment alignment = 7;
+  if (this->alignment() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->alignment());
+  }
+
+  // optional .google.protobuf.Timestamp alignment_time = 8;
   if (this->has_alignment_time()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->alignment_time_);
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.TimedCountAlignment alignment = 7;
-  if (this->alignment() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->alignment());
-  }
-
-  // .google.devtools.clouderrorreporting.v1beta1.ErrorGroupOrder order = 9;
+  // optional .google.devtools.clouderrorreporting.v1beta1.ErrorGroupOrder order = 9;
   if (this->order() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->order());
   }
 
-  // int32 page_size = 11;
+  // optional int32 page_size = 11;
   if (this->page_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->page_size());
+  }
+
+  // optional string page_token = 12;
+  if (this->page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->page_token());
+  }
+
+  // repeated string group_id = 2;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->group_id_size());
+  for (int i = 0; i < this->group_id_size(); i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->group_id(i));
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -985,7 +1055,7 @@ size_t ListGroupStatsRequest::ByteSizeLong() const {
 
 void ListGroupStatsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListGroupStatsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListGroupStatsRequest>(
           &from);
@@ -994,22 +1064,25 @@ void ListGroupStatsRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListGroupStatsRequest::MergeFrom(const ListGroupStatsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  group_id_.MergeFrom(from.group_id_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListGroupStatsRequest::UnsafeMergeFrom(const ListGroupStatsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
+  group_id_.UnsafeMergeFrom(from.group_id_);
   if (from.project_name().size() > 0) {
 
     project_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_name_);
-  }
-  if (from.page_token().size() > 0) {
-
-    page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
   }
   if (from.has_service_filter()) {
     mutable_service_filter()->::google::devtools::clouderrorreporting::v1beta1::ServiceContextFilter::MergeFrom(from.service_filter());
@@ -1020,17 +1093,21 @@ void ListGroupStatsRequest::MergeFrom(const ListGroupStatsRequest& from) {
   if (from.has_timed_count_duration()) {
     mutable_timed_count_duration()->::google::protobuf::Duration::MergeFrom(from.timed_count_duration());
   }
-  if (from.has_alignment_time()) {
-    mutable_alignment_time()->::google::protobuf::Timestamp::MergeFrom(from.alignment_time());
-  }
   if (from.alignment() != 0) {
     set_alignment(from.alignment());
+  }
+  if (from.has_alignment_time()) {
+    mutable_alignment_time()->::google::protobuf::Timestamp::MergeFrom(from.alignment_time());
   }
   if (from.order() != 0) {
     set_order(from.order());
   }
   if (from.page_size() != 0) {
     set_page_size(from.page_size());
+  }
+  if (from.page_token().size() > 0) {
+
+    page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
   }
 }
 
@@ -1045,10 +1122,11 @@ void ListGroupStatsRequest::CopyFrom(const ListGroupStatsRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListGroupStatsRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -1057,34 +1135,38 @@ void ListGroupStatsRequest::Swap(ListGroupStatsRequest* other) {
   InternalSwap(other);
 }
 void ListGroupStatsRequest::InternalSwap(ListGroupStatsRequest* other) {
-  group_id_.UnsafeArenaSwap(&other->group_id_);
   project_name_.Swap(&other->project_name_);
-  page_token_.Swap(&other->page_token_);
+  group_id_.UnsafeArenaSwap(&other->group_id_);
   std::swap(service_filter_, other->service_filter_);
   std::swap(time_range_, other->time_range_);
   std::swap(timed_count_duration_, other->timed_count_duration_);
-  std::swap(alignment_time_, other->alignment_time_);
   std::swap(alignment_, other->alignment_);
+  std::swap(alignment_time_, other->alignment_time_);
   std::swap(order_, other->order_);
   std::swap(page_size_, other->page_size_);
+  page_token_.Swap(&other->page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListGroupStatsRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListGroupStatsRequest_descriptor_;
+  metadata.reflection = ListGroupStatsRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ListGroupStatsRequest
 
-// string project_name = 1;
+// optional string project_name = 1;
 void ListGroupStatsRequest::clear_project_name() {
   project_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListGroupStatsRequest::project_name() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest.project_name)
-  return project_name_.GetNoArena();
+  return project_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListGroupStatsRequest::set_project_name(const ::std::string& value) {
   
@@ -1177,7 +1259,7 @@ ListGroupStatsRequest::mutable_group_id() {
   return &group_id_;
 }
 
-// .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
+// optional .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
 bool ListGroupStatsRequest::has_service_filter() const {
   return this != internal_default_instance() && service_filter_ != NULL;
 }
@@ -1216,7 +1298,7 @@ void ListGroupStatsRequest::set_allocated_service_filter(::google::devtools::clo
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest.service_filter)
 }
 
-// .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 5;
+// optional .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 5;
 bool ListGroupStatsRequest::has_time_range() const {
   return this != internal_default_instance() && time_range_ != NULL;
 }
@@ -1255,7 +1337,7 @@ void ListGroupStatsRequest::set_allocated_time_range(::google::devtools::clouder
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest.time_range)
 }
 
-// .google.protobuf.Duration timed_count_duration = 6;
+// optional .google.protobuf.Duration timed_count_duration = 6;
 bool ListGroupStatsRequest::has_timed_count_duration() const {
   return this != internal_default_instance() && timed_count_duration_ != NULL;
 }
@@ -1299,7 +1381,7 @@ void ListGroupStatsRequest::set_allocated_timed_count_duration(::google::protobu
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest.timed_count_duration)
 }
 
-// .google.devtools.clouderrorreporting.v1beta1.TimedCountAlignment alignment = 7;
+// optional .google.devtools.clouderrorreporting.v1beta1.TimedCountAlignment alignment = 7;
 void ListGroupStatsRequest::clear_alignment() {
   alignment_ = 0;
 }
@@ -1313,7 +1395,7 @@ void ListGroupStatsRequest::set_alignment(::google::devtools::clouderrorreportin
   // @@protoc_insertion_point(field_set:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest.alignment)
 }
 
-// .google.protobuf.Timestamp alignment_time = 8;
+// optional .google.protobuf.Timestamp alignment_time = 8;
 bool ListGroupStatsRequest::has_alignment_time() const {
   return this != internal_default_instance() && alignment_time_ != NULL;
 }
@@ -1357,7 +1439,7 @@ void ListGroupStatsRequest::set_allocated_alignment_time(::google::protobuf::Tim
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest.alignment_time)
 }
 
-// .google.devtools.clouderrorreporting.v1beta1.ErrorGroupOrder order = 9;
+// optional .google.devtools.clouderrorreporting.v1beta1.ErrorGroupOrder order = 9;
 void ListGroupStatsRequest::clear_order() {
   order_ = 0;
 }
@@ -1371,7 +1453,7 @@ void ListGroupStatsRequest::set_order(::google::devtools::clouderrorreporting::v
   // @@protoc_insertion_point(field_set:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest.order)
 }
 
-// int32 page_size = 11;
+// optional int32 page_size = 11;
 void ListGroupStatsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -1385,13 +1467,13 @@ void ListGroupStatsRequest::set_page_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest.page_size)
 }
 
-// string page_token = 12;
+// optional string page_token = 12;
 void ListGroupStatsRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListGroupStatsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListGroupStatsRequest::set_page_token(const ::std::string& value) {
   
@@ -1429,6 +1511,9 @@ void ListGroupStatsRequest::set_allocated_page_token(::std::string* page_token) 
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsRequest.page_token)
 }
 
+inline const ListGroupStatsRequest* ListGroupStatsRequest::internal_default_instance() {
+  return &ListGroupStatsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1441,27 +1526,21 @@ const int ListGroupStatsResponse::kTimeRangeBeginFieldNumber;
 
 ListGroupStatsResponse::ListGroupStatsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsResponse)
 }
+
+void ListGroupStatsResponse::InitAsDefaultInstance() {
+  time_range_begin_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+}
+
 ListGroupStatsResponse::ListGroupStatsResponse(const ListGroupStatsResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      error_group_stats_(from.error_group_stats_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_page_token().size() > 0) {
-    next_page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_page_token_);
-  }
-  if (from.has_time_range_begin()) {
-    time_range_begin_ = new ::google::protobuf::Timestamp(*from.time_range_begin_);
-  } else {
-    time_range_begin_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsResponse)
 }
 
@@ -1478,7 +1557,7 @@ ListGroupStatsResponse::~ListGroupStatsResponse() {
 
 void ListGroupStatsResponse::SharedDtor() {
   next_page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &ListGroupStatsResponse_default_instance_.get()) {
     delete time_range_begin_;
   }
 }
@@ -1490,13 +1569,15 @@ void ListGroupStatsResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListGroupStatsResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return ListGroupStatsResponse_descriptor_;
 }
 
 const ListGroupStatsResponse& ListGroupStatsResponse::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListGroupStatsResponse> ListGroupStatsResponse_default_instance_;
 
 ListGroupStatsResponse* ListGroupStatsResponse::New(::google::protobuf::Arena* arena) const {
   ListGroupStatsResponse* n = new ListGroupStatsResponse;
@@ -1508,12 +1589,10 @@ ListGroupStatsResponse* ListGroupStatsResponse::New(::google::protobuf::Arena* a
 
 void ListGroupStatsResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsResponse)
-  error_group_stats_.Clear();
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && time_range_begin_ != NULL) {
-    delete time_range_begin_;
-  }
+  if (GetArenaNoVirtual() == NULL && time_range_begin_ != NULL) delete time_range_begin_;
   time_range_begin_ = NULL;
+  error_group_stats_.Clear();
 }
 
 bool ListGroupStatsResponse::MergePartialFromCodedStream(
@@ -1522,26 +1601,30 @@ bool ListGroupStatsResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats error_group_stats = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_error_group_stats:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_error_group_stats()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_error_group_stats;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_next_page_token;
         break;
       }
 
-      // string next_page_token = 2;
+      // optional string next_page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_next_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1551,17 +1634,20 @@ bool ListGroupStatsResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_time_range_begin;
         break;
       }
 
-      // .google.protobuf.Timestamp time_range_begin = 4;
+      // optional .google.protobuf.Timestamp time_range_begin = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_time_range_begin:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_time_range_begin()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1595,7 +1681,7 @@ void ListGroupStatsResponse::SerializeWithCachedSizes(
       1, this->error_group_stats(i), output);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -1605,7 +1691,7 @@ void ListGroupStatsResponse::SerializeWithCachedSizes(
       2, this->next_page_token(), output);
   }
 
-  // .google.protobuf.Timestamp time_range_begin = 4;
+  // optional .google.protobuf.Timestamp time_range_begin = 4;
   if (this->has_time_range_begin()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, *this->time_range_begin_, output);
@@ -1625,7 +1711,7 @@ void ListGroupStatsResponse::SerializeWithCachedSizes(
         1, this->error_group_stats(i), false, target);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -1636,7 +1722,7 @@ void ListGroupStatsResponse::SerializeWithCachedSizes(
         2, this->next_page_token(), target);
   }
 
-  // .google.protobuf.Timestamp time_range_begin = 4;
+  // optional .google.protobuf.Timestamp time_range_begin = 4;
   if (this->has_time_range_begin()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -1651,6 +1737,20 @@ size_t ListGroupStatsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsResponse)
   size_t total_size = 0;
 
+  // optional string next_page_token = 2;
+  if (this->next_page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_page_token());
+  }
+
+  // optional .google.protobuf.Timestamp time_range_begin = 4;
+  if (this->has_time_range_begin()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->time_range_begin_);
+  }
+
   // repeated .google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats error_group_stats = 1;
   {
     unsigned int count = this->error_group_stats_size();
@@ -1662,20 +1762,6 @@ size_t ListGroupStatsResponse::ByteSizeLong() const {
     }
   }
 
-  // string next_page_token = 2;
-  if (this->next_page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_page_token());
-  }
-
-  // .google.protobuf.Timestamp time_range_begin = 4;
-  if (this->has_time_range_begin()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->time_range_begin_);
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -1685,7 +1771,7 @@ size_t ListGroupStatsResponse::ByteSizeLong() const {
 
 void ListGroupStatsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListGroupStatsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListGroupStatsResponse>(
           &from);
@@ -1694,14 +1780,21 @@ void ListGroupStatsResponse::MergeFrom(const ::google::protobuf::Message& from) 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListGroupStatsResponse::MergeFrom(const ListGroupStatsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListGroupStatsResponse::UnsafeMergeFrom(const ListGroupStatsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   error_group_stats_.MergeFrom(from.error_group_stats_);
   if (from.next_page_token().size() > 0) {
 
@@ -1723,10 +1816,11 @@ void ListGroupStatsResponse::CopyFrom(const ListGroupStatsResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListGroupStatsResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -1738,12 +1832,16 @@ void ListGroupStatsResponse::InternalSwap(ListGroupStatsResponse* other) {
   error_group_stats_.UnsafeArenaSwap(&other->error_group_stats_);
   next_page_token_.Swap(&other->next_page_token_);
   std::swap(time_range_begin_, other->time_range_begin_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListGroupStatsResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListGroupStatsResponse_descriptor_;
+  metadata.reflection = ListGroupStatsResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -1779,13 +1877,13 @@ ListGroupStatsResponse::error_group_stats() const {
   return error_group_stats_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 void ListGroupStatsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListGroupStatsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListGroupStatsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -1823,7 +1921,7 @@ void ListGroupStatsResponse::set_allocated_next_page_token(::std::string* next_p
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsResponse.next_page_token)
 }
 
-// .google.protobuf.Timestamp time_range_begin = 4;
+// optional .google.protobuf.Timestamp time_range_begin = 4;
 bool ListGroupStatsResponse::has_time_range_begin() const {
   return this != internal_default_instance() && time_range_begin_ != NULL;
 }
@@ -1867,6 +1965,9 @@ void ListGroupStatsResponse::set_allocated_time_range_begin(::google::protobuf::
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ListGroupStatsResponse.time_range_begin)
 }
 
+inline const ListGroupStatsResponse* ListGroupStatsResponse::internal_default_instance() {
+  return &ListGroupStatsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1885,48 +1986,37 @@ const int ErrorGroupStats::kRepresentativeFieldNumber;
 
 ErrorGroupStats::ErrorGroupStats()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats)
 }
+
+void ErrorGroupStats::InitAsDefaultInstance() {
+  group_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup*>(
+      ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup::internal_default_instance());
+  first_seen_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  last_seen_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  representative_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::ErrorEvent*>(
+      ::google::devtools::clouderrorreporting::v1beta1::ErrorEvent::internal_default_instance());
+}
+
 ErrorGroupStats::ErrorGroupStats(const ErrorGroupStats& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      timed_counts_(from.timed_counts_),
-      affected_services_(from.affected_services_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_group()) {
-    group_ = new ::google::devtools::clouderrorreporting::v1beta1::ErrorGroup(*from.group_);
-  } else {
-    group_ = NULL;
-  }
-  if (from.has_first_seen_time()) {
-    first_seen_time_ = new ::google::protobuf::Timestamp(*from.first_seen_time_);
-  } else {
-    first_seen_time_ = NULL;
-  }
-  if (from.has_last_seen_time()) {
-    last_seen_time_ = new ::google::protobuf::Timestamp(*from.last_seen_time_);
-  } else {
-    last_seen_time_ = NULL;
-  }
-  if (from.has_representative()) {
-    representative_ = new ::google::devtools::clouderrorreporting::v1beta1::ErrorEvent(*from.representative_);
-  } else {
-    representative_ = NULL;
-  }
-  ::memcpy(&count_, &from.count_,
-    reinterpret_cast<char*>(&num_affected_services_) -
-    reinterpret_cast<char*>(&count_) + sizeof(num_affected_services_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats)
 }
 
 void ErrorGroupStats::SharedCtor() {
-  ::memset(&group_, 0, reinterpret_cast<char*>(&num_affected_services_) -
-    reinterpret_cast<char*>(&group_) + sizeof(num_affected_services_));
+  group_ = NULL;
+  first_seen_time_ = NULL;
+  last_seen_time_ = NULL;
+  representative_ = NULL;
+  ::memset(&count_, 0, reinterpret_cast<char*>(&num_affected_services_) -
+    reinterpret_cast<char*>(&count_) + sizeof(num_affected_services_));
   _cached_size_ = 0;
 }
 
@@ -1936,16 +2026,10 @@ ErrorGroupStats::~ErrorGroupStats() {
 }
 
 void ErrorGroupStats::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &ErrorGroupStats_default_instance_.get()) {
     delete group_;
-  }
-  if (this != internal_default_instance()) {
     delete first_seen_time_;
-  }
-  if (this != internal_default_instance()) {
     delete last_seen_time_;
-  }
-  if (this != internal_default_instance()) {
     delete representative_;
   }
 }
@@ -1957,13 +2041,15 @@ void ErrorGroupStats::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ErrorGroupStats::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return ErrorGroupStats_descriptor_;
 }
 
 const ErrorGroupStats& ErrorGroupStats::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ErrorGroupStats> ErrorGroupStats_default_instance_;
 
 ErrorGroupStats* ErrorGroupStats::New(::google::protobuf::Arena* arena) const {
   ErrorGroupStats* n = new ErrorGroupStats;
@@ -1975,26 +2061,37 @@ ErrorGroupStats* ErrorGroupStats::New(::google::protobuf::Arena* arena) const {
 
 void ErrorGroupStats::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(ErrorGroupStats, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<ErrorGroupStats*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(count_, num_affected_services_);
+  if (GetArenaNoVirtual() == NULL && group_ != NULL) delete group_;
+  group_ = NULL;
+  if (GetArenaNoVirtual() == NULL && first_seen_time_ != NULL) delete first_seen_time_;
+  first_seen_time_ = NULL;
+  if (GetArenaNoVirtual() == NULL && last_seen_time_ != NULL) delete last_seen_time_;
+  last_seen_time_ = NULL;
+  if (GetArenaNoVirtual() == NULL && representative_ != NULL) delete representative_;
+  representative_ = NULL;
+
+#undef ZR_HELPER_
+#undef ZR_
+
   timed_counts_.Clear();
   affected_services_.Clear();
-  if (GetArenaNoVirtual() == NULL && group_ != NULL) {
-    delete group_;
-  }
-  group_ = NULL;
-  if (GetArenaNoVirtual() == NULL && first_seen_time_ != NULL) {
-    delete first_seen_time_;
-  }
-  first_seen_time_ = NULL;
-  if (GetArenaNoVirtual() == NULL && last_seen_time_ != NULL) {
-    delete last_seen_time_;
-  }
-  last_seen_time_ = NULL;
-  if (GetArenaNoVirtual() == NULL && representative_ != NULL) {
-    delete representative_;
-  }
-  representative_ = NULL;
-  ::memset(&count_, 0, reinterpret_cast<char*>(&num_affected_services_) -
-    reinterpret_cast<char*>(&count_) + sizeof(num_affected_services_));
 }
 
 bool ErrorGroupStats::MergePartialFromCodedStream(
@@ -2003,24 +2100,26 @@ bool ErrorGroupStats::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.devtools.clouderrorreporting.v1beta1.ErrorGroup group = 1;
+      // optional .google.devtools.clouderrorreporting.v1beta1.ErrorGroup group = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_group()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_count;
         break;
       }
 
-      // int64 count = 2;
+      // optional int64 count = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_count:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -2028,12 +2127,14 @@ bool ErrorGroupStats::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_affected_users_count;
         break;
       }
 
-      // int64 affected_users_count = 3;
+      // optional int64 affected_users_count = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_affected_users_count:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -2041,60 +2142,74 @@ bool ErrorGroupStats::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_timed_counts;
         break;
       }
 
       // repeated .google.devtools.clouderrorreporting.v1beta1.TimedCount timed_counts = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_timed_counts:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_timed_counts:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_timed_counts()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_loop_timed_counts;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(42)) goto parse_first_seen_time;
         break;
       }
 
-      // .google.protobuf.Timestamp first_seen_time = 5;
+      // optional .google.protobuf.Timestamp first_seen_time = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_first_seen_time:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_first_seen_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(50)) goto parse_last_seen_time;
         break;
       }
 
-      // .google.protobuf.Timestamp last_seen_time = 6;
+      // optional .google.protobuf.Timestamp last_seen_time = 6;
       case 6: {
-        if (tag == 50u) {
+        if (tag == 50) {
+         parse_last_seen_time:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_last_seen_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(58)) goto parse_affected_services;
         break;
       }
 
       // repeated .google.devtools.clouderrorreporting.v1beta1.ServiceContext affected_services = 7;
       case 7: {
-        if (tag == 58u) {
+        if (tag == 58) {
+         parse_affected_services:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_affected_services:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_affected_services()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(58)) goto parse_loop_affected_services;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(64)) goto parse_num_affected_services;
         break;
       }
 
-      // int32 num_affected_services = 8;
+      // optional int32 num_affected_services = 8;
       case 8: {
-        if (tag == 64u) {
+        if (tag == 64) {
+         parse_num_affected_services:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -2102,17 +2217,20 @@ bool ErrorGroupStats::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(74)) goto parse_representative;
         break;
       }
 
-      // .google.devtools.clouderrorreporting.v1beta1.ErrorEvent representative = 9;
+      // optional .google.devtools.clouderrorreporting.v1beta1.ErrorEvent representative = 9;
       case 9: {
-        if (tag == 74u) {
+        if (tag == 74) {
+         parse_representative:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_representative()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2140,18 +2258,18 @@ failure:
 void ErrorGroupStats::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats)
-  // .google.devtools.clouderrorreporting.v1beta1.ErrorGroup group = 1;
+  // optional .google.devtools.clouderrorreporting.v1beta1.ErrorGroup group = 1;
   if (this->has_group()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->group_, output);
   }
 
-  // int64 count = 2;
+  // optional int64 count = 2;
   if (this->count() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(2, this->count(), output);
   }
 
-  // int64 affected_users_count = 3;
+  // optional int64 affected_users_count = 3;
   if (this->affected_users_count() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(3, this->affected_users_count(), output);
   }
@@ -2162,13 +2280,13 @@ void ErrorGroupStats::SerializeWithCachedSizes(
       4, this->timed_counts(i), output);
   }
 
-  // .google.protobuf.Timestamp first_seen_time = 5;
+  // optional .google.protobuf.Timestamp first_seen_time = 5;
   if (this->has_first_seen_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       5, *this->first_seen_time_, output);
   }
 
-  // .google.protobuf.Timestamp last_seen_time = 6;
+  // optional .google.protobuf.Timestamp last_seen_time = 6;
   if (this->has_last_seen_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       6, *this->last_seen_time_, output);
@@ -2180,12 +2298,12 @@ void ErrorGroupStats::SerializeWithCachedSizes(
       7, this->affected_services(i), output);
   }
 
-  // int32 num_affected_services = 8;
+  // optional int32 num_affected_services = 8;
   if (this->num_affected_services() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(8, this->num_affected_services(), output);
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.ErrorEvent representative = 9;
+  // optional .google.devtools.clouderrorreporting.v1beta1.ErrorEvent representative = 9;
   if (this->has_representative()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       9, *this->representative_, output);
@@ -2198,19 +2316,19 @@ void ErrorGroupStats::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats)
-  // .google.devtools.clouderrorreporting.v1beta1.ErrorGroup group = 1;
+  // optional .google.devtools.clouderrorreporting.v1beta1.ErrorGroup group = 1;
   if (this->has_group()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->group_, false, target);
   }
 
-  // int64 count = 2;
+  // optional int64 count = 2;
   if (this->count() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(2, this->count(), target);
   }
 
-  // int64 affected_users_count = 3;
+  // optional int64 affected_users_count = 3;
   if (this->affected_users_count() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(3, this->affected_users_count(), target);
   }
@@ -2222,14 +2340,14 @@ void ErrorGroupStats::SerializeWithCachedSizes(
         4, this->timed_counts(i), false, target);
   }
 
-  // .google.protobuf.Timestamp first_seen_time = 5;
+  // optional .google.protobuf.Timestamp first_seen_time = 5;
   if (this->has_first_seen_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         5, *this->first_seen_time_, false, target);
   }
 
-  // .google.protobuf.Timestamp last_seen_time = 6;
+  // optional .google.protobuf.Timestamp last_seen_time = 6;
   if (this->has_last_seen_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -2243,12 +2361,12 @@ void ErrorGroupStats::SerializeWithCachedSizes(
         7, this->affected_services(i), false, target);
   }
 
-  // int32 num_affected_services = 8;
+  // optional int32 num_affected_services = 8;
   if (this->num_affected_services() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(8, this->num_affected_services(), target);
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.ErrorEvent representative = 9;
+  // optional .google.devtools.clouderrorreporting.v1beta1.ErrorEvent representative = 9;
   if (this->has_representative()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -2262,6 +2380,55 @@ void ErrorGroupStats::SerializeWithCachedSizes(
 size_t ErrorGroupStats::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats)
   size_t total_size = 0;
+
+  // optional .google.devtools.clouderrorreporting.v1beta1.ErrorGroup group = 1;
+  if (this->has_group()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->group_);
+  }
+
+  // optional int64 count = 2;
+  if (this->count() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->count());
+  }
+
+  // optional int64 affected_users_count = 3;
+  if (this->affected_users_count() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->affected_users_count());
+  }
+
+  // optional .google.protobuf.Timestamp first_seen_time = 5;
+  if (this->has_first_seen_time()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->first_seen_time_);
+  }
+
+  // optional .google.protobuf.Timestamp last_seen_time = 6;
+  if (this->has_last_seen_time()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->last_seen_time_);
+  }
+
+  // optional int32 num_affected_services = 8;
+  if (this->num_affected_services() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->num_affected_services());
+  }
+
+  // optional .google.devtools.clouderrorreporting.v1beta1.ErrorEvent representative = 9;
+  if (this->has_representative()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->representative_);
+  }
 
   // repeated .google.devtools.clouderrorreporting.v1beta1.TimedCount timed_counts = 4;
   {
@@ -2285,55 +2452,6 @@ size_t ErrorGroupStats::ByteSizeLong() const {
     }
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.ErrorGroup group = 1;
-  if (this->has_group()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->group_);
-  }
-
-  // .google.protobuf.Timestamp first_seen_time = 5;
-  if (this->has_first_seen_time()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->first_seen_time_);
-  }
-
-  // .google.protobuf.Timestamp last_seen_time = 6;
-  if (this->has_last_seen_time()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->last_seen_time_);
-  }
-
-  // .google.devtools.clouderrorreporting.v1beta1.ErrorEvent representative = 9;
-  if (this->has_representative()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->representative_);
-  }
-
-  // int64 count = 2;
-  if (this->count() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->count());
-  }
-
-  // int64 affected_users_count = 3;
-  if (this->affected_users_count() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->affected_users_count());
-  }
-
-  // int32 num_affected_services = 8;
-  if (this->num_affected_services() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->num_affected_services());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -2343,7 +2461,7 @@ size_t ErrorGroupStats::ByteSizeLong() const {
 
 void ErrorGroupStats::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ErrorGroupStats* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ErrorGroupStats>(
           &from);
@@ -2352,27 +2470,25 @@ void ErrorGroupStats::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ErrorGroupStats::MergeFrom(const ErrorGroupStats& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ErrorGroupStats::UnsafeMergeFrom(const ErrorGroupStats& from) {
+  GOOGLE_DCHECK(&from != this);
   timed_counts_.MergeFrom(from.timed_counts_);
   affected_services_.MergeFrom(from.affected_services_);
   if (from.has_group()) {
     mutable_group()->::google::devtools::clouderrorreporting::v1beta1::ErrorGroup::MergeFrom(from.group());
-  }
-  if (from.has_first_seen_time()) {
-    mutable_first_seen_time()->::google::protobuf::Timestamp::MergeFrom(from.first_seen_time());
-  }
-  if (from.has_last_seen_time()) {
-    mutable_last_seen_time()->::google::protobuf::Timestamp::MergeFrom(from.last_seen_time());
-  }
-  if (from.has_representative()) {
-    mutable_representative()->::google::devtools::clouderrorreporting::v1beta1::ErrorEvent::MergeFrom(from.representative());
   }
   if (from.count() != 0) {
     set_count(from.count());
@@ -2380,8 +2496,17 @@ void ErrorGroupStats::MergeFrom(const ErrorGroupStats& from) {
   if (from.affected_users_count() != 0) {
     set_affected_users_count(from.affected_users_count());
   }
+  if (from.has_first_seen_time()) {
+    mutable_first_seen_time()->::google::protobuf::Timestamp::MergeFrom(from.first_seen_time());
+  }
+  if (from.has_last_seen_time()) {
+    mutable_last_seen_time()->::google::protobuf::Timestamp::MergeFrom(from.last_seen_time());
+  }
   if (from.num_affected_services() != 0) {
     set_num_affected_services(from.num_affected_services());
+  }
+  if (from.has_representative()) {
+    mutable_representative()->::google::devtools::clouderrorreporting::v1beta1::ErrorEvent::MergeFrom(from.representative());
   }
 }
 
@@ -2396,10 +2521,11 @@ void ErrorGroupStats::CopyFrom(const ErrorGroupStats& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ErrorGroupStats::IsInitialized() const {
+
   return true;
 }
 
@@ -2408,27 +2534,31 @@ void ErrorGroupStats::Swap(ErrorGroupStats* other) {
   InternalSwap(other);
 }
 void ErrorGroupStats::InternalSwap(ErrorGroupStats* other) {
-  timed_counts_.UnsafeArenaSwap(&other->timed_counts_);
-  affected_services_.UnsafeArenaSwap(&other->affected_services_);
   std::swap(group_, other->group_);
-  std::swap(first_seen_time_, other->first_seen_time_);
-  std::swap(last_seen_time_, other->last_seen_time_);
-  std::swap(representative_, other->representative_);
   std::swap(count_, other->count_);
   std::swap(affected_users_count_, other->affected_users_count_);
+  timed_counts_.UnsafeArenaSwap(&other->timed_counts_);
+  std::swap(first_seen_time_, other->first_seen_time_);
+  std::swap(last_seen_time_, other->last_seen_time_);
+  affected_services_.UnsafeArenaSwap(&other->affected_services_);
   std::swap(num_affected_services_, other->num_affected_services_);
+  std::swap(representative_, other->representative_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ErrorGroupStats::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ErrorGroupStats_descriptor_;
+  metadata.reflection = ErrorGroupStats_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ErrorGroupStats
 
-// .google.devtools.clouderrorreporting.v1beta1.ErrorGroup group = 1;
+// optional .google.devtools.clouderrorreporting.v1beta1.ErrorGroup group = 1;
 bool ErrorGroupStats::has_group() const {
   return this != internal_default_instance() && group_ != NULL;
 }
@@ -2467,7 +2597,7 @@ void ErrorGroupStats::set_allocated_group(::google::devtools::clouderrorreportin
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats.group)
 }
 
-// int64 count = 2;
+// optional int64 count = 2;
 void ErrorGroupStats::clear_count() {
   count_ = GOOGLE_LONGLONG(0);
 }
@@ -2481,7 +2611,7 @@ void ErrorGroupStats::set_count(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats.count)
 }
 
-// int64 affected_users_count = 3;
+// optional int64 affected_users_count = 3;
 void ErrorGroupStats::clear_affected_users_count() {
   affected_users_count_ = GOOGLE_LONGLONG(0);
 }
@@ -2525,7 +2655,7 @@ ErrorGroupStats::timed_counts() const {
   return timed_counts_;
 }
 
-// .google.protobuf.Timestamp first_seen_time = 5;
+// optional .google.protobuf.Timestamp first_seen_time = 5;
 bool ErrorGroupStats::has_first_seen_time() const {
   return this != internal_default_instance() && first_seen_time_ != NULL;
 }
@@ -2569,7 +2699,7 @@ void ErrorGroupStats::set_allocated_first_seen_time(::google::protobuf::Timestam
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats.first_seen_time)
 }
 
-// .google.protobuf.Timestamp last_seen_time = 6;
+// optional .google.protobuf.Timestamp last_seen_time = 6;
 bool ErrorGroupStats::has_last_seen_time() const {
   return this != internal_default_instance() && last_seen_time_ != NULL;
 }
@@ -2643,7 +2773,7 @@ ErrorGroupStats::affected_services() const {
   return affected_services_;
 }
 
-// int32 num_affected_services = 8;
+// optional int32 num_affected_services = 8;
 void ErrorGroupStats::clear_num_affected_services() {
   num_affected_services_ = 0;
 }
@@ -2657,7 +2787,7 @@ void ErrorGroupStats::set_num_affected_services(::google::protobuf::int32 value)
   // @@protoc_insertion_point(field_set:google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats.num_affected_services)
 }
 
-// .google.devtools.clouderrorreporting.v1beta1.ErrorEvent representative = 9;
+// optional .google.devtools.clouderrorreporting.v1beta1.ErrorEvent representative = 9;
 bool ErrorGroupStats::has_representative() const {
   return this != internal_default_instance() && representative_ != NULL;
 }
@@ -2696,6 +2826,9 @@ void ErrorGroupStats::set_allocated_representative(::google::devtools::clouderro
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ErrorGroupStats.representative)
 }
 
+inline const ErrorGroupStats* ErrorGroupStats::internal_default_instance() {
+  return &ErrorGroupStats_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2708,34 +2841,30 @@ const int TimedCount::kEndTimeFieldNumber;
 
 TimedCount::TimedCount()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouderrorreporting.v1beta1.TimedCount)
 }
+
+void TimedCount::InitAsDefaultInstance() {
+  start_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  end_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+}
+
 TimedCount::TimedCount(const TimedCount& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_start_time()) {
-    start_time_ = new ::google::protobuf::Timestamp(*from.start_time_);
-  } else {
-    start_time_ = NULL;
-  }
-  if (from.has_end_time()) {
-    end_time_ = new ::google::protobuf::Timestamp(*from.end_time_);
-  } else {
-    end_time_ = NULL;
-  }
-  count_ = from.count_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouderrorreporting.v1beta1.TimedCount)
 }
 
 void TimedCount::SharedCtor() {
-  ::memset(&start_time_, 0, reinterpret_cast<char*>(&count_) -
-    reinterpret_cast<char*>(&start_time_) + sizeof(count_));
+  start_time_ = NULL;
+  end_time_ = NULL;
+  count_ = GOOGLE_LONGLONG(0);
   _cached_size_ = 0;
 }
 
@@ -2745,10 +2874,8 @@ TimedCount::~TimedCount() {
 }
 
 void TimedCount::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &TimedCount_default_instance_.get()) {
     delete start_time_;
-  }
-  if (this != internal_default_instance()) {
     delete end_time_;
   }
 }
@@ -2760,13 +2887,15 @@ void TimedCount::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* TimedCount::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return TimedCount_descriptor_;
 }
 
 const TimedCount& TimedCount::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<TimedCount> TimedCount_default_instance_;
 
 TimedCount* TimedCount::New(::google::protobuf::Arena* arena) const {
   TimedCount* n = new TimedCount;
@@ -2778,15 +2907,11 @@ TimedCount* TimedCount::New(::google::protobuf::Arena* arena) const {
 
 void TimedCount::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.devtools.clouderrorreporting.v1beta1.TimedCount)
-  if (GetArenaNoVirtual() == NULL && start_time_ != NULL) {
-    delete start_time_;
-  }
-  start_time_ = NULL;
-  if (GetArenaNoVirtual() == NULL && end_time_ != NULL) {
-    delete end_time_;
-  }
-  end_time_ = NULL;
   count_ = GOOGLE_LONGLONG(0);
+  if (GetArenaNoVirtual() == NULL && start_time_ != NULL) delete start_time_;
+  start_time_ = NULL;
+  if (GetArenaNoVirtual() == NULL && end_time_ != NULL) delete end_time_;
+  end_time_ = NULL;
 }
 
 bool TimedCount::MergePartialFromCodedStream(
@@ -2795,13 +2920,13 @@ bool TimedCount::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.clouderrorreporting.v1beta1.TimedCount)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 count = 1;
+      // optional int64 count = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -2809,28 +2934,33 @@ bool TimedCount::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_start_time;
         break;
       }
 
-      // .google.protobuf.Timestamp start_time = 2;
+      // optional .google.protobuf.Timestamp start_time = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_start_time:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_start_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_end_time;
         break;
       }
 
-      // .google.protobuf.Timestamp end_time = 3;
+      // optional .google.protobuf.Timestamp end_time = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_end_time:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_end_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2858,18 +2988,18 @@ failure:
 void TimedCount::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.clouderrorreporting.v1beta1.TimedCount)
-  // int64 count = 1;
+  // optional int64 count = 1;
   if (this->count() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->count(), output);
   }
 
-  // .google.protobuf.Timestamp start_time = 2;
+  // optional .google.protobuf.Timestamp start_time = 2;
   if (this->has_start_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->start_time_, output);
   }
 
-  // .google.protobuf.Timestamp end_time = 3;
+  // optional .google.protobuf.Timestamp end_time = 3;
   if (this->has_end_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *this->end_time_, output);
@@ -2882,19 +3012,19 @@ void TimedCount::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouderrorreporting.v1beta1.TimedCount)
-  // int64 count = 1;
+  // optional int64 count = 1;
   if (this->count() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->count(), target);
   }
 
-  // .google.protobuf.Timestamp start_time = 2;
+  // optional .google.protobuf.Timestamp start_time = 2;
   if (this->has_start_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *this->start_time_, false, target);
   }
 
-  // .google.protobuf.Timestamp end_time = 3;
+  // optional .google.protobuf.Timestamp end_time = 3;
   if (this->has_end_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -2909,25 +3039,25 @@ size_t TimedCount::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouderrorreporting.v1beta1.TimedCount)
   size_t total_size = 0;
 
-  // .google.protobuf.Timestamp start_time = 2;
+  // optional int64 count = 1;
+  if (this->count() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->count());
+  }
+
+  // optional .google.protobuf.Timestamp start_time = 2;
   if (this->has_start_time()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->start_time_);
   }
 
-  // .google.protobuf.Timestamp end_time = 3;
+  // optional .google.protobuf.Timestamp end_time = 3;
   if (this->has_end_time()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->end_time_);
-  }
-
-  // int64 count = 1;
-  if (this->count() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->count());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -2939,7 +3069,7 @@ size_t TimedCount::ByteSizeLong() const {
 
 void TimedCount::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouderrorreporting.v1beta1.TimedCount)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const TimedCount* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const TimedCount>(
           &from);
@@ -2948,22 +3078,29 @@ void TimedCount::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouderrorreporting.v1beta1.TimedCount)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void TimedCount::MergeFrom(const TimedCount& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouderrorreporting.v1beta1.TimedCount)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void TimedCount::UnsafeMergeFrom(const TimedCount& from) {
+  GOOGLE_DCHECK(&from != this);
+  if (from.count() != 0) {
+    set_count(from.count());
+  }
   if (from.has_start_time()) {
     mutable_start_time()->::google::protobuf::Timestamp::MergeFrom(from.start_time());
   }
   if (from.has_end_time()) {
     mutable_end_time()->::google::protobuf::Timestamp::MergeFrom(from.end_time());
-  }
-  if (from.count() != 0) {
-    set_count(from.count());
   }
 }
 
@@ -2978,10 +3115,11 @@ void TimedCount::CopyFrom(const TimedCount& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouderrorreporting.v1beta1.TimedCount)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool TimedCount::IsInitialized() const {
+
   return true;
 }
 
@@ -2990,21 +3128,25 @@ void TimedCount::Swap(TimedCount* other) {
   InternalSwap(other);
 }
 void TimedCount::InternalSwap(TimedCount* other) {
+  std::swap(count_, other->count_);
   std::swap(start_time_, other->start_time_);
   std::swap(end_time_, other->end_time_);
-  std::swap(count_, other->count_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata TimedCount::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TimedCount_descriptor_;
+  metadata.reflection = TimedCount_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // TimedCount
 
-// int64 count = 1;
+// optional int64 count = 1;
 void TimedCount::clear_count() {
   count_ = GOOGLE_LONGLONG(0);
 }
@@ -3018,7 +3160,7 @@ void TimedCount::set_count(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.devtools.clouderrorreporting.v1beta1.TimedCount.count)
 }
 
-// .google.protobuf.Timestamp start_time = 2;
+// optional .google.protobuf.Timestamp start_time = 2;
 bool TimedCount::has_start_time() const {
   return this != internal_default_instance() && start_time_ != NULL;
 }
@@ -3062,7 +3204,7 @@ void TimedCount::set_allocated_start_time(::google::protobuf::Timestamp* start_t
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.TimedCount.start_time)
 }
 
-// .google.protobuf.Timestamp end_time = 3;
+// optional .google.protobuf.Timestamp end_time = 3;
 bool TimedCount::has_end_time() const {
   return this != internal_default_instance() && end_time_ != NULL;
 }
@@ -3106,6 +3248,9 @@ void TimedCount::set_allocated_end_time(::google::protobuf::Timestamp* end_time)
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.TimedCount.end_time)
 }
 
+inline const TimedCount* TimedCount::internal_default_instance() {
+  return &TimedCount_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3121,40 +3266,23 @@ const int ListEventsRequest::kPageTokenFieldNumber;
 
 ListEventsRequest::ListEventsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest)
 }
+
+void ListEventsRequest::InitAsDefaultInstance() {
+  service_filter_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::ServiceContextFilter*>(
+      ::google::devtools::clouderrorreporting::v1beta1::ServiceContextFilter::internal_default_instance());
+  time_range_ = const_cast< ::google::devtools::clouderrorreporting::v1beta1::QueryTimeRange*>(
+      ::google::devtools::clouderrorreporting::v1beta1::QueryTimeRange::internal_default_instance());
+}
+
 ListEventsRequest::ListEventsRequest(const ListEventsRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_name().size() > 0) {
-    project_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_name_);
-  }
-  group_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.group_id().size() > 0) {
-    group_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.group_id_);
-  }
-  page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.page_token().size() > 0) {
-    page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
-  }
-  if (from.has_service_filter()) {
-    service_filter_ = new ::google::devtools::clouderrorreporting::v1beta1::ServiceContextFilter(*from.service_filter_);
-  } else {
-    service_filter_ = NULL;
-  }
-  if (from.has_time_range()) {
-    time_range_ = new ::google::devtools::clouderrorreporting::v1beta1::QueryTimeRange(*from.time_range_);
-  } else {
-    time_range_ = NULL;
-  }
-  page_size_ = from.page_size_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest)
 }
 
@@ -3162,8 +3290,9 @@ void ListEventsRequest::SharedCtor() {
   project_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   group_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&service_filter_, 0, reinterpret_cast<char*>(&page_size_) -
-    reinterpret_cast<char*>(&service_filter_) + sizeof(page_size_));
+  service_filter_ = NULL;
+  time_range_ = NULL;
+  page_size_ = 0;
   _cached_size_ = 0;
 }
 
@@ -3176,10 +3305,8 @@ void ListEventsRequest::SharedDtor() {
   project_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   group_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &ListEventsRequest_default_instance_.get()) {
     delete service_filter_;
-  }
-  if (this != internal_default_instance()) {
     delete time_range_;
   }
 }
@@ -3191,13 +3318,15 @@ void ListEventsRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListEventsRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return ListEventsRequest_descriptor_;
 }
 
 const ListEventsRequest& ListEventsRequest::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListEventsRequest> ListEventsRequest_default_instance_;
 
 ListEventsRequest* ListEventsRequest::New(::google::protobuf::Arena* arena) const {
   ListEventsRequest* n = new ListEventsRequest;
@@ -3211,16 +3340,12 @@ void ListEventsRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest)
   project_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   group_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && service_filter_ != NULL) {
-    delete service_filter_;
-  }
+  if (GetArenaNoVirtual() == NULL && service_filter_ != NULL) delete service_filter_;
   service_filter_ = NULL;
-  if (GetArenaNoVirtual() == NULL && time_range_ != NULL) {
-    delete time_range_;
-  }
+  if (GetArenaNoVirtual() == NULL && time_range_ != NULL) delete time_range_;
   time_range_ = NULL;
   page_size_ = 0;
+  page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 bool ListEventsRequest::MergePartialFromCodedStream(
@@ -3229,13 +3354,13 @@ bool ListEventsRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string project_name = 1;
+      // optional string project_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3245,12 +3370,14 @@ bool ListEventsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_group_id;
         break;
       }
 
-      // string group_id = 2;
+      // optional string group_id = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_group_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_group_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3260,34 +3387,40 @@ bool ListEventsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_service_filter;
         break;
       }
 
-      // .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
+      // optional .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_service_filter:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_service_filter()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_time_range;
         break;
       }
 
-      // .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 4;
+      // optional .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_time_range:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_time_range()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(48)) goto parse_page_size;
         break;
       }
 
-      // int32 page_size = 6;
+      // optional int32 page_size = 6;
       case 6: {
-        if (tag == 48u) {
+        if (tag == 48) {
+         parse_page_size:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -3295,12 +3428,14 @@ bool ListEventsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(58)) goto parse_page_token;
         break;
       }
 
-      // string page_token = 7;
+      // optional string page_token = 7;
       case 7: {
-        if (tag == 58u) {
+        if (tag == 58) {
+         parse_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3310,6 +3445,7 @@ bool ListEventsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3337,7 +3473,7 @@ failure:
 void ListEventsRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest)
-  // string project_name = 1;
+  // optional string project_name = 1;
   if (this->project_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_name().data(), this->project_name().length(),
@@ -3347,7 +3483,7 @@ void ListEventsRequest::SerializeWithCachedSizes(
       1, this->project_name(), output);
   }
 
-  // string group_id = 2;
+  // optional string group_id = 2;
   if (this->group_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->group_id().data(), this->group_id().length(),
@@ -3357,24 +3493,24 @@ void ListEventsRequest::SerializeWithCachedSizes(
       2, this->group_id(), output);
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
+  // optional .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
   if (this->has_service_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *this->service_filter_, output);
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 4;
+  // optional .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 4;
   if (this->has_time_range()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, *this->time_range_, output);
   }
 
-  // int32 page_size = 6;
+  // optional int32 page_size = 6;
   if (this->page_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(6, this->page_size(), output);
   }
 
-  // string page_token = 7;
+  // optional string page_token = 7;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -3391,7 +3527,7 @@ void ListEventsRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest)
-  // string project_name = 1;
+  // optional string project_name = 1;
   if (this->project_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_name().data(), this->project_name().length(),
@@ -3402,7 +3538,7 @@ void ListEventsRequest::SerializeWithCachedSizes(
         1, this->project_name(), target);
   }
 
-  // string group_id = 2;
+  // optional string group_id = 2;
   if (this->group_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->group_id().data(), this->group_id().length(),
@@ -3413,26 +3549,26 @@ void ListEventsRequest::SerializeWithCachedSizes(
         2, this->group_id(), target);
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
+  // optional .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
   if (this->has_service_filter()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         3, *this->service_filter_, false, target);
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 4;
+  // optional .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 4;
   if (this->has_time_range()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         4, *this->time_range_, false, target);
   }
 
-  // int32 page_size = 6;
+  // optional int32 page_size = 6;
   if (this->page_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(6, this->page_size(), target);
   }
 
-  // string page_token = 7;
+  // optional string page_token = 7;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -3451,46 +3587,46 @@ size_t ListEventsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest)
   size_t total_size = 0;
 
-  // string project_name = 1;
+  // optional string project_name = 1;
   if (this->project_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->project_name());
   }
 
-  // string group_id = 2;
+  // optional string group_id = 2;
   if (this->group_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->group_id());
   }
 
-  // string page_token = 7;
-  if (this->page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->page_token());
-  }
-
-  // .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
+  // optional .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
   if (this->has_service_filter()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->service_filter_);
   }
 
-  // .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 4;
+  // optional .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 4;
   if (this->has_time_range()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->time_range_);
   }
 
-  // int32 page_size = 6;
+  // optional int32 page_size = 6;
   if (this->page_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->page_size());
+  }
+
+  // optional string page_token = 7;
+  if (this->page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->page_token());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -3502,7 +3638,7 @@ size_t ListEventsRequest::ByteSizeLong() const {
 
 void ListEventsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListEventsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListEventsRequest>(
           &from);
@@ -3511,14 +3647,21 @@ void ListEventsRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListEventsRequest::MergeFrom(const ListEventsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListEventsRequest::UnsafeMergeFrom(const ListEventsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_name().size() > 0) {
 
     project_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_name_);
@@ -3526,10 +3669,6 @@ void ListEventsRequest::MergeFrom(const ListEventsRequest& from) {
   if (from.group_id().size() > 0) {
 
     group_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.group_id_);
-  }
-  if (from.page_token().size() > 0) {
-
-    page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
   }
   if (from.has_service_filter()) {
     mutable_service_filter()->::google::devtools::clouderrorreporting::v1beta1::ServiceContextFilter::MergeFrom(from.service_filter());
@@ -3539,6 +3678,10 @@ void ListEventsRequest::MergeFrom(const ListEventsRequest& from) {
   }
   if (from.page_size() != 0) {
     set_page_size(from.page_size());
+  }
+  if (from.page_token().size() > 0) {
+
+    page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
   }
 }
 
@@ -3553,10 +3696,11 @@ void ListEventsRequest::CopyFrom(const ListEventsRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListEventsRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -3567,28 +3711,32 @@ void ListEventsRequest::Swap(ListEventsRequest* other) {
 void ListEventsRequest::InternalSwap(ListEventsRequest* other) {
   project_name_.Swap(&other->project_name_);
   group_id_.Swap(&other->group_id_);
-  page_token_.Swap(&other->page_token_);
   std::swap(service_filter_, other->service_filter_);
   std::swap(time_range_, other->time_range_);
   std::swap(page_size_, other->page_size_);
+  page_token_.Swap(&other->page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListEventsRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListEventsRequest_descriptor_;
+  metadata.reflection = ListEventsRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ListEventsRequest
 
-// string project_name = 1;
+// optional string project_name = 1;
 void ListEventsRequest::clear_project_name() {
   project_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListEventsRequest::project_name() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest.project_name)
-  return project_name_.GetNoArena();
+  return project_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListEventsRequest::set_project_name(const ::std::string& value) {
   
@@ -3626,13 +3774,13 @@ void ListEventsRequest::set_allocated_project_name(::std::string* project_name) 
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest.project_name)
 }
 
-// string group_id = 2;
+// optional string group_id = 2;
 void ListEventsRequest::clear_group_id() {
   group_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListEventsRequest::group_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest.group_id)
-  return group_id_.GetNoArena();
+  return group_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListEventsRequest::set_group_id(const ::std::string& value) {
   
@@ -3670,7 +3818,7 @@ void ListEventsRequest::set_allocated_group_id(::std::string* group_id) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest.group_id)
 }
 
-// .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
+// optional .google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter service_filter = 3;
 bool ListEventsRequest::has_service_filter() const {
   return this != internal_default_instance() && service_filter_ != NULL;
 }
@@ -3709,7 +3857,7 @@ void ListEventsRequest::set_allocated_service_filter(::google::devtools::clouder
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest.service_filter)
 }
 
-// .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 4;
+// optional .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange time_range = 4;
 bool ListEventsRequest::has_time_range() const {
   return this != internal_default_instance() && time_range_ != NULL;
 }
@@ -3748,7 +3896,7 @@ void ListEventsRequest::set_allocated_time_range(::google::devtools::clouderrorr
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest.time_range)
 }
 
-// int32 page_size = 6;
+// optional int32 page_size = 6;
 void ListEventsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -3762,13 +3910,13 @@ void ListEventsRequest::set_page_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest.page_size)
 }
 
-// string page_token = 7;
+// optional string page_token = 7;
 void ListEventsRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListEventsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListEventsRequest::set_page_token(const ::std::string& value) {
   
@@ -3806,6 +3954,9 @@ void ListEventsRequest::set_allocated_page_token(::std::string* page_token) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ListEventsRequest.page_token)
 }
 
+inline const ListEventsRequest* ListEventsRequest::internal_default_instance() {
+  return &ListEventsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3818,27 +3969,21 @@ const int ListEventsResponse::kTimeRangeBeginFieldNumber;
 
 ListEventsResponse::ListEventsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouderrorreporting.v1beta1.ListEventsResponse)
 }
+
+void ListEventsResponse::InitAsDefaultInstance() {
+  time_range_begin_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+}
+
 ListEventsResponse::ListEventsResponse(const ListEventsResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      error_events_(from.error_events_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_page_token().size() > 0) {
-    next_page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_page_token_);
-  }
-  if (from.has_time_range_begin()) {
-    time_range_begin_ = new ::google::protobuf::Timestamp(*from.time_range_begin_);
-  } else {
-    time_range_begin_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouderrorreporting.v1beta1.ListEventsResponse)
 }
 
@@ -3855,7 +4000,7 @@ ListEventsResponse::~ListEventsResponse() {
 
 void ListEventsResponse::SharedDtor() {
   next_page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &ListEventsResponse_default_instance_.get()) {
     delete time_range_begin_;
   }
 }
@@ -3867,13 +4012,15 @@ void ListEventsResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListEventsResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
+  return ListEventsResponse_descriptor_;
 }
 
 const ListEventsResponse& ListEventsResponse::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListEventsResponse> ListEventsResponse_default_instance_;
 
 ListEventsResponse* ListEventsResponse::New(::google::protobuf::Arena* arena) const {
   ListEventsResponse* n = new ListEventsResponse;
@@ -3885,12 +4032,10 @@ ListEventsResponse* ListEventsResponse::New(::google::protobuf::Arena* arena) co
 
 void ListEventsResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.devtools.clouderrorreporting.v1beta1.ListEventsResponse)
-  error_events_.Clear();
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && time_range_begin_ != NULL) {
-    delete time_range_begin_;
-  }
+  if (GetArenaNoVirtual() == NULL && time_range_begin_ != NULL) delete time_range_begin_;
   time_range_begin_ = NULL;
+  error_events_.Clear();
 }
 
 bool ListEventsResponse::MergePartialFromCodedStream(
@@ -3899,26 +4044,30 @@ bool ListEventsResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.clouderrorreporting.v1beta1.ListEventsResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.devtools.clouderrorreporting.v1beta1.ErrorEvent error_events = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_error_events:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_error_events()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_error_events;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_next_page_token;
         break;
       }
 
-      // string next_page_token = 2;
+      // optional string next_page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_next_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3928,17 +4077,20 @@ bool ListEventsResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_time_range_begin;
         break;
       }
 
-      // .google.protobuf.Timestamp time_range_begin = 4;
+      // optional .google.protobuf.Timestamp time_range_begin = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_time_range_begin:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_time_range_begin()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3972,7 +4124,7 @@ void ListEventsResponse::SerializeWithCachedSizes(
       1, this->error_events(i), output);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -3982,7 +4134,7 @@ void ListEventsResponse::SerializeWithCachedSizes(
       2, this->next_page_token(), output);
   }
 
-  // .google.protobuf.Timestamp time_range_begin = 4;
+  // optional .google.protobuf.Timestamp time_range_begin = 4;
   if (this->has_time_range_begin()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, *this->time_range_begin_, output);
@@ -4002,7 +4154,7 @@ void ListEventsResponse::SerializeWithCachedSizes(
         1, this->error_events(i), false, target);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -4013,7 +4165,7 @@ void ListEventsResponse::SerializeWithCachedSizes(
         2, this->next_page_token(), target);
   }
 
-  // .google.protobuf.Timestamp time_range_begin = 4;
+  // optional .google.protobuf.Timestamp time_range_begin = 4;
   if (this->has_time_range_begin()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -4028,6 +4180,20 @@ size_t ListEventsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouderrorreporting.v1beta1.ListEventsResponse)
   size_t total_size = 0;
 
+  // optional string next_page_token = 2;
+  if (this->next_page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_page_token());
+  }
+
+  // optional .google.protobuf.Timestamp time_range_begin = 4;
+  if (this->has_time_range_begin()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->time_range_begin_);
+  }
+
   // repeated .google.devtools.clouderrorreporting.v1beta1.ErrorEvent error_events = 1;
   {
     unsigned int count = this->error_events_size();
@@ -4039,20 +4205,6 @@ size_t ListEventsResponse::ByteSizeLong() const {
     }
   }
 
-  // string next_page_token = 2;
-  if (this->next_page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_page_token());
-  }
-
-  // .google.protobuf.Timestamp time_range_begin = 4;
-  if (this->has_time_range_begin()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->time_range_begin_);
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -4062,7 +4214,7 @@ size_t ListEventsResponse::ByteSizeLong() const {
 
 void ListEventsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ListEventsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListEventsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListEventsResponse>(
           &from);
@@ -4071,14 +4223,21 @@ void ListEventsResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouderrorreporting.v1beta1.ListEventsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListEventsResponse::MergeFrom(const ListEventsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ListEventsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListEventsResponse::UnsafeMergeFrom(const ListEventsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   error_events_.MergeFrom(from.error_events_);
   if (from.next_page_token().size() > 0) {
 
@@ -4100,10 +4259,11 @@ void ListEventsResponse::CopyFrom(const ListEventsResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouderrorreporting.v1beta1.ListEventsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListEventsResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -4115,12 +4275,16 @@ void ListEventsResponse::InternalSwap(ListEventsResponse* other) {
   error_events_.UnsafeArenaSwap(&other->error_events_);
   next_page_token_.Swap(&other->next_page_token_);
   std::swap(time_range_begin_, other->time_range_begin_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListEventsResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListEventsResponse_descriptor_;
+  metadata.reflection = ListEventsResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -4156,13 +4320,13 @@ ListEventsResponse::error_events() const {
   return error_events_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 void ListEventsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListEventsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ListEventsResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListEventsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -4200,7 +4364,7 @@ void ListEventsResponse::set_allocated_next_page_token(::std::string* next_page_
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ListEventsResponse.next_page_token)
 }
 
-// .google.protobuf.Timestamp time_range_begin = 4;
+// optional .google.protobuf.Timestamp time_range_begin = 4;
 bool ListEventsResponse::has_time_range_begin() const {
   return this != internal_default_instance() && time_range_begin_ != NULL;
 }
@@ -4244,28 +4408,61 @@ void ListEventsResponse::set_allocated_time_range_begin(::google::protobuf::Time
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ListEventsResponse.time_range_begin)
 }
 
+inline const ListEventsResponse* ListEventsResponse::internal_default_instance() {
+  return &ListEventsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* QueryTimeRange_Period_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return QueryTimeRange_Period_descriptor_;
+}
+bool QueryTimeRange_Period_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const QueryTimeRange_Period QueryTimeRange::PERIOD_UNSPECIFIED;
+const QueryTimeRange_Period QueryTimeRange::PERIOD_1_HOUR;
+const QueryTimeRange_Period QueryTimeRange::PERIOD_6_HOURS;
+const QueryTimeRange_Period QueryTimeRange::PERIOD_1_DAY;
+const QueryTimeRange_Period QueryTimeRange::PERIOD_1_WEEK;
+const QueryTimeRange_Period QueryTimeRange::PERIOD_30_DAYS;
+const QueryTimeRange_Period QueryTimeRange::Period_MIN;
+const QueryTimeRange_Period QueryTimeRange::Period_MAX;
+const int QueryTimeRange::Period_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int QueryTimeRange::kPeriodFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 QueryTimeRange::QueryTimeRange()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouderrorreporting.v1beta1.QueryTimeRange)
 }
+
+void QueryTimeRange::InitAsDefaultInstance() {
+}
+
 QueryTimeRange::QueryTimeRange(const QueryTimeRange& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  period_ = from.period_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouderrorreporting.v1beta1.QueryTimeRange)
 }
 
@@ -4289,13 +4486,15 @@ void QueryTimeRange::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* QueryTimeRange::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6].descriptor;
+  return QueryTimeRange_descriptor_;
 }
 
 const QueryTimeRange& QueryTimeRange::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<QueryTimeRange> QueryTimeRange_default_instance_;
 
 QueryTimeRange* QueryTimeRange::New(::google::protobuf::Arena* arena) const {
   QueryTimeRange* n = new QueryTimeRange;
@@ -4316,13 +4515,13 @@ bool QueryTimeRange::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.clouderrorreporting.v1beta1.QueryTimeRange)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange.Period period = 1;
+      // optional .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange.Period period = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -4331,6 +4530,7 @@ bool QueryTimeRange::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4358,7 +4558,7 @@ failure:
 void QueryTimeRange::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.clouderrorreporting.v1beta1.QueryTimeRange)
-  // .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange.Period period = 1;
+  // optional .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange.Period period = 1;
   if (this->period() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       1, this->period(), output);
@@ -4371,7 +4571,7 @@ void QueryTimeRange::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouderrorreporting.v1beta1.QueryTimeRange)
-  // .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange.Period period = 1;
+  // optional .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange.Period period = 1;
   if (this->period() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       1, this->period(), target);
@@ -4385,7 +4585,7 @@ size_t QueryTimeRange::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouderrorreporting.v1beta1.QueryTimeRange)
   size_t total_size = 0;
 
-  // .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange.Period period = 1;
+  // optional .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange.Period period = 1;
   if (this->period() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->period());
@@ -4400,7 +4600,7 @@ size_t QueryTimeRange::ByteSizeLong() const {
 
 void QueryTimeRange::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouderrorreporting.v1beta1.QueryTimeRange)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const QueryTimeRange* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const QueryTimeRange>(
           &from);
@@ -4409,14 +4609,21 @@ void QueryTimeRange::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouderrorreporting.v1beta1.QueryTimeRange)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void QueryTimeRange::MergeFrom(const QueryTimeRange& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouderrorreporting.v1beta1.QueryTimeRange)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void QueryTimeRange::UnsafeMergeFrom(const QueryTimeRange& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.period() != 0) {
     set_period(from.period());
   }
@@ -4433,10 +4640,11 @@ void QueryTimeRange::CopyFrom(const QueryTimeRange& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouderrorreporting.v1beta1.QueryTimeRange)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool QueryTimeRange::IsInitialized() const {
+
   return true;
 }
 
@@ -4446,18 +4654,22 @@ void QueryTimeRange::Swap(QueryTimeRange* other) {
 }
 void QueryTimeRange::InternalSwap(QueryTimeRange* other) {
   std::swap(period_, other->period_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata QueryTimeRange::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = QueryTimeRange_descriptor_;
+  metadata.reflection = QueryTimeRange_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // QueryTimeRange
 
-// .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange.Period period = 1;
+// optional .google.devtools.clouderrorreporting.v1beta1.QueryTimeRange.Period period = 1;
 void QueryTimeRange::clear_period() {
   period_ = 0;
 }
@@ -4471,6 +4683,9 @@ void QueryTimeRange::set_period(::google::devtools::clouderrorreporting::v1beta1
   // @@protoc_insertion_point(field_set:google.devtools.clouderrorreporting.v1beta1.QueryTimeRange.period)
 }
 
+inline const QueryTimeRange* QueryTimeRange::internal_default_instance() {
+  return &QueryTimeRange_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4483,29 +4698,19 @@ const int ServiceContextFilter::kResourceTypeFieldNumber;
 
 ServiceContextFilter::ServiceContextFilter()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter)
 }
+
+void ServiceContextFilter::InitAsDefaultInstance() {
+}
+
 ServiceContextFilter::ServiceContextFilter(const ServiceContextFilter& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  service_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.service().size() > 0) {
-    service_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_);
-  }
-  version_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.version().size() > 0) {
-    version_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.version_);
-  }
-  resource_type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.resource_type().size() > 0) {
-    resource_type_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.resource_type_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter)
 }
 
@@ -4534,13 +4739,15 @@ void ServiceContextFilter::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ServiceContextFilter::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7].descriptor;
+  return ServiceContextFilter_descriptor_;
 }
 
 const ServiceContextFilter& ServiceContextFilter::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ServiceContextFilter> ServiceContextFilter_default_instance_;
 
 ServiceContextFilter* ServiceContextFilter::New(::google::protobuf::Arena* arena) const {
   ServiceContextFilter* n = new ServiceContextFilter;
@@ -4563,13 +4770,13 @@ bool ServiceContextFilter::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string service = 2;
+      // optional string service = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_service()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4579,12 +4786,14 @@ bool ServiceContextFilter::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_version;
         break;
       }
 
-      // string version = 3;
+      // optional string version = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_version:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_version()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4594,12 +4803,14 @@ bool ServiceContextFilter::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_resource_type;
         break;
       }
 
-      // string resource_type = 4;
+      // optional string resource_type = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_resource_type:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_resource_type()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4609,6 +4820,7 @@ bool ServiceContextFilter::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4636,7 +4848,7 @@ failure:
 void ServiceContextFilter::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter)
-  // string service = 2;
+  // optional string service = 2;
   if (this->service().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->service().data(), this->service().length(),
@@ -4646,7 +4858,7 @@ void ServiceContextFilter::SerializeWithCachedSizes(
       2, this->service(), output);
   }
 
-  // string version = 3;
+  // optional string version = 3;
   if (this->version().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->version().data(), this->version().length(),
@@ -4656,7 +4868,7 @@ void ServiceContextFilter::SerializeWithCachedSizes(
       3, this->version(), output);
   }
 
-  // string resource_type = 4;
+  // optional string resource_type = 4;
   if (this->resource_type().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->resource_type().data(), this->resource_type().length(),
@@ -4673,7 +4885,7 @@ void ServiceContextFilter::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter)
-  // string service = 2;
+  // optional string service = 2;
   if (this->service().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->service().data(), this->service().length(),
@@ -4684,7 +4896,7 @@ void ServiceContextFilter::SerializeWithCachedSizes(
         2, this->service(), target);
   }
 
-  // string version = 3;
+  // optional string version = 3;
   if (this->version().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->version().data(), this->version().length(),
@@ -4695,7 +4907,7 @@ void ServiceContextFilter::SerializeWithCachedSizes(
         3, this->version(), target);
   }
 
-  // string resource_type = 4;
+  // optional string resource_type = 4;
   if (this->resource_type().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->resource_type().data(), this->resource_type().length(),
@@ -4714,21 +4926,21 @@ size_t ServiceContextFilter::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter)
   size_t total_size = 0;
 
-  // string service = 2;
+  // optional string service = 2;
   if (this->service().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->service());
   }
 
-  // string version = 3;
+  // optional string version = 3;
   if (this->version().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->version());
   }
 
-  // string resource_type = 4;
+  // optional string resource_type = 4;
   if (this->resource_type().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -4744,7 +4956,7 @@ size_t ServiceContextFilter::ByteSizeLong() const {
 
 void ServiceContextFilter::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ServiceContextFilter* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ServiceContextFilter>(
           &from);
@@ -4753,14 +4965,21 @@ void ServiceContextFilter::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ServiceContextFilter::MergeFrom(const ServiceContextFilter& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ServiceContextFilter::UnsafeMergeFrom(const ServiceContextFilter& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.service().size() > 0) {
 
     service_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_);
@@ -4786,10 +5005,11 @@ void ServiceContextFilter::CopyFrom(const ServiceContextFilter& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ServiceContextFilter::IsInitialized() const {
+
   return true;
 }
 
@@ -4801,24 +5021,28 @@ void ServiceContextFilter::InternalSwap(ServiceContextFilter* other) {
   service_.Swap(&other->service_);
   version_.Swap(&other->version_);
   resource_type_.Swap(&other->resource_type_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ServiceContextFilter::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ServiceContextFilter_descriptor_;
+  metadata.reflection = ServiceContextFilter_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ServiceContextFilter
 
-// string service = 2;
+// optional string service = 2;
 void ServiceContextFilter::clear_service() {
   service_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ServiceContextFilter::service() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter.service)
-  return service_.GetNoArena();
+  return service_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ServiceContextFilter::set_service(const ::std::string& value) {
   
@@ -4856,13 +5080,13 @@ void ServiceContextFilter::set_allocated_service(::std::string* service) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter.service)
 }
 
-// string version = 3;
+// optional string version = 3;
 void ServiceContextFilter::clear_version() {
   version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ServiceContextFilter::version() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter.version)
-  return version_.GetNoArena();
+  return version_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ServiceContextFilter::set_version(const ::std::string& value) {
   
@@ -4900,13 +5124,13 @@ void ServiceContextFilter::set_allocated_version(::std::string* version) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter.version)
 }
 
-// string resource_type = 4;
+// optional string resource_type = 4;
 void ServiceContextFilter::clear_resource_type() {
   resource_type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ServiceContextFilter::resource_type() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter.resource_type)
-  return resource_type_.GetNoArena();
+  return resource_type_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ServiceContextFilter::set_resource_type(const ::std::string& value) {
   
@@ -4944,6 +5168,9 @@ void ServiceContextFilter::set_allocated_resource_type(::std::string* resource_t
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ServiceContextFilter.resource_type)
 }
 
+inline const ServiceContextFilter* ServiceContextFilter::internal_default_instance() {
+  return &ServiceContextFilter_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4954,21 +5181,19 @@ const int DeleteEventsRequest::kProjectNameFieldNumber;
 
 DeleteEventsRequest::DeleteEventsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouderrorreporting.v1beta1.DeleteEventsRequest)
 }
+
+void DeleteEventsRequest::InitAsDefaultInstance() {
+}
+
 DeleteEventsRequest::DeleteEventsRequest(const DeleteEventsRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_name().size() > 0) {
-    project_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouderrorreporting.v1beta1.DeleteEventsRequest)
 }
 
@@ -4993,13 +5218,15 @@ void DeleteEventsRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* DeleteEventsRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8].descriptor;
+  return DeleteEventsRequest_descriptor_;
 }
 
 const DeleteEventsRequest& DeleteEventsRequest::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<DeleteEventsRequest> DeleteEventsRequest_default_instance_;
 
 DeleteEventsRequest* DeleteEventsRequest::New(::google::protobuf::Arena* arena) const {
   DeleteEventsRequest* n = new DeleteEventsRequest;
@@ -5020,13 +5247,13 @@ bool DeleteEventsRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.clouderrorreporting.v1beta1.DeleteEventsRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string project_name = 1;
+      // optional string project_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -5036,6 +5263,7 @@ bool DeleteEventsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -5063,7 +5291,7 @@ failure:
 void DeleteEventsRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.clouderrorreporting.v1beta1.DeleteEventsRequest)
-  // string project_name = 1;
+  // optional string project_name = 1;
   if (this->project_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_name().data(), this->project_name().length(),
@@ -5080,7 +5308,7 @@ void DeleteEventsRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouderrorreporting.v1beta1.DeleteEventsRequest)
-  // string project_name = 1;
+  // optional string project_name = 1;
   if (this->project_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_name().data(), this->project_name().length(),
@@ -5099,7 +5327,7 @@ size_t DeleteEventsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouderrorreporting.v1beta1.DeleteEventsRequest)
   size_t total_size = 0;
 
-  // string project_name = 1;
+  // optional string project_name = 1;
   if (this->project_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -5115,7 +5343,7 @@ size_t DeleteEventsRequest::ByteSizeLong() const {
 
 void DeleteEventsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouderrorreporting.v1beta1.DeleteEventsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const DeleteEventsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteEventsRequest>(
           &from);
@@ -5124,14 +5352,21 @@ void DeleteEventsRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouderrorreporting.v1beta1.DeleteEventsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteEventsRequest::MergeFrom(const DeleteEventsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouderrorreporting.v1beta1.DeleteEventsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void DeleteEventsRequest::UnsafeMergeFrom(const DeleteEventsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_name().size() > 0) {
 
     project_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_name_);
@@ -5149,10 +5384,11 @@ void DeleteEventsRequest::CopyFrom(const DeleteEventsRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouderrorreporting.v1beta1.DeleteEventsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteEventsRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -5162,24 +5398,28 @@ void DeleteEventsRequest::Swap(DeleteEventsRequest* other) {
 }
 void DeleteEventsRequest::InternalSwap(DeleteEventsRequest* other) {
   project_name_.Swap(&other->project_name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DeleteEventsRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = DeleteEventsRequest_descriptor_;
+  metadata.reflection = DeleteEventsRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // DeleteEventsRequest
 
-// string project_name = 1;
+// optional string project_name = 1;
 void DeleteEventsRequest::clear_project_name() {
   project_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& DeleteEventsRequest::project_name() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.DeleteEventsRequest.project_name)
-  return project_name_.GetNoArena();
+  return project_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void DeleteEventsRequest::set_project_name(const ::std::string& value) {
   
@@ -5217,6 +5457,9 @@ void DeleteEventsRequest::set_allocated_project_name(::std::string* project_name
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.DeleteEventsRequest.project_name)
 }
 
+inline const DeleteEventsRequest* DeleteEventsRequest::internal_default_instance() {
+  return &DeleteEventsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5226,17 +5469,19 @@ void DeleteEventsRequest::set_allocated_project_name(::std::string* project_name
 
 DeleteEventsResponse::DeleteEventsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouderrorreporting.v1beta1.DeleteEventsResponse)
 }
+
+void DeleteEventsResponse::InitAsDefaultInstance() {
+}
+
 DeleteEventsResponse::DeleteEventsResponse(const DeleteEventsResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouderrorreporting.v1beta1.DeleteEventsResponse)
 }
 
@@ -5259,13 +5504,15 @@ void DeleteEventsResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* DeleteEventsResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9].descriptor;
+  return DeleteEventsResponse_descriptor_;
 }
 
 const DeleteEventsResponse& DeleteEventsResponse::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fstats_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<DeleteEventsResponse> DeleteEventsResponse_default_instance_;
 
 DeleteEventsResponse* DeleteEventsResponse::New(::google::protobuf::Arena* arena) const {
   DeleteEventsResponse* n = new DeleteEventsResponse;
@@ -5285,7 +5532,7 @@ bool DeleteEventsResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.clouderrorreporting.v1beta1.DeleteEventsResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
   handle_unusual:
@@ -5332,7 +5579,7 @@ size_t DeleteEventsResponse::ByteSizeLong() const {
 
 void DeleteEventsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouderrorreporting.v1beta1.DeleteEventsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const DeleteEventsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteEventsResponse>(
           &from);
@@ -5341,14 +5588,21 @@ void DeleteEventsResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouderrorreporting.v1beta1.DeleteEventsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteEventsResponse::MergeFrom(const DeleteEventsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouderrorreporting.v1beta1.DeleteEventsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void DeleteEventsResponse::UnsafeMergeFrom(const DeleteEventsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
 }
 
 void DeleteEventsResponse::CopyFrom(const ::google::protobuf::Message& from) {
@@ -5362,10 +5616,11 @@ void DeleteEventsResponse::CopyFrom(const DeleteEventsResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouderrorreporting.v1beta1.DeleteEventsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteEventsResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -5374,17 +5629,24 @@ void DeleteEventsResponse::Swap(DeleteEventsResponse* other) {
   InternalSwap(other);
 }
 void DeleteEventsResponse::InternalSwap(DeleteEventsResponse* other) {
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DeleteEventsResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = DeleteEventsResponse_descriptor_;
+  metadata.reflection = DeleteEventsResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // DeleteEventsResponse
 
+inline const DeleteEventsResponse* DeleteEventsResponse::internal_default_instance() {
+  return &DeleteEventsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

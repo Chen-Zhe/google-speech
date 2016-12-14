@@ -20,36 +20,44 @@
 namespace google {
 namespace logging {
 namespace v2 {
-class LogSinkDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<LogSink> {};
-LogSinkDefaultTypeInternal _LogSink_default_instance_;
-class ListSinksRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListSinksRequest> {};
-ListSinksRequestDefaultTypeInternal _ListSinksRequest_default_instance_;
-class ListSinksResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListSinksResponse> {};
-ListSinksResponseDefaultTypeInternal _ListSinksResponse_default_instance_;
-class GetSinkRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GetSinkRequest> {};
-GetSinkRequestDefaultTypeInternal _GetSinkRequest_default_instance_;
-class CreateSinkRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CreateSinkRequest> {};
-CreateSinkRequestDefaultTypeInternal _CreateSinkRequest_default_instance_;
-class UpdateSinkRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<UpdateSinkRequest> {};
-UpdateSinkRequestDefaultTypeInternal _UpdateSinkRequest_default_instance_;
-class DeleteSinkRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<DeleteSinkRequest> {};
-DeleteSinkRequestDefaultTypeInternal _DeleteSinkRequest_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[7];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+const ::google::protobuf::Descriptor* LogSink_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  LogSink_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* LogSink_VersionFormat_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* ListSinksRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListSinksRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListSinksResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListSinksResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* GetSinkRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GetSinkRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* CreateSinkRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CreateSinkRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* UpdateSinkRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  UpdateSinkRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* DeleteSinkRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  DeleteSinkRequest_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2flogging_2fv2_2flogging_5fconfig_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2flogging_2fv2_2flogging_5fconfig_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogSink, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2flogging_2fv2_2flogging_5fconfig_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2flogging_2fv2_2flogging_5fconfig_2eproto() {
+  protobuf_AddDesc_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/logging/v2/logging_config.proto");
+  GOOGLE_CHECK(file != NULL);
+  LogSink_descriptor_ = file->message_type(0);
+  static const int LogSink_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogSink, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogSink, destination_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogSink, filter_),
@@ -57,105 +65,155 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2flogging_2fv2_2floggi
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogSink, writer_identity_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogSink, start_time_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogSink, end_time_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListSinksRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  LogSink_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      LogSink_descriptor_,
+      LogSink::internal_default_instance(),
+      LogSink_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(LogSink),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogSink, _internal_metadata_));
+  LogSink_VersionFormat_descriptor_ = LogSink_descriptor_->enum_type(0);
+  ListSinksRequest_descriptor_ = file->message_type(1);
+  static const int ListSinksRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListSinksRequest, parent_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListSinksRequest, page_token_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListSinksRequest, page_size_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListSinksResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListSinksRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListSinksRequest_descriptor_,
+      ListSinksRequest::internal_default_instance(),
+      ListSinksRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListSinksRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListSinksRequest, _internal_metadata_));
+  ListSinksResponse_descriptor_ = file->message_type(2);
+  static const int ListSinksResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListSinksResponse, sinks_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListSinksResponse, next_page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetSinkRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListSinksResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListSinksResponse_descriptor_,
+      ListSinksResponse::internal_default_instance(),
+      ListSinksResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListSinksResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListSinksResponse, _internal_metadata_));
+  GetSinkRequest_descriptor_ = file->message_type(3);
+  static const int GetSinkRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetSinkRequest, sink_name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateSinkRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  GetSinkRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GetSinkRequest_descriptor_,
+      GetSinkRequest::internal_default_instance(),
+      GetSinkRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GetSinkRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetSinkRequest, _internal_metadata_));
+  CreateSinkRequest_descriptor_ = file->message_type(4);
+  static const int CreateSinkRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateSinkRequest, parent_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateSinkRequest, sink_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateSinkRequest, unique_writer_identity_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateSinkRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  CreateSinkRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      CreateSinkRequest_descriptor_,
+      CreateSinkRequest::internal_default_instance(),
+      CreateSinkRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(CreateSinkRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateSinkRequest, _internal_metadata_));
+  UpdateSinkRequest_descriptor_ = file->message_type(5);
+  static const int UpdateSinkRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateSinkRequest, sink_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateSinkRequest, sink_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateSinkRequest, unique_writer_identity_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteSinkRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  UpdateSinkRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      UpdateSinkRequest_descriptor_,
+      UpdateSinkRequest::internal_default_instance(),
+      UpdateSinkRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(UpdateSinkRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateSinkRequest, _internal_metadata_));
+  DeleteSinkRequest_descriptor_ = file->message_type(6);
+  static const int DeleteSinkRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteSinkRequest, sink_name_),
   };
-  return offsets;
+  DeleteSinkRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      DeleteSinkRequest_descriptor_,
+      DeleteSinkRequest::internal_default_instance(),
+      DeleteSinkRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(DeleteSinkRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteSinkRequest, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(LogSink)},
-  { 11, -1, sizeof(ListSinksRequest)},
-  { 18, -1, sizeof(ListSinksResponse)},
-  { 24, -1, sizeof(GetSinkRequest)},
-  { 29, -1, sizeof(CreateSinkRequest)},
-  { 36, -1, sizeof(UpdateSinkRequest)},
-  { 43, -1, sizeof(DeleteSinkRequest)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_LogSink_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListSinksRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListSinksResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GetSinkRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_CreateSinkRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_UpdateSinkRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_DeleteSinkRequest_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/logging/v2/logging_config.proto", schemas, file_default_instances, protobuf_Offsets_google_2flogging_2fv2_2flogging_5fconfig_2eproto(), factory,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2flogging_2fv2_2flogging_5fconfig_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 7);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      LogSink_descriptor_, LogSink::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListSinksRequest_descriptor_, ListSinksRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListSinksResponse_descriptor_, ListSinksResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GetSinkRequest_descriptor_, GetSinkRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      CreateSinkRequest_descriptor_, CreateSinkRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      UpdateSinkRequest_descriptor_, UpdateSinkRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      DeleteSinkRequest_descriptor_, DeleteSinkRequest::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2flogging_2fv2_2flogging_5fconfig_2eproto() {
-  _LogSink_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _ListSinksRequest_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _ListSinksResponse_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _GetSinkRequest_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _CreateSinkRequest_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
-  _UpdateSinkRequest_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
-  _DeleteSinkRequest_default_instance_.Shutdown();
-  delete file_level_metadata[6].reflection;
+  LogSink_default_instance_.Shutdown();
+  delete LogSink_reflection_;
+  ListSinksRequest_default_instance_.Shutdown();
+  delete ListSinksRequest_reflection_;
+  ListSinksResponse_default_instance_.Shutdown();
+  delete ListSinksResponse_reflection_;
+  GetSinkRequest_default_instance_.Shutdown();
+  delete GetSinkRequest_reflection_;
+  CreateSinkRequest_default_instance_.Shutdown();
+  delete CreateSinkRequest_reflection_;
+  UpdateSinkRequest_default_instance_.Shutdown();
+  delete UpdateSinkRequest_reflection_;
+  DeleteSinkRequest_default_instance_.Shutdown();
+  delete DeleteSinkRequest_reflection_;
 }
 
 void protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto_impl() {
@@ -164,77 +222,82 @@ void protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto_impl
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fempty_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _LogSink_default_instance_.DefaultConstruct();
-  _ListSinksRequest_default_instance_.DefaultConstruct();
-  _ListSinksResponse_default_instance_.DefaultConstruct();
-  _GetSinkRequest_default_instance_.DefaultConstruct();
-  _CreateSinkRequest_default_instance_.DefaultConstruct();
-  _UpdateSinkRequest_default_instance_.DefaultConstruct();
-  _DeleteSinkRequest_default_instance_.DefaultConstruct();
-  _LogSink_default_instance_.get_mutable()->start_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  _LogSink_default_instance_.get_mutable()->end_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  _CreateSinkRequest_default_instance_.get_mutable()->sink_ = const_cast< ::google::logging::v2::LogSink*>(
-      ::google::logging::v2::LogSink::internal_default_instance());
-  _UpdateSinkRequest_default_instance_.get_mutable()->sink_ = const_cast< ::google::logging::v2::LogSink*>(
-      ::google::logging::v2::LogSink::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  LogSink_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListSinksRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListSinksResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetSinkRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  CreateSinkRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  UpdateSinkRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DeleteSinkRequest_default_instance_.DefaultConstruct();
+  LogSink_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListSinksRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListSinksResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetSinkRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CreateSinkRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  UpdateSinkRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DeleteSinkRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto_once_);
 void protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto_once_,
+                 &protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto_impl);
 }
 void protobuf_AddDesc_google_2flogging_2fv2_2flogging_5fconfig_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
-  static const char descriptor[] = {
-      "\n&google/logging/v2/logging_config.proto"
-      "\022\021google.logging.v2\032\034google/api/annotati"
-      "ons.proto\032\033google/protobuf/empty.proto\032\037"
-      "google/protobuf/timestamp.proto\"\275\002\n\007LogS"
-      "ink\022\014\n\004name\030\001 \001(\t\022\023\n\013destination\030\003 \001(\t\022\016"
-      "\n\006filter\030\005 \001(\t\022G\n\025output_version_format\030"
-      "\006 \001(\0162(.google.logging.v2.LogSink.Versio"
-      "nFormat\022\027\n\017writer_identity\030\010 \001(\t\022.\n\nstar"
-      "t_time\030\n \001(\0132\032.google.protobuf.Timestamp"
-      "\022,\n\010end_time\030\013 \001(\0132\032.google.protobuf.Tim"
-      "estamp\"\?\n\rVersionFormat\022\036\n\032VERSION_FORMA"
-      "T_UNSPECIFIED\020\000\022\006\n\002V2\020\001\022\006\n\002V1\020\002\"I\n\020ListS"
-      "inksRequest\022\016\n\006parent\030\001 \001(\t\022\022\n\npage_toke"
-      "n\030\002 \001(\t\022\021\n\tpage_size\030\003 \001(\005\"W\n\021ListSinksR"
-      "esponse\022)\n\005sinks\030\001 \003(\0132\032.google.logging."
-      "v2.LogSink\022\027\n\017next_page_token\030\002 \001(\t\"#\n\016G"
-      "etSinkRequest\022\021\n\tsink_name\030\001 \001(\t\"m\n\021Crea"
-      "teSinkRequest\022\016\n\006parent\030\001 \001(\t\022(\n\004sink\030\002 "
-      "\001(\0132\032.google.logging.v2.LogSink\022\036\n\026uniqu"
-      "e_writer_identity\030\003 \001(\010\"p\n\021UpdateSinkReq"
-      "uest\022\021\n\tsink_name\030\001 \001(\t\022(\n\004sink\030\002 \001(\0132\032."
-      "google.logging.v2.LogSink\022\036\n\026unique_writ"
-      "er_identity\030\003 \001(\010\"&\n\021DeleteSinkRequest\022\021"
-      "\n\tsink_name\030\001 \001(\t2\376\004\n\017ConfigServiceV2\022}\n"
-      "\tListSinks\022#.google.logging.v2.ListSinks"
-      "Request\032$.google.logging.v2.ListSinksRes"
-      "ponse\"%\202\323\344\223\002\037\022\035/v2/{parent=projects/*}/s"
-      "inks\022t\n\007GetSink\022!.google.logging.v2.GetS"
-      "inkRequest\032\032.google.logging.v2.LogSink\"*"
-      "\202\323\344\223\002$\022\"/v2/{sink_name=projects/*/sinks/"
-      "*}\022{\n\nCreateSink\022$.google.logging.v2.Cre"
-      "ateSinkRequest\032\032.google.logging.v2.LogSi"
-      "nk\"+\202\323\344\223\002%\"\035/v2/{parent=projects/*}/sink"
-      "s:\004sink\022\200\001\n\nUpdateSink\022$.google.logging."
-      "v2.UpdateSinkRequest\032\032.google.logging.v2"
-      ".LogSink\"0\202\323\344\223\002*\032\"/v2/{sink_name=project"
-      "s/*/sinks/*}:\004sink\022v\n\nDeleteSink\022$.googl"
-      "e.logging.v2.DeleteSinkRequest\032\026.google."
-      "protobuf.Empty\"*\202\323\344\223\002$*\"/v2/{sink_name=p"
-      "rojects/*/sinks/*}B\201\001\n\025com.google.loggin"
-      "g.v2B\022LoggingConfigProtoP\001Z8google.golan"
-      "g.org/genproto/googleapis/logging/v2;log"
-      "ging\252\002\027Google.Cloud.Logging.V2b\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1718);
+    "\n&google/logging/v2/logging_config.proto"
+    "\022\021google.logging.v2\032\034google/api/annotati"
+    "ons.proto\032\033google/protobuf/empty.proto\032\037"
+    "google/protobuf/timestamp.proto\"\275\002\n\007LogS"
+    "ink\022\014\n\004name\030\001 \001(\t\022\023\n\013destination\030\003 \001(\t\022\016"
+    "\n\006filter\030\005 \001(\t\022G\n\025output_version_format\030"
+    "\006 \001(\0162(.google.logging.v2.LogSink.Versio"
+    "nFormat\022\027\n\017writer_identity\030\010 \001(\t\022.\n\nstar"
+    "t_time\030\n \001(\0132\032.google.protobuf.Timestamp"
+    "\022,\n\010end_time\030\013 \001(\0132\032.google.protobuf.Tim"
+    "estamp\"\?\n\rVersionFormat\022\036\n\032VERSION_FORMA"
+    "T_UNSPECIFIED\020\000\022\006\n\002V2\020\001\022\006\n\002V1\020\002\"I\n\020ListS"
+    "inksRequest\022\016\n\006parent\030\001 \001(\t\022\022\n\npage_toke"
+    "n\030\002 \001(\t\022\021\n\tpage_size\030\003 \001(\005\"W\n\021ListSinksR"
+    "esponse\022)\n\005sinks\030\001 \003(\0132\032.google.logging."
+    "v2.LogSink\022\027\n\017next_page_token\030\002 \001(\t\"#\n\016G"
+    "etSinkRequest\022\021\n\tsink_name\030\001 \001(\t\"m\n\021Crea"
+    "teSinkRequest\022\016\n\006parent\030\001 \001(\t\022(\n\004sink\030\002 "
+    "\001(\0132\032.google.logging.v2.LogSink\022\036\n\026uniqu"
+    "e_writer_identity\030\003 \001(\010\"p\n\021UpdateSinkReq"
+    "uest\022\021\n\tsink_name\030\001 \001(\t\022(\n\004sink\030\002 \001(\0132\032."
+    "google.logging.v2.LogSink\022\036\n\026unique_writ"
+    "er_identity\030\003 \001(\010\"&\n\021DeleteSinkRequest\022\021"
+    "\n\tsink_name\030\001 \001(\t2\376\004\n\017ConfigServiceV2\022}\n"
+    "\tListSinks\022#.google.logging.v2.ListSinks"
+    "Request\032$.google.logging.v2.ListSinksRes"
+    "ponse\"%\202\323\344\223\002\037\022\035/v2/{parent=projects/*}/s"
+    "inks\022t\n\007GetSink\022!.google.logging.v2.GetS"
+    "inkRequest\032\032.google.logging.v2.LogSink\"*"
+    "\202\323\344\223\002$\022\"/v2/{sink_name=projects/*/sinks/"
+    "*}\022{\n\nCreateSink\022$.google.logging.v2.Cre"
+    "ateSinkRequest\032\032.google.logging.v2.LogSi"
+    "nk\"+\202\323\344\223\002%\"\035/v2/{parent=projects/*}/sink"
+    "s:\004sink\022\200\001\n\nUpdateSink\022$.google.logging."
+    "v2.UpdateSinkRequest\032\032.google.logging.v2"
+    ".LogSink\"0\202\323\344\223\002*\032\"/v2/{sink_name=project"
+    "s/*/sinks/*}:\004sink\022v\n\nDeleteSink\022$.googl"
+    "e.logging.v2.DeleteSinkRequest\032\026.google."
+    "protobuf.Empty\"*\202\323\344\223\002$*\"/v2/{sink_name=p"
+    "rojects/*/sinks/*}B\201\001\n\025com.google.loggin"
+    "g.v2B\022LoggingConfigProtoP\001Z8google.golan"
+    "g.org/genproto/googleapis/logging/v2;log"
+    "ging\252\002\027Google.Cloud.Logging.V2b\006proto3", 1718);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/logging/v2/logging_config.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -254,9 +317,22 @@ struct StaticDescriptorInitializer_google_2flogging_2fv2_2flogging_5fconfig_2epr
     protobuf_AddDesc_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
   }
 } static_descriptor_initializer_google_2flogging_2fv2_2flogging_5fconfig_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
+// ===================================================================
+
 const ::google::protobuf::EnumDescriptor* LogSink_VersionFormat_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
+  return LogSink_VersionFormat_descriptor_;
 }
 bool LogSink_VersionFormat_IsValid(int value) {
   switch (value) {
@@ -277,9 +353,6 @@ const LogSink_VersionFormat LogSink::VersionFormat_MIN;
 const LogSink_VersionFormat LogSink::VersionFormat_MAX;
 const int LogSink::VersionFormat_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-// ===================================================================
-
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LogSink::kNameFieldNumber;
 const int LogSink::kDestinationFieldNumber;
@@ -292,44 +365,23 @@ const int LogSink::kEndTimeFieldNumber;
 
 LogSink::LogSink()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.logging.v2.LogSink)
 }
+
+void LogSink::InitAsDefaultInstance() {
+  start_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  end_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+}
+
 LogSink::LogSink(const LogSink& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  destination_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.destination().size() > 0) {
-    destination_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.destination_);
-  }
-  filter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.filter().size() > 0) {
-    filter_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.filter_);
-  }
-  writer_identity_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.writer_identity().size() > 0) {
-    writer_identity_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.writer_identity_);
-  }
-  if (from.has_start_time()) {
-    start_time_ = new ::google::protobuf::Timestamp(*from.start_time_);
-  } else {
-    start_time_ = NULL;
-  }
-  if (from.has_end_time()) {
-    end_time_ = new ::google::protobuf::Timestamp(*from.end_time_);
-  } else {
-    end_time_ = NULL;
-  }
-  output_version_format_ = from.output_version_format_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.logging.v2.LogSink)
 }
 
@@ -338,8 +390,9 @@ void LogSink::SharedCtor() {
   destination_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   filter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   writer_identity_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&start_time_, 0, reinterpret_cast<char*>(&output_version_format_) -
-    reinterpret_cast<char*>(&start_time_) + sizeof(output_version_format_));
+  start_time_ = NULL;
+  end_time_ = NULL;
+  output_version_format_ = 0;
   _cached_size_ = 0;
 }
 
@@ -353,10 +406,8 @@ void LogSink::SharedDtor() {
   destination_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   filter_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   writer_identity_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &LogSink_default_instance_.get()) {
     delete start_time_;
-  }
-  if (this != internal_default_instance()) {
     delete end_time_;
   }
 }
@@ -368,13 +419,15 @@ void LogSink::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* LogSink::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return LogSink_descriptor_;
 }
 
 const LogSink& LogSink::default_instance() {
   protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<LogSink> LogSink_default_instance_;
 
 LogSink* LogSink::New(::google::protobuf::Arena* arena) const {
   LogSink* n = new LogSink;
@@ -389,16 +442,12 @@ void LogSink::Clear() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   destination_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   filter_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  writer_identity_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && start_time_ != NULL) {
-    delete start_time_;
-  }
-  start_time_ = NULL;
-  if (GetArenaNoVirtual() == NULL && end_time_ != NULL) {
-    delete end_time_;
-  }
-  end_time_ = NULL;
   output_version_format_ = 0;
+  writer_identity_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (GetArenaNoVirtual() == NULL && start_time_ != NULL) delete start_time_;
+  start_time_ = NULL;
+  if (GetArenaNoVirtual() == NULL && end_time_ != NULL) delete end_time_;
+  end_time_ = NULL;
 }
 
 bool LogSink::MergePartialFromCodedStream(
@@ -407,13 +456,13 @@ bool LogSink::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.logging.v2.LogSink)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -423,12 +472,14 @@ bool LogSink::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_destination;
         break;
       }
 
-      // string destination = 3;
+      // optional string destination = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_destination:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_destination()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -438,12 +489,14 @@ bool LogSink::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_filter;
         break;
       }
 
-      // string filter = 5;
+      // optional string filter = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_filter:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_filter()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -453,12 +506,14 @@ bool LogSink::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(48)) goto parse_output_version_format;
         break;
       }
 
-      // .google.logging.v2.LogSink.VersionFormat output_version_format = 6;
+      // optional .google.logging.v2.LogSink.VersionFormat output_version_format = 6;
       case 6: {
-        if (tag == 48u) {
+        if (tag == 48) {
+         parse_output_version_format:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -467,12 +522,14 @@ bool LogSink::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(66)) goto parse_writer_identity;
         break;
       }
 
-      // string writer_identity = 8;
+      // optional string writer_identity = 8;
       case 8: {
-        if (tag == 66u) {
+        if (tag == 66) {
+         parse_writer_identity:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_writer_identity()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -482,28 +539,33 @@ bool LogSink::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(82)) goto parse_start_time;
         break;
       }
 
-      // .google.protobuf.Timestamp start_time = 10;
+      // optional .google.protobuf.Timestamp start_time = 10;
       case 10: {
-        if (tag == 82u) {
+        if (tag == 82) {
+         parse_start_time:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_start_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(90)) goto parse_end_time;
         break;
       }
 
-      // .google.protobuf.Timestamp end_time = 11;
+      // optional .google.protobuf.Timestamp end_time = 11;
       case 11: {
-        if (tag == 90u) {
+        if (tag == 90) {
+         parse_end_time:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_end_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -531,7 +593,7 @@ failure:
 void LogSink::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.logging.v2.LogSink)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -541,7 +603,7 @@ void LogSink::SerializeWithCachedSizes(
       1, this->name(), output);
   }
 
-  // string destination = 3;
+  // optional string destination = 3;
   if (this->destination().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->destination().data(), this->destination().length(),
@@ -551,7 +613,7 @@ void LogSink::SerializeWithCachedSizes(
       3, this->destination(), output);
   }
 
-  // string filter = 5;
+  // optional string filter = 5;
   if (this->filter().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->filter().data(), this->filter().length(),
@@ -561,13 +623,13 @@ void LogSink::SerializeWithCachedSizes(
       5, this->filter(), output);
   }
 
-  // .google.logging.v2.LogSink.VersionFormat output_version_format = 6;
+  // optional .google.logging.v2.LogSink.VersionFormat output_version_format = 6;
   if (this->output_version_format() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       6, this->output_version_format(), output);
   }
 
-  // string writer_identity = 8;
+  // optional string writer_identity = 8;
   if (this->writer_identity().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->writer_identity().data(), this->writer_identity().length(),
@@ -577,13 +639,13 @@ void LogSink::SerializeWithCachedSizes(
       8, this->writer_identity(), output);
   }
 
-  // .google.protobuf.Timestamp start_time = 10;
+  // optional .google.protobuf.Timestamp start_time = 10;
   if (this->has_start_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       10, *this->start_time_, output);
   }
 
-  // .google.protobuf.Timestamp end_time = 11;
+  // optional .google.protobuf.Timestamp end_time = 11;
   if (this->has_end_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       11, *this->end_time_, output);
@@ -596,7 +658,7 @@ void LogSink::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.logging.v2.LogSink)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -607,7 +669,7 @@ void LogSink::SerializeWithCachedSizes(
         1, this->name(), target);
   }
 
-  // string destination = 3;
+  // optional string destination = 3;
   if (this->destination().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->destination().data(), this->destination().length(),
@@ -618,7 +680,7 @@ void LogSink::SerializeWithCachedSizes(
         3, this->destination(), target);
   }
 
-  // string filter = 5;
+  // optional string filter = 5;
   if (this->filter().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->filter().data(), this->filter().length(),
@@ -629,13 +691,13 @@ void LogSink::SerializeWithCachedSizes(
         5, this->filter(), target);
   }
 
-  // .google.logging.v2.LogSink.VersionFormat output_version_format = 6;
+  // optional .google.logging.v2.LogSink.VersionFormat output_version_format = 6;
   if (this->output_version_format() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       6, this->output_version_format(), target);
   }
 
-  // string writer_identity = 8;
+  // optional string writer_identity = 8;
   if (this->writer_identity().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->writer_identity().data(), this->writer_identity().length(),
@@ -646,14 +708,14 @@ void LogSink::SerializeWithCachedSizes(
         8, this->writer_identity(), target);
   }
 
-  // .google.protobuf.Timestamp start_time = 10;
+  // optional .google.protobuf.Timestamp start_time = 10;
   if (this->has_start_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         10, *this->start_time_, false, target);
   }
 
-  // .google.protobuf.Timestamp end_time = 11;
+  // optional .google.protobuf.Timestamp end_time = 11;
   if (this->has_end_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -668,52 +730,52 @@ size_t LogSink::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.logging.v2.LogSink)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->name());
   }
 
-  // string destination = 3;
+  // optional string destination = 3;
   if (this->destination().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->destination());
   }
 
-  // string filter = 5;
+  // optional string filter = 5;
   if (this->filter().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->filter());
   }
 
-  // string writer_identity = 8;
+  // optional .google.logging.v2.LogSink.VersionFormat output_version_format = 6;
+  if (this->output_version_format() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->output_version_format());
+  }
+
+  // optional string writer_identity = 8;
   if (this->writer_identity().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->writer_identity());
   }
 
-  // .google.protobuf.Timestamp start_time = 10;
+  // optional .google.protobuf.Timestamp start_time = 10;
   if (this->has_start_time()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->start_time_);
   }
 
-  // .google.protobuf.Timestamp end_time = 11;
+  // optional .google.protobuf.Timestamp end_time = 11;
   if (this->has_end_time()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->end_time_);
-  }
-
-  // .google.logging.v2.LogSink.VersionFormat output_version_format = 6;
-  if (this->output_version_format() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->output_version_format());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -725,7 +787,7 @@ size_t LogSink::ByteSizeLong() const {
 
 void LogSink::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.logging.v2.LogSink)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const LogSink* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const LogSink>(
           &from);
@@ -734,14 +796,21 @@ void LogSink::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.logging.v2.LogSink)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void LogSink::MergeFrom(const LogSink& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.logging.v2.LogSink)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void LogSink::UnsafeMergeFrom(const LogSink& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -754,6 +823,9 @@ void LogSink::MergeFrom(const LogSink& from) {
 
     filter_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.filter_);
   }
+  if (from.output_version_format() != 0) {
+    set_output_version_format(from.output_version_format());
+  }
   if (from.writer_identity().size() > 0) {
 
     writer_identity_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.writer_identity_);
@@ -763,9 +835,6 @@ void LogSink::MergeFrom(const LogSink& from) {
   }
   if (from.has_end_time()) {
     mutable_end_time()->::google::protobuf::Timestamp::MergeFrom(from.end_time());
-  }
-  if (from.output_version_format() != 0) {
-    set_output_version_format(from.output_version_format());
   }
 }
 
@@ -780,10 +849,11 @@ void LogSink::CopyFrom(const LogSink& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.logging.v2.LogSink)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool LogSink::IsInitialized() const {
+
   return true;
 }
 
@@ -795,28 +865,32 @@ void LogSink::InternalSwap(LogSink* other) {
   name_.Swap(&other->name_);
   destination_.Swap(&other->destination_);
   filter_.Swap(&other->filter_);
+  std::swap(output_version_format_, other->output_version_format_);
   writer_identity_.Swap(&other->writer_identity_);
   std::swap(start_time_, other->start_time_);
   std::swap(end_time_, other->end_time_);
-  std::swap(output_version_format_, other->output_version_format_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata LogSink::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = LogSink_descriptor_;
+  metadata.reflection = LogSink_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // LogSink
 
-// string name = 1;
+// optional string name = 1;
 void LogSink::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& LogSink::name() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.LogSink.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void LogSink::set_name(const ::std::string& value) {
   
@@ -854,13 +928,13 @@ void LogSink::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.v2.LogSink.name)
 }
 
-// string destination = 3;
+// optional string destination = 3;
 void LogSink::clear_destination() {
   destination_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& LogSink::destination() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.LogSink.destination)
-  return destination_.GetNoArena();
+  return destination_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void LogSink::set_destination(const ::std::string& value) {
   
@@ -898,13 +972,13 @@ void LogSink::set_allocated_destination(::std::string* destination) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.v2.LogSink.destination)
 }
 
-// string filter = 5;
+// optional string filter = 5;
 void LogSink::clear_filter() {
   filter_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& LogSink::filter() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.LogSink.filter)
-  return filter_.GetNoArena();
+  return filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void LogSink::set_filter(const ::std::string& value) {
   
@@ -942,7 +1016,7 @@ void LogSink::set_allocated_filter(::std::string* filter) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.v2.LogSink.filter)
 }
 
-// .google.logging.v2.LogSink.VersionFormat output_version_format = 6;
+// optional .google.logging.v2.LogSink.VersionFormat output_version_format = 6;
 void LogSink::clear_output_version_format() {
   output_version_format_ = 0;
 }
@@ -956,13 +1030,13 @@ void LogSink::set_output_version_format(::google::logging::v2::LogSink_VersionFo
   // @@protoc_insertion_point(field_set:google.logging.v2.LogSink.output_version_format)
 }
 
-// string writer_identity = 8;
+// optional string writer_identity = 8;
 void LogSink::clear_writer_identity() {
   writer_identity_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& LogSink::writer_identity() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.LogSink.writer_identity)
-  return writer_identity_.GetNoArena();
+  return writer_identity_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void LogSink::set_writer_identity(const ::std::string& value) {
   
@@ -1000,7 +1074,7 @@ void LogSink::set_allocated_writer_identity(::std::string* writer_identity) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.v2.LogSink.writer_identity)
 }
 
-// .google.protobuf.Timestamp start_time = 10;
+// optional .google.protobuf.Timestamp start_time = 10;
 bool LogSink::has_start_time() const {
   return this != internal_default_instance() && start_time_ != NULL;
 }
@@ -1044,7 +1118,7 @@ void LogSink::set_allocated_start_time(::google::protobuf::Timestamp* start_time
   // @@protoc_insertion_point(field_set_allocated:google.logging.v2.LogSink.start_time)
 }
 
-// .google.protobuf.Timestamp end_time = 11;
+// optional .google.protobuf.Timestamp end_time = 11;
 bool LogSink::has_end_time() const {
   return this != internal_default_instance() && end_time_ != NULL;
 }
@@ -1088,6 +1162,9 @@ void LogSink::set_allocated_end_time(::google::protobuf::Timestamp* end_time) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.v2.LogSink.end_time)
 }
 
+inline const LogSink* LogSink::internal_default_instance() {
+  return &LogSink_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1100,26 +1177,19 @@ const int ListSinksRequest::kPageSizeFieldNumber;
 
 ListSinksRequest::ListSinksRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.logging.v2.ListSinksRequest)
 }
+
+void ListSinksRequest::InitAsDefaultInstance() {
+}
+
 ListSinksRequest::ListSinksRequest(const ListSinksRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  parent_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.parent().size() > 0) {
-    parent_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parent_);
-  }
-  page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.page_token().size() > 0) {
-    page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
-  }
-  page_size_ = from.page_size_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.logging.v2.ListSinksRequest)
 }
 
@@ -1147,13 +1217,15 @@ void ListSinksRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListSinksRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return ListSinksRequest_descriptor_;
 }
 
 const ListSinksRequest& ListSinksRequest::default_instance() {
   protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListSinksRequest> ListSinksRequest_default_instance_;
 
 ListSinksRequest* ListSinksRequest::New(::google::protobuf::Arena* arena) const {
   ListSinksRequest* n = new ListSinksRequest;
@@ -1176,13 +1248,13 @@ bool ListSinksRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.logging.v2.ListSinksRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string parent = 1;
+      // optional string parent = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_parent()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1192,12 +1264,14 @@ bool ListSinksRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_page_token;
         break;
       }
 
-      // string page_token = 2;
+      // optional string page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1207,12 +1281,14 @@ bool ListSinksRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_page_size;
         break;
       }
 
-      // int32 page_size = 3;
+      // optional int32 page_size = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_page_size:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -1220,6 +1296,7 @@ bool ListSinksRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1247,7 +1324,7 @@ failure:
 void ListSinksRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.logging.v2.ListSinksRequest)
-  // string parent = 1;
+  // optional string parent = 1;
   if (this->parent().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->parent().data(), this->parent().length(),
@@ -1257,7 +1334,7 @@ void ListSinksRequest::SerializeWithCachedSizes(
       1, this->parent(), output);
   }
 
-  // string page_token = 2;
+  // optional string page_token = 2;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -1267,7 +1344,7 @@ void ListSinksRequest::SerializeWithCachedSizes(
       2, this->page_token(), output);
   }
 
-  // int32 page_size = 3;
+  // optional int32 page_size = 3;
   if (this->page_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->page_size(), output);
   }
@@ -1279,7 +1356,7 @@ void ListSinksRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.logging.v2.ListSinksRequest)
-  // string parent = 1;
+  // optional string parent = 1;
   if (this->parent().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->parent().data(), this->parent().length(),
@@ -1290,7 +1367,7 @@ void ListSinksRequest::SerializeWithCachedSizes(
         1, this->parent(), target);
   }
 
-  // string page_token = 2;
+  // optional string page_token = 2;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -1301,7 +1378,7 @@ void ListSinksRequest::SerializeWithCachedSizes(
         2, this->page_token(), target);
   }
 
-  // int32 page_size = 3;
+  // optional int32 page_size = 3;
   if (this->page_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->page_size(), target);
   }
@@ -1314,21 +1391,21 @@ size_t ListSinksRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.logging.v2.ListSinksRequest)
   size_t total_size = 0;
 
-  // string parent = 1;
+  // optional string parent = 1;
   if (this->parent().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->parent());
   }
 
-  // string page_token = 2;
+  // optional string page_token = 2;
   if (this->page_token().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->page_token());
   }
 
-  // int32 page_size = 3;
+  // optional int32 page_size = 3;
   if (this->page_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
@@ -1344,7 +1421,7 @@ size_t ListSinksRequest::ByteSizeLong() const {
 
 void ListSinksRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.logging.v2.ListSinksRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListSinksRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListSinksRequest>(
           &from);
@@ -1353,14 +1430,21 @@ void ListSinksRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.logging.v2.ListSinksRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListSinksRequest::MergeFrom(const ListSinksRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.logging.v2.ListSinksRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListSinksRequest::UnsafeMergeFrom(const ListSinksRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.parent().size() > 0) {
 
     parent_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parent_);
@@ -1385,10 +1469,11 @@ void ListSinksRequest::CopyFrom(const ListSinksRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.logging.v2.ListSinksRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListSinksRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -1400,24 +1485,28 @@ void ListSinksRequest::InternalSwap(ListSinksRequest* other) {
   parent_.Swap(&other->parent_);
   page_token_.Swap(&other->page_token_);
   std::swap(page_size_, other->page_size_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListSinksRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListSinksRequest_descriptor_;
+  metadata.reflection = ListSinksRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ListSinksRequest
 
-// string parent = 1;
+// optional string parent = 1;
 void ListSinksRequest::clear_parent() {
   parent_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListSinksRequest::parent() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.ListSinksRequest.parent)
-  return parent_.GetNoArena();
+  return parent_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListSinksRequest::set_parent(const ::std::string& value) {
   
@@ -1455,13 +1544,13 @@ void ListSinksRequest::set_allocated_parent(::std::string* parent) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.v2.ListSinksRequest.parent)
 }
 
-// string page_token = 2;
+// optional string page_token = 2;
 void ListSinksRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListSinksRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.ListSinksRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListSinksRequest::set_page_token(const ::std::string& value) {
   
@@ -1499,7 +1588,7 @@ void ListSinksRequest::set_allocated_page_token(::std::string* page_token) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.v2.ListSinksRequest.page_token)
 }
 
-// int32 page_size = 3;
+// optional int32 page_size = 3;
 void ListSinksRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -1513,6 +1602,9 @@ void ListSinksRequest::set_page_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.logging.v2.ListSinksRequest.page_size)
 }
 
+inline const ListSinksRequest* ListSinksRequest::internal_default_instance() {
+  return &ListSinksRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1524,22 +1616,19 @@ const int ListSinksResponse::kNextPageTokenFieldNumber;
 
 ListSinksResponse::ListSinksResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.logging.v2.ListSinksResponse)
 }
+
+void ListSinksResponse::InitAsDefaultInstance() {
+}
+
 ListSinksResponse::ListSinksResponse(const ListSinksResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      sinks_(from.sinks_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_page_token().size() > 0) {
-    next_page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_page_token_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.logging.v2.ListSinksResponse)
 }
 
@@ -1564,13 +1653,15 @@ void ListSinksResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListSinksResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return ListSinksResponse_descriptor_;
 }
 
 const ListSinksResponse& ListSinksResponse::default_instance() {
   protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListSinksResponse> ListSinksResponse_default_instance_;
 
 ListSinksResponse* ListSinksResponse::New(::google::protobuf::Arena* arena) const {
   ListSinksResponse* n = new ListSinksResponse;
@@ -1582,8 +1673,8 @@ ListSinksResponse* ListSinksResponse::New(::google::protobuf::Arena* arena) cons
 
 void ListSinksResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.logging.v2.ListSinksResponse)
-  sinks_.Clear();
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  sinks_.Clear();
 }
 
 bool ListSinksResponse::MergePartialFromCodedStream(
@@ -1592,26 +1683,30 @@ bool ListSinksResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.logging.v2.ListSinksResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.logging.v2.LogSink sinks = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_sinks:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_sinks()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_sinks;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_next_page_token;
         break;
       }
 
-      // string next_page_token = 2;
+      // optional string next_page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_next_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1621,6 +1716,7 @@ bool ListSinksResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1654,7 +1750,7 @@ void ListSinksResponse::SerializeWithCachedSizes(
       1, this->sinks(i), output);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -1678,7 +1774,7 @@ void ListSinksResponse::SerializeWithCachedSizes(
         1, this->sinks(i), false, target);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -1697,6 +1793,13 @@ size_t ListSinksResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.logging.v2.ListSinksResponse)
   size_t total_size = 0;
 
+  // optional string next_page_token = 2;
+  if (this->next_page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_page_token());
+  }
+
   // repeated .google.logging.v2.LogSink sinks = 1;
   {
     unsigned int count = this->sinks_size();
@@ -1708,13 +1811,6 @@ size_t ListSinksResponse::ByteSizeLong() const {
     }
   }
 
-  // string next_page_token = 2;
-  if (this->next_page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_page_token());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -1724,7 +1820,7 @@ size_t ListSinksResponse::ByteSizeLong() const {
 
 void ListSinksResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.logging.v2.ListSinksResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListSinksResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListSinksResponse>(
           &from);
@@ -1733,14 +1829,21 @@ void ListSinksResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.logging.v2.ListSinksResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListSinksResponse::MergeFrom(const ListSinksResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.logging.v2.ListSinksResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListSinksResponse::UnsafeMergeFrom(const ListSinksResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   sinks_.MergeFrom(from.sinks_);
   if (from.next_page_token().size() > 0) {
 
@@ -1759,10 +1862,11 @@ void ListSinksResponse::CopyFrom(const ListSinksResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.logging.v2.ListSinksResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListSinksResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -1773,12 +1877,16 @@ void ListSinksResponse::Swap(ListSinksResponse* other) {
 void ListSinksResponse::InternalSwap(ListSinksResponse* other) {
   sinks_.UnsafeArenaSwap(&other->sinks_);
   next_page_token_.Swap(&other->next_page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListSinksResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListSinksResponse_descriptor_;
+  metadata.reflection = ListSinksResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -1814,13 +1922,13 @@ ListSinksResponse::sinks() const {
   return sinks_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 void ListSinksResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListSinksResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.ListSinksResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListSinksResponse::set_next_page_token(const ::std::string& value) {
   
@@ -1858,6 +1966,9 @@ void ListSinksResponse::set_allocated_next_page_token(::std::string* next_page_t
   // @@protoc_insertion_point(field_set_allocated:google.logging.v2.ListSinksResponse.next_page_token)
 }
 
+inline const ListSinksResponse* ListSinksResponse::internal_default_instance() {
+  return &ListSinksResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1868,21 +1979,19 @@ const int GetSinkRequest::kSinkNameFieldNumber;
 
 GetSinkRequest::GetSinkRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.logging.v2.GetSinkRequest)
 }
+
+void GetSinkRequest::InitAsDefaultInstance() {
+}
+
 GetSinkRequest::GetSinkRequest(const GetSinkRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  sink_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.sink_name().size() > 0) {
-    sink_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.sink_name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.logging.v2.GetSinkRequest)
 }
 
@@ -1907,13 +2016,15 @@ void GetSinkRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GetSinkRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return GetSinkRequest_descriptor_;
 }
 
 const GetSinkRequest& GetSinkRequest::default_instance() {
   protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GetSinkRequest> GetSinkRequest_default_instance_;
 
 GetSinkRequest* GetSinkRequest::New(::google::protobuf::Arena* arena) const {
   GetSinkRequest* n = new GetSinkRequest;
@@ -1934,13 +2045,13 @@ bool GetSinkRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.logging.v2.GetSinkRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string sink_name = 1;
+      // optional string sink_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_sink_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1950,6 +2061,7 @@ bool GetSinkRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1977,7 +2089,7 @@ failure:
 void GetSinkRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.logging.v2.GetSinkRequest)
-  // string sink_name = 1;
+  // optional string sink_name = 1;
   if (this->sink_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->sink_name().data(), this->sink_name().length(),
@@ -1994,7 +2106,7 @@ void GetSinkRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.logging.v2.GetSinkRequest)
-  // string sink_name = 1;
+  // optional string sink_name = 1;
   if (this->sink_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->sink_name().data(), this->sink_name().length(),
@@ -2013,7 +2125,7 @@ size_t GetSinkRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.logging.v2.GetSinkRequest)
   size_t total_size = 0;
 
-  // string sink_name = 1;
+  // optional string sink_name = 1;
   if (this->sink_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -2029,7 +2141,7 @@ size_t GetSinkRequest::ByteSizeLong() const {
 
 void GetSinkRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.logging.v2.GetSinkRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GetSinkRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetSinkRequest>(
           &from);
@@ -2038,14 +2150,21 @@ void GetSinkRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.logging.v2.GetSinkRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetSinkRequest::MergeFrom(const GetSinkRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.logging.v2.GetSinkRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GetSinkRequest::UnsafeMergeFrom(const GetSinkRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.sink_name().size() > 0) {
 
     sink_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.sink_name_);
@@ -2063,10 +2182,11 @@ void GetSinkRequest::CopyFrom(const GetSinkRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.logging.v2.GetSinkRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetSinkRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -2076,24 +2196,28 @@ void GetSinkRequest::Swap(GetSinkRequest* other) {
 }
 void GetSinkRequest::InternalSwap(GetSinkRequest* other) {
   sink_name_.Swap(&other->sink_name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GetSinkRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GetSinkRequest_descriptor_;
+  metadata.reflection = GetSinkRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GetSinkRequest
 
-// string sink_name = 1;
+// optional string sink_name = 1;
 void GetSinkRequest::clear_sink_name() {
   sink_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GetSinkRequest::sink_name() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.GetSinkRequest.sink_name)
-  return sink_name_.GetNoArena();
+  return sink_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GetSinkRequest::set_sink_name(const ::std::string& value) {
   
@@ -2131,6 +2255,9 @@ void GetSinkRequest::set_allocated_sink_name(::std::string* sink_name) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.v2.GetSinkRequest.sink_name)
 }
 
+inline const GetSinkRequest* GetSinkRequest::internal_default_instance() {
+  return &GetSinkRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2143,34 +2270,28 @@ const int CreateSinkRequest::kUniqueWriterIdentityFieldNumber;
 
 CreateSinkRequest::CreateSinkRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.logging.v2.CreateSinkRequest)
 }
+
+void CreateSinkRequest::InitAsDefaultInstance() {
+  sink_ = const_cast< ::google::logging::v2::LogSink*>(
+      ::google::logging::v2::LogSink::internal_default_instance());
+}
+
 CreateSinkRequest::CreateSinkRequest(const CreateSinkRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  parent_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.parent().size() > 0) {
-    parent_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parent_);
-  }
-  if (from.has_sink()) {
-    sink_ = new ::google::logging::v2::LogSink(*from.sink_);
-  } else {
-    sink_ = NULL;
-  }
-  unique_writer_identity_ = from.unique_writer_identity_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.logging.v2.CreateSinkRequest)
 }
 
 void CreateSinkRequest::SharedCtor() {
   parent_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&sink_, 0, reinterpret_cast<char*>(&unique_writer_identity_) -
-    reinterpret_cast<char*>(&sink_) + sizeof(unique_writer_identity_));
+  sink_ = NULL;
+  unique_writer_identity_ = false;
   _cached_size_ = 0;
 }
 
@@ -2181,7 +2302,7 @@ CreateSinkRequest::~CreateSinkRequest() {
 
 void CreateSinkRequest::SharedDtor() {
   parent_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &CreateSinkRequest_default_instance_.get()) {
     delete sink_;
   }
 }
@@ -2193,13 +2314,15 @@ void CreateSinkRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* CreateSinkRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return CreateSinkRequest_descriptor_;
 }
 
 const CreateSinkRequest& CreateSinkRequest::default_instance() {
   protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<CreateSinkRequest> CreateSinkRequest_default_instance_;
 
 CreateSinkRequest* CreateSinkRequest::New(::google::protobuf::Arena* arena) const {
   CreateSinkRequest* n = new CreateSinkRequest;
@@ -2212,9 +2335,7 @@ CreateSinkRequest* CreateSinkRequest::New(::google::protobuf::Arena* arena) cons
 void CreateSinkRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.logging.v2.CreateSinkRequest)
   parent_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && sink_ != NULL) {
-    delete sink_;
-  }
+  if (GetArenaNoVirtual() == NULL && sink_ != NULL) delete sink_;
   sink_ = NULL;
   unique_writer_identity_ = false;
 }
@@ -2225,13 +2346,13 @@ bool CreateSinkRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.logging.v2.CreateSinkRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string parent = 1;
+      // optional string parent = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_parent()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2241,23 +2362,27 @@ bool CreateSinkRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_sink;
         break;
       }
 
-      // .google.logging.v2.LogSink sink = 2;
+      // optional .google.logging.v2.LogSink sink = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_sink:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_sink()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_unique_writer_identity;
         break;
       }
 
-      // bool unique_writer_identity = 3;
+      // optional bool unique_writer_identity = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_unique_writer_identity:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -2265,6 +2390,7 @@ bool CreateSinkRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2292,7 +2418,7 @@ failure:
 void CreateSinkRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.logging.v2.CreateSinkRequest)
-  // string parent = 1;
+  // optional string parent = 1;
   if (this->parent().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->parent().data(), this->parent().length(),
@@ -2302,13 +2428,13 @@ void CreateSinkRequest::SerializeWithCachedSizes(
       1, this->parent(), output);
   }
 
-  // .google.logging.v2.LogSink sink = 2;
+  // optional .google.logging.v2.LogSink sink = 2;
   if (this->has_sink()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->sink_, output);
   }
 
-  // bool unique_writer_identity = 3;
+  // optional bool unique_writer_identity = 3;
   if (this->unique_writer_identity() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(3, this->unique_writer_identity(), output);
   }
@@ -2320,7 +2446,7 @@ void CreateSinkRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.logging.v2.CreateSinkRequest)
-  // string parent = 1;
+  // optional string parent = 1;
   if (this->parent().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->parent().data(), this->parent().length(),
@@ -2331,14 +2457,14 @@ void CreateSinkRequest::SerializeWithCachedSizes(
         1, this->parent(), target);
   }
 
-  // .google.logging.v2.LogSink sink = 2;
+  // optional .google.logging.v2.LogSink sink = 2;
   if (this->has_sink()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *this->sink_, false, target);
   }
 
-  // bool unique_writer_identity = 3;
+  // optional bool unique_writer_identity = 3;
   if (this->unique_writer_identity() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(3, this->unique_writer_identity(), target);
   }
@@ -2351,21 +2477,21 @@ size_t CreateSinkRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.logging.v2.CreateSinkRequest)
   size_t total_size = 0;
 
-  // string parent = 1;
+  // optional string parent = 1;
   if (this->parent().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->parent());
   }
 
-  // .google.logging.v2.LogSink sink = 2;
+  // optional .google.logging.v2.LogSink sink = 2;
   if (this->has_sink()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->sink_);
   }
 
-  // bool unique_writer_identity = 3;
+  // optional bool unique_writer_identity = 3;
   if (this->unique_writer_identity() != 0) {
     total_size += 1 + 1;
   }
@@ -2379,7 +2505,7 @@ size_t CreateSinkRequest::ByteSizeLong() const {
 
 void CreateSinkRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.logging.v2.CreateSinkRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const CreateSinkRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CreateSinkRequest>(
           &from);
@@ -2388,14 +2514,21 @@ void CreateSinkRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.logging.v2.CreateSinkRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CreateSinkRequest::MergeFrom(const CreateSinkRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.logging.v2.CreateSinkRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void CreateSinkRequest::UnsafeMergeFrom(const CreateSinkRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.parent().size() > 0) {
 
     parent_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parent_);
@@ -2419,10 +2552,11 @@ void CreateSinkRequest::CopyFrom(const CreateSinkRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.logging.v2.CreateSinkRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CreateSinkRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -2434,24 +2568,28 @@ void CreateSinkRequest::InternalSwap(CreateSinkRequest* other) {
   parent_.Swap(&other->parent_);
   std::swap(sink_, other->sink_);
   std::swap(unique_writer_identity_, other->unique_writer_identity_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CreateSinkRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CreateSinkRequest_descriptor_;
+  metadata.reflection = CreateSinkRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // CreateSinkRequest
 
-// string parent = 1;
+// optional string parent = 1;
 void CreateSinkRequest::clear_parent() {
   parent_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& CreateSinkRequest::parent() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.CreateSinkRequest.parent)
-  return parent_.GetNoArena();
+  return parent_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void CreateSinkRequest::set_parent(const ::std::string& value) {
   
@@ -2489,7 +2627,7 @@ void CreateSinkRequest::set_allocated_parent(::std::string* parent) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.v2.CreateSinkRequest.parent)
 }
 
-// .google.logging.v2.LogSink sink = 2;
+// optional .google.logging.v2.LogSink sink = 2;
 bool CreateSinkRequest::has_sink() const {
   return this != internal_default_instance() && sink_ != NULL;
 }
@@ -2528,7 +2666,7 @@ void CreateSinkRequest::set_allocated_sink(::google::logging::v2::LogSink* sink)
   // @@protoc_insertion_point(field_set_allocated:google.logging.v2.CreateSinkRequest.sink)
 }
 
-// bool unique_writer_identity = 3;
+// optional bool unique_writer_identity = 3;
 void CreateSinkRequest::clear_unique_writer_identity() {
   unique_writer_identity_ = false;
 }
@@ -2542,6 +2680,9 @@ void CreateSinkRequest::set_unique_writer_identity(bool value) {
   // @@protoc_insertion_point(field_set:google.logging.v2.CreateSinkRequest.unique_writer_identity)
 }
 
+inline const CreateSinkRequest* CreateSinkRequest::internal_default_instance() {
+  return &CreateSinkRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2554,34 +2695,28 @@ const int UpdateSinkRequest::kUniqueWriterIdentityFieldNumber;
 
 UpdateSinkRequest::UpdateSinkRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.logging.v2.UpdateSinkRequest)
 }
+
+void UpdateSinkRequest::InitAsDefaultInstance() {
+  sink_ = const_cast< ::google::logging::v2::LogSink*>(
+      ::google::logging::v2::LogSink::internal_default_instance());
+}
+
 UpdateSinkRequest::UpdateSinkRequest(const UpdateSinkRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  sink_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.sink_name().size() > 0) {
-    sink_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.sink_name_);
-  }
-  if (from.has_sink()) {
-    sink_ = new ::google::logging::v2::LogSink(*from.sink_);
-  } else {
-    sink_ = NULL;
-  }
-  unique_writer_identity_ = from.unique_writer_identity_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.logging.v2.UpdateSinkRequest)
 }
 
 void UpdateSinkRequest::SharedCtor() {
   sink_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&sink_, 0, reinterpret_cast<char*>(&unique_writer_identity_) -
-    reinterpret_cast<char*>(&sink_) + sizeof(unique_writer_identity_));
+  sink_ = NULL;
+  unique_writer_identity_ = false;
   _cached_size_ = 0;
 }
 
@@ -2592,7 +2727,7 @@ UpdateSinkRequest::~UpdateSinkRequest() {
 
 void UpdateSinkRequest::SharedDtor() {
   sink_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &UpdateSinkRequest_default_instance_.get()) {
     delete sink_;
   }
 }
@@ -2604,13 +2739,15 @@ void UpdateSinkRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* UpdateSinkRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
+  return UpdateSinkRequest_descriptor_;
 }
 
 const UpdateSinkRequest& UpdateSinkRequest::default_instance() {
   protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<UpdateSinkRequest> UpdateSinkRequest_default_instance_;
 
 UpdateSinkRequest* UpdateSinkRequest::New(::google::protobuf::Arena* arena) const {
   UpdateSinkRequest* n = new UpdateSinkRequest;
@@ -2623,9 +2760,7 @@ UpdateSinkRequest* UpdateSinkRequest::New(::google::protobuf::Arena* arena) cons
 void UpdateSinkRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.logging.v2.UpdateSinkRequest)
   sink_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && sink_ != NULL) {
-    delete sink_;
-  }
+  if (GetArenaNoVirtual() == NULL && sink_ != NULL) delete sink_;
   sink_ = NULL;
   unique_writer_identity_ = false;
 }
@@ -2636,13 +2771,13 @@ bool UpdateSinkRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.logging.v2.UpdateSinkRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string sink_name = 1;
+      // optional string sink_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_sink_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2652,23 +2787,27 @@ bool UpdateSinkRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_sink;
         break;
       }
 
-      // .google.logging.v2.LogSink sink = 2;
+      // optional .google.logging.v2.LogSink sink = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_sink:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_sink()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_unique_writer_identity;
         break;
       }
 
-      // bool unique_writer_identity = 3;
+      // optional bool unique_writer_identity = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_unique_writer_identity:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -2676,6 +2815,7 @@ bool UpdateSinkRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2703,7 +2843,7 @@ failure:
 void UpdateSinkRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.logging.v2.UpdateSinkRequest)
-  // string sink_name = 1;
+  // optional string sink_name = 1;
   if (this->sink_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->sink_name().data(), this->sink_name().length(),
@@ -2713,13 +2853,13 @@ void UpdateSinkRequest::SerializeWithCachedSizes(
       1, this->sink_name(), output);
   }
 
-  // .google.logging.v2.LogSink sink = 2;
+  // optional .google.logging.v2.LogSink sink = 2;
   if (this->has_sink()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->sink_, output);
   }
 
-  // bool unique_writer_identity = 3;
+  // optional bool unique_writer_identity = 3;
   if (this->unique_writer_identity() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(3, this->unique_writer_identity(), output);
   }
@@ -2731,7 +2871,7 @@ void UpdateSinkRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.logging.v2.UpdateSinkRequest)
-  // string sink_name = 1;
+  // optional string sink_name = 1;
   if (this->sink_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->sink_name().data(), this->sink_name().length(),
@@ -2742,14 +2882,14 @@ void UpdateSinkRequest::SerializeWithCachedSizes(
         1, this->sink_name(), target);
   }
 
-  // .google.logging.v2.LogSink sink = 2;
+  // optional .google.logging.v2.LogSink sink = 2;
   if (this->has_sink()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *this->sink_, false, target);
   }
 
-  // bool unique_writer_identity = 3;
+  // optional bool unique_writer_identity = 3;
   if (this->unique_writer_identity() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(3, this->unique_writer_identity(), target);
   }
@@ -2762,21 +2902,21 @@ size_t UpdateSinkRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.logging.v2.UpdateSinkRequest)
   size_t total_size = 0;
 
-  // string sink_name = 1;
+  // optional string sink_name = 1;
   if (this->sink_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->sink_name());
   }
 
-  // .google.logging.v2.LogSink sink = 2;
+  // optional .google.logging.v2.LogSink sink = 2;
   if (this->has_sink()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->sink_);
   }
 
-  // bool unique_writer_identity = 3;
+  // optional bool unique_writer_identity = 3;
   if (this->unique_writer_identity() != 0) {
     total_size += 1 + 1;
   }
@@ -2790,7 +2930,7 @@ size_t UpdateSinkRequest::ByteSizeLong() const {
 
 void UpdateSinkRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.logging.v2.UpdateSinkRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const UpdateSinkRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const UpdateSinkRequest>(
           &from);
@@ -2799,14 +2939,21 @@ void UpdateSinkRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.logging.v2.UpdateSinkRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void UpdateSinkRequest::MergeFrom(const UpdateSinkRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.logging.v2.UpdateSinkRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void UpdateSinkRequest::UnsafeMergeFrom(const UpdateSinkRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.sink_name().size() > 0) {
 
     sink_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.sink_name_);
@@ -2830,10 +2977,11 @@ void UpdateSinkRequest::CopyFrom(const UpdateSinkRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.logging.v2.UpdateSinkRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool UpdateSinkRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -2845,24 +2993,28 @@ void UpdateSinkRequest::InternalSwap(UpdateSinkRequest* other) {
   sink_name_.Swap(&other->sink_name_);
   std::swap(sink_, other->sink_);
   std::swap(unique_writer_identity_, other->unique_writer_identity_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata UpdateSinkRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = UpdateSinkRequest_descriptor_;
+  metadata.reflection = UpdateSinkRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // UpdateSinkRequest
 
-// string sink_name = 1;
+// optional string sink_name = 1;
 void UpdateSinkRequest::clear_sink_name() {
   sink_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& UpdateSinkRequest::sink_name() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.UpdateSinkRequest.sink_name)
-  return sink_name_.GetNoArena();
+  return sink_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void UpdateSinkRequest::set_sink_name(const ::std::string& value) {
   
@@ -2900,7 +3052,7 @@ void UpdateSinkRequest::set_allocated_sink_name(::std::string* sink_name) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.v2.UpdateSinkRequest.sink_name)
 }
 
-// .google.logging.v2.LogSink sink = 2;
+// optional .google.logging.v2.LogSink sink = 2;
 bool UpdateSinkRequest::has_sink() const {
   return this != internal_default_instance() && sink_ != NULL;
 }
@@ -2939,7 +3091,7 @@ void UpdateSinkRequest::set_allocated_sink(::google::logging::v2::LogSink* sink)
   // @@protoc_insertion_point(field_set_allocated:google.logging.v2.UpdateSinkRequest.sink)
 }
 
-// bool unique_writer_identity = 3;
+// optional bool unique_writer_identity = 3;
 void UpdateSinkRequest::clear_unique_writer_identity() {
   unique_writer_identity_ = false;
 }
@@ -2953,6 +3105,9 @@ void UpdateSinkRequest::set_unique_writer_identity(bool value) {
   // @@protoc_insertion_point(field_set:google.logging.v2.UpdateSinkRequest.unique_writer_identity)
 }
 
+inline const UpdateSinkRequest* UpdateSinkRequest::internal_default_instance() {
+  return &UpdateSinkRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2963,21 +3118,19 @@ const int DeleteSinkRequest::kSinkNameFieldNumber;
 
 DeleteSinkRequest::DeleteSinkRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.logging.v2.DeleteSinkRequest)
 }
+
+void DeleteSinkRequest::InitAsDefaultInstance() {
+}
+
 DeleteSinkRequest::DeleteSinkRequest(const DeleteSinkRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  sink_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.sink_name().size() > 0) {
-    sink_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.sink_name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.logging.v2.DeleteSinkRequest)
 }
 
@@ -3002,13 +3155,15 @@ void DeleteSinkRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* DeleteSinkRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6].descriptor;
+  return DeleteSinkRequest_descriptor_;
 }
 
 const DeleteSinkRequest& DeleteSinkRequest::default_instance() {
   protobuf_InitDefaults_google_2flogging_2fv2_2flogging_5fconfig_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<DeleteSinkRequest> DeleteSinkRequest_default_instance_;
 
 DeleteSinkRequest* DeleteSinkRequest::New(::google::protobuf::Arena* arena) const {
   DeleteSinkRequest* n = new DeleteSinkRequest;
@@ -3029,13 +3184,13 @@ bool DeleteSinkRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.logging.v2.DeleteSinkRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string sink_name = 1;
+      // optional string sink_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_sink_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3045,6 +3200,7 @@ bool DeleteSinkRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3072,7 +3228,7 @@ failure:
 void DeleteSinkRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.logging.v2.DeleteSinkRequest)
-  // string sink_name = 1;
+  // optional string sink_name = 1;
   if (this->sink_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->sink_name().data(), this->sink_name().length(),
@@ -3089,7 +3245,7 @@ void DeleteSinkRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.logging.v2.DeleteSinkRequest)
-  // string sink_name = 1;
+  // optional string sink_name = 1;
   if (this->sink_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->sink_name().data(), this->sink_name().length(),
@@ -3108,7 +3264,7 @@ size_t DeleteSinkRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.logging.v2.DeleteSinkRequest)
   size_t total_size = 0;
 
-  // string sink_name = 1;
+  // optional string sink_name = 1;
   if (this->sink_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -3124,7 +3280,7 @@ size_t DeleteSinkRequest::ByteSizeLong() const {
 
 void DeleteSinkRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.logging.v2.DeleteSinkRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const DeleteSinkRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteSinkRequest>(
           &from);
@@ -3133,14 +3289,21 @@ void DeleteSinkRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.logging.v2.DeleteSinkRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteSinkRequest::MergeFrom(const DeleteSinkRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.logging.v2.DeleteSinkRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void DeleteSinkRequest::UnsafeMergeFrom(const DeleteSinkRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.sink_name().size() > 0) {
 
     sink_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.sink_name_);
@@ -3158,10 +3321,11 @@ void DeleteSinkRequest::CopyFrom(const DeleteSinkRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.logging.v2.DeleteSinkRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteSinkRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -3171,24 +3335,28 @@ void DeleteSinkRequest::Swap(DeleteSinkRequest* other) {
 }
 void DeleteSinkRequest::InternalSwap(DeleteSinkRequest* other) {
   sink_name_.Swap(&other->sink_name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DeleteSinkRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = DeleteSinkRequest_descriptor_;
+  metadata.reflection = DeleteSinkRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // DeleteSinkRequest
 
-// string sink_name = 1;
+// optional string sink_name = 1;
 void DeleteSinkRequest::clear_sink_name() {
   sink_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& DeleteSinkRequest::sink_name() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.DeleteSinkRequest.sink_name)
-  return sink_name_.GetNoArena();
+  return sink_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void DeleteSinkRequest::set_sink_name(const ::std::string& value) {
   
@@ -3226,6 +3394,9 @@ void DeleteSinkRequest::set_allocated_sink_name(::std::string* sink_name) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.v2.DeleteSinkRequest.sink_name)
 }
 
+inline const DeleteSinkRequest* DeleteSinkRequest::internal_default_instance() {
+  return &DeleteSinkRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

@@ -24,71 +24,14 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include "google/cloud/ml/v1beta1/model_service.pb.h"
 #include <google/protobuf/timestamp.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace cloud {
-namespace ml {
-namespace v1beta1 {
-class CreateModelRequest;
-class CreateModelRequestDefaultTypeInternal;
-extern CreateModelRequestDefaultTypeInternal _CreateModelRequest_default_instance_;
-class CreateVersionRequest;
-class CreateVersionRequestDefaultTypeInternal;
-extern CreateVersionRequestDefaultTypeInternal _CreateVersionRequest_default_instance_;
-class DeleteModelRequest;
-class DeleteModelRequestDefaultTypeInternal;
-extern DeleteModelRequestDefaultTypeInternal _DeleteModelRequest_default_instance_;
-class DeleteVersionRequest;
-class DeleteVersionRequestDefaultTypeInternal;
-extern DeleteVersionRequestDefaultTypeInternal _DeleteVersionRequest_default_instance_;
-class GetModelRequest;
-class GetModelRequestDefaultTypeInternal;
-extern GetModelRequestDefaultTypeInternal _GetModelRequest_default_instance_;
-class GetVersionRequest;
-class GetVersionRequestDefaultTypeInternal;
-extern GetVersionRequestDefaultTypeInternal _GetVersionRequest_default_instance_;
-class ListModelsRequest;
-class ListModelsRequestDefaultTypeInternal;
-extern ListModelsRequestDefaultTypeInternal _ListModelsRequest_default_instance_;
-class ListModelsResponse;
-class ListModelsResponseDefaultTypeInternal;
-extern ListModelsResponseDefaultTypeInternal _ListModelsResponse_default_instance_;
-class ListVersionsRequest;
-class ListVersionsRequestDefaultTypeInternal;
-extern ListVersionsRequestDefaultTypeInternal _ListVersionsRequest_default_instance_;
-class ListVersionsResponse;
-class ListVersionsResponseDefaultTypeInternal;
-extern ListVersionsResponseDefaultTypeInternal _ListVersionsResponse_default_instance_;
-class Model;
-class ModelDefaultTypeInternal;
-extern ModelDefaultTypeInternal _Model_default_instance_;
-class OperationMetadata;
-class OperationMetadataDefaultTypeInternal;
-extern OperationMetadataDefaultTypeInternal _OperationMetadata_default_instance_;
-class SetDefaultVersionRequest;
-class SetDefaultVersionRequestDefaultTypeInternal;
-extern SetDefaultVersionRequestDefaultTypeInternal _SetDefaultVersionRequest_default_instance_;
-class Version;
-class VersionDefaultTypeInternal;
-extern VersionDefaultTypeInternal _Version_default_instance_;
-}  // namespace v1beta1
-}  // namespace ml
-}  // namespace cloud
-namespace protobuf {
-class Timestamp;
-class TimestampDefaultTypeInternal;
-extern TimestampDefaultTypeInternal _Timestamp_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace cloud {
@@ -98,6 +41,10 @@ namespace v1beta1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto();
 void protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto();
+void protobuf_AssignDesc_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto();
+void protobuf_ShutdownFile_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto();
+
+class OperationMetadata;
 
 enum OperationMetadata_OperationType {
   OperationMetadata_OperationType_OPERATION_TYPE_UNSPECIFIED = 0,
@@ -139,52 +86,49 @@ class OperationMetadata : public ::google::protobuf::Message /* @@protoc_inserti
   static const ::google::protobuf::Descriptor* descriptor();
   static const OperationMetadata& default_instance();
 
-  static inline const OperationMetadata* internal_default_instance() {
-    return reinterpret_cast<const OperationMetadata*>(
-               &_OperationMetadata_default_instance_);
-  }
+  static const OperationMetadata* internal_default_instance();
 
   void Swap(OperationMetadata* other);
 
   // implements Message ----------------------------------------------
 
-  inline OperationMetadata* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline OperationMetadata* New() const { return New(NULL); }
 
-  OperationMetadata* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  OperationMetadata* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const OperationMetadata& from);
   void MergeFrom(const OperationMetadata& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(OperationMetadata* other);
+  void UnsafeMergeFrom(const OperationMetadata& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -220,7 +164,7 @@ class OperationMetadata : public ::google::protobuf::Message /* @@protoc_inserti
 
   // accessors -------------------------------------------------------
 
-  // .google.protobuf.Timestamp create_time = 1;
+  // optional .google.protobuf.Timestamp create_time = 1;
   bool has_create_time() const;
   void clear_create_time();
   static const int kCreateTimeFieldNumber = 1;
@@ -229,7 +173,7 @@ class OperationMetadata : public ::google::protobuf::Message /* @@protoc_inserti
   ::google::protobuf::Timestamp* release_create_time();
   void set_allocated_create_time(::google::protobuf::Timestamp* create_time);
 
-  // .google.protobuf.Timestamp start_time = 2;
+  // optional .google.protobuf.Timestamp start_time = 2;
   bool has_start_time() const;
   void clear_start_time();
   static const int kStartTimeFieldNumber = 2;
@@ -238,7 +182,7 @@ class OperationMetadata : public ::google::protobuf::Message /* @@protoc_inserti
   ::google::protobuf::Timestamp* release_start_time();
   void set_allocated_start_time(::google::protobuf::Timestamp* start_time);
 
-  // .google.protobuf.Timestamp end_time = 3;
+  // optional .google.protobuf.Timestamp end_time = 3;
   bool has_end_time() const;
   void clear_end_time();
   static const int kEndTimeFieldNumber = 3;
@@ -247,19 +191,19 @@ class OperationMetadata : public ::google::protobuf::Message /* @@protoc_inserti
   ::google::protobuf::Timestamp* release_end_time();
   void set_allocated_end_time(::google::protobuf::Timestamp* end_time);
 
-  // bool is_cancellation_requested = 4;
+  // optional bool is_cancellation_requested = 4;
   void clear_is_cancellation_requested();
   static const int kIsCancellationRequestedFieldNumber = 4;
   bool is_cancellation_requested() const;
   void set_is_cancellation_requested(bool value);
 
-  // .google.cloud.ml.v1beta1.OperationMetadata.OperationType operation_type = 5;
+  // optional .google.cloud.ml.v1beta1.OperationMetadata.OperationType operation_type = 5;
   void clear_operation_type();
   static const int kOperationTypeFieldNumber = 5;
   ::google::cloud::ml::v1beta1::OperationMetadata_OperationType operation_type() const;
   void set_operation_type(::google::cloud::ml::v1beta1::OperationMetadata_OperationType value);
 
-  // string model_name = 6;
+  // optional string model_name = 6;
   void clear_model_name();
   static const int kModelNameFieldNumber = 6;
   const ::std::string& model_name() const;
@@ -270,7 +214,7 @@ class OperationMetadata : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_model_name();
   void set_allocated_model_name(::std::string* model_name);
 
-  // .google.cloud.ml.v1beta1.Version version = 7;
+  // optional .google.cloud.ml.v1beta1.Version version = 7;
   bool has_version() const;
   void clear_version();
   static const int kVersionFieldNumber = 7;
@@ -293,10 +237,13 @@ class OperationMetadata : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fml_2fv1beta1_2foperation_5fmetadata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<OperationMetadata> OperationMetadata_default_instance_;
+
 // ===================================================================
 
 
@@ -305,7 +252,7 @@ class OperationMetadata : public ::google::protobuf::Message /* @@protoc_inserti
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // OperationMetadata
 
-// .google.protobuf.Timestamp create_time = 1;
+// optional .google.protobuf.Timestamp create_time = 1;
 inline bool OperationMetadata::has_create_time() const {
   return this != internal_default_instance() && create_time_ != NULL;
 }
@@ -349,7 +296,7 @@ inline void OperationMetadata::set_allocated_create_time(::google::protobuf::Tim
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.OperationMetadata.create_time)
 }
 
-// .google.protobuf.Timestamp start_time = 2;
+// optional .google.protobuf.Timestamp start_time = 2;
 inline bool OperationMetadata::has_start_time() const {
   return this != internal_default_instance() && start_time_ != NULL;
 }
@@ -393,7 +340,7 @@ inline void OperationMetadata::set_allocated_start_time(::google::protobuf::Time
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.OperationMetadata.start_time)
 }
 
-// .google.protobuf.Timestamp end_time = 3;
+// optional .google.protobuf.Timestamp end_time = 3;
 inline bool OperationMetadata::has_end_time() const {
   return this != internal_default_instance() && end_time_ != NULL;
 }
@@ -437,7 +384,7 @@ inline void OperationMetadata::set_allocated_end_time(::google::protobuf::Timest
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.OperationMetadata.end_time)
 }
 
-// bool is_cancellation_requested = 4;
+// optional bool is_cancellation_requested = 4;
 inline void OperationMetadata::clear_is_cancellation_requested() {
   is_cancellation_requested_ = false;
 }
@@ -451,7 +398,7 @@ inline void OperationMetadata::set_is_cancellation_requested(bool value) {
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.OperationMetadata.is_cancellation_requested)
 }
 
-// .google.cloud.ml.v1beta1.OperationMetadata.OperationType operation_type = 5;
+// optional .google.cloud.ml.v1beta1.OperationMetadata.OperationType operation_type = 5;
 inline void OperationMetadata::clear_operation_type() {
   operation_type_ = 0;
 }
@@ -465,13 +412,13 @@ inline void OperationMetadata::set_operation_type(::google::cloud::ml::v1beta1::
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.OperationMetadata.operation_type)
 }
 
-// string model_name = 6;
+// optional string model_name = 6;
 inline void OperationMetadata::clear_model_name() {
   model_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& OperationMetadata::model_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.OperationMetadata.model_name)
-  return model_name_.GetNoArena();
+  return model_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void OperationMetadata::set_model_name(const ::std::string& value) {
   
@@ -509,7 +456,7 @@ inline void OperationMetadata::set_allocated_model_name(::std::string* model_nam
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.OperationMetadata.model_name)
 }
 
-// .google.cloud.ml.v1beta1.Version version = 7;
+// optional .google.cloud.ml.v1beta1.Version version = 7;
 inline bool OperationMetadata::has_version() const {
   return this != internal_default_instance() && version_ != NULL;
 }
@@ -548,10 +495,12 @@ inline void OperationMetadata::set_allocated_version(::google::cloud::ml::v1beta
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.OperationMetadata.version)
 }
 
+inline const OperationMetadata* OperationMetadata::internal_default_instance() {
+  return &OperationMetadata_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1beta1
 }  // namespace ml

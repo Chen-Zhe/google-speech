@@ -24,8 +24,8 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/map.h>
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/unknown_field_set.h>
@@ -35,38 +35,6 @@
 #include <google/protobuf/struct.pb.h>
 #include <google/protobuf/timestamp.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-namespace servicecontrol {
-namespace v1 {
-class LogEntry;
-class LogEntryDefaultTypeInternal;
-extern LogEntryDefaultTypeInternal _LogEntry_default_instance_;
-}  // namespace v1
-}  // namespace servicecontrol
-}  // namespace api
-namespace logging {
-namespace type {
-}  // namespace type
-}  // namespace logging
-namespace protobuf {
-class Any;
-class AnyDefaultTypeInternal;
-extern AnyDefaultTypeInternal _Any_default_instance_;
-class ListValue;
-class ListValueDefaultTypeInternal;
-extern ListValueDefaultTypeInternal _ListValue_default_instance_;
-class Struct;
-class StructDefaultTypeInternal;
-extern StructDefaultTypeInternal _Struct_default_instance_;
-class Timestamp;
-class TimestampDefaultTypeInternal;
-extern TimestampDefaultTypeInternal _Timestamp_default_instance_;
-class Value;
-class ValueDefaultTypeInternal;
-extern ValueDefaultTypeInternal _Value_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace api {
@@ -76,11 +44,12 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2flog_5fentry_2eproto();
 void protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2flog_5fentry_2eproto();
+void protobuf_AssignDesc_google_2fapi_2fservicecontrol_2fv1_2flog_5fentry_2eproto();
+void protobuf_ShutdownFile_google_2fapi_2fservicecontrol_2fv1_2flog_5fentry_2eproto();
+
+class LogEntry;
 
 // ===================================================================
-
-
-// -------------------------------------------------------------------
 
 class LogEntry : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.api.servicecontrol.v1.LogEntry) */ {
  public:
@@ -104,59 +73,56 @@ class LogEntry : public ::google::protobuf::Message /* @@protoc_insertion_point(
     PAYLOAD_NOT_SET = 0,
   };
 
-  static inline const LogEntry* internal_default_instance() {
-    return reinterpret_cast<const LogEntry*>(
-               &_LogEntry_default_instance_);
-  }
+  static const LogEntry* internal_default_instance();
 
   void Swap(LogEntry* other);
 
   // implements Message ----------------------------------------------
 
-  inline LogEntry* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline LogEntry* New() const { return New(NULL); }
 
-  LogEntry* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  LogEntry* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const LogEntry& from);
   void MergeFrom(const LogEntry& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(LogEntry* other);
+  void UnsafeMergeFrom(const LogEntry& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
 
   // accessors -------------------------------------------------------
 
-  // string name = 10;
+  // optional string name = 10;
   void clear_name();
   static const int kNameFieldNumber = 10;
   const ::std::string& name() const;
@@ -167,7 +133,7 @@ class LogEntry : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // .google.protobuf.Timestamp timestamp = 11;
+  // optional .google.protobuf.Timestamp timestamp = 11;
   bool has_timestamp() const;
   void clear_timestamp();
   static const int kTimestampFieldNumber = 11;
@@ -176,13 +142,13 @@ class LogEntry : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::protobuf::Timestamp* release_timestamp();
   void set_allocated_timestamp(::google::protobuf::Timestamp* timestamp);
 
-  // .google.logging.type.LogSeverity severity = 12;
+  // optional .google.logging.type.LogSeverity severity = 12;
   void clear_severity();
   static const int kSeverityFieldNumber = 12;
   ::google::logging::type::LogSeverity severity() const;
   void set_severity(::google::logging::type::LogSeverity value);
 
-  // string insert_id = 4;
+  // optional string insert_id = 4;
   void clear_insert_id();
   static const int kInsertIdFieldNumber = 4;
   const ::std::string& insert_id() const;
@@ -202,7 +168,7 @@ class LogEntry : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::protobuf::Map< ::std::string, ::std::string >*
       mutable_labels();
 
-  // .google.protobuf.Any proto_payload = 2;
+  // optional .google.protobuf.Any proto_payload = 2;
   bool has_proto_payload() const;
   void clear_proto_payload();
   static const int kProtoPayloadFieldNumber = 2;
@@ -211,7 +177,7 @@ class LogEntry : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::protobuf::Any* release_proto_payload();
   void set_allocated_proto_payload(::google::protobuf::Any* proto_payload);
 
-  // string text_payload = 3;
+  // optional string text_payload = 3;
   private:
   bool has_text_payload() const;
   public:
@@ -225,7 +191,7 @@ class LogEntry : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_text_payload();
   void set_allocated_text_payload(::std::string* text_payload);
 
-  // .google.protobuf.Struct struct_payload = 6;
+  // optional .google.protobuf.Struct struct_payload = 6;
   bool has_struct_payload() const;
   void clear_struct_payload();
   static const int kStructPayloadFieldNumber = 6;
@@ -237,9 +203,9 @@ class LogEntry : public ::google::protobuf::Message /* @@protoc_insertion_point(
   PayloadCase payload_case() const;
   // @@protoc_insertion_point(class_scope:google.api.servicecontrol.v1.LogEntry)
  private:
-  void set_has_proto_payload();
-  void set_has_text_payload();
-  void set_has_struct_payload();
+  inline void set_has_proto_payload();
+  inline void set_has_text_payload();
+  inline void set_has_struct_payload();
 
   inline bool has_payload() const;
   void clear_payload();
@@ -272,27 +238,28 @@ class LogEntry : public ::google::protobuf::Message /* @@protoc_insertion_point(
 
   friend void  protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2flog_5fentry_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2flog_5fentry_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fservicecontrol_2fv1_2flog_5fentry_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fservicecontrol_2fv1_2flog_5fentry_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fservicecontrol_2fv1_2flog_5fentry_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<LogEntry> LogEntry_default_instance_;
+
 // ===================================================================
 
 
 // ===================================================================
 
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // LogEntry
 
-// string name = 10;
+// optional string name = 10;
 inline void LogEntry::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& LogEntry::name() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.LogEntry.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void LogEntry::set_name(const ::std::string& value) {
   
@@ -330,7 +297,7 @@ inline void LogEntry::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.api.servicecontrol.v1.LogEntry.name)
 }
 
-// .google.protobuf.Timestamp timestamp = 11;
+// optional .google.protobuf.Timestamp timestamp = 11;
 inline bool LogEntry::has_timestamp() const {
   return this != internal_default_instance() && timestamp_ != NULL;
 }
@@ -374,7 +341,7 @@ inline void LogEntry::set_allocated_timestamp(::google::protobuf::Timestamp* tim
   // @@protoc_insertion_point(field_set_allocated:google.api.servicecontrol.v1.LogEntry.timestamp)
 }
 
-// .google.logging.type.LogSeverity severity = 12;
+// optional .google.logging.type.LogSeverity severity = 12;
 inline void LogEntry::clear_severity() {
   severity_ = 0;
 }
@@ -388,13 +355,13 @@ inline void LogEntry::set_severity(::google::logging::type::LogSeverity value) {
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.LogEntry.severity)
 }
 
-// string insert_id = 4;
+// optional string insert_id = 4;
 inline void LogEntry::clear_insert_id() {
   insert_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& LogEntry::insert_id() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.LogEntry.insert_id)
-  return insert_id_.GetNoArena();
+  return insert_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void LogEntry::set_insert_id(const ::std::string& value) {
   
@@ -450,7 +417,7 @@ LogEntry::mutable_labels() {
   return labels_.MutableMap();
 }
 
-// .google.protobuf.Any proto_payload = 2;
+// optional .google.protobuf.Any proto_payload = 2;
 inline bool LogEntry::has_proto_payload() const {
   return payload_case() == kProtoPayload;
 }
@@ -498,7 +465,7 @@ inline void LogEntry::set_allocated_proto_payload(::google::protobuf::Any* proto
   // @@protoc_insertion_point(field_set_allocated:google.api.servicecontrol.v1.LogEntry.proto_payload)
 }
 
-// string text_payload = 3;
+// optional string text_payload = 3;
 inline bool LogEntry::has_text_payload() const {
   return payload_case() == kTextPayload;
 }
@@ -514,7 +481,7 @@ inline void LogEntry::clear_text_payload() {
 inline const ::std::string& LogEntry::text_payload() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.LogEntry.text_payload)
   if (has_text_payload()) {
-    return payload_.text_payload_.GetNoArena();
+    return payload_.text_payload_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -579,7 +546,7 @@ inline void LogEntry::set_allocated_text_payload(::std::string* text_payload) {
   // @@protoc_insertion_point(field_set_allocated:google.api.servicecontrol.v1.LogEntry.text_payload)
 }
 
-// .google.protobuf.Struct struct_payload = 6;
+// optional .google.protobuf.Struct struct_payload = 6;
 inline bool LogEntry::has_struct_payload() const {
   return payload_case() == kStructPayload;
 }
@@ -641,12 +608,12 @@ inline void LogEntry::clear_has_payload() {
 inline LogEntry::PayloadCase LogEntry::payload_case() const {
   return LogEntry::PayloadCase(_oneof_case_[0]);
 }
+inline const LogEntry* LogEntry::internal_default_instance() {
+  return &LogEntry_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace servicecontrol

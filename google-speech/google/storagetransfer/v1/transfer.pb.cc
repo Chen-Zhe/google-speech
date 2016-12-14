@@ -20,146 +20,213 @@
 namespace google {
 namespace storagetransfer {
 namespace v1 {
-class GetGoogleServiceAccountRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GetGoogleServiceAccountRequest> {};
-GetGoogleServiceAccountRequestDefaultTypeInternal _GetGoogleServiceAccountRequest_default_instance_;
-class CreateTransferJobRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CreateTransferJobRequest> {};
-CreateTransferJobRequestDefaultTypeInternal _CreateTransferJobRequest_default_instance_;
-class UpdateTransferJobRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<UpdateTransferJobRequest> {};
-UpdateTransferJobRequestDefaultTypeInternal _UpdateTransferJobRequest_default_instance_;
-class GetTransferJobRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GetTransferJobRequest> {};
-GetTransferJobRequestDefaultTypeInternal _GetTransferJobRequest_default_instance_;
-class ListTransferJobsRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListTransferJobsRequest> {};
-ListTransferJobsRequestDefaultTypeInternal _ListTransferJobsRequest_default_instance_;
-class ListTransferJobsResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListTransferJobsResponse> {};
-ListTransferJobsResponseDefaultTypeInternal _ListTransferJobsResponse_default_instance_;
-class PauseTransferOperationRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<PauseTransferOperationRequest> {};
-PauseTransferOperationRequestDefaultTypeInternal _PauseTransferOperationRequest_default_instance_;
-class ResumeTransferOperationRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ResumeTransferOperationRequest> {};
-ResumeTransferOperationRequestDefaultTypeInternal _ResumeTransferOperationRequest_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[8];
+const ::google::protobuf::Descriptor* GetGoogleServiceAccountRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GetGoogleServiceAccountRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* CreateTransferJobRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CreateTransferJobRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* UpdateTransferJobRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  UpdateTransferJobRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* GetTransferJobRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GetTransferJobRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListTransferJobsRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListTransferJobsRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListTransferJobsResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListTransferJobsResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* PauseTransferOperationRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  PauseTransferOperationRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ResumeTransferOperationRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ResumeTransferOperationRequest_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fstoragetransfer_2fv1_2ftransfer_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fstoragetransfer_2fv1_2ftransfer_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetGoogleServiceAccountRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fstoragetransfer_2fv1_2ftransfer_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fstoragetransfer_2fv1_2ftransfer_2eproto() {
+  protobuf_AddDesc_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/storagetransfer/v1/transfer.proto");
+  GOOGLE_CHECK(file != NULL);
+  GetGoogleServiceAccountRequest_descriptor_ = file->message_type(0);
+  static const int GetGoogleServiceAccountRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetGoogleServiceAccountRequest, project_id_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateTransferJobRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  GetGoogleServiceAccountRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GetGoogleServiceAccountRequest_descriptor_,
+      GetGoogleServiceAccountRequest::internal_default_instance(),
+      GetGoogleServiceAccountRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GetGoogleServiceAccountRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetGoogleServiceAccountRequest, _internal_metadata_));
+  CreateTransferJobRequest_descriptor_ = file->message_type(1);
+  static const int CreateTransferJobRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateTransferJobRequest, transfer_job_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateTransferJobRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  CreateTransferJobRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      CreateTransferJobRequest_descriptor_,
+      CreateTransferJobRequest::internal_default_instance(),
+      CreateTransferJobRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(CreateTransferJobRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateTransferJobRequest, _internal_metadata_));
+  UpdateTransferJobRequest_descriptor_ = file->message_type(2);
+  static const int UpdateTransferJobRequest_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateTransferJobRequest, job_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateTransferJobRequest, project_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateTransferJobRequest, transfer_job_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateTransferJobRequest, update_transfer_job_field_mask_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetTransferJobRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  UpdateTransferJobRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      UpdateTransferJobRequest_descriptor_,
+      UpdateTransferJobRequest::internal_default_instance(),
+      UpdateTransferJobRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(UpdateTransferJobRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateTransferJobRequest, _internal_metadata_));
+  GetTransferJobRequest_descriptor_ = file->message_type(3);
+  static const int GetTransferJobRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetTransferJobRequest, job_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetTransferJobRequest, project_id_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTransferJobsRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  GetTransferJobRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GetTransferJobRequest_descriptor_,
+      GetTransferJobRequest::internal_default_instance(),
+      GetTransferJobRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GetTransferJobRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetTransferJobRequest, _internal_metadata_));
+  ListTransferJobsRequest_descriptor_ = file->message_type(4);
+  static const int ListTransferJobsRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTransferJobsRequest, filter_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTransferJobsRequest, page_size_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTransferJobsRequest, page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTransferJobsResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListTransferJobsRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListTransferJobsRequest_descriptor_,
+      ListTransferJobsRequest::internal_default_instance(),
+      ListTransferJobsRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListTransferJobsRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTransferJobsRequest, _internal_metadata_));
+  ListTransferJobsResponse_descriptor_ = file->message_type(5);
+  static const int ListTransferJobsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTransferJobsResponse, transfer_jobs_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTransferJobsResponse, next_page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PauseTransferOperationRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListTransferJobsResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListTransferJobsResponse_descriptor_,
+      ListTransferJobsResponse::internal_default_instance(),
+      ListTransferJobsResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListTransferJobsResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTransferJobsResponse, _internal_metadata_));
+  PauseTransferOperationRequest_descriptor_ = file->message_type(6);
+  static const int PauseTransferOperationRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PauseTransferOperationRequest, name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ResumeTransferOperationRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  PauseTransferOperationRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      PauseTransferOperationRequest_descriptor_,
+      PauseTransferOperationRequest::internal_default_instance(),
+      PauseTransferOperationRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(PauseTransferOperationRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PauseTransferOperationRequest, _internal_metadata_));
+  ResumeTransferOperationRequest_descriptor_ = file->message_type(7);
+  static const int ResumeTransferOperationRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ResumeTransferOperationRequest, name_),
   };
-  return offsets;
+  ResumeTransferOperationRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ResumeTransferOperationRequest_descriptor_,
+      ResumeTransferOperationRequest::internal_default_instance(),
+      ResumeTransferOperationRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ResumeTransferOperationRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ResumeTransferOperationRequest, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(GetGoogleServiceAccountRequest)},
-  { 5, -1, sizeof(CreateTransferJobRequest)},
-  { 10, -1, sizeof(UpdateTransferJobRequest)},
-  { 18, -1, sizeof(GetTransferJobRequest)},
-  { 24, -1, sizeof(ListTransferJobsRequest)},
-  { 31, -1, sizeof(ListTransferJobsResponse)},
-  { 37, -1, sizeof(PauseTransferOperationRequest)},
-  { 42, -1, sizeof(ResumeTransferOperationRequest)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GetGoogleServiceAccountRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_CreateTransferJobRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_UpdateTransferJobRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GetTransferJobRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListTransferJobsRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListTransferJobsResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_PauseTransferOperationRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ResumeTransferOperationRequest_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/storagetransfer/v1/transfer.proto", schemas, file_default_instances, protobuf_Offsets_google_2fstoragetransfer_2fv1_2ftransfer_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fstoragetransfer_2fv1_2ftransfer_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 8);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GetGoogleServiceAccountRequest_descriptor_, GetGoogleServiceAccountRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      CreateTransferJobRequest_descriptor_, CreateTransferJobRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      UpdateTransferJobRequest_descriptor_, UpdateTransferJobRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GetTransferJobRequest_descriptor_, GetTransferJobRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListTransferJobsRequest_descriptor_, ListTransferJobsRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListTransferJobsResponse_descriptor_, ListTransferJobsResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      PauseTransferOperationRequest_descriptor_, PauseTransferOperationRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ResumeTransferOperationRequest_descriptor_, ResumeTransferOperationRequest::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fstoragetransfer_2fv1_2ftransfer_2eproto() {
-  _GetGoogleServiceAccountRequest_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _CreateTransferJobRequest_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _UpdateTransferJobRequest_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _GetTransferJobRequest_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _ListTransferJobsRequest_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
-  _ListTransferJobsResponse_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
-  _PauseTransferOperationRequest_default_instance_.Shutdown();
-  delete file_level_metadata[6].reflection;
-  _ResumeTransferOperationRequest_default_instance_.Shutdown();
-  delete file_level_metadata[7].reflection;
+  GetGoogleServiceAccountRequest_default_instance_.Shutdown();
+  delete GetGoogleServiceAccountRequest_reflection_;
+  CreateTransferJobRequest_default_instance_.Shutdown();
+  delete CreateTransferJobRequest_reflection_;
+  UpdateTransferJobRequest_default_instance_.Shutdown();
+  delete UpdateTransferJobRequest_reflection_;
+  GetTransferJobRequest_default_instance_.Shutdown();
+  delete GetTransferJobRequest_reflection_;
+  ListTransferJobsRequest_default_instance_.Shutdown();
+  delete ListTransferJobsRequest_reflection_;
+  ListTransferJobsResponse_default_instance_.Shutdown();
+  delete ListTransferJobsResponse_reflection_;
+  PauseTransferOperationRequest_default_instance_.Shutdown();
+  delete PauseTransferOperationRequest_reflection_;
+  ResumeTransferOperationRequest_default_instance_.Shutdown();
+  delete ResumeTransferOperationRequest_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto_impl() {
@@ -169,88 +236,96 @@ void protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto_impl
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fempty_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ffield_5fmask_2eproto();
   ::google::storagetransfer::v1::protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_5ftypes_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _GetGoogleServiceAccountRequest_default_instance_.DefaultConstruct();
-  _CreateTransferJobRequest_default_instance_.DefaultConstruct();
-  _UpdateTransferJobRequest_default_instance_.DefaultConstruct();
-  _GetTransferJobRequest_default_instance_.DefaultConstruct();
-  _ListTransferJobsRequest_default_instance_.DefaultConstruct();
-  _ListTransferJobsResponse_default_instance_.DefaultConstruct();
-  _PauseTransferOperationRequest_default_instance_.DefaultConstruct();
-  _ResumeTransferOperationRequest_default_instance_.DefaultConstruct();
-  _CreateTransferJobRequest_default_instance_.get_mutable()->transfer_job_ = const_cast< ::google::storagetransfer::v1::TransferJob*>(
-      ::google::storagetransfer::v1::TransferJob::internal_default_instance());
-  _UpdateTransferJobRequest_default_instance_.get_mutable()->transfer_job_ = const_cast< ::google::storagetransfer::v1::TransferJob*>(
-      ::google::storagetransfer::v1::TransferJob::internal_default_instance());
-  _UpdateTransferJobRequest_default_instance_.get_mutable()->update_transfer_job_field_mask_ = const_cast< ::google::protobuf::FieldMask*>(
-      ::google::protobuf::FieldMask::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  GetGoogleServiceAccountRequest_default_instance_.DefaultConstruct();
+  CreateTransferJobRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  UpdateTransferJobRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetTransferJobRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListTransferJobsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListTransferJobsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  PauseTransferOperationRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ResumeTransferOperationRequest_default_instance_.DefaultConstruct();
+  GetGoogleServiceAccountRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CreateTransferJobRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  UpdateTransferJobRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetTransferJobRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListTransferJobsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListTransferJobsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  PauseTransferOperationRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ResumeTransferOperationRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto_once_);
 void protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fstoragetransfer_2fv1_2ftransfer_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
-  static const char descriptor[] = {
-      "\n(google/storagetransfer/v1/transfer.pro"
-      "to\022\031google.storagetransfer.v1\032\034google/ap"
-      "i/annotations.proto\032\033google/protobuf/emp"
-      "ty.proto\032 google/protobuf/field_mask.pro"
-      "to\032.google/storagetransfer/v1/transfer_t"
-      "ypes.proto\"4\n\036GetGoogleServiceAccountReq"
-      "uest\022\022\n\nproject_id\030\001 \001(\t\"X\n\030CreateTransf"
-      "erJobRequest\022<\n\014transfer_job\030\001 \001(\0132&.goo"
-      "gle.storagetransfer.v1.TransferJob\"\302\001\n\030U"
-      "pdateTransferJobRequest\022\020\n\010job_name\030\001 \001("
-      "\t\022\022\n\nproject_id\030\002 \001(\t\022<\n\014transfer_job\030\003 "
-      "\001(\0132&.google.storagetransfer.v1.Transfer"
-      "Job\022B\n\036update_transfer_job_field_mask\030\004 "
-      "\001(\0132\032.google.protobuf.FieldMask\"=\n\025GetTr"
-      "ansferJobRequest\022\020\n\010job_name\030\001 \001(\t\022\022\n\npr"
-      "oject_id\030\002 \001(\t\"P\n\027ListTransferJobsReques"
-      "t\022\016\n\006filter\030\001 \001(\t\022\021\n\tpage_size\030\004 \001(\005\022\022\n\n"
-      "page_token\030\005 \001(\t\"r\n\030ListTransferJobsResp"
-      "onse\022=\n\rtransfer_jobs\030\001 \003(\0132&.google.sto"
-      "ragetransfer.v1.TransferJob\022\027\n\017next_page"
-      "_token\030\002 \001(\t\"-\n\035PauseTransferOperationRe"
-      "quest\022\014\n\004name\030\001 \001(\t\".\n\036ResumeTransferOpe"
-      "rationRequest\022\014\n\004name\030\001 \001(\t2\371\010\n\026StorageT"
-      "ransferService\022\265\001\n\027GetGoogleServiceAccou"
-      "nt\0229.google.storagetransfer.v1.GetGoogle"
-      "ServiceAccountRequest\032/.google.storagetr"
-      "ansfer.v1.GoogleServiceAccount\".\202\323\344\223\002(\022&"
-      "/v1/googleServiceAccounts/{project_id}\022\230"
-      "\001\n\021CreateTransferJob\0223.google.storagetra"
-      "nsfer.v1.CreateTransferJobRequest\032&.goog"
-      "le.storagetransfer.v1.TransferJob\"&\202\323\344\223\002"
-      " \"\020/v1/transferJobs:\014transfer_job\022\233\001\n\021Up"
-      "dateTransferJob\0223.google.storagetransfer"
-      ".v1.UpdateTransferJobRequest\032&.google.st"
-      "oragetransfer.v1.TransferJob\")\202\323\344\223\002#2\036/v"
-      "1/{job_name=transferJobs/**}:\001*\022\222\001\n\016GetT"
-      "ransferJob\0220.google.storagetransfer.v1.G"
-      "etTransferJobRequest\032&.google.storagetra"
-      "nsfer.v1.TransferJob\"&\202\323\344\223\002 \022\036/v1/{job_n"
-      "ame=transferJobs/**}\022\225\001\n\020ListTransferJob"
-      "s\0222.google.storagetransfer.v1.ListTransf"
-      "erJobsRequest\0323.google.storagetransfer.v"
-      "1.ListTransferJobsResponse\"\030\202\323\344\223\002\022\022\020/v1/"
-      "transferJobs\022\235\001\n\026PauseTransferOperation\022"
-      "8.google.storagetransfer.v1.PauseTransfe"
-      "rOperationRequest\032\026.google.protobuf.Empt"
-      "y\"1\202\323\344\223\002+\"&/v1/{name=transferOperations/"
-      "**}:pause:\001*\022\240\001\n\027ResumeTransferOperation"
-      "\0229.google.storagetransfer.v1.ResumeTrans"
-      "ferOperationRequest\032\026.google.protobuf.Em"
-      "pty\"2\202\323\344\223\002,\"\'/v1/{name=transferOperation"
-      "s/**}:resume:\001*B\201\001\n#com.google.storagetr"
-      "ansfer.v1.protoB\rTransferProtoZHgoogle.g"
-      "olang.org/genproto/googleapis/storagetra"
-      "nsfer/v1;storagetransfer\370\001\001b\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 2195);
+    "\n(google/storagetransfer/v1/transfer.pro"
+    "to\022\031google.storagetransfer.v1\032\034google/ap"
+    "i/annotations.proto\032\033google/protobuf/emp"
+    "ty.proto\032 google/protobuf/field_mask.pro"
+    "to\032.google/storagetransfer/v1/transfer_t"
+    "ypes.proto\"4\n\036GetGoogleServiceAccountReq"
+    "uest\022\022\n\nproject_id\030\001 \001(\t\"X\n\030CreateTransf"
+    "erJobRequest\022<\n\014transfer_job\030\001 \001(\0132&.goo"
+    "gle.storagetransfer.v1.TransferJob\"\302\001\n\030U"
+    "pdateTransferJobRequest\022\020\n\010job_name\030\001 \001("
+    "\t\022\022\n\nproject_id\030\002 \001(\t\022<\n\014transfer_job\030\003 "
+    "\001(\0132&.google.storagetransfer.v1.Transfer"
+    "Job\022B\n\036update_transfer_job_field_mask\030\004 "
+    "\001(\0132\032.google.protobuf.FieldMask\"=\n\025GetTr"
+    "ansferJobRequest\022\020\n\010job_name\030\001 \001(\t\022\022\n\npr"
+    "oject_id\030\002 \001(\t\"P\n\027ListTransferJobsReques"
+    "t\022\016\n\006filter\030\001 \001(\t\022\021\n\tpage_size\030\004 \001(\005\022\022\n\n"
+    "page_token\030\005 \001(\t\"r\n\030ListTransferJobsResp"
+    "onse\022=\n\rtransfer_jobs\030\001 \003(\0132&.google.sto"
+    "ragetransfer.v1.TransferJob\022\027\n\017next_page"
+    "_token\030\002 \001(\t\"-\n\035PauseTransferOperationRe"
+    "quest\022\014\n\004name\030\001 \001(\t\".\n\036ResumeTransferOpe"
+    "rationRequest\022\014\n\004name\030\001 \001(\t2\371\010\n\026StorageT"
+    "ransferService\022\265\001\n\027GetGoogleServiceAccou"
+    "nt\0229.google.storagetransfer.v1.GetGoogle"
+    "ServiceAccountRequest\032/.google.storagetr"
+    "ansfer.v1.GoogleServiceAccount\".\202\323\344\223\002(\022&"
+    "/v1/googleServiceAccounts/{project_id}\022\230"
+    "\001\n\021CreateTransferJob\0223.google.storagetra"
+    "nsfer.v1.CreateTransferJobRequest\032&.goog"
+    "le.storagetransfer.v1.TransferJob\"&\202\323\344\223\002"
+    " \"\020/v1/transferJobs:\014transfer_job\022\233\001\n\021Up"
+    "dateTransferJob\0223.google.storagetransfer"
+    ".v1.UpdateTransferJobRequest\032&.google.st"
+    "oragetransfer.v1.TransferJob\")\202\323\344\223\002#2\036/v"
+    "1/{job_name=transferJobs/**}:\001*\022\222\001\n\016GetT"
+    "ransferJob\0220.google.storagetransfer.v1.G"
+    "etTransferJobRequest\032&.google.storagetra"
+    "nsfer.v1.TransferJob\"&\202\323\344\223\002 \022\036/v1/{job_n"
+    "ame=transferJobs/**}\022\225\001\n\020ListTransferJob"
+    "s\0222.google.storagetransfer.v1.ListTransf"
+    "erJobsRequest\0323.google.storagetransfer.v"
+    "1.ListTransferJobsResponse\"\030\202\323\344\223\002\022\022\020/v1/"
+    "transferJobs\022\235\001\n\026PauseTransferOperation\022"
+    "8.google.storagetransfer.v1.PauseTransfe"
+    "rOperationRequest\032\026.google.protobuf.Empt"
+    "y\"1\202\323\344\223\002+\"&/v1/{name=transferOperations/"
+    "**}:pause:\001*\022\240\001\n\027ResumeTransferOperation"
+    "\0229.google.storagetransfer.v1.ResumeTrans"
+    "ferOperationRequest\032\026.google.protobuf.Em"
+    "pty\"2\202\323\344\223\002,\"\'/v1/{name=transferOperation"
+    "s/**}:resume:\001*B\201\001\n#com.google.storagetr"
+    "ansfer.v1.protoB\rTransferProtoZHgoogle.g"
+    "olang.org/genproto/googleapis/storagetra"
+    "nsfer/v1;storagetransfer\370\001\001b\006proto3", 2195);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/storagetransfer/v1/transfer.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -272,6 +347,16 @@ struct StaticDescriptorInitializer_google_2fstoragetransfer_2fv1_2ftransfer_2epr
   }
 } static_descriptor_initializer_google_2fstoragetransfer_2fv1_2ftransfer_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -280,9 +365,7 @@ const int GetGoogleServiceAccountRequest::kProjectIdFieldNumber;
 
 GetGoogleServiceAccountRequest::GetGoogleServiceAccountRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.storagetransfer.v1.GetGoogleServiceAccountRequest)
 }
@@ -296,16 +379,15 @@ GetGoogleServiceAccountRequest::GetGoogleServiceAccountRequest(::google::protobu
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.storagetransfer.v1.GetGoogleServiceAccountRequest)
 }
+
+void GetGoogleServiceAccountRequest::InitAsDefaultInstance() {
+}
+
 GetGoogleServiceAccountRequest::GetGoogleServiceAccountRequest(const GetGoogleServiceAccountRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id(),
-      GetArenaNoVirtual());
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.storagetransfer.v1.GetGoogleServiceAccountRequest)
 }
 
@@ -341,13 +423,15 @@ void GetGoogleServiceAccountRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GetGoogleServiceAccountRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return GetGoogleServiceAccountRequest_descriptor_;
 }
 
 const GetGoogleServiceAccountRequest& GetGoogleServiceAccountRequest::default_instance() {
   protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GetGoogleServiceAccountRequest> GetGoogleServiceAccountRequest_default_instance_;
 
 GetGoogleServiceAccountRequest* GetGoogleServiceAccountRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<GetGoogleServiceAccountRequest>(arena);
@@ -364,13 +448,13 @@ bool GetGoogleServiceAccountRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.storagetransfer.v1.GetGoogleServiceAccountRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string project_id = 1;
+      // optional string project_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -380,6 +464,7 @@ bool GetGoogleServiceAccountRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -407,7 +492,7 @@ failure:
 void GetGoogleServiceAccountRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.storagetransfer.v1.GetGoogleServiceAccountRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -424,7 +509,7 @@ void GetGoogleServiceAccountRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.storagetransfer.v1.GetGoogleServiceAccountRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -443,7 +528,7 @@ size_t GetGoogleServiceAccountRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.storagetransfer.v1.GetGoogleServiceAccountRequest)
   size_t total_size = 0;
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -459,7 +544,7 @@ size_t GetGoogleServiceAccountRequest::ByteSizeLong() const {
 
 void GetGoogleServiceAccountRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.storagetransfer.v1.GetGoogleServiceAccountRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GetGoogleServiceAccountRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetGoogleServiceAccountRequest>(
           &from);
@@ -468,14 +553,21 @@ void GetGoogleServiceAccountRequest::MergeFrom(const ::google::protobuf::Message
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.storagetransfer.v1.GetGoogleServiceAccountRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetGoogleServiceAccountRequest::MergeFrom(const GetGoogleServiceAccountRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.storagetransfer.v1.GetGoogleServiceAccountRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GetGoogleServiceAccountRequest::UnsafeMergeFrom(const GetGoogleServiceAccountRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
     set_project_id(from.project_id());
   }
@@ -492,10 +584,11 @@ void GetGoogleServiceAccountRequest::CopyFrom(const GetGoogleServiceAccountReque
 // @@protoc_insertion_point(class_specific_copy_from_start:google.storagetransfer.v1.GetGoogleServiceAccountRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetGoogleServiceAccountRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -504,13 +597,10 @@ void GetGoogleServiceAccountRequest::Swap(GetGoogleServiceAccountRequest* other)
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    GetGoogleServiceAccountRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    GetGoogleServiceAccountRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void GetGoogleServiceAccountRequest::UnsafeArenaSwap(GetGoogleServiceAccountRequest* other) {
@@ -520,24 +610,28 @@ void GetGoogleServiceAccountRequest::UnsafeArenaSwap(GetGoogleServiceAccountRequ
 }
 void GetGoogleServiceAccountRequest::InternalSwap(GetGoogleServiceAccountRequest* other) {
   project_id_.Swap(&other->project_id_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GetGoogleServiceAccountRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GetGoogleServiceAccountRequest_descriptor_;
+  metadata.reflection = GetGoogleServiceAccountRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GetGoogleServiceAccountRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 void GetGoogleServiceAccountRequest::clear_project_id() {
   project_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& GetGoogleServiceAccountRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.storagetransfer.v1.GetGoogleServiceAccountRequest.project_id)
-  return project_id_.Get();
+  return project_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GetGoogleServiceAccountRequest::set_project_id(const ::std::string& value) {
   
@@ -597,6 +691,9 @@ void GetGoogleServiceAccountRequest::unsafe_arena_set_allocated_project_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.storagetransfer.v1.GetGoogleServiceAccountRequest.project_id)
 }
 
+inline const GetGoogleServiceAccountRequest* GetGoogleServiceAccountRequest::internal_default_instance() {
+  return &GetGoogleServiceAccountRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -654,9 +751,7 @@ const int CreateTransferJobRequest::kTransferJobFieldNumber;
 
 CreateTransferJobRequest::CreateTransferJobRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.storagetransfer.v1.CreateTransferJobRequest)
 }
@@ -670,16 +765,17 @@ CreateTransferJobRequest::CreateTransferJobRequest(::google::protobuf::Arena* ar
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.storagetransfer.v1.CreateTransferJobRequest)
 }
+
+void CreateTransferJobRequest::InitAsDefaultInstance() {
+  transfer_job_ = const_cast< ::google::storagetransfer::v1::TransferJob*>(
+      ::google::storagetransfer::v1::TransferJob::internal_default_instance());
+}
+
 CreateTransferJobRequest::CreateTransferJobRequest(const CreateTransferJobRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_transfer_job()) {
-    transfer_job_ = new ::google::storagetransfer::v1::TransferJob(*from.transfer_job_);
-  } else {
-    transfer_job_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.storagetransfer.v1.CreateTransferJobRequest)
 }
 
@@ -699,7 +795,7 @@ void CreateTransferJobRequest::SharedDtor() {
     return;
   }
 
-  if (this != internal_default_instance()) {
+  if (this != &CreateTransferJobRequest_default_instance_.get()) {
     delete transfer_job_;
   }
 }
@@ -717,7 +813,7 @@ void CreateTransferJobRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* CreateTransferJobRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return CreateTransferJobRequest_descriptor_;
 }
 
 const CreateTransferJobRequest& CreateTransferJobRequest::default_instance() {
@@ -725,15 +821,15 @@ const CreateTransferJobRequest& CreateTransferJobRequest::default_instance() {
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<CreateTransferJobRequest> CreateTransferJobRequest_default_instance_;
+
 CreateTransferJobRequest* CreateTransferJobRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<CreateTransferJobRequest>(arena);
 }
 
 void CreateTransferJobRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.storagetransfer.v1.CreateTransferJobRequest)
-  if (GetArenaNoVirtual() == NULL && transfer_job_ != NULL) {
-    delete transfer_job_;
-  }
+  if (GetArenaNoVirtual() == NULL && transfer_job_ != NULL) delete transfer_job_;
   transfer_job_ = NULL;
 }
 
@@ -743,18 +839,19 @@ bool CreateTransferJobRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.storagetransfer.v1.CreateTransferJobRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.storagetransfer.v1.TransferJob transfer_job = 1;
+      // optional .google.storagetransfer.v1.TransferJob transfer_job = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_transfer_job()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -782,7 +879,7 @@ failure:
 void CreateTransferJobRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.storagetransfer.v1.CreateTransferJobRequest)
-  // .google.storagetransfer.v1.TransferJob transfer_job = 1;
+  // optional .google.storagetransfer.v1.TransferJob transfer_job = 1;
   if (this->has_transfer_job()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->transfer_job_, output);
@@ -795,7 +892,7 @@ void CreateTransferJobRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.storagetransfer.v1.CreateTransferJobRequest)
-  // .google.storagetransfer.v1.TransferJob transfer_job = 1;
+  // optional .google.storagetransfer.v1.TransferJob transfer_job = 1;
   if (this->has_transfer_job()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -810,7 +907,7 @@ size_t CreateTransferJobRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.storagetransfer.v1.CreateTransferJobRequest)
   size_t total_size = 0;
 
-  // .google.storagetransfer.v1.TransferJob transfer_job = 1;
+  // optional .google.storagetransfer.v1.TransferJob transfer_job = 1;
   if (this->has_transfer_job()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -826,7 +923,7 @@ size_t CreateTransferJobRequest::ByteSizeLong() const {
 
 void CreateTransferJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.storagetransfer.v1.CreateTransferJobRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const CreateTransferJobRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CreateTransferJobRequest>(
           &from);
@@ -835,14 +932,21 @@ void CreateTransferJobRequest::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.storagetransfer.v1.CreateTransferJobRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CreateTransferJobRequest::MergeFrom(const CreateTransferJobRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.storagetransfer.v1.CreateTransferJobRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void CreateTransferJobRequest::UnsafeMergeFrom(const CreateTransferJobRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_transfer_job()) {
     mutable_transfer_job()->::google::storagetransfer::v1::TransferJob::MergeFrom(from.transfer_job());
   }
@@ -859,10 +963,11 @@ void CreateTransferJobRequest::CopyFrom(const CreateTransferJobRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.storagetransfer.v1.CreateTransferJobRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CreateTransferJobRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -871,13 +976,10 @@ void CreateTransferJobRequest::Swap(CreateTransferJobRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    CreateTransferJobRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    CreateTransferJobRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void CreateTransferJobRequest::UnsafeArenaSwap(CreateTransferJobRequest* other) {
@@ -887,18 +989,22 @@ void CreateTransferJobRequest::UnsafeArenaSwap(CreateTransferJobRequest* other) 
 }
 void CreateTransferJobRequest::InternalSwap(CreateTransferJobRequest* other) {
   std::swap(transfer_job_, other->transfer_job_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CreateTransferJobRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CreateTransferJobRequest_descriptor_;
+  metadata.reflection = CreateTransferJobRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // CreateTransferJobRequest
 
-// .google.storagetransfer.v1.TransferJob transfer_job = 1;
+// optional .google.storagetransfer.v1.TransferJob transfer_job = 1;
 bool CreateTransferJobRequest::has_transfer_job() const {
   return this != internal_default_instance() && transfer_job_ != NULL;
 }
@@ -947,6 +1053,9 @@ const ::google::storagetransfer::v1::TransferJob& CreateTransferJobRequest::tran
   // @@protoc_insertion_point(field_set_allocated:google.storagetransfer.v1.CreateTransferJobRequest.transfer_job)
 }
 
+inline const CreateTransferJobRequest* CreateTransferJobRequest::internal_default_instance() {
+  return &CreateTransferJobRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1040,9 +1149,7 @@ const int UpdateTransferJobRequest::kUpdateTransferJobFieldMaskFieldNumber;
 
 UpdateTransferJobRequest::UpdateTransferJobRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.storagetransfer.v1.UpdateTransferJobRequest)
 }
@@ -1056,39 +1163,27 @@ UpdateTransferJobRequest::UpdateTransferJobRequest(::google::protobuf::Arena* ar
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.storagetransfer.v1.UpdateTransferJobRequest)
 }
+
+void UpdateTransferJobRequest::InitAsDefaultInstance() {
+  transfer_job_ = const_cast< ::google::storagetransfer::v1::TransferJob*>(
+      ::google::storagetransfer::v1::TransferJob::internal_default_instance());
+  update_transfer_job_field_mask_ = const_cast< ::google::protobuf::FieldMask*>(
+      ::google::protobuf::FieldMask::internal_default_instance());
+}
+
 UpdateTransferJobRequest::UpdateTransferJobRequest(const UpdateTransferJobRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  job_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.job_name().size() > 0) {
-    job_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.job_name(),
-      GetArenaNoVirtual());
-  }
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id(),
-      GetArenaNoVirtual());
-  }
-  if (from.has_transfer_job()) {
-    transfer_job_ = new ::google::storagetransfer::v1::TransferJob(*from.transfer_job_);
-  } else {
-    transfer_job_ = NULL;
-  }
-  if (from.has_update_transfer_job_field_mask()) {
-    update_transfer_job_field_mask_ = new ::google::protobuf::FieldMask(*from.update_transfer_job_field_mask_);
-  } else {
-    update_transfer_job_field_mask_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.storagetransfer.v1.UpdateTransferJobRequest)
 }
 
 void UpdateTransferJobRequest::SharedCtor() {
   job_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&transfer_job_, 0, reinterpret_cast<char*>(&update_transfer_job_field_mask_) -
-    reinterpret_cast<char*>(&transfer_job_) + sizeof(update_transfer_job_field_mask_));
+  transfer_job_ = NULL;
+  update_transfer_job_field_mask_ = NULL;
   _cached_size_ = 0;
 }
 
@@ -1105,10 +1200,8 @@ void UpdateTransferJobRequest::SharedDtor() {
 
   job_name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
   project_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
-  if (this != internal_default_instance()) {
+  if (this != &UpdateTransferJobRequest_default_instance_.get()) {
     delete transfer_job_;
-  }
-  if (this != internal_default_instance()) {
     delete update_transfer_job_field_mask_;
   }
 }
@@ -1126,13 +1219,15 @@ void UpdateTransferJobRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* UpdateTransferJobRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return UpdateTransferJobRequest_descriptor_;
 }
 
 const UpdateTransferJobRequest& UpdateTransferJobRequest::default_instance() {
   protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<UpdateTransferJobRequest> UpdateTransferJobRequest_default_instance_;
 
 UpdateTransferJobRequest* UpdateTransferJobRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<UpdateTransferJobRequest>(arena);
@@ -1142,13 +1237,9 @@ void UpdateTransferJobRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.storagetransfer.v1.UpdateTransferJobRequest)
   job_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   project_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (GetArenaNoVirtual() == NULL && transfer_job_ != NULL) {
-    delete transfer_job_;
-  }
+  if (GetArenaNoVirtual() == NULL && transfer_job_ != NULL) delete transfer_job_;
   transfer_job_ = NULL;
-  if (GetArenaNoVirtual() == NULL && update_transfer_job_field_mask_ != NULL) {
-    delete update_transfer_job_field_mask_;
-  }
+  if (GetArenaNoVirtual() == NULL && update_transfer_job_field_mask_ != NULL) delete update_transfer_job_field_mask_;
   update_transfer_job_field_mask_ = NULL;
 }
 
@@ -1158,13 +1249,13 @@ bool UpdateTransferJobRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.storagetransfer.v1.UpdateTransferJobRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string job_name = 1;
+      // optional string job_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_job_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1174,12 +1265,14 @@ bool UpdateTransferJobRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_project_id;
         break;
       }
 
-      // string project_id = 2;
+      // optional string project_id = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_project_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1189,28 +1282,33 @@ bool UpdateTransferJobRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_transfer_job;
         break;
       }
 
-      // .google.storagetransfer.v1.TransferJob transfer_job = 3;
+      // optional .google.storagetransfer.v1.TransferJob transfer_job = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_transfer_job:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_transfer_job()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_update_transfer_job_field_mask;
         break;
       }
 
-      // .google.protobuf.FieldMask update_transfer_job_field_mask = 4;
+      // optional .google.protobuf.FieldMask update_transfer_job_field_mask = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_update_transfer_job_field_mask:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_update_transfer_job_field_mask()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1238,7 +1336,7 @@ failure:
 void UpdateTransferJobRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.storagetransfer.v1.UpdateTransferJobRequest)
-  // string job_name = 1;
+  // optional string job_name = 1;
   if (this->job_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->job_name().data(), this->job_name().length(),
@@ -1248,7 +1346,7 @@ void UpdateTransferJobRequest::SerializeWithCachedSizes(
       1, this->job_name(), output);
   }
 
-  // string project_id = 2;
+  // optional string project_id = 2;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -1258,13 +1356,13 @@ void UpdateTransferJobRequest::SerializeWithCachedSizes(
       2, this->project_id(), output);
   }
 
-  // .google.storagetransfer.v1.TransferJob transfer_job = 3;
+  // optional .google.storagetransfer.v1.TransferJob transfer_job = 3;
   if (this->has_transfer_job()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *this->transfer_job_, output);
   }
 
-  // .google.protobuf.FieldMask update_transfer_job_field_mask = 4;
+  // optional .google.protobuf.FieldMask update_transfer_job_field_mask = 4;
   if (this->has_update_transfer_job_field_mask()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, *this->update_transfer_job_field_mask_, output);
@@ -1277,7 +1375,7 @@ void UpdateTransferJobRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.storagetransfer.v1.UpdateTransferJobRequest)
-  // string job_name = 1;
+  // optional string job_name = 1;
   if (this->job_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->job_name().data(), this->job_name().length(),
@@ -1288,7 +1386,7 @@ void UpdateTransferJobRequest::SerializeWithCachedSizes(
         1, this->job_name(), target);
   }
 
-  // string project_id = 2;
+  // optional string project_id = 2;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -1299,14 +1397,14 @@ void UpdateTransferJobRequest::SerializeWithCachedSizes(
         2, this->project_id(), target);
   }
 
-  // .google.storagetransfer.v1.TransferJob transfer_job = 3;
+  // optional .google.storagetransfer.v1.TransferJob transfer_job = 3;
   if (this->has_transfer_job()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         3, *this->transfer_job_, false, target);
   }
 
-  // .google.protobuf.FieldMask update_transfer_job_field_mask = 4;
+  // optional .google.protobuf.FieldMask update_transfer_job_field_mask = 4;
   if (this->has_update_transfer_job_field_mask()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -1321,28 +1419,28 @@ size_t UpdateTransferJobRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.storagetransfer.v1.UpdateTransferJobRequest)
   size_t total_size = 0;
 
-  // string job_name = 1;
+  // optional string job_name = 1;
   if (this->job_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->job_name());
   }
 
-  // string project_id = 2;
+  // optional string project_id = 2;
   if (this->project_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->project_id());
   }
 
-  // .google.storagetransfer.v1.TransferJob transfer_job = 3;
+  // optional .google.storagetransfer.v1.TransferJob transfer_job = 3;
   if (this->has_transfer_job()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->transfer_job_);
   }
 
-  // .google.protobuf.FieldMask update_transfer_job_field_mask = 4;
+  // optional .google.protobuf.FieldMask update_transfer_job_field_mask = 4;
   if (this->has_update_transfer_job_field_mask()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -1358,7 +1456,7 @@ size_t UpdateTransferJobRequest::ByteSizeLong() const {
 
 void UpdateTransferJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.storagetransfer.v1.UpdateTransferJobRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const UpdateTransferJobRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const UpdateTransferJobRequest>(
           &from);
@@ -1367,14 +1465,21 @@ void UpdateTransferJobRequest::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.storagetransfer.v1.UpdateTransferJobRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void UpdateTransferJobRequest::MergeFrom(const UpdateTransferJobRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.storagetransfer.v1.UpdateTransferJobRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void UpdateTransferJobRequest::UnsafeMergeFrom(const UpdateTransferJobRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.job_name().size() > 0) {
     set_job_name(from.job_name());
   }
@@ -1400,10 +1505,11 @@ void UpdateTransferJobRequest::CopyFrom(const UpdateTransferJobRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.storagetransfer.v1.UpdateTransferJobRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool UpdateTransferJobRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -1412,13 +1518,10 @@ void UpdateTransferJobRequest::Swap(UpdateTransferJobRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    UpdateTransferJobRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    UpdateTransferJobRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void UpdateTransferJobRequest::UnsafeArenaSwap(UpdateTransferJobRequest* other) {
@@ -1431,24 +1534,28 @@ void UpdateTransferJobRequest::InternalSwap(UpdateTransferJobRequest* other) {
   project_id_.Swap(&other->project_id_);
   std::swap(transfer_job_, other->transfer_job_);
   std::swap(update_transfer_job_field_mask_, other->update_transfer_job_field_mask_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata UpdateTransferJobRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = UpdateTransferJobRequest_descriptor_;
+  metadata.reflection = UpdateTransferJobRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // UpdateTransferJobRequest
 
-// string job_name = 1;
+// optional string job_name = 1;
 void UpdateTransferJobRequest::clear_job_name() {
   job_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& UpdateTransferJobRequest::job_name() const {
   // @@protoc_insertion_point(field_get:google.storagetransfer.v1.UpdateTransferJobRequest.job_name)
-  return job_name_.Get();
+  return job_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void UpdateTransferJobRequest::set_job_name(const ::std::string& value) {
   
@@ -1508,13 +1615,13 @@ void UpdateTransferJobRequest::unsafe_arena_set_allocated_job_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.storagetransfer.v1.UpdateTransferJobRequest.job_name)
 }
 
-// string project_id = 2;
+// optional string project_id = 2;
 void UpdateTransferJobRequest::clear_project_id() {
   project_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& UpdateTransferJobRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.storagetransfer.v1.UpdateTransferJobRequest.project_id)
-  return project_id_.Get();
+  return project_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void UpdateTransferJobRequest::set_project_id(const ::std::string& value) {
   
@@ -1574,7 +1681,7 @@ void UpdateTransferJobRequest::unsafe_arena_set_allocated_project_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.storagetransfer.v1.UpdateTransferJobRequest.project_id)
 }
 
-// .google.storagetransfer.v1.TransferJob transfer_job = 3;
+// optional .google.storagetransfer.v1.TransferJob transfer_job = 3;
 bool UpdateTransferJobRequest::has_transfer_job() const {
   return this != internal_default_instance() && transfer_job_ != NULL;
 }
@@ -1623,7 +1730,7 @@ const ::google::storagetransfer::v1::TransferJob& UpdateTransferJobRequest::tran
   // @@protoc_insertion_point(field_set_allocated:google.storagetransfer.v1.UpdateTransferJobRequest.transfer_job)
 }
 
-// .google.protobuf.FieldMask update_transfer_job_field_mask = 4;
+// optional .google.protobuf.FieldMask update_transfer_job_field_mask = 4;
 bool UpdateTransferJobRequest::has_update_transfer_job_field_mask() const {
   return this != internal_default_instance() && update_transfer_job_field_mask_ != NULL;
 }
@@ -1674,6 +1781,9 @@ const ::google::protobuf::FieldMask& UpdateTransferJobRequest::update_transfer_j
   // @@protoc_insertion_point(field_set_allocated:google.storagetransfer.v1.UpdateTransferJobRequest.update_transfer_job_field_mask)
 }
 
+inline const UpdateTransferJobRequest* UpdateTransferJobRequest::internal_default_instance() {
+  return &UpdateTransferJobRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1685,9 +1795,7 @@ const int GetTransferJobRequest::kProjectIdFieldNumber;
 
 GetTransferJobRequest::GetTransferJobRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.storagetransfer.v1.GetTransferJobRequest)
 }
@@ -1701,21 +1809,15 @@ GetTransferJobRequest::GetTransferJobRequest(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.storagetransfer.v1.GetTransferJobRequest)
 }
+
+void GetTransferJobRequest::InitAsDefaultInstance() {
+}
+
 GetTransferJobRequest::GetTransferJobRequest(const GetTransferJobRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  job_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.job_name().size() > 0) {
-    job_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.job_name(),
-      GetArenaNoVirtual());
-  }
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id(),
-      GetArenaNoVirtual());
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.storagetransfer.v1.GetTransferJobRequest)
 }
 
@@ -1753,13 +1855,15 @@ void GetTransferJobRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GetTransferJobRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return GetTransferJobRequest_descriptor_;
 }
 
 const GetTransferJobRequest& GetTransferJobRequest::default_instance() {
   protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GetTransferJobRequest> GetTransferJobRequest_default_instance_;
 
 GetTransferJobRequest* GetTransferJobRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<GetTransferJobRequest>(arena);
@@ -1777,13 +1881,13 @@ bool GetTransferJobRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.storagetransfer.v1.GetTransferJobRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string job_name = 1;
+      // optional string job_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_job_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1793,12 +1897,14 @@ bool GetTransferJobRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_project_id;
         break;
       }
 
-      // string project_id = 2;
+      // optional string project_id = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_project_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1808,6 +1914,7 @@ bool GetTransferJobRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1835,7 +1942,7 @@ failure:
 void GetTransferJobRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.storagetransfer.v1.GetTransferJobRequest)
-  // string job_name = 1;
+  // optional string job_name = 1;
   if (this->job_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->job_name().data(), this->job_name().length(),
@@ -1845,7 +1952,7 @@ void GetTransferJobRequest::SerializeWithCachedSizes(
       1, this->job_name(), output);
   }
 
-  // string project_id = 2;
+  // optional string project_id = 2;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -1862,7 +1969,7 @@ void GetTransferJobRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.storagetransfer.v1.GetTransferJobRequest)
-  // string job_name = 1;
+  // optional string job_name = 1;
   if (this->job_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->job_name().data(), this->job_name().length(),
@@ -1873,7 +1980,7 @@ void GetTransferJobRequest::SerializeWithCachedSizes(
         1, this->job_name(), target);
   }
 
-  // string project_id = 2;
+  // optional string project_id = 2;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -1892,14 +1999,14 @@ size_t GetTransferJobRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.storagetransfer.v1.GetTransferJobRequest)
   size_t total_size = 0;
 
-  // string job_name = 1;
+  // optional string job_name = 1;
   if (this->job_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->job_name());
   }
 
-  // string project_id = 2;
+  // optional string project_id = 2;
   if (this->project_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -1915,7 +2022,7 @@ size_t GetTransferJobRequest::ByteSizeLong() const {
 
 void GetTransferJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.storagetransfer.v1.GetTransferJobRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GetTransferJobRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetTransferJobRequest>(
           &from);
@@ -1924,14 +2031,21 @@ void GetTransferJobRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.storagetransfer.v1.GetTransferJobRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetTransferJobRequest::MergeFrom(const GetTransferJobRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.storagetransfer.v1.GetTransferJobRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GetTransferJobRequest::UnsafeMergeFrom(const GetTransferJobRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.job_name().size() > 0) {
     set_job_name(from.job_name());
   }
@@ -1951,10 +2065,11 @@ void GetTransferJobRequest::CopyFrom(const GetTransferJobRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.storagetransfer.v1.GetTransferJobRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetTransferJobRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -1963,13 +2078,10 @@ void GetTransferJobRequest::Swap(GetTransferJobRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    GetTransferJobRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    GetTransferJobRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void GetTransferJobRequest::UnsafeArenaSwap(GetTransferJobRequest* other) {
@@ -1980,24 +2092,28 @@ void GetTransferJobRequest::UnsafeArenaSwap(GetTransferJobRequest* other) {
 void GetTransferJobRequest::InternalSwap(GetTransferJobRequest* other) {
   job_name_.Swap(&other->job_name_);
   project_id_.Swap(&other->project_id_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GetTransferJobRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GetTransferJobRequest_descriptor_;
+  metadata.reflection = GetTransferJobRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GetTransferJobRequest
 
-// string job_name = 1;
+// optional string job_name = 1;
 void GetTransferJobRequest::clear_job_name() {
   job_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& GetTransferJobRequest::job_name() const {
   // @@protoc_insertion_point(field_get:google.storagetransfer.v1.GetTransferJobRequest.job_name)
-  return job_name_.Get();
+  return job_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GetTransferJobRequest::set_job_name(const ::std::string& value) {
   
@@ -2057,13 +2173,13 @@ void GetTransferJobRequest::unsafe_arena_set_allocated_job_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.storagetransfer.v1.GetTransferJobRequest.job_name)
 }
 
-// string project_id = 2;
+// optional string project_id = 2;
 void GetTransferJobRequest::clear_project_id() {
   project_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& GetTransferJobRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.storagetransfer.v1.GetTransferJobRequest.project_id)
-  return project_id_.Get();
+  return project_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GetTransferJobRequest::set_project_id(const ::std::string& value) {
   
@@ -2123,6 +2239,9 @@ void GetTransferJobRequest::unsafe_arena_set_allocated_project_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.storagetransfer.v1.GetTransferJobRequest.project_id)
 }
 
+inline const GetTransferJobRequest* GetTransferJobRequest::internal_default_instance() {
+  return &GetTransferJobRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2135,9 +2254,7 @@ const int ListTransferJobsRequest::kPageTokenFieldNumber;
 
 ListTransferJobsRequest::ListTransferJobsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.storagetransfer.v1.ListTransferJobsRequest)
 }
@@ -2151,22 +2268,15 @@ ListTransferJobsRequest::ListTransferJobsRequest(::google::protobuf::Arena* aren
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.storagetransfer.v1.ListTransferJobsRequest)
 }
+
+void ListTransferJobsRequest::InitAsDefaultInstance() {
+}
+
 ListTransferJobsRequest::ListTransferJobsRequest(const ListTransferJobsRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  filter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.filter().size() > 0) {
-    filter_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.filter(),
-      GetArenaNoVirtual());
-  }
-  page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.page_token().size() > 0) {
-    page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token(),
-      GetArenaNoVirtual());
-  }
-  page_size_ = from.page_size_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.storagetransfer.v1.ListTransferJobsRequest)
 }
 
@@ -2205,13 +2315,15 @@ void ListTransferJobsRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListTransferJobsRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return ListTransferJobsRequest_descriptor_;
 }
 
 const ListTransferJobsRequest& ListTransferJobsRequest::default_instance() {
   protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListTransferJobsRequest> ListTransferJobsRequest_default_instance_;
 
 ListTransferJobsRequest* ListTransferJobsRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListTransferJobsRequest>(arena);
@@ -2220,8 +2332,8 @@ ListTransferJobsRequest* ListTransferJobsRequest::New(::google::protobuf::Arena*
 void ListTransferJobsRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.storagetransfer.v1.ListTransferJobsRequest)
   filter_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   page_size_ = 0;
+  page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 
 bool ListTransferJobsRequest::MergePartialFromCodedStream(
@@ -2230,13 +2342,13 @@ bool ListTransferJobsRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.storagetransfer.v1.ListTransferJobsRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string filter = 1;
+      // optional string filter = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_filter()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2246,12 +2358,14 @@ bool ListTransferJobsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_page_size;
         break;
       }
 
-      // int32 page_size = 4;
+      // optional int32 page_size = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_page_size:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -2259,12 +2373,14 @@ bool ListTransferJobsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_page_token;
         break;
       }
 
-      // string page_token = 5;
+      // optional string page_token = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2274,6 +2390,7 @@ bool ListTransferJobsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2301,7 +2418,7 @@ failure:
 void ListTransferJobsRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.storagetransfer.v1.ListTransferJobsRequest)
-  // string filter = 1;
+  // optional string filter = 1;
   if (this->filter().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->filter().data(), this->filter().length(),
@@ -2311,12 +2428,12 @@ void ListTransferJobsRequest::SerializeWithCachedSizes(
       1, this->filter(), output);
   }
 
-  // int32 page_size = 4;
+  // optional int32 page_size = 4;
   if (this->page_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->page_size(), output);
   }
 
-  // string page_token = 5;
+  // optional string page_token = 5;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -2333,7 +2450,7 @@ void ListTransferJobsRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.storagetransfer.v1.ListTransferJobsRequest)
-  // string filter = 1;
+  // optional string filter = 1;
   if (this->filter().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->filter().data(), this->filter().length(),
@@ -2344,12 +2461,12 @@ void ListTransferJobsRequest::SerializeWithCachedSizes(
         1, this->filter(), target);
   }
 
-  // int32 page_size = 4;
+  // optional int32 page_size = 4;
   if (this->page_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->page_size(), target);
   }
 
-  // string page_token = 5;
+  // optional string page_token = 5;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -2368,25 +2485,25 @@ size_t ListTransferJobsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.storagetransfer.v1.ListTransferJobsRequest)
   size_t total_size = 0;
 
-  // string filter = 1;
+  // optional string filter = 1;
   if (this->filter().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->filter());
   }
 
-  // string page_token = 5;
-  if (this->page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->page_token());
-  }
-
-  // int32 page_size = 4;
+  // optional int32 page_size = 4;
   if (this->page_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->page_size());
+  }
+
+  // optional string page_token = 5;
+  if (this->page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->page_token());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -2398,7 +2515,7 @@ size_t ListTransferJobsRequest::ByteSizeLong() const {
 
 void ListTransferJobsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.storagetransfer.v1.ListTransferJobsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListTransferJobsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListTransferJobsRequest>(
           &from);
@@ -2407,22 +2524,29 @@ void ListTransferJobsRequest::MergeFrom(const ::google::protobuf::Message& from)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.storagetransfer.v1.ListTransferJobsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListTransferJobsRequest::MergeFrom(const ListTransferJobsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.storagetransfer.v1.ListTransferJobsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListTransferJobsRequest::UnsafeMergeFrom(const ListTransferJobsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.filter().size() > 0) {
     set_filter(from.filter());
   }
-  if (from.page_token().size() > 0) {
-    set_page_token(from.page_token());
-  }
   if (from.page_size() != 0) {
     set_page_size(from.page_size());
+  }
+  if (from.page_token().size() > 0) {
+    set_page_token(from.page_token());
   }
 }
 
@@ -2437,10 +2561,11 @@ void ListTransferJobsRequest::CopyFrom(const ListTransferJobsRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.storagetransfer.v1.ListTransferJobsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListTransferJobsRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -2449,13 +2574,10 @@ void ListTransferJobsRequest::Swap(ListTransferJobsRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    ListTransferJobsRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    ListTransferJobsRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void ListTransferJobsRequest::UnsafeArenaSwap(ListTransferJobsRequest* other) {
@@ -2465,26 +2587,30 @@ void ListTransferJobsRequest::UnsafeArenaSwap(ListTransferJobsRequest* other) {
 }
 void ListTransferJobsRequest::InternalSwap(ListTransferJobsRequest* other) {
   filter_.Swap(&other->filter_);
-  page_token_.Swap(&other->page_token_);
   std::swap(page_size_, other->page_size_);
+  page_token_.Swap(&other->page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListTransferJobsRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListTransferJobsRequest_descriptor_;
+  metadata.reflection = ListTransferJobsRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ListTransferJobsRequest
 
-// string filter = 1;
+// optional string filter = 1;
 void ListTransferJobsRequest::clear_filter() {
   filter_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ListTransferJobsRequest::filter() const {
   // @@protoc_insertion_point(field_get:google.storagetransfer.v1.ListTransferJobsRequest.filter)
-  return filter_.Get();
+  return filter_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListTransferJobsRequest::set_filter(const ::std::string& value) {
   
@@ -2544,7 +2670,7 @@ void ListTransferJobsRequest::unsafe_arena_set_allocated_filter(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.storagetransfer.v1.ListTransferJobsRequest.filter)
 }
 
-// int32 page_size = 4;
+// optional int32 page_size = 4;
 void ListTransferJobsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -2558,13 +2684,13 @@ void ListTransferJobsRequest::set_page_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.storagetransfer.v1.ListTransferJobsRequest.page_size)
 }
 
-// string page_token = 5;
+// optional string page_token = 5;
 void ListTransferJobsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ListTransferJobsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.storagetransfer.v1.ListTransferJobsRequest.page_token)
-  return page_token_.Get();
+  return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListTransferJobsRequest::set_page_token(const ::std::string& value) {
   
@@ -2624,6 +2750,9 @@ void ListTransferJobsRequest::unsafe_arena_set_allocated_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.storagetransfer.v1.ListTransferJobsRequest.page_token)
 }
 
+inline const ListTransferJobsRequest* ListTransferJobsRequest::internal_default_instance() {
+  return &ListTransferJobsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2635,9 +2764,7 @@ const int ListTransferJobsResponse::kNextPageTokenFieldNumber;
 
 ListTransferJobsResponse::ListTransferJobsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.storagetransfer.v1.ListTransferJobsResponse)
 }
@@ -2652,17 +2779,15 @@ ListTransferJobsResponse::ListTransferJobsResponse(::google::protobuf::Arena* ar
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.storagetransfer.v1.ListTransferJobsResponse)
 }
+
+void ListTransferJobsResponse::InitAsDefaultInstance() {
+}
+
 ListTransferJobsResponse::ListTransferJobsResponse(const ListTransferJobsResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      transfer_jobs_(from.transfer_jobs_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_page_token().size() > 0) {
-    next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_page_token(),
-      GetArenaNoVirtual());
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.storagetransfer.v1.ListTransferJobsResponse)
 }
 
@@ -2698,7 +2823,7 @@ void ListTransferJobsResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListTransferJobsResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
+  return ListTransferJobsResponse_descriptor_;
 }
 
 const ListTransferJobsResponse& ListTransferJobsResponse::default_instance() {
@@ -2706,14 +2831,16 @@ const ListTransferJobsResponse& ListTransferJobsResponse::default_instance() {
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<ListTransferJobsResponse> ListTransferJobsResponse_default_instance_;
+
 ListTransferJobsResponse* ListTransferJobsResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListTransferJobsResponse>(arena);
 }
 
 void ListTransferJobsResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.storagetransfer.v1.ListTransferJobsResponse)
-  transfer_jobs_.Clear();
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  transfer_jobs_.Clear();
 }
 
 bool ListTransferJobsResponse::MergePartialFromCodedStream(
@@ -2722,26 +2849,30 @@ bool ListTransferJobsResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.storagetransfer.v1.ListTransferJobsResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.storagetransfer.v1.TransferJob transfer_jobs = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_transfer_jobs:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_transfer_jobs()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_transfer_jobs;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_next_page_token;
         break;
       }
 
-      // string next_page_token = 2;
+      // optional string next_page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_next_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2751,6 +2882,7 @@ bool ListTransferJobsResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2784,7 +2916,7 @@ void ListTransferJobsResponse::SerializeWithCachedSizes(
       1, this->transfer_jobs(i), output);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -2808,7 +2940,7 @@ void ListTransferJobsResponse::SerializeWithCachedSizes(
         1, this->transfer_jobs(i), false, target);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -2827,6 +2959,13 @@ size_t ListTransferJobsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.storagetransfer.v1.ListTransferJobsResponse)
   size_t total_size = 0;
 
+  // optional string next_page_token = 2;
+  if (this->next_page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_page_token());
+  }
+
   // repeated .google.storagetransfer.v1.TransferJob transfer_jobs = 1;
   {
     unsigned int count = this->transfer_jobs_size();
@@ -2838,13 +2977,6 @@ size_t ListTransferJobsResponse::ByteSizeLong() const {
     }
   }
 
-  // string next_page_token = 2;
-  if (this->next_page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_page_token());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -2854,7 +2986,7 @@ size_t ListTransferJobsResponse::ByteSizeLong() const {
 
 void ListTransferJobsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.storagetransfer.v1.ListTransferJobsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListTransferJobsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListTransferJobsResponse>(
           &from);
@@ -2863,14 +2995,21 @@ void ListTransferJobsResponse::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.storagetransfer.v1.ListTransferJobsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListTransferJobsResponse::MergeFrom(const ListTransferJobsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.storagetransfer.v1.ListTransferJobsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListTransferJobsResponse::UnsafeMergeFrom(const ListTransferJobsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   transfer_jobs_.MergeFrom(from.transfer_jobs_);
   if (from.next_page_token().size() > 0) {
     set_next_page_token(from.next_page_token());
@@ -2888,10 +3027,11 @@ void ListTransferJobsResponse::CopyFrom(const ListTransferJobsResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.storagetransfer.v1.ListTransferJobsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListTransferJobsResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -2900,13 +3040,10 @@ void ListTransferJobsResponse::Swap(ListTransferJobsResponse* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    ListTransferJobsResponse* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    ListTransferJobsResponse temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void ListTransferJobsResponse::UnsafeArenaSwap(ListTransferJobsResponse* other) {
@@ -2917,12 +3054,16 @@ void ListTransferJobsResponse::UnsafeArenaSwap(ListTransferJobsResponse* other) 
 void ListTransferJobsResponse::InternalSwap(ListTransferJobsResponse* other) {
   transfer_jobs_.UnsafeArenaSwap(&other->transfer_jobs_);
   next_page_token_.Swap(&other->next_page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListTransferJobsResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListTransferJobsResponse_descriptor_;
+  metadata.reflection = ListTransferJobsResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -2958,13 +3099,13 @@ ListTransferJobsResponse::transfer_jobs() const {
   return transfer_jobs_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 void ListTransferJobsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ListTransferJobsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.storagetransfer.v1.ListTransferJobsResponse.next_page_token)
-  return next_page_token_.Get();
+  return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListTransferJobsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -3024,6 +3165,9 @@ void ListTransferJobsResponse::unsafe_arena_set_allocated_next_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.storagetransfer.v1.ListTransferJobsResponse.next_page_token)
 }
 
+inline const ListTransferJobsResponse* ListTransferJobsResponse::internal_default_instance() {
+  return &ListTransferJobsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3034,9 +3178,7 @@ const int PauseTransferOperationRequest::kNameFieldNumber;
 
 PauseTransferOperationRequest::PauseTransferOperationRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.storagetransfer.v1.PauseTransferOperationRequest)
 }
@@ -3050,16 +3192,15 @@ PauseTransferOperationRequest::PauseTransferOperationRequest(::google::protobuf:
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.storagetransfer.v1.PauseTransferOperationRequest)
 }
+
+void PauseTransferOperationRequest::InitAsDefaultInstance() {
+}
+
 PauseTransferOperationRequest::PauseTransferOperationRequest(const PauseTransferOperationRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name(),
-      GetArenaNoVirtual());
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.storagetransfer.v1.PauseTransferOperationRequest)
 }
 
@@ -3095,13 +3236,15 @@ void PauseTransferOperationRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* PauseTransferOperationRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6].descriptor;
+  return PauseTransferOperationRequest_descriptor_;
 }
 
 const PauseTransferOperationRequest& PauseTransferOperationRequest::default_instance() {
   protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<PauseTransferOperationRequest> PauseTransferOperationRequest_default_instance_;
 
 PauseTransferOperationRequest* PauseTransferOperationRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<PauseTransferOperationRequest>(arena);
@@ -3118,13 +3261,13 @@ bool PauseTransferOperationRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.storagetransfer.v1.PauseTransferOperationRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3134,6 +3277,7 @@ bool PauseTransferOperationRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3161,7 +3305,7 @@ failure:
 void PauseTransferOperationRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.storagetransfer.v1.PauseTransferOperationRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -3178,7 +3322,7 @@ void PauseTransferOperationRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.storagetransfer.v1.PauseTransferOperationRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -3197,7 +3341,7 @@ size_t PauseTransferOperationRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.storagetransfer.v1.PauseTransferOperationRequest)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -3213,7 +3357,7 @@ size_t PauseTransferOperationRequest::ByteSizeLong() const {
 
 void PauseTransferOperationRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.storagetransfer.v1.PauseTransferOperationRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const PauseTransferOperationRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const PauseTransferOperationRequest>(
           &from);
@@ -3222,14 +3366,21 @@ void PauseTransferOperationRequest::MergeFrom(const ::google::protobuf::Message&
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.storagetransfer.v1.PauseTransferOperationRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void PauseTransferOperationRequest::MergeFrom(const PauseTransferOperationRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.storagetransfer.v1.PauseTransferOperationRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void PauseTransferOperationRequest::UnsafeMergeFrom(const PauseTransferOperationRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -3246,10 +3397,11 @@ void PauseTransferOperationRequest::CopyFrom(const PauseTransferOperationRequest
 // @@protoc_insertion_point(class_specific_copy_from_start:google.storagetransfer.v1.PauseTransferOperationRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool PauseTransferOperationRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -3258,13 +3410,10 @@ void PauseTransferOperationRequest::Swap(PauseTransferOperationRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    PauseTransferOperationRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    PauseTransferOperationRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void PauseTransferOperationRequest::UnsafeArenaSwap(PauseTransferOperationRequest* other) {
@@ -3274,24 +3423,28 @@ void PauseTransferOperationRequest::UnsafeArenaSwap(PauseTransferOperationReques
 }
 void PauseTransferOperationRequest::InternalSwap(PauseTransferOperationRequest* other) {
   name_.Swap(&other->name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata PauseTransferOperationRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = PauseTransferOperationRequest_descriptor_;
+  metadata.reflection = PauseTransferOperationRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // PauseTransferOperationRequest
 
-// string name = 1;
+// optional string name = 1;
 void PauseTransferOperationRequest::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& PauseTransferOperationRequest::name() const {
   // @@protoc_insertion_point(field_get:google.storagetransfer.v1.PauseTransferOperationRequest.name)
-  return name_.Get();
+  return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void PauseTransferOperationRequest::set_name(const ::std::string& value) {
   
@@ -3351,6 +3504,9 @@ void PauseTransferOperationRequest::unsafe_arena_set_allocated_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.storagetransfer.v1.PauseTransferOperationRequest.name)
 }
 
+inline const PauseTransferOperationRequest* PauseTransferOperationRequest::internal_default_instance() {
+  return &PauseTransferOperationRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3361,9 +3517,7 @@ const int ResumeTransferOperationRequest::kNameFieldNumber;
 
 ResumeTransferOperationRequest::ResumeTransferOperationRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.storagetransfer.v1.ResumeTransferOperationRequest)
 }
@@ -3377,16 +3531,15 @@ ResumeTransferOperationRequest::ResumeTransferOperationRequest(::google::protobu
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.storagetransfer.v1.ResumeTransferOperationRequest)
 }
+
+void ResumeTransferOperationRequest::InitAsDefaultInstance() {
+}
+
 ResumeTransferOperationRequest::ResumeTransferOperationRequest(const ResumeTransferOperationRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name(),
-      GetArenaNoVirtual());
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.storagetransfer.v1.ResumeTransferOperationRequest)
 }
 
@@ -3422,13 +3575,15 @@ void ResumeTransferOperationRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ResumeTransferOperationRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7].descriptor;
+  return ResumeTransferOperationRequest_descriptor_;
 }
 
 const ResumeTransferOperationRequest& ResumeTransferOperationRequest::default_instance() {
   protobuf_InitDefaults_google_2fstoragetransfer_2fv1_2ftransfer_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ResumeTransferOperationRequest> ResumeTransferOperationRequest_default_instance_;
 
 ResumeTransferOperationRequest* ResumeTransferOperationRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ResumeTransferOperationRequest>(arena);
@@ -3445,13 +3600,13 @@ bool ResumeTransferOperationRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.storagetransfer.v1.ResumeTransferOperationRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3461,6 +3616,7 @@ bool ResumeTransferOperationRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3488,7 +3644,7 @@ failure:
 void ResumeTransferOperationRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.storagetransfer.v1.ResumeTransferOperationRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -3505,7 +3661,7 @@ void ResumeTransferOperationRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.storagetransfer.v1.ResumeTransferOperationRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -3524,7 +3680,7 @@ size_t ResumeTransferOperationRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.storagetransfer.v1.ResumeTransferOperationRequest)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -3540,7 +3696,7 @@ size_t ResumeTransferOperationRequest::ByteSizeLong() const {
 
 void ResumeTransferOperationRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.storagetransfer.v1.ResumeTransferOperationRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ResumeTransferOperationRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ResumeTransferOperationRequest>(
           &from);
@@ -3549,14 +3705,21 @@ void ResumeTransferOperationRequest::MergeFrom(const ::google::protobuf::Message
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.storagetransfer.v1.ResumeTransferOperationRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ResumeTransferOperationRequest::MergeFrom(const ResumeTransferOperationRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.storagetransfer.v1.ResumeTransferOperationRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ResumeTransferOperationRequest::UnsafeMergeFrom(const ResumeTransferOperationRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -3573,10 +3736,11 @@ void ResumeTransferOperationRequest::CopyFrom(const ResumeTransferOperationReque
 // @@protoc_insertion_point(class_specific_copy_from_start:google.storagetransfer.v1.ResumeTransferOperationRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ResumeTransferOperationRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -3585,13 +3749,10 @@ void ResumeTransferOperationRequest::Swap(ResumeTransferOperationRequest* other)
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    ResumeTransferOperationRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    ResumeTransferOperationRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void ResumeTransferOperationRequest::UnsafeArenaSwap(ResumeTransferOperationRequest* other) {
@@ -3601,24 +3762,28 @@ void ResumeTransferOperationRequest::UnsafeArenaSwap(ResumeTransferOperationRequ
 }
 void ResumeTransferOperationRequest::InternalSwap(ResumeTransferOperationRequest* other) {
   name_.Swap(&other->name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ResumeTransferOperationRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ResumeTransferOperationRequest_descriptor_;
+  metadata.reflection = ResumeTransferOperationRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ResumeTransferOperationRequest
 
-// string name = 1;
+// optional string name = 1;
 void ResumeTransferOperationRequest::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ResumeTransferOperationRequest::name() const {
   // @@protoc_insertion_point(field_get:google.storagetransfer.v1.ResumeTransferOperationRequest.name)
-  return name_.Get();
+  return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ResumeTransferOperationRequest::set_name(const ::std::string& value) {
   
@@ -3678,6 +3843,9 @@ void ResumeTransferOperationRequest::unsafe_arena_set_allocated_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.storagetransfer.v1.ResumeTransferOperationRequest.name)
 }
 
+inline const ResumeTransferOperationRequest* ResumeTransferOperationRequest::internal_default_instance() {
+  return &ResumeTransferOperationRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

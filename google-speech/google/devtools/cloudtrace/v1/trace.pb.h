@@ -24,8 +24,8 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/map.h>
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/generated_enum_reflection.h>
@@ -34,45 +34,6 @@
 #include <google/protobuf/empty.pb.h>
 #include <google/protobuf/timestamp.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace devtools {
-namespace cloudtrace {
-namespace v1 {
-class GetTraceRequest;
-class GetTraceRequestDefaultTypeInternal;
-extern GetTraceRequestDefaultTypeInternal _GetTraceRequest_default_instance_;
-class ListTracesRequest;
-class ListTracesRequestDefaultTypeInternal;
-extern ListTracesRequestDefaultTypeInternal _ListTracesRequest_default_instance_;
-class ListTracesResponse;
-class ListTracesResponseDefaultTypeInternal;
-extern ListTracesResponseDefaultTypeInternal _ListTracesResponse_default_instance_;
-class PatchTracesRequest;
-class PatchTracesRequestDefaultTypeInternal;
-extern PatchTracesRequestDefaultTypeInternal _PatchTracesRequest_default_instance_;
-class Trace;
-class TraceDefaultTypeInternal;
-extern TraceDefaultTypeInternal _Trace_default_instance_;
-class TraceSpan;
-class TraceSpanDefaultTypeInternal;
-extern TraceSpanDefaultTypeInternal _TraceSpan_default_instance_;
-class Traces;
-class TracesDefaultTypeInternal;
-extern TracesDefaultTypeInternal _Traces_default_instance_;
-}  // namespace v1
-}  // namespace cloudtrace
-}  // namespace devtools
-namespace protobuf {
-class Empty;
-class EmptyDefaultTypeInternal;
-extern EmptyDefaultTypeInternal _Empty_default_instance_;
-class Timestamp;
-class TimestampDefaultTypeInternal;
-extern TimestampDefaultTypeInternal _Timestamp_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace devtools {
@@ -82,6 +43,16 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
 void protobuf_InitDefaults_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
+void protobuf_AssignDesc_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
+void protobuf_ShutdownFile_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
+
+class GetTraceRequest;
+class ListTracesRequest;
+class ListTracesResponse;
+class PatchTracesRequest;
+class Trace;
+class TraceSpan;
+class Traces;
 
 enum TraceSpan_SpanKind {
   TraceSpan_SpanKind_SPAN_KIND_UNSPECIFIED = 0,
@@ -145,58 +116,55 @@ class Trace : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   static const ::google::protobuf::Descriptor* descriptor();
   static const Trace& default_instance();
 
-  static inline const Trace* internal_default_instance() {
-    return reinterpret_cast<const Trace*>(
-               &_Trace_default_instance_);
-  }
+  static const Trace* internal_default_instance();
 
   void Swap(Trace* other);
 
   // implements Message ----------------------------------------------
 
-  inline Trace* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Trace* New() const { return New(NULL); }
 
-  Trace* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Trace* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Trace& from);
   void MergeFrom(const Trace& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Trace* other);
+  void UnsafeMergeFrom(const Trace& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 1;
   const ::std::string& project_id() const;
@@ -207,7 +175,7 @@ class Trace : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // string trace_id = 2;
+  // optional string trace_id = 2;
   void clear_trace_id();
   static const int kTraceIdFieldNumber = 2;
   const ::std::string& trace_id() const;
@@ -240,10 +208,13 @@ class Trace : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Trace> Trace_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Traces : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.devtools.cloudtrace.v1.Traces) */ {
@@ -261,52 +232,49 @@ class Traces : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   static const ::google::protobuf::Descriptor* descriptor();
   static const Traces& default_instance();
 
-  static inline const Traces* internal_default_instance() {
-    return reinterpret_cast<const Traces*>(
-               &_Traces_default_instance_);
-  }
+  static const Traces* internal_default_instance();
 
   void Swap(Traces* other);
 
   // implements Message ----------------------------------------------
 
-  inline Traces* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Traces* New() const { return New(NULL); }
 
-  Traces* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Traces* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Traces& from);
   void MergeFrom(const Traces& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Traces* other);
+  void UnsafeMergeFrom(const Traces& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -332,12 +300,12 @@ class Traces : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
 
+  void InitAsDefaultInstance();
 };
-// -------------------------------------------------------------------
-
+extern ::google::protobuf::internal::ExplicitlyConstructed<Traces> Traces_default_instance_;
 
 // -------------------------------------------------------------------
 
@@ -356,52 +324,49 @@ class TraceSpan : public ::google::protobuf::Message /* @@protoc_insertion_point
   static const ::google::protobuf::Descriptor* descriptor();
   static const TraceSpan& default_instance();
 
-  static inline const TraceSpan* internal_default_instance() {
-    return reinterpret_cast<const TraceSpan*>(
-               &_TraceSpan_default_instance_);
-  }
+  static const TraceSpan* internal_default_instance();
 
   void Swap(TraceSpan* other);
 
   // implements Message ----------------------------------------------
 
-  inline TraceSpan* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline TraceSpan* New() const { return New(NULL); }
 
-  TraceSpan* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  TraceSpan* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const TraceSpan& from);
   void MergeFrom(const TraceSpan& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(TraceSpan* other);
+  void UnsafeMergeFrom(const TraceSpan& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -436,19 +401,19 @@ class TraceSpan : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   // accessors -------------------------------------------------------
 
-  // fixed64 span_id = 1;
+  // optional fixed64 span_id = 1;
   void clear_span_id();
   static const int kSpanIdFieldNumber = 1;
   ::google::protobuf::uint64 span_id() const;
   void set_span_id(::google::protobuf::uint64 value);
 
-  // .google.devtools.cloudtrace.v1.TraceSpan.SpanKind kind = 2;
+  // optional .google.devtools.cloudtrace.v1.TraceSpan.SpanKind kind = 2;
   void clear_kind();
   static const int kKindFieldNumber = 2;
   ::google::devtools::cloudtrace::v1::TraceSpan_SpanKind kind() const;
   void set_kind(::google::devtools::cloudtrace::v1::TraceSpan_SpanKind value);
 
-  // string name = 3;
+  // optional string name = 3;
   void clear_name();
   static const int kNameFieldNumber = 3;
   const ::std::string& name() const;
@@ -459,7 +424,7 @@ class TraceSpan : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // .google.protobuf.Timestamp start_time = 4;
+  // optional .google.protobuf.Timestamp start_time = 4;
   bool has_start_time() const;
   void clear_start_time();
   static const int kStartTimeFieldNumber = 4;
@@ -468,7 +433,7 @@ class TraceSpan : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::protobuf::Timestamp* release_start_time();
   void set_allocated_start_time(::google::protobuf::Timestamp* start_time);
 
-  // .google.protobuf.Timestamp end_time = 5;
+  // optional .google.protobuf.Timestamp end_time = 5;
   bool has_end_time() const;
   void clear_end_time();
   static const int kEndTimeFieldNumber = 5;
@@ -477,7 +442,7 @@ class TraceSpan : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::protobuf::Timestamp* release_end_time();
   void set_allocated_end_time(::google::protobuf::Timestamp* end_time);
 
-  // fixed64 parent_span_id = 6;
+  // optional fixed64 parent_span_id = 6;
   void clear_parent_span_id();
   static const int kParentSpanIdFieldNumber = 6;
   ::google::protobuf::uint64 parent_span_id() const;
@@ -516,10 +481,13 @@ class TraceSpan : public ::google::protobuf::Message /* @@protoc_insertion_point
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<TraceSpan> TraceSpan_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListTracesRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.devtools.cloudtrace.v1.ListTracesRequest) */ {
@@ -537,52 +505,49 @@ class ListTracesRequest : public ::google::protobuf::Message /* @@protoc_inserti
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListTracesRequest& default_instance();
 
-  static inline const ListTracesRequest* internal_default_instance() {
-    return reinterpret_cast<const ListTracesRequest*>(
-               &_ListTracesRequest_default_instance_);
-  }
+  static const ListTracesRequest* internal_default_instance();
 
   void Swap(ListTracesRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListTracesRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListTracesRequest* New() const { return New(NULL); }
 
-  ListTracesRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListTracesRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListTracesRequest& from);
   void MergeFrom(const ListTracesRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListTracesRequest* other);
+  void UnsafeMergeFrom(const ListTracesRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -618,7 +583,7 @@ class ListTracesRequest : public ::google::protobuf::Message /* @@protoc_inserti
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 1;
   const ::std::string& project_id() const;
@@ -629,19 +594,19 @@ class ListTracesRequest : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // .google.devtools.cloudtrace.v1.ListTracesRequest.ViewType view = 2;
+  // optional .google.devtools.cloudtrace.v1.ListTracesRequest.ViewType view = 2;
   void clear_view();
   static const int kViewFieldNumber = 2;
   ::google::devtools::cloudtrace::v1::ListTracesRequest_ViewType view() const;
   void set_view(::google::devtools::cloudtrace::v1::ListTracesRequest_ViewType value);
 
-  // int32 page_size = 3;
+  // optional int32 page_size = 3;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 3;
   ::google::protobuf::int32 page_size() const;
   void set_page_size(::google::protobuf::int32 value);
 
-  // string page_token = 4;
+  // optional string page_token = 4;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 4;
   const ::std::string& page_token() const;
@@ -652,7 +617,7 @@ class ListTracesRequest : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_page_token();
   void set_allocated_page_token(::std::string* page_token);
 
-  // .google.protobuf.Timestamp start_time = 5;
+  // optional .google.protobuf.Timestamp start_time = 5;
   bool has_start_time() const;
   void clear_start_time();
   static const int kStartTimeFieldNumber = 5;
@@ -661,7 +626,7 @@ class ListTracesRequest : public ::google::protobuf::Message /* @@protoc_inserti
   ::google::protobuf::Timestamp* release_start_time();
   void set_allocated_start_time(::google::protobuf::Timestamp* start_time);
 
-  // .google.protobuf.Timestamp end_time = 6;
+  // optional .google.protobuf.Timestamp end_time = 6;
   bool has_end_time() const;
   void clear_end_time();
   static const int kEndTimeFieldNumber = 6;
@@ -670,7 +635,7 @@ class ListTracesRequest : public ::google::protobuf::Message /* @@protoc_inserti
   ::google::protobuf::Timestamp* release_end_time();
   void set_allocated_end_time(::google::protobuf::Timestamp* end_time);
 
-  // string filter = 7;
+  // optional string filter = 7;
   void clear_filter();
   static const int kFilterFieldNumber = 7;
   const ::std::string& filter() const;
@@ -681,7 +646,7 @@ class ListTracesRequest : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_filter();
   void set_allocated_filter(::std::string* filter);
 
-  // string order_by = 8;
+  // optional string order_by = 8;
   void clear_order_by();
   static const int kOrderByFieldNumber = 8;
   const ::std::string& order_by() const;
@@ -707,10 +672,13 @@ class ListTracesRequest : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListTracesRequest> ListTracesRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListTracesResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.devtools.cloudtrace.v1.ListTracesResponse) */ {
@@ -728,52 +696,49 @@ class ListTracesResponse : public ::google::protobuf::Message /* @@protoc_insert
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListTracesResponse& default_instance();
 
-  static inline const ListTracesResponse* internal_default_instance() {
-    return reinterpret_cast<const ListTracesResponse*>(
-               &_ListTracesResponse_default_instance_);
-  }
+  static const ListTracesResponse* internal_default_instance();
 
   void Swap(ListTracesResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListTracesResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListTracesResponse* New() const { return New(NULL); }
 
-  ListTracesResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListTracesResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListTracesResponse& from);
   void MergeFrom(const ListTracesResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListTracesResponse* other);
+  void UnsafeMergeFrom(const ListTracesResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -791,7 +756,7 @@ class ListTracesResponse : public ::google::protobuf::Message /* @@protoc_insert
   const ::google::protobuf::RepeatedPtrField< ::google::devtools::cloudtrace::v1::Trace >&
       traces() const;
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -811,10 +776,13 @@ class ListTracesResponse : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListTracesResponse> ListTracesResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetTraceRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.devtools.cloudtrace.v1.GetTraceRequest) */ {
@@ -832,58 +800,55 @@ class GetTraceRequest : public ::google::protobuf::Message /* @@protoc_insertion
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetTraceRequest& default_instance();
 
-  static inline const GetTraceRequest* internal_default_instance() {
-    return reinterpret_cast<const GetTraceRequest*>(
-               &_GetTraceRequest_default_instance_);
-  }
+  static const GetTraceRequest* internal_default_instance();
 
   void Swap(GetTraceRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetTraceRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetTraceRequest* New() const { return New(NULL); }
 
-  GetTraceRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetTraceRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetTraceRequest& from);
   void MergeFrom(const GetTraceRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetTraceRequest* other);
+  void UnsafeMergeFrom(const GetTraceRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 1;
   const ::std::string& project_id() const;
@@ -894,7 +859,7 @@ class GetTraceRequest : public ::google::protobuf::Message /* @@protoc_insertion
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // string trace_id = 2;
+  // optional string trace_id = 2;
   void clear_trace_id();
   static const int kTraceIdFieldNumber = 2;
   const ::std::string& trace_id() const;
@@ -914,10 +879,13 @@ class GetTraceRequest : public ::google::protobuf::Message /* @@protoc_insertion
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetTraceRequest> GetTraceRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class PatchTracesRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.devtools.cloudtrace.v1.PatchTracesRequest) */ {
@@ -935,58 +903,55 @@ class PatchTracesRequest : public ::google::protobuf::Message /* @@protoc_insert
   static const ::google::protobuf::Descriptor* descriptor();
   static const PatchTracesRequest& default_instance();
 
-  static inline const PatchTracesRequest* internal_default_instance() {
-    return reinterpret_cast<const PatchTracesRequest*>(
-               &_PatchTracesRequest_default_instance_);
-  }
+  static const PatchTracesRequest* internal_default_instance();
 
   void Swap(PatchTracesRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline PatchTracesRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline PatchTracesRequest* New() const { return New(NULL); }
 
-  PatchTracesRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PatchTracesRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const PatchTracesRequest& from);
   void MergeFrom(const PatchTracesRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(PatchTracesRequest* other);
+  void UnsafeMergeFrom(const PatchTracesRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 1;
   const ::std::string& project_id() const;
@@ -997,7 +962,7 @@ class PatchTracesRequest : public ::google::protobuf::Message /* @@protoc_insert
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // .google.devtools.cloudtrace.v1.Traces traces = 2;
+  // optional .google.devtools.cloudtrace.v1.Traces traces = 2;
   bool has_traces() const;
   void clear_traces();
   static const int kTracesFieldNumber = 2;
@@ -1015,10 +980,13 @@ class PatchTracesRequest : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fcloudtrace_2fv1_2ftrace_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<PatchTracesRequest> PatchTracesRequest_default_instance_;
+
 // ===================================================================
 
 
@@ -1027,13 +995,13 @@ class PatchTracesRequest : public ::google::protobuf::Message /* @@protoc_insert
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Trace
 
-// string project_id = 1;
+// optional string project_id = 1;
 inline void Trace::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Trace::project_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.cloudtrace.v1.Trace.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Trace::set_project_id(const ::std::string& value) {
   
@@ -1071,13 +1039,13 @@ inline void Trace::set_allocated_project_id(::std::string* project_id) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.cloudtrace.v1.Trace.project_id)
 }
 
-// string trace_id = 2;
+// optional string trace_id = 2;
 inline void Trace::clear_trace_id() {
   trace_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Trace::trace_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.cloudtrace.v1.Trace.trace_id)
-  return trace_id_.GetNoArena();
+  return trace_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Trace::set_trace_id(const ::std::string& value) {
   
@@ -1145,6 +1113,9 @@ Trace::spans() const {
   return spans_;
 }
 
+inline const Trace* Trace::internal_default_instance() {
+  return &Trace_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Traces
@@ -1179,13 +1150,14 @@ Traces::traces() const {
   return traces_;
 }
 
-// -------------------------------------------------------------------
-
+inline const Traces* Traces::internal_default_instance() {
+  return &Traces_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // TraceSpan
 
-// fixed64 span_id = 1;
+// optional fixed64 span_id = 1;
 inline void TraceSpan::clear_span_id() {
   span_id_ = GOOGLE_ULONGLONG(0);
 }
@@ -1199,7 +1171,7 @@ inline void TraceSpan::set_span_id(::google::protobuf::uint64 value) {
   // @@protoc_insertion_point(field_set:google.devtools.cloudtrace.v1.TraceSpan.span_id)
 }
 
-// .google.devtools.cloudtrace.v1.TraceSpan.SpanKind kind = 2;
+// optional .google.devtools.cloudtrace.v1.TraceSpan.SpanKind kind = 2;
 inline void TraceSpan::clear_kind() {
   kind_ = 0;
 }
@@ -1213,13 +1185,13 @@ inline void TraceSpan::set_kind(::google::devtools::cloudtrace::v1::TraceSpan_Sp
   // @@protoc_insertion_point(field_set:google.devtools.cloudtrace.v1.TraceSpan.kind)
 }
 
-// string name = 3;
+// optional string name = 3;
 inline void TraceSpan::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& TraceSpan::name() const {
   // @@protoc_insertion_point(field_get:google.devtools.cloudtrace.v1.TraceSpan.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void TraceSpan::set_name(const ::std::string& value) {
   
@@ -1257,7 +1229,7 @@ inline void TraceSpan::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.cloudtrace.v1.TraceSpan.name)
 }
 
-// .google.protobuf.Timestamp start_time = 4;
+// optional .google.protobuf.Timestamp start_time = 4;
 inline bool TraceSpan::has_start_time() const {
   return this != internal_default_instance() && start_time_ != NULL;
 }
@@ -1301,7 +1273,7 @@ inline void TraceSpan::set_allocated_start_time(::google::protobuf::Timestamp* s
   // @@protoc_insertion_point(field_set_allocated:google.devtools.cloudtrace.v1.TraceSpan.start_time)
 }
 
-// .google.protobuf.Timestamp end_time = 5;
+// optional .google.protobuf.Timestamp end_time = 5;
 inline bool TraceSpan::has_end_time() const {
   return this != internal_default_instance() && end_time_ != NULL;
 }
@@ -1345,7 +1317,7 @@ inline void TraceSpan::set_allocated_end_time(::google::protobuf::Timestamp* end
   // @@protoc_insertion_point(field_set_allocated:google.devtools.cloudtrace.v1.TraceSpan.end_time)
 }
 
-// fixed64 parent_span_id = 6;
+// optional fixed64 parent_span_id = 6;
 inline void TraceSpan::clear_parent_span_id() {
   parent_span_id_ = GOOGLE_ULONGLONG(0);
 }
@@ -1377,17 +1349,20 @@ TraceSpan::mutable_labels() {
   return labels_.MutableMap();
 }
 
+inline const TraceSpan* TraceSpan::internal_default_instance() {
+  return &TraceSpan_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListTracesRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 inline void ListTracesRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListTracesRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.cloudtrace.v1.ListTracesRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListTracesRequest::set_project_id(const ::std::string& value) {
   
@@ -1425,7 +1400,7 @@ inline void ListTracesRequest::set_allocated_project_id(::std::string* project_i
   // @@protoc_insertion_point(field_set_allocated:google.devtools.cloudtrace.v1.ListTracesRequest.project_id)
 }
 
-// .google.devtools.cloudtrace.v1.ListTracesRequest.ViewType view = 2;
+// optional .google.devtools.cloudtrace.v1.ListTracesRequest.ViewType view = 2;
 inline void ListTracesRequest::clear_view() {
   view_ = 0;
 }
@@ -1439,7 +1414,7 @@ inline void ListTracesRequest::set_view(::google::devtools::cloudtrace::v1::List
   // @@protoc_insertion_point(field_set:google.devtools.cloudtrace.v1.ListTracesRequest.view)
 }
 
-// int32 page_size = 3;
+// optional int32 page_size = 3;
 inline void ListTracesRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -1453,13 +1428,13 @@ inline void ListTracesRequest::set_page_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.devtools.cloudtrace.v1.ListTracesRequest.page_size)
 }
 
-// string page_token = 4;
+// optional string page_token = 4;
 inline void ListTracesRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListTracesRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.devtools.cloudtrace.v1.ListTracesRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListTracesRequest::set_page_token(const ::std::string& value) {
   
@@ -1497,7 +1472,7 @@ inline void ListTracesRequest::set_allocated_page_token(::std::string* page_toke
   // @@protoc_insertion_point(field_set_allocated:google.devtools.cloudtrace.v1.ListTracesRequest.page_token)
 }
 
-// .google.protobuf.Timestamp start_time = 5;
+// optional .google.protobuf.Timestamp start_time = 5;
 inline bool ListTracesRequest::has_start_time() const {
   return this != internal_default_instance() && start_time_ != NULL;
 }
@@ -1541,7 +1516,7 @@ inline void ListTracesRequest::set_allocated_start_time(::google::protobuf::Time
   // @@protoc_insertion_point(field_set_allocated:google.devtools.cloudtrace.v1.ListTracesRequest.start_time)
 }
 
-// .google.protobuf.Timestamp end_time = 6;
+// optional .google.protobuf.Timestamp end_time = 6;
 inline bool ListTracesRequest::has_end_time() const {
   return this != internal_default_instance() && end_time_ != NULL;
 }
@@ -1585,13 +1560,13 @@ inline void ListTracesRequest::set_allocated_end_time(::google::protobuf::Timest
   // @@protoc_insertion_point(field_set_allocated:google.devtools.cloudtrace.v1.ListTracesRequest.end_time)
 }
 
-// string filter = 7;
+// optional string filter = 7;
 inline void ListTracesRequest::clear_filter() {
   filter_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListTracesRequest::filter() const {
   // @@protoc_insertion_point(field_get:google.devtools.cloudtrace.v1.ListTracesRequest.filter)
-  return filter_.GetNoArena();
+  return filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListTracesRequest::set_filter(const ::std::string& value) {
   
@@ -1629,13 +1604,13 @@ inline void ListTracesRequest::set_allocated_filter(::std::string* filter) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.cloudtrace.v1.ListTracesRequest.filter)
 }
 
-// string order_by = 8;
+// optional string order_by = 8;
 inline void ListTracesRequest::clear_order_by() {
   order_by_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListTracesRequest::order_by() const {
   // @@protoc_insertion_point(field_get:google.devtools.cloudtrace.v1.ListTracesRequest.order_by)
-  return order_by_.GetNoArena();
+  return order_by_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListTracesRequest::set_order_by(const ::std::string& value) {
   
@@ -1673,6 +1648,9 @@ inline void ListTracesRequest::set_allocated_order_by(::std::string* order_by) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.cloudtrace.v1.ListTracesRequest.order_by)
 }
 
+inline const ListTracesRequest* ListTracesRequest::internal_default_instance() {
+  return &ListTracesRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListTracesResponse
@@ -1707,13 +1685,13 @@ ListTracesResponse::traces() const {
   return traces_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void ListTracesResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListTracesResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.devtools.cloudtrace.v1.ListTracesResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListTracesResponse::set_next_page_token(const ::std::string& value) {
   
@@ -1751,17 +1729,20 @@ inline void ListTracesResponse::set_allocated_next_page_token(::std::string* nex
   // @@protoc_insertion_point(field_set_allocated:google.devtools.cloudtrace.v1.ListTracesResponse.next_page_token)
 }
 
+inline const ListTracesResponse* ListTracesResponse::internal_default_instance() {
+  return &ListTracesResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetTraceRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 inline void GetTraceRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetTraceRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.cloudtrace.v1.GetTraceRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetTraceRequest::set_project_id(const ::std::string& value) {
   
@@ -1799,13 +1780,13 @@ inline void GetTraceRequest::set_allocated_project_id(::std::string* project_id)
   // @@protoc_insertion_point(field_set_allocated:google.devtools.cloudtrace.v1.GetTraceRequest.project_id)
 }
 
-// string trace_id = 2;
+// optional string trace_id = 2;
 inline void GetTraceRequest::clear_trace_id() {
   trace_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetTraceRequest::trace_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.cloudtrace.v1.GetTraceRequest.trace_id)
-  return trace_id_.GetNoArena();
+  return trace_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetTraceRequest::set_trace_id(const ::std::string& value) {
   
@@ -1843,17 +1824,20 @@ inline void GetTraceRequest::set_allocated_trace_id(::std::string* trace_id) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.cloudtrace.v1.GetTraceRequest.trace_id)
 }
 
+inline const GetTraceRequest* GetTraceRequest::internal_default_instance() {
+  return &GetTraceRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // PatchTracesRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 inline void PatchTracesRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& PatchTracesRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.cloudtrace.v1.PatchTracesRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PatchTracesRequest::set_project_id(const ::std::string& value) {
   
@@ -1891,7 +1875,7 @@ inline void PatchTracesRequest::set_allocated_project_id(::std::string* project_
   // @@protoc_insertion_point(field_set_allocated:google.devtools.cloudtrace.v1.PatchTracesRequest.project_id)
 }
 
-// .google.devtools.cloudtrace.v1.Traces traces = 2;
+// optional .google.devtools.cloudtrace.v1.Traces traces = 2;
 inline bool PatchTracesRequest::has_traces() const {
   return this != internal_default_instance() && traces_ != NULL;
 }
@@ -1930,9 +1914,10 @@ inline void PatchTracesRequest::set_allocated_traces(::google::devtools::cloudtr
   // @@protoc_insertion_point(field_set_allocated:google.devtools.cloudtrace.v1.PatchTracesRequest.traces)
 }
 
+inline const PatchTracesRequest* PatchTracesRequest::internal_default_instance() {
+  return &PatchTracesRequest_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -1947,7 +1932,6 @@ inline void PatchTracesRequest::set_allocated_traces(::google::devtools::cloudtr
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace cloudtrace

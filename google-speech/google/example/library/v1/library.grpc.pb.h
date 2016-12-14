@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -52,7 +53,7 @@ namespace v1 {
 //
 // - Each Shelf has a collection of [Book][google.example.library.v1.Book]
 //   resources, named `shelves/*/books/*`
-class LibraryService GRPC_FINAL {
+class LibraryService final {
  public:
   class StubInterface {
    public:
@@ -136,67 +137,67 @@ class LibraryService GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::example::library::v1::Book>* AsyncUpdateBookRaw(::grpc::ClientContext* context, const ::google::example::library::v1::UpdateBookRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::example::library::v1::Book>* AsyncMoveBookRaw(::grpc::ClientContext* context, const ::google::example::library::v1::MoveBookRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status CreateShelf(::grpc::ClientContext* context, const ::google::example::library::v1::CreateShelfRequest& request, ::google::example::library::v1::Shelf* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateShelf(::grpc::ClientContext* context, const ::google::example::library::v1::CreateShelfRequest& request, ::google::example::library::v1::Shelf* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Shelf>> AsyncCreateShelf(::grpc::ClientContext* context, const ::google::example::library::v1::CreateShelfRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Shelf>>(AsyncCreateShelfRaw(context, request, cq));
     }
-    ::grpc::Status GetShelf(::grpc::ClientContext* context, const ::google::example::library::v1::GetShelfRequest& request, ::google::example::library::v1::Shelf* response) GRPC_OVERRIDE;
+    ::grpc::Status GetShelf(::grpc::ClientContext* context, const ::google::example::library::v1::GetShelfRequest& request, ::google::example::library::v1::Shelf* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Shelf>> AsyncGetShelf(::grpc::ClientContext* context, const ::google::example::library::v1::GetShelfRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Shelf>>(AsyncGetShelfRaw(context, request, cq));
     }
-    ::grpc::Status ListShelves(::grpc::ClientContext* context, const ::google::example::library::v1::ListShelvesRequest& request, ::google::example::library::v1::ListShelvesResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListShelves(::grpc::ClientContext* context, const ::google::example::library::v1::ListShelvesRequest& request, ::google::example::library::v1::ListShelvesResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::ListShelvesResponse>> AsyncListShelves(::grpc::ClientContext* context, const ::google::example::library::v1::ListShelvesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::ListShelvesResponse>>(AsyncListShelvesRaw(context, request, cq));
     }
-    ::grpc::Status DeleteShelf(::grpc::ClientContext* context, const ::google::example::library::v1::DeleteShelfRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteShelf(::grpc::ClientContext* context, const ::google::example::library::v1::DeleteShelfRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteShelf(::grpc::ClientContext* context, const ::google::example::library::v1::DeleteShelfRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteShelfRaw(context, request, cq));
     }
-    ::grpc::Status MergeShelves(::grpc::ClientContext* context, const ::google::example::library::v1::MergeShelvesRequest& request, ::google::example::library::v1::Shelf* response) GRPC_OVERRIDE;
+    ::grpc::Status MergeShelves(::grpc::ClientContext* context, const ::google::example::library::v1::MergeShelvesRequest& request, ::google::example::library::v1::Shelf* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Shelf>> AsyncMergeShelves(::grpc::ClientContext* context, const ::google::example::library::v1::MergeShelvesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Shelf>>(AsyncMergeShelvesRaw(context, request, cq));
     }
-    ::grpc::Status CreateBook(::grpc::ClientContext* context, const ::google::example::library::v1::CreateBookRequest& request, ::google::example::library::v1::Book* response) GRPC_OVERRIDE;
+    ::grpc::Status CreateBook(::grpc::ClientContext* context, const ::google::example::library::v1::CreateBookRequest& request, ::google::example::library::v1::Book* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Book>> AsyncCreateBook(::grpc::ClientContext* context, const ::google::example::library::v1::CreateBookRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Book>>(AsyncCreateBookRaw(context, request, cq));
     }
-    ::grpc::Status GetBook(::grpc::ClientContext* context, const ::google::example::library::v1::GetBookRequest& request, ::google::example::library::v1::Book* response) GRPC_OVERRIDE;
+    ::grpc::Status GetBook(::grpc::ClientContext* context, const ::google::example::library::v1::GetBookRequest& request, ::google::example::library::v1::Book* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Book>> AsyncGetBook(::grpc::ClientContext* context, const ::google::example::library::v1::GetBookRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Book>>(AsyncGetBookRaw(context, request, cq));
     }
-    ::grpc::Status ListBooks(::grpc::ClientContext* context, const ::google::example::library::v1::ListBooksRequest& request, ::google::example::library::v1::ListBooksResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListBooks(::grpc::ClientContext* context, const ::google::example::library::v1::ListBooksRequest& request, ::google::example::library::v1::ListBooksResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::ListBooksResponse>> AsyncListBooks(::grpc::ClientContext* context, const ::google::example::library::v1::ListBooksRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::ListBooksResponse>>(AsyncListBooksRaw(context, request, cq));
     }
-    ::grpc::Status DeleteBook(::grpc::ClientContext* context, const ::google::example::library::v1::DeleteBookRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteBook(::grpc::ClientContext* context, const ::google::example::library::v1::DeleteBookRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteBook(::grpc::ClientContext* context, const ::google::example::library::v1::DeleteBookRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteBookRaw(context, request, cq));
     }
-    ::grpc::Status UpdateBook(::grpc::ClientContext* context, const ::google::example::library::v1::UpdateBookRequest& request, ::google::example::library::v1::Book* response) GRPC_OVERRIDE;
+    ::grpc::Status UpdateBook(::grpc::ClientContext* context, const ::google::example::library::v1::UpdateBookRequest& request, ::google::example::library::v1::Book* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Book>> AsyncUpdateBook(::grpc::ClientContext* context, const ::google::example::library::v1::UpdateBookRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Book>>(AsyncUpdateBookRaw(context, request, cq));
     }
-    ::grpc::Status MoveBook(::grpc::ClientContext* context, const ::google::example::library::v1::MoveBookRequest& request, ::google::example::library::v1::Book* response) GRPC_OVERRIDE;
+    ::grpc::Status MoveBook(::grpc::ClientContext* context, const ::google::example::library::v1::MoveBookRequest& request, ::google::example::library::v1::Book* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Book>> AsyncMoveBook(::grpc::ClientContext* context, const ::google::example::library::v1::MoveBookRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Book>>(AsyncMoveBookRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Shelf>* AsyncCreateShelfRaw(::grpc::ClientContext* context, const ::google::example::library::v1::CreateShelfRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Shelf>* AsyncGetShelfRaw(::grpc::ClientContext* context, const ::google::example::library::v1::GetShelfRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::ListShelvesResponse>* AsyncListShelvesRaw(::grpc::ClientContext* context, const ::google::example::library::v1::ListShelvesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteShelfRaw(::grpc::ClientContext* context, const ::google::example::library::v1::DeleteShelfRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Shelf>* AsyncMergeShelvesRaw(::grpc::ClientContext* context, const ::google::example::library::v1::MergeShelvesRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Book>* AsyncCreateBookRaw(::grpc::ClientContext* context, const ::google::example::library::v1::CreateBookRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Book>* AsyncGetBookRaw(::grpc::ClientContext* context, const ::google::example::library::v1::GetBookRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::ListBooksResponse>* AsyncListBooksRaw(::grpc::ClientContext* context, const ::google::example::library::v1::ListBooksRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteBookRaw(::grpc::ClientContext* context, const ::google::example::library::v1::DeleteBookRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Book>* AsyncUpdateBookRaw(::grpc::ClientContext* context, const ::google::example::library::v1::UpdateBookRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Book>* AsyncMoveBookRaw(::grpc::ClientContext* context, const ::google::example::library::v1::MoveBookRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Shelf>* AsyncCreateShelfRaw(::grpc::ClientContext* context, const ::google::example::library::v1::CreateShelfRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Shelf>* AsyncGetShelfRaw(::grpc::ClientContext* context, const ::google::example::library::v1::GetShelfRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::ListShelvesResponse>* AsyncListShelvesRaw(::grpc::ClientContext* context, const ::google::example::library::v1::ListShelvesRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteShelfRaw(::grpc::ClientContext* context, const ::google::example::library::v1::DeleteShelfRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Shelf>* AsyncMergeShelvesRaw(::grpc::ClientContext* context, const ::google::example::library::v1::MergeShelvesRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Book>* AsyncCreateBookRaw(::grpc::ClientContext* context, const ::google::example::library::v1::CreateBookRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Book>* AsyncGetBookRaw(::grpc::ClientContext* context, const ::google::example::library::v1::GetBookRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::ListBooksResponse>* AsyncListBooksRaw(::grpc::ClientContext* context, const ::google::example::library::v1::ListBooksRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteBookRaw(::grpc::ClientContext* context, const ::google::example::library::v1::DeleteBookRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Book>* AsyncUpdateBookRaw(::grpc::ClientContext* context, const ::google::example::library::v1::UpdateBookRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::example::library::v1::Book>* AsyncMoveBookRaw(::grpc::ClientContext* context, const ::google::example::library::v1::MoveBookRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_CreateShelf_;
     const ::grpc::RpcMethod rpcmethod_GetShelf_;
     const ::grpc::RpcMethod rpcmethod_ListShelves_;
@@ -257,11 +258,11 @@ class LibraryService GRPC_FINAL {
     WithAsyncMethod_CreateShelf() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_CreateShelf() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateShelf() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateShelf(::grpc::ServerContext* context, const ::google::example::library::v1::CreateShelfRequest* request, ::google::example::library::v1::Shelf* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateShelf(::grpc::ServerContext* context, const ::google::example::library::v1::CreateShelfRequest* request, ::google::example::library::v1::Shelf* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -277,11 +278,11 @@ class LibraryService GRPC_FINAL {
     WithAsyncMethod_GetShelf() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetShelf() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetShelf() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetShelf(::grpc::ServerContext* context, const ::google::example::library::v1::GetShelfRequest* request, ::google::example::library::v1::Shelf* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetShelf(::grpc::ServerContext* context, const ::google::example::library::v1::GetShelfRequest* request, ::google::example::library::v1::Shelf* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -297,11 +298,11 @@ class LibraryService GRPC_FINAL {
     WithAsyncMethod_ListShelves() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_ListShelves() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListShelves() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListShelves(::grpc::ServerContext* context, const ::google::example::library::v1::ListShelvesRequest* request, ::google::example::library::v1::ListShelvesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListShelves(::grpc::ServerContext* context, const ::google::example::library::v1::ListShelvesRequest* request, ::google::example::library::v1::ListShelvesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -317,11 +318,11 @@ class LibraryService GRPC_FINAL {
     WithAsyncMethod_DeleteShelf() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_DeleteShelf() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteShelf() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteShelf(::grpc::ServerContext* context, const ::google::example::library::v1::DeleteShelfRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteShelf(::grpc::ServerContext* context, const ::google::example::library::v1::DeleteShelfRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -337,11 +338,11 @@ class LibraryService GRPC_FINAL {
     WithAsyncMethod_MergeShelves() {
       ::grpc::Service::MarkMethodAsync(4);
     }
-    ~WithAsyncMethod_MergeShelves() GRPC_OVERRIDE {
+    ~WithAsyncMethod_MergeShelves() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status MergeShelves(::grpc::ServerContext* context, const ::google::example::library::v1::MergeShelvesRequest* request, ::google::example::library::v1::Shelf* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status MergeShelves(::grpc::ServerContext* context, const ::google::example::library::v1::MergeShelvesRequest* request, ::google::example::library::v1::Shelf* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -357,11 +358,11 @@ class LibraryService GRPC_FINAL {
     WithAsyncMethod_CreateBook() {
       ::grpc::Service::MarkMethodAsync(5);
     }
-    ~WithAsyncMethod_CreateBook() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CreateBook() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateBook(::grpc::ServerContext* context, const ::google::example::library::v1::CreateBookRequest* request, ::google::example::library::v1::Book* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateBook(::grpc::ServerContext* context, const ::google::example::library::v1::CreateBookRequest* request, ::google::example::library::v1::Book* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -377,11 +378,11 @@ class LibraryService GRPC_FINAL {
     WithAsyncMethod_GetBook() {
       ::grpc::Service::MarkMethodAsync(6);
     }
-    ~WithAsyncMethod_GetBook() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetBook() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetBook(::grpc::ServerContext* context, const ::google::example::library::v1::GetBookRequest* request, ::google::example::library::v1::Book* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetBook(::grpc::ServerContext* context, const ::google::example::library::v1::GetBookRequest* request, ::google::example::library::v1::Book* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -397,11 +398,11 @@ class LibraryService GRPC_FINAL {
     WithAsyncMethod_ListBooks() {
       ::grpc::Service::MarkMethodAsync(7);
     }
-    ~WithAsyncMethod_ListBooks() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListBooks() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListBooks(::grpc::ServerContext* context, const ::google::example::library::v1::ListBooksRequest* request, ::google::example::library::v1::ListBooksResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListBooks(::grpc::ServerContext* context, const ::google::example::library::v1::ListBooksRequest* request, ::google::example::library::v1::ListBooksResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -417,11 +418,11 @@ class LibraryService GRPC_FINAL {
     WithAsyncMethod_DeleteBook() {
       ::grpc::Service::MarkMethodAsync(8);
     }
-    ~WithAsyncMethod_DeleteBook() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteBook() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteBook(::grpc::ServerContext* context, const ::google::example::library::v1::DeleteBookRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteBook(::grpc::ServerContext* context, const ::google::example::library::v1::DeleteBookRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -437,11 +438,11 @@ class LibraryService GRPC_FINAL {
     WithAsyncMethod_UpdateBook() {
       ::grpc::Service::MarkMethodAsync(9);
     }
-    ~WithAsyncMethod_UpdateBook() GRPC_OVERRIDE {
+    ~WithAsyncMethod_UpdateBook() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateBook(::grpc::ServerContext* context, const ::google::example::library::v1::UpdateBookRequest* request, ::google::example::library::v1::Book* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateBook(::grpc::ServerContext* context, const ::google::example::library::v1::UpdateBookRequest* request, ::google::example::library::v1::Book* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -457,11 +458,11 @@ class LibraryService GRPC_FINAL {
     WithAsyncMethod_MoveBook() {
       ::grpc::Service::MarkMethodAsync(10);
     }
-    ~WithAsyncMethod_MoveBook() GRPC_OVERRIDE {
+    ~WithAsyncMethod_MoveBook() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status MoveBook(::grpc::ServerContext* context, const ::google::example::library::v1::MoveBookRequest* request, ::google::example::library::v1::Book* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status MoveBook(::grpc::ServerContext* context, const ::google::example::library::v1::MoveBookRequest* request, ::google::example::library::v1::Book* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -478,11 +479,11 @@ class LibraryService GRPC_FINAL {
     WithGenericMethod_CreateShelf() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_CreateShelf() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateShelf() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateShelf(::grpc::ServerContext* context, const ::google::example::library::v1::CreateShelfRequest* request, ::google::example::library::v1::Shelf* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateShelf(::grpc::ServerContext* context, const ::google::example::library::v1::CreateShelfRequest* request, ::google::example::library::v1::Shelf* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -495,11 +496,11 @@ class LibraryService GRPC_FINAL {
     WithGenericMethod_GetShelf() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetShelf() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetShelf() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetShelf(::grpc::ServerContext* context, const ::google::example::library::v1::GetShelfRequest* request, ::google::example::library::v1::Shelf* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetShelf(::grpc::ServerContext* context, const ::google::example::library::v1::GetShelfRequest* request, ::google::example::library::v1::Shelf* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -512,11 +513,11 @@ class LibraryService GRPC_FINAL {
     WithGenericMethod_ListShelves() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_ListShelves() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListShelves() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListShelves(::grpc::ServerContext* context, const ::google::example::library::v1::ListShelvesRequest* request, ::google::example::library::v1::ListShelvesResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListShelves(::grpc::ServerContext* context, const ::google::example::library::v1::ListShelvesRequest* request, ::google::example::library::v1::ListShelvesResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -529,11 +530,11 @@ class LibraryService GRPC_FINAL {
     WithGenericMethod_DeleteShelf() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_DeleteShelf() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteShelf() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteShelf(::grpc::ServerContext* context, const ::google::example::library::v1::DeleteShelfRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteShelf(::grpc::ServerContext* context, const ::google::example::library::v1::DeleteShelfRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -546,11 +547,11 @@ class LibraryService GRPC_FINAL {
     WithGenericMethod_MergeShelves() {
       ::grpc::Service::MarkMethodGeneric(4);
     }
-    ~WithGenericMethod_MergeShelves() GRPC_OVERRIDE {
+    ~WithGenericMethod_MergeShelves() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status MergeShelves(::grpc::ServerContext* context, const ::google::example::library::v1::MergeShelvesRequest* request, ::google::example::library::v1::Shelf* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status MergeShelves(::grpc::ServerContext* context, const ::google::example::library::v1::MergeShelvesRequest* request, ::google::example::library::v1::Shelf* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -563,11 +564,11 @@ class LibraryService GRPC_FINAL {
     WithGenericMethod_CreateBook() {
       ::grpc::Service::MarkMethodGeneric(5);
     }
-    ~WithGenericMethod_CreateBook() GRPC_OVERRIDE {
+    ~WithGenericMethod_CreateBook() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CreateBook(::grpc::ServerContext* context, const ::google::example::library::v1::CreateBookRequest* request, ::google::example::library::v1::Book* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CreateBook(::grpc::ServerContext* context, const ::google::example::library::v1::CreateBookRequest* request, ::google::example::library::v1::Book* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -580,11 +581,11 @@ class LibraryService GRPC_FINAL {
     WithGenericMethod_GetBook() {
       ::grpc::Service::MarkMethodGeneric(6);
     }
-    ~WithGenericMethod_GetBook() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetBook() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetBook(::grpc::ServerContext* context, const ::google::example::library::v1::GetBookRequest* request, ::google::example::library::v1::Book* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetBook(::grpc::ServerContext* context, const ::google::example::library::v1::GetBookRequest* request, ::google::example::library::v1::Book* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -597,11 +598,11 @@ class LibraryService GRPC_FINAL {
     WithGenericMethod_ListBooks() {
       ::grpc::Service::MarkMethodGeneric(7);
     }
-    ~WithGenericMethod_ListBooks() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListBooks() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListBooks(::grpc::ServerContext* context, const ::google::example::library::v1::ListBooksRequest* request, ::google::example::library::v1::ListBooksResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListBooks(::grpc::ServerContext* context, const ::google::example::library::v1::ListBooksRequest* request, ::google::example::library::v1::ListBooksResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -614,11 +615,11 @@ class LibraryService GRPC_FINAL {
     WithGenericMethod_DeleteBook() {
       ::grpc::Service::MarkMethodGeneric(8);
     }
-    ~WithGenericMethod_DeleteBook() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteBook() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteBook(::grpc::ServerContext* context, const ::google::example::library::v1::DeleteBookRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteBook(::grpc::ServerContext* context, const ::google::example::library::v1::DeleteBookRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -631,11 +632,11 @@ class LibraryService GRPC_FINAL {
     WithGenericMethod_UpdateBook() {
       ::grpc::Service::MarkMethodGeneric(9);
     }
-    ~WithGenericMethod_UpdateBook() GRPC_OVERRIDE {
+    ~WithGenericMethod_UpdateBook() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status UpdateBook(::grpc::ServerContext* context, const ::google::example::library::v1::UpdateBookRequest* request, ::google::example::library::v1::Book* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status UpdateBook(::grpc::ServerContext* context, const ::google::example::library::v1::UpdateBookRequest* request, ::google::example::library::v1::Book* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -648,15 +649,238 @@ class LibraryService GRPC_FINAL {
     WithGenericMethod_MoveBook() {
       ::grpc::Service::MarkMethodGeneric(10);
     }
-    ~WithGenericMethod_MoveBook() GRPC_OVERRIDE {
+    ~WithGenericMethod_MoveBook() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status MoveBook(::grpc::ServerContext* context, const ::google::example::library::v1::MoveBookRequest* request, ::google::example::library::v1::Book* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status MoveBook(::grpc::ServerContext* context, const ::google::example::library::v1::MoveBookRequest* request, ::google::example::library::v1::Book* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateShelf : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateShelf() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::example::library::v1::CreateShelfRequest, ::google::example::library::v1::Shelf>(std::bind(&WithStreamedUnaryMethod_CreateShelf<BaseClass>::StreamedCreateShelf, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateShelf() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateShelf(::grpc::ServerContext* context, const ::google::example::library::v1::CreateShelfRequest* request, ::google::example::library::v1::Shelf* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateShelf(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::example::library::v1::CreateShelfRequest,::google::example::library::v1::Shelf>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetShelf : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetShelf() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::example::library::v1::GetShelfRequest, ::google::example::library::v1::Shelf>(std::bind(&WithStreamedUnaryMethod_GetShelf<BaseClass>::StreamedGetShelf, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetShelf() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetShelf(::grpc::ServerContext* context, const ::google::example::library::v1::GetShelfRequest* request, ::google::example::library::v1::Shelf* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetShelf(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::example::library::v1::GetShelfRequest,::google::example::library::v1::Shelf>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListShelves : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListShelves() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::example::library::v1::ListShelvesRequest, ::google::example::library::v1::ListShelvesResponse>(std::bind(&WithStreamedUnaryMethod_ListShelves<BaseClass>::StreamedListShelves, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListShelves() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListShelves(::grpc::ServerContext* context, const ::google::example::library::v1::ListShelvesRequest* request, ::google::example::library::v1::ListShelvesResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListShelves(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::example::library::v1::ListShelvesRequest,::google::example::library::v1::ListShelvesResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteShelf : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteShelf() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::example::library::v1::DeleteShelfRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteShelf<BaseClass>::StreamedDeleteShelf, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteShelf() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteShelf(::grpc::ServerContext* context, const ::google::example::library::v1::DeleteShelfRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteShelf(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::example::library::v1::DeleteShelfRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_MergeShelves : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_MergeShelves() {
+      ::grpc::Service::MarkMethodStreamed(4,
+        new ::grpc::StreamedUnaryHandler< ::google::example::library::v1::MergeShelvesRequest, ::google::example::library::v1::Shelf>(std::bind(&WithStreamedUnaryMethod_MergeShelves<BaseClass>::StreamedMergeShelves, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_MergeShelves() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status MergeShelves(::grpc::ServerContext* context, const ::google::example::library::v1::MergeShelvesRequest* request, ::google::example::library::v1::Shelf* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedMergeShelves(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::example::library::v1::MergeShelvesRequest,::google::example::library::v1::Shelf>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CreateBook : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CreateBook() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::StreamedUnaryHandler< ::google::example::library::v1::CreateBookRequest, ::google::example::library::v1::Book>(std::bind(&WithStreamedUnaryMethod_CreateBook<BaseClass>::StreamedCreateBook, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CreateBook() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CreateBook(::grpc::ServerContext* context, const ::google::example::library::v1::CreateBookRequest* request, ::google::example::library::v1::Book* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCreateBook(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::example::library::v1::CreateBookRequest,::google::example::library::v1::Book>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetBook : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetBook() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::StreamedUnaryHandler< ::google::example::library::v1::GetBookRequest, ::google::example::library::v1::Book>(std::bind(&WithStreamedUnaryMethod_GetBook<BaseClass>::StreamedGetBook, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetBook() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetBook(::grpc::ServerContext* context, const ::google::example::library::v1::GetBookRequest* request, ::google::example::library::v1::Book* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetBook(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::example::library::v1::GetBookRequest,::google::example::library::v1::Book>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListBooks : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListBooks() {
+      ::grpc::Service::MarkMethodStreamed(7,
+        new ::grpc::StreamedUnaryHandler< ::google::example::library::v1::ListBooksRequest, ::google::example::library::v1::ListBooksResponse>(std::bind(&WithStreamedUnaryMethod_ListBooks<BaseClass>::StreamedListBooks, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListBooks() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListBooks(::grpc::ServerContext* context, const ::google::example::library::v1::ListBooksRequest* request, ::google::example::library::v1::ListBooksResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListBooks(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::example::library::v1::ListBooksRequest,::google::example::library::v1::ListBooksResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteBook : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteBook() {
+      ::grpc::Service::MarkMethodStreamed(8,
+        new ::grpc::StreamedUnaryHandler< ::google::example::library::v1::DeleteBookRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteBook<BaseClass>::StreamedDeleteBook, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteBook() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteBook(::grpc::ServerContext* context, const ::google::example::library::v1::DeleteBookRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteBook(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::example::library::v1::DeleteBookRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_UpdateBook : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_UpdateBook() {
+      ::grpc::Service::MarkMethodStreamed(9,
+        new ::grpc::StreamedUnaryHandler< ::google::example::library::v1::UpdateBookRequest, ::google::example::library::v1::Book>(std::bind(&WithStreamedUnaryMethod_UpdateBook<BaseClass>::StreamedUpdateBook, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_UpdateBook() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status UpdateBook(::grpc::ServerContext* context, const ::google::example::library::v1::UpdateBookRequest* request, ::google::example::library::v1::Book* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedUpdateBook(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::example::library::v1::UpdateBookRequest,::google::example::library::v1::Book>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_MoveBook : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_MoveBook() {
+      ::grpc::Service::MarkMethodStreamed(10,
+        new ::grpc::StreamedUnaryHandler< ::google::example::library::v1::MoveBookRequest, ::google::example::library::v1::Book>(std::bind(&WithStreamedUnaryMethod_MoveBook<BaseClass>::StreamedMoveBook, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_MoveBook() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status MoveBook(::grpc::ServerContext* context, const ::google::example::library::v1::MoveBookRequest* request, ::google::example::library::v1::Book* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedMoveBook(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::example::library::v1::MoveBookRequest,::google::example::library::v1::Book>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_CreateShelf<WithStreamedUnaryMethod_GetShelf<WithStreamedUnaryMethod_ListShelves<WithStreamedUnaryMethod_DeleteShelf<WithStreamedUnaryMethod_MergeShelves<WithStreamedUnaryMethod_CreateBook<WithStreamedUnaryMethod_GetBook<WithStreamedUnaryMethod_ListBooks<WithStreamedUnaryMethod_DeleteBook<WithStreamedUnaryMethod_UpdateBook<WithStreamedUnaryMethod_MoveBook<Service > > > > > > > > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_CreateShelf<WithStreamedUnaryMethod_GetShelf<WithStreamedUnaryMethod_ListShelves<WithStreamedUnaryMethod_DeleteShelf<WithStreamedUnaryMethod_MergeShelves<WithStreamedUnaryMethod_CreateBook<WithStreamedUnaryMethod_GetBook<WithStreamedUnaryMethod_ListBooks<WithStreamedUnaryMethod_DeleteBook<WithStreamedUnaryMethod_UpdateBook<WithStreamedUnaryMethod_MoveBook<Service > > > > > > > > > > > StreamedService;
 };
 
 }  // namespace v1

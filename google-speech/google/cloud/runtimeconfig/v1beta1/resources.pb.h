@@ -24,8 +24,8 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
@@ -33,44 +33,6 @@
 #include <google/protobuf/timestamp.pb.h>
 #include "google/rpc/status.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace cloud {
-namespace runtimeconfig {
-namespace v1beta1 {
-class EndCondition;
-class EndConditionDefaultTypeInternal;
-extern EndConditionDefaultTypeInternal _EndCondition_default_instance_;
-class EndCondition_Cardinality;
-class EndCondition_CardinalityDefaultTypeInternal;
-extern EndCondition_CardinalityDefaultTypeInternal _EndCondition_Cardinality_default_instance_;
-class RuntimeConfig;
-class RuntimeConfigDefaultTypeInternal;
-extern RuntimeConfigDefaultTypeInternal _RuntimeConfig_default_instance_;
-class Variable;
-class VariableDefaultTypeInternal;
-extern VariableDefaultTypeInternal _Variable_default_instance_;
-class Waiter;
-class WaiterDefaultTypeInternal;
-extern WaiterDefaultTypeInternal _Waiter_default_instance_;
-}  // namespace v1beta1
-}  // namespace runtimeconfig
-}  // namespace cloud
-namespace protobuf {
-class Duration;
-class DurationDefaultTypeInternal;
-extern DurationDefaultTypeInternal _Duration_default_instance_;
-class Timestamp;
-class TimestampDefaultTypeInternal;
-extern TimestampDefaultTypeInternal _Timestamp_default_instance_;
-}  // namespace protobuf
-namespace rpc {
-class Status;
-class StatusDefaultTypeInternal;
-extern StatusDefaultTypeInternal _Status_default_instance_;
-}  // namespace rpc
-}  // namespace google
 
 namespace google {
 namespace cloud {
@@ -80,6 +42,14 @@ namespace v1beta1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
 void protobuf_InitDefaults_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
+void protobuf_AssignDesc_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
+void protobuf_ShutdownFile_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
+
+class EndCondition;
+class EndCondition_Cardinality;
+class RuntimeConfig;
+class Variable;
+class Waiter;
 
 enum VariableState {
   VARIABLE_STATE_UNSPECIFIED = 0,
@@ -120,58 +90,55 @@ class RuntimeConfig : public ::google::protobuf::Message /* @@protoc_insertion_p
   static const ::google::protobuf::Descriptor* descriptor();
   static const RuntimeConfig& default_instance();
 
-  static inline const RuntimeConfig* internal_default_instance() {
-    return reinterpret_cast<const RuntimeConfig*>(
-               &_RuntimeConfig_default_instance_);
-  }
+  static const RuntimeConfig* internal_default_instance();
 
   void Swap(RuntimeConfig* other);
 
   // implements Message ----------------------------------------------
 
-  inline RuntimeConfig* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline RuntimeConfig* New() const { return New(NULL); }
 
-  RuntimeConfig* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  RuntimeConfig* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const RuntimeConfig& from);
   void MergeFrom(const RuntimeConfig& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(RuntimeConfig* other);
+  void UnsafeMergeFrom(const RuntimeConfig& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -182,7 +149,7 @@ class RuntimeConfig : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // string description = 2;
+  // optional string description = 2;
   void clear_description();
   static const int kDescriptionFieldNumber = 2;
   const ::std::string& description() const;
@@ -202,10 +169,13 @@ class RuntimeConfig : public ::google::protobuf::Message /* @@protoc_insertion_p
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<RuntimeConfig> RuntimeConfig_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Variable : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.runtimeconfig.v1beta1.Variable) */ {
@@ -229,58 +199,55 @@ class Variable : public ::google::protobuf::Message /* @@protoc_insertion_point(
     CONTENTS_NOT_SET = 0,
   };
 
-  static inline const Variable* internal_default_instance() {
-    return reinterpret_cast<const Variable*>(
-               &_Variable_default_instance_);
-  }
+  static const Variable* internal_default_instance();
 
   void Swap(Variable* other);
 
   // implements Message ----------------------------------------------
 
-  inline Variable* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Variable* New() const { return New(NULL); }
 
-  Variable* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Variable* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Variable& from);
   void MergeFrom(const Variable& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Variable* other);
+  void UnsafeMergeFrom(const Variable& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -291,7 +258,7 @@ class Variable : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // bytes value = 2;
+  // optional bytes value = 2;
   private:
   bool has_value() const;
   public:
@@ -305,7 +272,7 @@ class Variable : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_value();
   void set_allocated_value(::std::string* value);
 
-  // string text = 5;
+  // optional string text = 5;
   private:
   bool has_text() const;
   public:
@@ -319,7 +286,7 @@ class Variable : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_text();
   void set_allocated_text(::std::string* text);
 
-  // .google.protobuf.Timestamp update_time = 3;
+  // optional .google.protobuf.Timestamp update_time = 3;
   bool has_update_time() const;
   void clear_update_time();
   static const int kUpdateTimeFieldNumber = 3;
@@ -328,7 +295,7 @@ class Variable : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::protobuf::Timestamp* release_update_time();
   void set_allocated_update_time(::google::protobuf::Timestamp* update_time);
 
-  // .google.cloud.runtimeconfig.v1beta1.VariableState state = 4;
+  // optional .google.cloud.runtimeconfig.v1beta1.VariableState state = 4;
   void clear_state();
   static const int kStateFieldNumber = 4;
   ::google::cloud::runtimeconfig::v1beta1::VariableState state() const;
@@ -337,8 +304,8 @@ class Variable : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ContentsCase contents_case() const;
   // @@protoc_insertion_point(class_scope:google.cloud.runtimeconfig.v1beta1.Variable)
  private:
-  void set_has_value();
-  void set_has_text();
+  inline void set_has_value();
+  inline void set_has_text();
 
   inline bool has_contents() const;
   void clear_contents();
@@ -358,10 +325,13 @@ class Variable : public ::google::protobuf::Message /* @@protoc_insertion_point(
 
   friend void  protobuf_InitDefaults_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Variable> Variable_default_instance_;
+
 // -------------------------------------------------------------------
 
 class EndCondition_Cardinality : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.runtimeconfig.v1beta1.EndCondition.Cardinality) */ {
@@ -379,58 +349,55 @@ class EndCondition_Cardinality : public ::google::protobuf::Message /* @@protoc_
   static const ::google::protobuf::Descriptor* descriptor();
   static const EndCondition_Cardinality& default_instance();
 
-  static inline const EndCondition_Cardinality* internal_default_instance() {
-    return reinterpret_cast<const EndCondition_Cardinality*>(
-               &_EndCondition_Cardinality_default_instance_);
-  }
+  static const EndCondition_Cardinality* internal_default_instance();
 
   void Swap(EndCondition_Cardinality* other);
 
   // implements Message ----------------------------------------------
 
-  inline EndCondition_Cardinality* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline EndCondition_Cardinality* New() const { return New(NULL); }
 
-  EndCondition_Cardinality* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  EndCondition_Cardinality* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const EndCondition_Cardinality& from);
   void MergeFrom(const EndCondition_Cardinality& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(EndCondition_Cardinality* other);
+  void UnsafeMergeFrom(const EndCondition_Cardinality& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string path = 1;
+  // optional string path = 1;
   void clear_path();
   static const int kPathFieldNumber = 1;
   const ::std::string& path() const;
@@ -441,7 +408,7 @@ class EndCondition_Cardinality : public ::google::protobuf::Message /* @@protoc_
   ::std::string* release_path();
   void set_allocated_path(::std::string* path);
 
-  // int32 number = 2;
+  // optional int32 number = 2;
   void clear_number();
   static const int kNumberFieldNumber = 2;
   ::google::protobuf::int32 number() const;
@@ -456,10 +423,13 @@ class EndCondition_Cardinality : public ::google::protobuf::Message /* @@protoc_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<EndCondition_Cardinality> EndCondition_Cardinality_default_instance_;
+
 // -------------------------------------------------------------------
 
 class EndCondition : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.runtimeconfig.v1beta1.EndCondition) */ {
@@ -482,52 +452,49 @@ class EndCondition : public ::google::protobuf::Message /* @@protoc_insertion_po
     CONDITION_NOT_SET = 0,
   };
 
-  static inline const EndCondition* internal_default_instance() {
-    return reinterpret_cast<const EndCondition*>(
-               &_EndCondition_default_instance_);
-  }
+  static const EndCondition* internal_default_instance();
 
   void Swap(EndCondition* other);
 
   // implements Message ----------------------------------------------
 
-  inline EndCondition* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline EndCondition* New() const { return New(NULL); }
 
-  EndCondition* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  EndCondition* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const EndCondition& from);
   void MergeFrom(const EndCondition& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(EndCondition* other);
+  void UnsafeMergeFrom(const EndCondition& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -535,7 +502,7 @@ class EndCondition : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   // accessors -------------------------------------------------------
 
-  // .google.cloud.runtimeconfig.v1beta1.EndCondition.Cardinality cardinality = 1;
+  // optional .google.cloud.runtimeconfig.v1beta1.EndCondition.Cardinality cardinality = 1;
   bool has_cardinality() const;
   void clear_cardinality();
   static const int kCardinalityFieldNumber = 1;
@@ -547,7 +514,7 @@ class EndCondition : public ::google::protobuf::Message /* @@protoc_insertion_po
   ConditionCase condition_case() const;
   // @@protoc_insertion_point(class_scope:google.cloud.runtimeconfig.v1beta1.EndCondition)
  private:
-  void set_has_cardinality();
+  inline void set_has_cardinality();
 
   inline bool has_condition() const;
   void clear_condition();
@@ -563,10 +530,13 @@ class EndCondition : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   friend void  protobuf_InitDefaults_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<EndCondition> EndCondition_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Waiter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.runtimeconfig.v1beta1.Waiter) */ {
@@ -584,58 +554,55 @@ class Waiter : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   static const ::google::protobuf::Descriptor* descriptor();
   static const Waiter& default_instance();
 
-  static inline const Waiter* internal_default_instance() {
-    return reinterpret_cast<const Waiter*>(
-               &_Waiter_default_instance_);
-  }
+  static const Waiter* internal_default_instance();
 
   void Swap(Waiter* other);
 
   // implements Message ----------------------------------------------
 
-  inline Waiter* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Waiter* New() const { return New(NULL); }
 
-  Waiter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Waiter* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Waiter& from);
   void MergeFrom(const Waiter& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Waiter* other);
+  void UnsafeMergeFrom(const Waiter& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -646,7 +613,7 @@ class Waiter : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // .google.protobuf.Duration timeout = 2;
+  // optional .google.protobuf.Duration timeout = 2;
   bool has_timeout() const;
   void clear_timeout();
   static const int kTimeoutFieldNumber = 2;
@@ -655,7 +622,7 @@ class Waiter : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   ::google::protobuf::Duration* release_timeout();
   void set_allocated_timeout(::google::protobuf::Duration* timeout);
 
-  // .google.cloud.runtimeconfig.v1beta1.EndCondition failure = 3;
+  // optional .google.cloud.runtimeconfig.v1beta1.EndCondition failure = 3;
   bool has_failure() const;
   void clear_failure();
   static const int kFailureFieldNumber = 3;
@@ -664,7 +631,7 @@ class Waiter : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   ::google::cloud::runtimeconfig::v1beta1::EndCondition* release_failure();
   void set_allocated_failure(::google::cloud::runtimeconfig::v1beta1::EndCondition* failure);
 
-  // .google.cloud.runtimeconfig.v1beta1.EndCondition success = 4;
+  // optional .google.cloud.runtimeconfig.v1beta1.EndCondition success = 4;
   bool has_success() const;
   void clear_success();
   static const int kSuccessFieldNumber = 4;
@@ -673,7 +640,7 @@ class Waiter : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   ::google::cloud::runtimeconfig::v1beta1::EndCondition* release_success();
   void set_allocated_success(::google::cloud::runtimeconfig::v1beta1::EndCondition* success);
 
-  // .google.protobuf.Timestamp create_time = 5;
+  // optional .google.protobuf.Timestamp create_time = 5;
   bool has_create_time() const;
   void clear_create_time();
   static const int kCreateTimeFieldNumber = 5;
@@ -682,13 +649,13 @@ class Waiter : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   ::google::protobuf::Timestamp* release_create_time();
   void set_allocated_create_time(::google::protobuf::Timestamp* create_time);
 
-  // bool done = 6;
+  // optional bool done = 6;
   void clear_done();
   static const int kDoneFieldNumber = 6;
   bool done() const;
   void set_done(bool value);
 
-  // .google.rpc.Status error = 7;
+  // optional .google.rpc.Status error = 7;
   bool has_error() const;
   void clear_error();
   static const int kErrorFieldNumber = 7;
@@ -711,10 +678,13 @@ class Waiter : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fruntimeconfig_2fv1beta1_2fresources_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Waiter> Waiter_default_instance_;
+
 // ===================================================================
 
 
@@ -723,13 +693,13 @@ class Waiter : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // RuntimeConfig
 
-// string name = 1;
+// optional string name = 1;
 inline void RuntimeConfig::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& RuntimeConfig::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.runtimeconfig.v1beta1.RuntimeConfig.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void RuntimeConfig::set_name(const ::std::string& value) {
   
@@ -767,13 +737,13 @@ inline void RuntimeConfig::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.runtimeconfig.v1beta1.RuntimeConfig.name)
 }
 
-// string description = 2;
+// optional string description = 2;
 inline void RuntimeConfig::clear_description() {
   description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& RuntimeConfig::description() const {
   // @@protoc_insertion_point(field_get:google.cloud.runtimeconfig.v1beta1.RuntimeConfig.description)
-  return description_.GetNoArena();
+  return description_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void RuntimeConfig::set_description(const ::std::string& value) {
   
@@ -811,17 +781,20 @@ inline void RuntimeConfig::set_allocated_description(::std::string* description)
   // @@protoc_insertion_point(field_set_allocated:google.cloud.runtimeconfig.v1beta1.RuntimeConfig.description)
 }
 
+inline const RuntimeConfig* RuntimeConfig::internal_default_instance() {
+  return &RuntimeConfig_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Variable
 
-// string name = 1;
+// optional string name = 1;
 inline void Variable::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Variable::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.runtimeconfig.v1beta1.Variable.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Variable::set_name(const ::std::string& value) {
   
@@ -859,7 +832,7 @@ inline void Variable::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.runtimeconfig.v1beta1.Variable.name)
 }
 
-// bytes value = 2;
+// optional bytes value = 2;
 inline bool Variable::has_value() const {
   return contents_case() == kValue;
 }
@@ -875,7 +848,7 @@ inline void Variable::clear_value() {
 inline const ::std::string& Variable::value() const {
   // @@protoc_insertion_point(field_get:google.cloud.runtimeconfig.v1beta1.Variable.value)
   if (has_value()) {
-    return contents_.value_.GetNoArena();
+    return contents_.value_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -940,7 +913,7 @@ inline void Variable::set_allocated_value(::std::string* value) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.runtimeconfig.v1beta1.Variable.value)
 }
 
-// string text = 5;
+// optional string text = 5;
 inline bool Variable::has_text() const {
   return contents_case() == kText;
 }
@@ -956,7 +929,7 @@ inline void Variable::clear_text() {
 inline const ::std::string& Variable::text() const {
   // @@protoc_insertion_point(field_get:google.cloud.runtimeconfig.v1beta1.Variable.text)
   if (has_text()) {
-    return contents_.text_.GetNoArena();
+    return contents_.text_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -1021,7 +994,7 @@ inline void Variable::set_allocated_text(::std::string* text) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.runtimeconfig.v1beta1.Variable.text)
 }
 
-// .google.protobuf.Timestamp update_time = 3;
+// optional .google.protobuf.Timestamp update_time = 3;
 inline bool Variable::has_update_time() const {
   return this != internal_default_instance() && update_time_ != NULL;
 }
@@ -1065,7 +1038,7 @@ inline void Variable::set_allocated_update_time(::google::protobuf::Timestamp* u
   // @@protoc_insertion_point(field_set_allocated:google.cloud.runtimeconfig.v1beta1.Variable.update_time)
 }
 
-// .google.cloud.runtimeconfig.v1beta1.VariableState state = 4;
+// optional .google.cloud.runtimeconfig.v1beta1.VariableState state = 4;
 inline void Variable::clear_state() {
   state_ = 0;
 }
@@ -1088,17 +1061,20 @@ inline void Variable::clear_has_contents() {
 inline Variable::ContentsCase Variable::contents_case() const {
   return Variable::ContentsCase(_oneof_case_[0]);
 }
+inline const Variable* Variable::internal_default_instance() {
+  return &Variable_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // EndCondition_Cardinality
 
-// string path = 1;
+// optional string path = 1;
 inline void EndCondition_Cardinality::clear_path() {
   path_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& EndCondition_Cardinality::path() const {
   // @@protoc_insertion_point(field_get:google.cloud.runtimeconfig.v1beta1.EndCondition.Cardinality.path)
-  return path_.GetNoArena();
+  return path_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void EndCondition_Cardinality::set_path(const ::std::string& value) {
   
@@ -1136,7 +1112,7 @@ inline void EndCondition_Cardinality::set_allocated_path(::std::string* path) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.runtimeconfig.v1beta1.EndCondition.Cardinality.path)
 }
 
-// int32 number = 2;
+// optional int32 number = 2;
 inline void EndCondition_Cardinality::clear_number() {
   number_ = 0;
 }
@@ -1150,11 +1126,14 @@ inline void EndCondition_Cardinality::set_number(::google::protobuf::int32 value
   // @@protoc_insertion_point(field_set:google.cloud.runtimeconfig.v1beta1.EndCondition.Cardinality.number)
 }
 
+inline const EndCondition_Cardinality* EndCondition_Cardinality::internal_default_instance() {
+  return &EndCondition_Cardinality_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // EndCondition
 
-// .google.cloud.runtimeconfig.v1beta1.EndCondition.Cardinality cardinality = 1;
+// optional .google.cloud.runtimeconfig.v1beta1.EndCondition.Cardinality cardinality = 1;
 inline bool EndCondition::has_cardinality() const {
   return condition_case() == kCardinality;
 }
@@ -1211,17 +1190,20 @@ inline void EndCondition::clear_has_condition() {
 inline EndCondition::ConditionCase EndCondition::condition_case() const {
   return EndCondition::ConditionCase(_oneof_case_[0]);
 }
+inline const EndCondition* EndCondition::internal_default_instance() {
+  return &EndCondition_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Waiter
 
-// string name = 1;
+// optional string name = 1;
 inline void Waiter::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Waiter::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.runtimeconfig.v1beta1.Waiter.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Waiter::set_name(const ::std::string& value) {
   
@@ -1259,7 +1241,7 @@ inline void Waiter::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.runtimeconfig.v1beta1.Waiter.name)
 }
 
-// .google.protobuf.Duration timeout = 2;
+// optional .google.protobuf.Duration timeout = 2;
 inline bool Waiter::has_timeout() const {
   return this != internal_default_instance() && timeout_ != NULL;
 }
@@ -1303,7 +1285,7 @@ inline void Waiter::set_allocated_timeout(::google::protobuf::Duration* timeout)
   // @@protoc_insertion_point(field_set_allocated:google.cloud.runtimeconfig.v1beta1.Waiter.timeout)
 }
 
-// .google.cloud.runtimeconfig.v1beta1.EndCondition failure = 3;
+// optional .google.cloud.runtimeconfig.v1beta1.EndCondition failure = 3;
 inline bool Waiter::has_failure() const {
   return this != internal_default_instance() && failure_ != NULL;
 }
@@ -1342,7 +1324,7 @@ inline void Waiter::set_allocated_failure(::google::cloud::runtimeconfig::v1beta
   // @@protoc_insertion_point(field_set_allocated:google.cloud.runtimeconfig.v1beta1.Waiter.failure)
 }
 
-// .google.cloud.runtimeconfig.v1beta1.EndCondition success = 4;
+// optional .google.cloud.runtimeconfig.v1beta1.EndCondition success = 4;
 inline bool Waiter::has_success() const {
   return this != internal_default_instance() && success_ != NULL;
 }
@@ -1381,7 +1363,7 @@ inline void Waiter::set_allocated_success(::google::cloud::runtimeconfig::v1beta
   // @@protoc_insertion_point(field_set_allocated:google.cloud.runtimeconfig.v1beta1.Waiter.success)
 }
 
-// .google.protobuf.Timestamp create_time = 5;
+// optional .google.protobuf.Timestamp create_time = 5;
 inline bool Waiter::has_create_time() const {
   return this != internal_default_instance() && create_time_ != NULL;
 }
@@ -1425,7 +1407,7 @@ inline void Waiter::set_allocated_create_time(::google::protobuf::Timestamp* cre
   // @@protoc_insertion_point(field_set_allocated:google.cloud.runtimeconfig.v1beta1.Waiter.create_time)
 }
 
-// bool done = 6;
+// optional bool done = 6;
 inline void Waiter::clear_done() {
   done_ = false;
 }
@@ -1439,7 +1421,7 @@ inline void Waiter::set_done(bool value) {
   // @@protoc_insertion_point(field_set:google.cloud.runtimeconfig.v1beta1.Waiter.done)
 }
 
-// .google.rpc.Status error = 7;
+// optional .google.rpc.Status error = 7;
 inline bool Waiter::has_error() const {
   return this != internal_default_instance() && error_ != NULL;
 }
@@ -1478,6 +1460,9 @@ inline void Waiter::set_allocated_error(::google::rpc::Status* error) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.runtimeconfig.v1beta1.Waiter.error)
 }
 
+inline const Waiter* Waiter::internal_default_instance() {
+  return &Waiter_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
@@ -1489,7 +1474,6 @@ inline void Waiter::set_allocated_error(::google::rpc::Status* error) {
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1beta1
 }  // namespace runtimeconfig

@@ -20,91 +20,89 @@
 namespace google {
 namespace genomics {
 namespace v1 {
-class PositionDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Position> {};
-PositionDefaultTypeInternal _Position_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[1];
+const ::google::protobuf::Descriptor* Position_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Position_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fposition_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fposition_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Position, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fgenomics_2fv1_2fposition_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fgenomics_2fv1_2fposition_2eproto() {
+  protobuf_AddDesc_google_2fgenomics_2fv1_2fposition_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/genomics/v1/position.proto");
+  GOOGLE_CHECK(file != NULL);
+  Position_descriptor_ = file->message_type(0);
+  static const int Position_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Position, reference_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Position, position_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Position, reverse_strand_),
   };
-  return offsets;
+  Position_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Position_descriptor_,
+      Position::internal_default_instance(),
+      Position_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Position),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Position, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(Position)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Position_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fgenomics_2fv1_2fposition_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/genomics/v1/position.proto", schemas, file_default_instances, protobuf_Offsets_google_2fgenomics_2fv1_2fposition_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fgenomics_2fv1_2fposition_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Position_descriptor_, Position::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fposition_2eproto() {
-  _Position_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
+  Position_default_instance_.Shutdown();
+  delete Position_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fgenomics_2fv1_2fposition_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _Position_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Position_default_instance_.DefaultConstruct();
+  Position_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fgenomics_2fv1_2fposition_2eproto_once_);
 void protobuf_InitDefaults_google_2fgenomics_2fv1_2fposition_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fgenomics_2fv1_2fposition_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fgenomics_2fv1_2fposition_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fgenomics_2fv1_2fposition_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fgenomics_2fv1_2fposition_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fgenomics_2fv1_2fposition_2eproto();
-  static const char descriptor[] = {
-      "\n!google/genomics/v1/position.proto\022\022goo"
-      "gle.genomics.v1\032\034google/api/annotations."
-      "proto\"L\n\010Position\022\026\n\016reference_name\030\001 \001("
-      "\t\022\020\n\010position\030\002 \001(\003\022\026\n\016reverse_strand\030\003 "
-      "\001(\010Bh\n\026com.google.genomics.v1B\rPositionP"
-      "rotoP\001Z:google.golang.org/genproto/googl"
-      "eapis/genomics/v1;genomics\370\001\001b\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 277);
+    "\n!google/genomics/v1/position.proto\022\022goo"
+    "gle.genomics.v1\032\034google/api/annotations."
+    "proto\"L\n\010Position\022\026\n\016reference_name\030\001 \001("
+    "\t\022\020\n\010position\030\002 \001(\003\022\026\n\016reverse_strand\030\003 "
+    "\001(\010Bh\n\026com.google.genomics.v1B\rPositionP"
+    "rotoP\001Z:google.golang.org/genproto/googl"
+    "eapis/genomics/v1;genomics\370\001\001b\006proto3", 277);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/genomics/v1/position.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -123,6 +121,16 @@ struct StaticDescriptorInitializer_google_2fgenomics_2fv1_2fposition_2eproto {
   }
 } static_descriptor_initializer_google_2fgenomics_2fv1_2fposition_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -133,9 +141,7 @@ const int Position::kReverseStrandFieldNumber;
 
 Position::Position()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2fposition_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2fposition_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.Position)
 }
@@ -149,19 +155,15 @@ Position::Position(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.Position)
 }
+
+void Position::InitAsDefaultInstance() {
+}
+
 Position::Position(const Position& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  reference_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.reference_name().size() > 0) {
-    reference_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.reference_name(),
-      GetArenaNoVirtual());
-  }
-  ::memcpy(&position_, &from.position_,
-    reinterpret_cast<char*>(&reverse_strand_) -
-    reinterpret_cast<char*>(&position_) + sizeof(reverse_strand_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.Position)
 }
 
@@ -199,7 +201,7 @@ void Position::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Position::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return Position_descriptor_;
 }
 
 const Position& Position::default_instance() {
@@ -207,15 +209,36 @@ const Position& Position::default_instance() {
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<Position> Position_default_instance_;
+
 Position* Position::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<Position>(arena);
 }
 
 void Position::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.genomics.v1.Position)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(Position, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<Position*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(position_, reverse_strand_);
   reference_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  ::memset(&position_, 0, reinterpret_cast<char*>(&reverse_strand_) -
-    reinterpret_cast<char*>(&position_) + sizeof(reverse_strand_));
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool Position::MergePartialFromCodedStream(
@@ -224,13 +247,13 @@ bool Position::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.Position)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string reference_name = 1;
+      // optional string reference_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_reference_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -240,12 +263,14 @@ bool Position::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_position;
         break;
       }
 
-      // int64 position = 2;
+      // optional int64 position = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_position:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -253,12 +278,14 @@ bool Position::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_reverse_strand;
         break;
       }
 
-      // bool reverse_strand = 3;
+      // optional bool reverse_strand = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_reverse_strand:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -266,6 +293,7 @@ bool Position::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -293,7 +321,7 @@ failure:
 void Position::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.genomics.v1.Position)
-  // string reference_name = 1;
+  // optional string reference_name = 1;
   if (this->reference_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->reference_name().data(), this->reference_name().length(),
@@ -303,12 +331,12 @@ void Position::SerializeWithCachedSizes(
       1, this->reference_name(), output);
   }
 
-  // int64 position = 2;
+  // optional int64 position = 2;
   if (this->position() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(2, this->position(), output);
   }
 
-  // bool reverse_strand = 3;
+  // optional bool reverse_strand = 3;
   if (this->reverse_strand() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(3, this->reverse_strand(), output);
   }
@@ -320,7 +348,7 @@ void Position::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.Position)
-  // string reference_name = 1;
+  // optional string reference_name = 1;
   if (this->reference_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->reference_name().data(), this->reference_name().length(),
@@ -331,12 +359,12 @@ void Position::SerializeWithCachedSizes(
         1, this->reference_name(), target);
   }
 
-  // int64 position = 2;
+  // optional int64 position = 2;
   if (this->position() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(2, this->position(), target);
   }
 
-  // bool reverse_strand = 3;
+  // optional bool reverse_strand = 3;
   if (this->reverse_strand() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(3, this->reverse_strand(), target);
   }
@@ -349,21 +377,21 @@ size_t Position::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.Position)
   size_t total_size = 0;
 
-  // string reference_name = 1;
+  // optional string reference_name = 1;
   if (this->reference_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->reference_name());
   }
 
-  // int64 position = 2;
+  // optional int64 position = 2;
   if (this->position() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->position());
   }
 
-  // bool reverse_strand = 3;
+  // optional bool reverse_strand = 3;
   if (this->reverse_strand() != 0) {
     total_size += 1 + 1;
   }
@@ -377,7 +405,7 @@ size_t Position::ByteSizeLong() const {
 
 void Position::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.Position)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Position* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Position>(
           &from);
@@ -386,14 +414,21 @@ void Position::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.Position)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Position::MergeFrom(const Position& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.Position)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Position::UnsafeMergeFrom(const Position& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.reference_name().size() > 0) {
     set_reference_name(from.reference_name());
   }
@@ -416,10 +451,11 @@ void Position::CopyFrom(const Position& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.Position)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Position::IsInitialized() const {
+
   return true;
 }
 
@@ -428,13 +464,10 @@ void Position::Swap(Position* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    Position* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    Position temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void Position::UnsafeArenaSwap(Position* other) {
@@ -446,24 +479,28 @@ void Position::InternalSwap(Position* other) {
   reference_name_.Swap(&other->reference_name_);
   std::swap(position_, other->position_);
   std::swap(reverse_strand_, other->reverse_strand_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Position::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Position_descriptor_;
+  metadata.reflection = Position_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Position
 
-// string reference_name = 1;
+// optional string reference_name = 1;
 void Position::clear_reference_name() {
   reference_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& Position::reference_name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Position.reference_name)
-  return reference_name_.Get();
+  return reference_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Position::set_reference_name(const ::std::string& value) {
   
@@ -523,7 +560,7 @@ void Position::unsafe_arena_set_allocated_reference_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.Position.reference_name)
 }
 
-// int64 position = 2;
+// optional int64 position = 2;
 void Position::clear_position() {
   position_ = GOOGLE_LONGLONG(0);
 }
@@ -537,7 +574,7 @@ void Position::set_position(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.Position.position)
 }
 
-// bool reverse_strand = 3;
+// optional bool reverse_strand = 3;
 void Position::clear_reverse_strand() {
   reverse_strand_ = false;
 }
@@ -551,6 +588,9 @@ void Position::set_reverse_strand(bool value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.Position.reverse_strand)
 }
 
+inline const Position* Position::internal_default_instance() {
+  return &Position_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

@@ -24,73 +24,10 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace bigtable {
-namespace v2 {
-class Cell;
-class CellDefaultTypeInternal;
-extern CellDefaultTypeInternal _Cell_default_instance_;
-class Column;
-class ColumnDefaultTypeInternal;
-extern ColumnDefaultTypeInternal _Column_default_instance_;
-class ColumnRange;
-class ColumnRangeDefaultTypeInternal;
-extern ColumnRangeDefaultTypeInternal _ColumnRange_default_instance_;
-class Family;
-class FamilyDefaultTypeInternal;
-extern FamilyDefaultTypeInternal _Family_default_instance_;
-class Mutation;
-class MutationDefaultTypeInternal;
-extern MutationDefaultTypeInternal _Mutation_default_instance_;
-class Mutation_DeleteFromColumn;
-class Mutation_DeleteFromColumnDefaultTypeInternal;
-extern Mutation_DeleteFromColumnDefaultTypeInternal _Mutation_DeleteFromColumn_default_instance_;
-class Mutation_DeleteFromFamily;
-class Mutation_DeleteFromFamilyDefaultTypeInternal;
-extern Mutation_DeleteFromFamilyDefaultTypeInternal _Mutation_DeleteFromFamily_default_instance_;
-class Mutation_DeleteFromRow;
-class Mutation_DeleteFromRowDefaultTypeInternal;
-extern Mutation_DeleteFromRowDefaultTypeInternal _Mutation_DeleteFromRow_default_instance_;
-class Mutation_SetCell;
-class Mutation_SetCellDefaultTypeInternal;
-extern Mutation_SetCellDefaultTypeInternal _Mutation_SetCell_default_instance_;
-class ReadModifyWriteRule;
-class ReadModifyWriteRuleDefaultTypeInternal;
-extern ReadModifyWriteRuleDefaultTypeInternal _ReadModifyWriteRule_default_instance_;
-class Row;
-class RowDefaultTypeInternal;
-extern RowDefaultTypeInternal _Row_default_instance_;
-class RowFilter;
-class RowFilterDefaultTypeInternal;
-extern RowFilterDefaultTypeInternal _RowFilter_default_instance_;
-class RowFilter_Chain;
-class RowFilter_ChainDefaultTypeInternal;
-extern RowFilter_ChainDefaultTypeInternal _RowFilter_Chain_default_instance_;
-class RowFilter_Condition;
-class RowFilter_ConditionDefaultTypeInternal;
-extern RowFilter_ConditionDefaultTypeInternal _RowFilter_Condition_default_instance_;
-class RowFilter_Interleave;
-class RowFilter_InterleaveDefaultTypeInternal;
-extern RowFilter_InterleaveDefaultTypeInternal _RowFilter_Interleave_default_instance_;
-class RowRange;
-class RowRangeDefaultTypeInternal;
-extern RowRangeDefaultTypeInternal _RowRange_default_instance_;
-class RowSet;
-class RowSetDefaultTypeInternal;
-extern RowSetDefaultTypeInternal _RowSet_default_instance_;
-class TimestampRange;
-class TimestampRangeDefaultTypeInternal;
-extern TimestampRangeDefaultTypeInternal _TimestampRange_default_instance_;
-class ValueRange;
-class ValueRangeDefaultTypeInternal;
-extern ValueRangeDefaultTypeInternal _ValueRange_default_instance_;
-}  // namespace v2
-}  // namespace bigtable
-}  // namespace google
 
 namespace google {
 namespace bigtable {
@@ -99,6 +36,28 @@ namespace v2 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto();
 void protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto();
+void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
+void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
+
+class Cell;
+class Column;
+class ColumnRange;
+class Family;
+class Mutation;
+class Mutation_DeleteFromColumn;
+class Mutation_DeleteFromFamily;
+class Mutation_DeleteFromRow;
+class Mutation_SetCell;
+class ReadModifyWriteRule;
+class Row;
+class RowFilter;
+class RowFilter_Chain;
+class RowFilter_Condition;
+class RowFilter_Interleave;
+class RowRange;
+class RowSet;
+class TimestampRange;
+class ValueRange;
 
 // ===================================================================
 
@@ -117,58 +76,55 @@ class Row : public ::google::protobuf::Message /* @@protoc_insertion_point(class
   static const ::google::protobuf::Descriptor* descriptor();
   static const Row& default_instance();
 
-  static inline const Row* internal_default_instance() {
-    return reinterpret_cast<const Row*>(
-               &_Row_default_instance_);
-  }
+  static const Row* internal_default_instance();
 
   void Swap(Row* other);
 
   // implements Message ----------------------------------------------
 
-  inline Row* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Row* New() const { return New(NULL); }
 
-  Row* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Row* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Row& from);
   void MergeFrom(const Row& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Row* other);
+  void UnsafeMergeFrom(const Row& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // bytes key = 1;
+  // optional bytes key = 1;
   void clear_key();
   static const int kKeyFieldNumber = 1;
   const ::std::string& key() const;
@@ -200,10 +156,13 @@ class Row : public ::google::protobuf::Message /* @@protoc_insertion_point(class
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Row> Row_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Family : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.Family) */ {
@@ -221,58 +180,55 @@ class Family : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   static const ::google::protobuf::Descriptor* descriptor();
   static const Family& default_instance();
 
-  static inline const Family* internal_default_instance() {
-    return reinterpret_cast<const Family*>(
-               &_Family_default_instance_);
-  }
+  static const Family* internal_default_instance();
 
   void Swap(Family* other);
 
   // implements Message ----------------------------------------------
 
-  inline Family* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Family* New() const { return New(NULL); }
 
-  Family* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Family* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Family& from);
   void MergeFrom(const Family& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Family* other);
+  void UnsafeMergeFrom(const Family& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -304,10 +260,13 @@ class Family : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Family> Family_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Column : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.Column) */ {
@@ -325,58 +284,55 @@ class Column : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   static const ::google::protobuf::Descriptor* descriptor();
   static const Column& default_instance();
 
-  static inline const Column* internal_default_instance() {
-    return reinterpret_cast<const Column*>(
-               &_Column_default_instance_);
-  }
+  static const Column* internal_default_instance();
 
   void Swap(Column* other);
 
   // implements Message ----------------------------------------------
 
-  inline Column* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Column* New() const { return New(NULL); }
 
-  Column* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Column* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Column& from);
   void MergeFrom(const Column& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Column* other);
+  void UnsafeMergeFrom(const Column& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // bytes qualifier = 1;
+  // optional bytes qualifier = 1;
   void clear_qualifier();
   static const int kQualifierFieldNumber = 1;
   const ::std::string& qualifier() const;
@@ -408,10 +364,13 @@ class Column : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Column> Column_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Cell : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.Cell) */ {
@@ -429,64 +388,61 @@ class Cell : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   static const ::google::protobuf::Descriptor* descriptor();
   static const Cell& default_instance();
 
-  static inline const Cell* internal_default_instance() {
-    return reinterpret_cast<const Cell*>(
-               &_Cell_default_instance_);
-  }
+  static const Cell* internal_default_instance();
 
   void Swap(Cell* other);
 
   // implements Message ----------------------------------------------
 
-  inline Cell* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Cell* New() const { return New(NULL); }
 
-  Cell* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Cell* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Cell& from);
   void MergeFrom(const Cell& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Cell* other);
+  void UnsafeMergeFrom(const Cell& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // int64 timestamp_micros = 1;
+  // optional int64 timestamp_micros = 1;
   void clear_timestamp_micros();
   static const int kTimestampMicrosFieldNumber = 1;
   ::google::protobuf::int64 timestamp_micros() const;
   void set_timestamp_micros(::google::protobuf::int64 value);
 
-  // bytes value = 2;
+  // optional bytes value = 2;
   void clear_value();
   static const int kValueFieldNumber = 2;
   const ::std::string& value() const;
@@ -523,10 +479,13 @@ class Cell : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Cell> Cell_default_instance_;
+
 // -------------------------------------------------------------------
 
 class RowRange : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.RowRange) */ {
@@ -556,58 +515,55 @@ class RowRange : public ::google::protobuf::Message /* @@protoc_insertion_point(
     END_KEY_NOT_SET = 0,
   };
 
-  static inline const RowRange* internal_default_instance() {
-    return reinterpret_cast<const RowRange*>(
-               &_RowRange_default_instance_);
-  }
+  static const RowRange* internal_default_instance();
 
   void Swap(RowRange* other);
 
   // implements Message ----------------------------------------------
 
-  inline RowRange* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline RowRange* New() const { return New(NULL); }
 
-  RowRange* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  RowRange* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const RowRange& from);
   void MergeFrom(const RowRange& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(RowRange* other);
+  void UnsafeMergeFrom(const RowRange& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // bytes start_key_closed = 1;
+  // optional bytes start_key_closed = 1;
   private:
   bool has_start_key_closed() const;
   public:
@@ -621,7 +577,7 @@ class RowRange : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_start_key_closed();
   void set_allocated_start_key_closed(::std::string* start_key_closed);
 
-  // bytes start_key_open = 2;
+  // optional bytes start_key_open = 2;
   private:
   bool has_start_key_open() const;
   public:
@@ -635,7 +591,7 @@ class RowRange : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_start_key_open();
   void set_allocated_start_key_open(::std::string* start_key_open);
 
-  // bytes end_key_open = 3;
+  // optional bytes end_key_open = 3;
   private:
   bool has_end_key_open() const;
   public:
@@ -649,7 +605,7 @@ class RowRange : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_end_key_open();
   void set_allocated_end_key_open(::std::string* end_key_open);
 
-  // bytes end_key_closed = 4;
+  // optional bytes end_key_closed = 4;
   private:
   bool has_end_key_closed() const;
   public:
@@ -667,10 +623,10 @@ class RowRange : public ::google::protobuf::Message /* @@protoc_insertion_point(
   EndKeyCase end_key_case() const;
   // @@protoc_insertion_point(class_scope:google.bigtable.v2.RowRange)
  private:
-  void set_has_start_key_closed();
-  void set_has_start_key_open();
-  void set_has_end_key_open();
-  void set_has_end_key_closed();
+  inline void set_has_start_key_closed();
+  inline void set_has_start_key_open();
+  inline void set_has_end_key_open();
+  inline void set_has_end_key_closed();
 
   inline bool has_start_key() const;
   void clear_start_key();
@@ -696,10 +652,13 @@ class RowRange : public ::google::protobuf::Message /* @@protoc_insertion_point(
 
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<RowRange> RowRange_default_instance_;
+
 // -------------------------------------------------------------------
 
 class RowSet : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.RowSet) */ {
@@ -717,52 +676,49 @@ class RowSet : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   static const ::google::protobuf::Descriptor* descriptor();
   static const RowSet& default_instance();
 
-  static inline const RowSet* internal_default_instance() {
-    return reinterpret_cast<const RowSet*>(
-               &_RowSet_default_instance_);
-  }
+  static const RowSet* internal_default_instance();
 
   void Swap(RowSet* other);
 
   // implements Message ----------------------------------------------
 
-  inline RowSet* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline RowSet* New() const { return New(NULL); }
 
-  RowSet* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  RowSet* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const RowSet& from);
   void MergeFrom(const RowSet& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(RowSet* other);
+  void UnsafeMergeFrom(const RowSet& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -805,10 +761,13 @@ class RowSet : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<RowSet> RowSet_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ColumnRange : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.ColumnRange) */ {
@@ -838,58 +797,55 @@ class ColumnRange : public ::google::protobuf::Message /* @@protoc_insertion_poi
     END_QUALIFIER_NOT_SET = 0,
   };
 
-  static inline const ColumnRange* internal_default_instance() {
-    return reinterpret_cast<const ColumnRange*>(
-               &_ColumnRange_default_instance_);
-  }
+  static const ColumnRange* internal_default_instance();
 
   void Swap(ColumnRange* other);
 
   // implements Message ----------------------------------------------
 
-  inline ColumnRange* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ColumnRange* New() const { return New(NULL); }
 
-  ColumnRange* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ColumnRange* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ColumnRange& from);
   void MergeFrom(const ColumnRange& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ColumnRange* other);
+  void UnsafeMergeFrom(const ColumnRange& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string family_name = 1;
+  // optional string family_name = 1;
   void clear_family_name();
   static const int kFamilyNameFieldNumber = 1;
   const ::std::string& family_name() const;
@@ -900,7 +856,7 @@ class ColumnRange : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::std::string* release_family_name();
   void set_allocated_family_name(::std::string* family_name);
 
-  // bytes start_qualifier_closed = 2;
+  // optional bytes start_qualifier_closed = 2;
   private:
   bool has_start_qualifier_closed() const;
   public:
@@ -914,7 +870,7 @@ class ColumnRange : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::std::string* release_start_qualifier_closed();
   void set_allocated_start_qualifier_closed(::std::string* start_qualifier_closed);
 
-  // bytes start_qualifier_open = 3;
+  // optional bytes start_qualifier_open = 3;
   private:
   bool has_start_qualifier_open() const;
   public:
@@ -928,7 +884,7 @@ class ColumnRange : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::std::string* release_start_qualifier_open();
   void set_allocated_start_qualifier_open(::std::string* start_qualifier_open);
 
-  // bytes end_qualifier_closed = 4;
+  // optional bytes end_qualifier_closed = 4;
   private:
   bool has_end_qualifier_closed() const;
   public:
@@ -942,7 +898,7 @@ class ColumnRange : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::std::string* release_end_qualifier_closed();
   void set_allocated_end_qualifier_closed(::std::string* end_qualifier_closed);
 
-  // bytes end_qualifier_open = 5;
+  // optional bytes end_qualifier_open = 5;
   private:
   bool has_end_qualifier_open() const;
   public:
@@ -960,10 +916,10 @@ class ColumnRange : public ::google::protobuf::Message /* @@protoc_insertion_poi
   EndQualifierCase end_qualifier_case() const;
   // @@protoc_insertion_point(class_scope:google.bigtable.v2.ColumnRange)
  private:
-  void set_has_start_qualifier_closed();
-  void set_has_start_qualifier_open();
-  void set_has_end_qualifier_closed();
-  void set_has_end_qualifier_open();
+  inline void set_has_start_qualifier_closed();
+  inline void set_has_start_qualifier_open();
+  inline void set_has_end_qualifier_closed();
+  inline void set_has_end_qualifier_open();
 
   inline bool has_start_qualifier() const;
   void clear_start_qualifier();
@@ -990,10 +946,13 @@ class ColumnRange : public ::google::protobuf::Message /* @@protoc_insertion_poi
 
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ColumnRange> ColumnRange_default_instance_;
+
 // -------------------------------------------------------------------
 
 class TimestampRange : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.TimestampRange) */ {
@@ -1011,64 +970,61 @@ class TimestampRange : public ::google::protobuf::Message /* @@protoc_insertion_
   static const ::google::protobuf::Descriptor* descriptor();
   static const TimestampRange& default_instance();
 
-  static inline const TimestampRange* internal_default_instance() {
-    return reinterpret_cast<const TimestampRange*>(
-               &_TimestampRange_default_instance_);
-  }
+  static const TimestampRange* internal_default_instance();
 
   void Swap(TimestampRange* other);
 
   // implements Message ----------------------------------------------
 
-  inline TimestampRange* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline TimestampRange* New() const { return New(NULL); }
 
-  TimestampRange* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  TimestampRange* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const TimestampRange& from);
   void MergeFrom(const TimestampRange& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(TimestampRange* other);
+  void UnsafeMergeFrom(const TimestampRange& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // int64 start_timestamp_micros = 1;
+  // optional int64 start_timestamp_micros = 1;
   void clear_start_timestamp_micros();
   static const int kStartTimestampMicrosFieldNumber = 1;
   ::google::protobuf::int64 start_timestamp_micros() const;
   void set_start_timestamp_micros(::google::protobuf::int64 value);
 
-  // int64 end_timestamp_micros = 2;
+  // optional int64 end_timestamp_micros = 2;
   void clear_end_timestamp_micros();
   static const int kEndTimestampMicrosFieldNumber = 2;
   ::google::protobuf::int64 end_timestamp_micros() const;
@@ -1083,10 +1039,13 @@ class TimestampRange : public ::google::protobuf::Message /* @@protoc_insertion_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<TimestampRange> TimestampRange_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ValueRange : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.ValueRange) */ {
@@ -1116,58 +1075,55 @@ class ValueRange : public ::google::protobuf::Message /* @@protoc_insertion_poin
     END_VALUE_NOT_SET = 0,
   };
 
-  static inline const ValueRange* internal_default_instance() {
-    return reinterpret_cast<const ValueRange*>(
-               &_ValueRange_default_instance_);
-  }
+  static const ValueRange* internal_default_instance();
 
   void Swap(ValueRange* other);
 
   // implements Message ----------------------------------------------
 
-  inline ValueRange* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ValueRange* New() const { return New(NULL); }
 
-  ValueRange* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ValueRange* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ValueRange& from);
   void MergeFrom(const ValueRange& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ValueRange* other);
+  void UnsafeMergeFrom(const ValueRange& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // bytes start_value_closed = 1;
+  // optional bytes start_value_closed = 1;
   private:
   bool has_start_value_closed() const;
   public:
@@ -1181,7 +1137,7 @@ class ValueRange : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::std::string* release_start_value_closed();
   void set_allocated_start_value_closed(::std::string* start_value_closed);
 
-  // bytes start_value_open = 2;
+  // optional bytes start_value_open = 2;
   private:
   bool has_start_value_open() const;
   public:
@@ -1195,7 +1151,7 @@ class ValueRange : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::std::string* release_start_value_open();
   void set_allocated_start_value_open(::std::string* start_value_open);
 
-  // bytes end_value_closed = 3;
+  // optional bytes end_value_closed = 3;
   private:
   bool has_end_value_closed() const;
   public:
@@ -1209,7 +1165,7 @@ class ValueRange : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::std::string* release_end_value_closed();
   void set_allocated_end_value_closed(::std::string* end_value_closed);
 
-  // bytes end_value_open = 4;
+  // optional bytes end_value_open = 4;
   private:
   bool has_end_value_open() const;
   public:
@@ -1227,10 +1183,10 @@ class ValueRange : public ::google::protobuf::Message /* @@protoc_insertion_poin
   EndValueCase end_value_case() const;
   // @@protoc_insertion_point(class_scope:google.bigtable.v2.ValueRange)
  private:
-  void set_has_start_value_closed();
-  void set_has_start_value_open();
-  void set_has_end_value_closed();
-  void set_has_end_value_open();
+  inline void set_has_start_value_closed();
+  inline void set_has_start_value_open();
+  inline void set_has_end_value_closed();
+  inline void set_has_end_value_open();
 
   inline bool has_start_value() const;
   void clear_start_value();
@@ -1256,10 +1212,13 @@ class ValueRange : public ::google::protobuf::Message /* @@protoc_insertion_poin
 
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ValueRange> ValueRange_default_instance_;
+
 // -------------------------------------------------------------------
 
 class RowFilter_Chain : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.RowFilter.Chain) */ {
@@ -1277,52 +1236,49 @@ class RowFilter_Chain : public ::google::protobuf::Message /* @@protoc_insertion
   static const ::google::protobuf::Descriptor* descriptor();
   static const RowFilter_Chain& default_instance();
 
-  static inline const RowFilter_Chain* internal_default_instance() {
-    return reinterpret_cast<const RowFilter_Chain*>(
-               &_RowFilter_Chain_default_instance_);
-  }
+  static const RowFilter_Chain* internal_default_instance();
 
   void Swap(RowFilter_Chain* other);
 
   // implements Message ----------------------------------------------
 
-  inline RowFilter_Chain* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline RowFilter_Chain* New() const { return New(NULL); }
 
-  RowFilter_Chain* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  RowFilter_Chain* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const RowFilter_Chain& from);
   void MergeFrom(const RowFilter_Chain& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(RowFilter_Chain* other);
+  void UnsafeMergeFrom(const RowFilter_Chain& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1348,10 +1304,13 @@ class RowFilter_Chain : public ::google::protobuf::Message /* @@protoc_insertion
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<RowFilter_Chain> RowFilter_Chain_default_instance_;
+
 // -------------------------------------------------------------------
 
 class RowFilter_Interleave : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.RowFilter.Interleave) */ {
@@ -1369,52 +1328,49 @@ class RowFilter_Interleave : public ::google::protobuf::Message /* @@protoc_inse
   static const ::google::protobuf::Descriptor* descriptor();
   static const RowFilter_Interleave& default_instance();
 
-  static inline const RowFilter_Interleave* internal_default_instance() {
-    return reinterpret_cast<const RowFilter_Interleave*>(
-               &_RowFilter_Interleave_default_instance_);
-  }
+  static const RowFilter_Interleave* internal_default_instance();
 
   void Swap(RowFilter_Interleave* other);
 
   // implements Message ----------------------------------------------
 
-  inline RowFilter_Interleave* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline RowFilter_Interleave* New() const { return New(NULL); }
 
-  RowFilter_Interleave* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  RowFilter_Interleave* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const RowFilter_Interleave& from);
   void MergeFrom(const RowFilter_Interleave& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(RowFilter_Interleave* other);
+  void UnsafeMergeFrom(const RowFilter_Interleave& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1440,10 +1396,13 @@ class RowFilter_Interleave : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<RowFilter_Interleave> RowFilter_Interleave_default_instance_;
+
 // -------------------------------------------------------------------
 
 class RowFilter_Condition : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.RowFilter.Condition) */ {
@@ -1461,58 +1420,55 @@ class RowFilter_Condition : public ::google::protobuf::Message /* @@protoc_inser
   static const ::google::protobuf::Descriptor* descriptor();
   static const RowFilter_Condition& default_instance();
 
-  static inline const RowFilter_Condition* internal_default_instance() {
-    return reinterpret_cast<const RowFilter_Condition*>(
-               &_RowFilter_Condition_default_instance_);
-  }
+  static const RowFilter_Condition* internal_default_instance();
 
   void Swap(RowFilter_Condition* other);
 
   // implements Message ----------------------------------------------
 
-  inline RowFilter_Condition* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline RowFilter_Condition* New() const { return New(NULL); }
 
-  RowFilter_Condition* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  RowFilter_Condition* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const RowFilter_Condition& from);
   void MergeFrom(const RowFilter_Condition& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(RowFilter_Condition* other);
+  void UnsafeMergeFrom(const RowFilter_Condition& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.bigtable.v2.RowFilter predicate_filter = 1;
+  // optional .google.bigtable.v2.RowFilter predicate_filter = 1;
   bool has_predicate_filter() const;
   void clear_predicate_filter();
   static const int kPredicateFilterFieldNumber = 1;
@@ -1521,7 +1477,7 @@ class RowFilter_Condition : public ::google::protobuf::Message /* @@protoc_inser
   ::google::bigtable::v2::RowFilter* release_predicate_filter();
   void set_allocated_predicate_filter(::google::bigtable::v2::RowFilter* predicate_filter);
 
-  // .google.bigtable.v2.RowFilter true_filter = 2;
+  // optional .google.bigtable.v2.RowFilter true_filter = 2;
   bool has_true_filter() const;
   void clear_true_filter();
   static const int kTrueFilterFieldNumber = 2;
@@ -1530,7 +1486,7 @@ class RowFilter_Condition : public ::google::protobuf::Message /* @@protoc_inser
   ::google::bigtable::v2::RowFilter* release_true_filter();
   void set_allocated_true_filter(::google::bigtable::v2::RowFilter* true_filter);
 
-  // .google.bigtable.v2.RowFilter false_filter = 3;
+  // optional .google.bigtable.v2.RowFilter false_filter = 3;
   bool has_false_filter() const;
   void clear_false_filter();
   static const int kFalseFilterFieldNumber = 3;
@@ -1549,10 +1505,13 @@ class RowFilter_Condition : public ::google::protobuf::Message /* @@protoc_inser
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<RowFilter_Condition> RowFilter_Condition_default_instance_;
+
 // -------------------------------------------------------------------
 
 class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.RowFilter) */ {
@@ -1593,52 +1552,49 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
     FILTER_NOT_SET = 0,
   };
 
-  static inline const RowFilter* internal_default_instance() {
-    return reinterpret_cast<const RowFilter*>(
-               &_RowFilter_default_instance_);
-  }
+  static const RowFilter* internal_default_instance();
 
   void Swap(RowFilter* other);
 
   // implements Message ----------------------------------------------
 
-  inline RowFilter* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline RowFilter* New() const { return New(NULL); }
 
-  RowFilter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  RowFilter* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const RowFilter& from);
   void MergeFrom(const RowFilter& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(RowFilter* other);
+  void UnsafeMergeFrom(const RowFilter& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1648,7 +1604,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   // accessors -------------------------------------------------------
 
-  // .google.bigtable.v2.RowFilter.Chain chain = 1;
+  // optional .google.bigtable.v2.RowFilter.Chain chain = 1;
   bool has_chain() const;
   void clear_chain();
   static const int kChainFieldNumber = 1;
@@ -1657,7 +1613,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::bigtable::v2::RowFilter_Chain* release_chain();
   void set_allocated_chain(::google::bigtable::v2::RowFilter_Chain* chain);
 
-  // .google.bigtable.v2.RowFilter.Interleave interleave = 2;
+  // optional .google.bigtable.v2.RowFilter.Interleave interleave = 2;
   bool has_interleave() const;
   void clear_interleave();
   static const int kInterleaveFieldNumber = 2;
@@ -1666,7 +1622,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::bigtable::v2::RowFilter_Interleave* release_interleave();
   void set_allocated_interleave(::google::bigtable::v2::RowFilter_Interleave* interleave);
 
-  // .google.bigtable.v2.RowFilter.Condition condition = 3;
+  // optional .google.bigtable.v2.RowFilter.Condition condition = 3;
   bool has_condition() const;
   void clear_condition();
   static const int kConditionFieldNumber = 3;
@@ -1675,7 +1631,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::bigtable::v2::RowFilter_Condition* release_condition();
   void set_allocated_condition(::google::bigtable::v2::RowFilter_Condition* condition);
 
-  // bool sink = 16;
+  // optional bool sink = 16;
   private:
   bool has_sink() const;
   public:
@@ -1684,7 +1640,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   bool sink() const;
   void set_sink(bool value);
 
-  // bool pass_all_filter = 17;
+  // optional bool pass_all_filter = 17;
   private:
   bool has_pass_all_filter() const;
   public:
@@ -1693,7 +1649,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   bool pass_all_filter() const;
   void set_pass_all_filter(bool value);
 
-  // bool block_all_filter = 18;
+  // optional bool block_all_filter = 18;
   private:
   bool has_block_all_filter() const;
   public:
@@ -1702,7 +1658,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   bool block_all_filter() const;
   void set_block_all_filter(bool value);
 
-  // bytes row_key_regex_filter = 4;
+  // optional bytes row_key_regex_filter = 4;
   private:
   bool has_row_key_regex_filter() const;
   public:
@@ -1716,7 +1672,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::std::string* release_row_key_regex_filter();
   void set_allocated_row_key_regex_filter(::std::string* row_key_regex_filter);
 
-  // double row_sample_filter = 14;
+  // optional double row_sample_filter = 14;
   private:
   bool has_row_sample_filter() const;
   public:
@@ -1725,7 +1681,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   double row_sample_filter() const;
   void set_row_sample_filter(double value);
 
-  // string family_name_regex_filter = 5;
+  // optional string family_name_regex_filter = 5;
   private:
   bool has_family_name_regex_filter() const;
   public:
@@ -1739,7 +1695,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::std::string* release_family_name_regex_filter();
   void set_allocated_family_name_regex_filter(::std::string* family_name_regex_filter);
 
-  // bytes column_qualifier_regex_filter = 6;
+  // optional bytes column_qualifier_regex_filter = 6;
   private:
   bool has_column_qualifier_regex_filter() const;
   public:
@@ -1753,7 +1709,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::std::string* release_column_qualifier_regex_filter();
   void set_allocated_column_qualifier_regex_filter(::std::string* column_qualifier_regex_filter);
 
-  // .google.bigtable.v2.ColumnRange column_range_filter = 7;
+  // optional .google.bigtable.v2.ColumnRange column_range_filter = 7;
   bool has_column_range_filter() const;
   void clear_column_range_filter();
   static const int kColumnRangeFilterFieldNumber = 7;
@@ -1762,7 +1718,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::bigtable::v2::ColumnRange* release_column_range_filter();
   void set_allocated_column_range_filter(::google::bigtable::v2::ColumnRange* column_range_filter);
 
-  // .google.bigtable.v2.TimestampRange timestamp_range_filter = 8;
+  // optional .google.bigtable.v2.TimestampRange timestamp_range_filter = 8;
   bool has_timestamp_range_filter() const;
   void clear_timestamp_range_filter();
   static const int kTimestampRangeFilterFieldNumber = 8;
@@ -1771,7 +1727,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::bigtable::v2::TimestampRange* release_timestamp_range_filter();
   void set_allocated_timestamp_range_filter(::google::bigtable::v2::TimestampRange* timestamp_range_filter);
 
-  // bytes value_regex_filter = 9;
+  // optional bytes value_regex_filter = 9;
   private:
   bool has_value_regex_filter() const;
   public:
@@ -1785,7 +1741,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::std::string* release_value_regex_filter();
   void set_allocated_value_regex_filter(::std::string* value_regex_filter);
 
-  // .google.bigtable.v2.ValueRange value_range_filter = 15;
+  // optional .google.bigtable.v2.ValueRange value_range_filter = 15;
   bool has_value_range_filter() const;
   void clear_value_range_filter();
   static const int kValueRangeFilterFieldNumber = 15;
@@ -1794,7 +1750,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::bigtable::v2::ValueRange* release_value_range_filter();
   void set_allocated_value_range_filter(::google::bigtable::v2::ValueRange* value_range_filter);
 
-  // int32 cells_per_row_offset_filter = 10;
+  // optional int32 cells_per_row_offset_filter = 10;
   private:
   bool has_cells_per_row_offset_filter() const;
   public:
@@ -1803,7 +1759,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::protobuf::int32 cells_per_row_offset_filter() const;
   void set_cells_per_row_offset_filter(::google::protobuf::int32 value);
 
-  // int32 cells_per_row_limit_filter = 11;
+  // optional int32 cells_per_row_limit_filter = 11;
   private:
   bool has_cells_per_row_limit_filter() const;
   public:
@@ -1812,7 +1768,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::protobuf::int32 cells_per_row_limit_filter() const;
   void set_cells_per_row_limit_filter(::google::protobuf::int32 value);
 
-  // int32 cells_per_column_limit_filter = 12;
+  // optional int32 cells_per_column_limit_filter = 12;
   private:
   bool has_cells_per_column_limit_filter() const;
   public:
@@ -1821,7 +1777,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::protobuf::int32 cells_per_column_limit_filter() const;
   void set_cells_per_column_limit_filter(::google::protobuf::int32 value);
 
-  // bool strip_value_transformer = 13;
+  // optional bool strip_value_transformer = 13;
   private:
   bool has_strip_value_transformer() const;
   public:
@@ -1830,7 +1786,7 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   bool strip_value_transformer() const;
   void set_strip_value_transformer(bool value);
 
-  // string apply_label_transformer = 19;
+  // optional string apply_label_transformer = 19;
   private:
   bool has_apply_label_transformer() const;
   public:
@@ -1847,25 +1803,25 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
   FilterCase filter_case() const;
   // @@protoc_insertion_point(class_scope:google.bigtable.v2.RowFilter)
  private:
-  void set_has_chain();
-  void set_has_interleave();
-  void set_has_condition();
-  void set_has_sink();
-  void set_has_pass_all_filter();
-  void set_has_block_all_filter();
-  void set_has_row_key_regex_filter();
-  void set_has_row_sample_filter();
-  void set_has_family_name_regex_filter();
-  void set_has_column_qualifier_regex_filter();
-  void set_has_column_range_filter();
-  void set_has_timestamp_range_filter();
-  void set_has_value_regex_filter();
-  void set_has_value_range_filter();
-  void set_has_cells_per_row_offset_filter();
-  void set_has_cells_per_row_limit_filter();
-  void set_has_cells_per_column_limit_filter();
-  void set_has_strip_value_transformer();
-  void set_has_apply_label_transformer();
+  inline void set_has_chain();
+  inline void set_has_interleave();
+  inline void set_has_condition();
+  inline void set_has_sink();
+  inline void set_has_pass_all_filter();
+  inline void set_has_block_all_filter();
+  inline void set_has_row_key_regex_filter();
+  inline void set_has_row_sample_filter();
+  inline void set_has_family_name_regex_filter();
+  inline void set_has_column_qualifier_regex_filter();
+  inline void set_has_column_range_filter();
+  inline void set_has_timestamp_range_filter();
+  inline void set_has_value_regex_filter();
+  inline void set_has_value_range_filter();
+  inline void set_has_cells_per_row_offset_filter();
+  inline void set_has_cells_per_row_limit_filter();
+  inline void set_has_cells_per_column_limit_filter();
+  inline void set_has_strip_value_transformer();
+  inline void set_has_apply_label_transformer();
 
   inline bool has_filter() const;
   void clear_filter();
@@ -1899,10 +1855,13 @@ class RowFilter : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<RowFilter> RowFilter_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Mutation_SetCell : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.Mutation.SetCell) */ {
@@ -1920,58 +1879,55 @@ class Mutation_SetCell : public ::google::protobuf::Message /* @@protoc_insertio
   static const ::google::protobuf::Descriptor* descriptor();
   static const Mutation_SetCell& default_instance();
 
-  static inline const Mutation_SetCell* internal_default_instance() {
-    return reinterpret_cast<const Mutation_SetCell*>(
-               &_Mutation_SetCell_default_instance_);
-  }
+  static const Mutation_SetCell* internal_default_instance();
 
   void Swap(Mutation_SetCell* other);
 
   // implements Message ----------------------------------------------
 
-  inline Mutation_SetCell* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Mutation_SetCell* New() const { return New(NULL); }
 
-  Mutation_SetCell* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Mutation_SetCell* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Mutation_SetCell& from);
   void MergeFrom(const Mutation_SetCell& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Mutation_SetCell* other);
+  void UnsafeMergeFrom(const Mutation_SetCell& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string family_name = 1;
+  // optional string family_name = 1;
   void clear_family_name();
   static const int kFamilyNameFieldNumber = 1;
   const ::std::string& family_name() const;
@@ -1982,7 +1938,7 @@ class Mutation_SetCell : public ::google::protobuf::Message /* @@protoc_insertio
   ::std::string* release_family_name();
   void set_allocated_family_name(::std::string* family_name);
 
-  // bytes column_qualifier = 2;
+  // optional bytes column_qualifier = 2;
   void clear_column_qualifier();
   static const int kColumnQualifierFieldNumber = 2;
   const ::std::string& column_qualifier() const;
@@ -1993,13 +1949,13 @@ class Mutation_SetCell : public ::google::protobuf::Message /* @@protoc_insertio
   ::std::string* release_column_qualifier();
   void set_allocated_column_qualifier(::std::string* column_qualifier);
 
-  // int64 timestamp_micros = 3;
+  // optional int64 timestamp_micros = 3;
   void clear_timestamp_micros();
   static const int kTimestampMicrosFieldNumber = 3;
   ::google::protobuf::int64 timestamp_micros() const;
   void set_timestamp_micros(::google::protobuf::int64 value);
 
-  // bytes value = 4;
+  // optional bytes value = 4;
   void clear_value();
   static const int kValueFieldNumber = 4;
   const ::std::string& value() const;
@@ -2021,10 +1977,13 @@ class Mutation_SetCell : public ::google::protobuf::Message /* @@protoc_insertio
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Mutation_SetCell> Mutation_SetCell_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Mutation_DeleteFromColumn : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.Mutation.DeleteFromColumn) */ {
@@ -2042,58 +2001,55 @@ class Mutation_DeleteFromColumn : public ::google::protobuf::Message /* @@protoc
   static const ::google::protobuf::Descriptor* descriptor();
   static const Mutation_DeleteFromColumn& default_instance();
 
-  static inline const Mutation_DeleteFromColumn* internal_default_instance() {
-    return reinterpret_cast<const Mutation_DeleteFromColumn*>(
-               &_Mutation_DeleteFromColumn_default_instance_);
-  }
+  static const Mutation_DeleteFromColumn* internal_default_instance();
 
   void Swap(Mutation_DeleteFromColumn* other);
 
   // implements Message ----------------------------------------------
 
-  inline Mutation_DeleteFromColumn* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Mutation_DeleteFromColumn* New() const { return New(NULL); }
 
-  Mutation_DeleteFromColumn* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Mutation_DeleteFromColumn* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Mutation_DeleteFromColumn& from);
   void MergeFrom(const Mutation_DeleteFromColumn& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Mutation_DeleteFromColumn* other);
+  void UnsafeMergeFrom(const Mutation_DeleteFromColumn& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string family_name = 1;
+  // optional string family_name = 1;
   void clear_family_name();
   static const int kFamilyNameFieldNumber = 1;
   const ::std::string& family_name() const;
@@ -2104,7 +2060,7 @@ class Mutation_DeleteFromColumn : public ::google::protobuf::Message /* @@protoc
   ::std::string* release_family_name();
   void set_allocated_family_name(::std::string* family_name);
 
-  // bytes column_qualifier = 2;
+  // optional bytes column_qualifier = 2;
   void clear_column_qualifier();
   static const int kColumnQualifierFieldNumber = 2;
   const ::std::string& column_qualifier() const;
@@ -2115,7 +2071,7 @@ class Mutation_DeleteFromColumn : public ::google::protobuf::Message /* @@protoc
   ::std::string* release_column_qualifier();
   void set_allocated_column_qualifier(::std::string* column_qualifier);
 
-  // .google.bigtable.v2.TimestampRange time_range = 3;
+  // optional .google.bigtable.v2.TimestampRange time_range = 3;
   bool has_time_range() const;
   void clear_time_range();
   static const int kTimeRangeFieldNumber = 3;
@@ -2134,10 +2090,13 @@ class Mutation_DeleteFromColumn : public ::google::protobuf::Message /* @@protoc
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Mutation_DeleteFromColumn> Mutation_DeleteFromColumn_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Mutation_DeleteFromFamily : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.Mutation.DeleteFromFamily) */ {
@@ -2155,58 +2114,55 @@ class Mutation_DeleteFromFamily : public ::google::protobuf::Message /* @@protoc
   static const ::google::protobuf::Descriptor* descriptor();
   static const Mutation_DeleteFromFamily& default_instance();
 
-  static inline const Mutation_DeleteFromFamily* internal_default_instance() {
-    return reinterpret_cast<const Mutation_DeleteFromFamily*>(
-               &_Mutation_DeleteFromFamily_default_instance_);
-  }
+  static const Mutation_DeleteFromFamily* internal_default_instance();
 
   void Swap(Mutation_DeleteFromFamily* other);
 
   // implements Message ----------------------------------------------
 
-  inline Mutation_DeleteFromFamily* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Mutation_DeleteFromFamily* New() const { return New(NULL); }
 
-  Mutation_DeleteFromFamily* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Mutation_DeleteFromFamily* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Mutation_DeleteFromFamily& from);
   void MergeFrom(const Mutation_DeleteFromFamily& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Mutation_DeleteFromFamily* other);
+  void UnsafeMergeFrom(const Mutation_DeleteFromFamily& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string family_name = 1;
+  // optional string family_name = 1;
   void clear_family_name();
   static const int kFamilyNameFieldNumber = 1;
   const ::std::string& family_name() const;
@@ -2225,10 +2181,13 @@ class Mutation_DeleteFromFamily : public ::google::protobuf::Message /* @@protoc
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Mutation_DeleteFromFamily> Mutation_DeleteFromFamily_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Mutation_DeleteFromRow : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.Mutation.DeleteFromRow) */ {
@@ -2246,52 +2205,49 @@ class Mutation_DeleteFromRow : public ::google::protobuf::Message /* @@protoc_in
   static const ::google::protobuf::Descriptor* descriptor();
   static const Mutation_DeleteFromRow& default_instance();
 
-  static inline const Mutation_DeleteFromRow* internal_default_instance() {
-    return reinterpret_cast<const Mutation_DeleteFromRow*>(
-               &_Mutation_DeleteFromRow_default_instance_);
-  }
+  static const Mutation_DeleteFromRow* internal_default_instance();
 
   void Swap(Mutation_DeleteFromRow* other);
 
   // implements Message ----------------------------------------------
 
-  inline Mutation_DeleteFromRow* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Mutation_DeleteFromRow* New() const { return New(NULL); }
 
-  Mutation_DeleteFromRow* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Mutation_DeleteFromRow* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Mutation_DeleteFromRow& from);
   void MergeFrom(const Mutation_DeleteFromRow& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Mutation_DeleteFromRow* other);
+  void UnsafeMergeFrom(const Mutation_DeleteFromRow& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -2304,10 +2260,13 @@ class Mutation_DeleteFromRow : public ::google::protobuf::Message /* @@protoc_in
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Mutation_DeleteFromRow> Mutation_DeleteFromRow_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Mutation : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.Mutation) */ {
@@ -2333,52 +2292,49 @@ class Mutation : public ::google::protobuf::Message /* @@protoc_insertion_point(
     MUTATION_NOT_SET = 0,
   };
 
-  static inline const Mutation* internal_default_instance() {
-    return reinterpret_cast<const Mutation*>(
-               &_Mutation_default_instance_);
-  }
+  static const Mutation* internal_default_instance();
 
   void Swap(Mutation* other);
 
   // implements Message ----------------------------------------------
 
-  inline Mutation* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Mutation* New() const { return New(NULL); }
 
-  Mutation* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Mutation* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Mutation& from);
   void MergeFrom(const Mutation& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Mutation* other);
+  void UnsafeMergeFrom(const Mutation& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -2389,7 +2345,7 @@ class Mutation : public ::google::protobuf::Message /* @@protoc_insertion_point(
 
   // accessors -------------------------------------------------------
 
-  // .google.bigtable.v2.Mutation.SetCell set_cell = 1;
+  // optional .google.bigtable.v2.Mutation.SetCell set_cell = 1;
   bool has_set_cell() const;
   void clear_set_cell();
   static const int kSetCellFieldNumber = 1;
@@ -2398,7 +2354,7 @@ class Mutation : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::bigtable::v2::Mutation_SetCell* release_set_cell();
   void set_allocated_set_cell(::google::bigtable::v2::Mutation_SetCell* set_cell);
 
-  // .google.bigtable.v2.Mutation.DeleteFromColumn delete_from_column = 2;
+  // optional .google.bigtable.v2.Mutation.DeleteFromColumn delete_from_column = 2;
   bool has_delete_from_column() const;
   void clear_delete_from_column();
   static const int kDeleteFromColumnFieldNumber = 2;
@@ -2407,7 +2363,7 @@ class Mutation : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::bigtable::v2::Mutation_DeleteFromColumn* release_delete_from_column();
   void set_allocated_delete_from_column(::google::bigtable::v2::Mutation_DeleteFromColumn* delete_from_column);
 
-  // .google.bigtable.v2.Mutation.DeleteFromFamily delete_from_family = 3;
+  // optional .google.bigtable.v2.Mutation.DeleteFromFamily delete_from_family = 3;
   bool has_delete_from_family() const;
   void clear_delete_from_family();
   static const int kDeleteFromFamilyFieldNumber = 3;
@@ -2416,7 +2372,7 @@ class Mutation : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::bigtable::v2::Mutation_DeleteFromFamily* release_delete_from_family();
   void set_allocated_delete_from_family(::google::bigtable::v2::Mutation_DeleteFromFamily* delete_from_family);
 
-  // .google.bigtable.v2.Mutation.DeleteFromRow delete_from_row = 4;
+  // optional .google.bigtable.v2.Mutation.DeleteFromRow delete_from_row = 4;
   bool has_delete_from_row() const;
   void clear_delete_from_row();
   static const int kDeleteFromRowFieldNumber = 4;
@@ -2428,10 +2384,10 @@ class Mutation : public ::google::protobuf::Message /* @@protoc_insertion_point(
   MutationCase mutation_case() const;
   // @@protoc_insertion_point(class_scope:google.bigtable.v2.Mutation)
  private:
-  void set_has_set_cell();
-  void set_has_delete_from_column();
-  void set_has_delete_from_family();
-  void set_has_delete_from_row();
+  inline void set_has_set_cell();
+  inline void set_has_delete_from_column();
+  inline void set_has_delete_from_family();
+  inline void set_has_delete_from_row();
 
   inline bool has_mutation() const;
   void clear_mutation();
@@ -2450,10 +2406,13 @@ class Mutation : public ::google::protobuf::Message /* @@protoc_insertion_point(
 
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Mutation> Mutation_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ReadModifyWriteRule : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.v2.ReadModifyWriteRule) */ {
@@ -2477,58 +2436,55 @@ class ReadModifyWriteRule : public ::google::protobuf::Message /* @@protoc_inser
     RULE_NOT_SET = 0,
   };
 
-  static inline const ReadModifyWriteRule* internal_default_instance() {
-    return reinterpret_cast<const ReadModifyWriteRule*>(
-               &_ReadModifyWriteRule_default_instance_);
-  }
+  static const ReadModifyWriteRule* internal_default_instance();
 
   void Swap(ReadModifyWriteRule* other);
 
   // implements Message ----------------------------------------------
 
-  inline ReadModifyWriteRule* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ReadModifyWriteRule* New() const { return New(NULL); }
 
-  ReadModifyWriteRule* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ReadModifyWriteRule* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ReadModifyWriteRule& from);
   void MergeFrom(const ReadModifyWriteRule& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ReadModifyWriteRule* other);
+  void UnsafeMergeFrom(const ReadModifyWriteRule& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string family_name = 1;
+  // optional string family_name = 1;
   void clear_family_name();
   static const int kFamilyNameFieldNumber = 1;
   const ::std::string& family_name() const;
@@ -2539,7 +2495,7 @@ class ReadModifyWriteRule : public ::google::protobuf::Message /* @@protoc_inser
   ::std::string* release_family_name();
   void set_allocated_family_name(::std::string* family_name);
 
-  // bytes column_qualifier = 2;
+  // optional bytes column_qualifier = 2;
   void clear_column_qualifier();
   static const int kColumnQualifierFieldNumber = 2;
   const ::std::string& column_qualifier() const;
@@ -2550,7 +2506,7 @@ class ReadModifyWriteRule : public ::google::protobuf::Message /* @@protoc_inser
   ::std::string* release_column_qualifier();
   void set_allocated_column_qualifier(::std::string* column_qualifier);
 
-  // bytes append_value = 3;
+  // optional bytes append_value = 3;
   private:
   bool has_append_value() const;
   public:
@@ -2564,7 +2520,7 @@ class ReadModifyWriteRule : public ::google::protobuf::Message /* @@protoc_inser
   ::std::string* release_append_value();
   void set_allocated_append_value(::std::string* append_value);
 
-  // int64 increment_amount = 4;
+  // optional int64 increment_amount = 4;
   private:
   bool has_increment_amount() const;
   public:
@@ -2576,8 +2532,8 @@ class ReadModifyWriteRule : public ::google::protobuf::Message /* @@protoc_inser
   RuleCase rule_case() const;
   // @@protoc_insertion_point(class_scope:google.bigtable.v2.ReadModifyWriteRule)
  private:
-  void set_has_append_value();
-  void set_has_increment_amount();
+  inline void set_has_append_value();
+  inline void set_has_increment_amount();
 
   inline bool has_rule() const;
   void clear_rule();
@@ -2596,10 +2552,13 @@ class ReadModifyWriteRule : public ::google::protobuf::Message /* @@protoc_inser
 
   friend void  protobuf_InitDefaults_google_2fbigtable_2fv2_2fdata_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fv2_2fdata_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv2_2fdata_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fv2_2fdata_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fv2_2fdata_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ReadModifyWriteRule> ReadModifyWriteRule_default_instance_;
+
 // ===================================================================
 
 
@@ -2608,13 +2567,13 @@ class ReadModifyWriteRule : public ::google::protobuf::Message /* @@protoc_inser
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Row
 
-// bytes key = 1;
+// optional bytes key = 1;
 inline void Row::clear_key() {
   key_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Row::key() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.Row.key)
-  return key_.GetNoArena();
+  return key_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Row::set_key(const ::std::string& value) {
   
@@ -2682,17 +2641,20 @@ Row::families() const {
   return families_;
 }
 
+inline const Row* Row::internal_default_instance() {
+  return &Row_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Family
 
-// string name = 1;
+// optional string name = 1;
 inline void Family::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Family::name() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.Family.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Family::set_name(const ::std::string& value) {
   
@@ -2760,17 +2722,20 @@ Family::columns() const {
   return columns_;
 }
 
+inline const Family* Family::internal_default_instance() {
+  return &Family_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Column
 
-// bytes qualifier = 1;
+// optional bytes qualifier = 1;
 inline void Column::clear_qualifier() {
   qualifier_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Column::qualifier() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.Column.qualifier)
-  return qualifier_.GetNoArena();
+  return qualifier_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Column::set_qualifier(const ::std::string& value) {
   
@@ -2838,11 +2803,14 @@ Column::cells() const {
   return cells_;
 }
 
+inline const Column* Column::internal_default_instance() {
+  return &Column_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Cell
 
-// int64 timestamp_micros = 1;
+// optional int64 timestamp_micros = 1;
 inline void Cell::clear_timestamp_micros() {
   timestamp_micros_ = GOOGLE_LONGLONG(0);
 }
@@ -2856,13 +2824,13 @@ inline void Cell::set_timestamp_micros(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.bigtable.v2.Cell.timestamp_micros)
 }
 
-// bytes value = 2;
+// optional bytes value = 2;
 inline void Cell::clear_value() {
   value_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Cell::value() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.Cell.value)
-  return value_.GetNoArena();
+  return value_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Cell::set_value(const ::std::string& value) {
   
@@ -2955,11 +2923,14 @@ Cell::mutable_labels() {
   return &labels_;
 }
 
+inline const Cell* Cell::internal_default_instance() {
+  return &Cell_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // RowRange
 
-// bytes start_key_closed = 1;
+// optional bytes start_key_closed = 1;
 inline bool RowRange::has_start_key_closed() const {
   return start_key_case() == kStartKeyClosed;
 }
@@ -2975,7 +2946,7 @@ inline void RowRange::clear_start_key_closed() {
 inline const ::std::string& RowRange::start_key_closed() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.RowRange.start_key_closed)
   if (has_start_key_closed()) {
-    return start_key_.start_key_closed_.GetNoArena();
+    return start_key_.start_key_closed_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3040,7 +3011,7 @@ inline void RowRange::set_allocated_start_key_closed(::std::string* start_key_cl
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.RowRange.start_key_closed)
 }
 
-// bytes start_key_open = 2;
+// optional bytes start_key_open = 2;
 inline bool RowRange::has_start_key_open() const {
   return start_key_case() == kStartKeyOpen;
 }
@@ -3056,7 +3027,7 @@ inline void RowRange::clear_start_key_open() {
 inline const ::std::string& RowRange::start_key_open() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.RowRange.start_key_open)
   if (has_start_key_open()) {
-    return start_key_.start_key_open_.GetNoArena();
+    return start_key_.start_key_open_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3121,7 +3092,7 @@ inline void RowRange::set_allocated_start_key_open(::std::string* start_key_open
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.RowRange.start_key_open)
 }
 
-// bytes end_key_open = 3;
+// optional bytes end_key_open = 3;
 inline bool RowRange::has_end_key_open() const {
   return end_key_case() == kEndKeyOpen;
 }
@@ -3137,7 +3108,7 @@ inline void RowRange::clear_end_key_open() {
 inline const ::std::string& RowRange::end_key_open() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.RowRange.end_key_open)
   if (has_end_key_open()) {
-    return end_key_.end_key_open_.GetNoArena();
+    return end_key_.end_key_open_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3202,7 +3173,7 @@ inline void RowRange::set_allocated_end_key_open(::std::string* end_key_open) {
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.RowRange.end_key_open)
 }
 
-// bytes end_key_closed = 4;
+// optional bytes end_key_closed = 4;
 inline bool RowRange::has_end_key_closed() const {
   return end_key_case() == kEndKeyClosed;
 }
@@ -3218,7 +3189,7 @@ inline void RowRange::clear_end_key_closed() {
 inline const ::std::string& RowRange::end_key_closed() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.RowRange.end_key_closed)
   if (has_end_key_closed()) {
-    return end_key_.end_key_closed_.GetNoArena();
+    return end_key_.end_key_closed_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3300,6 +3271,9 @@ inline RowRange::StartKeyCase RowRange::start_key_case() const {
 }
 inline RowRange::EndKeyCase RowRange::end_key_case() const {
   return RowRange::EndKeyCase(_oneof_case_[1]);
+}
+inline const RowRange* RowRange::internal_default_instance() {
+  return &RowRange_default_instance_.get();
 }
 // -------------------------------------------------------------------
 
@@ -3390,17 +3364,20 @@ RowSet::row_ranges() const {
   return row_ranges_;
 }
 
+inline const RowSet* RowSet::internal_default_instance() {
+  return &RowSet_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ColumnRange
 
-// string family_name = 1;
+// optional string family_name = 1;
 inline void ColumnRange::clear_family_name() {
   family_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ColumnRange::family_name() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.ColumnRange.family_name)
-  return family_name_.GetNoArena();
+  return family_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ColumnRange::set_family_name(const ::std::string& value) {
   
@@ -3438,7 +3415,7 @@ inline void ColumnRange::set_allocated_family_name(::std::string* family_name) {
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.ColumnRange.family_name)
 }
 
-// bytes start_qualifier_closed = 2;
+// optional bytes start_qualifier_closed = 2;
 inline bool ColumnRange::has_start_qualifier_closed() const {
   return start_qualifier_case() == kStartQualifierClosed;
 }
@@ -3454,7 +3431,7 @@ inline void ColumnRange::clear_start_qualifier_closed() {
 inline const ::std::string& ColumnRange::start_qualifier_closed() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.ColumnRange.start_qualifier_closed)
   if (has_start_qualifier_closed()) {
-    return start_qualifier_.start_qualifier_closed_.GetNoArena();
+    return start_qualifier_.start_qualifier_closed_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3519,7 +3496,7 @@ inline void ColumnRange::set_allocated_start_qualifier_closed(::std::string* sta
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.ColumnRange.start_qualifier_closed)
 }
 
-// bytes start_qualifier_open = 3;
+// optional bytes start_qualifier_open = 3;
 inline bool ColumnRange::has_start_qualifier_open() const {
   return start_qualifier_case() == kStartQualifierOpen;
 }
@@ -3535,7 +3512,7 @@ inline void ColumnRange::clear_start_qualifier_open() {
 inline const ::std::string& ColumnRange::start_qualifier_open() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.ColumnRange.start_qualifier_open)
   if (has_start_qualifier_open()) {
-    return start_qualifier_.start_qualifier_open_.GetNoArena();
+    return start_qualifier_.start_qualifier_open_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3600,7 +3577,7 @@ inline void ColumnRange::set_allocated_start_qualifier_open(::std::string* start
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.ColumnRange.start_qualifier_open)
 }
 
-// bytes end_qualifier_closed = 4;
+// optional bytes end_qualifier_closed = 4;
 inline bool ColumnRange::has_end_qualifier_closed() const {
   return end_qualifier_case() == kEndQualifierClosed;
 }
@@ -3616,7 +3593,7 @@ inline void ColumnRange::clear_end_qualifier_closed() {
 inline const ::std::string& ColumnRange::end_qualifier_closed() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.ColumnRange.end_qualifier_closed)
   if (has_end_qualifier_closed()) {
-    return end_qualifier_.end_qualifier_closed_.GetNoArena();
+    return end_qualifier_.end_qualifier_closed_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3681,7 +3658,7 @@ inline void ColumnRange::set_allocated_end_qualifier_closed(::std::string* end_q
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.ColumnRange.end_qualifier_closed)
 }
 
-// bytes end_qualifier_open = 5;
+// optional bytes end_qualifier_open = 5;
 inline bool ColumnRange::has_end_qualifier_open() const {
   return end_qualifier_case() == kEndQualifierOpen;
 }
@@ -3697,7 +3674,7 @@ inline void ColumnRange::clear_end_qualifier_open() {
 inline const ::std::string& ColumnRange::end_qualifier_open() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.ColumnRange.end_qualifier_open)
   if (has_end_qualifier_open()) {
-    return end_qualifier_.end_qualifier_open_.GetNoArena();
+    return end_qualifier_.end_qualifier_open_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3780,11 +3757,14 @@ inline ColumnRange::StartQualifierCase ColumnRange::start_qualifier_case() const
 inline ColumnRange::EndQualifierCase ColumnRange::end_qualifier_case() const {
   return ColumnRange::EndQualifierCase(_oneof_case_[1]);
 }
+inline const ColumnRange* ColumnRange::internal_default_instance() {
+  return &ColumnRange_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // TimestampRange
 
-// int64 start_timestamp_micros = 1;
+// optional int64 start_timestamp_micros = 1;
 inline void TimestampRange::clear_start_timestamp_micros() {
   start_timestamp_micros_ = GOOGLE_LONGLONG(0);
 }
@@ -3798,7 +3778,7 @@ inline void TimestampRange::set_start_timestamp_micros(::google::protobuf::int64
   // @@protoc_insertion_point(field_set:google.bigtable.v2.TimestampRange.start_timestamp_micros)
 }
 
-// int64 end_timestamp_micros = 2;
+// optional int64 end_timestamp_micros = 2;
 inline void TimestampRange::clear_end_timestamp_micros() {
   end_timestamp_micros_ = GOOGLE_LONGLONG(0);
 }
@@ -3812,11 +3792,14 @@ inline void TimestampRange::set_end_timestamp_micros(::google::protobuf::int64 v
   // @@protoc_insertion_point(field_set:google.bigtable.v2.TimestampRange.end_timestamp_micros)
 }
 
+inline const TimestampRange* TimestampRange::internal_default_instance() {
+  return &TimestampRange_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ValueRange
 
-// bytes start_value_closed = 1;
+// optional bytes start_value_closed = 1;
 inline bool ValueRange::has_start_value_closed() const {
   return start_value_case() == kStartValueClosed;
 }
@@ -3832,7 +3815,7 @@ inline void ValueRange::clear_start_value_closed() {
 inline const ::std::string& ValueRange::start_value_closed() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.ValueRange.start_value_closed)
   if (has_start_value_closed()) {
-    return start_value_.start_value_closed_.GetNoArena();
+    return start_value_.start_value_closed_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3897,7 +3880,7 @@ inline void ValueRange::set_allocated_start_value_closed(::std::string* start_va
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.ValueRange.start_value_closed)
 }
 
-// bytes start_value_open = 2;
+// optional bytes start_value_open = 2;
 inline bool ValueRange::has_start_value_open() const {
   return start_value_case() == kStartValueOpen;
 }
@@ -3913,7 +3896,7 @@ inline void ValueRange::clear_start_value_open() {
 inline const ::std::string& ValueRange::start_value_open() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.ValueRange.start_value_open)
   if (has_start_value_open()) {
-    return start_value_.start_value_open_.GetNoArena();
+    return start_value_.start_value_open_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3978,7 +3961,7 @@ inline void ValueRange::set_allocated_start_value_open(::std::string* start_valu
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.ValueRange.start_value_open)
 }
 
-// bytes end_value_closed = 3;
+// optional bytes end_value_closed = 3;
 inline bool ValueRange::has_end_value_closed() const {
   return end_value_case() == kEndValueClosed;
 }
@@ -3994,7 +3977,7 @@ inline void ValueRange::clear_end_value_closed() {
 inline const ::std::string& ValueRange::end_value_closed() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.ValueRange.end_value_closed)
   if (has_end_value_closed()) {
-    return end_value_.end_value_closed_.GetNoArena();
+    return end_value_.end_value_closed_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -4059,7 +4042,7 @@ inline void ValueRange::set_allocated_end_value_closed(::std::string* end_value_
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.ValueRange.end_value_closed)
 }
 
-// bytes end_value_open = 4;
+// optional bytes end_value_open = 4;
 inline bool ValueRange::has_end_value_open() const {
   return end_value_case() == kEndValueOpen;
 }
@@ -4075,7 +4058,7 @@ inline void ValueRange::clear_end_value_open() {
 inline const ::std::string& ValueRange::end_value_open() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.ValueRange.end_value_open)
   if (has_end_value_open()) {
-    return end_value_.end_value_open_.GetNoArena();
+    return end_value_.end_value_open_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -4158,6 +4141,9 @@ inline ValueRange::StartValueCase ValueRange::start_value_case() const {
 inline ValueRange::EndValueCase ValueRange::end_value_case() const {
   return ValueRange::EndValueCase(_oneof_case_[1]);
 }
+inline const ValueRange* ValueRange::internal_default_instance() {
+  return &ValueRange_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // RowFilter_Chain
@@ -4192,6 +4178,9 @@ RowFilter_Chain::filters() const {
   return filters_;
 }
 
+inline const RowFilter_Chain* RowFilter_Chain::internal_default_instance() {
+  return &RowFilter_Chain_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // RowFilter_Interleave
@@ -4226,11 +4215,14 @@ RowFilter_Interleave::filters() const {
   return filters_;
 }
 
+inline const RowFilter_Interleave* RowFilter_Interleave::internal_default_instance() {
+  return &RowFilter_Interleave_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // RowFilter_Condition
 
-// .google.bigtable.v2.RowFilter predicate_filter = 1;
+// optional .google.bigtable.v2.RowFilter predicate_filter = 1;
 inline bool RowFilter_Condition::has_predicate_filter() const {
   return this != internal_default_instance() && predicate_filter_ != NULL;
 }
@@ -4269,7 +4261,7 @@ inline void RowFilter_Condition::set_allocated_predicate_filter(::google::bigtab
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.RowFilter.Condition.predicate_filter)
 }
 
-// .google.bigtable.v2.RowFilter true_filter = 2;
+// optional .google.bigtable.v2.RowFilter true_filter = 2;
 inline bool RowFilter_Condition::has_true_filter() const {
   return this != internal_default_instance() && true_filter_ != NULL;
 }
@@ -4308,7 +4300,7 @@ inline void RowFilter_Condition::set_allocated_true_filter(::google::bigtable::v
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.RowFilter.Condition.true_filter)
 }
 
-// .google.bigtable.v2.RowFilter false_filter = 3;
+// optional .google.bigtable.v2.RowFilter false_filter = 3;
 inline bool RowFilter_Condition::has_false_filter() const {
   return this != internal_default_instance() && false_filter_ != NULL;
 }
@@ -4347,11 +4339,14 @@ inline void RowFilter_Condition::set_allocated_false_filter(::google::bigtable::
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.RowFilter.Condition.false_filter)
 }
 
+inline const RowFilter_Condition* RowFilter_Condition::internal_default_instance() {
+  return &RowFilter_Condition_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // RowFilter
 
-// .google.bigtable.v2.RowFilter.Chain chain = 1;
+// optional .google.bigtable.v2.RowFilter.Chain chain = 1;
 inline bool RowFilter::has_chain() const {
   return filter_case() == kChain;
 }
@@ -4399,7 +4394,7 @@ inline void RowFilter::set_allocated_chain(::google::bigtable::v2::RowFilter_Cha
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.RowFilter.chain)
 }
 
-// .google.bigtable.v2.RowFilter.Interleave interleave = 2;
+// optional .google.bigtable.v2.RowFilter.Interleave interleave = 2;
 inline bool RowFilter::has_interleave() const {
   return filter_case() == kInterleave;
 }
@@ -4447,7 +4442,7 @@ inline void RowFilter::set_allocated_interleave(::google::bigtable::v2::RowFilte
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.RowFilter.interleave)
 }
 
-// .google.bigtable.v2.RowFilter.Condition condition = 3;
+// optional .google.bigtable.v2.RowFilter.Condition condition = 3;
 inline bool RowFilter::has_condition() const {
   return filter_case() == kCondition;
 }
@@ -4495,7 +4490,7 @@ inline void RowFilter::set_allocated_condition(::google::bigtable::v2::RowFilter
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.RowFilter.condition)
 }
 
-// bool sink = 16;
+// optional bool sink = 16;
 inline bool RowFilter::has_sink() const {
   return filter_case() == kSink;
 }
@@ -4524,7 +4519,7 @@ inline void RowFilter::set_sink(bool value) {
   // @@protoc_insertion_point(field_set:google.bigtable.v2.RowFilter.sink)
 }
 
-// bool pass_all_filter = 17;
+// optional bool pass_all_filter = 17;
 inline bool RowFilter::has_pass_all_filter() const {
   return filter_case() == kPassAllFilter;
 }
@@ -4553,7 +4548,7 @@ inline void RowFilter::set_pass_all_filter(bool value) {
   // @@protoc_insertion_point(field_set:google.bigtable.v2.RowFilter.pass_all_filter)
 }
 
-// bool block_all_filter = 18;
+// optional bool block_all_filter = 18;
 inline bool RowFilter::has_block_all_filter() const {
   return filter_case() == kBlockAllFilter;
 }
@@ -4582,7 +4577,7 @@ inline void RowFilter::set_block_all_filter(bool value) {
   // @@protoc_insertion_point(field_set:google.bigtable.v2.RowFilter.block_all_filter)
 }
 
-// bytes row_key_regex_filter = 4;
+// optional bytes row_key_regex_filter = 4;
 inline bool RowFilter::has_row_key_regex_filter() const {
   return filter_case() == kRowKeyRegexFilter;
 }
@@ -4598,7 +4593,7 @@ inline void RowFilter::clear_row_key_regex_filter() {
 inline const ::std::string& RowFilter::row_key_regex_filter() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.RowFilter.row_key_regex_filter)
   if (has_row_key_regex_filter()) {
-    return filter_.row_key_regex_filter_.GetNoArena();
+    return filter_.row_key_regex_filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -4663,7 +4658,7 @@ inline void RowFilter::set_allocated_row_key_regex_filter(::std::string* row_key
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.RowFilter.row_key_regex_filter)
 }
 
-// double row_sample_filter = 14;
+// optional double row_sample_filter = 14;
 inline bool RowFilter::has_row_sample_filter() const {
   return filter_case() == kRowSampleFilter;
 }
@@ -4692,7 +4687,7 @@ inline void RowFilter::set_row_sample_filter(double value) {
   // @@protoc_insertion_point(field_set:google.bigtable.v2.RowFilter.row_sample_filter)
 }
 
-// string family_name_regex_filter = 5;
+// optional string family_name_regex_filter = 5;
 inline bool RowFilter::has_family_name_regex_filter() const {
   return filter_case() == kFamilyNameRegexFilter;
 }
@@ -4708,7 +4703,7 @@ inline void RowFilter::clear_family_name_regex_filter() {
 inline const ::std::string& RowFilter::family_name_regex_filter() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.RowFilter.family_name_regex_filter)
   if (has_family_name_regex_filter()) {
-    return filter_.family_name_regex_filter_.GetNoArena();
+    return filter_.family_name_regex_filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -4773,7 +4768,7 @@ inline void RowFilter::set_allocated_family_name_regex_filter(::std::string* fam
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.RowFilter.family_name_regex_filter)
 }
 
-// bytes column_qualifier_regex_filter = 6;
+// optional bytes column_qualifier_regex_filter = 6;
 inline bool RowFilter::has_column_qualifier_regex_filter() const {
   return filter_case() == kColumnQualifierRegexFilter;
 }
@@ -4789,7 +4784,7 @@ inline void RowFilter::clear_column_qualifier_regex_filter() {
 inline const ::std::string& RowFilter::column_qualifier_regex_filter() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.RowFilter.column_qualifier_regex_filter)
   if (has_column_qualifier_regex_filter()) {
-    return filter_.column_qualifier_regex_filter_.GetNoArena();
+    return filter_.column_qualifier_regex_filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -4854,7 +4849,7 @@ inline void RowFilter::set_allocated_column_qualifier_regex_filter(::std::string
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.RowFilter.column_qualifier_regex_filter)
 }
 
-// .google.bigtable.v2.ColumnRange column_range_filter = 7;
+// optional .google.bigtable.v2.ColumnRange column_range_filter = 7;
 inline bool RowFilter::has_column_range_filter() const {
   return filter_case() == kColumnRangeFilter;
 }
@@ -4902,7 +4897,7 @@ inline void RowFilter::set_allocated_column_range_filter(::google::bigtable::v2:
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.RowFilter.column_range_filter)
 }
 
-// .google.bigtable.v2.TimestampRange timestamp_range_filter = 8;
+// optional .google.bigtable.v2.TimestampRange timestamp_range_filter = 8;
 inline bool RowFilter::has_timestamp_range_filter() const {
   return filter_case() == kTimestampRangeFilter;
 }
@@ -4950,7 +4945,7 @@ inline void RowFilter::set_allocated_timestamp_range_filter(::google::bigtable::
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.RowFilter.timestamp_range_filter)
 }
 
-// bytes value_regex_filter = 9;
+// optional bytes value_regex_filter = 9;
 inline bool RowFilter::has_value_regex_filter() const {
   return filter_case() == kValueRegexFilter;
 }
@@ -4966,7 +4961,7 @@ inline void RowFilter::clear_value_regex_filter() {
 inline const ::std::string& RowFilter::value_regex_filter() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.RowFilter.value_regex_filter)
   if (has_value_regex_filter()) {
-    return filter_.value_regex_filter_.GetNoArena();
+    return filter_.value_regex_filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -5031,7 +5026,7 @@ inline void RowFilter::set_allocated_value_regex_filter(::std::string* value_reg
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.RowFilter.value_regex_filter)
 }
 
-// .google.bigtable.v2.ValueRange value_range_filter = 15;
+// optional .google.bigtable.v2.ValueRange value_range_filter = 15;
 inline bool RowFilter::has_value_range_filter() const {
   return filter_case() == kValueRangeFilter;
 }
@@ -5079,7 +5074,7 @@ inline void RowFilter::set_allocated_value_range_filter(::google::bigtable::v2::
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.RowFilter.value_range_filter)
 }
 
-// int32 cells_per_row_offset_filter = 10;
+// optional int32 cells_per_row_offset_filter = 10;
 inline bool RowFilter::has_cells_per_row_offset_filter() const {
   return filter_case() == kCellsPerRowOffsetFilter;
 }
@@ -5108,7 +5103,7 @@ inline void RowFilter::set_cells_per_row_offset_filter(::google::protobuf::int32
   // @@protoc_insertion_point(field_set:google.bigtable.v2.RowFilter.cells_per_row_offset_filter)
 }
 
-// int32 cells_per_row_limit_filter = 11;
+// optional int32 cells_per_row_limit_filter = 11;
 inline bool RowFilter::has_cells_per_row_limit_filter() const {
   return filter_case() == kCellsPerRowLimitFilter;
 }
@@ -5137,7 +5132,7 @@ inline void RowFilter::set_cells_per_row_limit_filter(::google::protobuf::int32 
   // @@protoc_insertion_point(field_set:google.bigtable.v2.RowFilter.cells_per_row_limit_filter)
 }
 
-// int32 cells_per_column_limit_filter = 12;
+// optional int32 cells_per_column_limit_filter = 12;
 inline bool RowFilter::has_cells_per_column_limit_filter() const {
   return filter_case() == kCellsPerColumnLimitFilter;
 }
@@ -5166,7 +5161,7 @@ inline void RowFilter::set_cells_per_column_limit_filter(::google::protobuf::int
   // @@protoc_insertion_point(field_set:google.bigtable.v2.RowFilter.cells_per_column_limit_filter)
 }
 
-// bool strip_value_transformer = 13;
+// optional bool strip_value_transformer = 13;
 inline bool RowFilter::has_strip_value_transformer() const {
   return filter_case() == kStripValueTransformer;
 }
@@ -5195,7 +5190,7 @@ inline void RowFilter::set_strip_value_transformer(bool value) {
   // @@protoc_insertion_point(field_set:google.bigtable.v2.RowFilter.strip_value_transformer)
 }
 
-// string apply_label_transformer = 19;
+// optional string apply_label_transformer = 19;
 inline bool RowFilter::has_apply_label_transformer() const {
   return filter_case() == kApplyLabelTransformer;
 }
@@ -5211,7 +5206,7 @@ inline void RowFilter::clear_apply_label_transformer() {
 inline const ::std::string& RowFilter::apply_label_transformer() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.RowFilter.apply_label_transformer)
   if (has_apply_label_transformer()) {
-    return filter_.apply_label_transformer_.GetNoArena();
+    return filter_.apply_label_transformer_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -5285,17 +5280,20 @@ inline void RowFilter::clear_has_filter() {
 inline RowFilter::FilterCase RowFilter::filter_case() const {
   return RowFilter::FilterCase(_oneof_case_[0]);
 }
+inline const RowFilter* RowFilter::internal_default_instance() {
+  return &RowFilter_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Mutation_SetCell
 
-// string family_name = 1;
+// optional string family_name = 1;
 inline void Mutation_SetCell::clear_family_name() {
   family_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Mutation_SetCell::family_name() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.Mutation.SetCell.family_name)
-  return family_name_.GetNoArena();
+  return family_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Mutation_SetCell::set_family_name(const ::std::string& value) {
   
@@ -5333,13 +5331,13 @@ inline void Mutation_SetCell::set_allocated_family_name(::std::string* family_na
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.Mutation.SetCell.family_name)
 }
 
-// bytes column_qualifier = 2;
+// optional bytes column_qualifier = 2;
 inline void Mutation_SetCell::clear_column_qualifier() {
   column_qualifier_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Mutation_SetCell::column_qualifier() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.Mutation.SetCell.column_qualifier)
-  return column_qualifier_.GetNoArena();
+  return column_qualifier_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Mutation_SetCell::set_column_qualifier(const ::std::string& value) {
   
@@ -5377,7 +5375,7 @@ inline void Mutation_SetCell::set_allocated_column_qualifier(::std::string* colu
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.Mutation.SetCell.column_qualifier)
 }
 
-// int64 timestamp_micros = 3;
+// optional int64 timestamp_micros = 3;
 inline void Mutation_SetCell::clear_timestamp_micros() {
   timestamp_micros_ = GOOGLE_LONGLONG(0);
 }
@@ -5391,13 +5389,13 @@ inline void Mutation_SetCell::set_timestamp_micros(::google::protobuf::int64 val
   // @@protoc_insertion_point(field_set:google.bigtable.v2.Mutation.SetCell.timestamp_micros)
 }
 
-// bytes value = 4;
+// optional bytes value = 4;
 inline void Mutation_SetCell::clear_value() {
   value_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Mutation_SetCell::value() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.Mutation.SetCell.value)
-  return value_.GetNoArena();
+  return value_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Mutation_SetCell::set_value(const ::std::string& value) {
   
@@ -5435,17 +5433,20 @@ inline void Mutation_SetCell::set_allocated_value(::std::string* value) {
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.Mutation.SetCell.value)
 }
 
+inline const Mutation_SetCell* Mutation_SetCell::internal_default_instance() {
+  return &Mutation_SetCell_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Mutation_DeleteFromColumn
 
-// string family_name = 1;
+// optional string family_name = 1;
 inline void Mutation_DeleteFromColumn::clear_family_name() {
   family_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Mutation_DeleteFromColumn::family_name() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.Mutation.DeleteFromColumn.family_name)
-  return family_name_.GetNoArena();
+  return family_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Mutation_DeleteFromColumn::set_family_name(const ::std::string& value) {
   
@@ -5483,13 +5484,13 @@ inline void Mutation_DeleteFromColumn::set_allocated_family_name(::std::string* 
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.Mutation.DeleteFromColumn.family_name)
 }
 
-// bytes column_qualifier = 2;
+// optional bytes column_qualifier = 2;
 inline void Mutation_DeleteFromColumn::clear_column_qualifier() {
   column_qualifier_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Mutation_DeleteFromColumn::column_qualifier() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.Mutation.DeleteFromColumn.column_qualifier)
-  return column_qualifier_.GetNoArena();
+  return column_qualifier_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Mutation_DeleteFromColumn::set_column_qualifier(const ::std::string& value) {
   
@@ -5527,7 +5528,7 @@ inline void Mutation_DeleteFromColumn::set_allocated_column_qualifier(::std::str
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.Mutation.DeleteFromColumn.column_qualifier)
 }
 
-// .google.bigtable.v2.TimestampRange time_range = 3;
+// optional .google.bigtable.v2.TimestampRange time_range = 3;
 inline bool Mutation_DeleteFromColumn::has_time_range() const {
   return this != internal_default_instance() && time_range_ != NULL;
 }
@@ -5566,17 +5567,20 @@ inline void Mutation_DeleteFromColumn::set_allocated_time_range(::google::bigtab
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.Mutation.DeleteFromColumn.time_range)
 }
 
+inline const Mutation_DeleteFromColumn* Mutation_DeleteFromColumn::internal_default_instance() {
+  return &Mutation_DeleteFromColumn_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Mutation_DeleteFromFamily
 
-// string family_name = 1;
+// optional string family_name = 1;
 inline void Mutation_DeleteFromFamily::clear_family_name() {
   family_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Mutation_DeleteFromFamily::family_name() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.Mutation.DeleteFromFamily.family_name)
-  return family_name_.GetNoArena();
+  return family_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Mutation_DeleteFromFamily::set_family_name(const ::std::string& value) {
   
@@ -5614,15 +5618,21 @@ inline void Mutation_DeleteFromFamily::set_allocated_family_name(::std::string* 
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.Mutation.DeleteFromFamily.family_name)
 }
 
+inline const Mutation_DeleteFromFamily* Mutation_DeleteFromFamily::internal_default_instance() {
+  return &Mutation_DeleteFromFamily_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Mutation_DeleteFromRow
 
+inline const Mutation_DeleteFromRow* Mutation_DeleteFromRow::internal_default_instance() {
+  return &Mutation_DeleteFromRow_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Mutation
 
-// .google.bigtable.v2.Mutation.SetCell set_cell = 1;
+// optional .google.bigtable.v2.Mutation.SetCell set_cell = 1;
 inline bool Mutation::has_set_cell() const {
   return mutation_case() == kSetCell;
 }
@@ -5670,7 +5680,7 @@ inline void Mutation::set_allocated_set_cell(::google::bigtable::v2::Mutation_Se
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.Mutation.set_cell)
 }
 
-// .google.bigtable.v2.Mutation.DeleteFromColumn delete_from_column = 2;
+// optional .google.bigtable.v2.Mutation.DeleteFromColumn delete_from_column = 2;
 inline bool Mutation::has_delete_from_column() const {
   return mutation_case() == kDeleteFromColumn;
 }
@@ -5718,7 +5728,7 @@ inline void Mutation::set_allocated_delete_from_column(::google::bigtable::v2::M
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.Mutation.delete_from_column)
 }
 
-// .google.bigtable.v2.Mutation.DeleteFromFamily delete_from_family = 3;
+// optional .google.bigtable.v2.Mutation.DeleteFromFamily delete_from_family = 3;
 inline bool Mutation::has_delete_from_family() const {
   return mutation_case() == kDeleteFromFamily;
 }
@@ -5766,7 +5776,7 @@ inline void Mutation::set_allocated_delete_from_family(::google::bigtable::v2::M
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.Mutation.delete_from_family)
 }
 
-// .google.bigtable.v2.Mutation.DeleteFromRow delete_from_row = 4;
+// optional .google.bigtable.v2.Mutation.DeleteFromRow delete_from_row = 4;
 inline bool Mutation::has_delete_from_row() const {
   return mutation_case() == kDeleteFromRow;
 }
@@ -5823,17 +5833,20 @@ inline void Mutation::clear_has_mutation() {
 inline Mutation::MutationCase Mutation::mutation_case() const {
   return Mutation::MutationCase(_oneof_case_[0]);
 }
+inline const Mutation* Mutation::internal_default_instance() {
+  return &Mutation_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ReadModifyWriteRule
 
-// string family_name = 1;
+// optional string family_name = 1;
 inline void ReadModifyWriteRule::clear_family_name() {
   family_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ReadModifyWriteRule::family_name() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.ReadModifyWriteRule.family_name)
-  return family_name_.GetNoArena();
+  return family_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadModifyWriteRule::set_family_name(const ::std::string& value) {
   
@@ -5871,13 +5884,13 @@ inline void ReadModifyWriteRule::set_allocated_family_name(::std::string* family
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.ReadModifyWriteRule.family_name)
 }
 
-// bytes column_qualifier = 2;
+// optional bytes column_qualifier = 2;
 inline void ReadModifyWriteRule::clear_column_qualifier() {
   column_qualifier_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ReadModifyWriteRule::column_qualifier() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.ReadModifyWriteRule.column_qualifier)
-  return column_qualifier_.GetNoArena();
+  return column_qualifier_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadModifyWriteRule::set_column_qualifier(const ::std::string& value) {
   
@@ -5915,7 +5928,7 @@ inline void ReadModifyWriteRule::set_allocated_column_qualifier(::std::string* c
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.ReadModifyWriteRule.column_qualifier)
 }
 
-// bytes append_value = 3;
+// optional bytes append_value = 3;
 inline bool ReadModifyWriteRule::has_append_value() const {
   return rule_case() == kAppendValue;
 }
@@ -5931,7 +5944,7 @@ inline void ReadModifyWriteRule::clear_append_value() {
 inline const ::std::string& ReadModifyWriteRule::append_value() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v2.ReadModifyWriteRule.append_value)
   if (has_append_value()) {
-    return rule_.append_value_.GetNoArena();
+    return rule_.append_value_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -5996,7 +6009,7 @@ inline void ReadModifyWriteRule::set_allocated_append_value(::std::string* appen
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v2.ReadModifyWriteRule.append_value)
 }
 
-// int64 increment_amount = 4;
+// optional int64 increment_amount = 4;
 inline bool ReadModifyWriteRule::has_increment_amount() const {
   return rule_case() == kIncrementAmount;
 }
@@ -6033,6 +6046,9 @@ inline void ReadModifyWriteRule::clear_has_rule() {
 }
 inline ReadModifyWriteRule::RuleCase ReadModifyWriteRule::rule_case() const {
   return ReadModifyWriteRule::RuleCase(_oneof_case_[0]);
+}
+inline const ReadModifyWriteRule* ReadModifyWriteRule::internal_default_instance() {
+  return &ReadModifyWriteRule_default_instance_.get();
 }
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
@@ -6073,7 +6089,6 @@ inline ReadModifyWriteRule::RuleCase ReadModifyWriteRule::rule_case() const {
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v2
 }  // namespace bigtable

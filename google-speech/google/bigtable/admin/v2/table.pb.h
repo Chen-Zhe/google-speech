@@ -24,8 +24,8 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/map.h>
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/generated_enum_reflection.h>
@@ -33,36 +33,6 @@
 #include "google/api/annotations.pb.h"
 #include <google/protobuf/duration.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace bigtable {
-namespace admin {
-namespace v2 {
-class ColumnFamily;
-class ColumnFamilyDefaultTypeInternal;
-extern ColumnFamilyDefaultTypeInternal _ColumnFamily_default_instance_;
-class GcRule;
-class GcRuleDefaultTypeInternal;
-extern GcRuleDefaultTypeInternal _GcRule_default_instance_;
-class GcRule_Intersection;
-class GcRule_IntersectionDefaultTypeInternal;
-extern GcRule_IntersectionDefaultTypeInternal _GcRule_Intersection_default_instance_;
-class GcRule_Union;
-class GcRule_UnionDefaultTypeInternal;
-extern GcRule_UnionDefaultTypeInternal _GcRule_Union_default_instance_;
-class Table;
-class TableDefaultTypeInternal;
-extern TableDefaultTypeInternal _Table_default_instance_;
-}  // namespace v2
-}  // namespace admin
-}  // namespace bigtable
-namespace protobuf {
-class Duration;
-class DurationDefaultTypeInternal;
-extern DurationDefaultTypeInternal _Duration_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace bigtable {
@@ -72,6 +42,14 @@ namespace v2 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
 void protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
+void protobuf_AssignDesc_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
+void protobuf_ShutdownFile_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
+
+class ColumnFamily;
+class GcRule;
+class GcRule_Intersection;
+class GcRule_Union;
+class Table;
 
 enum Table_TimestampGranularity {
   Table_TimestampGranularity_TIMESTAMP_GRANULARITY_UNSPECIFIED = 0,
@@ -119,9 +97,6 @@ inline bool Table_View_Parse(
 }
 // ===================================================================
 
-
-// -------------------------------------------------------------------
-
 class Table : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.admin.v2.Table) */ {
  public:
   Table();
@@ -137,52 +112,49 @@ class Table : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   static const ::google::protobuf::Descriptor* descriptor();
   static const Table& default_instance();
 
-  static inline const Table* internal_default_instance() {
-    return reinterpret_cast<const Table*>(
-               &_Table_default_instance_);
-  }
+  static const Table* internal_default_instance();
 
   void Swap(Table* other);
 
   // implements Message ----------------------------------------------
 
-  inline Table* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Table* New() const { return New(NULL); }
 
-  Table* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Table* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Table& from);
   void MergeFrom(const Table& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Table* other);
+  void UnsafeMergeFrom(const Table& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -245,7 +217,7 @@ class Table : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -265,7 +237,7 @@ class Table : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   ::google::protobuf::Map< ::std::string, ::google::bigtable::admin::v2::ColumnFamily >*
       mutable_column_families();
 
-  // .google.bigtable.admin.v2.Table.TimestampGranularity granularity = 4;
+  // optional .google.bigtable.admin.v2.Table.TimestampGranularity granularity = 4;
   void clear_granularity();
   static const int kGranularityFieldNumber = 4;
   ::google::bigtable::admin::v2::Table_TimestampGranularity granularity() const;
@@ -291,10 +263,13 @@ class Table : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Table> Table_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ColumnFamily : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.admin.v2.ColumnFamily) */ {
@@ -312,58 +287,55 @@ class ColumnFamily : public ::google::protobuf::Message /* @@protoc_insertion_po
   static const ::google::protobuf::Descriptor* descriptor();
   static const ColumnFamily& default_instance();
 
-  static inline const ColumnFamily* internal_default_instance() {
-    return reinterpret_cast<const ColumnFamily*>(
-               &_ColumnFamily_default_instance_);
-  }
+  static const ColumnFamily* internal_default_instance();
 
   void Swap(ColumnFamily* other);
 
   // implements Message ----------------------------------------------
 
-  inline ColumnFamily* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ColumnFamily* New() const { return New(NULL); }
 
-  ColumnFamily* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ColumnFamily* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ColumnFamily& from);
   void MergeFrom(const ColumnFamily& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ColumnFamily* other);
+  void UnsafeMergeFrom(const ColumnFamily& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.bigtable.admin.v2.GcRule gc_rule = 1;
+  // optional .google.bigtable.admin.v2.GcRule gc_rule = 1;
   bool has_gc_rule() const;
   void clear_gc_rule();
   static const int kGcRuleFieldNumber = 1;
@@ -380,10 +352,13 @@ class ColumnFamily : public ::google::protobuf::Message /* @@protoc_insertion_po
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ColumnFamily> ColumnFamily_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GcRule_Intersection : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.admin.v2.GcRule.Intersection) */ {
@@ -401,52 +376,49 @@ class GcRule_Intersection : public ::google::protobuf::Message /* @@protoc_inser
   static const ::google::protobuf::Descriptor* descriptor();
   static const GcRule_Intersection& default_instance();
 
-  static inline const GcRule_Intersection* internal_default_instance() {
-    return reinterpret_cast<const GcRule_Intersection*>(
-               &_GcRule_Intersection_default_instance_);
-  }
+  static const GcRule_Intersection* internal_default_instance();
 
   void Swap(GcRule_Intersection* other);
 
   // implements Message ----------------------------------------------
 
-  inline GcRule_Intersection* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GcRule_Intersection* New() const { return New(NULL); }
 
-  GcRule_Intersection* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GcRule_Intersection* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GcRule_Intersection& from);
   void MergeFrom(const GcRule_Intersection& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GcRule_Intersection* other);
+  void UnsafeMergeFrom(const GcRule_Intersection& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -472,10 +444,13 @@ class GcRule_Intersection : public ::google::protobuf::Message /* @@protoc_inser
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GcRule_Intersection> GcRule_Intersection_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GcRule_Union : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.admin.v2.GcRule.Union) */ {
@@ -493,52 +468,49 @@ class GcRule_Union : public ::google::protobuf::Message /* @@protoc_insertion_po
   static const ::google::protobuf::Descriptor* descriptor();
   static const GcRule_Union& default_instance();
 
-  static inline const GcRule_Union* internal_default_instance() {
-    return reinterpret_cast<const GcRule_Union*>(
-               &_GcRule_Union_default_instance_);
-  }
+  static const GcRule_Union* internal_default_instance();
 
   void Swap(GcRule_Union* other);
 
   // implements Message ----------------------------------------------
 
-  inline GcRule_Union* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GcRule_Union* New() const { return New(NULL); }
 
-  GcRule_Union* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GcRule_Union* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GcRule_Union& from);
   void MergeFrom(const GcRule_Union& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GcRule_Union* other);
+  void UnsafeMergeFrom(const GcRule_Union& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -564,10 +536,13 @@ class GcRule_Union : public ::google::protobuf::Message /* @@protoc_insertion_po
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GcRule_Union> GcRule_Union_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GcRule : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bigtable.admin.v2.GcRule) */ {
@@ -593,52 +568,49 @@ class GcRule : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
     RULE_NOT_SET = 0,
   };
 
-  static inline const GcRule* internal_default_instance() {
-    return reinterpret_cast<const GcRule*>(
-               &_GcRule_default_instance_);
-  }
+  static const GcRule* internal_default_instance();
 
   void Swap(GcRule* other);
 
   // implements Message ----------------------------------------------
 
-  inline GcRule* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GcRule* New() const { return New(NULL); }
 
-  GcRule* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GcRule* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GcRule& from);
   void MergeFrom(const GcRule& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GcRule* other);
+  void UnsafeMergeFrom(const GcRule& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -647,7 +619,7 @@ class GcRule : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
 
   // accessors -------------------------------------------------------
 
-  // int32 max_num_versions = 1;
+  // optional int32 max_num_versions = 1;
   private:
   bool has_max_num_versions() const;
   public:
@@ -656,7 +628,7 @@ class GcRule : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   ::google::protobuf::int32 max_num_versions() const;
   void set_max_num_versions(::google::protobuf::int32 value);
 
-  // .google.protobuf.Duration max_age = 2;
+  // optional .google.protobuf.Duration max_age = 2;
   bool has_max_age() const;
   void clear_max_age();
   static const int kMaxAgeFieldNumber = 2;
@@ -665,7 +637,7 @@ class GcRule : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   ::google::protobuf::Duration* release_max_age();
   void set_allocated_max_age(::google::protobuf::Duration* max_age);
 
-  // .google.bigtable.admin.v2.GcRule.Intersection intersection = 3;
+  // optional .google.bigtable.admin.v2.GcRule.Intersection intersection = 3;
   bool has_intersection() const;
   void clear_intersection();
   static const int kIntersectionFieldNumber = 3;
@@ -674,7 +646,7 @@ class GcRule : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   ::google::bigtable::admin::v2::GcRule_Intersection* release_intersection();
   void set_allocated_intersection(::google::bigtable::admin::v2::GcRule_Intersection* intersection);
 
-  // .google.bigtable.admin.v2.GcRule.Union union = 4;
+  // optional .google.bigtable.admin.v2.GcRule.Union union = 4;
   bool has_union_() const;
   void clear_union_();
   static const int kUnionFieldNumber = 4;
@@ -686,10 +658,10 @@ class GcRule : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   RuleCase rule_case() const;
   // @@protoc_insertion_point(class_scope:google.bigtable.admin.v2.GcRule)
  private:
-  void set_has_max_num_versions();
-  void set_has_max_age();
-  void set_has_intersection();
-  void set_has_union_();
+  inline void set_has_max_num_versions();
+  inline void set_has_max_age();
+  inline void set_has_intersection();
+  inline void set_has_union_();
 
   inline bool has_rule() const;
   void clear_rule();
@@ -708,27 +680,28 @@ class GcRule : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
 
   friend void  protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
+  friend void protobuf_AssignDesc_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
   friend void protobuf_ShutdownFile_google_2fbigtable_2fadmin_2fv2_2ftable_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GcRule> GcRule_default_instance_;
+
 // ===================================================================
 
 
 // ===================================================================
 
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // Table
 
-// string name = 1;
+// optional string name = 1;
 inline void Table::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Table::name() const {
   // @@protoc_insertion_point(field_get:google.bigtable.admin.v2.Table.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Table::set_name(const ::std::string& value) {
   
@@ -784,7 +757,7 @@ Table::mutable_column_families() {
   return column_families_.MutableMap();
 }
 
-// .google.bigtable.admin.v2.Table.TimestampGranularity granularity = 4;
+// optional .google.bigtable.admin.v2.Table.TimestampGranularity granularity = 4;
 inline void Table::clear_granularity() {
   granularity_ = 0;
 }
@@ -798,11 +771,14 @@ inline void Table::set_granularity(::google::bigtable::admin::v2::Table_Timestam
   // @@protoc_insertion_point(field_set:google.bigtable.admin.v2.Table.granularity)
 }
 
+inline const Table* Table::internal_default_instance() {
+  return &Table_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ColumnFamily
 
-// .google.bigtable.admin.v2.GcRule gc_rule = 1;
+// optional .google.bigtable.admin.v2.GcRule gc_rule = 1;
 inline bool ColumnFamily::has_gc_rule() const {
   return this != internal_default_instance() && gc_rule_ != NULL;
 }
@@ -841,6 +817,9 @@ inline void ColumnFamily::set_allocated_gc_rule(::google::bigtable::admin::v2::G
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.admin.v2.ColumnFamily.gc_rule)
 }
 
+inline const ColumnFamily* ColumnFamily::internal_default_instance() {
+  return &ColumnFamily_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GcRule_Intersection
@@ -875,6 +854,9 @@ GcRule_Intersection::rules() const {
   return rules_;
 }
 
+inline const GcRule_Intersection* GcRule_Intersection::internal_default_instance() {
+  return &GcRule_Intersection_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GcRule_Union
@@ -909,11 +891,14 @@ GcRule_Union::rules() const {
   return rules_;
 }
 
+inline const GcRule_Union* GcRule_Union::internal_default_instance() {
+  return &GcRule_Union_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GcRule
 
-// int32 max_num_versions = 1;
+// optional int32 max_num_versions = 1;
 inline bool GcRule::has_max_num_versions() const {
   return rule_case() == kMaxNumVersions;
 }
@@ -942,7 +927,7 @@ inline void GcRule::set_max_num_versions(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.bigtable.admin.v2.GcRule.max_num_versions)
 }
 
-// .google.protobuf.Duration max_age = 2;
+// optional .google.protobuf.Duration max_age = 2;
 inline bool GcRule::has_max_age() const {
   return rule_case() == kMaxAge;
 }
@@ -995,7 +980,7 @@ inline void GcRule::set_allocated_max_age(::google::protobuf::Duration* max_age)
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.admin.v2.GcRule.max_age)
 }
 
-// .google.bigtable.admin.v2.GcRule.Intersection intersection = 3;
+// optional .google.bigtable.admin.v2.GcRule.Intersection intersection = 3;
 inline bool GcRule::has_intersection() const {
   return rule_case() == kIntersection;
 }
@@ -1043,7 +1028,7 @@ inline void GcRule::set_allocated_intersection(::google::bigtable::admin::v2::Gc
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.admin.v2.GcRule.intersection)
 }
 
-// .google.bigtable.admin.v2.GcRule.Union union = 4;
+// optional .google.bigtable.admin.v2.GcRule.Union union = 4;
 inline bool GcRule::has_union_() const {
   return rule_case() == kUnion;
 }
@@ -1100,9 +1085,10 @@ inline void GcRule::clear_has_rule() {
 inline GcRule::RuleCase GcRule::rule_case() const {
   return GcRule::RuleCase(_oneof_case_[0]);
 }
+inline const GcRule* GcRule::internal_default_instance() {
+  return &GcRule_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -1113,7 +1099,6 @@ inline GcRule::RuleCase GcRule::rule_case() const {
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v2
 }  // namespace admin

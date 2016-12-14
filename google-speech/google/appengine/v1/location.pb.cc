@@ -20,63 +20,60 @@
 namespace google {
 namespace appengine {
 namespace v1 {
-class LocationMetadataDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<LocationMetadata> {};
-LocationMetadataDefaultTypeInternal _LocationMetadata_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[1];
+const ::google::protobuf::Descriptor* LocationMetadata_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  LocationMetadata_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2flocation_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2flocation_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocationMetadata, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fappengine_2fv1_2flocation_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fappengine_2fv1_2flocation_2eproto() {
+  protobuf_AddDesc_google_2fappengine_2fv1_2flocation_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/appengine/v1/location.proto");
+  GOOGLE_CHECK(file != NULL);
+  LocationMetadata_descriptor_ = file->message_type(0);
+  static const int LocationMetadata_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocationMetadata, standard_environment_available_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocationMetadata, flexible_environment_available_),
   };
-  return offsets;
+  LocationMetadata_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      LocationMetadata_descriptor_,
+      LocationMetadata::internal_default_instance(),
+      LocationMetadata_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(LocationMetadata),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LocationMetadata, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(LocationMetadata)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_LocationMetadata_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fappengine_2fv1_2flocation_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/appengine/v1/location.proto", schemas, file_default_instances, protobuf_Offsets_google_2fappengine_2fv1_2flocation_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fappengine_2fv1_2flocation_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      LocationMetadata_descriptor_, LocationMetadata::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fappengine_2fv1_2flocation_2eproto() {
-  _LocationMetadata_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
+  LocationMetadata_default_instance_.Shutdown();
+  delete LocationMetadata_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fappengine_2fv1_2flocation_2eproto_impl() {
@@ -84,29 +81,29 @@ void protobuf_InitDefaults_google_2fappengine_2fv1_2flocation_2eproto_impl() {
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
   ::google::type::protobuf_InitDefaults_google_2ftype_2flatlng_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _LocationMetadata_default_instance_.DefaultConstruct();
+  LocationMetadata_default_instance_.DefaultConstruct();
+  LocationMetadata_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fappengine_2fv1_2flocation_2eproto_once_);
 void protobuf_InitDefaults_google_2fappengine_2fv1_2flocation_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fappengine_2fv1_2flocation_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fappengine_2fv1_2flocation_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fappengine_2fv1_2flocation_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fappengine_2fv1_2flocation_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fappengine_2fv1_2flocation_2eproto();
-  static const char descriptor[] = {
-      "\n\"google/appengine/v1/location.proto\022\023go"
-      "ogle.appengine.v1\032\034google/api/annotation"
-      "s.proto\032\030google/type/latlng.proto\"b\n\020Loc"
-      "ationMetadata\022&\n\036standard_environment_av"
-      "ailable\030\002 \001(\010\022&\n\036flexible_environment_av"
-      "ailable\030\004 \001(\010Bh\n\027com.google.appengine.v1"
-      "B\rLocationProtoP\001Z<google.golang.org/gen"
-      "proto/googleapis/appengine/v1;appengineb"
-      "\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 327);
+    "\n\"google/appengine/v1/location.proto\022\023go"
+    "ogle.appengine.v1\032\034google/api/annotation"
+    "s.proto\032\030google/type/latlng.proto\"b\n\020Loc"
+    "ationMetadata\022&\n\036standard_environment_av"
+    "ailable\030\002 \001(\010\022&\n\036flexible_environment_av"
+    "ailable\030\004 \001(\010Bh\n\027com.google.appengine.v1"
+    "B\rLocationProtoP\001Z<google.golang.org/gen"
+    "proto/googleapis/appengine/v1;appengineb"
+    "\006proto3", 327);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/appengine/v1/location.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -126,6 +123,16 @@ struct StaticDescriptorInitializer_google_2fappengine_2fv1_2flocation_2eproto {
   }
 } static_descriptor_initializer_google_2fappengine_2fv1_2flocation_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -135,20 +142,19 @@ const int LocationMetadata::kFlexibleEnvironmentAvailableFieldNumber;
 
 LocationMetadata::LocationMetadata()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fappengine_2fv1_2flocation_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2flocation_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.LocationMetadata)
 }
+
+void LocationMetadata::InitAsDefaultInstance() {
+}
+
 LocationMetadata::LocationMetadata(const LocationMetadata& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&standard_environment_available_, &from.standard_environment_available_,
-    reinterpret_cast<char*>(&flexible_environment_available_) -
-    reinterpret_cast<char*>(&standard_environment_available_) + sizeof(flexible_environment_available_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.LocationMetadata)
 }
 
@@ -173,13 +179,15 @@ void LocationMetadata::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* LocationMetadata::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return LocationMetadata_descriptor_;
 }
 
 const LocationMetadata& LocationMetadata::default_instance() {
   protobuf_InitDefaults_google_2fappengine_2fv1_2flocation_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<LocationMetadata> LocationMetadata_default_instance_;
 
 LocationMetadata* LocationMetadata::New(::google::protobuf::Arena* arena) const {
   LocationMetadata* n = new LocationMetadata;
@@ -191,8 +199,27 @@ LocationMetadata* LocationMetadata::New(::google::protobuf::Arena* arena) const 
 
 void LocationMetadata::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.appengine.v1.LocationMetadata)
-  ::memset(&standard_environment_available_, 0, reinterpret_cast<char*>(&flexible_environment_available_) -
-    reinterpret_cast<char*>(&standard_environment_available_) + sizeof(flexible_environment_available_));
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(LocationMetadata, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<LocationMetadata*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(standard_environment_available_, flexible_environment_available_);
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool LocationMetadata::MergePartialFromCodedStream(
@@ -201,13 +228,13 @@ bool LocationMetadata::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.appengine.v1.LocationMetadata)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // bool standard_environment_available = 2;
+      // optional bool standard_environment_available = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -215,12 +242,14 @@ bool LocationMetadata::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_flexible_environment_available;
         break;
       }
 
-      // bool flexible_environment_available = 4;
+      // optional bool flexible_environment_available = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_flexible_environment_available:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -228,6 +257,7 @@ bool LocationMetadata::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -255,12 +285,12 @@ failure:
 void LocationMetadata::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.appengine.v1.LocationMetadata)
-  // bool standard_environment_available = 2;
+  // optional bool standard_environment_available = 2;
   if (this->standard_environment_available() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(2, this->standard_environment_available(), output);
   }
 
-  // bool flexible_environment_available = 4;
+  // optional bool flexible_environment_available = 4;
   if (this->flexible_environment_available() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(4, this->flexible_environment_available(), output);
   }
@@ -272,12 +302,12 @@ void LocationMetadata::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.LocationMetadata)
-  // bool standard_environment_available = 2;
+  // optional bool standard_environment_available = 2;
   if (this->standard_environment_available() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(2, this->standard_environment_available(), target);
   }
 
-  // bool flexible_environment_available = 4;
+  // optional bool flexible_environment_available = 4;
   if (this->flexible_environment_available() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(4, this->flexible_environment_available(), target);
   }
@@ -290,12 +320,12 @@ size_t LocationMetadata::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.LocationMetadata)
   size_t total_size = 0;
 
-  // bool standard_environment_available = 2;
+  // optional bool standard_environment_available = 2;
   if (this->standard_environment_available() != 0) {
     total_size += 1 + 1;
   }
 
-  // bool flexible_environment_available = 4;
+  // optional bool flexible_environment_available = 4;
   if (this->flexible_environment_available() != 0) {
     total_size += 1 + 1;
   }
@@ -309,7 +339,7 @@ size_t LocationMetadata::ByteSizeLong() const {
 
 void LocationMetadata::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.LocationMetadata)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const LocationMetadata* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const LocationMetadata>(
           &from);
@@ -318,14 +348,21 @@ void LocationMetadata::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.LocationMetadata)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void LocationMetadata::MergeFrom(const LocationMetadata& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.LocationMetadata)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void LocationMetadata::UnsafeMergeFrom(const LocationMetadata& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.standard_environment_available() != 0) {
     set_standard_environment_available(from.standard_environment_available());
   }
@@ -345,10 +382,11 @@ void LocationMetadata::CopyFrom(const LocationMetadata& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.LocationMetadata)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool LocationMetadata::IsInitialized() const {
+
   return true;
 }
 
@@ -359,18 +397,22 @@ void LocationMetadata::Swap(LocationMetadata* other) {
 void LocationMetadata::InternalSwap(LocationMetadata* other) {
   std::swap(standard_environment_available_, other->standard_environment_available_);
   std::swap(flexible_environment_available_, other->flexible_environment_available_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata LocationMetadata::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = LocationMetadata_descriptor_;
+  metadata.reflection = LocationMetadata_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // LocationMetadata
 
-// bool standard_environment_available = 2;
+// optional bool standard_environment_available = 2;
 void LocationMetadata::clear_standard_environment_available() {
   standard_environment_available_ = false;
 }
@@ -384,7 +426,7 @@ void LocationMetadata::set_standard_environment_available(bool value) {
   // @@protoc_insertion_point(field_set:google.appengine.v1.LocationMetadata.standard_environment_available)
 }
 
-// bool flexible_environment_available = 4;
+// optional bool flexible_environment_available = 4;
 void LocationMetadata::clear_flexible_environment_available() {
   flexible_environment_available_ = false;
 }
@@ -398,6 +440,9 @@ void LocationMetadata::set_flexible_environment_available(bool value) {
   // @@protoc_insertion_point(field_set:google.appengine.v1.LocationMetadata.flexible_environment_available)
 }
 
+inline const LocationMetadata* LocationMetadata::internal_default_instance() {
+  return &LocationMetadata_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

@@ -24,51 +24,14 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include <google/protobuf/any.pb.h>
 #include <google/protobuf/empty.pb.h>
 #include "google/rpc/status.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace longrunning {
-class CancelOperationRequest;
-class CancelOperationRequestDefaultTypeInternal;
-extern CancelOperationRequestDefaultTypeInternal _CancelOperationRequest_default_instance_;
-class DeleteOperationRequest;
-class DeleteOperationRequestDefaultTypeInternal;
-extern DeleteOperationRequestDefaultTypeInternal _DeleteOperationRequest_default_instance_;
-class GetOperationRequest;
-class GetOperationRequestDefaultTypeInternal;
-extern GetOperationRequestDefaultTypeInternal _GetOperationRequest_default_instance_;
-class ListOperationsRequest;
-class ListOperationsRequestDefaultTypeInternal;
-extern ListOperationsRequestDefaultTypeInternal _ListOperationsRequest_default_instance_;
-class ListOperationsResponse;
-class ListOperationsResponseDefaultTypeInternal;
-extern ListOperationsResponseDefaultTypeInternal _ListOperationsResponse_default_instance_;
-class Operation;
-class OperationDefaultTypeInternal;
-extern OperationDefaultTypeInternal _Operation_default_instance_;
-}  // namespace longrunning
-namespace protobuf {
-class Any;
-class AnyDefaultTypeInternal;
-extern AnyDefaultTypeInternal _Any_default_instance_;
-class Empty;
-class EmptyDefaultTypeInternal;
-extern EmptyDefaultTypeInternal _Empty_default_instance_;
-}  // namespace protobuf
-namespace rpc {
-class Status;
-class StatusDefaultTypeInternal;
-extern StatusDefaultTypeInternal _Status_default_instance_;
-}  // namespace rpc
-}  // namespace google
 
 namespace google {
 namespace longrunning {
@@ -76,6 +39,15 @@ namespace longrunning {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2flongrunning_2foperations_2eproto();
 void protobuf_InitDefaults_google_2flongrunning_2foperations_2eproto();
+void protobuf_AssignDesc_google_2flongrunning_2foperations_2eproto();
+void protobuf_ShutdownFile_google_2flongrunning_2foperations_2eproto();
+
+class CancelOperationRequest;
+class DeleteOperationRequest;
+class GetOperationRequest;
+class ListOperationsRequest;
+class ListOperationsResponse;
+class Operation;
 
 // ===================================================================
 
@@ -100,58 +72,55 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
     RESULT_NOT_SET = 0,
   };
 
-  static inline const Operation* internal_default_instance() {
-    return reinterpret_cast<const Operation*>(
-               &_Operation_default_instance_);
-  }
+  static const Operation* internal_default_instance();
 
   void Swap(Operation* other);
 
   // implements Message ----------------------------------------------
 
-  inline Operation* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Operation* New() const { return New(NULL); }
 
-  Operation* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Operation* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Operation& from);
   void MergeFrom(const Operation& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Operation* other);
+  void UnsafeMergeFrom(const Operation& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -162,7 +131,7 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // .google.protobuf.Any metadata = 2;
+  // optional .google.protobuf.Any metadata = 2;
   bool has_metadata() const;
   void clear_metadata();
   static const int kMetadataFieldNumber = 2;
@@ -171,13 +140,13 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::protobuf::Any* release_metadata();
   void set_allocated_metadata(::google::protobuf::Any* metadata);
 
-  // bool done = 3;
+  // optional bool done = 3;
   void clear_done();
   static const int kDoneFieldNumber = 3;
   bool done() const;
   void set_done(bool value);
 
-  // .google.rpc.Status error = 4;
+  // optional .google.rpc.Status error = 4;
   bool has_error() const;
   void clear_error();
   static const int kErrorFieldNumber = 4;
@@ -186,7 +155,7 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::rpc::Status* release_error();
   void set_allocated_error(::google::rpc::Status* error);
 
-  // .google.protobuf.Any response = 5;
+  // optional .google.protobuf.Any response = 5;
   bool has_response() const;
   void clear_response();
   static const int kResponseFieldNumber = 5;
@@ -198,8 +167,8 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   ResultCase result_case() const;
   // @@protoc_insertion_point(class_scope:google.longrunning.Operation)
  private:
-  void set_has_error();
-  void set_has_response();
+  inline void set_has_error();
+  inline void set_has_response();
 
   inline bool has_result() const;
   void clear_result();
@@ -219,10 +188,13 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   friend void  protobuf_InitDefaults_google_2flongrunning_2foperations_2eproto_impl();
   friend void  protobuf_AddDesc_google_2flongrunning_2foperations_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2flongrunning_2foperations_2eproto();
+  friend void protobuf_AssignDesc_google_2flongrunning_2foperations_2eproto();
   friend void protobuf_ShutdownFile_google_2flongrunning_2foperations_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Operation> Operation_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetOperationRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.longrunning.GetOperationRequest) */ {
@@ -240,58 +212,55 @@ class GetOperationRequest : public ::google::protobuf::Message /* @@protoc_inser
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetOperationRequest& default_instance();
 
-  static inline const GetOperationRequest* internal_default_instance() {
-    return reinterpret_cast<const GetOperationRequest*>(
-               &_GetOperationRequest_default_instance_);
-  }
+  static const GetOperationRequest* internal_default_instance();
 
   void Swap(GetOperationRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetOperationRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetOperationRequest* New() const { return New(NULL); }
 
-  GetOperationRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetOperationRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetOperationRequest& from);
   void MergeFrom(const GetOperationRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetOperationRequest* other);
+  void UnsafeMergeFrom(const GetOperationRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -310,10 +279,13 @@ class GetOperationRequest : public ::google::protobuf::Message /* @@protoc_inser
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2flongrunning_2foperations_2eproto_impl();
   friend void  protobuf_AddDesc_google_2flongrunning_2foperations_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2flongrunning_2foperations_2eproto();
+  friend void protobuf_AssignDesc_google_2flongrunning_2foperations_2eproto();
   friend void protobuf_ShutdownFile_google_2flongrunning_2foperations_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetOperationRequest> GetOperationRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListOperationsRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.longrunning.ListOperationsRequest) */ {
@@ -331,58 +303,55 @@ class ListOperationsRequest : public ::google::protobuf::Message /* @@protoc_ins
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListOperationsRequest& default_instance();
 
-  static inline const ListOperationsRequest* internal_default_instance() {
-    return reinterpret_cast<const ListOperationsRequest*>(
-               &_ListOperationsRequest_default_instance_);
-  }
+  static const ListOperationsRequest* internal_default_instance();
 
   void Swap(ListOperationsRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListOperationsRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListOperationsRequest* New() const { return New(NULL); }
 
-  ListOperationsRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListOperationsRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListOperationsRequest& from);
   void MergeFrom(const ListOperationsRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListOperationsRequest* other);
+  void UnsafeMergeFrom(const ListOperationsRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 4;
+  // optional string name = 4;
   void clear_name();
   static const int kNameFieldNumber = 4;
   const ::std::string& name() const;
@@ -393,7 +362,7 @@ class ListOperationsRequest : public ::google::protobuf::Message /* @@protoc_ins
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // string filter = 1;
+  // optional string filter = 1;
   void clear_filter();
   static const int kFilterFieldNumber = 1;
   const ::std::string& filter() const;
@@ -404,13 +373,13 @@ class ListOperationsRequest : public ::google::protobuf::Message /* @@protoc_ins
   ::std::string* release_filter();
   void set_allocated_filter(::std::string* filter);
 
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 2;
   ::google::protobuf::int32 page_size() const;
   void set_page_size(::google::protobuf::int32 value);
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 3;
   const ::std::string& page_token() const;
@@ -432,10 +401,13 @@ class ListOperationsRequest : public ::google::protobuf::Message /* @@protoc_ins
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2flongrunning_2foperations_2eproto_impl();
   friend void  protobuf_AddDesc_google_2flongrunning_2foperations_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2flongrunning_2foperations_2eproto();
+  friend void protobuf_AssignDesc_google_2flongrunning_2foperations_2eproto();
   friend void protobuf_ShutdownFile_google_2flongrunning_2foperations_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListOperationsRequest> ListOperationsRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListOperationsResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.longrunning.ListOperationsResponse) */ {
@@ -453,52 +425,49 @@ class ListOperationsResponse : public ::google::protobuf::Message /* @@protoc_in
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListOperationsResponse& default_instance();
 
-  static inline const ListOperationsResponse* internal_default_instance() {
-    return reinterpret_cast<const ListOperationsResponse*>(
-               &_ListOperationsResponse_default_instance_);
-  }
+  static const ListOperationsResponse* internal_default_instance();
 
   void Swap(ListOperationsResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListOperationsResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListOperationsResponse* New() const { return New(NULL); }
 
-  ListOperationsResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListOperationsResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListOperationsResponse& from);
   void MergeFrom(const ListOperationsResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListOperationsResponse* other);
+  void UnsafeMergeFrom(const ListOperationsResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -516,7 +485,7 @@ class ListOperationsResponse : public ::google::protobuf::Message /* @@protoc_in
   const ::google::protobuf::RepeatedPtrField< ::google::longrunning::Operation >&
       operations() const;
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -536,10 +505,13 @@ class ListOperationsResponse : public ::google::protobuf::Message /* @@protoc_in
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2flongrunning_2foperations_2eproto_impl();
   friend void  protobuf_AddDesc_google_2flongrunning_2foperations_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2flongrunning_2foperations_2eproto();
+  friend void protobuf_AssignDesc_google_2flongrunning_2foperations_2eproto();
   friend void protobuf_ShutdownFile_google_2flongrunning_2foperations_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListOperationsResponse> ListOperationsResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class CancelOperationRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.longrunning.CancelOperationRequest) */ {
@@ -557,58 +529,55 @@ class CancelOperationRequest : public ::google::protobuf::Message /* @@protoc_in
   static const ::google::protobuf::Descriptor* descriptor();
   static const CancelOperationRequest& default_instance();
 
-  static inline const CancelOperationRequest* internal_default_instance() {
-    return reinterpret_cast<const CancelOperationRequest*>(
-               &_CancelOperationRequest_default_instance_);
-  }
+  static const CancelOperationRequest* internal_default_instance();
 
   void Swap(CancelOperationRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline CancelOperationRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline CancelOperationRequest* New() const { return New(NULL); }
 
-  CancelOperationRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CancelOperationRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const CancelOperationRequest& from);
   void MergeFrom(const CancelOperationRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(CancelOperationRequest* other);
+  void UnsafeMergeFrom(const CancelOperationRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -627,10 +596,13 @@ class CancelOperationRequest : public ::google::protobuf::Message /* @@protoc_in
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2flongrunning_2foperations_2eproto_impl();
   friend void  protobuf_AddDesc_google_2flongrunning_2foperations_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2flongrunning_2foperations_2eproto();
+  friend void protobuf_AssignDesc_google_2flongrunning_2foperations_2eproto();
   friend void protobuf_ShutdownFile_google_2flongrunning_2foperations_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<CancelOperationRequest> CancelOperationRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class DeleteOperationRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.longrunning.DeleteOperationRequest) */ {
@@ -648,58 +620,55 @@ class DeleteOperationRequest : public ::google::protobuf::Message /* @@protoc_in
   static const ::google::protobuf::Descriptor* descriptor();
   static const DeleteOperationRequest& default_instance();
 
-  static inline const DeleteOperationRequest* internal_default_instance() {
-    return reinterpret_cast<const DeleteOperationRequest*>(
-               &_DeleteOperationRequest_default_instance_);
-  }
+  static const DeleteOperationRequest* internal_default_instance();
 
   void Swap(DeleteOperationRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline DeleteOperationRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline DeleteOperationRequest* New() const { return New(NULL); }
 
-  DeleteOperationRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DeleteOperationRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const DeleteOperationRequest& from);
   void MergeFrom(const DeleteOperationRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(DeleteOperationRequest* other);
+  void UnsafeMergeFrom(const DeleteOperationRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -718,10 +687,13 @@ class DeleteOperationRequest : public ::google::protobuf::Message /* @@protoc_in
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2flongrunning_2foperations_2eproto_impl();
   friend void  protobuf_AddDesc_google_2flongrunning_2foperations_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2flongrunning_2foperations_2eproto();
+  friend void protobuf_AssignDesc_google_2flongrunning_2foperations_2eproto();
   friend void protobuf_ShutdownFile_google_2flongrunning_2foperations_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<DeleteOperationRequest> DeleteOperationRequest_default_instance_;
+
 // ===================================================================
 
 
@@ -730,13 +702,13 @@ class DeleteOperationRequest : public ::google::protobuf::Message /* @@protoc_in
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Operation
 
-// string name = 1;
+// optional string name = 1;
 inline void Operation::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Operation::name() const {
   // @@protoc_insertion_point(field_get:google.longrunning.Operation.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Operation::set_name(const ::std::string& value) {
   
@@ -774,7 +746,7 @@ inline void Operation::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.longrunning.Operation.name)
 }
 
-// .google.protobuf.Any metadata = 2;
+// optional .google.protobuf.Any metadata = 2;
 inline bool Operation::has_metadata() const {
   return this != internal_default_instance() && metadata_ != NULL;
 }
@@ -813,7 +785,7 @@ inline void Operation::set_allocated_metadata(::google::protobuf::Any* metadata)
   // @@protoc_insertion_point(field_set_allocated:google.longrunning.Operation.metadata)
 }
 
-// bool done = 3;
+// optional bool done = 3;
 inline void Operation::clear_done() {
   done_ = false;
 }
@@ -827,7 +799,7 @@ inline void Operation::set_done(bool value) {
   // @@protoc_insertion_point(field_set:google.longrunning.Operation.done)
 }
 
-// .google.rpc.Status error = 4;
+// optional .google.rpc.Status error = 4;
 inline bool Operation::has_error() const {
   return result_case() == kError;
 }
@@ -875,7 +847,7 @@ inline void Operation::set_allocated_error(::google::rpc::Status* error) {
   // @@protoc_insertion_point(field_set_allocated:google.longrunning.Operation.error)
 }
 
-// .google.protobuf.Any response = 5;
+// optional .google.protobuf.Any response = 5;
 inline bool Operation::has_response() const {
   return result_case() == kResponse;
 }
@@ -932,17 +904,20 @@ inline void Operation::clear_has_result() {
 inline Operation::ResultCase Operation::result_case() const {
   return Operation::ResultCase(_oneof_case_[0]);
 }
+inline const Operation* Operation::internal_default_instance() {
+  return &Operation_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetOperationRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void GetOperationRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetOperationRequest::name() const {
   // @@protoc_insertion_point(field_get:google.longrunning.GetOperationRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetOperationRequest::set_name(const ::std::string& value) {
   
@@ -980,17 +955,20 @@ inline void GetOperationRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.longrunning.GetOperationRequest.name)
 }
 
+inline const GetOperationRequest* GetOperationRequest::internal_default_instance() {
+  return &GetOperationRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListOperationsRequest
 
-// string name = 4;
+// optional string name = 4;
 inline void ListOperationsRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListOperationsRequest::name() const {
   // @@protoc_insertion_point(field_get:google.longrunning.ListOperationsRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListOperationsRequest::set_name(const ::std::string& value) {
   
@@ -1028,13 +1006,13 @@ inline void ListOperationsRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.longrunning.ListOperationsRequest.name)
 }
 
-// string filter = 1;
+// optional string filter = 1;
 inline void ListOperationsRequest::clear_filter() {
   filter_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListOperationsRequest::filter() const {
   // @@protoc_insertion_point(field_get:google.longrunning.ListOperationsRequest.filter)
-  return filter_.GetNoArena();
+  return filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListOperationsRequest::set_filter(const ::std::string& value) {
   
@@ -1072,7 +1050,7 @@ inline void ListOperationsRequest::set_allocated_filter(::std::string* filter) {
   // @@protoc_insertion_point(field_set_allocated:google.longrunning.ListOperationsRequest.filter)
 }
 
-// int32 page_size = 2;
+// optional int32 page_size = 2;
 inline void ListOperationsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -1086,13 +1064,13 @@ inline void ListOperationsRequest::set_page_size(::google::protobuf::int32 value
   // @@protoc_insertion_point(field_set:google.longrunning.ListOperationsRequest.page_size)
 }
 
-// string page_token = 3;
+// optional string page_token = 3;
 inline void ListOperationsRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListOperationsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.longrunning.ListOperationsRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListOperationsRequest::set_page_token(const ::std::string& value) {
   
@@ -1130,6 +1108,9 @@ inline void ListOperationsRequest::set_allocated_page_token(::std::string* page_
   // @@protoc_insertion_point(field_set_allocated:google.longrunning.ListOperationsRequest.page_token)
 }
 
+inline const ListOperationsRequest* ListOperationsRequest::internal_default_instance() {
+  return &ListOperationsRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListOperationsResponse
@@ -1164,13 +1145,13 @@ ListOperationsResponse::operations() const {
   return operations_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void ListOperationsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListOperationsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.longrunning.ListOperationsResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListOperationsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -1208,17 +1189,20 @@ inline void ListOperationsResponse::set_allocated_next_page_token(::std::string*
   // @@protoc_insertion_point(field_set_allocated:google.longrunning.ListOperationsResponse.next_page_token)
 }
 
+inline const ListOperationsResponse* ListOperationsResponse::internal_default_instance() {
+  return &ListOperationsResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // CancelOperationRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void CancelOperationRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& CancelOperationRequest::name() const {
   // @@protoc_insertion_point(field_get:google.longrunning.CancelOperationRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void CancelOperationRequest::set_name(const ::std::string& value) {
   
@@ -1256,17 +1240,20 @@ inline void CancelOperationRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.longrunning.CancelOperationRequest.name)
 }
 
+inline const CancelOperationRequest* CancelOperationRequest::internal_default_instance() {
+  return &CancelOperationRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // DeleteOperationRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void DeleteOperationRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& DeleteOperationRequest::name() const {
   // @@protoc_insertion_point(field_get:google.longrunning.DeleteOperationRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DeleteOperationRequest::set_name(const ::std::string& value) {
   
@@ -1304,6 +1291,9 @@ inline void DeleteOperationRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.longrunning.DeleteOperationRequest.name)
 }
 
+inline const DeleteOperationRequest* DeleteOperationRequest::internal_default_instance() {
+  return &DeleteOperationRequest_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
@@ -1317,7 +1307,6 @@ inline void DeleteOperationRequest::set_allocated_name(::std::string* name) {
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace longrunning
 }  // namespace google

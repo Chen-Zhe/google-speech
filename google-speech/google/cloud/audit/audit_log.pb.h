@@ -24,53 +24,14 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include <google/protobuf/any.pb.h>
 #include <google/protobuf/struct.pb.h>
 #include "google/rpc/status.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace cloud {
-namespace audit {
-class AuditLog;
-class AuditLogDefaultTypeInternal;
-extern AuditLogDefaultTypeInternal _AuditLog_default_instance_;
-class AuthenticationInfo;
-class AuthenticationInfoDefaultTypeInternal;
-extern AuthenticationInfoDefaultTypeInternal _AuthenticationInfo_default_instance_;
-class AuthorizationInfo;
-class AuthorizationInfoDefaultTypeInternal;
-extern AuthorizationInfoDefaultTypeInternal _AuthorizationInfo_default_instance_;
-class RequestMetadata;
-class RequestMetadataDefaultTypeInternal;
-extern RequestMetadataDefaultTypeInternal _RequestMetadata_default_instance_;
-}  // namespace audit
-}  // namespace cloud
-namespace protobuf {
-class Any;
-class AnyDefaultTypeInternal;
-extern AnyDefaultTypeInternal _Any_default_instance_;
-class ListValue;
-class ListValueDefaultTypeInternal;
-extern ListValueDefaultTypeInternal _ListValue_default_instance_;
-class Struct;
-class StructDefaultTypeInternal;
-extern StructDefaultTypeInternal _Struct_default_instance_;
-class Value;
-class ValueDefaultTypeInternal;
-extern ValueDefaultTypeInternal _Value_default_instance_;
-}  // namespace protobuf
-namespace rpc {
-class Status;
-class StatusDefaultTypeInternal;
-extern StatusDefaultTypeInternal _Status_default_instance_;
-}  // namespace rpc
-}  // namespace google
 
 namespace google {
 namespace cloud {
@@ -79,6 +40,13 @@ namespace audit {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fcloud_2faudit_2faudit_5flog_2eproto();
 void protobuf_InitDefaults_google_2fcloud_2faudit_2faudit_5flog_2eproto();
+void protobuf_AssignDesc_google_2fcloud_2faudit_2faudit_5flog_2eproto();
+void protobuf_ShutdownFile_google_2fcloud_2faudit_2faudit_5flog_2eproto();
+
+class AuditLog;
+class AuthenticationInfo;
+class AuthorizationInfo;
+class RequestMetadata;
 
 // ===================================================================
 
@@ -97,58 +65,55 @@ class AuditLog : public ::google::protobuf::Message /* @@protoc_insertion_point(
   static const ::google::protobuf::Descriptor* descriptor();
   static const AuditLog& default_instance();
 
-  static inline const AuditLog* internal_default_instance() {
-    return reinterpret_cast<const AuditLog*>(
-               &_AuditLog_default_instance_);
-  }
+  static const AuditLog* internal_default_instance();
 
   void Swap(AuditLog* other);
 
   // implements Message ----------------------------------------------
 
-  inline AuditLog* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AuditLog* New() const { return New(NULL); }
 
-  AuditLog* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AuditLog* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AuditLog& from);
   void MergeFrom(const AuditLog& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AuditLog* other);
+  void UnsafeMergeFrom(const AuditLog& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string service_name = 7;
+  // optional string service_name = 7;
   void clear_service_name();
   static const int kServiceNameFieldNumber = 7;
   const ::std::string& service_name() const;
@@ -159,7 +124,7 @@ class AuditLog : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_service_name();
   void set_allocated_service_name(::std::string* service_name);
 
-  // string method_name = 8;
+  // optional string method_name = 8;
   void clear_method_name();
   static const int kMethodNameFieldNumber = 8;
   const ::std::string& method_name() const;
@@ -170,7 +135,7 @@ class AuditLog : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_method_name();
   void set_allocated_method_name(::std::string* method_name);
 
-  // string resource_name = 11;
+  // optional string resource_name = 11;
   void clear_resource_name();
   static const int kResourceNameFieldNumber = 11;
   const ::std::string& resource_name() const;
@@ -181,13 +146,13 @@ class AuditLog : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_resource_name();
   void set_allocated_resource_name(::std::string* resource_name);
 
-  // int64 num_response_items = 12;
+  // optional int64 num_response_items = 12;
   void clear_num_response_items();
   static const int kNumResponseItemsFieldNumber = 12;
   ::google::protobuf::int64 num_response_items() const;
   void set_num_response_items(::google::protobuf::int64 value);
 
-  // .google.rpc.Status status = 2;
+  // optional .google.rpc.Status status = 2;
   bool has_status() const;
   void clear_status();
   static const int kStatusFieldNumber = 2;
@@ -196,7 +161,7 @@ class AuditLog : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::rpc::Status* release_status();
   void set_allocated_status(::google::rpc::Status* status);
 
-  // .google.cloud.audit.AuthenticationInfo authentication_info = 3;
+  // optional .google.cloud.audit.AuthenticationInfo authentication_info = 3;
   bool has_authentication_info() const;
   void clear_authentication_info();
   static const int kAuthenticationInfoFieldNumber = 3;
@@ -217,7 +182,7 @@ class AuditLog : public ::google::protobuf::Message /* @@protoc_insertion_point(
   const ::google::protobuf::RepeatedPtrField< ::google::cloud::audit::AuthorizationInfo >&
       authorization_info() const;
 
-  // .google.cloud.audit.RequestMetadata request_metadata = 4;
+  // optional .google.cloud.audit.RequestMetadata request_metadata = 4;
   bool has_request_metadata() const;
   void clear_request_metadata();
   static const int kRequestMetadataFieldNumber = 4;
@@ -226,7 +191,7 @@ class AuditLog : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::cloud::audit::RequestMetadata* release_request_metadata();
   void set_allocated_request_metadata(::google::cloud::audit::RequestMetadata* request_metadata);
 
-  // .google.protobuf.Struct request = 16;
+  // optional .google.protobuf.Struct request = 16;
   bool has_request() const;
   void clear_request();
   static const int kRequestFieldNumber = 16;
@@ -235,7 +200,7 @@ class AuditLog : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::protobuf::Struct* release_request();
   void set_allocated_request(::google::protobuf::Struct* request);
 
-  // .google.protobuf.Struct response = 17;
+  // optional .google.protobuf.Struct response = 17;
   bool has_response() const;
   void clear_response();
   static const int kResponseFieldNumber = 17;
@@ -244,7 +209,7 @@ class AuditLog : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::protobuf::Struct* release_response();
   void set_allocated_response(::google::protobuf::Struct* response);
 
-  // .google.protobuf.Any service_data = 15;
+  // optional .google.protobuf.Any service_data = 15;
   bool has_service_data() const;
   void clear_service_data();
   static const int kServiceDataFieldNumber = 15;
@@ -271,10 +236,13 @@ class AuditLog : public ::google::protobuf::Message /* @@protoc_insertion_point(
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2faudit_2faudit_5flog_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2faudit_2faudit_5flog_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2faudit_2faudit_5flog_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2faudit_2faudit_5flog_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2faudit_2faudit_5flog_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AuditLog> AuditLog_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AuthenticationInfo : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.audit.AuthenticationInfo) */ {
@@ -292,58 +260,55 @@ class AuthenticationInfo : public ::google::protobuf::Message /* @@protoc_insert
   static const ::google::protobuf::Descriptor* descriptor();
   static const AuthenticationInfo& default_instance();
 
-  static inline const AuthenticationInfo* internal_default_instance() {
-    return reinterpret_cast<const AuthenticationInfo*>(
-               &_AuthenticationInfo_default_instance_);
-  }
+  static const AuthenticationInfo* internal_default_instance();
 
   void Swap(AuthenticationInfo* other);
 
   // implements Message ----------------------------------------------
 
-  inline AuthenticationInfo* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AuthenticationInfo* New() const { return New(NULL); }
 
-  AuthenticationInfo* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AuthenticationInfo* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AuthenticationInfo& from);
   void MergeFrom(const AuthenticationInfo& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AuthenticationInfo* other);
+  void UnsafeMergeFrom(const AuthenticationInfo& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string principal_email = 1;
+  // optional string principal_email = 1;
   void clear_principal_email();
   static const int kPrincipalEmailFieldNumber = 1;
   const ::std::string& principal_email() const;
@@ -362,10 +327,13 @@ class AuthenticationInfo : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2faudit_2faudit_5flog_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2faudit_2faudit_5flog_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2faudit_2faudit_5flog_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2faudit_2faudit_5flog_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2faudit_2faudit_5flog_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AuthenticationInfo> AuthenticationInfo_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AuthorizationInfo : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.audit.AuthorizationInfo) */ {
@@ -383,58 +351,55 @@ class AuthorizationInfo : public ::google::protobuf::Message /* @@protoc_inserti
   static const ::google::protobuf::Descriptor* descriptor();
   static const AuthorizationInfo& default_instance();
 
-  static inline const AuthorizationInfo* internal_default_instance() {
-    return reinterpret_cast<const AuthorizationInfo*>(
-               &_AuthorizationInfo_default_instance_);
-  }
+  static const AuthorizationInfo* internal_default_instance();
 
   void Swap(AuthorizationInfo* other);
 
   // implements Message ----------------------------------------------
 
-  inline AuthorizationInfo* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AuthorizationInfo* New() const { return New(NULL); }
 
-  AuthorizationInfo* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AuthorizationInfo* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AuthorizationInfo& from);
   void MergeFrom(const AuthorizationInfo& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AuthorizationInfo* other);
+  void UnsafeMergeFrom(const AuthorizationInfo& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string resource = 1;
+  // optional string resource = 1;
   void clear_resource();
   static const int kResourceFieldNumber = 1;
   const ::std::string& resource() const;
@@ -445,7 +410,7 @@ class AuthorizationInfo : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_resource();
   void set_allocated_resource(::std::string* resource);
 
-  // string permission = 2;
+  // optional string permission = 2;
   void clear_permission();
   static const int kPermissionFieldNumber = 2;
   const ::std::string& permission() const;
@@ -456,7 +421,7 @@ class AuthorizationInfo : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_permission();
   void set_allocated_permission(::std::string* permission);
 
-  // bool granted = 3;
+  // optional bool granted = 3;
   void clear_granted();
   static const int kGrantedFieldNumber = 3;
   bool granted() const;
@@ -472,10 +437,13 @@ class AuthorizationInfo : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2faudit_2faudit_5flog_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2faudit_2faudit_5flog_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2faudit_2faudit_5flog_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2faudit_2faudit_5flog_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2faudit_2faudit_5flog_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AuthorizationInfo> AuthorizationInfo_default_instance_;
+
 // -------------------------------------------------------------------
 
 class RequestMetadata : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.audit.RequestMetadata) */ {
@@ -493,58 +461,55 @@ class RequestMetadata : public ::google::protobuf::Message /* @@protoc_insertion
   static const ::google::protobuf::Descriptor* descriptor();
   static const RequestMetadata& default_instance();
 
-  static inline const RequestMetadata* internal_default_instance() {
-    return reinterpret_cast<const RequestMetadata*>(
-               &_RequestMetadata_default_instance_);
-  }
+  static const RequestMetadata* internal_default_instance();
 
   void Swap(RequestMetadata* other);
 
   // implements Message ----------------------------------------------
 
-  inline RequestMetadata* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline RequestMetadata* New() const { return New(NULL); }
 
-  RequestMetadata* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  RequestMetadata* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const RequestMetadata& from);
   void MergeFrom(const RequestMetadata& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(RequestMetadata* other);
+  void UnsafeMergeFrom(const RequestMetadata& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string caller_ip = 1;
+  // optional string caller_ip = 1;
   void clear_caller_ip();
   static const int kCallerIpFieldNumber = 1;
   const ::std::string& caller_ip() const;
@@ -555,7 +520,7 @@ class RequestMetadata : public ::google::protobuf::Message /* @@protoc_insertion
   ::std::string* release_caller_ip();
   void set_allocated_caller_ip(::std::string* caller_ip);
 
-  // string caller_supplied_user_agent = 2;
+  // optional string caller_supplied_user_agent = 2;
   void clear_caller_supplied_user_agent();
   static const int kCallerSuppliedUserAgentFieldNumber = 2;
   const ::std::string& caller_supplied_user_agent() const;
@@ -575,10 +540,13 @@ class RequestMetadata : public ::google::protobuf::Message /* @@protoc_insertion
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2faudit_2faudit_5flog_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2faudit_2faudit_5flog_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2faudit_2faudit_5flog_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2faudit_2faudit_5flog_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2faudit_2faudit_5flog_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<RequestMetadata> RequestMetadata_default_instance_;
+
 // ===================================================================
 
 
@@ -587,13 +555,13 @@ class RequestMetadata : public ::google::protobuf::Message /* @@protoc_insertion
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // AuditLog
 
-// string service_name = 7;
+// optional string service_name = 7;
 inline void AuditLog::clear_service_name() {
   service_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AuditLog::service_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.audit.AuditLog.service_name)
-  return service_name_.GetNoArena();
+  return service_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AuditLog::set_service_name(const ::std::string& value) {
   
@@ -631,13 +599,13 @@ inline void AuditLog::set_allocated_service_name(::std::string* service_name) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.audit.AuditLog.service_name)
 }
 
-// string method_name = 8;
+// optional string method_name = 8;
 inline void AuditLog::clear_method_name() {
   method_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AuditLog::method_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.audit.AuditLog.method_name)
-  return method_name_.GetNoArena();
+  return method_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AuditLog::set_method_name(const ::std::string& value) {
   
@@ -675,13 +643,13 @@ inline void AuditLog::set_allocated_method_name(::std::string* method_name) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.audit.AuditLog.method_name)
 }
 
-// string resource_name = 11;
+// optional string resource_name = 11;
 inline void AuditLog::clear_resource_name() {
   resource_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AuditLog::resource_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.audit.AuditLog.resource_name)
-  return resource_name_.GetNoArena();
+  return resource_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AuditLog::set_resource_name(const ::std::string& value) {
   
@@ -719,7 +687,7 @@ inline void AuditLog::set_allocated_resource_name(::std::string* resource_name) 
   // @@protoc_insertion_point(field_set_allocated:google.cloud.audit.AuditLog.resource_name)
 }
 
-// int64 num_response_items = 12;
+// optional int64 num_response_items = 12;
 inline void AuditLog::clear_num_response_items() {
   num_response_items_ = GOOGLE_LONGLONG(0);
 }
@@ -733,7 +701,7 @@ inline void AuditLog::set_num_response_items(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.cloud.audit.AuditLog.num_response_items)
 }
 
-// .google.rpc.Status status = 2;
+// optional .google.rpc.Status status = 2;
 inline bool AuditLog::has_status() const {
   return this != internal_default_instance() && status_ != NULL;
 }
@@ -772,7 +740,7 @@ inline void AuditLog::set_allocated_status(::google::rpc::Status* status) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.audit.AuditLog.status)
 }
 
-// .google.cloud.audit.AuthenticationInfo authentication_info = 3;
+// optional .google.cloud.audit.AuthenticationInfo authentication_info = 3;
 inline bool AuditLog::has_authentication_info() const {
   return this != internal_default_instance() && authentication_info_ != NULL;
 }
@@ -841,7 +809,7 @@ AuditLog::authorization_info() const {
   return authorization_info_;
 }
 
-// .google.cloud.audit.RequestMetadata request_metadata = 4;
+// optional .google.cloud.audit.RequestMetadata request_metadata = 4;
 inline bool AuditLog::has_request_metadata() const {
   return this != internal_default_instance() && request_metadata_ != NULL;
 }
@@ -880,7 +848,7 @@ inline void AuditLog::set_allocated_request_metadata(::google::cloud::audit::Req
   // @@protoc_insertion_point(field_set_allocated:google.cloud.audit.AuditLog.request_metadata)
 }
 
-// .google.protobuf.Struct request = 16;
+// optional .google.protobuf.Struct request = 16;
 inline bool AuditLog::has_request() const {
   return this != internal_default_instance() && request_ != NULL;
 }
@@ -924,7 +892,7 @@ inline void AuditLog::set_allocated_request(::google::protobuf::Struct* request)
   // @@protoc_insertion_point(field_set_allocated:google.cloud.audit.AuditLog.request)
 }
 
-// .google.protobuf.Struct response = 17;
+// optional .google.protobuf.Struct response = 17;
 inline bool AuditLog::has_response() const {
   return this != internal_default_instance() && response_ != NULL;
 }
@@ -968,7 +936,7 @@ inline void AuditLog::set_allocated_response(::google::protobuf::Struct* respons
   // @@protoc_insertion_point(field_set_allocated:google.cloud.audit.AuditLog.response)
 }
 
-// .google.protobuf.Any service_data = 15;
+// optional .google.protobuf.Any service_data = 15;
 inline bool AuditLog::has_service_data() const {
   return this != internal_default_instance() && service_data_ != NULL;
 }
@@ -1007,17 +975,20 @@ inline void AuditLog::set_allocated_service_data(::google::protobuf::Any* servic
   // @@protoc_insertion_point(field_set_allocated:google.cloud.audit.AuditLog.service_data)
 }
 
+inline const AuditLog* AuditLog::internal_default_instance() {
+  return &AuditLog_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AuthenticationInfo
 
-// string principal_email = 1;
+// optional string principal_email = 1;
 inline void AuthenticationInfo::clear_principal_email() {
   principal_email_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AuthenticationInfo::principal_email() const {
   // @@protoc_insertion_point(field_get:google.cloud.audit.AuthenticationInfo.principal_email)
-  return principal_email_.GetNoArena();
+  return principal_email_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AuthenticationInfo::set_principal_email(const ::std::string& value) {
   
@@ -1055,17 +1026,20 @@ inline void AuthenticationInfo::set_allocated_principal_email(::std::string* pri
   // @@protoc_insertion_point(field_set_allocated:google.cloud.audit.AuthenticationInfo.principal_email)
 }
 
+inline const AuthenticationInfo* AuthenticationInfo::internal_default_instance() {
+  return &AuthenticationInfo_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AuthorizationInfo
 
-// string resource = 1;
+// optional string resource = 1;
 inline void AuthorizationInfo::clear_resource() {
   resource_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AuthorizationInfo::resource() const {
   // @@protoc_insertion_point(field_get:google.cloud.audit.AuthorizationInfo.resource)
-  return resource_.GetNoArena();
+  return resource_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AuthorizationInfo::set_resource(const ::std::string& value) {
   
@@ -1103,13 +1077,13 @@ inline void AuthorizationInfo::set_allocated_resource(::std::string* resource) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.audit.AuthorizationInfo.resource)
 }
 
-// string permission = 2;
+// optional string permission = 2;
 inline void AuthorizationInfo::clear_permission() {
   permission_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AuthorizationInfo::permission() const {
   // @@protoc_insertion_point(field_get:google.cloud.audit.AuthorizationInfo.permission)
-  return permission_.GetNoArena();
+  return permission_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AuthorizationInfo::set_permission(const ::std::string& value) {
   
@@ -1147,7 +1121,7 @@ inline void AuthorizationInfo::set_allocated_permission(::std::string* permissio
   // @@protoc_insertion_point(field_set_allocated:google.cloud.audit.AuthorizationInfo.permission)
 }
 
-// bool granted = 3;
+// optional bool granted = 3;
 inline void AuthorizationInfo::clear_granted() {
   granted_ = false;
 }
@@ -1161,17 +1135,20 @@ inline void AuthorizationInfo::set_granted(bool value) {
   // @@protoc_insertion_point(field_set:google.cloud.audit.AuthorizationInfo.granted)
 }
 
+inline const AuthorizationInfo* AuthorizationInfo::internal_default_instance() {
+  return &AuthorizationInfo_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // RequestMetadata
 
-// string caller_ip = 1;
+// optional string caller_ip = 1;
 inline void RequestMetadata::clear_caller_ip() {
   caller_ip_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& RequestMetadata::caller_ip() const {
   // @@protoc_insertion_point(field_get:google.cloud.audit.RequestMetadata.caller_ip)
-  return caller_ip_.GetNoArena();
+  return caller_ip_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void RequestMetadata::set_caller_ip(const ::std::string& value) {
   
@@ -1209,13 +1186,13 @@ inline void RequestMetadata::set_allocated_caller_ip(::std::string* caller_ip) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.audit.RequestMetadata.caller_ip)
 }
 
-// string caller_supplied_user_agent = 2;
+// optional string caller_supplied_user_agent = 2;
 inline void RequestMetadata::clear_caller_supplied_user_agent() {
   caller_supplied_user_agent_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& RequestMetadata::caller_supplied_user_agent() const {
   // @@protoc_insertion_point(field_get:google.cloud.audit.RequestMetadata.caller_supplied_user_agent)
-  return caller_supplied_user_agent_.GetNoArena();
+  return caller_supplied_user_agent_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void RequestMetadata::set_caller_supplied_user_agent(const ::std::string& value) {
   
@@ -1253,6 +1230,9 @@ inline void RequestMetadata::set_allocated_caller_supplied_user_agent(::std::str
   // @@protoc_insertion_point(field_set_allocated:google.cloud.audit.RequestMetadata.caller_supplied_user_agent)
 }
 
+inline const RequestMetadata* RequestMetadata::internal_default_instance() {
+  return &RequestMetadata_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
@@ -1262,7 +1242,6 @@ inline void RequestMetadata::set_allocated_caller_supplied_user_agent(::std::str
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace audit
 }  // namespace cloud

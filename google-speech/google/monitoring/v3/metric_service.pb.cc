@@ -20,95 +20,180 @@
 namespace google {
 namespace monitoring {
 namespace v3 {
-class ListMonitoredResourceDescriptorsRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListMonitoredResourceDescriptorsRequest> {};
-ListMonitoredResourceDescriptorsRequestDefaultTypeInternal _ListMonitoredResourceDescriptorsRequest_default_instance_;
-class ListMonitoredResourceDescriptorsResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListMonitoredResourceDescriptorsResponse> {};
-ListMonitoredResourceDescriptorsResponseDefaultTypeInternal _ListMonitoredResourceDescriptorsResponse_default_instance_;
-class GetMonitoredResourceDescriptorRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GetMonitoredResourceDescriptorRequest> {};
-GetMonitoredResourceDescriptorRequestDefaultTypeInternal _GetMonitoredResourceDescriptorRequest_default_instance_;
-class ListMetricDescriptorsRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListMetricDescriptorsRequest> {};
-ListMetricDescriptorsRequestDefaultTypeInternal _ListMetricDescriptorsRequest_default_instance_;
-class ListMetricDescriptorsResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListMetricDescriptorsResponse> {};
-ListMetricDescriptorsResponseDefaultTypeInternal _ListMetricDescriptorsResponse_default_instance_;
-class GetMetricDescriptorRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GetMetricDescriptorRequest> {};
-GetMetricDescriptorRequestDefaultTypeInternal _GetMetricDescriptorRequest_default_instance_;
-class CreateMetricDescriptorRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CreateMetricDescriptorRequest> {};
-CreateMetricDescriptorRequestDefaultTypeInternal _CreateMetricDescriptorRequest_default_instance_;
-class DeleteMetricDescriptorRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<DeleteMetricDescriptorRequest> {};
-DeleteMetricDescriptorRequestDefaultTypeInternal _DeleteMetricDescriptorRequest_default_instance_;
-class ListTimeSeriesRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListTimeSeriesRequest> {};
-ListTimeSeriesRequestDefaultTypeInternal _ListTimeSeriesRequest_default_instance_;
-class ListTimeSeriesResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListTimeSeriesResponse> {};
-ListTimeSeriesResponseDefaultTypeInternal _ListTimeSeriesResponse_default_instance_;
-class CreateTimeSeriesRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CreateTimeSeriesRequest> {};
-CreateTimeSeriesRequestDefaultTypeInternal _CreateTimeSeriesRequest_default_instance_;
-class CreateTimeSeriesErrorDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CreateTimeSeriesError> {};
-CreateTimeSeriesErrorDefaultTypeInternal _CreateTimeSeriesError_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[12];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+const ::google::protobuf::Descriptor* ListMonitoredResourceDescriptorsRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListMonitoredResourceDescriptorsRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListMonitoredResourceDescriptorsResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListMonitoredResourceDescriptorsResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* GetMonitoredResourceDescriptorRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GetMonitoredResourceDescriptorRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListMetricDescriptorsRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListMetricDescriptorsRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListMetricDescriptorsResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListMetricDescriptorsResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* GetMetricDescriptorRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GetMetricDescriptorRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* CreateMetricDescriptorRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CreateMetricDescriptorRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* DeleteMetricDescriptorRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  DeleteMetricDescriptorRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListTimeSeriesRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListTimeSeriesRequest_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* ListTimeSeriesRequest_TimeSeriesView_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* ListTimeSeriesResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListTimeSeriesResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* CreateTimeSeriesRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CreateTimeSeriesRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* CreateTimeSeriesError_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CreateTimeSeriesError_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto() {
+  protobuf_AddDesc_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/monitoring/v3/metric_service.proto");
+  GOOGLE_CHECK(file != NULL);
+  ListMonitoredResourceDescriptorsRequest_descriptor_ = file->message_type(0);
+  static const int ListMonitoredResourceDescriptorsRequest_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsRequest, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsRequest, filter_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsRequest, page_size_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsRequest, page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListMonitoredResourceDescriptorsRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListMonitoredResourceDescriptorsRequest_descriptor_,
+      ListMonitoredResourceDescriptorsRequest::internal_default_instance(),
+      ListMonitoredResourceDescriptorsRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListMonitoredResourceDescriptorsRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsRequest, _internal_metadata_));
+  ListMonitoredResourceDescriptorsResponse_descriptor_ = file->message_type(1);
+  static const int ListMonitoredResourceDescriptorsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsResponse, resource_descriptors_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsResponse, next_page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetMonitoredResourceDescriptorRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListMonitoredResourceDescriptorsResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListMonitoredResourceDescriptorsResponse_descriptor_,
+      ListMonitoredResourceDescriptorsResponse::internal_default_instance(),
+      ListMonitoredResourceDescriptorsResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListMonitoredResourceDescriptorsResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsResponse, _internal_metadata_));
+  GetMonitoredResourceDescriptorRequest_descriptor_ = file->message_type(2);
+  static const int GetMonitoredResourceDescriptorRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetMonitoredResourceDescriptorRequest, name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMetricDescriptorsRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  GetMonitoredResourceDescriptorRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GetMonitoredResourceDescriptorRequest_descriptor_,
+      GetMonitoredResourceDescriptorRequest::internal_default_instance(),
+      GetMonitoredResourceDescriptorRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GetMonitoredResourceDescriptorRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetMonitoredResourceDescriptorRequest, _internal_metadata_));
+  ListMetricDescriptorsRequest_descriptor_ = file->message_type(3);
+  static const int ListMetricDescriptorsRequest_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMetricDescriptorsRequest, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMetricDescriptorsRequest, filter_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMetricDescriptorsRequest, page_size_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMetricDescriptorsRequest, page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMetricDescriptorsResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListMetricDescriptorsRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListMetricDescriptorsRequest_descriptor_,
+      ListMetricDescriptorsRequest::internal_default_instance(),
+      ListMetricDescriptorsRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListMetricDescriptorsRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMetricDescriptorsRequest, _internal_metadata_));
+  ListMetricDescriptorsResponse_descriptor_ = file->message_type(4);
+  static const int ListMetricDescriptorsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMetricDescriptorsResponse, metric_descriptors_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMetricDescriptorsResponse, next_page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetMetricDescriptorRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListMetricDescriptorsResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListMetricDescriptorsResponse_descriptor_,
+      ListMetricDescriptorsResponse::internal_default_instance(),
+      ListMetricDescriptorsResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListMetricDescriptorsResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMetricDescriptorsResponse, _internal_metadata_));
+  GetMetricDescriptorRequest_descriptor_ = file->message_type(5);
+  static const int GetMetricDescriptorRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetMetricDescriptorRequest, name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateMetricDescriptorRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  GetMetricDescriptorRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GetMetricDescriptorRequest_descriptor_,
+      GetMetricDescriptorRequest::internal_default_instance(),
+      GetMetricDescriptorRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GetMetricDescriptorRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetMetricDescriptorRequest, _internal_metadata_));
+  CreateMetricDescriptorRequest_descriptor_ = file->message_type(6);
+  static const int CreateMetricDescriptorRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateMetricDescriptorRequest, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateMetricDescriptorRequest, metric_descriptor_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteMetricDescriptorRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  CreateMetricDescriptorRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      CreateMetricDescriptorRequest_descriptor_,
+      CreateMetricDescriptorRequest::internal_default_instance(),
+      CreateMetricDescriptorRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(CreateMetricDescriptorRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateMetricDescriptorRequest, _internal_metadata_));
+  DeleteMetricDescriptorRequest_descriptor_ = file->message_type(7);
+  static const int DeleteMetricDescriptorRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteMetricDescriptorRequest, name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTimeSeriesRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  DeleteMetricDescriptorRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      DeleteMetricDescriptorRequest_descriptor_,
+      DeleteMetricDescriptorRequest::internal_default_instance(),
+      DeleteMetricDescriptorRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(DeleteMetricDescriptorRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteMetricDescriptorRequest, _internal_metadata_));
+  ListTimeSeriesRequest_descriptor_ = file->message_type(8);
+  static const int ListTimeSeriesRequest_offsets_[8] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTimeSeriesRequest, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTimeSeriesRequest, filter_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTimeSeriesRequest, interval_),
@@ -117,106 +202,129 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2fmonitoring_2fv3_2fme
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTimeSeriesRequest, view_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTimeSeriesRequest, page_size_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTimeSeriesRequest, page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTimeSeriesResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListTimeSeriesRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListTimeSeriesRequest_descriptor_,
+      ListTimeSeriesRequest::internal_default_instance(),
+      ListTimeSeriesRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListTimeSeriesRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTimeSeriesRequest, _internal_metadata_));
+  ListTimeSeriesRequest_TimeSeriesView_descriptor_ = ListTimeSeriesRequest_descriptor_->enum_type(0);
+  ListTimeSeriesResponse_descriptor_ = file->message_type(9);
+  static const int ListTimeSeriesResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTimeSeriesResponse, time_series_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTimeSeriesResponse, next_page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateTimeSeriesRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListTimeSeriesResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListTimeSeriesResponse_descriptor_,
+      ListTimeSeriesResponse::internal_default_instance(),
+      ListTimeSeriesResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListTimeSeriesResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListTimeSeriesResponse, _internal_metadata_));
+  CreateTimeSeriesRequest_descriptor_ = file->message_type(10);
+  static const int CreateTimeSeriesRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateTimeSeriesRequest, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateTimeSeriesRequest, time_series_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateTimeSeriesError, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  CreateTimeSeriesRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      CreateTimeSeriesRequest_descriptor_,
+      CreateTimeSeriesRequest::internal_default_instance(),
+      CreateTimeSeriesRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(CreateTimeSeriesRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateTimeSeriesRequest, _internal_metadata_));
+  CreateTimeSeriesError_descriptor_ = file->message_type(11);
+  static const int CreateTimeSeriesError_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateTimeSeriesError, time_series_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateTimeSeriesError, status_),
   };
-  return offsets;
+  CreateTimeSeriesError_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      CreateTimeSeriesError_descriptor_,
+      CreateTimeSeriesError::internal_default_instance(),
+      CreateTimeSeriesError_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(CreateTimeSeriesError),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateTimeSeriesError, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(ListMonitoredResourceDescriptorsRequest)},
-  { 8, -1, sizeof(ListMonitoredResourceDescriptorsResponse)},
-  { 14, -1, sizeof(GetMonitoredResourceDescriptorRequest)},
-  { 19, -1, sizeof(ListMetricDescriptorsRequest)},
-  { 27, -1, sizeof(ListMetricDescriptorsResponse)},
-  { 33, -1, sizeof(GetMetricDescriptorRequest)},
-  { 38, -1, sizeof(CreateMetricDescriptorRequest)},
-  { 44, -1, sizeof(DeleteMetricDescriptorRequest)},
-  { 49, -1, sizeof(ListTimeSeriesRequest)},
-  { 61, -1, sizeof(ListTimeSeriesResponse)},
-  { 67, -1, sizeof(CreateTimeSeriesRequest)},
-  { 73, -1, sizeof(CreateTimeSeriesError)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListMonitoredResourceDescriptorsRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListMonitoredResourceDescriptorsResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GetMonitoredResourceDescriptorRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListMetricDescriptorsRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListMetricDescriptorsResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GetMetricDescriptorRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_CreateMetricDescriptorRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_DeleteMetricDescriptorRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListTimeSeriesRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListTimeSeriesResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_CreateTimeSeriesRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_CreateTimeSeriesError_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/monitoring/v3/metric_service.proto", schemas, file_default_instances, protobuf_Offsets_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto(), factory,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 12);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListMonitoredResourceDescriptorsRequest_descriptor_, ListMonitoredResourceDescriptorsRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListMonitoredResourceDescriptorsResponse_descriptor_, ListMonitoredResourceDescriptorsResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GetMonitoredResourceDescriptorRequest_descriptor_, GetMonitoredResourceDescriptorRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListMetricDescriptorsRequest_descriptor_, ListMetricDescriptorsRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListMetricDescriptorsResponse_descriptor_, ListMetricDescriptorsResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GetMetricDescriptorRequest_descriptor_, GetMetricDescriptorRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      CreateMetricDescriptorRequest_descriptor_, CreateMetricDescriptorRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      DeleteMetricDescriptorRequest_descriptor_, DeleteMetricDescriptorRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListTimeSeriesRequest_descriptor_, ListTimeSeriesRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListTimeSeriesResponse_descriptor_, ListTimeSeriesResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      CreateTimeSeriesRequest_descriptor_, CreateTimeSeriesRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      CreateTimeSeriesError_descriptor_, CreateTimeSeriesError::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto() {
-  _ListMonitoredResourceDescriptorsRequest_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _ListMonitoredResourceDescriptorsResponse_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _GetMonitoredResourceDescriptorRequest_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _ListMetricDescriptorsRequest_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _ListMetricDescriptorsResponse_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
-  _GetMetricDescriptorRequest_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
-  _CreateMetricDescriptorRequest_default_instance_.Shutdown();
-  delete file_level_metadata[6].reflection;
-  _DeleteMetricDescriptorRequest_default_instance_.Shutdown();
-  delete file_level_metadata[7].reflection;
-  _ListTimeSeriesRequest_default_instance_.Shutdown();
-  delete file_level_metadata[8].reflection;
-  _ListTimeSeriesResponse_default_instance_.Shutdown();
-  delete file_level_metadata[9].reflection;
-  _CreateTimeSeriesRequest_default_instance_.Shutdown();
-  delete file_level_metadata[10].reflection;
-  _CreateTimeSeriesError_default_instance_.Shutdown();
-  delete file_level_metadata[11].reflection;
+  ListMonitoredResourceDescriptorsRequest_default_instance_.Shutdown();
+  delete ListMonitoredResourceDescriptorsRequest_reflection_;
+  ListMonitoredResourceDescriptorsResponse_default_instance_.Shutdown();
+  delete ListMonitoredResourceDescriptorsResponse_reflection_;
+  GetMonitoredResourceDescriptorRequest_default_instance_.Shutdown();
+  delete GetMonitoredResourceDescriptorRequest_reflection_;
+  ListMetricDescriptorsRequest_default_instance_.Shutdown();
+  delete ListMetricDescriptorsRequest_reflection_;
+  ListMetricDescriptorsResponse_default_instance_.Shutdown();
+  delete ListMetricDescriptorsResponse_reflection_;
+  GetMetricDescriptorRequest_default_instance_.Shutdown();
+  delete GetMetricDescriptorRequest_reflection_;
+  CreateMetricDescriptorRequest_default_instance_.Shutdown();
+  delete CreateMetricDescriptorRequest_reflection_;
+  DeleteMetricDescriptorRequest_default_instance_.Shutdown();
+  delete DeleteMetricDescriptorRequest_reflection_;
+  ListTimeSeriesRequest_default_instance_.Shutdown();
+  delete ListTimeSeriesRequest_reflection_;
+  ListTimeSeriesResponse_default_instance_.Shutdown();
+  delete ListTimeSeriesResponse_reflection_;
+  CreateTimeSeriesRequest_default_instance_.Shutdown();
+  delete CreateTimeSeriesRequest_reflection_;
+  CreateTimeSeriesError_default_instance_.Shutdown();
+  delete CreateTimeSeriesError_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto_impl() {
@@ -229,122 +337,134 @@ void protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto_i
   ::google::monitoring::v3::protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fempty_2eproto();
   ::google::rpc::protobuf_InitDefaults_google_2frpc_2fstatus_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _ListMonitoredResourceDescriptorsRequest_default_instance_.DefaultConstruct();
-  _ListMonitoredResourceDescriptorsResponse_default_instance_.DefaultConstruct();
-  _GetMonitoredResourceDescriptorRequest_default_instance_.DefaultConstruct();
-  _ListMetricDescriptorsRequest_default_instance_.DefaultConstruct();
-  _ListMetricDescriptorsResponse_default_instance_.DefaultConstruct();
-  _GetMetricDescriptorRequest_default_instance_.DefaultConstruct();
-  _CreateMetricDescriptorRequest_default_instance_.DefaultConstruct();
-  _DeleteMetricDescriptorRequest_default_instance_.DefaultConstruct();
-  _ListTimeSeriesRequest_default_instance_.DefaultConstruct();
-  _ListTimeSeriesResponse_default_instance_.DefaultConstruct();
-  _CreateTimeSeriesRequest_default_instance_.DefaultConstruct();
-  _CreateTimeSeriesError_default_instance_.DefaultConstruct();
-  _CreateMetricDescriptorRequest_default_instance_.get_mutable()->metric_descriptor_ = const_cast< ::google::api::MetricDescriptor*>(
-      ::google::api::MetricDescriptor::internal_default_instance());
-  _ListTimeSeriesRequest_default_instance_.get_mutable()->interval_ = const_cast< ::google::monitoring::v3::TimeInterval*>(
-      ::google::monitoring::v3::TimeInterval::internal_default_instance());
-  _ListTimeSeriesRequest_default_instance_.get_mutable()->aggregation_ = const_cast< ::google::monitoring::v3::Aggregation*>(
-      ::google::monitoring::v3::Aggregation::internal_default_instance());
-  _CreateTimeSeriesError_default_instance_.get_mutable()->time_series_ = const_cast< ::google::monitoring::v3::TimeSeries*>(
-      ::google::monitoring::v3::TimeSeries::internal_default_instance());
-  _CreateTimeSeriesError_default_instance_.get_mutable()->status_ = const_cast< ::google::rpc::Status*>(
-      ::google::rpc::Status::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  ListMonitoredResourceDescriptorsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListMonitoredResourceDescriptorsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetMonitoredResourceDescriptorRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListMetricDescriptorsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListMetricDescriptorsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetMetricDescriptorRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  CreateMetricDescriptorRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DeleteMetricDescriptorRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListTimeSeriesRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListTimeSeriesResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  CreateTimeSeriesRequest_default_instance_.DefaultConstruct();
+  CreateTimeSeriesError_default_instance_.DefaultConstruct();
+  ListMonitoredResourceDescriptorsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListMonitoredResourceDescriptorsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetMonitoredResourceDescriptorRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListMetricDescriptorsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListMetricDescriptorsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetMetricDescriptorRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CreateMetricDescriptorRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DeleteMetricDescriptorRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListTimeSeriesRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListTimeSeriesResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CreateTimeSeriesRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CreateTimeSeriesError_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto_once_);
 void protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
-  static const char descriptor[] = {
-      "\n)google/monitoring/v3/metric_service.pr"
-      "oto\022\024google.monitoring.v3\032\034google/api/an"
-      "notations.proto\032\027google/api/metric.proto"
-      "\032#google/api/monitored_resource.proto\032!g"
-      "oogle/monitoring/v3/common.proto\032!google"
-      "/monitoring/v3/metric.proto\032\033google/prot"
-      "obuf/empty.proto\032\027google/rpc/status.prot"
-      "o\"n\n\'ListMonitoredResourceDescriptorsReq"
-      "uest\022\014\n\004name\030\005 \001(\t\022\016\n\006filter\030\002 \001(\t\022\021\n\tpa"
-      "ge_size\030\003 \001(\005\022\022\n\npage_token\030\004 \001(\t\"\212\001\n(Li"
-      "stMonitoredResourceDescriptorsResponse\022E"
-      "\n\024resource_descriptors\030\001 \003(\0132\'.google.ap"
-      "i.MonitoredResourceDescriptor\022\027\n\017next_pa"
-      "ge_token\030\002 \001(\t\"5\n%GetMonitoredResourceDe"
-      "scriptorRequest\022\014\n\004name\030\003 \001(\t\"c\n\034ListMet"
-      "ricDescriptorsRequest\022\014\n\004name\030\005 \001(\t\022\016\n\006f"
-      "ilter\030\002 \001(\t\022\021\n\tpage_size\030\003 \001(\005\022\022\n\npage_t"
-      "oken\030\004 \001(\t\"r\n\035ListMetricDescriptorsRespo"
-      "nse\0228\n\022metric_descriptors\030\001 \003(\0132\034.google"
-      ".api.MetricDescriptor\022\027\n\017next_page_token"
-      "\030\002 \001(\t\"*\n\032GetMetricDescriptorRequest\022\014\n\004"
-      "name\030\003 \001(\t\"f\n\035CreateMetricDescriptorRequ"
-      "est\022\014\n\004name\030\003 \001(\t\0227\n\021metric_descriptor\030\002"
-      " \001(\0132\034.google.api.MetricDescriptor\"-\n\035De"
-      "leteMetricDescriptorRequest\022\014\n\004name\030\003 \001("
-      "\t\"\317\002\n\025ListTimeSeriesRequest\022\014\n\004name\030\n \001("
-      "\t\022\016\n\006filter\030\002 \001(\t\0224\n\010interval\030\004 \001(\0132\".go"
-      "ogle.monitoring.v3.TimeInterval\0226\n\013aggre"
-      "gation\030\005 \001(\0132!.google.monitoring.v3.Aggr"
-      "egation\022\020\n\010order_by\030\006 \001(\t\022H\n\004view\030\007 \001(\0162"
-      ":.google.monitoring.v3.ListTimeSeriesReq"
-      "uest.TimeSeriesView\022\021\n\tpage_size\030\010 \001(\005\022\022"
-      "\n\npage_token\030\t \001(\t\"\'\n\016TimeSeriesView\022\010\n\004"
-      "FULL\020\000\022\013\n\007HEADERS\020\001\"h\n\026ListTimeSeriesRes"
-      "ponse\0225\n\013time_series\030\001 \003(\0132 .google.moni"
-      "toring.v3.TimeSeries\022\027\n\017next_page_token\030"
-      "\002 \001(\t\"^\n\027CreateTimeSeriesRequest\022\014\n\004name"
-      "\030\003 \001(\t\0225\n\013time_series\030\002 \003(\0132 .google.mon"
-      "itoring.v3.TimeSeries\"r\n\025CreateTimeSerie"
-      "sError\0225\n\013time_series\030\001 \001(\0132 .google.mon"
-      "itoring.v3.TimeSeries\022\"\n\006status\030\002 \001(\0132\022."
-      "google.rpc.Status2\365\n\n\rMetricService\022\335\001\n "
-      "ListMonitoredResourceDescriptors\022=.googl"
-      "e.monitoring.v3.ListMonitoredResourceDes"
-      "criptorsRequest\032>.google.monitoring.v3.L"
-      "istMonitoredResourceDescriptorsResponse\""
-      ":\202\323\344\223\0024\0222/v3/{name=projects/*}/monitored"
-      "ResourceDescriptors\022\304\001\n\036GetMonitoredReso"
-      "urceDescriptor\022;.google.monitoring.v3.Ge"
-      "tMonitoredResourceDescriptorRequest\032\'.go"
-      "ogle.api.MonitoredResourceDescriptor\"<\202\323"
-      "\344\223\0026\0224/v3/{name=projects/*/monitoredReso"
-      "urceDescriptors/*}\022\261\001\n\025ListMetricDescrip"
-      "tors\0222.google.monitoring.v3.ListMetricDe"
-      "scriptorsRequest\0323.google.monitoring.v3."
-      "ListMetricDescriptorsResponse\"/\202\323\344\223\002)\022\'/"
-      "v3/{name=projects/*}/metricDescriptors\022\231"
-      "\001\n\023GetMetricDescriptor\0220.google.monitori"
-      "ng.v3.GetMetricDescriptorRequest\032\034.googl"
-      "e.api.MetricDescriptor\"2\202\323\344\223\002,\022*/v3/{nam"
-      "e=projects/*/metricDescriptors/**}\022\257\001\n\026C"
-      "reateMetricDescriptor\0223.google.monitorin"
-      "g.v3.CreateMetricDescriptorRequest\032\034.goo"
-      "gle.api.MetricDescriptor\"B\202\323\344\223\002<\"\'/v3/{n"
-      "ame=projects/*}/metricDescriptors:\021metri"
-      "c_descriptor\022\231\001\n\026DeleteMetricDescriptor\022"
-      "3.google.monitoring.v3.DeleteMetricDescr"
-      "iptorRequest\032\026.google.protobuf.Empty\"2\202\323"
-      "\344\223\002,**/v3/{name=projects/*/metricDescrip"
-      "tors/**}\022\225\001\n\016ListTimeSeries\022+.google.mon"
-      "itoring.v3.ListTimeSeriesRequest\032,.googl"
-      "e.monitoring.v3.ListTimeSeriesResponse\"("
-      "\202\323\344\223\002\"\022 /v3/{name=projects/*}/timeSeries"
-      "\022\206\001\n\020CreateTimeSeries\022-.google.monitorin"
-      "g.v3.CreateTimeSeriesRequest\032\026.google.pr"
-      "otobuf.Empty\"+\202\323\344\223\002%\" /v3/{name=projects"
-      "/*}/timeSeries:\001*B\215\001\n\030com.google.monitor"
-      "ing.v3B\022MetricServiceProtoP\001Z>google.gol"
-      "ang.org/genproto/googleapis/monitoring/v"
-      "3;monitoring\252\002\032Google.Cloud.Monitoring.V"
-      "3b\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 3209);
+    "\n)google/monitoring/v3/metric_service.pr"
+    "oto\022\024google.monitoring.v3\032\034google/api/an"
+    "notations.proto\032\027google/api/metric.proto"
+    "\032#google/api/monitored_resource.proto\032!g"
+    "oogle/monitoring/v3/common.proto\032!google"
+    "/monitoring/v3/metric.proto\032\033google/prot"
+    "obuf/empty.proto\032\027google/rpc/status.prot"
+    "o\"n\n\'ListMonitoredResourceDescriptorsReq"
+    "uest\022\014\n\004name\030\005 \001(\t\022\016\n\006filter\030\002 \001(\t\022\021\n\tpa"
+    "ge_size\030\003 \001(\005\022\022\n\npage_token\030\004 \001(\t\"\212\001\n(Li"
+    "stMonitoredResourceDescriptorsResponse\022E"
+    "\n\024resource_descriptors\030\001 \003(\0132\'.google.ap"
+    "i.MonitoredResourceDescriptor\022\027\n\017next_pa"
+    "ge_token\030\002 \001(\t\"5\n%GetMonitoredResourceDe"
+    "scriptorRequest\022\014\n\004name\030\003 \001(\t\"c\n\034ListMet"
+    "ricDescriptorsRequest\022\014\n\004name\030\005 \001(\t\022\016\n\006f"
+    "ilter\030\002 \001(\t\022\021\n\tpage_size\030\003 \001(\005\022\022\n\npage_t"
+    "oken\030\004 \001(\t\"r\n\035ListMetricDescriptorsRespo"
+    "nse\0228\n\022metric_descriptors\030\001 \003(\0132\034.google"
+    ".api.MetricDescriptor\022\027\n\017next_page_token"
+    "\030\002 \001(\t\"*\n\032GetMetricDescriptorRequest\022\014\n\004"
+    "name\030\003 \001(\t\"f\n\035CreateMetricDescriptorRequ"
+    "est\022\014\n\004name\030\003 \001(\t\0227\n\021metric_descriptor\030\002"
+    " \001(\0132\034.google.api.MetricDescriptor\"-\n\035De"
+    "leteMetricDescriptorRequest\022\014\n\004name\030\003 \001("
+    "\t\"\317\002\n\025ListTimeSeriesRequest\022\014\n\004name\030\n \001("
+    "\t\022\016\n\006filter\030\002 \001(\t\0224\n\010interval\030\004 \001(\0132\".go"
+    "ogle.monitoring.v3.TimeInterval\0226\n\013aggre"
+    "gation\030\005 \001(\0132!.google.monitoring.v3.Aggr"
+    "egation\022\020\n\010order_by\030\006 \001(\t\022H\n\004view\030\007 \001(\0162"
+    ":.google.monitoring.v3.ListTimeSeriesReq"
+    "uest.TimeSeriesView\022\021\n\tpage_size\030\010 \001(\005\022\022"
+    "\n\npage_token\030\t \001(\t\"\'\n\016TimeSeriesView\022\010\n\004"
+    "FULL\020\000\022\013\n\007HEADERS\020\001\"h\n\026ListTimeSeriesRes"
+    "ponse\0225\n\013time_series\030\001 \003(\0132 .google.moni"
+    "toring.v3.TimeSeries\022\027\n\017next_page_token\030"
+    "\002 \001(\t\"^\n\027CreateTimeSeriesRequest\022\014\n\004name"
+    "\030\003 \001(\t\0225\n\013time_series\030\002 \003(\0132 .google.mon"
+    "itoring.v3.TimeSeries\"r\n\025CreateTimeSerie"
+    "sError\0225\n\013time_series\030\001 \001(\0132 .google.mon"
+    "itoring.v3.TimeSeries\022\"\n\006status\030\002 \001(\0132\022."
+    "google.rpc.Status2\365\n\n\rMetricService\022\335\001\n "
+    "ListMonitoredResourceDescriptors\022=.googl"
+    "e.monitoring.v3.ListMonitoredResourceDes"
+    "criptorsRequest\032>.google.monitoring.v3.L"
+    "istMonitoredResourceDescriptorsResponse\""
+    ":\202\323\344\223\0024\0222/v3/{name=projects/*}/monitored"
+    "ResourceDescriptors\022\304\001\n\036GetMonitoredReso"
+    "urceDescriptor\022;.google.monitoring.v3.Ge"
+    "tMonitoredResourceDescriptorRequest\032\'.go"
+    "ogle.api.MonitoredResourceDescriptor\"<\202\323"
+    "\344\223\0026\0224/v3/{name=projects/*/monitoredReso"
+    "urceDescriptors/*}\022\261\001\n\025ListMetricDescrip"
+    "tors\0222.google.monitoring.v3.ListMetricDe"
+    "scriptorsRequest\0323.google.monitoring.v3."
+    "ListMetricDescriptorsResponse\"/\202\323\344\223\002)\022\'/"
+    "v3/{name=projects/*}/metricDescriptors\022\231"
+    "\001\n\023GetMetricDescriptor\0220.google.monitori"
+    "ng.v3.GetMetricDescriptorRequest\032\034.googl"
+    "e.api.MetricDescriptor\"2\202\323\344\223\002,\022*/v3/{nam"
+    "e=projects/*/metricDescriptors/**}\022\257\001\n\026C"
+    "reateMetricDescriptor\0223.google.monitorin"
+    "g.v3.CreateMetricDescriptorRequest\032\034.goo"
+    "gle.api.MetricDescriptor\"B\202\323\344\223\002<\"\'/v3/{n"
+    "ame=projects/*}/metricDescriptors:\021metri"
+    "c_descriptor\022\231\001\n\026DeleteMetricDescriptor\022"
+    "3.google.monitoring.v3.DeleteMetricDescr"
+    "iptorRequest\032\026.google.protobuf.Empty\"2\202\323"
+    "\344\223\002,**/v3/{name=projects/*/metricDescrip"
+    "tors/**}\022\225\001\n\016ListTimeSeries\022+.google.mon"
+    "itoring.v3.ListTimeSeriesRequest\032,.googl"
+    "e.monitoring.v3.ListTimeSeriesResponse\"("
+    "\202\323\344\223\002\"\022 /v3/{name=projects/*}/timeSeries"
+    "\022\206\001\n\020CreateTimeSeries\022-.google.monitorin"
+    "g.v3.CreateTimeSeriesRequest\032\026.google.pr"
+    "otobuf.Empty\"+\202\323\344\223\002%\" /v3/{name=projects"
+    "/*}/timeSeries:\001*B\215\001\n\030com.google.monitor"
+    "ing.v3B\022MetricServiceProtoP\001Z>google.gol"
+    "ang.org/genproto/googleapis/monitoring/v"
+    "3;monitoring\252\002\032Google.Cloud.Monitoring.V"
+    "3b\006proto3", 3209);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/monitoring/v3/metric_service.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -368,27 +488,16 @@ struct StaticDescriptorInitializer_google_2fmonitoring_2fv3_2fmetric_5fservice_2
     protobuf_AddDesc_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   }
 } static_descriptor_initializer_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto_;
-const ::google::protobuf::EnumDescriptor* ListTimeSeriesRequest_TimeSeriesView_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
-}
-bool ListTimeSeriesRequest_TimeSeriesView_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-      return true;
-    default:
-      return false;
-  }
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
 }
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const ListTimeSeriesRequest_TimeSeriesView ListTimeSeriesRequest::FULL;
-const ListTimeSeriesRequest_TimeSeriesView ListTimeSeriesRequest::HEADERS;
-const ListTimeSeriesRequest_TimeSeriesView ListTimeSeriesRequest::TimeSeriesView_MIN;
-const ListTimeSeriesRequest_TimeSeriesView ListTimeSeriesRequest::TimeSeriesView_MAX;
-const int ListTimeSeriesRequest::TimeSeriesView_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+}  // namespace
+
 
 // ===================================================================
 
@@ -401,30 +510,19 @@ const int ListMonitoredResourceDescriptorsRequest::kPageTokenFieldNumber;
 
 ListMonitoredResourceDescriptorsRequest::ListMonitoredResourceDescriptorsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest)
 }
+
+void ListMonitoredResourceDescriptorsRequest::InitAsDefaultInstance() {
+}
+
 ListMonitoredResourceDescriptorsRequest::ListMonitoredResourceDescriptorsRequest(const ListMonitoredResourceDescriptorsRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  filter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.filter().size() > 0) {
-    filter_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.filter_);
-  }
-  page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.page_token().size() > 0) {
-    page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
-  }
-  page_size_ = from.page_size_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest)
 }
 
@@ -454,13 +552,15 @@ void ListMonitoredResourceDescriptorsRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListMonitoredResourceDescriptorsRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return ListMonitoredResourceDescriptorsRequest_descriptor_;
 }
 
 const ListMonitoredResourceDescriptorsRequest& ListMonitoredResourceDescriptorsRequest::default_instance() {
   protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListMonitoredResourceDescriptorsRequest> ListMonitoredResourceDescriptorsRequest_default_instance_;
 
 ListMonitoredResourceDescriptorsRequest* ListMonitoredResourceDescriptorsRequest::New(::google::protobuf::Arena* arena) const {
   ListMonitoredResourceDescriptorsRequest* n = new ListMonitoredResourceDescriptorsRequest;
@@ -474,8 +574,8 @@ void ListMonitoredResourceDescriptorsRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest)
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   filter_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_size_ = 0;
+  page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 bool ListMonitoredResourceDescriptorsRequest::MergePartialFromCodedStream(
@@ -484,13 +584,13 @@ bool ListMonitoredResourceDescriptorsRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string filter = 2;
+      // optional string filter = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_filter()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -500,12 +600,14 @@ bool ListMonitoredResourceDescriptorsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_page_size;
         break;
       }
 
-      // int32 page_size = 3;
+      // optional int32 page_size = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_page_size:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -513,12 +615,14 @@ bool ListMonitoredResourceDescriptorsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_page_token;
         break;
       }
 
-      // string page_token = 4;
+      // optional string page_token = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -528,12 +632,14 @@ bool ListMonitoredResourceDescriptorsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_name;
         break;
       }
 
-      // string name = 5;
+      // optional string name = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -543,6 +649,7 @@ bool ListMonitoredResourceDescriptorsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -570,7 +677,7 @@ failure:
 void ListMonitoredResourceDescriptorsRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest)
-  // string filter = 2;
+  // optional string filter = 2;
   if (this->filter().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->filter().data(), this->filter().length(),
@@ -580,12 +687,12 @@ void ListMonitoredResourceDescriptorsRequest::SerializeWithCachedSizes(
       2, this->filter(), output);
   }
 
-  // int32 page_size = 3;
+  // optional int32 page_size = 3;
   if (this->page_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->page_size(), output);
   }
 
-  // string page_token = 4;
+  // optional string page_token = 4;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -595,7 +702,7 @@ void ListMonitoredResourceDescriptorsRequest::SerializeWithCachedSizes(
       4, this->page_token(), output);
   }
 
-  // string name = 5;
+  // optional string name = 5;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -612,7 +719,7 @@ void ListMonitoredResourceDescriptorsRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest)
-  // string filter = 2;
+  // optional string filter = 2;
   if (this->filter().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->filter().data(), this->filter().length(),
@@ -623,12 +730,12 @@ void ListMonitoredResourceDescriptorsRequest::SerializeWithCachedSizes(
         2, this->filter(), target);
   }
 
-  // int32 page_size = 3;
+  // optional int32 page_size = 3;
   if (this->page_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->page_size(), target);
   }
 
-  // string page_token = 4;
+  // optional string page_token = 4;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -639,7 +746,7 @@ void ListMonitoredResourceDescriptorsRequest::SerializeWithCachedSizes(
         4, this->page_token(), target);
   }
 
-  // string name = 5;
+  // optional string name = 5;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -658,32 +765,32 @@ size_t ListMonitoredResourceDescriptorsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest)
   size_t total_size = 0;
 
-  // string name = 5;
+  // optional string name = 5;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->name());
   }
 
-  // string filter = 2;
+  // optional string filter = 2;
   if (this->filter().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->filter());
   }
 
-  // string page_token = 4;
-  if (this->page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->page_token());
-  }
-
-  // int32 page_size = 3;
+  // optional int32 page_size = 3;
   if (this->page_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->page_size());
+  }
+
+  // optional string page_token = 4;
+  if (this->page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->page_token());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -695,7 +802,7 @@ size_t ListMonitoredResourceDescriptorsRequest::ByteSizeLong() const {
 
 void ListMonitoredResourceDescriptorsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListMonitoredResourceDescriptorsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListMonitoredResourceDescriptorsRequest>(
           &from);
@@ -704,14 +811,21 @@ void ListMonitoredResourceDescriptorsRequest::MergeFrom(const ::google::protobuf
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListMonitoredResourceDescriptorsRequest::MergeFrom(const ListMonitoredResourceDescriptorsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListMonitoredResourceDescriptorsRequest::UnsafeMergeFrom(const ListMonitoredResourceDescriptorsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -720,12 +834,12 @@ void ListMonitoredResourceDescriptorsRequest::MergeFrom(const ListMonitoredResou
 
     filter_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.filter_);
   }
+  if (from.page_size() != 0) {
+    set_page_size(from.page_size());
+  }
   if (from.page_token().size() > 0) {
 
     page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
-  }
-  if (from.page_size() != 0) {
-    set_page_size(from.page_size());
   }
 }
 
@@ -740,10 +854,11 @@ void ListMonitoredResourceDescriptorsRequest::CopyFrom(const ListMonitoredResour
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListMonitoredResourceDescriptorsRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -754,26 +869,30 @@ void ListMonitoredResourceDescriptorsRequest::Swap(ListMonitoredResourceDescript
 void ListMonitoredResourceDescriptorsRequest::InternalSwap(ListMonitoredResourceDescriptorsRequest* other) {
   name_.Swap(&other->name_);
   filter_.Swap(&other->filter_);
-  page_token_.Swap(&other->page_token_);
   std::swap(page_size_, other->page_size_);
+  page_token_.Swap(&other->page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListMonitoredResourceDescriptorsRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListMonitoredResourceDescriptorsRequest_descriptor_;
+  metadata.reflection = ListMonitoredResourceDescriptorsRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ListMonitoredResourceDescriptorsRequest
 
-// string name = 5;
+// optional string name = 5;
 void ListMonitoredResourceDescriptorsRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListMonitoredResourceDescriptorsRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListMonitoredResourceDescriptorsRequest::set_name(const ::std::string& value) {
   
@@ -811,13 +930,13 @@ void ListMonitoredResourceDescriptorsRequest::set_allocated_name(::std::string* 
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest.name)
 }
 
-// string filter = 2;
+// optional string filter = 2;
 void ListMonitoredResourceDescriptorsRequest::clear_filter() {
   filter_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListMonitoredResourceDescriptorsRequest::filter() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest.filter)
-  return filter_.GetNoArena();
+  return filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListMonitoredResourceDescriptorsRequest::set_filter(const ::std::string& value) {
   
@@ -855,7 +974,7 @@ void ListMonitoredResourceDescriptorsRequest::set_allocated_filter(::std::string
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest.filter)
 }
 
-// int32 page_size = 3;
+// optional int32 page_size = 3;
 void ListMonitoredResourceDescriptorsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -869,13 +988,13 @@ void ListMonitoredResourceDescriptorsRequest::set_page_size(::google::protobuf::
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest.page_size)
 }
 
-// string page_token = 4;
+// optional string page_token = 4;
 void ListMonitoredResourceDescriptorsRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListMonitoredResourceDescriptorsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListMonitoredResourceDescriptorsRequest::set_page_token(const ::std::string& value) {
   
@@ -913,6 +1032,9 @@ void ListMonitoredResourceDescriptorsRequest::set_allocated_page_token(::std::st
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListMonitoredResourceDescriptorsRequest.page_token)
 }
 
+inline const ListMonitoredResourceDescriptorsRequest* ListMonitoredResourceDescriptorsRequest::internal_default_instance() {
+  return &ListMonitoredResourceDescriptorsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -924,22 +1046,19 @@ const int ListMonitoredResourceDescriptorsResponse::kNextPageTokenFieldNumber;
 
 ListMonitoredResourceDescriptorsResponse::ListMonitoredResourceDescriptorsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.ListMonitoredResourceDescriptorsResponse)
 }
+
+void ListMonitoredResourceDescriptorsResponse::InitAsDefaultInstance() {
+}
+
 ListMonitoredResourceDescriptorsResponse::ListMonitoredResourceDescriptorsResponse(const ListMonitoredResourceDescriptorsResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      resource_descriptors_(from.resource_descriptors_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_page_token().size() > 0) {
-    next_page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_page_token_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.ListMonitoredResourceDescriptorsResponse)
 }
 
@@ -964,13 +1083,15 @@ void ListMonitoredResourceDescriptorsResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListMonitoredResourceDescriptorsResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return ListMonitoredResourceDescriptorsResponse_descriptor_;
 }
 
 const ListMonitoredResourceDescriptorsResponse& ListMonitoredResourceDescriptorsResponse::default_instance() {
   protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListMonitoredResourceDescriptorsResponse> ListMonitoredResourceDescriptorsResponse_default_instance_;
 
 ListMonitoredResourceDescriptorsResponse* ListMonitoredResourceDescriptorsResponse::New(::google::protobuf::Arena* arena) const {
   ListMonitoredResourceDescriptorsResponse* n = new ListMonitoredResourceDescriptorsResponse;
@@ -982,8 +1103,8 @@ ListMonitoredResourceDescriptorsResponse* ListMonitoredResourceDescriptorsRespon
 
 void ListMonitoredResourceDescriptorsResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.monitoring.v3.ListMonitoredResourceDescriptorsResponse)
-  resource_descriptors_.Clear();
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  resource_descriptors_.Clear();
 }
 
 bool ListMonitoredResourceDescriptorsResponse::MergePartialFromCodedStream(
@@ -992,26 +1113,30 @@ bool ListMonitoredResourceDescriptorsResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.monitoring.v3.ListMonitoredResourceDescriptorsResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.api.MonitoredResourceDescriptor resource_descriptors = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_resource_descriptors:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_resource_descriptors()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_resource_descriptors;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_next_page_token;
         break;
       }
 
-      // string next_page_token = 2;
+      // optional string next_page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_next_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1021,6 +1146,7 @@ bool ListMonitoredResourceDescriptorsResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1054,7 +1180,7 @@ void ListMonitoredResourceDescriptorsResponse::SerializeWithCachedSizes(
       1, this->resource_descriptors(i), output);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -1078,7 +1204,7 @@ void ListMonitoredResourceDescriptorsResponse::SerializeWithCachedSizes(
         1, this->resource_descriptors(i), false, target);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -1097,6 +1223,13 @@ size_t ListMonitoredResourceDescriptorsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.ListMonitoredResourceDescriptorsResponse)
   size_t total_size = 0;
 
+  // optional string next_page_token = 2;
+  if (this->next_page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_page_token());
+  }
+
   // repeated .google.api.MonitoredResourceDescriptor resource_descriptors = 1;
   {
     unsigned int count = this->resource_descriptors_size();
@@ -1108,13 +1241,6 @@ size_t ListMonitoredResourceDescriptorsResponse::ByteSizeLong() const {
     }
   }
 
-  // string next_page_token = 2;
-  if (this->next_page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_page_token());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -1124,7 +1250,7 @@ size_t ListMonitoredResourceDescriptorsResponse::ByteSizeLong() const {
 
 void ListMonitoredResourceDescriptorsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.ListMonitoredResourceDescriptorsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListMonitoredResourceDescriptorsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListMonitoredResourceDescriptorsResponse>(
           &from);
@@ -1133,14 +1259,21 @@ void ListMonitoredResourceDescriptorsResponse::MergeFrom(const ::google::protobu
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.ListMonitoredResourceDescriptorsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListMonitoredResourceDescriptorsResponse::MergeFrom(const ListMonitoredResourceDescriptorsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.ListMonitoredResourceDescriptorsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListMonitoredResourceDescriptorsResponse::UnsafeMergeFrom(const ListMonitoredResourceDescriptorsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   resource_descriptors_.MergeFrom(from.resource_descriptors_);
   if (from.next_page_token().size() > 0) {
 
@@ -1159,10 +1292,11 @@ void ListMonitoredResourceDescriptorsResponse::CopyFrom(const ListMonitoredResou
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.ListMonitoredResourceDescriptorsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListMonitoredResourceDescriptorsResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -1173,12 +1307,16 @@ void ListMonitoredResourceDescriptorsResponse::Swap(ListMonitoredResourceDescrip
 void ListMonitoredResourceDescriptorsResponse::InternalSwap(ListMonitoredResourceDescriptorsResponse* other) {
   resource_descriptors_.UnsafeArenaSwap(&other->resource_descriptors_);
   next_page_token_.Swap(&other->next_page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListMonitoredResourceDescriptorsResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListMonitoredResourceDescriptorsResponse_descriptor_;
+  metadata.reflection = ListMonitoredResourceDescriptorsResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -1214,13 +1352,13 @@ ListMonitoredResourceDescriptorsResponse::resource_descriptors() const {
   return resource_descriptors_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 void ListMonitoredResourceDescriptorsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListMonitoredResourceDescriptorsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListMonitoredResourceDescriptorsResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListMonitoredResourceDescriptorsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -1258,6 +1396,9 @@ void ListMonitoredResourceDescriptorsResponse::set_allocated_next_page_token(::s
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListMonitoredResourceDescriptorsResponse.next_page_token)
 }
 
+inline const ListMonitoredResourceDescriptorsResponse* ListMonitoredResourceDescriptorsResponse::internal_default_instance() {
+  return &ListMonitoredResourceDescriptorsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1268,21 +1409,19 @@ const int GetMonitoredResourceDescriptorRequest::kNameFieldNumber;
 
 GetMonitoredResourceDescriptorRequest::GetMonitoredResourceDescriptorRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.GetMonitoredResourceDescriptorRequest)
 }
+
+void GetMonitoredResourceDescriptorRequest::InitAsDefaultInstance() {
+}
+
 GetMonitoredResourceDescriptorRequest::GetMonitoredResourceDescriptorRequest(const GetMonitoredResourceDescriptorRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.GetMonitoredResourceDescriptorRequest)
 }
 
@@ -1307,13 +1446,15 @@ void GetMonitoredResourceDescriptorRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GetMonitoredResourceDescriptorRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return GetMonitoredResourceDescriptorRequest_descriptor_;
 }
 
 const GetMonitoredResourceDescriptorRequest& GetMonitoredResourceDescriptorRequest::default_instance() {
   protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GetMonitoredResourceDescriptorRequest> GetMonitoredResourceDescriptorRequest_default_instance_;
 
 GetMonitoredResourceDescriptorRequest* GetMonitoredResourceDescriptorRequest::New(::google::protobuf::Arena* arena) const {
   GetMonitoredResourceDescriptorRequest* n = new GetMonitoredResourceDescriptorRequest;
@@ -1334,13 +1475,13 @@ bool GetMonitoredResourceDescriptorRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.monitoring.v3.GetMonitoredResourceDescriptorRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 3;
+      // optional string name = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1350,6 +1491,7 @@ bool GetMonitoredResourceDescriptorRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1377,7 +1519,7 @@ failure:
 void GetMonitoredResourceDescriptorRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.monitoring.v3.GetMonitoredResourceDescriptorRequest)
-  // string name = 3;
+  // optional string name = 3;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -1394,7 +1536,7 @@ void GetMonitoredResourceDescriptorRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.GetMonitoredResourceDescriptorRequest)
-  // string name = 3;
+  // optional string name = 3;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -1413,7 +1555,7 @@ size_t GetMonitoredResourceDescriptorRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.GetMonitoredResourceDescriptorRequest)
   size_t total_size = 0;
 
-  // string name = 3;
+  // optional string name = 3;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -1429,7 +1571,7 @@ size_t GetMonitoredResourceDescriptorRequest::ByteSizeLong() const {
 
 void GetMonitoredResourceDescriptorRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.GetMonitoredResourceDescriptorRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GetMonitoredResourceDescriptorRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetMonitoredResourceDescriptorRequest>(
           &from);
@@ -1438,14 +1580,21 @@ void GetMonitoredResourceDescriptorRequest::MergeFrom(const ::google::protobuf::
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.GetMonitoredResourceDescriptorRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetMonitoredResourceDescriptorRequest::MergeFrom(const GetMonitoredResourceDescriptorRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.GetMonitoredResourceDescriptorRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GetMonitoredResourceDescriptorRequest::UnsafeMergeFrom(const GetMonitoredResourceDescriptorRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -1463,10 +1612,11 @@ void GetMonitoredResourceDescriptorRequest::CopyFrom(const GetMonitoredResourceD
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.GetMonitoredResourceDescriptorRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetMonitoredResourceDescriptorRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -1476,24 +1626,28 @@ void GetMonitoredResourceDescriptorRequest::Swap(GetMonitoredResourceDescriptorR
 }
 void GetMonitoredResourceDescriptorRequest::InternalSwap(GetMonitoredResourceDescriptorRequest* other) {
   name_.Swap(&other->name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GetMonitoredResourceDescriptorRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GetMonitoredResourceDescriptorRequest_descriptor_;
+  metadata.reflection = GetMonitoredResourceDescriptorRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GetMonitoredResourceDescriptorRequest
 
-// string name = 3;
+// optional string name = 3;
 void GetMonitoredResourceDescriptorRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GetMonitoredResourceDescriptorRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.GetMonitoredResourceDescriptorRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GetMonitoredResourceDescriptorRequest::set_name(const ::std::string& value) {
   
@@ -1531,6 +1685,9 @@ void GetMonitoredResourceDescriptorRequest::set_allocated_name(::std::string* na
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.GetMonitoredResourceDescriptorRequest.name)
 }
 
+inline const GetMonitoredResourceDescriptorRequest* GetMonitoredResourceDescriptorRequest::internal_default_instance() {
+  return &GetMonitoredResourceDescriptorRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1544,30 +1701,19 @@ const int ListMetricDescriptorsRequest::kPageTokenFieldNumber;
 
 ListMetricDescriptorsRequest::ListMetricDescriptorsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.ListMetricDescriptorsRequest)
 }
+
+void ListMetricDescriptorsRequest::InitAsDefaultInstance() {
+}
+
 ListMetricDescriptorsRequest::ListMetricDescriptorsRequest(const ListMetricDescriptorsRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  filter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.filter().size() > 0) {
-    filter_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.filter_);
-  }
-  page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.page_token().size() > 0) {
-    page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
-  }
-  page_size_ = from.page_size_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.ListMetricDescriptorsRequest)
 }
 
@@ -1597,13 +1743,15 @@ void ListMetricDescriptorsRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListMetricDescriptorsRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return ListMetricDescriptorsRequest_descriptor_;
 }
 
 const ListMetricDescriptorsRequest& ListMetricDescriptorsRequest::default_instance() {
   protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListMetricDescriptorsRequest> ListMetricDescriptorsRequest_default_instance_;
 
 ListMetricDescriptorsRequest* ListMetricDescriptorsRequest::New(::google::protobuf::Arena* arena) const {
   ListMetricDescriptorsRequest* n = new ListMetricDescriptorsRequest;
@@ -1617,8 +1765,8 @@ void ListMetricDescriptorsRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.monitoring.v3.ListMetricDescriptorsRequest)
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   filter_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_size_ = 0;
+  page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 bool ListMetricDescriptorsRequest::MergePartialFromCodedStream(
@@ -1627,13 +1775,13 @@ bool ListMetricDescriptorsRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.monitoring.v3.ListMetricDescriptorsRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string filter = 2;
+      // optional string filter = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_filter()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1643,12 +1791,14 @@ bool ListMetricDescriptorsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_page_size;
         break;
       }
 
-      // int32 page_size = 3;
+      // optional int32 page_size = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_page_size:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -1656,12 +1806,14 @@ bool ListMetricDescriptorsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_page_token;
         break;
       }
 
-      // string page_token = 4;
+      // optional string page_token = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1671,12 +1823,14 @@ bool ListMetricDescriptorsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_name;
         break;
       }
 
-      // string name = 5;
+      // optional string name = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1686,6 +1840,7 @@ bool ListMetricDescriptorsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1713,7 +1868,7 @@ failure:
 void ListMetricDescriptorsRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.monitoring.v3.ListMetricDescriptorsRequest)
-  // string filter = 2;
+  // optional string filter = 2;
   if (this->filter().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->filter().data(), this->filter().length(),
@@ -1723,12 +1878,12 @@ void ListMetricDescriptorsRequest::SerializeWithCachedSizes(
       2, this->filter(), output);
   }
 
-  // int32 page_size = 3;
+  // optional int32 page_size = 3;
   if (this->page_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->page_size(), output);
   }
 
-  // string page_token = 4;
+  // optional string page_token = 4;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -1738,7 +1893,7 @@ void ListMetricDescriptorsRequest::SerializeWithCachedSizes(
       4, this->page_token(), output);
   }
 
-  // string name = 5;
+  // optional string name = 5;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -1755,7 +1910,7 @@ void ListMetricDescriptorsRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.ListMetricDescriptorsRequest)
-  // string filter = 2;
+  // optional string filter = 2;
   if (this->filter().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->filter().data(), this->filter().length(),
@@ -1766,12 +1921,12 @@ void ListMetricDescriptorsRequest::SerializeWithCachedSizes(
         2, this->filter(), target);
   }
 
-  // int32 page_size = 3;
+  // optional int32 page_size = 3;
   if (this->page_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->page_size(), target);
   }
 
-  // string page_token = 4;
+  // optional string page_token = 4;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -1782,7 +1937,7 @@ void ListMetricDescriptorsRequest::SerializeWithCachedSizes(
         4, this->page_token(), target);
   }
 
-  // string name = 5;
+  // optional string name = 5;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -1801,32 +1956,32 @@ size_t ListMetricDescriptorsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.ListMetricDescriptorsRequest)
   size_t total_size = 0;
 
-  // string name = 5;
+  // optional string name = 5;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->name());
   }
 
-  // string filter = 2;
+  // optional string filter = 2;
   if (this->filter().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->filter());
   }
 
-  // string page_token = 4;
-  if (this->page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->page_token());
-  }
-
-  // int32 page_size = 3;
+  // optional int32 page_size = 3;
   if (this->page_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->page_size());
+  }
+
+  // optional string page_token = 4;
+  if (this->page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->page_token());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -1838,7 +1993,7 @@ size_t ListMetricDescriptorsRequest::ByteSizeLong() const {
 
 void ListMetricDescriptorsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.ListMetricDescriptorsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListMetricDescriptorsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListMetricDescriptorsRequest>(
           &from);
@@ -1847,14 +2002,21 @@ void ListMetricDescriptorsRequest::MergeFrom(const ::google::protobuf::Message& 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.ListMetricDescriptorsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListMetricDescriptorsRequest::MergeFrom(const ListMetricDescriptorsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.ListMetricDescriptorsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListMetricDescriptorsRequest::UnsafeMergeFrom(const ListMetricDescriptorsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -1863,12 +2025,12 @@ void ListMetricDescriptorsRequest::MergeFrom(const ListMetricDescriptorsRequest&
 
     filter_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.filter_);
   }
+  if (from.page_size() != 0) {
+    set_page_size(from.page_size());
+  }
   if (from.page_token().size() > 0) {
 
     page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
-  }
-  if (from.page_size() != 0) {
-    set_page_size(from.page_size());
   }
 }
 
@@ -1883,10 +2045,11 @@ void ListMetricDescriptorsRequest::CopyFrom(const ListMetricDescriptorsRequest& 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.ListMetricDescriptorsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListMetricDescriptorsRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -1897,26 +2060,30 @@ void ListMetricDescriptorsRequest::Swap(ListMetricDescriptorsRequest* other) {
 void ListMetricDescriptorsRequest::InternalSwap(ListMetricDescriptorsRequest* other) {
   name_.Swap(&other->name_);
   filter_.Swap(&other->filter_);
-  page_token_.Swap(&other->page_token_);
   std::swap(page_size_, other->page_size_);
+  page_token_.Swap(&other->page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListMetricDescriptorsRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListMetricDescriptorsRequest_descriptor_;
+  metadata.reflection = ListMetricDescriptorsRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ListMetricDescriptorsRequest
 
-// string name = 5;
+// optional string name = 5;
 void ListMetricDescriptorsRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListMetricDescriptorsRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListMetricDescriptorsRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListMetricDescriptorsRequest::set_name(const ::std::string& value) {
   
@@ -1954,13 +2121,13 @@ void ListMetricDescriptorsRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListMetricDescriptorsRequest.name)
 }
 
-// string filter = 2;
+// optional string filter = 2;
 void ListMetricDescriptorsRequest::clear_filter() {
   filter_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListMetricDescriptorsRequest::filter() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListMetricDescriptorsRequest.filter)
-  return filter_.GetNoArena();
+  return filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListMetricDescriptorsRequest::set_filter(const ::std::string& value) {
   
@@ -1998,7 +2165,7 @@ void ListMetricDescriptorsRequest::set_allocated_filter(::std::string* filter) {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListMetricDescriptorsRequest.filter)
 }
 
-// int32 page_size = 3;
+// optional int32 page_size = 3;
 void ListMetricDescriptorsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -2012,13 +2179,13 @@ void ListMetricDescriptorsRequest::set_page_size(::google::protobuf::int32 value
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListMetricDescriptorsRequest.page_size)
 }
 
-// string page_token = 4;
+// optional string page_token = 4;
 void ListMetricDescriptorsRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListMetricDescriptorsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListMetricDescriptorsRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListMetricDescriptorsRequest::set_page_token(const ::std::string& value) {
   
@@ -2056,6 +2223,9 @@ void ListMetricDescriptorsRequest::set_allocated_page_token(::std::string* page_
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListMetricDescriptorsRequest.page_token)
 }
 
+inline const ListMetricDescriptorsRequest* ListMetricDescriptorsRequest::internal_default_instance() {
+  return &ListMetricDescriptorsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2067,22 +2237,19 @@ const int ListMetricDescriptorsResponse::kNextPageTokenFieldNumber;
 
 ListMetricDescriptorsResponse::ListMetricDescriptorsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.ListMetricDescriptorsResponse)
 }
+
+void ListMetricDescriptorsResponse::InitAsDefaultInstance() {
+}
+
 ListMetricDescriptorsResponse::ListMetricDescriptorsResponse(const ListMetricDescriptorsResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      metric_descriptors_(from.metric_descriptors_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_page_token().size() > 0) {
-    next_page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_page_token_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.ListMetricDescriptorsResponse)
 }
 
@@ -2107,13 +2274,15 @@ void ListMetricDescriptorsResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListMetricDescriptorsResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return ListMetricDescriptorsResponse_descriptor_;
 }
 
 const ListMetricDescriptorsResponse& ListMetricDescriptorsResponse::default_instance() {
   protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListMetricDescriptorsResponse> ListMetricDescriptorsResponse_default_instance_;
 
 ListMetricDescriptorsResponse* ListMetricDescriptorsResponse::New(::google::protobuf::Arena* arena) const {
   ListMetricDescriptorsResponse* n = new ListMetricDescriptorsResponse;
@@ -2125,8 +2294,8 @@ ListMetricDescriptorsResponse* ListMetricDescriptorsResponse::New(::google::prot
 
 void ListMetricDescriptorsResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.monitoring.v3.ListMetricDescriptorsResponse)
-  metric_descriptors_.Clear();
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  metric_descriptors_.Clear();
 }
 
 bool ListMetricDescriptorsResponse::MergePartialFromCodedStream(
@@ -2135,26 +2304,30 @@ bool ListMetricDescriptorsResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.monitoring.v3.ListMetricDescriptorsResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.api.MetricDescriptor metric_descriptors = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_metric_descriptors:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_metric_descriptors()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_metric_descriptors;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_next_page_token;
         break;
       }
 
-      // string next_page_token = 2;
+      // optional string next_page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_next_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2164,6 +2337,7 @@ bool ListMetricDescriptorsResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2197,7 +2371,7 @@ void ListMetricDescriptorsResponse::SerializeWithCachedSizes(
       1, this->metric_descriptors(i), output);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -2221,7 +2395,7 @@ void ListMetricDescriptorsResponse::SerializeWithCachedSizes(
         1, this->metric_descriptors(i), false, target);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -2240,6 +2414,13 @@ size_t ListMetricDescriptorsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.ListMetricDescriptorsResponse)
   size_t total_size = 0;
 
+  // optional string next_page_token = 2;
+  if (this->next_page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_page_token());
+  }
+
   // repeated .google.api.MetricDescriptor metric_descriptors = 1;
   {
     unsigned int count = this->metric_descriptors_size();
@@ -2251,13 +2432,6 @@ size_t ListMetricDescriptorsResponse::ByteSizeLong() const {
     }
   }
 
-  // string next_page_token = 2;
-  if (this->next_page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_page_token());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -2267,7 +2441,7 @@ size_t ListMetricDescriptorsResponse::ByteSizeLong() const {
 
 void ListMetricDescriptorsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.ListMetricDescriptorsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListMetricDescriptorsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListMetricDescriptorsResponse>(
           &from);
@@ -2276,14 +2450,21 @@ void ListMetricDescriptorsResponse::MergeFrom(const ::google::protobuf::Message&
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.ListMetricDescriptorsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListMetricDescriptorsResponse::MergeFrom(const ListMetricDescriptorsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.ListMetricDescriptorsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListMetricDescriptorsResponse::UnsafeMergeFrom(const ListMetricDescriptorsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   metric_descriptors_.MergeFrom(from.metric_descriptors_);
   if (from.next_page_token().size() > 0) {
 
@@ -2302,10 +2483,11 @@ void ListMetricDescriptorsResponse::CopyFrom(const ListMetricDescriptorsResponse
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.ListMetricDescriptorsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListMetricDescriptorsResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -2316,12 +2498,16 @@ void ListMetricDescriptorsResponse::Swap(ListMetricDescriptorsResponse* other) {
 void ListMetricDescriptorsResponse::InternalSwap(ListMetricDescriptorsResponse* other) {
   metric_descriptors_.UnsafeArenaSwap(&other->metric_descriptors_);
   next_page_token_.Swap(&other->next_page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListMetricDescriptorsResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListMetricDescriptorsResponse_descriptor_;
+  metadata.reflection = ListMetricDescriptorsResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -2357,13 +2543,13 @@ ListMetricDescriptorsResponse::metric_descriptors() const {
   return metric_descriptors_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 void ListMetricDescriptorsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListMetricDescriptorsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListMetricDescriptorsResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListMetricDescriptorsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -2401,6 +2587,9 @@ void ListMetricDescriptorsResponse::set_allocated_next_page_token(::std::string*
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListMetricDescriptorsResponse.next_page_token)
 }
 
+inline const ListMetricDescriptorsResponse* ListMetricDescriptorsResponse::internal_default_instance() {
+  return &ListMetricDescriptorsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2411,21 +2600,19 @@ const int GetMetricDescriptorRequest::kNameFieldNumber;
 
 GetMetricDescriptorRequest::GetMetricDescriptorRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.GetMetricDescriptorRequest)
 }
+
+void GetMetricDescriptorRequest::InitAsDefaultInstance() {
+}
+
 GetMetricDescriptorRequest::GetMetricDescriptorRequest(const GetMetricDescriptorRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.GetMetricDescriptorRequest)
 }
 
@@ -2450,13 +2637,15 @@ void GetMetricDescriptorRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GetMetricDescriptorRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
+  return GetMetricDescriptorRequest_descriptor_;
 }
 
 const GetMetricDescriptorRequest& GetMetricDescriptorRequest::default_instance() {
   protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GetMetricDescriptorRequest> GetMetricDescriptorRequest_default_instance_;
 
 GetMetricDescriptorRequest* GetMetricDescriptorRequest::New(::google::protobuf::Arena* arena) const {
   GetMetricDescriptorRequest* n = new GetMetricDescriptorRequest;
@@ -2477,13 +2666,13 @@ bool GetMetricDescriptorRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.monitoring.v3.GetMetricDescriptorRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 3;
+      // optional string name = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2493,6 +2682,7 @@ bool GetMetricDescriptorRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2520,7 +2710,7 @@ failure:
 void GetMetricDescriptorRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.monitoring.v3.GetMetricDescriptorRequest)
-  // string name = 3;
+  // optional string name = 3;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -2537,7 +2727,7 @@ void GetMetricDescriptorRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.GetMetricDescriptorRequest)
-  // string name = 3;
+  // optional string name = 3;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -2556,7 +2746,7 @@ size_t GetMetricDescriptorRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.GetMetricDescriptorRequest)
   size_t total_size = 0;
 
-  // string name = 3;
+  // optional string name = 3;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -2572,7 +2762,7 @@ size_t GetMetricDescriptorRequest::ByteSizeLong() const {
 
 void GetMetricDescriptorRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.GetMetricDescriptorRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GetMetricDescriptorRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetMetricDescriptorRequest>(
           &from);
@@ -2581,14 +2771,21 @@ void GetMetricDescriptorRequest::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.GetMetricDescriptorRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetMetricDescriptorRequest::MergeFrom(const GetMetricDescriptorRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.GetMetricDescriptorRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GetMetricDescriptorRequest::UnsafeMergeFrom(const GetMetricDescriptorRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -2606,10 +2803,11 @@ void GetMetricDescriptorRequest::CopyFrom(const GetMetricDescriptorRequest& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.GetMetricDescriptorRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetMetricDescriptorRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -2619,24 +2817,28 @@ void GetMetricDescriptorRequest::Swap(GetMetricDescriptorRequest* other) {
 }
 void GetMetricDescriptorRequest::InternalSwap(GetMetricDescriptorRequest* other) {
   name_.Swap(&other->name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GetMetricDescriptorRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GetMetricDescriptorRequest_descriptor_;
+  metadata.reflection = GetMetricDescriptorRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GetMetricDescriptorRequest
 
-// string name = 3;
+// optional string name = 3;
 void GetMetricDescriptorRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GetMetricDescriptorRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.GetMetricDescriptorRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GetMetricDescriptorRequest::set_name(const ::std::string& value) {
   
@@ -2674,6 +2876,9 @@ void GetMetricDescriptorRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.GetMetricDescriptorRequest.name)
 }
 
+inline const GetMetricDescriptorRequest* GetMetricDescriptorRequest::internal_default_instance() {
+  return &GetMetricDescriptorRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2685,26 +2890,21 @@ const int CreateMetricDescriptorRequest::kMetricDescriptorFieldNumber;
 
 CreateMetricDescriptorRequest::CreateMetricDescriptorRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.CreateMetricDescriptorRequest)
 }
+
+void CreateMetricDescriptorRequest::InitAsDefaultInstance() {
+  metric_descriptor_ = const_cast< ::google::api::MetricDescriptor*>(
+      ::google::api::MetricDescriptor::internal_default_instance());
+}
+
 CreateMetricDescriptorRequest::CreateMetricDescriptorRequest(const CreateMetricDescriptorRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  if (from.has_metric_descriptor()) {
-    metric_descriptor_ = new ::google::api::MetricDescriptor(*from.metric_descriptor_);
-  } else {
-    metric_descriptor_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.CreateMetricDescriptorRequest)
 }
 
@@ -2721,7 +2921,7 @@ CreateMetricDescriptorRequest::~CreateMetricDescriptorRequest() {
 
 void CreateMetricDescriptorRequest::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &CreateMetricDescriptorRequest_default_instance_.get()) {
     delete metric_descriptor_;
   }
 }
@@ -2733,13 +2933,15 @@ void CreateMetricDescriptorRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* CreateMetricDescriptorRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6].descriptor;
+  return CreateMetricDescriptorRequest_descriptor_;
 }
 
 const CreateMetricDescriptorRequest& CreateMetricDescriptorRequest::default_instance() {
   protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<CreateMetricDescriptorRequest> CreateMetricDescriptorRequest_default_instance_;
 
 CreateMetricDescriptorRequest* CreateMetricDescriptorRequest::New(::google::protobuf::Arena* arena) const {
   CreateMetricDescriptorRequest* n = new CreateMetricDescriptorRequest;
@@ -2752,9 +2954,7 @@ CreateMetricDescriptorRequest* CreateMetricDescriptorRequest::New(::google::prot
 void CreateMetricDescriptorRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.monitoring.v3.CreateMetricDescriptorRequest)
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && metric_descriptor_ != NULL) {
-    delete metric_descriptor_;
-  }
+  if (GetArenaNoVirtual() == NULL && metric_descriptor_ != NULL) delete metric_descriptor_;
   metric_descriptor_ = NULL;
 }
 
@@ -2764,24 +2964,26 @@ bool CreateMetricDescriptorRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.monitoring.v3.CreateMetricDescriptorRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.api.MetricDescriptor metric_descriptor = 2;
+      // optional .google.api.MetricDescriptor metric_descriptor = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_metric_descriptor()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_name;
         break;
       }
 
-      // string name = 3;
+      // optional string name = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2791,6 +2993,7 @@ bool CreateMetricDescriptorRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2818,13 +3021,13 @@ failure:
 void CreateMetricDescriptorRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.monitoring.v3.CreateMetricDescriptorRequest)
-  // .google.api.MetricDescriptor metric_descriptor = 2;
+  // optional .google.api.MetricDescriptor metric_descriptor = 2;
   if (this->has_metric_descriptor()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->metric_descriptor_, output);
   }
 
-  // string name = 3;
+  // optional string name = 3;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -2841,14 +3044,14 @@ void CreateMetricDescriptorRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.CreateMetricDescriptorRequest)
-  // .google.api.MetricDescriptor metric_descriptor = 2;
+  // optional .google.api.MetricDescriptor metric_descriptor = 2;
   if (this->has_metric_descriptor()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *this->metric_descriptor_, false, target);
   }
 
-  // string name = 3;
+  // optional string name = 3;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -2867,14 +3070,14 @@ size_t CreateMetricDescriptorRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.CreateMetricDescriptorRequest)
   size_t total_size = 0;
 
-  // string name = 3;
+  // optional string name = 3;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->name());
   }
 
-  // .google.api.MetricDescriptor metric_descriptor = 2;
+  // optional .google.api.MetricDescriptor metric_descriptor = 2;
   if (this->has_metric_descriptor()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -2890,7 +3093,7 @@ size_t CreateMetricDescriptorRequest::ByteSizeLong() const {
 
 void CreateMetricDescriptorRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.CreateMetricDescriptorRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const CreateMetricDescriptorRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CreateMetricDescriptorRequest>(
           &from);
@@ -2899,14 +3102,21 @@ void CreateMetricDescriptorRequest::MergeFrom(const ::google::protobuf::Message&
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.CreateMetricDescriptorRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CreateMetricDescriptorRequest::MergeFrom(const CreateMetricDescriptorRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.CreateMetricDescriptorRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void CreateMetricDescriptorRequest::UnsafeMergeFrom(const CreateMetricDescriptorRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -2927,10 +3137,11 @@ void CreateMetricDescriptorRequest::CopyFrom(const CreateMetricDescriptorRequest
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.CreateMetricDescriptorRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CreateMetricDescriptorRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -2941,24 +3152,28 @@ void CreateMetricDescriptorRequest::Swap(CreateMetricDescriptorRequest* other) {
 void CreateMetricDescriptorRequest::InternalSwap(CreateMetricDescriptorRequest* other) {
   name_.Swap(&other->name_);
   std::swap(metric_descriptor_, other->metric_descriptor_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CreateMetricDescriptorRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CreateMetricDescriptorRequest_descriptor_;
+  metadata.reflection = CreateMetricDescriptorRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // CreateMetricDescriptorRequest
 
-// string name = 3;
+// optional string name = 3;
 void CreateMetricDescriptorRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& CreateMetricDescriptorRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.CreateMetricDescriptorRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void CreateMetricDescriptorRequest::set_name(const ::std::string& value) {
   
@@ -2996,7 +3211,7 @@ void CreateMetricDescriptorRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.CreateMetricDescriptorRequest.name)
 }
 
-// .google.api.MetricDescriptor metric_descriptor = 2;
+// optional .google.api.MetricDescriptor metric_descriptor = 2;
 bool CreateMetricDescriptorRequest::has_metric_descriptor() const {
   return this != internal_default_instance() && metric_descriptor_ != NULL;
 }
@@ -3035,6 +3250,9 @@ void CreateMetricDescriptorRequest::set_allocated_metric_descriptor(::google::ap
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.CreateMetricDescriptorRequest.metric_descriptor)
 }
 
+inline const CreateMetricDescriptorRequest* CreateMetricDescriptorRequest::internal_default_instance() {
+  return &CreateMetricDescriptorRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3045,21 +3263,19 @@ const int DeleteMetricDescriptorRequest::kNameFieldNumber;
 
 DeleteMetricDescriptorRequest::DeleteMetricDescriptorRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.DeleteMetricDescriptorRequest)
 }
+
+void DeleteMetricDescriptorRequest::InitAsDefaultInstance() {
+}
+
 DeleteMetricDescriptorRequest::DeleteMetricDescriptorRequest(const DeleteMetricDescriptorRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.DeleteMetricDescriptorRequest)
 }
 
@@ -3084,13 +3300,15 @@ void DeleteMetricDescriptorRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* DeleteMetricDescriptorRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7].descriptor;
+  return DeleteMetricDescriptorRequest_descriptor_;
 }
 
 const DeleteMetricDescriptorRequest& DeleteMetricDescriptorRequest::default_instance() {
   protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<DeleteMetricDescriptorRequest> DeleteMetricDescriptorRequest_default_instance_;
 
 DeleteMetricDescriptorRequest* DeleteMetricDescriptorRequest::New(::google::protobuf::Arena* arena) const {
   DeleteMetricDescriptorRequest* n = new DeleteMetricDescriptorRequest;
@@ -3111,13 +3329,13 @@ bool DeleteMetricDescriptorRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.monitoring.v3.DeleteMetricDescriptorRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 3;
+      // optional string name = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3127,6 +3345,7 @@ bool DeleteMetricDescriptorRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3154,7 +3373,7 @@ failure:
 void DeleteMetricDescriptorRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.monitoring.v3.DeleteMetricDescriptorRequest)
-  // string name = 3;
+  // optional string name = 3;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -3171,7 +3390,7 @@ void DeleteMetricDescriptorRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.DeleteMetricDescriptorRequest)
-  // string name = 3;
+  // optional string name = 3;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -3190,7 +3409,7 @@ size_t DeleteMetricDescriptorRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.DeleteMetricDescriptorRequest)
   size_t total_size = 0;
 
-  // string name = 3;
+  // optional string name = 3;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -3206,7 +3425,7 @@ size_t DeleteMetricDescriptorRequest::ByteSizeLong() const {
 
 void DeleteMetricDescriptorRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.DeleteMetricDescriptorRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const DeleteMetricDescriptorRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteMetricDescriptorRequest>(
           &from);
@@ -3215,14 +3434,21 @@ void DeleteMetricDescriptorRequest::MergeFrom(const ::google::protobuf::Message&
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.DeleteMetricDescriptorRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteMetricDescriptorRequest::MergeFrom(const DeleteMetricDescriptorRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.DeleteMetricDescriptorRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void DeleteMetricDescriptorRequest::UnsafeMergeFrom(const DeleteMetricDescriptorRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -3240,10 +3466,11 @@ void DeleteMetricDescriptorRequest::CopyFrom(const DeleteMetricDescriptorRequest
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.DeleteMetricDescriptorRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteMetricDescriptorRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -3253,24 +3480,28 @@ void DeleteMetricDescriptorRequest::Swap(DeleteMetricDescriptorRequest* other) {
 }
 void DeleteMetricDescriptorRequest::InternalSwap(DeleteMetricDescriptorRequest* other) {
   name_.Swap(&other->name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DeleteMetricDescriptorRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = DeleteMetricDescriptorRequest_descriptor_;
+  metadata.reflection = DeleteMetricDescriptorRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // DeleteMetricDescriptorRequest
 
-// string name = 3;
+// optional string name = 3;
 void DeleteMetricDescriptorRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& DeleteMetricDescriptorRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.DeleteMetricDescriptorRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void DeleteMetricDescriptorRequest::set_name(const ::std::string& value) {
   
@@ -3308,10 +3539,34 @@ void DeleteMetricDescriptorRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.DeleteMetricDescriptorRequest.name)
 }
 
+inline const DeleteMetricDescriptorRequest* DeleteMetricDescriptorRequest::internal_default_instance() {
+  return &DeleteMetricDescriptorRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* ListTimeSeriesRequest_TimeSeriesView_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return ListTimeSeriesRequest_TimeSeriesView_descriptor_;
+}
+bool ListTimeSeriesRequest_TimeSeriesView_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const ListTimeSeriesRequest_TimeSeriesView ListTimeSeriesRequest::FULL;
+const ListTimeSeriesRequest_TimeSeriesView ListTimeSeriesRequest::HEADERS;
+const ListTimeSeriesRequest_TimeSeriesView ListTimeSeriesRequest::TimeSeriesView_MIN;
+const ListTimeSeriesRequest_TimeSeriesView ListTimeSeriesRequest::TimeSeriesView_MAX;
+const int ListTimeSeriesRequest::TimeSeriesView_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ListTimeSeriesRequest::kNameFieldNumber;
 const int ListTimeSeriesRequest::kFilterFieldNumber;
@@ -3325,46 +3580,23 @@ const int ListTimeSeriesRequest::kPageTokenFieldNumber;
 
 ListTimeSeriesRequest::ListTimeSeriesRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.ListTimeSeriesRequest)
 }
+
+void ListTimeSeriesRequest::InitAsDefaultInstance() {
+  interval_ = const_cast< ::google::monitoring::v3::TimeInterval*>(
+      ::google::monitoring::v3::TimeInterval::internal_default_instance());
+  aggregation_ = const_cast< ::google::monitoring::v3::Aggregation*>(
+      ::google::monitoring::v3::Aggregation::internal_default_instance());
+}
+
 ListTimeSeriesRequest::ListTimeSeriesRequest(const ListTimeSeriesRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  filter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.filter().size() > 0) {
-    filter_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.filter_);
-  }
-  order_by_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.order_by().size() > 0) {
-    order_by_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.order_by_);
-  }
-  page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.page_token().size() > 0) {
-    page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
-  }
-  if (from.has_interval()) {
-    interval_ = new ::google::monitoring::v3::TimeInterval(*from.interval_);
-  } else {
-    interval_ = NULL;
-  }
-  if (from.has_aggregation()) {
-    aggregation_ = new ::google::monitoring::v3::Aggregation(*from.aggregation_);
-  } else {
-    aggregation_ = NULL;
-  }
-  ::memcpy(&view_, &from.view_,
-    reinterpret_cast<char*>(&page_size_) -
-    reinterpret_cast<char*>(&view_) + sizeof(page_size_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.ListTimeSeriesRequest)
 }
 
@@ -3373,8 +3605,10 @@ void ListTimeSeriesRequest::SharedCtor() {
   filter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   order_by_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&interval_, 0, reinterpret_cast<char*>(&page_size_) -
-    reinterpret_cast<char*>(&interval_) + sizeof(page_size_));
+  interval_ = NULL;
+  aggregation_ = NULL;
+  ::memset(&view_, 0, reinterpret_cast<char*>(&page_size_) -
+    reinterpret_cast<char*>(&view_) + sizeof(page_size_));
   _cached_size_ = 0;
 }
 
@@ -3388,10 +3622,8 @@ void ListTimeSeriesRequest::SharedDtor() {
   filter_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   order_by_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &ListTimeSeriesRequest_default_instance_.get()) {
     delete interval_;
-  }
-  if (this != internal_default_instance()) {
     delete aggregation_;
   }
 }
@@ -3403,13 +3635,15 @@ void ListTimeSeriesRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListTimeSeriesRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8].descriptor;
+  return ListTimeSeriesRequest_descriptor_;
 }
 
 const ListTimeSeriesRequest& ListTimeSeriesRequest::default_instance() {
   protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListTimeSeriesRequest> ListTimeSeriesRequest_default_instance_;
 
 ListTimeSeriesRequest* ListTimeSeriesRequest::New(::google::protobuf::Arena* arena) const {
   ListTimeSeriesRequest* n = new ListTimeSeriesRequest;
@@ -3421,20 +3655,35 @@ ListTimeSeriesRequest* ListTimeSeriesRequest::New(::google::protobuf::Arena* are
 
 void ListTimeSeriesRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.monitoring.v3.ListTimeSeriesRequest)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(ListTimeSeriesRequest, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<ListTimeSeriesRequest*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(view_, page_size_);
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   filter_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (GetArenaNoVirtual() == NULL && interval_ != NULL) delete interval_;
+  interval_ = NULL;
+  if (GetArenaNoVirtual() == NULL && aggregation_ != NULL) delete aggregation_;
+  aggregation_ = NULL;
   order_by_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && interval_ != NULL) {
-    delete interval_;
-  }
-  interval_ = NULL;
-  if (GetArenaNoVirtual() == NULL && aggregation_ != NULL) {
-    delete aggregation_;
-  }
-  aggregation_ = NULL;
-  ::memset(&view_, 0, reinterpret_cast<char*>(&page_size_) -
-    reinterpret_cast<char*>(&view_) + sizeof(page_size_));
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool ListTimeSeriesRequest::MergePartialFromCodedStream(
@@ -3443,13 +3692,13 @@ bool ListTimeSeriesRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.monitoring.v3.ListTimeSeriesRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string filter = 2;
+      // optional string filter = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_filter()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3459,34 +3708,40 @@ bool ListTimeSeriesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_interval;
         break;
       }
 
-      // .google.monitoring.v3.TimeInterval interval = 4;
+      // optional .google.monitoring.v3.TimeInterval interval = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_interval:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_interval()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_aggregation;
         break;
       }
 
-      // .google.monitoring.v3.Aggregation aggregation = 5;
+      // optional .google.monitoring.v3.Aggregation aggregation = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_aggregation:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_aggregation()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(50)) goto parse_order_by;
         break;
       }
 
-      // string order_by = 6;
+      // optional string order_by = 6;
       case 6: {
-        if (tag == 50u) {
+        if (tag == 50) {
+         parse_order_by:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_order_by()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3496,12 +3751,14 @@ bool ListTimeSeriesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(56)) goto parse_view;
         break;
       }
 
-      // .google.monitoring.v3.ListTimeSeriesRequest.TimeSeriesView view = 7;
+      // optional .google.monitoring.v3.ListTimeSeriesRequest.TimeSeriesView view = 7;
       case 7: {
-        if (tag == 56u) {
+        if (tag == 56) {
+         parse_view:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -3510,12 +3767,14 @@ bool ListTimeSeriesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(64)) goto parse_page_size;
         break;
       }
 
-      // int32 page_size = 8;
+      // optional int32 page_size = 8;
       case 8: {
-        if (tag == 64u) {
+        if (tag == 64) {
+         parse_page_size:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -3523,12 +3782,14 @@ bool ListTimeSeriesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(74)) goto parse_page_token;
         break;
       }
 
-      // string page_token = 9;
+      // optional string page_token = 9;
       case 9: {
-        if (tag == 74u) {
+        if (tag == 74) {
+         parse_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3538,12 +3799,14 @@ bool ListTimeSeriesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(82)) goto parse_name;
         break;
       }
 
-      // string name = 10;
+      // optional string name = 10;
       case 10: {
-        if (tag == 82u) {
+        if (tag == 82) {
+         parse_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3553,6 +3816,7 @@ bool ListTimeSeriesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3580,7 +3844,7 @@ failure:
 void ListTimeSeriesRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.monitoring.v3.ListTimeSeriesRequest)
-  // string filter = 2;
+  // optional string filter = 2;
   if (this->filter().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->filter().data(), this->filter().length(),
@@ -3590,19 +3854,19 @@ void ListTimeSeriesRequest::SerializeWithCachedSizes(
       2, this->filter(), output);
   }
 
-  // .google.monitoring.v3.TimeInterval interval = 4;
+  // optional .google.monitoring.v3.TimeInterval interval = 4;
   if (this->has_interval()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, *this->interval_, output);
   }
 
-  // .google.monitoring.v3.Aggregation aggregation = 5;
+  // optional .google.monitoring.v3.Aggregation aggregation = 5;
   if (this->has_aggregation()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       5, *this->aggregation_, output);
   }
 
-  // string order_by = 6;
+  // optional string order_by = 6;
   if (this->order_by().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->order_by().data(), this->order_by().length(),
@@ -3612,18 +3876,18 @@ void ListTimeSeriesRequest::SerializeWithCachedSizes(
       6, this->order_by(), output);
   }
 
-  // .google.monitoring.v3.ListTimeSeriesRequest.TimeSeriesView view = 7;
+  // optional .google.monitoring.v3.ListTimeSeriesRequest.TimeSeriesView view = 7;
   if (this->view() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       7, this->view(), output);
   }
 
-  // int32 page_size = 8;
+  // optional int32 page_size = 8;
   if (this->page_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(8, this->page_size(), output);
   }
 
-  // string page_token = 9;
+  // optional string page_token = 9;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -3633,7 +3897,7 @@ void ListTimeSeriesRequest::SerializeWithCachedSizes(
       9, this->page_token(), output);
   }
 
-  // string name = 10;
+  // optional string name = 10;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -3650,7 +3914,7 @@ void ListTimeSeriesRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.ListTimeSeriesRequest)
-  // string filter = 2;
+  // optional string filter = 2;
   if (this->filter().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->filter().data(), this->filter().length(),
@@ -3661,21 +3925,21 @@ void ListTimeSeriesRequest::SerializeWithCachedSizes(
         2, this->filter(), target);
   }
 
-  // .google.monitoring.v3.TimeInterval interval = 4;
+  // optional .google.monitoring.v3.TimeInterval interval = 4;
   if (this->has_interval()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         4, *this->interval_, false, target);
   }
 
-  // .google.monitoring.v3.Aggregation aggregation = 5;
+  // optional .google.monitoring.v3.Aggregation aggregation = 5;
   if (this->has_aggregation()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         5, *this->aggregation_, false, target);
   }
 
-  // string order_by = 6;
+  // optional string order_by = 6;
   if (this->order_by().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->order_by().data(), this->order_by().length(),
@@ -3686,18 +3950,18 @@ void ListTimeSeriesRequest::SerializeWithCachedSizes(
         6, this->order_by(), target);
   }
 
-  // .google.monitoring.v3.ListTimeSeriesRequest.TimeSeriesView view = 7;
+  // optional .google.monitoring.v3.ListTimeSeriesRequest.TimeSeriesView view = 7;
   if (this->view() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       7, this->view(), target);
   }
 
-  // int32 page_size = 8;
+  // optional int32 page_size = 8;
   if (this->page_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(8, this->page_size(), target);
   }
 
-  // string page_token = 9;
+  // optional string page_token = 9;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -3708,7 +3972,7 @@ void ListTimeSeriesRequest::SerializeWithCachedSizes(
         9, this->page_token(), target);
   }
 
-  // string name = 10;
+  // optional string name = 10;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -3727,59 +3991,59 @@ size_t ListTimeSeriesRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.ListTimeSeriesRequest)
   size_t total_size = 0;
 
-  // string name = 10;
+  // optional string name = 10;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->name());
   }
 
-  // string filter = 2;
+  // optional string filter = 2;
   if (this->filter().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->filter());
   }
 
-  // string order_by = 6;
-  if (this->order_by().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->order_by());
-  }
-
-  // string page_token = 9;
-  if (this->page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->page_token());
-  }
-
-  // .google.monitoring.v3.TimeInterval interval = 4;
+  // optional .google.monitoring.v3.TimeInterval interval = 4;
   if (this->has_interval()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->interval_);
   }
 
-  // .google.monitoring.v3.Aggregation aggregation = 5;
+  // optional .google.monitoring.v3.Aggregation aggregation = 5;
   if (this->has_aggregation()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->aggregation_);
   }
 
-  // .google.monitoring.v3.ListTimeSeriesRequest.TimeSeriesView view = 7;
+  // optional string order_by = 6;
+  if (this->order_by().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->order_by());
+  }
+
+  // optional .google.monitoring.v3.ListTimeSeriesRequest.TimeSeriesView view = 7;
   if (this->view() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->view());
   }
 
-  // int32 page_size = 8;
+  // optional int32 page_size = 8;
   if (this->page_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->page_size());
+  }
+
+  // optional string page_token = 9;
+  if (this->page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->page_token());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -3791,7 +4055,7 @@ size_t ListTimeSeriesRequest::ByteSizeLong() const {
 
 void ListTimeSeriesRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.ListTimeSeriesRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListTimeSeriesRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListTimeSeriesRequest>(
           &from);
@@ -3800,14 +4064,21 @@ void ListTimeSeriesRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.ListTimeSeriesRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListTimeSeriesRequest::MergeFrom(const ListTimeSeriesRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.ListTimeSeriesRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListTimeSeriesRequest::UnsafeMergeFrom(const ListTimeSeriesRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -3816,25 +4087,25 @@ void ListTimeSeriesRequest::MergeFrom(const ListTimeSeriesRequest& from) {
 
     filter_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.filter_);
   }
-  if (from.order_by().size() > 0) {
-
-    order_by_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.order_by_);
-  }
-  if (from.page_token().size() > 0) {
-
-    page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
-  }
   if (from.has_interval()) {
     mutable_interval()->::google::monitoring::v3::TimeInterval::MergeFrom(from.interval());
   }
   if (from.has_aggregation()) {
     mutable_aggregation()->::google::monitoring::v3::Aggregation::MergeFrom(from.aggregation());
   }
+  if (from.order_by().size() > 0) {
+
+    order_by_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.order_by_);
+  }
   if (from.view() != 0) {
     set_view(from.view());
   }
   if (from.page_size() != 0) {
     set_page_size(from.page_size());
+  }
+  if (from.page_token().size() > 0) {
+
+    page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
   }
 }
 
@@ -3849,10 +4120,11 @@ void ListTimeSeriesRequest::CopyFrom(const ListTimeSeriesRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.ListTimeSeriesRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListTimeSeriesRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -3863,30 +4135,34 @@ void ListTimeSeriesRequest::Swap(ListTimeSeriesRequest* other) {
 void ListTimeSeriesRequest::InternalSwap(ListTimeSeriesRequest* other) {
   name_.Swap(&other->name_);
   filter_.Swap(&other->filter_);
-  order_by_.Swap(&other->order_by_);
-  page_token_.Swap(&other->page_token_);
   std::swap(interval_, other->interval_);
   std::swap(aggregation_, other->aggregation_);
+  order_by_.Swap(&other->order_by_);
   std::swap(view_, other->view_);
   std::swap(page_size_, other->page_size_);
+  page_token_.Swap(&other->page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListTimeSeriesRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListTimeSeriesRequest_descriptor_;
+  metadata.reflection = ListTimeSeriesRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ListTimeSeriesRequest
 
-// string name = 10;
+// optional string name = 10;
 void ListTimeSeriesRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListTimeSeriesRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListTimeSeriesRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListTimeSeriesRequest::set_name(const ::std::string& value) {
   
@@ -3924,13 +4200,13 @@ void ListTimeSeriesRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListTimeSeriesRequest.name)
 }
 
-// string filter = 2;
+// optional string filter = 2;
 void ListTimeSeriesRequest::clear_filter() {
   filter_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListTimeSeriesRequest::filter() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListTimeSeriesRequest.filter)
-  return filter_.GetNoArena();
+  return filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListTimeSeriesRequest::set_filter(const ::std::string& value) {
   
@@ -3968,7 +4244,7 @@ void ListTimeSeriesRequest::set_allocated_filter(::std::string* filter) {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListTimeSeriesRequest.filter)
 }
 
-// .google.monitoring.v3.TimeInterval interval = 4;
+// optional .google.monitoring.v3.TimeInterval interval = 4;
 bool ListTimeSeriesRequest::has_interval() const {
   return this != internal_default_instance() && interval_ != NULL;
 }
@@ -4007,7 +4283,7 @@ void ListTimeSeriesRequest::set_allocated_interval(::google::monitoring::v3::Tim
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListTimeSeriesRequest.interval)
 }
 
-// .google.monitoring.v3.Aggregation aggregation = 5;
+// optional .google.monitoring.v3.Aggregation aggregation = 5;
 bool ListTimeSeriesRequest::has_aggregation() const {
   return this != internal_default_instance() && aggregation_ != NULL;
 }
@@ -4046,13 +4322,13 @@ void ListTimeSeriesRequest::set_allocated_aggregation(::google::monitoring::v3::
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListTimeSeriesRequest.aggregation)
 }
 
-// string order_by = 6;
+// optional string order_by = 6;
 void ListTimeSeriesRequest::clear_order_by() {
   order_by_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListTimeSeriesRequest::order_by() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListTimeSeriesRequest.order_by)
-  return order_by_.GetNoArena();
+  return order_by_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListTimeSeriesRequest::set_order_by(const ::std::string& value) {
   
@@ -4090,7 +4366,7 @@ void ListTimeSeriesRequest::set_allocated_order_by(::std::string* order_by) {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListTimeSeriesRequest.order_by)
 }
 
-// .google.monitoring.v3.ListTimeSeriesRequest.TimeSeriesView view = 7;
+// optional .google.monitoring.v3.ListTimeSeriesRequest.TimeSeriesView view = 7;
 void ListTimeSeriesRequest::clear_view() {
   view_ = 0;
 }
@@ -4104,7 +4380,7 @@ void ListTimeSeriesRequest::set_view(::google::monitoring::v3::ListTimeSeriesReq
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListTimeSeriesRequest.view)
 }
 
-// int32 page_size = 8;
+// optional int32 page_size = 8;
 void ListTimeSeriesRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -4118,13 +4394,13 @@ void ListTimeSeriesRequest::set_page_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListTimeSeriesRequest.page_size)
 }
 
-// string page_token = 9;
+// optional string page_token = 9;
 void ListTimeSeriesRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListTimeSeriesRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListTimeSeriesRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListTimeSeriesRequest::set_page_token(const ::std::string& value) {
   
@@ -4162,6 +4438,9 @@ void ListTimeSeriesRequest::set_allocated_page_token(::std::string* page_token) 
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListTimeSeriesRequest.page_token)
 }
 
+inline const ListTimeSeriesRequest* ListTimeSeriesRequest::internal_default_instance() {
+  return &ListTimeSeriesRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4173,22 +4452,19 @@ const int ListTimeSeriesResponse::kNextPageTokenFieldNumber;
 
 ListTimeSeriesResponse::ListTimeSeriesResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.ListTimeSeriesResponse)
 }
+
+void ListTimeSeriesResponse::InitAsDefaultInstance() {
+}
+
 ListTimeSeriesResponse::ListTimeSeriesResponse(const ListTimeSeriesResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      time_series_(from.time_series_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_page_token().size() > 0) {
-    next_page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_page_token_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.ListTimeSeriesResponse)
 }
 
@@ -4213,13 +4489,15 @@ void ListTimeSeriesResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListTimeSeriesResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9].descriptor;
+  return ListTimeSeriesResponse_descriptor_;
 }
 
 const ListTimeSeriesResponse& ListTimeSeriesResponse::default_instance() {
   protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListTimeSeriesResponse> ListTimeSeriesResponse_default_instance_;
 
 ListTimeSeriesResponse* ListTimeSeriesResponse::New(::google::protobuf::Arena* arena) const {
   ListTimeSeriesResponse* n = new ListTimeSeriesResponse;
@@ -4231,8 +4509,8 @@ ListTimeSeriesResponse* ListTimeSeriesResponse::New(::google::protobuf::Arena* a
 
 void ListTimeSeriesResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.monitoring.v3.ListTimeSeriesResponse)
-  time_series_.Clear();
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  time_series_.Clear();
 }
 
 bool ListTimeSeriesResponse::MergePartialFromCodedStream(
@@ -4241,26 +4519,30 @@ bool ListTimeSeriesResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.monitoring.v3.ListTimeSeriesResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.monitoring.v3.TimeSeries time_series = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_time_series:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_time_series()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_time_series;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_next_page_token;
         break;
       }
 
-      // string next_page_token = 2;
+      // optional string next_page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_next_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4270,6 +4552,7 @@ bool ListTimeSeriesResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4303,7 +4586,7 @@ void ListTimeSeriesResponse::SerializeWithCachedSizes(
       1, this->time_series(i), output);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -4327,7 +4610,7 @@ void ListTimeSeriesResponse::SerializeWithCachedSizes(
         1, this->time_series(i), false, target);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -4346,6 +4629,13 @@ size_t ListTimeSeriesResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.ListTimeSeriesResponse)
   size_t total_size = 0;
 
+  // optional string next_page_token = 2;
+  if (this->next_page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_page_token());
+  }
+
   // repeated .google.monitoring.v3.TimeSeries time_series = 1;
   {
     unsigned int count = this->time_series_size();
@@ -4357,13 +4647,6 @@ size_t ListTimeSeriesResponse::ByteSizeLong() const {
     }
   }
 
-  // string next_page_token = 2;
-  if (this->next_page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_page_token());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -4373,7 +4656,7 @@ size_t ListTimeSeriesResponse::ByteSizeLong() const {
 
 void ListTimeSeriesResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.ListTimeSeriesResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListTimeSeriesResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListTimeSeriesResponse>(
           &from);
@@ -4382,14 +4665,21 @@ void ListTimeSeriesResponse::MergeFrom(const ::google::protobuf::Message& from) 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.ListTimeSeriesResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListTimeSeriesResponse::MergeFrom(const ListTimeSeriesResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.ListTimeSeriesResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListTimeSeriesResponse::UnsafeMergeFrom(const ListTimeSeriesResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   time_series_.MergeFrom(from.time_series_);
   if (from.next_page_token().size() > 0) {
 
@@ -4408,10 +4698,11 @@ void ListTimeSeriesResponse::CopyFrom(const ListTimeSeriesResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.ListTimeSeriesResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListTimeSeriesResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -4422,12 +4713,16 @@ void ListTimeSeriesResponse::Swap(ListTimeSeriesResponse* other) {
 void ListTimeSeriesResponse::InternalSwap(ListTimeSeriesResponse* other) {
   time_series_.UnsafeArenaSwap(&other->time_series_);
   next_page_token_.Swap(&other->next_page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListTimeSeriesResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListTimeSeriesResponse_descriptor_;
+  metadata.reflection = ListTimeSeriesResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -4463,13 +4758,13 @@ ListTimeSeriesResponse::time_series() const {
   return time_series_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 void ListTimeSeriesResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListTimeSeriesResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListTimeSeriesResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListTimeSeriesResponse::set_next_page_token(const ::std::string& value) {
   
@@ -4507,6 +4802,9 @@ void ListTimeSeriesResponse::set_allocated_next_page_token(::std::string* next_p
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListTimeSeriesResponse.next_page_token)
 }
 
+inline const ListTimeSeriesResponse* ListTimeSeriesResponse::internal_default_instance() {
+  return &ListTimeSeriesResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4518,22 +4816,19 @@ const int CreateTimeSeriesRequest::kTimeSeriesFieldNumber;
 
 CreateTimeSeriesRequest::CreateTimeSeriesRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.CreateTimeSeriesRequest)
 }
+
+void CreateTimeSeriesRequest::InitAsDefaultInstance() {
+}
+
 CreateTimeSeriesRequest::CreateTimeSeriesRequest(const CreateTimeSeriesRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      time_series_(from.time_series_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.CreateTimeSeriesRequest)
 }
 
@@ -4558,13 +4853,15 @@ void CreateTimeSeriesRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* CreateTimeSeriesRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10].descriptor;
+  return CreateTimeSeriesRequest_descriptor_;
 }
 
 const CreateTimeSeriesRequest& CreateTimeSeriesRequest::default_instance() {
   protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<CreateTimeSeriesRequest> CreateTimeSeriesRequest_default_instance_;
 
 CreateTimeSeriesRequest* CreateTimeSeriesRequest::New(::google::protobuf::Arena* arena) const {
   CreateTimeSeriesRequest* n = new CreateTimeSeriesRequest;
@@ -4576,8 +4873,8 @@ CreateTimeSeriesRequest* CreateTimeSeriesRequest::New(::google::protobuf::Arena*
 
 void CreateTimeSeriesRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.monitoring.v3.CreateTimeSeriesRequest)
-  time_series_.Clear();
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  time_series_.Clear();
 }
 
 bool CreateTimeSeriesRequest::MergePartialFromCodedStream(
@@ -4586,26 +4883,30 @@ bool CreateTimeSeriesRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.monitoring.v3.CreateTimeSeriesRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.monitoring.v3.TimeSeries time_series = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_time_series:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_time_series()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_loop_time_series;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(26)) goto parse_name;
         break;
       }
 
-      // string name = 3;
+      // optional string name = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4615,6 +4916,7 @@ bool CreateTimeSeriesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4648,7 +4950,7 @@ void CreateTimeSeriesRequest::SerializeWithCachedSizes(
       2, this->time_series(i), output);
   }
 
-  // string name = 3;
+  // optional string name = 3;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -4672,7 +4974,7 @@ void CreateTimeSeriesRequest::SerializeWithCachedSizes(
         2, this->time_series(i), false, target);
   }
 
-  // string name = 3;
+  // optional string name = 3;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -4691,6 +4993,13 @@ size_t CreateTimeSeriesRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.CreateTimeSeriesRequest)
   size_t total_size = 0;
 
+  // optional string name = 3;
+  if (this->name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->name());
+  }
+
   // repeated .google.monitoring.v3.TimeSeries time_series = 2;
   {
     unsigned int count = this->time_series_size();
@@ -4702,13 +5011,6 @@ size_t CreateTimeSeriesRequest::ByteSizeLong() const {
     }
   }
 
-  // string name = 3;
-  if (this->name().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->name());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -4718,7 +5020,7 @@ size_t CreateTimeSeriesRequest::ByteSizeLong() const {
 
 void CreateTimeSeriesRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.CreateTimeSeriesRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const CreateTimeSeriesRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CreateTimeSeriesRequest>(
           &from);
@@ -4727,14 +5029,21 @@ void CreateTimeSeriesRequest::MergeFrom(const ::google::protobuf::Message& from)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.CreateTimeSeriesRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CreateTimeSeriesRequest::MergeFrom(const CreateTimeSeriesRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.CreateTimeSeriesRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void CreateTimeSeriesRequest::UnsafeMergeFrom(const CreateTimeSeriesRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   time_series_.MergeFrom(from.time_series_);
   if (from.name().size() > 0) {
 
@@ -4753,10 +5062,11 @@ void CreateTimeSeriesRequest::CopyFrom(const CreateTimeSeriesRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.CreateTimeSeriesRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CreateTimeSeriesRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -4765,26 +5075,30 @@ void CreateTimeSeriesRequest::Swap(CreateTimeSeriesRequest* other) {
   InternalSwap(other);
 }
 void CreateTimeSeriesRequest::InternalSwap(CreateTimeSeriesRequest* other) {
-  time_series_.UnsafeArenaSwap(&other->time_series_);
   name_.Swap(&other->name_);
+  time_series_.UnsafeArenaSwap(&other->time_series_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CreateTimeSeriesRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CreateTimeSeriesRequest_descriptor_;
+  metadata.reflection = CreateTimeSeriesRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // CreateTimeSeriesRequest
 
-// string name = 3;
+// optional string name = 3;
 void CreateTimeSeriesRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& CreateTimeSeriesRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.CreateTimeSeriesRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void CreateTimeSeriesRequest::set_name(const ::std::string& value) {
   
@@ -4852,6 +5166,9 @@ CreateTimeSeriesRequest::time_series() const {
   return time_series_;
 }
 
+inline const CreateTimeSeriesRequest* CreateTimeSeriesRequest::internal_default_instance() {
+  return &CreateTimeSeriesRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4863,33 +5180,29 @@ const int CreateTimeSeriesError::kStatusFieldNumber;
 
 CreateTimeSeriesError::CreateTimeSeriesError()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.CreateTimeSeriesError)
 }
+
+void CreateTimeSeriesError::InitAsDefaultInstance() {
+  time_series_ = const_cast< ::google::monitoring::v3::TimeSeries*>(
+      ::google::monitoring::v3::TimeSeries::internal_default_instance());
+  status_ = const_cast< ::google::rpc::Status*>(
+      ::google::rpc::Status::internal_default_instance());
+}
+
 CreateTimeSeriesError::CreateTimeSeriesError(const CreateTimeSeriesError& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_time_series()) {
-    time_series_ = new ::google::monitoring::v3::TimeSeries(*from.time_series_);
-  } else {
-    time_series_ = NULL;
-  }
-  if (from.has_status()) {
-    status_ = new ::google::rpc::Status(*from.status_);
-  } else {
-    status_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.CreateTimeSeriesError)
 }
 
 void CreateTimeSeriesError::SharedCtor() {
-  ::memset(&time_series_, 0, reinterpret_cast<char*>(&status_) -
-    reinterpret_cast<char*>(&time_series_) + sizeof(status_));
+  time_series_ = NULL;
+  status_ = NULL;
   _cached_size_ = 0;
 }
 
@@ -4899,10 +5212,8 @@ CreateTimeSeriesError::~CreateTimeSeriesError() {
 }
 
 void CreateTimeSeriesError::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &CreateTimeSeriesError_default_instance_.get()) {
     delete time_series_;
-  }
-  if (this != internal_default_instance()) {
     delete status_;
   }
 }
@@ -4914,13 +5225,15 @@ void CreateTimeSeriesError::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* CreateTimeSeriesError::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11].descriptor;
+  return CreateTimeSeriesError_descriptor_;
 }
 
 const CreateTimeSeriesError& CreateTimeSeriesError::default_instance() {
   protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<CreateTimeSeriesError> CreateTimeSeriesError_default_instance_;
 
 CreateTimeSeriesError* CreateTimeSeriesError::New(::google::protobuf::Arena* arena) const {
   CreateTimeSeriesError* n = new CreateTimeSeriesError;
@@ -4932,13 +5245,9 @@ CreateTimeSeriesError* CreateTimeSeriesError::New(::google::protobuf::Arena* are
 
 void CreateTimeSeriesError::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.monitoring.v3.CreateTimeSeriesError)
-  if (GetArenaNoVirtual() == NULL && time_series_ != NULL) {
-    delete time_series_;
-  }
+  if (GetArenaNoVirtual() == NULL && time_series_ != NULL) delete time_series_;
   time_series_ = NULL;
-  if (GetArenaNoVirtual() == NULL && status_ != NULL) {
-    delete status_;
-  }
+  if (GetArenaNoVirtual() == NULL && status_ != NULL) delete status_;
   status_ = NULL;
 }
 
@@ -4948,29 +5257,32 @@ bool CreateTimeSeriesError::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.monitoring.v3.CreateTimeSeriesError)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.monitoring.v3.TimeSeries time_series = 1;
+      // optional .google.monitoring.v3.TimeSeries time_series = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_time_series()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_status;
         break;
       }
 
-      // .google.rpc.Status status = 2;
+      // optional .google.rpc.Status status = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_status:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_status()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4998,13 +5310,13 @@ failure:
 void CreateTimeSeriesError::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.monitoring.v3.CreateTimeSeriesError)
-  // .google.monitoring.v3.TimeSeries time_series = 1;
+  // optional .google.monitoring.v3.TimeSeries time_series = 1;
   if (this->has_time_series()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->time_series_, output);
   }
 
-  // .google.rpc.Status status = 2;
+  // optional .google.rpc.Status status = 2;
   if (this->has_status()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->status_, output);
@@ -5017,14 +5329,14 @@ void CreateTimeSeriesError::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.CreateTimeSeriesError)
-  // .google.monitoring.v3.TimeSeries time_series = 1;
+  // optional .google.monitoring.v3.TimeSeries time_series = 1;
   if (this->has_time_series()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->time_series_, false, target);
   }
 
-  // .google.rpc.Status status = 2;
+  // optional .google.rpc.Status status = 2;
   if (this->has_status()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -5039,14 +5351,14 @@ size_t CreateTimeSeriesError::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.CreateTimeSeriesError)
   size_t total_size = 0;
 
-  // .google.monitoring.v3.TimeSeries time_series = 1;
+  // optional .google.monitoring.v3.TimeSeries time_series = 1;
   if (this->has_time_series()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->time_series_);
   }
 
-  // .google.rpc.Status status = 2;
+  // optional .google.rpc.Status status = 2;
   if (this->has_status()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -5062,7 +5374,7 @@ size_t CreateTimeSeriesError::ByteSizeLong() const {
 
 void CreateTimeSeriesError::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.CreateTimeSeriesError)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const CreateTimeSeriesError* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CreateTimeSeriesError>(
           &from);
@@ -5071,14 +5383,21 @@ void CreateTimeSeriesError::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.CreateTimeSeriesError)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CreateTimeSeriesError::MergeFrom(const CreateTimeSeriesError& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.CreateTimeSeriesError)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void CreateTimeSeriesError::UnsafeMergeFrom(const CreateTimeSeriesError& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_time_series()) {
     mutable_time_series()->::google::monitoring::v3::TimeSeries::MergeFrom(from.time_series());
   }
@@ -5098,10 +5417,11 @@ void CreateTimeSeriesError::CopyFrom(const CreateTimeSeriesError& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.CreateTimeSeriesError)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CreateTimeSeriesError::IsInitialized() const {
+
   return true;
 }
 
@@ -5112,18 +5432,22 @@ void CreateTimeSeriesError::Swap(CreateTimeSeriesError* other) {
 void CreateTimeSeriesError::InternalSwap(CreateTimeSeriesError* other) {
   std::swap(time_series_, other->time_series_);
   std::swap(status_, other->status_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CreateTimeSeriesError::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CreateTimeSeriesError_descriptor_;
+  metadata.reflection = CreateTimeSeriesError_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // CreateTimeSeriesError
 
-// .google.monitoring.v3.TimeSeries time_series = 1;
+// optional .google.monitoring.v3.TimeSeries time_series = 1;
 bool CreateTimeSeriesError::has_time_series() const {
   return this != internal_default_instance() && time_series_ != NULL;
 }
@@ -5162,7 +5486,7 @@ void CreateTimeSeriesError::set_allocated_time_series(::google::monitoring::v3::
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.CreateTimeSeriesError.time_series)
 }
 
-// .google.rpc.Status status = 2;
+// optional .google.rpc.Status status = 2;
 bool CreateTimeSeriesError::has_status() const {
   return this != internal_default_instance() && status_ != NULL;
 }
@@ -5201,6 +5525,9 @@ void CreateTimeSeriesError::set_allocated_status(::google::rpc::Status* status) 
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.CreateTimeSeriesError.status)
 }
 
+inline const CreateTimeSeriesError* CreateTimeSeriesError::internal_default_instance() {
+  return &CreateTimeSeriesError_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

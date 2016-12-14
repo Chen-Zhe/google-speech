@@ -22,26 +22,27 @@ namespace rpc {
 
 namespace {
 
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+const ::google::protobuf::EnumDescriptor* Code_descriptor_ = NULL;
 
 }  // namespace
 
-inline ::google::protobuf::uint32* protobuf_Offsets_google_2frpc_2fcode_2eproto() { return NULL; }
-static const ::google::protobuf::internal::MigrationSchema* schemas = NULL;
-static const ::google::protobuf::internal::DefaultInstanceData* file_default_instances = NULL;
-namespace {
 
-void protobuf_AssignDescriptors() {
+void protobuf_AssignDesc_google_2frpc_2fcode_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2frpc_2fcode_2eproto() {
   protobuf_AddDesc_google_2frpc_2fcode_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/rpc/code.proto", schemas, file_default_instances, protobuf_Offsets_google_2frpc_2fcode_2eproto(), factory,
-      NULL, file_level_enum_descriptors, NULL);
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/rpc/code.proto");
+  GOOGLE_CHECK(file != NULL);
+  Code_descriptor_ = file->enum_type(0);
 }
 
+namespace {
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2frpc_2fcode_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
@@ -57,31 +58,30 @@ void protobuf_ShutdownFile_google_2frpc_2fcode_2eproto() {
 void protobuf_InitDefaults_google_2frpc_2fcode_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::internal::InitProtobufDefaults();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2frpc_2fcode_2eproto_once_);
 void protobuf_InitDefaults_google_2frpc_2fcode_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2frpc_2fcode_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2frpc_2fcode_2eproto_once_,
+                 &protobuf_InitDefaults_google_2frpc_2fcode_2eproto_impl);
 }
 void protobuf_AddDesc_google_2frpc_2fcode_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2frpc_2fcode_2eproto();
-  static const char descriptor[] = {
-      "\n\025google/rpc/code.proto\022\ngoogle.rpc*\267\002\n\004"
-      "Code\022\006\n\002OK\020\000\022\r\n\tCANCELLED\020\001\022\013\n\007UNKNOWN\020\002"
-      "\022\024\n\020INVALID_ARGUMENT\020\003\022\025\n\021DEADLINE_EXCEE"
-      "DED\020\004\022\r\n\tNOT_FOUND\020\005\022\022\n\016ALREADY_EXISTS\020\006"
-      "\022\025\n\021PERMISSION_DENIED\020\007\022\023\n\017UNAUTHENTICAT"
-      "ED\020\020\022\026\n\022RESOURCE_EXHAUSTED\020\010\022\027\n\023FAILED_P"
-      "RECONDITION\020\t\022\013\n\007ABORTED\020\n\022\020\n\014OUT_OF_RAN"
-      "GE\020\013\022\021\n\rUNIMPLEMENTED\020\014\022\014\n\010INTERNAL\020\r\022\017\n"
-      "\013UNAVAILABLE\020\016\022\r\n\tDATA_LOSS\020\017BX\n\016com.goo"
-      "gle.rpcB\tCodeProtoP\001Z3google.golang.org/"
-      "genproto/googleapis/rpc/code;code\242\002\003RPCb"
-      "\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 447);
+    "\n\025google/rpc/code.proto\022\ngoogle.rpc*\267\002\n\004"
+    "Code\022\006\n\002OK\020\000\022\r\n\tCANCELLED\020\001\022\013\n\007UNKNOWN\020\002"
+    "\022\024\n\020INVALID_ARGUMENT\020\003\022\025\n\021DEADLINE_EXCEE"
+    "DED\020\004\022\r\n\tNOT_FOUND\020\005\022\022\n\016ALREADY_EXISTS\020\006"
+    "\022\025\n\021PERMISSION_DENIED\020\007\022\023\n\017UNAUTHENTICAT"
+    "ED\020\020\022\026\n\022RESOURCE_EXHAUSTED\020\010\022\027\n\023FAILED_P"
+    "RECONDITION\020\t\022\013\n\007ABORTED\020\n\022\020\n\014OUT_OF_RAN"
+    "GE\020\013\022\021\n\rUNIMPLEMENTED\020\014\022\014\n\010INTERNAL\020\r\022\017\n"
+    "\013UNAVAILABLE\020\016\022\r\n\tDATA_LOSS\020\017BX\n\016com.goo"
+    "gle.rpcB\tCodeProtoP\001Z3google.golang.org/"
+    "genproto/googleapis/rpc/code;code\242\002\003RPCb"
+    "\006proto3", 447);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/rpc/code.proto", &protobuf_RegisterTypes);
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2frpc_2fcode_2eproto);
@@ -100,7 +100,7 @@ struct StaticDescriptorInitializer_google_2frpc_2fcode_2eproto {
 } static_descriptor_initializer_google_2frpc_2fcode_2eproto_;
 const ::google::protobuf::EnumDescriptor* Code_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
+  return Code_descriptor_;
 }
 bool Code_IsValid(int value) {
   switch (value) {

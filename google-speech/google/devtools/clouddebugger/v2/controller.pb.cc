@@ -21,121 +21,168 @@ namespace google {
 namespace devtools {
 namespace clouddebugger {
 namespace v2 {
-class RegisterDebuggeeRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<RegisterDebuggeeRequest> {};
-RegisterDebuggeeRequestDefaultTypeInternal _RegisterDebuggeeRequest_default_instance_;
-class RegisterDebuggeeResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<RegisterDebuggeeResponse> {};
-RegisterDebuggeeResponseDefaultTypeInternal _RegisterDebuggeeResponse_default_instance_;
-class ListActiveBreakpointsRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListActiveBreakpointsRequest> {};
-ListActiveBreakpointsRequestDefaultTypeInternal _ListActiveBreakpointsRequest_default_instance_;
-class ListActiveBreakpointsResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListActiveBreakpointsResponse> {};
-ListActiveBreakpointsResponseDefaultTypeInternal _ListActiveBreakpointsResponse_default_instance_;
-class UpdateActiveBreakpointRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<UpdateActiveBreakpointRequest> {};
-UpdateActiveBreakpointRequestDefaultTypeInternal _UpdateActiveBreakpointRequest_default_instance_;
-class UpdateActiveBreakpointResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<UpdateActiveBreakpointResponse> {};
-UpdateActiveBreakpointResponseDefaultTypeInternal _UpdateActiveBreakpointResponse_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[6];
+const ::google::protobuf::Descriptor* RegisterDebuggeeRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  RegisterDebuggeeRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* RegisterDebuggeeResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  RegisterDebuggeeResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListActiveBreakpointsRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListActiveBreakpointsRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListActiveBreakpointsResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListActiveBreakpointsResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* UpdateActiveBreakpointRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  UpdateActiveBreakpointRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* UpdateActiveBreakpointResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  UpdateActiveBreakpointResponse_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RegisterDebuggeeRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto() {
+  protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/devtools/clouddebugger/v2/controller.proto");
+  GOOGLE_CHECK(file != NULL);
+  RegisterDebuggeeRequest_descriptor_ = file->message_type(0);
+  static const int RegisterDebuggeeRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RegisterDebuggeeRequest, debuggee_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RegisterDebuggeeResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  RegisterDebuggeeRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      RegisterDebuggeeRequest_descriptor_,
+      RegisterDebuggeeRequest::internal_default_instance(),
+      RegisterDebuggeeRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(RegisterDebuggeeRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RegisterDebuggeeRequest, _internal_metadata_));
+  RegisterDebuggeeResponse_descriptor_ = file->message_type(1);
+  static const int RegisterDebuggeeResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RegisterDebuggeeResponse, debuggee_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListActiveBreakpointsRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  RegisterDebuggeeResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      RegisterDebuggeeResponse_descriptor_,
+      RegisterDebuggeeResponse::internal_default_instance(),
+      RegisterDebuggeeResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(RegisterDebuggeeResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RegisterDebuggeeResponse, _internal_metadata_));
+  ListActiveBreakpointsRequest_descriptor_ = file->message_type(2);
+  static const int ListActiveBreakpointsRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListActiveBreakpointsRequest, debuggee_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListActiveBreakpointsRequest, wait_token_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListActiveBreakpointsRequest, success_on_timeout_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListActiveBreakpointsResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListActiveBreakpointsRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListActiveBreakpointsRequest_descriptor_,
+      ListActiveBreakpointsRequest::internal_default_instance(),
+      ListActiveBreakpointsRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListActiveBreakpointsRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListActiveBreakpointsRequest, _internal_metadata_));
+  ListActiveBreakpointsResponse_descriptor_ = file->message_type(3);
+  static const int ListActiveBreakpointsResponse_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListActiveBreakpointsResponse, breakpoints_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListActiveBreakpointsResponse, next_wait_token_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListActiveBreakpointsResponse, wait_expired_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateActiveBreakpointRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListActiveBreakpointsResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListActiveBreakpointsResponse_descriptor_,
+      ListActiveBreakpointsResponse::internal_default_instance(),
+      ListActiveBreakpointsResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListActiveBreakpointsResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListActiveBreakpointsResponse, _internal_metadata_));
+  UpdateActiveBreakpointRequest_descriptor_ = file->message_type(4);
+  static const int UpdateActiveBreakpointRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateActiveBreakpointRequest, debuggee_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateActiveBreakpointRequest, breakpoint_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateActiveBreakpointResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
   };
-  return offsets;
+  UpdateActiveBreakpointRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      UpdateActiveBreakpointRequest_descriptor_,
+      UpdateActiveBreakpointRequest::internal_default_instance(),
+      UpdateActiveBreakpointRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(UpdateActiveBreakpointRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateActiveBreakpointRequest, _internal_metadata_));
+  UpdateActiveBreakpointResponse_descriptor_ = file->message_type(5);
+  static const int UpdateActiveBreakpointResponse_offsets_[1] = {
+  };
+  UpdateActiveBreakpointResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      UpdateActiveBreakpointResponse_descriptor_,
+      UpdateActiveBreakpointResponse::internal_default_instance(),
+      UpdateActiveBreakpointResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(UpdateActiveBreakpointResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateActiveBreakpointResponse, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(RegisterDebuggeeRequest)},
-  { 5, -1, sizeof(RegisterDebuggeeResponse)},
-  { 10, -1, sizeof(ListActiveBreakpointsRequest)},
-  { 17, -1, sizeof(ListActiveBreakpointsResponse)},
-  { 24, -1, sizeof(UpdateActiveBreakpointRequest)},
-  { 30, -1, sizeof(UpdateActiveBreakpointResponse)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_RegisterDebuggeeRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_RegisterDebuggeeResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListActiveBreakpointsRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListActiveBreakpointsResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_UpdateActiveBreakpointRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_UpdateActiveBreakpointResponse_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/devtools/clouddebugger/v2/controller.proto", schemas, file_default_instances, protobuf_Offsets_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 6);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      RegisterDebuggeeRequest_descriptor_, RegisterDebuggeeRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      RegisterDebuggeeResponse_descriptor_, RegisterDebuggeeResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListActiveBreakpointsRequest_descriptor_, ListActiveBreakpointsRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListActiveBreakpointsResponse_descriptor_, ListActiveBreakpointsResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      UpdateActiveBreakpointRequest_descriptor_, UpdateActiveBreakpointRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      UpdateActiveBreakpointResponse_descriptor_, UpdateActiveBreakpointResponse::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto() {
-  _RegisterDebuggeeRequest_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _RegisterDebuggeeResponse_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _ListActiveBreakpointsRequest_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _ListActiveBreakpointsResponse_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _UpdateActiveBreakpointRequest_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
-  _UpdateActiveBreakpointResponse_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
+  RegisterDebuggeeRequest_default_instance_.Shutdown();
+  delete RegisterDebuggeeRequest_reflection_;
+  RegisterDebuggeeResponse_default_instance_.Shutdown();
+  delete RegisterDebuggeeResponse_reflection_;
+  ListActiveBreakpointsRequest_default_instance_.Shutdown();
+  delete ListActiveBreakpointsRequest_reflection_;
+  ListActiveBreakpointsResponse_default_instance_.Shutdown();
+  delete ListActiveBreakpointsResponse_reflection_;
+  UpdateActiveBreakpointRequest_default_instance_.Shutdown();
+  delete UpdateActiveBreakpointRequest_reflection_;
+  UpdateActiveBreakpointResponse_default_instance_.Shutdown();
+  delete UpdateActiveBreakpointResponse_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto_impl() {
@@ -144,71 +191,73 @@ void protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
   ::google::devtools::clouddebugger::v2::protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fdata_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fempty_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _RegisterDebuggeeRequest_default_instance_.DefaultConstruct();
-  _RegisterDebuggeeResponse_default_instance_.DefaultConstruct();
-  _ListActiveBreakpointsRequest_default_instance_.DefaultConstruct();
-  _ListActiveBreakpointsResponse_default_instance_.DefaultConstruct();
-  _UpdateActiveBreakpointRequest_default_instance_.DefaultConstruct();
-  _UpdateActiveBreakpointResponse_default_instance_.DefaultConstruct();
-  _RegisterDebuggeeRequest_default_instance_.get_mutable()->debuggee_ = const_cast< ::google::devtools::clouddebugger::v2::Debuggee*>(
-      ::google::devtools::clouddebugger::v2::Debuggee::internal_default_instance());
-  _RegisterDebuggeeResponse_default_instance_.get_mutable()->debuggee_ = const_cast< ::google::devtools::clouddebugger::v2::Debuggee*>(
-      ::google::devtools::clouddebugger::v2::Debuggee::internal_default_instance());
-  _UpdateActiveBreakpointRequest_default_instance_.get_mutable()->breakpoint_ = const_cast< ::google::devtools::clouddebugger::v2::Breakpoint*>(
-      ::google::devtools::clouddebugger::v2::Breakpoint::internal_default_instance());
+  RegisterDebuggeeRequest_default_instance_.DefaultConstruct();
+  RegisterDebuggeeResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListActiveBreakpointsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListActiveBreakpointsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  UpdateActiveBreakpointRequest_default_instance_.DefaultConstruct();
+  UpdateActiveBreakpointResponse_default_instance_.DefaultConstruct();
+  RegisterDebuggeeRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  RegisterDebuggeeResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListActiveBreakpointsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListActiveBreakpointsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  UpdateActiveBreakpointRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  UpdateActiveBreakpointResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto_once_);
 void protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
-  static const char descriptor[] = {
-      "\n1google/devtools/clouddebugger/v2/contr"
-      "oller.proto\022 google.devtools.clouddebugg"
-      "er.v2\032\034google/api/annotations.proto\032+goo"
-      "gle/devtools/clouddebugger/v2/data.proto"
-      "\032\033google/protobuf/empty.proto\"W\n\027Registe"
-      "rDebuggeeRequest\022<\n\010debuggee\030\001 \001(\0132*.goo"
-      "gle.devtools.clouddebugger.v2.Debuggee\"X"
-      "\n\030RegisterDebuggeeResponse\022<\n\010debuggee\030\001"
-      " \001(\0132*.google.devtools.clouddebugger.v2."
-      "Debuggee\"c\n\034ListActiveBreakpointsRequest"
-      "\022\023\n\013debuggee_id\030\001 \001(\t\022\022\n\nwait_token\030\002 \001("
-      "\t\022\032\n\022success_on_timeout\030\003 \001(\010\"\221\001\n\035ListAc"
-      "tiveBreakpointsResponse\022A\n\013breakpoints\030\001"
-      " \003(\0132,.google.devtools.clouddebugger.v2."
-      "Breakpoint\022\027\n\017next_wait_token\030\002 \001(\t\022\024\n\014w"
-      "ait_expired\030\003 \001(\010\"v\n\035UpdateActiveBreakpo"
-      "intRequest\022\023\n\013debuggee_id\030\001 \001(\t\022@\n\nbreak"
-      "point\030\002 \001(\0132,.google.devtools.clouddebug"
-      "ger.v2.Breakpoint\" \n\036UpdateActiveBreakpo"
-      "intResponse2\213\005\n\013Controller2\022\267\001\n\020Register"
-      "Debuggee\0229.google.devtools.clouddebugger"
-      ".v2.RegisterDebuggeeRequest\032:.google.dev"
-      "tools.clouddebugger.v2.RegisterDebuggeeR"
-      "esponse\",\202\323\344\223\002&\"!/v2/controller/debuggee"
-      "s/register:\001*\022\324\001\n\025ListActiveBreakpoints\022"
-      ">.google.devtools.clouddebugger.v2.ListA"
-      "ctiveBreakpointsRequest\032\?.google.devtool"
-      "s.clouddebugger.v2.ListActiveBreakpoints"
-      "Response\":\202\323\344\223\0024\0222/v2/controller/debugge"
-      "es/{debuggee_id}/breakpoints\022\352\001\n\026UpdateA"
-      "ctiveBreakpoint\022\?.google.devtools.cloudd"
-      "ebugger.v2.UpdateActiveBreakpointRequest"
-      "\032@.google.devtools.clouddebugger.v2.Upda"
-      "teActiveBreakpointResponse\"M\202\323\344\223\002G\032B/v2/"
-      "controller/debuggees/{debuggee_id}/break"
-      "points/{breakpoint.id}:\001*B\210\001\n$com.google"
-      ".devtools.clouddebugger.v2B\017ControllerPr"
-      "otoP\001ZMgoogle.golang.org/genproto/google"
-      "apis/devtools/clouddebugger/v2;clouddebu"
-      "ggerb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1572);
+    "\n1google/devtools/clouddebugger/v2/contr"
+    "oller.proto\022 google.devtools.clouddebugg"
+    "er.v2\032\034google/api/annotations.proto\032+goo"
+    "gle/devtools/clouddebugger/v2/data.proto"
+    "\032\033google/protobuf/empty.proto\"W\n\027Registe"
+    "rDebuggeeRequest\022<\n\010debuggee\030\001 \001(\0132*.goo"
+    "gle.devtools.clouddebugger.v2.Debuggee\"X"
+    "\n\030RegisterDebuggeeResponse\022<\n\010debuggee\030\001"
+    " \001(\0132*.google.devtools.clouddebugger.v2."
+    "Debuggee\"c\n\034ListActiveBreakpointsRequest"
+    "\022\023\n\013debuggee_id\030\001 \001(\t\022\022\n\nwait_token\030\002 \001("
+    "\t\022\032\n\022success_on_timeout\030\003 \001(\010\"\221\001\n\035ListAc"
+    "tiveBreakpointsResponse\022A\n\013breakpoints\030\001"
+    " \003(\0132,.google.devtools.clouddebugger.v2."
+    "Breakpoint\022\027\n\017next_wait_token\030\002 \001(\t\022\024\n\014w"
+    "ait_expired\030\003 \001(\010\"v\n\035UpdateActiveBreakpo"
+    "intRequest\022\023\n\013debuggee_id\030\001 \001(\t\022@\n\nbreak"
+    "point\030\002 \001(\0132,.google.devtools.clouddebug"
+    "ger.v2.Breakpoint\" \n\036UpdateActiveBreakpo"
+    "intResponse2\213\005\n\013Controller2\022\267\001\n\020Register"
+    "Debuggee\0229.google.devtools.clouddebugger"
+    ".v2.RegisterDebuggeeRequest\032:.google.dev"
+    "tools.clouddebugger.v2.RegisterDebuggeeR"
+    "esponse\",\202\323\344\223\002&\"!/v2/controller/debuggee"
+    "s/register:\001*\022\324\001\n\025ListActiveBreakpoints\022"
+    ">.google.devtools.clouddebugger.v2.ListA"
+    "ctiveBreakpointsRequest\032\?.google.devtool"
+    "s.clouddebugger.v2.ListActiveBreakpoints"
+    "Response\":\202\323\344\223\0024\0222/v2/controller/debugge"
+    "es/{debuggee_id}/breakpoints\022\352\001\n\026UpdateA"
+    "ctiveBreakpoint\022\?.google.devtools.cloudd"
+    "ebugger.v2.UpdateActiveBreakpointRequest"
+    "\032@.google.devtools.clouddebugger.v2.Upda"
+    "teActiveBreakpointResponse\"M\202\323\344\223\002G\032B/v2/"
+    "controller/debuggees/{debuggee_id}/break"
+    "points/{breakpoint.id}:\001*B\210\001\n$com.google"
+    ".devtools.clouddebugger.v2B\017ControllerPr"
+    "otoP\001ZMgoogle.golang.org/genproto/google"
+    "apis/devtools/clouddebugger/v2;clouddebu"
+    "ggerb\006proto3", 1572);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/devtools/clouddebugger/v2/controller.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -229,6 +278,16 @@ struct StaticDescriptorInitializer_google_2fdevtools_2fclouddebugger_2fv2_2fcont
   }
 } static_descriptor_initializer_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -237,22 +296,21 @@ const int RegisterDebuggeeRequest::kDebuggeeFieldNumber;
 
 RegisterDebuggeeRequest::RegisterDebuggeeRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouddebugger.v2.RegisterDebuggeeRequest)
 }
+
+void RegisterDebuggeeRequest::InitAsDefaultInstance() {
+  debuggee_ = const_cast< ::google::devtools::clouddebugger::v2::Debuggee*>(
+      ::google::devtools::clouddebugger::v2::Debuggee::internal_default_instance());
+}
+
 RegisterDebuggeeRequest::RegisterDebuggeeRequest(const RegisterDebuggeeRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_debuggee()) {
-    debuggee_ = new ::google::devtools::clouddebugger::v2::Debuggee(*from.debuggee_);
-  } else {
-    debuggee_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouddebugger.v2.RegisterDebuggeeRequest)
 }
 
@@ -267,7 +325,7 @@ RegisterDebuggeeRequest::~RegisterDebuggeeRequest() {
 }
 
 void RegisterDebuggeeRequest::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &RegisterDebuggeeRequest_default_instance_.get()) {
     delete debuggee_;
   }
 }
@@ -279,13 +337,15 @@ void RegisterDebuggeeRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* RegisterDebuggeeRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return RegisterDebuggeeRequest_descriptor_;
 }
 
 const RegisterDebuggeeRequest& RegisterDebuggeeRequest::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<RegisterDebuggeeRequest> RegisterDebuggeeRequest_default_instance_;
 
 RegisterDebuggeeRequest* RegisterDebuggeeRequest::New(::google::protobuf::Arena* arena) const {
   RegisterDebuggeeRequest* n = new RegisterDebuggeeRequest;
@@ -297,9 +357,7 @@ RegisterDebuggeeRequest* RegisterDebuggeeRequest::New(::google::protobuf::Arena*
 
 void RegisterDebuggeeRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.devtools.clouddebugger.v2.RegisterDebuggeeRequest)
-  if (GetArenaNoVirtual() == NULL && debuggee_ != NULL) {
-    delete debuggee_;
-  }
+  if (GetArenaNoVirtual() == NULL && debuggee_ != NULL) delete debuggee_;
   debuggee_ = NULL;
 }
 
@@ -309,18 +367,19 @@ bool RegisterDebuggeeRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.clouddebugger.v2.RegisterDebuggeeRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
+      // optional .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_debuggee()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -348,7 +407,7 @@ failure:
 void RegisterDebuggeeRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.clouddebugger.v2.RegisterDebuggeeRequest)
-  // .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
+  // optional .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
   if (this->has_debuggee()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->debuggee_, output);
@@ -361,7 +420,7 @@ void RegisterDebuggeeRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouddebugger.v2.RegisterDebuggeeRequest)
-  // .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
+  // optional .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
   if (this->has_debuggee()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -376,7 +435,7 @@ size_t RegisterDebuggeeRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouddebugger.v2.RegisterDebuggeeRequest)
   size_t total_size = 0;
 
-  // .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
+  // optional .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
   if (this->has_debuggee()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -392,7 +451,7 @@ size_t RegisterDebuggeeRequest::ByteSizeLong() const {
 
 void RegisterDebuggeeRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouddebugger.v2.RegisterDebuggeeRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const RegisterDebuggeeRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const RegisterDebuggeeRequest>(
           &from);
@@ -401,14 +460,21 @@ void RegisterDebuggeeRequest::MergeFrom(const ::google::protobuf::Message& from)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouddebugger.v2.RegisterDebuggeeRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void RegisterDebuggeeRequest::MergeFrom(const RegisterDebuggeeRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouddebugger.v2.RegisterDebuggeeRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void RegisterDebuggeeRequest::UnsafeMergeFrom(const RegisterDebuggeeRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_debuggee()) {
     mutable_debuggee()->::google::devtools::clouddebugger::v2::Debuggee::MergeFrom(from.debuggee());
   }
@@ -425,10 +491,11 @@ void RegisterDebuggeeRequest::CopyFrom(const RegisterDebuggeeRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouddebugger.v2.RegisterDebuggeeRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool RegisterDebuggeeRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -438,18 +505,22 @@ void RegisterDebuggeeRequest::Swap(RegisterDebuggeeRequest* other) {
 }
 void RegisterDebuggeeRequest::InternalSwap(RegisterDebuggeeRequest* other) {
   std::swap(debuggee_, other->debuggee_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata RegisterDebuggeeRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = RegisterDebuggeeRequest_descriptor_;
+  metadata.reflection = RegisterDebuggeeRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // RegisterDebuggeeRequest
 
-// .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
+// optional .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
 bool RegisterDebuggeeRequest::has_debuggee() const {
   return this != internal_default_instance() && debuggee_ != NULL;
 }
@@ -488,6 +559,9 @@ void RegisterDebuggeeRequest::set_allocated_debuggee(::google::devtools::cloudde
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouddebugger.v2.RegisterDebuggeeRequest.debuggee)
 }
 
+inline const RegisterDebuggeeRequest* RegisterDebuggeeRequest::internal_default_instance() {
+  return &RegisterDebuggeeRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -498,22 +572,21 @@ const int RegisterDebuggeeResponse::kDebuggeeFieldNumber;
 
 RegisterDebuggeeResponse::RegisterDebuggeeResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouddebugger.v2.RegisterDebuggeeResponse)
 }
+
+void RegisterDebuggeeResponse::InitAsDefaultInstance() {
+  debuggee_ = const_cast< ::google::devtools::clouddebugger::v2::Debuggee*>(
+      ::google::devtools::clouddebugger::v2::Debuggee::internal_default_instance());
+}
+
 RegisterDebuggeeResponse::RegisterDebuggeeResponse(const RegisterDebuggeeResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_debuggee()) {
-    debuggee_ = new ::google::devtools::clouddebugger::v2::Debuggee(*from.debuggee_);
-  } else {
-    debuggee_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouddebugger.v2.RegisterDebuggeeResponse)
 }
 
@@ -528,7 +601,7 @@ RegisterDebuggeeResponse::~RegisterDebuggeeResponse() {
 }
 
 void RegisterDebuggeeResponse::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &RegisterDebuggeeResponse_default_instance_.get()) {
     delete debuggee_;
   }
 }
@@ -540,13 +613,15 @@ void RegisterDebuggeeResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* RegisterDebuggeeResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return RegisterDebuggeeResponse_descriptor_;
 }
 
 const RegisterDebuggeeResponse& RegisterDebuggeeResponse::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<RegisterDebuggeeResponse> RegisterDebuggeeResponse_default_instance_;
 
 RegisterDebuggeeResponse* RegisterDebuggeeResponse::New(::google::protobuf::Arena* arena) const {
   RegisterDebuggeeResponse* n = new RegisterDebuggeeResponse;
@@ -558,9 +633,7 @@ RegisterDebuggeeResponse* RegisterDebuggeeResponse::New(::google::protobuf::Aren
 
 void RegisterDebuggeeResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.devtools.clouddebugger.v2.RegisterDebuggeeResponse)
-  if (GetArenaNoVirtual() == NULL && debuggee_ != NULL) {
-    delete debuggee_;
-  }
+  if (GetArenaNoVirtual() == NULL && debuggee_ != NULL) delete debuggee_;
   debuggee_ = NULL;
 }
 
@@ -570,18 +643,19 @@ bool RegisterDebuggeeResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.clouddebugger.v2.RegisterDebuggeeResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
+      // optional .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_debuggee()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -609,7 +683,7 @@ failure:
 void RegisterDebuggeeResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.clouddebugger.v2.RegisterDebuggeeResponse)
-  // .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
+  // optional .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
   if (this->has_debuggee()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->debuggee_, output);
@@ -622,7 +696,7 @@ void RegisterDebuggeeResponse::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouddebugger.v2.RegisterDebuggeeResponse)
-  // .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
+  // optional .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
   if (this->has_debuggee()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -637,7 +711,7 @@ size_t RegisterDebuggeeResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouddebugger.v2.RegisterDebuggeeResponse)
   size_t total_size = 0;
 
-  // .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
+  // optional .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
   if (this->has_debuggee()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -653,7 +727,7 @@ size_t RegisterDebuggeeResponse::ByteSizeLong() const {
 
 void RegisterDebuggeeResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouddebugger.v2.RegisterDebuggeeResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const RegisterDebuggeeResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const RegisterDebuggeeResponse>(
           &from);
@@ -662,14 +736,21 @@ void RegisterDebuggeeResponse::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouddebugger.v2.RegisterDebuggeeResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void RegisterDebuggeeResponse::MergeFrom(const RegisterDebuggeeResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouddebugger.v2.RegisterDebuggeeResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void RegisterDebuggeeResponse::UnsafeMergeFrom(const RegisterDebuggeeResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_debuggee()) {
     mutable_debuggee()->::google::devtools::clouddebugger::v2::Debuggee::MergeFrom(from.debuggee());
   }
@@ -686,10 +767,11 @@ void RegisterDebuggeeResponse::CopyFrom(const RegisterDebuggeeResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouddebugger.v2.RegisterDebuggeeResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool RegisterDebuggeeResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -699,18 +781,22 @@ void RegisterDebuggeeResponse::Swap(RegisterDebuggeeResponse* other) {
 }
 void RegisterDebuggeeResponse::InternalSwap(RegisterDebuggeeResponse* other) {
   std::swap(debuggee_, other->debuggee_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata RegisterDebuggeeResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = RegisterDebuggeeResponse_descriptor_;
+  metadata.reflection = RegisterDebuggeeResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // RegisterDebuggeeResponse
 
-// .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
+// optional .google.devtools.clouddebugger.v2.Debuggee debuggee = 1;
 bool RegisterDebuggeeResponse::has_debuggee() const {
   return this != internal_default_instance() && debuggee_ != NULL;
 }
@@ -749,6 +835,9 @@ void RegisterDebuggeeResponse::set_allocated_debuggee(::google::devtools::cloudd
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouddebugger.v2.RegisterDebuggeeResponse.debuggee)
 }
 
+inline const RegisterDebuggeeResponse* RegisterDebuggeeResponse::internal_default_instance() {
+  return &RegisterDebuggeeResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -761,26 +850,19 @@ const int ListActiveBreakpointsRequest::kSuccessOnTimeoutFieldNumber;
 
 ListActiveBreakpointsRequest::ListActiveBreakpointsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouddebugger.v2.ListActiveBreakpointsRequest)
 }
+
+void ListActiveBreakpointsRequest::InitAsDefaultInstance() {
+}
+
 ListActiveBreakpointsRequest::ListActiveBreakpointsRequest(const ListActiveBreakpointsRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  debuggee_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.debuggee_id().size() > 0) {
-    debuggee_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.debuggee_id_);
-  }
-  wait_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.wait_token().size() > 0) {
-    wait_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.wait_token_);
-  }
-  success_on_timeout_ = from.success_on_timeout_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouddebugger.v2.ListActiveBreakpointsRequest)
 }
 
@@ -808,13 +890,15 @@ void ListActiveBreakpointsRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListActiveBreakpointsRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return ListActiveBreakpointsRequest_descriptor_;
 }
 
 const ListActiveBreakpointsRequest& ListActiveBreakpointsRequest::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListActiveBreakpointsRequest> ListActiveBreakpointsRequest_default_instance_;
 
 ListActiveBreakpointsRequest* ListActiveBreakpointsRequest::New(::google::protobuf::Arena* arena) const {
   ListActiveBreakpointsRequest* n = new ListActiveBreakpointsRequest;
@@ -837,13 +921,13 @@ bool ListActiveBreakpointsRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.clouddebugger.v2.ListActiveBreakpointsRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string debuggee_id = 1;
+      // optional string debuggee_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_debuggee_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -853,12 +937,14 @@ bool ListActiveBreakpointsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_wait_token;
         break;
       }
 
-      // string wait_token = 2;
+      // optional string wait_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_wait_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_wait_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -868,12 +954,14 @@ bool ListActiveBreakpointsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_success_on_timeout;
         break;
       }
 
-      // bool success_on_timeout = 3;
+      // optional bool success_on_timeout = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_success_on_timeout:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -881,6 +969,7 @@ bool ListActiveBreakpointsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -908,7 +997,7 @@ failure:
 void ListActiveBreakpointsRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.clouddebugger.v2.ListActiveBreakpointsRequest)
-  // string debuggee_id = 1;
+  // optional string debuggee_id = 1;
   if (this->debuggee_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->debuggee_id().data(), this->debuggee_id().length(),
@@ -918,7 +1007,7 @@ void ListActiveBreakpointsRequest::SerializeWithCachedSizes(
       1, this->debuggee_id(), output);
   }
 
-  // string wait_token = 2;
+  // optional string wait_token = 2;
   if (this->wait_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->wait_token().data(), this->wait_token().length(),
@@ -928,7 +1017,7 @@ void ListActiveBreakpointsRequest::SerializeWithCachedSizes(
       2, this->wait_token(), output);
   }
 
-  // bool success_on_timeout = 3;
+  // optional bool success_on_timeout = 3;
   if (this->success_on_timeout() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(3, this->success_on_timeout(), output);
   }
@@ -940,7 +1029,7 @@ void ListActiveBreakpointsRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouddebugger.v2.ListActiveBreakpointsRequest)
-  // string debuggee_id = 1;
+  // optional string debuggee_id = 1;
   if (this->debuggee_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->debuggee_id().data(), this->debuggee_id().length(),
@@ -951,7 +1040,7 @@ void ListActiveBreakpointsRequest::SerializeWithCachedSizes(
         1, this->debuggee_id(), target);
   }
 
-  // string wait_token = 2;
+  // optional string wait_token = 2;
   if (this->wait_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->wait_token().data(), this->wait_token().length(),
@@ -962,7 +1051,7 @@ void ListActiveBreakpointsRequest::SerializeWithCachedSizes(
         2, this->wait_token(), target);
   }
 
-  // bool success_on_timeout = 3;
+  // optional bool success_on_timeout = 3;
   if (this->success_on_timeout() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(3, this->success_on_timeout(), target);
   }
@@ -975,21 +1064,21 @@ size_t ListActiveBreakpointsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouddebugger.v2.ListActiveBreakpointsRequest)
   size_t total_size = 0;
 
-  // string debuggee_id = 1;
+  // optional string debuggee_id = 1;
   if (this->debuggee_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->debuggee_id());
   }
 
-  // string wait_token = 2;
+  // optional string wait_token = 2;
   if (this->wait_token().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->wait_token());
   }
 
-  // bool success_on_timeout = 3;
+  // optional bool success_on_timeout = 3;
   if (this->success_on_timeout() != 0) {
     total_size += 1 + 1;
   }
@@ -1003,7 +1092,7 @@ size_t ListActiveBreakpointsRequest::ByteSizeLong() const {
 
 void ListActiveBreakpointsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouddebugger.v2.ListActiveBreakpointsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListActiveBreakpointsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListActiveBreakpointsRequest>(
           &from);
@@ -1012,14 +1101,21 @@ void ListActiveBreakpointsRequest::MergeFrom(const ::google::protobuf::Message& 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouddebugger.v2.ListActiveBreakpointsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListActiveBreakpointsRequest::MergeFrom(const ListActiveBreakpointsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouddebugger.v2.ListActiveBreakpointsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListActiveBreakpointsRequest::UnsafeMergeFrom(const ListActiveBreakpointsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.debuggee_id().size() > 0) {
 
     debuggee_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.debuggee_id_);
@@ -1044,10 +1140,11 @@ void ListActiveBreakpointsRequest::CopyFrom(const ListActiveBreakpointsRequest& 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouddebugger.v2.ListActiveBreakpointsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListActiveBreakpointsRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -1059,24 +1156,28 @@ void ListActiveBreakpointsRequest::InternalSwap(ListActiveBreakpointsRequest* ot
   debuggee_id_.Swap(&other->debuggee_id_);
   wait_token_.Swap(&other->wait_token_);
   std::swap(success_on_timeout_, other->success_on_timeout_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListActiveBreakpointsRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListActiveBreakpointsRequest_descriptor_;
+  metadata.reflection = ListActiveBreakpointsRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ListActiveBreakpointsRequest
 
-// string debuggee_id = 1;
+// optional string debuggee_id = 1;
 void ListActiveBreakpointsRequest::clear_debuggee_id() {
   debuggee_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListActiveBreakpointsRequest::debuggee_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.ListActiveBreakpointsRequest.debuggee_id)
-  return debuggee_id_.GetNoArena();
+  return debuggee_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListActiveBreakpointsRequest::set_debuggee_id(const ::std::string& value) {
   
@@ -1114,13 +1215,13 @@ void ListActiveBreakpointsRequest::set_allocated_debuggee_id(::std::string* debu
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouddebugger.v2.ListActiveBreakpointsRequest.debuggee_id)
 }
 
-// string wait_token = 2;
+// optional string wait_token = 2;
 void ListActiveBreakpointsRequest::clear_wait_token() {
   wait_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListActiveBreakpointsRequest::wait_token() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.ListActiveBreakpointsRequest.wait_token)
-  return wait_token_.GetNoArena();
+  return wait_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListActiveBreakpointsRequest::set_wait_token(const ::std::string& value) {
   
@@ -1158,7 +1259,7 @@ void ListActiveBreakpointsRequest::set_allocated_wait_token(::std::string* wait_
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouddebugger.v2.ListActiveBreakpointsRequest.wait_token)
 }
 
-// bool success_on_timeout = 3;
+// optional bool success_on_timeout = 3;
 void ListActiveBreakpointsRequest::clear_success_on_timeout() {
   success_on_timeout_ = false;
 }
@@ -1172,6 +1273,9 @@ void ListActiveBreakpointsRequest::set_success_on_timeout(bool value) {
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.ListActiveBreakpointsRequest.success_on_timeout)
 }
 
+inline const ListActiveBreakpointsRequest* ListActiveBreakpointsRequest::internal_default_instance() {
+  return &ListActiveBreakpointsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1184,23 +1288,19 @@ const int ListActiveBreakpointsResponse::kWaitExpiredFieldNumber;
 
 ListActiveBreakpointsResponse::ListActiveBreakpointsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouddebugger.v2.ListActiveBreakpointsResponse)
 }
+
+void ListActiveBreakpointsResponse::InitAsDefaultInstance() {
+}
+
 ListActiveBreakpointsResponse::ListActiveBreakpointsResponse(const ListActiveBreakpointsResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      breakpoints_(from.breakpoints_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_wait_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_wait_token().size() > 0) {
-    next_wait_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_wait_token_);
-  }
-  wait_expired_ = from.wait_expired_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouddebugger.v2.ListActiveBreakpointsResponse)
 }
 
@@ -1226,13 +1326,15 @@ void ListActiveBreakpointsResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListActiveBreakpointsResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return ListActiveBreakpointsResponse_descriptor_;
 }
 
 const ListActiveBreakpointsResponse& ListActiveBreakpointsResponse::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListActiveBreakpointsResponse> ListActiveBreakpointsResponse_default_instance_;
 
 ListActiveBreakpointsResponse* ListActiveBreakpointsResponse::New(::google::protobuf::Arena* arena) const {
   ListActiveBreakpointsResponse* n = new ListActiveBreakpointsResponse;
@@ -1244,9 +1346,9 @@ ListActiveBreakpointsResponse* ListActiveBreakpointsResponse::New(::google::prot
 
 void ListActiveBreakpointsResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.devtools.clouddebugger.v2.ListActiveBreakpointsResponse)
-  breakpoints_.Clear();
   next_wait_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   wait_expired_ = false;
+  breakpoints_.Clear();
 }
 
 bool ListActiveBreakpointsResponse::MergePartialFromCodedStream(
@@ -1255,26 +1357,30 @@ bool ListActiveBreakpointsResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.clouddebugger.v2.ListActiveBreakpointsResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.devtools.clouddebugger.v2.Breakpoint breakpoints = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_breakpoints:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_breakpoints()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_breakpoints;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_next_wait_token;
         break;
       }
 
-      // string next_wait_token = 2;
+      // optional string next_wait_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_next_wait_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_wait_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1284,12 +1390,14 @@ bool ListActiveBreakpointsResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_wait_expired;
         break;
       }
 
-      // bool wait_expired = 3;
+      // optional bool wait_expired = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_wait_expired:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -1297,6 +1405,7 @@ bool ListActiveBreakpointsResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1330,7 +1439,7 @@ void ListActiveBreakpointsResponse::SerializeWithCachedSizes(
       1, this->breakpoints(i), output);
   }
 
-  // string next_wait_token = 2;
+  // optional string next_wait_token = 2;
   if (this->next_wait_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_wait_token().data(), this->next_wait_token().length(),
@@ -1340,7 +1449,7 @@ void ListActiveBreakpointsResponse::SerializeWithCachedSizes(
       2, this->next_wait_token(), output);
   }
 
-  // bool wait_expired = 3;
+  // optional bool wait_expired = 3;
   if (this->wait_expired() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(3, this->wait_expired(), output);
   }
@@ -1359,7 +1468,7 @@ void ListActiveBreakpointsResponse::SerializeWithCachedSizes(
         1, this->breakpoints(i), false, target);
   }
 
-  // string next_wait_token = 2;
+  // optional string next_wait_token = 2;
   if (this->next_wait_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_wait_token().data(), this->next_wait_token().length(),
@@ -1370,7 +1479,7 @@ void ListActiveBreakpointsResponse::SerializeWithCachedSizes(
         2, this->next_wait_token(), target);
   }
 
-  // bool wait_expired = 3;
+  // optional bool wait_expired = 3;
   if (this->wait_expired() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(3, this->wait_expired(), target);
   }
@@ -1383,6 +1492,18 @@ size_t ListActiveBreakpointsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouddebugger.v2.ListActiveBreakpointsResponse)
   size_t total_size = 0;
 
+  // optional string next_wait_token = 2;
+  if (this->next_wait_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_wait_token());
+  }
+
+  // optional bool wait_expired = 3;
+  if (this->wait_expired() != 0) {
+    total_size += 1 + 1;
+  }
+
   // repeated .google.devtools.clouddebugger.v2.Breakpoint breakpoints = 1;
   {
     unsigned int count = this->breakpoints_size();
@@ -1394,18 +1515,6 @@ size_t ListActiveBreakpointsResponse::ByteSizeLong() const {
     }
   }
 
-  // string next_wait_token = 2;
-  if (this->next_wait_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_wait_token());
-  }
-
-  // bool wait_expired = 3;
-  if (this->wait_expired() != 0) {
-    total_size += 1 + 1;
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -1415,7 +1524,7 @@ size_t ListActiveBreakpointsResponse::ByteSizeLong() const {
 
 void ListActiveBreakpointsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouddebugger.v2.ListActiveBreakpointsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListActiveBreakpointsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListActiveBreakpointsResponse>(
           &from);
@@ -1424,14 +1533,21 @@ void ListActiveBreakpointsResponse::MergeFrom(const ::google::protobuf::Message&
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouddebugger.v2.ListActiveBreakpointsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListActiveBreakpointsResponse::MergeFrom(const ListActiveBreakpointsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouddebugger.v2.ListActiveBreakpointsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListActiveBreakpointsResponse::UnsafeMergeFrom(const ListActiveBreakpointsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   breakpoints_.MergeFrom(from.breakpoints_);
   if (from.next_wait_token().size() > 0) {
 
@@ -1453,10 +1569,11 @@ void ListActiveBreakpointsResponse::CopyFrom(const ListActiveBreakpointsResponse
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouddebugger.v2.ListActiveBreakpointsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListActiveBreakpointsResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -1468,12 +1585,16 @@ void ListActiveBreakpointsResponse::InternalSwap(ListActiveBreakpointsResponse* 
   breakpoints_.UnsafeArenaSwap(&other->breakpoints_);
   next_wait_token_.Swap(&other->next_wait_token_);
   std::swap(wait_expired_, other->wait_expired_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListActiveBreakpointsResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListActiveBreakpointsResponse_descriptor_;
+  metadata.reflection = ListActiveBreakpointsResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -1509,13 +1630,13 @@ ListActiveBreakpointsResponse::breakpoints() const {
   return breakpoints_;
 }
 
-// string next_wait_token = 2;
+// optional string next_wait_token = 2;
 void ListActiveBreakpointsResponse::clear_next_wait_token() {
   next_wait_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListActiveBreakpointsResponse::next_wait_token() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.ListActiveBreakpointsResponse.next_wait_token)
-  return next_wait_token_.GetNoArena();
+  return next_wait_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListActiveBreakpointsResponse::set_next_wait_token(const ::std::string& value) {
   
@@ -1553,7 +1674,7 @@ void ListActiveBreakpointsResponse::set_allocated_next_wait_token(::std::string*
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouddebugger.v2.ListActiveBreakpointsResponse.next_wait_token)
 }
 
-// bool wait_expired = 3;
+// optional bool wait_expired = 3;
 void ListActiveBreakpointsResponse::clear_wait_expired() {
   wait_expired_ = false;
 }
@@ -1567,6 +1688,9 @@ void ListActiveBreakpointsResponse::set_wait_expired(bool value) {
   // @@protoc_insertion_point(field_set:google.devtools.clouddebugger.v2.ListActiveBreakpointsResponse.wait_expired)
 }
 
+inline const ListActiveBreakpointsResponse* ListActiveBreakpointsResponse::internal_default_instance() {
+  return &ListActiveBreakpointsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1578,26 +1702,21 @@ const int UpdateActiveBreakpointRequest::kBreakpointFieldNumber;
 
 UpdateActiveBreakpointRequest::UpdateActiveBreakpointRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouddebugger.v2.UpdateActiveBreakpointRequest)
 }
+
+void UpdateActiveBreakpointRequest::InitAsDefaultInstance() {
+  breakpoint_ = const_cast< ::google::devtools::clouddebugger::v2::Breakpoint*>(
+      ::google::devtools::clouddebugger::v2::Breakpoint::internal_default_instance());
+}
+
 UpdateActiveBreakpointRequest::UpdateActiveBreakpointRequest(const UpdateActiveBreakpointRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  debuggee_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.debuggee_id().size() > 0) {
-    debuggee_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.debuggee_id_);
-  }
-  if (from.has_breakpoint()) {
-    breakpoint_ = new ::google::devtools::clouddebugger::v2::Breakpoint(*from.breakpoint_);
-  } else {
-    breakpoint_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouddebugger.v2.UpdateActiveBreakpointRequest)
 }
 
@@ -1614,7 +1733,7 @@ UpdateActiveBreakpointRequest::~UpdateActiveBreakpointRequest() {
 
 void UpdateActiveBreakpointRequest::SharedDtor() {
   debuggee_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &UpdateActiveBreakpointRequest_default_instance_.get()) {
     delete breakpoint_;
   }
 }
@@ -1626,13 +1745,15 @@ void UpdateActiveBreakpointRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* UpdateActiveBreakpointRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return UpdateActiveBreakpointRequest_descriptor_;
 }
 
 const UpdateActiveBreakpointRequest& UpdateActiveBreakpointRequest::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<UpdateActiveBreakpointRequest> UpdateActiveBreakpointRequest_default_instance_;
 
 UpdateActiveBreakpointRequest* UpdateActiveBreakpointRequest::New(::google::protobuf::Arena* arena) const {
   UpdateActiveBreakpointRequest* n = new UpdateActiveBreakpointRequest;
@@ -1645,9 +1766,7 @@ UpdateActiveBreakpointRequest* UpdateActiveBreakpointRequest::New(::google::prot
 void UpdateActiveBreakpointRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.devtools.clouddebugger.v2.UpdateActiveBreakpointRequest)
   debuggee_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && breakpoint_ != NULL) {
-    delete breakpoint_;
-  }
+  if (GetArenaNoVirtual() == NULL && breakpoint_ != NULL) delete breakpoint_;
   breakpoint_ = NULL;
 }
 
@@ -1657,13 +1776,13 @@ bool UpdateActiveBreakpointRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.clouddebugger.v2.UpdateActiveBreakpointRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string debuggee_id = 1;
+      // optional string debuggee_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_debuggee_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1673,17 +1792,20 @@ bool UpdateActiveBreakpointRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_breakpoint;
         break;
       }
 
-      // .google.devtools.clouddebugger.v2.Breakpoint breakpoint = 2;
+      // optional .google.devtools.clouddebugger.v2.Breakpoint breakpoint = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_breakpoint:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_breakpoint()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1711,7 +1833,7 @@ failure:
 void UpdateActiveBreakpointRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.clouddebugger.v2.UpdateActiveBreakpointRequest)
-  // string debuggee_id = 1;
+  // optional string debuggee_id = 1;
   if (this->debuggee_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->debuggee_id().data(), this->debuggee_id().length(),
@@ -1721,7 +1843,7 @@ void UpdateActiveBreakpointRequest::SerializeWithCachedSizes(
       1, this->debuggee_id(), output);
   }
 
-  // .google.devtools.clouddebugger.v2.Breakpoint breakpoint = 2;
+  // optional .google.devtools.clouddebugger.v2.Breakpoint breakpoint = 2;
   if (this->has_breakpoint()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->breakpoint_, output);
@@ -1734,7 +1856,7 @@ void UpdateActiveBreakpointRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.clouddebugger.v2.UpdateActiveBreakpointRequest)
-  // string debuggee_id = 1;
+  // optional string debuggee_id = 1;
   if (this->debuggee_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->debuggee_id().data(), this->debuggee_id().length(),
@@ -1745,7 +1867,7 @@ void UpdateActiveBreakpointRequest::SerializeWithCachedSizes(
         1, this->debuggee_id(), target);
   }
 
-  // .google.devtools.clouddebugger.v2.Breakpoint breakpoint = 2;
+  // optional .google.devtools.clouddebugger.v2.Breakpoint breakpoint = 2;
   if (this->has_breakpoint()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -1760,14 +1882,14 @@ size_t UpdateActiveBreakpointRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.clouddebugger.v2.UpdateActiveBreakpointRequest)
   size_t total_size = 0;
 
-  // string debuggee_id = 1;
+  // optional string debuggee_id = 1;
   if (this->debuggee_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->debuggee_id());
   }
 
-  // .google.devtools.clouddebugger.v2.Breakpoint breakpoint = 2;
+  // optional .google.devtools.clouddebugger.v2.Breakpoint breakpoint = 2;
   if (this->has_breakpoint()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -1783,7 +1905,7 @@ size_t UpdateActiveBreakpointRequest::ByteSizeLong() const {
 
 void UpdateActiveBreakpointRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouddebugger.v2.UpdateActiveBreakpointRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const UpdateActiveBreakpointRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const UpdateActiveBreakpointRequest>(
           &from);
@@ -1792,14 +1914,21 @@ void UpdateActiveBreakpointRequest::MergeFrom(const ::google::protobuf::Message&
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouddebugger.v2.UpdateActiveBreakpointRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void UpdateActiveBreakpointRequest::MergeFrom(const UpdateActiveBreakpointRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouddebugger.v2.UpdateActiveBreakpointRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void UpdateActiveBreakpointRequest::UnsafeMergeFrom(const UpdateActiveBreakpointRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.debuggee_id().size() > 0) {
 
     debuggee_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.debuggee_id_);
@@ -1820,10 +1949,11 @@ void UpdateActiveBreakpointRequest::CopyFrom(const UpdateActiveBreakpointRequest
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouddebugger.v2.UpdateActiveBreakpointRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool UpdateActiveBreakpointRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -1834,24 +1964,28 @@ void UpdateActiveBreakpointRequest::Swap(UpdateActiveBreakpointRequest* other) {
 void UpdateActiveBreakpointRequest::InternalSwap(UpdateActiveBreakpointRequest* other) {
   debuggee_id_.Swap(&other->debuggee_id_);
   std::swap(breakpoint_, other->breakpoint_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata UpdateActiveBreakpointRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = UpdateActiveBreakpointRequest_descriptor_;
+  metadata.reflection = UpdateActiveBreakpointRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // UpdateActiveBreakpointRequest
 
-// string debuggee_id = 1;
+// optional string debuggee_id = 1;
 void UpdateActiveBreakpointRequest::clear_debuggee_id() {
   debuggee_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& UpdateActiveBreakpointRequest::debuggee_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouddebugger.v2.UpdateActiveBreakpointRequest.debuggee_id)
-  return debuggee_id_.GetNoArena();
+  return debuggee_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void UpdateActiveBreakpointRequest::set_debuggee_id(const ::std::string& value) {
   
@@ -1889,7 +2023,7 @@ void UpdateActiveBreakpointRequest::set_allocated_debuggee_id(::std::string* deb
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouddebugger.v2.UpdateActiveBreakpointRequest.debuggee_id)
 }
 
-// .google.devtools.clouddebugger.v2.Breakpoint breakpoint = 2;
+// optional .google.devtools.clouddebugger.v2.Breakpoint breakpoint = 2;
 bool UpdateActiveBreakpointRequest::has_breakpoint() const {
   return this != internal_default_instance() && breakpoint_ != NULL;
 }
@@ -1928,6 +2062,9 @@ void UpdateActiveBreakpointRequest::set_allocated_breakpoint(::google::devtools:
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouddebugger.v2.UpdateActiveBreakpointRequest.breakpoint)
 }
 
+inline const UpdateActiveBreakpointRequest* UpdateActiveBreakpointRequest::internal_default_instance() {
+  return &UpdateActiveBreakpointRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1937,17 +2074,19 @@ void UpdateActiveBreakpointRequest::set_allocated_breakpoint(::google::devtools:
 
 UpdateActiveBreakpointResponse::UpdateActiveBreakpointResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.clouddebugger.v2.UpdateActiveBreakpointResponse)
 }
+
+void UpdateActiveBreakpointResponse::InitAsDefaultInstance() {
+}
+
 UpdateActiveBreakpointResponse::UpdateActiveBreakpointResponse(const UpdateActiveBreakpointResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.clouddebugger.v2.UpdateActiveBreakpointResponse)
 }
 
@@ -1970,13 +2109,15 @@ void UpdateActiveBreakpointResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* UpdateActiveBreakpointResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
+  return UpdateActiveBreakpointResponse_descriptor_;
 }
 
 const UpdateActiveBreakpointResponse& UpdateActiveBreakpointResponse::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fclouddebugger_2fv2_2fcontroller_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<UpdateActiveBreakpointResponse> UpdateActiveBreakpointResponse_default_instance_;
 
 UpdateActiveBreakpointResponse* UpdateActiveBreakpointResponse::New(::google::protobuf::Arena* arena) const {
   UpdateActiveBreakpointResponse* n = new UpdateActiveBreakpointResponse;
@@ -1996,7 +2137,7 @@ bool UpdateActiveBreakpointResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.clouddebugger.v2.UpdateActiveBreakpointResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
   handle_unusual:
@@ -2043,7 +2184,7 @@ size_t UpdateActiveBreakpointResponse::ByteSizeLong() const {
 
 void UpdateActiveBreakpointResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.clouddebugger.v2.UpdateActiveBreakpointResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const UpdateActiveBreakpointResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const UpdateActiveBreakpointResponse>(
           &from);
@@ -2052,14 +2193,21 @@ void UpdateActiveBreakpointResponse::MergeFrom(const ::google::protobuf::Message
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.clouddebugger.v2.UpdateActiveBreakpointResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void UpdateActiveBreakpointResponse::MergeFrom(const UpdateActiveBreakpointResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.clouddebugger.v2.UpdateActiveBreakpointResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void UpdateActiveBreakpointResponse::UnsafeMergeFrom(const UpdateActiveBreakpointResponse& from) {
+  GOOGLE_DCHECK(&from != this);
 }
 
 void UpdateActiveBreakpointResponse::CopyFrom(const ::google::protobuf::Message& from) {
@@ -2073,10 +2221,11 @@ void UpdateActiveBreakpointResponse::CopyFrom(const UpdateActiveBreakpointRespon
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.clouddebugger.v2.UpdateActiveBreakpointResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool UpdateActiveBreakpointResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -2085,17 +2234,24 @@ void UpdateActiveBreakpointResponse::Swap(UpdateActiveBreakpointResponse* other)
   InternalSwap(other);
 }
 void UpdateActiveBreakpointResponse::InternalSwap(UpdateActiveBreakpointResponse* other) {
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata UpdateActiveBreakpointResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = UpdateActiveBreakpointResponse_descriptor_;
+  metadata.reflection = UpdateActiveBreakpointResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // UpdateActiveBreakpointResponse
 
+inline const UpdateActiveBreakpointResponse* UpdateActiveBreakpointResponse::internal_default_instance() {
+  return &UpdateActiveBreakpointResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

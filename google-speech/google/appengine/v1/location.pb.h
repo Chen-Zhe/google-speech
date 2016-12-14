@@ -24,28 +24,12 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include "google/type/latlng.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace appengine {
-namespace v1 {
-class LocationMetadata;
-class LocationMetadataDefaultTypeInternal;
-extern LocationMetadataDefaultTypeInternal _LocationMetadata_default_instance_;
-}  // namespace v1
-}  // namespace appengine
-namespace type {
-class LatLng;
-class LatLngDefaultTypeInternal;
-extern LatLngDefaultTypeInternal _LatLng_default_instance_;
-}  // namespace type
-}  // namespace google
 
 namespace google {
 namespace appengine {
@@ -54,6 +38,10 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fappengine_2fv1_2flocation_2eproto();
 void protobuf_InitDefaults_google_2fappengine_2fv1_2flocation_2eproto();
+void protobuf_AssignDesc_google_2fappengine_2fv1_2flocation_2eproto();
+void protobuf_ShutdownFile_google_2fappengine_2fv1_2flocation_2eproto();
+
+class LocationMetadata;
 
 // ===================================================================
 
@@ -72,64 +60,61 @@ class LocationMetadata : public ::google::protobuf::Message /* @@protoc_insertio
   static const ::google::protobuf::Descriptor* descriptor();
   static const LocationMetadata& default_instance();
 
-  static inline const LocationMetadata* internal_default_instance() {
-    return reinterpret_cast<const LocationMetadata*>(
-               &_LocationMetadata_default_instance_);
-  }
+  static const LocationMetadata* internal_default_instance();
 
   void Swap(LocationMetadata* other);
 
   // implements Message ----------------------------------------------
 
-  inline LocationMetadata* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline LocationMetadata* New() const { return New(NULL); }
 
-  LocationMetadata* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  LocationMetadata* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const LocationMetadata& from);
   void MergeFrom(const LocationMetadata& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(LocationMetadata* other);
+  void UnsafeMergeFrom(const LocationMetadata& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // bool standard_environment_available = 2;
+  // optional bool standard_environment_available = 2;
   void clear_standard_environment_available();
   static const int kStandardEnvironmentAvailableFieldNumber = 2;
   bool standard_environment_available() const;
   void set_standard_environment_available(bool value);
 
-  // bool flexible_environment_available = 4;
+  // optional bool flexible_environment_available = 4;
   void clear_flexible_environment_available();
   static const int kFlexibleEnvironmentAvailableFieldNumber = 4;
   bool flexible_environment_available() const;
@@ -144,10 +129,13 @@ class LocationMetadata : public ::google::protobuf::Message /* @@protoc_insertio
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2flocation_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2flocation_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2flocation_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2flocation_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2flocation_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<LocationMetadata> LocationMetadata_default_instance_;
+
 // ===================================================================
 
 
@@ -156,7 +144,7 @@ class LocationMetadata : public ::google::protobuf::Message /* @@protoc_insertio
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // LocationMetadata
 
-// bool standard_environment_available = 2;
+// optional bool standard_environment_available = 2;
 inline void LocationMetadata::clear_standard_environment_available() {
   standard_environment_available_ = false;
 }
@@ -170,7 +158,7 @@ inline void LocationMetadata::set_standard_environment_available(bool value) {
   // @@protoc_insertion_point(field_set:google.appengine.v1.LocationMetadata.standard_environment_available)
 }
 
-// bool flexible_environment_available = 4;
+// optional bool flexible_environment_available = 4;
 inline void LocationMetadata::clear_flexible_environment_available() {
   flexible_environment_available_ = false;
 }
@@ -184,10 +172,12 @@ inline void LocationMetadata::set_flexible_environment_available(bool value) {
   // @@protoc_insertion_point(field_set:google.appengine.v1.LocationMetadata.flexible_environment_available)
 }
 
+inline const LocationMetadata* LocationMetadata::internal_default_instance() {
+  return &LocationMetadata_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace appengine

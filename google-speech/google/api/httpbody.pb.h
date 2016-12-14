@@ -24,17 +24,10 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-class HttpBody;
-class HttpBodyDefaultTypeInternal;
-extern HttpBodyDefaultTypeInternal _HttpBody_default_instance_;
-}  // namespace api
-}  // namespace google
 
 namespace google {
 namespace api {
@@ -42,6 +35,10 @@ namespace api {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fapi_2fhttpbody_2eproto();
 void protobuf_InitDefaults_google_2fapi_2fhttpbody_2eproto();
+void protobuf_AssignDesc_google_2fapi_2fhttpbody_2eproto();
+void protobuf_ShutdownFile_google_2fapi_2fhttpbody_2eproto();
+
+class HttpBody;
 
 // ===================================================================
 
@@ -60,58 +57,55 @@ class HttpBody : public ::google::protobuf::Message /* @@protoc_insertion_point(
   static const ::google::protobuf::Descriptor* descriptor();
   static const HttpBody& default_instance();
 
-  static inline const HttpBody* internal_default_instance() {
-    return reinterpret_cast<const HttpBody*>(
-               &_HttpBody_default_instance_);
-  }
+  static const HttpBody* internal_default_instance();
 
   void Swap(HttpBody* other);
 
   // implements Message ----------------------------------------------
 
-  inline HttpBody* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline HttpBody* New() const { return New(NULL); }
 
-  HttpBody* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  HttpBody* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const HttpBody& from);
   void MergeFrom(const HttpBody& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(HttpBody* other);
+  void UnsafeMergeFrom(const HttpBody& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string content_type = 1;
+  // optional string content_type = 1;
   void clear_content_type();
   static const int kContentTypeFieldNumber = 1;
   const ::std::string& content_type() const;
@@ -122,7 +116,7 @@ class HttpBody : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_content_type();
   void set_allocated_content_type(::std::string* content_type);
 
-  // bytes data = 2;
+  // optional bytes data = 2;
   void clear_data();
   static const int kDataFieldNumber = 2;
   const ::std::string& data() const;
@@ -142,10 +136,13 @@ class HttpBody : public ::google::protobuf::Message /* @@protoc_insertion_point(
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fhttpbody_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fhttpbody_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fhttpbody_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fhttpbody_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fhttpbody_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<HttpBody> HttpBody_default_instance_;
+
 // ===================================================================
 
 
@@ -154,13 +151,13 @@ class HttpBody : public ::google::protobuf::Message /* @@protoc_insertion_point(
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // HttpBody
 
-// string content_type = 1;
+// optional string content_type = 1;
 inline void HttpBody::clear_content_type() {
   content_type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& HttpBody::content_type() const {
   // @@protoc_insertion_point(field_get:google.api.HttpBody.content_type)
-  return content_type_.GetNoArena();
+  return content_type_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void HttpBody::set_content_type(const ::std::string& value) {
   
@@ -198,13 +195,13 @@ inline void HttpBody::set_allocated_content_type(::std::string* content_type) {
   // @@protoc_insertion_point(field_set_allocated:google.api.HttpBody.content_type)
 }
 
-// bytes data = 2;
+// optional bytes data = 2;
 inline void HttpBody::clear_data() {
   data_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& HttpBody::data() const {
   // @@protoc_insertion_point(field_get:google.api.HttpBody.data)
-  return data_.GetNoArena();
+  return data_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void HttpBody::set_data(const ::std::string& value) {
   
@@ -242,10 +239,12 @@ inline void HttpBody::set_allocated_data(::std::string* data) {
   // @@protoc_insertion_point(field_set_allocated:google.api.HttpBody.data)
 }
 
+inline const HttpBody* HttpBody::internal_default_instance() {
+  return &HttpBody_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace api
 }  // namespace google

@@ -20,97 +20,124 @@
 namespace google {
 namespace iam {
 namespace v1 {
-class SetIamPolicyRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<SetIamPolicyRequest> {};
-SetIamPolicyRequestDefaultTypeInternal _SetIamPolicyRequest_default_instance_;
-class GetIamPolicyRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GetIamPolicyRequest> {};
-GetIamPolicyRequestDefaultTypeInternal _GetIamPolicyRequest_default_instance_;
-class TestIamPermissionsRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<TestIamPermissionsRequest> {};
-TestIamPermissionsRequestDefaultTypeInternal _TestIamPermissionsRequest_default_instance_;
-class TestIamPermissionsResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<TestIamPermissionsResponse> {};
-TestIamPermissionsResponseDefaultTypeInternal _TestIamPermissionsResponse_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[4];
+const ::google::protobuf::Descriptor* SetIamPolicyRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  SetIamPolicyRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* GetIamPolicyRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GetIamPolicyRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* TestIamPermissionsRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TestIamPermissionsRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* TestIamPermissionsResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TestIamPermissionsResponse_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fiam_2fv1_2fiam_5fpolicy_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fiam_2fv1_2fiam_5fpolicy_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SetIamPolicyRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fiam_2fv1_2fiam_5fpolicy_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fiam_2fv1_2fiam_5fpolicy_2eproto() {
+  protobuf_AddDesc_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/iam/v1/iam_policy.proto");
+  GOOGLE_CHECK(file != NULL);
+  SetIamPolicyRequest_descriptor_ = file->message_type(0);
+  static const int SetIamPolicyRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SetIamPolicyRequest, resource_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SetIamPolicyRequest, policy_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetIamPolicyRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  SetIamPolicyRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      SetIamPolicyRequest_descriptor_,
+      SetIamPolicyRequest::internal_default_instance(),
+      SetIamPolicyRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(SetIamPolicyRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SetIamPolicyRequest, _internal_metadata_));
+  GetIamPolicyRequest_descriptor_ = file->message_type(1);
+  static const int GetIamPolicyRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetIamPolicyRequest, resource_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TestIamPermissionsRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  GetIamPolicyRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GetIamPolicyRequest_descriptor_,
+      GetIamPolicyRequest::internal_default_instance(),
+      GetIamPolicyRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GetIamPolicyRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetIamPolicyRequest, _internal_metadata_));
+  TestIamPermissionsRequest_descriptor_ = file->message_type(2);
+  static const int TestIamPermissionsRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TestIamPermissionsRequest, resource_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TestIamPermissionsRequest, permissions_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TestIamPermissionsResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  TestIamPermissionsRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      TestIamPermissionsRequest_descriptor_,
+      TestIamPermissionsRequest::internal_default_instance(),
+      TestIamPermissionsRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(TestIamPermissionsRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TestIamPermissionsRequest, _internal_metadata_));
+  TestIamPermissionsResponse_descriptor_ = file->message_type(3);
+  static const int TestIamPermissionsResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TestIamPermissionsResponse, permissions_),
   };
-  return offsets;
+  TestIamPermissionsResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      TestIamPermissionsResponse_descriptor_,
+      TestIamPermissionsResponse::internal_default_instance(),
+      TestIamPermissionsResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(TestIamPermissionsResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TestIamPermissionsResponse, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(SetIamPolicyRequest)},
-  { 6, -1, sizeof(GetIamPolicyRequest)},
-  { 11, -1, sizeof(TestIamPermissionsRequest)},
-  { 17, -1, sizeof(TestIamPermissionsResponse)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_SetIamPolicyRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GetIamPolicyRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_TestIamPermissionsRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_TestIamPermissionsResponse_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/iam/v1/iam_policy.proto", schemas, file_default_instances, protobuf_Offsets_google_2fiam_2fv1_2fiam_5fpolicy_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fiam_2fv1_2fiam_5fpolicy_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 4);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      SetIamPolicyRequest_descriptor_, SetIamPolicyRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GetIamPolicyRequest_descriptor_, GetIamPolicyRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      TestIamPermissionsRequest_descriptor_, TestIamPermissionsRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      TestIamPermissionsResponse_descriptor_, TestIamPermissionsResponse::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fiam_2fv1_2fiam_5fpolicy_2eproto() {
-  _SetIamPolicyRequest_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _GetIamPolicyRequest_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _TestIamPermissionsRequest_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _TestIamPermissionsResponse_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
+  SetIamPolicyRequest_default_instance_.Shutdown();
+  delete SetIamPolicyRequest_reflection_;
+  GetIamPolicyRequest_default_instance_.Shutdown();
+  delete GetIamPolicyRequest_reflection_;
+  TestIamPermissionsRequest_default_instance_.Shutdown();
+  delete TestIamPermissionsRequest_reflection_;
+  TestIamPermissionsResponse_default_instance_.Shutdown();
+  delete TestIamPermissionsResponse_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto_impl() {
@@ -118,47 +145,52 @@ void protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto_impl() {
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
   ::google::iam::v1::protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _SetIamPolicyRequest_default_instance_.DefaultConstruct();
-  _GetIamPolicyRequest_default_instance_.DefaultConstruct();
-  _TestIamPermissionsRequest_default_instance_.DefaultConstruct();
-  _TestIamPermissionsResponse_default_instance_.DefaultConstruct();
-  _SetIamPolicyRequest_default_instance_.get_mutable()->policy_ = const_cast< ::google::iam::v1::Policy*>(
-      ::google::iam::v1::Policy::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  SetIamPolicyRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetIamPolicyRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  TestIamPermissionsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  TestIamPermissionsResponse_default_instance_.DefaultConstruct();
+  SetIamPolicyRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetIamPolicyRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  TestIamPermissionsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  TestIamPermissionsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto_once_);
 void protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fiam_2fv1_2fiam_5fpolicy_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
-  static const char descriptor[] = {
-      "\n\036google/iam/v1/iam_policy.proto\022\rgoogle"
-      ".iam.v1\032\034google/api/annotations.proto\032\032g"
-      "oogle/iam/v1/policy.proto\"N\n\023SetIamPolic"
-      "yRequest\022\020\n\010resource\030\001 \001(\t\022%\n\006policy\030\002 \001"
-      "(\0132\025.google.iam.v1.Policy\"\'\n\023GetIamPolic"
-      "yRequest\022\020\n\010resource\030\001 \001(\t\"B\n\031TestIamPer"
-      "missionsRequest\022\020\n\010resource\030\001 \001(\t\022\023\n\013per"
-      "missions\030\002 \003(\t\"1\n\032TestIamPermissionsResp"
-      "onse\022\023\n\013permissions\030\001 \003(\t2\224\003\n\tIAMPolicy\022"
-      "t\n\014SetIamPolicy\022\".google.iam.v1.SetIamPo"
-      "licyRequest\032\025.google.iam.v1.Policy\")\202\323\344\223"
-      "\002#\"\036/v1/{resource=**}:setIamPolicy:\001*\022t\n"
-      "\014GetIamPolicy\022\".google.iam.v1.GetIamPoli"
-      "cyRequest\032\025.google.iam.v1.Policy\")\202\323\344\223\002#"
-      "\"\036/v1/{resource=**}:getIamPolicy:\001*\022\232\001\n\022"
-      "TestIamPermissions\022(.google.iam.v1.TestI"
-      "amPermissionsRequest\032).google.iam.v1.Tes"
-      "tIamPermissionsResponse\"/\202\323\344\223\002)\"$/v1/{re"
-      "source=**}:testIamPermissions:\001*Bp\n\021com."
-      "google.iam.v1B\016IamPolicyProtoP\001Z0google."
-      "golang.org/genproto/googleapis/iam/v1;ia"
-      "m\370\001\001\252\002\023Google.Cloud.Iam.V1b\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 874);
+    "\n\036google/iam/v1/iam_policy.proto\022\rgoogle"
+    ".iam.v1\032\034google/api/annotations.proto\032\032g"
+    "oogle/iam/v1/policy.proto\"N\n\023SetIamPolic"
+    "yRequest\022\020\n\010resource\030\001 \001(\t\022%\n\006policy\030\002 \001"
+    "(\0132\025.google.iam.v1.Policy\"\'\n\023GetIamPolic"
+    "yRequest\022\020\n\010resource\030\001 \001(\t\"B\n\031TestIamPer"
+    "missionsRequest\022\020\n\010resource\030\001 \001(\t\022\023\n\013per"
+    "missions\030\002 \003(\t\"1\n\032TestIamPermissionsResp"
+    "onse\022\023\n\013permissions\030\001 \003(\t2\224\003\n\tIAMPolicy\022"
+    "t\n\014SetIamPolicy\022\".google.iam.v1.SetIamPo"
+    "licyRequest\032\025.google.iam.v1.Policy\")\202\323\344\223"
+    "\002#\"\036/v1/{resource=**}:setIamPolicy:\001*\022t\n"
+    "\014GetIamPolicy\022\".google.iam.v1.GetIamPoli"
+    "cyRequest\032\025.google.iam.v1.Policy\")\202\323\344\223\002#"
+    "\"\036/v1/{resource=**}:getIamPolicy:\001*\022\232\001\n\022"
+    "TestIamPermissions\022(.google.iam.v1.TestI"
+    "amPermissionsRequest\032).google.iam.v1.Tes"
+    "tIamPermissionsResponse\"/\202\323\344\223\002)\"$/v1/{re"
+    "source=**}:testIamPermissions:\001*Bp\n\021com."
+    "google.iam.v1B\016IamPolicyProtoP\001Z0google."
+    "golang.org/genproto/googleapis/iam/v1;ia"
+    "m\370\001\001\252\002\023Google.Cloud.Iam.V1b\006proto3", 874);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/iam/v1/iam_policy.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -177,6 +209,16 @@ struct StaticDescriptorInitializer_google_2fiam_2fv1_2fiam_5fpolicy_2eproto {
     protobuf_AddDesc_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
   }
 } static_descriptor_initializer_google_2fiam_2fv1_2fiam_5fpolicy_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -234,9 +276,7 @@ const int SetIamPolicyRequest::kPolicyFieldNumber;
 
 SetIamPolicyRequest::SetIamPolicyRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.v1.SetIamPolicyRequest)
 }
@@ -250,21 +290,17 @@ SetIamPolicyRequest::SetIamPolicyRequest(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.v1.SetIamPolicyRequest)
 }
+
+void SetIamPolicyRequest::InitAsDefaultInstance() {
+  policy_ = const_cast< ::google::iam::v1::Policy*>(
+      ::google::iam::v1::Policy::internal_default_instance());
+}
+
 SetIamPolicyRequest::SetIamPolicyRequest(const SetIamPolicyRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  resource_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.resource().size() > 0) {
-    resource_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.resource(),
-      GetArenaNoVirtual());
-  }
-  if (from.has_policy()) {
-    policy_ = new ::google::iam::v1::Policy(*from.policy_);
-  } else {
-    policy_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.v1.SetIamPolicyRequest)
 }
 
@@ -286,7 +322,7 @@ void SetIamPolicyRequest::SharedDtor() {
   }
 
   resource_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
-  if (this != internal_default_instance()) {
+  if (this != &SetIamPolicyRequest_default_instance_.get()) {
     delete policy_;
   }
 }
@@ -304,13 +340,15 @@ void SetIamPolicyRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* SetIamPolicyRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return SetIamPolicyRequest_descriptor_;
 }
 
 const SetIamPolicyRequest& SetIamPolicyRequest::default_instance() {
   protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<SetIamPolicyRequest> SetIamPolicyRequest_default_instance_;
 
 SetIamPolicyRequest* SetIamPolicyRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<SetIamPolicyRequest>(arena);
@@ -319,9 +357,7 @@ SetIamPolicyRequest* SetIamPolicyRequest::New(::google::protobuf::Arena* arena) 
 void SetIamPolicyRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.iam.v1.SetIamPolicyRequest)
   resource_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (GetArenaNoVirtual() == NULL && policy_ != NULL) {
-    delete policy_;
-  }
+  if (GetArenaNoVirtual() == NULL && policy_ != NULL) delete policy_;
   policy_ = NULL;
 }
 
@@ -331,13 +367,13 @@ bool SetIamPolicyRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.iam.v1.SetIamPolicyRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string resource = 1;
+      // optional string resource = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_resource()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -347,17 +383,20 @@ bool SetIamPolicyRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_policy;
         break;
       }
 
-      // .google.iam.v1.Policy policy = 2;
+      // optional .google.iam.v1.Policy policy = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_policy:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_policy()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -385,7 +424,7 @@ failure:
 void SetIamPolicyRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.iam.v1.SetIamPolicyRequest)
-  // string resource = 1;
+  // optional string resource = 1;
   if (this->resource().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->resource().data(), this->resource().length(),
@@ -395,7 +434,7 @@ void SetIamPolicyRequest::SerializeWithCachedSizes(
       1, this->resource(), output);
   }
 
-  // .google.iam.v1.Policy policy = 2;
+  // optional .google.iam.v1.Policy policy = 2;
   if (this->has_policy()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->policy_, output);
@@ -408,7 +447,7 @@ void SetIamPolicyRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.v1.SetIamPolicyRequest)
-  // string resource = 1;
+  // optional string resource = 1;
   if (this->resource().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->resource().data(), this->resource().length(),
@@ -419,7 +458,7 @@ void SetIamPolicyRequest::SerializeWithCachedSizes(
         1, this->resource(), target);
   }
 
-  // .google.iam.v1.Policy policy = 2;
+  // optional .google.iam.v1.Policy policy = 2;
   if (this->has_policy()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -434,14 +473,14 @@ size_t SetIamPolicyRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.v1.SetIamPolicyRequest)
   size_t total_size = 0;
 
-  // string resource = 1;
+  // optional string resource = 1;
   if (this->resource().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->resource());
   }
 
-  // .google.iam.v1.Policy policy = 2;
+  // optional .google.iam.v1.Policy policy = 2;
   if (this->has_policy()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -457,7 +496,7 @@ size_t SetIamPolicyRequest::ByteSizeLong() const {
 
 void SetIamPolicyRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.v1.SetIamPolicyRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const SetIamPolicyRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SetIamPolicyRequest>(
           &from);
@@ -466,14 +505,21 @@ void SetIamPolicyRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.v1.SetIamPolicyRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SetIamPolicyRequest::MergeFrom(const SetIamPolicyRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.v1.SetIamPolicyRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void SetIamPolicyRequest::UnsafeMergeFrom(const SetIamPolicyRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.resource().size() > 0) {
     set_resource(from.resource());
   }
@@ -493,10 +539,11 @@ void SetIamPolicyRequest::CopyFrom(const SetIamPolicyRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.v1.SetIamPolicyRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SetIamPolicyRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -505,13 +552,10 @@ void SetIamPolicyRequest::Swap(SetIamPolicyRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    SetIamPolicyRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    SetIamPolicyRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void SetIamPolicyRequest::UnsafeArenaSwap(SetIamPolicyRequest* other) {
@@ -522,24 +566,28 @@ void SetIamPolicyRequest::UnsafeArenaSwap(SetIamPolicyRequest* other) {
 void SetIamPolicyRequest::InternalSwap(SetIamPolicyRequest* other) {
   resource_.Swap(&other->resource_);
   std::swap(policy_, other->policy_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SetIamPolicyRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = SetIamPolicyRequest_descriptor_;
+  metadata.reflection = SetIamPolicyRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // SetIamPolicyRequest
 
-// string resource = 1;
+// optional string resource = 1;
 void SetIamPolicyRequest::clear_resource() {
   resource_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& SetIamPolicyRequest::resource() const {
   // @@protoc_insertion_point(field_get:google.iam.v1.SetIamPolicyRequest.resource)
-  return resource_.Get();
+  return resource_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void SetIamPolicyRequest::set_resource(const ::std::string& value) {
   
@@ -599,7 +647,7 @@ void SetIamPolicyRequest::unsafe_arena_set_allocated_resource(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.iam.v1.SetIamPolicyRequest.resource)
 }
 
-// .google.iam.v1.Policy policy = 2;
+// optional .google.iam.v1.Policy policy = 2;
 bool SetIamPolicyRequest::has_policy() const {
   return this != internal_default_instance() && policy_ != NULL;
 }
@@ -648,6 +696,9 @@ const ::google::iam::v1::Policy& SetIamPolicyRequest::policy() const {
   // @@protoc_insertion_point(field_set_allocated:google.iam.v1.SetIamPolicyRequest.policy)
 }
 
+inline const SetIamPolicyRequest* SetIamPolicyRequest::internal_default_instance() {
+  return &SetIamPolicyRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -658,9 +709,7 @@ const int GetIamPolicyRequest::kResourceFieldNumber;
 
 GetIamPolicyRequest::GetIamPolicyRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.v1.GetIamPolicyRequest)
 }
@@ -674,16 +723,15 @@ GetIamPolicyRequest::GetIamPolicyRequest(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.v1.GetIamPolicyRequest)
 }
+
+void GetIamPolicyRequest::InitAsDefaultInstance() {
+}
+
 GetIamPolicyRequest::GetIamPolicyRequest(const GetIamPolicyRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  resource_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.resource().size() > 0) {
-    resource_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.resource(),
-      GetArenaNoVirtual());
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.v1.GetIamPolicyRequest)
 }
 
@@ -719,13 +767,15 @@ void GetIamPolicyRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GetIamPolicyRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return GetIamPolicyRequest_descriptor_;
 }
 
 const GetIamPolicyRequest& GetIamPolicyRequest::default_instance() {
   protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GetIamPolicyRequest> GetIamPolicyRequest_default_instance_;
 
 GetIamPolicyRequest* GetIamPolicyRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<GetIamPolicyRequest>(arena);
@@ -742,13 +792,13 @@ bool GetIamPolicyRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.iam.v1.GetIamPolicyRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string resource = 1;
+      // optional string resource = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_resource()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -758,6 +808,7 @@ bool GetIamPolicyRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -785,7 +836,7 @@ failure:
 void GetIamPolicyRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.iam.v1.GetIamPolicyRequest)
-  // string resource = 1;
+  // optional string resource = 1;
   if (this->resource().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->resource().data(), this->resource().length(),
@@ -802,7 +853,7 @@ void GetIamPolicyRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.v1.GetIamPolicyRequest)
-  // string resource = 1;
+  // optional string resource = 1;
   if (this->resource().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->resource().data(), this->resource().length(),
@@ -821,7 +872,7 @@ size_t GetIamPolicyRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.v1.GetIamPolicyRequest)
   size_t total_size = 0;
 
-  // string resource = 1;
+  // optional string resource = 1;
   if (this->resource().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -837,7 +888,7 @@ size_t GetIamPolicyRequest::ByteSizeLong() const {
 
 void GetIamPolicyRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.v1.GetIamPolicyRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GetIamPolicyRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetIamPolicyRequest>(
           &from);
@@ -846,14 +897,21 @@ void GetIamPolicyRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.v1.GetIamPolicyRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetIamPolicyRequest::MergeFrom(const GetIamPolicyRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.v1.GetIamPolicyRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GetIamPolicyRequest::UnsafeMergeFrom(const GetIamPolicyRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.resource().size() > 0) {
     set_resource(from.resource());
   }
@@ -870,10 +928,11 @@ void GetIamPolicyRequest::CopyFrom(const GetIamPolicyRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.v1.GetIamPolicyRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetIamPolicyRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -882,13 +941,10 @@ void GetIamPolicyRequest::Swap(GetIamPolicyRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    GetIamPolicyRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    GetIamPolicyRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void GetIamPolicyRequest::UnsafeArenaSwap(GetIamPolicyRequest* other) {
@@ -898,24 +954,28 @@ void GetIamPolicyRequest::UnsafeArenaSwap(GetIamPolicyRequest* other) {
 }
 void GetIamPolicyRequest::InternalSwap(GetIamPolicyRequest* other) {
   resource_.Swap(&other->resource_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GetIamPolicyRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GetIamPolicyRequest_descriptor_;
+  metadata.reflection = GetIamPolicyRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GetIamPolicyRequest
 
-// string resource = 1;
+// optional string resource = 1;
 void GetIamPolicyRequest::clear_resource() {
   resource_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& GetIamPolicyRequest::resource() const {
   // @@protoc_insertion_point(field_get:google.iam.v1.GetIamPolicyRequest.resource)
-  return resource_.Get();
+  return resource_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GetIamPolicyRequest::set_resource(const ::std::string& value) {
   
@@ -975,6 +1035,9 @@ void GetIamPolicyRequest::unsafe_arena_set_allocated_resource(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.iam.v1.GetIamPolicyRequest.resource)
 }
 
+inline const GetIamPolicyRequest* GetIamPolicyRequest::internal_default_instance() {
+  return &GetIamPolicyRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -986,9 +1049,7 @@ const int TestIamPermissionsRequest::kPermissionsFieldNumber;
 
 TestIamPermissionsRequest::TestIamPermissionsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.v1.TestIamPermissionsRequest)
 }
@@ -1003,17 +1064,15 @@ TestIamPermissionsRequest::TestIamPermissionsRequest(::google::protobuf::Arena* 
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.v1.TestIamPermissionsRequest)
 }
+
+void TestIamPermissionsRequest::InitAsDefaultInstance() {
+}
+
 TestIamPermissionsRequest::TestIamPermissionsRequest(const TestIamPermissionsRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      permissions_(from.permissions_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  resource_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.resource().size() > 0) {
-    resource_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.resource(),
-      GetArenaNoVirtual());
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.v1.TestIamPermissionsRequest)
 }
 
@@ -1049,7 +1108,7 @@ void TestIamPermissionsRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* TestIamPermissionsRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return TestIamPermissionsRequest_descriptor_;
 }
 
 const TestIamPermissionsRequest& TestIamPermissionsRequest::default_instance() {
@@ -1057,14 +1116,16 @@ const TestIamPermissionsRequest& TestIamPermissionsRequest::default_instance() {
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<TestIamPermissionsRequest> TestIamPermissionsRequest_default_instance_;
+
 TestIamPermissionsRequest* TestIamPermissionsRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<TestIamPermissionsRequest>(arena);
 }
 
 void TestIamPermissionsRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.iam.v1.TestIamPermissionsRequest)
-  permissions_.Clear();
   resource_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  permissions_.Clear();
 }
 
 bool TestIamPermissionsRequest::MergePartialFromCodedStream(
@@ -1073,13 +1134,13 @@ bool TestIamPermissionsRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.iam.v1.TestIamPermissionsRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string resource = 1;
+      // optional string resource = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_resource()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1089,12 +1150,14 @@ bool TestIamPermissionsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_permissions;
         break;
       }
 
       // repeated string permissions = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_permissions:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_permissions()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1105,6 +1168,8 @@ bool TestIamPermissionsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_permissions;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1132,7 +1197,7 @@ failure:
 void TestIamPermissionsRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.iam.v1.TestIamPermissionsRequest)
-  // string resource = 1;
+  // optional string resource = 1;
   if (this->resource().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->resource().data(), this->resource().length(),
@@ -1159,7 +1224,7 @@ void TestIamPermissionsRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.iam.v1.TestIamPermissionsRequest)
-  // string resource = 1;
+  // optional string resource = 1;
   if (this->resource().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->resource().data(), this->resource().length(),
@@ -1188,19 +1253,19 @@ size_t TestIamPermissionsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.iam.v1.TestIamPermissionsRequest)
   size_t total_size = 0;
 
+  // optional string resource = 1;
+  if (this->resource().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->resource());
+  }
+
   // repeated string permissions = 2;
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->permissions_size());
   for (int i = 0; i < this->permissions_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->permissions(i));
-  }
-
-  // string resource = 1;
-  if (this->resource().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->resource());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -1212,7 +1277,7 @@ size_t TestIamPermissionsRequest::ByteSizeLong() const {
 
 void TestIamPermissionsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.v1.TestIamPermissionsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const TestIamPermissionsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const TestIamPermissionsRequest>(
           &from);
@@ -1221,15 +1286,22 @@ void TestIamPermissionsRequest::MergeFrom(const ::google::protobuf::Message& fro
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.v1.TestIamPermissionsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void TestIamPermissionsRequest::MergeFrom(const TestIamPermissionsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.v1.TestIamPermissionsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  permissions_.MergeFrom(from.permissions_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void TestIamPermissionsRequest::UnsafeMergeFrom(const TestIamPermissionsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
+  permissions_.UnsafeMergeFrom(from.permissions_);
   if (from.resource().size() > 0) {
     set_resource(from.resource());
   }
@@ -1246,10 +1318,11 @@ void TestIamPermissionsRequest::CopyFrom(const TestIamPermissionsRequest& from) 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.v1.TestIamPermissionsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool TestIamPermissionsRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -1258,13 +1331,10 @@ void TestIamPermissionsRequest::Swap(TestIamPermissionsRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    TestIamPermissionsRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    TestIamPermissionsRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void TestIamPermissionsRequest::UnsafeArenaSwap(TestIamPermissionsRequest* other) {
@@ -1273,26 +1343,30 @@ void TestIamPermissionsRequest::UnsafeArenaSwap(TestIamPermissionsRequest* other
   InternalSwap(other);
 }
 void TestIamPermissionsRequest::InternalSwap(TestIamPermissionsRequest* other) {
-  permissions_.UnsafeArenaSwap(&other->permissions_);
   resource_.Swap(&other->resource_);
+  permissions_.UnsafeArenaSwap(&other->permissions_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata TestIamPermissionsRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TestIamPermissionsRequest_descriptor_;
+  metadata.reflection = TestIamPermissionsRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // TestIamPermissionsRequest
 
-// string resource = 1;
+// optional string resource = 1;
 void TestIamPermissionsRequest::clear_resource() {
   resource_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& TestIamPermissionsRequest::resource() const {
   // @@protoc_insertion_point(field_get:google.iam.v1.TestIamPermissionsRequest.resource)
-  return resource_.Get();
+  return resource_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void TestIamPermissionsRequest::set_resource(const ::std::string& value) {
   
@@ -1407,6 +1481,9 @@ TestIamPermissionsRequest::mutable_permissions() {
   return &permissions_;
 }
 
+inline const TestIamPermissionsRequest* TestIamPermissionsRequest::internal_default_instance() {
+  return &TestIamPermissionsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1417,9 +1494,7 @@ const int TestIamPermissionsResponse::kPermissionsFieldNumber;
 
 TestIamPermissionsResponse::TestIamPermissionsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.iam.v1.TestIamPermissionsResponse)
 }
@@ -1434,12 +1509,15 @@ TestIamPermissionsResponse::TestIamPermissionsResponse(::google::protobuf::Arena
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.iam.v1.TestIamPermissionsResponse)
 }
+
+void TestIamPermissionsResponse::InitAsDefaultInstance() {
+}
+
 TestIamPermissionsResponse::TestIamPermissionsResponse(const TestIamPermissionsResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      permissions_(from.permissions_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.iam.v1.TestIamPermissionsResponse)
 }
 
@@ -1473,13 +1551,15 @@ void TestIamPermissionsResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* TestIamPermissionsResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return TestIamPermissionsResponse_descriptor_;
 }
 
 const TestIamPermissionsResponse& TestIamPermissionsResponse::default_instance() {
   protobuf_InitDefaults_google_2fiam_2fv1_2fiam_5fpolicy_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<TestIamPermissionsResponse> TestIamPermissionsResponse_default_instance_;
 
 TestIamPermissionsResponse* TestIamPermissionsResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<TestIamPermissionsResponse>(arena);
@@ -1496,13 +1576,14 @@ bool TestIamPermissionsResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.iam.v1.TestIamPermissionsResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated string permissions = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
+         parse_permissions:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_permissions()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1513,6 +1594,8 @@ bool TestIamPermissionsResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_permissions;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1592,7 +1675,7 @@ size_t TestIamPermissionsResponse::ByteSizeLong() const {
 
 void TestIamPermissionsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.iam.v1.TestIamPermissionsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const TestIamPermissionsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const TestIamPermissionsResponse>(
           &from);
@@ -1601,15 +1684,22 @@ void TestIamPermissionsResponse::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.iam.v1.TestIamPermissionsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void TestIamPermissionsResponse::MergeFrom(const TestIamPermissionsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.iam.v1.TestIamPermissionsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  permissions_.MergeFrom(from.permissions_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void TestIamPermissionsResponse::UnsafeMergeFrom(const TestIamPermissionsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
+  permissions_.UnsafeMergeFrom(from.permissions_);
 }
 
 void TestIamPermissionsResponse::CopyFrom(const ::google::protobuf::Message& from) {
@@ -1623,10 +1713,11 @@ void TestIamPermissionsResponse::CopyFrom(const TestIamPermissionsResponse& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.iam.v1.TestIamPermissionsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool TestIamPermissionsResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -1635,13 +1726,10 @@ void TestIamPermissionsResponse::Swap(TestIamPermissionsResponse* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    TestIamPermissionsResponse* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    TestIamPermissionsResponse temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void TestIamPermissionsResponse::UnsafeArenaSwap(TestIamPermissionsResponse* other) {
@@ -1651,12 +1739,16 @@ void TestIamPermissionsResponse::UnsafeArenaSwap(TestIamPermissionsResponse* oth
 }
 void TestIamPermissionsResponse::InternalSwap(TestIamPermissionsResponse* other) {
   permissions_.UnsafeArenaSwap(&other->permissions_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata TestIamPermissionsResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TestIamPermissionsResponse_descriptor_;
+  metadata.reflection = TestIamPermissionsResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -1717,6 +1809,9 @@ TestIamPermissionsResponse::mutable_permissions() {
   return &permissions_;
 }
 
+inline const TestIamPermissionsResponse* TestIamPermissionsResponse::internal_default_instance() {
+  return &TestIamPermissionsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

@@ -23,26 +23,27 @@ namespace type {
 
 namespace {
 
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+const ::google::protobuf::EnumDescriptor* LogSeverity_descriptor_ = NULL;
 
 }  // namespace
 
-inline ::google::protobuf::uint32* protobuf_Offsets_google_2flogging_2ftype_2flog_5fseverity_2eproto() { return NULL; }
-static const ::google::protobuf::internal::MigrationSchema* schemas = NULL;
-static const ::google::protobuf::internal::DefaultInstanceData* file_default_instances = NULL;
-namespace {
 
-void protobuf_AssignDescriptors() {
+void protobuf_AssignDesc_google_2flogging_2ftype_2flog_5fseverity_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2flogging_2ftype_2flog_5fseverity_2eproto() {
   protobuf_AddDesc_google_2flogging_2ftype_2flog_5fseverity_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/logging/type/log_severity.proto", schemas, file_default_instances, protobuf_Offsets_google_2flogging_2ftype_2flog_5fseverity_2eproto(), factory,
-      NULL, file_level_enum_descriptors, NULL);
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/logging/type/log_severity.proto");
+  GOOGLE_CHECK(file != NULL);
+  LogSeverity_descriptor_ = file->enum_type(0);
 }
 
+namespace {
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2flogging_2ftype_2flog_5fseverity_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
@@ -59,29 +60,28 @@ void protobuf_InitDefaults_google_2flogging_2ftype_2flog_5fseverity_2eproto_impl
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2flogging_2ftype_2flog_5fseverity_2eproto_once_);
 void protobuf_InitDefaults_google_2flogging_2ftype_2flog_5fseverity_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2flogging_2ftype_2flog_5fseverity_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2flogging_2ftype_2flog_5fseverity_2eproto_once_,
+                 &protobuf_InitDefaults_google_2flogging_2ftype_2flog_5fseverity_2eproto_impl);
 }
 void protobuf_AddDesc_google_2flogging_2ftype_2flog_5fseverity_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2flogging_2ftype_2flog_5fseverity_2eproto();
-  static const char descriptor[] = {
-      "\n&google/logging/type/log_severity.proto"
-      "\022\023google.logging.type\032\034google/api/annota"
-      "tions.proto*\202\001\n\013LogSeverity\022\013\n\007DEFAULT\020\000"
-      "\022\t\n\005DEBUG\020d\022\t\n\004INFO\020\310\001\022\013\n\006NOTICE\020\254\002\022\014\n\007W"
-      "ARNING\020\220\003\022\n\n\005ERROR\020\364\003\022\r\n\010CRITICAL\020\330\004\022\n\n\005"
-      "ALERT\020\274\005\022\016\n\tEMERGENCY\020\240\006B\203\001\n\027com.google."
-      "logging.typeB\020LogSeverityProtoP\001Z8google"
-      ".golang.org/genproto/googleapis/logging/"
-      "type;ltype\252\002\031Google.Cloud.Logging.Typeb\006"
-      "proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 366);
+    "\n&google/logging/type/log_severity.proto"
+    "\022\023google.logging.type\032\034google/api/annota"
+    "tions.proto*\202\001\n\013LogSeverity\022\013\n\007DEFAULT\020\000"
+    "\022\t\n\005DEBUG\020d\022\t\n\004INFO\020\310\001\022\013\n\006NOTICE\020\254\002\022\014\n\007W"
+    "ARNING\020\220\003\022\n\n\005ERROR\020\364\003\022\r\n\010CRITICAL\020\330\004\022\n\n\005"
+    "ALERT\020\274\005\022\016\n\tEMERGENCY\020\240\006B\203\001\n\027com.google."
+    "logging.typeB\020LogSeverityProtoP\001Z8google"
+    ".golang.org/genproto/googleapis/logging/"
+    "type;ltype\252\002\031Google.Cloud.Logging.Typeb\006"
+    "proto3", 366);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/logging/type/log_severity.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -101,7 +101,7 @@ struct StaticDescriptorInitializer_google_2flogging_2ftype_2flog_5fseverity_2epr
 } static_descriptor_initializer_google_2flogging_2ftype_2flog_5fseverity_2eproto_;
 const ::google::protobuf::EnumDescriptor* LogSeverity_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
+  return LogSeverity_descriptor_;
 }
 bool LogSeverity_IsValid(int value) {
   switch (value) {

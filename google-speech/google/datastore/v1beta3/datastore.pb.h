@@ -24,121 +24,14 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include "google/datastore/v1beta3/entity.pb.h"
 #include "google/datastore/v1beta3/query.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace datastore {
-namespace v1beta3 {
-class AllocateIdsRequest;
-class AllocateIdsRequestDefaultTypeInternal;
-extern AllocateIdsRequestDefaultTypeInternal _AllocateIdsRequest_default_instance_;
-class AllocateIdsResponse;
-class AllocateIdsResponseDefaultTypeInternal;
-extern AllocateIdsResponseDefaultTypeInternal _AllocateIdsResponse_default_instance_;
-class ArrayValue;
-class ArrayValueDefaultTypeInternal;
-extern ArrayValueDefaultTypeInternal _ArrayValue_default_instance_;
-class BeginTransactionRequest;
-class BeginTransactionRequestDefaultTypeInternal;
-extern BeginTransactionRequestDefaultTypeInternal _BeginTransactionRequest_default_instance_;
-class BeginTransactionResponse;
-class BeginTransactionResponseDefaultTypeInternal;
-extern BeginTransactionResponseDefaultTypeInternal _BeginTransactionResponse_default_instance_;
-class CommitRequest;
-class CommitRequestDefaultTypeInternal;
-extern CommitRequestDefaultTypeInternal _CommitRequest_default_instance_;
-class CommitResponse;
-class CommitResponseDefaultTypeInternal;
-extern CommitResponseDefaultTypeInternal _CommitResponse_default_instance_;
-class CompositeFilter;
-class CompositeFilterDefaultTypeInternal;
-extern CompositeFilterDefaultTypeInternal _CompositeFilter_default_instance_;
-class Entity;
-class EntityDefaultTypeInternal;
-extern EntityDefaultTypeInternal _Entity_default_instance_;
-class EntityResult;
-class EntityResultDefaultTypeInternal;
-extern EntityResultDefaultTypeInternal _EntityResult_default_instance_;
-class Filter;
-class FilterDefaultTypeInternal;
-extern FilterDefaultTypeInternal _Filter_default_instance_;
-class GqlQuery;
-class GqlQueryDefaultTypeInternal;
-extern GqlQueryDefaultTypeInternal _GqlQuery_default_instance_;
-class GqlQueryParameter;
-class GqlQueryParameterDefaultTypeInternal;
-extern GqlQueryParameterDefaultTypeInternal _GqlQueryParameter_default_instance_;
-class Key;
-class KeyDefaultTypeInternal;
-extern KeyDefaultTypeInternal _Key_default_instance_;
-class Key_PathElement;
-class Key_PathElementDefaultTypeInternal;
-extern Key_PathElementDefaultTypeInternal _Key_PathElement_default_instance_;
-class KindExpression;
-class KindExpressionDefaultTypeInternal;
-extern KindExpressionDefaultTypeInternal _KindExpression_default_instance_;
-class LookupRequest;
-class LookupRequestDefaultTypeInternal;
-extern LookupRequestDefaultTypeInternal _LookupRequest_default_instance_;
-class LookupResponse;
-class LookupResponseDefaultTypeInternal;
-extern LookupResponseDefaultTypeInternal _LookupResponse_default_instance_;
-class Mutation;
-class MutationDefaultTypeInternal;
-extern MutationDefaultTypeInternal _Mutation_default_instance_;
-class MutationResult;
-class MutationResultDefaultTypeInternal;
-extern MutationResultDefaultTypeInternal _MutationResult_default_instance_;
-class PartitionId;
-class PartitionIdDefaultTypeInternal;
-extern PartitionIdDefaultTypeInternal _PartitionId_default_instance_;
-class Projection;
-class ProjectionDefaultTypeInternal;
-extern ProjectionDefaultTypeInternal _Projection_default_instance_;
-class PropertyFilter;
-class PropertyFilterDefaultTypeInternal;
-extern PropertyFilterDefaultTypeInternal _PropertyFilter_default_instance_;
-class PropertyOrder;
-class PropertyOrderDefaultTypeInternal;
-extern PropertyOrderDefaultTypeInternal _PropertyOrder_default_instance_;
-class PropertyReference;
-class PropertyReferenceDefaultTypeInternal;
-extern PropertyReferenceDefaultTypeInternal _PropertyReference_default_instance_;
-class Query;
-class QueryDefaultTypeInternal;
-extern QueryDefaultTypeInternal _Query_default_instance_;
-class QueryResultBatch;
-class QueryResultBatchDefaultTypeInternal;
-extern QueryResultBatchDefaultTypeInternal _QueryResultBatch_default_instance_;
-class ReadOptions;
-class ReadOptionsDefaultTypeInternal;
-extern ReadOptionsDefaultTypeInternal _ReadOptions_default_instance_;
-class RollbackRequest;
-class RollbackRequestDefaultTypeInternal;
-extern RollbackRequestDefaultTypeInternal _RollbackRequest_default_instance_;
-class RollbackResponse;
-class RollbackResponseDefaultTypeInternal;
-extern RollbackResponseDefaultTypeInternal _RollbackResponse_default_instance_;
-class RunQueryRequest;
-class RunQueryRequestDefaultTypeInternal;
-extern RunQueryRequestDefaultTypeInternal _RunQueryRequest_default_instance_;
-class RunQueryResponse;
-class RunQueryResponseDefaultTypeInternal;
-extern RunQueryResponseDefaultTypeInternal _RunQueryResponse_default_instance_;
-class Value;
-class ValueDefaultTypeInternal;
-extern ValueDefaultTypeInternal _Value_default_instance_;
-}  // namespace v1beta3
-}  // namespace datastore
-}  // namespace google
 
 namespace google {
 namespace datastore {
@@ -147,6 +40,24 @@ namespace v1beta3 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
 void protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+void protobuf_ShutdownFile_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+
+class AllocateIdsRequest;
+class AllocateIdsResponse;
+class BeginTransactionRequest;
+class BeginTransactionResponse;
+class CommitRequest;
+class CommitResponse;
+class LookupRequest;
+class LookupResponse;
+class Mutation;
+class MutationResult;
+class ReadOptions;
+class RollbackRequest;
+class RollbackResponse;
+class RunQueryRequest;
+class RunQueryResponse;
 
 enum CommitRequest_Mode {
   CommitRequest_Mode_MODE_UNSPECIFIED = 0,
@@ -209,58 +120,55 @@ class LookupRequest : public ::google::protobuf::Message /* @@protoc_insertion_p
   static const ::google::protobuf::Descriptor* descriptor();
   static const LookupRequest& default_instance();
 
-  static inline const LookupRequest* internal_default_instance() {
-    return reinterpret_cast<const LookupRequest*>(
-               &_LookupRequest_default_instance_);
-  }
+  static const LookupRequest* internal_default_instance();
 
   void Swap(LookupRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline LookupRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline LookupRequest* New() const { return New(NULL); }
 
-  LookupRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  LookupRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const LookupRequest& from);
   void MergeFrom(const LookupRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(LookupRequest* other);
+  void UnsafeMergeFrom(const LookupRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 8;
   const ::std::string& project_id() const;
@@ -271,7 +179,7 @@ class LookupRequest : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // .google.datastore.v1beta3.ReadOptions read_options = 1;
+  // optional .google.datastore.v1beta3.ReadOptions read_options = 1;
   bool has_read_options() const;
   void clear_read_options();
   static const int kReadOptionsFieldNumber = 1;
@@ -302,10 +210,13 @@ class LookupRequest : public ::google::protobuf::Message /* @@protoc_insertion_p
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<LookupRequest> LookupRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class LookupResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1beta3.LookupResponse) */ {
@@ -323,52 +234,49 @@ class LookupResponse : public ::google::protobuf::Message /* @@protoc_insertion_
   static const ::google::protobuf::Descriptor* descriptor();
   static const LookupResponse& default_instance();
 
-  static inline const LookupResponse* internal_default_instance() {
-    return reinterpret_cast<const LookupResponse*>(
-               &_LookupResponse_default_instance_);
-  }
+  static const LookupResponse* internal_default_instance();
 
   void Swap(LookupResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline LookupResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline LookupResponse* New() const { return New(NULL); }
 
-  LookupResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  LookupResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const LookupResponse& from);
   void MergeFrom(const LookupResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(LookupResponse* other);
+  void UnsafeMergeFrom(const LookupResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -420,10 +328,13 @@ class LookupResponse : public ::google::protobuf::Message /* @@protoc_insertion_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<LookupResponse> LookupResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class RunQueryRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1beta3.RunQueryRequest) */ {
@@ -447,58 +358,55 @@ class RunQueryRequest : public ::google::protobuf::Message /* @@protoc_insertion
     QUERY_TYPE_NOT_SET = 0,
   };
 
-  static inline const RunQueryRequest* internal_default_instance() {
-    return reinterpret_cast<const RunQueryRequest*>(
-               &_RunQueryRequest_default_instance_);
-  }
+  static const RunQueryRequest* internal_default_instance();
 
   void Swap(RunQueryRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline RunQueryRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline RunQueryRequest* New() const { return New(NULL); }
 
-  RunQueryRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  RunQueryRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const RunQueryRequest& from);
   void MergeFrom(const RunQueryRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(RunQueryRequest* other);
+  void UnsafeMergeFrom(const RunQueryRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 8;
   const ::std::string& project_id() const;
@@ -509,7 +417,7 @@ class RunQueryRequest : public ::google::protobuf::Message /* @@protoc_insertion
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // .google.datastore.v1beta3.PartitionId partition_id = 2;
+  // optional .google.datastore.v1beta3.PartitionId partition_id = 2;
   bool has_partition_id() const;
   void clear_partition_id();
   static const int kPartitionIdFieldNumber = 2;
@@ -518,7 +426,7 @@ class RunQueryRequest : public ::google::protobuf::Message /* @@protoc_insertion
   ::google::datastore::v1beta3::PartitionId* release_partition_id();
   void set_allocated_partition_id(::google::datastore::v1beta3::PartitionId* partition_id);
 
-  // .google.datastore.v1beta3.ReadOptions read_options = 1;
+  // optional .google.datastore.v1beta3.ReadOptions read_options = 1;
   bool has_read_options() const;
   void clear_read_options();
   static const int kReadOptionsFieldNumber = 1;
@@ -527,7 +435,7 @@ class RunQueryRequest : public ::google::protobuf::Message /* @@protoc_insertion
   ::google::datastore::v1beta3::ReadOptions* release_read_options();
   void set_allocated_read_options(::google::datastore::v1beta3::ReadOptions* read_options);
 
-  // .google.datastore.v1beta3.Query query = 3;
+  // optional .google.datastore.v1beta3.Query query = 3;
   bool has_query() const;
   void clear_query();
   static const int kQueryFieldNumber = 3;
@@ -536,7 +444,7 @@ class RunQueryRequest : public ::google::protobuf::Message /* @@protoc_insertion
   ::google::datastore::v1beta3::Query* release_query();
   void set_allocated_query(::google::datastore::v1beta3::Query* query);
 
-  // .google.datastore.v1beta3.GqlQuery gql_query = 7;
+  // optional .google.datastore.v1beta3.GqlQuery gql_query = 7;
   bool has_gql_query() const;
   void clear_gql_query();
   static const int kGqlQueryFieldNumber = 7;
@@ -548,8 +456,8 @@ class RunQueryRequest : public ::google::protobuf::Message /* @@protoc_insertion
   QueryTypeCase query_type_case() const;
   // @@protoc_insertion_point(class_scope:google.datastore.v1beta3.RunQueryRequest)
  private:
-  void set_has_query();
-  void set_has_gql_query();
+  inline void set_has_query();
+  inline void set_has_gql_query();
 
   inline bool has_query_type() const;
   void clear_query_type();
@@ -569,10 +477,13 @@ class RunQueryRequest : public ::google::protobuf::Message /* @@protoc_insertion
 
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<RunQueryRequest> RunQueryRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class RunQueryResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1beta3.RunQueryResponse) */ {
@@ -590,58 +501,55 @@ class RunQueryResponse : public ::google::protobuf::Message /* @@protoc_insertio
   static const ::google::protobuf::Descriptor* descriptor();
   static const RunQueryResponse& default_instance();
 
-  static inline const RunQueryResponse* internal_default_instance() {
-    return reinterpret_cast<const RunQueryResponse*>(
-               &_RunQueryResponse_default_instance_);
-  }
+  static const RunQueryResponse* internal_default_instance();
 
   void Swap(RunQueryResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline RunQueryResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline RunQueryResponse* New() const { return New(NULL); }
 
-  RunQueryResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  RunQueryResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const RunQueryResponse& from);
   void MergeFrom(const RunQueryResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(RunQueryResponse* other);
+  void UnsafeMergeFrom(const RunQueryResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.datastore.v1beta3.QueryResultBatch batch = 1;
+  // optional .google.datastore.v1beta3.QueryResultBatch batch = 1;
   bool has_batch() const;
   void clear_batch();
   static const int kBatchFieldNumber = 1;
@@ -650,7 +558,7 @@ class RunQueryResponse : public ::google::protobuf::Message /* @@protoc_insertio
   ::google::datastore::v1beta3::QueryResultBatch* release_batch();
   void set_allocated_batch(::google::datastore::v1beta3::QueryResultBatch* batch);
 
-  // .google.datastore.v1beta3.Query query = 2;
+  // optional .google.datastore.v1beta3.Query query = 2;
   bool has_query() const;
   void clear_query();
   static const int kQueryFieldNumber = 2;
@@ -668,10 +576,13 @@ class RunQueryResponse : public ::google::protobuf::Message /* @@protoc_insertio
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<RunQueryResponse> RunQueryResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class BeginTransactionRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1beta3.BeginTransactionRequest) */ {
@@ -689,58 +600,55 @@ class BeginTransactionRequest : public ::google::protobuf::Message /* @@protoc_i
   static const ::google::protobuf::Descriptor* descriptor();
   static const BeginTransactionRequest& default_instance();
 
-  static inline const BeginTransactionRequest* internal_default_instance() {
-    return reinterpret_cast<const BeginTransactionRequest*>(
-               &_BeginTransactionRequest_default_instance_);
-  }
+  static const BeginTransactionRequest* internal_default_instance();
 
   void Swap(BeginTransactionRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline BeginTransactionRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline BeginTransactionRequest* New() const { return New(NULL); }
 
-  BeginTransactionRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  BeginTransactionRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const BeginTransactionRequest& from);
   void MergeFrom(const BeginTransactionRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(BeginTransactionRequest* other);
+  void UnsafeMergeFrom(const BeginTransactionRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 8;
   const ::std::string& project_id() const;
@@ -759,10 +667,13 @@ class BeginTransactionRequest : public ::google::protobuf::Message /* @@protoc_i
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<BeginTransactionRequest> BeginTransactionRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class BeginTransactionResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1beta3.BeginTransactionResponse) */ {
@@ -780,58 +691,55 @@ class BeginTransactionResponse : public ::google::protobuf::Message /* @@protoc_
   static const ::google::protobuf::Descriptor* descriptor();
   static const BeginTransactionResponse& default_instance();
 
-  static inline const BeginTransactionResponse* internal_default_instance() {
-    return reinterpret_cast<const BeginTransactionResponse*>(
-               &_BeginTransactionResponse_default_instance_);
-  }
+  static const BeginTransactionResponse* internal_default_instance();
 
   void Swap(BeginTransactionResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline BeginTransactionResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline BeginTransactionResponse* New() const { return New(NULL); }
 
-  BeginTransactionResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  BeginTransactionResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const BeginTransactionResponse& from);
   void MergeFrom(const BeginTransactionResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(BeginTransactionResponse* other);
+  void UnsafeMergeFrom(const BeginTransactionResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // bytes transaction = 1;
+  // optional bytes transaction = 1;
   void clear_transaction();
   static const int kTransactionFieldNumber = 1;
   const ::std::string& transaction() const;
@@ -850,10 +758,13 @@ class BeginTransactionResponse : public ::google::protobuf::Message /* @@protoc_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<BeginTransactionResponse> BeginTransactionResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class RollbackRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1beta3.RollbackRequest) */ {
@@ -871,58 +782,55 @@ class RollbackRequest : public ::google::protobuf::Message /* @@protoc_insertion
   static const ::google::protobuf::Descriptor* descriptor();
   static const RollbackRequest& default_instance();
 
-  static inline const RollbackRequest* internal_default_instance() {
-    return reinterpret_cast<const RollbackRequest*>(
-               &_RollbackRequest_default_instance_);
-  }
+  static const RollbackRequest* internal_default_instance();
 
   void Swap(RollbackRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline RollbackRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline RollbackRequest* New() const { return New(NULL); }
 
-  RollbackRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  RollbackRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const RollbackRequest& from);
   void MergeFrom(const RollbackRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(RollbackRequest* other);
+  void UnsafeMergeFrom(const RollbackRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 8;
   const ::std::string& project_id() const;
@@ -933,7 +841,7 @@ class RollbackRequest : public ::google::protobuf::Message /* @@protoc_insertion
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // bytes transaction = 1;
+  // optional bytes transaction = 1;
   void clear_transaction();
   static const int kTransactionFieldNumber = 1;
   const ::std::string& transaction() const;
@@ -953,10 +861,13 @@ class RollbackRequest : public ::google::protobuf::Message /* @@protoc_insertion
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<RollbackRequest> RollbackRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class RollbackResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1beta3.RollbackResponse) */ {
@@ -974,52 +885,49 @@ class RollbackResponse : public ::google::protobuf::Message /* @@protoc_insertio
   static const ::google::protobuf::Descriptor* descriptor();
   static const RollbackResponse& default_instance();
 
-  static inline const RollbackResponse* internal_default_instance() {
-    return reinterpret_cast<const RollbackResponse*>(
-               &_RollbackResponse_default_instance_);
-  }
+  static const RollbackResponse* internal_default_instance();
 
   void Swap(RollbackResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline RollbackResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline RollbackResponse* New() const { return New(NULL); }
 
-  RollbackResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  RollbackResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const RollbackResponse& from);
   void MergeFrom(const RollbackResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(RollbackResponse* other);
+  void UnsafeMergeFrom(const RollbackResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1032,10 +940,13 @@ class RollbackResponse : public ::google::protobuf::Message /* @@protoc_insertio
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<RollbackResponse> RollbackResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class CommitRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1beta3.CommitRequest) */ {
@@ -1058,52 +969,49 @@ class CommitRequest : public ::google::protobuf::Message /* @@protoc_insertion_p
     TRANSACTION_SELECTOR_NOT_SET = 0,
   };
 
-  static inline const CommitRequest* internal_default_instance() {
-    return reinterpret_cast<const CommitRequest*>(
-               &_CommitRequest_default_instance_);
-  }
+  static const CommitRequest* internal_default_instance();
 
   void Swap(CommitRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline CommitRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline CommitRequest* New() const { return New(NULL); }
 
-  CommitRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CommitRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const CommitRequest& from);
   void MergeFrom(const CommitRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(CommitRequest* other);
+  void UnsafeMergeFrom(const CommitRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1137,7 +1045,7 @@ class CommitRequest : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 8;
   const ::std::string& project_id() const;
@@ -1148,13 +1056,13 @@ class CommitRequest : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // .google.datastore.v1beta3.CommitRequest.Mode mode = 5;
+  // optional .google.datastore.v1beta3.CommitRequest.Mode mode = 5;
   void clear_mode();
   static const int kModeFieldNumber = 5;
   ::google::datastore::v1beta3::CommitRequest_Mode mode() const;
   void set_mode(::google::datastore::v1beta3::CommitRequest_Mode value);
 
-  // bytes transaction = 1;
+  // optional bytes transaction = 1;
   private:
   bool has_transaction() const;
   public:
@@ -1183,7 +1091,7 @@ class CommitRequest : public ::google::protobuf::Message /* @@protoc_insertion_p
   TransactionSelectorCase transaction_selector_case() const;
   // @@protoc_insertion_point(class_scope:google.datastore.v1beta3.CommitRequest)
  private:
-  void set_has_transaction();
+  inline void set_has_transaction();
 
   inline bool has_transaction_selector() const;
   void clear_transaction_selector();
@@ -1202,10 +1110,13 @@ class CommitRequest : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<CommitRequest> CommitRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class CommitResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1beta3.CommitResponse) */ {
@@ -1223,52 +1134,49 @@ class CommitResponse : public ::google::protobuf::Message /* @@protoc_insertion_
   static const ::google::protobuf::Descriptor* descriptor();
   static const CommitResponse& default_instance();
 
-  static inline const CommitResponse* internal_default_instance() {
-    return reinterpret_cast<const CommitResponse*>(
-               &_CommitResponse_default_instance_);
-  }
+  static const CommitResponse* internal_default_instance();
 
   void Swap(CommitResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline CommitResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline CommitResponse* New() const { return New(NULL); }
 
-  CommitResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CommitResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const CommitResponse& from);
   void MergeFrom(const CommitResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(CommitResponse* other);
+  void UnsafeMergeFrom(const CommitResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1286,7 +1194,7 @@ class CommitResponse : public ::google::protobuf::Message /* @@protoc_insertion_
   const ::google::protobuf::RepeatedPtrField< ::google::datastore::v1beta3::MutationResult >&
       mutation_results() const;
 
-  // int32 index_updates = 4;
+  // optional int32 index_updates = 4;
   void clear_index_updates();
   static const int kIndexUpdatesFieldNumber = 4;
   ::google::protobuf::int32 index_updates() const;
@@ -1301,10 +1209,13 @@ class CommitResponse : public ::google::protobuf::Message /* @@protoc_insertion_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<CommitResponse> CommitResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AllocateIdsRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1beta3.AllocateIdsRequest) */ {
@@ -1322,58 +1233,55 @@ class AllocateIdsRequest : public ::google::protobuf::Message /* @@protoc_insert
   static const ::google::protobuf::Descriptor* descriptor();
   static const AllocateIdsRequest& default_instance();
 
-  static inline const AllocateIdsRequest* internal_default_instance() {
-    return reinterpret_cast<const AllocateIdsRequest*>(
-               &_AllocateIdsRequest_default_instance_);
-  }
+  static const AllocateIdsRequest* internal_default_instance();
 
   void Swap(AllocateIdsRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline AllocateIdsRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AllocateIdsRequest* New() const { return New(NULL); }
 
-  AllocateIdsRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AllocateIdsRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AllocateIdsRequest& from);
   void MergeFrom(const AllocateIdsRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AllocateIdsRequest* other);
+  void UnsafeMergeFrom(const AllocateIdsRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 8;
   const ::std::string& project_id() const;
@@ -1405,10 +1313,13 @@ class AllocateIdsRequest : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AllocateIdsRequest> AllocateIdsRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AllocateIdsResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1beta3.AllocateIdsResponse) */ {
@@ -1426,52 +1337,49 @@ class AllocateIdsResponse : public ::google::protobuf::Message /* @@protoc_inser
   static const ::google::protobuf::Descriptor* descriptor();
   static const AllocateIdsResponse& default_instance();
 
-  static inline const AllocateIdsResponse* internal_default_instance() {
-    return reinterpret_cast<const AllocateIdsResponse*>(
-               &_AllocateIdsResponse_default_instance_);
-  }
+  static const AllocateIdsResponse* internal_default_instance();
 
   void Swap(AllocateIdsResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline AllocateIdsResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AllocateIdsResponse* New() const { return New(NULL); }
 
-  AllocateIdsResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AllocateIdsResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AllocateIdsResponse& from);
   void MergeFrom(const AllocateIdsResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AllocateIdsResponse* other);
+  void UnsafeMergeFrom(const AllocateIdsResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1497,10 +1405,13 @@ class AllocateIdsResponse : public ::google::protobuf::Message /* @@protoc_inser
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AllocateIdsResponse> AllocateIdsResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Mutation : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1beta3.Mutation) */ {
@@ -1531,58 +1442,55 @@ class Mutation : public ::google::protobuf::Message /* @@protoc_insertion_point(
     CONFLICT_DETECTION_STRATEGY_NOT_SET = 0,
   };
 
-  static inline const Mutation* internal_default_instance() {
-    return reinterpret_cast<const Mutation*>(
-               &_Mutation_default_instance_);
-  }
+  static const Mutation* internal_default_instance();
 
   void Swap(Mutation* other);
 
   // implements Message ----------------------------------------------
 
-  inline Mutation* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Mutation* New() const { return New(NULL); }
 
-  Mutation* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Mutation* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Mutation& from);
   void MergeFrom(const Mutation& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Mutation* other);
+  void UnsafeMergeFrom(const Mutation& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.datastore.v1beta3.Entity insert = 4;
+  // optional .google.datastore.v1beta3.Entity insert = 4;
   bool has_insert() const;
   void clear_insert();
   static const int kInsertFieldNumber = 4;
@@ -1591,7 +1499,7 @@ class Mutation : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::datastore::v1beta3::Entity* release_insert();
   void set_allocated_insert(::google::datastore::v1beta3::Entity* insert);
 
-  // .google.datastore.v1beta3.Entity update = 5;
+  // optional .google.datastore.v1beta3.Entity update = 5;
   bool has_update() const;
   void clear_update();
   static const int kUpdateFieldNumber = 5;
@@ -1600,7 +1508,7 @@ class Mutation : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::datastore::v1beta3::Entity* release_update();
   void set_allocated_update(::google::datastore::v1beta3::Entity* update);
 
-  // .google.datastore.v1beta3.Entity upsert = 6;
+  // optional .google.datastore.v1beta3.Entity upsert = 6;
   bool has_upsert() const;
   void clear_upsert();
   static const int kUpsertFieldNumber = 6;
@@ -1609,7 +1517,7 @@ class Mutation : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::datastore::v1beta3::Entity* release_upsert();
   void set_allocated_upsert(::google::datastore::v1beta3::Entity* upsert);
 
-  // .google.datastore.v1beta3.Key delete = 7;
+  // optional .google.datastore.v1beta3.Key delete = 7;
   bool has_delete_() const;
   void clear_delete_();
   static const int kDeleteFieldNumber = 7;
@@ -1618,7 +1526,7 @@ class Mutation : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::datastore::v1beta3::Key* release_delete_();
   void set_allocated_delete_(::google::datastore::v1beta3::Key* delete_);
 
-  // int64 base_version = 8;
+  // optional int64 base_version = 8;
   private:
   bool has_base_version() const;
   public:
@@ -1631,11 +1539,11 @@ class Mutation : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ConflictDetectionStrategyCase conflict_detection_strategy_case() const;
   // @@protoc_insertion_point(class_scope:google.datastore.v1beta3.Mutation)
  private:
-  void set_has_insert();
-  void set_has_update();
-  void set_has_upsert();
-  void set_has_delete_();
-  void set_has_base_version();
+  inline void set_has_insert();
+  inline void set_has_update();
+  inline void set_has_upsert();
+  inline void set_has_delete_();
+  inline void set_has_base_version();
 
   inline bool has_operation() const;
   void clear_operation();
@@ -1662,10 +1570,13 @@ class Mutation : public ::google::protobuf::Message /* @@protoc_insertion_point(
 
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Mutation> Mutation_default_instance_;
+
 // -------------------------------------------------------------------
 
 class MutationResult : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1beta3.MutationResult) */ {
@@ -1683,58 +1594,55 @@ class MutationResult : public ::google::protobuf::Message /* @@protoc_insertion_
   static const ::google::protobuf::Descriptor* descriptor();
   static const MutationResult& default_instance();
 
-  static inline const MutationResult* internal_default_instance() {
-    return reinterpret_cast<const MutationResult*>(
-               &_MutationResult_default_instance_);
-  }
+  static const MutationResult* internal_default_instance();
 
   void Swap(MutationResult* other);
 
   // implements Message ----------------------------------------------
 
-  inline MutationResult* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline MutationResult* New() const { return New(NULL); }
 
-  MutationResult* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  MutationResult* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const MutationResult& from);
   void MergeFrom(const MutationResult& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(MutationResult* other);
+  void UnsafeMergeFrom(const MutationResult& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.datastore.v1beta3.Key key = 3;
+  // optional .google.datastore.v1beta3.Key key = 3;
   bool has_key() const;
   void clear_key();
   static const int kKeyFieldNumber = 3;
@@ -1743,13 +1651,13 @@ class MutationResult : public ::google::protobuf::Message /* @@protoc_insertion_
   ::google::datastore::v1beta3::Key* release_key();
   void set_allocated_key(::google::datastore::v1beta3::Key* key);
 
-  // int64 version = 4;
+  // optional int64 version = 4;
   void clear_version();
   static const int kVersionFieldNumber = 4;
   ::google::protobuf::int64 version() const;
   void set_version(::google::protobuf::int64 value);
 
-  // bool conflict_detected = 5;
+  // optional bool conflict_detected = 5;
   void clear_conflict_detected();
   static const int kConflictDetectedFieldNumber = 5;
   bool conflict_detected() const;
@@ -1765,10 +1673,13 @@ class MutationResult : public ::google::protobuf::Message /* @@protoc_insertion_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<MutationResult> MutationResult_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ReadOptions : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1beta3.ReadOptions) */ {
@@ -1792,52 +1703,49 @@ class ReadOptions : public ::google::protobuf::Message /* @@protoc_insertion_poi
     CONSISTENCY_TYPE_NOT_SET = 0,
   };
 
-  static inline const ReadOptions* internal_default_instance() {
-    return reinterpret_cast<const ReadOptions*>(
-               &_ReadOptions_default_instance_);
-  }
+  static const ReadOptions* internal_default_instance();
 
   void Swap(ReadOptions* other);
 
   // implements Message ----------------------------------------------
 
-  inline ReadOptions* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ReadOptions* New() const { return New(NULL); }
 
-  ReadOptions* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ReadOptions* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ReadOptions& from);
   void MergeFrom(const ReadOptions& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ReadOptions* other);
+  void UnsafeMergeFrom(const ReadOptions& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1871,7 +1779,7 @@ class ReadOptions : public ::google::protobuf::Message /* @@protoc_insertion_poi
 
   // accessors -------------------------------------------------------
 
-  // .google.datastore.v1beta3.ReadOptions.ReadConsistency read_consistency = 1;
+  // optional .google.datastore.v1beta3.ReadOptions.ReadConsistency read_consistency = 1;
   private:
   bool has_read_consistency() const;
   public:
@@ -1880,7 +1788,7 @@ class ReadOptions : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::google::datastore::v1beta3::ReadOptions_ReadConsistency read_consistency() const;
   void set_read_consistency(::google::datastore::v1beta3::ReadOptions_ReadConsistency value);
 
-  // bytes transaction = 2;
+  // optional bytes transaction = 2;
   private:
   bool has_transaction() const;
   public:
@@ -1897,8 +1805,8 @@ class ReadOptions : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ConsistencyTypeCase consistency_type_case() const;
   // @@protoc_insertion_point(class_scope:google.datastore.v1beta3.ReadOptions)
  private:
-  void set_has_read_consistency();
-  void set_has_transaction();
+  inline void set_has_read_consistency();
+  inline void set_has_transaction();
 
   inline bool has_consistency_type() const;
   void clear_consistency_type();
@@ -1915,10 +1823,13 @@ class ReadOptions : public ::google::protobuf::Message /* @@protoc_insertion_poi
 
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1beta3_2fdatastore_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ReadOptions> ReadOptions_default_instance_;
+
 // ===================================================================
 
 
@@ -1927,13 +1838,13 @@ class ReadOptions : public ::google::protobuf::Message /* @@protoc_insertion_poi
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // LookupRequest
 
-// string project_id = 8;
+// optional string project_id = 8;
 inline void LookupRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& LookupRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.LookupRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void LookupRequest::set_project_id(const ::std::string& value) {
   
@@ -1971,7 +1882,7 @@ inline void LookupRequest::set_allocated_project_id(::std::string* project_id) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.LookupRequest.project_id)
 }
 
-// .google.datastore.v1beta3.ReadOptions read_options = 1;
+// optional .google.datastore.v1beta3.ReadOptions read_options = 1;
 inline bool LookupRequest::has_read_options() const {
   return this != internal_default_instance() && read_options_ != NULL;
 }
@@ -2040,6 +1951,9 @@ LookupRequest::keys() const {
   return keys_;
 }
 
+inline const LookupRequest* LookupRequest::internal_default_instance() {
+  return &LookupRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // LookupResponse
@@ -2134,17 +2048,20 @@ LookupResponse::deferred() const {
   return deferred_;
 }
 
+inline const LookupResponse* LookupResponse::internal_default_instance() {
+  return &LookupResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // RunQueryRequest
 
-// string project_id = 8;
+// optional string project_id = 8;
 inline void RunQueryRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& RunQueryRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.RunQueryRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void RunQueryRequest::set_project_id(const ::std::string& value) {
   
@@ -2182,7 +2099,7 @@ inline void RunQueryRequest::set_allocated_project_id(::std::string* project_id)
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.RunQueryRequest.project_id)
 }
 
-// .google.datastore.v1beta3.PartitionId partition_id = 2;
+// optional .google.datastore.v1beta3.PartitionId partition_id = 2;
 inline bool RunQueryRequest::has_partition_id() const {
   return this != internal_default_instance() && partition_id_ != NULL;
 }
@@ -2221,7 +2138,7 @@ inline void RunQueryRequest::set_allocated_partition_id(::google::datastore::v1b
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.RunQueryRequest.partition_id)
 }
 
-// .google.datastore.v1beta3.ReadOptions read_options = 1;
+// optional .google.datastore.v1beta3.ReadOptions read_options = 1;
 inline bool RunQueryRequest::has_read_options() const {
   return this != internal_default_instance() && read_options_ != NULL;
 }
@@ -2260,7 +2177,7 @@ inline void RunQueryRequest::set_allocated_read_options(::google::datastore::v1b
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.RunQueryRequest.read_options)
 }
 
-// .google.datastore.v1beta3.Query query = 3;
+// optional .google.datastore.v1beta3.Query query = 3;
 inline bool RunQueryRequest::has_query() const {
   return query_type_case() == kQuery;
 }
@@ -2308,7 +2225,7 @@ inline void RunQueryRequest::set_allocated_query(::google::datastore::v1beta3::Q
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.RunQueryRequest.query)
 }
 
-// .google.datastore.v1beta3.GqlQuery gql_query = 7;
+// optional .google.datastore.v1beta3.GqlQuery gql_query = 7;
 inline bool RunQueryRequest::has_gql_query() const {
   return query_type_case() == kGqlQuery;
 }
@@ -2365,11 +2282,14 @@ inline void RunQueryRequest::clear_has_query_type() {
 inline RunQueryRequest::QueryTypeCase RunQueryRequest::query_type_case() const {
   return RunQueryRequest::QueryTypeCase(_oneof_case_[0]);
 }
+inline const RunQueryRequest* RunQueryRequest::internal_default_instance() {
+  return &RunQueryRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // RunQueryResponse
 
-// .google.datastore.v1beta3.QueryResultBatch batch = 1;
+// optional .google.datastore.v1beta3.QueryResultBatch batch = 1;
 inline bool RunQueryResponse::has_batch() const {
   return this != internal_default_instance() && batch_ != NULL;
 }
@@ -2408,7 +2328,7 @@ inline void RunQueryResponse::set_allocated_batch(::google::datastore::v1beta3::
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.RunQueryResponse.batch)
 }
 
-// .google.datastore.v1beta3.Query query = 2;
+// optional .google.datastore.v1beta3.Query query = 2;
 inline bool RunQueryResponse::has_query() const {
   return this != internal_default_instance() && query_ != NULL;
 }
@@ -2447,17 +2367,20 @@ inline void RunQueryResponse::set_allocated_query(::google::datastore::v1beta3::
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.RunQueryResponse.query)
 }
 
+inline const RunQueryResponse* RunQueryResponse::internal_default_instance() {
+  return &RunQueryResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // BeginTransactionRequest
 
-// string project_id = 8;
+// optional string project_id = 8;
 inline void BeginTransactionRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& BeginTransactionRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.BeginTransactionRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void BeginTransactionRequest::set_project_id(const ::std::string& value) {
   
@@ -2495,17 +2418,20 @@ inline void BeginTransactionRequest::set_allocated_project_id(::std::string* pro
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.BeginTransactionRequest.project_id)
 }
 
+inline const BeginTransactionRequest* BeginTransactionRequest::internal_default_instance() {
+  return &BeginTransactionRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // BeginTransactionResponse
 
-// bytes transaction = 1;
+// optional bytes transaction = 1;
 inline void BeginTransactionResponse::clear_transaction() {
   transaction_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& BeginTransactionResponse::transaction() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.BeginTransactionResponse.transaction)
-  return transaction_.GetNoArena();
+  return transaction_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void BeginTransactionResponse::set_transaction(const ::std::string& value) {
   
@@ -2543,17 +2469,20 @@ inline void BeginTransactionResponse::set_allocated_transaction(::std::string* t
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.BeginTransactionResponse.transaction)
 }
 
+inline const BeginTransactionResponse* BeginTransactionResponse::internal_default_instance() {
+  return &BeginTransactionResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // RollbackRequest
 
-// string project_id = 8;
+// optional string project_id = 8;
 inline void RollbackRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& RollbackRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.RollbackRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void RollbackRequest::set_project_id(const ::std::string& value) {
   
@@ -2591,13 +2520,13 @@ inline void RollbackRequest::set_allocated_project_id(::std::string* project_id)
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.RollbackRequest.project_id)
 }
 
-// bytes transaction = 1;
+// optional bytes transaction = 1;
 inline void RollbackRequest::clear_transaction() {
   transaction_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& RollbackRequest::transaction() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.RollbackRequest.transaction)
-  return transaction_.GetNoArena();
+  return transaction_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void RollbackRequest::set_transaction(const ::std::string& value) {
   
@@ -2635,21 +2564,27 @@ inline void RollbackRequest::set_allocated_transaction(::std::string* transactio
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.RollbackRequest.transaction)
 }
 
+inline const RollbackRequest* RollbackRequest::internal_default_instance() {
+  return &RollbackRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // RollbackResponse
 
+inline const RollbackResponse* RollbackResponse::internal_default_instance() {
+  return &RollbackResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // CommitRequest
 
-// string project_id = 8;
+// optional string project_id = 8;
 inline void CommitRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& CommitRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.CommitRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void CommitRequest::set_project_id(const ::std::string& value) {
   
@@ -2687,7 +2622,7 @@ inline void CommitRequest::set_allocated_project_id(::std::string* project_id) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.CommitRequest.project_id)
 }
 
-// .google.datastore.v1beta3.CommitRequest.Mode mode = 5;
+// optional .google.datastore.v1beta3.CommitRequest.Mode mode = 5;
 inline void CommitRequest::clear_mode() {
   mode_ = 0;
 }
@@ -2701,7 +2636,7 @@ inline void CommitRequest::set_mode(::google::datastore::v1beta3::CommitRequest_
   // @@protoc_insertion_point(field_set:google.datastore.v1beta3.CommitRequest.mode)
 }
 
-// bytes transaction = 1;
+// optional bytes transaction = 1;
 inline bool CommitRequest::has_transaction() const {
   return transaction_selector_case() == kTransaction;
 }
@@ -2717,7 +2652,7 @@ inline void CommitRequest::clear_transaction() {
 inline const ::std::string& CommitRequest::transaction() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.CommitRequest.transaction)
   if (has_transaction()) {
-    return transaction_selector_.transaction_.GetNoArena();
+    return transaction_selector_.transaction_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -2821,6 +2756,9 @@ inline void CommitRequest::clear_has_transaction_selector() {
 inline CommitRequest::TransactionSelectorCase CommitRequest::transaction_selector_case() const {
   return CommitRequest::TransactionSelectorCase(_oneof_case_[0]);
 }
+inline const CommitRequest* CommitRequest::internal_default_instance() {
+  return &CommitRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // CommitResponse
@@ -2855,7 +2793,7 @@ CommitResponse::mutation_results() const {
   return mutation_results_;
 }
 
-// int32 index_updates = 4;
+// optional int32 index_updates = 4;
 inline void CommitResponse::clear_index_updates() {
   index_updates_ = 0;
 }
@@ -2869,17 +2807,20 @@ inline void CommitResponse::set_index_updates(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.datastore.v1beta3.CommitResponse.index_updates)
 }
 
+inline const CommitResponse* CommitResponse::internal_default_instance() {
+  return &CommitResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AllocateIdsRequest
 
-// string project_id = 8;
+// optional string project_id = 8;
 inline void AllocateIdsRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AllocateIdsRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.AllocateIdsRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AllocateIdsRequest::set_project_id(const ::std::string& value) {
   
@@ -2947,6 +2888,9 @@ AllocateIdsRequest::keys() const {
   return keys_;
 }
 
+inline const AllocateIdsRequest* AllocateIdsRequest::internal_default_instance() {
+  return &AllocateIdsRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AllocateIdsResponse
@@ -2981,11 +2925,14 @@ AllocateIdsResponse::keys() const {
   return keys_;
 }
 
+inline const AllocateIdsResponse* AllocateIdsResponse::internal_default_instance() {
+  return &AllocateIdsResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Mutation
 
-// .google.datastore.v1beta3.Entity insert = 4;
+// optional .google.datastore.v1beta3.Entity insert = 4;
 inline bool Mutation::has_insert() const {
   return operation_case() == kInsert;
 }
@@ -3033,7 +2980,7 @@ inline void Mutation::set_allocated_insert(::google::datastore::v1beta3::Entity*
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.Mutation.insert)
 }
 
-// .google.datastore.v1beta3.Entity update = 5;
+// optional .google.datastore.v1beta3.Entity update = 5;
 inline bool Mutation::has_update() const {
   return operation_case() == kUpdate;
 }
@@ -3081,7 +3028,7 @@ inline void Mutation::set_allocated_update(::google::datastore::v1beta3::Entity*
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.Mutation.update)
 }
 
-// .google.datastore.v1beta3.Entity upsert = 6;
+// optional .google.datastore.v1beta3.Entity upsert = 6;
 inline bool Mutation::has_upsert() const {
   return operation_case() == kUpsert;
 }
@@ -3129,7 +3076,7 @@ inline void Mutation::set_allocated_upsert(::google::datastore::v1beta3::Entity*
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.Mutation.upsert)
 }
 
-// .google.datastore.v1beta3.Key delete = 7;
+// optional .google.datastore.v1beta3.Key delete = 7;
 inline bool Mutation::has_delete_() const {
   return operation_case() == kDelete;
 }
@@ -3177,7 +3124,7 @@ inline void Mutation::set_allocated_delete_(::google::datastore::v1beta3::Key* d
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.Mutation.delete)
 }
 
-// int64 base_version = 8;
+// optional int64 base_version = 8;
 inline bool Mutation::has_base_version() const {
   return conflict_detection_strategy_case() == kBaseVersion;
 }
@@ -3224,11 +3171,14 @@ inline Mutation::OperationCase Mutation::operation_case() const {
 inline Mutation::ConflictDetectionStrategyCase Mutation::conflict_detection_strategy_case() const {
   return Mutation::ConflictDetectionStrategyCase(_oneof_case_[1]);
 }
+inline const Mutation* Mutation::internal_default_instance() {
+  return &Mutation_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // MutationResult
 
-// .google.datastore.v1beta3.Key key = 3;
+// optional .google.datastore.v1beta3.Key key = 3;
 inline bool MutationResult::has_key() const {
   return this != internal_default_instance() && key_ != NULL;
 }
@@ -3267,7 +3217,7 @@ inline void MutationResult::set_allocated_key(::google::datastore::v1beta3::Key*
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.MutationResult.key)
 }
 
-// int64 version = 4;
+// optional int64 version = 4;
 inline void MutationResult::clear_version() {
   version_ = GOOGLE_LONGLONG(0);
 }
@@ -3281,7 +3231,7 @@ inline void MutationResult::set_version(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.datastore.v1beta3.MutationResult.version)
 }
 
-// bool conflict_detected = 5;
+// optional bool conflict_detected = 5;
 inline void MutationResult::clear_conflict_detected() {
   conflict_detected_ = false;
 }
@@ -3295,11 +3245,14 @@ inline void MutationResult::set_conflict_detected(bool value) {
   // @@protoc_insertion_point(field_set:google.datastore.v1beta3.MutationResult.conflict_detected)
 }
 
+inline const MutationResult* MutationResult::internal_default_instance() {
+  return &MutationResult_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ReadOptions
 
-// .google.datastore.v1beta3.ReadOptions.ReadConsistency read_consistency = 1;
+// optional .google.datastore.v1beta3.ReadOptions.ReadConsistency read_consistency = 1;
 inline bool ReadOptions::has_read_consistency() const {
   return consistency_type_case() == kReadConsistency;
 }
@@ -3328,7 +3281,7 @@ inline void ReadOptions::set_read_consistency(::google::datastore::v1beta3::Read
   // @@protoc_insertion_point(field_set:google.datastore.v1beta3.ReadOptions.read_consistency)
 }
 
-// bytes transaction = 2;
+// optional bytes transaction = 2;
 inline bool ReadOptions::has_transaction() const {
   return consistency_type_case() == kTransaction;
 }
@@ -3344,7 +3297,7 @@ inline void ReadOptions::clear_transaction() {
 inline const ::std::string& ReadOptions::transaction() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.ReadOptions.transaction)
   if (has_transaction()) {
-    return consistency_type_.transaction_.GetNoArena();
+    return consistency_type_.transaction_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3418,6 +3371,9 @@ inline void ReadOptions::clear_has_consistency_type() {
 inline ReadOptions::ConsistencyTypeCase ReadOptions::consistency_type_case() const {
   return ReadOptions::ConsistencyTypeCase(_oneof_case_[0]);
 }
+inline const ReadOptions* ReadOptions::internal_default_instance() {
+  return &ReadOptions_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
@@ -3449,7 +3405,6 @@ inline ReadOptions::ConsistencyTypeCase ReadOptions::consistency_type_case() con
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1beta3
 }  // namespace datastore

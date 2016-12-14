@@ -20,25 +20,28 @@
 namespace google {
 namespace appengine {
 namespace v1 {
-class ApplicationDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Application> {};
-ApplicationDefaultTypeInternal _Application_default_instance_;
-class UrlDispatchRuleDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<UrlDispatchRule> {};
-UrlDispatchRuleDefaultTypeInternal _UrlDispatchRule_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[2];
+const ::google::protobuf::Descriptor* Application_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Application_reflection_ = NULL;
+const ::google::protobuf::Descriptor* UrlDispatchRule_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  UrlDispatchRule_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fapplication_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fapplication_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Application, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fappengine_2fv1_2fapplication_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fappengine_2fv1_2fapplication_2eproto() {
+  protobuf_AddDesc_google_2fappengine_2fv1_2fapplication_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/appengine/v1/application.proto");
+  GOOGLE_CHECK(file != NULL);
+  Application_descriptor_ = file->message_type(0);
+  static const int Application_offsets_[9] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Application, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Application, id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Application, dispatch_rules_),
@@ -48,55 +51,59 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fapp
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Application, default_cookie_expiration_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Application, default_hostname_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Application, default_bucket_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UrlDispatchRule, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Application_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Application_descriptor_,
+      Application::internal_default_instance(),
+      Application_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Application),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Application, _internal_metadata_));
+  UrlDispatchRule_descriptor_ = file->message_type(1);
+  static const int UrlDispatchRule_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UrlDispatchRule, domain_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UrlDispatchRule, path_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UrlDispatchRule, service_),
   };
-  return offsets;
+  UrlDispatchRule_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      UrlDispatchRule_descriptor_,
+      UrlDispatchRule::internal_default_instance(),
+      UrlDispatchRule_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(UrlDispatchRule),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UrlDispatchRule, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(Application)},
-  { 13, -1, sizeof(UrlDispatchRule)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Application_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_UrlDispatchRule_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fappengine_2fv1_2fapplication_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/appengine/v1/application.proto", schemas, file_default_instances, protobuf_Offsets_google_2fappengine_2fv1_2fapplication_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fappengine_2fv1_2fapplication_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 2);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Application_descriptor_, Application::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      UrlDispatchRule_descriptor_, UrlDispatchRule::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fappengine_2fv1_2fapplication_2eproto() {
-  _Application_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _UrlDispatchRule_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
+  Application_default_instance_.Shutdown();
+  delete Application_reflection_;
+  UrlDispatchRule_default_instance_.Shutdown();
+  delete UrlDispatchRule_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fappengine_2fv1_2fapplication_2eproto_impl() {
@@ -104,38 +111,39 @@ void protobuf_InitDefaults_google_2fappengine_2fv1_2fapplication_2eproto_impl() 
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fduration_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _Application_default_instance_.DefaultConstruct();
-  _UrlDispatchRule_default_instance_.DefaultConstruct();
-  _Application_default_instance_.get_mutable()->default_cookie_expiration_ = const_cast< ::google::protobuf::Duration*>(
-      ::google::protobuf::Duration::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  Application_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  UrlDispatchRule_default_instance_.DefaultConstruct();
+  Application_default_instance_.get_mutable()->InitAsDefaultInstance();
+  UrlDispatchRule_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fappengine_2fv1_2fapplication_2eproto_once_);
 void protobuf_InitDefaults_google_2fappengine_2fv1_2fapplication_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fappengine_2fv1_2fapplication_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fappengine_2fv1_2fapplication_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fappengine_2fv1_2fapplication_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fappengine_2fv1_2fapplication_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fappengine_2fv1_2fapplication_2eproto();
-  static const char descriptor[] = {
-      "\n%google/appengine/v1/application.proto\022"
-      "\023google.appengine.v1\032\034google/api/annotat"
-      "ions.proto\032\036google/protobuf/duration.pro"
-      "to\"\224\002\n\013Application\022\014\n\004name\030\001 \001(\t\022\n\n\002id\030\002"
-      " \001(\t\022<\n\016dispatch_rules\030\003 \003(\0132$.google.ap"
-      "pengine.v1.UrlDispatchRule\022\023\n\013auth_domai"
-      "n\030\006 \001(\t\022\023\n\013location_id\030\007 \001(\t\022\023\n\013code_buc"
-      "ket\030\010 \001(\t\022<\n\031default_cookie_expiration\030\t"
-      " \001(\0132\031.google.protobuf.Duration\022\030\n\020defau"
-      "lt_hostname\030\013 \001(\t\022\026\n\016default_bucket\030\014 \001("
-      "\t\"@\n\017UrlDispatchRule\022\016\n\006domain\030\001 \001(\t\022\014\n\004"
-      "path\030\002 \001(\t\022\017\n\007service\030\003 \001(\tBk\n\027com.googl"
-      "e.appengine.v1B\020ApplicationProtoP\001Z<goog"
-      "le.golang.org/genproto/googleapis/appeng"
-      "ine/v1;appengineb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 584);
+    "\n%google/appengine/v1/application.proto\022"
+    "\023google.appengine.v1\032\034google/api/annotat"
+    "ions.proto\032\036google/protobuf/duration.pro"
+    "to\"\224\002\n\013Application\022\014\n\004name\030\001 \001(\t\022\n\n\002id\030\002"
+    " \001(\t\022<\n\016dispatch_rules\030\003 \003(\0132$.google.ap"
+    "pengine.v1.UrlDispatchRule\022\023\n\013auth_domai"
+    "n\030\006 \001(\t\022\023\n\013location_id\030\007 \001(\t\022\023\n\013code_buc"
+    "ket\030\010 \001(\t\022<\n\031default_cookie_expiration\030\t"
+    " \001(\0132\031.google.protobuf.Duration\022\030\n\020defau"
+    "lt_hostname\030\013 \001(\t\022\026\n\016default_bucket\030\014 \001("
+    "\t\"@\n\017UrlDispatchRule\022\016\n\006domain\030\001 \001(\t\022\014\n\004"
+    "path\030\002 \001(\t\022\017\n\007service\030\003 \001(\tBk\n\027com.googl"
+    "e.appengine.v1B\020ApplicationProtoP\001Z<goog"
+    "le.golang.org/genproto/googleapis/appeng"
+    "ine/v1;appengineb\006proto3", 584);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/appengine/v1/application.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -155,6 +163,16 @@ struct StaticDescriptorInitializer_google_2fappengine_2fv1_2fapplication_2eproto
   }
 } static_descriptor_initializer_google_2fappengine_2fv1_2fapplication_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -171,51 +189,21 @@ const int Application::kDefaultBucketFieldNumber;
 
 Application::Application()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fappengine_2fv1_2fapplication_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fapplication_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.Application)
 }
+
+void Application::InitAsDefaultInstance() {
+  default_cookie_expiration_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
+}
+
 Application::Application(const Application& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      dispatch_rules_(from.dispatch_rules_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.id().size() > 0) {
-    id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.id_);
-  }
-  auth_domain_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.auth_domain().size() > 0) {
-    auth_domain_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.auth_domain_);
-  }
-  location_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.location_id().size() > 0) {
-    location_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.location_id_);
-  }
-  code_bucket_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.code_bucket().size() > 0) {
-    code_bucket_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.code_bucket_);
-  }
-  default_hostname_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.default_hostname().size() > 0) {
-    default_hostname_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.default_hostname_);
-  }
-  default_bucket_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.default_bucket().size() > 0) {
-    default_bucket_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.default_bucket_);
-  }
-  if (from.has_default_cookie_expiration()) {
-    default_cookie_expiration_ = new ::google::protobuf::Duration(*from.default_cookie_expiration_);
-  } else {
-    default_cookie_expiration_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.Application)
 }
 
@@ -244,7 +232,7 @@ void Application::SharedDtor() {
   code_bucket_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   default_hostname_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   default_bucket_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &Application_default_instance_.get()) {
     delete default_cookie_expiration_;
   }
 }
@@ -256,13 +244,15 @@ void Application::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Application::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return Application_descriptor_;
 }
 
 const Application& Application::default_instance() {
   protobuf_InitDefaults_google_2fappengine_2fv1_2fapplication_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Application> Application_default_instance_;
 
 Application* Application::New(::google::protobuf::Arena* arena) const {
   Application* n = new Application;
@@ -274,18 +264,16 @@ Application* Application::New(::google::protobuf::Arena* arena) const {
 
 void Application::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.appengine.v1.Application)
-  dispatch_rules_.Clear();
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   auth_domain_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   location_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   code_bucket_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (GetArenaNoVirtual() == NULL && default_cookie_expiration_ != NULL) delete default_cookie_expiration_;
+  default_cookie_expiration_ = NULL;
   default_hostname_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   default_bucket_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && default_cookie_expiration_ != NULL) {
-    delete default_cookie_expiration_;
-  }
-  default_cookie_expiration_ = NULL;
+  dispatch_rules_.Clear();
 }
 
 bool Application::MergePartialFromCodedStream(
@@ -294,13 +282,13 @@ bool Application::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.appengine.v1.Application)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -310,12 +298,14 @@ bool Application::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_id;
         break;
       }
 
-      // string id = 2;
+      // optional string id = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -325,25 +315,31 @@ bool Application::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_dispatch_rules;
         break;
       }
 
       // repeated .google.appengine.v1.UrlDispatchRule dispatch_rules = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_dispatch_rules:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_dispatch_rules:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_dispatch_rules()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_loop_dispatch_rules;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(50)) goto parse_auth_domain;
         break;
       }
 
-      // string auth_domain = 6;
+      // optional string auth_domain = 6;
       case 6: {
-        if (tag == 50u) {
+        if (tag == 50) {
+         parse_auth_domain:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_auth_domain()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -353,12 +349,14 @@ bool Application::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(58)) goto parse_location_id;
         break;
       }
 
-      // string location_id = 7;
+      // optional string location_id = 7;
       case 7: {
-        if (tag == 58u) {
+        if (tag == 58) {
+         parse_location_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_location_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -368,12 +366,14 @@ bool Application::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(66)) goto parse_code_bucket;
         break;
       }
 
-      // string code_bucket = 8;
+      // optional string code_bucket = 8;
       case 8: {
-        if (tag == 66u) {
+        if (tag == 66) {
+         parse_code_bucket:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_code_bucket()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -383,23 +383,27 @@ bool Application::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(74)) goto parse_default_cookie_expiration;
         break;
       }
 
-      // .google.protobuf.Duration default_cookie_expiration = 9;
+      // optional .google.protobuf.Duration default_cookie_expiration = 9;
       case 9: {
-        if (tag == 74u) {
+        if (tag == 74) {
+         parse_default_cookie_expiration:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_default_cookie_expiration()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(90)) goto parse_default_hostname;
         break;
       }
 
-      // string default_hostname = 11;
+      // optional string default_hostname = 11;
       case 11: {
-        if (tag == 90u) {
+        if (tag == 90) {
+         parse_default_hostname:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_default_hostname()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -409,12 +413,14 @@ bool Application::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(98)) goto parse_default_bucket;
         break;
       }
 
-      // string default_bucket = 12;
+      // optional string default_bucket = 12;
       case 12: {
-        if (tag == 98u) {
+        if (tag == 98) {
+         parse_default_bucket:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_default_bucket()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -424,6 +430,7 @@ bool Application::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -451,7 +458,7 @@ failure:
 void Application::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.appengine.v1.Application)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -461,7 +468,7 @@ void Application::SerializeWithCachedSizes(
       1, this->name(), output);
   }
 
-  // string id = 2;
+  // optional string id = 2;
   if (this->id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->id().data(), this->id().length(),
@@ -477,7 +484,7 @@ void Application::SerializeWithCachedSizes(
       3, this->dispatch_rules(i), output);
   }
 
-  // string auth_domain = 6;
+  // optional string auth_domain = 6;
   if (this->auth_domain().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->auth_domain().data(), this->auth_domain().length(),
@@ -487,7 +494,7 @@ void Application::SerializeWithCachedSizes(
       6, this->auth_domain(), output);
   }
 
-  // string location_id = 7;
+  // optional string location_id = 7;
   if (this->location_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->location_id().data(), this->location_id().length(),
@@ -497,7 +504,7 @@ void Application::SerializeWithCachedSizes(
       7, this->location_id(), output);
   }
 
-  // string code_bucket = 8;
+  // optional string code_bucket = 8;
   if (this->code_bucket().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->code_bucket().data(), this->code_bucket().length(),
@@ -507,13 +514,13 @@ void Application::SerializeWithCachedSizes(
       8, this->code_bucket(), output);
   }
 
-  // .google.protobuf.Duration default_cookie_expiration = 9;
+  // optional .google.protobuf.Duration default_cookie_expiration = 9;
   if (this->has_default_cookie_expiration()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       9, *this->default_cookie_expiration_, output);
   }
 
-  // string default_hostname = 11;
+  // optional string default_hostname = 11;
   if (this->default_hostname().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->default_hostname().data(), this->default_hostname().length(),
@@ -523,7 +530,7 @@ void Application::SerializeWithCachedSizes(
       11, this->default_hostname(), output);
   }
 
-  // string default_bucket = 12;
+  // optional string default_bucket = 12;
   if (this->default_bucket().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->default_bucket().data(), this->default_bucket().length(),
@@ -540,7 +547,7 @@ void Application::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.Application)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -551,7 +558,7 @@ void Application::SerializeWithCachedSizes(
         1, this->name(), target);
   }
 
-  // string id = 2;
+  // optional string id = 2;
   if (this->id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->id().data(), this->id().length(),
@@ -569,7 +576,7 @@ void Application::SerializeWithCachedSizes(
         3, this->dispatch_rules(i), false, target);
   }
 
-  // string auth_domain = 6;
+  // optional string auth_domain = 6;
   if (this->auth_domain().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->auth_domain().data(), this->auth_domain().length(),
@@ -580,7 +587,7 @@ void Application::SerializeWithCachedSizes(
         6, this->auth_domain(), target);
   }
 
-  // string location_id = 7;
+  // optional string location_id = 7;
   if (this->location_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->location_id().data(), this->location_id().length(),
@@ -591,7 +598,7 @@ void Application::SerializeWithCachedSizes(
         7, this->location_id(), target);
   }
 
-  // string code_bucket = 8;
+  // optional string code_bucket = 8;
   if (this->code_bucket().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->code_bucket().data(), this->code_bucket().length(),
@@ -602,14 +609,14 @@ void Application::SerializeWithCachedSizes(
         8, this->code_bucket(), target);
   }
 
-  // .google.protobuf.Duration default_cookie_expiration = 9;
+  // optional .google.protobuf.Duration default_cookie_expiration = 9;
   if (this->has_default_cookie_expiration()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         9, *this->default_cookie_expiration_, false, target);
   }
 
-  // string default_hostname = 11;
+  // optional string default_hostname = 11;
   if (this->default_hostname().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->default_hostname().data(), this->default_hostname().length(),
@@ -620,7 +627,7 @@ void Application::SerializeWithCachedSizes(
         11, this->default_hostname(), target);
   }
 
-  // string default_bucket = 12;
+  // optional string default_bucket = 12;
   if (this->default_bucket().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->default_bucket().data(), this->default_bucket().length(),
@@ -639,6 +646,62 @@ size_t Application::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.Application)
   size_t total_size = 0;
 
+  // optional string name = 1;
+  if (this->name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->name());
+  }
+
+  // optional string id = 2;
+  if (this->id().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->id());
+  }
+
+  // optional string auth_domain = 6;
+  if (this->auth_domain().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->auth_domain());
+  }
+
+  // optional string location_id = 7;
+  if (this->location_id().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->location_id());
+  }
+
+  // optional string code_bucket = 8;
+  if (this->code_bucket().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->code_bucket());
+  }
+
+  // optional .google.protobuf.Duration default_cookie_expiration = 9;
+  if (this->has_default_cookie_expiration()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->default_cookie_expiration_);
+  }
+
+  // optional string default_hostname = 11;
+  if (this->default_hostname().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->default_hostname());
+  }
+
+  // optional string default_bucket = 12;
+  if (this->default_bucket().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->default_bucket());
+  }
+
   // repeated .google.appengine.v1.UrlDispatchRule dispatch_rules = 3;
   {
     unsigned int count = this->dispatch_rules_size();
@@ -650,62 +713,6 @@ size_t Application::ByteSizeLong() const {
     }
   }
 
-  // string name = 1;
-  if (this->name().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->name());
-  }
-
-  // string id = 2;
-  if (this->id().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->id());
-  }
-
-  // string auth_domain = 6;
-  if (this->auth_domain().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->auth_domain());
-  }
-
-  // string location_id = 7;
-  if (this->location_id().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->location_id());
-  }
-
-  // string code_bucket = 8;
-  if (this->code_bucket().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->code_bucket());
-  }
-
-  // string default_hostname = 11;
-  if (this->default_hostname().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->default_hostname());
-  }
-
-  // string default_bucket = 12;
-  if (this->default_bucket().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->default_bucket());
-  }
-
-  // .google.protobuf.Duration default_cookie_expiration = 9;
-  if (this->has_default_cookie_expiration()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->default_cookie_expiration_);
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -715,7 +722,7 @@ size_t Application::ByteSizeLong() const {
 
 void Application::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.Application)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Application* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Application>(
           &from);
@@ -724,14 +731,21 @@ void Application::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.Application)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Application::MergeFrom(const Application& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.Application)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Application::UnsafeMergeFrom(const Application& from) {
+  GOOGLE_DCHECK(&from != this);
   dispatch_rules_.MergeFrom(from.dispatch_rules_);
   if (from.name().size() > 0) {
 
@@ -753,6 +767,9 @@ void Application::MergeFrom(const Application& from) {
 
     code_bucket_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.code_bucket_);
   }
+  if (from.has_default_cookie_expiration()) {
+    mutable_default_cookie_expiration()->::google::protobuf::Duration::MergeFrom(from.default_cookie_expiration());
+  }
   if (from.default_hostname().size() > 0) {
 
     default_hostname_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.default_hostname_);
@@ -760,9 +777,6 @@ void Application::MergeFrom(const Application& from) {
   if (from.default_bucket().size() > 0) {
 
     default_bucket_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.default_bucket_);
-  }
-  if (from.has_default_cookie_expiration()) {
-    mutable_default_cookie_expiration()->::google::protobuf::Duration::MergeFrom(from.default_cookie_expiration());
   }
 }
 
@@ -777,10 +791,11 @@ void Application::CopyFrom(const Application& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.Application)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Application::IsInitialized() const {
+
   return true;
 }
 
@@ -789,33 +804,37 @@ void Application::Swap(Application* other) {
   InternalSwap(other);
 }
 void Application::InternalSwap(Application* other) {
-  dispatch_rules_.UnsafeArenaSwap(&other->dispatch_rules_);
   name_.Swap(&other->name_);
   id_.Swap(&other->id_);
+  dispatch_rules_.UnsafeArenaSwap(&other->dispatch_rules_);
   auth_domain_.Swap(&other->auth_domain_);
   location_id_.Swap(&other->location_id_);
   code_bucket_.Swap(&other->code_bucket_);
+  std::swap(default_cookie_expiration_, other->default_cookie_expiration_);
   default_hostname_.Swap(&other->default_hostname_);
   default_bucket_.Swap(&other->default_bucket_);
-  std::swap(default_cookie_expiration_, other->default_cookie_expiration_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Application::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Application_descriptor_;
+  metadata.reflection = Application_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Application
 
-// string name = 1;
+// optional string name = 1;
 void Application::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Application::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Application.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Application::set_name(const ::std::string& value) {
   
@@ -853,13 +872,13 @@ void Application::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Application.name)
 }
 
-// string id = 2;
+// optional string id = 2;
 void Application::clear_id() {
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Application::id() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Application.id)
-  return id_.GetNoArena();
+  return id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Application::set_id(const ::std::string& value) {
   
@@ -927,13 +946,13 @@ Application::dispatch_rules() const {
   return dispatch_rules_;
 }
 
-// string auth_domain = 6;
+// optional string auth_domain = 6;
 void Application::clear_auth_domain() {
   auth_domain_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Application::auth_domain() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Application.auth_domain)
-  return auth_domain_.GetNoArena();
+  return auth_domain_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Application::set_auth_domain(const ::std::string& value) {
   
@@ -971,13 +990,13 @@ void Application::set_allocated_auth_domain(::std::string* auth_domain) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Application.auth_domain)
 }
 
-// string location_id = 7;
+// optional string location_id = 7;
 void Application::clear_location_id() {
   location_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Application::location_id() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Application.location_id)
-  return location_id_.GetNoArena();
+  return location_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Application::set_location_id(const ::std::string& value) {
   
@@ -1015,13 +1034,13 @@ void Application::set_allocated_location_id(::std::string* location_id) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Application.location_id)
 }
 
-// string code_bucket = 8;
+// optional string code_bucket = 8;
 void Application::clear_code_bucket() {
   code_bucket_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Application::code_bucket() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Application.code_bucket)
-  return code_bucket_.GetNoArena();
+  return code_bucket_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Application::set_code_bucket(const ::std::string& value) {
   
@@ -1059,7 +1078,7 @@ void Application::set_allocated_code_bucket(::std::string* code_bucket) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Application.code_bucket)
 }
 
-// .google.protobuf.Duration default_cookie_expiration = 9;
+// optional .google.protobuf.Duration default_cookie_expiration = 9;
 bool Application::has_default_cookie_expiration() const {
   return this != internal_default_instance() && default_cookie_expiration_ != NULL;
 }
@@ -1103,13 +1122,13 @@ void Application::set_allocated_default_cookie_expiration(::google::protobuf::Du
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Application.default_cookie_expiration)
 }
 
-// string default_hostname = 11;
+// optional string default_hostname = 11;
 void Application::clear_default_hostname() {
   default_hostname_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Application::default_hostname() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Application.default_hostname)
-  return default_hostname_.GetNoArena();
+  return default_hostname_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Application::set_default_hostname(const ::std::string& value) {
   
@@ -1147,13 +1166,13 @@ void Application::set_allocated_default_hostname(::std::string* default_hostname
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Application.default_hostname)
 }
 
-// string default_bucket = 12;
+// optional string default_bucket = 12;
 void Application::clear_default_bucket() {
   default_bucket_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Application::default_bucket() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Application.default_bucket)
-  return default_bucket_.GetNoArena();
+  return default_bucket_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Application::set_default_bucket(const ::std::string& value) {
   
@@ -1191,6 +1210,9 @@ void Application::set_allocated_default_bucket(::std::string* default_bucket) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Application.default_bucket)
 }
 
+inline const Application* Application::internal_default_instance() {
+  return &Application_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1203,29 +1225,19 @@ const int UrlDispatchRule::kServiceFieldNumber;
 
 UrlDispatchRule::UrlDispatchRule()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fappengine_2fv1_2fapplication_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fapplication_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.UrlDispatchRule)
 }
+
+void UrlDispatchRule::InitAsDefaultInstance() {
+}
+
 UrlDispatchRule::UrlDispatchRule(const UrlDispatchRule& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  domain_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.domain().size() > 0) {
-    domain_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.domain_);
-  }
-  path_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.path().size() > 0) {
-    path_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.path_);
-  }
-  service_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.service().size() > 0) {
-    service_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.UrlDispatchRule)
 }
 
@@ -1254,13 +1266,15 @@ void UrlDispatchRule::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* UrlDispatchRule::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return UrlDispatchRule_descriptor_;
 }
 
 const UrlDispatchRule& UrlDispatchRule::default_instance() {
   protobuf_InitDefaults_google_2fappengine_2fv1_2fapplication_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<UrlDispatchRule> UrlDispatchRule_default_instance_;
 
 UrlDispatchRule* UrlDispatchRule::New(::google::protobuf::Arena* arena) const {
   UrlDispatchRule* n = new UrlDispatchRule;
@@ -1283,13 +1297,13 @@ bool UrlDispatchRule::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.appengine.v1.UrlDispatchRule)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string domain = 1;
+      // optional string domain = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_domain()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1299,12 +1313,14 @@ bool UrlDispatchRule::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_path;
         break;
       }
 
-      // string path = 2;
+      // optional string path = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_path:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_path()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1314,12 +1330,14 @@ bool UrlDispatchRule::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_service;
         break;
       }
 
-      // string service = 3;
+      // optional string service = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_service:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_service()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1329,6 +1347,7 @@ bool UrlDispatchRule::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1356,7 +1375,7 @@ failure:
 void UrlDispatchRule::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.appengine.v1.UrlDispatchRule)
-  // string domain = 1;
+  // optional string domain = 1;
   if (this->domain().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->domain().data(), this->domain().length(),
@@ -1366,7 +1385,7 @@ void UrlDispatchRule::SerializeWithCachedSizes(
       1, this->domain(), output);
   }
 
-  // string path = 2;
+  // optional string path = 2;
   if (this->path().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->path().data(), this->path().length(),
@@ -1376,7 +1395,7 @@ void UrlDispatchRule::SerializeWithCachedSizes(
       2, this->path(), output);
   }
 
-  // string service = 3;
+  // optional string service = 3;
   if (this->service().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->service().data(), this->service().length(),
@@ -1393,7 +1412,7 @@ void UrlDispatchRule::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.UrlDispatchRule)
-  // string domain = 1;
+  // optional string domain = 1;
   if (this->domain().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->domain().data(), this->domain().length(),
@@ -1404,7 +1423,7 @@ void UrlDispatchRule::SerializeWithCachedSizes(
         1, this->domain(), target);
   }
 
-  // string path = 2;
+  // optional string path = 2;
   if (this->path().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->path().data(), this->path().length(),
@@ -1415,7 +1434,7 @@ void UrlDispatchRule::SerializeWithCachedSizes(
         2, this->path(), target);
   }
 
-  // string service = 3;
+  // optional string service = 3;
   if (this->service().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->service().data(), this->service().length(),
@@ -1434,21 +1453,21 @@ size_t UrlDispatchRule::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.UrlDispatchRule)
   size_t total_size = 0;
 
-  // string domain = 1;
+  // optional string domain = 1;
   if (this->domain().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->domain());
   }
 
-  // string path = 2;
+  // optional string path = 2;
   if (this->path().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->path());
   }
 
-  // string service = 3;
+  // optional string service = 3;
   if (this->service().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -1464,7 +1483,7 @@ size_t UrlDispatchRule::ByteSizeLong() const {
 
 void UrlDispatchRule::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.UrlDispatchRule)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const UrlDispatchRule* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const UrlDispatchRule>(
           &from);
@@ -1473,14 +1492,21 @@ void UrlDispatchRule::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.UrlDispatchRule)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void UrlDispatchRule::MergeFrom(const UrlDispatchRule& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.UrlDispatchRule)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void UrlDispatchRule::UnsafeMergeFrom(const UrlDispatchRule& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.domain().size() > 0) {
 
     domain_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.domain_);
@@ -1506,10 +1532,11 @@ void UrlDispatchRule::CopyFrom(const UrlDispatchRule& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.UrlDispatchRule)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool UrlDispatchRule::IsInitialized() const {
+
   return true;
 }
 
@@ -1521,24 +1548,28 @@ void UrlDispatchRule::InternalSwap(UrlDispatchRule* other) {
   domain_.Swap(&other->domain_);
   path_.Swap(&other->path_);
   service_.Swap(&other->service_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata UrlDispatchRule::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = UrlDispatchRule_descriptor_;
+  metadata.reflection = UrlDispatchRule_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // UrlDispatchRule
 
-// string domain = 1;
+// optional string domain = 1;
 void UrlDispatchRule::clear_domain() {
   domain_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& UrlDispatchRule::domain() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.UrlDispatchRule.domain)
-  return domain_.GetNoArena();
+  return domain_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void UrlDispatchRule::set_domain(const ::std::string& value) {
   
@@ -1576,13 +1607,13 @@ void UrlDispatchRule::set_allocated_domain(::std::string* domain) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.UrlDispatchRule.domain)
 }
 
-// string path = 2;
+// optional string path = 2;
 void UrlDispatchRule::clear_path() {
   path_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& UrlDispatchRule::path() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.UrlDispatchRule.path)
-  return path_.GetNoArena();
+  return path_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void UrlDispatchRule::set_path(const ::std::string& value) {
   
@@ -1620,13 +1651,13 @@ void UrlDispatchRule::set_allocated_path(::std::string* path) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.UrlDispatchRule.path)
 }
 
-// string service = 3;
+// optional string service = 3;
 void UrlDispatchRule::clear_service() {
   service_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& UrlDispatchRule::service() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.UrlDispatchRule.service)
-  return service_.GetNoArena();
+  return service_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void UrlDispatchRule::set_service(const ::std::string& value) {
   
@@ -1664,6 +1695,9 @@ void UrlDispatchRule::set_allocated_service(::std::string* service) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.UrlDispatchRule.service)
 }
 
+inline const UrlDispatchRule* UrlDispatchRule::internal_default_instance() {
+  return &UrlDispatchRule_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

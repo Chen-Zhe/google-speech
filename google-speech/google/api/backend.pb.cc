@@ -19,102 +19,111 @@
 
 namespace google {
 namespace api {
-class BackendDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Backend> {};
-BackendDefaultTypeInternal _Backend_default_instance_;
-class BackendRuleDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<BackendRule> {};
-BackendRuleDefaultTypeInternal _BackendRule_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[2];
+const ::google::protobuf::Descriptor* Backend_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Backend_reflection_ = NULL;
+const ::google::protobuf::Descriptor* BackendRule_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  BackendRule_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fbackend_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fbackend_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Backend, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fapi_2fbackend_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fapi_2fbackend_2eproto() {
+  protobuf_AddDesc_google_2fapi_2fbackend_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/api/backend.proto");
+  GOOGLE_CHECK(file != NULL);
+  Backend_descriptor_ = file->message_type(0);
+  static const int Backend_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Backend, rules_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BackendRule, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Backend_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Backend_descriptor_,
+      Backend::internal_default_instance(),
+      Backend_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Backend),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Backend, _internal_metadata_));
+  BackendRule_descriptor_ = file->message_type(1);
+  static const int BackendRule_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BackendRule, selector_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BackendRule, address_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BackendRule, deadline_),
   };
-  return offsets;
+  BackendRule_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      BackendRule_descriptor_,
+      BackendRule::internal_default_instance(),
+      BackendRule_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(BackendRule),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BackendRule, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(Backend)},
-  { 5, -1, sizeof(BackendRule)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Backend_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_BackendRule_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fapi_2fbackend_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/api/backend.proto", schemas, file_default_instances, protobuf_Offsets_google_2fapi_2fbackend_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fapi_2fbackend_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 2);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Backend_descriptor_, Backend::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      BackendRule_descriptor_, BackendRule::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2fbackend_2eproto() {
-  _Backend_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _BackendRule_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
+  Backend_default_instance_.Shutdown();
+  delete Backend_reflection_;
+  BackendRule_default_instance_.Shutdown();
+  delete BackendRule_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fapi_2fbackend_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _Backend_default_instance_.DefaultConstruct();
-  _BackendRule_default_instance_.DefaultConstruct();
+  Backend_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  BackendRule_default_instance_.DefaultConstruct();
+  Backend_default_instance_.get_mutable()->InitAsDefaultInstance();
+  BackendRule_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fbackend_2eproto_once_);
 void protobuf_InitDefaults_google_2fapi_2fbackend_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fapi_2fbackend_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fbackend_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fbackend_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fapi_2fbackend_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fapi_2fbackend_2eproto();
-  static const char descriptor[] = {
-      "\n\030google/api/backend.proto\022\ngoogle.api\"1"
-      "\n\007Backend\022&\n\005rules\030\001 \003(\0132\027.google.api.Ba"
-      "ckendRule\"B\n\013BackendRule\022\020\n\010selector\030\001 \001"
-      "(\t\022\017\n\007address\030\002 \001(\t\022\020\n\010deadline\030\003 \001(\001Bn\n"
-      "\016com.google.apiB\014BackendProtoP\001ZEgoogle."
-      "golang.org/genproto/googleapis/api/servi"
-      "ceconfig;serviceconfig\242\002\004GAPIb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 277);
+    "\n\030google/api/backend.proto\022\ngoogle.api\"1"
+    "\n\007Backend\022&\n\005rules\030\001 \003(\0132\027.google.api.Ba"
+    "ckendRule\"B\n\013BackendRule\022\020\n\010selector\030\001 \001"
+    "(\t\022\017\n\007address\030\002 \001(\t\022\020\n\010deadline\030\003 \001(\001Bn\n"
+    "\016com.google.apiB\014BackendProtoP\001ZEgoogle."
+    "golang.org/genproto/googleapis/api/servi"
+    "ceconfig;serviceconfig\242\002\004GAPIb\006proto3", 277);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/backend.proto", &protobuf_RegisterTypes);
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fapi_2fbackend_2eproto);
@@ -132,6 +141,16 @@ struct StaticDescriptorInitializer_google_2fapi_2fbackend_2eproto {
   }
 } static_descriptor_initializer_google_2fapi_2fbackend_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -140,18 +159,19 @@ const int Backend::kRulesFieldNumber;
 
 Backend::Backend()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fbackend_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fbackend_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Backend)
 }
+
+void Backend::InitAsDefaultInstance() {
+}
+
 Backend::Backend(const Backend& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      rules_(from.rules_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Backend)
 }
 
@@ -174,13 +194,15 @@ void Backend::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Backend::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return Backend_descriptor_;
 }
 
 const Backend& Backend::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fbackend_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Backend> Backend_default_instance_;
 
 Backend* Backend::New(::google::protobuf::Arena* arena) const {
   Backend* n = new Backend;
@@ -201,20 +223,23 @@ bool Backend::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.Backend)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.api.BackendRule rules = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_rules:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_rules()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_rules;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -290,7 +315,7 @@ size_t Backend::ByteSizeLong() const {
 
 void Backend::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Backend)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Backend* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Backend>(
           &from);
@@ -299,14 +324,21 @@ void Backend::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Backend)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Backend::MergeFrom(const Backend& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Backend)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Backend::UnsafeMergeFrom(const Backend& from) {
+  GOOGLE_DCHECK(&from != this);
   rules_.MergeFrom(from.rules_);
 }
 
@@ -321,10 +353,11 @@ void Backend::CopyFrom(const Backend& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Backend)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Backend::IsInitialized() const {
+
   return true;
 }
 
@@ -334,12 +367,16 @@ void Backend::Swap(Backend* other) {
 }
 void Backend::InternalSwap(Backend* other) {
   rules_.UnsafeArenaSwap(&other->rules_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Backend::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Backend_descriptor_;
+  metadata.reflection = Backend_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -375,6 +412,9 @@ Backend::rules() const {
   return rules_;
 }
 
+inline const Backend* Backend::internal_default_instance() {
+  return &Backend_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -387,26 +427,19 @@ const int BackendRule::kDeadlineFieldNumber;
 
 BackendRule::BackendRule()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fbackend_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fbackend_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.BackendRule)
 }
+
+void BackendRule::InitAsDefaultInstance() {
+}
+
 BackendRule::BackendRule(const BackendRule& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  selector_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.selector().size() > 0) {
-    selector_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.selector_);
-  }
-  address_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.address().size() > 0) {
-    address_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.address_);
-  }
-  deadline_ = from.deadline_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.BackendRule)
 }
 
@@ -434,13 +467,15 @@ void BackendRule::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* BackendRule::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return BackendRule_descriptor_;
 }
 
 const BackendRule& BackendRule::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fbackend_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<BackendRule> BackendRule_default_instance_;
 
 BackendRule* BackendRule::New(::google::protobuf::Arena* arena) const {
   BackendRule* n = new BackendRule;
@@ -463,13 +498,13 @@ bool BackendRule::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.BackendRule)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string selector = 1;
+      // optional string selector = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_selector()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -479,12 +514,14 @@ bool BackendRule::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_address;
         break;
       }
 
-      // string address = 2;
+      // optional string address = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_address:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_address()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -494,12 +531,14 @@ bool BackendRule::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(25)) goto parse_deadline;
         break;
       }
 
-      // double deadline = 3;
+      // optional double deadline = 3;
       case 3: {
-        if (tag == 25u) {
+        if (tag == 25) {
+         parse_deadline:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
@@ -507,6 +546,7 @@ bool BackendRule::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -534,7 +574,7 @@ failure:
 void BackendRule::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.api.BackendRule)
-  // string selector = 1;
+  // optional string selector = 1;
   if (this->selector().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->selector().data(), this->selector().length(),
@@ -544,7 +584,7 @@ void BackendRule::SerializeWithCachedSizes(
       1, this->selector(), output);
   }
 
-  // string address = 2;
+  // optional string address = 2;
   if (this->address().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->address().data(), this->address().length(),
@@ -554,7 +594,7 @@ void BackendRule::SerializeWithCachedSizes(
       2, this->address(), output);
   }
 
-  // double deadline = 3;
+  // optional double deadline = 3;
   if (this->deadline() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->deadline(), output);
   }
@@ -566,7 +606,7 @@ void BackendRule::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.BackendRule)
-  // string selector = 1;
+  // optional string selector = 1;
   if (this->selector().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->selector().data(), this->selector().length(),
@@ -577,7 +617,7 @@ void BackendRule::SerializeWithCachedSizes(
         1, this->selector(), target);
   }
 
-  // string address = 2;
+  // optional string address = 2;
   if (this->address().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->address().data(), this->address().length(),
@@ -588,7 +628,7 @@ void BackendRule::SerializeWithCachedSizes(
         2, this->address(), target);
   }
 
-  // double deadline = 3;
+  // optional double deadline = 3;
   if (this->deadline() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->deadline(), target);
   }
@@ -601,21 +641,21 @@ size_t BackendRule::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.BackendRule)
   size_t total_size = 0;
 
-  // string selector = 1;
+  // optional string selector = 1;
   if (this->selector().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->selector());
   }
 
-  // string address = 2;
+  // optional string address = 2;
   if (this->address().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->address());
   }
 
-  // double deadline = 3;
+  // optional double deadline = 3;
   if (this->deadline() != 0) {
     total_size += 1 + 8;
   }
@@ -629,7 +669,7 @@ size_t BackendRule::ByteSizeLong() const {
 
 void BackendRule::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.BackendRule)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const BackendRule* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const BackendRule>(
           &from);
@@ -638,14 +678,21 @@ void BackendRule::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.BackendRule)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void BackendRule::MergeFrom(const BackendRule& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.BackendRule)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void BackendRule::UnsafeMergeFrom(const BackendRule& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.selector().size() > 0) {
 
     selector_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.selector_);
@@ -670,10 +717,11 @@ void BackendRule::CopyFrom(const BackendRule& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.BackendRule)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool BackendRule::IsInitialized() const {
+
   return true;
 }
 
@@ -685,24 +733,28 @@ void BackendRule::InternalSwap(BackendRule* other) {
   selector_.Swap(&other->selector_);
   address_.Swap(&other->address_);
   std::swap(deadline_, other->deadline_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata BackendRule::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = BackendRule_descriptor_;
+  metadata.reflection = BackendRule_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // BackendRule
 
-// string selector = 1;
+// optional string selector = 1;
 void BackendRule::clear_selector() {
   selector_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& BackendRule::selector() const {
   // @@protoc_insertion_point(field_get:google.api.BackendRule.selector)
-  return selector_.GetNoArena();
+  return selector_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void BackendRule::set_selector(const ::std::string& value) {
   
@@ -740,13 +792,13 @@ void BackendRule::set_allocated_selector(::std::string* selector) {
   // @@protoc_insertion_point(field_set_allocated:google.api.BackendRule.selector)
 }
 
-// string address = 2;
+// optional string address = 2;
 void BackendRule::clear_address() {
   address_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& BackendRule::address() const {
   // @@protoc_insertion_point(field_get:google.api.BackendRule.address)
-  return address_.GetNoArena();
+  return address_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void BackendRule::set_address(const ::std::string& value) {
   
@@ -784,7 +836,7 @@ void BackendRule::set_allocated_address(::std::string* address) {
   // @@protoc_insertion_point(field_set_allocated:google.api.BackendRule.address)
 }
 
-// double deadline = 3;
+// optional double deadline = 3;
 void BackendRule::clear_deadline() {
   deadline_ = 0;
 }
@@ -798,6 +850,9 @@ void BackendRule::set_deadline(double value) {
   // @@protoc_insertion_point(field_set:google.api.BackendRule.deadline)
 }
 
+inline const BackendRule* BackendRule::internal_default_instance() {
+  return &BackendRule_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

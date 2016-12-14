@@ -24,30 +24,11 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-class AuthProvider;
-class AuthProviderDefaultTypeInternal;
-extern AuthProviderDefaultTypeInternal _AuthProvider_default_instance_;
-class AuthRequirement;
-class AuthRequirementDefaultTypeInternal;
-extern AuthRequirementDefaultTypeInternal _AuthRequirement_default_instance_;
-class Authentication;
-class AuthenticationDefaultTypeInternal;
-extern AuthenticationDefaultTypeInternal _Authentication_default_instance_;
-class AuthenticationRule;
-class AuthenticationRuleDefaultTypeInternal;
-extern AuthenticationRuleDefaultTypeInternal _AuthenticationRule_default_instance_;
-class OAuthRequirements;
-class OAuthRequirementsDefaultTypeInternal;
-extern OAuthRequirementsDefaultTypeInternal _OAuthRequirements_default_instance_;
-}  // namespace api
-}  // namespace google
 
 namespace google {
 namespace api {
@@ -55,6 +36,14 @@ namespace api {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fapi_2fauth_2eproto();
 void protobuf_InitDefaults_google_2fapi_2fauth_2eproto();
+void protobuf_AssignDesc_google_2fapi_2fauth_2eproto();
+void protobuf_ShutdownFile_google_2fapi_2fauth_2eproto();
+
+class AuthProvider;
+class AuthRequirement;
+class Authentication;
+class AuthenticationRule;
+class OAuthRequirements;
 
 // ===================================================================
 
@@ -73,52 +62,49 @@ class Authentication : public ::google::protobuf::Message /* @@protoc_insertion_
   static const ::google::protobuf::Descriptor* descriptor();
   static const Authentication& default_instance();
 
-  static inline const Authentication* internal_default_instance() {
-    return reinterpret_cast<const Authentication*>(
-               &_Authentication_default_instance_);
-  }
+  static const Authentication* internal_default_instance();
 
   void Swap(Authentication* other);
 
   // implements Message ----------------------------------------------
 
-  inline Authentication* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Authentication* New() const { return New(NULL); }
 
-  Authentication* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Authentication* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Authentication& from);
   void MergeFrom(const Authentication& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Authentication* other);
+  void UnsafeMergeFrom(const Authentication& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -157,10 +143,13 @@ class Authentication : public ::google::protobuf::Message /* @@protoc_insertion_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fauth_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fauth_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fauth_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fauth_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fauth_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Authentication> Authentication_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AuthenticationRule : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.api.AuthenticationRule) */ {
@@ -178,58 +167,55 @@ class AuthenticationRule : public ::google::protobuf::Message /* @@protoc_insert
   static const ::google::protobuf::Descriptor* descriptor();
   static const AuthenticationRule& default_instance();
 
-  static inline const AuthenticationRule* internal_default_instance() {
-    return reinterpret_cast<const AuthenticationRule*>(
-               &_AuthenticationRule_default_instance_);
-  }
+  static const AuthenticationRule* internal_default_instance();
 
   void Swap(AuthenticationRule* other);
 
   // implements Message ----------------------------------------------
 
-  inline AuthenticationRule* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AuthenticationRule* New() const { return New(NULL); }
 
-  AuthenticationRule* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AuthenticationRule* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AuthenticationRule& from);
   void MergeFrom(const AuthenticationRule& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AuthenticationRule* other);
+  void UnsafeMergeFrom(const AuthenticationRule& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string selector = 1;
+  // optional string selector = 1;
   void clear_selector();
   static const int kSelectorFieldNumber = 1;
   const ::std::string& selector() const;
@@ -240,7 +226,7 @@ class AuthenticationRule : public ::google::protobuf::Message /* @@protoc_insert
   ::std::string* release_selector();
   void set_allocated_selector(::std::string* selector);
 
-  // .google.api.OAuthRequirements oauth = 2;
+  // optional .google.api.OAuthRequirements oauth = 2;
   bool has_oauth() const;
   void clear_oauth();
   static const int kOauthFieldNumber = 2;
@@ -249,7 +235,7 @@ class AuthenticationRule : public ::google::protobuf::Message /* @@protoc_insert
   ::google::api::OAuthRequirements* release_oauth();
   void set_allocated_oauth(::google::api::OAuthRequirements* oauth);
 
-  // bool allow_without_credential = 5;
+  // optional bool allow_without_credential = 5;
   void clear_allow_without_credential();
   static const int kAllowWithoutCredentialFieldNumber = 5;
   bool allow_without_credential() const;
@@ -278,10 +264,13 @@ class AuthenticationRule : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fauth_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fauth_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fauth_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fauth_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fauth_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AuthenticationRule> AuthenticationRule_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AuthProvider : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.api.AuthProvider) */ {
@@ -299,58 +288,55 @@ class AuthProvider : public ::google::protobuf::Message /* @@protoc_insertion_po
   static const ::google::protobuf::Descriptor* descriptor();
   static const AuthProvider& default_instance();
 
-  static inline const AuthProvider* internal_default_instance() {
-    return reinterpret_cast<const AuthProvider*>(
-               &_AuthProvider_default_instance_);
-  }
+  static const AuthProvider* internal_default_instance();
 
   void Swap(AuthProvider* other);
 
   // implements Message ----------------------------------------------
 
-  inline AuthProvider* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AuthProvider* New() const { return New(NULL); }
 
-  AuthProvider* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AuthProvider* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AuthProvider& from);
   void MergeFrom(const AuthProvider& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AuthProvider* other);
+  void UnsafeMergeFrom(const AuthProvider& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string id = 1;
+  // optional string id = 1;
   void clear_id();
   static const int kIdFieldNumber = 1;
   const ::std::string& id() const;
@@ -361,7 +347,7 @@ class AuthProvider : public ::google::protobuf::Message /* @@protoc_insertion_po
   ::std::string* release_id();
   void set_allocated_id(::std::string* id);
 
-  // string issuer = 2;
+  // optional string issuer = 2;
   void clear_issuer();
   static const int kIssuerFieldNumber = 2;
   const ::std::string& issuer() const;
@@ -372,7 +358,7 @@ class AuthProvider : public ::google::protobuf::Message /* @@protoc_insertion_po
   ::std::string* release_issuer();
   void set_allocated_issuer(::std::string* issuer);
 
-  // string jwks_uri = 3;
+  // optional string jwks_uri = 3;
   void clear_jwks_uri();
   static const int kJwksUriFieldNumber = 3;
   const ::std::string& jwks_uri() const;
@@ -383,7 +369,7 @@ class AuthProvider : public ::google::protobuf::Message /* @@protoc_insertion_po
   ::std::string* release_jwks_uri();
   void set_allocated_jwks_uri(::std::string* jwks_uri);
 
-  // string audiences = 4;
+  // optional string audiences = 4;
   void clear_audiences();
   static const int kAudiencesFieldNumber = 4;
   const ::std::string& audiences() const;
@@ -405,10 +391,13 @@ class AuthProvider : public ::google::protobuf::Message /* @@protoc_insertion_po
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fauth_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fauth_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fauth_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fauth_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fauth_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AuthProvider> AuthProvider_default_instance_;
+
 // -------------------------------------------------------------------
 
 class OAuthRequirements : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.api.OAuthRequirements) */ {
@@ -426,58 +415,55 @@ class OAuthRequirements : public ::google::protobuf::Message /* @@protoc_inserti
   static const ::google::protobuf::Descriptor* descriptor();
   static const OAuthRequirements& default_instance();
 
-  static inline const OAuthRequirements* internal_default_instance() {
-    return reinterpret_cast<const OAuthRequirements*>(
-               &_OAuthRequirements_default_instance_);
-  }
+  static const OAuthRequirements* internal_default_instance();
 
   void Swap(OAuthRequirements* other);
 
   // implements Message ----------------------------------------------
 
-  inline OAuthRequirements* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline OAuthRequirements* New() const { return New(NULL); }
 
-  OAuthRequirements* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  OAuthRequirements* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const OAuthRequirements& from);
   void MergeFrom(const OAuthRequirements& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(OAuthRequirements* other);
+  void UnsafeMergeFrom(const OAuthRequirements& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string canonical_scopes = 1;
+  // optional string canonical_scopes = 1;
   void clear_canonical_scopes();
   static const int kCanonicalScopesFieldNumber = 1;
   const ::std::string& canonical_scopes() const;
@@ -496,10 +482,13 @@ class OAuthRequirements : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fauth_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fauth_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fauth_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fauth_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fauth_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<OAuthRequirements> OAuthRequirements_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AuthRequirement : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.api.AuthRequirement) */ {
@@ -517,58 +506,55 @@ class AuthRequirement : public ::google::protobuf::Message /* @@protoc_insertion
   static const ::google::protobuf::Descriptor* descriptor();
   static const AuthRequirement& default_instance();
 
-  static inline const AuthRequirement* internal_default_instance() {
-    return reinterpret_cast<const AuthRequirement*>(
-               &_AuthRequirement_default_instance_);
-  }
+  static const AuthRequirement* internal_default_instance();
 
   void Swap(AuthRequirement* other);
 
   // implements Message ----------------------------------------------
 
-  inline AuthRequirement* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AuthRequirement* New() const { return New(NULL); }
 
-  AuthRequirement* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AuthRequirement* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AuthRequirement& from);
   void MergeFrom(const AuthRequirement& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AuthRequirement* other);
+  void UnsafeMergeFrom(const AuthRequirement& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string provider_id = 1;
+  // optional string provider_id = 1;
   void clear_provider_id();
   static const int kProviderIdFieldNumber = 1;
   const ::std::string& provider_id() const;
@@ -579,7 +565,7 @@ class AuthRequirement : public ::google::protobuf::Message /* @@protoc_insertion
   ::std::string* release_provider_id();
   void set_allocated_provider_id(::std::string* provider_id);
 
-  // string audiences = 2;
+  // optional string audiences = 2;
   void clear_audiences();
   static const int kAudiencesFieldNumber = 2;
   const ::std::string& audiences() const;
@@ -599,10 +585,13 @@ class AuthRequirement : public ::google::protobuf::Message /* @@protoc_insertion
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fauth_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fauth_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fauth_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fauth_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fauth_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AuthRequirement> AuthRequirement_default_instance_;
+
 // ===================================================================
 
 
@@ -671,17 +660,20 @@ Authentication::providers() const {
   return providers_;
 }
 
+inline const Authentication* Authentication::internal_default_instance() {
+  return &Authentication_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AuthenticationRule
 
-// string selector = 1;
+// optional string selector = 1;
 inline void AuthenticationRule::clear_selector() {
   selector_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AuthenticationRule::selector() const {
   // @@protoc_insertion_point(field_get:google.api.AuthenticationRule.selector)
-  return selector_.GetNoArena();
+  return selector_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AuthenticationRule::set_selector(const ::std::string& value) {
   
@@ -719,7 +711,7 @@ inline void AuthenticationRule::set_allocated_selector(::std::string* selector) 
   // @@protoc_insertion_point(field_set_allocated:google.api.AuthenticationRule.selector)
 }
 
-// .google.api.OAuthRequirements oauth = 2;
+// optional .google.api.OAuthRequirements oauth = 2;
 inline bool AuthenticationRule::has_oauth() const {
   return this != internal_default_instance() && oauth_ != NULL;
 }
@@ -758,7 +750,7 @@ inline void AuthenticationRule::set_allocated_oauth(::google::api::OAuthRequirem
   // @@protoc_insertion_point(field_set_allocated:google.api.AuthenticationRule.oauth)
 }
 
-// bool allow_without_credential = 5;
+// optional bool allow_without_credential = 5;
 inline void AuthenticationRule::clear_allow_without_credential() {
   allow_without_credential_ = false;
 }
@@ -802,17 +794,20 @@ AuthenticationRule::requirements() const {
   return requirements_;
 }
 
+inline const AuthenticationRule* AuthenticationRule::internal_default_instance() {
+  return &AuthenticationRule_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AuthProvider
 
-// string id = 1;
+// optional string id = 1;
 inline void AuthProvider::clear_id() {
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AuthProvider::id() const {
   // @@protoc_insertion_point(field_get:google.api.AuthProvider.id)
-  return id_.GetNoArena();
+  return id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AuthProvider::set_id(const ::std::string& value) {
   
@@ -850,13 +845,13 @@ inline void AuthProvider::set_allocated_id(::std::string* id) {
   // @@protoc_insertion_point(field_set_allocated:google.api.AuthProvider.id)
 }
 
-// string issuer = 2;
+// optional string issuer = 2;
 inline void AuthProvider::clear_issuer() {
   issuer_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AuthProvider::issuer() const {
   // @@protoc_insertion_point(field_get:google.api.AuthProvider.issuer)
-  return issuer_.GetNoArena();
+  return issuer_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AuthProvider::set_issuer(const ::std::string& value) {
   
@@ -894,13 +889,13 @@ inline void AuthProvider::set_allocated_issuer(::std::string* issuer) {
   // @@protoc_insertion_point(field_set_allocated:google.api.AuthProvider.issuer)
 }
 
-// string jwks_uri = 3;
+// optional string jwks_uri = 3;
 inline void AuthProvider::clear_jwks_uri() {
   jwks_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AuthProvider::jwks_uri() const {
   // @@protoc_insertion_point(field_get:google.api.AuthProvider.jwks_uri)
-  return jwks_uri_.GetNoArena();
+  return jwks_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AuthProvider::set_jwks_uri(const ::std::string& value) {
   
@@ -938,13 +933,13 @@ inline void AuthProvider::set_allocated_jwks_uri(::std::string* jwks_uri) {
   // @@protoc_insertion_point(field_set_allocated:google.api.AuthProvider.jwks_uri)
 }
 
-// string audiences = 4;
+// optional string audiences = 4;
 inline void AuthProvider::clear_audiences() {
   audiences_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AuthProvider::audiences() const {
   // @@protoc_insertion_point(field_get:google.api.AuthProvider.audiences)
-  return audiences_.GetNoArena();
+  return audiences_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AuthProvider::set_audiences(const ::std::string& value) {
   
@@ -982,17 +977,20 @@ inline void AuthProvider::set_allocated_audiences(::std::string* audiences) {
   // @@protoc_insertion_point(field_set_allocated:google.api.AuthProvider.audiences)
 }
 
+inline const AuthProvider* AuthProvider::internal_default_instance() {
+  return &AuthProvider_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // OAuthRequirements
 
-// string canonical_scopes = 1;
+// optional string canonical_scopes = 1;
 inline void OAuthRequirements::clear_canonical_scopes() {
   canonical_scopes_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& OAuthRequirements::canonical_scopes() const {
   // @@protoc_insertion_point(field_get:google.api.OAuthRequirements.canonical_scopes)
-  return canonical_scopes_.GetNoArena();
+  return canonical_scopes_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void OAuthRequirements::set_canonical_scopes(const ::std::string& value) {
   
@@ -1030,17 +1028,20 @@ inline void OAuthRequirements::set_allocated_canonical_scopes(::std::string* can
   // @@protoc_insertion_point(field_set_allocated:google.api.OAuthRequirements.canonical_scopes)
 }
 
+inline const OAuthRequirements* OAuthRequirements::internal_default_instance() {
+  return &OAuthRequirements_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AuthRequirement
 
-// string provider_id = 1;
+// optional string provider_id = 1;
 inline void AuthRequirement::clear_provider_id() {
   provider_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AuthRequirement::provider_id() const {
   // @@protoc_insertion_point(field_get:google.api.AuthRequirement.provider_id)
-  return provider_id_.GetNoArena();
+  return provider_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AuthRequirement::set_provider_id(const ::std::string& value) {
   
@@ -1078,13 +1079,13 @@ inline void AuthRequirement::set_allocated_provider_id(::std::string* provider_i
   // @@protoc_insertion_point(field_set_allocated:google.api.AuthRequirement.provider_id)
 }
 
-// string audiences = 2;
+// optional string audiences = 2;
 inline void AuthRequirement::clear_audiences() {
   audiences_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AuthRequirement::audiences() const {
   // @@protoc_insertion_point(field_get:google.api.AuthRequirement.audiences)
-  return audiences_.GetNoArena();
+  return audiences_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AuthRequirement::set_audiences(const ::std::string& value) {
   
@@ -1122,6 +1123,9 @@ inline void AuthRequirement::set_allocated_audiences(::std::string* audiences) {
   // @@protoc_insertion_point(field_set_allocated:google.api.AuthRequirement.audiences)
 }
 
+inline const AuthRequirement* AuthRequirement::internal_default_instance() {
+  return &AuthRequirement_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
@@ -1133,7 +1137,6 @@ inline void AuthRequirement::set_allocated_audiences(::std::string* audiences) {
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace api
 }  // namespace google

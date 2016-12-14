@@ -21,65 +21,63 @@ namespace google {
 namespace cloud {
 namespace functions {
 namespace v1beta2 {
-class OperationMetadataV1Beta2DefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<OperationMetadataV1Beta2> {};
-OperationMetadataV1Beta2DefaultTypeInternal _OperationMetadataV1Beta2_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[1];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+const ::google::protobuf::Descriptor* OperationMetadataV1Beta2_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  OperationMetadataV1Beta2_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* OperationType_descriptor_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationMetadataV1Beta2, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto() {
+  protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/cloud/functions/v1beta2/operations.proto");
+  GOOGLE_CHECK(file != NULL);
+  OperationMetadataV1Beta2_descriptor_ = file->message_type(0);
+  static const int OperationMetadataV1Beta2_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationMetadataV1Beta2, target_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationMetadataV1Beta2, type_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationMetadataV1Beta2, request_),
   };
-  return offsets;
+  OperationMetadataV1Beta2_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      OperationMetadataV1Beta2_descriptor_,
+      OperationMetadataV1Beta2::internal_default_instance(),
+      OperationMetadataV1Beta2_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(OperationMetadataV1Beta2),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationMetadataV1Beta2, _internal_metadata_));
+  OperationType_descriptor_ = file->enum_type(0);
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(OperationMetadataV1Beta2)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_OperationMetadataV1Beta2_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/cloud/functions/v1beta2/operations.proto", schemas, file_default_instances, protobuf_Offsets_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto(), factory,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      OperationMetadataV1Beta2_descriptor_, OperationMetadataV1Beta2::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto() {
-  _OperationMetadataV1Beta2_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
+  OperationMetadataV1Beta2_default_instance_.Shutdown();
+  delete OperationMetadataV1Beta2_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto_impl() {
@@ -87,36 +85,35 @@ void protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2ep
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fany_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _OperationMetadataV1Beta2_default_instance_.DefaultConstruct();
-  _OperationMetadataV1Beta2_default_instance_.get_mutable()->request_ = const_cast< ::google::protobuf::Any*>(
-      ::google::protobuf::Any::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  OperationMetadataV1Beta2_default_instance_.DefaultConstruct();
+  OperationMetadataV1Beta2_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto_once_);
 void protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto();
-  static const char descriptor[] = {
-      "\n/google/cloud/functions/v1beta2/operati"
-      "ons.proto\022\036google.cloud.functions.v1beta"
-      "2\032\034google/api/annotations.proto\032\031google/"
-      "protobuf/any.proto\"\216\001\n\030OperationMetadata"
-      "V1Beta2\022\016\n\006target\030\001 \001(\t\022;\n\004type\030\002 \001(\0162-."
-      "google.cloud.functions.v1beta2.Operation"
-      "Type\022%\n\007request\030\003 \001(\0132\024.google.protobuf."
-      "Any*i\n\rOperationType\022\031\n\025OPERATION_UNSPEC"
-      "IFIED\020\000\022\023\n\017CREATE_FUNCTION\020\001\022\023\n\017UPDATE_F"
-      "UNCTION\020\002\022\023\n\017DELETE_FUNCTION\020\003B\211\001\n\"com.g"
-      "oogle.cloud.functions.v1beta2B\030Functions"
-      "OperationsProtoP\001ZGgoogle.golang.org/gen"
-      "proto/googleapis/cloud/functions/v1beta2"
-      ";functionsb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 538);
+    "\n/google/cloud/functions/v1beta2/operati"
+    "ons.proto\022\036google.cloud.functions.v1beta"
+    "2\032\034google/api/annotations.proto\032\031google/"
+    "protobuf/any.proto\"\216\001\n\030OperationMetadata"
+    "V1Beta2\022\016\n\006target\030\001 \001(\t\022;\n\004type\030\002 \001(\0162-."
+    "google.cloud.functions.v1beta2.Operation"
+    "Type\022%\n\007request\030\003 \001(\0132\024.google.protobuf."
+    "Any*i\n\rOperationType\022\031\n\025OPERATION_UNSPEC"
+    "IFIED\020\000\022\023\n\017CREATE_FUNCTION\020\001\022\023\n\017UPDATE_F"
+    "UNCTION\020\002\022\023\n\017DELETE_FUNCTION\020\003B\211\001\n\"com.g"
+    "oogle.cloud.functions.v1beta2B\030Functions"
+    "OperationsProtoP\001ZGgoogle.golang.org/gen"
+    "proto/googleapis/cloud/functions/v1beta2"
+    ";functionsb\006proto3", 538);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/cloud/functions/v1beta2/operations.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -137,7 +134,7 @@ struct StaticDescriptorInitializer_google_2fcloud_2ffunctions_2fv1beta2_2foperat
 } static_descriptor_initializer_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto_;
 const ::google::protobuf::EnumDescriptor* OperationType_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
+  return OperationType_descriptor_;
 }
 bool OperationType_IsValid(int value) {
   switch (value) {
@@ -152,6 +149,16 @@ bool OperationType_IsValid(int value) {
 }
 
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -162,34 +169,28 @@ const int OperationMetadataV1Beta2::kRequestFieldNumber;
 
 OperationMetadataV1Beta2::OperationMetadataV1Beta2()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.functions.v1beta2.OperationMetadataV1Beta2)
 }
+
+void OperationMetadataV1Beta2::InitAsDefaultInstance() {
+  request_ = const_cast< ::google::protobuf::Any*>(
+      ::google::protobuf::Any::internal_default_instance());
+}
+
 OperationMetadataV1Beta2::OperationMetadataV1Beta2(const OperationMetadataV1Beta2& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  target_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.target().size() > 0) {
-    target_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.target_);
-  }
-  if (from.has_request()) {
-    request_ = new ::google::protobuf::Any(*from.request_);
-  } else {
-    request_ = NULL;
-  }
-  type_ = from.type_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.functions.v1beta2.OperationMetadataV1Beta2)
 }
 
 void OperationMetadataV1Beta2::SharedCtor() {
   target_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&request_, 0, reinterpret_cast<char*>(&type_) -
-    reinterpret_cast<char*>(&request_) + sizeof(type_));
+  request_ = NULL;
+  type_ = 0;
   _cached_size_ = 0;
 }
 
@@ -200,7 +201,7 @@ OperationMetadataV1Beta2::~OperationMetadataV1Beta2() {
 
 void OperationMetadataV1Beta2::SharedDtor() {
   target_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &OperationMetadataV1Beta2_default_instance_.get()) {
     delete request_;
   }
 }
@@ -212,13 +213,15 @@ void OperationMetadataV1Beta2::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* OperationMetadataV1Beta2::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return OperationMetadataV1Beta2_descriptor_;
 }
 
 const OperationMetadataV1Beta2& OperationMetadataV1Beta2::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2ffunctions_2fv1beta2_2foperations_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<OperationMetadataV1Beta2> OperationMetadataV1Beta2_default_instance_;
 
 OperationMetadataV1Beta2* OperationMetadataV1Beta2::New(::google::protobuf::Arena* arena) const {
   OperationMetadataV1Beta2* n = new OperationMetadataV1Beta2;
@@ -231,11 +234,9 @@ OperationMetadataV1Beta2* OperationMetadataV1Beta2::New(::google::protobuf::Aren
 void OperationMetadataV1Beta2::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.functions.v1beta2.OperationMetadataV1Beta2)
   target_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && request_ != NULL) {
-    delete request_;
-  }
-  request_ = NULL;
   type_ = 0;
+  if (GetArenaNoVirtual() == NULL && request_ != NULL) delete request_;
+  request_ = NULL;
 }
 
 bool OperationMetadataV1Beta2::MergePartialFromCodedStream(
@@ -244,13 +245,13 @@ bool OperationMetadataV1Beta2::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.functions.v1beta2.OperationMetadataV1Beta2)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string target = 1;
+      // optional string target = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_target()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -260,12 +261,14 @@ bool OperationMetadataV1Beta2::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_type;
         break;
       }
 
-      // .google.cloud.functions.v1beta2.OperationType type = 2;
+      // optional .google.cloud.functions.v1beta2.OperationType type = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_type:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -274,17 +277,20 @@ bool OperationMetadataV1Beta2::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_request;
         break;
       }
 
-      // .google.protobuf.Any request = 3;
+      // optional .google.protobuf.Any request = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_request:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_request()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -312,7 +318,7 @@ failure:
 void OperationMetadataV1Beta2::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.functions.v1beta2.OperationMetadataV1Beta2)
-  // string target = 1;
+  // optional string target = 1;
   if (this->target().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->target().data(), this->target().length(),
@@ -322,13 +328,13 @@ void OperationMetadataV1Beta2::SerializeWithCachedSizes(
       1, this->target(), output);
   }
 
-  // .google.cloud.functions.v1beta2.OperationType type = 2;
+  // optional .google.cloud.functions.v1beta2.OperationType type = 2;
   if (this->type() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       2, this->type(), output);
   }
 
-  // .google.protobuf.Any request = 3;
+  // optional .google.protobuf.Any request = 3;
   if (this->has_request()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *this->request_, output);
@@ -341,7 +347,7 @@ void OperationMetadataV1Beta2::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.functions.v1beta2.OperationMetadataV1Beta2)
-  // string target = 1;
+  // optional string target = 1;
   if (this->target().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->target().data(), this->target().length(),
@@ -352,13 +358,13 @@ void OperationMetadataV1Beta2::SerializeWithCachedSizes(
         1, this->target(), target);
   }
 
-  // .google.cloud.functions.v1beta2.OperationType type = 2;
+  // optional .google.cloud.functions.v1beta2.OperationType type = 2;
   if (this->type() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       2, this->type(), target);
   }
 
-  // .google.protobuf.Any request = 3;
+  // optional .google.protobuf.Any request = 3;
   if (this->has_request()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -373,24 +379,24 @@ size_t OperationMetadataV1Beta2::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.functions.v1beta2.OperationMetadataV1Beta2)
   size_t total_size = 0;
 
-  // string target = 1;
+  // optional string target = 1;
   if (this->target().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->target());
   }
 
-  // .google.protobuf.Any request = 3;
+  // optional .google.cloud.functions.v1beta2.OperationType type = 2;
+  if (this->type() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
+  }
+
+  // optional .google.protobuf.Any request = 3;
   if (this->has_request()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->request_);
-  }
-
-  // .google.cloud.functions.v1beta2.OperationType type = 2;
-  if (this->type() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -402,7 +408,7 @@ size_t OperationMetadataV1Beta2::ByteSizeLong() const {
 
 void OperationMetadataV1Beta2::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.functions.v1beta2.OperationMetadataV1Beta2)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const OperationMetadataV1Beta2* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const OperationMetadataV1Beta2>(
           &from);
@@ -411,23 +417,30 @@ void OperationMetadataV1Beta2::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.functions.v1beta2.OperationMetadataV1Beta2)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void OperationMetadataV1Beta2::MergeFrom(const OperationMetadataV1Beta2& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.functions.v1beta2.OperationMetadataV1Beta2)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void OperationMetadataV1Beta2::UnsafeMergeFrom(const OperationMetadataV1Beta2& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.target().size() > 0) {
 
     target_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.target_);
   }
-  if (from.has_request()) {
-    mutable_request()->::google::protobuf::Any::MergeFrom(from.request());
-  }
   if (from.type() != 0) {
     set_type(from.type());
+  }
+  if (from.has_request()) {
+    mutable_request()->::google::protobuf::Any::MergeFrom(from.request());
   }
 }
 
@@ -442,10 +455,11 @@ void OperationMetadataV1Beta2::CopyFrom(const OperationMetadataV1Beta2& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.functions.v1beta2.OperationMetadataV1Beta2)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool OperationMetadataV1Beta2::IsInitialized() const {
+
   return true;
 }
 
@@ -455,26 +469,30 @@ void OperationMetadataV1Beta2::Swap(OperationMetadataV1Beta2* other) {
 }
 void OperationMetadataV1Beta2::InternalSwap(OperationMetadataV1Beta2* other) {
   target_.Swap(&other->target_);
-  std::swap(request_, other->request_);
   std::swap(type_, other->type_);
+  std::swap(request_, other->request_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata OperationMetadataV1Beta2::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = OperationMetadataV1Beta2_descriptor_;
+  metadata.reflection = OperationMetadataV1Beta2_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // OperationMetadataV1Beta2
 
-// string target = 1;
+// optional string target = 1;
 void OperationMetadataV1Beta2::clear_target() {
   target_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& OperationMetadataV1Beta2::target() const {
   // @@protoc_insertion_point(field_get:google.cloud.functions.v1beta2.OperationMetadataV1Beta2.target)
-  return target_.GetNoArena();
+  return target_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void OperationMetadataV1Beta2::set_target(const ::std::string& value) {
   
@@ -512,7 +530,7 @@ void OperationMetadataV1Beta2::set_allocated_target(::std::string* target) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.functions.v1beta2.OperationMetadataV1Beta2.target)
 }
 
-// .google.cloud.functions.v1beta2.OperationType type = 2;
+// optional .google.cloud.functions.v1beta2.OperationType type = 2;
 void OperationMetadataV1Beta2::clear_type() {
   type_ = 0;
 }
@@ -526,7 +544,7 @@ void OperationMetadataV1Beta2::set_type(::google::cloud::functions::v1beta2::Ope
   // @@protoc_insertion_point(field_set:google.cloud.functions.v1beta2.OperationMetadataV1Beta2.type)
 }
 
-// .google.protobuf.Any request = 3;
+// optional .google.protobuf.Any request = 3;
 bool OperationMetadataV1Beta2::has_request() const {
   return this != internal_default_instance() && request_ != NULL;
 }
@@ -565,6 +583,9 @@ void OperationMetadataV1Beta2::set_allocated_request(::google::protobuf::Any* re
   // @@protoc_insertion_point(field_set_allocated:google.cloud.functions.v1beta2.OperationMetadataV1Beta2.request)
 }
 
+inline const OperationMetadataV1Beta2* OperationMetadataV1Beta2::internal_default_instance() {
+  return &OperationMetadataV1Beta2_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

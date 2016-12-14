@@ -24,21 +24,11 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/label.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-class LabelDescriptor;
-class LabelDescriptorDefaultTypeInternal;
-extern LabelDescriptorDefaultTypeInternal _LabelDescriptor_default_instance_;
-class LogDescriptor;
-class LogDescriptorDefaultTypeInternal;
-extern LogDescriptorDefaultTypeInternal _LogDescriptor_default_instance_;
-}  // namespace api
-}  // namespace google
 
 namespace google {
 namespace api {
@@ -46,6 +36,10 @@ namespace api {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fapi_2flog_2eproto();
 void protobuf_InitDefaults_google_2fapi_2flog_2eproto();
+void protobuf_AssignDesc_google_2fapi_2flog_2eproto();
+void protobuf_ShutdownFile_google_2fapi_2flog_2eproto();
+
+class LogDescriptor;
 
 // ===================================================================
 
@@ -64,58 +58,55 @@ class LogDescriptor : public ::google::protobuf::Message /* @@protoc_insertion_p
   static const ::google::protobuf::Descriptor* descriptor();
   static const LogDescriptor& default_instance();
 
-  static inline const LogDescriptor* internal_default_instance() {
-    return reinterpret_cast<const LogDescriptor*>(
-               &_LogDescriptor_default_instance_);
-  }
+  static const LogDescriptor* internal_default_instance();
 
   void Swap(LogDescriptor* other);
 
   // implements Message ----------------------------------------------
 
-  inline LogDescriptor* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline LogDescriptor* New() const { return New(NULL); }
 
-  LogDescriptor* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  LogDescriptor* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const LogDescriptor& from);
   void MergeFrom(const LogDescriptor& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(LogDescriptor* other);
+  void UnsafeMergeFrom(const LogDescriptor& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -138,7 +129,7 @@ class LogDescriptor : public ::google::protobuf::Message /* @@protoc_insertion_p
   const ::google::protobuf::RepeatedPtrField< ::google::api::LabelDescriptor >&
       labels() const;
 
-  // string description = 3;
+  // optional string description = 3;
   void clear_description();
   static const int kDescriptionFieldNumber = 3;
   const ::std::string& description() const;
@@ -149,7 +140,7 @@ class LogDescriptor : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::std::string* release_description();
   void set_allocated_description(::std::string* description);
 
-  // string display_name = 4;
+  // optional string display_name = 4;
   void clear_display_name();
   static const int kDisplayNameFieldNumber = 4;
   const ::std::string& display_name() const;
@@ -171,10 +162,13 @@ class LogDescriptor : public ::google::protobuf::Message /* @@protoc_insertion_p
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2flog_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2flog_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2flog_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2flog_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2flog_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<LogDescriptor> LogDescriptor_default_instance_;
+
 // ===================================================================
 
 
@@ -183,13 +177,13 @@ class LogDescriptor : public ::google::protobuf::Message /* @@protoc_insertion_p
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // LogDescriptor
 
-// string name = 1;
+// optional string name = 1;
 inline void LogDescriptor::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& LogDescriptor::name() const {
   // @@protoc_insertion_point(field_get:google.api.LogDescriptor.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void LogDescriptor::set_name(const ::std::string& value) {
   
@@ -257,13 +251,13 @@ LogDescriptor::labels() const {
   return labels_;
 }
 
-// string description = 3;
+// optional string description = 3;
 inline void LogDescriptor::clear_description() {
   description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& LogDescriptor::description() const {
   // @@protoc_insertion_point(field_get:google.api.LogDescriptor.description)
-  return description_.GetNoArena();
+  return description_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void LogDescriptor::set_description(const ::std::string& value) {
   
@@ -301,13 +295,13 @@ inline void LogDescriptor::set_allocated_description(::std::string* description)
   // @@protoc_insertion_point(field_set_allocated:google.api.LogDescriptor.description)
 }
 
-// string display_name = 4;
+// optional string display_name = 4;
 inline void LogDescriptor::clear_display_name() {
   display_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& LogDescriptor::display_name() const {
   // @@protoc_insertion_point(field_get:google.api.LogDescriptor.display_name)
-  return display_name_.GetNoArena();
+  return display_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void LogDescriptor::set_display_name(const ::std::string& value) {
   
@@ -345,10 +339,12 @@ inline void LogDescriptor::set_allocated_display_name(::std::string* display_nam
   // @@protoc_insertion_point(field_set_allocated:google.api.LogDescriptor.display_name)
 }
 
+inline const LogDescriptor* LogDescriptor::internal_default_instance() {
+  return &LogDescriptor_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace api
 }  // namespace google

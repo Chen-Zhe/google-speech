@@ -26,22 +26,22 @@ namespace {
 
 }  // namespace
 
-inline ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv1_2fbigtable_5fservice_2eproto() { return NULL; }
-static const ::google::protobuf::internal::MigrationSchema* schemas = NULL;
-static const ::google::protobuf::internal::DefaultInstanceData* file_default_instances = NULL;
-namespace {
 
-void protobuf_AssignDescriptors() {
+void protobuf_AssignDesc_google_2fbigtable_2fv1_2fbigtable_5fservice_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fbigtable_2fv1_2fbigtable_5fservice_2eproto() {
   protobuf_AddDesc_google_2fbigtable_2fv1_2fbigtable_5fservice_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/bigtable/v1/bigtable_service.proto", schemas, file_default_instances, protobuf_Offsets_google_2fbigtable_2fv1_2fbigtable_5fservice_2eproto(), factory,
-      NULL, NULL, NULL);
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/bigtable/v1/bigtable_service.proto");
+  GOOGLE_CHECK(file != NULL);
 }
 
+namespace {
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fbigtable_2fv1_2fbigtable_5fservice_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
@@ -61,56 +61,55 @@ void protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fservice_2eproto_i
   ::google::bigtable::v1::protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   ::google::bigtable::v1::protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fservice_5fmessages_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fempty_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fservice_2eproto_once_);
 void protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fservice_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fservice_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fservice_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fservice_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fbigtable_2fv1_2fbigtable_5fservice_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fservice_2eproto();
-  static const char descriptor[] = {
-      "\n)google/bigtable/v1/bigtable_service.pr"
-      "oto\022\022google.bigtable.v1\032\034google/api/anno"
-      "tations.proto\032&google/bigtable/v1/bigtab"
-      "le_data.proto\0322google/bigtable/v1/bigtab"
-      "le_service_messages.proto\032\033google/protob"
-      "uf/empty.proto2\335\010\n\017BigtableService\022\245\001\n\010R"
-      "eadRows\022#.google.bigtable.v1.ReadRowsReq"
-      "uest\032$.google.bigtable.v1.ReadRowsRespon"
-      "se\"L\202\323\344\223\002F\"A/v1/{table_name=projects/*/z"
-      "ones/*/clusters/*/tables/*}/rows:read:\001*"
-      "0\001\022\267\001\n\rSampleRowKeys\022(.google.bigtable.v"
-      "1.SampleRowKeysRequest\032).google.bigtable"
-      ".v1.SampleRowKeysResponse\"O\202\323\344\223\002I\022G/v1/{"
-      "table_name=projects/*/zones/*/clusters/*"
-      "/tables/*}/rows:sampleKeys0\001\022\243\001\n\tMutateR"
-      "ow\022$.google.bigtable.v1.MutateRowRequest"
-      "\032\026.google.protobuf.Empty\"X\202\323\344\223\002R\"M/v1/{t"
-      "able_name=projects/*/zones/*/clusters/*/"
-      "tables/*}/rows/{row_key}:mutate:\001*\022\252\001\n\nM"
-      "utateRows\022%.google.bigtable.v1.MutateRow"
-      "sRequest\032&.google.bigtable.v1.MutateRows"
-      "Response\"M\202\323\344\223\002G\"B/v1/{table_name=projec"
-      "ts/*/zones/*/clusters/*/tables/*}:mutate"
-      "Rows:\001*\022\322\001\n\021CheckAndMutateRow\022,.google.b"
-      "igtable.v1.CheckAndMutateRowRequest\032-.go"
-      "ogle.bigtable.v1.CheckAndMutateRowRespon"
-      "se\"`\202\323\344\223\002Z\"U/v1/{table_name=projects/*/z"
-      "ones/*/clusters/*/tables/*}/rows/{row_ke"
-      "y}:checkAndMutate:\001*\022\277\001\n\022ReadModifyWrite"
-      "Row\022-.google.bigtable.v1.ReadModifyWrite"
-      "RowRequest\032\027.google.bigtable.v1.Row\"a\202\323\344"
-      "\223\002[\"V/v1/{table_name=projects/*/zones/*/"
-      "clusters/*/tables/*}/rows/{row_key}:read"
-      "ModifyWrite:\001*Bp\n\026com.google.bigtable.v1"
-      "B\025BigtableServicesProtoP\001Z:google.golang"
-      ".org/genproto/googleapis/bigtable/v1;big"
-      "table\210\001\001b\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1456);
+    "\n)google/bigtable/v1/bigtable_service.pr"
+    "oto\022\022google.bigtable.v1\032\034google/api/anno"
+    "tations.proto\032&google/bigtable/v1/bigtab"
+    "le_data.proto\0322google/bigtable/v1/bigtab"
+    "le_service_messages.proto\032\033google/protob"
+    "uf/empty.proto2\335\010\n\017BigtableService\022\245\001\n\010R"
+    "eadRows\022#.google.bigtable.v1.ReadRowsReq"
+    "uest\032$.google.bigtable.v1.ReadRowsRespon"
+    "se\"L\202\323\344\223\002F\"A/v1/{table_name=projects/*/z"
+    "ones/*/clusters/*/tables/*}/rows:read:\001*"
+    "0\001\022\267\001\n\rSampleRowKeys\022(.google.bigtable.v"
+    "1.SampleRowKeysRequest\032).google.bigtable"
+    ".v1.SampleRowKeysResponse\"O\202\323\344\223\002I\022G/v1/{"
+    "table_name=projects/*/zones/*/clusters/*"
+    "/tables/*}/rows:sampleKeys0\001\022\243\001\n\tMutateR"
+    "ow\022$.google.bigtable.v1.MutateRowRequest"
+    "\032\026.google.protobuf.Empty\"X\202\323\344\223\002R\"M/v1/{t"
+    "able_name=projects/*/zones/*/clusters/*/"
+    "tables/*}/rows/{row_key}:mutate:\001*\022\252\001\n\nM"
+    "utateRows\022%.google.bigtable.v1.MutateRow"
+    "sRequest\032&.google.bigtable.v1.MutateRows"
+    "Response\"M\202\323\344\223\002G\"B/v1/{table_name=projec"
+    "ts/*/zones/*/clusters/*/tables/*}:mutate"
+    "Rows:\001*\022\322\001\n\021CheckAndMutateRow\022,.google.b"
+    "igtable.v1.CheckAndMutateRowRequest\032-.go"
+    "ogle.bigtable.v1.CheckAndMutateRowRespon"
+    "se\"`\202\323\344\223\002Z\"U/v1/{table_name=projects/*/z"
+    "ones/*/clusters/*/tables/*}/rows/{row_ke"
+    "y}:checkAndMutate:\001*\022\277\001\n\022ReadModifyWrite"
+    "Row\022-.google.bigtable.v1.ReadModifyWrite"
+    "RowRequest\032\027.google.bigtable.v1.Row\"a\202\323\344"
+    "\223\002[\"V/v1/{table_name=projects/*/zones/*/"
+    "clusters/*/tables/*}/rows/{row_key}:read"
+    "ModifyWrite:\001*Bp\n\026com.google.bigtable.v1"
+    "B\025BigtableServicesProtoP\001Z:google.golang"
+    ".org/genproto/googleapis/bigtable/v1;big"
+    "table\210\001\001b\006proto3", 1456);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/bigtable/v1/bigtable_service.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();

@@ -19,92 +19,91 @@
 
 namespace google {
 namespace api {
-class LabelDescriptorDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<LabelDescriptor> {};
-LabelDescriptorDefaultTypeInternal _LabelDescriptor_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[1];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+const ::google::protobuf::Descriptor* LabelDescriptor_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  LabelDescriptor_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* LabelDescriptor_ValueType_descriptor_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2flabel_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2flabel_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LabelDescriptor, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fapi_2flabel_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fapi_2flabel_2eproto() {
+  protobuf_AddDesc_google_2fapi_2flabel_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/api/label.proto");
+  GOOGLE_CHECK(file != NULL);
+  LabelDescriptor_descriptor_ = file->message_type(0);
+  static const int LabelDescriptor_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LabelDescriptor, key_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LabelDescriptor, value_type_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LabelDescriptor, description_),
   };
-  return offsets;
+  LabelDescriptor_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      LabelDescriptor_descriptor_,
+      LabelDescriptor::internal_default_instance(),
+      LabelDescriptor_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(LabelDescriptor),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LabelDescriptor, _internal_metadata_));
+  LabelDescriptor_ValueType_descriptor_ = LabelDescriptor_descriptor_->enum_type(0);
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(LabelDescriptor)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_LabelDescriptor_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fapi_2flabel_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/api/label.proto", schemas, file_default_instances, protobuf_Offsets_google_2fapi_2flabel_2eproto(), factory,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fapi_2flabel_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      LabelDescriptor_descriptor_, LabelDescriptor::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2flabel_2eproto() {
-  _LabelDescriptor_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
+  LabelDescriptor_default_instance_.Shutdown();
+  delete LabelDescriptor_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fapi_2flabel_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _LabelDescriptor_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  LabelDescriptor_default_instance_.DefaultConstruct();
+  LabelDescriptor_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2flabel_2eproto_once_);
 void protobuf_InitDefaults_google_2fapi_2flabel_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fapi_2flabel_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2flabel_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2flabel_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fapi_2flabel_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fapi_2flabel_2eproto();
-  static const char descriptor[] = {
-      "\n\026google/api/label.proto\022\ngoogle.api\"\234\001\n"
-      "\017LabelDescriptor\022\013\n\003key\030\001 \001(\t\0229\n\nvalue_t"
-      "ype\030\002 \001(\0162%.google.api.LabelDescriptor.V"
-      "alueType\022\023\n\013description\030\003 \001(\t\",\n\tValueTy"
-      "pe\022\n\n\006STRING\020\000\022\010\n\004BOOL\020\001\022\t\n\005INT64\020\002B_\n\016c"
-      "om.google.apiB\nLabelProtoP\001Z5google.gola"
-      "ng.org/genproto/googleapis/api/label;lab"
-      "el\370\001\001\242\002\004GAPIb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 300);
+    "\n\026google/api/label.proto\022\ngoogle.api\"\234\001\n"
+    "\017LabelDescriptor\022\013\n\003key\030\001 \001(\t\0229\n\nvalue_t"
+    "ype\030\002 \001(\0162%.google.api.LabelDescriptor.V"
+    "alueType\022\023\n\013description\030\003 \001(\t\",\n\tValueTy"
+    "pe\022\n\n\006STRING\020\000\022\010\n\004BOOL\020\001\022\t\n\005INT64\020\002B_\n\016c"
+    "om.google.apiB\nLabelProtoP\001Z5google.gola"
+    "ng.org/genproto/googleapis/api/label;lab"
+    "el\370\001\001\242\002\004GAPIb\006proto3", 300);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/label.proto", &protobuf_RegisterTypes);
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fapi_2flabel_2eproto);
@@ -121,9 +120,22 @@ struct StaticDescriptorInitializer_google_2fapi_2flabel_2eproto {
     protobuf_AddDesc_google_2fapi_2flabel_2eproto();
   }
 } static_descriptor_initializer_google_2fapi_2flabel_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
+// ===================================================================
+
 const ::google::protobuf::EnumDescriptor* LabelDescriptor_ValueType_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
+  return LabelDescriptor_ValueType_descriptor_;
 }
 bool LabelDescriptor_ValueType_IsValid(int value) {
   switch (value) {
@@ -144,9 +156,6 @@ const LabelDescriptor_ValueType LabelDescriptor::ValueType_MIN;
 const LabelDescriptor_ValueType LabelDescriptor::ValueType_MAX;
 const int LabelDescriptor::ValueType_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-// ===================================================================
-
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int LabelDescriptor::kKeyFieldNumber;
 const int LabelDescriptor::kValueTypeFieldNumber;
@@ -155,9 +164,7 @@ const int LabelDescriptor::kDescriptionFieldNumber;
 
 LabelDescriptor::LabelDescriptor()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2flabel_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2flabel_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.LabelDescriptor)
 }
@@ -171,22 +178,15 @@ LabelDescriptor::LabelDescriptor(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.api.LabelDescriptor)
 }
+
+void LabelDescriptor::InitAsDefaultInstance() {
+}
+
 LabelDescriptor::LabelDescriptor(const LabelDescriptor& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.key().size() > 0) {
-    key_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.key(),
-      GetArenaNoVirtual());
-  }
-  description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.description().size() > 0) {
-    description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.description(),
-      GetArenaNoVirtual());
-  }
-  value_type_ = from.value_type_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.LabelDescriptor)
 }
 
@@ -225,13 +225,15 @@ void LabelDescriptor::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* LabelDescriptor::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return LabelDescriptor_descriptor_;
 }
 
 const LabelDescriptor& LabelDescriptor::default_instance() {
   protobuf_InitDefaults_google_2fapi_2flabel_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<LabelDescriptor> LabelDescriptor_default_instance_;
 
 LabelDescriptor* LabelDescriptor::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<LabelDescriptor>(arena);
@@ -240,8 +242,8 @@ LabelDescriptor* LabelDescriptor::New(::google::protobuf::Arena* arena) const {
 void LabelDescriptor::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.api.LabelDescriptor)
   key_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  description_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   value_type_ = 0;
+  description_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 
 bool LabelDescriptor::MergePartialFromCodedStream(
@@ -250,13 +252,13 @@ bool LabelDescriptor::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.LabelDescriptor)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string key = 1;
+      // optional string key = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_key()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -266,12 +268,14 @@ bool LabelDescriptor::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_value_type;
         break;
       }
 
-      // .google.api.LabelDescriptor.ValueType value_type = 2;
+      // optional .google.api.LabelDescriptor.ValueType value_type = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_value_type:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -280,12 +284,14 @@ bool LabelDescriptor::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_description;
         break;
       }
 
-      // string description = 3;
+      // optional string description = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_description:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_description()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -295,6 +301,7 @@ bool LabelDescriptor::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -322,7 +329,7 @@ failure:
 void LabelDescriptor::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.api.LabelDescriptor)
-  // string key = 1;
+  // optional string key = 1;
   if (this->key().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->key().data(), this->key().length(),
@@ -332,13 +339,13 @@ void LabelDescriptor::SerializeWithCachedSizes(
       1, this->key(), output);
   }
 
-  // .google.api.LabelDescriptor.ValueType value_type = 2;
+  // optional .google.api.LabelDescriptor.ValueType value_type = 2;
   if (this->value_type() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       2, this->value_type(), output);
   }
 
-  // string description = 3;
+  // optional string description = 3;
   if (this->description().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->description().data(), this->description().length(),
@@ -355,7 +362,7 @@ void LabelDescriptor::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.LabelDescriptor)
-  // string key = 1;
+  // optional string key = 1;
   if (this->key().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->key().data(), this->key().length(),
@@ -366,13 +373,13 @@ void LabelDescriptor::SerializeWithCachedSizes(
         1, this->key(), target);
   }
 
-  // .google.api.LabelDescriptor.ValueType value_type = 2;
+  // optional .google.api.LabelDescriptor.ValueType value_type = 2;
   if (this->value_type() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       2, this->value_type(), target);
   }
 
-  // string description = 3;
+  // optional string description = 3;
   if (this->description().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->description().data(), this->description().length(),
@@ -391,24 +398,24 @@ size_t LabelDescriptor::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.LabelDescriptor)
   size_t total_size = 0;
 
-  // string key = 1;
+  // optional string key = 1;
   if (this->key().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->key());
   }
 
-  // string description = 3;
+  // optional .google.api.LabelDescriptor.ValueType value_type = 2;
+  if (this->value_type() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->value_type());
+  }
+
+  // optional string description = 3;
   if (this->description().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->description());
-  }
-
-  // .google.api.LabelDescriptor.ValueType value_type = 2;
-  if (this->value_type() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->value_type());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -420,7 +427,7 @@ size_t LabelDescriptor::ByteSizeLong() const {
 
 void LabelDescriptor::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.LabelDescriptor)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const LabelDescriptor* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const LabelDescriptor>(
           &from);
@@ -429,22 +436,29 @@ void LabelDescriptor::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.LabelDescriptor)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void LabelDescriptor::MergeFrom(const LabelDescriptor& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.LabelDescriptor)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void LabelDescriptor::UnsafeMergeFrom(const LabelDescriptor& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.key().size() > 0) {
     set_key(from.key());
   }
-  if (from.description().size() > 0) {
-    set_description(from.description());
-  }
   if (from.value_type() != 0) {
     set_value_type(from.value_type());
+  }
+  if (from.description().size() > 0) {
+    set_description(from.description());
   }
 }
 
@@ -459,10 +473,11 @@ void LabelDescriptor::CopyFrom(const LabelDescriptor& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.LabelDescriptor)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool LabelDescriptor::IsInitialized() const {
+
   return true;
 }
 
@@ -471,13 +486,10 @@ void LabelDescriptor::Swap(LabelDescriptor* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    LabelDescriptor* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    LabelDescriptor temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void LabelDescriptor::UnsafeArenaSwap(LabelDescriptor* other) {
@@ -487,26 +499,30 @@ void LabelDescriptor::UnsafeArenaSwap(LabelDescriptor* other) {
 }
 void LabelDescriptor::InternalSwap(LabelDescriptor* other) {
   key_.Swap(&other->key_);
-  description_.Swap(&other->description_);
   std::swap(value_type_, other->value_type_);
+  description_.Swap(&other->description_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata LabelDescriptor::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = LabelDescriptor_descriptor_;
+  metadata.reflection = LabelDescriptor_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // LabelDescriptor
 
-// string key = 1;
+// optional string key = 1;
 void LabelDescriptor::clear_key() {
   key_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& LabelDescriptor::key() const {
   // @@protoc_insertion_point(field_get:google.api.LabelDescriptor.key)
-  return key_.Get();
+  return key_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void LabelDescriptor::set_key(const ::std::string& value) {
   
@@ -566,7 +582,7 @@ void LabelDescriptor::unsafe_arena_set_allocated_key(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.api.LabelDescriptor.key)
 }
 
-// .google.api.LabelDescriptor.ValueType value_type = 2;
+// optional .google.api.LabelDescriptor.ValueType value_type = 2;
 void LabelDescriptor::clear_value_type() {
   value_type_ = 0;
 }
@@ -580,13 +596,13 @@ void LabelDescriptor::set_value_type(::google::api::LabelDescriptor_ValueType va
   // @@protoc_insertion_point(field_set:google.api.LabelDescriptor.value_type)
 }
 
-// string description = 3;
+// optional string description = 3;
 void LabelDescriptor::clear_description() {
   description_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& LabelDescriptor::description() const {
   // @@protoc_insertion_point(field_get:google.api.LabelDescriptor.description)
-  return description_.Get();
+  return description_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void LabelDescriptor::set_description(const ::std::string& value) {
   
@@ -646,6 +662,9 @@ void LabelDescriptor::unsafe_arena_set_allocated_description(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.api.LabelDescriptor.description)
 }
 
+inline const LabelDescriptor* LabelDescriptor::internal_default_instance() {
+  return &LabelDescriptor_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

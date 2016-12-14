@@ -24,28 +24,12 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include <google/protobuf/duration.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace logging {
-namespace type {
-class HttpRequest;
-class HttpRequestDefaultTypeInternal;
-extern HttpRequestDefaultTypeInternal _HttpRequest_default_instance_;
-}  // namespace type
-}  // namespace logging
-namespace protobuf {
-class Duration;
-class DurationDefaultTypeInternal;
-extern DurationDefaultTypeInternal _Duration_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace logging {
@@ -54,6 +38,10 @@ namespace type {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2flogging_2ftype_2fhttp_5frequest_2eproto();
 void protobuf_InitDefaults_google_2flogging_2ftype_2fhttp_5frequest_2eproto();
+void protobuf_AssignDesc_google_2flogging_2ftype_2fhttp_5frequest_2eproto();
+void protobuf_ShutdownFile_google_2flogging_2ftype_2fhttp_5frequest_2eproto();
+
+class HttpRequest;
 
 // ===================================================================
 
@@ -72,58 +60,55 @@ class HttpRequest : public ::google::protobuf::Message /* @@protoc_insertion_poi
   static const ::google::protobuf::Descriptor* descriptor();
   static const HttpRequest& default_instance();
 
-  static inline const HttpRequest* internal_default_instance() {
-    return reinterpret_cast<const HttpRequest*>(
-               &_HttpRequest_default_instance_);
-  }
+  static const HttpRequest* internal_default_instance();
 
   void Swap(HttpRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline HttpRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline HttpRequest* New() const { return New(NULL); }
 
-  HttpRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  HttpRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const HttpRequest& from);
   void MergeFrom(const HttpRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(HttpRequest* other);
+  void UnsafeMergeFrom(const HttpRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string request_method = 1;
+  // optional string request_method = 1;
   void clear_request_method();
   static const int kRequestMethodFieldNumber = 1;
   const ::std::string& request_method() const;
@@ -134,7 +119,7 @@ class HttpRequest : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::std::string* release_request_method();
   void set_allocated_request_method(::std::string* request_method);
 
-  // string request_url = 2;
+  // optional string request_url = 2;
   void clear_request_url();
   static const int kRequestUrlFieldNumber = 2;
   const ::std::string& request_url() const;
@@ -145,25 +130,25 @@ class HttpRequest : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::std::string* release_request_url();
   void set_allocated_request_url(::std::string* request_url);
 
-  // int64 request_size = 3;
+  // optional int64 request_size = 3;
   void clear_request_size();
   static const int kRequestSizeFieldNumber = 3;
   ::google::protobuf::int64 request_size() const;
   void set_request_size(::google::protobuf::int64 value);
 
-  // int32 status = 4;
+  // optional int32 status = 4;
   void clear_status();
   static const int kStatusFieldNumber = 4;
   ::google::protobuf::int32 status() const;
   void set_status(::google::protobuf::int32 value);
 
-  // int64 response_size = 5;
+  // optional int64 response_size = 5;
   void clear_response_size();
   static const int kResponseSizeFieldNumber = 5;
   ::google::protobuf::int64 response_size() const;
   void set_response_size(::google::protobuf::int64 value);
 
-  // string user_agent = 6;
+  // optional string user_agent = 6;
   void clear_user_agent();
   static const int kUserAgentFieldNumber = 6;
   const ::std::string& user_agent() const;
@@ -174,7 +159,7 @@ class HttpRequest : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::std::string* release_user_agent();
   void set_allocated_user_agent(::std::string* user_agent);
 
-  // string remote_ip = 7;
+  // optional string remote_ip = 7;
   void clear_remote_ip();
   static const int kRemoteIpFieldNumber = 7;
   const ::std::string& remote_ip() const;
@@ -185,7 +170,7 @@ class HttpRequest : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::std::string* release_remote_ip();
   void set_allocated_remote_ip(::std::string* remote_ip);
 
-  // string server_ip = 13;
+  // optional string server_ip = 13;
   void clear_server_ip();
   static const int kServerIpFieldNumber = 13;
   const ::std::string& server_ip() const;
@@ -196,7 +181,7 @@ class HttpRequest : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::std::string* release_server_ip();
   void set_allocated_server_ip(::std::string* server_ip);
 
-  // string referer = 8;
+  // optional string referer = 8;
   void clear_referer();
   static const int kRefererFieldNumber = 8;
   const ::std::string& referer() const;
@@ -207,7 +192,7 @@ class HttpRequest : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::std::string* release_referer();
   void set_allocated_referer(::std::string* referer);
 
-  // .google.protobuf.Duration latency = 14;
+  // optional .google.protobuf.Duration latency = 14;
   bool has_latency() const;
   void clear_latency();
   static const int kLatencyFieldNumber = 14;
@@ -216,25 +201,25 @@ class HttpRequest : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::google::protobuf::Duration* release_latency();
   void set_allocated_latency(::google::protobuf::Duration* latency);
 
-  // bool cache_lookup = 11;
+  // optional bool cache_lookup = 11;
   void clear_cache_lookup();
   static const int kCacheLookupFieldNumber = 11;
   bool cache_lookup() const;
   void set_cache_lookup(bool value);
 
-  // bool cache_hit = 9;
+  // optional bool cache_hit = 9;
   void clear_cache_hit();
   static const int kCacheHitFieldNumber = 9;
   bool cache_hit() const;
   void set_cache_hit(bool value);
 
-  // bool cache_validated_with_origin_server = 10;
+  // optional bool cache_validated_with_origin_server = 10;
   void clear_cache_validated_with_origin_server();
   static const int kCacheValidatedWithOriginServerFieldNumber = 10;
   bool cache_validated_with_origin_server() const;
   void set_cache_validated_with_origin_server(bool value);
 
-  // int64 cache_fill_bytes = 12;
+  // optional int64 cache_fill_bytes = 12;
   void clear_cache_fill_bytes();
   static const int kCacheFillBytesFieldNumber = 12;
   ::google::protobuf::int64 cache_fill_bytes() const;
@@ -261,10 +246,13 @@ class HttpRequest : public ::google::protobuf::Message /* @@protoc_insertion_poi
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2flogging_2ftype_2fhttp_5frequest_2eproto_impl();
   friend void  protobuf_AddDesc_google_2flogging_2ftype_2fhttp_5frequest_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2flogging_2ftype_2fhttp_5frequest_2eproto();
+  friend void protobuf_AssignDesc_google_2flogging_2ftype_2fhttp_5frequest_2eproto();
   friend void protobuf_ShutdownFile_google_2flogging_2ftype_2fhttp_5frequest_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<HttpRequest> HttpRequest_default_instance_;
+
 // ===================================================================
 
 
@@ -273,13 +261,13 @@ class HttpRequest : public ::google::protobuf::Message /* @@protoc_insertion_poi
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // HttpRequest
 
-// string request_method = 1;
+// optional string request_method = 1;
 inline void HttpRequest::clear_request_method() {
   request_method_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& HttpRequest::request_method() const {
   // @@protoc_insertion_point(field_get:google.logging.type.HttpRequest.request_method)
-  return request_method_.GetNoArena();
+  return request_method_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void HttpRequest::set_request_method(const ::std::string& value) {
   
@@ -317,13 +305,13 @@ inline void HttpRequest::set_allocated_request_method(::std::string* request_met
   // @@protoc_insertion_point(field_set_allocated:google.logging.type.HttpRequest.request_method)
 }
 
-// string request_url = 2;
+// optional string request_url = 2;
 inline void HttpRequest::clear_request_url() {
   request_url_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& HttpRequest::request_url() const {
   // @@protoc_insertion_point(field_get:google.logging.type.HttpRequest.request_url)
-  return request_url_.GetNoArena();
+  return request_url_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void HttpRequest::set_request_url(const ::std::string& value) {
   
@@ -361,7 +349,7 @@ inline void HttpRequest::set_allocated_request_url(::std::string* request_url) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.type.HttpRequest.request_url)
 }
 
-// int64 request_size = 3;
+// optional int64 request_size = 3;
 inline void HttpRequest::clear_request_size() {
   request_size_ = GOOGLE_LONGLONG(0);
 }
@@ -375,7 +363,7 @@ inline void HttpRequest::set_request_size(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.logging.type.HttpRequest.request_size)
 }
 
-// int32 status = 4;
+// optional int32 status = 4;
 inline void HttpRequest::clear_status() {
   status_ = 0;
 }
@@ -389,7 +377,7 @@ inline void HttpRequest::set_status(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.logging.type.HttpRequest.status)
 }
 
-// int64 response_size = 5;
+// optional int64 response_size = 5;
 inline void HttpRequest::clear_response_size() {
   response_size_ = GOOGLE_LONGLONG(0);
 }
@@ -403,13 +391,13 @@ inline void HttpRequest::set_response_size(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.logging.type.HttpRequest.response_size)
 }
 
-// string user_agent = 6;
+// optional string user_agent = 6;
 inline void HttpRequest::clear_user_agent() {
   user_agent_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& HttpRequest::user_agent() const {
   // @@protoc_insertion_point(field_get:google.logging.type.HttpRequest.user_agent)
-  return user_agent_.GetNoArena();
+  return user_agent_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void HttpRequest::set_user_agent(const ::std::string& value) {
   
@@ -447,13 +435,13 @@ inline void HttpRequest::set_allocated_user_agent(::std::string* user_agent) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.type.HttpRequest.user_agent)
 }
 
-// string remote_ip = 7;
+// optional string remote_ip = 7;
 inline void HttpRequest::clear_remote_ip() {
   remote_ip_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& HttpRequest::remote_ip() const {
   // @@protoc_insertion_point(field_get:google.logging.type.HttpRequest.remote_ip)
-  return remote_ip_.GetNoArena();
+  return remote_ip_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void HttpRequest::set_remote_ip(const ::std::string& value) {
   
@@ -491,13 +479,13 @@ inline void HttpRequest::set_allocated_remote_ip(::std::string* remote_ip) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.type.HttpRequest.remote_ip)
 }
 
-// string server_ip = 13;
+// optional string server_ip = 13;
 inline void HttpRequest::clear_server_ip() {
   server_ip_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& HttpRequest::server_ip() const {
   // @@protoc_insertion_point(field_get:google.logging.type.HttpRequest.server_ip)
-  return server_ip_.GetNoArena();
+  return server_ip_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void HttpRequest::set_server_ip(const ::std::string& value) {
   
@@ -535,13 +523,13 @@ inline void HttpRequest::set_allocated_server_ip(::std::string* server_ip) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.type.HttpRequest.server_ip)
 }
 
-// string referer = 8;
+// optional string referer = 8;
 inline void HttpRequest::clear_referer() {
   referer_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& HttpRequest::referer() const {
   // @@protoc_insertion_point(field_get:google.logging.type.HttpRequest.referer)
-  return referer_.GetNoArena();
+  return referer_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void HttpRequest::set_referer(const ::std::string& value) {
   
@@ -579,7 +567,7 @@ inline void HttpRequest::set_allocated_referer(::std::string* referer) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.type.HttpRequest.referer)
 }
 
-// .google.protobuf.Duration latency = 14;
+// optional .google.protobuf.Duration latency = 14;
 inline bool HttpRequest::has_latency() const {
   return this != internal_default_instance() && latency_ != NULL;
 }
@@ -623,7 +611,7 @@ inline void HttpRequest::set_allocated_latency(::google::protobuf::Duration* lat
   // @@protoc_insertion_point(field_set_allocated:google.logging.type.HttpRequest.latency)
 }
 
-// bool cache_lookup = 11;
+// optional bool cache_lookup = 11;
 inline void HttpRequest::clear_cache_lookup() {
   cache_lookup_ = false;
 }
@@ -637,7 +625,7 @@ inline void HttpRequest::set_cache_lookup(bool value) {
   // @@protoc_insertion_point(field_set:google.logging.type.HttpRequest.cache_lookup)
 }
 
-// bool cache_hit = 9;
+// optional bool cache_hit = 9;
 inline void HttpRequest::clear_cache_hit() {
   cache_hit_ = false;
 }
@@ -651,7 +639,7 @@ inline void HttpRequest::set_cache_hit(bool value) {
   // @@protoc_insertion_point(field_set:google.logging.type.HttpRequest.cache_hit)
 }
 
-// bool cache_validated_with_origin_server = 10;
+// optional bool cache_validated_with_origin_server = 10;
 inline void HttpRequest::clear_cache_validated_with_origin_server() {
   cache_validated_with_origin_server_ = false;
 }
@@ -665,7 +653,7 @@ inline void HttpRequest::set_cache_validated_with_origin_server(bool value) {
   // @@protoc_insertion_point(field_set:google.logging.type.HttpRequest.cache_validated_with_origin_server)
 }
 
-// int64 cache_fill_bytes = 12;
+// optional int64 cache_fill_bytes = 12;
 inline void HttpRequest::clear_cache_fill_bytes() {
   cache_fill_bytes_ = GOOGLE_LONGLONG(0);
 }
@@ -679,10 +667,12 @@ inline void HttpRequest::set_cache_fill_bytes(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.logging.type.HttpRequest.cache_fill_bytes)
 }
 
+inline const HttpRequest* HttpRequest::internal_default_instance() {
+  return &HttpRequest_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace type
 }  // namespace logging

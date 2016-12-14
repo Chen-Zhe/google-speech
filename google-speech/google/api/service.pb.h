@@ -24,8 +24,8 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include "google/api/auth.pb.h"
@@ -48,165 +48,6 @@
 #include <google/protobuf/type.pb.h>
 #include <google/protobuf/wrappers.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-class AuthProvider;
-class AuthProviderDefaultTypeInternal;
-extern AuthProviderDefaultTypeInternal _AuthProvider_default_instance_;
-class AuthRequirement;
-class AuthRequirementDefaultTypeInternal;
-extern AuthRequirementDefaultTypeInternal _AuthRequirement_default_instance_;
-class Authentication;
-class AuthenticationDefaultTypeInternal;
-extern AuthenticationDefaultTypeInternal _Authentication_default_instance_;
-class AuthenticationRule;
-class AuthenticationRuleDefaultTypeInternal;
-extern AuthenticationRuleDefaultTypeInternal _AuthenticationRule_default_instance_;
-class Backend;
-class BackendDefaultTypeInternal;
-extern BackendDefaultTypeInternal _Backend_default_instance_;
-class BackendRule;
-class BackendRuleDefaultTypeInternal;
-extern BackendRuleDefaultTypeInternal _BackendRule_default_instance_;
-class Context;
-class ContextDefaultTypeInternal;
-extern ContextDefaultTypeInternal _Context_default_instance_;
-class ContextRule;
-class ContextRuleDefaultTypeInternal;
-extern ContextRuleDefaultTypeInternal _ContextRule_default_instance_;
-class Control;
-class ControlDefaultTypeInternal;
-extern ControlDefaultTypeInternal _Control_default_instance_;
-class CustomHttpPattern;
-class CustomHttpPatternDefaultTypeInternal;
-extern CustomHttpPatternDefaultTypeInternal _CustomHttpPattern_default_instance_;
-class Documentation;
-class DocumentationDefaultTypeInternal;
-extern DocumentationDefaultTypeInternal _Documentation_default_instance_;
-class DocumentationRule;
-class DocumentationRuleDefaultTypeInternal;
-extern DocumentationRuleDefaultTypeInternal _DocumentationRule_default_instance_;
-class Endpoint;
-class EndpointDefaultTypeInternal;
-extern EndpointDefaultTypeInternal _Endpoint_default_instance_;
-class Http;
-class HttpDefaultTypeInternal;
-extern HttpDefaultTypeInternal _Http_default_instance_;
-class HttpRule;
-class HttpRuleDefaultTypeInternal;
-extern HttpRuleDefaultTypeInternal _HttpRule_default_instance_;
-class LabelDescriptor;
-class LabelDescriptorDefaultTypeInternal;
-extern LabelDescriptorDefaultTypeInternal _LabelDescriptor_default_instance_;
-class LogDescriptor;
-class LogDescriptorDefaultTypeInternal;
-extern LogDescriptorDefaultTypeInternal _LogDescriptor_default_instance_;
-class Logging;
-class LoggingDefaultTypeInternal;
-extern LoggingDefaultTypeInternal _Logging_default_instance_;
-class Logging_LoggingDestination;
-class Logging_LoggingDestinationDefaultTypeInternal;
-extern Logging_LoggingDestinationDefaultTypeInternal _Logging_LoggingDestination_default_instance_;
-class Metric;
-class MetricDefaultTypeInternal;
-extern MetricDefaultTypeInternal _Metric_default_instance_;
-class MetricDescriptor;
-class MetricDescriptorDefaultTypeInternal;
-extern MetricDescriptorDefaultTypeInternal _MetricDescriptor_default_instance_;
-class MonitoredResource;
-class MonitoredResourceDefaultTypeInternal;
-extern MonitoredResourceDefaultTypeInternal _MonitoredResource_default_instance_;
-class MonitoredResourceDescriptor;
-class MonitoredResourceDescriptorDefaultTypeInternal;
-extern MonitoredResourceDescriptorDefaultTypeInternal _MonitoredResourceDescriptor_default_instance_;
-class Monitoring;
-class MonitoringDefaultTypeInternal;
-extern MonitoringDefaultTypeInternal _Monitoring_default_instance_;
-class Monitoring_MonitoringDestination;
-class Monitoring_MonitoringDestinationDefaultTypeInternal;
-extern Monitoring_MonitoringDestinationDefaultTypeInternal _Monitoring_MonitoringDestination_default_instance_;
-class OAuthRequirements;
-class OAuthRequirementsDefaultTypeInternal;
-extern OAuthRequirementsDefaultTypeInternal _OAuthRequirements_default_instance_;
-class Page;
-class PageDefaultTypeInternal;
-extern PageDefaultTypeInternal _Page_default_instance_;
-class Service;
-class ServiceDefaultTypeInternal;
-extern ServiceDefaultTypeInternal _Service_default_instance_;
-class SystemParameter;
-class SystemParameterDefaultTypeInternal;
-extern SystemParameterDefaultTypeInternal _SystemParameter_default_instance_;
-class SystemParameterRule;
-class SystemParameterRuleDefaultTypeInternal;
-extern SystemParameterRuleDefaultTypeInternal _SystemParameterRule_default_instance_;
-class SystemParameters;
-class SystemParametersDefaultTypeInternal;
-extern SystemParametersDefaultTypeInternal _SystemParameters_default_instance_;
-class Usage;
-class UsageDefaultTypeInternal;
-extern UsageDefaultTypeInternal _Usage_default_instance_;
-class UsageRule;
-class UsageRuleDefaultTypeInternal;
-extern UsageRuleDefaultTypeInternal _UsageRule_default_instance_;
-}  // namespace api
-namespace protobuf {
-class Any;
-class AnyDefaultTypeInternal;
-extern AnyDefaultTypeInternal _Any_default_instance_;
-class Api;
-class ApiDefaultTypeInternal;
-extern ApiDefaultTypeInternal _Api_default_instance_;
-class BoolValue;
-class BoolValueDefaultTypeInternal;
-extern BoolValueDefaultTypeInternal _BoolValue_default_instance_;
-class BytesValue;
-class BytesValueDefaultTypeInternal;
-extern BytesValueDefaultTypeInternal _BytesValue_default_instance_;
-class DoubleValue;
-class DoubleValueDefaultTypeInternal;
-extern DoubleValueDefaultTypeInternal _DoubleValue_default_instance_;
-class Enum;
-class EnumDefaultTypeInternal;
-extern EnumDefaultTypeInternal _Enum_default_instance_;
-class EnumValue;
-class EnumValueDefaultTypeInternal;
-extern EnumValueDefaultTypeInternal _EnumValue_default_instance_;
-class Field;
-class FieldDefaultTypeInternal;
-extern FieldDefaultTypeInternal _Field_default_instance_;
-class FloatValue;
-class FloatValueDefaultTypeInternal;
-extern FloatValueDefaultTypeInternal _FloatValue_default_instance_;
-class Int32Value;
-class Int32ValueDefaultTypeInternal;
-extern Int32ValueDefaultTypeInternal _Int32Value_default_instance_;
-class Int64Value;
-class Int64ValueDefaultTypeInternal;
-extern Int64ValueDefaultTypeInternal _Int64Value_default_instance_;
-class Method;
-class MethodDefaultTypeInternal;
-extern MethodDefaultTypeInternal _Method_default_instance_;
-class Mixin;
-class MixinDefaultTypeInternal;
-extern MixinDefaultTypeInternal _Mixin_default_instance_;
-class Option;
-class OptionDefaultTypeInternal;
-extern OptionDefaultTypeInternal _Option_default_instance_;
-class StringValue;
-class StringValueDefaultTypeInternal;
-extern StringValueDefaultTypeInternal _StringValue_default_instance_;
-class Type;
-class TypeDefaultTypeInternal;
-extern TypeDefaultTypeInternal _Type_default_instance_;
-class UInt32Value;
-class UInt32ValueDefaultTypeInternal;
-extern UInt32ValueDefaultTypeInternal _UInt32Value_default_instance_;
-class UInt64Value;
-class UInt64ValueDefaultTypeInternal;
-extern UInt64ValueDefaultTypeInternal _UInt64Value_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace api {
@@ -214,6 +55,10 @@ namespace api {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fapi_2fservice_2eproto();
 void protobuf_InitDefaults_google_2fapi_2fservice_2eproto();
+void protobuf_AssignDesc_google_2fapi_2fservice_2eproto();
+void protobuf_ShutdownFile_google_2fapi_2fservice_2eproto();
+
+class Service;
 
 // ===================================================================
 
@@ -232,58 +77,55 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   static const ::google::protobuf::Descriptor* descriptor();
   static const Service& default_instance();
 
-  static inline const Service* internal_default_instance() {
-    return reinterpret_cast<const Service*>(
-               &_Service_default_instance_);
-  }
+  static const Service* internal_default_instance();
 
   void Swap(Service* other);
 
   // implements Message ----------------------------------------------
 
-  inline Service* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Service* New() const { return New(NULL); }
 
-  Service* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Service* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Service& from);
   void MergeFrom(const Service& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Service* other);
+  void UnsafeMergeFrom(const Service& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.protobuf.UInt32Value config_version = 20;
+  // optional .google.protobuf.UInt32Value config_version = 20;
   bool has_config_version() const;
   void clear_config_version();
   static const int kConfigVersionFieldNumber = 20;
@@ -292,7 +134,7 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::google::protobuf::UInt32Value* release_config_version();
   void set_allocated_config_version(::google::protobuf::UInt32Value* config_version);
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -303,7 +145,7 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // string id = 33;
+  // optional string id = 33;
   void clear_id();
   static const int kIdFieldNumber = 33;
   const ::std::string& id() const;
@@ -314,7 +156,7 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_id();
   void set_allocated_id(::std::string* id);
 
-  // string title = 2;
+  // optional string title = 2;
   void clear_title();
   static const int kTitleFieldNumber = 2;
   const ::std::string& title() const;
@@ -325,7 +167,7 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_title();
   void set_allocated_title(::std::string* title);
 
-  // string producer_project_id = 22;
+  // optional string producer_project_id = 22;
   void clear_producer_project_id();
   static const int kProducerProjectIdFieldNumber = 22;
   const ::std::string& producer_project_id() const;
@@ -372,7 +214,7 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   const ::google::protobuf::RepeatedPtrField< ::google::protobuf::Enum >&
       enums() const;
 
-  // .google.api.Documentation documentation = 6;
+  // optional .google.api.Documentation documentation = 6;
   bool has_documentation() const;
   void clear_documentation();
   static const int kDocumentationFieldNumber = 6;
@@ -381,7 +223,7 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::google::api::Documentation* release_documentation();
   void set_allocated_documentation(::google::api::Documentation* documentation);
 
-  // .google.api.Backend backend = 8;
+  // optional .google.api.Backend backend = 8;
   bool has_backend() const;
   void clear_backend();
   static const int kBackendFieldNumber = 8;
@@ -390,7 +232,7 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::google::api::Backend* release_backend();
   void set_allocated_backend(::google::api::Backend* backend);
 
-  // .google.api.Http http = 9;
+  // optional .google.api.Http http = 9;
   bool has_http() const;
   void clear_http();
   static const int kHttpFieldNumber = 9;
@@ -399,7 +241,7 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::google::api::Http* release_http();
   void set_allocated_http(::google::api::Http* http);
 
-  // .google.api.Authentication authentication = 11;
+  // optional .google.api.Authentication authentication = 11;
   bool has_authentication() const;
   void clear_authentication();
   static const int kAuthenticationFieldNumber = 11;
@@ -408,7 +250,7 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::google::api::Authentication* release_authentication();
   void set_allocated_authentication(::google::api::Authentication* authentication);
 
-  // .google.api.Context context = 12;
+  // optional .google.api.Context context = 12;
   bool has_context() const;
   void clear_context();
   static const int kContextFieldNumber = 12;
@@ -417,7 +259,7 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::google::api::Context* release_context();
   void set_allocated_context(::google::api::Context* context);
 
-  // .google.api.Usage usage = 15;
+  // optional .google.api.Usage usage = 15;
   bool has_usage() const;
   void clear_usage();
   static const int kUsageFieldNumber = 15;
@@ -438,7 +280,7 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   const ::google::protobuf::RepeatedPtrField< ::google::api::Endpoint >&
       endpoints() const;
 
-  // .google.api.Control control = 21;
+  // optional .google.api.Control control = 21;
   bool has_control() const;
   void clear_control();
   static const int kControlFieldNumber = 21;
@@ -483,7 +325,7 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   const ::google::protobuf::RepeatedPtrField< ::google::api::MonitoredResourceDescriptor >&
       monitored_resources() const;
 
-  // .google.api.Logging logging = 27;
+  // optional .google.api.Logging logging = 27;
   bool has_logging() const;
   void clear_logging();
   static const int kLoggingFieldNumber = 27;
@@ -492,7 +334,7 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::google::api::Logging* release_logging();
   void set_allocated_logging(::google::api::Logging* logging);
 
-  // .google.api.Monitoring monitoring = 28;
+  // optional .google.api.Monitoring monitoring = 28;
   bool has_monitoring() const;
   void clear_monitoring();
   static const int kMonitoringFieldNumber = 28;
@@ -501,7 +343,7 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::google::api::Monitoring* release_monitoring();
   void set_allocated_monitoring(::google::api::Monitoring* monitoring);
 
-  // .google.api.SystemParameters system_parameters = 29;
+  // optional .google.api.SystemParameters system_parameters = 29;
   bool has_system_parameters() const;
   void clear_system_parameters();
   static const int kSystemParametersFieldNumber = 29;
@@ -539,10 +381,13 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Service> Service_default_instance_;
+
 // ===================================================================
 
 
@@ -551,7 +396,7 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Service
 
-// .google.protobuf.UInt32Value config_version = 20;
+// optional .google.protobuf.UInt32Value config_version = 20;
 inline bool Service::has_config_version() const {
   return this != internal_default_instance() && config_version_ != NULL;
 }
@@ -595,13 +440,13 @@ inline void Service::set_allocated_config_version(::google::protobuf::UInt32Valu
   // @@protoc_insertion_point(field_set_allocated:google.api.Service.config_version)
 }
 
-// string name = 1;
+// optional string name = 1;
 inline void Service::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Service::name() const {
   // @@protoc_insertion_point(field_get:google.api.Service.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Service::set_name(const ::std::string& value) {
   
@@ -639,13 +484,13 @@ inline void Service::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.api.Service.name)
 }
 
-// string id = 33;
+// optional string id = 33;
 inline void Service::clear_id() {
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Service::id() const {
   // @@protoc_insertion_point(field_get:google.api.Service.id)
-  return id_.GetNoArena();
+  return id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Service::set_id(const ::std::string& value) {
   
@@ -683,13 +528,13 @@ inline void Service::set_allocated_id(::std::string* id) {
   // @@protoc_insertion_point(field_set_allocated:google.api.Service.id)
 }
 
-// string title = 2;
+// optional string title = 2;
 inline void Service::clear_title() {
   title_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Service::title() const {
   // @@protoc_insertion_point(field_get:google.api.Service.title)
-  return title_.GetNoArena();
+  return title_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Service::set_title(const ::std::string& value) {
   
@@ -727,13 +572,13 @@ inline void Service::set_allocated_title(::std::string* title) {
   // @@protoc_insertion_point(field_set_allocated:google.api.Service.title)
 }
 
-// string producer_project_id = 22;
+// optional string producer_project_id = 22;
 inline void Service::clear_producer_project_id() {
   producer_project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Service::producer_project_id() const {
   // @@protoc_insertion_point(field_get:google.api.Service.producer_project_id)
-  return producer_project_id_.GetNoArena();
+  return producer_project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Service::set_producer_project_id(const ::std::string& value) {
   
@@ -861,7 +706,7 @@ Service::enums() const {
   return enums_;
 }
 
-// .google.api.Documentation documentation = 6;
+// optional .google.api.Documentation documentation = 6;
 inline bool Service::has_documentation() const {
   return this != internal_default_instance() && documentation_ != NULL;
 }
@@ -900,7 +745,7 @@ inline void Service::set_allocated_documentation(::google::api::Documentation* d
   // @@protoc_insertion_point(field_set_allocated:google.api.Service.documentation)
 }
 
-// .google.api.Backend backend = 8;
+// optional .google.api.Backend backend = 8;
 inline bool Service::has_backend() const {
   return this != internal_default_instance() && backend_ != NULL;
 }
@@ -939,7 +784,7 @@ inline void Service::set_allocated_backend(::google::api::Backend* backend) {
   // @@protoc_insertion_point(field_set_allocated:google.api.Service.backend)
 }
 
-// .google.api.Http http = 9;
+// optional .google.api.Http http = 9;
 inline bool Service::has_http() const {
   return this != internal_default_instance() && http_ != NULL;
 }
@@ -983,7 +828,7 @@ inline void Service::set_allocated_http(::google::api::Http* http) {
   // @@protoc_insertion_point(field_set_allocated:google.api.Service.http)
 }
 
-// .google.api.Authentication authentication = 11;
+// optional .google.api.Authentication authentication = 11;
 inline bool Service::has_authentication() const {
   return this != internal_default_instance() && authentication_ != NULL;
 }
@@ -1022,7 +867,7 @@ inline void Service::set_allocated_authentication(::google::api::Authentication*
   // @@protoc_insertion_point(field_set_allocated:google.api.Service.authentication)
 }
 
-// .google.api.Context context = 12;
+// optional .google.api.Context context = 12;
 inline bool Service::has_context() const {
   return this != internal_default_instance() && context_ != NULL;
 }
@@ -1061,7 +906,7 @@ inline void Service::set_allocated_context(::google::api::Context* context) {
   // @@protoc_insertion_point(field_set_allocated:google.api.Service.context)
 }
 
-// .google.api.Usage usage = 15;
+// optional .google.api.Usage usage = 15;
 inline bool Service::has_usage() const {
   return this != internal_default_instance() && usage_ != NULL;
 }
@@ -1130,7 +975,7 @@ Service::endpoints() const {
   return endpoints_;
 }
 
-// .google.api.Control control = 21;
+// optional .google.api.Control control = 21;
 inline bool Service::has_control() const {
   return this != internal_default_instance() && control_ != NULL;
 }
@@ -1259,7 +1104,7 @@ Service::monitored_resources() const {
   return monitored_resources_;
 }
 
-// .google.api.Logging logging = 27;
+// optional .google.api.Logging logging = 27;
 inline bool Service::has_logging() const {
   return this != internal_default_instance() && logging_ != NULL;
 }
@@ -1298,7 +1143,7 @@ inline void Service::set_allocated_logging(::google::api::Logging* logging) {
   // @@protoc_insertion_point(field_set_allocated:google.api.Service.logging)
 }
 
-// .google.api.Monitoring monitoring = 28;
+// optional .google.api.Monitoring monitoring = 28;
 inline bool Service::has_monitoring() const {
   return this != internal_default_instance() && monitoring_ != NULL;
 }
@@ -1337,7 +1182,7 @@ inline void Service::set_allocated_monitoring(::google::api::Monitoring* monitor
   // @@protoc_insertion_point(field_set_allocated:google.api.Service.monitoring)
 }
 
-// .google.api.SystemParameters system_parameters = 29;
+// optional .google.api.SystemParameters system_parameters = 29;
 inline bool Service::has_system_parameters() const {
   return this != internal_default_instance() && system_parameters_ != NULL;
 }
@@ -1376,10 +1221,12 @@ inline void Service::set_allocated_system_parameters(::google::api::SystemParame
   // @@protoc_insertion_point(field_set_allocated:google.api.Service.system_parameters)
 }
 
+inline const Service* Service::internal_default_instance() {
+  return &Service_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace api
 }  // namespace google

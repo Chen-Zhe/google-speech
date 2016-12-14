@@ -24,25 +24,11 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace iam {
-namespace v1 {
-class Binding;
-class BindingDefaultTypeInternal;
-extern BindingDefaultTypeInternal _Binding_default_instance_;
-class Policy;
-class PolicyDefaultTypeInternal;
-extern PolicyDefaultTypeInternal _Policy_default_instance_;
-}  // namespace v1
-}  // namespace iam
-}  // namespace google
 
 namespace google {
 namespace iam {
@@ -51,6 +37,11 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fiam_2fv1_2fpolicy_2eproto();
 void protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto();
+void protobuf_AssignDesc_google_2fiam_2fv1_2fpolicy_2eproto();
+void protobuf_ShutdownFile_google_2fiam_2fv1_2fpolicy_2eproto();
+
+class Binding;
+class Policy;
 
 // ===================================================================
 
@@ -66,52 +57,47 @@ class Policy : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const Policy& default_instance();
 
-  static inline const Policy* internal_default_instance() {
-    return reinterpret_cast<const Policy*>(
-               &_Policy_default_instance_);
-  }
+  static const Policy* internal_default_instance();
 
   void UnsafeArenaSwap(Policy* other);
   void Swap(Policy* other);
 
   // implements Message ----------------------------------------------
 
-  inline Policy* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Policy* New() const { return New(NULL); }
 
-  Policy* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Policy* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Policy& from);
   void MergeFrom(const Policy& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Policy* other);
+  void UnsafeMergeFrom(const Policy& from);
   protected:
   explicit Policy(::google::protobuf::Arena* arena);
   private:
@@ -126,13 +112,13 @@ class Policy : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // int32 version = 1;
+  // optional int32 version = 1;
   void clear_version();
   static const int kVersionFieldNumber = 1;
   ::google::protobuf::int32 version() const;
@@ -150,7 +136,7 @@ class Policy : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   const ::google::protobuf::RepeatedPtrField< ::google::iam::v1::Binding >&
       bindings() const;
 
-  // bytes etag = 3;
+  // optional bytes etag = 3;
   void clear_etag();
   static const int kEtagFieldNumber = 3;
   const ::std::string& etag() const;
@@ -177,10 +163,13 @@ class Policy : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fiam_2fv1_2fpolicy_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fiam_2fv1_2fpolicy_2eproto();
+  friend void protobuf_AssignDesc_google_2fiam_2fv1_2fpolicy_2eproto();
   friend void protobuf_ShutdownFile_google_2fiam_2fv1_2fpolicy_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Policy> Policy_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Binding : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.iam.v1.Binding) */ {
@@ -195,52 +184,47 @@ class Binding : public ::google::protobuf::Message /* @@protoc_insertion_point(c
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const Binding& default_instance();
 
-  static inline const Binding* internal_default_instance() {
-    return reinterpret_cast<const Binding*>(
-               &_Binding_default_instance_);
-  }
+  static const Binding* internal_default_instance();
 
   void UnsafeArenaSwap(Binding* other);
   void Swap(Binding* other);
 
   // implements Message ----------------------------------------------
 
-  inline Binding* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Binding* New() const { return New(NULL); }
 
-  Binding* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Binding* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Binding& from);
   void MergeFrom(const Binding& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Binding* other);
+  void UnsafeMergeFrom(const Binding& from);
   protected:
   explicit Binding(::google::protobuf::Arena* arena);
   private:
@@ -255,13 +239,13 @@ class Binding : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string role = 1;
+  // optional string role = 1;
   void clear_role();
   static const int kRoleFieldNumber = 1;
   const ::std::string& role() const;
@@ -303,10 +287,13 @@ class Binding : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fiam_2fv1_2fpolicy_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fiam_2fv1_2fpolicy_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fiam_2fv1_2fpolicy_2eproto();
+  friend void protobuf_AssignDesc_google_2fiam_2fv1_2fpolicy_2eproto();
   friend void protobuf_ShutdownFile_google_2fiam_2fv1_2fpolicy_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Binding> Binding_default_instance_;
+
 // ===================================================================
 
 
@@ -315,7 +302,7 @@ class Binding : public ::google::protobuf::Message /* @@protoc_insertion_point(c
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Policy
 
-// int32 version = 1;
+// optional int32 version = 1;
 inline void Policy::clear_version() {
   version_ = 0;
 }
@@ -359,13 +346,13 @@ Policy::bindings() const {
   return bindings_;
 }
 
-// bytes etag = 3;
+// optional bytes etag = 3;
 inline void Policy::clear_etag() {
   etag_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Policy::etag() const {
   // @@protoc_insertion_point(field_get:google.iam.v1.Policy.etag)
-  return etag_.Get();
+  return etag_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Policy::set_etag(const ::std::string& value) {
   
@@ -425,17 +412,20 @@ inline void Policy::unsafe_arena_set_allocated_etag(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.iam.v1.Policy.etag)
 }
 
+inline const Policy* Policy::internal_default_instance() {
+  return &Policy_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Binding
 
-// string role = 1;
+// optional string role = 1;
 inline void Binding::clear_role() {
   role_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Binding::role() const {
   // @@protoc_insertion_point(field_get:google.iam.v1.Binding.role)
-  return role_.Get();
+  return role_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Binding::set_role(const ::std::string& value) {
   
@@ -550,12 +540,14 @@ Binding::mutable_members() {
   return &members_;
 }
 
+inline const Binding* Binding::internal_default_instance() {
+  return &Binding_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace iam

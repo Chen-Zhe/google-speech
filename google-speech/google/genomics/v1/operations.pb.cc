@@ -20,25 +20,28 @@
 namespace google {
 namespace genomics {
 namespace v1 {
-class OperationMetadataDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<OperationMetadata> {};
-OperationMetadataDefaultTypeInternal _OperationMetadata_default_instance_;
-class OperationEventDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<OperationEvent> {};
-OperationEventDefaultTypeInternal _OperationEvent_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[2];
+const ::google::protobuf::Descriptor* OperationMetadata_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  OperationMetadata_reflection_ = NULL;
+const ::google::protobuf::Descriptor* OperationEvent_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  OperationEvent_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2foperations_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2foperations_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationMetadata, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fgenomics_2fv1_2foperations_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fgenomics_2fv1_2foperations_2eproto() {
+  protobuf_AddDesc_google_2fgenomics_2fv1_2foperations_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/genomics/v1/operations.proto");
+  GOOGLE_CHECK(file != NULL);
+  OperationMetadata_descriptor_ = file->message_type(0);
+  static const int OperationMetadata_offsets_[8] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationMetadata, project_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationMetadata, create_time_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationMetadata, start_time_),
@@ -47,55 +50,59 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2foper
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationMetadata, events_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationMetadata, client_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationMetadata, runtime_metadata_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationEvent, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  OperationMetadata_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      OperationMetadata_descriptor_,
+      OperationMetadata::internal_default_instance(),
+      OperationMetadata_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(OperationMetadata),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationMetadata, _internal_metadata_));
+  OperationEvent_descriptor_ = file->message_type(1);
+  static const int OperationEvent_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationEvent, start_time_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationEvent, end_time_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationEvent, description_),
   };
-  return offsets;
+  OperationEvent_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      OperationEvent_descriptor_,
+      OperationEvent::internal_default_instance(),
+      OperationEvent_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(OperationEvent),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OperationEvent, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(OperationMetadata)},
-  { 12, -1, sizeof(OperationEvent)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_OperationMetadata_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_OperationEvent_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fgenomics_2fv1_2foperations_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/genomics/v1/operations.proto", schemas, file_default_instances, protobuf_Offsets_google_2fgenomics_2fv1_2foperations_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fgenomics_2fv1_2foperations_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 2);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      OperationMetadata_descriptor_, OperationMetadata::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      OperationEvent_descriptor_, OperationEvent::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fgenomics_2fv1_2foperations_2eproto() {
-  _OperationMetadata_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _OperationEvent_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
+  OperationMetadata_default_instance_.Shutdown();
+  delete OperationMetadata_reflection_;
+  OperationEvent_default_instance_.Shutdown();
+  delete OperationEvent_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fgenomics_2fv1_2foperations_2eproto_impl() {
@@ -104,54 +111,43 @@ void protobuf_InitDefaults_google_2fgenomics_2fv1_2foperations_2eproto_impl() {
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fany_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _OperationMetadata_default_instance_.DefaultConstruct();
-  _OperationEvent_default_instance_.DefaultConstruct();
-  _OperationMetadata_default_instance_.get_mutable()->create_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  _OperationMetadata_default_instance_.get_mutable()->start_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  _OperationMetadata_default_instance_.get_mutable()->end_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  _OperationMetadata_default_instance_.get_mutable()->request_ = const_cast< ::google::protobuf::Any*>(
-      ::google::protobuf::Any::internal_default_instance());
-  _OperationMetadata_default_instance_.get_mutable()->runtime_metadata_ = const_cast< ::google::protobuf::Any*>(
-      ::google::protobuf::Any::internal_default_instance());
-  _OperationEvent_default_instance_.get_mutable()->start_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  _OperationEvent_default_instance_.get_mutable()->end_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  OperationMetadata_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  OperationEvent_default_instance_.DefaultConstruct();
+  OperationMetadata_default_instance_.get_mutable()->InitAsDefaultInstance();
+  OperationEvent_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fgenomics_2fv1_2foperations_2eproto_once_);
 void protobuf_InitDefaults_google_2fgenomics_2fv1_2foperations_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fgenomics_2fv1_2foperations_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fgenomics_2fv1_2foperations_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fgenomics_2fv1_2foperations_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fgenomics_2fv1_2foperations_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fgenomics_2fv1_2foperations_2eproto();
-  static const char descriptor[] = {
-      "\n#google/genomics/v1/operations.proto\022\022g"
-      "oogle.genomics.v1\032\034google/api/annotation"
-      "s.proto\032\031google/protobuf/any.proto\032\037goog"
-      "le/protobuf/timestamp.proto\"\324\002\n\021Operatio"
-      "nMetadata\022\022\n\nproject_id\030\001 \001(\t\022/\n\013create_"
-      "time\030\002 \001(\0132\032.google.protobuf.Timestamp\022."
-      "\n\nstart_time\030\003 \001(\0132\032.google.protobuf.Tim"
-      "estamp\022,\n\010end_time\030\004 \001(\0132\032.google.protob"
-      "uf.Timestamp\022%\n\007request\030\005 \001(\0132\024.google.p"
-      "rotobuf.Any\0222\n\006events\030\006 \003(\0132\".google.gen"
-      "omics.v1.OperationEvent\022\021\n\tclient_id\030\007 \001"
-      "(\t\022.\n\020runtime_metadata\030\010 \001(\0132\024.google.pr"
-      "otobuf.Any\"\203\001\n\016OperationEvent\022.\n\nstart_t"
-      "ime\030\001 \001(\0132\032.google.protobuf.Timestamp\022,\n"
-      "\010end_time\030\002 \001(\0132\032.google.protobuf.Timest"
-      "amp\022\023\n\013description\030\003 \001(\tBj\n\026com.google.g"
-      "enomics.v1B\017OperationsProtoP\001Z:google.go"
-      "lang.org/genproto/googleapis/genomics/v1"
-      ";genomics\370\001\001b\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 740);
+    "\n#google/genomics/v1/operations.proto\022\022g"
+    "oogle.genomics.v1\032\034google/api/annotation"
+    "s.proto\032\031google/protobuf/any.proto\032\037goog"
+    "le/protobuf/timestamp.proto\"\324\002\n\021Operatio"
+    "nMetadata\022\022\n\nproject_id\030\001 \001(\t\022/\n\013create_"
+    "time\030\002 \001(\0132\032.google.protobuf.Timestamp\022."
+    "\n\nstart_time\030\003 \001(\0132\032.google.protobuf.Tim"
+    "estamp\022,\n\010end_time\030\004 \001(\0132\032.google.protob"
+    "uf.Timestamp\022%\n\007request\030\005 \001(\0132\024.google.p"
+    "rotobuf.Any\0222\n\006events\030\006 \003(\0132\".google.gen"
+    "omics.v1.OperationEvent\022\021\n\tclient_id\030\007 \001"
+    "(\t\022.\n\020runtime_metadata\030\010 \001(\0132\024.google.pr"
+    "otobuf.Any\"\203\001\n\016OperationEvent\022.\n\nstart_t"
+    "ime\030\001 \001(\0132\032.google.protobuf.Timestamp\022,\n"
+    "\010end_time\030\002 \001(\0132\032.google.protobuf.Timest"
+    "amp\022\023\n\013description\030\003 \001(\tBj\n\026com.google.g"
+    "enomics.v1B\017OperationsProtoP\001Z:google.go"
+    "lang.org/genproto/googleapis/genomics/v1"
+    ";genomics\370\001\001b\006proto3", 740);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/genomics/v1/operations.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -171,6 +167,16 @@ struct StaticDescriptorInitializer_google_2fgenomics_2fv1_2foperations_2eproto {
     protobuf_AddDesc_google_2fgenomics_2fv1_2foperations_2eproto();
   }
 } static_descriptor_initializer_google_2fgenomics_2fv1_2foperations_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -394,9 +400,7 @@ const int OperationMetadata::kRuntimeMetadataFieldNumber;
 
 OperationMetadata::OperationMetadata()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2foperations_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2foperations_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.OperationMetadata)
 }
@@ -411,55 +415,36 @@ OperationMetadata::OperationMetadata(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.OperationMetadata)
 }
+
+void OperationMetadata::InitAsDefaultInstance() {
+  create_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  start_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  end_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  request_ = const_cast< ::google::protobuf::Any*>(
+      ::google::protobuf::Any::internal_default_instance());
+  runtime_metadata_ = const_cast< ::google::protobuf::Any*>(
+      ::google::protobuf::Any::internal_default_instance());
+}
+
 OperationMetadata::OperationMetadata(const OperationMetadata& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      events_(from.events_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id(),
-      GetArenaNoVirtual());
-  }
-  client_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.client_id().size() > 0) {
-    client_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.client_id(),
-      GetArenaNoVirtual());
-  }
-  if (from.has_create_time()) {
-    create_time_ = new ::google::protobuf::Timestamp(*from.create_time_);
-  } else {
-    create_time_ = NULL;
-  }
-  if (from.has_start_time()) {
-    start_time_ = new ::google::protobuf::Timestamp(*from.start_time_);
-  } else {
-    start_time_ = NULL;
-  }
-  if (from.has_end_time()) {
-    end_time_ = new ::google::protobuf::Timestamp(*from.end_time_);
-  } else {
-    end_time_ = NULL;
-  }
-  if (from.has_request()) {
-    request_ = new ::google::protobuf::Any(*from.request_);
-  } else {
-    request_ = NULL;
-  }
-  if (from.has_runtime_metadata()) {
-    runtime_metadata_ = new ::google::protobuf::Any(*from.runtime_metadata_);
-  } else {
-    runtime_metadata_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.OperationMetadata)
 }
 
 void OperationMetadata::SharedCtor() {
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   client_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&create_time_, 0, reinterpret_cast<char*>(&runtime_metadata_) -
-    reinterpret_cast<char*>(&create_time_) + sizeof(runtime_metadata_));
+  create_time_ = NULL;
+  start_time_ = NULL;
+  end_time_ = NULL;
+  request_ = NULL;
+  runtime_metadata_ = NULL;
   _cached_size_ = 0;
 }
 
@@ -476,19 +461,11 @@ void OperationMetadata::SharedDtor() {
 
   project_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
   client_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
-  if (this != internal_default_instance()) {
+  if (this != &OperationMetadata_default_instance_.get()) {
     delete create_time_;
-  }
-  if (this != internal_default_instance()) {
     delete start_time_;
-  }
-  if (this != internal_default_instance()) {
     delete end_time_;
-  }
-  if (this != internal_default_instance()) {
     delete request_;
-  }
-  if (this != internal_default_instance()) {
     delete runtime_metadata_;
   }
 }
@@ -506,7 +483,7 @@ void OperationMetadata::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* OperationMetadata::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return OperationMetadata_descriptor_;
 }
 
 const OperationMetadata& OperationMetadata::default_instance() {
@@ -514,35 +491,27 @@ const OperationMetadata& OperationMetadata::default_instance() {
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<OperationMetadata> OperationMetadata_default_instance_;
+
 OperationMetadata* OperationMetadata::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<OperationMetadata>(arena);
 }
 
 void OperationMetadata::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.genomics.v1.OperationMetadata)
-  events_.Clear();
   project_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  client_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (GetArenaNoVirtual() == NULL && create_time_ != NULL) {
-    delete create_time_;
-  }
+  if (GetArenaNoVirtual() == NULL && create_time_ != NULL) delete create_time_;
   create_time_ = NULL;
-  if (GetArenaNoVirtual() == NULL && start_time_ != NULL) {
-    delete start_time_;
-  }
+  if (GetArenaNoVirtual() == NULL && start_time_ != NULL) delete start_time_;
   start_time_ = NULL;
-  if (GetArenaNoVirtual() == NULL && end_time_ != NULL) {
-    delete end_time_;
-  }
+  if (GetArenaNoVirtual() == NULL && end_time_ != NULL) delete end_time_;
   end_time_ = NULL;
-  if (GetArenaNoVirtual() == NULL && request_ != NULL) {
-    delete request_;
-  }
+  if (GetArenaNoVirtual() == NULL && request_ != NULL) delete request_;
   request_ = NULL;
-  if (GetArenaNoVirtual() == NULL && runtime_metadata_ != NULL) {
-    delete runtime_metadata_;
-  }
+  client_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  if (GetArenaNoVirtual() == NULL && runtime_metadata_ != NULL) delete runtime_metadata_;
   runtime_metadata_ = NULL;
+  events_.Clear();
 }
 
 bool OperationMetadata::MergePartialFromCodedStream(
@@ -551,13 +520,13 @@ bool OperationMetadata::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.OperationMetadata)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string project_id = 1;
+      // optional string project_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -567,69 +536,83 @@ bool OperationMetadata::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_create_time;
         break;
       }
 
-      // .google.protobuf.Timestamp create_time = 2;
+      // optional .google.protobuf.Timestamp create_time = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_create_time:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_create_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_start_time;
         break;
       }
 
-      // .google.protobuf.Timestamp start_time = 3;
+      // optional .google.protobuf.Timestamp start_time = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_start_time:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_start_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_end_time;
         break;
       }
 
-      // .google.protobuf.Timestamp end_time = 4;
+      // optional .google.protobuf.Timestamp end_time = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_end_time:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_end_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_request;
         break;
       }
 
-      // .google.protobuf.Any request = 5;
+      // optional .google.protobuf.Any request = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_request:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_request()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(50)) goto parse_events;
         break;
       }
 
       // repeated .google.genomics.v1.OperationEvent events = 6;
       case 6: {
-        if (tag == 50u) {
+        if (tag == 50) {
+         parse_events:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_events:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_events()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(50)) goto parse_loop_events;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(58)) goto parse_client_id;
         break;
       }
 
-      // string client_id = 7;
+      // optional string client_id = 7;
       case 7: {
-        if (tag == 58u) {
+        if (tag == 58) {
+         parse_client_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_client_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -639,17 +622,20 @@ bool OperationMetadata::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(66)) goto parse_runtime_metadata;
         break;
       }
 
-      // .google.protobuf.Any runtime_metadata = 8;
+      // optional .google.protobuf.Any runtime_metadata = 8;
       case 8: {
-        if (tag == 66u) {
+        if (tag == 66) {
+         parse_runtime_metadata:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_runtime_metadata()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -677,7 +663,7 @@ failure:
 void OperationMetadata::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.genomics.v1.OperationMetadata)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -687,25 +673,25 @@ void OperationMetadata::SerializeWithCachedSizes(
       1, this->project_id(), output);
   }
 
-  // .google.protobuf.Timestamp create_time = 2;
+  // optional .google.protobuf.Timestamp create_time = 2;
   if (this->has_create_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->create_time_, output);
   }
 
-  // .google.protobuf.Timestamp start_time = 3;
+  // optional .google.protobuf.Timestamp start_time = 3;
   if (this->has_start_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *this->start_time_, output);
   }
 
-  // .google.protobuf.Timestamp end_time = 4;
+  // optional .google.protobuf.Timestamp end_time = 4;
   if (this->has_end_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, *this->end_time_, output);
   }
 
-  // .google.protobuf.Any request = 5;
+  // optional .google.protobuf.Any request = 5;
   if (this->has_request()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       5, *this->request_, output);
@@ -717,7 +703,7 @@ void OperationMetadata::SerializeWithCachedSizes(
       6, this->events(i), output);
   }
 
-  // string client_id = 7;
+  // optional string client_id = 7;
   if (this->client_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->client_id().data(), this->client_id().length(),
@@ -727,7 +713,7 @@ void OperationMetadata::SerializeWithCachedSizes(
       7, this->client_id(), output);
   }
 
-  // .google.protobuf.Any runtime_metadata = 8;
+  // optional .google.protobuf.Any runtime_metadata = 8;
   if (this->has_runtime_metadata()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       8, *this->runtime_metadata_, output);
@@ -740,7 +726,7 @@ void OperationMetadata::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.OperationMetadata)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -751,28 +737,28 @@ void OperationMetadata::SerializeWithCachedSizes(
         1, this->project_id(), target);
   }
 
-  // .google.protobuf.Timestamp create_time = 2;
+  // optional .google.protobuf.Timestamp create_time = 2;
   if (this->has_create_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *this->create_time_, false, target);
   }
 
-  // .google.protobuf.Timestamp start_time = 3;
+  // optional .google.protobuf.Timestamp start_time = 3;
   if (this->has_start_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         3, *this->start_time_, false, target);
   }
 
-  // .google.protobuf.Timestamp end_time = 4;
+  // optional .google.protobuf.Timestamp end_time = 4;
   if (this->has_end_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         4, *this->end_time_, false, target);
   }
 
-  // .google.protobuf.Any request = 5;
+  // optional .google.protobuf.Any request = 5;
   if (this->has_request()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -786,7 +772,7 @@ void OperationMetadata::SerializeWithCachedSizes(
         6, this->events(i), false, target);
   }
 
-  // string client_id = 7;
+  // optional string client_id = 7;
   if (this->client_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->client_id().data(), this->client_id().length(),
@@ -797,7 +783,7 @@ void OperationMetadata::SerializeWithCachedSizes(
         7, this->client_id(), target);
   }
 
-  // .google.protobuf.Any runtime_metadata = 8;
+  // optional .google.protobuf.Any runtime_metadata = 8;
   if (this->has_runtime_metadata()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -812,6 +798,55 @@ size_t OperationMetadata::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.OperationMetadata)
   size_t total_size = 0;
 
+  // optional string project_id = 1;
+  if (this->project_id().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->project_id());
+  }
+
+  // optional .google.protobuf.Timestamp create_time = 2;
+  if (this->has_create_time()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->create_time_);
+  }
+
+  // optional .google.protobuf.Timestamp start_time = 3;
+  if (this->has_start_time()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->start_time_);
+  }
+
+  // optional .google.protobuf.Timestamp end_time = 4;
+  if (this->has_end_time()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->end_time_);
+  }
+
+  // optional .google.protobuf.Any request = 5;
+  if (this->has_request()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->request_);
+  }
+
+  // optional string client_id = 7;
+  if (this->client_id().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->client_id());
+  }
+
+  // optional .google.protobuf.Any runtime_metadata = 8;
+  if (this->has_runtime_metadata()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->runtime_metadata_);
+  }
+
   // repeated .google.genomics.v1.OperationEvent events = 6;
   {
     unsigned int count = this->events_size();
@@ -823,55 +858,6 @@ size_t OperationMetadata::ByteSizeLong() const {
     }
   }
 
-  // string project_id = 1;
-  if (this->project_id().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->project_id());
-  }
-
-  // string client_id = 7;
-  if (this->client_id().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->client_id());
-  }
-
-  // .google.protobuf.Timestamp create_time = 2;
-  if (this->has_create_time()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->create_time_);
-  }
-
-  // .google.protobuf.Timestamp start_time = 3;
-  if (this->has_start_time()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->start_time_);
-  }
-
-  // .google.protobuf.Timestamp end_time = 4;
-  if (this->has_end_time()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->end_time_);
-  }
-
-  // .google.protobuf.Any request = 5;
-  if (this->has_request()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->request_);
-  }
-
-  // .google.protobuf.Any runtime_metadata = 8;
-  if (this->has_runtime_metadata()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->runtime_metadata_);
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -881,7 +867,7 @@ size_t OperationMetadata::ByteSizeLong() const {
 
 void OperationMetadata::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.OperationMetadata)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const OperationMetadata* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const OperationMetadata>(
           &from);
@@ -890,20 +876,24 @@ void OperationMetadata::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.OperationMetadata)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void OperationMetadata::MergeFrom(const OperationMetadata& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.OperationMetadata)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void OperationMetadata::UnsafeMergeFrom(const OperationMetadata& from) {
+  GOOGLE_DCHECK(&from != this);
   events_.MergeFrom(from.events_);
   if (from.project_id().size() > 0) {
     set_project_id(from.project_id());
-  }
-  if (from.client_id().size() > 0) {
-    set_client_id(from.client_id());
   }
   if (from.has_create_time()) {
     mutable_create_time()->::google::protobuf::Timestamp::MergeFrom(from.create_time());
@@ -916,6 +906,9 @@ void OperationMetadata::MergeFrom(const OperationMetadata& from) {
   }
   if (from.has_request()) {
     mutable_request()->::google::protobuf::Any::MergeFrom(from.request());
+  }
+  if (from.client_id().size() > 0) {
+    set_client_id(from.client_id());
   }
   if (from.has_runtime_metadata()) {
     mutable_runtime_metadata()->::google::protobuf::Any::MergeFrom(from.runtime_metadata());
@@ -933,10 +926,11 @@ void OperationMetadata::CopyFrom(const OperationMetadata& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.OperationMetadata)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool OperationMetadata::IsInitialized() const {
+
   return true;
 }
 
@@ -945,13 +939,10 @@ void OperationMetadata::Swap(OperationMetadata* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    OperationMetadata* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    OperationMetadata temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void OperationMetadata::UnsafeArenaSwap(OperationMetadata* other) {
@@ -960,32 +951,36 @@ void OperationMetadata::UnsafeArenaSwap(OperationMetadata* other) {
   InternalSwap(other);
 }
 void OperationMetadata::InternalSwap(OperationMetadata* other) {
-  events_.UnsafeArenaSwap(&other->events_);
   project_id_.Swap(&other->project_id_);
-  client_id_.Swap(&other->client_id_);
   std::swap(create_time_, other->create_time_);
   std::swap(start_time_, other->start_time_);
   std::swap(end_time_, other->end_time_);
   std::swap(request_, other->request_);
+  events_.UnsafeArenaSwap(&other->events_);
+  client_id_.Swap(&other->client_id_);
   std::swap(runtime_metadata_, other->runtime_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata OperationMetadata::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = OperationMetadata_descriptor_;
+  metadata.reflection = OperationMetadata_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // OperationMetadata
 
-// string project_id = 1;
+// optional string project_id = 1;
 void OperationMetadata::clear_project_id() {
   project_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& OperationMetadata::project_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.OperationMetadata.project_id)
-  return project_id_.Get();
+  return project_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void OperationMetadata::set_project_id(const ::std::string& value) {
   
@@ -1045,7 +1040,7 @@ void OperationMetadata::unsafe_arena_set_allocated_project_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.OperationMetadata.project_id)
 }
 
-// .google.protobuf.Timestamp create_time = 2;
+// optional .google.protobuf.Timestamp create_time = 2;
 bool OperationMetadata::has_create_time() const {
   return this != internal_default_instance() && create_time_ != NULL;
 }
@@ -1094,7 +1089,7 @@ const ::google::protobuf::Timestamp& OperationMetadata::create_time() const {
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.OperationMetadata.create_time)
 }
 
-// .google.protobuf.Timestamp start_time = 3;
+// optional .google.protobuf.Timestamp start_time = 3;
 bool OperationMetadata::has_start_time() const {
   return this != internal_default_instance() && start_time_ != NULL;
 }
@@ -1143,7 +1138,7 @@ const ::google::protobuf::Timestamp& OperationMetadata::start_time() const {
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.OperationMetadata.start_time)
 }
 
-// .google.protobuf.Timestamp end_time = 4;
+// optional .google.protobuf.Timestamp end_time = 4;
 bool OperationMetadata::has_end_time() const {
   return this != internal_default_instance() && end_time_ != NULL;
 }
@@ -1192,7 +1187,7 @@ const ::google::protobuf::Timestamp& OperationMetadata::end_time() const {
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.OperationMetadata.end_time)
 }
 
-// .google.protobuf.Any request = 5;
+// optional .google.protobuf.Any request = 5;
 bool OperationMetadata::has_request() const {
   return this != internal_default_instance() && request_ != NULL;
 }
@@ -1273,13 +1268,13 @@ OperationMetadata::events() const {
   return events_;
 }
 
-// string client_id = 7;
+// optional string client_id = 7;
 void OperationMetadata::clear_client_id() {
   client_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& OperationMetadata::client_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.OperationMetadata.client_id)
-  return client_id_.Get();
+  return client_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void OperationMetadata::set_client_id(const ::std::string& value) {
   
@@ -1339,7 +1334,7 @@ void OperationMetadata::unsafe_arena_set_allocated_client_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.OperationMetadata.client_id)
 }
 
-// .google.protobuf.Any runtime_metadata = 8;
+// optional .google.protobuf.Any runtime_metadata = 8;
 bool OperationMetadata::has_runtime_metadata() const {
   return this != internal_default_instance() && runtime_metadata_ != NULL;
 }
@@ -1390,6 +1385,9 @@ const ::google::protobuf::Any& OperationMetadata::runtime_metadata() const {
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.OperationMetadata.runtime_metadata)
 }
 
+inline const OperationMetadata* OperationMetadata::internal_default_instance() {
+  return &OperationMetadata_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1496,9 +1494,7 @@ const int OperationEvent::kDescriptionFieldNumber;
 
 OperationEvent::OperationEvent()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2foperations_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2foperations_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.OperationEvent)
 }
@@ -1512,33 +1508,26 @@ OperationEvent::OperationEvent(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.OperationEvent)
 }
+
+void OperationEvent::InitAsDefaultInstance() {
+  start_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  end_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+}
+
 OperationEvent::OperationEvent(const OperationEvent& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.description().size() > 0) {
-    description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.description(),
-      GetArenaNoVirtual());
-  }
-  if (from.has_start_time()) {
-    start_time_ = new ::google::protobuf::Timestamp(*from.start_time_);
-  } else {
-    start_time_ = NULL;
-  }
-  if (from.has_end_time()) {
-    end_time_ = new ::google::protobuf::Timestamp(*from.end_time_);
-  } else {
-    end_time_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.OperationEvent)
 }
 
 void OperationEvent::SharedCtor() {
   description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&start_time_, 0, reinterpret_cast<char*>(&end_time_) -
-    reinterpret_cast<char*>(&start_time_) + sizeof(end_time_));
+  start_time_ = NULL;
+  end_time_ = NULL;
   _cached_size_ = 0;
 }
 
@@ -1554,10 +1543,8 @@ void OperationEvent::SharedDtor() {
   }
 
   description_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
-  if (this != internal_default_instance()) {
+  if (this != &OperationEvent_default_instance_.get()) {
     delete start_time_;
-  }
-  if (this != internal_default_instance()) {
     delete end_time_;
   }
 }
@@ -1575,7 +1562,7 @@ void OperationEvent::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* OperationEvent::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return OperationEvent_descriptor_;
 }
 
 const OperationEvent& OperationEvent::default_instance() {
@@ -1583,21 +1570,19 @@ const OperationEvent& OperationEvent::default_instance() {
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<OperationEvent> OperationEvent_default_instance_;
+
 OperationEvent* OperationEvent::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<OperationEvent>(arena);
 }
 
 void OperationEvent::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.genomics.v1.OperationEvent)
-  description_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (GetArenaNoVirtual() == NULL && start_time_ != NULL) {
-    delete start_time_;
-  }
+  if (GetArenaNoVirtual() == NULL && start_time_ != NULL) delete start_time_;
   start_time_ = NULL;
-  if (GetArenaNoVirtual() == NULL && end_time_ != NULL) {
-    delete end_time_;
-  }
+  if (GetArenaNoVirtual() == NULL && end_time_ != NULL) delete end_time_;
   end_time_ = NULL;
+  description_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 
 bool OperationEvent::MergePartialFromCodedStream(
@@ -1606,35 +1591,39 @@ bool OperationEvent::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.OperationEvent)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.protobuf.Timestamp start_time = 1;
+      // optional .google.protobuf.Timestamp start_time = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_start_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_end_time;
         break;
       }
 
-      // .google.protobuf.Timestamp end_time = 2;
+      // optional .google.protobuf.Timestamp end_time = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_end_time:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_end_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_description;
         break;
       }
 
-      // string description = 3;
+      // optional string description = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_description:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_description()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1644,6 +1633,7 @@ bool OperationEvent::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1671,19 +1661,19 @@ failure:
 void OperationEvent::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.genomics.v1.OperationEvent)
-  // .google.protobuf.Timestamp start_time = 1;
+  // optional .google.protobuf.Timestamp start_time = 1;
   if (this->has_start_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->start_time_, output);
   }
 
-  // .google.protobuf.Timestamp end_time = 2;
+  // optional .google.protobuf.Timestamp end_time = 2;
   if (this->has_end_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->end_time_, output);
   }
 
-  // string description = 3;
+  // optional string description = 3;
   if (this->description().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->description().data(), this->description().length(),
@@ -1700,21 +1690,21 @@ void OperationEvent::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.OperationEvent)
-  // .google.protobuf.Timestamp start_time = 1;
+  // optional .google.protobuf.Timestamp start_time = 1;
   if (this->has_start_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->start_time_, false, target);
   }
 
-  // .google.protobuf.Timestamp end_time = 2;
+  // optional .google.protobuf.Timestamp end_time = 2;
   if (this->has_end_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *this->end_time_, false, target);
   }
 
-  // string description = 3;
+  // optional string description = 3;
   if (this->description().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->description().data(), this->description().length(),
@@ -1733,25 +1723,25 @@ size_t OperationEvent::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.OperationEvent)
   size_t total_size = 0;
 
-  // string description = 3;
-  if (this->description().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->description());
-  }
-
-  // .google.protobuf.Timestamp start_time = 1;
+  // optional .google.protobuf.Timestamp start_time = 1;
   if (this->has_start_time()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->start_time_);
   }
 
-  // .google.protobuf.Timestamp end_time = 2;
+  // optional .google.protobuf.Timestamp end_time = 2;
   if (this->has_end_time()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->end_time_);
+  }
+
+  // optional string description = 3;
+  if (this->description().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->description());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -1763,7 +1753,7 @@ size_t OperationEvent::ByteSizeLong() const {
 
 void OperationEvent::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.OperationEvent)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const OperationEvent* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const OperationEvent>(
           &from);
@@ -1772,22 +1762,29 @@ void OperationEvent::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.OperationEvent)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void OperationEvent::MergeFrom(const OperationEvent& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.OperationEvent)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.description().size() > 0) {
-    set_description(from.description());
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void OperationEvent::UnsafeMergeFrom(const OperationEvent& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_start_time()) {
     mutable_start_time()->::google::protobuf::Timestamp::MergeFrom(from.start_time());
   }
   if (from.has_end_time()) {
     mutable_end_time()->::google::protobuf::Timestamp::MergeFrom(from.end_time());
+  }
+  if (from.description().size() > 0) {
+    set_description(from.description());
   }
 }
 
@@ -1802,10 +1799,11 @@ void OperationEvent::CopyFrom(const OperationEvent& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.OperationEvent)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool OperationEvent::IsInitialized() const {
+
   return true;
 }
 
@@ -1814,13 +1812,10 @@ void OperationEvent::Swap(OperationEvent* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    OperationEvent* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    OperationEvent temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void OperationEvent::UnsafeArenaSwap(OperationEvent* other) {
@@ -1829,21 +1824,25 @@ void OperationEvent::UnsafeArenaSwap(OperationEvent* other) {
   InternalSwap(other);
 }
 void OperationEvent::InternalSwap(OperationEvent* other) {
-  description_.Swap(&other->description_);
   std::swap(start_time_, other->start_time_);
   std::swap(end_time_, other->end_time_);
+  description_.Swap(&other->description_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata OperationEvent::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = OperationEvent_descriptor_;
+  metadata.reflection = OperationEvent_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // OperationEvent
 
-// .google.protobuf.Timestamp start_time = 1;
+// optional .google.protobuf.Timestamp start_time = 1;
 bool OperationEvent::has_start_time() const {
   return this != internal_default_instance() && start_time_ != NULL;
 }
@@ -1892,7 +1891,7 @@ const ::google::protobuf::Timestamp& OperationEvent::start_time() const {
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.OperationEvent.start_time)
 }
 
-// .google.protobuf.Timestamp end_time = 2;
+// optional .google.protobuf.Timestamp end_time = 2;
 bool OperationEvent::has_end_time() const {
   return this != internal_default_instance() && end_time_ != NULL;
 }
@@ -1941,13 +1940,13 @@ const ::google::protobuf::Timestamp& OperationEvent::end_time() const {
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.OperationEvent.end_time)
 }
 
-// string description = 3;
+// optional string description = 3;
 void OperationEvent::clear_description() {
   description_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& OperationEvent::description() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.OperationEvent.description)
-  return description_.Get();
+  return description_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void OperationEvent::set_description(const ::std::string& value) {
   
@@ -2007,6 +2006,9 @@ void OperationEvent::unsafe_arena_set_allocated_description(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.OperationEvent.description)
 }
 
+inline const OperationEvent* OperationEvent::internal_default_instance() {
+  return &OperationEvent_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

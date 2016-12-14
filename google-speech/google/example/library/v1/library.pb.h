@@ -24,72 +24,12 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include <google/protobuf/empty.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace example {
-namespace library {
-namespace v1 {
-class Book;
-class BookDefaultTypeInternal;
-extern BookDefaultTypeInternal _Book_default_instance_;
-class CreateBookRequest;
-class CreateBookRequestDefaultTypeInternal;
-extern CreateBookRequestDefaultTypeInternal _CreateBookRequest_default_instance_;
-class CreateShelfRequest;
-class CreateShelfRequestDefaultTypeInternal;
-extern CreateShelfRequestDefaultTypeInternal _CreateShelfRequest_default_instance_;
-class DeleteBookRequest;
-class DeleteBookRequestDefaultTypeInternal;
-extern DeleteBookRequestDefaultTypeInternal _DeleteBookRequest_default_instance_;
-class DeleteShelfRequest;
-class DeleteShelfRequestDefaultTypeInternal;
-extern DeleteShelfRequestDefaultTypeInternal _DeleteShelfRequest_default_instance_;
-class GetBookRequest;
-class GetBookRequestDefaultTypeInternal;
-extern GetBookRequestDefaultTypeInternal _GetBookRequest_default_instance_;
-class GetShelfRequest;
-class GetShelfRequestDefaultTypeInternal;
-extern GetShelfRequestDefaultTypeInternal _GetShelfRequest_default_instance_;
-class ListBooksRequest;
-class ListBooksRequestDefaultTypeInternal;
-extern ListBooksRequestDefaultTypeInternal _ListBooksRequest_default_instance_;
-class ListBooksResponse;
-class ListBooksResponseDefaultTypeInternal;
-extern ListBooksResponseDefaultTypeInternal _ListBooksResponse_default_instance_;
-class ListShelvesRequest;
-class ListShelvesRequestDefaultTypeInternal;
-extern ListShelvesRequestDefaultTypeInternal _ListShelvesRequest_default_instance_;
-class ListShelvesResponse;
-class ListShelvesResponseDefaultTypeInternal;
-extern ListShelvesResponseDefaultTypeInternal _ListShelvesResponse_default_instance_;
-class MergeShelvesRequest;
-class MergeShelvesRequestDefaultTypeInternal;
-extern MergeShelvesRequestDefaultTypeInternal _MergeShelvesRequest_default_instance_;
-class MoveBookRequest;
-class MoveBookRequestDefaultTypeInternal;
-extern MoveBookRequestDefaultTypeInternal _MoveBookRequest_default_instance_;
-class Shelf;
-class ShelfDefaultTypeInternal;
-extern ShelfDefaultTypeInternal _Shelf_default_instance_;
-class UpdateBookRequest;
-class UpdateBookRequestDefaultTypeInternal;
-extern UpdateBookRequestDefaultTypeInternal _UpdateBookRequest_default_instance_;
-}  // namespace v1
-}  // namespace library
-}  // namespace example
-namespace protobuf {
-class Empty;
-class EmptyDefaultTypeInternal;
-extern EmptyDefaultTypeInternal _Empty_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace example {
@@ -99,6 +39,24 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
 void protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+void protobuf_ShutdownFile_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+
+class Book;
+class CreateBookRequest;
+class CreateShelfRequest;
+class DeleteBookRequest;
+class DeleteShelfRequest;
+class GetBookRequest;
+class GetShelfRequest;
+class ListBooksRequest;
+class ListBooksResponse;
+class ListShelvesRequest;
+class ListShelvesResponse;
+class MergeShelvesRequest;
+class MoveBookRequest;
+class Shelf;
+class UpdateBookRequest;
 
 // ===================================================================
 
@@ -117,58 +75,55 @@ class Book : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   static const ::google::protobuf::Descriptor* descriptor();
   static const Book& default_instance();
 
-  static inline const Book* internal_default_instance() {
-    return reinterpret_cast<const Book*>(
-               &_Book_default_instance_);
-  }
+  static const Book* internal_default_instance();
 
   void Swap(Book* other);
 
   // implements Message ----------------------------------------------
 
-  inline Book* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Book* New() const { return New(NULL); }
 
-  Book* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Book* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Book& from);
   void MergeFrom(const Book& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Book* other);
+  void UnsafeMergeFrom(const Book& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -179,7 +134,7 @@ class Book : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // string author = 2;
+  // optional string author = 2;
   void clear_author();
   static const int kAuthorFieldNumber = 2;
   const ::std::string& author() const;
@@ -190,7 +145,7 @@ class Book : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   ::std::string* release_author();
   void set_allocated_author(::std::string* author);
 
-  // string title = 3;
+  // optional string title = 3;
   void clear_title();
   static const int kTitleFieldNumber = 3;
   const ::std::string& title() const;
@@ -201,7 +156,7 @@ class Book : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   ::std::string* release_title();
   void set_allocated_title(::std::string* title);
 
-  // bool read = 4;
+  // optional bool read = 4;
   void clear_read();
   static const int kReadFieldNumber = 4;
   bool read() const;
@@ -218,10 +173,13 @@ class Book : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+  friend void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   friend void protobuf_ShutdownFile_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Book> Book_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Shelf : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.example.library.v1.Shelf) */ {
@@ -239,58 +197,55 @@ class Shelf : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   static const ::google::protobuf::Descriptor* descriptor();
   static const Shelf& default_instance();
 
-  static inline const Shelf* internal_default_instance() {
-    return reinterpret_cast<const Shelf*>(
-               &_Shelf_default_instance_);
-  }
+  static const Shelf* internal_default_instance();
 
   void Swap(Shelf* other);
 
   // implements Message ----------------------------------------------
 
-  inline Shelf* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Shelf* New() const { return New(NULL); }
 
-  Shelf* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Shelf* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Shelf& from);
   void MergeFrom(const Shelf& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Shelf* other);
+  void UnsafeMergeFrom(const Shelf& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -301,7 +256,7 @@ class Shelf : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // string theme = 2;
+  // optional string theme = 2;
   void clear_theme();
   static const int kThemeFieldNumber = 2;
   const ::std::string& theme() const;
@@ -321,10 +276,13 @@ class Shelf : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+  friend void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   friend void protobuf_ShutdownFile_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Shelf> Shelf_default_instance_;
+
 // -------------------------------------------------------------------
 
 class CreateShelfRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.example.library.v1.CreateShelfRequest) */ {
@@ -342,58 +300,55 @@ class CreateShelfRequest : public ::google::protobuf::Message /* @@protoc_insert
   static const ::google::protobuf::Descriptor* descriptor();
   static const CreateShelfRequest& default_instance();
 
-  static inline const CreateShelfRequest* internal_default_instance() {
-    return reinterpret_cast<const CreateShelfRequest*>(
-               &_CreateShelfRequest_default_instance_);
-  }
+  static const CreateShelfRequest* internal_default_instance();
 
   void Swap(CreateShelfRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline CreateShelfRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline CreateShelfRequest* New() const { return New(NULL); }
 
-  CreateShelfRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CreateShelfRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const CreateShelfRequest& from);
   void MergeFrom(const CreateShelfRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(CreateShelfRequest* other);
+  void UnsafeMergeFrom(const CreateShelfRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.example.library.v1.Shelf shelf = 1;
+  // optional .google.example.library.v1.Shelf shelf = 1;
   bool has_shelf() const;
   void clear_shelf();
   static const int kShelfFieldNumber = 1;
@@ -410,10 +365,13 @@ class CreateShelfRequest : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+  friend void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   friend void protobuf_ShutdownFile_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<CreateShelfRequest> CreateShelfRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetShelfRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.example.library.v1.GetShelfRequest) */ {
@@ -431,58 +389,55 @@ class GetShelfRequest : public ::google::protobuf::Message /* @@protoc_insertion
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetShelfRequest& default_instance();
 
-  static inline const GetShelfRequest* internal_default_instance() {
-    return reinterpret_cast<const GetShelfRequest*>(
-               &_GetShelfRequest_default_instance_);
-  }
+  static const GetShelfRequest* internal_default_instance();
 
   void Swap(GetShelfRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetShelfRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetShelfRequest* New() const { return New(NULL); }
 
-  GetShelfRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetShelfRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetShelfRequest& from);
   void MergeFrom(const GetShelfRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetShelfRequest* other);
+  void UnsafeMergeFrom(const GetShelfRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -501,10 +456,13 @@ class GetShelfRequest : public ::google::protobuf::Message /* @@protoc_insertion
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+  friend void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   friend void protobuf_ShutdownFile_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetShelfRequest> GetShelfRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListShelvesRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.example.library.v1.ListShelvesRequest) */ {
@@ -522,64 +480,61 @@ class ListShelvesRequest : public ::google::protobuf::Message /* @@protoc_insert
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListShelvesRequest& default_instance();
 
-  static inline const ListShelvesRequest* internal_default_instance() {
-    return reinterpret_cast<const ListShelvesRequest*>(
-               &_ListShelvesRequest_default_instance_);
-  }
+  static const ListShelvesRequest* internal_default_instance();
 
   void Swap(ListShelvesRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListShelvesRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListShelvesRequest* New() const { return New(NULL); }
 
-  ListShelvesRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListShelvesRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListShelvesRequest& from);
   void MergeFrom(const ListShelvesRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListShelvesRequest* other);
+  void UnsafeMergeFrom(const ListShelvesRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // int32 page_size = 1;
+  // optional int32 page_size = 1;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 1;
   ::google::protobuf::int32 page_size() const;
   void set_page_size(::google::protobuf::int32 value);
 
-  // string page_token = 2;
+  // optional string page_token = 2;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 2;
   const ::std::string& page_token() const;
@@ -599,10 +554,13 @@ class ListShelvesRequest : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+  friend void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   friend void protobuf_ShutdownFile_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListShelvesRequest> ListShelvesRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListShelvesResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.example.library.v1.ListShelvesResponse) */ {
@@ -620,52 +578,49 @@ class ListShelvesResponse : public ::google::protobuf::Message /* @@protoc_inser
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListShelvesResponse& default_instance();
 
-  static inline const ListShelvesResponse* internal_default_instance() {
-    return reinterpret_cast<const ListShelvesResponse*>(
-               &_ListShelvesResponse_default_instance_);
-  }
+  static const ListShelvesResponse* internal_default_instance();
 
   void Swap(ListShelvesResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListShelvesResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListShelvesResponse* New() const { return New(NULL); }
 
-  ListShelvesResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListShelvesResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListShelvesResponse& from);
   void MergeFrom(const ListShelvesResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListShelvesResponse* other);
+  void UnsafeMergeFrom(const ListShelvesResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -683,7 +638,7 @@ class ListShelvesResponse : public ::google::protobuf::Message /* @@protoc_inser
   const ::google::protobuf::RepeatedPtrField< ::google::example::library::v1::Shelf >&
       shelves() const;
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -703,10 +658,13 @@ class ListShelvesResponse : public ::google::protobuf::Message /* @@protoc_inser
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+  friend void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   friend void protobuf_ShutdownFile_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListShelvesResponse> ListShelvesResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class DeleteShelfRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.example.library.v1.DeleteShelfRequest) */ {
@@ -724,58 +682,55 @@ class DeleteShelfRequest : public ::google::protobuf::Message /* @@protoc_insert
   static const ::google::protobuf::Descriptor* descriptor();
   static const DeleteShelfRequest& default_instance();
 
-  static inline const DeleteShelfRequest* internal_default_instance() {
-    return reinterpret_cast<const DeleteShelfRequest*>(
-               &_DeleteShelfRequest_default_instance_);
-  }
+  static const DeleteShelfRequest* internal_default_instance();
 
   void Swap(DeleteShelfRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline DeleteShelfRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline DeleteShelfRequest* New() const { return New(NULL); }
 
-  DeleteShelfRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DeleteShelfRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const DeleteShelfRequest& from);
   void MergeFrom(const DeleteShelfRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(DeleteShelfRequest* other);
+  void UnsafeMergeFrom(const DeleteShelfRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -794,10 +749,13 @@ class DeleteShelfRequest : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+  friend void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   friend void protobuf_ShutdownFile_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<DeleteShelfRequest> DeleteShelfRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class MergeShelvesRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.example.library.v1.MergeShelvesRequest) */ {
@@ -815,58 +773,55 @@ class MergeShelvesRequest : public ::google::protobuf::Message /* @@protoc_inser
   static const ::google::protobuf::Descriptor* descriptor();
   static const MergeShelvesRequest& default_instance();
 
-  static inline const MergeShelvesRequest* internal_default_instance() {
-    return reinterpret_cast<const MergeShelvesRequest*>(
-               &_MergeShelvesRequest_default_instance_);
-  }
+  static const MergeShelvesRequest* internal_default_instance();
 
   void Swap(MergeShelvesRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline MergeShelvesRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline MergeShelvesRequest* New() const { return New(NULL); }
 
-  MergeShelvesRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  MergeShelvesRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const MergeShelvesRequest& from);
   void MergeFrom(const MergeShelvesRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(MergeShelvesRequest* other);
+  void UnsafeMergeFrom(const MergeShelvesRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -877,7 +832,7 @@ class MergeShelvesRequest : public ::google::protobuf::Message /* @@protoc_inser
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // string other_shelf_name = 2;
+  // optional string other_shelf_name = 2;
   void clear_other_shelf_name();
   static const int kOtherShelfNameFieldNumber = 2;
   const ::std::string& other_shelf_name() const;
@@ -897,10 +852,13 @@ class MergeShelvesRequest : public ::google::protobuf::Message /* @@protoc_inser
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+  friend void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   friend void protobuf_ShutdownFile_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<MergeShelvesRequest> MergeShelvesRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class CreateBookRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.example.library.v1.CreateBookRequest) */ {
@@ -918,58 +876,55 @@ class CreateBookRequest : public ::google::protobuf::Message /* @@protoc_inserti
   static const ::google::protobuf::Descriptor* descriptor();
   static const CreateBookRequest& default_instance();
 
-  static inline const CreateBookRequest* internal_default_instance() {
-    return reinterpret_cast<const CreateBookRequest*>(
-               &_CreateBookRequest_default_instance_);
-  }
+  static const CreateBookRequest* internal_default_instance();
 
   void Swap(CreateBookRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline CreateBookRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline CreateBookRequest* New() const { return New(NULL); }
 
-  CreateBookRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CreateBookRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const CreateBookRequest& from);
   void MergeFrom(const CreateBookRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(CreateBookRequest* other);
+  void UnsafeMergeFrom(const CreateBookRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -980,7 +935,7 @@ class CreateBookRequest : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // .google.example.library.v1.Book book = 2;
+  // optional .google.example.library.v1.Book book = 2;
   bool has_book() const;
   void clear_book();
   static const int kBookFieldNumber = 2;
@@ -998,10 +953,13 @@ class CreateBookRequest : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+  friend void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   friend void protobuf_ShutdownFile_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<CreateBookRequest> CreateBookRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetBookRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.example.library.v1.GetBookRequest) */ {
@@ -1019,58 +977,55 @@ class GetBookRequest : public ::google::protobuf::Message /* @@protoc_insertion_
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetBookRequest& default_instance();
 
-  static inline const GetBookRequest* internal_default_instance() {
-    return reinterpret_cast<const GetBookRequest*>(
-               &_GetBookRequest_default_instance_);
-  }
+  static const GetBookRequest* internal_default_instance();
 
   void Swap(GetBookRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetBookRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetBookRequest* New() const { return New(NULL); }
 
-  GetBookRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetBookRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetBookRequest& from);
   void MergeFrom(const GetBookRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetBookRequest* other);
+  void UnsafeMergeFrom(const GetBookRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -1089,10 +1044,13 @@ class GetBookRequest : public ::google::protobuf::Message /* @@protoc_insertion_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+  friend void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   friend void protobuf_ShutdownFile_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetBookRequest> GetBookRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListBooksRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.example.library.v1.ListBooksRequest) */ {
@@ -1110,58 +1068,55 @@ class ListBooksRequest : public ::google::protobuf::Message /* @@protoc_insertio
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListBooksRequest& default_instance();
 
-  static inline const ListBooksRequest* internal_default_instance() {
-    return reinterpret_cast<const ListBooksRequest*>(
-               &_ListBooksRequest_default_instance_);
-  }
+  static const ListBooksRequest* internal_default_instance();
 
   void Swap(ListBooksRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListBooksRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListBooksRequest* New() const { return New(NULL); }
 
-  ListBooksRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListBooksRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListBooksRequest& from);
   void MergeFrom(const ListBooksRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListBooksRequest* other);
+  void UnsafeMergeFrom(const ListBooksRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -1172,13 +1127,13 @@ class ListBooksRequest : public ::google::protobuf::Message /* @@protoc_insertio
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 2;
   ::google::protobuf::int32 page_size() const;
   void set_page_size(::google::protobuf::int32 value);
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 3;
   const ::std::string& page_token() const;
@@ -1199,10 +1154,13 @@ class ListBooksRequest : public ::google::protobuf::Message /* @@protoc_insertio
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+  friend void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   friend void protobuf_ShutdownFile_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListBooksRequest> ListBooksRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListBooksResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.example.library.v1.ListBooksResponse) */ {
@@ -1220,52 +1178,49 @@ class ListBooksResponse : public ::google::protobuf::Message /* @@protoc_inserti
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListBooksResponse& default_instance();
 
-  static inline const ListBooksResponse* internal_default_instance() {
-    return reinterpret_cast<const ListBooksResponse*>(
-               &_ListBooksResponse_default_instance_);
-  }
+  static const ListBooksResponse* internal_default_instance();
 
   void Swap(ListBooksResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListBooksResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListBooksResponse* New() const { return New(NULL); }
 
-  ListBooksResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListBooksResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListBooksResponse& from);
   void MergeFrom(const ListBooksResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListBooksResponse* other);
+  void UnsafeMergeFrom(const ListBooksResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1283,7 +1238,7 @@ class ListBooksResponse : public ::google::protobuf::Message /* @@protoc_inserti
   const ::google::protobuf::RepeatedPtrField< ::google::example::library::v1::Book >&
       books() const;
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -1303,10 +1258,13 @@ class ListBooksResponse : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+  friend void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   friend void protobuf_ShutdownFile_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListBooksResponse> ListBooksResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class UpdateBookRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.example.library.v1.UpdateBookRequest) */ {
@@ -1324,58 +1282,55 @@ class UpdateBookRequest : public ::google::protobuf::Message /* @@protoc_inserti
   static const ::google::protobuf::Descriptor* descriptor();
   static const UpdateBookRequest& default_instance();
 
-  static inline const UpdateBookRequest* internal_default_instance() {
-    return reinterpret_cast<const UpdateBookRequest*>(
-               &_UpdateBookRequest_default_instance_);
-  }
+  static const UpdateBookRequest* internal_default_instance();
 
   void Swap(UpdateBookRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline UpdateBookRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline UpdateBookRequest* New() const { return New(NULL); }
 
-  UpdateBookRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  UpdateBookRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const UpdateBookRequest& from);
   void MergeFrom(const UpdateBookRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(UpdateBookRequest* other);
+  void UnsafeMergeFrom(const UpdateBookRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -1386,7 +1341,7 @@ class UpdateBookRequest : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // .google.example.library.v1.Book book = 2;
+  // optional .google.example.library.v1.Book book = 2;
   bool has_book() const;
   void clear_book();
   static const int kBookFieldNumber = 2;
@@ -1404,10 +1359,13 @@ class UpdateBookRequest : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+  friend void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   friend void protobuf_ShutdownFile_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<UpdateBookRequest> UpdateBookRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class DeleteBookRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.example.library.v1.DeleteBookRequest) */ {
@@ -1425,58 +1383,55 @@ class DeleteBookRequest : public ::google::protobuf::Message /* @@protoc_inserti
   static const ::google::protobuf::Descriptor* descriptor();
   static const DeleteBookRequest& default_instance();
 
-  static inline const DeleteBookRequest* internal_default_instance() {
-    return reinterpret_cast<const DeleteBookRequest*>(
-               &_DeleteBookRequest_default_instance_);
-  }
+  static const DeleteBookRequest* internal_default_instance();
 
   void Swap(DeleteBookRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline DeleteBookRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline DeleteBookRequest* New() const { return New(NULL); }
 
-  DeleteBookRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DeleteBookRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const DeleteBookRequest& from);
   void MergeFrom(const DeleteBookRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(DeleteBookRequest* other);
+  void UnsafeMergeFrom(const DeleteBookRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -1495,10 +1450,13 @@ class DeleteBookRequest : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+  friend void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   friend void protobuf_ShutdownFile_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<DeleteBookRequest> DeleteBookRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class MoveBookRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.example.library.v1.MoveBookRequest) */ {
@@ -1516,58 +1474,55 @@ class MoveBookRequest : public ::google::protobuf::Message /* @@protoc_insertion
   static const ::google::protobuf::Descriptor* descriptor();
   static const MoveBookRequest& default_instance();
 
-  static inline const MoveBookRequest* internal_default_instance() {
-    return reinterpret_cast<const MoveBookRequest*>(
-               &_MoveBookRequest_default_instance_);
-  }
+  static const MoveBookRequest* internal_default_instance();
 
   void Swap(MoveBookRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline MoveBookRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline MoveBookRequest* New() const { return New(NULL); }
 
-  MoveBookRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  MoveBookRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const MoveBookRequest& from);
   void MergeFrom(const MoveBookRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(MoveBookRequest* other);
+  void UnsafeMergeFrom(const MoveBookRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -1578,7 +1533,7 @@ class MoveBookRequest : public ::google::protobuf::Message /* @@protoc_insertion
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // string other_shelf_name = 2;
+  // optional string other_shelf_name = 2;
   void clear_other_shelf_name();
   static const int kOtherShelfNameFieldNumber = 2;
   const ::std::string& other_shelf_name() const;
@@ -1598,10 +1553,13 @@ class MoveBookRequest : public ::google::protobuf::Message /* @@protoc_insertion
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+  friend void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   friend void protobuf_ShutdownFile_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<MoveBookRequest> MoveBookRequest_default_instance_;
+
 // ===================================================================
 
 
@@ -1610,13 +1568,13 @@ class MoveBookRequest : public ::google::protobuf::Message /* @@protoc_insertion
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Book
 
-// string name = 1;
+// optional string name = 1;
 inline void Book::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Book::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.Book.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Book::set_name(const ::std::string& value) {
   
@@ -1654,13 +1612,13 @@ inline void Book::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.Book.name)
 }
 
-// string author = 2;
+// optional string author = 2;
 inline void Book::clear_author() {
   author_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Book::author() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.Book.author)
-  return author_.GetNoArena();
+  return author_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Book::set_author(const ::std::string& value) {
   
@@ -1698,13 +1656,13 @@ inline void Book::set_allocated_author(::std::string* author) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.Book.author)
 }
 
-// string title = 3;
+// optional string title = 3;
 inline void Book::clear_title() {
   title_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Book::title() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.Book.title)
-  return title_.GetNoArena();
+  return title_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Book::set_title(const ::std::string& value) {
   
@@ -1742,7 +1700,7 @@ inline void Book::set_allocated_title(::std::string* title) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.Book.title)
 }
 
-// bool read = 4;
+// optional bool read = 4;
 inline void Book::clear_read() {
   read_ = false;
 }
@@ -1756,17 +1714,20 @@ inline void Book::set_read(bool value) {
   // @@protoc_insertion_point(field_set:google.example.library.v1.Book.read)
 }
 
+inline const Book* Book::internal_default_instance() {
+  return &Book_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Shelf
 
-// string name = 1;
+// optional string name = 1;
 inline void Shelf::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Shelf::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.Shelf.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Shelf::set_name(const ::std::string& value) {
   
@@ -1804,13 +1765,13 @@ inline void Shelf::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.Shelf.name)
 }
 
-// string theme = 2;
+// optional string theme = 2;
 inline void Shelf::clear_theme() {
   theme_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Shelf::theme() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.Shelf.theme)
-  return theme_.GetNoArena();
+  return theme_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Shelf::set_theme(const ::std::string& value) {
   
@@ -1848,11 +1809,14 @@ inline void Shelf::set_allocated_theme(::std::string* theme) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.Shelf.theme)
 }
 
+inline const Shelf* Shelf::internal_default_instance() {
+  return &Shelf_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // CreateShelfRequest
 
-// .google.example.library.v1.Shelf shelf = 1;
+// optional .google.example.library.v1.Shelf shelf = 1;
 inline bool CreateShelfRequest::has_shelf() const {
   return this != internal_default_instance() && shelf_ != NULL;
 }
@@ -1891,17 +1855,20 @@ inline void CreateShelfRequest::set_allocated_shelf(::google::example::library::
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.CreateShelfRequest.shelf)
 }
 
+inline const CreateShelfRequest* CreateShelfRequest::internal_default_instance() {
+  return &CreateShelfRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetShelfRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void GetShelfRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetShelfRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.GetShelfRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetShelfRequest::set_name(const ::std::string& value) {
   
@@ -1939,11 +1906,14 @@ inline void GetShelfRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.GetShelfRequest.name)
 }
 
+inline const GetShelfRequest* GetShelfRequest::internal_default_instance() {
+  return &GetShelfRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListShelvesRequest
 
-// int32 page_size = 1;
+// optional int32 page_size = 1;
 inline void ListShelvesRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -1957,13 +1927,13 @@ inline void ListShelvesRequest::set_page_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.example.library.v1.ListShelvesRequest.page_size)
 }
 
-// string page_token = 2;
+// optional string page_token = 2;
 inline void ListShelvesRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListShelvesRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.ListShelvesRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListShelvesRequest::set_page_token(const ::std::string& value) {
   
@@ -2001,6 +1971,9 @@ inline void ListShelvesRequest::set_allocated_page_token(::std::string* page_tok
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.ListShelvesRequest.page_token)
 }
 
+inline const ListShelvesRequest* ListShelvesRequest::internal_default_instance() {
+  return &ListShelvesRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListShelvesResponse
@@ -2035,13 +2008,13 @@ ListShelvesResponse::shelves() const {
   return shelves_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void ListShelvesResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListShelvesResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.ListShelvesResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListShelvesResponse::set_next_page_token(const ::std::string& value) {
   
@@ -2079,17 +2052,20 @@ inline void ListShelvesResponse::set_allocated_next_page_token(::std::string* ne
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.ListShelvesResponse.next_page_token)
 }
 
+inline const ListShelvesResponse* ListShelvesResponse::internal_default_instance() {
+  return &ListShelvesResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // DeleteShelfRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void DeleteShelfRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& DeleteShelfRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.DeleteShelfRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DeleteShelfRequest::set_name(const ::std::string& value) {
   
@@ -2127,17 +2103,20 @@ inline void DeleteShelfRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.DeleteShelfRequest.name)
 }
 
+inline const DeleteShelfRequest* DeleteShelfRequest::internal_default_instance() {
+  return &DeleteShelfRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // MergeShelvesRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void MergeShelvesRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& MergeShelvesRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.MergeShelvesRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void MergeShelvesRequest::set_name(const ::std::string& value) {
   
@@ -2175,13 +2154,13 @@ inline void MergeShelvesRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.MergeShelvesRequest.name)
 }
 
-// string other_shelf_name = 2;
+// optional string other_shelf_name = 2;
 inline void MergeShelvesRequest::clear_other_shelf_name() {
   other_shelf_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& MergeShelvesRequest::other_shelf_name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.MergeShelvesRequest.other_shelf_name)
-  return other_shelf_name_.GetNoArena();
+  return other_shelf_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void MergeShelvesRequest::set_other_shelf_name(const ::std::string& value) {
   
@@ -2219,17 +2198,20 @@ inline void MergeShelvesRequest::set_allocated_other_shelf_name(::std::string* o
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.MergeShelvesRequest.other_shelf_name)
 }
 
+inline const MergeShelvesRequest* MergeShelvesRequest::internal_default_instance() {
+  return &MergeShelvesRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // CreateBookRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void CreateBookRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& CreateBookRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.CreateBookRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void CreateBookRequest::set_name(const ::std::string& value) {
   
@@ -2267,7 +2249,7 @@ inline void CreateBookRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.CreateBookRequest.name)
 }
 
-// .google.example.library.v1.Book book = 2;
+// optional .google.example.library.v1.Book book = 2;
 inline bool CreateBookRequest::has_book() const {
   return this != internal_default_instance() && book_ != NULL;
 }
@@ -2306,17 +2288,20 @@ inline void CreateBookRequest::set_allocated_book(::google::example::library::v1
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.CreateBookRequest.book)
 }
 
+inline const CreateBookRequest* CreateBookRequest::internal_default_instance() {
+  return &CreateBookRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetBookRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void GetBookRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetBookRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.GetBookRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetBookRequest::set_name(const ::std::string& value) {
   
@@ -2354,17 +2339,20 @@ inline void GetBookRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.GetBookRequest.name)
 }
 
+inline const GetBookRequest* GetBookRequest::internal_default_instance() {
+  return &GetBookRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListBooksRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void ListBooksRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListBooksRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.ListBooksRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListBooksRequest::set_name(const ::std::string& value) {
   
@@ -2402,7 +2390,7 @@ inline void ListBooksRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.ListBooksRequest.name)
 }
 
-// int32 page_size = 2;
+// optional int32 page_size = 2;
 inline void ListBooksRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -2416,13 +2404,13 @@ inline void ListBooksRequest::set_page_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.example.library.v1.ListBooksRequest.page_size)
 }
 
-// string page_token = 3;
+// optional string page_token = 3;
 inline void ListBooksRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListBooksRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.ListBooksRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListBooksRequest::set_page_token(const ::std::string& value) {
   
@@ -2460,6 +2448,9 @@ inline void ListBooksRequest::set_allocated_page_token(::std::string* page_token
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.ListBooksRequest.page_token)
 }
 
+inline const ListBooksRequest* ListBooksRequest::internal_default_instance() {
+  return &ListBooksRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListBooksResponse
@@ -2494,13 +2485,13 @@ ListBooksResponse::books() const {
   return books_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void ListBooksResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListBooksResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.ListBooksResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListBooksResponse::set_next_page_token(const ::std::string& value) {
   
@@ -2538,17 +2529,20 @@ inline void ListBooksResponse::set_allocated_next_page_token(::std::string* next
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.ListBooksResponse.next_page_token)
 }
 
+inline const ListBooksResponse* ListBooksResponse::internal_default_instance() {
+  return &ListBooksResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // UpdateBookRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void UpdateBookRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& UpdateBookRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.UpdateBookRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void UpdateBookRequest::set_name(const ::std::string& value) {
   
@@ -2586,7 +2580,7 @@ inline void UpdateBookRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.UpdateBookRequest.name)
 }
 
-// .google.example.library.v1.Book book = 2;
+// optional .google.example.library.v1.Book book = 2;
 inline bool UpdateBookRequest::has_book() const {
   return this != internal_default_instance() && book_ != NULL;
 }
@@ -2625,17 +2619,20 @@ inline void UpdateBookRequest::set_allocated_book(::google::example::library::v1
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.UpdateBookRequest.book)
 }
 
+inline const UpdateBookRequest* UpdateBookRequest::internal_default_instance() {
+  return &UpdateBookRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // DeleteBookRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void DeleteBookRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& DeleteBookRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.DeleteBookRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DeleteBookRequest::set_name(const ::std::string& value) {
   
@@ -2673,17 +2670,20 @@ inline void DeleteBookRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.DeleteBookRequest.name)
 }
 
+inline const DeleteBookRequest* DeleteBookRequest::internal_default_instance() {
+  return &DeleteBookRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // MoveBookRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void MoveBookRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& MoveBookRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.MoveBookRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void MoveBookRequest::set_name(const ::std::string& value) {
   
@@ -2721,13 +2721,13 @@ inline void MoveBookRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.MoveBookRequest.name)
 }
 
-// string other_shelf_name = 2;
+// optional string other_shelf_name = 2;
 inline void MoveBookRequest::clear_other_shelf_name() {
   other_shelf_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& MoveBookRequest::other_shelf_name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.MoveBookRequest.other_shelf_name)
-  return other_shelf_name_.GetNoArena();
+  return other_shelf_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void MoveBookRequest::set_other_shelf_name(const ::std::string& value) {
   
@@ -2765,6 +2765,9 @@ inline void MoveBookRequest::set_allocated_other_shelf_name(::std::string* other
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.MoveBookRequest.other_shelf_name)
 }
 
+inline const MoveBookRequest* MoveBookRequest::internal_default_instance() {
+  return &MoveBookRequest_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
@@ -2796,7 +2799,6 @@ inline void MoveBookRequest::set_allocated_other_shelf_name(::std::string* other
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace library

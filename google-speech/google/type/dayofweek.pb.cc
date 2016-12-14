@@ -22,26 +22,27 @@ namespace type {
 
 namespace {
 
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+const ::google::protobuf::EnumDescriptor* DayOfWeek_descriptor_ = NULL;
 
 }  // namespace
 
-inline ::google::protobuf::uint32* protobuf_Offsets_google_2ftype_2fdayofweek_2eproto() { return NULL; }
-static const ::google::protobuf::internal::MigrationSchema* schemas = NULL;
-static const ::google::protobuf::internal::DefaultInstanceData* file_default_instances = NULL;
-namespace {
 
-void protobuf_AssignDescriptors() {
+void protobuf_AssignDesc_google_2ftype_2fdayofweek_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2ftype_2fdayofweek_2eproto() {
   protobuf_AddDesc_google_2ftype_2fdayofweek_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/type/dayofweek.proto", schemas, file_default_instances, protobuf_Offsets_google_2ftype_2fdayofweek_2eproto(), factory,
-      NULL, file_level_enum_descriptors, NULL);
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/type/dayofweek.proto");
+  GOOGLE_CHECK(file != NULL);
+  DayOfWeek_descriptor_ = file->enum_type(0);
 }
 
+namespace {
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2ftype_2fdayofweek_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
@@ -57,27 +58,26 @@ void protobuf_ShutdownFile_google_2ftype_2fdayofweek_2eproto() {
 void protobuf_InitDefaults_google_2ftype_2fdayofweek_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::internal::InitProtobufDefaults();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2ftype_2fdayofweek_2eproto_once_);
 void protobuf_InitDefaults_google_2ftype_2fdayofweek_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2ftype_2fdayofweek_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2ftype_2fdayofweek_2eproto_once_,
+                 &protobuf_InitDefaults_google_2ftype_2fdayofweek_2eproto_impl);
 }
 void protobuf_AddDesc_google_2ftype_2fdayofweek_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2ftype_2fdayofweek_2eproto();
-  static const char descriptor[] = {
-      "\n\033google/type/dayofweek.proto\022\013google.ty"
-      "pe*\204\001\n\tDayOfWeek\022\033\n\027DAY_OF_WEEK_UNSPECIF"
-      "IED\020\000\022\n\n\006MONDAY\020\001\022\013\n\007TUESDAY\020\002\022\r\n\tWEDNES"
-      "DAY\020\003\022\014\n\010THURSDAY\020\004\022\n\n\006FRIDAY\020\005\022\014\n\010SATUR"
-      "DAY\020\006\022\n\n\006SUNDAY\020\007Bi\n\017com.google.typeB\016Da"
-      "yOfWeekProtoP\001Z>google.golang.org/genpro"
-      "to/googleapis/type/dayofweek;dayofweek\242\002"
-      "\003GTPb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 292);
+    "\n\033google/type/dayofweek.proto\022\013google.ty"
+    "pe*\204\001\n\tDayOfWeek\022\033\n\027DAY_OF_WEEK_UNSPECIF"
+    "IED\020\000\022\n\n\006MONDAY\020\001\022\013\n\007TUESDAY\020\002\022\r\n\tWEDNES"
+    "DAY\020\003\022\014\n\010THURSDAY\020\004\022\n\n\006FRIDAY\020\005\022\014\n\010SATUR"
+    "DAY\020\006\022\n\n\006SUNDAY\020\007Bi\n\017com.google.typeB\016Da"
+    "yOfWeekProtoP\001Z>google.golang.org/genpro"
+    "to/googleapis/type/dayofweek;dayofweek\242\002"
+    "\003GTPb\006proto3", 292);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/type/dayofweek.proto", &protobuf_RegisterTypes);
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2ftype_2fdayofweek_2eproto);
@@ -96,7 +96,7 @@ struct StaticDescriptorInitializer_google_2ftype_2fdayofweek_2eproto {
 } static_descriptor_initializer_google_2ftype_2fdayofweek_2eproto_;
 const ::google::protobuf::EnumDescriptor* DayOfWeek_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
+  return DayOfWeek_descriptor_;
 }
 bool DayOfWeek_IsValid(int value) {
   switch (value) {

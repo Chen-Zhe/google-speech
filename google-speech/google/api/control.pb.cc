@@ -19,86 +19,84 @@
 
 namespace google {
 namespace api {
-class ControlDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Control> {};
-ControlDefaultTypeInternal _Control_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[1];
+const ::google::protobuf::Descriptor* Control_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Control_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fcontrol_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fcontrol_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Control, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fapi_2fcontrol_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fapi_2fcontrol_2eproto() {
+  protobuf_AddDesc_google_2fapi_2fcontrol_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/api/control.proto");
+  GOOGLE_CHECK(file != NULL);
+  Control_descriptor_ = file->message_type(0);
+  static const int Control_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Control, environment_),
   };
-  return offsets;
+  Control_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Control_descriptor_,
+      Control::internal_default_instance(),
+      Control_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Control),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Control, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(Control)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Control_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fapi_2fcontrol_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/api/control.proto", schemas, file_default_instances, protobuf_Offsets_google_2fapi_2fcontrol_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fapi_2fcontrol_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Control_descriptor_, Control::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2fcontrol_2eproto() {
-  _Control_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
+  Control_default_instance_.Shutdown();
+  delete Control_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fapi_2fcontrol_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _Control_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Control_default_instance_.DefaultConstruct();
+  Control_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fcontrol_2eproto_once_);
 void protobuf_InitDefaults_google_2fapi_2fcontrol_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fapi_2fcontrol_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fcontrol_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fcontrol_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fapi_2fcontrol_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fapi_2fcontrol_2eproto();
-  static const char descriptor[] = {
-      "\n\030google/api/control.proto\022\ngoogle.api\"\036"
-      "\n\007Control\022\023\n\013environment\030\001 \001(\tBn\n\016com.go"
-      "ogle.apiB\014ControlProtoP\001ZEgoogle.golang."
-      "org/genproto/googleapis/api/serviceconfi"
-      "g;serviceconfig\242\002\004GAPIb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 190);
+    "\n\030google/api/control.proto\022\ngoogle.api\"\036"
+    "\n\007Control\022\023\n\013environment\030\001 \001(\tBn\n\016com.go"
+    "ogle.apiB\014ControlProtoP\001ZEgoogle.golang."
+    "org/genproto/googleapis/api/serviceconfi"
+    "g;serviceconfig\242\002\004GAPIb\006proto3", 190);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/control.proto", &protobuf_RegisterTypes);
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fapi_2fcontrol_2eproto);
@@ -116,6 +114,16 @@ struct StaticDescriptorInitializer_google_2fapi_2fcontrol_2eproto {
   }
 } static_descriptor_initializer_google_2fapi_2fcontrol_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -124,21 +132,19 @@ const int Control::kEnvironmentFieldNumber;
 
 Control::Control()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fcontrol_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fcontrol_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Control)
 }
+
+void Control::InitAsDefaultInstance() {
+}
+
 Control::Control(const Control& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  environment_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.environment().size() > 0) {
-    environment_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.environment_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Control)
 }
 
@@ -163,13 +169,15 @@ void Control::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Control::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return Control_descriptor_;
 }
 
 const Control& Control::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fcontrol_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Control> Control_default_instance_;
 
 Control* Control::New(::google::protobuf::Arena* arena) const {
   Control* n = new Control;
@@ -190,13 +198,13 @@ bool Control::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.Control)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string environment = 1;
+      // optional string environment = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_environment()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -206,6 +214,7 @@ bool Control::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -233,7 +242,7 @@ failure:
 void Control::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.api.Control)
-  // string environment = 1;
+  // optional string environment = 1;
   if (this->environment().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->environment().data(), this->environment().length(),
@@ -250,7 +259,7 @@ void Control::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.Control)
-  // string environment = 1;
+  // optional string environment = 1;
   if (this->environment().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->environment().data(), this->environment().length(),
@@ -269,7 +278,7 @@ size_t Control::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.Control)
   size_t total_size = 0;
 
-  // string environment = 1;
+  // optional string environment = 1;
   if (this->environment().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -285,7 +294,7 @@ size_t Control::ByteSizeLong() const {
 
 void Control::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Control)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Control* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Control>(
           &from);
@@ -294,14 +303,21 @@ void Control::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Control)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Control::MergeFrom(const Control& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Control)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Control::UnsafeMergeFrom(const Control& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.environment().size() > 0) {
 
     environment_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.environment_);
@@ -319,10 +335,11 @@ void Control::CopyFrom(const Control& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Control)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Control::IsInitialized() const {
+
   return true;
 }
 
@@ -332,24 +349,28 @@ void Control::Swap(Control* other) {
 }
 void Control::InternalSwap(Control* other) {
   environment_.Swap(&other->environment_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Control::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Control_descriptor_;
+  metadata.reflection = Control_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Control
 
-// string environment = 1;
+// optional string environment = 1;
 void Control::clear_environment() {
   environment_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Control::environment() const {
   // @@protoc_insertion_point(field_get:google.api.Control.environment)
-  return environment_.GetNoArena();
+  return environment_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Control::set_environment(const ::std::string& value) {
   
@@ -387,6 +408,9 @@ void Control::set_allocated_environment(::std::string* environment) {
   // @@protoc_insertion_point(field_set_allocated:google.api.Control.environment)
 }
 
+inline const Control* Control::internal_default_instance() {
+  return &Control_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

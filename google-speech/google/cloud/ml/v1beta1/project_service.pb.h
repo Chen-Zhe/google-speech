@@ -24,27 +24,11 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace cloud {
-namespace ml {
-namespace v1beta1 {
-class GetConfigRequest;
-class GetConfigRequestDefaultTypeInternal;
-extern GetConfigRequestDefaultTypeInternal _GetConfigRequest_default_instance_;
-class GetConfigResponse;
-class GetConfigResponseDefaultTypeInternal;
-extern GetConfigResponseDefaultTypeInternal _GetConfigResponse_default_instance_;
-}  // namespace v1beta1
-}  // namespace ml
-}  // namespace cloud
-}  // namespace google
 
 namespace google {
 namespace cloud {
@@ -54,6 +38,11 @@ namespace v1beta1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
 void protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
+void protobuf_AssignDesc_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
+void protobuf_ShutdownFile_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
+
+class GetConfigRequest;
+class GetConfigResponse;
 
 // ===================================================================
 
@@ -72,58 +61,55 @@ class GetConfigRequest : public ::google::protobuf::Message /* @@protoc_insertio
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetConfigRequest& default_instance();
 
-  static inline const GetConfigRequest* internal_default_instance() {
-    return reinterpret_cast<const GetConfigRequest*>(
-               &_GetConfigRequest_default_instance_);
-  }
+  static const GetConfigRequest* internal_default_instance();
 
   void Swap(GetConfigRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetConfigRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetConfigRequest* New() const { return New(NULL); }
 
-  GetConfigRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetConfigRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetConfigRequest& from);
   void MergeFrom(const GetConfigRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetConfigRequest* other);
+  void UnsafeMergeFrom(const GetConfigRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -142,10 +128,13 @@ class GetConfigRequest : public ::google::protobuf::Message /* @@protoc_insertio
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetConfigRequest> GetConfigRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetConfigResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.ml.v1beta1.GetConfigResponse) */ {
@@ -163,58 +152,55 @@ class GetConfigResponse : public ::google::protobuf::Message /* @@protoc_inserti
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetConfigResponse& default_instance();
 
-  static inline const GetConfigResponse* internal_default_instance() {
-    return reinterpret_cast<const GetConfigResponse*>(
-               &_GetConfigResponse_default_instance_);
-  }
+  static const GetConfigResponse* internal_default_instance();
 
   void Swap(GetConfigResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetConfigResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetConfigResponse* New() const { return New(NULL); }
 
-  GetConfigResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetConfigResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetConfigResponse& from);
   void MergeFrom(const GetConfigResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetConfigResponse* other);
+  void UnsafeMergeFrom(const GetConfigResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string service_account = 1;
+  // optional string service_account = 1;
   void clear_service_account();
   static const int kServiceAccountFieldNumber = 1;
   const ::std::string& service_account() const;
@@ -225,7 +211,7 @@ class GetConfigResponse : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_service_account();
   void set_allocated_service_account(::std::string* service_account);
 
-  // int64 service_account_project = 2;
+  // optional int64 service_account_project = 2;
   void clear_service_account_project();
   static const int kServiceAccountProjectFieldNumber = 2;
   ::google::protobuf::int64 service_account_project() const;
@@ -240,10 +226,13 @@ class GetConfigResponse : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetConfigResponse> GetConfigResponse_default_instance_;
+
 // ===================================================================
 
 
@@ -252,13 +241,13 @@ class GetConfigResponse : public ::google::protobuf::Message /* @@protoc_inserti
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // GetConfigRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void GetConfigRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetConfigRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.GetConfigRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetConfigRequest::set_name(const ::std::string& value) {
   
@@ -296,17 +285,20 @@ inline void GetConfigRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.GetConfigRequest.name)
 }
 
+inline const GetConfigRequest* GetConfigRequest::internal_default_instance() {
+  return &GetConfigRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetConfigResponse
 
-// string service_account = 1;
+// optional string service_account = 1;
 inline void GetConfigResponse::clear_service_account() {
   service_account_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetConfigResponse::service_account() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.GetConfigResponse.service_account)
-  return service_account_.GetNoArena();
+  return service_account_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetConfigResponse::set_service_account(const ::std::string& value) {
   
@@ -344,7 +336,7 @@ inline void GetConfigResponse::set_allocated_service_account(::std::string* serv
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.GetConfigResponse.service_account)
 }
 
-// int64 service_account_project = 2;
+// optional int64 service_account_project = 2;
 inline void GetConfigResponse::clear_service_account_project() {
   service_account_project_ = GOOGLE_LONGLONG(0);
 }
@@ -358,12 +350,14 @@ inline void GetConfigResponse::set_service_account_project(::google::protobuf::i
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.GetConfigResponse.service_account_project)
 }
 
+inline const GetConfigResponse* GetConfigResponse::internal_default_instance() {
+  return &GetConfigResponse_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1beta1
 }  // namespace ml

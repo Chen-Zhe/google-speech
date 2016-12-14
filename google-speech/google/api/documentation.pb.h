@@ -24,23 +24,10 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-class Documentation;
-class DocumentationDefaultTypeInternal;
-extern DocumentationDefaultTypeInternal _Documentation_default_instance_;
-class DocumentationRule;
-class DocumentationRuleDefaultTypeInternal;
-extern DocumentationRuleDefaultTypeInternal _DocumentationRule_default_instance_;
-class Page;
-class PageDefaultTypeInternal;
-extern PageDefaultTypeInternal _Page_default_instance_;
-}  // namespace api
-}  // namespace google
 
 namespace google {
 namespace api {
@@ -48,6 +35,12 @@ namespace api {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fapi_2fdocumentation_2eproto();
 void protobuf_InitDefaults_google_2fapi_2fdocumentation_2eproto();
+void protobuf_AssignDesc_google_2fapi_2fdocumentation_2eproto();
+void protobuf_ShutdownFile_google_2fapi_2fdocumentation_2eproto();
+
+class Documentation;
+class DocumentationRule;
+class Page;
 
 // ===================================================================
 
@@ -66,58 +59,55 @@ class Documentation : public ::google::protobuf::Message /* @@protoc_insertion_p
   static const ::google::protobuf::Descriptor* descriptor();
   static const Documentation& default_instance();
 
-  static inline const Documentation* internal_default_instance() {
-    return reinterpret_cast<const Documentation*>(
-               &_Documentation_default_instance_);
-  }
+  static const Documentation* internal_default_instance();
 
   void Swap(Documentation* other);
 
   // implements Message ----------------------------------------------
 
-  inline Documentation* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Documentation* New() const { return New(NULL); }
 
-  Documentation* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Documentation* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Documentation& from);
   void MergeFrom(const Documentation& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Documentation* other);
+  void UnsafeMergeFrom(const Documentation& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string summary = 1;
+  // optional string summary = 1;
   void clear_summary();
   static const int kSummaryFieldNumber = 1;
   const ::std::string& summary() const;
@@ -152,7 +142,7 @@ class Documentation : public ::google::protobuf::Message /* @@protoc_insertion_p
   const ::google::protobuf::RepeatedPtrField< ::google::api::DocumentationRule >&
       rules() const;
 
-  // string documentation_root_url = 4;
+  // optional string documentation_root_url = 4;
   void clear_documentation_root_url();
   static const int kDocumentationRootUrlFieldNumber = 4;
   const ::std::string& documentation_root_url() const;
@@ -163,7 +153,7 @@ class Documentation : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::std::string* release_documentation_root_url();
   void set_allocated_documentation_root_url(::std::string* documentation_root_url);
 
-  // string overview = 2;
+  // optional string overview = 2;
   void clear_overview();
   static const int kOverviewFieldNumber = 2;
   const ::std::string& overview() const;
@@ -186,10 +176,13 @@ class Documentation : public ::google::protobuf::Message /* @@protoc_insertion_p
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fdocumentation_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fdocumentation_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fdocumentation_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fdocumentation_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fdocumentation_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Documentation> Documentation_default_instance_;
+
 // -------------------------------------------------------------------
 
 class DocumentationRule : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.api.DocumentationRule) */ {
@@ -207,58 +200,55 @@ class DocumentationRule : public ::google::protobuf::Message /* @@protoc_inserti
   static const ::google::protobuf::Descriptor* descriptor();
   static const DocumentationRule& default_instance();
 
-  static inline const DocumentationRule* internal_default_instance() {
-    return reinterpret_cast<const DocumentationRule*>(
-               &_DocumentationRule_default_instance_);
-  }
+  static const DocumentationRule* internal_default_instance();
 
   void Swap(DocumentationRule* other);
 
   // implements Message ----------------------------------------------
 
-  inline DocumentationRule* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline DocumentationRule* New() const { return New(NULL); }
 
-  DocumentationRule* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DocumentationRule* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const DocumentationRule& from);
   void MergeFrom(const DocumentationRule& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(DocumentationRule* other);
+  void UnsafeMergeFrom(const DocumentationRule& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string selector = 1;
+  // optional string selector = 1;
   void clear_selector();
   static const int kSelectorFieldNumber = 1;
   const ::std::string& selector() const;
@@ -269,7 +259,7 @@ class DocumentationRule : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_selector();
   void set_allocated_selector(::std::string* selector);
 
-  // string description = 2;
+  // optional string description = 2;
   void clear_description();
   static const int kDescriptionFieldNumber = 2;
   const ::std::string& description() const;
@@ -280,7 +270,7 @@ class DocumentationRule : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_description();
   void set_allocated_description(::std::string* description);
 
-  // string deprecation_description = 3;
+  // optional string deprecation_description = 3;
   void clear_deprecation_description();
   static const int kDeprecationDescriptionFieldNumber = 3;
   const ::std::string& deprecation_description() const;
@@ -301,10 +291,13 @@ class DocumentationRule : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fdocumentation_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fdocumentation_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fdocumentation_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fdocumentation_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fdocumentation_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<DocumentationRule> DocumentationRule_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Page : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.api.Page) */ {
@@ -322,58 +315,55 @@ class Page : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   static const ::google::protobuf::Descriptor* descriptor();
   static const Page& default_instance();
 
-  static inline const Page* internal_default_instance() {
-    return reinterpret_cast<const Page*>(
-               &_Page_default_instance_);
-  }
+  static const Page* internal_default_instance();
 
   void Swap(Page* other);
 
   // implements Message ----------------------------------------------
 
-  inline Page* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Page* New() const { return New(NULL); }
 
-  Page* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Page* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Page& from);
   void MergeFrom(const Page& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Page* other);
+  void UnsafeMergeFrom(const Page& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -384,7 +374,7 @@ class Page : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // string content = 2;
+  // optional string content = 2;
   void clear_content();
   static const int kContentFieldNumber = 2;
   const ::std::string& content() const;
@@ -417,10 +407,13 @@ class Page : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fdocumentation_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fdocumentation_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fdocumentation_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fdocumentation_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fdocumentation_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Page> Page_default_instance_;
+
 // ===================================================================
 
 
@@ -429,13 +422,13 @@ class Page : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Documentation
 
-// string summary = 1;
+// optional string summary = 1;
 inline void Documentation::clear_summary() {
   summary_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Documentation::summary() const {
   // @@protoc_insertion_point(field_get:google.api.Documentation.summary)
-  return summary_.GetNoArena();
+  return summary_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Documentation::set_summary(const ::std::string& value) {
   
@@ -533,13 +526,13 @@ Documentation::rules() const {
   return rules_;
 }
 
-// string documentation_root_url = 4;
+// optional string documentation_root_url = 4;
 inline void Documentation::clear_documentation_root_url() {
   documentation_root_url_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Documentation::documentation_root_url() const {
   // @@protoc_insertion_point(field_get:google.api.Documentation.documentation_root_url)
-  return documentation_root_url_.GetNoArena();
+  return documentation_root_url_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Documentation::set_documentation_root_url(const ::std::string& value) {
   
@@ -577,13 +570,13 @@ inline void Documentation::set_allocated_documentation_root_url(::std::string* d
   // @@protoc_insertion_point(field_set_allocated:google.api.Documentation.documentation_root_url)
 }
 
-// string overview = 2;
+// optional string overview = 2;
 inline void Documentation::clear_overview() {
   overview_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Documentation::overview() const {
   // @@protoc_insertion_point(field_get:google.api.Documentation.overview)
-  return overview_.GetNoArena();
+  return overview_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Documentation::set_overview(const ::std::string& value) {
   
@@ -621,17 +614,20 @@ inline void Documentation::set_allocated_overview(::std::string* overview) {
   // @@protoc_insertion_point(field_set_allocated:google.api.Documentation.overview)
 }
 
+inline const Documentation* Documentation::internal_default_instance() {
+  return &Documentation_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // DocumentationRule
 
-// string selector = 1;
+// optional string selector = 1;
 inline void DocumentationRule::clear_selector() {
   selector_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& DocumentationRule::selector() const {
   // @@protoc_insertion_point(field_get:google.api.DocumentationRule.selector)
-  return selector_.GetNoArena();
+  return selector_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DocumentationRule::set_selector(const ::std::string& value) {
   
@@ -669,13 +665,13 @@ inline void DocumentationRule::set_allocated_selector(::std::string* selector) {
   // @@protoc_insertion_point(field_set_allocated:google.api.DocumentationRule.selector)
 }
 
-// string description = 2;
+// optional string description = 2;
 inline void DocumentationRule::clear_description() {
   description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& DocumentationRule::description() const {
   // @@protoc_insertion_point(field_get:google.api.DocumentationRule.description)
-  return description_.GetNoArena();
+  return description_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DocumentationRule::set_description(const ::std::string& value) {
   
@@ -713,13 +709,13 @@ inline void DocumentationRule::set_allocated_description(::std::string* descript
   // @@protoc_insertion_point(field_set_allocated:google.api.DocumentationRule.description)
 }
 
-// string deprecation_description = 3;
+// optional string deprecation_description = 3;
 inline void DocumentationRule::clear_deprecation_description() {
   deprecation_description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& DocumentationRule::deprecation_description() const {
   // @@protoc_insertion_point(field_get:google.api.DocumentationRule.deprecation_description)
-  return deprecation_description_.GetNoArena();
+  return deprecation_description_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DocumentationRule::set_deprecation_description(const ::std::string& value) {
   
@@ -757,17 +753,20 @@ inline void DocumentationRule::set_allocated_deprecation_description(::std::stri
   // @@protoc_insertion_point(field_set_allocated:google.api.DocumentationRule.deprecation_description)
 }
 
+inline const DocumentationRule* DocumentationRule::internal_default_instance() {
+  return &DocumentationRule_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Page
 
-// string name = 1;
+// optional string name = 1;
 inline void Page::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Page::name() const {
   // @@protoc_insertion_point(field_get:google.api.Page.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Page::set_name(const ::std::string& value) {
   
@@ -805,13 +804,13 @@ inline void Page::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.api.Page.name)
 }
 
-// string content = 2;
+// optional string content = 2;
 inline void Page::clear_content() {
   content_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Page::content() const {
   // @@protoc_insertion_point(field_get:google.api.Page.content)
-  return content_.GetNoArena();
+  return content_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Page::set_content(const ::std::string& value) {
   
@@ -879,6 +878,9 @@ Page::subpages() const {
   return subpages_;
 }
 
+inline const Page* Page::internal_default_instance() {
+  return &Page_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
@@ -886,7 +888,6 @@ Page::subpages() const {
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace api
 }  // namespace google

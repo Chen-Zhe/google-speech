@@ -19,109 +19,120 @@
 
 namespace google {
 namespace api {
-class ConfigChangeDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ConfigChange> {};
-ConfigChangeDefaultTypeInternal _ConfigChange_default_instance_;
-class AdviceDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Advice> {};
-AdviceDefaultTypeInternal _Advice_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[2];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+const ::google::protobuf::Descriptor* ConfigChange_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ConfigChange_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Advice_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Advice_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* ChangeType_descriptor_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fconfig_5fchange_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fconfig_5fchange_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ConfigChange, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fapi_2fconfig_5fchange_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fapi_2fconfig_5fchange_2eproto() {
+  protobuf_AddDesc_google_2fapi_2fconfig_5fchange_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/api/config_change.proto");
+  GOOGLE_CHECK(file != NULL);
+  ConfigChange_descriptor_ = file->message_type(0);
+  static const int ConfigChange_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ConfigChange, element_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ConfigChange, old_value_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ConfigChange, new_value_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ConfigChange, change_type_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ConfigChange, advices_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Advice, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ConfigChange_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ConfigChange_descriptor_,
+      ConfigChange::internal_default_instance(),
+      ConfigChange_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ConfigChange),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ConfigChange, _internal_metadata_));
+  Advice_descriptor_ = file->message_type(1);
+  static const int Advice_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Advice, description_),
   };
-  return offsets;
+  Advice_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Advice_descriptor_,
+      Advice::internal_default_instance(),
+      Advice_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Advice),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Advice, _internal_metadata_));
+  ChangeType_descriptor_ = file->enum_type(0);
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(ConfigChange)},
-  { 9, -1, sizeof(Advice)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ConfigChange_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Advice_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fapi_2fconfig_5fchange_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/api/config_change.proto", schemas, file_default_instances, protobuf_Offsets_google_2fapi_2fconfig_5fchange_2eproto(), factory,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fapi_2fconfig_5fchange_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 2);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ConfigChange_descriptor_, ConfigChange::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Advice_descriptor_, Advice::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2fconfig_5fchange_2eproto() {
-  _ConfigChange_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _Advice_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
+  ConfigChange_default_instance_.Shutdown();
+  delete ConfigChange_reflection_;
+  Advice_default_instance_.Shutdown();
+  delete Advice_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fapi_2fconfig_5fchange_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _ConfigChange_default_instance_.DefaultConstruct();
-  _Advice_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ConfigChange_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Advice_default_instance_.DefaultConstruct();
+  ConfigChange_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Advice_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fconfig_5fchange_2eproto_once_);
 void protobuf_InitDefaults_google_2fapi_2fconfig_5fchange_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fapi_2fconfig_5fchange_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fconfig_5fchange_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fconfig_5fchange_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fapi_2fconfig_5fchange_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fapi_2fconfig_5fchange_2eproto();
-  static const char descriptor[] = {
-      "\n\036google/api/config_change.proto\022\ngoogle"
-      ".api\"\227\001\n\014ConfigChange\022\017\n\007element\030\001 \001(\t\022\021"
-      "\n\told_value\030\002 \001(\t\022\021\n\tnew_value\030\003 \001(\t\022+\n\013"
-      "change_type\030\004 \001(\0162\026.google.api.ChangeTyp"
-      "e\022#\n\007advices\030\005 \003(\0132\022.google.api.Advice\"\035"
-      "\n\006Advice\022\023\n\013description\030\002 \001(\t*O\n\nChangeT"
-      "ype\022\033\n\027CHANGE_TYPE_UNSPECIFIED\020\000\022\t\n\005ADDE"
-      "D\020\001\022\013\n\007REMOVED\020\002\022\014\n\010MODIFIED\020\003Bq\n\016com.go"
-      "ogle.apiB\021ConfigChangeProtoP\001ZCgoogle.go"
-      "lang.org/genproto/googleapis/api/configc"
-      "hange;configchange\242\002\004GAPIb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 433);
+    "\n\036google/api/config_change.proto\022\ngoogle"
+    ".api\"\227\001\n\014ConfigChange\022\017\n\007element\030\001 \001(\t\022\021"
+    "\n\told_value\030\002 \001(\t\022\021\n\tnew_value\030\003 \001(\t\022+\n\013"
+    "change_type\030\004 \001(\0162\026.google.api.ChangeTyp"
+    "e\022#\n\007advices\030\005 \003(\0132\022.google.api.Advice\"\035"
+    "\n\006Advice\022\023\n\013description\030\002 \001(\t*O\n\nChangeT"
+    "ype\022\033\n\027CHANGE_TYPE_UNSPECIFIED\020\000\022\t\n\005ADDE"
+    "D\020\001\022\013\n\007REMOVED\020\002\022\014\n\010MODIFIED\020\003Bq\n\016com.go"
+    "ogle.apiB\021ConfigChangeProtoP\001ZCgoogle.go"
+    "lang.org/genproto/googleapis/api/configc"
+    "hange;configchange\242\002\004GAPIb\006proto3", 433);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/config_change.proto", &protobuf_RegisterTypes);
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fapi_2fconfig_5fchange_2eproto);
@@ -140,7 +151,7 @@ struct StaticDescriptorInitializer_google_2fapi_2fconfig_5fchange_2eproto {
 } static_descriptor_initializer_google_2fapi_2fconfig_5fchange_2eproto_;
 const ::google::protobuf::EnumDescriptor* ChangeType_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
+  return ChangeType_descriptor_;
 }
 bool ChangeType_IsValid(int value) {
   switch (value) {
@@ -155,6 +166,16 @@ bool ChangeType_IsValid(int value) {
 }
 
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -167,31 +188,19 @@ const int ConfigChange::kAdvicesFieldNumber;
 
 ConfigChange::ConfigChange()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fconfig_5fchange_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fconfig_5fchange_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.ConfigChange)
 }
+
+void ConfigChange::InitAsDefaultInstance() {
+}
+
 ConfigChange::ConfigChange(const ConfigChange& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      advices_(from.advices_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  element_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.element().size() > 0) {
-    element_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.element_);
-  }
-  old_value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.old_value().size() > 0) {
-    old_value_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.old_value_);
-  }
-  new_value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.new_value().size() > 0) {
-    new_value_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.new_value_);
-  }
-  change_type_ = from.change_type_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.ConfigChange)
 }
 
@@ -221,13 +230,15 @@ void ConfigChange::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ConfigChange::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return ConfigChange_descriptor_;
 }
 
 const ConfigChange& ConfigChange::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fconfig_5fchange_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ConfigChange> ConfigChange_default_instance_;
 
 ConfigChange* ConfigChange::New(::google::protobuf::Arena* arena) const {
   ConfigChange* n = new ConfigChange;
@@ -239,11 +250,11 @@ ConfigChange* ConfigChange::New(::google::protobuf::Arena* arena) const {
 
 void ConfigChange::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.api.ConfigChange)
-  advices_.Clear();
   element_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   old_value_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   new_value_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   change_type_ = 0;
+  advices_.Clear();
 }
 
 bool ConfigChange::MergePartialFromCodedStream(
@@ -252,13 +263,13 @@ bool ConfigChange::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.ConfigChange)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string element = 1;
+      // optional string element = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_element()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -268,12 +279,14 @@ bool ConfigChange::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_old_value;
         break;
       }
 
-      // string old_value = 2;
+      // optional string old_value = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_old_value:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_old_value()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -283,12 +296,14 @@ bool ConfigChange::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_new_value;
         break;
       }
 
-      // string new_value = 3;
+      // optional string new_value = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_new_value:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_new_value()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -298,12 +313,14 @@ bool ConfigChange::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_change_type;
         break;
       }
 
-      // .google.api.ChangeType change_type = 4;
+      // optional .google.api.ChangeType change_type = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_change_type:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -312,19 +329,24 @@ bool ConfigChange::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_advices;
         break;
       }
 
       // repeated .google.api.Advice advices = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_advices:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_advices:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_advices()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_loop_advices;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -352,7 +374,7 @@ failure:
 void ConfigChange::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.api.ConfigChange)
-  // string element = 1;
+  // optional string element = 1;
   if (this->element().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->element().data(), this->element().length(),
@@ -362,7 +384,7 @@ void ConfigChange::SerializeWithCachedSizes(
       1, this->element(), output);
   }
 
-  // string old_value = 2;
+  // optional string old_value = 2;
   if (this->old_value().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->old_value().data(), this->old_value().length(),
@@ -372,7 +394,7 @@ void ConfigChange::SerializeWithCachedSizes(
       2, this->old_value(), output);
   }
 
-  // string new_value = 3;
+  // optional string new_value = 3;
   if (this->new_value().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->new_value().data(), this->new_value().length(),
@@ -382,7 +404,7 @@ void ConfigChange::SerializeWithCachedSizes(
       3, this->new_value(), output);
   }
 
-  // .google.api.ChangeType change_type = 4;
+  // optional .google.api.ChangeType change_type = 4;
   if (this->change_type() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       4, this->change_type(), output);
@@ -401,7 +423,7 @@ void ConfigChange::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.ConfigChange)
-  // string element = 1;
+  // optional string element = 1;
   if (this->element().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->element().data(), this->element().length(),
@@ -412,7 +434,7 @@ void ConfigChange::SerializeWithCachedSizes(
         1, this->element(), target);
   }
 
-  // string old_value = 2;
+  // optional string old_value = 2;
   if (this->old_value().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->old_value().data(), this->old_value().length(),
@@ -423,7 +445,7 @@ void ConfigChange::SerializeWithCachedSizes(
         2, this->old_value(), target);
   }
 
-  // string new_value = 3;
+  // optional string new_value = 3;
   if (this->new_value().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->new_value().data(), this->new_value().length(),
@@ -434,7 +456,7 @@ void ConfigChange::SerializeWithCachedSizes(
         3, this->new_value(), target);
   }
 
-  // .google.api.ChangeType change_type = 4;
+  // optional .google.api.ChangeType change_type = 4;
   if (this->change_type() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       4, this->change_type(), target);
@@ -455,6 +477,33 @@ size_t ConfigChange::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.ConfigChange)
   size_t total_size = 0;
 
+  // optional string element = 1;
+  if (this->element().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->element());
+  }
+
+  // optional string old_value = 2;
+  if (this->old_value().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->old_value());
+  }
+
+  // optional string new_value = 3;
+  if (this->new_value().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->new_value());
+  }
+
+  // optional .google.api.ChangeType change_type = 4;
+  if (this->change_type() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->change_type());
+  }
+
   // repeated .google.api.Advice advices = 5;
   {
     unsigned int count = this->advices_size();
@@ -466,33 +515,6 @@ size_t ConfigChange::ByteSizeLong() const {
     }
   }
 
-  // string element = 1;
-  if (this->element().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->element());
-  }
-
-  // string old_value = 2;
-  if (this->old_value().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->old_value());
-  }
-
-  // string new_value = 3;
-  if (this->new_value().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->new_value());
-  }
-
-  // .google.api.ChangeType change_type = 4;
-  if (this->change_type() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->change_type());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -502,7 +524,7 @@ size_t ConfigChange::ByteSizeLong() const {
 
 void ConfigChange::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.ConfigChange)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ConfigChange* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ConfigChange>(
           &from);
@@ -511,14 +533,21 @@ void ConfigChange::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.ConfigChange)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ConfigChange::MergeFrom(const ConfigChange& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.ConfigChange)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ConfigChange::UnsafeMergeFrom(const ConfigChange& from) {
+  GOOGLE_DCHECK(&from != this);
   advices_.MergeFrom(from.advices_);
   if (from.element().size() > 0) {
 
@@ -548,10 +577,11 @@ void ConfigChange::CopyFrom(const ConfigChange& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.ConfigChange)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ConfigChange::IsInitialized() const {
+
   return true;
 }
 
@@ -560,29 +590,33 @@ void ConfigChange::Swap(ConfigChange* other) {
   InternalSwap(other);
 }
 void ConfigChange::InternalSwap(ConfigChange* other) {
-  advices_.UnsafeArenaSwap(&other->advices_);
   element_.Swap(&other->element_);
   old_value_.Swap(&other->old_value_);
   new_value_.Swap(&other->new_value_);
   std::swap(change_type_, other->change_type_);
+  advices_.UnsafeArenaSwap(&other->advices_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ConfigChange::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ConfigChange_descriptor_;
+  metadata.reflection = ConfigChange_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ConfigChange
 
-// string element = 1;
+// optional string element = 1;
 void ConfigChange::clear_element() {
   element_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ConfigChange::element() const {
   // @@protoc_insertion_point(field_get:google.api.ConfigChange.element)
-  return element_.GetNoArena();
+  return element_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ConfigChange::set_element(const ::std::string& value) {
   
@@ -620,13 +654,13 @@ void ConfigChange::set_allocated_element(::std::string* element) {
   // @@protoc_insertion_point(field_set_allocated:google.api.ConfigChange.element)
 }
 
-// string old_value = 2;
+// optional string old_value = 2;
 void ConfigChange::clear_old_value() {
   old_value_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ConfigChange::old_value() const {
   // @@protoc_insertion_point(field_get:google.api.ConfigChange.old_value)
-  return old_value_.GetNoArena();
+  return old_value_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ConfigChange::set_old_value(const ::std::string& value) {
   
@@ -664,13 +698,13 @@ void ConfigChange::set_allocated_old_value(::std::string* old_value) {
   // @@protoc_insertion_point(field_set_allocated:google.api.ConfigChange.old_value)
 }
 
-// string new_value = 3;
+// optional string new_value = 3;
 void ConfigChange::clear_new_value() {
   new_value_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ConfigChange::new_value() const {
   // @@protoc_insertion_point(field_get:google.api.ConfigChange.new_value)
-  return new_value_.GetNoArena();
+  return new_value_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ConfigChange::set_new_value(const ::std::string& value) {
   
@@ -708,7 +742,7 @@ void ConfigChange::set_allocated_new_value(::std::string* new_value) {
   // @@protoc_insertion_point(field_set_allocated:google.api.ConfigChange.new_value)
 }
 
-// .google.api.ChangeType change_type = 4;
+// optional .google.api.ChangeType change_type = 4;
 void ConfigChange::clear_change_type() {
   change_type_ = 0;
 }
@@ -752,6 +786,9 @@ ConfigChange::advices() const {
   return advices_;
 }
 
+inline const ConfigChange* ConfigChange::internal_default_instance() {
+  return &ConfigChange_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -762,21 +799,19 @@ const int Advice::kDescriptionFieldNumber;
 
 Advice::Advice()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fconfig_5fchange_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fconfig_5fchange_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Advice)
 }
+
+void Advice::InitAsDefaultInstance() {
+}
+
 Advice::Advice(const Advice& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  description_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.description().size() > 0) {
-    description_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.description_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Advice)
 }
 
@@ -801,13 +836,15 @@ void Advice::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Advice::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return Advice_descriptor_;
 }
 
 const Advice& Advice::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fconfig_5fchange_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Advice> Advice_default_instance_;
 
 Advice* Advice::New(::google::protobuf::Arena* arena) const {
   Advice* n = new Advice;
@@ -828,13 +865,13 @@ bool Advice::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.Advice)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string description = 2;
+      // optional string description = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_description()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -844,6 +881,7 @@ bool Advice::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -871,7 +909,7 @@ failure:
 void Advice::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.api.Advice)
-  // string description = 2;
+  // optional string description = 2;
   if (this->description().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->description().data(), this->description().length(),
@@ -888,7 +926,7 @@ void Advice::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.Advice)
-  // string description = 2;
+  // optional string description = 2;
   if (this->description().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->description().data(), this->description().length(),
@@ -907,7 +945,7 @@ size_t Advice::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.Advice)
   size_t total_size = 0;
 
-  // string description = 2;
+  // optional string description = 2;
   if (this->description().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -923,7 +961,7 @@ size_t Advice::ByteSizeLong() const {
 
 void Advice::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Advice)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Advice* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Advice>(
           &from);
@@ -932,14 +970,21 @@ void Advice::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Advice)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Advice::MergeFrom(const Advice& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Advice)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Advice::UnsafeMergeFrom(const Advice& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.description().size() > 0) {
 
     description_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.description_);
@@ -957,10 +1002,11 @@ void Advice::CopyFrom(const Advice& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Advice)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Advice::IsInitialized() const {
+
   return true;
 }
 
@@ -970,24 +1016,28 @@ void Advice::Swap(Advice* other) {
 }
 void Advice::InternalSwap(Advice* other) {
   description_.Swap(&other->description_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Advice::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Advice_descriptor_;
+  metadata.reflection = Advice_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Advice
 
-// string description = 2;
+// optional string description = 2;
 void Advice::clear_description() {
   description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Advice::description() const {
   // @@protoc_insertion_point(field_get:google.api.Advice.description)
-  return description_.GetNoArena();
+  return description_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Advice::set_description(const ::std::string& value) {
   
@@ -1025,6 +1075,9 @@ void Advice::set_allocated_description(::std::string* description) {
   // @@protoc_insertion_point(field_set_allocated:google.api.Advice.description)
 }
 
+inline const Advice* Advice::internal_default_instance() {
+  return &Advice_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

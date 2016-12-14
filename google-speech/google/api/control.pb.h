@@ -24,17 +24,10 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-class Control;
-class ControlDefaultTypeInternal;
-extern ControlDefaultTypeInternal _Control_default_instance_;
-}  // namespace api
-}  // namespace google
 
 namespace google {
 namespace api {
@@ -42,6 +35,10 @@ namespace api {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fapi_2fcontrol_2eproto();
 void protobuf_InitDefaults_google_2fapi_2fcontrol_2eproto();
+void protobuf_AssignDesc_google_2fapi_2fcontrol_2eproto();
+void protobuf_ShutdownFile_google_2fapi_2fcontrol_2eproto();
+
+class Control;
 
 // ===================================================================
 
@@ -60,58 +57,55 @@ class Control : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   static const ::google::protobuf::Descriptor* descriptor();
   static const Control& default_instance();
 
-  static inline const Control* internal_default_instance() {
-    return reinterpret_cast<const Control*>(
-               &_Control_default_instance_);
-  }
+  static const Control* internal_default_instance();
 
   void Swap(Control* other);
 
   // implements Message ----------------------------------------------
 
-  inline Control* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Control* New() const { return New(NULL); }
 
-  Control* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Control* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Control& from);
   void MergeFrom(const Control& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Control* other);
+  void UnsafeMergeFrom(const Control& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string environment = 1;
+  // optional string environment = 1;
   void clear_environment();
   static const int kEnvironmentFieldNumber = 1;
   const ::std::string& environment() const;
@@ -130,10 +124,13 @@ class Control : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fcontrol_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fcontrol_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fcontrol_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fcontrol_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fcontrol_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Control> Control_default_instance_;
+
 // ===================================================================
 
 
@@ -142,13 +139,13 @@ class Control : public ::google::protobuf::Message /* @@protoc_insertion_point(c
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Control
 
-// string environment = 1;
+// optional string environment = 1;
 inline void Control::clear_environment() {
   environment_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Control::environment() const {
   // @@protoc_insertion_point(field_get:google.api.Control.environment)
-  return environment_.GetNoArena();
+  return environment_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Control::set_environment(const ::std::string& value) {
   
@@ -186,10 +183,12 @@ inline void Control::set_allocated_environment(::std::string* environment) {
   // @@protoc_insertion_point(field_set_allocated:google.api.Control.environment)
 }
 
+inline const Control* Control::internal_default_instance() {
+  return &Control_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace api
 }  // namespace google

@@ -21,66 +21,95 @@ namespace google {
 namespace cloud {
 namespace dataproc {
 namespace v1 {
-class ClusterDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Cluster> {};
-ClusterDefaultTypeInternal _Cluster_default_instance_;
-class ClusterConfigDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ClusterConfig> {};
-ClusterConfigDefaultTypeInternal _ClusterConfig_default_instance_;
-class GceClusterConfigDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GceClusterConfig> {};
-GceClusterConfigDefaultTypeInternal _GceClusterConfig_default_instance_;
-class InstanceGroupConfigDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<InstanceGroupConfig> {};
-InstanceGroupConfigDefaultTypeInternal _InstanceGroupConfig_default_instance_;
-class ManagedGroupConfigDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ManagedGroupConfig> {};
-ManagedGroupConfigDefaultTypeInternal _ManagedGroupConfig_default_instance_;
-class DiskConfigDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<DiskConfig> {};
-DiskConfigDefaultTypeInternal _DiskConfig_default_instance_;
-class NodeInitializationActionDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<NodeInitializationAction> {};
-NodeInitializationActionDefaultTypeInternal _NodeInitializationAction_default_instance_;
-class ClusterStatusDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ClusterStatus> {};
-ClusterStatusDefaultTypeInternal _ClusterStatus_default_instance_;
-class SoftwareConfigDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<SoftwareConfig> {};
-SoftwareConfigDefaultTypeInternal _SoftwareConfig_default_instance_;
-class CreateClusterRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CreateClusterRequest> {};
-CreateClusterRequestDefaultTypeInternal _CreateClusterRequest_default_instance_;
-class UpdateClusterRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<UpdateClusterRequest> {};
-UpdateClusterRequestDefaultTypeInternal _UpdateClusterRequest_default_instance_;
-class DeleteClusterRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<DeleteClusterRequest> {};
-DeleteClusterRequestDefaultTypeInternal _DeleteClusterRequest_default_instance_;
-class GetClusterRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GetClusterRequest> {};
-GetClusterRequestDefaultTypeInternal _GetClusterRequest_default_instance_;
-class ListClustersRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListClustersRequest> {};
-ListClustersRequestDefaultTypeInternal _ListClustersRequest_default_instance_;
-class ListClustersResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListClustersResponse> {};
-ListClustersResponseDefaultTypeInternal _ListClustersResponse_default_instance_;
-class DiagnoseClusterRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<DiagnoseClusterRequest> {};
-DiagnoseClusterRequestDefaultTypeInternal _DiagnoseClusterRequest_default_instance_;
-class DiagnoseClusterResultsDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<DiagnoseClusterResults> {};
-DiagnoseClusterResultsDefaultTypeInternal _DiagnoseClusterResults_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[19];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+const ::google::protobuf::Descriptor* Cluster_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Cluster_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ClusterConfig_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ClusterConfig_reflection_ = NULL;
+const ::google::protobuf::Descriptor* GceClusterConfig_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GceClusterConfig_reflection_ = NULL;
+const ::google::protobuf::Descriptor* GceClusterConfig_MetadataEntry_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* InstanceGroupConfig_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  InstanceGroupConfig_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ManagedGroupConfig_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ManagedGroupConfig_reflection_ = NULL;
+const ::google::protobuf::Descriptor* DiskConfig_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  DiskConfig_reflection_ = NULL;
+const ::google::protobuf::Descriptor* NodeInitializationAction_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  NodeInitializationAction_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ClusterStatus_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ClusterStatus_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* ClusterStatus_State_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* SoftwareConfig_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  SoftwareConfig_reflection_ = NULL;
+const ::google::protobuf::Descriptor* SoftwareConfig_PropertiesEntry_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* CreateClusterRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CreateClusterRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* UpdateClusterRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  UpdateClusterRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* DeleteClusterRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  DeleteClusterRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* GetClusterRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GetClusterRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListClustersRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListClustersRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListClustersResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListClustersResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* DiagnoseClusterRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  DiagnoseClusterRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* DiagnoseClusterResults_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  DiagnoseClusterResults_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
+  protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/cloud/dataproc/v1/clusters.proto");
+  GOOGLE_CHECK(file != NULL);
+  Cluster_descriptor_ = file->message_type(0);
+  static const int Cluster_offsets_[6] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, project_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, cluster_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, config_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, status_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, status_history_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, cluster_uuid_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterConfig, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Cluster_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Cluster_descriptor_,
+      Cluster::internal_default_instance(),
+      Cluster_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Cluster),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, _internal_metadata_));
+  ClusterConfig_descriptor_ = file->message_type(1);
+  static const int ClusterConfig_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterConfig, config_bucket_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterConfig, gce_cluster_config_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterConfig, master_config_),
@@ -88,10 +117,19 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fdataproc_2fv
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterConfig, secondary_worker_config_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterConfig, software_config_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterConfig, initialization_actions_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GceClusterConfig, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ClusterConfig_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ClusterConfig_descriptor_,
+      ClusterConfig::internal_default_instance(),
+      ClusterConfig_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ClusterConfig),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterConfig, _internal_metadata_));
+  GceClusterConfig_descriptor_ = file->message_type(2);
+  static const int GceClusterConfig_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GceClusterConfig, zone_uri_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GceClusterConfig, network_uri_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GceClusterConfig, subnetwork_uri_),
@@ -99,10 +137,20 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fdataproc_2fv
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GceClusterConfig, service_account_scopes_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GceClusterConfig, tags_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GceClusterConfig, metadata_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(InstanceGroupConfig, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  GceClusterConfig_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GceClusterConfig_descriptor_,
+      GceClusterConfig::internal_default_instance(),
+      GceClusterConfig_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GceClusterConfig),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GceClusterConfig, _internal_metadata_));
+  GceClusterConfig_MetadataEntry_descriptor_ = GceClusterConfig_descriptor_->nested_type(0);
+  InstanceGroupConfig_descriptor_ = file->message_type(3);
+  static const int InstanceGroupConfig_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(InstanceGroupConfig, num_instances_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(InstanceGroupConfig, instance_names_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(InstanceGroupConfig, image_uri_),
@@ -110,215 +158,327 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fdataproc_2fv
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(InstanceGroupConfig, disk_config_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(InstanceGroupConfig, is_preemptible_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(InstanceGroupConfig, managed_group_config_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ManagedGroupConfig, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  InstanceGroupConfig_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      InstanceGroupConfig_descriptor_,
+      InstanceGroupConfig::internal_default_instance(),
+      InstanceGroupConfig_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(InstanceGroupConfig),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(InstanceGroupConfig, _internal_metadata_));
+  ManagedGroupConfig_descriptor_ = file->message_type(4);
+  static const int ManagedGroupConfig_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ManagedGroupConfig, instance_template_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ManagedGroupConfig, instance_group_manager_name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiskConfig, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ManagedGroupConfig_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ManagedGroupConfig_descriptor_,
+      ManagedGroupConfig::internal_default_instance(),
+      ManagedGroupConfig_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ManagedGroupConfig),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ManagedGroupConfig, _internal_metadata_));
+  DiskConfig_descriptor_ = file->message_type(5);
+  static const int DiskConfig_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiskConfig, boot_disk_size_gb_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiskConfig, num_local_ssds_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NodeInitializationAction, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  DiskConfig_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      DiskConfig_descriptor_,
+      DiskConfig::internal_default_instance(),
+      DiskConfig_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(DiskConfig),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiskConfig, _internal_metadata_));
+  NodeInitializationAction_descriptor_ = file->message_type(6);
+  static const int NodeInitializationAction_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NodeInitializationAction, executable_file_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NodeInitializationAction, execution_timeout_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterStatus, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  NodeInitializationAction_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      NodeInitializationAction_descriptor_,
+      NodeInitializationAction::internal_default_instance(),
+      NodeInitializationAction_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(NodeInitializationAction),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(NodeInitializationAction, _internal_metadata_));
+  ClusterStatus_descriptor_ = file->message_type(7);
+  static const int ClusterStatus_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterStatus, state_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterStatus, detail_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterStatus, state_start_time_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SoftwareConfig, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ClusterStatus_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ClusterStatus_descriptor_,
+      ClusterStatus::internal_default_instance(),
+      ClusterStatus_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ClusterStatus),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ClusterStatus, _internal_metadata_));
+  ClusterStatus_State_descriptor_ = ClusterStatus_descriptor_->enum_type(0);
+  SoftwareConfig_descriptor_ = file->message_type(8);
+  static const int SoftwareConfig_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SoftwareConfig, image_version_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SoftwareConfig, properties_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateClusterRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  SoftwareConfig_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      SoftwareConfig_descriptor_,
+      SoftwareConfig::internal_default_instance(),
+      SoftwareConfig_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(SoftwareConfig),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SoftwareConfig, _internal_metadata_));
+  SoftwareConfig_PropertiesEntry_descriptor_ = SoftwareConfig_descriptor_->nested_type(0);
+  CreateClusterRequest_descriptor_ = file->message_type(9);
+  static const int CreateClusterRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateClusterRequest, project_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateClusterRequest, region_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateClusterRequest, cluster_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateClusterRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  CreateClusterRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      CreateClusterRequest_descriptor_,
+      CreateClusterRequest::internal_default_instance(),
+      CreateClusterRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(CreateClusterRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateClusterRequest, _internal_metadata_));
+  UpdateClusterRequest_descriptor_ = file->message_type(10);
+  static const int UpdateClusterRequest_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateClusterRequest, project_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateClusterRequest, region_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateClusterRequest, cluster_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateClusterRequest, cluster_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateClusterRequest, update_mask_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteClusterRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  UpdateClusterRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      UpdateClusterRequest_descriptor_,
+      UpdateClusterRequest::internal_default_instance(),
+      UpdateClusterRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(UpdateClusterRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateClusterRequest, _internal_metadata_));
+  DeleteClusterRequest_descriptor_ = file->message_type(11);
+  static const int DeleteClusterRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteClusterRequest, project_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteClusterRequest, region_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteClusterRequest, cluster_name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetClusterRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  DeleteClusterRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      DeleteClusterRequest_descriptor_,
+      DeleteClusterRequest::internal_default_instance(),
+      DeleteClusterRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(DeleteClusterRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteClusterRequest, _internal_metadata_));
+  GetClusterRequest_descriptor_ = file->message_type(12);
+  static const int GetClusterRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetClusterRequest, project_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetClusterRequest, region_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetClusterRequest, cluster_name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  GetClusterRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GetClusterRequest_descriptor_,
+      GetClusterRequest::internal_default_instance(),
+      GetClusterRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GetClusterRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetClusterRequest, _internal_metadata_));
+  ListClustersRequest_descriptor_ = file->message_type(13);
+  static const int ListClustersRequest_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersRequest, project_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersRequest, region_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersRequest, page_size_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersRequest, page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListClustersRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListClustersRequest_descriptor_,
+      ListClustersRequest::internal_default_instance(),
+      ListClustersRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListClustersRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersRequest, _internal_metadata_));
+  ListClustersResponse_descriptor_ = file->message_type(14);
+  static const int ListClustersResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersResponse, clusters_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersResponse, next_page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiagnoseClusterRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListClustersResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListClustersResponse_descriptor_,
+      ListClustersResponse::internal_default_instance(),
+      ListClustersResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListClustersResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListClustersResponse, _internal_metadata_));
+  DiagnoseClusterRequest_descriptor_ = file->message_type(15);
+  static const int DiagnoseClusterRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiagnoseClusterRequest, project_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiagnoseClusterRequest, region_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiagnoseClusterRequest, cluster_name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiagnoseClusterResults, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  DiagnoseClusterRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      DiagnoseClusterRequest_descriptor_,
+      DiagnoseClusterRequest::internal_default_instance(),
+      DiagnoseClusterRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(DiagnoseClusterRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiagnoseClusterRequest, _internal_metadata_));
+  DiagnoseClusterResults_descriptor_ = file->message_type(16);
+  static const int DiagnoseClusterResults_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiagnoseClusterResults, output_uri_),
   };
-  return offsets;
+  DiagnoseClusterResults_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      DiagnoseClusterResults_descriptor_,
+      DiagnoseClusterResults::internal_default_instance(),
+      DiagnoseClusterResults_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(DiagnoseClusterResults),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DiagnoseClusterResults, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(Cluster)},
-  { 10, -1, sizeof(ClusterConfig)},
-  { 21, -1, sizeof(GceClusterConfig)},
-  { 32, -1, sizeof(InstanceGroupConfig)},
-  { 43, -1, sizeof(ManagedGroupConfig)},
-  { 49, -1, sizeof(DiskConfig)},
-  { 55, -1, sizeof(NodeInitializationAction)},
-  { 61, -1, sizeof(ClusterStatus)},
-  { 68, -1, sizeof(SoftwareConfig)},
-  { 74, -1, sizeof(CreateClusterRequest)},
-  { 81, -1, sizeof(UpdateClusterRequest)},
-  { 90, -1, sizeof(DeleteClusterRequest)},
-  { 97, -1, sizeof(GetClusterRequest)},
-  { 104, -1, sizeof(ListClustersRequest)},
-  { 112, -1, sizeof(ListClustersResponse)},
-  { 118, -1, sizeof(DiagnoseClusterRequest)},
-  { 125, -1, sizeof(DiagnoseClusterResults)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Cluster_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ClusterConfig_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GceClusterConfig_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_InstanceGroupConfig_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ManagedGroupConfig_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_DiskConfig_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_NodeInitializationAction_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ClusterStatus_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_SoftwareConfig_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_CreateClusterRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_UpdateClusterRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_DeleteClusterRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GetClusterRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListClustersRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListClustersResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_DiagnoseClusterRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_DiagnoseClusterResults_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/cloud/dataproc/v1/clusters.proto", schemas, file_default_instances, protobuf_Offsets_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto(), factory,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 19);
-  const ::google::protobuf::Descriptor* GceClusterConfig_MetadataEntry_descriptor = file_level_metadata[2].descriptor;
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-        GceClusterConfig_MetadataEntry_descriptor,
+      Cluster_descriptor_, Cluster::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ClusterConfig_descriptor_, ClusterConfig::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GceClusterConfig_descriptor_, GceClusterConfig::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+        GceClusterConfig_MetadataEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
             ::std::string,
             ::std::string,
             ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
             ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
             0>::CreateDefaultInstance(
-                GceClusterConfig_MetadataEntry_descriptor));
-  const ::google::protobuf::Descriptor* SoftwareConfig_PropertiesEntry_descriptor = file_level_metadata[9].descriptor;
+                GceClusterConfig_MetadataEntry_descriptor_));
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-        SoftwareConfig_PropertiesEntry_descriptor,
+      InstanceGroupConfig_descriptor_, InstanceGroupConfig::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ManagedGroupConfig_descriptor_, ManagedGroupConfig::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      DiskConfig_descriptor_, DiskConfig::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      NodeInitializationAction_descriptor_, NodeInitializationAction::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ClusterStatus_descriptor_, ClusterStatus::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      SoftwareConfig_descriptor_, SoftwareConfig::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+        SoftwareConfig_PropertiesEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
             ::std::string,
             ::std::string,
             ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
             ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
             0>::CreateDefaultInstance(
-                SoftwareConfig_PropertiesEntry_descriptor));
+                SoftwareConfig_PropertiesEntry_descriptor_));
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      CreateClusterRequest_descriptor_, CreateClusterRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      UpdateClusterRequest_descriptor_, UpdateClusterRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      DeleteClusterRequest_descriptor_, DeleteClusterRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GetClusterRequest_descriptor_, GetClusterRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListClustersRequest_descriptor_, ListClustersRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListClustersResponse_descriptor_, ListClustersResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      DiagnoseClusterRequest_descriptor_, DiagnoseClusterRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      DiagnoseClusterResults_descriptor_, DiagnoseClusterResults::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
-  _Cluster_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _ClusterConfig_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _GceClusterConfig_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _InstanceGroupConfig_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
-  _ManagedGroupConfig_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
-  _DiskConfig_default_instance_.Shutdown();
-  delete file_level_metadata[6].reflection;
-  _NodeInitializationAction_default_instance_.Shutdown();
-  delete file_level_metadata[7].reflection;
-  _ClusterStatus_default_instance_.Shutdown();
-  delete file_level_metadata[8].reflection;
-  _SoftwareConfig_default_instance_.Shutdown();
-  delete file_level_metadata[10].reflection;
-  _CreateClusterRequest_default_instance_.Shutdown();
-  delete file_level_metadata[11].reflection;
-  _UpdateClusterRequest_default_instance_.Shutdown();
-  delete file_level_metadata[12].reflection;
-  _DeleteClusterRequest_default_instance_.Shutdown();
-  delete file_level_metadata[13].reflection;
-  _GetClusterRequest_default_instance_.Shutdown();
-  delete file_level_metadata[14].reflection;
-  _ListClustersRequest_default_instance_.Shutdown();
-  delete file_level_metadata[15].reflection;
-  _ListClustersResponse_default_instance_.Shutdown();
-  delete file_level_metadata[16].reflection;
-  _DiagnoseClusterRequest_default_instance_.Shutdown();
-  delete file_level_metadata[17].reflection;
-  _DiagnoseClusterResults_default_instance_.Shutdown();
-  delete file_level_metadata[18].reflection;
+  Cluster_default_instance_.Shutdown();
+  delete Cluster_reflection_;
+  ClusterConfig_default_instance_.Shutdown();
+  delete ClusterConfig_reflection_;
+  GceClusterConfig_default_instance_.Shutdown();
+  delete GceClusterConfig_reflection_;
+  InstanceGroupConfig_default_instance_.Shutdown();
+  delete InstanceGroupConfig_reflection_;
+  ManagedGroupConfig_default_instance_.Shutdown();
+  delete ManagedGroupConfig_reflection_;
+  DiskConfig_default_instance_.Shutdown();
+  delete DiskConfig_reflection_;
+  NodeInitializationAction_default_instance_.Shutdown();
+  delete NodeInitializationAction_reflection_;
+  ClusterStatus_default_instance_.Shutdown();
+  delete ClusterStatus_reflection_;
+  SoftwareConfig_default_instance_.Shutdown();
+  delete SoftwareConfig_reflection_;
+  CreateClusterRequest_default_instance_.Shutdown();
+  delete CreateClusterRequest_reflection_;
+  UpdateClusterRequest_default_instance_.Shutdown();
+  delete UpdateClusterRequest_reflection_;
+  DeleteClusterRequest_default_instance_.Shutdown();
+  delete DeleteClusterRequest_reflection_;
+  GetClusterRequest_default_instance_.Shutdown();
+  delete GetClusterRequest_reflection_;
+  ListClustersRequest_default_instance_.Shutdown();
+  delete ListClustersRequest_reflection_;
+  ListClustersResponse_default_instance_.Shutdown();
+  delete ListClustersResponse_reflection_;
+  DiagnoseClusterRequest_default_instance_.Shutdown();
+  delete DiagnoseClusterRequest_reflection_;
+  DiagnoseClusterResults_default_instance_.Shutdown();
+  delete DiagnoseClusterResults_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto_impl() {
@@ -330,170 +490,176 @@ void protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto_imp
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fduration_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ffield_5fmask_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _Cluster_default_instance_.DefaultConstruct();
-  _ClusterConfig_default_instance_.DefaultConstruct();
-  _GceClusterConfig_default_instance_.DefaultConstruct();
-  _InstanceGroupConfig_default_instance_.DefaultConstruct();
-  _ManagedGroupConfig_default_instance_.DefaultConstruct();
-  _DiskConfig_default_instance_.DefaultConstruct();
-  _NodeInitializationAction_default_instance_.DefaultConstruct();
-  _ClusterStatus_default_instance_.DefaultConstruct();
-  _SoftwareConfig_default_instance_.DefaultConstruct();
-  _CreateClusterRequest_default_instance_.DefaultConstruct();
-  _UpdateClusterRequest_default_instance_.DefaultConstruct();
-  _DeleteClusterRequest_default_instance_.DefaultConstruct();
-  _GetClusterRequest_default_instance_.DefaultConstruct();
-  _ListClustersRequest_default_instance_.DefaultConstruct();
-  _ListClustersResponse_default_instance_.DefaultConstruct();
-  _DiagnoseClusterRequest_default_instance_.DefaultConstruct();
-  _DiagnoseClusterResults_default_instance_.DefaultConstruct();
-  _Cluster_default_instance_.get_mutable()->config_ = const_cast< ::google::cloud::dataproc::v1::ClusterConfig*>(
-      ::google::cloud::dataproc::v1::ClusterConfig::internal_default_instance());
-  _Cluster_default_instance_.get_mutable()->status_ = const_cast< ::google::cloud::dataproc::v1::ClusterStatus*>(
-      ::google::cloud::dataproc::v1::ClusterStatus::internal_default_instance());
-  _ClusterConfig_default_instance_.get_mutable()->gce_cluster_config_ = const_cast< ::google::cloud::dataproc::v1::GceClusterConfig*>(
-      ::google::cloud::dataproc::v1::GceClusterConfig::internal_default_instance());
-  _ClusterConfig_default_instance_.get_mutable()->master_config_ = const_cast< ::google::cloud::dataproc::v1::InstanceGroupConfig*>(
-      ::google::cloud::dataproc::v1::InstanceGroupConfig::internal_default_instance());
-  _ClusterConfig_default_instance_.get_mutable()->worker_config_ = const_cast< ::google::cloud::dataproc::v1::InstanceGroupConfig*>(
-      ::google::cloud::dataproc::v1::InstanceGroupConfig::internal_default_instance());
-  _ClusterConfig_default_instance_.get_mutable()->secondary_worker_config_ = const_cast< ::google::cloud::dataproc::v1::InstanceGroupConfig*>(
-      ::google::cloud::dataproc::v1::InstanceGroupConfig::internal_default_instance());
-  _ClusterConfig_default_instance_.get_mutable()->software_config_ = const_cast< ::google::cloud::dataproc::v1::SoftwareConfig*>(
-      ::google::cloud::dataproc::v1::SoftwareConfig::internal_default_instance());
-  _InstanceGroupConfig_default_instance_.get_mutable()->disk_config_ = const_cast< ::google::cloud::dataproc::v1::DiskConfig*>(
-      ::google::cloud::dataproc::v1::DiskConfig::internal_default_instance());
-  _InstanceGroupConfig_default_instance_.get_mutable()->managed_group_config_ = const_cast< ::google::cloud::dataproc::v1::ManagedGroupConfig*>(
-      ::google::cloud::dataproc::v1::ManagedGroupConfig::internal_default_instance());
-  _NodeInitializationAction_default_instance_.get_mutable()->execution_timeout_ = const_cast< ::google::protobuf::Duration*>(
-      ::google::protobuf::Duration::internal_default_instance());
-  _ClusterStatus_default_instance_.get_mutable()->state_start_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  _CreateClusterRequest_default_instance_.get_mutable()->cluster_ = const_cast< ::google::cloud::dataproc::v1::Cluster*>(
-      ::google::cloud::dataproc::v1::Cluster::internal_default_instance());
-  _UpdateClusterRequest_default_instance_.get_mutable()->cluster_ = const_cast< ::google::cloud::dataproc::v1::Cluster*>(
-      ::google::cloud::dataproc::v1::Cluster::internal_default_instance());
-  _UpdateClusterRequest_default_instance_.get_mutable()->update_mask_ = const_cast< ::google::protobuf::FieldMask*>(
-      ::google::protobuf::FieldMask::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  Cluster_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ClusterConfig_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GceClusterConfig_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ::google::protobuf::internal::GetEmptyString();
+  InstanceGroupConfig_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ManagedGroupConfig_default_instance_.DefaultConstruct();
+  DiskConfig_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  NodeInitializationAction_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ClusterStatus_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SoftwareConfig_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ::google::protobuf::internal::GetEmptyString();
+  CreateClusterRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  UpdateClusterRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DeleteClusterRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetClusterRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListClustersRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListClustersResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DiagnoseClusterRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DiagnoseClusterResults_default_instance_.DefaultConstruct();
+  Cluster_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ClusterConfig_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GceClusterConfig_default_instance_.get_mutable()->InitAsDefaultInstance();
+  InstanceGroupConfig_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ManagedGroupConfig_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DiskConfig_default_instance_.get_mutable()->InitAsDefaultInstance();
+  NodeInitializationAction_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ClusterStatus_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SoftwareConfig_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CreateClusterRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  UpdateClusterRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DeleteClusterRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetClusterRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListClustersRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListClustersResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DiagnoseClusterRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DiagnoseClusterResults_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto_once_);
 void protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  static const char descriptor[] = {
-      "\n\'google/cloud/dataproc/v1/clusters.prot"
-      "o\022\030google.cloud.dataproc.v1\032\034google/api/"
-      "annotations.proto\032)google/cloud/dataproc"
-      "/v1/operations.proto\032#google/longrunning"
-      "/operations.proto\032\036google/protobuf/durat"
-      "ion.proto\032 google/protobuf/field_mask.pr"
-      "oto\032\037google/protobuf/timestamp.proto\"\374\001\n"
-      "\007Cluster\022\022\n\nproject_id\030\001 \001(\t\022\024\n\014cluster_"
-      "name\030\002 \001(\t\0227\n\006config\030\003 \001(\0132\'.google.clou"
-      "d.dataproc.v1.ClusterConfig\0227\n\006status\030\004 "
-      "\001(\0132\'.google.cloud.dataproc.v1.ClusterSt"
-      "atus\022\?\n\016status_history\030\007 \003(\0132\'.google.cl"
-      "oud.dataproc.v1.ClusterStatus\022\024\n\014cluster"
-      "_uuid\030\006 \001(\t\"\341\003\n\rClusterConfig\022\025\n\rconfig_"
-      "bucket\030\001 \001(\t\022F\n\022gce_cluster_config\030\010 \001(\013"
-      "2*.google.cloud.dataproc.v1.GceClusterCo"
-      "nfig\022D\n\rmaster_config\030\t \001(\0132-.google.clo"
-      "ud.dataproc.v1.InstanceGroupConfig\022D\n\rwo"
-      "rker_config\030\n \001(\0132-.google.cloud.datapro"
-      "c.v1.InstanceGroupConfig\022N\n\027secondary_wo"
-      "rker_config\030\014 \001(\0132-.google.cloud.datapro"
-      "c.v1.InstanceGroupConfig\022A\n\017software_con"
-      "fig\030\r \001(\0132(.google.cloud.dataproc.v1.Sof"
-      "twareConfig\022R\n\026initialization_actions\030\013 "
-      "\003(\01322.google.cloud.dataproc.v1.NodeIniti"
-      "alizationAction\"\226\002\n\020GceClusterConfig\022\020\n\010"
-      "zone_uri\030\001 \001(\t\022\023\n\013network_uri\030\002 \001(\t\022\026\n\016s"
-      "ubnetwork_uri\030\006 \001(\t\022\030\n\020internal_ip_only\030"
-      "\007 \001(\010\022\036\n\026service_account_scopes\030\003 \003(\t\022\014\n"
-      "\004tags\030\004 \003(\t\022J\n\010metadata\030\005 \003(\01328.google.c"
-      "loud.dataproc.v1.GceClusterConfig.Metada"
-      "taEntry\032/\n\rMetadataEntry\022\013\n\003key\030\001 \001(\t\022\r\n"
-      "\005value\030\002 \001(\t:\0028\001\"\220\002\n\023InstanceGroupConfig"
-      "\022\025\n\rnum_instances\030\001 \001(\005\022\026\n\016instance_name"
-      "s\030\002 \003(\t\022\021\n\timage_uri\030\003 \001(\t\022\030\n\020machine_ty"
-      "pe_uri\030\004 \001(\t\0229\n\013disk_config\030\005 \001(\0132$.goog"
-      "le.cloud.dataproc.v1.DiskConfig\022\026\n\016is_pr"
-      "eemptible\030\006 \001(\010\022J\n\024managed_group_config\030"
-      "\007 \001(\0132,.google.cloud.dataproc.v1.Managed"
-      "GroupConfig\"Y\n\022ManagedGroupConfig\022\036\n\026ins"
-      "tance_template_name\030\001 \001(\t\022#\n\033instance_gr"
-      "oup_manager_name\030\002 \001(\t\"\?\n\nDiskConfig\022\031\n\021"
-      "boot_disk_size_gb\030\001 \001(\005\022\026\n\016num_local_ssd"
-      "s\030\002 \001(\005\"i\n\030NodeInitializationAction\022\027\n\017e"
-      "xecutable_file\030\001 \001(\t\0224\n\021execution_timeou"
-      "t\030\002 \001(\0132\031.google.protobuf.Duration\"\353\001\n\rC"
-      "lusterStatus\022<\n\005state\030\001 \001(\0162-.google.clo"
-      "ud.dataproc.v1.ClusterStatus.State\022\016\n\006de"
-      "tail\030\002 \001(\t\0224\n\020state_start_time\030\003 \001(\0132\032.g"
-      "oogle.protobuf.Timestamp\"V\n\005State\022\013\n\007UNK"
-      "NOWN\020\000\022\014\n\010CREATING\020\001\022\013\n\007RUNNING\020\002\022\t\n\005ERR"
-      "OR\020\003\022\014\n\010DELETING\020\004\022\014\n\010UPDATING\020\005\"\250\001\n\016Sof"
-      "twareConfig\022\025\n\rimage_version\030\001 \001(\t\022L\n\npr"
-      "operties\030\002 \003(\01328.google.cloud.dataproc.v"
-      "1.SoftwareConfig.PropertiesEntry\0321\n\017Prop"
-      "ertiesEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:"
-      "\0028\001\"n\n\024CreateClusterRequest\022\022\n\nproject_i"
-      "d\030\001 \001(\t\022\016\n\006region\030\003 \001(\t\0222\n\007cluster\030\002 \001(\013"
-      "2!.google.cloud.dataproc.v1.Cluster\"\265\001\n\024"
-      "UpdateClusterRequest\022\022\n\nproject_id\030\001 \001(\t"
-      "\022\016\n\006region\030\005 \001(\t\022\024\n\014cluster_name\030\002 \001(\t\0222"
-      "\n\007cluster\030\003 \001(\0132!.google.cloud.dataproc."
-      "v1.Cluster\022/\n\013update_mask\030\004 \001(\0132\032.google"
-      ".protobuf.FieldMask\"P\n\024DeleteClusterRequ"
-      "est\022\022\n\nproject_id\030\001 \001(\t\022\016\n\006region\030\003 \001(\t\022"
-      "\024\n\014cluster_name\030\002 \001(\t\"M\n\021GetClusterReque"
-      "st\022\022\n\nproject_id\030\001 \001(\t\022\016\n\006region\030\003 \001(\t\022\024"
-      "\n\014cluster_name\030\002 \001(\t\"`\n\023ListClustersRequ"
-      "est\022\022\n\nproject_id\030\001 \001(\t\022\016\n\006region\030\004 \001(\t\022"
-      "\021\n\tpage_size\030\002 \001(\005\022\022\n\npage_token\030\003 \001(\t\"d"
-      "\n\024ListClustersResponse\0223\n\010clusters\030\001 \003(\013"
-      "2!.google.cloud.dataproc.v1.Cluster\022\027\n\017n"
-      "ext_page_token\030\002 \001(\t\"R\n\026DiagnoseClusterR"
-      "equest\022\022\n\nproject_id\030\001 \001(\t\022\016\n\006region\030\003 \001"
-      "(\t\022\024\n\014cluster_name\030\002 \001(\t\",\n\026DiagnoseClus"
-      "terResults\022\022\n\noutput_uri\030\001 \001(\t2\262\010\n\021Clust"
-      "erController\022\244\001\n\rCreateCluster\022..google."
-      "cloud.dataproc.v1.CreateClusterRequest\032\035"
-      ".google.longrunning.Operation\"D\202\323\344\223\002>\"3/"
-      "v1/projects/{project_id}/regions/{region"
-      "}/clusters:\007cluster\022\263\001\n\rUpdateCluster\022.."
-      "google.cloud.dataproc.v1.UpdateClusterRe"
-      "quest\032\035.google.longrunning.Operation\"S\202\323"
-      "\344\223\002M2B/v1/projects/{project_id}/regions/"
-      "{region}/clusters/{cluster_name}:\007cluste"
-      "r\022\252\001\n\rDeleteCluster\022..google.cloud.datap"
-      "roc.v1.DeleteClusterRequest\032\035.google.lon"
-      "grunning.Operation\"J\202\323\344\223\002D*B/v1/projects"
-      "/{project_id}/regions/{region}/clusters/"
-      "{cluster_name}\022\250\001\n\nGetCluster\022+.google.c"
-      "loud.dataproc.v1.GetClusterRequest\032!.goo"
-      "gle.cloud.dataproc.v1.Cluster\"J\202\323\344\223\002D\022B/"
-      "v1/projects/{project_id}/regions/{region"
-      "}/clusters/{cluster_name}\022\252\001\n\014ListCluste"
-      "rs\022-.google.cloud.dataproc.v1.ListCluste"
-      "rsRequest\032..google.cloud.dataproc.v1.Lis"
-      "tClustersResponse\";\202\323\344\223\0025\0223/v1/projects/"
-      "{project_id}/regions/{region}/clusters\022\272"
-      "\001\n\017DiagnoseCluster\0220.google.cloud.datapr"
-      "oc.v1.DiagnoseClusterRequest\032\035.google.lo"
-      "ngrunning.Operation\"V\202\323\344\223\002P\"K/v1/project"
-      "s/{project_id}/regions/{region}/clusters"
-      "/{cluster_name}:diagnose:\001*Bq\n\034com.googl"
-      "e.cloud.dataproc.v1B\rClustersProtoP\001Z@go"
-      "ogle.golang.org/genproto/googleapis/clou"
-      "d/dataproc/v1;dataprocb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 4230);
+    "\n\'google/cloud/dataproc/v1/clusters.prot"
+    "o\022\030google.cloud.dataproc.v1\032\034google/api/"
+    "annotations.proto\032)google/cloud/dataproc"
+    "/v1/operations.proto\032#google/longrunning"
+    "/operations.proto\032\036google/protobuf/durat"
+    "ion.proto\032 google/protobuf/field_mask.pr"
+    "oto\032\037google/protobuf/timestamp.proto\"\374\001\n"
+    "\007Cluster\022\022\n\nproject_id\030\001 \001(\t\022\024\n\014cluster_"
+    "name\030\002 \001(\t\0227\n\006config\030\003 \001(\0132\'.google.clou"
+    "d.dataproc.v1.ClusterConfig\0227\n\006status\030\004 "
+    "\001(\0132\'.google.cloud.dataproc.v1.ClusterSt"
+    "atus\022\?\n\016status_history\030\007 \003(\0132\'.google.cl"
+    "oud.dataproc.v1.ClusterStatus\022\024\n\014cluster"
+    "_uuid\030\006 \001(\t\"\341\003\n\rClusterConfig\022\025\n\rconfig_"
+    "bucket\030\001 \001(\t\022F\n\022gce_cluster_config\030\010 \001(\013"
+    "2*.google.cloud.dataproc.v1.GceClusterCo"
+    "nfig\022D\n\rmaster_config\030\t \001(\0132-.google.clo"
+    "ud.dataproc.v1.InstanceGroupConfig\022D\n\rwo"
+    "rker_config\030\n \001(\0132-.google.cloud.datapro"
+    "c.v1.InstanceGroupConfig\022N\n\027secondary_wo"
+    "rker_config\030\014 \001(\0132-.google.cloud.datapro"
+    "c.v1.InstanceGroupConfig\022A\n\017software_con"
+    "fig\030\r \001(\0132(.google.cloud.dataproc.v1.Sof"
+    "twareConfig\022R\n\026initialization_actions\030\013 "
+    "\003(\01322.google.cloud.dataproc.v1.NodeIniti"
+    "alizationAction\"\226\002\n\020GceClusterConfig\022\020\n\010"
+    "zone_uri\030\001 \001(\t\022\023\n\013network_uri\030\002 \001(\t\022\026\n\016s"
+    "ubnetwork_uri\030\006 \001(\t\022\030\n\020internal_ip_only\030"
+    "\007 \001(\010\022\036\n\026service_account_scopes\030\003 \003(\t\022\014\n"
+    "\004tags\030\004 \003(\t\022J\n\010metadata\030\005 \003(\01328.google.c"
+    "loud.dataproc.v1.GceClusterConfig.Metada"
+    "taEntry\032/\n\rMetadataEntry\022\013\n\003key\030\001 \001(\t\022\r\n"
+    "\005value\030\002 \001(\t:\0028\001\"\220\002\n\023InstanceGroupConfig"
+    "\022\025\n\rnum_instances\030\001 \001(\005\022\026\n\016instance_name"
+    "s\030\002 \003(\t\022\021\n\timage_uri\030\003 \001(\t\022\030\n\020machine_ty"
+    "pe_uri\030\004 \001(\t\0229\n\013disk_config\030\005 \001(\0132$.goog"
+    "le.cloud.dataproc.v1.DiskConfig\022\026\n\016is_pr"
+    "eemptible\030\006 \001(\010\022J\n\024managed_group_config\030"
+    "\007 \001(\0132,.google.cloud.dataproc.v1.Managed"
+    "GroupConfig\"Y\n\022ManagedGroupConfig\022\036\n\026ins"
+    "tance_template_name\030\001 \001(\t\022#\n\033instance_gr"
+    "oup_manager_name\030\002 \001(\t\"\?\n\nDiskConfig\022\031\n\021"
+    "boot_disk_size_gb\030\001 \001(\005\022\026\n\016num_local_ssd"
+    "s\030\002 \001(\005\"i\n\030NodeInitializationAction\022\027\n\017e"
+    "xecutable_file\030\001 \001(\t\0224\n\021execution_timeou"
+    "t\030\002 \001(\0132\031.google.protobuf.Duration\"\353\001\n\rC"
+    "lusterStatus\022<\n\005state\030\001 \001(\0162-.google.clo"
+    "ud.dataproc.v1.ClusterStatus.State\022\016\n\006de"
+    "tail\030\002 \001(\t\0224\n\020state_start_time\030\003 \001(\0132\032.g"
+    "oogle.protobuf.Timestamp\"V\n\005State\022\013\n\007UNK"
+    "NOWN\020\000\022\014\n\010CREATING\020\001\022\013\n\007RUNNING\020\002\022\t\n\005ERR"
+    "OR\020\003\022\014\n\010DELETING\020\004\022\014\n\010UPDATING\020\005\"\250\001\n\016Sof"
+    "twareConfig\022\025\n\rimage_version\030\001 \001(\t\022L\n\npr"
+    "operties\030\002 \003(\01328.google.cloud.dataproc.v"
+    "1.SoftwareConfig.PropertiesEntry\0321\n\017Prop"
+    "ertiesEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:"
+    "\0028\001\"n\n\024CreateClusterRequest\022\022\n\nproject_i"
+    "d\030\001 \001(\t\022\016\n\006region\030\003 \001(\t\0222\n\007cluster\030\002 \001(\013"
+    "2!.google.cloud.dataproc.v1.Cluster\"\265\001\n\024"
+    "UpdateClusterRequest\022\022\n\nproject_id\030\001 \001(\t"
+    "\022\016\n\006region\030\005 \001(\t\022\024\n\014cluster_name\030\002 \001(\t\0222"
+    "\n\007cluster\030\003 \001(\0132!.google.cloud.dataproc."
+    "v1.Cluster\022/\n\013update_mask\030\004 \001(\0132\032.google"
+    ".protobuf.FieldMask\"P\n\024DeleteClusterRequ"
+    "est\022\022\n\nproject_id\030\001 \001(\t\022\016\n\006region\030\003 \001(\t\022"
+    "\024\n\014cluster_name\030\002 \001(\t\"M\n\021GetClusterReque"
+    "st\022\022\n\nproject_id\030\001 \001(\t\022\016\n\006region\030\003 \001(\t\022\024"
+    "\n\014cluster_name\030\002 \001(\t\"`\n\023ListClustersRequ"
+    "est\022\022\n\nproject_id\030\001 \001(\t\022\016\n\006region\030\004 \001(\t\022"
+    "\021\n\tpage_size\030\002 \001(\005\022\022\n\npage_token\030\003 \001(\t\"d"
+    "\n\024ListClustersResponse\0223\n\010clusters\030\001 \003(\013"
+    "2!.google.cloud.dataproc.v1.Cluster\022\027\n\017n"
+    "ext_page_token\030\002 \001(\t\"R\n\026DiagnoseClusterR"
+    "equest\022\022\n\nproject_id\030\001 \001(\t\022\016\n\006region\030\003 \001"
+    "(\t\022\024\n\014cluster_name\030\002 \001(\t\",\n\026DiagnoseClus"
+    "terResults\022\022\n\noutput_uri\030\001 \001(\t2\262\010\n\021Clust"
+    "erController\022\244\001\n\rCreateCluster\022..google."
+    "cloud.dataproc.v1.CreateClusterRequest\032\035"
+    ".google.longrunning.Operation\"D\202\323\344\223\002>\"3/"
+    "v1/projects/{project_id}/regions/{region"
+    "}/clusters:\007cluster\022\263\001\n\rUpdateCluster\022.."
+    "google.cloud.dataproc.v1.UpdateClusterRe"
+    "quest\032\035.google.longrunning.Operation\"S\202\323"
+    "\344\223\002M2B/v1/projects/{project_id}/regions/"
+    "{region}/clusters/{cluster_name}:\007cluste"
+    "r\022\252\001\n\rDeleteCluster\022..google.cloud.datap"
+    "roc.v1.DeleteClusterRequest\032\035.google.lon"
+    "grunning.Operation\"J\202\323\344\223\002D*B/v1/projects"
+    "/{project_id}/regions/{region}/clusters/"
+    "{cluster_name}\022\250\001\n\nGetCluster\022+.google.c"
+    "loud.dataproc.v1.GetClusterRequest\032!.goo"
+    "gle.cloud.dataproc.v1.Cluster\"J\202\323\344\223\002D\022B/"
+    "v1/projects/{project_id}/regions/{region"
+    "}/clusters/{cluster_name}\022\252\001\n\014ListCluste"
+    "rs\022-.google.cloud.dataproc.v1.ListCluste"
+    "rsRequest\032..google.cloud.dataproc.v1.Lis"
+    "tClustersResponse\";\202\323\344\223\0025\0223/v1/projects/"
+    "{project_id}/regions/{region}/clusters\022\272"
+    "\001\n\017DiagnoseCluster\0220.google.cloud.datapr"
+    "oc.v1.DiagnoseClusterRequest\032\035.google.lo"
+    "ngrunning.Operation\"V\202\323\344\223\002P\"K/v1/project"
+    "s/{project_id}/regions/{region}/clusters"
+    "/{cluster_name}:diagnose:\001*Bq\n\034com.googl"
+    "e.cloud.dataproc.v1B\rClustersProtoP\001Z@go"
+    "ogle.golang.org/genproto/googleapis/clou"
+    "d/dataproc/v1;dataprocb\006proto3", 4230);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/cloud/dataproc/v1/clusters.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -516,35 +682,16 @@ struct StaticDescriptorInitializer_google_2fcloud_2fdataproc_2fv1_2fclusters_2ep
     protobuf_AddDesc_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   }
 } static_descriptor_initializer_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto_;
-const ::google::protobuf::EnumDescriptor* ClusterStatus_State_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
-}
-bool ClusterStatus_State_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-      return true;
-    default:
-      return false;
-  }
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
 }
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const ClusterStatus_State ClusterStatus::UNKNOWN;
-const ClusterStatus_State ClusterStatus::CREATING;
-const ClusterStatus_State ClusterStatus::RUNNING;
-const ClusterStatus_State ClusterStatus::ERROR;
-const ClusterStatus_State ClusterStatus::DELETING;
-const ClusterStatus_State ClusterStatus::UPDATING;
-const ClusterStatus_State ClusterStatus::State_MIN;
-const ClusterStatus_State ClusterStatus::State_MAX;
-const int ClusterStatus::State_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+}  // namespace
+
 
 // ===================================================================
 
@@ -559,40 +706,23 @@ const int Cluster::kClusterUuidFieldNumber;
 
 Cluster::Cluster()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.Cluster)
 }
+
+void Cluster::InitAsDefaultInstance() {
+  config_ = const_cast< ::google::cloud::dataproc::v1::ClusterConfig*>(
+      ::google::cloud::dataproc::v1::ClusterConfig::internal_default_instance());
+  status_ = const_cast< ::google::cloud::dataproc::v1::ClusterStatus*>(
+      ::google::cloud::dataproc::v1::ClusterStatus::internal_default_instance());
+}
+
 Cluster::Cluster(const Cluster& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      status_history_(from.status_history_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
-  }
-  cluster_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.cluster_name().size() > 0) {
-    cluster_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cluster_name_);
-  }
-  cluster_uuid_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.cluster_uuid().size() > 0) {
-    cluster_uuid_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cluster_uuid_);
-  }
-  if (from.has_config()) {
-    config_ = new ::google::cloud::dataproc::v1::ClusterConfig(*from.config_);
-  } else {
-    config_ = NULL;
-  }
-  if (from.has_status()) {
-    status_ = new ::google::cloud::dataproc::v1::ClusterStatus(*from.status_);
-  } else {
-    status_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.Cluster)
 }
 
@@ -600,8 +730,8 @@ void Cluster::SharedCtor() {
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_uuid_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&config_, 0, reinterpret_cast<char*>(&status_) -
-    reinterpret_cast<char*>(&config_) + sizeof(status_));
+  config_ = NULL;
+  status_ = NULL;
   _cached_size_ = 0;
 }
 
@@ -614,10 +744,8 @@ void Cluster::SharedDtor() {
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_uuid_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &Cluster_default_instance_.get()) {
     delete config_;
-  }
-  if (this != internal_default_instance()) {
     delete status_;
   }
 }
@@ -629,13 +757,15 @@ void Cluster::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Cluster::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return Cluster_descriptor_;
 }
 
 const Cluster& Cluster::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Cluster> Cluster_default_instance_;
 
 Cluster* Cluster::New(::google::protobuf::Arena* arena) const {
   Cluster* n = new Cluster;
@@ -647,18 +777,14 @@ Cluster* Cluster::New(::google::protobuf::Arena* arena) const {
 
 void Cluster::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.dataproc.v1.Cluster)
-  status_history_.Clear();
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  cluster_uuid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && config_ != NULL) {
-    delete config_;
-  }
+  if (GetArenaNoVirtual() == NULL && config_ != NULL) delete config_;
   config_ = NULL;
-  if (GetArenaNoVirtual() == NULL && status_ != NULL) {
-    delete status_;
-  }
+  if (GetArenaNoVirtual() == NULL && status_ != NULL) delete status_;
   status_ = NULL;
+  cluster_uuid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  status_history_.Clear();
 }
 
 bool Cluster::MergePartialFromCodedStream(
@@ -667,13 +793,13 @@ bool Cluster::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.dataproc.v1.Cluster)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string project_id = 1;
+      // optional string project_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -683,12 +809,14 @@ bool Cluster::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_cluster_name;
         break;
       }
 
-      // string cluster_name = 2;
+      // optional string cluster_name = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_cluster_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_cluster_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -698,34 +826,40 @@ bool Cluster::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_config;
         break;
       }
 
-      // .google.cloud.dataproc.v1.ClusterConfig config = 3;
+      // optional .google.cloud.dataproc.v1.ClusterConfig config = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_config:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_config()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_status;
         break;
       }
 
-      // .google.cloud.dataproc.v1.ClusterStatus status = 4;
+      // optional .google.cloud.dataproc.v1.ClusterStatus status = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_status:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_status()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(50)) goto parse_cluster_uuid;
         break;
       }
 
-      // string cluster_uuid = 6;
+      // optional string cluster_uuid = 6;
       case 6: {
-        if (tag == 50u) {
+        if (tag == 50) {
+         parse_cluster_uuid:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_cluster_uuid()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -735,19 +869,24 @@ bool Cluster::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(58)) goto parse_status_history;
         break;
       }
 
       // repeated .google.cloud.dataproc.v1.ClusterStatus status_history = 7;
       case 7: {
-        if (tag == 58u) {
+        if (tag == 58) {
+         parse_status_history:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_status_history:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_status_history()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(58)) goto parse_loop_status_history;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -775,7 +914,7 @@ failure:
 void Cluster::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.dataproc.v1.Cluster)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -785,7 +924,7 @@ void Cluster::SerializeWithCachedSizes(
       1, this->project_id(), output);
   }
 
-  // string cluster_name = 2;
+  // optional string cluster_name = 2;
   if (this->cluster_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->cluster_name().data(), this->cluster_name().length(),
@@ -795,19 +934,19 @@ void Cluster::SerializeWithCachedSizes(
       2, this->cluster_name(), output);
   }
 
-  // .google.cloud.dataproc.v1.ClusterConfig config = 3;
+  // optional .google.cloud.dataproc.v1.ClusterConfig config = 3;
   if (this->has_config()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *this->config_, output);
   }
 
-  // .google.cloud.dataproc.v1.ClusterStatus status = 4;
+  // optional .google.cloud.dataproc.v1.ClusterStatus status = 4;
   if (this->has_status()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, *this->status_, output);
   }
 
-  // string cluster_uuid = 6;
+  // optional string cluster_uuid = 6;
   if (this->cluster_uuid().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->cluster_uuid().data(), this->cluster_uuid().length(),
@@ -830,7 +969,7 @@ void Cluster::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.Cluster)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -841,7 +980,7 @@ void Cluster::SerializeWithCachedSizes(
         1, this->project_id(), target);
   }
 
-  // string cluster_name = 2;
+  // optional string cluster_name = 2;
   if (this->cluster_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->cluster_name().data(), this->cluster_name().length(),
@@ -852,21 +991,21 @@ void Cluster::SerializeWithCachedSizes(
         2, this->cluster_name(), target);
   }
 
-  // .google.cloud.dataproc.v1.ClusterConfig config = 3;
+  // optional .google.cloud.dataproc.v1.ClusterConfig config = 3;
   if (this->has_config()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         3, *this->config_, false, target);
   }
 
-  // .google.cloud.dataproc.v1.ClusterStatus status = 4;
+  // optional .google.cloud.dataproc.v1.ClusterStatus status = 4;
   if (this->has_status()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         4, *this->status_, false, target);
   }
 
-  // string cluster_uuid = 6;
+  // optional string cluster_uuid = 6;
   if (this->cluster_uuid().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->cluster_uuid().data(), this->cluster_uuid().length(),
@@ -892,6 +1031,41 @@ size_t Cluster::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.Cluster)
   size_t total_size = 0;
 
+  // optional string project_id = 1;
+  if (this->project_id().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->project_id());
+  }
+
+  // optional string cluster_name = 2;
+  if (this->cluster_name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->cluster_name());
+  }
+
+  // optional .google.cloud.dataproc.v1.ClusterConfig config = 3;
+  if (this->has_config()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->config_);
+  }
+
+  // optional .google.cloud.dataproc.v1.ClusterStatus status = 4;
+  if (this->has_status()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->status_);
+  }
+
+  // optional string cluster_uuid = 6;
+  if (this->cluster_uuid().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->cluster_uuid());
+  }
+
   // repeated .google.cloud.dataproc.v1.ClusterStatus status_history = 7;
   {
     unsigned int count = this->status_history_size();
@@ -903,41 +1077,6 @@ size_t Cluster::ByteSizeLong() const {
     }
   }
 
-  // string project_id = 1;
-  if (this->project_id().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->project_id());
-  }
-
-  // string cluster_name = 2;
-  if (this->cluster_name().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->cluster_name());
-  }
-
-  // string cluster_uuid = 6;
-  if (this->cluster_uuid().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->cluster_uuid());
-  }
-
-  // .google.cloud.dataproc.v1.ClusterConfig config = 3;
-  if (this->has_config()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->config_);
-  }
-
-  // .google.cloud.dataproc.v1.ClusterStatus status = 4;
-  if (this->has_status()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->status_);
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -947,7 +1086,7 @@ size_t Cluster::ByteSizeLong() const {
 
 void Cluster::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.Cluster)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Cluster* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Cluster>(
           &from);
@@ -956,14 +1095,21 @@ void Cluster::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.Cluster)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Cluster::MergeFrom(const Cluster& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.Cluster)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Cluster::UnsafeMergeFrom(const Cluster& from) {
+  GOOGLE_DCHECK(&from != this);
   status_history_.MergeFrom(from.status_history_);
   if (from.project_id().size() > 0) {
 
@@ -973,15 +1119,15 @@ void Cluster::MergeFrom(const Cluster& from) {
 
     cluster_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cluster_name_);
   }
-  if (from.cluster_uuid().size() > 0) {
-
-    cluster_uuid_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cluster_uuid_);
-  }
   if (from.has_config()) {
     mutable_config()->::google::cloud::dataproc::v1::ClusterConfig::MergeFrom(from.config());
   }
   if (from.has_status()) {
     mutable_status()->::google::cloud::dataproc::v1::ClusterStatus::MergeFrom(from.status());
+  }
+  if (from.cluster_uuid().size() > 0) {
+
+    cluster_uuid_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cluster_uuid_);
   }
 }
 
@@ -996,10 +1142,11 @@ void Cluster::CopyFrom(const Cluster& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.Cluster)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Cluster::IsInitialized() const {
+
   return true;
 }
 
@@ -1008,30 +1155,34 @@ void Cluster::Swap(Cluster* other) {
   InternalSwap(other);
 }
 void Cluster::InternalSwap(Cluster* other) {
-  status_history_.UnsafeArenaSwap(&other->status_history_);
   project_id_.Swap(&other->project_id_);
   cluster_name_.Swap(&other->cluster_name_);
-  cluster_uuid_.Swap(&other->cluster_uuid_);
   std::swap(config_, other->config_);
   std::swap(status_, other->status_);
+  status_history_.UnsafeArenaSwap(&other->status_history_);
+  cluster_uuid_.Swap(&other->cluster_uuid_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Cluster::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Cluster_descriptor_;
+  metadata.reflection = Cluster_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Cluster
 
-// string project_id = 1;
+// optional string project_id = 1;
 void Cluster::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Cluster::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.Cluster.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Cluster::set_project_id(const ::std::string& value) {
   
@@ -1069,13 +1220,13 @@ void Cluster::set_allocated_project_id(::std::string* project_id) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.Cluster.project_id)
 }
 
-// string cluster_name = 2;
+// optional string cluster_name = 2;
 void Cluster::clear_cluster_name() {
   cluster_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Cluster::cluster_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.Cluster.cluster_name)
-  return cluster_name_.GetNoArena();
+  return cluster_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Cluster::set_cluster_name(const ::std::string& value) {
   
@@ -1113,7 +1264,7 @@ void Cluster::set_allocated_cluster_name(::std::string* cluster_name) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.Cluster.cluster_name)
 }
 
-// .google.cloud.dataproc.v1.ClusterConfig config = 3;
+// optional .google.cloud.dataproc.v1.ClusterConfig config = 3;
 bool Cluster::has_config() const {
   return this != internal_default_instance() && config_ != NULL;
 }
@@ -1152,7 +1303,7 @@ void Cluster::set_allocated_config(::google::cloud::dataproc::v1::ClusterConfig*
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.Cluster.config)
 }
 
-// .google.cloud.dataproc.v1.ClusterStatus status = 4;
+// optional .google.cloud.dataproc.v1.ClusterStatus status = 4;
 bool Cluster::has_status() const {
   return this != internal_default_instance() && status_ != NULL;
 }
@@ -1221,13 +1372,13 @@ Cluster::status_history() const {
   return status_history_;
 }
 
-// string cluster_uuid = 6;
+// optional string cluster_uuid = 6;
 void Cluster::clear_cluster_uuid() {
   cluster_uuid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Cluster::cluster_uuid() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.Cluster.cluster_uuid)
-  return cluster_uuid_.GetNoArena();
+  return cluster_uuid_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Cluster::set_cluster_uuid(const ::std::string& value) {
   
@@ -1265,6 +1416,9 @@ void Cluster::set_allocated_cluster_uuid(::std::string* cluster_uuid) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.Cluster.cluster_uuid)
 }
 
+inline const Cluster* Cluster::internal_default_instance() {
+  return &Cluster_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1281,54 +1435,39 @@ const int ClusterConfig::kInitializationActionsFieldNumber;
 
 ClusterConfig::ClusterConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.ClusterConfig)
 }
+
+void ClusterConfig::InitAsDefaultInstance() {
+  gce_cluster_config_ = const_cast< ::google::cloud::dataproc::v1::GceClusterConfig*>(
+      ::google::cloud::dataproc::v1::GceClusterConfig::internal_default_instance());
+  master_config_ = const_cast< ::google::cloud::dataproc::v1::InstanceGroupConfig*>(
+      ::google::cloud::dataproc::v1::InstanceGroupConfig::internal_default_instance());
+  worker_config_ = const_cast< ::google::cloud::dataproc::v1::InstanceGroupConfig*>(
+      ::google::cloud::dataproc::v1::InstanceGroupConfig::internal_default_instance());
+  secondary_worker_config_ = const_cast< ::google::cloud::dataproc::v1::InstanceGroupConfig*>(
+      ::google::cloud::dataproc::v1::InstanceGroupConfig::internal_default_instance());
+  software_config_ = const_cast< ::google::cloud::dataproc::v1::SoftwareConfig*>(
+      ::google::cloud::dataproc::v1::SoftwareConfig::internal_default_instance());
+}
+
 ClusterConfig::ClusterConfig(const ClusterConfig& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      initialization_actions_(from.initialization_actions_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  config_bucket_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.config_bucket().size() > 0) {
-    config_bucket_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.config_bucket_);
-  }
-  if (from.has_gce_cluster_config()) {
-    gce_cluster_config_ = new ::google::cloud::dataproc::v1::GceClusterConfig(*from.gce_cluster_config_);
-  } else {
-    gce_cluster_config_ = NULL;
-  }
-  if (from.has_master_config()) {
-    master_config_ = new ::google::cloud::dataproc::v1::InstanceGroupConfig(*from.master_config_);
-  } else {
-    master_config_ = NULL;
-  }
-  if (from.has_worker_config()) {
-    worker_config_ = new ::google::cloud::dataproc::v1::InstanceGroupConfig(*from.worker_config_);
-  } else {
-    worker_config_ = NULL;
-  }
-  if (from.has_secondary_worker_config()) {
-    secondary_worker_config_ = new ::google::cloud::dataproc::v1::InstanceGroupConfig(*from.secondary_worker_config_);
-  } else {
-    secondary_worker_config_ = NULL;
-  }
-  if (from.has_software_config()) {
-    software_config_ = new ::google::cloud::dataproc::v1::SoftwareConfig(*from.software_config_);
-  } else {
-    software_config_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.ClusterConfig)
 }
 
 void ClusterConfig::SharedCtor() {
   config_bucket_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&gce_cluster_config_, 0, reinterpret_cast<char*>(&software_config_) -
-    reinterpret_cast<char*>(&gce_cluster_config_) + sizeof(software_config_));
+  gce_cluster_config_ = NULL;
+  master_config_ = NULL;
+  worker_config_ = NULL;
+  secondary_worker_config_ = NULL;
+  software_config_ = NULL;
   _cached_size_ = 0;
 }
 
@@ -1339,19 +1478,11 @@ ClusterConfig::~ClusterConfig() {
 
 void ClusterConfig::SharedDtor() {
   config_bucket_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &ClusterConfig_default_instance_.get()) {
     delete gce_cluster_config_;
-  }
-  if (this != internal_default_instance()) {
     delete master_config_;
-  }
-  if (this != internal_default_instance()) {
     delete worker_config_;
-  }
-  if (this != internal_default_instance()) {
     delete secondary_worker_config_;
-  }
-  if (this != internal_default_instance()) {
     delete software_config_;
   }
 }
@@ -1363,13 +1494,15 @@ void ClusterConfig::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ClusterConfig::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return ClusterConfig_descriptor_;
 }
 
 const ClusterConfig& ClusterConfig::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ClusterConfig> ClusterConfig_default_instance_;
 
 ClusterConfig* ClusterConfig::New(::google::protobuf::Arena* arena) const {
   ClusterConfig* n = new ClusterConfig;
@@ -1381,28 +1514,18 @@ ClusterConfig* ClusterConfig::New(::google::protobuf::Arena* arena) const {
 
 void ClusterConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.dataproc.v1.ClusterConfig)
-  initialization_actions_.Clear();
   config_bucket_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && gce_cluster_config_ != NULL) {
-    delete gce_cluster_config_;
-  }
+  if (GetArenaNoVirtual() == NULL && gce_cluster_config_ != NULL) delete gce_cluster_config_;
   gce_cluster_config_ = NULL;
-  if (GetArenaNoVirtual() == NULL && master_config_ != NULL) {
-    delete master_config_;
-  }
+  if (GetArenaNoVirtual() == NULL && master_config_ != NULL) delete master_config_;
   master_config_ = NULL;
-  if (GetArenaNoVirtual() == NULL && worker_config_ != NULL) {
-    delete worker_config_;
-  }
+  if (GetArenaNoVirtual() == NULL && worker_config_ != NULL) delete worker_config_;
   worker_config_ = NULL;
-  if (GetArenaNoVirtual() == NULL && secondary_worker_config_ != NULL) {
-    delete secondary_worker_config_;
-  }
+  if (GetArenaNoVirtual() == NULL && secondary_worker_config_ != NULL) delete secondary_worker_config_;
   secondary_worker_config_ = NULL;
-  if (GetArenaNoVirtual() == NULL && software_config_ != NULL) {
-    delete software_config_;
-  }
+  if (GetArenaNoVirtual() == NULL && software_config_ != NULL) delete software_config_;
   software_config_ = NULL;
+  initialization_actions_.Clear();
 }
 
 bool ClusterConfig::MergePartialFromCodedStream(
@@ -1411,13 +1534,13 @@ bool ClusterConfig::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.dataproc.v1.ClusterConfig)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string config_bucket = 1;
+      // optional string config_bucket = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_config_bucket()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1427,74 +1550,89 @@ bool ClusterConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(66)) goto parse_gce_cluster_config;
         break;
       }
 
-      // .google.cloud.dataproc.v1.GceClusterConfig gce_cluster_config = 8;
+      // optional .google.cloud.dataproc.v1.GceClusterConfig gce_cluster_config = 8;
       case 8: {
-        if (tag == 66u) {
+        if (tag == 66) {
+         parse_gce_cluster_config:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_gce_cluster_config()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(74)) goto parse_master_config;
         break;
       }
 
-      // .google.cloud.dataproc.v1.InstanceGroupConfig master_config = 9;
+      // optional .google.cloud.dataproc.v1.InstanceGroupConfig master_config = 9;
       case 9: {
-        if (tag == 74u) {
+        if (tag == 74) {
+         parse_master_config:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_master_config()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(82)) goto parse_worker_config;
         break;
       }
 
-      // .google.cloud.dataproc.v1.InstanceGroupConfig worker_config = 10;
+      // optional .google.cloud.dataproc.v1.InstanceGroupConfig worker_config = 10;
       case 10: {
-        if (tag == 82u) {
+        if (tag == 82) {
+         parse_worker_config:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_worker_config()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(90)) goto parse_initialization_actions;
         break;
       }
 
       // repeated .google.cloud.dataproc.v1.NodeInitializationAction initialization_actions = 11;
       case 11: {
-        if (tag == 90u) {
+        if (tag == 90) {
+         parse_initialization_actions:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_initialization_actions:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_initialization_actions()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(90)) goto parse_loop_initialization_actions;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(98)) goto parse_secondary_worker_config;
         break;
       }
 
-      // .google.cloud.dataproc.v1.InstanceGroupConfig secondary_worker_config = 12;
+      // optional .google.cloud.dataproc.v1.InstanceGroupConfig secondary_worker_config = 12;
       case 12: {
-        if (tag == 98u) {
+        if (tag == 98) {
+         parse_secondary_worker_config:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_secondary_worker_config()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(106)) goto parse_software_config;
         break;
       }
 
-      // .google.cloud.dataproc.v1.SoftwareConfig software_config = 13;
+      // optional .google.cloud.dataproc.v1.SoftwareConfig software_config = 13;
       case 13: {
-        if (tag == 106u) {
+        if (tag == 106) {
+         parse_software_config:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_software_config()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1522,7 +1660,7 @@ failure:
 void ClusterConfig::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.dataproc.v1.ClusterConfig)
-  // string config_bucket = 1;
+  // optional string config_bucket = 1;
   if (this->config_bucket().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->config_bucket().data(), this->config_bucket().length(),
@@ -1532,19 +1670,19 @@ void ClusterConfig::SerializeWithCachedSizes(
       1, this->config_bucket(), output);
   }
 
-  // .google.cloud.dataproc.v1.GceClusterConfig gce_cluster_config = 8;
+  // optional .google.cloud.dataproc.v1.GceClusterConfig gce_cluster_config = 8;
   if (this->has_gce_cluster_config()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       8, *this->gce_cluster_config_, output);
   }
 
-  // .google.cloud.dataproc.v1.InstanceGroupConfig master_config = 9;
+  // optional .google.cloud.dataproc.v1.InstanceGroupConfig master_config = 9;
   if (this->has_master_config()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       9, *this->master_config_, output);
   }
 
-  // .google.cloud.dataproc.v1.InstanceGroupConfig worker_config = 10;
+  // optional .google.cloud.dataproc.v1.InstanceGroupConfig worker_config = 10;
   if (this->has_worker_config()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       10, *this->worker_config_, output);
@@ -1556,13 +1694,13 @@ void ClusterConfig::SerializeWithCachedSizes(
       11, this->initialization_actions(i), output);
   }
 
-  // .google.cloud.dataproc.v1.InstanceGroupConfig secondary_worker_config = 12;
+  // optional .google.cloud.dataproc.v1.InstanceGroupConfig secondary_worker_config = 12;
   if (this->has_secondary_worker_config()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       12, *this->secondary_worker_config_, output);
   }
 
-  // .google.cloud.dataproc.v1.SoftwareConfig software_config = 13;
+  // optional .google.cloud.dataproc.v1.SoftwareConfig software_config = 13;
   if (this->has_software_config()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       13, *this->software_config_, output);
@@ -1575,7 +1713,7 @@ void ClusterConfig::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.ClusterConfig)
-  // string config_bucket = 1;
+  // optional string config_bucket = 1;
   if (this->config_bucket().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->config_bucket().data(), this->config_bucket().length(),
@@ -1586,21 +1724,21 @@ void ClusterConfig::SerializeWithCachedSizes(
         1, this->config_bucket(), target);
   }
 
-  // .google.cloud.dataproc.v1.GceClusterConfig gce_cluster_config = 8;
+  // optional .google.cloud.dataproc.v1.GceClusterConfig gce_cluster_config = 8;
   if (this->has_gce_cluster_config()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         8, *this->gce_cluster_config_, false, target);
   }
 
-  // .google.cloud.dataproc.v1.InstanceGroupConfig master_config = 9;
+  // optional .google.cloud.dataproc.v1.InstanceGroupConfig master_config = 9;
   if (this->has_master_config()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         9, *this->master_config_, false, target);
   }
 
-  // .google.cloud.dataproc.v1.InstanceGroupConfig worker_config = 10;
+  // optional .google.cloud.dataproc.v1.InstanceGroupConfig worker_config = 10;
   if (this->has_worker_config()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -1614,14 +1752,14 @@ void ClusterConfig::SerializeWithCachedSizes(
         11, this->initialization_actions(i), false, target);
   }
 
-  // .google.cloud.dataproc.v1.InstanceGroupConfig secondary_worker_config = 12;
+  // optional .google.cloud.dataproc.v1.InstanceGroupConfig secondary_worker_config = 12;
   if (this->has_secondary_worker_config()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         12, *this->secondary_worker_config_, false, target);
   }
 
-  // .google.cloud.dataproc.v1.SoftwareConfig software_config = 13;
+  // optional .google.cloud.dataproc.v1.SoftwareConfig software_config = 13;
   if (this->has_software_config()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -1636,6 +1774,48 @@ size_t ClusterConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.ClusterConfig)
   size_t total_size = 0;
 
+  // optional string config_bucket = 1;
+  if (this->config_bucket().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->config_bucket());
+  }
+
+  // optional .google.cloud.dataproc.v1.GceClusterConfig gce_cluster_config = 8;
+  if (this->has_gce_cluster_config()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->gce_cluster_config_);
+  }
+
+  // optional .google.cloud.dataproc.v1.InstanceGroupConfig master_config = 9;
+  if (this->has_master_config()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->master_config_);
+  }
+
+  // optional .google.cloud.dataproc.v1.InstanceGroupConfig worker_config = 10;
+  if (this->has_worker_config()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->worker_config_);
+  }
+
+  // optional .google.cloud.dataproc.v1.InstanceGroupConfig secondary_worker_config = 12;
+  if (this->has_secondary_worker_config()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->secondary_worker_config_);
+  }
+
+  // optional .google.cloud.dataproc.v1.SoftwareConfig software_config = 13;
+  if (this->has_software_config()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->software_config_);
+  }
+
   // repeated .google.cloud.dataproc.v1.NodeInitializationAction initialization_actions = 11;
   {
     unsigned int count = this->initialization_actions_size();
@@ -1647,48 +1827,6 @@ size_t ClusterConfig::ByteSizeLong() const {
     }
   }
 
-  // string config_bucket = 1;
-  if (this->config_bucket().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->config_bucket());
-  }
-
-  // .google.cloud.dataproc.v1.GceClusterConfig gce_cluster_config = 8;
-  if (this->has_gce_cluster_config()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->gce_cluster_config_);
-  }
-
-  // .google.cloud.dataproc.v1.InstanceGroupConfig master_config = 9;
-  if (this->has_master_config()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->master_config_);
-  }
-
-  // .google.cloud.dataproc.v1.InstanceGroupConfig worker_config = 10;
-  if (this->has_worker_config()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->worker_config_);
-  }
-
-  // .google.cloud.dataproc.v1.InstanceGroupConfig secondary_worker_config = 12;
-  if (this->has_secondary_worker_config()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->secondary_worker_config_);
-  }
-
-  // .google.cloud.dataproc.v1.SoftwareConfig software_config = 13;
-  if (this->has_software_config()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->software_config_);
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -1698,7 +1836,7 @@ size_t ClusterConfig::ByteSizeLong() const {
 
 void ClusterConfig::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.ClusterConfig)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ClusterConfig* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ClusterConfig>(
           &from);
@@ -1707,14 +1845,21 @@ void ClusterConfig::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.ClusterConfig)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ClusterConfig::MergeFrom(const ClusterConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.ClusterConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ClusterConfig::UnsafeMergeFrom(const ClusterConfig& from) {
+  GOOGLE_DCHECK(&from != this);
   initialization_actions_.MergeFrom(from.initialization_actions_);
   if (from.config_bucket().size() > 0) {
 
@@ -1748,10 +1893,11 @@ void ClusterConfig::CopyFrom(const ClusterConfig& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.ClusterConfig)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ClusterConfig::IsInitialized() const {
+
   return true;
 }
 
@@ -1760,31 +1906,35 @@ void ClusterConfig::Swap(ClusterConfig* other) {
   InternalSwap(other);
 }
 void ClusterConfig::InternalSwap(ClusterConfig* other) {
-  initialization_actions_.UnsafeArenaSwap(&other->initialization_actions_);
   config_bucket_.Swap(&other->config_bucket_);
   std::swap(gce_cluster_config_, other->gce_cluster_config_);
   std::swap(master_config_, other->master_config_);
   std::swap(worker_config_, other->worker_config_);
   std::swap(secondary_worker_config_, other->secondary_worker_config_);
   std::swap(software_config_, other->software_config_);
+  initialization_actions_.UnsafeArenaSwap(&other->initialization_actions_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ClusterConfig::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ClusterConfig_descriptor_;
+  metadata.reflection = ClusterConfig_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ClusterConfig
 
-// string config_bucket = 1;
+// optional string config_bucket = 1;
 void ClusterConfig::clear_config_bucket() {
   config_bucket_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ClusterConfig::config_bucket() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ClusterConfig.config_bucket)
-  return config_bucket_.GetNoArena();
+  return config_bucket_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ClusterConfig::set_config_bucket(const ::std::string& value) {
   
@@ -1822,7 +1972,7 @@ void ClusterConfig::set_allocated_config_bucket(::std::string* config_bucket) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ClusterConfig.config_bucket)
 }
 
-// .google.cloud.dataproc.v1.GceClusterConfig gce_cluster_config = 8;
+// optional .google.cloud.dataproc.v1.GceClusterConfig gce_cluster_config = 8;
 bool ClusterConfig::has_gce_cluster_config() const {
   return this != internal_default_instance() && gce_cluster_config_ != NULL;
 }
@@ -1861,7 +2011,7 @@ void ClusterConfig::set_allocated_gce_cluster_config(::google::cloud::dataproc::
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ClusterConfig.gce_cluster_config)
 }
 
-// .google.cloud.dataproc.v1.InstanceGroupConfig master_config = 9;
+// optional .google.cloud.dataproc.v1.InstanceGroupConfig master_config = 9;
 bool ClusterConfig::has_master_config() const {
   return this != internal_default_instance() && master_config_ != NULL;
 }
@@ -1900,7 +2050,7 @@ void ClusterConfig::set_allocated_master_config(::google::cloud::dataproc::v1::I
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ClusterConfig.master_config)
 }
 
-// .google.cloud.dataproc.v1.InstanceGroupConfig worker_config = 10;
+// optional .google.cloud.dataproc.v1.InstanceGroupConfig worker_config = 10;
 bool ClusterConfig::has_worker_config() const {
   return this != internal_default_instance() && worker_config_ != NULL;
 }
@@ -1939,7 +2089,7 @@ void ClusterConfig::set_allocated_worker_config(::google::cloud::dataproc::v1::I
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ClusterConfig.worker_config)
 }
 
-// .google.cloud.dataproc.v1.InstanceGroupConfig secondary_worker_config = 12;
+// optional .google.cloud.dataproc.v1.InstanceGroupConfig secondary_worker_config = 12;
 bool ClusterConfig::has_secondary_worker_config() const {
   return this != internal_default_instance() && secondary_worker_config_ != NULL;
 }
@@ -1978,7 +2128,7 @@ void ClusterConfig::set_allocated_secondary_worker_config(::google::cloud::datap
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ClusterConfig.secondary_worker_config)
 }
 
-// .google.cloud.dataproc.v1.SoftwareConfig software_config = 13;
+// optional .google.cloud.dataproc.v1.SoftwareConfig software_config = 13;
 bool ClusterConfig::has_software_config() const {
   return this != internal_default_instance() && software_config_ != NULL;
 }
@@ -2047,11 +2197,9 @@ ClusterConfig::initialization_actions() const {
   return initialization_actions_;
 }
 
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
-
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
+inline const ClusterConfig* ClusterConfig::internal_default_instance() {
+  return &ClusterConfig_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2068,47 +2216,27 @@ const int GceClusterConfig::kMetadataFieldNumber;
 
 GceClusterConfig::GceClusterConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.GceClusterConfig)
 }
+
+void GceClusterConfig::InitAsDefaultInstance() {
+}
+
 GceClusterConfig::GceClusterConfig(const GceClusterConfig& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      service_account_scopes_(from.service_account_scopes_),
-      tags_(from.tags_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  const ::google::protobuf::Descriptor*& GceClusterConfig_MetadataEntry_descriptor = file_level_metadata[2].descriptor;
-  metadata_.SetAssignDescriptorCallback(
-      protobuf_AssignDescriptorsOnce);
-  metadata_.SetEntryDescriptor(
-      &GceClusterConfig_MetadataEntry_descriptor);
-  metadata_.MergeFrom(from.metadata_);
-  zone_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.zone_uri().size() > 0) {
-    zone_uri_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.zone_uri_);
-  }
-  network_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.network_uri().size() > 0) {
-    network_uri_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.network_uri_);
-  }
-  subnetwork_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.subnetwork_uri().size() > 0) {
-    subnetwork_uri_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.subnetwork_uri_);
-  }
-  internal_ip_only_ = from.internal_ip_only_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.GceClusterConfig)
 }
 
 void GceClusterConfig::SharedCtor() {
-  const ::google::protobuf::Descriptor*& GceClusterConfig_MetadataEntry_descriptor = file_level_metadata[2].descriptor;
   metadata_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   metadata_.SetEntryDescriptor(
-      &GceClusterConfig_MetadataEntry_descriptor);
+      &::google::cloud::dataproc::v1::GceClusterConfig_MetadataEntry_descriptor_);
   zone_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   network_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   subnetwork_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -2134,13 +2262,15 @@ void GceClusterConfig::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GceClusterConfig::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return GceClusterConfig_descriptor_;
 }
 
 const GceClusterConfig& GceClusterConfig::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GceClusterConfig> GceClusterConfig_default_instance_;
 
 GceClusterConfig* GceClusterConfig::New(::google::protobuf::Arena* arena) const {
   GceClusterConfig* n = new GceClusterConfig;
@@ -2152,13 +2282,13 @@ GceClusterConfig* GceClusterConfig::New(::google::protobuf::Arena* arena) const 
 
 void GceClusterConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.dataproc.v1.GceClusterConfig)
-  service_account_scopes_.Clear();
-  tags_.Clear();
-  metadata_.Clear();
   zone_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   network_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   subnetwork_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   internal_ip_only_ = false;
+  service_account_scopes_.Clear();
+  tags_.Clear();
+  metadata_.Clear();
 }
 
 bool GceClusterConfig::MergePartialFromCodedStream(
@@ -2167,13 +2297,13 @@ bool GceClusterConfig::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.dataproc.v1.GceClusterConfig)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string zone_uri = 1;
+      // optional string zone_uri = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_zone_uri()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2183,12 +2313,14 @@ bool GceClusterConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_network_uri;
         break;
       }
 
-      // string network_uri = 2;
+      // optional string network_uri = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_network_uri:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_network_uri()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2198,12 +2330,14 @@ bool GceClusterConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_service_account_scopes;
         break;
       }
 
       // repeated string service_account_scopes = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_service_account_scopes:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_service_account_scopes()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2214,12 +2348,15 @@ bool GceClusterConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_service_account_scopes;
+        if (input->ExpectTag(34)) goto parse_tags;
         break;
       }
 
       // repeated string tags = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_tags:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_tags()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2230,13 +2367,17 @@ bool GceClusterConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_tags;
+        if (input->ExpectTag(42)) goto parse_metadata;
         break;
       }
 
       // map<string, string> metadata = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_metadata:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_metadata:
           GceClusterConfig_MetadataEntry::Parser< ::google::protobuf::internal::MapField<
               ::std::string, ::std::string,
               ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
@@ -2256,13 +2397,16 @@ bool GceClusterConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_loop_metadata;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(50)) goto parse_subnetwork_uri;
         break;
       }
 
-      // string subnetwork_uri = 6;
+      // optional string subnetwork_uri = 6;
       case 6: {
-        if (tag == 50u) {
+        if (tag == 50) {
+         parse_subnetwork_uri:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_subnetwork_uri()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2272,12 +2416,14 @@ bool GceClusterConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(56)) goto parse_internal_ip_only;
         break;
       }
 
-      // bool internal_ip_only = 7;
+      // optional bool internal_ip_only = 7;
       case 7: {
-        if (tag == 56u) {
+        if (tag == 56) {
+         parse_internal_ip_only:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -2285,6 +2431,7 @@ bool GceClusterConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2312,7 +2459,7 @@ failure:
 void GceClusterConfig::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.dataproc.v1.GceClusterConfig)
-  // string zone_uri = 1;
+  // optional string zone_uri = 1;
   if (this->zone_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->zone_uri().data(), this->zone_uri().length(),
@@ -2322,7 +2469,7 @@ void GceClusterConfig::SerializeWithCachedSizes(
       1, this->zone_uri(), output);
   }
 
-  // string network_uri = 2;
+  // optional string network_uri = 2;
   if (this->network_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->network_uri().data(), this->network_uri().length(),
@@ -2371,7 +2518,7 @@ void GceClusterConfig::SerializeWithCachedSizes(
       }
     };
 
-    if (output->IsSerializationDeterministic() &&
+    if (output->IsSerializationDeterminstic() &&
         this->metadata().size() > 1) {
       ::google::protobuf::scoped_array<SortItem> items(
           new SortItem[this->metadata().size()]);
@@ -2405,7 +2552,7 @@ void GceClusterConfig::SerializeWithCachedSizes(
     }
   }
 
-  // string subnetwork_uri = 6;
+  // optional string subnetwork_uri = 6;
   if (this->subnetwork_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->subnetwork_uri().data(), this->subnetwork_uri().length(),
@@ -2415,7 +2562,7 @@ void GceClusterConfig::SerializeWithCachedSizes(
       6, this->subnetwork_uri(), output);
   }
 
-  // bool internal_ip_only = 7;
+  // optional bool internal_ip_only = 7;
   if (this->internal_ip_only() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(7, this->internal_ip_only(), output);
   }
@@ -2427,7 +2574,7 @@ void GceClusterConfig::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.GceClusterConfig)
-  // string zone_uri = 1;
+  // optional string zone_uri = 1;
   if (this->zone_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->zone_uri().data(), this->zone_uri().length(),
@@ -2438,7 +2585,7 @@ void GceClusterConfig::SerializeWithCachedSizes(
         1, this->zone_uri(), target);
   }
 
-  // string network_uri = 2;
+  // optional string network_uri = 2;
   if (this->network_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->network_uri().data(), this->network_uri().length(),
@@ -2526,7 +2673,7 @@ void GceClusterConfig::SerializeWithCachedSizes(
     }
   }
 
-  // string subnetwork_uri = 6;
+  // optional string subnetwork_uri = 6;
   if (this->subnetwork_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->subnetwork_uri().data(), this->subnetwork_uri().length(),
@@ -2537,7 +2684,7 @@ void GceClusterConfig::SerializeWithCachedSizes(
         6, this->subnetwork_uri(), target);
   }
 
-  // bool internal_ip_only = 7;
+  // optional bool internal_ip_only = 7;
   if (this->internal_ip_only() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(7, this->internal_ip_only(), target);
   }
@@ -2549,6 +2696,32 @@ void GceClusterConfig::SerializeWithCachedSizes(
 size_t GceClusterConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.GceClusterConfig)
   size_t total_size = 0;
+
+  // optional string zone_uri = 1;
+  if (this->zone_uri().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->zone_uri());
+  }
+
+  // optional string network_uri = 2;
+  if (this->network_uri().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->network_uri());
+  }
+
+  // optional string subnetwork_uri = 6;
+  if (this->subnetwork_uri().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->subnetwork_uri());
+  }
+
+  // optional bool internal_ip_only = 7;
+  if (this->internal_ip_only() != 0) {
+    total_size += 1 + 1;
+  }
 
   // repeated string service_account_scopes = 3;
   total_size += 1 *
@@ -2580,32 +2753,6 @@ size_t GceClusterConfig::ByteSizeLong() const {
     }
   }
 
-  // string zone_uri = 1;
-  if (this->zone_uri().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->zone_uri());
-  }
-
-  // string network_uri = 2;
-  if (this->network_uri().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->network_uri());
-  }
-
-  // string subnetwork_uri = 6;
-  if (this->subnetwork_uri().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->subnetwork_uri());
-  }
-
-  // bool internal_ip_only = 7;
-  if (this->internal_ip_only() != 0) {
-    total_size += 1 + 1;
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -2615,7 +2762,7 @@ size_t GceClusterConfig::ByteSizeLong() const {
 
 void GceClusterConfig::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.GceClusterConfig)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GceClusterConfig* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GceClusterConfig>(
           &from);
@@ -2624,16 +2771,23 @@ void GceClusterConfig::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.GceClusterConfig)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GceClusterConfig::MergeFrom(const GceClusterConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.GceClusterConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  service_account_scopes_.MergeFrom(from.service_account_scopes_);
-  tags_.MergeFrom(from.tags_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GceClusterConfig::UnsafeMergeFrom(const GceClusterConfig& from) {
+  GOOGLE_DCHECK(&from != this);
+  service_account_scopes_.UnsafeMergeFrom(from.service_account_scopes_);
+  tags_.UnsafeMergeFrom(from.tags_);
   metadata_.MergeFrom(from.metadata_);
   if (from.zone_uri().size() > 0) {
 
@@ -2663,10 +2817,11 @@ void GceClusterConfig::CopyFrom(const GceClusterConfig& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.GceClusterConfig)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GceClusterConfig::IsInitialized() const {
+
   return true;
 }
 
@@ -2675,31 +2830,35 @@ void GceClusterConfig::Swap(GceClusterConfig* other) {
   InternalSwap(other);
 }
 void GceClusterConfig::InternalSwap(GceClusterConfig* other) {
-  service_account_scopes_.UnsafeArenaSwap(&other->service_account_scopes_);
-  tags_.UnsafeArenaSwap(&other->tags_);
-  metadata_.Swap(&other->metadata_);
   zone_uri_.Swap(&other->zone_uri_);
   network_uri_.Swap(&other->network_uri_);
   subnetwork_uri_.Swap(&other->subnetwork_uri_);
   std::swap(internal_ip_only_, other->internal_ip_only_);
+  service_account_scopes_.UnsafeArenaSwap(&other->service_account_scopes_);
+  tags_.UnsafeArenaSwap(&other->tags_);
+  metadata_.Swap(&other->metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GceClusterConfig::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GceClusterConfig_descriptor_;
+  metadata.reflection = GceClusterConfig_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GceClusterConfig
 
-// string zone_uri = 1;
+// optional string zone_uri = 1;
 void GceClusterConfig::clear_zone_uri() {
   zone_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GceClusterConfig::zone_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GceClusterConfig.zone_uri)
-  return zone_uri_.GetNoArena();
+  return zone_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GceClusterConfig::set_zone_uri(const ::std::string& value) {
   
@@ -2737,13 +2896,13 @@ void GceClusterConfig::set_allocated_zone_uri(::std::string* zone_uri) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.GceClusterConfig.zone_uri)
 }
 
-// string network_uri = 2;
+// optional string network_uri = 2;
 void GceClusterConfig::clear_network_uri() {
   network_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GceClusterConfig::network_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GceClusterConfig.network_uri)
-  return network_uri_.GetNoArena();
+  return network_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GceClusterConfig::set_network_uri(const ::std::string& value) {
   
@@ -2781,13 +2940,13 @@ void GceClusterConfig::set_allocated_network_uri(::std::string* network_uri) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.GceClusterConfig.network_uri)
 }
 
-// string subnetwork_uri = 6;
+// optional string subnetwork_uri = 6;
 void GceClusterConfig::clear_subnetwork_uri() {
   subnetwork_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GceClusterConfig::subnetwork_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GceClusterConfig.subnetwork_uri)
-  return subnetwork_uri_.GetNoArena();
+  return subnetwork_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GceClusterConfig::set_subnetwork_uri(const ::std::string& value) {
   
@@ -2825,7 +2984,7 @@ void GceClusterConfig::set_allocated_subnetwork_uri(::std::string* subnetwork_ur
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.GceClusterConfig.subnetwork_uri)
 }
 
-// bool internal_ip_only = 7;
+// optional bool internal_ip_only = 7;
 void GceClusterConfig::clear_internal_ip_only() {
   internal_ip_only_ = false;
 }
@@ -2967,6 +3126,9 @@ GceClusterConfig::mutable_metadata() {
   return metadata_.MutableMap();
 }
 
+inline const GceClusterConfig* GceClusterConfig::internal_default_instance() {
+  return &GceClusterConfig_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2983,47 +3145,33 @@ const int InstanceGroupConfig::kManagedGroupConfigFieldNumber;
 
 InstanceGroupConfig::InstanceGroupConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.InstanceGroupConfig)
 }
+
+void InstanceGroupConfig::InitAsDefaultInstance() {
+  disk_config_ = const_cast< ::google::cloud::dataproc::v1::DiskConfig*>(
+      ::google::cloud::dataproc::v1::DiskConfig::internal_default_instance());
+  managed_group_config_ = const_cast< ::google::cloud::dataproc::v1::ManagedGroupConfig*>(
+      ::google::cloud::dataproc::v1::ManagedGroupConfig::internal_default_instance());
+}
+
 InstanceGroupConfig::InstanceGroupConfig(const InstanceGroupConfig& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      instance_names_(from.instance_names_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  image_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.image_uri().size() > 0) {
-    image_uri_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.image_uri_);
-  }
-  machine_type_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.machine_type_uri().size() > 0) {
-    machine_type_uri_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.machine_type_uri_);
-  }
-  if (from.has_disk_config()) {
-    disk_config_ = new ::google::cloud::dataproc::v1::DiskConfig(*from.disk_config_);
-  } else {
-    disk_config_ = NULL;
-  }
-  if (from.has_managed_group_config()) {
-    managed_group_config_ = new ::google::cloud::dataproc::v1::ManagedGroupConfig(*from.managed_group_config_);
-  } else {
-    managed_group_config_ = NULL;
-  }
-  ::memcpy(&num_instances_, &from.num_instances_,
-    reinterpret_cast<char*>(&is_preemptible_) -
-    reinterpret_cast<char*>(&num_instances_) + sizeof(is_preemptible_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.InstanceGroupConfig)
 }
 
 void InstanceGroupConfig::SharedCtor() {
   image_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   machine_type_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&disk_config_, 0, reinterpret_cast<char*>(&is_preemptible_) -
-    reinterpret_cast<char*>(&disk_config_) + sizeof(is_preemptible_));
+  disk_config_ = NULL;
+  managed_group_config_ = NULL;
+  ::memset(&num_instances_, 0, reinterpret_cast<char*>(&is_preemptible_) -
+    reinterpret_cast<char*>(&num_instances_) + sizeof(is_preemptible_));
   _cached_size_ = 0;
 }
 
@@ -3035,10 +3183,8 @@ InstanceGroupConfig::~InstanceGroupConfig() {
 void InstanceGroupConfig::SharedDtor() {
   image_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   machine_type_uri_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &InstanceGroupConfig_default_instance_.get()) {
     delete disk_config_;
-  }
-  if (this != internal_default_instance()) {
     delete managed_group_config_;
   }
 }
@@ -3050,13 +3196,15 @@ void InstanceGroupConfig::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* InstanceGroupConfig::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return InstanceGroupConfig_descriptor_;
 }
 
 const InstanceGroupConfig& InstanceGroupConfig::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<InstanceGroupConfig> InstanceGroupConfig_default_instance_;
 
 InstanceGroupConfig* InstanceGroupConfig::New(::google::protobuf::Arena* arena) const {
   InstanceGroupConfig* n = new InstanceGroupConfig;
@@ -3068,19 +3216,34 @@ InstanceGroupConfig* InstanceGroupConfig::New(::google::protobuf::Arena* arena) 
 
 void InstanceGroupConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.dataproc.v1.InstanceGroupConfig)
-  instance_names_.Clear();
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(InstanceGroupConfig, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<InstanceGroupConfig*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(num_instances_, is_preemptible_);
   image_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   machine_type_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && disk_config_ != NULL) {
-    delete disk_config_;
-  }
+  if (GetArenaNoVirtual() == NULL && disk_config_ != NULL) delete disk_config_;
   disk_config_ = NULL;
-  if (GetArenaNoVirtual() == NULL && managed_group_config_ != NULL) {
-    delete managed_group_config_;
-  }
+  if (GetArenaNoVirtual() == NULL && managed_group_config_ != NULL) delete managed_group_config_;
   managed_group_config_ = NULL;
-  ::memset(&num_instances_, 0, reinterpret_cast<char*>(&is_preemptible_) -
-    reinterpret_cast<char*>(&num_instances_) + sizeof(is_preemptible_));
+
+#undef ZR_HELPER_
+#undef ZR_
+
+  instance_names_.Clear();
 }
 
 bool InstanceGroupConfig::MergePartialFromCodedStream(
@@ -3089,13 +3252,13 @@ bool InstanceGroupConfig::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.dataproc.v1.InstanceGroupConfig)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 num_instances = 1;
+      // optional int32 num_instances = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -3103,12 +3266,14 @@ bool InstanceGroupConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_instance_names;
         break;
       }
 
       // repeated string instance_names = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_instance_names:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_instance_names()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3119,12 +3284,15 @@ bool InstanceGroupConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_instance_names;
+        if (input->ExpectTag(26)) goto parse_image_uri;
         break;
       }
 
-      // string image_uri = 3;
+      // optional string image_uri = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_image_uri:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_image_uri()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3134,12 +3302,14 @@ bool InstanceGroupConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_machine_type_uri;
         break;
       }
 
-      // string machine_type_uri = 4;
+      // optional string machine_type_uri = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_machine_type_uri:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_machine_type_uri()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3149,23 +3319,27 @@ bool InstanceGroupConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_disk_config;
         break;
       }
 
-      // .google.cloud.dataproc.v1.DiskConfig disk_config = 5;
+      // optional .google.cloud.dataproc.v1.DiskConfig disk_config = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_disk_config:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_disk_config()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(48)) goto parse_is_preemptible;
         break;
       }
 
-      // bool is_preemptible = 6;
+      // optional bool is_preemptible = 6;
       case 6: {
-        if (tag == 48u) {
+        if (tag == 48) {
+         parse_is_preemptible:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -3173,17 +3347,20 @@ bool InstanceGroupConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(58)) goto parse_managed_group_config;
         break;
       }
 
-      // .google.cloud.dataproc.v1.ManagedGroupConfig managed_group_config = 7;
+      // optional .google.cloud.dataproc.v1.ManagedGroupConfig managed_group_config = 7;
       case 7: {
-        if (tag == 58u) {
+        if (tag == 58) {
+         parse_managed_group_config:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_managed_group_config()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3211,7 +3388,7 @@ failure:
 void InstanceGroupConfig::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.dataproc.v1.InstanceGroupConfig)
-  // int32 num_instances = 1;
+  // optional int32 num_instances = 1;
   if (this->num_instances() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->num_instances(), output);
   }
@@ -3226,7 +3403,7 @@ void InstanceGroupConfig::SerializeWithCachedSizes(
       2, this->instance_names(i), output);
   }
 
-  // string image_uri = 3;
+  // optional string image_uri = 3;
   if (this->image_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->image_uri().data(), this->image_uri().length(),
@@ -3236,7 +3413,7 @@ void InstanceGroupConfig::SerializeWithCachedSizes(
       3, this->image_uri(), output);
   }
 
-  // string machine_type_uri = 4;
+  // optional string machine_type_uri = 4;
   if (this->machine_type_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->machine_type_uri().data(), this->machine_type_uri().length(),
@@ -3246,18 +3423,18 @@ void InstanceGroupConfig::SerializeWithCachedSizes(
       4, this->machine_type_uri(), output);
   }
 
-  // .google.cloud.dataproc.v1.DiskConfig disk_config = 5;
+  // optional .google.cloud.dataproc.v1.DiskConfig disk_config = 5;
   if (this->has_disk_config()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       5, *this->disk_config_, output);
   }
 
-  // bool is_preemptible = 6;
+  // optional bool is_preemptible = 6;
   if (this->is_preemptible() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(6, this->is_preemptible(), output);
   }
 
-  // .google.cloud.dataproc.v1.ManagedGroupConfig managed_group_config = 7;
+  // optional .google.cloud.dataproc.v1.ManagedGroupConfig managed_group_config = 7;
   if (this->has_managed_group_config()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       7, *this->managed_group_config_, output);
@@ -3270,7 +3447,7 @@ void InstanceGroupConfig::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.InstanceGroupConfig)
-  // int32 num_instances = 1;
+  // optional int32 num_instances = 1;
   if (this->num_instances() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->num_instances(), target);
   }
@@ -3285,7 +3462,7 @@ void InstanceGroupConfig::SerializeWithCachedSizes(
       WriteStringToArray(2, this->instance_names(i), target);
   }
 
-  // string image_uri = 3;
+  // optional string image_uri = 3;
   if (this->image_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->image_uri().data(), this->image_uri().length(),
@@ -3296,7 +3473,7 @@ void InstanceGroupConfig::SerializeWithCachedSizes(
         3, this->image_uri(), target);
   }
 
-  // string machine_type_uri = 4;
+  // optional string machine_type_uri = 4;
   if (this->machine_type_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->machine_type_uri().data(), this->machine_type_uri().length(),
@@ -3307,19 +3484,19 @@ void InstanceGroupConfig::SerializeWithCachedSizes(
         4, this->machine_type_uri(), target);
   }
 
-  // .google.cloud.dataproc.v1.DiskConfig disk_config = 5;
+  // optional .google.cloud.dataproc.v1.DiskConfig disk_config = 5;
   if (this->has_disk_config()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         5, *this->disk_config_, false, target);
   }
 
-  // bool is_preemptible = 6;
+  // optional bool is_preemptible = 6;
   if (this->is_preemptible() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(6, this->is_preemptible(), target);
   }
 
-  // .google.cloud.dataproc.v1.ManagedGroupConfig managed_group_config = 7;
+  // optional .google.cloud.dataproc.v1.ManagedGroupConfig managed_group_config = 7;
   if (this->has_managed_group_config()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -3334,52 +3511,52 @@ size_t InstanceGroupConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.InstanceGroupConfig)
   size_t total_size = 0;
 
-  // repeated string instance_names = 2;
-  total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->instance_names_size());
-  for (int i = 0; i < this->instance_names_size(); i++) {
-    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
-      this->instance_names(i));
-  }
-
-  // string image_uri = 3;
-  if (this->image_uri().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->image_uri());
-  }
-
-  // string machine_type_uri = 4;
-  if (this->machine_type_uri().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->machine_type_uri());
-  }
-
-  // .google.cloud.dataproc.v1.DiskConfig disk_config = 5;
-  if (this->has_disk_config()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->disk_config_);
-  }
-
-  // .google.cloud.dataproc.v1.ManagedGroupConfig managed_group_config = 7;
-  if (this->has_managed_group_config()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->managed_group_config_);
-  }
-
-  // int32 num_instances = 1;
+  // optional int32 num_instances = 1;
   if (this->num_instances() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->num_instances());
   }
 
-  // bool is_preemptible = 6;
+  // optional string image_uri = 3;
+  if (this->image_uri().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->image_uri());
+  }
+
+  // optional string machine_type_uri = 4;
+  if (this->machine_type_uri().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->machine_type_uri());
+  }
+
+  // optional .google.cloud.dataproc.v1.DiskConfig disk_config = 5;
+  if (this->has_disk_config()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->disk_config_);
+  }
+
+  // optional bool is_preemptible = 6;
   if (this->is_preemptible() != 0) {
     total_size += 1 + 1;
+  }
+
+  // optional .google.cloud.dataproc.v1.ManagedGroupConfig managed_group_config = 7;
+  if (this->has_managed_group_config()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->managed_group_config_);
+  }
+
+  // repeated string instance_names = 2;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->instance_names_size());
+  for (int i = 0; i < this->instance_names_size(); i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->instance_names(i));
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -3391,7 +3568,7 @@ size_t InstanceGroupConfig::ByteSizeLong() const {
 
 void InstanceGroupConfig::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.InstanceGroupConfig)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const InstanceGroupConfig* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const InstanceGroupConfig>(
           &from);
@@ -3400,15 +3577,25 @@ void InstanceGroupConfig::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.InstanceGroupConfig)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void InstanceGroupConfig::MergeFrom(const InstanceGroupConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.InstanceGroupConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  instance_names_.MergeFrom(from.instance_names_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void InstanceGroupConfig::UnsafeMergeFrom(const InstanceGroupConfig& from) {
+  GOOGLE_DCHECK(&from != this);
+  instance_names_.UnsafeMergeFrom(from.instance_names_);
+  if (from.num_instances() != 0) {
+    set_num_instances(from.num_instances());
+  }
   if (from.image_uri().size() > 0) {
 
     image_uri_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.image_uri_);
@@ -3420,14 +3607,11 @@ void InstanceGroupConfig::MergeFrom(const InstanceGroupConfig& from) {
   if (from.has_disk_config()) {
     mutable_disk_config()->::google::cloud::dataproc::v1::DiskConfig::MergeFrom(from.disk_config());
   }
-  if (from.has_managed_group_config()) {
-    mutable_managed_group_config()->::google::cloud::dataproc::v1::ManagedGroupConfig::MergeFrom(from.managed_group_config());
-  }
-  if (from.num_instances() != 0) {
-    set_num_instances(from.num_instances());
-  }
   if (from.is_preemptible() != 0) {
     set_is_preemptible(from.is_preemptible());
+  }
+  if (from.has_managed_group_config()) {
+    mutable_managed_group_config()->::google::cloud::dataproc::v1::ManagedGroupConfig::MergeFrom(from.managed_group_config());
   }
 }
 
@@ -3442,10 +3626,11 @@ void InstanceGroupConfig::CopyFrom(const InstanceGroupConfig& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.InstanceGroupConfig)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool InstanceGroupConfig::IsInitialized() const {
+
   return true;
 }
 
@@ -3454,25 +3639,29 @@ void InstanceGroupConfig::Swap(InstanceGroupConfig* other) {
   InternalSwap(other);
 }
 void InstanceGroupConfig::InternalSwap(InstanceGroupConfig* other) {
+  std::swap(num_instances_, other->num_instances_);
   instance_names_.UnsafeArenaSwap(&other->instance_names_);
   image_uri_.Swap(&other->image_uri_);
   machine_type_uri_.Swap(&other->machine_type_uri_);
   std::swap(disk_config_, other->disk_config_);
-  std::swap(managed_group_config_, other->managed_group_config_);
-  std::swap(num_instances_, other->num_instances_);
   std::swap(is_preemptible_, other->is_preemptible_);
+  std::swap(managed_group_config_, other->managed_group_config_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata InstanceGroupConfig::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = InstanceGroupConfig_descriptor_;
+  metadata.reflection = InstanceGroupConfig_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // InstanceGroupConfig
 
-// int32 num_instances = 1;
+// optional int32 num_instances = 1;
 void InstanceGroupConfig::clear_num_instances() {
   num_instances_ = 0;
 }
@@ -3541,13 +3730,13 @@ InstanceGroupConfig::mutable_instance_names() {
   return &instance_names_;
 }
 
-// string image_uri = 3;
+// optional string image_uri = 3;
 void InstanceGroupConfig::clear_image_uri() {
   image_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& InstanceGroupConfig::image_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.InstanceGroupConfig.image_uri)
-  return image_uri_.GetNoArena();
+  return image_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void InstanceGroupConfig::set_image_uri(const ::std::string& value) {
   
@@ -3585,13 +3774,13 @@ void InstanceGroupConfig::set_allocated_image_uri(::std::string* image_uri) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.InstanceGroupConfig.image_uri)
 }
 
-// string machine_type_uri = 4;
+// optional string machine_type_uri = 4;
 void InstanceGroupConfig::clear_machine_type_uri() {
   machine_type_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& InstanceGroupConfig::machine_type_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.InstanceGroupConfig.machine_type_uri)
-  return machine_type_uri_.GetNoArena();
+  return machine_type_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void InstanceGroupConfig::set_machine_type_uri(const ::std::string& value) {
   
@@ -3629,7 +3818,7 @@ void InstanceGroupConfig::set_allocated_machine_type_uri(::std::string* machine_
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.InstanceGroupConfig.machine_type_uri)
 }
 
-// .google.cloud.dataproc.v1.DiskConfig disk_config = 5;
+// optional .google.cloud.dataproc.v1.DiskConfig disk_config = 5;
 bool InstanceGroupConfig::has_disk_config() const {
   return this != internal_default_instance() && disk_config_ != NULL;
 }
@@ -3668,7 +3857,7 @@ void InstanceGroupConfig::set_allocated_disk_config(::google::cloud::dataproc::v
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.InstanceGroupConfig.disk_config)
 }
 
-// bool is_preemptible = 6;
+// optional bool is_preemptible = 6;
 void InstanceGroupConfig::clear_is_preemptible() {
   is_preemptible_ = false;
 }
@@ -3682,7 +3871,7 @@ void InstanceGroupConfig::set_is_preemptible(bool value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.InstanceGroupConfig.is_preemptible)
 }
 
-// .google.cloud.dataproc.v1.ManagedGroupConfig managed_group_config = 7;
+// optional .google.cloud.dataproc.v1.ManagedGroupConfig managed_group_config = 7;
 bool InstanceGroupConfig::has_managed_group_config() const {
   return this != internal_default_instance() && managed_group_config_ != NULL;
 }
@@ -3721,6 +3910,9 @@ void InstanceGroupConfig::set_allocated_managed_group_config(::google::cloud::da
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.InstanceGroupConfig.managed_group_config)
 }
 
+inline const InstanceGroupConfig* InstanceGroupConfig::internal_default_instance() {
+  return &InstanceGroupConfig_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3732,25 +3924,19 @@ const int ManagedGroupConfig::kInstanceGroupManagerNameFieldNumber;
 
 ManagedGroupConfig::ManagedGroupConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.ManagedGroupConfig)
 }
+
+void ManagedGroupConfig::InitAsDefaultInstance() {
+}
+
 ManagedGroupConfig::ManagedGroupConfig(const ManagedGroupConfig& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  instance_template_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.instance_template_name().size() > 0) {
-    instance_template_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.instance_template_name_);
-  }
-  instance_group_manager_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.instance_group_manager_name().size() > 0) {
-    instance_group_manager_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.instance_group_manager_name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.ManagedGroupConfig)
 }
 
@@ -3777,13 +3963,15 @@ void ManagedGroupConfig::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ManagedGroupConfig::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
+  return ManagedGroupConfig_descriptor_;
 }
 
 const ManagedGroupConfig& ManagedGroupConfig::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ManagedGroupConfig> ManagedGroupConfig_default_instance_;
 
 ManagedGroupConfig* ManagedGroupConfig::New(::google::protobuf::Arena* arena) const {
   ManagedGroupConfig* n = new ManagedGroupConfig;
@@ -3805,13 +3993,13 @@ bool ManagedGroupConfig::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.dataproc.v1.ManagedGroupConfig)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string instance_template_name = 1;
+      // optional string instance_template_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_instance_template_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3821,12 +4009,14 @@ bool ManagedGroupConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_instance_group_manager_name;
         break;
       }
 
-      // string instance_group_manager_name = 2;
+      // optional string instance_group_manager_name = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_instance_group_manager_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_instance_group_manager_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3836,6 +4026,7 @@ bool ManagedGroupConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3863,7 +4054,7 @@ failure:
 void ManagedGroupConfig::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.dataproc.v1.ManagedGroupConfig)
-  // string instance_template_name = 1;
+  // optional string instance_template_name = 1;
   if (this->instance_template_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->instance_template_name().data(), this->instance_template_name().length(),
@@ -3873,7 +4064,7 @@ void ManagedGroupConfig::SerializeWithCachedSizes(
       1, this->instance_template_name(), output);
   }
 
-  // string instance_group_manager_name = 2;
+  // optional string instance_group_manager_name = 2;
   if (this->instance_group_manager_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->instance_group_manager_name().data(), this->instance_group_manager_name().length(),
@@ -3890,7 +4081,7 @@ void ManagedGroupConfig::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.ManagedGroupConfig)
-  // string instance_template_name = 1;
+  // optional string instance_template_name = 1;
   if (this->instance_template_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->instance_template_name().data(), this->instance_template_name().length(),
@@ -3901,7 +4092,7 @@ void ManagedGroupConfig::SerializeWithCachedSizes(
         1, this->instance_template_name(), target);
   }
 
-  // string instance_group_manager_name = 2;
+  // optional string instance_group_manager_name = 2;
   if (this->instance_group_manager_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->instance_group_manager_name().data(), this->instance_group_manager_name().length(),
@@ -3920,14 +4111,14 @@ size_t ManagedGroupConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.ManagedGroupConfig)
   size_t total_size = 0;
 
-  // string instance_template_name = 1;
+  // optional string instance_template_name = 1;
   if (this->instance_template_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->instance_template_name());
   }
 
-  // string instance_group_manager_name = 2;
+  // optional string instance_group_manager_name = 2;
   if (this->instance_group_manager_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -3943,7 +4134,7 @@ size_t ManagedGroupConfig::ByteSizeLong() const {
 
 void ManagedGroupConfig::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.ManagedGroupConfig)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ManagedGroupConfig* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ManagedGroupConfig>(
           &from);
@@ -3952,14 +4143,21 @@ void ManagedGroupConfig::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.ManagedGroupConfig)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ManagedGroupConfig::MergeFrom(const ManagedGroupConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.ManagedGroupConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ManagedGroupConfig::UnsafeMergeFrom(const ManagedGroupConfig& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.instance_template_name().size() > 0) {
 
     instance_template_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.instance_template_name_);
@@ -3981,10 +4179,11 @@ void ManagedGroupConfig::CopyFrom(const ManagedGroupConfig& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.ManagedGroupConfig)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ManagedGroupConfig::IsInitialized() const {
+
   return true;
 }
 
@@ -3995,24 +4194,28 @@ void ManagedGroupConfig::Swap(ManagedGroupConfig* other) {
 void ManagedGroupConfig::InternalSwap(ManagedGroupConfig* other) {
   instance_template_name_.Swap(&other->instance_template_name_);
   instance_group_manager_name_.Swap(&other->instance_group_manager_name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ManagedGroupConfig::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ManagedGroupConfig_descriptor_;
+  metadata.reflection = ManagedGroupConfig_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ManagedGroupConfig
 
-// string instance_template_name = 1;
+// optional string instance_template_name = 1;
 void ManagedGroupConfig::clear_instance_template_name() {
   instance_template_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ManagedGroupConfig::instance_template_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ManagedGroupConfig.instance_template_name)
-  return instance_template_name_.GetNoArena();
+  return instance_template_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ManagedGroupConfig::set_instance_template_name(const ::std::string& value) {
   
@@ -4050,13 +4253,13 @@ void ManagedGroupConfig::set_allocated_instance_template_name(::std::string* ins
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ManagedGroupConfig.instance_template_name)
 }
 
-// string instance_group_manager_name = 2;
+// optional string instance_group_manager_name = 2;
 void ManagedGroupConfig::clear_instance_group_manager_name() {
   instance_group_manager_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ManagedGroupConfig::instance_group_manager_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ManagedGroupConfig.instance_group_manager_name)
-  return instance_group_manager_name_.GetNoArena();
+  return instance_group_manager_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ManagedGroupConfig::set_instance_group_manager_name(const ::std::string& value) {
   
@@ -4094,6 +4297,9 @@ void ManagedGroupConfig::set_allocated_instance_group_manager_name(::std::string
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ManagedGroupConfig.instance_group_manager_name)
 }
 
+inline const ManagedGroupConfig* ManagedGroupConfig::internal_default_instance() {
+  return &ManagedGroupConfig_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4105,20 +4311,19 @@ const int DiskConfig::kNumLocalSsdsFieldNumber;
 
 DiskConfig::DiskConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.DiskConfig)
 }
+
+void DiskConfig::InitAsDefaultInstance() {
+}
+
 DiskConfig::DiskConfig(const DiskConfig& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&boot_disk_size_gb_, &from.boot_disk_size_gb_,
-    reinterpret_cast<char*>(&num_local_ssds_) -
-    reinterpret_cast<char*>(&boot_disk_size_gb_) + sizeof(num_local_ssds_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.DiskConfig)
 }
 
@@ -4143,13 +4348,15 @@ void DiskConfig::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* DiskConfig::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6].descriptor;
+  return DiskConfig_descriptor_;
 }
 
 const DiskConfig& DiskConfig::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<DiskConfig> DiskConfig_default_instance_;
 
 DiskConfig* DiskConfig::New(::google::protobuf::Arena* arena) const {
   DiskConfig* n = new DiskConfig;
@@ -4161,8 +4368,27 @@ DiskConfig* DiskConfig::New(::google::protobuf::Arena* arena) const {
 
 void DiskConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.dataproc.v1.DiskConfig)
-  ::memset(&boot_disk_size_gb_, 0, reinterpret_cast<char*>(&num_local_ssds_) -
-    reinterpret_cast<char*>(&boot_disk_size_gb_) + sizeof(num_local_ssds_));
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(DiskConfig, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<DiskConfig*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(boot_disk_size_gb_, num_local_ssds_);
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool DiskConfig::MergePartialFromCodedStream(
@@ -4171,13 +4397,13 @@ bool DiskConfig::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.dataproc.v1.DiskConfig)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 boot_disk_size_gb = 1;
+      // optional int32 boot_disk_size_gb = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -4185,12 +4411,14 @@ bool DiskConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_num_local_ssds;
         break;
       }
 
-      // int32 num_local_ssds = 2;
+      // optional int32 num_local_ssds = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_num_local_ssds:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -4198,6 +4426,7 @@ bool DiskConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4225,12 +4454,12 @@ failure:
 void DiskConfig::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.dataproc.v1.DiskConfig)
-  // int32 boot_disk_size_gb = 1;
+  // optional int32 boot_disk_size_gb = 1;
   if (this->boot_disk_size_gb() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->boot_disk_size_gb(), output);
   }
 
-  // int32 num_local_ssds = 2;
+  // optional int32 num_local_ssds = 2;
   if (this->num_local_ssds() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->num_local_ssds(), output);
   }
@@ -4242,12 +4471,12 @@ void DiskConfig::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.DiskConfig)
-  // int32 boot_disk_size_gb = 1;
+  // optional int32 boot_disk_size_gb = 1;
   if (this->boot_disk_size_gb() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->boot_disk_size_gb(), target);
   }
 
-  // int32 num_local_ssds = 2;
+  // optional int32 num_local_ssds = 2;
   if (this->num_local_ssds() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->num_local_ssds(), target);
   }
@@ -4260,14 +4489,14 @@ size_t DiskConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.DiskConfig)
   size_t total_size = 0;
 
-  // int32 boot_disk_size_gb = 1;
+  // optional int32 boot_disk_size_gb = 1;
   if (this->boot_disk_size_gb() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->boot_disk_size_gb());
   }
 
-  // int32 num_local_ssds = 2;
+  // optional int32 num_local_ssds = 2;
   if (this->num_local_ssds() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
@@ -4283,7 +4512,7 @@ size_t DiskConfig::ByteSizeLong() const {
 
 void DiskConfig::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.DiskConfig)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const DiskConfig* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DiskConfig>(
           &from);
@@ -4292,14 +4521,21 @@ void DiskConfig::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.DiskConfig)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DiskConfig::MergeFrom(const DiskConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.DiskConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void DiskConfig::UnsafeMergeFrom(const DiskConfig& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.boot_disk_size_gb() != 0) {
     set_boot_disk_size_gb(from.boot_disk_size_gb());
   }
@@ -4319,10 +4555,11 @@ void DiskConfig::CopyFrom(const DiskConfig& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.DiskConfig)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DiskConfig::IsInitialized() const {
+
   return true;
 }
 
@@ -4333,18 +4570,22 @@ void DiskConfig::Swap(DiskConfig* other) {
 void DiskConfig::InternalSwap(DiskConfig* other) {
   std::swap(boot_disk_size_gb_, other->boot_disk_size_gb_);
   std::swap(num_local_ssds_, other->num_local_ssds_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DiskConfig::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = DiskConfig_descriptor_;
+  metadata.reflection = DiskConfig_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // DiskConfig
 
-// int32 boot_disk_size_gb = 1;
+// optional int32 boot_disk_size_gb = 1;
 void DiskConfig::clear_boot_disk_size_gb() {
   boot_disk_size_gb_ = 0;
 }
@@ -4358,7 +4599,7 @@ void DiskConfig::set_boot_disk_size_gb(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.DiskConfig.boot_disk_size_gb)
 }
 
-// int32 num_local_ssds = 2;
+// optional int32 num_local_ssds = 2;
 void DiskConfig::clear_num_local_ssds() {
   num_local_ssds_ = 0;
 }
@@ -4372,6 +4613,9 @@ void DiskConfig::set_num_local_ssds(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.DiskConfig.num_local_ssds)
 }
 
+inline const DiskConfig* DiskConfig::internal_default_instance() {
+  return &DiskConfig_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4383,26 +4627,21 @@ const int NodeInitializationAction::kExecutionTimeoutFieldNumber;
 
 NodeInitializationAction::NodeInitializationAction()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.NodeInitializationAction)
 }
+
+void NodeInitializationAction::InitAsDefaultInstance() {
+  execution_timeout_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
+}
+
 NodeInitializationAction::NodeInitializationAction(const NodeInitializationAction& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  executable_file_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.executable_file().size() > 0) {
-    executable_file_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.executable_file_);
-  }
-  if (from.has_execution_timeout()) {
-    execution_timeout_ = new ::google::protobuf::Duration(*from.execution_timeout_);
-  } else {
-    execution_timeout_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.NodeInitializationAction)
 }
 
@@ -4419,7 +4658,7 @@ NodeInitializationAction::~NodeInitializationAction() {
 
 void NodeInitializationAction::SharedDtor() {
   executable_file_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &NodeInitializationAction_default_instance_.get()) {
     delete execution_timeout_;
   }
 }
@@ -4431,13 +4670,15 @@ void NodeInitializationAction::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* NodeInitializationAction::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7].descriptor;
+  return NodeInitializationAction_descriptor_;
 }
 
 const NodeInitializationAction& NodeInitializationAction::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<NodeInitializationAction> NodeInitializationAction_default_instance_;
 
 NodeInitializationAction* NodeInitializationAction::New(::google::protobuf::Arena* arena) const {
   NodeInitializationAction* n = new NodeInitializationAction;
@@ -4450,9 +4691,7 @@ NodeInitializationAction* NodeInitializationAction::New(::google::protobuf::Aren
 void NodeInitializationAction::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.dataproc.v1.NodeInitializationAction)
   executable_file_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && execution_timeout_ != NULL) {
-    delete execution_timeout_;
-  }
+  if (GetArenaNoVirtual() == NULL && execution_timeout_ != NULL) delete execution_timeout_;
   execution_timeout_ = NULL;
 }
 
@@ -4462,13 +4701,13 @@ bool NodeInitializationAction::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.dataproc.v1.NodeInitializationAction)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string executable_file = 1;
+      // optional string executable_file = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_executable_file()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4478,17 +4717,20 @@ bool NodeInitializationAction::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_execution_timeout;
         break;
       }
 
-      // .google.protobuf.Duration execution_timeout = 2;
+      // optional .google.protobuf.Duration execution_timeout = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_execution_timeout:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_execution_timeout()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4516,7 +4758,7 @@ failure:
 void NodeInitializationAction::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.dataproc.v1.NodeInitializationAction)
-  // string executable_file = 1;
+  // optional string executable_file = 1;
   if (this->executable_file().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->executable_file().data(), this->executable_file().length(),
@@ -4526,7 +4768,7 @@ void NodeInitializationAction::SerializeWithCachedSizes(
       1, this->executable_file(), output);
   }
 
-  // .google.protobuf.Duration execution_timeout = 2;
+  // optional .google.protobuf.Duration execution_timeout = 2;
   if (this->has_execution_timeout()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->execution_timeout_, output);
@@ -4539,7 +4781,7 @@ void NodeInitializationAction::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.NodeInitializationAction)
-  // string executable_file = 1;
+  // optional string executable_file = 1;
   if (this->executable_file().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->executable_file().data(), this->executable_file().length(),
@@ -4550,7 +4792,7 @@ void NodeInitializationAction::SerializeWithCachedSizes(
         1, this->executable_file(), target);
   }
 
-  // .google.protobuf.Duration execution_timeout = 2;
+  // optional .google.protobuf.Duration execution_timeout = 2;
   if (this->has_execution_timeout()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -4565,14 +4807,14 @@ size_t NodeInitializationAction::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.NodeInitializationAction)
   size_t total_size = 0;
 
-  // string executable_file = 1;
+  // optional string executable_file = 1;
   if (this->executable_file().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->executable_file());
   }
 
-  // .google.protobuf.Duration execution_timeout = 2;
+  // optional .google.protobuf.Duration execution_timeout = 2;
   if (this->has_execution_timeout()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -4588,7 +4830,7 @@ size_t NodeInitializationAction::ByteSizeLong() const {
 
 void NodeInitializationAction::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.NodeInitializationAction)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const NodeInitializationAction* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const NodeInitializationAction>(
           &from);
@@ -4597,14 +4839,21 @@ void NodeInitializationAction::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.NodeInitializationAction)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void NodeInitializationAction::MergeFrom(const NodeInitializationAction& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.NodeInitializationAction)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void NodeInitializationAction::UnsafeMergeFrom(const NodeInitializationAction& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.executable_file().size() > 0) {
 
     executable_file_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.executable_file_);
@@ -4625,10 +4874,11 @@ void NodeInitializationAction::CopyFrom(const NodeInitializationAction& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.NodeInitializationAction)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool NodeInitializationAction::IsInitialized() const {
+
   return true;
 }
 
@@ -4639,24 +4889,28 @@ void NodeInitializationAction::Swap(NodeInitializationAction* other) {
 void NodeInitializationAction::InternalSwap(NodeInitializationAction* other) {
   executable_file_.Swap(&other->executable_file_);
   std::swap(execution_timeout_, other->execution_timeout_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata NodeInitializationAction::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = NodeInitializationAction_descriptor_;
+  metadata.reflection = NodeInitializationAction_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // NodeInitializationAction
 
-// string executable_file = 1;
+// optional string executable_file = 1;
 void NodeInitializationAction::clear_executable_file() {
   executable_file_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& NodeInitializationAction::executable_file() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.NodeInitializationAction.executable_file)
-  return executable_file_.GetNoArena();
+  return executable_file_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void NodeInitializationAction::set_executable_file(const ::std::string& value) {
   
@@ -4694,7 +4948,7 @@ void NodeInitializationAction::set_allocated_executable_file(::std::string* exec
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.NodeInitializationAction.executable_file)
 }
 
-// .google.protobuf.Duration execution_timeout = 2;
+// optional .google.protobuf.Duration execution_timeout = 2;
 bool NodeInitializationAction::has_execution_timeout() const {
   return this != internal_default_instance() && execution_timeout_ != NULL;
 }
@@ -4738,10 +4992,42 @@ void NodeInitializationAction::set_allocated_execution_timeout(::google::protobu
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.NodeInitializationAction.execution_timeout)
 }
 
+inline const NodeInitializationAction* NodeInitializationAction::internal_default_instance() {
+  return &NodeInitializationAction_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* ClusterStatus_State_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return ClusterStatus_State_descriptor_;
+}
+bool ClusterStatus_State_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const ClusterStatus_State ClusterStatus::UNKNOWN;
+const ClusterStatus_State ClusterStatus::CREATING;
+const ClusterStatus_State ClusterStatus::RUNNING;
+const ClusterStatus_State ClusterStatus::ERROR;
+const ClusterStatus_State ClusterStatus::DELETING;
+const ClusterStatus_State ClusterStatus::UPDATING;
+const ClusterStatus_State ClusterStatus::State_MIN;
+const ClusterStatus_State ClusterStatus::State_MAX;
+const int ClusterStatus::State_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ClusterStatus::kStateFieldNumber;
 const int ClusterStatus::kDetailFieldNumber;
@@ -4750,34 +5036,28 @@ const int ClusterStatus::kStateStartTimeFieldNumber;
 
 ClusterStatus::ClusterStatus()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.ClusterStatus)
 }
+
+void ClusterStatus::InitAsDefaultInstance() {
+  state_start_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+}
+
 ClusterStatus::ClusterStatus(const ClusterStatus& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  detail_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.detail().size() > 0) {
-    detail_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.detail_);
-  }
-  if (from.has_state_start_time()) {
-    state_start_time_ = new ::google::protobuf::Timestamp(*from.state_start_time_);
-  } else {
-    state_start_time_ = NULL;
-  }
-  state_ = from.state_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.ClusterStatus)
 }
 
 void ClusterStatus::SharedCtor() {
   detail_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&state_start_time_, 0, reinterpret_cast<char*>(&state_) -
-    reinterpret_cast<char*>(&state_start_time_) + sizeof(state_));
+  state_start_time_ = NULL;
+  state_ = 0;
   _cached_size_ = 0;
 }
 
@@ -4788,7 +5068,7 @@ ClusterStatus::~ClusterStatus() {
 
 void ClusterStatus::SharedDtor() {
   detail_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &ClusterStatus_default_instance_.get()) {
     delete state_start_time_;
   }
 }
@@ -4800,13 +5080,15 @@ void ClusterStatus::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ClusterStatus::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8].descriptor;
+  return ClusterStatus_descriptor_;
 }
 
 const ClusterStatus& ClusterStatus::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ClusterStatus> ClusterStatus_default_instance_;
 
 ClusterStatus* ClusterStatus::New(::google::protobuf::Arena* arena) const {
   ClusterStatus* n = new ClusterStatus;
@@ -4818,12 +5100,10 @@ ClusterStatus* ClusterStatus::New(::google::protobuf::Arena* arena) const {
 
 void ClusterStatus::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.dataproc.v1.ClusterStatus)
-  detail_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && state_start_time_ != NULL) {
-    delete state_start_time_;
-  }
-  state_start_time_ = NULL;
   state_ = 0;
+  detail_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (GetArenaNoVirtual() == NULL && state_start_time_ != NULL) delete state_start_time_;
+  state_start_time_ = NULL;
 }
 
 bool ClusterStatus::MergePartialFromCodedStream(
@@ -4832,13 +5112,13 @@ bool ClusterStatus::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.dataproc.v1.ClusterStatus)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.cloud.dataproc.v1.ClusterStatus.State state = 1;
+      // optional .google.cloud.dataproc.v1.ClusterStatus.State state = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -4847,12 +5127,14 @@ bool ClusterStatus::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_detail;
         break;
       }
 
-      // string detail = 2;
+      // optional string detail = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_detail:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_detail()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4862,17 +5144,20 @@ bool ClusterStatus::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_state_start_time;
         break;
       }
 
-      // .google.protobuf.Timestamp state_start_time = 3;
+      // optional .google.protobuf.Timestamp state_start_time = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_state_start_time:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_state_start_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4900,13 +5185,13 @@ failure:
 void ClusterStatus::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.dataproc.v1.ClusterStatus)
-  // .google.cloud.dataproc.v1.ClusterStatus.State state = 1;
+  // optional .google.cloud.dataproc.v1.ClusterStatus.State state = 1;
   if (this->state() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       1, this->state(), output);
   }
 
-  // string detail = 2;
+  // optional string detail = 2;
   if (this->detail().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->detail().data(), this->detail().length(),
@@ -4916,7 +5201,7 @@ void ClusterStatus::SerializeWithCachedSizes(
       2, this->detail(), output);
   }
 
-  // .google.protobuf.Timestamp state_start_time = 3;
+  // optional .google.protobuf.Timestamp state_start_time = 3;
   if (this->has_state_start_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *this->state_start_time_, output);
@@ -4929,13 +5214,13 @@ void ClusterStatus::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.ClusterStatus)
-  // .google.cloud.dataproc.v1.ClusterStatus.State state = 1;
+  // optional .google.cloud.dataproc.v1.ClusterStatus.State state = 1;
   if (this->state() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       1, this->state(), target);
   }
 
-  // string detail = 2;
+  // optional string detail = 2;
   if (this->detail().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->detail().data(), this->detail().length(),
@@ -4946,7 +5231,7 @@ void ClusterStatus::SerializeWithCachedSizes(
         2, this->detail(), target);
   }
 
-  // .google.protobuf.Timestamp state_start_time = 3;
+  // optional .google.protobuf.Timestamp state_start_time = 3;
   if (this->has_state_start_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -4961,24 +5246,24 @@ size_t ClusterStatus::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.ClusterStatus)
   size_t total_size = 0;
 
-  // string detail = 2;
+  // optional .google.cloud.dataproc.v1.ClusterStatus.State state = 1;
+  if (this->state() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->state());
+  }
+
+  // optional string detail = 2;
   if (this->detail().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->detail());
   }
 
-  // .google.protobuf.Timestamp state_start_time = 3;
+  // optional .google.protobuf.Timestamp state_start_time = 3;
   if (this->has_state_start_time()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->state_start_time_);
-  }
-
-  // .google.cloud.dataproc.v1.ClusterStatus.State state = 1;
-  if (this->state() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->state());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -4990,7 +5275,7 @@ size_t ClusterStatus::ByteSizeLong() const {
 
 void ClusterStatus::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.ClusterStatus)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ClusterStatus* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ClusterStatus>(
           &from);
@@ -4999,23 +5284,30 @@ void ClusterStatus::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.ClusterStatus)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ClusterStatus::MergeFrom(const ClusterStatus& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.ClusterStatus)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ClusterStatus::UnsafeMergeFrom(const ClusterStatus& from) {
+  GOOGLE_DCHECK(&from != this);
+  if (from.state() != 0) {
+    set_state(from.state());
+  }
   if (from.detail().size() > 0) {
 
     detail_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.detail_);
   }
   if (from.has_state_start_time()) {
     mutable_state_start_time()->::google::protobuf::Timestamp::MergeFrom(from.state_start_time());
-  }
-  if (from.state() != 0) {
-    set_state(from.state());
   }
 }
 
@@ -5030,10 +5322,11 @@ void ClusterStatus::CopyFrom(const ClusterStatus& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.ClusterStatus)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ClusterStatus::IsInitialized() const {
+
   return true;
 }
 
@@ -5042,21 +5335,25 @@ void ClusterStatus::Swap(ClusterStatus* other) {
   InternalSwap(other);
 }
 void ClusterStatus::InternalSwap(ClusterStatus* other) {
+  std::swap(state_, other->state_);
   detail_.Swap(&other->detail_);
   std::swap(state_start_time_, other->state_start_time_);
-  std::swap(state_, other->state_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ClusterStatus::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ClusterStatus_descriptor_;
+  metadata.reflection = ClusterStatus_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ClusterStatus
 
-// .google.cloud.dataproc.v1.ClusterStatus.State state = 1;
+// optional .google.cloud.dataproc.v1.ClusterStatus.State state = 1;
 void ClusterStatus::clear_state() {
   state_ = 0;
 }
@@ -5070,13 +5367,13 @@ void ClusterStatus::set_state(::google::cloud::dataproc::v1::ClusterStatus_State
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ClusterStatus.state)
 }
 
-// string detail = 2;
+// optional string detail = 2;
 void ClusterStatus::clear_detail() {
   detail_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ClusterStatus::detail() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ClusterStatus.detail)
-  return detail_.GetNoArena();
+  return detail_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ClusterStatus::set_detail(const ::std::string& value) {
   
@@ -5114,7 +5411,7 @@ void ClusterStatus::set_allocated_detail(::std::string* detail) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ClusterStatus.detail)
 }
 
-// .google.protobuf.Timestamp state_start_time = 3;
+// optional .google.protobuf.Timestamp state_start_time = 3;
 bool ClusterStatus::has_state_start_time() const {
   return this != internal_default_instance() && state_start_time_ != NULL;
 }
@@ -5158,11 +5455,9 @@ void ClusterStatus::set_allocated_state_start_time(::google::protobuf::Timestamp
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ClusterStatus.state_start_time)
 }
 
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
-
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
+inline const ClusterStatus* ClusterStatus::internal_default_instance() {
+  return &ClusterStatus_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5174,36 +5469,27 @@ const int SoftwareConfig::kPropertiesFieldNumber;
 
 SoftwareConfig::SoftwareConfig()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.SoftwareConfig)
 }
+
+void SoftwareConfig::InitAsDefaultInstance() {
+}
+
 SoftwareConfig::SoftwareConfig(const SoftwareConfig& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  const ::google::protobuf::Descriptor*& SoftwareConfig_PropertiesEntry_descriptor = file_level_metadata[9].descriptor;
-  properties_.SetAssignDescriptorCallback(
-      protobuf_AssignDescriptorsOnce);
-  properties_.SetEntryDescriptor(
-      &SoftwareConfig_PropertiesEntry_descriptor);
-  properties_.MergeFrom(from.properties_);
-  image_version_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.image_version().size() > 0) {
-    image_version_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.image_version_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.SoftwareConfig)
 }
 
 void SoftwareConfig::SharedCtor() {
-  const ::google::protobuf::Descriptor*& SoftwareConfig_PropertiesEntry_descriptor = file_level_metadata[9].descriptor;
   properties_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   properties_.SetEntryDescriptor(
-      &SoftwareConfig_PropertiesEntry_descriptor);
+      &::google::cloud::dataproc::v1::SoftwareConfig_PropertiesEntry_descriptor_);
   image_version_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   _cached_size_ = 0;
 }
@@ -5224,13 +5510,15 @@ void SoftwareConfig::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* SoftwareConfig::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10].descriptor;
+  return SoftwareConfig_descriptor_;
 }
 
 const SoftwareConfig& SoftwareConfig::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<SoftwareConfig> SoftwareConfig_default_instance_;
 
 SoftwareConfig* SoftwareConfig::New(::google::protobuf::Arena* arena) const {
   SoftwareConfig* n = new SoftwareConfig;
@@ -5242,8 +5530,8 @@ SoftwareConfig* SoftwareConfig::New(::google::protobuf::Arena* arena) const {
 
 void SoftwareConfig::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.dataproc.v1.SoftwareConfig)
-  properties_.Clear();
   image_version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  properties_.Clear();
 }
 
 bool SoftwareConfig::MergePartialFromCodedStream(
@@ -5252,13 +5540,13 @@ bool SoftwareConfig::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.dataproc.v1.SoftwareConfig)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string image_version = 1;
+      // optional string image_version = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_image_version()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -5268,13 +5556,16 @@ bool SoftwareConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_properties;
         break;
       }
 
       // map<string, string> properties = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_properties:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_properties:
           SoftwareConfig_PropertiesEntry::Parser< ::google::protobuf::internal::MapField<
               ::std::string, ::std::string,
               ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
@@ -5294,7 +5585,9 @@ bool SoftwareConfig::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_loop_properties;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -5322,7 +5615,7 @@ failure:
 void SoftwareConfig::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.dataproc.v1.SoftwareConfig)
-  // string image_version = 1;
+  // optional string image_version = 1;
   if (this->image_version().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->image_version().data(), this->image_version().length(),
@@ -5351,7 +5644,7 @@ void SoftwareConfig::SerializeWithCachedSizes(
       }
     };
 
-    if (output->IsSerializationDeterministic() &&
+    if (output->IsSerializationDeterminstic() &&
         this->properties().size() > 1) {
       ::google::protobuf::scoped_array<SortItem> items(
           new SortItem[this->properties().size()]);
@@ -5392,7 +5685,7 @@ void SoftwareConfig::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.SoftwareConfig)
-  // string image_version = 1;
+  // optional string image_version = 1;
   if (this->image_version().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->image_version().data(), this->image_version().length(),
@@ -5468,6 +5761,13 @@ size_t SoftwareConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.SoftwareConfig)
   size_t total_size = 0;
 
+  // optional string image_version = 1;
+  if (this->image_version().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->image_version());
+  }
+
   // map<string, string> properties = 2;
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->properties_size());
@@ -5482,13 +5782,6 @@ size_t SoftwareConfig::ByteSizeLong() const {
     }
   }
 
-  // string image_version = 1;
-  if (this->image_version().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->image_version());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -5498,7 +5791,7 @@ size_t SoftwareConfig::ByteSizeLong() const {
 
 void SoftwareConfig::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.SoftwareConfig)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const SoftwareConfig* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SoftwareConfig>(
           &from);
@@ -5507,14 +5800,21 @@ void SoftwareConfig::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.SoftwareConfig)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SoftwareConfig::MergeFrom(const SoftwareConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.SoftwareConfig)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void SoftwareConfig::UnsafeMergeFrom(const SoftwareConfig& from) {
+  GOOGLE_DCHECK(&from != this);
   properties_.MergeFrom(from.properties_);
   if (from.image_version().size() > 0) {
 
@@ -5533,10 +5833,11 @@ void SoftwareConfig::CopyFrom(const SoftwareConfig& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.SoftwareConfig)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SoftwareConfig::IsInitialized() const {
+
   return true;
 }
 
@@ -5545,26 +5846,30 @@ void SoftwareConfig::Swap(SoftwareConfig* other) {
   InternalSwap(other);
 }
 void SoftwareConfig::InternalSwap(SoftwareConfig* other) {
-  properties_.Swap(&other->properties_);
   image_version_.Swap(&other->image_version_);
+  properties_.Swap(&other->properties_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SoftwareConfig::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = SoftwareConfig_descriptor_;
+  metadata.reflection = SoftwareConfig_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // SoftwareConfig
 
-// string image_version = 1;
+// optional string image_version = 1;
 void SoftwareConfig::clear_image_version() {
   image_version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& SoftwareConfig::image_version() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.SoftwareConfig.image_version)
-  return image_version_.GetNoArena();
+  return image_version_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void SoftwareConfig::set_image_version(const ::std::string& value) {
   
@@ -5620,6 +5925,9 @@ SoftwareConfig::mutable_properties() {
   return properties_.MutableMap();
 }
 
+inline const SoftwareConfig* SoftwareConfig::internal_default_instance() {
+  return &SoftwareConfig_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5632,30 +5940,21 @@ const int CreateClusterRequest::kClusterFieldNumber;
 
 CreateClusterRequest::CreateClusterRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.CreateClusterRequest)
 }
+
+void CreateClusterRequest::InitAsDefaultInstance() {
+  cluster_ = const_cast< ::google::cloud::dataproc::v1::Cluster*>(
+      ::google::cloud::dataproc::v1::Cluster::internal_default_instance());
+}
+
 CreateClusterRequest::CreateClusterRequest(const CreateClusterRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
-  }
-  region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.region().size() > 0) {
-    region_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.region_);
-  }
-  if (from.has_cluster()) {
-    cluster_ = new ::google::cloud::dataproc::v1::Cluster(*from.cluster_);
-  } else {
-    cluster_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.CreateClusterRequest)
 }
 
@@ -5674,7 +5973,7 @@ CreateClusterRequest::~CreateClusterRequest() {
 void CreateClusterRequest::SharedDtor() {
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &CreateClusterRequest_default_instance_.get()) {
     delete cluster_;
   }
 }
@@ -5686,13 +5985,15 @@ void CreateClusterRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* CreateClusterRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11].descriptor;
+  return CreateClusterRequest_descriptor_;
 }
 
 const CreateClusterRequest& CreateClusterRequest::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<CreateClusterRequest> CreateClusterRequest_default_instance_;
 
 CreateClusterRequest* CreateClusterRequest::New(::google::protobuf::Arena* arena) const {
   CreateClusterRequest* n = new CreateClusterRequest;
@@ -5706,9 +6007,7 @@ void CreateClusterRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.dataproc.v1.CreateClusterRequest)
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && cluster_ != NULL) {
-    delete cluster_;
-  }
+  if (GetArenaNoVirtual() == NULL && cluster_ != NULL) delete cluster_;
   cluster_ = NULL;
 }
 
@@ -5718,13 +6017,13 @@ bool CreateClusterRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.dataproc.v1.CreateClusterRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string project_id = 1;
+      // optional string project_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -5734,23 +6033,27 @@ bool CreateClusterRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_cluster;
         break;
       }
 
-      // .google.cloud.dataproc.v1.Cluster cluster = 2;
+      // optional .google.cloud.dataproc.v1.Cluster cluster = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_cluster:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_cluster()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_region;
         break;
       }
 
-      // string region = 3;
+      // optional string region = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_region:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_region()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -5760,6 +6063,7 @@ bool CreateClusterRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -5787,7 +6091,7 @@ failure:
 void CreateClusterRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.dataproc.v1.CreateClusterRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -5797,13 +6101,13 @@ void CreateClusterRequest::SerializeWithCachedSizes(
       1, this->project_id(), output);
   }
 
-  // .google.cloud.dataproc.v1.Cluster cluster = 2;
+  // optional .google.cloud.dataproc.v1.Cluster cluster = 2;
   if (this->has_cluster()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->cluster_, output);
   }
 
-  // string region = 3;
+  // optional string region = 3;
   if (this->region().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->region().data(), this->region().length(),
@@ -5820,7 +6124,7 @@ void CreateClusterRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.CreateClusterRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -5831,14 +6135,14 @@ void CreateClusterRequest::SerializeWithCachedSizes(
         1, this->project_id(), target);
   }
 
-  // .google.cloud.dataproc.v1.Cluster cluster = 2;
+  // optional .google.cloud.dataproc.v1.Cluster cluster = 2;
   if (this->has_cluster()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *this->cluster_, false, target);
   }
 
-  // string region = 3;
+  // optional string region = 3;
   if (this->region().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->region().data(), this->region().length(),
@@ -5857,21 +6161,21 @@ size_t CreateClusterRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.CreateClusterRequest)
   size_t total_size = 0;
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->project_id());
   }
 
-  // string region = 3;
+  // optional string region = 3;
   if (this->region().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->region());
   }
 
-  // .google.cloud.dataproc.v1.Cluster cluster = 2;
+  // optional .google.cloud.dataproc.v1.Cluster cluster = 2;
   if (this->has_cluster()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -5887,7 +6191,7 @@ size_t CreateClusterRequest::ByteSizeLong() const {
 
 void CreateClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.CreateClusterRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const CreateClusterRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CreateClusterRequest>(
           &from);
@@ -5896,14 +6200,21 @@ void CreateClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.CreateClusterRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CreateClusterRequest::MergeFrom(const CreateClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.CreateClusterRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void CreateClusterRequest::UnsafeMergeFrom(const CreateClusterRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -5928,10 +6239,11 @@ void CreateClusterRequest::CopyFrom(const CreateClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.CreateClusterRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CreateClusterRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -5943,24 +6255,28 @@ void CreateClusterRequest::InternalSwap(CreateClusterRequest* other) {
   project_id_.Swap(&other->project_id_);
   region_.Swap(&other->region_);
   std::swap(cluster_, other->cluster_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CreateClusterRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CreateClusterRequest_descriptor_;
+  metadata.reflection = CreateClusterRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // CreateClusterRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 void CreateClusterRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& CreateClusterRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.CreateClusterRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void CreateClusterRequest::set_project_id(const ::std::string& value) {
   
@@ -5998,13 +6314,13 @@ void CreateClusterRequest::set_allocated_project_id(::std::string* project_id) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.CreateClusterRequest.project_id)
 }
 
-// string region = 3;
+// optional string region = 3;
 void CreateClusterRequest::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& CreateClusterRequest::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.CreateClusterRequest.region)
-  return region_.GetNoArena();
+  return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void CreateClusterRequest::set_region(const ::std::string& value) {
   
@@ -6042,7 +6358,7 @@ void CreateClusterRequest::set_allocated_region(::std::string* region) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.CreateClusterRequest.region)
 }
 
-// .google.cloud.dataproc.v1.Cluster cluster = 2;
+// optional .google.cloud.dataproc.v1.Cluster cluster = 2;
 bool CreateClusterRequest::has_cluster() const {
   return this != internal_default_instance() && cluster_ != NULL;
 }
@@ -6081,6 +6397,9 @@ void CreateClusterRequest::set_allocated_cluster(::google::cloud::dataproc::v1::
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.CreateClusterRequest.cluster)
 }
 
+inline const CreateClusterRequest* CreateClusterRequest::internal_default_instance() {
+  return &CreateClusterRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6095,39 +6414,23 @@ const int UpdateClusterRequest::kUpdateMaskFieldNumber;
 
 UpdateClusterRequest::UpdateClusterRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.UpdateClusterRequest)
 }
+
+void UpdateClusterRequest::InitAsDefaultInstance() {
+  cluster_ = const_cast< ::google::cloud::dataproc::v1::Cluster*>(
+      ::google::cloud::dataproc::v1::Cluster::internal_default_instance());
+  update_mask_ = const_cast< ::google::protobuf::FieldMask*>(
+      ::google::protobuf::FieldMask::internal_default_instance());
+}
+
 UpdateClusterRequest::UpdateClusterRequest(const UpdateClusterRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
-  }
-  region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.region().size() > 0) {
-    region_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.region_);
-  }
-  cluster_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.cluster_name().size() > 0) {
-    cluster_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cluster_name_);
-  }
-  if (from.has_cluster()) {
-    cluster_ = new ::google::cloud::dataproc::v1::Cluster(*from.cluster_);
-  } else {
-    cluster_ = NULL;
-  }
-  if (from.has_update_mask()) {
-    update_mask_ = new ::google::protobuf::FieldMask(*from.update_mask_);
-  } else {
-    update_mask_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.UpdateClusterRequest)
 }
 
@@ -6135,8 +6438,8 @@ void UpdateClusterRequest::SharedCtor() {
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&cluster_, 0, reinterpret_cast<char*>(&update_mask_) -
-    reinterpret_cast<char*>(&cluster_) + sizeof(update_mask_));
+  cluster_ = NULL;
+  update_mask_ = NULL;
   _cached_size_ = 0;
 }
 
@@ -6149,10 +6452,8 @@ void UpdateClusterRequest::SharedDtor() {
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &UpdateClusterRequest_default_instance_.get()) {
     delete cluster_;
-  }
-  if (this != internal_default_instance()) {
     delete update_mask_;
   }
 }
@@ -6164,13 +6465,15 @@ void UpdateClusterRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* UpdateClusterRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[12].descriptor;
+  return UpdateClusterRequest_descriptor_;
 }
 
 const UpdateClusterRequest& UpdateClusterRequest::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<UpdateClusterRequest> UpdateClusterRequest_default_instance_;
 
 UpdateClusterRequest* UpdateClusterRequest::New(::google::protobuf::Arena* arena) const {
   UpdateClusterRequest* n = new UpdateClusterRequest;
@@ -6185,13 +6488,9 @@ void UpdateClusterRequest::Clear() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   cluster_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && cluster_ != NULL) {
-    delete cluster_;
-  }
+  if (GetArenaNoVirtual() == NULL && cluster_ != NULL) delete cluster_;
   cluster_ = NULL;
-  if (GetArenaNoVirtual() == NULL && update_mask_ != NULL) {
-    delete update_mask_;
-  }
+  if (GetArenaNoVirtual() == NULL && update_mask_ != NULL) delete update_mask_;
   update_mask_ = NULL;
 }
 
@@ -6201,13 +6500,13 @@ bool UpdateClusterRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.dataproc.v1.UpdateClusterRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string project_id = 1;
+      // optional string project_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -6217,12 +6516,14 @@ bool UpdateClusterRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_cluster_name;
         break;
       }
 
-      // string cluster_name = 2;
+      // optional string cluster_name = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_cluster_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_cluster_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -6232,34 +6533,40 @@ bool UpdateClusterRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_cluster;
         break;
       }
 
-      // .google.cloud.dataproc.v1.Cluster cluster = 3;
+      // optional .google.cloud.dataproc.v1.Cluster cluster = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_cluster:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_cluster()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_update_mask;
         break;
       }
 
-      // .google.protobuf.FieldMask update_mask = 4;
+      // optional .google.protobuf.FieldMask update_mask = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_update_mask:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_update_mask()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_region;
         break;
       }
 
-      // string region = 5;
+      // optional string region = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_region:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_region()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -6269,6 +6576,7 @@ bool UpdateClusterRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -6296,7 +6604,7 @@ failure:
 void UpdateClusterRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.dataproc.v1.UpdateClusterRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -6306,7 +6614,7 @@ void UpdateClusterRequest::SerializeWithCachedSizes(
       1, this->project_id(), output);
   }
 
-  // string cluster_name = 2;
+  // optional string cluster_name = 2;
   if (this->cluster_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->cluster_name().data(), this->cluster_name().length(),
@@ -6316,19 +6624,19 @@ void UpdateClusterRequest::SerializeWithCachedSizes(
       2, this->cluster_name(), output);
   }
 
-  // .google.cloud.dataproc.v1.Cluster cluster = 3;
+  // optional .google.cloud.dataproc.v1.Cluster cluster = 3;
   if (this->has_cluster()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *this->cluster_, output);
   }
 
-  // .google.protobuf.FieldMask update_mask = 4;
+  // optional .google.protobuf.FieldMask update_mask = 4;
   if (this->has_update_mask()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, *this->update_mask_, output);
   }
 
-  // string region = 5;
+  // optional string region = 5;
   if (this->region().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->region().data(), this->region().length(),
@@ -6345,7 +6653,7 @@ void UpdateClusterRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.UpdateClusterRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -6356,7 +6664,7 @@ void UpdateClusterRequest::SerializeWithCachedSizes(
         1, this->project_id(), target);
   }
 
-  // string cluster_name = 2;
+  // optional string cluster_name = 2;
   if (this->cluster_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->cluster_name().data(), this->cluster_name().length(),
@@ -6367,21 +6675,21 @@ void UpdateClusterRequest::SerializeWithCachedSizes(
         2, this->cluster_name(), target);
   }
 
-  // .google.cloud.dataproc.v1.Cluster cluster = 3;
+  // optional .google.cloud.dataproc.v1.Cluster cluster = 3;
   if (this->has_cluster()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         3, *this->cluster_, false, target);
   }
 
-  // .google.protobuf.FieldMask update_mask = 4;
+  // optional .google.protobuf.FieldMask update_mask = 4;
   if (this->has_update_mask()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         4, *this->update_mask_, false, target);
   }
 
-  // string region = 5;
+  // optional string region = 5;
   if (this->region().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->region().data(), this->region().length(),
@@ -6400,35 +6708,35 @@ size_t UpdateClusterRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.UpdateClusterRequest)
   size_t total_size = 0;
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->project_id());
   }
 
-  // string region = 5;
+  // optional string region = 5;
   if (this->region().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->region());
   }
 
-  // string cluster_name = 2;
+  // optional string cluster_name = 2;
   if (this->cluster_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->cluster_name());
   }
 
-  // .google.cloud.dataproc.v1.Cluster cluster = 3;
+  // optional .google.cloud.dataproc.v1.Cluster cluster = 3;
   if (this->has_cluster()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->cluster_);
   }
 
-  // .google.protobuf.FieldMask update_mask = 4;
+  // optional .google.protobuf.FieldMask update_mask = 4;
   if (this->has_update_mask()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -6444,7 +6752,7 @@ size_t UpdateClusterRequest::ByteSizeLong() const {
 
 void UpdateClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.UpdateClusterRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const UpdateClusterRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const UpdateClusterRequest>(
           &from);
@@ -6453,14 +6761,21 @@ void UpdateClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.UpdateClusterRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void UpdateClusterRequest::MergeFrom(const UpdateClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.UpdateClusterRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void UpdateClusterRequest::UnsafeMergeFrom(const UpdateClusterRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -6492,10 +6807,11 @@ void UpdateClusterRequest::CopyFrom(const UpdateClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.UpdateClusterRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool UpdateClusterRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -6509,24 +6825,28 @@ void UpdateClusterRequest::InternalSwap(UpdateClusterRequest* other) {
   cluster_name_.Swap(&other->cluster_name_);
   std::swap(cluster_, other->cluster_);
   std::swap(update_mask_, other->update_mask_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata UpdateClusterRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[12];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = UpdateClusterRequest_descriptor_;
+  metadata.reflection = UpdateClusterRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // UpdateClusterRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 void UpdateClusterRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& UpdateClusterRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.UpdateClusterRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void UpdateClusterRequest::set_project_id(const ::std::string& value) {
   
@@ -6564,13 +6884,13 @@ void UpdateClusterRequest::set_allocated_project_id(::std::string* project_id) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.UpdateClusterRequest.project_id)
 }
 
-// string region = 5;
+// optional string region = 5;
 void UpdateClusterRequest::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& UpdateClusterRequest::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.UpdateClusterRequest.region)
-  return region_.GetNoArena();
+  return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void UpdateClusterRequest::set_region(const ::std::string& value) {
   
@@ -6608,13 +6928,13 @@ void UpdateClusterRequest::set_allocated_region(::std::string* region) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.UpdateClusterRequest.region)
 }
 
-// string cluster_name = 2;
+// optional string cluster_name = 2;
 void UpdateClusterRequest::clear_cluster_name() {
   cluster_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& UpdateClusterRequest::cluster_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.UpdateClusterRequest.cluster_name)
-  return cluster_name_.GetNoArena();
+  return cluster_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void UpdateClusterRequest::set_cluster_name(const ::std::string& value) {
   
@@ -6652,7 +6972,7 @@ void UpdateClusterRequest::set_allocated_cluster_name(::std::string* cluster_nam
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.UpdateClusterRequest.cluster_name)
 }
 
-// .google.cloud.dataproc.v1.Cluster cluster = 3;
+// optional .google.cloud.dataproc.v1.Cluster cluster = 3;
 bool UpdateClusterRequest::has_cluster() const {
   return this != internal_default_instance() && cluster_ != NULL;
 }
@@ -6691,7 +7011,7 @@ void UpdateClusterRequest::set_allocated_cluster(::google::cloud::dataproc::v1::
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.UpdateClusterRequest.cluster)
 }
 
-// .google.protobuf.FieldMask update_mask = 4;
+// optional .google.protobuf.FieldMask update_mask = 4;
 bool UpdateClusterRequest::has_update_mask() const {
   return this != internal_default_instance() && update_mask_ != NULL;
 }
@@ -6730,6 +7050,9 @@ void UpdateClusterRequest::set_allocated_update_mask(::google::protobuf::FieldMa
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.UpdateClusterRequest.update_mask)
 }
 
+inline const UpdateClusterRequest* UpdateClusterRequest::internal_default_instance() {
+  return &UpdateClusterRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6742,29 +7065,19 @@ const int DeleteClusterRequest::kClusterNameFieldNumber;
 
 DeleteClusterRequest::DeleteClusterRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.DeleteClusterRequest)
 }
+
+void DeleteClusterRequest::InitAsDefaultInstance() {
+}
+
 DeleteClusterRequest::DeleteClusterRequest(const DeleteClusterRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
-  }
-  region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.region().size() > 0) {
-    region_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.region_);
-  }
-  cluster_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.cluster_name().size() > 0) {
-    cluster_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cluster_name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.DeleteClusterRequest)
 }
 
@@ -6793,13 +7106,15 @@ void DeleteClusterRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* DeleteClusterRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[13].descriptor;
+  return DeleteClusterRequest_descriptor_;
 }
 
 const DeleteClusterRequest& DeleteClusterRequest::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<DeleteClusterRequest> DeleteClusterRequest_default_instance_;
 
 DeleteClusterRequest* DeleteClusterRequest::New(::google::protobuf::Arena* arena) const {
   DeleteClusterRequest* n = new DeleteClusterRequest;
@@ -6822,13 +7137,13 @@ bool DeleteClusterRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.dataproc.v1.DeleteClusterRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string project_id = 1;
+      // optional string project_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -6838,12 +7153,14 @@ bool DeleteClusterRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_cluster_name;
         break;
       }
 
-      // string cluster_name = 2;
+      // optional string cluster_name = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_cluster_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_cluster_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -6853,12 +7170,14 @@ bool DeleteClusterRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_region;
         break;
       }
 
-      // string region = 3;
+      // optional string region = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_region:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_region()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -6868,6 +7187,7 @@ bool DeleteClusterRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -6895,7 +7215,7 @@ failure:
 void DeleteClusterRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.dataproc.v1.DeleteClusterRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -6905,7 +7225,7 @@ void DeleteClusterRequest::SerializeWithCachedSizes(
       1, this->project_id(), output);
   }
 
-  // string cluster_name = 2;
+  // optional string cluster_name = 2;
   if (this->cluster_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->cluster_name().data(), this->cluster_name().length(),
@@ -6915,7 +7235,7 @@ void DeleteClusterRequest::SerializeWithCachedSizes(
       2, this->cluster_name(), output);
   }
 
-  // string region = 3;
+  // optional string region = 3;
   if (this->region().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->region().data(), this->region().length(),
@@ -6932,7 +7252,7 @@ void DeleteClusterRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.DeleteClusterRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -6943,7 +7263,7 @@ void DeleteClusterRequest::SerializeWithCachedSizes(
         1, this->project_id(), target);
   }
 
-  // string cluster_name = 2;
+  // optional string cluster_name = 2;
   if (this->cluster_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->cluster_name().data(), this->cluster_name().length(),
@@ -6954,7 +7274,7 @@ void DeleteClusterRequest::SerializeWithCachedSizes(
         2, this->cluster_name(), target);
   }
 
-  // string region = 3;
+  // optional string region = 3;
   if (this->region().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->region().data(), this->region().length(),
@@ -6973,21 +7293,21 @@ size_t DeleteClusterRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.DeleteClusterRequest)
   size_t total_size = 0;
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->project_id());
   }
 
-  // string region = 3;
+  // optional string region = 3;
   if (this->region().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->region());
   }
 
-  // string cluster_name = 2;
+  // optional string cluster_name = 2;
   if (this->cluster_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -7003,7 +7323,7 @@ size_t DeleteClusterRequest::ByteSizeLong() const {
 
 void DeleteClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.DeleteClusterRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const DeleteClusterRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteClusterRequest>(
           &from);
@@ -7012,14 +7332,21 @@ void DeleteClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.DeleteClusterRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteClusterRequest::MergeFrom(const DeleteClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.DeleteClusterRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void DeleteClusterRequest::UnsafeMergeFrom(const DeleteClusterRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -7045,10 +7372,11 @@ void DeleteClusterRequest::CopyFrom(const DeleteClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.DeleteClusterRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteClusterRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -7060,24 +7388,28 @@ void DeleteClusterRequest::InternalSwap(DeleteClusterRequest* other) {
   project_id_.Swap(&other->project_id_);
   region_.Swap(&other->region_);
   cluster_name_.Swap(&other->cluster_name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DeleteClusterRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[13];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = DeleteClusterRequest_descriptor_;
+  metadata.reflection = DeleteClusterRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // DeleteClusterRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 void DeleteClusterRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& DeleteClusterRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DeleteClusterRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void DeleteClusterRequest::set_project_id(const ::std::string& value) {
   
@@ -7115,13 +7447,13 @@ void DeleteClusterRequest::set_allocated_project_id(::std::string* project_id) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.DeleteClusterRequest.project_id)
 }
 
-// string region = 3;
+// optional string region = 3;
 void DeleteClusterRequest::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& DeleteClusterRequest::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DeleteClusterRequest.region)
-  return region_.GetNoArena();
+  return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void DeleteClusterRequest::set_region(const ::std::string& value) {
   
@@ -7159,13 +7491,13 @@ void DeleteClusterRequest::set_allocated_region(::std::string* region) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.DeleteClusterRequest.region)
 }
 
-// string cluster_name = 2;
+// optional string cluster_name = 2;
 void DeleteClusterRequest::clear_cluster_name() {
   cluster_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& DeleteClusterRequest::cluster_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DeleteClusterRequest.cluster_name)
-  return cluster_name_.GetNoArena();
+  return cluster_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void DeleteClusterRequest::set_cluster_name(const ::std::string& value) {
   
@@ -7203,6 +7535,9 @@ void DeleteClusterRequest::set_allocated_cluster_name(::std::string* cluster_nam
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.DeleteClusterRequest.cluster_name)
 }
 
+inline const DeleteClusterRequest* DeleteClusterRequest::internal_default_instance() {
+  return &DeleteClusterRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7215,29 +7550,19 @@ const int GetClusterRequest::kClusterNameFieldNumber;
 
 GetClusterRequest::GetClusterRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.GetClusterRequest)
 }
+
+void GetClusterRequest::InitAsDefaultInstance() {
+}
+
 GetClusterRequest::GetClusterRequest(const GetClusterRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
-  }
-  region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.region().size() > 0) {
-    region_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.region_);
-  }
-  cluster_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.cluster_name().size() > 0) {
-    cluster_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cluster_name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.GetClusterRequest)
 }
 
@@ -7266,13 +7591,15 @@ void GetClusterRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GetClusterRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[14].descriptor;
+  return GetClusterRequest_descriptor_;
 }
 
 const GetClusterRequest& GetClusterRequest::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GetClusterRequest> GetClusterRequest_default_instance_;
 
 GetClusterRequest* GetClusterRequest::New(::google::protobuf::Arena* arena) const {
   GetClusterRequest* n = new GetClusterRequest;
@@ -7295,13 +7622,13 @@ bool GetClusterRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.dataproc.v1.GetClusterRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string project_id = 1;
+      // optional string project_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -7311,12 +7638,14 @@ bool GetClusterRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_cluster_name;
         break;
       }
 
-      // string cluster_name = 2;
+      // optional string cluster_name = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_cluster_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_cluster_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -7326,12 +7655,14 @@ bool GetClusterRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_region;
         break;
       }
 
-      // string region = 3;
+      // optional string region = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_region:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_region()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -7341,6 +7672,7 @@ bool GetClusterRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -7368,7 +7700,7 @@ failure:
 void GetClusterRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.dataproc.v1.GetClusterRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -7378,7 +7710,7 @@ void GetClusterRequest::SerializeWithCachedSizes(
       1, this->project_id(), output);
   }
 
-  // string cluster_name = 2;
+  // optional string cluster_name = 2;
   if (this->cluster_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->cluster_name().data(), this->cluster_name().length(),
@@ -7388,7 +7720,7 @@ void GetClusterRequest::SerializeWithCachedSizes(
       2, this->cluster_name(), output);
   }
 
-  // string region = 3;
+  // optional string region = 3;
   if (this->region().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->region().data(), this->region().length(),
@@ -7405,7 +7737,7 @@ void GetClusterRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.GetClusterRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -7416,7 +7748,7 @@ void GetClusterRequest::SerializeWithCachedSizes(
         1, this->project_id(), target);
   }
 
-  // string cluster_name = 2;
+  // optional string cluster_name = 2;
   if (this->cluster_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->cluster_name().data(), this->cluster_name().length(),
@@ -7427,7 +7759,7 @@ void GetClusterRequest::SerializeWithCachedSizes(
         2, this->cluster_name(), target);
   }
 
-  // string region = 3;
+  // optional string region = 3;
   if (this->region().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->region().data(), this->region().length(),
@@ -7446,21 +7778,21 @@ size_t GetClusterRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.GetClusterRequest)
   size_t total_size = 0;
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->project_id());
   }
 
-  // string region = 3;
+  // optional string region = 3;
   if (this->region().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->region());
   }
 
-  // string cluster_name = 2;
+  // optional string cluster_name = 2;
   if (this->cluster_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -7476,7 +7808,7 @@ size_t GetClusterRequest::ByteSizeLong() const {
 
 void GetClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.GetClusterRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GetClusterRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetClusterRequest>(
           &from);
@@ -7485,14 +7817,21 @@ void GetClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.GetClusterRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetClusterRequest::MergeFrom(const GetClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.GetClusterRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GetClusterRequest::UnsafeMergeFrom(const GetClusterRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -7518,10 +7857,11 @@ void GetClusterRequest::CopyFrom(const GetClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.GetClusterRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetClusterRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -7533,24 +7873,28 @@ void GetClusterRequest::InternalSwap(GetClusterRequest* other) {
   project_id_.Swap(&other->project_id_);
   region_.Swap(&other->region_);
   cluster_name_.Swap(&other->cluster_name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GetClusterRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[14];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GetClusterRequest_descriptor_;
+  metadata.reflection = GetClusterRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GetClusterRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 void GetClusterRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GetClusterRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GetClusterRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GetClusterRequest::set_project_id(const ::std::string& value) {
   
@@ -7588,13 +7932,13 @@ void GetClusterRequest::set_allocated_project_id(::std::string* project_id) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.GetClusterRequest.project_id)
 }
 
-// string region = 3;
+// optional string region = 3;
 void GetClusterRequest::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GetClusterRequest::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GetClusterRequest.region)
-  return region_.GetNoArena();
+  return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GetClusterRequest::set_region(const ::std::string& value) {
   
@@ -7632,13 +7976,13 @@ void GetClusterRequest::set_allocated_region(::std::string* region) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.GetClusterRequest.region)
 }
 
-// string cluster_name = 2;
+// optional string cluster_name = 2;
 void GetClusterRequest::clear_cluster_name() {
   cluster_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GetClusterRequest::cluster_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.GetClusterRequest.cluster_name)
-  return cluster_name_.GetNoArena();
+  return cluster_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GetClusterRequest::set_cluster_name(const ::std::string& value) {
   
@@ -7676,6 +8020,9 @@ void GetClusterRequest::set_allocated_cluster_name(::std::string* cluster_name) 
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.GetClusterRequest.cluster_name)
 }
 
+inline const GetClusterRequest* GetClusterRequest::internal_default_instance() {
+  return &GetClusterRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7689,30 +8036,19 @@ const int ListClustersRequest::kPageTokenFieldNumber;
 
 ListClustersRequest::ListClustersRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.ListClustersRequest)
 }
+
+void ListClustersRequest::InitAsDefaultInstance() {
+}
+
 ListClustersRequest::ListClustersRequest(const ListClustersRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
-  }
-  region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.region().size() > 0) {
-    region_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.region_);
-  }
-  page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.page_token().size() > 0) {
-    page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
-  }
-  page_size_ = from.page_size_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.ListClustersRequest)
 }
 
@@ -7742,13 +8078,15 @@ void ListClustersRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListClustersRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[15].descriptor;
+  return ListClustersRequest_descriptor_;
 }
 
 const ListClustersRequest& ListClustersRequest::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListClustersRequest> ListClustersRequest_default_instance_;
 
 ListClustersRequest* ListClustersRequest::New(::google::protobuf::Arena* arena) const {
   ListClustersRequest* n = new ListClustersRequest;
@@ -7762,8 +8100,8 @@ void ListClustersRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.dataproc.v1.ListClustersRequest)
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_size_ = 0;
+  page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 bool ListClustersRequest::MergePartialFromCodedStream(
@@ -7772,13 +8110,13 @@ bool ListClustersRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.dataproc.v1.ListClustersRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string project_id = 1;
+      // optional string project_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -7788,12 +8126,14 @@ bool ListClustersRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_page_size;
         break;
       }
 
-      // int32 page_size = 2;
+      // optional int32 page_size = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_page_size:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -7801,12 +8141,14 @@ bool ListClustersRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_page_token;
         break;
       }
 
-      // string page_token = 3;
+      // optional string page_token = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -7816,12 +8158,14 @@ bool ListClustersRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_region;
         break;
       }
 
-      // string region = 4;
+      // optional string region = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_region:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_region()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -7831,6 +8175,7 @@ bool ListClustersRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -7858,7 +8203,7 @@ failure:
 void ListClustersRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.dataproc.v1.ListClustersRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -7868,12 +8213,12 @@ void ListClustersRequest::SerializeWithCachedSizes(
       1, this->project_id(), output);
   }
 
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   if (this->page_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->page_size(), output);
   }
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -7883,7 +8228,7 @@ void ListClustersRequest::SerializeWithCachedSizes(
       3, this->page_token(), output);
   }
 
-  // string region = 4;
+  // optional string region = 4;
   if (this->region().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->region().data(), this->region().length(),
@@ -7900,7 +8245,7 @@ void ListClustersRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.ListClustersRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -7911,12 +8256,12 @@ void ListClustersRequest::SerializeWithCachedSizes(
         1, this->project_id(), target);
   }
 
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   if (this->page_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->page_size(), target);
   }
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -7927,7 +8272,7 @@ void ListClustersRequest::SerializeWithCachedSizes(
         3, this->page_token(), target);
   }
 
-  // string region = 4;
+  // optional string region = 4;
   if (this->region().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->region().data(), this->region().length(),
@@ -7946,32 +8291,32 @@ size_t ListClustersRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.ListClustersRequest)
   size_t total_size = 0;
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->project_id());
   }
 
-  // string region = 4;
+  // optional string region = 4;
   if (this->region().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->region());
   }
 
-  // string page_token = 3;
-  if (this->page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->page_token());
-  }
-
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   if (this->page_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->page_size());
+  }
+
+  // optional string page_token = 3;
+  if (this->page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->page_token());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -7983,7 +8328,7 @@ size_t ListClustersRequest::ByteSizeLong() const {
 
 void ListClustersRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.ListClustersRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListClustersRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListClustersRequest>(
           &from);
@@ -7992,14 +8337,21 @@ void ListClustersRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.ListClustersRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListClustersRequest::MergeFrom(const ListClustersRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.ListClustersRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListClustersRequest::UnsafeMergeFrom(const ListClustersRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -8008,12 +8360,12 @@ void ListClustersRequest::MergeFrom(const ListClustersRequest& from) {
 
     region_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.region_);
   }
+  if (from.page_size() != 0) {
+    set_page_size(from.page_size());
+  }
   if (from.page_token().size() > 0) {
 
     page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
-  }
-  if (from.page_size() != 0) {
-    set_page_size(from.page_size());
   }
 }
 
@@ -8028,10 +8380,11 @@ void ListClustersRequest::CopyFrom(const ListClustersRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.ListClustersRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListClustersRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -8042,26 +8395,30 @@ void ListClustersRequest::Swap(ListClustersRequest* other) {
 void ListClustersRequest::InternalSwap(ListClustersRequest* other) {
   project_id_.Swap(&other->project_id_);
   region_.Swap(&other->region_);
-  page_token_.Swap(&other->page_token_);
   std::swap(page_size_, other->page_size_);
+  page_token_.Swap(&other->page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListClustersRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[15];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListClustersRequest_descriptor_;
+  metadata.reflection = ListClustersRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ListClustersRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 void ListClustersRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListClustersRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ListClustersRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListClustersRequest::set_project_id(const ::std::string& value) {
   
@@ -8099,13 +8456,13 @@ void ListClustersRequest::set_allocated_project_id(::std::string* project_id) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ListClustersRequest.project_id)
 }
 
-// string region = 4;
+// optional string region = 4;
 void ListClustersRequest::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListClustersRequest::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ListClustersRequest.region)
-  return region_.GetNoArena();
+  return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListClustersRequest::set_region(const ::std::string& value) {
   
@@ -8143,7 +8500,7 @@ void ListClustersRequest::set_allocated_region(::std::string* region) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ListClustersRequest.region)
 }
 
-// int32 page_size = 2;
+// optional int32 page_size = 2;
 void ListClustersRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -8157,13 +8514,13 @@ void ListClustersRequest::set_page_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.cloud.dataproc.v1.ListClustersRequest.page_size)
 }
 
-// string page_token = 3;
+// optional string page_token = 3;
 void ListClustersRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListClustersRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ListClustersRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListClustersRequest::set_page_token(const ::std::string& value) {
   
@@ -8201,6 +8558,9 @@ void ListClustersRequest::set_allocated_page_token(::std::string* page_token) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ListClustersRequest.page_token)
 }
 
+inline const ListClustersRequest* ListClustersRequest::internal_default_instance() {
+  return &ListClustersRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -8212,22 +8572,19 @@ const int ListClustersResponse::kNextPageTokenFieldNumber;
 
 ListClustersResponse::ListClustersResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.ListClustersResponse)
 }
+
+void ListClustersResponse::InitAsDefaultInstance() {
+}
+
 ListClustersResponse::ListClustersResponse(const ListClustersResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      clusters_(from.clusters_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_page_token().size() > 0) {
-    next_page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_page_token_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.ListClustersResponse)
 }
 
@@ -8252,13 +8609,15 @@ void ListClustersResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListClustersResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[16].descriptor;
+  return ListClustersResponse_descriptor_;
 }
 
 const ListClustersResponse& ListClustersResponse::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListClustersResponse> ListClustersResponse_default_instance_;
 
 ListClustersResponse* ListClustersResponse::New(::google::protobuf::Arena* arena) const {
   ListClustersResponse* n = new ListClustersResponse;
@@ -8270,8 +8629,8 @@ ListClustersResponse* ListClustersResponse::New(::google::protobuf::Arena* arena
 
 void ListClustersResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.cloud.dataproc.v1.ListClustersResponse)
-  clusters_.Clear();
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  clusters_.Clear();
 }
 
 bool ListClustersResponse::MergePartialFromCodedStream(
@@ -8280,26 +8639,30 @@ bool ListClustersResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.dataproc.v1.ListClustersResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.cloud.dataproc.v1.Cluster clusters = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_clusters:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_clusters()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_clusters;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_next_page_token;
         break;
       }
 
-      // string next_page_token = 2;
+      // optional string next_page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_next_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -8309,6 +8672,7 @@ bool ListClustersResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -8342,7 +8706,7 @@ void ListClustersResponse::SerializeWithCachedSizes(
       1, this->clusters(i), output);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -8366,7 +8730,7 @@ void ListClustersResponse::SerializeWithCachedSizes(
         1, this->clusters(i), false, target);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -8385,6 +8749,13 @@ size_t ListClustersResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.ListClustersResponse)
   size_t total_size = 0;
 
+  // optional string next_page_token = 2;
+  if (this->next_page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_page_token());
+  }
+
   // repeated .google.cloud.dataproc.v1.Cluster clusters = 1;
   {
     unsigned int count = this->clusters_size();
@@ -8396,13 +8767,6 @@ size_t ListClustersResponse::ByteSizeLong() const {
     }
   }
 
-  // string next_page_token = 2;
-  if (this->next_page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_page_token());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -8412,7 +8776,7 @@ size_t ListClustersResponse::ByteSizeLong() const {
 
 void ListClustersResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.ListClustersResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListClustersResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListClustersResponse>(
           &from);
@@ -8421,14 +8785,21 @@ void ListClustersResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.ListClustersResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListClustersResponse::MergeFrom(const ListClustersResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.ListClustersResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListClustersResponse::UnsafeMergeFrom(const ListClustersResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   clusters_.MergeFrom(from.clusters_);
   if (from.next_page_token().size() > 0) {
 
@@ -8447,10 +8818,11 @@ void ListClustersResponse::CopyFrom(const ListClustersResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.ListClustersResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListClustersResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -8461,12 +8833,16 @@ void ListClustersResponse::Swap(ListClustersResponse* other) {
 void ListClustersResponse::InternalSwap(ListClustersResponse* other) {
   clusters_.UnsafeArenaSwap(&other->clusters_);
   next_page_token_.Swap(&other->next_page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListClustersResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[16];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListClustersResponse_descriptor_;
+  metadata.reflection = ListClustersResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -8502,13 +8878,13 @@ ListClustersResponse::clusters() const {
   return clusters_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 void ListClustersResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListClustersResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.ListClustersResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListClustersResponse::set_next_page_token(const ::std::string& value) {
   
@@ -8546,6 +8922,9 @@ void ListClustersResponse::set_allocated_next_page_token(::std::string* next_pag
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.ListClustersResponse.next_page_token)
 }
 
+inline const ListClustersResponse* ListClustersResponse::internal_default_instance() {
+  return &ListClustersResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -8558,29 +8937,19 @@ const int DiagnoseClusterRequest::kClusterNameFieldNumber;
 
 DiagnoseClusterRequest::DiagnoseClusterRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.DiagnoseClusterRequest)
 }
+
+void DiagnoseClusterRequest::InitAsDefaultInstance() {
+}
+
 DiagnoseClusterRequest::DiagnoseClusterRequest(const DiagnoseClusterRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
-  }
-  region_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.region().size() > 0) {
-    region_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.region_);
-  }
-  cluster_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.cluster_name().size() > 0) {
-    cluster_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cluster_name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.DiagnoseClusterRequest)
 }
 
@@ -8609,13 +8978,15 @@ void DiagnoseClusterRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* DiagnoseClusterRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[17].descriptor;
+  return DiagnoseClusterRequest_descriptor_;
 }
 
 const DiagnoseClusterRequest& DiagnoseClusterRequest::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<DiagnoseClusterRequest> DiagnoseClusterRequest_default_instance_;
 
 DiagnoseClusterRequest* DiagnoseClusterRequest::New(::google::protobuf::Arena* arena) const {
   DiagnoseClusterRequest* n = new DiagnoseClusterRequest;
@@ -8638,13 +9009,13 @@ bool DiagnoseClusterRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.dataproc.v1.DiagnoseClusterRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string project_id = 1;
+      // optional string project_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -8654,12 +9025,14 @@ bool DiagnoseClusterRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_cluster_name;
         break;
       }
 
-      // string cluster_name = 2;
+      // optional string cluster_name = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_cluster_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_cluster_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -8669,12 +9042,14 @@ bool DiagnoseClusterRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_region;
         break;
       }
 
-      // string region = 3;
+      // optional string region = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_region:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_region()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -8684,6 +9059,7 @@ bool DiagnoseClusterRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -8711,7 +9087,7 @@ failure:
 void DiagnoseClusterRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.dataproc.v1.DiagnoseClusterRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -8721,7 +9097,7 @@ void DiagnoseClusterRequest::SerializeWithCachedSizes(
       1, this->project_id(), output);
   }
 
-  // string cluster_name = 2;
+  // optional string cluster_name = 2;
   if (this->cluster_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->cluster_name().data(), this->cluster_name().length(),
@@ -8731,7 +9107,7 @@ void DiagnoseClusterRequest::SerializeWithCachedSizes(
       2, this->cluster_name(), output);
   }
 
-  // string region = 3;
+  // optional string region = 3;
   if (this->region().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->region().data(), this->region().length(),
@@ -8748,7 +9124,7 @@ void DiagnoseClusterRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.DiagnoseClusterRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -8759,7 +9135,7 @@ void DiagnoseClusterRequest::SerializeWithCachedSizes(
         1, this->project_id(), target);
   }
 
-  // string cluster_name = 2;
+  // optional string cluster_name = 2;
   if (this->cluster_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->cluster_name().data(), this->cluster_name().length(),
@@ -8770,7 +9146,7 @@ void DiagnoseClusterRequest::SerializeWithCachedSizes(
         2, this->cluster_name(), target);
   }
 
-  // string region = 3;
+  // optional string region = 3;
   if (this->region().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->region().data(), this->region().length(),
@@ -8789,21 +9165,21 @@ size_t DiagnoseClusterRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.DiagnoseClusterRequest)
   size_t total_size = 0;
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->project_id());
   }
 
-  // string region = 3;
+  // optional string region = 3;
   if (this->region().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->region());
   }
 
-  // string cluster_name = 2;
+  // optional string cluster_name = 2;
   if (this->cluster_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -8819,7 +9195,7 @@ size_t DiagnoseClusterRequest::ByteSizeLong() const {
 
 void DiagnoseClusterRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.DiagnoseClusterRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const DiagnoseClusterRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DiagnoseClusterRequest>(
           &from);
@@ -8828,14 +9204,21 @@ void DiagnoseClusterRequest::MergeFrom(const ::google::protobuf::Message& from) 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.DiagnoseClusterRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DiagnoseClusterRequest::MergeFrom(const DiagnoseClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.DiagnoseClusterRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void DiagnoseClusterRequest::UnsafeMergeFrom(const DiagnoseClusterRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -8861,10 +9244,11 @@ void DiagnoseClusterRequest::CopyFrom(const DiagnoseClusterRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.DiagnoseClusterRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DiagnoseClusterRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -8876,24 +9260,28 @@ void DiagnoseClusterRequest::InternalSwap(DiagnoseClusterRequest* other) {
   project_id_.Swap(&other->project_id_);
   region_.Swap(&other->region_);
   cluster_name_.Swap(&other->cluster_name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DiagnoseClusterRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[17];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = DiagnoseClusterRequest_descriptor_;
+  metadata.reflection = DiagnoseClusterRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // DiagnoseClusterRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 void DiagnoseClusterRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& DiagnoseClusterRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DiagnoseClusterRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void DiagnoseClusterRequest::set_project_id(const ::std::string& value) {
   
@@ -8931,13 +9319,13 @@ void DiagnoseClusterRequest::set_allocated_project_id(::std::string* project_id)
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.DiagnoseClusterRequest.project_id)
 }
 
-// string region = 3;
+// optional string region = 3;
 void DiagnoseClusterRequest::clear_region() {
   region_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& DiagnoseClusterRequest::region() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DiagnoseClusterRequest.region)
-  return region_.GetNoArena();
+  return region_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void DiagnoseClusterRequest::set_region(const ::std::string& value) {
   
@@ -8975,13 +9363,13 @@ void DiagnoseClusterRequest::set_allocated_region(::std::string* region) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.DiagnoseClusterRequest.region)
 }
 
-// string cluster_name = 2;
+// optional string cluster_name = 2;
 void DiagnoseClusterRequest::clear_cluster_name() {
   cluster_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& DiagnoseClusterRequest::cluster_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DiagnoseClusterRequest.cluster_name)
-  return cluster_name_.GetNoArena();
+  return cluster_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void DiagnoseClusterRequest::set_cluster_name(const ::std::string& value) {
   
@@ -9019,6 +9407,9 @@ void DiagnoseClusterRequest::set_allocated_cluster_name(::std::string* cluster_n
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.DiagnoseClusterRequest.cluster_name)
 }
 
+inline const DiagnoseClusterRequest* DiagnoseClusterRequest::internal_default_instance() {
+  return &DiagnoseClusterRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -9029,21 +9420,19 @@ const int DiagnoseClusterResults::kOutputUriFieldNumber;
 
 DiagnoseClusterResults::DiagnoseClusterResults()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.dataproc.v1.DiagnoseClusterResults)
 }
+
+void DiagnoseClusterResults::InitAsDefaultInstance() {
+}
+
 DiagnoseClusterResults::DiagnoseClusterResults(const DiagnoseClusterResults& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  output_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.output_uri().size() > 0) {
-    output_uri_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.output_uri_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.dataproc.v1.DiagnoseClusterResults)
 }
 
@@ -9068,13 +9457,15 @@ void DiagnoseClusterResults::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* DiagnoseClusterResults::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[18].descriptor;
+  return DiagnoseClusterResults_descriptor_;
 }
 
 const DiagnoseClusterResults& DiagnoseClusterResults::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fdataproc_2fv1_2fclusters_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<DiagnoseClusterResults> DiagnoseClusterResults_default_instance_;
 
 DiagnoseClusterResults* DiagnoseClusterResults::New(::google::protobuf::Arena* arena) const {
   DiagnoseClusterResults* n = new DiagnoseClusterResults;
@@ -9095,13 +9486,13 @@ bool DiagnoseClusterResults::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.dataproc.v1.DiagnoseClusterResults)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string output_uri = 1;
+      // optional string output_uri = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_output_uri()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -9111,6 +9502,7 @@ bool DiagnoseClusterResults::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -9138,7 +9530,7 @@ failure:
 void DiagnoseClusterResults::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.dataproc.v1.DiagnoseClusterResults)
-  // string output_uri = 1;
+  // optional string output_uri = 1;
   if (this->output_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->output_uri().data(), this->output_uri().length(),
@@ -9155,7 +9547,7 @@ void DiagnoseClusterResults::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.dataproc.v1.DiagnoseClusterResults)
-  // string output_uri = 1;
+  // optional string output_uri = 1;
   if (this->output_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->output_uri().data(), this->output_uri().length(),
@@ -9174,7 +9566,7 @@ size_t DiagnoseClusterResults::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.dataproc.v1.DiagnoseClusterResults)
   size_t total_size = 0;
 
-  // string output_uri = 1;
+  // optional string output_uri = 1;
   if (this->output_uri().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -9190,7 +9582,7 @@ size_t DiagnoseClusterResults::ByteSizeLong() const {
 
 void DiagnoseClusterResults::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.dataproc.v1.DiagnoseClusterResults)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const DiagnoseClusterResults* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DiagnoseClusterResults>(
           &from);
@@ -9199,14 +9591,21 @@ void DiagnoseClusterResults::MergeFrom(const ::google::protobuf::Message& from) 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.dataproc.v1.DiagnoseClusterResults)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DiagnoseClusterResults::MergeFrom(const DiagnoseClusterResults& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.dataproc.v1.DiagnoseClusterResults)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void DiagnoseClusterResults::UnsafeMergeFrom(const DiagnoseClusterResults& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.output_uri().size() > 0) {
 
     output_uri_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.output_uri_);
@@ -9224,10 +9623,11 @@ void DiagnoseClusterResults::CopyFrom(const DiagnoseClusterResults& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.dataproc.v1.DiagnoseClusterResults)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DiagnoseClusterResults::IsInitialized() const {
+
   return true;
 }
 
@@ -9237,24 +9637,28 @@ void DiagnoseClusterResults::Swap(DiagnoseClusterResults* other) {
 }
 void DiagnoseClusterResults::InternalSwap(DiagnoseClusterResults* other) {
   output_uri_.Swap(&other->output_uri_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DiagnoseClusterResults::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[18];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = DiagnoseClusterResults_descriptor_;
+  metadata.reflection = DiagnoseClusterResults_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // DiagnoseClusterResults
 
-// string output_uri = 1;
+// optional string output_uri = 1;
 void DiagnoseClusterResults::clear_output_uri() {
   output_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& DiagnoseClusterResults::output_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.dataproc.v1.DiagnoseClusterResults.output_uri)
-  return output_uri_.GetNoArena();
+  return output_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void DiagnoseClusterResults::set_output_uri(const ::std::string& value) {
   
@@ -9292,6 +9696,9 @@ void DiagnoseClusterResults::set_allocated_output_uri(::std::string* output_uri)
   // @@protoc_insertion_point(field_set_allocated:google.cloud.dataproc.v1.DiagnoseClusterResults.output_uri)
 }
 
+inline const DiagnoseClusterResults* DiagnoseClusterResults::internal_default_instance() {
+  return &DiagnoseClusterResults_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

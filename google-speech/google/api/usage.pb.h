@@ -24,21 +24,11 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-class Usage;
-class UsageDefaultTypeInternal;
-extern UsageDefaultTypeInternal _Usage_default_instance_;
-class UsageRule;
-class UsageRuleDefaultTypeInternal;
-extern UsageRuleDefaultTypeInternal _UsageRule_default_instance_;
-}  // namespace api
-}  // namespace google
 
 namespace google {
 namespace api {
@@ -46,6 +36,11 @@ namespace api {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fapi_2fusage_2eproto();
 void protobuf_InitDefaults_google_2fapi_2fusage_2eproto();
+void protobuf_AssignDesc_google_2fapi_2fusage_2eproto();
+void protobuf_ShutdownFile_google_2fapi_2fusage_2eproto();
+
+class Usage;
+class UsageRule;
 
 // ===================================================================
 
@@ -64,52 +59,49 @@ class Usage : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   static const ::google::protobuf::Descriptor* descriptor();
   static const Usage& default_instance();
 
-  static inline const Usage* internal_default_instance() {
-    return reinterpret_cast<const Usage*>(
-               &_Usage_default_instance_);
-  }
+  static const Usage* internal_default_instance();
 
   void Swap(Usage* other);
 
   // implements Message ----------------------------------------------
 
-  inline Usage* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Usage* New() const { return New(NULL); }
 
-  Usage* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Usage* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Usage& from);
   void MergeFrom(const Usage& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Usage* other);
+  void UnsafeMergeFrom(const Usage& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -143,7 +135,7 @@ class Usage : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   const ::google::protobuf::RepeatedPtrField< ::google::api::UsageRule >&
       rules() const;
 
-  // string producer_notification_channel = 7;
+  // optional string producer_notification_channel = 7;
   void clear_producer_notification_channel();
   static const int kProducerNotificationChannelFieldNumber = 7;
   const ::std::string& producer_notification_channel() const;
@@ -164,10 +156,13 @@ class Usage : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fusage_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fusage_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fusage_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fusage_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fusage_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Usage> Usage_default_instance_;
+
 // -------------------------------------------------------------------
 
 class UsageRule : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.api.UsageRule) */ {
@@ -185,58 +180,55 @@ class UsageRule : public ::google::protobuf::Message /* @@protoc_insertion_point
   static const ::google::protobuf::Descriptor* descriptor();
   static const UsageRule& default_instance();
 
-  static inline const UsageRule* internal_default_instance() {
-    return reinterpret_cast<const UsageRule*>(
-               &_UsageRule_default_instance_);
-  }
+  static const UsageRule* internal_default_instance();
 
   void Swap(UsageRule* other);
 
   // implements Message ----------------------------------------------
 
-  inline UsageRule* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline UsageRule* New() const { return New(NULL); }
 
-  UsageRule* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  UsageRule* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const UsageRule& from);
   void MergeFrom(const UsageRule& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(UsageRule* other);
+  void UnsafeMergeFrom(const UsageRule& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string selector = 1;
+  // optional string selector = 1;
   void clear_selector();
   static const int kSelectorFieldNumber = 1;
   const ::std::string& selector() const;
@@ -247,7 +239,7 @@ class UsageRule : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::std::string* release_selector();
   void set_allocated_selector(::std::string* selector);
 
-  // bool allow_unregistered_calls = 2;
+  // optional bool allow_unregistered_calls = 2;
   void clear_allow_unregistered_calls();
   static const int kAllowUnregisteredCallsFieldNumber = 2;
   bool allow_unregistered_calls() const;
@@ -262,10 +254,13 @@ class UsageRule : public ::google::protobuf::Message /* @@protoc_insertion_point
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fusage_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fusage_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fusage_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fusage_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fusage_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<UsageRule> UsageRule_default_instance_;
+
 // ===================================================================
 
 
@@ -359,13 +354,13 @@ Usage::rules() const {
   return rules_;
 }
 
-// string producer_notification_channel = 7;
+// optional string producer_notification_channel = 7;
 inline void Usage::clear_producer_notification_channel() {
   producer_notification_channel_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Usage::producer_notification_channel() const {
   // @@protoc_insertion_point(field_get:google.api.Usage.producer_notification_channel)
-  return producer_notification_channel_.GetNoArena();
+  return producer_notification_channel_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Usage::set_producer_notification_channel(const ::std::string& value) {
   
@@ -403,17 +398,20 @@ inline void Usage::set_allocated_producer_notification_channel(::std::string* pr
   // @@protoc_insertion_point(field_set_allocated:google.api.Usage.producer_notification_channel)
 }
 
+inline const Usage* Usage::internal_default_instance() {
+  return &Usage_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // UsageRule
 
-// string selector = 1;
+// optional string selector = 1;
 inline void UsageRule::clear_selector() {
   selector_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& UsageRule::selector() const {
   // @@protoc_insertion_point(field_get:google.api.UsageRule.selector)
-  return selector_.GetNoArena();
+  return selector_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void UsageRule::set_selector(const ::std::string& value) {
   
@@ -451,7 +449,7 @@ inline void UsageRule::set_allocated_selector(::std::string* selector) {
   // @@protoc_insertion_point(field_set_allocated:google.api.UsageRule.selector)
 }
 
-// bool allow_unregistered_calls = 2;
+// optional bool allow_unregistered_calls = 2;
 inline void UsageRule::clear_allow_unregistered_calls() {
   allow_unregistered_calls_ = false;
 }
@@ -465,12 +463,14 @@ inline void UsageRule::set_allow_unregistered_calls(bool value) {
   // @@protoc_insertion_point(field_set:google.api.UsageRule.allow_unregistered_calls)
 }
 
+inline const UsageRule* UsageRule::internal_default_instance() {
+  return &UsageRule_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace api
 }  // namespace google

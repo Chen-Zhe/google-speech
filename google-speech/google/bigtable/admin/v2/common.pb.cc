@@ -24,26 +24,27 @@ namespace v2 {
 
 namespace {
 
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+const ::google::protobuf::EnumDescriptor* StorageType_descriptor_ = NULL;
 
 }  // namespace
 
-inline ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto() { return NULL; }
-static const ::google::protobuf::internal::MigrationSchema* schemas = NULL;
-static const ::google::protobuf::internal::DefaultInstanceData* file_default_instances = NULL;
-namespace {
 
-void protobuf_AssignDescriptors() {
+void protobuf_AssignDesc_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto() {
   protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/bigtable/admin/v2/common.proto", schemas, file_default_instances, protobuf_Offsets_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto(), factory,
-      NULL, file_level_enum_descriptors, NULL);
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/bigtable/admin/v2/common.proto");
+  GOOGLE_CHECK(file != NULL);
+  StorageType_descriptor_ = file->enum_type(0);
 }
 
+namespace {
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
@@ -61,27 +62,26 @@ void protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto_impl(
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto_once_);
 void protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto();
-  static const char descriptor[] = {
-      "\n%google/bigtable/admin/v2/common.proto\022"
-      "\030google.bigtable.admin.v2\032\034google/api/an"
-      "notations.proto\032\037google/protobuf/timesta"
-      "mp.proto*=\n\013StorageType\022\034\n\030STORAGE_TYPE_"
-      "UNSPECIFIED\020\000\022\007\n\003SSD\020\001\022\007\n\003HDD\020\002Bl\n\034com.g"
-      "oogle.bigtable.admin.v2B\013CommonProtoP\001Z="
-      "google.golang.org/genproto/googleapis/bi"
-      "gtable/admin/v2;adminb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 309);
+    "\n%google/bigtable/admin/v2/common.proto\022"
+    "\030google.bigtable.admin.v2\032\034google/api/an"
+    "notations.proto\032\037google/protobuf/timesta"
+    "mp.proto*=\n\013StorageType\022\034\n\030STORAGE_TYPE_"
+    "UNSPECIFIED\020\000\022\007\n\003SSD\020\001\022\007\n\003HDD\020\002Bl\n\034com.g"
+    "oogle.bigtable.admin.v2B\013CommonProtoP\001Z="
+    "google.golang.org/genproto/googleapis/bi"
+    "gtable/admin/v2;adminb\006proto3", 309);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/bigtable/admin/v2/common.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -102,7 +102,7 @@ struct StaticDescriptorInitializer_google_2fbigtable_2fadmin_2fv2_2fcommon_2epro
 } static_descriptor_initializer_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto_;
 const ::google::protobuf::EnumDescriptor* StorageType_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
+  return StorageType_descriptor_;
 }
 bool StorageType_IsValid(int value) {
   switch (value) {

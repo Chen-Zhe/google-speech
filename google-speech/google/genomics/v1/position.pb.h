@@ -24,22 +24,11 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace genomics {
-namespace v1 {
-class Position;
-class PositionDefaultTypeInternal;
-extern PositionDefaultTypeInternal _Position_default_instance_;
-}  // namespace v1
-}  // namespace genomics
-}  // namespace google
 
 namespace google {
 namespace genomics {
@@ -48,6 +37,10 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fgenomics_2fv1_2fposition_2eproto();
 void protobuf_InitDefaults_google_2fgenomics_2fv1_2fposition_2eproto();
+void protobuf_AssignDesc_google_2fgenomics_2fv1_2fposition_2eproto();
+void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fposition_2eproto();
+
+class Position;
 
 // ===================================================================
 
@@ -63,52 +56,47 @@ class Position : public ::google::protobuf::Message /* @@protoc_insertion_point(
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const Position& default_instance();
 
-  static inline const Position* internal_default_instance() {
-    return reinterpret_cast<const Position*>(
-               &_Position_default_instance_);
-  }
+  static const Position* internal_default_instance();
 
   void UnsafeArenaSwap(Position* other);
   void Swap(Position* other);
 
   // implements Message ----------------------------------------------
 
-  inline Position* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Position* New() const { return New(NULL); }
 
-  Position* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Position* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Position& from);
   void MergeFrom(const Position& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Position* other);
+  void UnsafeMergeFrom(const Position& from);
   protected:
   explicit Position(::google::protobuf::Arena* arena);
   private:
@@ -123,13 +111,13 @@ class Position : public ::google::protobuf::Message /* @@protoc_insertion_point(
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string reference_name = 1;
+  // optional string reference_name = 1;
   void clear_reference_name();
   static const int kReferenceNameFieldNumber = 1;
   const ::std::string& reference_name() const;
@@ -143,13 +131,13 @@ class Position : public ::google::protobuf::Message /* @@protoc_insertion_point(
   void unsafe_arena_set_allocated_reference_name(
       ::std::string* reference_name);
 
-  // int64 position = 2;
+  // optional int64 position = 2;
   void clear_position();
   static const int kPositionFieldNumber = 2;
   ::google::protobuf::int64 position() const;
   void set_position(::google::protobuf::int64 value);
 
-  // bool reverse_strand = 3;
+  // optional bool reverse_strand = 3;
   void clear_reverse_strand();
   static const int kReverseStrandFieldNumber = 3;
   bool reverse_strand() const;
@@ -168,10 +156,13 @@ class Position : public ::google::protobuf::Message /* @@protoc_insertion_point(
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fposition_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fposition_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fposition_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fposition_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fposition_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Position> Position_default_instance_;
+
 // ===================================================================
 
 
@@ -180,13 +171,13 @@ class Position : public ::google::protobuf::Message /* @@protoc_insertion_point(
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Position
 
-// string reference_name = 1;
+// optional string reference_name = 1;
 inline void Position::clear_reference_name() {
   reference_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Position::reference_name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Position.reference_name)
-  return reference_name_.Get();
+  return reference_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Position::set_reference_name(const ::std::string& value) {
   
@@ -246,7 +237,7 @@ inline void Position::unsafe_arena_set_allocated_reference_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.Position.reference_name)
 }
 
-// int64 position = 2;
+// optional int64 position = 2;
 inline void Position::clear_position() {
   position_ = GOOGLE_LONGLONG(0);
 }
@@ -260,7 +251,7 @@ inline void Position::set_position(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.Position.position)
 }
 
-// bool reverse_strand = 3;
+// optional bool reverse_strand = 3;
 inline void Position::clear_reverse_strand() {
   reverse_strand_ = false;
 }
@@ -274,10 +265,12 @@ inline void Position::set_reverse_strand(bool value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.Position.reverse_strand)
 }
 
+inline const Position* Position::internal_default_instance() {
+  return &Position_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace genomics

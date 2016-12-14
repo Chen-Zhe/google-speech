@@ -23,27 +23,12 @@
 #include <google/protobuf/arenastring.h>
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/generated_enum_reflection.h>
 #include "google/api/annotations.pb.h"
 #include <google/protobuf/timestamp.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace bigtable {
-namespace admin {
-namespace v2 {
-}  // namespace v2
-}  // namespace admin
-}  // namespace bigtable
-namespace protobuf {
-class Timestamp;
-class TimestampDefaultTypeInternal;
-extern TimestampDefaultTypeInternal _Timestamp_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace bigtable {
@@ -53,6 +38,9 @@ namespace v2 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto();
 void protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto();
+void protobuf_AssignDesc_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto();
+void protobuf_ShutdownFile_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto();
+
 
 enum StorageType {
   STORAGE_TYPE_UNSPECIFIED = 0,
@@ -88,7 +76,6 @@ inline bool StorageType_Parse(
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v2
 }  // namespace admin

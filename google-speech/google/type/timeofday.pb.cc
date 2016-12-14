@@ -19,90 +19,87 @@
 
 namespace google {
 namespace type {
-class TimeOfDayDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<TimeOfDay> {};
-TimeOfDayDefaultTypeInternal _TimeOfDay_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[1];
+const ::google::protobuf::Descriptor* TimeOfDay_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TimeOfDay_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2ftype_2ftimeofday_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2ftype_2ftimeofday_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimeOfDay, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2ftype_2ftimeofday_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2ftype_2ftimeofday_2eproto() {
+  protobuf_AddDesc_google_2ftype_2ftimeofday_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/type/timeofday.proto");
+  GOOGLE_CHECK(file != NULL);
+  TimeOfDay_descriptor_ = file->message_type(0);
+  static const int TimeOfDay_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimeOfDay, hours_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimeOfDay, minutes_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimeOfDay, seconds_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimeOfDay, nanos_),
   };
-  return offsets;
+  TimeOfDay_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      TimeOfDay_descriptor_,
+      TimeOfDay::internal_default_instance(),
+      TimeOfDay_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(TimeOfDay),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimeOfDay, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(TimeOfDay)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_TimeOfDay_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2ftype_2ftimeofday_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/type/timeofday.proto", schemas, file_default_instances, protobuf_Offsets_google_2ftype_2ftimeofday_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2ftype_2ftimeofday_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      TimeOfDay_descriptor_, TimeOfDay::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2ftype_2ftimeofday_2eproto() {
-  _TimeOfDay_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
+  TimeOfDay_default_instance_.Shutdown();
+  delete TimeOfDay_reflection_;
 }
 
 void protobuf_InitDefaults_google_2ftype_2ftimeofday_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _TimeOfDay_default_instance_.DefaultConstruct();
+  TimeOfDay_default_instance_.DefaultConstruct();
+  TimeOfDay_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2ftype_2ftimeofday_2eproto_once_);
 void protobuf_InitDefaults_google_2ftype_2ftimeofday_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2ftype_2ftimeofday_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2ftype_2ftimeofday_2eproto_once_,
+                 &protobuf_InitDefaults_google_2ftype_2ftimeofday_2eproto_impl);
 }
 void protobuf_AddDesc_google_2ftype_2ftimeofday_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2ftype_2ftimeofday_2eproto();
-  static const char descriptor[] = {
-      "\n\033google/type/timeofday.proto\022\013google.ty"
-      "pe\"K\n\tTimeOfDay\022\r\n\005hours\030\001 \001(\005\022\017\n\007minute"
-      "s\030\002 \001(\005\022\017\n\007seconds\030\003 \001(\005\022\r\n\005nanos\030\004 \001(\005B"
-      "i\n\017com.google.typeB\016TimeOfDayProtoP\001Z>go"
-      "ogle.golang.org/genproto/googleapis/type"
-      "/timeofday;timeofday\242\002\003GTPb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 234);
+    "\n\033google/type/timeofday.proto\022\013google.ty"
+    "pe\"K\n\tTimeOfDay\022\r\n\005hours\030\001 \001(\005\022\017\n\007minute"
+    "s\030\002 \001(\005\022\017\n\007seconds\030\003 \001(\005\022\r\n\005nanos\030\004 \001(\005B"
+    "i\n\017com.google.typeB\016TimeOfDayProtoP\001Z>go"
+    "ogle.golang.org/genproto/googleapis/type"
+    "/timeofday;timeofday\242\002\003GTPb\006proto3", 234);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/type/timeofday.proto", &protobuf_RegisterTypes);
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2ftype_2ftimeofday_2eproto);
@@ -120,6 +117,16 @@ struct StaticDescriptorInitializer_google_2ftype_2ftimeofday_2eproto {
   }
 } static_descriptor_initializer_google_2ftype_2ftimeofday_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -131,20 +138,19 @@ const int TimeOfDay::kNanosFieldNumber;
 
 TimeOfDay::TimeOfDay()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2ftype_2ftimeofday_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2ftype_2ftimeofday_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.type.TimeOfDay)
 }
+
+void TimeOfDay::InitAsDefaultInstance() {
+}
+
 TimeOfDay::TimeOfDay(const TimeOfDay& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&hours_, &from.hours_,
-    reinterpret_cast<char*>(&nanos_) -
-    reinterpret_cast<char*>(&hours_) + sizeof(nanos_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.type.TimeOfDay)
 }
 
@@ -169,13 +175,15 @@ void TimeOfDay::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* TimeOfDay::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return TimeOfDay_descriptor_;
 }
 
 const TimeOfDay& TimeOfDay::default_instance() {
   protobuf_InitDefaults_google_2ftype_2ftimeofday_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<TimeOfDay> TimeOfDay_default_instance_;
 
 TimeOfDay* TimeOfDay::New(::google::protobuf::Arena* arena) const {
   TimeOfDay* n = new TimeOfDay;
@@ -187,8 +195,27 @@ TimeOfDay* TimeOfDay::New(::google::protobuf::Arena* arena) const {
 
 void TimeOfDay::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.type.TimeOfDay)
-  ::memset(&hours_, 0, reinterpret_cast<char*>(&nanos_) -
-    reinterpret_cast<char*>(&hours_) + sizeof(nanos_));
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(TimeOfDay, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<TimeOfDay*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(hours_, nanos_);
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool TimeOfDay::MergePartialFromCodedStream(
@@ -197,13 +224,13 @@ bool TimeOfDay::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.type.TimeOfDay)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 hours = 1;
+      // optional int32 hours = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -211,12 +238,14 @@ bool TimeOfDay::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_minutes;
         break;
       }
 
-      // int32 minutes = 2;
+      // optional int32 minutes = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_minutes:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -224,12 +253,14 @@ bool TimeOfDay::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_seconds;
         break;
       }
 
-      // int32 seconds = 3;
+      // optional int32 seconds = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_seconds:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -237,12 +268,14 @@ bool TimeOfDay::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_nanos;
         break;
       }
 
-      // int32 nanos = 4;
+      // optional int32 nanos = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_nanos:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -250,6 +283,7 @@ bool TimeOfDay::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -277,22 +311,22 @@ failure:
 void TimeOfDay::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.type.TimeOfDay)
-  // int32 hours = 1;
+  // optional int32 hours = 1;
   if (this->hours() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->hours(), output);
   }
 
-  // int32 minutes = 2;
+  // optional int32 minutes = 2;
   if (this->minutes() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->minutes(), output);
   }
 
-  // int32 seconds = 3;
+  // optional int32 seconds = 3;
   if (this->seconds() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->seconds(), output);
   }
 
-  // int32 nanos = 4;
+  // optional int32 nanos = 4;
   if (this->nanos() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->nanos(), output);
   }
@@ -304,22 +338,22 @@ void TimeOfDay::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.type.TimeOfDay)
-  // int32 hours = 1;
+  // optional int32 hours = 1;
   if (this->hours() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->hours(), target);
   }
 
-  // int32 minutes = 2;
+  // optional int32 minutes = 2;
   if (this->minutes() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->minutes(), target);
   }
 
-  // int32 seconds = 3;
+  // optional int32 seconds = 3;
   if (this->seconds() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->seconds(), target);
   }
 
-  // int32 nanos = 4;
+  // optional int32 nanos = 4;
   if (this->nanos() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->nanos(), target);
   }
@@ -332,28 +366,28 @@ size_t TimeOfDay::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.type.TimeOfDay)
   size_t total_size = 0;
 
-  // int32 hours = 1;
+  // optional int32 hours = 1;
   if (this->hours() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->hours());
   }
 
-  // int32 minutes = 2;
+  // optional int32 minutes = 2;
   if (this->minutes() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->minutes());
   }
 
-  // int32 seconds = 3;
+  // optional int32 seconds = 3;
   if (this->seconds() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->seconds());
   }
 
-  // int32 nanos = 4;
+  // optional int32 nanos = 4;
   if (this->nanos() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
@@ -369,7 +403,7 @@ size_t TimeOfDay::ByteSizeLong() const {
 
 void TimeOfDay::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.type.TimeOfDay)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const TimeOfDay* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const TimeOfDay>(
           &from);
@@ -378,14 +412,21 @@ void TimeOfDay::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.type.TimeOfDay)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void TimeOfDay::MergeFrom(const TimeOfDay& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.type.TimeOfDay)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void TimeOfDay::UnsafeMergeFrom(const TimeOfDay& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.hours() != 0) {
     set_hours(from.hours());
   }
@@ -411,10 +452,11 @@ void TimeOfDay::CopyFrom(const TimeOfDay& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.type.TimeOfDay)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool TimeOfDay::IsInitialized() const {
+
   return true;
 }
 
@@ -427,18 +469,22 @@ void TimeOfDay::InternalSwap(TimeOfDay* other) {
   std::swap(minutes_, other->minutes_);
   std::swap(seconds_, other->seconds_);
   std::swap(nanos_, other->nanos_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata TimeOfDay::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TimeOfDay_descriptor_;
+  metadata.reflection = TimeOfDay_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // TimeOfDay
 
-// int32 hours = 1;
+// optional int32 hours = 1;
 void TimeOfDay::clear_hours() {
   hours_ = 0;
 }
@@ -452,7 +498,7 @@ void TimeOfDay::set_hours(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.type.TimeOfDay.hours)
 }
 
-// int32 minutes = 2;
+// optional int32 minutes = 2;
 void TimeOfDay::clear_minutes() {
   minutes_ = 0;
 }
@@ -466,7 +512,7 @@ void TimeOfDay::set_minutes(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.type.TimeOfDay.minutes)
 }
 
-// int32 seconds = 3;
+// optional int32 seconds = 3;
 void TimeOfDay::clear_seconds() {
   seconds_ = 0;
 }
@@ -480,7 +526,7 @@ void TimeOfDay::set_seconds(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.type.TimeOfDay.seconds)
 }
 
-// int32 nanos = 4;
+// optional int32 nanos = 4;
 void TimeOfDay::clear_nanos() {
   nanos_ = 0;
 }
@@ -494,6 +540,9 @@ void TimeOfDay::set_nanos(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.type.TimeOfDay.nanos)
 }
 
+inline const TimeOfDay* TimeOfDay::internal_default_instance() {
+  return &TimeOfDay_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

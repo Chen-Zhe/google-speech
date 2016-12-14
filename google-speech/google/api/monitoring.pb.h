@@ -24,21 +24,11 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-class Monitoring;
-class MonitoringDefaultTypeInternal;
-extern MonitoringDefaultTypeInternal _Monitoring_default_instance_;
-class Monitoring_MonitoringDestination;
-class Monitoring_MonitoringDestinationDefaultTypeInternal;
-extern Monitoring_MonitoringDestinationDefaultTypeInternal _Monitoring_MonitoringDestination_default_instance_;
-}  // namespace api
-}  // namespace google
 
 namespace google {
 namespace api {
@@ -46,6 +36,11 @@ namespace api {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fapi_2fmonitoring_2eproto();
 void protobuf_InitDefaults_google_2fapi_2fmonitoring_2eproto();
+void protobuf_AssignDesc_google_2fapi_2fmonitoring_2eproto();
+void protobuf_ShutdownFile_google_2fapi_2fmonitoring_2eproto();
+
+class Monitoring;
+class Monitoring_MonitoringDestination;
 
 // ===================================================================
 
@@ -64,58 +59,55 @@ class Monitoring_MonitoringDestination : public ::google::protobuf::Message /* @
   static const ::google::protobuf::Descriptor* descriptor();
   static const Monitoring_MonitoringDestination& default_instance();
 
-  static inline const Monitoring_MonitoringDestination* internal_default_instance() {
-    return reinterpret_cast<const Monitoring_MonitoringDestination*>(
-               &_Monitoring_MonitoringDestination_default_instance_);
-  }
+  static const Monitoring_MonitoringDestination* internal_default_instance();
 
   void Swap(Monitoring_MonitoringDestination* other);
 
   // implements Message ----------------------------------------------
 
-  inline Monitoring_MonitoringDestination* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Monitoring_MonitoringDestination* New() const { return New(NULL); }
 
-  Monitoring_MonitoringDestination* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Monitoring_MonitoringDestination* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Monitoring_MonitoringDestination& from);
   void MergeFrom(const Monitoring_MonitoringDestination& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Monitoring_MonitoringDestination* other);
+  void UnsafeMergeFrom(const Monitoring_MonitoringDestination& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string monitored_resource = 1;
+  // optional string monitored_resource = 1;
   void clear_monitored_resource();
   static const int kMonitoredResourceFieldNumber = 1;
   const ::std::string& monitored_resource() const;
@@ -151,10 +143,13 @@ class Monitoring_MonitoringDestination : public ::google::protobuf::Message /* @
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fmonitoring_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fmonitoring_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fmonitoring_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fmonitoring_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fmonitoring_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Monitoring_MonitoringDestination> Monitoring_MonitoringDestination_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Monitoring : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.api.Monitoring) */ {
@@ -172,52 +167,49 @@ class Monitoring : public ::google::protobuf::Message /* @@protoc_insertion_poin
   static const ::google::protobuf::Descriptor* descriptor();
   static const Monitoring& default_instance();
 
-  static inline const Monitoring* internal_default_instance() {
-    return reinterpret_cast<const Monitoring*>(
-               &_Monitoring_default_instance_);
-  }
+  static const Monitoring* internal_default_instance();
 
   void Swap(Monitoring* other);
 
   // implements Message ----------------------------------------------
 
-  inline Monitoring* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Monitoring* New() const { return New(NULL); }
 
-  Monitoring* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Monitoring* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Monitoring& from);
   void MergeFrom(const Monitoring& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Monitoring* other);
+  void UnsafeMergeFrom(const Monitoring& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -258,10 +250,13 @@ class Monitoring : public ::google::protobuf::Message /* @@protoc_insertion_poin
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fmonitoring_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fmonitoring_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fmonitoring_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fmonitoring_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fmonitoring_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Monitoring> Monitoring_default_instance_;
+
 // ===================================================================
 
 
@@ -270,13 +265,13 @@ class Monitoring : public ::google::protobuf::Message /* @@protoc_insertion_poin
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Monitoring_MonitoringDestination
 
-// string monitored_resource = 1;
+// optional string monitored_resource = 1;
 inline void Monitoring_MonitoringDestination::clear_monitored_resource() {
   monitored_resource_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Monitoring_MonitoringDestination::monitored_resource() const {
   // @@protoc_insertion_point(field_get:google.api.Monitoring.MonitoringDestination.monitored_resource)
-  return monitored_resource_.GetNoArena();
+  return monitored_resource_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Monitoring_MonitoringDestination::set_monitored_resource(const ::std::string& value) {
   
@@ -369,6 +364,9 @@ Monitoring_MonitoringDestination::mutable_metrics() {
   return &metrics_;
 }
 
+inline const Monitoring_MonitoringDestination* Monitoring_MonitoringDestination::internal_default_instance() {
+  return &Monitoring_MonitoringDestination_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Monitoring
@@ -433,12 +431,14 @@ Monitoring::consumer_destinations() const {
   return consumer_destinations_;
 }
 
+inline const Monitoring* Monitoring::internal_default_instance() {
+  return &Monitoring_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace api
 }  // namespace google

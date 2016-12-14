@@ -24,28 +24,12 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include <google/protobuf/timestamp.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace appengine {
-namespace v1 {
-class OperationMetadataV1;
-class OperationMetadataV1DefaultTypeInternal;
-extern OperationMetadataV1DefaultTypeInternal _OperationMetadataV1_default_instance_;
-}  // namespace v1
-}  // namespace appengine
-namespace protobuf {
-class Timestamp;
-class TimestampDefaultTypeInternal;
-extern TimestampDefaultTypeInternal _Timestamp_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace appengine {
@@ -54,6 +38,10 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fappengine_2fv1_2foperation_2eproto();
 void protobuf_InitDefaults_google_2fappengine_2fv1_2foperation_2eproto();
+void protobuf_AssignDesc_google_2fappengine_2fv1_2foperation_2eproto();
+void protobuf_ShutdownFile_google_2fappengine_2fv1_2foperation_2eproto();
+
+class OperationMetadataV1;
 
 // ===================================================================
 
@@ -72,58 +60,55 @@ class OperationMetadataV1 : public ::google::protobuf::Message /* @@protoc_inser
   static const ::google::protobuf::Descriptor* descriptor();
   static const OperationMetadataV1& default_instance();
 
-  static inline const OperationMetadataV1* internal_default_instance() {
-    return reinterpret_cast<const OperationMetadataV1*>(
-               &_OperationMetadataV1_default_instance_);
-  }
+  static const OperationMetadataV1* internal_default_instance();
 
   void Swap(OperationMetadataV1* other);
 
   // implements Message ----------------------------------------------
 
-  inline OperationMetadataV1* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline OperationMetadataV1* New() const { return New(NULL); }
 
-  OperationMetadataV1* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  OperationMetadataV1* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const OperationMetadataV1& from);
   void MergeFrom(const OperationMetadataV1& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(OperationMetadataV1* other);
+  void UnsafeMergeFrom(const OperationMetadataV1& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string method = 1;
+  // optional string method = 1;
   void clear_method();
   static const int kMethodFieldNumber = 1;
   const ::std::string& method() const;
@@ -134,7 +119,7 @@ class OperationMetadataV1 : public ::google::protobuf::Message /* @@protoc_inser
   ::std::string* release_method();
   void set_allocated_method(::std::string* method);
 
-  // .google.protobuf.Timestamp insert_time = 2;
+  // optional .google.protobuf.Timestamp insert_time = 2;
   bool has_insert_time() const;
   void clear_insert_time();
   static const int kInsertTimeFieldNumber = 2;
@@ -143,7 +128,7 @@ class OperationMetadataV1 : public ::google::protobuf::Message /* @@protoc_inser
   ::google::protobuf::Timestamp* release_insert_time();
   void set_allocated_insert_time(::google::protobuf::Timestamp* insert_time);
 
-  // .google.protobuf.Timestamp end_time = 3;
+  // optional .google.protobuf.Timestamp end_time = 3;
   bool has_end_time() const;
   void clear_end_time();
   static const int kEndTimeFieldNumber = 3;
@@ -152,7 +137,7 @@ class OperationMetadataV1 : public ::google::protobuf::Message /* @@protoc_inser
   ::google::protobuf::Timestamp* release_end_time();
   void set_allocated_end_time(::google::protobuf::Timestamp* end_time);
 
-  // string user = 4;
+  // optional string user = 4;
   void clear_user();
   static const int kUserFieldNumber = 4;
   const ::std::string& user() const;
@@ -163,7 +148,7 @@ class OperationMetadataV1 : public ::google::protobuf::Message /* @@protoc_inser
   ::std::string* release_user();
   void set_allocated_user(::std::string* user);
 
-  // string target = 5;
+  // optional string target = 5;
   void clear_target();
   static const int kTargetFieldNumber = 5;
   const ::std::string& target() const;
@@ -186,10 +171,13 @@ class OperationMetadataV1 : public ::google::protobuf::Message /* @@protoc_inser
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2foperation_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2foperation_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2foperation_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2foperation_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2foperation_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<OperationMetadataV1> OperationMetadataV1_default_instance_;
+
 // ===================================================================
 
 
@@ -198,13 +186,13 @@ class OperationMetadataV1 : public ::google::protobuf::Message /* @@protoc_inser
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // OperationMetadataV1
 
-// string method = 1;
+// optional string method = 1;
 inline void OperationMetadataV1::clear_method() {
   method_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& OperationMetadataV1::method() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.OperationMetadataV1.method)
-  return method_.GetNoArena();
+  return method_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void OperationMetadataV1::set_method(const ::std::string& value) {
   
@@ -242,7 +230,7 @@ inline void OperationMetadataV1::set_allocated_method(::std::string* method) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.OperationMetadataV1.method)
 }
 
-// .google.protobuf.Timestamp insert_time = 2;
+// optional .google.protobuf.Timestamp insert_time = 2;
 inline bool OperationMetadataV1::has_insert_time() const {
   return this != internal_default_instance() && insert_time_ != NULL;
 }
@@ -286,7 +274,7 @@ inline void OperationMetadataV1::set_allocated_insert_time(::google::protobuf::T
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.OperationMetadataV1.insert_time)
 }
 
-// .google.protobuf.Timestamp end_time = 3;
+// optional .google.protobuf.Timestamp end_time = 3;
 inline bool OperationMetadataV1::has_end_time() const {
   return this != internal_default_instance() && end_time_ != NULL;
 }
@@ -330,13 +318,13 @@ inline void OperationMetadataV1::set_allocated_end_time(::google::protobuf::Time
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.OperationMetadataV1.end_time)
 }
 
-// string user = 4;
+// optional string user = 4;
 inline void OperationMetadataV1::clear_user() {
   user_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& OperationMetadataV1::user() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.OperationMetadataV1.user)
-  return user_.GetNoArena();
+  return user_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void OperationMetadataV1::set_user(const ::std::string& value) {
   
@@ -374,13 +362,13 @@ inline void OperationMetadataV1::set_allocated_user(::std::string* user) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.OperationMetadataV1.user)
 }
 
-// string target = 5;
+// optional string target = 5;
 inline void OperationMetadataV1::clear_target() {
   target_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& OperationMetadataV1::target() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.OperationMetadataV1.target)
-  return target_.GetNoArena();
+  return target_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void OperationMetadataV1::set_target(const ::std::string& value) {
   
@@ -418,10 +406,12 @@ inline void OperationMetadataV1::set_allocated_target(::std::string* target) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.OperationMetadataV1.target)
 }
 
+inline const OperationMetadataV1* OperationMetadataV1::internal_default_instance() {
+  return &OperationMetadataV1_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace appengine

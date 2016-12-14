@@ -19,157 +19,200 @@
 
 namespace google {
 namespace api {
-class AuthenticationDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Authentication> {};
-AuthenticationDefaultTypeInternal _Authentication_default_instance_;
-class AuthenticationRuleDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<AuthenticationRule> {};
-AuthenticationRuleDefaultTypeInternal _AuthenticationRule_default_instance_;
-class AuthProviderDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<AuthProvider> {};
-AuthProviderDefaultTypeInternal _AuthProvider_default_instance_;
-class OAuthRequirementsDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<OAuthRequirements> {};
-OAuthRequirementsDefaultTypeInternal _OAuthRequirements_default_instance_;
-class AuthRequirementDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<AuthRequirement> {};
-AuthRequirementDefaultTypeInternal _AuthRequirement_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[5];
+const ::google::protobuf::Descriptor* Authentication_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Authentication_reflection_ = NULL;
+const ::google::protobuf::Descriptor* AuthenticationRule_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  AuthenticationRule_reflection_ = NULL;
+const ::google::protobuf::Descriptor* AuthProvider_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  AuthProvider_reflection_ = NULL;
+const ::google::protobuf::Descriptor* OAuthRequirements_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  OAuthRequirements_reflection_ = NULL;
+const ::google::protobuf::Descriptor* AuthRequirement_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  AuthRequirement_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fauth_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fauth_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Authentication, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fapi_2fauth_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fapi_2fauth_2eproto() {
+  protobuf_AddDesc_google_2fapi_2fauth_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/api/auth.proto");
+  GOOGLE_CHECK(file != NULL);
+  Authentication_descriptor_ = file->message_type(0);
+  static const int Authentication_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Authentication, rules_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Authentication, providers_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AuthenticationRule, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Authentication_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Authentication_descriptor_,
+      Authentication::internal_default_instance(),
+      Authentication_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Authentication),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Authentication, _internal_metadata_));
+  AuthenticationRule_descriptor_ = file->message_type(1);
+  static const int AuthenticationRule_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AuthenticationRule, selector_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AuthenticationRule, oauth_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AuthenticationRule, allow_without_credential_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AuthenticationRule, requirements_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AuthProvider, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  AuthenticationRule_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      AuthenticationRule_descriptor_,
+      AuthenticationRule::internal_default_instance(),
+      AuthenticationRule_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(AuthenticationRule),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AuthenticationRule, _internal_metadata_));
+  AuthProvider_descriptor_ = file->message_type(2);
+  static const int AuthProvider_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AuthProvider, id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AuthProvider, issuer_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AuthProvider, jwks_uri_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AuthProvider, audiences_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OAuthRequirements, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  AuthProvider_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      AuthProvider_descriptor_,
+      AuthProvider::internal_default_instance(),
+      AuthProvider_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(AuthProvider),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AuthProvider, _internal_metadata_));
+  OAuthRequirements_descriptor_ = file->message_type(3);
+  static const int OAuthRequirements_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OAuthRequirements, canonical_scopes_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AuthRequirement, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  OAuthRequirements_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      OAuthRequirements_descriptor_,
+      OAuthRequirements::internal_default_instance(),
+      OAuthRequirements_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(OAuthRequirements),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(OAuthRequirements, _internal_metadata_));
+  AuthRequirement_descriptor_ = file->message_type(4);
+  static const int AuthRequirement_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AuthRequirement, provider_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AuthRequirement, audiences_),
   };
-  return offsets;
+  AuthRequirement_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      AuthRequirement_descriptor_,
+      AuthRequirement::internal_default_instance(),
+      AuthRequirement_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(AuthRequirement),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AuthRequirement, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(Authentication)},
-  { 6, -1, sizeof(AuthenticationRule)},
-  { 14, -1, sizeof(AuthProvider)},
-  { 22, -1, sizeof(OAuthRequirements)},
-  { 27, -1, sizeof(AuthRequirement)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Authentication_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_AuthenticationRule_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_AuthProvider_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_OAuthRequirements_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_AuthRequirement_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fapi_2fauth_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/api/auth.proto", schemas, file_default_instances, protobuf_Offsets_google_2fapi_2fauth_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fapi_2fauth_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 5);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Authentication_descriptor_, Authentication::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      AuthenticationRule_descriptor_, AuthenticationRule::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      AuthProvider_descriptor_, AuthProvider::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      OAuthRequirements_descriptor_, OAuthRequirements::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      AuthRequirement_descriptor_, AuthRequirement::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2fauth_2eproto() {
-  _Authentication_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _AuthenticationRule_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _AuthProvider_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _OAuthRequirements_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _AuthRequirement_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
+  Authentication_default_instance_.Shutdown();
+  delete Authentication_reflection_;
+  AuthenticationRule_default_instance_.Shutdown();
+  delete AuthenticationRule_reflection_;
+  AuthProvider_default_instance_.Shutdown();
+  delete AuthProvider_reflection_;
+  OAuthRequirements_default_instance_.Shutdown();
+  delete OAuthRequirements_reflection_;
+  AuthRequirement_default_instance_.Shutdown();
+  delete AuthRequirement_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fapi_2fauth_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _Authentication_default_instance_.DefaultConstruct();
-  _AuthenticationRule_default_instance_.DefaultConstruct();
-  _AuthProvider_default_instance_.DefaultConstruct();
-  _OAuthRequirements_default_instance_.DefaultConstruct();
-  _AuthRequirement_default_instance_.DefaultConstruct();
-  _AuthenticationRule_default_instance_.get_mutable()->oauth_ = const_cast< ::google::api::OAuthRequirements*>(
-      ::google::api::OAuthRequirements::internal_default_instance());
+  Authentication_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  AuthenticationRule_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  AuthProvider_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  OAuthRequirements_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  AuthRequirement_default_instance_.DefaultConstruct();
+  Authentication_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AuthenticationRule_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AuthProvider_default_instance_.get_mutable()->InitAsDefaultInstance();
+  OAuthRequirements_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AuthRequirement_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fauth_2eproto_once_);
 void protobuf_InitDefaults_google_2fapi_2fauth_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fapi_2fauth_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fauth_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fauth_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fapi_2fauth_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fapi_2fauth_2eproto();
-  static const char descriptor[] = {
-      "\n\025google/api/auth.proto\022\ngoogle.api\032\034goo"
-      "gle/api/annotations.proto\"l\n\016Authenticat"
-      "ion\022-\n\005rules\030\003 \003(\0132\036.google.api.Authenti"
-      "cationRule\022+\n\tproviders\030\004 \003(\0132\030.google.a"
-      "pi.AuthProvider\"\251\001\n\022AuthenticationRule\022\020"
-      "\n\010selector\030\001 \001(\t\022,\n\005oauth\030\002 \001(\0132\035.google"
-      ".api.OAuthRequirements\022 \n\030allow_without_"
-      "credential\030\005 \001(\010\0221\n\014requirements\030\007 \003(\0132\033"
-      ".google.api.AuthRequirement\"O\n\014AuthProvi"
-      "der\022\n\n\002id\030\001 \001(\t\022\016\n\006issuer\030\002 \001(\t\022\020\n\010jwks_"
-      "uri\030\003 \001(\t\022\021\n\taudiences\030\004 \001(\t\"-\n\021OAuthReq"
-      "uirements\022\030\n\020canonical_scopes\030\001 \001(\t\"9\n\017A"
-      "uthRequirement\022\023\n\013provider_id\030\001 \001(\t\022\021\n\ta"
-      "udiences\030\002 \001(\tBk\n\016com.google.apiB\tAuthPr"
-      "otoP\001ZEgoogle.golang.org/genproto/google"
-      "apis/api/serviceconfig;serviceconfig\242\002\004G"
-      "APIb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 651);
+    "\n\025google/api/auth.proto\022\ngoogle.api\032\034goo"
+    "gle/api/annotations.proto\"l\n\016Authenticat"
+    "ion\022-\n\005rules\030\003 \003(\0132\036.google.api.Authenti"
+    "cationRule\022+\n\tproviders\030\004 \003(\0132\030.google.a"
+    "pi.AuthProvider\"\251\001\n\022AuthenticationRule\022\020"
+    "\n\010selector\030\001 \001(\t\022,\n\005oauth\030\002 \001(\0132\035.google"
+    ".api.OAuthRequirements\022 \n\030allow_without_"
+    "credential\030\005 \001(\010\0221\n\014requirements\030\007 \003(\0132\033"
+    ".google.api.AuthRequirement\"O\n\014AuthProvi"
+    "der\022\n\n\002id\030\001 \001(\t\022\016\n\006issuer\030\002 \001(\t\022\020\n\010jwks_"
+    "uri\030\003 \001(\t\022\021\n\taudiences\030\004 \001(\t\"-\n\021OAuthReq"
+    "uirements\022\030\n\020canonical_scopes\030\001 \001(\t\"9\n\017A"
+    "uthRequirement\022\023\n\013provider_id\030\001 \001(\t\022\021\n\ta"
+    "udiences\030\002 \001(\tBk\n\016com.google.apiB\tAuthPr"
+    "otoP\001ZEgoogle.golang.org/genproto/google"
+    "apis/api/serviceconfig;serviceconfig\242\002\004G"
+    "APIb\006proto3", 651);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/auth.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -188,6 +231,16 @@ struct StaticDescriptorInitializer_google_2fapi_2fauth_2eproto {
   }
 } static_descriptor_initializer_google_2fapi_2fauth_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -197,19 +250,19 @@ const int Authentication::kProvidersFieldNumber;
 
 Authentication::Authentication()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fauth_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fauth_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Authentication)
 }
+
+void Authentication::InitAsDefaultInstance() {
+}
+
 Authentication::Authentication(const Authentication& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      rules_(from.rules_),
-      providers_(from.providers_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Authentication)
 }
 
@@ -232,13 +285,15 @@ void Authentication::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Authentication::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return Authentication_descriptor_;
 }
 
 const Authentication& Authentication::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fauth_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Authentication> Authentication_default_instance_;
 
 Authentication* Authentication::New(::google::protobuf::Arena* arena) const {
   Authentication* n = new Authentication;
@@ -260,33 +315,39 @@ bool Authentication::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.Authentication)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.api.AuthenticationRule rules = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_rules:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_rules()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_loop_rules;
+        if (input->ExpectTag(34)) goto parse_loop_providers;
         input->UnsafeDecrementRecursionDepth();
         break;
       }
 
       // repeated .google.api.AuthProvider providers = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_providers:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_providers()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_loop_providers;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -386,7 +447,7 @@ size_t Authentication::ByteSizeLong() const {
 
 void Authentication::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Authentication)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Authentication* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Authentication>(
           &from);
@@ -395,14 +456,21 @@ void Authentication::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Authentication)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Authentication::MergeFrom(const Authentication& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Authentication)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Authentication::UnsafeMergeFrom(const Authentication& from) {
+  GOOGLE_DCHECK(&from != this);
   rules_.MergeFrom(from.rules_);
   providers_.MergeFrom(from.providers_);
 }
@@ -418,10 +486,11 @@ void Authentication::CopyFrom(const Authentication& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Authentication)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Authentication::IsInitialized() const {
+
   return true;
 }
 
@@ -432,12 +501,16 @@ void Authentication::Swap(Authentication* other) {
 void Authentication::InternalSwap(Authentication* other) {
   rules_.UnsafeArenaSwap(&other->rules_);
   providers_.UnsafeArenaSwap(&other->providers_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Authentication::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Authentication_descriptor_;
+  metadata.reflection = Authentication_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -503,6 +576,9 @@ Authentication::providers() const {
   return providers_;
 }
 
+inline const Authentication* Authentication::internal_default_instance() {
+  return &Authentication_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -516,35 +592,28 @@ const int AuthenticationRule::kRequirementsFieldNumber;
 
 AuthenticationRule::AuthenticationRule()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fauth_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fauth_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.AuthenticationRule)
 }
+
+void AuthenticationRule::InitAsDefaultInstance() {
+  oauth_ = const_cast< ::google::api::OAuthRequirements*>(
+      ::google::api::OAuthRequirements::internal_default_instance());
+}
+
 AuthenticationRule::AuthenticationRule(const AuthenticationRule& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      requirements_(from.requirements_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  selector_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.selector().size() > 0) {
-    selector_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.selector_);
-  }
-  if (from.has_oauth()) {
-    oauth_ = new ::google::api::OAuthRequirements(*from.oauth_);
-  } else {
-    oauth_ = NULL;
-  }
-  allow_without_credential_ = from.allow_without_credential_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.AuthenticationRule)
 }
 
 void AuthenticationRule::SharedCtor() {
   selector_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&oauth_, 0, reinterpret_cast<char*>(&allow_without_credential_) -
-    reinterpret_cast<char*>(&oauth_) + sizeof(allow_without_credential_));
+  oauth_ = NULL;
+  allow_without_credential_ = false;
   _cached_size_ = 0;
 }
 
@@ -555,7 +624,7 @@ AuthenticationRule::~AuthenticationRule() {
 
 void AuthenticationRule::SharedDtor() {
   selector_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &AuthenticationRule_default_instance_.get()) {
     delete oauth_;
   }
 }
@@ -567,13 +636,15 @@ void AuthenticationRule::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* AuthenticationRule::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return AuthenticationRule_descriptor_;
 }
 
 const AuthenticationRule& AuthenticationRule::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fauth_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<AuthenticationRule> AuthenticationRule_default_instance_;
 
 AuthenticationRule* AuthenticationRule::New(::google::protobuf::Arena* arena) const {
   AuthenticationRule* n = new AuthenticationRule;
@@ -585,13 +656,11 @@ AuthenticationRule* AuthenticationRule::New(::google::protobuf::Arena* arena) co
 
 void AuthenticationRule::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.api.AuthenticationRule)
-  requirements_.Clear();
   selector_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && oauth_ != NULL) {
-    delete oauth_;
-  }
+  if (GetArenaNoVirtual() == NULL && oauth_ != NULL) delete oauth_;
   oauth_ = NULL;
   allow_without_credential_ = false;
+  requirements_.Clear();
 }
 
 bool AuthenticationRule::MergePartialFromCodedStream(
@@ -600,13 +669,13 @@ bool AuthenticationRule::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.AuthenticationRule)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string selector = 1;
+      // optional string selector = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_selector()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -616,23 +685,27 @@ bool AuthenticationRule::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_oauth;
         break;
       }
 
-      // .google.api.OAuthRequirements oauth = 2;
+      // optional .google.api.OAuthRequirements oauth = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_oauth:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_oauth()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(40)) goto parse_allow_without_credential;
         break;
       }
 
-      // bool allow_without_credential = 5;
+      // optional bool allow_without_credential = 5;
       case 5: {
-        if (tag == 40u) {
+        if (tag == 40) {
+         parse_allow_without_credential:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -640,19 +713,24 @@ bool AuthenticationRule::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(58)) goto parse_requirements;
         break;
       }
 
       // repeated .google.api.AuthRequirement requirements = 7;
       case 7: {
-        if (tag == 58u) {
+        if (tag == 58) {
+         parse_requirements:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_requirements:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_requirements()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(58)) goto parse_loop_requirements;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -680,7 +758,7 @@ failure:
 void AuthenticationRule::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.api.AuthenticationRule)
-  // string selector = 1;
+  // optional string selector = 1;
   if (this->selector().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->selector().data(), this->selector().length(),
@@ -690,13 +768,13 @@ void AuthenticationRule::SerializeWithCachedSizes(
       1, this->selector(), output);
   }
 
-  // .google.api.OAuthRequirements oauth = 2;
+  // optional .google.api.OAuthRequirements oauth = 2;
   if (this->has_oauth()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->oauth_, output);
   }
 
-  // bool allow_without_credential = 5;
+  // optional bool allow_without_credential = 5;
   if (this->allow_without_credential() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(5, this->allow_without_credential(), output);
   }
@@ -714,7 +792,7 @@ void AuthenticationRule::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.AuthenticationRule)
-  // string selector = 1;
+  // optional string selector = 1;
   if (this->selector().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->selector().data(), this->selector().length(),
@@ -725,14 +803,14 @@ void AuthenticationRule::SerializeWithCachedSizes(
         1, this->selector(), target);
   }
 
-  // .google.api.OAuthRequirements oauth = 2;
+  // optional .google.api.OAuthRequirements oauth = 2;
   if (this->has_oauth()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *this->oauth_, false, target);
   }
 
-  // bool allow_without_credential = 5;
+  // optional bool allow_without_credential = 5;
   if (this->allow_without_credential() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(5, this->allow_without_credential(), target);
   }
@@ -752,6 +830,25 @@ size_t AuthenticationRule::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.AuthenticationRule)
   size_t total_size = 0;
 
+  // optional string selector = 1;
+  if (this->selector().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->selector());
+  }
+
+  // optional .google.api.OAuthRequirements oauth = 2;
+  if (this->has_oauth()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->oauth_);
+  }
+
+  // optional bool allow_without_credential = 5;
+  if (this->allow_without_credential() != 0) {
+    total_size += 1 + 1;
+  }
+
   // repeated .google.api.AuthRequirement requirements = 7;
   {
     unsigned int count = this->requirements_size();
@@ -763,25 +860,6 @@ size_t AuthenticationRule::ByteSizeLong() const {
     }
   }
 
-  // string selector = 1;
-  if (this->selector().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->selector());
-  }
-
-  // .google.api.OAuthRequirements oauth = 2;
-  if (this->has_oauth()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->oauth_);
-  }
-
-  // bool allow_without_credential = 5;
-  if (this->allow_without_credential() != 0) {
-    total_size += 1 + 1;
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -791,7 +869,7 @@ size_t AuthenticationRule::ByteSizeLong() const {
 
 void AuthenticationRule::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.AuthenticationRule)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const AuthenticationRule* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AuthenticationRule>(
           &from);
@@ -800,14 +878,21 @@ void AuthenticationRule::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.AuthenticationRule)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AuthenticationRule::MergeFrom(const AuthenticationRule& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.AuthenticationRule)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void AuthenticationRule::UnsafeMergeFrom(const AuthenticationRule& from) {
+  GOOGLE_DCHECK(&from != this);
   requirements_.MergeFrom(from.requirements_);
   if (from.selector().size() > 0) {
 
@@ -832,10 +917,11 @@ void AuthenticationRule::CopyFrom(const AuthenticationRule& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.AuthenticationRule)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AuthenticationRule::IsInitialized() const {
+
   return true;
 }
 
@@ -844,28 +930,32 @@ void AuthenticationRule::Swap(AuthenticationRule* other) {
   InternalSwap(other);
 }
 void AuthenticationRule::InternalSwap(AuthenticationRule* other) {
-  requirements_.UnsafeArenaSwap(&other->requirements_);
   selector_.Swap(&other->selector_);
   std::swap(oauth_, other->oauth_);
   std::swap(allow_without_credential_, other->allow_without_credential_);
+  requirements_.UnsafeArenaSwap(&other->requirements_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata AuthenticationRule::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = AuthenticationRule_descriptor_;
+  metadata.reflection = AuthenticationRule_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // AuthenticationRule
 
-// string selector = 1;
+// optional string selector = 1;
 void AuthenticationRule::clear_selector() {
   selector_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& AuthenticationRule::selector() const {
   // @@protoc_insertion_point(field_get:google.api.AuthenticationRule.selector)
-  return selector_.GetNoArena();
+  return selector_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void AuthenticationRule::set_selector(const ::std::string& value) {
   
@@ -903,7 +993,7 @@ void AuthenticationRule::set_allocated_selector(::std::string* selector) {
   // @@protoc_insertion_point(field_set_allocated:google.api.AuthenticationRule.selector)
 }
 
-// .google.api.OAuthRequirements oauth = 2;
+// optional .google.api.OAuthRequirements oauth = 2;
 bool AuthenticationRule::has_oauth() const {
   return this != internal_default_instance() && oauth_ != NULL;
 }
@@ -942,7 +1032,7 @@ void AuthenticationRule::set_allocated_oauth(::google::api::OAuthRequirements* o
   // @@protoc_insertion_point(field_set_allocated:google.api.AuthenticationRule.oauth)
 }
 
-// bool allow_without_credential = 5;
+// optional bool allow_without_credential = 5;
 void AuthenticationRule::clear_allow_without_credential() {
   allow_without_credential_ = false;
 }
@@ -986,6 +1076,9 @@ AuthenticationRule::requirements() const {
   return requirements_;
 }
 
+inline const AuthenticationRule* AuthenticationRule::internal_default_instance() {
+  return &AuthenticationRule_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -999,33 +1092,19 @@ const int AuthProvider::kAudiencesFieldNumber;
 
 AuthProvider::AuthProvider()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fauth_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fauth_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.AuthProvider)
 }
+
+void AuthProvider::InitAsDefaultInstance() {
+}
+
 AuthProvider::AuthProvider(const AuthProvider& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.id().size() > 0) {
-    id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.id_);
-  }
-  issuer_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.issuer().size() > 0) {
-    issuer_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.issuer_);
-  }
-  jwks_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.jwks_uri().size() > 0) {
-    jwks_uri_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.jwks_uri_);
-  }
-  audiences_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.audiences().size() > 0) {
-    audiences_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.audiences_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.AuthProvider)
 }
 
@@ -1056,13 +1135,15 @@ void AuthProvider::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* AuthProvider::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return AuthProvider_descriptor_;
 }
 
 const AuthProvider& AuthProvider::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fauth_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<AuthProvider> AuthProvider_default_instance_;
 
 AuthProvider* AuthProvider::New(::google::protobuf::Arena* arena) const {
   AuthProvider* n = new AuthProvider;
@@ -1086,13 +1167,13 @@ bool AuthProvider::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.AuthProvider)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string id = 1;
+      // optional string id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1102,12 +1183,14 @@ bool AuthProvider::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_issuer;
         break;
       }
 
-      // string issuer = 2;
+      // optional string issuer = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_issuer:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_issuer()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1117,12 +1200,14 @@ bool AuthProvider::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_jwks_uri;
         break;
       }
 
-      // string jwks_uri = 3;
+      // optional string jwks_uri = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_jwks_uri:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_jwks_uri()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1132,12 +1217,14 @@ bool AuthProvider::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_audiences;
         break;
       }
 
-      // string audiences = 4;
+      // optional string audiences = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_audiences:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_audiences()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1147,6 +1234,7 @@ bool AuthProvider::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1174,7 +1262,7 @@ failure:
 void AuthProvider::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.api.AuthProvider)
-  // string id = 1;
+  // optional string id = 1;
   if (this->id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->id().data(), this->id().length(),
@@ -1184,7 +1272,7 @@ void AuthProvider::SerializeWithCachedSizes(
       1, this->id(), output);
   }
 
-  // string issuer = 2;
+  // optional string issuer = 2;
   if (this->issuer().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->issuer().data(), this->issuer().length(),
@@ -1194,7 +1282,7 @@ void AuthProvider::SerializeWithCachedSizes(
       2, this->issuer(), output);
   }
 
-  // string jwks_uri = 3;
+  // optional string jwks_uri = 3;
   if (this->jwks_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->jwks_uri().data(), this->jwks_uri().length(),
@@ -1204,7 +1292,7 @@ void AuthProvider::SerializeWithCachedSizes(
       3, this->jwks_uri(), output);
   }
 
-  // string audiences = 4;
+  // optional string audiences = 4;
   if (this->audiences().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->audiences().data(), this->audiences().length(),
@@ -1221,7 +1309,7 @@ void AuthProvider::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.AuthProvider)
-  // string id = 1;
+  // optional string id = 1;
   if (this->id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->id().data(), this->id().length(),
@@ -1232,7 +1320,7 @@ void AuthProvider::SerializeWithCachedSizes(
         1, this->id(), target);
   }
 
-  // string issuer = 2;
+  // optional string issuer = 2;
   if (this->issuer().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->issuer().data(), this->issuer().length(),
@@ -1243,7 +1331,7 @@ void AuthProvider::SerializeWithCachedSizes(
         2, this->issuer(), target);
   }
 
-  // string jwks_uri = 3;
+  // optional string jwks_uri = 3;
   if (this->jwks_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->jwks_uri().data(), this->jwks_uri().length(),
@@ -1254,7 +1342,7 @@ void AuthProvider::SerializeWithCachedSizes(
         3, this->jwks_uri(), target);
   }
 
-  // string audiences = 4;
+  // optional string audiences = 4;
   if (this->audiences().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->audiences().data(), this->audiences().length(),
@@ -1273,28 +1361,28 @@ size_t AuthProvider::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.AuthProvider)
   size_t total_size = 0;
 
-  // string id = 1;
+  // optional string id = 1;
   if (this->id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->id());
   }
 
-  // string issuer = 2;
+  // optional string issuer = 2;
   if (this->issuer().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->issuer());
   }
 
-  // string jwks_uri = 3;
+  // optional string jwks_uri = 3;
   if (this->jwks_uri().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->jwks_uri());
   }
 
-  // string audiences = 4;
+  // optional string audiences = 4;
   if (this->audiences().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -1310,7 +1398,7 @@ size_t AuthProvider::ByteSizeLong() const {
 
 void AuthProvider::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.AuthProvider)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const AuthProvider* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AuthProvider>(
           &from);
@@ -1319,14 +1407,21 @@ void AuthProvider::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.AuthProvider)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AuthProvider::MergeFrom(const AuthProvider& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.AuthProvider)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void AuthProvider::UnsafeMergeFrom(const AuthProvider& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.id().size() > 0) {
 
     id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.id_);
@@ -1356,10 +1451,11 @@ void AuthProvider::CopyFrom(const AuthProvider& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.AuthProvider)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AuthProvider::IsInitialized() const {
+
   return true;
 }
 
@@ -1372,24 +1468,28 @@ void AuthProvider::InternalSwap(AuthProvider* other) {
   issuer_.Swap(&other->issuer_);
   jwks_uri_.Swap(&other->jwks_uri_);
   audiences_.Swap(&other->audiences_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata AuthProvider::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = AuthProvider_descriptor_;
+  metadata.reflection = AuthProvider_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // AuthProvider
 
-// string id = 1;
+// optional string id = 1;
 void AuthProvider::clear_id() {
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& AuthProvider::id() const {
   // @@protoc_insertion_point(field_get:google.api.AuthProvider.id)
-  return id_.GetNoArena();
+  return id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void AuthProvider::set_id(const ::std::string& value) {
   
@@ -1427,13 +1527,13 @@ void AuthProvider::set_allocated_id(::std::string* id) {
   // @@protoc_insertion_point(field_set_allocated:google.api.AuthProvider.id)
 }
 
-// string issuer = 2;
+// optional string issuer = 2;
 void AuthProvider::clear_issuer() {
   issuer_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& AuthProvider::issuer() const {
   // @@protoc_insertion_point(field_get:google.api.AuthProvider.issuer)
-  return issuer_.GetNoArena();
+  return issuer_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void AuthProvider::set_issuer(const ::std::string& value) {
   
@@ -1471,13 +1571,13 @@ void AuthProvider::set_allocated_issuer(::std::string* issuer) {
   // @@protoc_insertion_point(field_set_allocated:google.api.AuthProvider.issuer)
 }
 
-// string jwks_uri = 3;
+// optional string jwks_uri = 3;
 void AuthProvider::clear_jwks_uri() {
   jwks_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& AuthProvider::jwks_uri() const {
   // @@protoc_insertion_point(field_get:google.api.AuthProvider.jwks_uri)
-  return jwks_uri_.GetNoArena();
+  return jwks_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void AuthProvider::set_jwks_uri(const ::std::string& value) {
   
@@ -1515,13 +1615,13 @@ void AuthProvider::set_allocated_jwks_uri(::std::string* jwks_uri) {
   // @@protoc_insertion_point(field_set_allocated:google.api.AuthProvider.jwks_uri)
 }
 
-// string audiences = 4;
+// optional string audiences = 4;
 void AuthProvider::clear_audiences() {
   audiences_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& AuthProvider::audiences() const {
   // @@protoc_insertion_point(field_get:google.api.AuthProvider.audiences)
-  return audiences_.GetNoArena();
+  return audiences_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void AuthProvider::set_audiences(const ::std::string& value) {
   
@@ -1559,6 +1659,9 @@ void AuthProvider::set_allocated_audiences(::std::string* audiences) {
   // @@protoc_insertion_point(field_set_allocated:google.api.AuthProvider.audiences)
 }
 
+inline const AuthProvider* AuthProvider::internal_default_instance() {
+  return &AuthProvider_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1569,21 +1672,19 @@ const int OAuthRequirements::kCanonicalScopesFieldNumber;
 
 OAuthRequirements::OAuthRequirements()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fauth_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fauth_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.OAuthRequirements)
 }
+
+void OAuthRequirements::InitAsDefaultInstance() {
+}
+
 OAuthRequirements::OAuthRequirements(const OAuthRequirements& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  canonical_scopes_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.canonical_scopes().size() > 0) {
-    canonical_scopes_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.canonical_scopes_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.OAuthRequirements)
 }
 
@@ -1608,13 +1709,15 @@ void OAuthRequirements::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* OAuthRequirements::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return OAuthRequirements_descriptor_;
 }
 
 const OAuthRequirements& OAuthRequirements::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fauth_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<OAuthRequirements> OAuthRequirements_default_instance_;
 
 OAuthRequirements* OAuthRequirements::New(::google::protobuf::Arena* arena) const {
   OAuthRequirements* n = new OAuthRequirements;
@@ -1635,13 +1738,13 @@ bool OAuthRequirements::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.OAuthRequirements)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string canonical_scopes = 1;
+      // optional string canonical_scopes = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_canonical_scopes()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1651,6 +1754,7 @@ bool OAuthRequirements::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1678,7 +1782,7 @@ failure:
 void OAuthRequirements::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.api.OAuthRequirements)
-  // string canonical_scopes = 1;
+  // optional string canonical_scopes = 1;
   if (this->canonical_scopes().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->canonical_scopes().data(), this->canonical_scopes().length(),
@@ -1695,7 +1799,7 @@ void OAuthRequirements::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.OAuthRequirements)
-  // string canonical_scopes = 1;
+  // optional string canonical_scopes = 1;
   if (this->canonical_scopes().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->canonical_scopes().data(), this->canonical_scopes().length(),
@@ -1714,7 +1818,7 @@ size_t OAuthRequirements::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.OAuthRequirements)
   size_t total_size = 0;
 
-  // string canonical_scopes = 1;
+  // optional string canonical_scopes = 1;
   if (this->canonical_scopes().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -1730,7 +1834,7 @@ size_t OAuthRequirements::ByteSizeLong() const {
 
 void OAuthRequirements::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.OAuthRequirements)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const OAuthRequirements* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const OAuthRequirements>(
           &from);
@@ -1739,14 +1843,21 @@ void OAuthRequirements::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.OAuthRequirements)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void OAuthRequirements::MergeFrom(const OAuthRequirements& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.OAuthRequirements)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void OAuthRequirements::UnsafeMergeFrom(const OAuthRequirements& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.canonical_scopes().size() > 0) {
 
     canonical_scopes_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.canonical_scopes_);
@@ -1764,10 +1875,11 @@ void OAuthRequirements::CopyFrom(const OAuthRequirements& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.OAuthRequirements)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool OAuthRequirements::IsInitialized() const {
+
   return true;
 }
 
@@ -1777,24 +1889,28 @@ void OAuthRequirements::Swap(OAuthRequirements* other) {
 }
 void OAuthRequirements::InternalSwap(OAuthRequirements* other) {
   canonical_scopes_.Swap(&other->canonical_scopes_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata OAuthRequirements::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = OAuthRequirements_descriptor_;
+  metadata.reflection = OAuthRequirements_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // OAuthRequirements
 
-// string canonical_scopes = 1;
+// optional string canonical_scopes = 1;
 void OAuthRequirements::clear_canonical_scopes() {
   canonical_scopes_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& OAuthRequirements::canonical_scopes() const {
   // @@protoc_insertion_point(field_get:google.api.OAuthRequirements.canonical_scopes)
-  return canonical_scopes_.GetNoArena();
+  return canonical_scopes_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void OAuthRequirements::set_canonical_scopes(const ::std::string& value) {
   
@@ -1832,6 +1948,9 @@ void OAuthRequirements::set_allocated_canonical_scopes(::std::string* canonical_
   // @@protoc_insertion_point(field_set_allocated:google.api.OAuthRequirements.canonical_scopes)
 }
 
+inline const OAuthRequirements* OAuthRequirements::internal_default_instance() {
+  return &OAuthRequirements_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1843,25 +1962,19 @@ const int AuthRequirement::kAudiencesFieldNumber;
 
 AuthRequirement::AuthRequirement()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fauth_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fauth_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.AuthRequirement)
 }
+
+void AuthRequirement::InitAsDefaultInstance() {
+}
+
 AuthRequirement::AuthRequirement(const AuthRequirement& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  provider_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.provider_id().size() > 0) {
-    provider_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.provider_id_);
-  }
-  audiences_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.audiences().size() > 0) {
-    audiences_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.audiences_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.AuthRequirement)
 }
 
@@ -1888,13 +2001,15 @@ void AuthRequirement::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* AuthRequirement::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return AuthRequirement_descriptor_;
 }
 
 const AuthRequirement& AuthRequirement::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fauth_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<AuthRequirement> AuthRequirement_default_instance_;
 
 AuthRequirement* AuthRequirement::New(::google::protobuf::Arena* arena) const {
   AuthRequirement* n = new AuthRequirement;
@@ -1916,13 +2031,13 @@ bool AuthRequirement::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.AuthRequirement)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string provider_id = 1;
+      // optional string provider_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_provider_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1932,12 +2047,14 @@ bool AuthRequirement::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_audiences;
         break;
       }
 
-      // string audiences = 2;
+      // optional string audiences = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_audiences:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_audiences()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1947,6 +2064,7 @@ bool AuthRequirement::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1974,7 +2092,7 @@ failure:
 void AuthRequirement::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.api.AuthRequirement)
-  // string provider_id = 1;
+  // optional string provider_id = 1;
   if (this->provider_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->provider_id().data(), this->provider_id().length(),
@@ -1984,7 +2102,7 @@ void AuthRequirement::SerializeWithCachedSizes(
       1, this->provider_id(), output);
   }
 
-  // string audiences = 2;
+  // optional string audiences = 2;
   if (this->audiences().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->audiences().data(), this->audiences().length(),
@@ -2001,7 +2119,7 @@ void AuthRequirement::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.AuthRequirement)
-  // string provider_id = 1;
+  // optional string provider_id = 1;
   if (this->provider_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->provider_id().data(), this->provider_id().length(),
@@ -2012,7 +2130,7 @@ void AuthRequirement::SerializeWithCachedSizes(
         1, this->provider_id(), target);
   }
 
-  // string audiences = 2;
+  // optional string audiences = 2;
   if (this->audiences().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->audiences().data(), this->audiences().length(),
@@ -2031,14 +2149,14 @@ size_t AuthRequirement::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.AuthRequirement)
   size_t total_size = 0;
 
-  // string provider_id = 1;
+  // optional string provider_id = 1;
   if (this->provider_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->provider_id());
   }
 
-  // string audiences = 2;
+  // optional string audiences = 2;
   if (this->audiences().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -2054,7 +2172,7 @@ size_t AuthRequirement::ByteSizeLong() const {
 
 void AuthRequirement::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.AuthRequirement)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const AuthRequirement* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AuthRequirement>(
           &from);
@@ -2063,14 +2181,21 @@ void AuthRequirement::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.AuthRequirement)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AuthRequirement::MergeFrom(const AuthRequirement& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.AuthRequirement)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void AuthRequirement::UnsafeMergeFrom(const AuthRequirement& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.provider_id().size() > 0) {
 
     provider_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.provider_id_);
@@ -2092,10 +2217,11 @@ void AuthRequirement::CopyFrom(const AuthRequirement& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.AuthRequirement)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AuthRequirement::IsInitialized() const {
+
   return true;
 }
 
@@ -2106,24 +2232,28 @@ void AuthRequirement::Swap(AuthRequirement* other) {
 void AuthRequirement::InternalSwap(AuthRequirement* other) {
   provider_id_.Swap(&other->provider_id_);
   audiences_.Swap(&other->audiences_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata AuthRequirement::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = AuthRequirement_descriptor_;
+  metadata.reflection = AuthRequirement_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // AuthRequirement
 
-// string provider_id = 1;
+// optional string provider_id = 1;
 void AuthRequirement::clear_provider_id() {
   provider_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& AuthRequirement::provider_id() const {
   // @@protoc_insertion_point(field_get:google.api.AuthRequirement.provider_id)
-  return provider_id_.GetNoArena();
+  return provider_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void AuthRequirement::set_provider_id(const ::std::string& value) {
   
@@ -2161,13 +2291,13 @@ void AuthRequirement::set_allocated_provider_id(::std::string* provider_id) {
   // @@protoc_insertion_point(field_set_allocated:google.api.AuthRequirement.provider_id)
 }
 
-// string audiences = 2;
+// optional string audiences = 2;
 void AuthRequirement::clear_audiences() {
   audiences_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& AuthRequirement::audiences() const {
   // @@protoc_insertion_point(field_get:google.api.AuthRequirement.audiences)
-  return audiences_.GetNoArena();
+  return audiences_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void AuthRequirement::set_audiences(const ::std::string& value) {
   
@@ -2205,6 +2335,9 @@ void AuthRequirement::set_allocated_audiences(::std::string* audiences) {
   // @@protoc_insertion_point(field_set_allocated:google.api.AuthRequirement.audiences)
 }
 
+inline const AuthRequirement* AuthRequirement::internal_default_instance() {
+  return &AuthRequirement_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

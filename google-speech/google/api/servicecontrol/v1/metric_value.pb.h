@@ -24,8 +24,8 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/map.h>
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/unknown_field_set.h>
@@ -34,42 +34,6 @@
 #include <google/protobuf/timestamp.pb.h>
 #include "google/type/money.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-namespace servicecontrol {
-namespace v1 {
-class Distribution;
-class DistributionDefaultTypeInternal;
-extern DistributionDefaultTypeInternal _Distribution_default_instance_;
-class Distribution_ExplicitBuckets;
-class Distribution_ExplicitBucketsDefaultTypeInternal;
-extern Distribution_ExplicitBucketsDefaultTypeInternal _Distribution_ExplicitBuckets_default_instance_;
-class Distribution_ExponentialBuckets;
-class Distribution_ExponentialBucketsDefaultTypeInternal;
-extern Distribution_ExponentialBucketsDefaultTypeInternal _Distribution_ExponentialBuckets_default_instance_;
-class Distribution_LinearBuckets;
-class Distribution_LinearBucketsDefaultTypeInternal;
-extern Distribution_LinearBucketsDefaultTypeInternal _Distribution_LinearBuckets_default_instance_;
-class MetricValue;
-class MetricValueDefaultTypeInternal;
-extern MetricValueDefaultTypeInternal _MetricValue_default_instance_;
-class MetricValueSet;
-class MetricValueSetDefaultTypeInternal;
-extern MetricValueSetDefaultTypeInternal _MetricValueSet_default_instance_;
-}  // namespace v1
-}  // namespace servicecontrol
-}  // namespace api
-namespace protobuf {
-class Timestamp;
-class TimestampDefaultTypeInternal;
-extern TimestampDefaultTypeInternal _Timestamp_default_instance_;
-}  // namespace protobuf
-namespace type {
-class Money;
-class MoneyDefaultTypeInternal;
-extern MoneyDefaultTypeInternal _Money_default_instance_;
-}  // namespace type
-}  // namespace google
 
 namespace google {
 namespace api {
@@ -79,11 +43,13 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fmetric_5fvalue_2eproto();
 void protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fmetric_5fvalue_2eproto();
+void protobuf_AssignDesc_google_2fapi_2fservicecontrol_2fv1_2fmetric_5fvalue_2eproto();
+void protobuf_ShutdownFile_google_2fapi_2fservicecontrol_2fv1_2fmetric_5fvalue_2eproto();
+
+class MetricValue;
+class MetricValueSet;
 
 // ===================================================================
-
-
-// -------------------------------------------------------------------
 
 class MetricValue : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.api.servicecontrol.v1.MetricValue) */ {
  public:
@@ -97,10 +63,8 @@ class MetricValue : public ::google::protobuf::Message /* @@protoc_insertion_poi
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
@@ -115,43 +79,40 @@ class MetricValue : public ::google::protobuf::Message /* @@protoc_insertion_poi
     VALUE_NOT_SET = 0,
   };
 
-  static inline const MetricValue* internal_default_instance() {
-    return reinterpret_cast<const MetricValue*>(
-               &_MetricValue_default_instance_);
-  }
+  static const MetricValue* internal_default_instance();
 
   void UnsafeArenaSwap(MetricValue* other);
   void Swap(MetricValue* other);
 
   // implements Message ----------------------------------------------
 
-  inline MetricValue* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline MetricValue* New() const { return New(NULL); }
 
-  MetricValue* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  MetricValue* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const MetricValue& from);
   void MergeFrom(const MetricValue& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(MetricValue* other);
+  void UnsafeMergeFrom(const MetricValue& from);
   protected:
   explicit MetricValue(::google::protobuf::Arena* arena);
   private:
@@ -166,7 +127,7 @@ class MetricValue : public ::google::protobuf::Message /* @@protoc_insertion_poi
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -182,7 +143,7 @@ class MetricValue : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::google::protobuf::Map< ::std::string, ::std::string >*
       mutable_labels();
 
-  // .google.protobuf.Timestamp start_time = 2;
+  // optional .google.protobuf.Timestamp start_time = 2;
   bool has_start_time() const;
   void clear_start_time();
   static const int kStartTimeFieldNumber = 2;
@@ -200,7 +161,7 @@ class MetricValue : public ::google::protobuf::Message /* @@protoc_insertion_poi
   void unsafe_arena_set_allocated_start_time(
       ::google::protobuf::Timestamp* start_time);
 
-  // .google.protobuf.Timestamp end_time = 3;
+  // optional .google.protobuf.Timestamp end_time = 3;
   bool has_end_time() const;
   void clear_end_time();
   static const int kEndTimeFieldNumber = 3;
@@ -218,7 +179,7 @@ class MetricValue : public ::google::protobuf::Message /* @@protoc_insertion_poi
   void unsafe_arena_set_allocated_end_time(
       ::google::protobuf::Timestamp* end_time);
 
-  // bool bool_value = 4;
+  // optional bool bool_value = 4;
   private:
   bool has_bool_value() const;
   public:
@@ -227,7 +188,7 @@ class MetricValue : public ::google::protobuf::Message /* @@protoc_insertion_poi
   bool bool_value() const;
   void set_bool_value(bool value);
 
-  // int64 int64_value = 5;
+  // optional int64 int64_value = 5;
   private:
   bool has_int64_value() const;
   public:
@@ -236,7 +197,7 @@ class MetricValue : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::google::protobuf::int64 int64_value() const;
   void set_int64_value(::google::protobuf::int64 value);
 
-  // double double_value = 6;
+  // optional double double_value = 6;
   private:
   bool has_double_value() const;
   public:
@@ -245,7 +206,7 @@ class MetricValue : public ::google::protobuf::Message /* @@protoc_insertion_poi
   double double_value() const;
   void set_double_value(double value);
 
-  // string string_value = 7;
+  // optional string string_value = 7;
   private:
   bool has_string_value() const;
   public:
@@ -262,7 +223,7 @@ class MetricValue : public ::google::protobuf::Message /* @@protoc_insertion_poi
   void unsafe_arena_set_allocated_string_value(
       ::std::string* string_value);
 
-  // .google.api.servicecontrol.v1.Distribution distribution_value = 8;
+  // optional .google.api.servicecontrol.v1.Distribution distribution_value = 8;
   bool has_distribution_value() const;
   void clear_distribution_value();
   static const int kDistributionValueFieldNumber = 8;
@@ -283,11 +244,11 @@ class MetricValue : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ValueCase value_case() const;
   // @@protoc_insertion_point(class_scope:google.api.servicecontrol.v1.MetricValue)
  private:
-  void set_has_bool_value();
-  void set_has_int64_value();
-  void set_has_double_value();
-  void set_has_string_value();
-  void set_has_distribution_value();
+  inline void set_has_bool_value();
+  inline void set_has_int64_value();
+  inline void set_has_double_value();
+  inline void set_has_string_value();
+  inline void set_has_distribution_value();
 
   inline bool has_value() const;
   void clear_value();
@@ -323,10 +284,13 @@ class MetricValue : public ::google::protobuf::Message /* @@protoc_insertion_poi
 
   friend void  protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fmetric_5fvalue_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fmetric_5fvalue_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fservicecontrol_2fv1_2fmetric_5fvalue_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fservicecontrol_2fv1_2fmetric_5fvalue_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fservicecontrol_2fv1_2fmetric_5fvalue_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<MetricValue> MetricValue_default_instance_;
+
 // -------------------------------------------------------------------
 
 class MetricValueSet : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.api.servicecontrol.v1.MetricValueSet) */ {
@@ -341,52 +305,47 @@ class MetricValueSet : public ::google::protobuf::Message /* @@protoc_insertion_
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const MetricValueSet& default_instance();
 
-  static inline const MetricValueSet* internal_default_instance() {
-    return reinterpret_cast<const MetricValueSet*>(
-               &_MetricValueSet_default_instance_);
-  }
+  static const MetricValueSet* internal_default_instance();
 
   void UnsafeArenaSwap(MetricValueSet* other);
   void Swap(MetricValueSet* other);
 
   // implements Message ----------------------------------------------
 
-  inline MetricValueSet* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline MetricValueSet* New() const { return New(NULL); }
 
-  MetricValueSet* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  MetricValueSet* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const MetricValueSet& from);
   void MergeFrom(const MetricValueSet& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(MetricValueSet* other);
+  void UnsafeMergeFrom(const MetricValueSet& from);
   protected:
   explicit MetricValueSet(::google::protobuf::Arena* arena);
   private:
@@ -401,13 +360,13 @@ class MetricValueSet : public ::google::protobuf::Message /* @@protoc_insertion_
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string metric_name = 1;
+  // optional string metric_name = 1;
   void clear_metric_name();
   static const int kMetricNameFieldNumber = 1;
   const ::std::string& metric_name() const;
@@ -445,18 +404,19 @@ class MetricValueSet : public ::google::protobuf::Message /* @@protoc_insertion_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2fmetric_5fvalue_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2fmetric_5fvalue_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fservicecontrol_2fv1_2fmetric_5fvalue_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fservicecontrol_2fv1_2fmetric_5fvalue_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fservicecontrol_2fv1_2fmetric_5fvalue_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<MetricValueSet> MetricValueSet_default_instance_;
+
 // ===================================================================
 
 
 // ===================================================================
 
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // MetricValue
 
 // map<string, string> labels = 1;
@@ -477,7 +437,7 @@ MetricValue::mutable_labels() {
   return labels_.MutableMap();
 }
 
-// .google.protobuf.Timestamp start_time = 2;
+// optional .google.protobuf.Timestamp start_time = 2;
 inline bool MetricValue::has_start_time() const {
   return this != internal_default_instance() && start_time_ != NULL;
 }
@@ -526,7 +486,7 @@ inline  void MetricValue::set_allocated_start_time(::google::protobuf::Timestamp
   // @@protoc_insertion_point(field_set_allocated:google.api.servicecontrol.v1.MetricValue.start_time)
 }
 
-// .google.protobuf.Timestamp end_time = 3;
+// optional .google.protobuf.Timestamp end_time = 3;
 inline bool MetricValue::has_end_time() const {
   return this != internal_default_instance() && end_time_ != NULL;
 }
@@ -575,7 +535,7 @@ inline  void MetricValue::set_allocated_end_time(::google::protobuf::Timestamp* 
   // @@protoc_insertion_point(field_set_allocated:google.api.servicecontrol.v1.MetricValue.end_time)
 }
 
-// bool bool_value = 4;
+// optional bool bool_value = 4;
 inline bool MetricValue::has_bool_value() const {
   return value_case() == kBoolValue;
 }
@@ -604,7 +564,7 @@ inline void MetricValue::set_bool_value(bool value) {
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.MetricValue.bool_value)
 }
 
-// int64 int64_value = 5;
+// optional int64 int64_value = 5;
 inline bool MetricValue::has_int64_value() const {
   return value_case() == kInt64Value;
 }
@@ -633,7 +593,7 @@ inline void MetricValue::set_int64_value(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.MetricValue.int64_value)
 }
 
-// double double_value = 6;
+// optional double double_value = 6;
 inline bool MetricValue::has_double_value() const {
   return value_case() == kDoubleValue;
 }
@@ -662,7 +622,7 @@ inline void MetricValue::set_double_value(double value) {
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.MetricValue.double_value)
 }
 
-// string string_value = 7;
+// optional string string_value = 7;
 inline bool MetricValue::has_string_value() const {
   return value_case() == kStringValue;
 }
@@ -679,7 +639,7 @@ inline void MetricValue::clear_string_value() {
 inline const ::std::string& MetricValue::string_value() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.MetricValue.string_value)
   if (has_string_value()) {
-    return value_.string_value_.Get();
+    return value_.string_value_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -771,7 +731,7 @@ inline void MetricValue::unsafe_arena_set_allocated_string_value(::std::string* 
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.api.servicecontrol.v1.MetricValue.string_value)
 }
 
-// .google.api.servicecontrol.v1.Distribution distribution_value = 8;
+// optional .google.api.servicecontrol.v1.Distribution distribution_value = 8;
 inline bool MetricValue::has_distribution_value() const {
   return value_case() == kDistributionValue;
 }
@@ -868,17 +828,20 @@ inline void MetricValue::clear_has_value() {
 inline MetricValue::ValueCase MetricValue::value_case() const {
   return MetricValue::ValueCase(_oneof_case_[0]);
 }
+inline const MetricValue* MetricValue::internal_default_instance() {
+  return &MetricValue_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // MetricValueSet
 
-// string metric_name = 1;
+// optional string metric_name = 1;
 inline void MetricValueSet::clear_metric_name() {
   metric_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& MetricValueSet::metric_name() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.MetricValueSet.metric_name)
-  return metric_name_.Get();
+  return metric_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void MetricValueSet::set_metric_name(const ::std::string& value) {
   
@@ -968,14 +931,14 @@ MetricValueSet::metric_values() const {
   return metric_values_;
 }
 
+inline const MetricValueSet* MetricValueSet::internal_default_instance() {
+  return &MetricValueSet_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace servicecontrol

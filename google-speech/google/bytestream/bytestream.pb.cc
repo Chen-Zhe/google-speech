@@ -19,123 +19,170 @@
 
 namespace google {
 namespace bytestream {
-class ReadRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ReadRequest> {};
-ReadRequestDefaultTypeInternal _ReadRequest_default_instance_;
-class ReadResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ReadResponse> {};
-ReadResponseDefaultTypeInternal _ReadResponse_default_instance_;
-class WriteRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<WriteRequest> {};
-WriteRequestDefaultTypeInternal _WriteRequest_default_instance_;
-class WriteResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<WriteResponse> {};
-WriteResponseDefaultTypeInternal _WriteResponse_default_instance_;
-class QueryWriteStatusRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<QueryWriteStatusRequest> {};
-QueryWriteStatusRequestDefaultTypeInternal _QueryWriteStatusRequest_default_instance_;
-class QueryWriteStatusResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<QueryWriteStatusResponse> {};
-QueryWriteStatusResponseDefaultTypeInternal _QueryWriteStatusResponse_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[6];
+const ::google::protobuf::Descriptor* ReadRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ReadRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ReadResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ReadResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* WriteRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  WriteRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* WriteResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  WriteResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* QueryWriteStatusRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  QueryWriteStatusRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* QueryWriteStatusResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  QueryWriteStatusResponse_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fbytestream_2fbytestream_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fbytestream_2fbytestream_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fbytestream_2fbytestream_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fbytestream_2fbytestream_2eproto() {
+  protobuf_AddDesc_google_2fbytestream_2fbytestream_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/bytestream/bytestream.proto");
+  GOOGLE_CHECK(file != NULL);
+  ReadRequest_descriptor_ = file->message_type(0);
+  static const int ReadRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadRequest, resource_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadRequest, read_offset_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadRequest, read_limit_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ReadRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ReadRequest_descriptor_,
+      ReadRequest::internal_default_instance(),
+      ReadRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ReadRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadRequest, _internal_metadata_));
+  ReadResponse_descriptor_ = file->message_type(1);
+  static const int ReadResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadResponse, data_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ReadResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ReadResponse_descriptor_,
+      ReadResponse::internal_default_instance(),
+      ReadResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ReadResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadResponse, _internal_metadata_));
+  WriteRequest_descriptor_ = file->message_type(2);
+  static const int WriteRequest_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteRequest, resource_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteRequest, write_offset_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteRequest, finish_write_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteRequest, data_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  WriteRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      WriteRequest_descriptor_,
+      WriteRequest::internal_default_instance(),
+      WriteRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(WriteRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteRequest, _internal_metadata_));
+  WriteResponse_descriptor_ = file->message_type(3);
+  static const int WriteResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteResponse, committed_size_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryWriteStatusRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  WriteResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      WriteResponse_descriptor_,
+      WriteResponse::internal_default_instance(),
+      WriteResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(WriteResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteResponse, _internal_metadata_));
+  QueryWriteStatusRequest_descriptor_ = file->message_type(4);
+  static const int QueryWriteStatusRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryWriteStatusRequest, resource_name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryWriteStatusResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  QueryWriteStatusRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      QueryWriteStatusRequest_descriptor_,
+      QueryWriteStatusRequest::internal_default_instance(),
+      QueryWriteStatusRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(QueryWriteStatusRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryWriteStatusRequest, _internal_metadata_));
+  QueryWriteStatusResponse_descriptor_ = file->message_type(5);
+  static const int QueryWriteStatusResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryWriteStatusResponse, committed_size_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryWriteStatusResponse, complete_),
   };
-  return offsets;
+  QueryWriteStatusResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      QueryWriteStatusResponse_descriptor_,
+      QueryWriteStatusResponse::internal_default_instance(),
+      QueryWriteStatusResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(QueryWriteStatusResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryWriteStatusResponse, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(ReadRequest)},
-  { 7, -1, sizeof(ReadResponse)},
-  { 12, -1, sizeof(WriteRequest)},
-  { 20, -1, sizeof(WriteResponse)},
-  { 25, -1, sizeof(QueryWriteStatusRequest)},
-  { 30, -1, sizeof(QueryWriteStatusResponse)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ReadRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ReadResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_WriteRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_WriteResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_QueryWriteStatusRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_QueryWriteStatusResponse_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fbytestream_2fbytestream_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/bytestream/bytestream.proto", schemas, file_default_instances, protobuf_Offsets_google_2fbytestream_2fbytestream_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fbytestream_2fbytestream_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 6);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ReadRequest_descriptor_, ReadRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ReadResponse_descriptor_, ReadResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      WriteRequest_descriptor_, WriteRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      WriteResponse_descriptor_, WriteResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      QueryWriteStatusRequest_descriptor_, QueryWriteStatusRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      QueryWriteStatusResponse_descriptor_, QueryWriteStatusResponse::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fbytestream_2fbytestream_2eproto() {
-  _ReadRequest_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _ReadResponse_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _WriteRequest_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _WriteResponse_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _QueryWriteStatusRequest_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
-  _QueryWriteStatusResponse_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
+  ReadRequest_default_instance_.Shutdown();
+  delete ReadRequest_reflection_;
+  ReadResponse_default_instance_.Shutdown();
+  delete ReadResponse_reflection_;
+  WriteRequest_default_instance_.Shutdown();
+  delete WriteRequest_reflection_;
+  WriteResponse_default_instance_.Shutdown();
+  delete WriteResponse_reflection_;
+  QueryWriteStatusRequest_default_instance_.Shutdown();
+  delete QueryWriteStatusRequest_reflection_;
+  QueryWriteStatusResponse_default_instance_.Shutdown();
+  delete QueryWriteStatusResponse_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto_impl() {
@@ -143,47 +190,56 @@ void protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto_impl() {
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fwrappers_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _ReadRequest_default_instance_.DefaultConstruct();
-  _ReadResponse_default_instance_.DefaultConstruct();
-  _WriteRequest_default_instance_.DefaultConstruct();
-  _WriteResponse_default_instance_.DefaultConstruct();
-  _QueryWriteStatusRequest_default_instance_.DefaultConstruct();
-  _QueryWriteStatusResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ReadRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ReadResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  WriteRequest_default_instance_.DefaultConstruct();
+  WriteResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  QueryWriteStatusRequest_default_instance_.DefaultConstruct();
+  QueryWriteStatusResponse_default_instance_.DefaultConstruct();
+  ReadRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ReadResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  WriteRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  WriteResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  QueryWriteStatusRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  QueryWriteStatusResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto_once_);
 void protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fbytestream_2fbytestream_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
-  static const char descriptor[] = {
-      "\n\"google/bytestream/bytestream.proto\022\021go"
-      "ogle.bytestream\032\034google/api/annotations."
-      "proto\032\036google/protobuf/wrappers.proto\"M\n"
-      "\013ReadRequest\022\025\n\rresource_name\030\001 \001(\t\022\023\n\013r"
-      "ead_offset\030\002 \001(\003\022\022\n\nread_limit\030\003 \001(\003\"\034\n\014"
-      "ReadResponse\022\014\n\004data\030\n \001(\014\"_\n\014WriteReque"
-      "st\022\025\n\rresource_name\030\001 \001(\t\022\024\n\014write_offse"
-      "t\030\002 \001(\003\022\024\n\014finish_write\030\003 \001(\010\022\014\n\004data\030\n "
-      "\001(\014\"\'\n\rWriteResponse\022\026\n\016committed_size\030\001"
-      " \001(\003\"0\n\027QueryWriteStatusRequest\022\025\n\rresou"
-      "rce_name\030\001 \001(\t\"D\n\030QueryWriteStatusRespon"
-      "se\022\026\n\016committed_size\030\001 \001(\003\022\020\n\010complete\030\002"
-      " \001(\0102\222\002\n\nByteStream\022I\n\004Read\022\036.google.byt"
-      "estream.ReadRequest\032\037.google.bytestream."
-      "ReadResponse0\001\022L\n\005Write\022\037.google.bytestr"
-      "eam.WriteRequest\032 .google.bytestream.Wri"
-      "teResponse(\001\022k\n\020QueryWriteStatus\022*.googl"
-      "e.bytestream.QueryWriteStatusRequest\032+.g"
-      "oogle.bytestream.QueryWriteStatusRespons"
-      "eBe\n\025com.google.bytestreamB\017ByteStreamPr"
-      "otoZ;google.golang.org/genproto/googleap"
-      "is/bytestream;bytestreamb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 872);
+    "\n\"google/bytestream/bytestream.proto\022\021go"
+    "ogle.bytestream\032\034google/api/annotations."
+    "proto\032\036google/protobuf/wrappers.proto\"M\n"
+    "\013ReadRequest\022\025\n\rresource_name\030\001 \001(\t\022\023\n\013r"
+    "ead_offset\030\002 \001(\003\022\022\n\nread_limit\030\003 \001(\003\"\034\n\014"
+    "ReadResponse\022\014\n\004data\030\n \001(\014\"_\n\014WriteReque"
+    "st\022\025\n\rresource_name\030\001 \001(\t\022\024\n\014write_offse"
+    "t\030\002 \001(\003\022\024\n\014finish_write\030\003 \001(\010\022\014\n\004data\030\n "
+    "\001(\014\"\'\n\rWriteResponse\022\026\n\016committed_size\030\001"
+    " \001(\003\"0\n\027QueryWriteStatusRequest\022\025\n\rresou"
+    "rce_name\030\001 \001(\t\"D\n\030QueryWriteStatusRespon"
+    "se\022\026\n\016committed_size\030\001 \001(\003\022\020\n\010complete\030\002"
+    " \001(\0102\222\002\n\nByteStream\022I\n\004Read\022\036.google.byt"
+    "estream.ReadRequest\032\037.google.bytestream."
+    "ReadResponse0\001\022L\n\005Write\022\037.google.bytestr"
+    "eam.WriteRequest\032 .google.bytestream.Wri"
+    "teResponse(\001\022k\n\020QueryWriteStatus\022*.googl"
+    "e.bytestream.QueryWriteStatusRequest\032+.g"
+    "oogle.bytestream.QueryWriteStatusRespons"
+    "eBe\n\025com.google.bytestreamB\017ByteStreamPr"
+    "otoZ;google.golang.org/genproto/googleap"
+    "is/bytestream;bytestreamb\006proto3", 872);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/bytestream/bytestream.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -203,6 +259,16 @@ struct StaticDescriptorInitializer_google_2fbytestream_2fbytestream_2eproto {
   }
 } static_descriptor_initializer_google_2fbytestream_2fbytestream_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -213,24 +279,19 @@ const int ReadRequest::kReadLimitFieldNumber;
 
 ReadRequest::ReadRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bytestream.ReadRequest)
 }
+
+void ReadRequest::InitAsDefaultInstance() {
+}
+
 ReadRequest::ReadRequest(const ReadRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  resource_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.resource_name().size() > 0) {
-    resource_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.resource_name_);
-  }
-  ::memcpy(&read_offset_, &from.read_offset_,
-    reinterpret_cast<char*>(&read_limit_) -
-    reinterpret_cast<char*>(&read_offset_) + sizeof(read_limit_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bytestream.ReadRequest)
 }
 
@@ -257,13 +318,15 @@ void ReadRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ReadRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return ReadRequest_descriptor_;
 }
 
 const ReadRequest& ReadRequest::default_instance() {
   protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ReadRequest> ReadRequest_default_instance_;
 
 ReadRequest* ReadRequest::New(::google::protobuf::Arena* arena) const {
   ReadRequest* n = new ReadRequest;
@@ -275,9 +338,28 @@ ReadRequest* ReadRequest::New(::google::protobuf::Arena* arena) const {
 
 void ReadRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.bytestream.ReadRequest)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(ReadRequest, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<ReadRequest*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(read_offset_, read_limit_);
   resource_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&read_offset_, 0, reinterpret_cast<char*>(&read_limit_) -
-    reinterpret_cast<char*>(&read_offset_) + sizeof(read_limit_));
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool ReadRequest::MergePartialFromCodedStream(
@@ -286,13 +368,13 @@ bool ReadRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bytestream.ReadRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string resource_name = 1;
+      // optional string resource_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_resource_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -302,12 +384,14 @@ bool ReadRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_read_offset;
         break;
       }
 
-      // int64 read_offset = 2;
+      // optional int64 read_offset = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_read_offset:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -315,12 +399,14 @@ bool ReadRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_read_limit;
         break;
       }
 
-      // int64 read_limit = 3;
+      // optional int64 read_limit = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_read_limit:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -328,6 +414,7 @@ bool ReadRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -355,7 +442,7 @@ failure:
 void ReadRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bytestream.ReadRequest)
-  // string resource_name = 1;
+  // optional string resource_name = 1;
   if (this->resource_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->resource_name().data(), this->resource_name().length(),
@@ -365,12 +452,12 @@ void ReadRequest::SerializeWithCachedSizes(
       1, this->resource_name(), output);
   }
 
-  // int64 read_offset = 2;
+  // optional int64 read_offset = 2;
   if (this->read_offset() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(2, this->read_offset(), output);
   }
 
-  // int64 read_limit = 3;
+  // optional int64 read_limit = 3;
   if (this->read_limit() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(3, this->read_limit(), output);
   }
@@ -382,7 +469,7 @@ void ReadRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bytestream.ReadRequest)
-  // string resource_name = 1;
+  // optional string resource_name = 1;
   if (this->resource_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->resource_name().data(), this->resource_name().length(),
@@ -393,12 +480,12 @@ void ReadRequest::SerializeWithCachedSizes(
         1, this->resource_name(), target);
   }
 
-  // int64 read_offset = 2;
+  // optional int64 read_offset = 2;
   if (this->read_offset() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(2, this->read_offset(), target);
   }
 
-  // int64 read_limit = 3;
+  // optional int64 read_limit = 3;
   if (this->read_limit() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(3, this->read_limit(), target);
   }
@@ -411,21 +498,21 @@ size_t ReadRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bytestream.ReadRequest)
   size_t total_size = 0;
 
-  // string resource_name = 1;
+  // optional string resource_name = 1;
   if (this->resource_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->resource_name());
   }
 
-  // int64 read_offset = 2;
+  // optional int64 read_offset = 2;
   if (this->read_offset() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->read_offset());
   }
 
-  // int64 read_limit = 3;
+  // optional int64 read_limit = 3;
   if (this->read_limit() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
@@ -441,7 +528,7 @@ size_t ReadRequest::ByteSizeLong() const {
 
 void ReadRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bytestream.ReadRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ReadRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ReadRequest>(
           &from);
@@ -450,14 +537,21 @@ void ReadRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bytestream.ReadRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ReadRequest::MergeFrom(const ReadRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bytestream.ReadRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ReadRequest::UnsafeMergeFrom(const ReadRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.resource_name().size() > 0) {
 
     resource_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.resource_name_);
@@ -481,10 +575,11 @@ void ReadRequest::CopyFrom(const ReadRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bytestream.ReadRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ReadRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -496,24 +591,28 @@ void ReadRequest::InternalSwap(ReadRequest* other) {
   resource_name_.Swap(&other->resource_name_);
   std::swap(read_offset_, other->read_offset_);
   std::swap(read_limit_, other->read_limit_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ReadRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ReadRequest_descriptor_;
+  metadata.reflection = ReadRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ReadRequest
 
-// string resource_name = 1;
+// optional string resource_name = 1;
 void ReadRequest::clear_resource_name() {
   resource_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ReadRequest::resource_name() const {
   // @@protoc_insertion_point(field_get:google.bytestream.ReadRequest.resource_name)
-  return resource_name_.GetNoArena();
+  return resource_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ReadRequest::set_resource_name(const ::std::string& value) {
   
@@ -551,7 +650,7 @@ void ReadRequest::set_allocated_resource_name(::std::string* resource_name) {
   // @@protoc_insertion_point(field_set_allocated:google.bytestream.ReadRequest.resource_name)
 }
 
-// int64 read_offset = 2;
+// optional int64 read_offset = 2;
 void ReadRequest::clear_read_offset() {
   read_offset_ = GOOGLE_LONGLONG(0);
 }
@@ -565,7 +664,7 @@ void ReadRequest::set_read_offset(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.bytestream.ReadRequest.read_offset)
 }
 
-// int64 read_limit = 3;
+// optional int64 read_limit = 3;
 void ReadRequest::clear_read_limit() {
   read_limit_ = GOOGLE_LONGLONG(0);
 }
@@ -579,6 +678,9 @@ void ReadRequest::set_read_limit(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.bytestream.ReadRequest.read_limit)
 }
 
+inline const ReadRequest* ReadRequest::internal_default_instance() {
+  return &ReadRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -589,21 +691,19 @@ const int ReadResponse::kDataFieldNumber;
 
 ReadResponse::ReadResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bytestream.ReadResponse)
 }
+
+void ReadResponse::InitAsDefaultInstance() {
+}
+
 ReadResponse::ReadResponse(const ReadResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.data().size() > 0) {
-    data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bytestream.ReadResponse)
 }
 
@@ -628,13 +728,15 @@ void ReadResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ReadResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return ReadResponse_descriptor_;
 }
 
 const ReadResponse& ReadResponse::default_instance() {
   protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ReadResponse> ReadResponse_default_instance_;
 
 ReadResponse* ReadResponse::New(::google::protobuf::Arena* arena) const {
   ReadResponse* n = new ReadResponse;
@@ -655,18 +757,19 @@ bool ReadResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bytestream.ReadResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // bytes data = 10;
+      // optional bytes data = 10;
       case 10: {
-        if (tag == 82u) {
+        if (tag == 82) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_data()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -694,7 +797,7 @@ failure:
 void ReadResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bytestream.ReadResponse)
-  // bytes data = 10;
+  // optional bytes data = 10;
   if (this->data().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       10, this->data(), output);
@@ -707,7 +810,7 @@ void ReadResponse::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bytestream.ReadResponse)
-  // bytes data = 10;
+  // optional bytes data = 10;
   if (this->data().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
@@ -722,7 +825,7 @@ size_t ReadResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bytestream.ReadResponse)
   size_t total_size = 0;
 
-  // bytes data = 10;
+  // optional bytes data = 10;
   if (this->data().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
@@ -738,7 +841,7 @@ size_t ReadResponse::ByteSizeLong() const {
 
 void ReadResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bytestream.ReadResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ReadResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ReadResponse>(
           &from);
@@ -747,14 +850,21 @@ void ReadResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bytestream.ReadResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ReadResponse::MergeFrom(const ReadResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bytestream.ReadResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ReadResponse::UnsafeMergeFrom(const ReadResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.data().size() > 0) {
 
     data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
@@ -772,10 +882,11 @@ void ReadResponse::CopyFrom(const ReadResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bytestream.ReadResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ReadResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -785,24 +896,28 @@ void ReadResponse::Swap(ReadResponse* other) {
 }
 void ReadResponse::InternalSwap(ReadResponse* other) {
   data_.Swap(&other->data_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ReadResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ReadResponse_descriptor_;
+  metadata.reflection = ReadResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ReadResponse
 
-// bytes data = 10;
+// optional bytes data = 10;
 void ReadResponse::clear_data() {
   data_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ReadResponse::data() const {
   // @@protoc_insertion_point(field_get:google.bytestream.ReadResponse.data)
-  return data_.GetNoArena();
+  return data_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ReadResponse::set_data(const ::std::string& value) {
   
@@ -840,6 +955,9 @@ void ReadResponse::set_allocated_data(::std::string* data) {
   // @@protoc_insertion_point(field_set_allocated:google.bytestream.ReadResponse.data)
 }
 
+inline const ReadResponse* ReadResponse::internal_default_instance() {
+  return &ReadResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -853,28 +971,19 @@ const int WriteRequest::kDataFieldNumber;
 
 WriteRequest::WriteRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bytestream.WriteRequest)
 }
+
+void WriteRequest::InitAsDefaultInstance() {
+}
+
 WriteRequest::WriteRequest(const WriteRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  resource_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.resource_name().size() > 0) {
-    resource_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.resource_name_);
-  }
-  data_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.data().size() > 0) {
-    data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
-  }
-  ::memcpy(&write_offset_, &from.write_offset_,
-    reinterpret_cast<char*>(&finish_write_) -
-    reinterpret_cast<char*>(&write_offset_) + sizeof(finish_write_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bytestream.WriteRequest)
 }
 
@@ -903,13 +1012,15 @@ void WriteRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* WriteRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return WriteRequest_descriptor_;
 }
 
 const WriteRequest& WriteRequest::default_instance() {
   protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<WriteRequest> WriteRequest_default_instance_;
 
 WriteRequest* WriteRequest::New(::google::protobuf::Arena* arena) const {
   WriteRequest* n = new WriteRequest;
@@ -921,10 +1032,29 @@ WriteRequest* WriteRequest::New(::google::protobuf::Arena* arena) const {
 
 void WriteRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.bytestream.WriteRequest)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(WriteRequest, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<WriteRequest*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(write_offset_, finish_write_);
   resource_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   data_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&write_offset_, 0, reinterpret_cast<char*>(&finish_write_) -
-    reinterpret_cast<char*>(&write_offset_) + sizeof(finish_write_));
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool WriteRequest::MergePartialFromCodedStream(
@@ -933,13 +1063,13 @@ bool WriteRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bytestream.WriteRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string resource_name = 1;
+      // optional string resource_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_resource_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -949,12 +1079,14 @@ bool WriteRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_write_offset;
         break;
       }
 
-      // int64 write_offset = 2;
+      // optional int64 write_offset = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_write_offset:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -962,12 +1094,14 @@ bool WriteRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_finish_write;
         break;
       }
 
-      // bool finish_write = 3;
+      // optional bool finish_write = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_finish_write:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -975,17 +1109,20 @@ bool WriteRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(82)) goto parse_data;
         break;
       }
 
-      // bytes data = 10;
+      // optional bytes data = 10;
       case 10: {
-        if (tag == 82u) {
+        if (tag == 82) {
+         parse_data:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_data()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1013,7 +1150,7 @@ failure:
 void WriteRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bytestream.WriteRequest)
-  // string resource_name = 1;
+  // optional string resource_name = 1;
   if (this->resource_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->resource_name().data(), this->resource_name().length(),
@@ -1023,17 +1160,17 @@ void WriteRequest::SerializeWithCachedSizes(
       1, this->resource_name(), output);
   }
 
-  // int64 write_offset = 2;
+  // optional int64 write_offset = 2;
   if (this->write_offset() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(2, this->write_offset(), output);
   }
 
-  // bool finish_write = 3;
+  // optional bool finish_write = 3;
   if (this->finish_write() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(3, this->finish_write(), output);
   }
 
-  // bytes data = 10;
+  // optional bytes data = 10;
   if (this->data().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       10, this->data(), output);
@@ -1046,7 +1183,7 @@ void WriteRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bytestream.WriteRequest)
-  // string resource_name = 1;
+  // optional string resource_name = 1;
   if (this->resource_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->resource_name().data(), this->resource_name().length(),
@@ -1057,17 +1194,17 @@ void WriteRequest::SerializeWithCachedSizes(
         1, this->resource_name(), target);
   }
 
-  // int64 write_offset = 2;
+  // optional int64 write_offset = 2;
   if (this->write_offset() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(2, this->write_offset(), target);
   }
 
-  // bool finish_write = 3;
+  // optional bool finish_write = 3;
   if (this->finish_write() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(3, this->finish_write(), target);
   }
 
-  // bytes data = 10;
+  // optional bytes data = 10;
   if (this->data().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
@@ -1082,30 +1219,30 @@ size_t WriteRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bytestream.WriteRequest)
   size_t total_size = 0;
 
-  // string resource_name = 1;
+  // optional string resource_name = 1;
   if (this->resource_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->resource_name());
   }
 
-  // bytes data = 10;
-  if (this->data().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->data());
-  }
-
-  // int64 write_offset = 2;
+  // optional int64 write_offset = 2;
   if (this->write_offset() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->write_offset());
   }
 
-  // bool finish_write = 3;
+  // optional bool finish_write = 3;
   if (this->finish_write() != 0) {
     total_size += 1 + 1;
+  }
+
+  // optional bytes data = 10;
+  if (this->data().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::BytesSize(
+        this->data());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -1117,7 +1254,7 @@ size_t WriteRequest::ByteSizeLong() const {
 
 void WriteRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bytestream.WriteRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const WriteRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const WriteRequest>(
           &from);
@@ -1126,27 +1263,34 @@ void WriteRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bytestream.WriteRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void WriteRequest::MergeFrom(const WriteRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bytestream.WriteRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void WriteRequest::UnsafeMergeFrom(const WriteRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.resource_name().size() > 0) {
 
     resource_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.resource_name_);
-  }
-  if (from.data().size() > 0) {
-
-    data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
   }
   if (from.write_offset() != 0) {
     set_write_offset(from.write_offset());
   }
   if (from.finish_write() != 0) {
     set_finish_write(from.finish_write());
+  }
+  if (from.data().size() > 0) {
+
+    data_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.data_);
   }
 }
 
@@ -1161,10 +1305,11 @@ void WriteRequest::CopyFrom(const WriteRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bytestream.WriteRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool WriteRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -1174,27 +1319,31 @@ void WriteRequest::Swap(WriteRequest* other) {
 }
 void WriteRequest::InternalSwap(WriteRequest* other) {
   resource_name_.Swap(&other->resource_name_);
-  data_.Swap(&other->data_);
   std::swap(write_offset_, other->write_offset_);
   std::swap(finish_write_, other->finish_write_);
+  data_.Swap(&other->data_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata WriteRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = WriteRequest_descriptor_;
+  metadata.reflection = WriteRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // WriteRequest
 
-// string resource_name = 1;
+// optional string resource_name = 1;
 void WriteRequest::clear_resource_name() {
   resource_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& WriteRequest::resource_name() const {
   // @@protoc_insertion_point(field_get:google.bytestream.WriteRequest.resource_name)
-  return resource_name_.GetNoArena();
+  return resource_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void WriteRequest::set_resource_name(const ::std::string& value) {
   
@@ -1232,7 +1381,7 @@ void WriteRequest::set_allocated_resource_name(::std::string* resource_name) {
   // @@protoc_insertion_point(field_set_allocated:google.bytestream.WriteRequest.resource_name)
 }
 
-// int64 write_offset = 2;
+// optional int64 write_offset = 2;
 void WriteRequest::clear_write_offset() {
   write_offset_ = GOOGLE_LONGLONG(0);
 }
@@ -1246,7 +1395,7 @@ void WriteRequest::set_write_offset(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.bytestream.WriteRequest.write_offset)
 }
 
-// bool finish_write = 3;
+// optional bool finish_write = 3;
 void WriteRequest::clear_finish_write() {
   finish_write_ = false;
 }
@@ -1260,13 +1409,13 @@ void WriteRequest::set_finish_write(bool value) {
   // @@protoc_insertion_point(field_set:google.bytestream.WriteRequest.finish_write)
 }
 
-// bytes data = 10;
+// optional bytes data = 10;
 void WriteRequest::clear_data() {
   data_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& WriteRequest::data() const {
   // @@protoc_insertion_point(field_get:google.bytestream.WriteRequest.data)
-  return data_.GetNoArena();
+  return data_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void WriteRequest::set_data(const ::std::string& value) {
   
@@ -1304,6 +1453,9 @@ void WriteRequest::set_allocated_data(::std::string* data) {
   // @@protoc_insertion_point(field_set_allocated:google.bytestream.WriteRequest.data)
 }
 
+inline const WriteRequest* WriteRequest::internal_default_instance() {
+  return &WriteRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1314,18 +1466,19 @@ const int WriteResponse::kCommittedSizeFieldNumber;
 
 WriteResponse::WriteResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bytestream.WriteResponse)
 }
+
+void WriteResponse::InitAsDefaultInstance() {
+}
+
 WriteResponse::WriteResponse(const WriteResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  committed_size_ = from.committed_size_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bytestream.WriteResponse)
 }
 
@@ -1349,13 +1502,15 @@ void WriteResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* WriteResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return WriteResponse_descriptor_;
 }
 
 const WriteResponse& WriteResponse::default_instance() {
   protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<WriteResponse> WriteResponse_default_instance_;
 
 WriteResponse* WriteResponse::New(::google::protobuf::Arena* arena) const {
   WriteResponse* n = new WriteResponse;
@@ -1376,13 +1531,13 @@ bool WriteResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bytestream.WriteResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 committed_size = 1;
+      // optional int64 committed_size = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -1390,6 +1545,7 @@ bool WriteResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1417,7 +1573,7 @@ failure:
 void WriteResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bytestream.WriteResponse)
-  // int64 committed_size = 1;
+  // optional int64 committed_size = 1;
   if (this->committed_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->committed_size(), output);
   }
@@ -1429,7 +1585,7 @@ void WriteResponse::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bytestream.WriteResponse)
-  // int64 committed_size = 1;
+  // optional int64 committed_size = 1;
   if (this->committed_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->committed_size(), target);
   }
@@ -1442,7 +1598,7 @@ size_t WriteResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bytestream.WriteResponse)
   size_t total_size = 0;
 
-  // int64 committed_size = 1;
+  // optional int64 committed_size = 1;
   if (this->committed_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
@@ -1458,7 +1614,7 @@ size_t WriteResponse::ByteSizeLong() const {
 
 void WriteResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bytestream.WriteResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const WriteResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const WriteResponse>(
           &from);
@@ -1467,14 +1623,21 @@ void WriteResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bytestream.WriteResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void WriteResponse::MergeFrom(const WriteResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bytestream.WriteResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void WriteResponse::UnsafeMergeFrom(const WriteResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.committed_size() != 0) {
     set_committed_size(from.committed_size());
   }
@@ -1491,10 +1654,11 @@ void WriteResponse::CopyFrom(const WriteResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bytestream.WriteResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool WriteResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -1504,18 +1668,22 @@ void WriteResponse::Swap(WriteResponse* other) {
 }
 void WriteResponse::InternalSwap(WriteResponse* other) {
   std::swap(committed_size_, other->committed_size_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata WriteResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = WriteResponse_descriptor_;
+  metadata.reflection = WriteResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // WriteResponse
 
-// int64 committed_size = 1;
+// optional int64 committed_size = 1;
 void WriteResponse::clear_committed_size() {
   committed_size_ = GOOGLE_LONGLONG(0);
 }
@@ -1529,6 +1697,9 @@ void WriteResponse::set_committed_size(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.bytestream.WriteResponse.committed_size)
 }
 
+inline const WriteResponse* WriteResponse::internal_default_instance() {
+  return &WriteResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1539,21 +1710,19 @@ const int QueryWriteStatusRequest::kResourceNameFieldNumber;
 
 QueryWriteStatusRequest::QueryWriteStatusRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bytestream.QueryWriteStatusRequest)
 }
+
+void QueryWriteStatusRequest::InitAsDefaultInstance() {
+}
+
 QueryWriteStatusRequest::QueryWriteStatusRequest(const QueryWriteStatusRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  resource_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.resource_name().size() > 0) {
-    resource_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.resource_name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bytestream.QueryWriteStatusRequest)
 }
 
@@ -1578,13 +1747,15 @@ void QueryWriteStatusRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* QueryWriteStatusRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return QueryWriteStatusRequest_descriptor_;
 }
 
 const QueryWriteStatusRequest& QueryWriteStatusRequest::default_instance() {
   protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<QueryWriteStatusRequest> QueryWriteStatusRequest_default_instance_;
 
 QueryWriteStatusRequest* QueryWriteStatusRequest::New(::google::protobuf::Arena* arena) const {
   QueryWriteStatusRequest* n = new QueryWriteStatusRequest;
@@ -1605,13 +1776,13 @@ bool QueryWriteStatusRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bytestream.QueryWriteStatusRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string resource_name = 1;
+      // optional string resource_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_resource_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1621,6 +1792,7 @@ bool QueryWriteStatusRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1648,7 +1820,7 @@ failure:
 void QueryWriteStatusRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bytestream.QueryWriteStatusRequest)
-  // string resource_name = 1;
+  // optional string resource_name = 1;
   if (this->resource_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->resource_name().data(), this->resource_name().length(),
@@ -1665,7 +1837,7 @@ void QueryWriteStatusRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bytestream.QueryWriteStatusRequest)
-  // string resource_name = 1;
+  // optional string resource_name = 1;
   if (this->resource_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->resource_name().data(), this->resource_name().length(),
@@ -1684,7 +1856,7 @@ size_t QueryWriteStatusRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bytestream.QueryWriteStatusRequest)
   size_t total_size = 0;
 
-  // string resource_name = 1;
+  // optional string resource_name = 1;
   if (this->resource_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -1700,7 +1872,7 @@ size_t QueryWriteStatusRequest::ByteSizeLong() const {
 
 void QueryWriteStatusRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bytestream.QueryWriteStatusRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const QueryWriteStatusRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const QueryWriteStatusRequest>(
           &from);
@@ -1709,14 +1881,21 @@ void QueryWriteStatusRequest::MergeFrom(const ::google::protobuf::Message& from)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bytestream.QueryWriteStatusRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void QueryWriteStatusRequest::MergeFrom(const QueryWriteStatusRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bytestream.QueryWriteStatusRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void QueryWriteStatusRequest::UnsafeMergeFrom(const QueryWriteStatusRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.resource_name().size() > 0) {
 
     resource_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.resource_name_);
@@ -1734,10 +1913,11 @@ void QueryWriteStatusRequest::CopyFrom(const QueryWriteStatusRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bytestream.QueryWriteStatusRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool QueryWriteStatusRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -1747,24 +1927,28 @@ void QueryWriteStatusRequest::Swap(QueryWriteStatusRequest* other) {
 }
 void QueryWriteStatusRequest::InternalSwap(QueryWriteStatusRequest* other) {
   resource_name_.Swap(&other->resource_name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata QueryWriteStatusRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = QueryWriteStatusRequest_descriptor_;
+  metadata.reflection = QueryWriteStatusRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // QueryWriteStatusRequest
 
-// string resource_name = 1;
+// optional string resource_name = 1;
 void QueryWriteStatusRequest::clear_resource_name() {
   resource_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& QueryWriteStatusRequest::resource_name() const {
   // @@protoc_insertion_point(field_get:google.bytestream.QueryWriteStatusRequest.resource_name)
-  return resource_name_.GetNoArena();
+  return resource_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void QueryWriteStatusRequest::set_resource_name(const ::std::string& value) {
   
@@ -1802,6 +1986,9 @@ void QueryWriteStatusRequest::set_allocated_resource_name(::std::string* resourc
   // @@protoc_insertion_point(field_set_allocated:google.bytestream.QueryWriteStatusRequest.resource_name)
 }
 
+inline const QueryWriteStatusRequest* QueryWriteStatusRequest::internal_default_instance() {
+  return &QueryWriteStatusRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1813,20 +2000,19 @@ const int QueryWriteStatusResponse::kCompleteFieldNumber;
 
 QueryWriteStatusResponse::QueryWriteStatusResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bytestream.QueryWriteStatusResponse)
 }
+
+void QueryWriteStatusResponse::InitAsDefaultInstance() {
+}
+
 QueryWriteStatusResponse::QueryWriteStatusResponse(const QueryWriteStatusResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&committed_size_, &from.committed_size_,
-    reinterpret_cast<char*>(&complete_) -
-    reinterpret_cast<char*>(&committed_size_) + sizeof(complete_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bytestream.QueryWriteStatusResponse)
 }
 
@@ -1851,13 +2037,15 @@ void QueryWriteStatusResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* QueryWriteStatusResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
+  return QueryWriteStatusResponse_descriptor_;
 }
 
 const QueryWriteStatusResponse& QueryWriteStatusResponse::default_instance() {
   protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<QueryWriteStatusResponse> QueryWriteStatusResponse_default_instance_;
 
 QueryWriteStatusResponse* QueryWriteStatusResponse::New(::google::protobuf::Arena* arena) const {
   QueryWriteStatusResponse* n = new QueryWriteStatusResponse;
@@ -1869,8 +2057,27 @@ QueryWriteStatusResponse* QueryWriteStatusResponse::New(::google::protobuf::Aren
 
 void QueryWriteStatusResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.bytestream.QueryWriteStatusResponse)
-  ::memset(&committed_size_, 0, reinterpret_cast<char*>(&complete_) -
-    reinterpret_cast<char*>(&committed_size_) + sizeof(complete_));
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(QueryWriteStatusResponse, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<QueryWriteStatusResponse*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(committed_size_, complete_);
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool QueryWriteStatusResponse::MergePartialFromCodedStream(
@@ -1879,13 +2086,13 @@ bool QueryWriteStatusResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bytestream.QueryWriteStatusResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 committed_size = 1;
+      // optional int64 committed_size = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -1893,12 +2100,14 @@ bool QueryWriteStatusResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_complete;
         break;
       }
 
-      // bool complete = 2;
+      // optional bool complete = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_complete:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -1906,6 +2115,7 @@ bool QueryWriteStatusResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1933,12 +2143,12 @@ failure:
 void QueryWriteStatusResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bytestream.QueryWriteStatusResponse)
-  // int64 committed_size = 1;
+  // optional int64 committed_size = 1;
   if (this->committed_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->committed_size(), output);
   }
 
-  // bool complete = 2;
+  // optional bool complete = 2;
   if (this->complete() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(2, this->complete(), output);
   }
@@ -1950,12 +2160,12 @@ void QueryWriteStatusResponse::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bytestream.QueryWriteStatusResponse)
-  // int64 committed_size = 1;
+  // optional int64 committed_size = 1;
   if (this->committed_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->committed_size(), target);
   }
 
-  // bool complete = 2;
+  // optional bool complete = 2;
   if (this->complete() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(2, this->complete(), target);
   }
@@ -1968,14 +2178,14 @@ size_t QueryWriteStatusResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bytestream.QueryWriteStatusResponse)
   size_t total_size = 0;
 
-  // int64 committed_size = 1;
+  // optional int64 committed_size = 1;
   if (this->committed_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->committed_size());
   }
 
-  // bool complete = 2;
+  // optional bool complete = 2;
   if (this->complete() != 0) {
     total_size += 1 + 1;
   }
@@ -1989,7 +2199,7 @@ size_t QueryWriteStatusResponse::ByteSizeLong() const {
 
 void QueryWriteStatusResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bytestream.QueryWriteStatusResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const QueryWriteStatusResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const QueryWriteStatusResponse>(
           &from);
@@ -1998,14 +2208,21 @@ void QueryWriteStatusResponse::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bytestream.QueryWriteStatusResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void QueryWriteStatusResponse::MergeFrom(const QueryWriteStatusResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bytestream.QueryWriteStatusResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void QueryWriteStatusResponse::UnsafeMergeFrom(const QueryWriteStatusResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.committed_size() != 0) {
     set_committed_size(from.committed_size());
   }
@@ -2025,10 +2242,11 @@ void QueryWriteStatusResponse::CopyFrom(const QueryWriteStatusResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bytestream.QueryWriteStatusResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool QueryWriteStatusResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -2039,18 +2257,22 @@ void QueryWriteStatusResponse::Swap(QueryWriteStatusResponse* other) {
 void QueryWriteStatusResponse::InternalSwap(QueryWriteStatusResponse* other) {
   std::swap(committed_size_, other->committed_size_);
   std::swap(complete_, other->complete_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata QueryWriteStatusResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = QueryWriteStatusResponse_descriptor_;
+  metadata.reflection = QueryWriteStatusResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // QueryWriteStatusResponse
 
-// int64 committed_size = 1;
+// optional int64 committed_size = 1;
 void QueryWriteStatusResponse::clear_committed_size() {
   committed_size_ = GOOGLE_LONGLONG(0);
 }
@@ -2064,7 +2286,7 @@ void QueryWriteStatusResponse::set_committed_size(::google::protobuf::int64 valu
   // @@protoc_insertion_point(field_set:google.bytestream.QueryWriteStatusResponse.committed_size)
 }
 
-// bool complete = 2;
+// optional bool complete = 2;
 void QueryWriteStatusResponse::clear_complete() {
   complete_ = false;
 }
@@ -2078,6 +2300,9 @@ void QueryWriteStatusResponse::set_complete(bool value) {
   // @@protoc_insertion_point(field_set:google.bytestream.QueryWriteStatusResponse.complete)
 }
 
+inline const QueryWriteStatusResponse* QueryWriteStatusResponse::internal_default_instance() {
+  return &QueryWriteStatusResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

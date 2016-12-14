@@ -20,18 +20,12 @@
 #include <string>
 #include <thread>
 
-#include "parse_arguments.h"
 #include "google/cloud/speech/v1beta1/cloud_speech.grpc.pb.h"
 
 using google::cloud::speech::v1beta1::RecognitionConfig;
 using google::cloud::speech::v1beta1::Speech;
 using google::cloud::speech::v1beta1::StreamingRecognizeRequest;
 using google::cloud::speech::v1beta1::StreamingRecognizeResponse;
-
-static const char usage[] =
-    "Usage:\n"
-    "   streaming_transcribe "
-    "[--bitrate N] audio.(raw|ulaw|flac|amr|awb)\n";
 
 // Write the audio in 64k chunks at a time, simulating audio content arriving
 // from a microphone.
@@ -63,6 +57,9 @@ static void MicrophoneThreadMain(
 }
 
 int main(int argc, char** argv) {
+	std::cout << "press enter to start" << std::endl;
+	getchar();
+
   // Create a Speech Stub connected to the speech service.
   auto creds = grpc::GoogleDefaultCredentials();
   auto channel = grpc::CreateChannel("speech.googleapis.com", creds);
@@ -70,12 +67,13 @@ int main(int argc, char** argv) {
   // Parse command line arguments.
   StreamingRecognizeRequest request;
   auto* streaming_config = request.mutable_streaming_config();
-  char* file_path =
-      ParseArguments(argc, argv, streaming_config->mutable_config());
-  if (nullptr == file_path) {
-    std::cerr << usage;
-    return -1;
-  }
+
+  streaming_config->mutable_config()->set_sample_rate(16000);
+  streaming_config->mutable_config()->set_encoding(RecognitionConfig::LINEAR16);
+  streaming_config->mutable_config()->set_language_code("en-US");
+
+  char* file_path = "testing-voice.pcm";
+
   // Begin a stream.
   grpc::ClientContext context;
   auto streamer = speech->StreamingRecognize(&context);
@@ -104,6 +102,9 @@ int main(int argc, char** argv) {
   if (!status.ok()) {
     // Report the RPC failure.
     std::cerr << status.error_message() << std::endl;
+
+	std::cerr << "If 'invalid authentication credential' error comes up"
+		<<", manually sync R-pi's time" << std::endl;
     return -1;
   }
   return 0;

@@ -19,71 +19,45 @@
 
 namespace google {
 namespace api {
-class Distribution_RangeDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Distribution_Range> {};
-Distribution_RangeDefaultTypeInternal _Distribution_Range_default_instance_;
-class Distribution_BucketOptions_LinearDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Distribution_BucketOptions_Linear> {};
-Distribution_BucketOptions_LinearDefaultTypeInternal _Distribution_BucketOptions_Linear_default_instance_;
-class Distribution_BucketOptions_ExponentialDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Distribution_BucketOptions_Exponential> {};
-Distribution_BucketOptions_ExponentialDefaultTypeInternal _Distribution_BucketOptions_Exponential_default_instance_;
-class Distribution_BucketOptions_ExplicitDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Distribution_BucketOptions_Explicit> {};
-Distribution_BucketOptions_ExplicitDefaultTypeInternal _Distribution_BucketOptions_Explicit_default_instance_;
-class Distribution_BucketOptionsDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Distribution_BucketOptions> {};
-Distribution_BucketOptionsDefaultTypeInternal _Distribution_BucketOptions_default_instance_;
-class DistributionDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Distribution> {};
-DistributionDefaultTypeInternal _Distribution_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[6];
+const ::google::protobuf::Descriptor* Distribution_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Distribution_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Distribution_Range_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Distribution_Range_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Distribution_BucketOptions_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Distribution_BucketOptions_reflection_ = NULL;
 struct Distribution_BucketOptionsOneofInstance {
   const ::google::api::Distribution_BucketOptions_Linear* linear_buckets_;
   const ::google::api::Distribution_BucketOptions_Exponential* exponential_buckets_;
   const ::google::api::Distribution_BucketOptions_Explicit* explicit_buckets_;
-} Distribution_BucketOptions_default_oneof_instance_;
+}* Distribution_BucketOptions_default_oneof_instance_ = NULL;
+const ::google::protobuf::Descriptor* Distribution_BucketOptions_Linear_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Distribution_BucketOptions_Linear_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Distribution_BucketOptions_Exponential_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Distribution_BucketOptions_Exponential_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Distribution_BucketOptions_Explicit_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Distribution_BucketOptions_Explicit_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fdistribution_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fdistribution_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_Range, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_Range, min_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_Range, max_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Linear, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Linear, num_finite_buckets_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Linear, width_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Linear, offset_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Exponential, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Exponential, num_finite_buckets_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Exponential, growth_factor_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Exponential, scale_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Explicit, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Explicit, bounds_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions, _oneof_case_[0]),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Distribution_BucketOptions_default_oneof_instance_), linear_buckets_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Distribution_BucketOptions_default_oneof_instance_), exponential_buckets_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Distribution_BucketOptions_default_oneof_instance_), explicit_buckets_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions, options_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fapi_2fdistribution_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fapi_2fdistribution_2eproto() {
+  protobuf_AddDesc_google_2fapi_2fdistribution_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/api/distribution.proto");
+  GOOGLE_CHECK(file != NULL);
+  Distribution_descriptor_ = file->message_type(0);
+  static const int Distribution_offsets_[6] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution, count_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution, mean_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution, sum_of_squared_deviation_),
@@ -91,63 +65,139 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fdistribution_2
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution, bucket_options_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution, bucket_counts_),
   };
-  return offsets;
+  Distribution_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Distribution_descriptor_,
+      Distribution::internal_default_instance(),
+      Distribution_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Distribution),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution, _internal_metadata_));
+  Distribution_Range_descriptor_ = Distribution_descriptor_->nested_type(0);
+  static const int Distribution_Range_offsets_[2] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_Range, min_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_Range, max_),
+  };
+  Distribution_Range_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Distribution_Range_descriptor_,
+      Distribution_Range::internal_default_instance(),
+      Distribution_Range_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Distribution_Range),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_Range, _internal_metadata_));
+  Distribution_BucketOptions_descriptor_ = Distribution_descriptor_->nested_type(1);
+  static const int Distribution_BucketOptions_offsets_[4] = {
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Distribution_BucketOptions_default_oneof_instance_, linear_buckets_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Distribution_BucketOptions_default_oneof_instance_, exponential_buckets_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Distribution_BucketOptions_default_oneof_instance_, explicit_buckets_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions, options_),
+  };
+  Distribution_BucketOptions_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Distribution_BucketOptions_descriptor_,
+      Distribution_BucketOptions::internal_default_instance(),
+      Distribution_BucketOptions_offsets_,
+      -1,
+      -1,
+      -1,
+      Distribution_BucketOptions_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions, _oneof_case_[0]),
+      sizeof(Distribution_BucketOptions),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions, _internal_metadata_));
+  Distribution_BucketOptions_Linear_descriptor_ = Distribution_BucketOptions_descriptor_->nested_type(0);
+  static const int Distribution_BucketOptions_Linear_offsets_[3] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Linear, num_finite_buckets_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Linear, width_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Linear, offset_),
+  };
+  Distribution_BucketOptions_Linear_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Distribution_BucketOptions_Linear_descriptor_,
+      Distribution_BucketOptions_Linear::internal_default_instance(),
+      Distribution_BucketOptions_Linear_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Distribution_BucketOptions_Linear),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Linear, _internal_metadata_));
+  Distribution_BucketOptions_Exponential_descriptor_ = Distribution_BucketOptions_descriptor_->nested_type(1);
+  static const int Distribution_BucketOptions_Exponential_offsets_[3] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Exponential, num_finite_buckets_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Exponential, growth_factor_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Exponential, scale_),
+  };
+  Distribution_BucketOptions_Exponential_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Distribution_BucketOptions_Exponential_descriptor_,
+      Distribution_BucketOptions_Exponential::internal_default_instance(),
+      Distribution_BucketOptions_Exponential_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Distribution_BucketOptions_Exponential),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Exponential, _internal_metadata_));
+  Distribution_BucketOptions_Explicit_descriptor_ = Distribution_BucketOptions_descriptor_->nested_type(2);
+  static const int Distribution_BucketOptions_Explicit_offsets_[1] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Explicit, bounds_),
+  };
+  Distribution_BucketOptions_Explicit_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Distribution_BucketOptions_Explicit_descriptor_,
+      Distribution_BucketOptions_Explicit::internal_default_instance(),
+      Distribution_BucketOptions_Explicit_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Distribution_BucketOptions_Explicit),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Distribution_BucketOptions_Explicit, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(Distribution_Range)},
-  { 6, -1, sizeof(Distribution_BucketOptions_Linear)},
-  { 13, -1, sizeof(Distribution_BucketOptions_Exponential)},
-  { 20, -1, sizeof(Distribution_BucketOptions_Explicit)},
-  { 25, -1, sizeof(Distribution_BucketOptions)},
-  { 33, -1, sizeof(Distribution)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Distribution_Range_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Distribution_BucketOptions_Linear_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Distribution_BucketOptions_Exponential_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Distribution_BucketOptions_Explicit_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Distribution_BucketOptions_default_instance_), &Distribution_BucketOptions_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Distribution_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fapi_2fdistribution_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/api/distribution.proto", schemas, file_default_instances, protobuf_Offsets_google_2fapi_2fdistribution_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fapi_2fdistribution_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 6);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Distribution_descriptor_, Distribution::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Distribution_Range_descriptor_, Distribution_Range::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Distribution_BucketOptions_descriptor_, Distribution_BucketOptions::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Distribution_BucketOptions_Linear_descriptor_, Distribution_BucketOptions_Linear::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Distribution_BucketOptions_Exponential_descriptor_, Distribution_BucketOptions_Exponential::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Distribution_BucketOptions_Explicit_descriptor_, Distribution_BucketOptions_Explicit::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2fdistribution_2eproto() {
-  _Distribution_Range_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _Distribution_BucketOptions_Linear_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _Distribution_BucketOptions_Exponential_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _Distribution_BucketOptions_Explicit_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _Distribution_BucketOptions_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
-  _Distribution_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
+  Distribution_default_instance_.Shutdown();
+  delete Distribution_reflection_;
+  Distribution_Range_default_instance_.Shutdown();
+  delete Distribution_Range_reflection_;
+  Distribution_BucketOptions_default_instance_.Shutdown();
+  delete Distribution_BucketOptions_default_oneof_instance_;
+  delete Distribution_BucketOptions_reflection_;
+  Distribution_BucketOptions_Linear_default_instance_.Shutdown();
+  delete Distribution_BucketOptions_Linear_reflection_;
+  Distribution_BucketOptions_Exponential_default_instance_.Shutdown();
+  delete Distribution_BucketOptions_Exponential_reflection_;
+  Distribution_BucketOptions_Explicit_default_instance_.Shutdown();
+  delete Distribution_BucketOptions_Explicit_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto_impl() {
@@ -156,59 +206,55 @@ void protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto_impl() {
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fany_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _Distribution_Range_default_instance_.DefaultConstruct();
-  _Distribution_BucketOptions_Linear_default_instance_.DefaultConstruct();
-  _Distribution_BucketOptions_Exponential_default_instance_.DefaultConstruct();
-  _Distribution_BucketOptions_Explicit_default_instance_.DefaultConstruct();
-  _Distribution_BucketOptions_default_instance_.DefaultConstruct();
-  _Distribution_default_instance_.DefaultConstruct();
-  Distribution_BucketOptions_default_oneof_instance_.linear_buckets_ = const_cast< ::google::api::Distribution_BucketOptions_Linear*>(
-      ::google::api::Distribution_BucketOptions_Linear::internal_default_instance());
-  Distribution_BucketOptions_default_oneof_instance_.exponential_buckets_ = const_cast< ::google::api::Distribution_BucketOptions_Exponential*>(
-      ::google::api::Distribution_BucketOptions_Exponential::internal_default_instance());
-  Distribution_BucketOptions_default_oneof_instance_.explicit_buckets_ = const_cast< ::google::api::Distribution_BucketOptions_Explicit*>(
-      ::google::api::Distribution_BucketOptions_Explicit::internal_default_instance());
-  _Distribution_default_instance_.get_mutable()->range_ = const_cast< ::google::api::Distribution_Range*>(
-      ::google::api::Distribution_Range::internal_default_instance());
-  _Distribution_default_instance_.get_mutable()->bucket_options_ = const_cast< ::google::api::Distribution_BucketOptions*>(
-      ::google::api::Distribution_BucketOptions::internal_default_instance());
+  Distribution_default_instance_.DefaultConstruct();
+  Distribution_Range_default_instance_.DefaultConstruct();
+  Distribution_BucketOptions_default_instance_.DefaultConstruct();
+  Distribution_BucketOptions_default_oneof_instance_ = new Distribution_BucketOptionsOneofInstance();
+  Distribution_BucketOptions_Linear_default_instance_.DefaultConstruct();
+  Distribution_BucketOptions_Exponential_default_instance_.DefaultConstruct();
+  Distribution_BucketOptions_Explicit_default_instance_.DefaultConstruct();
+  Distribution_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Distribution_Range_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Distribution_BucketOptions_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Distribution_BucketOptions_Linear_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Distribution_BucketOptions_Exponential_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Distribution_BucketOptions_Explicit_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto_once_);
 void protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fapi_2fdistribution_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
-  static const char descriptor[] = {
-      "\n\035google/api/distribution.proto\022\ngoogle."
-      "api\032\034google/api/annotations.proto\032\031googl"
-      "e/protobuf/any.proto\032\037google/protobuf/ti"
-      "mestamp.proto\"\256\005\n\014Distribution\022\r\n\005count\030"
-      "\001 \001(\003\022\014\n\004mean\030\002 \001(\001\022 \n\030sum_of_squared_de"
-      "viation\030\003 \001(\001\022-\n\005range\030\004 \001(\0132\036.google.ap"
-      "i.Distribution.Range\022>\n\016bucket_options\030\006"
-      " \001(\0132&.google.api.Distribution.BucketOpt"
-      "ions\022\025\n\rbucket_counts\030\007 \003(\003\032!\n\005Range\022\013\n\003"
-      "min\030\001 \001(\001\022\013\n\003max\030\002 \001(\001\032\265\003\n\rBucketOptions"
-      "\022G\n\016linear_buckets\030\001 \001(\0132-.google.api.Di"
-      "stribution.BucketOptions.LinearH\000\022Q\n\023exp"
-      "onential_buckets\030\002 \001(\01322.google.api.Dist"
-      "ribution.BucketOptions.ExponentialH\000\022K\n\020"
-      "explicit_buckets\030\003 \001(\0132/.google.api.Dist"
-      "ribution.BucketOptions.ExplicitH\000\032C\n\006Lin"
-      "ear\022\032\n\022num_finite_buckets\030\001 \001(\005\022\r\n\005width"
-      "\030\002 \001(\001\022\016\n\006offset\030\003 \001(\001\032O\n\013Exponential\022\032\n"
-      "\022num_finite_buckets\030\001 \001(\005\022\025\n\rgrowth_fact"
-      "or\030\002 \001(\001\022\r\n\005scale\030\003 \001(\001\032\032\n\010Explicit\022\016\n\006b"
-      "ounds\030\001 \003(\001B\t\n\007optionsBj\n\016com.google.api"
-      "B\021DistributionProtoP\001ZCgoogle.golang.org"
-      "/genproto/googleapis/api/distribution;di"
-      "stributionb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 938);
+    "\n\035google/api/distribution.proto\022\ngoogle."
+    "api\032\034google/api/annotations.proto\032\031googl"
+    "e/protobuf/any.proto\032\037google/protobuf/ti"
+    "mestamp.proto\"\256\005\n\014Distribution\022\r\n\005count\030"
+    "\001 \001(\003\022\014\n\004mean\030\002 \001(\001\022 \n\030sum_of_squared_de"
+    "viation\030\003 \001(\001\022-\n\005range\030\004 \001(\0132\036.google.ap"
+    "i.Distribution.Range\022>\n\016bucket_options\030\006"
+    " \001(\0132&.google.api.Distribution.BucketOpt"
+    "ions\022\025\n\rbucket_counts\030\007 \003(\003\032!\n\005Range\022\013\n\003"
+    "min\030\001 \001(\001\022\013\n\003max\030\002 \001(\001\032\265\003\n\rBucketOptions"
+    "\022G\n\016linear_buckets\030\001 \001(\0132-.google.api.Di"
+    "stribution.BucketOptions.LinearH\000\022Q\n\023exp"
+    "onential_buckets\030\002 \001(\01322.google.api.Dist"
+    "ribution.BucketOptions.ExponentialH\000\022K\n\020"
+    "explicit_buckets\030\003 \001(\0132/.google.api.Dist"
+    "ribution.BucketOptions.ExplicitH\000\032C\n\006Lin"
+    "ear\022\032\n\022num_finite_buckets\030\001 \001(\005\022\r\n\005width"
+    "\030\002 \001(\001\022\016\n\006offset\030\003 \001(\001\032O\n\013Exponential\022\032\n"
+    "\022num_finite_buckets\030\001 \001(\005\022\025\n\rgrowth_fact"
+    "or\030\002 \001(\001\022\r\n\005scale\030\003 \001(\001\032\032\n\010Explicit\022\016\n\006b"
+    "ounds\030\001 \003(\001B\t\n\007optionsBj\n\016com.google.api"
+    "B\021DistributionProtoP\001ZCgoogle.golang.org"
+    "/genproto/googleapis/api/distribution;di"
+    "stributionb\006proto3", 938);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/distribution.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -229,6 +275,16 @@ struct StaticDescriptorInitializer_google_2fapi_2fdistribution_2eproto {
   }
 } static_descriptor_initializer_google_2fapi_2fdistribution_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -238,20 +294,19 @@ const int Distribution_Range::kMaxFieldNumber;
 
 Distribution_Range::Distribution_Range()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Distribution.Range)
 }
+
+void Distribution_Range::InitAsDefaultInstance() {
+}
+
 Distribution_Range::Distribution_Range(const Distribution_Range& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&min_, &from.min_,
-    reinterpret_cast<char*>(&max_) -
-    reinterpret_cast<char*>(&min_) + sizeof(max_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Distribution.Range)
 }
 
@@ -276,13 +331,15 @@ void Distribution_Range::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Distribution_Range::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return Distribution_Range_descriptor_;
 }
 
 const Distribution_Range& Distribution_Range::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Distribution_Range> Distribution_Range_default_instance_;
 
 Distribution_Range* Distribution_Range::New(::google::protobuf::Arena* arena) const {
   Distribution_Range* n = new Distribution_Range;
@@ -294,8 +351,27 @@ Distribution_Range* Distribution_Range::New(::google::protobuf::Arena* arena) co
 
 void Distribution_Range::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.api.Distribution.Range)
-  ::memset(&min_, 0, reinterpret_cast<char*>(&max_) -
-    reinterpret_cast<char*>(&min_) + sizeof(max_));
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(Distribution_Range, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<Distribution_Range*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(min_, max_);
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool Distribution_Range::MergePartialFromCodedStream(
@@ -304,13 +380,13 @@ bool Distribution_Range::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.Distribution.Range)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // double min = 1;
+      // optional double min = 1;
       case 1: {
-        if (tag == 9u) {
+        if (tag == 9) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
@@ -318,12 +394,14 @@ bool Distribution_Range::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(17)) goto parse_max;
         break;
       }
 
-      // double max = 2;
+      // optional double max = 2;
       case 2: {
-        if (tag == 17u) {
+        if (tag == 17) {
+         parse_max:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
@@ -331,6 +409,7 @@ bool Distribution_Range::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -358,12 +437,12 @@ failure:
 void Distribution_Range::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.api.Distribution.Range)
-  // double min = 1;
+  // optional double min = 1;
   if (this->min() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(1, this->min(), output);
   }
 
-  // double max = 2;
+  // optional double max = 2;
   if (this->max() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->max(), output);
   }
@@ -375,12 +454,12 @@ void Distribution_Range::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.Distribution.Range)
-  // double min = 1;
+  // optional double min = 1;
   if (this->min() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(1, this->min(), target);
   }
 
-  // double max = 2;
+  // optional double max = 2;
   if (this->max() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->max(), target);
   }
@@ -393,12 +472,12 @@ size_t Distribution_Range::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.Distribution.Range)
   size_t total_size = 0;
 
-  // double min = 1;
+  // optional double min = 1;
   if (this->min() != 0) {
     total_size += 1 + 8;
   }
 
-  // double max = 2;
+  // optional double max = 2;
   if (this->max() != 0) {
     total_size += 1 + 8;
   }
@@ -412,7 +491,7 @@ size_t Distribution_Range::ByteSizeLong() const {
 
 void Distribution_Range::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Distribution.Range)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Distribution_Range* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Distribution_Range>(
           &from);
@@ -421,14 +500,21 @@ void Distribution_Range::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Distribution.Range)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Distribution_Range::MergeFrom(const Distribution_Range& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Distribution.Range)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Distribution_Range::UnsafeMergeFrom(const Distribution_Range& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.min() != 0) {
     set_min(from.min());
   }
@@ -448,10 +534,11 @@ void Distribution_Range::CopyFrom(const Distribution_Range& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Distribution.Range)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Distribution_Range::IsInitialized() const {
+
   return true;
 }
 
@@ -462,48 +549,20 @@ void Distribution_Range::Swap(Distribution_Range* other) {
 void Distribution_Range::InternalSwap(Distribution_Range* other) {
   std::swap(min_, other->min_);
   std::swap(max_, other->max_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Distribution_Range::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Distribution_Range_descriptor_;
+  metadata.reflection = Distribution_Range_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// Distribution_Range
 
-// double min = 1;
-void Distribution_Range::clear_min() {
-  min_ = 0;
-}
-double Distribution_Range::min() const {
-  // @@protoc_insertion_point(field_get:google.api.Distribution.Range.min)
-  return min_;
-}
-void Distribution_Range::set_min(double value) {
-  
-  min_ = value;
-  // @@protoc_insertion_point(field_set:google.api.Distribution.Range.min)
-}
-
-// double max = 2;
-void Distribution_Range::clear_max() {
-  max_ = 0;
-}
-double Distribution_Range::max() const {
-  // @@protoc_insertion_point(field_get:google.api.Distribution.Range.max)
-  return max_;
-}
-void Distribution_Range::set_max(double value) {
-  
-  max_ = value;
-  // @@protoc_insertion_point(field_set:google.api.Distribution.Range.max)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
+// -------------------------------------------------------------------
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Distribution_BucketOptions_Linear::kNumFiniteBucketsFieldNumber;
@@ -513,20 +572,19 @@ const int Distribution_BucketOptions_Linear::kOffsetFieldNumber;
 
 Distribution_BucketOptions_Linear::Distribution_BucketOptions_Linear()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Distribution.BucketOptions.Linear)
 }
+
+void Distribution_BucketOptions_Linear::InitAsDefaultInstance() {
+}
+
 Distribution_BucketOptions_Linear::Distribution_BucketOptions_Linear(const Distribution_BucketOptions_Linear& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&width_, &from.width_,
-    reinterpret_cast<char*>(&num_finite_buckets_) -
-    reinterpret_cast<char*>(&width_) + sizeof(num_finite_buckets_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Distribution.BucketOptions.Linear)
 }
 
@@ -551,13 +609,15 @@ void Distribution_BucketOptions_Linear::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Distribution_BucketOptions_Linear::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return Distribution_BucketOptions_Linear_descriptor_;
 }
 
 const Distribution_BucketOptions_Linear& Distribution_BucketOptions_Linear::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Distribution_BucketOptions_Linear> Distribution_BucketOptions_Linear_default_instance_;
 
 Distribution_BucketOptions_Linear* Distribution_BucketOptions_Linear::New(::google::protobuf::Arena* arena) const {
   Distribution_BucketOptions_Linear* n = new Distribution_BucketOptions_Linear;
@@ -569,8 +629,27 @@ Distribution_BucketOptions_Linear* Distribution_BucketOptions_Linear::New(::goog
 
 void Distribution_BucketOptions_Linear::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.api.Distribution.BucketOptions.Linear)
-  ::memset(&width_, 0, reinterpret_cast<char*>(&num_finite_buckets_) -
-    reinterpret_cast<char*>(&width_) + sizeof(num_finite_buckets_));
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(Distribution_BucketOptions_Linear, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<Distribution_BucketOptions_Linear*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(width_, num_finite_buckets_);
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool Distribution_BucketOptions_Linear::MergePartialFromCodedStream(
@@ -579,13 +658,13 @@ bool Distribution_BucketOptions_Linear::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.Distribution.BucketOptions.Linear)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 num_finite_buckets = 1;
+      // optional int32 num_finite_buckets = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -593,12 +672,14 @@ bool Distribution_BucketOptions_Linear::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(17)) goto parse_width;
         break;
       }
 
-      // double width = 2;
+      // optional double width = 2;
       case 2: {
-        if (tag == 17u) {
+        if (tag == 17) {
+         parse_width:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
@@ -606,12 +687,14 @@ bool Distribution_BucketOptions_Linear::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(25)) goto parse_offset;
         break;
       }
 
-      // double offset = 3;
+      // optional double offset = 3;
       case 3: {
-        if (tag == 25u) {
+        if (tag == 25) {
+         parse_offset:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
@@ -619,6 +702,7 @@ bool Distribution_BucketOptions_Linear::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -646,17 +730,17 @@ failure:
 void Distribution_BucketOptions_Linear::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.api.Distribution.BucketOptions.Linear)
-  // int32 num_finite_buckets = 1;
+  // optional int32 num_finite_buckets = 1;
   if (this->num_finite_buckets() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->num_finite_buckets(), output);
   }
 
-  // double width = 2;
+  // optional double width = 2;
   if (this->width() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->width(), output);
   }
 
-  // double offset = 3;
+  // optional double offset = 3;
   if (this->offset() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->offset(), output);
   }
@@ -668,17 +752,17 @@ void Distribution_BucketOptions_Linear::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.Distribution.BucketOptions.Linear)
-  // int32 num_finite_buckets = 1;
+  // optional int32 num_finite_buckets = 1;
   if (this->num_finite_buckets() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->num_finite_buckets(), target);
   }
 
-  // double width = 2;
+  // optional double width = 2;
   if (this->width() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->width(), target);
   }
 
-  // double offset = 3;
+  // optional double offset = 3;
   if (this->offset() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->offset(), target);
   }
@@ -691,21 +775,21 @@ size_t Distribution_BucketOptions_Linear::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.Distribution.BucketOptions.Linear)
   size_t total_size = 0;
 
-  // double width = 2;
-  if (this->width() != 0) {
-    total_size += 1 + 8;
-  }
-
-  // double offset = 3;
-  if (this->offset() != 0) {
-    total_size += 1 + 8;
-  }
-
-  // int32 num_finite_buckets = 1;
+  // optional int32 num_finite_buckets = 1;
   if (this->num_finite_buckets() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->num_finite_buckets());
+  }
+
+  // optional double width = 2;
+  if (this->width() != 0) {
+    total_size += 1 + 8;
+  }
+
+  // optional double offset = 3;
+  if (this->offset() != 0) {
+    total_size += 1 + 8;
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -717,7 +801,7 @@ size_t Distribution_BucketOptions_Linear::ByteSizeLong() const {
 
 void Distribution_BucketOptions_Linear::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Distribution.BucketOptions.Linear)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Distribution_BucketOptions_Linear* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Distribution_BucketOptions_Linear>(
           &from);
@@ -726,22 +810,29 @@ void Distribution_BucketOptions_Linear::MergeFrom(const ::google::protobuf::Mess
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Distribution.BucketOptions.Linear)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Distribution_BucketOptions_Linear::MergeFrom(const Distribution_BucketOptions_Linear& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Distribution.BucketOptions.Linear)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Distribution_BucketOptions_Linear::UnsafeMergeFrom(const Distribution_BucketOptions_Linear& from) {
+  GOOGLE_DCHECK(&from != this);
+  if (from.num_finite_buckets() != 0) {
+    set_num_finite_buckets(from.num_finite_buckets());
+  }
   if (from.width() != 0) {
     set_width(from.width());
   }
   if (from.offset() != 0) {
     set_offset(from.offset());
-  }
-  if (from.num_finite_buckets() != 0) {
-    set_num_finite_buckets(from.num_finite_buckets());
   }
 }
 
@@ -756,10 +847,11 @@ void Distribution_BucketOptions_Linear::CopyFrom(const Distribution_BucketOption
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Distribution.BucketOptions.Linear)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Distribution_BucketOptions_Linear::IsInitialized() const {
+
   return true;
 }
 
@@ -768,65 +860,23 @@ void Distribution_BucketOptions_Linear::Swap(Distribution_BucketOptions_Linear* 
   InternalSwap(other);
 }
 void Distribution_BucketOptions_Linear::InternalSwap(Distribution_BucketOptions_Linear* other) {
+  std::swap(num_finite_buckets_, other->num_finite_buckets_);
   std::swap(width_, other->width_);
   std::swap(offset_, other->offset_);
-  std::swap(num_finite_buckets_, other->num_finite_buckets_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Distribution_BucketOptions_Linear::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Distribution_BucketOptions_Linear_descriptor_;
+  metadata.reflection = Distribution_BucketOptions_Linear_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// Distribution_BucketOptions_Linear
 
-// int32 num_finite_buckets = 1;
-void Distribution_BucketOptions_Linear::clear_num_finite_buckets() {
-  num_finite_buckets_ = 0;
-}
-::google::protobuf::int32 Distribution_BucketOptions_Linear::num_finite_buckets() const {
-  // @@protoc_insertion_point(field_get:google.api.Distribution.BucketOptions.Linear.num_finite_buckets)
-  return num_finite_buckets_;
-}
-void Distribution_BucketOptions_Linear::set_num_finite_buckets(::google::protobuf::int32 value) {
-  
-  num_finite_buckets_ = value;
-  // @@protoc_insertion_point(field_set:google.api.Distribution.BucketOptions.Linear.num_finite_buckets)
-}
-
-// double width = 2;
-void Distribution_BucketOptions_Linear::clear_width() {
-  width_ = 0;
-}
-double Distribution_BucketOptions_Linear::width() const {
-  // @@protoc_insertion_point(field_get:google.api.Distribution.BucketOptions.Linear.width)
-  return width_;
-}
-void Distribution_BucketOptions_Linear::set_width(double value) {
-  
-  width_ = value;
-  // @@protoc_insertion_point(field_set:google.api.Distribution.BucketOptions.Linear.width)
-}
-
-// double offset = 3;
-void Distribution_BucketOptions_Linear::clear_offset() {
-  offset_ = 0;
-}
-double Distribution_BucketOptions_Linear::offset() const {
-  // @@protoc_insertion_point(field_get:google.api.Distribution.BucketOptions.Linear.offset)
-  return offset_;
-}
-void Distribution_BucketOptions_Linear::set_offset(double value) {
-  
-  offset_ = value;
-  // @@protoc_insertion_point(field_set:google.api.Distribution.BucketOptions.Linear.offset)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
+// -------------------------------------------------------------------
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Distribution_BucketOptions_Exponential::kNumFiniteBucketsFieldNumber;
@@ -836,20 +886,19 @@ const int Distribution_BucketOptions_Exponential::kScaleFieldNumber;
 
 Distribution_BucketOptions_Exponential::Distribution_BucketOptions_Exponential()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Distribution.BucketOptions.Exponential)
 }
+
+void Distribution_BucketOptions_Exponential::InitAsDefaultInstance() {
+}
+
 Distribution_BucketOptions_Exponential::Distribution_BucketOptions_Exponential(const Distribution_BucketOptions_Exponential& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&growth_factor_, &from.growth_factor_,
-    reinterpret_cast<char*>(&num_finite_buckets_) -
-    reinterpret_cast<char*>(&growth_factor_) + sizeof(num_finite_buckets_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Distribution.BucketOptions.Exponential)
 }
 
@@ -874,13 +923,15 @@ void Distribution_BucketOptions_Exponential::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Distribution_BucketOptions_Exponential::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return Distribution_BucketOptions_Exponential_descriptor_;
 }
 
 const Distribution_BucketOptions_Exponential& Distribution_BucketOptions_Exponential::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Distribution_BucketOptions_Exponential> Distribution_BucketOptions_Exponential_default_instance_;
 
 Distribution_BucketOptions_Exponential* Distribution_BucketOptions_Exponential::New(::google::protobuf::Arena* arena) const {
   Distribution_BucketOptions_Exponential* n = new Distribution_BucketOptions_Exponential;
@@ -892,8 +943,27 @@ Distribution_BucketOptions_Exponential* Distribution_BucketOptions_Exponential::
 
 void Distribution_BucketOptions_Exponential::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.api.Distribution.BucketOptions.Exponential)
-  ::memset(&growth_factor_, 0, reinterpret_cast<char*>(&num_finite_buckets_) -
-    reinterpret_cast<char*>(&growth_factor_) + sizeof(num_finite_buckets_));
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(Distribution_BucketOptions_Exponential, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<Distribution_BucketOptions_Exponential*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(growth_factor_, num_finite_buckets_);
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool Distribution_BucketOptions_Exponential::MergePartialFromCodedStream(
@@ -902,13 +972,13 @@ bool Distribution_BucketOptions_Exponential::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.Distribution.BucketOptions.Exponential)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 num_finite_buckets = 1;
+      // optional int32 num_finite_buckets = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -916,12 +986,14 @@ bool Distribution_BucketOptions_Exponential::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(17)) goto parse_growth_factor;
         break;
       }
 
-      // double growth_factor = 2;
+      // optional double growth_factor = 2;
       case 2: {
-        if (tag == 17u) {
+        if (tag == 17) {
+         parse_growth_factor:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
@@ -929,12 +1001,14 @@ bool Distribution_BucketOptions_Exponential::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(25)) goto parse_scale;
         break;
       }
 
-      // double scale = 3;
+      // optional double scale = 3;
       case 3: {
-        if (tag == 25u) {
+        if (tag == 25) {
+         parse_scale:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
@@ -942,6 +1016,7 @@ bool Distribution_BucketOptions_Exponential::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -969,17 +1044,17 @@ failure:
 void Distribution_BucketOptions_Exponential::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.api.Distribution.BucketOptions.Exponential)
-  // int32 num_finite_buckets = 1;
+  // optional int32 num_finite_buckets = 1;
   if (this->num_finite_buckets() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->num_finite_buckets(), output);
   }
 
-  // double growth_factor = 2;
+  // optional double growth_factor = 2;
   if (this->growth_factor() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->growth_factor(), output);
   }
 
-  // double scale = 3;
+  // optional double scale = 3;
   if (this->scale() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->scale(), output);
   }
@@ -991,17 +1066,17 @@ void Distribution_BucketOptions_Exponential::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.Distribution.BucketOptions.Exponential)
-  // int32 num_finite_buckets = 1;
+  // optional int32 num_finite_buckets = 1;
   if (this->num_finite_buckets() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->num_finite_buckets(), target);
   }
 
-  // double growth_factor = 2;
+  // optional double growth_factor = 2;
   if (this->growth_factor() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->growth_factor(), target);
   }
 
-  // double scale = 3;
+  // optional double scale = 3;
   if (this->scale() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->scale(), target);
   }
@@ -1014,21 +1089,21 @@ size_t Distribution_BucketOptions_Exponential::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.Distribution.BucketOptions.Exponential)
   size_t total_size = 0;
 
-  // double growth_factor = 2;
-  if (this->growth_factor() != 0) {
-    total_size += 1 + 8;
-  }
-
-  // double scale = 3;
-  if (this->scale() != 0) {
-    total_size += 1 + 8;
-  }
-
-  // int32 num_finite_buckets = 1;
+  // optional int32 num_finite_buckets = 1;
   if (this->num_finite_buckets() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->num_finite_buckets());
+  }
+
+  // optional double growth_factor = 2;
+  if (this->growth_factor() != 0) {
+    total_size += 1 + 8;
+  }
+
+  // optional double scale = 3;
+  if (this->scale() != 0) {
+    total_size += 1 + 8;
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -1040,7 +1115,7 @@ size_t Distribution_BucketOptions_Exponential::ByteSizeLong() const {
 
 void Distribution_BucketOptions_Exponential::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Distribution.BucketOptions.Exponential)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Distribution_BucketOptions_Exponential* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Distribution_BucketOptions_Exponential>(
           &from);
@@ -1049,22 +1124,29 @@ void Distribution_BucketOptions_Exponential::MergeFrom(const ::google::protobuf:
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Distribution.BucketOptions.Exponential)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Distribution_BucketOptions_Exponential::MergeFrom(const Distribution_BucketOptions_Exponential& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Distribution.BucketOptions.Exponential)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Distribution_BucketOptions_Exponential::UnsafeMergeFrom(const Distribution_BucketOptions_Exponential& from) {
+  GOOGLE_DCHECK(&from != this);
+  if (from.num_finite_buckets() != 0) {
+    set_num_finite_buckets(from.num_finite_buckets());
+  }
   if (from.growth_factor() != 0) {
     set_growth_factor(from.growth_factor());
   }
   if (from.scale() != 0) {
     set_scale(from.scale());
-  }
-  if (from.num_finite_buckets() != 0) {
-    set_num_finite_buckets(from.num_finite_buckets());
   }
 }
 
@@ -1079,10 +1161,11 @@ void Distribution_BucketOptions_Exponential::CopyFrom(const Distribution_BucketO
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Distribution.BucketOptions.Exponential)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Distribution_BucketOptions_Exponential::IsInitialized() const {
+
   return true;
 }
 
@@ -1091,65 +1174,23 @@ void Distribution_BucketOptions_Exponential::Swap(Distribution_BucketOptions_Exp
   InternalSwap(other);
 }
 void Distribution_BucketOptions_Exponential::InternalSwap(Distribution_BucketOptions_Exponential* other) {
+  std::swap(num_finite_buckets_, other->num_finite_buckets_);
   std::swap(growth_factor_, other->growth_factor_);
   std::swap(scale_, other->scale_);
-  std::swap(num_finite_buckets_, other->num_finite_buckets_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Distribution_BucketOptions_Exponential::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Distribution_BucketOptions_Exponential_descriptor_;
+  metadata.reflection = Distribution_BucketOptions_Exponential_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// Distribution_BucketOptions_Exponential
 
-// int32 num_finite_buckets = 1;
-void Distribution_BucketOptions_Exponential::clear_num_finite_buckets() {
-  num_finite_buckets_ = 0;
-}
-::google::protobuf::int32 Distribution_BucketOptions_Exponential::num_finite_buckets() const {
-  // @@protoc_insertion_point(field_get:google.api.Distribution.BucketOptions.Exponential.num_finite_buckets)
-  return num_finite_buckets_;
-}
-void Distribution_BucketOptions_Exponential::set_num_finite_buckets(::google::protobuf::int32 value) {
-  
-  num_finite_buckets_ = value;
-  // @@protoc_insertion_point(field_set:google.api.Distribution.BucketOptions.Exponential.num_finite_buckets)
-}
-
-// double growth_factor = 2;
-void Distribution_BucketOptions_Exponential::clear_growth_factor() {
-  growth_factor_ = 0;
-}
-double Distribution_BucketOptions_Exponential::growth_factor() const {
-  // @@protoc_insertion_point(field_get:google.api.Distribution.BucketOptions.Exponential.growth_factor)
-  return growth_factor_;
-}
-void Distribution_BucketOptions_Exponential::set_growth_factor(double value) {
-  
-  growth_factor_ = value;
-  // @@protoc_insertion_point(field_set:google.api.Distribution.BucketOptions.Exponential.growth_factor)
-}
-
-// double scale = 3;
-void Distribution_BucketOptions_Exponential::clear_scale() {
-  scale_ = 0;
-}
-double Distribution_BucketOptions_Exponential::scale() const {
-  // @@protoc_insertion_point(field_get:google.api.Distribution.BucketOptions.Exponential.scale)
-  return scale_;
-}
-void Distribution_BucketOptions_Exponential::set_scale(double value) {
-  
-  scale_ = value;
-  // @@protoc_insertion_point(field_set:google.api.Distribution.BucketOptions.Exponential.scale)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
+// -------------------------------------------------------------------
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Distribution_BucketOptions_Explicit::kBoundsFieldNumber;
@@ -1157,18 +1198,19 @@ const int Distribution_BucketOptions_Explicit::kBoundsFieldNumber;
 
 Distribution_BucketOptions_Explicit::Distribution_BucketOptions_Explicit()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Distribution.BucketOptions.Explicit)
 }
+
+void Distribution_BucketOptions_Explicit::InitAsDefaultInstance() {
+}
+
 Distribution_BucketOptions_Explicit::Distribution_BucketOptions_Explicit(const Distribution_BucketOptions_Explicit& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      bounds_(from.bounds_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Distribution.BucketOptions.Explicit)
 }
 
@@ -1191,13 +1233,15 @@ void Distribution_BucketOptions_Explicit::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Distribution_BucketOptions_Explicit::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return Distribution_BucketOptions_Explicit_descriptor_;
 }
 
 const Distribution_BucketOptions_Explicit& Distribution_BucketOptions_Explicit::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Distribution_BucketOptions_Explicit> Distribution_BucketOptions_Explicit_default_instance_;
 
 Distribution_BucketOptions_Explicit* Distribution_BucketOptions_Explicit::New(::google::protobuf::Arena* arena) const {
   Distribution_BucketOptions_Explicit* n = new Distribution_BucketOptions_Explicit;
@@ -1218,23 +1262,24 @@ bool Distribution_BucketOptions_Explicit::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.Distribution.BucketOptions.Explicit)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated double bounds = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
                  input, this->mutable_bounds())));
-        } else if (tag == 9u) {
+        } else if (tag == 9) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 1, 10u, input, this->mutable_bounds())));
+                 1, 10, input, this->mutable_bounds())));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1326,7 +1371,7 @@ size_t Distribution_BucketOptions_Explicit::ByteSizeLong() const {
 
 void Distribution_BucketOptions_Explicit::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Distribution.BucketOptions.Explicit)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Distribution_BucketOptions_Explicit* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Distribution_BucketOptions_Explicit>(
           &from);
@@ -1335,15 +1380,22 @@ void Distribution_BucketOptions_Explicit::MergeFrom(const ::google::protobuf::Me
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Distribution.BucketOptions.Explicit)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Distribution_BucketOptions_Explicit::MergeFrom(const Distribution_BucketOptions_Explicit& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Distribution.BucketOptions.Explicit)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  bounds_.MergeFrom(from.bounds_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Distribution_BucketOptions_Explicit::UnsafeMergeFrom(const Distribution_BucketOptions_Explicit& from) {
+  GOOGLE_DCHECK(&from != this);
+  bounds_.UnsafeMergeFrom(from.bounds_);
 }
 
 void Distribution_BucketOptions_Explicit::CopyFrom(const ::google::protobuf::Message& from) {
@@ -1357,10 +1409,11 @@ void Distribution_BucketOptions_Explicit::CopyFrom(const Distribution_BucketOpti
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Distribution.BucketOptions.Explicit)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Distribution_BucketOptions_Explicit::IsInitialized() const {
+
   return true;
 }
 
@@ -1370,50 +1423,20 @@ void Distribution_BucketOptions_Explicit::Swap(Distribution_BucketOptions_Explic
 }
 void Distribution_BucketOptions_Explicit::InternalSwap(Distribution_BucketOptions_Explicit* other) {
   bounds_.UnsafeArenaSwap(&other->bounds_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Distribution_BucketOptions_Explicit::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Distribution_BucketOptions_Explicit_descriptor_;
+  metadata.reflection = Distribution_BucketOptions_Explicit_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// Distribution_BucketOptions_Explicit
 
-// repeated double bounds = 1;
-int Distribution_BucketOptions_Explicit::bounds_size() const {
-  return bounds_.size();
-}
-void Distribution_BucketOptions_Explicit::clear_bounds() {
-  bounds_.Clear();
-}
-double Distribution_BucketOptions_Explicit::bounds(int index) const {
-  // @@protoc_insertion_point(field_get:google.api.Distribution.BucketOptions.Explicit.bounds)
-  return bounds_.Get(index);
-}
-void Distribution_BucketOptions_Explicit::set_bounds(int index, double value) {
-  bounds_.Set(index, value);
-  // @@protoc_insertion_point(field_set:google.api.Distribution.BucketOptions.Explicit.bounds)
-}
-void Distribution_BucketOptions_Explicit::add_bounds(double value) {
-  bounds_.Add(value);
-  // @@protoc_insertion_point(field_add:google.api.Distribution.BucketOptions.Explicit.bounds)
-}
-const ::google::protobuf::RepeatedField< double >&
-Distribution_BucketOptions_Explicit::bounds() const {
-  // @@protoc_insertion_point(field_list:google.api.Distribution.BucketOptions.Explicit.bounds)
-  return bounds_;
-}
-::google::protobuf::RepeatedField< double >*
-Distribution_BucketOptions_Explicit::mutable_bounds() {
-  // @@protoc_insertion_point(field_mutable_list:google.api.Distribution.BucketOptions.Explicit.bounds)
-  return &bounds_;
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
+// -------------------------------------------------------------------
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Distribution_BucketOptions::kLinearBucketsFieldNumber;
@@ -1423,35 +1446,25 @@ const int Distribution_BucketOptions::kExplicitBucketsFieldNumber;
 
 Distribution_BucketOptions::Distribution_BucketOptions()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Distribution.BucketOptions)
 }
+
+void Distribution_BucketOptions::InitAsDefaultInstance() {
+  Distribution_BucketOptions_default_oneof_instance_->linear_buckets_ = const_cast< ::google::api::Distribution_BucketOptions_Linear*>(
+      ::google::api::Distribution_BucketOptions_Linear::internal_default_instance());
+  Distribution_BucketOptions_default_oneof_instance_->exponential_buckets_ = const_cast< ::google::api::Distribution_BucketOptions_Exponential*>(
+      ::google::api::Distribution_BucketOptions_Exponential::internal_default_instance());
+  Distribution_BucketOptions_default_oneof_instance_->explicit_buckets_ = const_cast< ::google::api::Distribution_BucketOptions_Explicit*>(
+      ::google::api::Distribution_BucketOptions_Explicit::internal_default_instance());
+}
+
 Distribution_BucketOptions::Distribution_BucketOptions(const Distribution_BucketOptions& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  clear_has_options();
-  switch (from.options_case()) {
-    case kLinearBuckets: {
-      mutable_linear_buckets()->::google::api::Distribution_BucketOptions_Linear::MergeFrom(from.linear_buckets());
-      break;
-    }
-    case kExponentialBuckets: {
-      mutable_exponential_buckets()->::google::api::Distribution_BucketOptions_Exponential::MergeFrom(from.exponential_buckets());
-      break;
-    }
-    case kExplicitBuckets: {
-      mutable_explicit_buckets()->::google::api::Distribution_BucketOptions_Explicit::MergeFrom(from.explicit_buckets());
-      break;
-    }
-    case OPTIONS_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Distribution.BucketOptions)
 }
 
@@ -1478,13 +1491,15 @@ void Distribution_BucketOptions::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Distribution_BucketOptions::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return Distribution_BucketOptions_descriptor_;
 }
 
 const Distribution_BucketOptions& Distribution_BucketOptions::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Distribution_BucketOptions> Distribution_BucketOptions_default_instance_;
 
 Distribution_BucketOptions* Distribution_BucketOptions::New(::google::protobuf::Arena* arena) const {
   Distribution_BucketOptions* n = new Distribution_BucketOptions;
@@ -1528,40 +1543,45 @@ bool Distribution_BucketOptions::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.Distribution.BucketOptions)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.api.Distribution.BucketOptions.Linear linear_buckets = 1;
+      // optional .google.api.Distribution.BucketOptions.Linear linear_buckets = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_linear_buckets()));
         } else {
           goto handle_unusual;
         }
+        goto after_explicit_buckets;
         break;
       }
 
-      // .google.api.Distribution.BucketOptions.Exponential exponential_buckets = 2;
+      // optional .google.api.Distribution.BucketOptions.Exponential exponential_buckets = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_exponential_buckets()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_explicit_buckets;
         break;
       }
 
-      // .google.api.Distribution.BucketOptions.Explicit explicit_buckets = 3;
+      // optional .google.api.Distribution.BucketOptions.Explicit explicit_buckets = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_explicit_buckets:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_explicit_buckets()));
         } else {
           goto handle_unusual;
         }
+       after_explicit_buckets:
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1589,19 +1609,19 @@ failure:
 void Distribution_BucketOptions::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.api.Distribution.BucketOptions)
-  // .google.api.Distribution.BucketOptions.Linear linear_buckets = 1;
+  // optional .google.api.Distribution.BucketOptions.Linear linear_buckets = 1;
   if (has_linear_buckets()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *options_.linear_buckets_, output);
   }
 
-  // .google.api.Distribution.BucketOptions.Exponential exponential_buckets = 2;
+  // optional .google.api.Distribution.BucketOptions.Exponential exponential_buckets = 2;
   if (has_exponential_buckets()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *options_.exponential_buckets_, output);
   }
 
-  // .google.api.Distribution.BucketOptions.Explicit explicit_buckets = 3;
+  // optional .google.api.Distribution.BucketOptions.Explicit explicit_buckets = 3;
   if (has_explicit_buckets()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *options_.explicit_buckets_, output);
@@ -1614,21 +1634,21 @@ void Distribution_BucketOptions::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.Distribution.BucketOptions)
-  // .google.api.Distribution.BucketOptions.Linear linear_buckets = 1;
+  // optional .google.api.Distribution.BucketOptions.Linear linear_buckets = 1;
   if (has_linear_buckets()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *options_.linear_buckets_, false, target);
   }
 
-  // .google.api.Distribution.BucketOptions.Exponential exponential_buckets = 2;
+  // optional .google.api.Distribution.BucketOptions.Exponential exponential_buckets = 2;
   if (has_exponential_buckets()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *options_.exponential_buckets_, false, target);
   }
 
-  // .google.api.Distribution.BucketOptions.Explicit explicit_buckets = 3;
+  // optional .google.api.Distribution.BucketOptions.Explicit explicit_buckets = 3;
   if (has_explicit_buckets()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -1644,21 +1664,21 @@ size_t Distribution_BucketOptions::ByteSizeLong() const {
   size_t total_size = 0;
 
   switch (options_case()) {
-    // .google.api.Distribution.BucketOptions.Linear linear_buckets = 1;
+    // optional .google.api.Distribution.BucketOptions.Linear linear_buckets = 1;
     case kLinearBuckets: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *options_.linear_buckets_);
       break;
     }
-    // .google.api.Distribution.BucketOptions.Exponential exponential_buckets = 2;
+    // optional .google.api.Distribution.BucketOptions.Exponential exponential_buckets = 2;
     case kExponentialBuckets: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *options_.exponential_buckets_);
       break;
     }
-    // .google.api.Distribution.BucketOptions.Explicit explicit_buckets = 3;
+    // optional .google.api.Distribution.BucketOptions.Explicit explicit_buckets = 3;
     case kExplicitBuckets: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -1678,7 +1698,7 @@ size_t Distribution_BucketOptions::ByteSizeLong() const {
 
 void Distribution_BucketOptions::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Distribution.BucketOptions)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Distribution_BucketOptions* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Distribution_BucketOptions>(
           &from);
@@ -1687,14 +1707,21 @@ void Distribution_BucketOptions::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Distribution.BucketOptions)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Distribution_BucketOptions::MergeFrom(const Distribution_BucketOptions& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Distribution.BucketOptions)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Distribution_BucketOptions::UnsafeMergeFrom(const Distribution_BucketOptions& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.options_case()) {
     case kLinearBuckets: {
       mutable_linear_buckets()->::google::api::Distribution_BucketOptions_Linear::MergeFrom(from.linear_buckets());
@@ -1725,10 +1752,11 @@ void Distribution_BucketOptions::CopyFrom(const Distribution_BucketOptions& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Distribution.BucketOptions)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Distribution_BucketOptions::IsInitialized() const {
+
   return true;
 }
 
@@ -1739,18 +1767,661 @@ void Distribution_BucketOptions::Swap(Distribution_BucketOptions* other) {
 void Distribution_BucketOptions::InternalSwap(Distribution_BucketOptions* other) {
   std::swap(options_, other->options_);
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Distribution_BucketOptions::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Distribution_BucketOptions_descriptor_;
+  metadata.reflection = Distribution_BucketOptions_reflection_;
+  return metadata;
+}
+
+
+// -------------------------------------------------------------------
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int Distribution::kCountFieldNumber;
+const int Distribution::kMeanFieldNumber;
+const int Distribution::kSumOfSquaredDeviationFieldNumber;
+const int Distribution::kRangeFieldNumber;
+const int Distribution::kBucketOptionsFieldNumber;
+const int Distribution::kBucketCountsFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+Distribution::Distribution()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:google.api.Distribution)
+}
+
+void Distribution::InitAsDefaultInstance() {
+  range_ = const_cast< ::google::api::Distribution_Range*>(
+      ::google::api::Distribution_Range::internal_default_instance());
+  bucket_options_ = const_cast< ::google::api::Distribution_BucketOptions*>(
+      ::google::api::Distribution_BucketOptions::internal_default_instance());
+}
+
+Distribution::Distribution(const Distribution& from)
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:google.api.Distribution)
+}
+
+void Distribution::SharedCtor() {
+  range_ = NULL;
+  bucket_options_ = NULL;
+  ::memset(&count_, 0, reinterpret_cast<char*>(&sum_of_squared_deviation_) -
+    reinterpret_cast<char*>(&count_) + sizeof(sum_of_squared_deviation_));
+  _cached_size_ = 0;
+}
+
+Distribution::~Distribution() {
+  // @@protoc_insertion_point(destructor:google.api.Distribution)
+  SharedDtor();
+}
+
+void Distribution::SharedDtor() {
+  if (this != &Distribution_default_instance_.get()) {
+    delete range_;
+    delete bucket_options_;
+  }
+}
+
+void Distribution::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* Distribution::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return Distribution_descriptor_;
+}
+
+const Distribution& Distribution::default_instance() {
+  protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
+  return *internal_default_instance();
+}
+
+::google::protobuf::internal::ExplicitlyConstructed<Distribution> Distribution_default_instance_;
+
+Distribution* Distribution::New(::google::protobuf::Arena* arena) const {
+  Distribution* n = new Distribution;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void Distribution::Clear() {
+// @@protoc_insertion_point(message_clear_start:google.api.Distribution)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(Distribution, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<Distribution*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(count_, sum_of_squared_deviation_);
+  if (GetArenaNoVirtual() == NULL && range_ != NULL) delete range_;
+  range_ = NULL;
+  if (GetArenaNoVirtual() == NULL && bucket_options_ != NULL) delete bucket_options_;
+  bucket_options_ = NULL;
+
+#undef ZR_HELPER_
+#undef ZR_
+
+  bucket_counts_.Clear();
+}
+
+bool Distribution::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:google.api.Distribution)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional int64 count = 1;
+      case 1: {
+        if (tag == 8) {
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, &count_)));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(17)) goto parse_mean;
+        break;
+      }
+
+      // optional double mean = 2;
+      case 2: {
+        if (tag == 17) {
+         parse_mean:
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &mean_)));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(25)) goto parse_sum_of_squared_deviation;
+        break;
+      }
+
+      // optional double sum_of_squared_deviation = 3;
+      case 3: {
+        if (tag == 25) {
+         parse_sum_of_squared_deviation:
+
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
+                 input, &sum_of_squared_deviation_)));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(34)) goto parse_range;
+        break;
+      }
+
+      // optional .google.api.Distribution.Range range = 4;
+      case 4: {
+        if (tag == 34) {
+         parse_range:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_range()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(50)) goto parse_bucket_options;
+        break;
+      }
+
+      // optional .google.api.Distribution.BucketOptions bucket_options = 6;
+      case 6: {
+        if (tag == 50) {
+         parse_bucket_options:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+               input, mutable_bucket_options()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(58)) goto parse_bucket_counts;
+        break;
+      }
+
+      // repeated int64 bucket_counts = 7;
+      case 7: {
+        if (tag == 58) {
+         parse_bucket_counts:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 input, this->mutable_bucket_counts())));
+        } else if (tag == 56) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
+                 1, 58, input, this->mutable_bucket_counts())));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:google.api.Distribution)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:google.api.Distribution)
+  return false;
+#undef DO_
+}
+
+void Distribution::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:google.api.Distribution)
+  // optional int64 count = 1;
+  if (this->count() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->count(), output);
+  }
+
+  // optional double mean = 2;
+  if (this->mean() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->mean(), output);
+  }
+
+  // optional double sum_of_squared_deviation = 3;
+  if (this->sum_of_squared_deviation() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->sum_of_squared_deviation(), output);
+  }
+
+  // optional .google.api.Distribution.Range range = 4;
+  if (this->has_range()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      4, *this->range_, output);
+  }
+
+  // optional .google.api.Distribution.BucketOptions bucket_options = 6;
+  if (this->has_bucket_options()) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
+      6, *this->bucket_options_, output);
+  }
+
+  // repeated int64 bucket_counts = 7;
+  if (this->bucket_counts_size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteTag(7, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(_bucket_counts_cached_byte_size_);
+  }
+  for (int i = 0; i < this->bucket_counts_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt64NoTag(
+      this->bucket_counts(i), output);
+  }
+
+  // @@protoc_insertion_point(serialize_end:google.api.Distribution)
+}
+
+::google::protobuf::uint8* Distribution::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  (void)deterministic; // Unused
+  // @@protoc_insertion_point(serialize_to_array_start:google.api.Distribution)
+  // optional int64 count = 1;
+  if (this->count() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->count(), target);
+  }
+
+  // optional double mean = 2;
+  if (this->mean() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->mean(), target);
+  }
+
+  // optional double sum_of_squared_deviation = 3;
+  if (this->sum_of_squared_deviation() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->sum_of_squared_deviation(), target);
+  }
+
+  // optional .google.api.Distribution.Range range = 4;
+  if (this->has_range()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageNoVirtualToArray(
+        4, *this->range_, false, target);
+  }
+
+  // optional .google.api.Distribution.BucketOptions bucket_options = 6;
+  if (this->has_bucket_options()) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      InternalWriteMessageNoVirtualToArray(
+        6, *this->bucket_options_, false, target);
+  }
+
+  // repeated int64 bucket_counts = 7;
+  if (this->bucket_counts_size() > 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
+      7,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
+      _bucket_counts_cached_byte_size_, target);
+  }
+  for (int i = 0; i < this->bucket_counts_size(); i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteInt64NoTagToArray(this->bucket_counts(i), target);
+  }
+
+  // @@protoc_insertion_point(serialize_to_array_end:google.api.Distribution)
+  return target;
+}
+
+size_t Distribution::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:google.api.Distribution)
+  size_t total_size = 0;
+
+  // optional int64 count = 1;
+  if (this->count() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->count());
+  }
+
+  // optional double mean = 2;
+  if (this->mean() != 0) {
+    total_size += 1 + 8;
+  }
+
+  // optional double sum_of_squared_deviation = 3;
+  if (this->sum_of_squared_deviation() != 0) {
+    total_size += 1 + 8;
+  }
+
+  // optional .google.api.Distribution.Range range = 4;
+  if (this->has_range()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->range_);
+  }
+
+  // optional .google.api.Distribution.BucketOptions bucket_options = 6;
+  if (this->has_bucket_options()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->bucket_options_);
+  }
+
+  // repeated int64 bucket_counts = 7;
+  {
+    size_t data_size = 0;
+    unsigned int count = this->bucket_counts_size();
+    for (unsigned int i = 0; i < count; i++) {
+      data_size += ::google::protobuf::internal::WireFormatLite::
+        Int64Size(this->bucket_counts(i));
+    }
+    if (data_size > 0) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
+    }
+    int cached_size = ::google::protobuf::internal::ToCachedSize(data_size);
+    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+    _bucket_counts_cached_byte_size_ = cached_size;
+    GOOGLE_SAFE_CONCURRENT_WRITES_END();
+    total_size += data_size;
+  }
+
+  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = cached_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void Distribution::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:google.api.Distribution)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  const Distribution* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const Distribution>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.api.Distribution)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Distribution)
+    UnsafeMergeFrom(*source);
+  }
+}
+
+void Distribution::MergeFrom(const Distribution& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:google.api.Distribution)
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Distribution::UnsafeMergeFrom(const Distribution& from) {
+  GOOGLE_DCHECK(&from != this);
+  bucket_counts_.UnsafeMergeFrom(from.bucket_counts_);
+  if (from.count() != 0) {
+    set_count(from.count());
+  }
+  if (from.mean() != 0) {
+    set_mean(from.mean());
+  }
+  if (from.sum_of_squared_deviation() != 0) {
+    set_sum_of_squared_deviation(from.sum_of_squared_deviation());
+  }
+  if (from.has_range()) {
+    mutable_range()->::google::api::Distribution_Range::MergeFrom(from.range());
+  }
+  if (from.has_bucket_options()) {
+    mutable_bucket_options()->::google::api::Distribution_BucketOptions::MergeFrom(from.bucket_options());
+  }
+}
+
+void Distribution::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:google.api.Distribution)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void Distribution::CopyFrom(const Distribution& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:google.api.Distribution)
+  if (&from == this) return;
+  Clear();
+  UnsafeMergeFrom(from);
+}
+
+bool Distribution::IsInitialized() const {
+
+  return true;
+}
+
+void Distribution::Swap(Distribution* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void Distribution::InternalSwap(Distribution* other) {
+  std::swap(count_, other->count_);
+  std::swap(mean_, other->mean_);
+  std::swap(sum_of_squared_deviation_, other->sum_of_squared_deviation_);
+  std::swap(range_, other->range_);
+  std::swap(bucket_options_, other->bucket_options_);
+  bucket_counts_.UnsafeArenaSwap(&other->bucket_counts_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata Distribution::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Distribution_descriptor_;
+  metadata.reflection = Distribution_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Distribution_Range
+
+// optional double min = 1;
+void Distribution_Range::clear_min() {
+  min_ = 0;
+}
+double Distribution_Range::min() const {
+  // @@protoc_insertion_point(field_get:google.api.Distribution.Range.min)
+  return min_;
+}
+void Distribution_Range::set_min(double value) {
+  
+  min_ = value;
+  // @@protoc_insertion_point(field_set:google.api.Distribution.Range.min)
+}
+
+// optional double max = 2;
+void Distribution_Range::clear_max() {
+  max_ = 0;
+}
+double Distribution_Range::max() const {
+  // @@protoc_insertion_point(field_get:google.api.Distribution.Range.max)
+  return max_;
+}
+void Distribution_Range::set_max(double value) {
+  
+  max_ = value;
+  // @@protoc_insertion_point(field_set:google.api.Distribution.Range.max)
+}
+
+inline const Distribution_Range* Distribution_Range::internal_default_instance() {
+  return &Distribution_Range_default_instance_.get();
+}
+// -------------------------------------------------------------------
+
+// Distribution_BucketOptions_Linear
+
+// optional int32 num_finite_buckets = 1;
+void Distribution_BucketOptions_Linear::clear_num_finite_buckets() {
+  num_finite_buckets_ = 0;
+}
+::google::protobuf::int32 Distribution_BucketOptions_Linear::num_finite_buckets() const {
+  // @@protoc_insertion_point(field_get:google.api.Distribution.BucketOptions.Linear.num_finite_buckets)
+  return num_finite_buckets_;
+}
+void Distribution_BucketOptions_Linear::set_num_finite_buckets(::google::protobuf::int32 value) {
+  
+  num_finite_buckets_ = value;
+  // @@protoc_insertion_point(field_set:google.api.Distribution.BucketOptions.Linear.num_finite_buckets)
+}
+
+// optional double width = 2;
+void Distribution_BucketOptions_Linear::clear_width() {
+  width_ = 0;
+}
+double Distribution_BucketOptions_Linear::width() const {
+  // @@protoc_insertion_point(field_get:google.api.Distribution.BucketOptions.Linear.width)
+  return width_;
+}
+void Distribution_BucketOptions_Linear::set_width(double value) {
+  
+  width_ = value;
+  // @@protoc_insertion_point(field_set:google.api.Distribution.BucketOptions.Linear.width)
+}
+
+// optional double offset = 3;
+void Distribution_BucketOptions_Linear::clear_offset() {
+  offset_ = 0;
+}
+double Distribution_BucketOptions_Linear::offset() const {
+  // @@protoc_insertion_point(field_get:google.api.Distribution.BucketOptions.Linear.offset)
+  return offset_;
+}
+void Distribution_BucketOptions_Linear::set_offset(double value) {
+  
+  offset_ = value;
+  // @@protoc_insertion_point(field_set:google.api.Distribution.BucketOptions.Linear.offset)
+}
+
+inline const Distribution_BucketOptions_Linear* Distribution_BucketOptions_Linear::internal_default_instance() {
+  return &Distribution_BucketOptions_Linear_default_instance_.get();
+}
+// -------------------------------------------------------------------
+
+// Distribution_BucketOptions_Exponential
+
+// optional int32 num_finite_buckets = 1;
+void Distribution_BucketOptions_Exponential::clear_num_finite_buckets() {
+  num_finite_buckets_ = 0;
+}
+::google::protobuf::int32 Distribution_BucketOptions_Exponential::num_finite_buckets() const {
+  // @@protoc_insertion_point(field_get:google.api.Distribution.BucketOptions.Exponential.num_finite_buckets)
+  return num_finite_buckets_;
+}
+void Distribution_BucketOptions_Exponential::set_num_finite_buckets(::google::protobuf::int32 value) {
+  
+  num_finite_buckets_ = value;
+  // @@protoc_insertion_point(field_set:google.api.Distribution.BucketOptions.Exponential.num_finite_buckets)
+}
+
+// optional double growth_factor = 2;
+void Distribution_BucketOptions_Exponential::clear_growth_factor() {
+  growth_factor_ = 0;
+}
+double Distribution_BucketOptions_Exponential::growth_factor() const {
+  // @@protoc_insertion_point(field_get:google.api.Distribution.BucketOptions.Exponential.growth_factor)
+  return growth_factor_;
+}
+void Distribution_BucketOptions_Exponential::set_growth_factor(double value) {
+  
+  growth_factor_ = value;
+  // @@protoc_insertion_point(field_set:google.api.Distribution.BucketOptions.Exponential.growth_factor)
+}
+
+// optional double scale = 3;
+void Distribution_BucketOptions_Exponential::clear_scale() {
+  scale_ = 0;
+}
+double Distribution_BucketOptions_Exponential::scale() const {
+  // @@protoc_insertion_point(field_get:google.api.Distribution.BucketOptions.Exponential.scale)
+  return scale_;
+}
+void Distribution_BucketOptions_Exponential::set_scale(double value) {
+  
+  scale_ = value;
+  // @@protoc_insertion_point(field_set:google.api.Distribution.BucketOptions.Exponential.scale)
+}
+
+inline const Distribution_BucketOptions_Exponential* Distribution_BucketOptions_Exponential::internal_default_instance() {
+  return &Distribution_BucketOptions_Exponential_default_instance_.get();
+}
+// -------------------------------------------------------------------
+
+// Distribution_BucketOptions_Explicit
+
+// repeated double bounds = 1;
+int Distribution_BucketOptions_Explicit::bounds_size() const {
+  return bounds_.size();
+}
+void Distribution_BucketOptions_Explicit::clear_bounds() {
+  bounds_.Clear();
+}
+double Distribution_BucketOptions_Explicit::bounds(int index) const {
+  // @@protoc_insertion_point(field_get:google.api.Distribution.BucketOptions.Explicit.bounds)
+  return bounds_.Get(index);
+}
+void Distribution_BucketOptions_Explicit::set_bounds(int index, double value) {
+  bounds_.Set(index, value);
+  // @@protoc_insertion_point(field_set:google.api.Distribution.BucketOptions.Explicit.bounds)
+}
+void Distribution_BucketOptions_Explicit::add_bounds(double value) {
+  bounds_.Add(value);
+  // @@protoc_insertion_point(field_add:google.api.Distribution.BucketOptions.Explicit.bounds)
+}
+const ::google::protobuf::RepeatedField< double >&
+Distribution_BucketOptions_Explicit::bounds() const {
+  // @@protoc_insertion_point(field_list:google.api.Distribution.BucketOptions.Explicit.bounds)
+  return bounds_;
+}
+::google::protobuf::RepeatedField< double >*
+Distribution_BucketOptions_Explicit::mutable_bounds() {
+  // @@protoc_insertion_point(field_mutable_list:google.api.Distribution.BucketOptions.Explicit.bounds)
+  return &bounds_;
+}
+
+inline const Distribution_BucketOptions_Explicit* Distribution_BucketOptions_Explicit::internal_default_instance() {
+  return &Distribution_BucketOptions_Explicit_default_instance_.get();
+}
+// -------------------------------------------------------------------
+
 // Distribution_BucketOptions
 
-// .google.api.Distribution.BucketOptions.Linear linear_buckets = 1;
+// optional .google.api.Distribution.BucketOptions.Linear linear_buckets = 1;
 bool Distribution_BucketOptions::has_linear_buckets() const {
   return options_case() == kLinearBuckets;
 }
@@ -1798,7 +2469,7 @@ void Distribution_BucketOptions::set_allocated_linear_buckets(::google::api::Dis
   // @@protoc_insertion_point(field_set_allocated:google.api.Distribution.BucketOptions.linear_buckets)
 }
 
-// .google.api.Distribution.BucketOptions.Exponential exponential_buckets = 2;
+// optional .google.api.Distribution.BucketOptions.Exponential exponential_buckets = 2;
 bool Distribution_BucketOptions::has_exponential_buckets() const {
   return options_case() == kExponentialBuckets;
 }
@@ -1846,7 +2517,7 @@ void Distribution_BucketOptions::set_allocated_exponential_buckets(::google::api
   // @@protoc_insertion_point(field_set_allocated:google.api.Distribution.BucketOptions.exponential_buckets)
 }
 
-// .google.api.Distribution.BucketOptions.Explicit explicit_buckets = 3;
+// optional .google.api.Distribution.BucketOptions.Explicit explicit_buckets = 3;
 bool Distribution_BucketOptions::has_explicit_buckets() const {
   return options_case() == kExplicitBuckets;
 }
@@ -1903,448 +2574,14 @@ void Distribution_BucketOptions::clear_has_options() {
 Distribution_BucketOptions::OptionsCase Distribution_BucketOptions::options_case() const {
   return Distribution_BucketOptions::OptionsCase(_oneof_case_[0]);
 }
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int Distribution::kCountFieldNumber;
-const int Distribution::kMeanFieldNumber;
-const int Distribution::kSumOfSquaredDeviationFieldNumber;
-const int Distribution::kRangeFieldNumber;
-const int Distribution::kBucketOptionsFieldNumber;
-const int Distribution::kBucketCountsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-Distribution::Distribution()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
-  }
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:google.api.Distribution)
+inline const Distribution_BucketOptions* Distribution_BucketOptions::internal_default_instance() {
+  return &Distribution_BucketOptions_default_instance_.get();
 }
-Distribution::Distribution(const Distribution& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      bucket_counts_(from.bucket_counts_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_range()) {
-    range_ = new ::google::api::Distribution_Range(*from.range_);
-  } else {
-    range_ = NULL;
-  }
-  if (from.has_bucket_options()) {
-    bucket_options_ = new ::google::api::Distribution_BucketOptions(*from.bucket_options_);
-  } else {
-    bucket_options_ = NULL;
-  }
-  ::memcpy(&count_, &from.count_,
-    reinterpret_cast<char*>(&sum_of_squared_deviation_) -
-    reinterpret_cast<char*>(&count_) + sizeof(sum_of_squared_deviation_));
-  // @@protoc_insertion_point(copy_constructor:google.api.Distribution)
-}
+// -------------------------------------------------------------------
 
-void Distribution::SharedCtor() {
-  ::memset(&range_, 0, reinterpret_cast<char*>(&sum_of_squared_deviation_) -
-    reinterpret_cast<char*>(&range_) + sizeof(sum_of_squared_deviation_));
-  _cached_size_ = 0;
-}
-
-Distribution::~Distribution() {
-  // @@protoc_insertion_point(destructor:google.api.Distribution)
-  SharedDtor();
-}
-
-void Distribution::SharedDtor() {
-  if (this != internal_default_instance()) {
-    delete range_;
-  }
-  if (this != internal_default_instance()) {
-    delete bucket_options_;
-  }
-}
-
-void Distribution::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-}
-const ::google::protobuf::Descriptor* Distribution::descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
-}
-
-const Distribution& Distribution::default_instance() {
-  protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
-  return *internal_default_instance();
-}
-
-Distribution* Distribution::New(::google::protobuf::Arena* arena) const {
-  Distribution* n = new Distribution;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
-
-void Distribution::Clear() {
-// @@protoc_insertion_point(message_clear_start:google.api.Distribution)
-  bucket_counts_.Clear();
-  if (GetArenaNoVirtual() == NULL && range_ != NULL) {
-    delete range_;
-  }
-  range_ = NULL;
-  if (GetArenaNoVirtual() == NULL && bucket_options_ != NULL) {
-    delete bucket_options_;
-  }
-  bucket_options_ = NULL;
-  ::memset(&count_, 0, reinterpret_cast<char*>(&sum_of_squared_deviation_) -
-    reinterpret_cast<char*>(&count_) + sizeof(sum_of_squared_deviation_));
-}
-
-bool Distribution::MergePartialFromCodedStream(
-    ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:google.api.Distribution)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 count = 1;
-      case 1: {
-        if (tag == 8u) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
-                 input, &count_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // double mean = 2;
-      case 2: {
-        if (tag == 17u) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &mean_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // double sum_of_squared_deviation = 3;
-      case 3: {
-        if (tag == 25u) {
-
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
-                   double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &sum_of_squared_deviation_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .google.api.Distribution.Range range = 4;
-      case 4: {
-        if (tag == 34u) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
-               input, mutable_range()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .google.api.Distribution.BucketOptions bucket_options = 6;
-      case 6: {
-        if (tag == 50u) {
-          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
-               input, mutable_bucket_options()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated int64 bucket_counts = 7;
-      case 7: {
-        if (tag == 58u) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
-                 input, this->mutable_bucket_counts())));
-        } else if (tag == 56u) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
-                 1, 58u, input, this->mutable_bucket_counts())));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0 ||
-            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
-            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          goto success;
-        }
-        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:google.api.Distribution)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:google.api.Distribution)
-  return false;
-#undef DO_
-}
-
-void Distribution::SerializeWithCachedSizes(
-    ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:google.api.Distribution)
-  // int64 count = 1;
-  if (this->count() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->count(), output);
-  }
-
-  // double mean = 2;
-  if (this->mean() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(2, this->mean(), output);
-  }
-
-  // double sum_of_squared_deviation = 3;
-  if (this->sum_of_squared_deviation() != 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->sum_of_squared_deviation(), output);
-  }
-
-  // .google.api.Distribution.Range range = 4;
-  if (this->has_range()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, *this->range_, output);
-  }
-
-  // .google.api.Distribution.BucketOptions bucket_options = 6;
-  if (this->has_bucket_options()) {
-    ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, *this->bucket_options_, output);
-  }
-
-  // repeated int64 bucket_counts = 7;
-  if (this->bucket_counts_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(7, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_bucket_counts_cached_byte_size_);
-  }
-  for (int i = 0; i < this->bucket_counts_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteInt64NoTag(
-      this->bucket_counts(i), output);
-  }
-
-  // @@protoc_insertion_point(serialize_end:google.api.Distribution)
-}
-
-::google::protobuf::uint8* Distribution::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:google.api.Distribution)
-  // int64 count = 1;
-  if (this->count() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->count(), target);
-  }
-
-  // double mean = 2;
-  if (this->mean() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(2, this->mean(), target);
-  }
-
-  // double sum_of_squared_deviation = 3;
-  if (this->sum_of_squared_deviation() != 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->sum_of_squared_deviation(), target);
-  }
-
-  // .google.api.Distribution.Range range = 4;
-  if (this->has_range()) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageNoVirtualToArray(
-        4, *this->range_, false, target);
-  }
-
-  // .google.api.Distribution.BucketOptions bucket_options = 6;
-  if (this->has_bucket_options()) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageNoVirtualToArray(
-        6, *this->bucket_options_, false, target);
-  }
-
-  // repeated int64 bucket_counts = 7;
-  if (this->bucket_counts_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      7,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _bucket_counts_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->bucket_counts_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteInt64NoTagToArray(this->bucket_counts(i), target);
-  }
-
-  // @@protoc_insertion_point(serialize_to_array_end:google.api.Distribution)
-  return target;
-}
-
-size_t Distribution::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:google.api.Distribution)
-  size_t total_size = 0;
-
-  // repeated int64 bucket_counts = 7;
-  {
-    size_t data_size = 0;
-    unsigned int count = this->bucket_counts_size();
-    for (unsigned int i = 0; i < count; i++) {
-      data_size += ::google::protobuf::internal::WireFormatLite::
-        Int64Size(this->bucket_counts(i));
-    }
-    if (data_size > 0) {
-      total_size += 1 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    int cached_size = ::google::protobuf::internal::ToCachedSize(data_size);
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _bucket_counts_cached_byte_size_ = cached_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // .google.api.Distribution.Range range = 4;
-  if (this->has_range()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->range_);
-  }
-
-  // .google.api.Distribution.BucketOptions bucket_options = 6;
-  if (this->has_bucket_options()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->bucket_options_);
-  }
-
-  // int64 count = 1;
-  if (this->count() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->count());
-  }
-
-  // double mean = 2;
-  if (this->mean() != 0) {
-    total_size += 1 + 8;
-  }
-
-  // double sum_of_squared_deviation = 3;
-  if (this->sum_of_squared_deviation() != 0) {
-    total_size += 1 + 8;
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
-  return total_size;
-}
-
-void Distribution::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:google.api.Distribution)
-  GOOGLE_DCHECK_NE(&from, this);
-  const Distribution* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Distribution>(
-          &from);
-  if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:google.api.Distribution)
-    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Distribution)
-    MergeFrom(*source);
-  }
-}
-
-void Distribution::MergeFrom(const Distribution& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:google.api.Distribution)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  bucket_counts_.MergeFrom(from.bucket_counts_);
-  if (from.has_range()) {
-    mutable_range()->::google::api::Distribution_Range::MergeFrom(from.range());
-  }
-  if (from.has_bucket_options()) {
-    mutable_bucket_options()->::google::api::Distribution_BucketOptions::MergeFrom(from.bucket_options());
-  }
-  if (from.count() != 0) {
-    set_count(from.count());
-  }
-  if (from.mean() != 0) {
-    set_mean(from.mean());
-  }
-  if (from.sum_of_squared_deviation() != 0) {
-    set_sum_of_squared_deviation(from.sum_of_squared_deviation());
-  }
-}
-
-void Distribution::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:google.api.Distribution)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void Distribution::CopyFrom(const Distribution& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:google.api.Distribution)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool Distribution::IsInitialized() const {
-  return true;
-}
-
-void Distribution::Swap(Distribution* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void Distribution::InternalSwap(Distribution* other) {
-  bucket_counts_.UnsafeArenaSwap(&other->bucket_counts_);
-  std::swap(range_, other->range_);
-  std::swap(bucket_options_, other->bucket_options_);
-  std::swap(count_, other->count_);
-  std::swap(mean_, other->mean_);
-  std::swap(sum_of_squared_deviation_, other->sum_of_squared_deviation_);
-  std::swap(_cached_size_, other->_cached_size_);
-}
-
-::google::protobuf::Metadata Distribution::GetMetadata() const {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
-}
-
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Distribution
 
-// int64 count = 1;
+// optional int64 count = 1;
 void Distribution::clear_count() {
   count_ = GOOGLE_LONGLONG(0);
 }
@@ -2358,7 +2595,7 @@ void Distribution::set_count(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.api.Distribution.count)
 }
 
-// double mean = 2;
+// optional double mean = 2;
 void Distribution::clear_mean() {
   mean_ = 0;
 }
@@ -2372,7 +2609,7 @@ void Distribution::set_mean(double value) {
   // @@protoc_insertion_point(field_set:google.api.Distribution.mean)
 }
 
-// double sum_of_squared_deviation = 3;
+// optional double sum_of_squared_deviation = 3;
 void Distribution::clear_sum_of_squared_deviation() {
   sum_of_squared_deviation_ = 0;
 }
@@ -2386,7 +2623,7 @@ void Distribution::set_sum_of_squared_deviation(double value) {
   // @@protoc_insertion_point(field_set:google.api.Distribution.sum_of_squared_deviation)
 }
 
-// .google.api.Distribution.Range range = 4;
+// optional .google.api.Distribution.Range range = 4;
 bool Distribution::has_range() const {
   return this != internal_default_instance() && range_ != NULL;
 }
@@ -2425,7 +2662,7 @@ void Distribution::set_allocated_range(::google::api::Distribution_Range* range)
   // @@protoc_insertion_point(field_set_allocated:google.api.Distribution.range)
 }
 
-// .google.api.Distribution.BucketOptions bucket_options = 6;
+// optional .google.api.Distribution.BucketOptions bucket_options = 6;
 bool Distribution::has_bucket_options() const {
   return this != internal_default_instance() && bucket_options_ != NULL;
 }
@@ -2494,6 +2731,9 @@ Distribution::mutable_bucket_counts() {
   return &bucket_counts_;
 }
 
+inline const Distribution* Distribution::internal_default_instance() {
+  return &Distribution_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

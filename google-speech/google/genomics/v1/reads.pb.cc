@@ -20,104 +20,193 @@
 namespace google {
 namespace genomics {
 namespace v1 {
-class SearchReadGroupSetsRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<SearchReadGroupSetsRequest> {};
-SearchReadGroupSetsRequestDefaultTypeInternal _SearchReadGroupSetsRequest_default_instance_;
-class SearchReadGroupSetsResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<SearchReadGroupSetsResponse> {};
-SearchReadGroupSetsResponseDefaultTypeInternal _SearchReadGroupSetsResponse_default_instance_;
-class ImportReadGroupSetsRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ImportReadGroupSetsRequest> {};
-ImportReadGroupSetsRequestDefaultTypeInternal _ImportReadGroupSetsRequest_default_instance_;
-class ImportReadGroupSetsResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ImportReadGroupSetsResponse> {};
-ImportReadGroupSetsResponseDefaultTypeInternal _ImportReadGroupSetsResponse_default_instance_;
-class ExportReadGroupSetRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ExportReadGroupSetRequest> {};
-ExportReadGroupSetRequestDefaultTypeInternal _ExportReadGroupSetRequest_default_instance_;
-class UpdateReadGroupSetRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<UpdateReadGroupSetRequest> {};
-UpdateReadGroupSetRequestDefaultTypeInternal _UpdateReadGroupSetRequest_default_instance_;
-class DeleteReadGroupSetRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<DeleteReadGroupSetRequest> {};
-DeleteReadGroupSetRequestDefaultTypeInternal _DeleteReadGroupSetRequest_default_instance_;
-class GetReadGroupSetRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GetReadGroupSetRequest> {};
-GetReadGroupSetRequestDefaultTypeInternal _GetReadGroupSetRequest_default_instance_;
-class ListCoverageBucketsRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListCoverageBucketsRequest> {};
-ListCoverageBucketsRequestDefaultTypeInternal _ListCoverageBucketsRequest_default_instance_;
-class CoverageBucketDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CoverageBucket> {};
-CoverageBucketDefaultTypeInternal _CoverageBucket_default_instance_;
-class ListCoverageBucketsResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListCoverageBucketsResponse> {};
-ListCoverageBucketsResponseDefaultTypeInternal _ListCoverageBucketsResponse_default_instance_;
-class SearchReadsRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<SearchReadsRequest> {};
-SearchReadsRequestDefaultTypeInternal _SearchReadsRequest_default_instance_;
-class SearchReadsResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<SearchReadsResponse> {};
-SearchReadsResponseDefaultTypeInternal _SearchReadsResponse_default_instance_;
-class StreamReadsRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<StreamReadsRequest> {};
-StreamReadsRequestDefaultTypeInternal _StreamReadsRequest_default_instance_;
-class StreamReadsResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<StreamReadsResponse> {};
-StreamReadsResponseDefaultTypeInternal _StreamReadsResponse_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[15];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+const ::google::protobuf::Descriptor* SearchReadGroupSetsRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  SearchReadGroupSetsRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* SearchReadGroupSetsResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  SearchReadGroupSetsResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ImportReadGroupSetsRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ImportReadGroupSetsRequest_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* ImportReadGroupSetsRequest_PartitionStrategy_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* ImportReadGroupSetsResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ImportReadGroupSetsResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ExportReadGroupSetRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ExportReadGroupSetRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* UpdateReadGroupSetRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  UpdateReadGroupSetRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* DeleteReadGroupSetRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  DeleteReadGroupSetRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* GetReadGroupSetRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GetReadGroupSetRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListCoverageBucketsRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListCoverageBucketsRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* CoverageBucket_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CoverageBucket_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListCoverageBucketsResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListCoverageBucketsResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* SearchReadsRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  SearchReadsRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* SearchReadsResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  SearchReadsResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* StreamReadsRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  StreamReadsRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* StreamReadsResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  StreamReadsResponse_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2freads_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2freads_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadGroupSetsRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fgenomics_2fv1_2freads_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fgenomics_2fv1_2freads_2eproto() {
+  protobuf_AddDesc_google_2fgenomics_2fv1_2freads_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/genomics/v1/reads.proto");
+  GOOGLE_CHECK(file != NULL);
+  SearchReadGroupSetsRequest_descriptor_ = file->message_type(0);
+  static const int SearchReadGroupSetsRequest_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadGroupSetsRequest, dataset_ids_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadGroupSetsRequest, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadGroupSetsRequest, page_token_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadGroupSetsRequest, page_size_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadGroupSetsResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  SearchReadGroupSetsRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      SearchReadGroupSetsRequest_descriptor_,
+      SearchReadGroupSetsRequest::internal_default_instance(),
+      SearchReadGroupSetsRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(SearchReadGroupSetsRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadGroupSetsRequest, _internal_metadata_));
+  SearchReadGroupSetsResponse_descriptor_ = file->message_type(1);
+  static const int SearchReadGroupSetsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadGroupSetsResponse, read_group_sets_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadGroupSetsResponse, next_page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImportReadGroupSetsRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  SearchReadGroupSetsResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      SearchReadGroupSetsResponse_descriptor_,
+      SearchReadGroupSetsResponse::internal_default_instance(),
+      SearchReadGroupSetsResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(SearchReadGroupSetsResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadGroupSetsResponse, _internal_metadata_));
+  ImportReadGroupSetsRequest_descriptor_ = file->message_type(2);
+  static const int ImportReadGroupSetsRequest_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImportReadGroupSetsRequest, dataset_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImportReadGroupSetsRequest, reference_set_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImportReadGroupSetsRequest, source_uris_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImportReadGroupSetsRequest, partition_strategy_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImportReadGroupSetsResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ImportReadGroupSetsRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ImportReadGroupSetsRequest_descriptor_,
+      ImportReadGroupSetsRequest::internal_default_instance(),
+      ImportReadGroupSetsRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ImportReadGroupSetsRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImportReadGroupSetsRequest, _internal_metadata_));
+  ImportReadGroupSetsRequest_PartitionStrategy_descriptor_ = ImportReadGroupSetsRequest_descriptor_->enum_type(0);
+  ImportReadGroupSetsResponse_descriptor_ = file->message_type(3);
+  static const int ImportReadGroupSetsResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImportReadGroupSetsResponse, read_group_set_ids_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExportReadGroupSetRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ImportReadGroupSetsResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ImportReadGroupSetsResponse_descriptor_,
+      ImportReadGroupSetsResponse::internal_default_instance(),
+      ImportReadGroupSetsResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ImportReadGroupSetsResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ImportReadGroupSetsResponse, _internal_metadata_));
+  ExportReadGroupSetRequest_descriptor_ = file->message_type(4);
+  static const int ExportReadGroupSetRequest_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExportReadGroupSetRequest, project_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExportReadGroupSetRequest, export_uri_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExportReadGroupSetRequest, read_group_set_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExportReadGroupSetRequest, reference_names_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateReadGroupSetRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ExportReadGroupSetRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ExportReadGroupSetRequest_descriptor_,
+      ExportReadGroupSetRequest::internal_default_instance(),
+      ExportReadGroupSetRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ExportReadGroupSetRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExportReadGroupSetRequest, _internal_metadata_));
+  UpdateReadGroupSetRequest_descriptor_ = file->message_type(5);
+  static const int UpdateReadGroupSetRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateReadGroupSetRequest, read_group_set_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateReadGroupSetRequest, read_group_set_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateReadGroupSetRequest, update_mask_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteReadGroupSetRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  UpdateReadGroupSetRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      UpdateReadGroupSetRequest_descriptor_,
+      UpdateReadGroupSetRequest::internal_default_instance(),
+      UpdateReadGroupSetRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(UpdateReadGroupSetRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateReadGroupSetRequest, _internal_metadata_));
+  DeleteReadGroupSetRequest_descriptor_ = file->message_type(6);
+  static const int DeleteReadGroupSetRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteReadGroupSetRequest, read_group_set_id_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetReadGroupSetRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  DeleteReadGroupSetRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      DeleteReadGroupSetRequest_descriptor_,
+      DeleteReadGroupSetRequest::internal_default_instance(),
+      DeleteReadGroupSetRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(DeleteReadGroupSetRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteReadGroupSetRequest, _internal_metadata_));
+  GetReadGroupSetRequest_descriptor_ = file->message_type(7);
+  static const int GetReadGroupSetRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetReadGroupSetRequest, read_group_set_id_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListCoverageBucketsRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  GetReadGroupSetRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GetReadGroupSetRequest_descriptor_,
+      GetReadGroupSetRequest::internal_default_instance(),
+      GetReadGroupSetRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GetReadGroupSetRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetReadGroupSetRequest, _internal_metadata_));
+  ListCoverageBucketsRequest_descriptor_ = file->message_type(8);
+  static const int ListCoverageBucketsRequest_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListCoverageBucketsRequest, read_group_set_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListCoverageBucketsRequest, reference_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListCoverageBucketsRequest, start_),
@@ -125,23 +214,50 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fread
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListCoverageBucketsRequest, target_bucket_width_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListCoverageBucketsRequest, page_token_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListCoverageBucketsRequest, page_size_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CoverageBucket, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListCoverageBucketsRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListCoverageBucketsRequest_descriptor_,
+      ListCoverageBucketsRequest::internal_default_instance(),
+      ListCoverageBucketsRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListCoverageBucketsRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListCoverageBucketsRequest, _internal_metadata_));
+  CoverageBucket_descriptor_ = file->message_type(9);
+  static const int CoverageBucket_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CoverageBucket, range_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CoverageBucket, mean_coverage_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListCoverageBucketsResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  CoverageBucket_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      CoverageBucket_descriptor_,
+      CoverageBucket::internal_default_instance(),
+      CoverageBucket_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(CoverageBucket),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CoverageBucket, _internal_metadata_));
+  ListCoverageBucketsResponse_descriptor_ = file->message_type(10);
+  static const int ListCoverageBucketsResponse_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListCoverageBucketsResponse, bucket_width_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListCoverageBucketsResponse, coverage_buckets_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListCoverageBucketsResponse, next_page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadsRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListCoverageBucketsResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListCoverageBucketsResponse_descriptor_,
+      ListCoverageBucketsResponse::internal_default_instance(),
+      ListCoverageBucketsResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListCoverageBucketsResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListCoverageBucketsResponse, _internal_metadata_));
+  SearchReadsRequest_descriptor_ = file->message_type(11);
+  static const int SearchReadsRequest_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadsRequest, read_group_set_ids_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadsRequest, read_group_ids_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadsRequest, reference_name_),
@@ -149,16 +265,34 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fread
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadsRequest, end_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadsRequest, page_token_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadsRequest, page_size_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadsResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  SearchReadsRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      SearchReadsRequest_descriptor_,
+      SearchReadsRequest::internal_default_instance(),
+      SearchReadsRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(SearchReadsRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadsRequest, _internal_metadata_));
+  SearchReadsResponse_descriptor_ = file->message_type(12);
+  static const int SearchReadsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadsResponse, alignments_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadsResponse, next_page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamReadsRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  SearchReadsResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      SearchReadsResponse_descriptor_,
+      SearchReadsResponse::internal_default_instance(),
+      SearchReadsResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(SearchReadsResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SearchReadsResponse, _internal_metadata_));
+  StreamReadsRequest_descriptor_ = file->message_type(13);
+  static const int StreamReadsRequest_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamReadsRequest, project_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamReadsRequest, read_group_set_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamReadsRequest, reference_name_),
@@ -166,105 +300,109 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fread
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamReadsRequest, end_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamReadsRequest, shard_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamReadsRequest, total_shards_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamReadsResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  StreamReadsRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      StreamReadsRequest_descriptor_,
+      StreamReadsRequest::internal_default_instance(),
+      StreamReadsRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(StreamReadsRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamReadsRequest, _internal_metadata_));
+  StreamReadsResponse_descriptor_ = file->message_type(14);
+  static const int StreamReadsResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamReadsResponse, alignments_),
   };
-  return offsets;
+  StreamReadsResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      StreamReadsResponse_descriptor_,
+      StreamReadsResponse::internal_default_instance(),
+      StreamReadsResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(StreamReadsResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(StreamReadsResponse, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(SearchReadGroupSetsRequest)},
-  { 8, -1, sizeof(SearchReadGroupSetsResponse)},
-  { 14, -1, sizeof(ImportReadGroupSetsRequest)},
-  { 22, -1, sizeof(ImportReadGroupSetsResponse)},
-  { 27, -1, sizeof(ExportReadGroupSetRequest)},
-  { 35, -1, sizeof(UpdateReadGroupSetRequest)},
-  { 42, -1, sizeof(DeleteReadGroupSetRequest)},
-  { 47, -1, sizeof(GetReadGroupSetRequest)},
-  { 52, -1, sizeof(ListCoverageBucketsRequest)},
-  { 63, -1, sizeof(CoverageBucket)},
-  { 69, -1, sizeof(ListCoverageBucketsResponse)},
-  { 76, -1, sizeof(SearchReadsRequest)},
-  { 87, -1, sizeof(SearchReadsResponse)},
-  { 93, -1, sizeof(StreamReadsRequest)},
-  { 104, -1, sizeof(StreamReadsResponse)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_SearchReadGroupSetsRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_SearchReadGroupSetsResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ImportReadGroupSetsRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ImportReadGroupSetsResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ExportReadGroupSetRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_UpdateReadGroupSetRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_DeleteReadGroupSetRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GetReadGroupSetRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListCoverageBucketsRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_CoverageBucket_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListCoverageBucketsResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_SearchReadsRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_SearchReadsResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_StreamReadsRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_StreamReadsResponse_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fgenomics_2fv1_2freads_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/genomics/v1/reads.proto", schemas, file_default_instances, protobuf_Offsets_google_2fgenomics_2fv1_2freads_2eproto(), factory,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fgenomics_2fv1_2freads_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 15);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      SearchReadGroupSetsRequest_descriptor_, SearchReadGroupSetsRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      SearchReadGroupSetsResponse_descriptor_, SearchReadGroupSetsResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ImportReadGroupSetsRequest_descriptor_, ImportReadGroupSetsRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ImportReadGroupSetsResponse_descriptor_, ImportReadGroupSetsResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ExportReadGroupSetRequest_descriptor_, ExportReadGroupSetRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      UpdateReadGroupSetRequest_descriptor_, UpdateReadGroupSetRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      DeleteReadGroupSetRequest_descriptor_, DeleteReadGroupSetRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GetReadGroupSetRequest_descriptor_, GetReadGroupSetRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListCoverageBucketsRequest_descriptor_, ListCoverageBucketsRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      CoverageBucket_descriptor_, CoverageBucket::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListCoverageBucketsResponse_descriptor_, ListCoverageBucketsResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      SearchReadsRequest_descriptor_, SearchReadsRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      SearchReadsResponse_descriptor_, SearchReadsResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      StreamReadsRequest_descriptor_, StreamReadsRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      StreamReadsResponse_descriptor_, StreamReadsResponse::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fgenomics_2fv1_2freads_2eproto() {
-  _SearchReadGroupSetsRequest_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _SearchReadGroupSetsResponse_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _ImportReadGroupSetsRequest_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _ImportReadGroupSetsResponse_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _ExportReadGroupSetRequest_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
-  _UpdateReadGroupSetRequest_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
-  _DeleteReadGroupSetRequest_default_instance_.Shutdown();
-  delete file_level_metadata[6].reflection;
-  _GetReadGroupSetRequest_default_instance_.Shutdown();
-  delete file_level_metadata[7].reflection;
-  _ListCoverageBucketsRequest_default_instance_.Shutdown();
-  delete file_level_metadata[8].reflection;
-  _CoverageBucket_default_instance_.Shutdown();
-  delete file_level_metadata[9].reflection;
-  _ListCoverageBucketsResponse_default_instance_.Shutdown();
-  delete file_level_metadata[10].reflection;
-  _SearchReadsRequest_default_instance_.Shutdown();
-  delete file_level_metadata[11].reflection;
-  _SearchReadsResponse_default_instance_.Shutdown();
-  delete file_level_metadata[12].reflection;
-  _StreamReadsRequest_default_instance_.Shutdown();
-  delete file_level_metadata[13].reflection;
-  _StreamReadsResponse_default_instance_.Shutdown();
-  delete file_level_metadata[14].reflection;
+  SearchReadGroupSetsRequest_default_instance_.Shutdown();
+  delete SearchReadGroupSetsRequest_reflection_;
+  SearchReadGroupSetsResponse_default_instance_.Shutdown();
+  delete SearchReadGroupSetsResponse_reflection_;
+  ImportReadGroupSetsRequest_default_instance_.Shutdown();
+  delete ImportReadGroupSetsRequest_reflection_;
+  ImportReadGroupSetsResponse_default_instance_.Shutdown();
+  delete ImportReadGroupSetsResponse_reflection_;
+  ExportReadGroupSetRequest_default_instance_.Shutdown();
+  delete ExportReadGroupSetRequest_reflection_;
+  UpdateReadGroupSetRequest_default_instance_.Shutdown();
+  delete UpdateReadGroupSetRequest_reflection_;
+  DeleteReadGroupSetRequest_default_instance_.Shutdown();
+  delete DeleteReadGroupSetRequest_reflection_;
+  GetReadGroupSetRequest_default_instance_.Shutdown();
+  delete GetReadGroupSetRequest_reflection_;
+  ListCoverageBucketsRequest_default_instance_.Shutdown();
+  delete ListCoverageBucketsRequest_reflection_;
+  CoverageBucket_default_instance_.Shutdown();
+  delete CoverageBucket_reflection_;
+  ListCoverageBucketsResponse_default_instance_.Shutdown();
+  delete ListCoverageBucketsResponse_reflection_;
+  SearchReadsRequest_default_instance_.Shutdown();
+  delete SearchReadsRequest_reflection_;
+  SearchReadsResponse_default_instance_.Shutdown();
+  delete SearchReadsResponse_reflection_;
+  StreamReadsRequest_default_instance_.Shutdown();
+  delete StreamReadsRequest_reflection_;
+  StreamReadsResponse_default_instance_.Shutdown();
+  delete StreamReadsResponse_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto_impl() {
@@ -277,132 +415,153 @@ void protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto_impl() {
   ::google::longrunning::protobuf_InitDefaults_google_2flongrunning_2foperations_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fempty_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ffield_5fmask_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _SearchReadGroupSetsRequest_default_instance_.DefaultConstruct();
-  _SearchReadGroupSetsResponse_default_instance_.DefaultConstruct();
-  _ImportReadGroupSetsRequest_default_instance_.DefaultConstruct();
-  _ImportReadGroupSetsResponse_default_instance_.DefaultConstruct();
-  _ExportReadGroupSetRequest_default_instance_.DefaultConstruct();
-  _UpdateReadGroupSetRequest_default_instance_.DefaultConstruct();
-  _DeleteReadGroupSetRequest_default_instance_.DefaultConstruct();
-  _GetReadGroupSetRequest_default_instance_.DefaultConstruct();
-  _ListCoverageBucketsRequest_default_instance_.DefaultConstruct();
-  _CoverageBucket_default_instance_.DefaultConstruct();
-  _ListCoverageBucketsResponse_default_instance_.DefaultConstruct();
-  _SearchReadsRequest_default_instance_.DefaultConstruct();
-  _SearchReadsResponse_default_instance_.DefaultConstruct();
-  _StreamReadsRequest_default_instance_.DefaultConstruct();
-  _StreamReadsResponse_default_instance_.DefaultConstruct();
-  _UpdateReadGroupSetRequest_default_instance_.get_mutable()->read_group_set_ = const_cast< ::google::genomics::v1::ReadGroupSet*>(
-      ::google::genomics::v1::ReadGroupSet::internal_default_instance());
-  _UpdateReadGroupSetRequest_default_instance_.get_mutable()->update_mask_ = const_cast< ::google::protobuf::FieldMask*>(
-      ::google::protobuf::FieldMask::internal_default_instance());
-  _CoverageBucket_default_instance_.get_mutable()->range_ = const_cast< ::google::genomics::v1::Range*>(
-      ::google::genomics::v1::Range::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  SearchReadGroupSetsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SearchReadGroupSetsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ImportReadGroupSetsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ImportReadGroupSetsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ExportReadGroupSetRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  UpdateReadGroupSetRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DeleteReadGroupSetRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetReadGroupSetRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListCoverageBucketsRequest_default_instance_.DefaultConstruct();
+  CoverageBucket_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListCoverageBucketsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SearchReadsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  SearchReadsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  StreamReadsRequest_default_instance_.DefaultConstruct();
+  StreamReadsResponse_default_instance_.DefaultConstruct();
+  SearchReadGroupSetsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SearchReadGroupSetsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ImportReadGroupSetsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ImportReadGroupSetsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ExportReadGroupSetRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  UpdateReadGroupSetRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DeleteReadGroupSetRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetReadGroupSetRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListCoverageBucketsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CoverageBucket_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListCoverageBucketsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SearchReadsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  SearchReadsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  StreamReadsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  StreamReadsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto_once_);
 void protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fgenomics_2fv1_2freads_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
-  static const char descriptor[] = {
-      "\n\036google/genomics/v1/reads.proto\022\022google"
-      ".genomics.v1\032\034google/api/annotations.pro"
-      "to\032\036google/genomics/v1/range.proto\032&goog"
-      "le/genomics/v1/readalignment.proto\032%goog"
-      "le/genomics/v1/readgroupset.proto\032#googl"
-      "e/longrunning/operations.proto\032\033google/p"
-      "rotobuf/empty.proto\032 google/protobuf/fie"
-      "ld_mask.proto\"f\n\032SearchReadGroupSetsRequ"
-      "est\022\023\n\013dataset_ids\030\001 \003(\t\022\014\n\004name\030\003 \001(\t\022\022"
-      "\n\npage_token\030\002 \001(\t\022\021\n\tpage_size\030\004 \001(\005\"q\n"
-      "\033SearchReadGroupSetsResponse\0229\n\017read_gro"
-      "up_sets\030\001 \003(\0132 .google.genomics.v1.ReadG"
-      "roupSet\022\027\n\017next_page_token\030\002 \001(\t\"\236\002\n\032Imp"
-      "ortReadGroupSetsRequest\022\022\n\ndataset_id\030\001 "
-      "\001(\t\022\030\n\020reference_set_id\030\004 \001(\t\022\023\n\013source_"
-      "uris\030\002 \003(\t\022\\\n\022partition_strategy\030\005 \001(\0162@"
-      ".google.genomics.v1.ImportReadGroupSetsR"
-      "equest.PartitionStrategy\"_\n\021PartitionStr"
-      "ategy\022\"\n\036PARTITION_STRATEGY_UNSPECIFIED\020"
-      "\000\022\027\n\023PER_FILE_PER_SAMPLE\020\001\022\r\n\tMERGE_ALL\020"
-      "\002\"9\n\033ImportReadGroupSetsResponse\022\032\n\022read"
-      "_group_set_ids\030\001 \003(\t\"w\n\031ExportReadGroupS"
-      "etRequest\022\022\n\nproject_id\030\001 \001(\t\022\022\n\nexport_"
-      "uri\030\002 \001(\t\022\031\n\021read_group_set_id\030\003 \001(\t\022\027\n\017"
-      "reference_names\030\004 \003(\t\"\241\001\n\031UpdateReadGrou"
-      "pSetRequest\022\031\n\021read_group_set_id\030\001 \001(\t\0228"
-      "\n\016read_group_set\030\002 \001(\0132 .google.genomics"
-      ".v1.ReadGroupSet\022/\n\013update_mask\030\003 \001(\0132\032."
-      "google.protobuf.FieldMask\"6\n\031DeleteReadG"
-      "roupSetRequest\022\031\n\021read_group_set_id\030\001 \001("
-      "\t\"3\n\026GetReadGroupSetRequest\022\031\n\021read_grou"
-      "p_set_id\030\001 \001(\t\"\257\001\n\032ListCoverageBucketsRe"
-      "quest\022\031\n\021read_group_set_id\030\001 \001(\t\022\026\n\016refe"
-      "rence_name\030\003 \001(\t\022\r\n\005start\030\004 \001(\003\022\013\n\003end\030\005"
-      " \001(\003\022\033\n\023target_bucket_width\030\006 \001(\003\022\022\n\npag"
-      "e_token\030\007 \001(\t\022\021\n\tpage_size\030\010 \001(\005\"Q\n\016Cove"
-      "rageBucket\022(\n\005range\030\001 \001(\0132\031.google.genom"
-      "ics.v1.Range\022\025\n\rmean_coverage\030\002 \001(\002\"\212\001\n\033"
-      "ListCoverageBucketsResponse\022\024\n\014bucket_wi"
-      "dth\030\001 \001(\003\022<\n\020coverage_buckets\030\002 \003(\0132\".go"
-      "ogle.genomics.v1.CoverageBucket\022\027\n\017next_"
-      "page_token\030\003 \001(\t\"\243\001\n\022SearchReadsRequest\022"
-      "\032\n\022read_group_set_ids\030\001 \003(\t\022\026\n\016read_grou"
-      "p_ids\030\005 \003(\t\022\026\n\016reference_name\030\007 \001(\t\022\r\n\005s"
-      "tart\030\010 \001(\003\022\013\n\003end\030\t \001(\003\022\022\n\npage_token\030\003 "
-      "\001(\t\022\021\n\tpage_size\030\004 \001(\005\"\\\n\023SearchReadsRes"
-      "ponse\022,\n\nalignments\030\001 \003(\0132\030.google.genom"
-      "ics.v1.Read\022\027\n\017next_page_token\030\002 \001(\t\"\234\001\n"
-      "\022StreamReadsRequest\022\022\n\nproject_id\030\001 \001(\t\022"
-      "\031\n\021read_group_set_id\030\002 \001(\t\022\026\n\016reference_"
-      "name\030\003 \001(\t\022\r\n\005start\030\004 \001(\003\022\013\n\003end\030\005 \001(\003\022\r"
-      "\n\005shard\030\006 \001(\005\022\024\n\014total_shards\030\007 \001(\005\"C\n\023S"
-      "treamReadsResponse\022,\n\nalignments\030\001 \003(\0132\030"
-      ".google.genomics.v1.Read2\225\001\n\024StreamingRe"
-      "adService\022}\n\013StreamReads\022&.google.genomi"
-      "cs.v1.StreamReadsRequest\032\'.google.genomi"
-      "cs.v1.StreamReadsResponse\"\033\202\323\344\223\002\025\"\020/v1/r"
-      "eads:stream:\001*0\0012\321\t\n\rReadServiceV1\022\211\001\n\023I"
-      "mportReadGroupSets\022..google.genomics.v1."
-      "ImportReadGroupSetsRequest\032\035.google.long"
-      "running.Operation\"#\202\323\344\223\002\035\"\030/v1/readgroup"
-      "sets:import:\001*\022\233\001\n\022ExportReadGroupSet\022-."
-      "google.genomics.v1.ExportReadGroupSetReq"
-      "uest\032\035.google.longrunning.Operation\"7\202\323\344"
-      "\223\0021\",/v1/readgroupsets/{read_group_set_i"
-      "d}:export:\001*\022\233\001\n\023SearchReadGroupSets\022..g"
-      "oogle.genomics.v1.SearchReadGroupSetsReq"
-      "uest\032/.google.genomics.v1.SearchReadGrou"
-      "pSetsResponse\"#\202\323\344\223\002\035\"\030/v1/readgroupsets"
-      "/search:\001*\022\244\001\n\022UpdateReadGroupSet\022-.goog"
-      "le.genomics.v1.UpdateReadGroupSetRequest"
-      "\032 .google.genomics.v1.ReadGroupSet\"=\202\323\344\223"
-      "\00272%/v1/readgroupsets/{read_group_set_id"
-      "}:\016read_group_set\022\212\001\n\022DeleteReadGroupSet"
-      "\022-.google.genomics.v1.DeleteReadGroupSet"
-      "Request\032\026.google.protobuf.Empty\"-\202\323\344\223\002\'*"
-      "%/v1/readgroupsets/{read_group_set_id}\022\216"
-      "\001\n\017GetReadGroupSet\022*.google.genomics.v1."
-      "GetReadGroupSetRequest\032 .google.genomics"
-      ".v1.ReadGroupSet\"-\202\323\344\223\002\'\022%/v1/readgroups"
-      "ets/{read_group_set_id}\022\265\001\n\023ListCoverage"
-      "Buckets\022..google.genomics.v1.ListCoverag"
-      "eBucketsRequest\032/.google.genomics.v1.Lis"
-      "tCoverageBucketsResponse\"=\202\323\344\223\0027\0225/v1/re"
-      "adgroupsets/{read_group_set_id}/coverage"
-      "buckets\022{\n\013SearchReads\022&.google.genomics"
-      ".v1.SearchReadsRequest\032\'.google.genomics"
-      ".v1.SearchReadsResponse\"\033\202\323\344\223\002\025\"\020/v1/rea"
-      "ds/search:\001*Be\n\026com.google.genomics.v1B\n"
-      "ReadsProtoP\001Z:google.golang.org/genproto"
-      "/googleapis/genomics/v1;genomics\370\001\001b\006pro"
-      "to3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 3643);
+    "\n\036google/genomics/v1/reads.proto\022\022google"
+    ".genomics.v1\032\034google/api/annotations.pro"
+    "to\032\036google/genomics/v1/range.proto\032&goog"
+    "le/genomics/v1/readalignment.proto\032%goog"
+    "le/genomics/v1/readgroupset.proto\032#googl"
+    "e/longrunning/operations.proto\032\033google/p"
+    "rotobuf/empty.proto\032 google/protobuf/fie"
+    "ld_mask.proto\"f\n\032SearchReadGroupSetsRequ"
+    "est\022\023\n\013dataset_ids\030\001 \003(\t\022\014\n\004name\030\003 \001(\t\022\022"
+    "\n\npage_token\030\002 \001(\t\022\021\n\tpage_size\030\004 \001(\005\"q\n"
+    "\033SearchReadGroupSetsResponse\0229\n\017read_gro"
+    "up_sets\030\001 \003(\0132 .google.genomics.v1.ReadG"
+    "roupSet\022\027\n\017next_page_token\030\002 \001(\t\"\236\002\n\032Imp"
+    "ortReadGroupSetsRequest\022\022\n\ndataset_id\030\001 "
+    "\001(\t\022\030\n\020reference_set_id\030\004 \001(\t\022\023\n\013source_"
+    "uris\030\002 \003(\t\022\\\n\022partition_strategy\030\005 \001(\0162@"
+    ".google.genomics.v1.ImportReadGroupSetsR"
+    "equest.PartitionStrategy\"_\n\021PartitionStr"
+    "ategy\022\"\n\036PARTITION_STRATEGY_UNSPECIFIED\020"
+    "\000\022\027\n\023PER_FILE_PER_SAMPLE\020\001\022\r\n\tMERGE_ALL\020"
+    "\002\"9\n\033ImportReadGroupSetsResponse\022\032\n\022read"
+    "_group_set_ids\030\001 \003(\t\"w\n\031ExportReadGroupS"
+    "etRequest\022\022\n\nproject_id\030\001 \001(\t\022\022\n\nexport_"
+    "uri\030\002 \001(\t\022\031\n\021read_group_set_id\030\003 \001(\t\022\027\n\017"
+    "reference_names\030\004 \003(\t\"\241\001\n\031UpdateReadGrou"
+    "pSetRequest\022\031\n\021read_group_set_id\030\001 \001(\t\0228"
+    "\n\016read_group_set\030\002 \001(\0132 .google.genomics"
+    ".v1.ReadGroupSet\022/\n\013update_mask\030\003 \001(\0132\032."
+    "google.protobuf.FieldMask\"6\n\031DeleteReadG"
+    "roupSetRequest\022\031\n\021read_group_set_id\030\001 \001("
+    "\t\"3\n\026GetReadGroupSetRequest\022\031\n\021read_grou"
+    "p_set_id\030\001 \001(\t\"\257\001\n\032ListCoverageBucketsRe"
+    "quest\022\031\n\021read_group_set_id\030\001 \001(\t\022\026\n\016refe"
+    "rence_name\030\003 \001(\t\022\r\n\005start\030\004 \001(\003\022\013\n\003end\030\005"
+    " \001(\003\022\033\n\023target_bucket_width\030\006 \001(\003\022\022\n\npag"
+    "e_token\030\007 \001(\t\022\021\n\tpage_size\030\010 \001(\005\"Q\n\016Cove"
+    "rageBucket\022(\n\005range\030\001 \001(\0132\031.google.genom"
+    "ics.v1.Range\022\025\n\rmean_coverage\030\002 \001(\002\"\212\001\n\033"
+    "ListCoverageBucketsResponse\022\024\n\014bucket_wi"
+    "dth\030\001 \001(\003\022<\n\020coverage_buckets\030\002 \003(\0132\".go"
+    "ogle.genomics.v1.CoverageBucket\022\027\n\017next_"
+    "page_token\030\003 \001(\t\"\243\001\n\022SearchReadsRequest\022"
+    "\032\n\022read_group_set_ids\030\001 \003(\t\022\026\n\016read_grou"
+    "p_ids\030\005 \003(\t\022\026\n\016reference_name\030\007 \001(\t\022\r\n\005s"
+    "tart\030\010 \001(\003\022\013\n\003end\030\t \001(\003\022\022\n\npage_token\030\003 "
+    "\001(\t\022\021\n\tpage_size\030\004 \001(\005\"\\\n\023SearchReadsRes"
+    "ponse\022,\n\nalignments\030\001 \003(\0132\030.google.genom"
+    "ics.v1.Read\022\027\n\017next_page_token\030\002 \001(\t\"\234\001\n"
+    "\022StreamReadsRequest\022\022\n\nproject_id\030\001 \001(\t\022"
+    "\031\n\021read_group_set_id\030\002 \001(\t\022\026\n\016reference_"
+    "name\030\003 \001(\t\022\r\n\005start\030\004 \001(\003\022\013\n\003end\030\005 \001(\003\022\r"
+    "\n\005shard\030\006 \001(\005\022\024\n\014total_shards\030\007 \001(\005\"C\n\023S"
+    "treamReadsResponse\022,\n\nalignments\030\001 \003(\0132\030"
+    ".google.genomics.v1.Read2\225\001\n\024StreamingRe"
+    "adService\022}\n\013StreamReads\022&.google.genomi"
+    "cs.v1.StreamReadsRequest\032\'.google.genomi"
+    "cs.v1.StreamReadsResponse\"\033\202\323\344\223\002\025\"\020/v1/r"
+    "eads:stream:\001*0\0012\321\t\n\rReadServiceV1\022\211\001\n\023I"
+    "mportReadGroupSets\022..google.genomics.v1."
+    "ImportReadGroupSetsRequest\032\035.google.long"
+    "running.Operation\"#\202\323\344\223\002\035\"\030/v1/readgroup"
+    "sets:import:\001*\022\233\001\n\022ExportReadGroupSet\022-."
+    "google.genomics.v1.ExportReadGroupSetReq"
+    "uest\032\035.google.longrunning.Operation\"7\202\323\344"
+    "\223\0021\",/v1/readgroupsets/{read_group_set_i"
+    "d}:export:\001*\022\233\001\n\023SearchReadGroupSets\022..g"
+    "oogle.genomics.v1.SearchReadGroupSetsReq"
+    "uest\032/.google.genomics.v1.SearchReadGrou"
+    "pSetsResponse\"#\202\323\344\223\002\035\"\030/v1/readgroupsets"
+    "/search:\001*\022\244\001\n\022UpdateReadGroupSet\022-.goog"
+    "le.genomics.v1.UpdateReadGroupSetRequest"
+    "\032 .google.genomics.v1.ReadGroupSet\"=\202\323\344\223"
+    "\00272%/v1/readgroupsets/{read_group_set_id"
+    "}:\016read_group_set\022\212\001\n\022DeleteReadGroupSet"
+    "\022-.google.genomics.v1.DeleteReadGroupSet"
+    "Request\032\026.google.protobuf.Empty\"-\202\323\344\223\002\'*"
+    "%/v1/readgroupsets/{read_group_set_id}\022\216"
+    "\001\n\017GetReadGroupSet\022*.google.genomics.v1."
+    "GetReadGroupSetRequest\032 .google.genomics"
+    ".v1.ReadGroupSet\"-\202\323\344\223\002\'\022%/v1/readgroups"
+    "ets/{read_group_set_id}\022\265\001\n\023ListCoverage"
+    "Buckets\022..google.genomics.v1.ListCoverag"
+    "eBucketsRequest\032/.google.genomics.v1.Lis"
+    "tCoverageBucketsResponse\"=\202\323\344\223\0027\0225/v1/re"
+    "adgroupsets/{read_group_set_id}/coverage"
+    "buckets\022{\n\013SearchReads\022&.google.genomics"
+    ".v1.SearchReadsRequest\032\'.google.genomics"
+    ".v1.SearchReadsResponse\"\033\202\323\344\223\002\025\"\020/v1/rea"
+    "ds/search:\001*Be\n\026com.google.genomics.v1B\n"
+    "ReadsProtoP\001Z:google.golang.org/genproto"
+    "/googleapis/genomics/v1;genomics\370\001\001b\006pro"
+    "to3", 3643);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/genomics/v1/reads.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -426,29 +585,16 @@ struct StaticDescriptorInitializer_google_2fgenomics_2fv1_2freads_2eproto {
     protobuf_AddDesc_google_2fgenomics_2fv1_2freads_2eproto();
   }
 } static_descriptor_initializer_google_2fgenomics_2fv1_2freads_2eproto_;
-const ::google::protobuf::EnumDescriptor* ImportReadGroupSetsRequest_PartitionStrategy_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
-}
-bool ImportReadGroupSetsRequest_PartitionStrategy_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
 }
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const ImportReadGroupSetsRequest_PartitionStrategy ImportReadGroupSetsRequest::PARTITION_STRATEGY_UNSPECIFIED;
-const ImportReadGroupSetsRequest_PartitionStrategy ImportReadGroupSetsRequest::PER_FILE_PER_SAMPLE;
-const ImportReadGroupSetsRequest_PartitionStrategy ImportReadGroupSetsRequest::MERGE_ALL;
-const ImportReadGroupSetsRequest_PartitionStrategy ImportReadGroupSetsRequest::PartitionStrategy_MIN;
-const ImportReadGroupSetsRequest_PartitionStrategy ImportReadGroupSetsRequest::PartitionStrategy_MAX;
-const int ImportReadGroupSetsRequest::PartitionStrategy_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+}  // namespace
+
 
 // ===================================================================
 
@@ -461,9 +607,7 @@ const int SearchReadGroupSetsRequest::kPageSizeFieldNumber;
 
 SearchReadGroupSetsRequest::SearchReadGroupSetsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.SearchReadGroupSetsRequest)
 }
@@ -478,23 +622,15 @@ SearchReadGroupSetsRequest::SearchReadGroupSetsRequest(::google::protobuf::Arena
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.SearchReadGroupSetsRequest)
 }
+
+void SearchReadGroupSetsRequest::InitAsDefaultInstance() {
+}
+
 SearchReadGroupSetsRequest::SearchReadGroupSetsRequest(const SearchReadGroupSetsRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      dataset_ids_(from.dataset_ids_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name(),
-      GetArenaNoVirtual());
-  }
-  page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.page_token().size() > 0) {
-    page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token(),
-      GetArenaNoVirtual());
-  }
-  page_size_ = from.page_size_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.SearchReadGroupSetsRequest)
 }
 
@@ -533,7 +669,7 @@ void SearchReadGroupSetsRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* SearchReadGroupSetsRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return SearchReadGroupSetsRequest_descriptor_;
 }
 
 const SearchReadGroupSetsRequest& SearchReadGroupSetsRequest::default_instance() {
@@ -541,16 +677,18 @@ const SearchReadGroupSetsRequest& SearchReadGroupSetsRequest::default_instance()
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<SearchReadGroupSetsRequest> SearchReadGroupSetsRequest_default_instance_;
+
 SearchReadGroupSetsRequest* SearchReadGroupSetsRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<SearchReadGroupSetsRequest>(arena);
 }
 
 void SearchReadGroupSetsRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.genomics.v1.SearchReadGroupSetsRequest)
-  dataset_ids_.Clear();
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   page_size_ = 0;
+  dataset_ids_.Clear();
 }
 
 bool SearchReadGroupSetsRequest::MergePartialFromCodedStream(
@@ -559,13 +697,14 @@ bool SearchReadGroupSetsRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.SearchReadGroupSetsRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated string dataset_ids = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
+         parse_dataset_ids:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_dataset_ids()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -576,12 +715,15 @@ bool SearchReadGroupSetsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_dataset_ids;
+        if (input->ExpectTag(18)) goto parse_page_token;
         break;
       }
 
-      // string page_token = 2;
+      // optional string page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -591,12 +733,14 @@ bool SearchReadGroupSetsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_name;
         break;
       }
 
-      // string name = 3;
+      // optional string name = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -606,12 +750,14 @@ bool SearchReadGroupSetsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_page_size;
         break;
       }
 
-      // int32 page_size = 4;
+      // optional int32 page_size = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_page_size:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -619,6 +765,7 @@ bool SearchReadGroupSetsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -656,7 +803,7 @@ void SearchReadGroupSetsRequest::SerializeWithCachedSizes(
       1, this->dataset_ids(i), output);
   }
 
-  // string page_token = 2;
+  // optional string page_token = 2;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -666,7 +813,7 @@ void SearchReadGroupSetsRequest::SerializeWithCachedSizes(
       2, this->page_token(), output);
   }
 
-  // string name = 3;
+  // optional string name = 3;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -676,7 +823,7 @@ void SearchReadGroupSetsRequest::SerializeWithCachedSizes(
       3, this->name(), output);
   }
 
-  // int32 page_size = 4;
+  // optional int32 page_size = 4;
   if (this->page_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->page_size(), output);
   }
@@ -698,7 +845,7 @@ void SearchReadGroupSetsRequest::SerializeWithCachedSizes(
       WriteStringToArray(1, this->dataset_ids(i), target);
   }
 
-  // string page_token = 2;
+  // optional string page_token = 2;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -709,7 +856,7 @@ void SearchReadGroupSetsRequest::SerializeWithCachedSizes(
         2, this->page_token(), target);
   }
 
-  // string name = 3;
+  // optional string name = 3;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -720,7 +867,7 @@ void SearchReadGroupSetsRequest::SerializeWithCachedSizes(
         3, this->name(), target);
   }
 
-  // int32 page_size = 4;
+  // optional int32 page_size = 4;
   if (this->page_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->page_size(), target);
   }
@@ -733,33 +880,33 @@ size_t SearchReadGroupSetsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.SearchReadGroupSetsRequest)
   size_t total_size = 0;
 
-  // repeated string dataset_ids = 1;
-  total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->dataset_ids_size());
-  for (int i = 0; i < this->dataset_ids_size(); i++) {
-    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
-      this->dataset_ids(i));
-  }
-
-  // string name = 3;
+  // optional string name = 3;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->name());
   }
 
-  // string page_token = 2;
+  // optional string page_token = 2;
   if (this->page_token().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->page_token());
   }
 
-  // int32 page_size = 4;
+  // optional int32 page_size = 4;
   if (this->page_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->page_size());
+  }
+
+  // repeated string dataset_ids = 1;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->dataset_ids_size());
+  for (int i = 0; i < this->dataset_ids_size(); i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->dataset_ids(i));
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -771,7 +918,7 @@ size_t SearchReadGroupSetsRequest::ByteSizeLong() const {
 
 void SearchReadGroupSetsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.SearchReadGroupSetsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const SearchReadGroupSetsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SearchReadGroupSetsRequest>(
           &from);
@@ -780,15 +927,22 @@ void SearchReadGroupSetsRequest::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.SearchReadGroupSetsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SearchReadGroupSetsRequest::MergeFrom(const SearchReadGroupSetsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.SearchReadGroupSetsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  dataset_ids_.MergeFrom(from.dataset_ids_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void SearchReadGroupSetsRequest::UnsafeMergeFrom(const SearchReadGroupSetsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
+  dataset_ids_.UnsafeMergeFrom(from.dataset_ids_);
   if (from.name().size() > 0) {
     set_name(from.name());
   }
@@ -811,10 +965,11 @@ void SearchReadGroupSetsRequest::CopyFrom(const SearchReadGroupSetsRequest& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.SearchReadGroupSetsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SearchReadGroupSetsRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -823,13 +978,10 @@ void SearchReadGroupSetsRequest::Swap(SearchReadGroupSetsRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    SearchReadGroupSetsRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    SearchReadGroupSetsRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void SearchReadGroupSetsRequest::UnsafeArenaSwap(SearchReadGroupSetsRequest* other) {
@@ -842,12 +994,16 @@ void SearchReadGroupSetsRequest::InternalSwap(SearchReadGroupSetsRequest* other)
   name_.Swap(&other->name_);
   page_token_.Swap(&other->page_token_);
   std::swap(page_size_, other->page_size_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SearchReadGroupSetsRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = SearchReadGroupSetsRequest_descriptor_;
+  metadata.reflection = SearchReadGroupSetsRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -908,13 +1064,13 @@ SearchReadGroupSetsRequest::mutable_dataset_ids() {
   return &dataset_ids_;
 }
 
-// string name = 3;
+// optional string name = 3;
 void SearchReadGroupSetsRequest::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& SearchReadGroupSetsRequest::name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReadGroupSetsRequest.name)
-  return name_.Get();
+  return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void SearchReadGroupSetsRequest::set_name(const ::std::string& value) {
   
@@ -974,13 +1130,13 @@ void SearchReadGroupSetsRequest::unsafe_arena_set_allocated_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.SearchReadGroupSetsRequest.name)
 }
 
-// string page_token = 2;
+// optional string page_token = 2;
 void SearchReadGroupSetsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& SearchReadGroupSetsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReadGroupSetsRequest.page_token)
-  return page_token_.Get();
+  return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void SearchReadGroupSetsRequest::set_page_token(const ::std::string& value) {
   
@@ -1040,7 +1196,7 @@ void SearchReadGroupSetsRequest::unsafe_arena_set_allocated_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.SearchReadGroupSetsRequest.page_token)
 }
 
-// int32 page_size = 4;
+// optional int32 page_size = 4;
 void SearchReadGroupSetsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -1054,6 +1210,9 @@ void SearchReadGroupSetsRequest::set_page_size(::google::protobuf::int32 value) 
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchReadGroupSetsRequest.page_size)
 }
 
+inline const SearchReadGroupSetsRequest* SearchReadGroupSetsRequest::internal_default_instance() {
+  return &SearchReadGroupSetsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1065,9 +1224,7 @@ const int SearchReadGroupSetsResponse::kNextPageTokenFieldNumber;
 
 SearchReadGroupSetsResponse::SearchReadGroupSetsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.SearchReadGroupSetsResponse)
 }
@@ -1082,17 +1239,15 @@ SearchReadGroupSetsResponse::SearchReadGroupSetsResponse(::google::protobuf::Are
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.SearchReadGroupSetsResponse)
 }
+
+void SearchReadGroupSetsResponse::InitAsDefaultInstance() {
+}
+
 SearchReadGroupSetsResponse::SearchReadGroupSetsResponse(const SearchReadGroupSetsResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      read_group_sets_(from.read_group_sets_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_page_token().size() > 0) {
-    next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_page_token(),
-      GetArenaNoVirtual());
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.SearchReadGroupSetsResponse)
 }
 
@@ -1128,7 +1283,7 @@ void SearchReadGroupSetsResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* SearchReadGroupSetsResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return SearchReadGroupSetsResponse_descriptor_;
 }
 
 const SearchReadGroupSetsResponse& SearchReadGroupSetsResponse::default_instance() {
@@ -1136,14 +1291,16 @@ const SearchReadGroupSetsResponse& SearchReadGroupSetsResponse::default_instance
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<SearchReadGroupSetsResponse> SearchReadGroupSetsResponse_default_instance_;
+
 SearchReadGroupSetsResponse* SearchReadGroupSetsResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<SearchReadGroupSetsResponse>(arena);
 }
 
 void SearchReadGroupSetsResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.genomics.v1.SearchReadGroupSetsResponse)
-  read_group_sets_.Clear();
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  read_group_sets_.Clear();
 }
 
 bool SearchReadGroupSetsResponse::MergePartialFromCodedStream(
@@ -1152,26 +1309,30 @@ bool SearchReadGroupSetsResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.SearchReadGroupSetsResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.genomics.v1.ReadGroupSet read_group_sets = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_read_group_sets:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_read_group_sets()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_read_group_sets;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_next_page_token;
         break;
       }
 
-      // string next_page_token = 2;
+      // optional string next_page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_next_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1181,6 +1342,7 @@ bool SearchReadGroupSetsResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1214,7 +1376,7 @@ void SearchReadGroupSetsResponse::SerializeWithCachedSizes(
       1, this->read_group_sets(i), output);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -1238,7 +1400,7 @@ void SearchReadGroupSetsResponse::SerializeWithCachedSizes(
         1, this->read_group_sets(i), false, target);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -1257,6 +1419,13 @@ size_t SearchReadGroupSetsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.SearchReadGroupSetsResponse)
   size_t total_size = 0;
 
+  // optional string next_page_token = 2;
+  if (this->next_page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_page_token());
+  }
+
   // repeated .google.genomics.v1.ReadGroupSet read_group_sets = 1;
   {
     unsigned int count = this->read_group_sets_size();
@@ -1268,13 +1437,6 @@ size_t SearchReadGroupSetsResponse::ByteSizeLong() const {
     }
   }
 
-  // string next_page_token = 2;
-  if (this->next_page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_page_token());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -1284,7 +1446,7 @@ size_t SearchReadGroupSetsResponse::ByteSizeLong() const {
 
 void SearchReadGroupSetsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.SearchReadGroupSetsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const SearchReadGroupSetsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SearchReadGroupSetsResponse>(
           &from);
@@ -1293,14 +1455,21 @@ void SearchReadGroupSetsResponse::MergeFrom(const ::google::protobuf::Message& f
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.SearchReadGroupSetsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SearchReadGroupSetsResponse::MergeFrom(const SearchReadGroupSetsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.SearchReadGroupSetsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void SearchReadGroupSetsResponse::UnsafeMergeFrom(const SearchReadGroupSetsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   read_group_sets_.MergeFrom(from.read_group_sets_);
   if (from.next_page_token().size() > 0) {
     set_next_page_token(from.next_page_token());
@@ -1318,10 +1487,11 @@ void SearchReadGroupSetsResponse::CopyFrom(const SearchReadGroupSetsResponse& fr
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.SearchReadGroupSetsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SearchReadGroupSetsResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -1330,13 +1500,10 @@ void SearchReadGroupSetsResponse::Swap(SearchReadGroupSetsResponse* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    SearchReadGroupSetsResponse* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    SearchReadGroupSetsResponse temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void SearchReadGroupSetsResponse::UnsafeArenaSwap(SearchReadGroupSetsResponse* other) {
@@ -1347,12 +1514,16 @@ void SearchReadGroupSetsResponse::UnsafeArenaSwap(SearchReadGroupSetsResponse* o
 void SearchReadGroupSetsResponse::InternalSwap(SearchReadGroupSetsResponse* other) {
   read_group_sets_.UnsafeArenaSwap(&other->read_group_sets_);
   next_page_token_.Swap(&other->next_page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SearchReadGroupSetsResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = SearchReadGroupSetsResponse_descriptor_;
+  metadata.reflection = SearchReadGroupSetsResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -1388,13 +1559,13 @@ SearchReadGroupSetsResponse::read_group_sets() const {
   return read_group_sets_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 void SearchReadGroupSetsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& SearchReadGroupSetsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReadGroupSetsResponse.next_page_token)
-  return next_page_token_.Get();
+  return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void SearchReadGroupSetsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -1454,10 +1625,36 @@ void SearchReadGroupSetsResponse::unsafe_arena_set_allocated_next_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.SearchReadGroupSetsResponse.next_page_token)
 }
 
+inline const SearchReadGroupSetsResponse* SearchReadGroupSetsResponse::internal_default_instance() {
+  return &SearchReadGroupSetsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* ImportReadGroupSetsRequest_PartitionStrategy_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return ImportReadGroupSetsRequest_PartitionStrategy_descriptor_;
+}
+bool ImportReadGroupSetsRequest_PartitionStrategy_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const ImportReadGroupSetsRequest_PartitionStrategy ImportReadGroupSetsRequest::PARTITION_STRATEGY_UNSPECIFIED;
+const ImportReadGroupSetsRequest_PartitionStrategy ImportReadGroupSetsRequest::PER_FILE_PER_SAMPLE;
+const ImportReadGroupSetsRequest_PartitionStrategy ImportReadGroupSetsRequest::MERGE_ALL;
+const ImportReadGroupSetsRequest_PartitionStrategy ImportReadGroupSetsRequest::PartitionStrategy_MIN;
+const ImportReadGroupSetsRequest_PartitionStrategy ImportReadGroupSetsRequest::PartitionStrategy_MAX;
+const int ImportReadGroupSetsRequest::PartitionStrategy_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ImportReadGroupSetsRequest::kDatasetIdFieldNumber;
 const int ImportReadGroupSetsRequest::kReferenceSetIdFieldNumber;
@@ -1467,9 +1664,7 @@ const int ImportReadGroupSetsRequest::kPartitionStrategyFieldNumber;
 
 ImportReadGroupSetsRequest::ImportReadGroupSetsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.ImportReadGroupSetsRequest)
 }
@@ -1484,23 +1679,15 @@ ImportReadGroupSetsRequest::ImportReadGroupSetsRequest(::google::protobuf::Arena
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.ImportReadGroupSetsRequest)
 }
+
+void ImportReadGroupSetsRequest::InitAsDefaultInstance() {
+}
+
 ImportReadGroupSetsRequest::ImportReadGroupSetsRequest(const ImportReadGroupSetsRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      source_uris_(from.source_uris_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  dataset_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.dataset_id().size() > 0) {
-    dataset_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.dataset_id(),
-      GetArenaNoVirtual());
-  }
-  reference_set_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.reference_set_id().size() > 0) {
-    reference_set_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.reference_set_id(),
-      GetArenaNoVirtual());
-  }
-  partition_strategy_ = from.partition_strategy_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.ImportReadGroupSetsRequest)
 }
 
@@ -1539,7 +1726,7 @@ void ImportReadGroupSetsRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ImportReadGroupSetsRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return ImportReadGroupSetsRequest_descriptor_;
 }
 
 const ImportReadGroupSetsRequest& ImportReadGroupSetsRequest::default_instance() {
@@ -1547,16 +1734,18 @@ const ImportReadGroupSetsRequest& ImportReadGroupSetsRequest::default_instance()
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<ImportReadGroupSetsRequest> ImportReadGroupSetsRequest_default_instance_;
+
 ImportReadGroupSetsRequest* ImportReadGroupSetsRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ImportReadGroupSetsRequest>(arena);
 }
 
 void ImportReadGroupSetsRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.genomics.v1.ImportReadGroupSetsRequest)
-  source_uris_.Clear();
   dataset_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   reference_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   partition_strategy_ = 0;
+  source_uris_.Clear();
 }
 
 bool ImportReadGroupSetsRequest::MergePartialFromCodedStream(
@@ -1565,13 +1754,13 @@ bool ImportReadGroupSetsRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.ImportReadGroupSetsRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string dataset_id = 1;
+      // optional string dataset_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_dataset_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1581,12 +1770,14 @@ bool ImportReadGroupSetsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_source_uris;
         break;
       }
 
       // repeated string source_uris = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_source_uris:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_source_uris()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1597,12 +1788,15 @@ bool ImportReadGroupSetsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_source_uris;
+        if (input->ExpectTag(34)) goto parse_reference_set_id;
         break;
       }
 
-      // string reference_set_id = 4;
+      // optional string reference_set_id = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_reference_set_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_reference_set_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1612,12 +1806,14 @@ bool ImportReadGroupSetsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(40)) goto parse_partition_strategy;
         break;
       }
 
-      // .google.genomics.v1.ImportReadGroupSetsRequest.PartitionStrategy partition_strategy = 5;
+      // optional .google.genomics.v1.ImportReadGroupSetsRequest.PartitionStrategy partition_strategy = 5;
       case 5: {
-        if (tag == 40u) {
+        if (tag == 40) {
+         parse_partition_strategy:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -1626,6 +1822,7 @@ bool ImportReadGroupSetsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1653,7 +1850,7 @@ failure:
 void ImportReadGroupSetsRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.genomics.v1.ImportReadGroupSetsRequest)
-  // string dataset_id = 1;
+  // optional string dataset_id = 1;
   if (this->dataset_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->dataset_id().data(), this->dataset_id().length(),
@@ -1673,7 +1870,7 @@ void ImportReadGroupSetsRequest::SerializeWithCachedSizes(
       2, this->source_uris(i), output);
   }
 
-  // string reference_set_id = 4;
+  // optional string reference_set_id = 4;
   if (this->reference_set_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->reference_set_id().data(), this->reference_set_id().length(),
@@ -1683,7 +1880,7 @@ void ImportReadGroupSetsRequest::SerializeWithCachedSizes(
       4, this->reference_set_id(), output);
   }
 
-  // .google.genomics.v1.ImportReadGroupSetsRequest.PartitionStrategy partition_strategy = 5;
+  // optional .google.genomics.v1.ImportReadGroupSetsRequest.PartitionStrategy partition_strategy = 5;
   if (this->partition_strategy() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       5, this->partition_strategy(), output);
@@ -1696,7 +1893,7 @@ void ImportReadGroupSetsRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.ImportReadGroupSetsRequest)
-  // string dataset_id = 1;
+  // optional string dataset_id = 1;
   if (this->dataset_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->dataset_id().data(), this->dataset_id().length(),
@@ -1717,7 +1914,7 @@ void ImportReadGroupSetsRequest::SerializeWithCachedSizes(
       WriteStringToArray(2, this->source_uris(i), target);
   }
 
-  // string reference_set_id = 4;
+  // optional string reference_set_id = 4;
   if (this->reference_set_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->reference_set_id().data(), this->reference_set_id().length(),
@@ -1728,7 +1925,7 @@ void ImportReadGroupSetsRequest::SerializeWithCachedSizes(
         4, this->reference_set_id(), target);
   }
 
-  // .google.genomics.v1.ImportReadGroupSetsRequest.PartitionStrategy partition_strategy = 5;
+  // optional .google.genomics.v1.ImportReadGroupSetsRequest.PartitionStrategy partition_strategy = 5;
   if (this->partition_strategy() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       5, this->partition_strategy(), target);
@@ -1742,32 +1939,32 @@ size_t ImportReadGroupSetsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.ImportReadGroupSetsRequest)
   size_t total_size = 0;
 
-  // repeated string source_uris = 2;
-  total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->source_uris_size());
-  for (int i = 0; i < this->source_uris_size(); i++) {
-    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
-      this->source_uris(i));
-  }
-
-  // string dataset_id = 1;
+  // optional string dataset_id = 1;
   if (this->dataset_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->dataset_id());
   }
 
-  // string reference_set_id = 4;
+  // optional string reference_set_id = 4;
   if (this->reference_set_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->reference_set_id());
   }
 
-  // .google.genomics.v1.ImportReadGroupSetsRequest.PartitionStrategy partition_strategy = 5;
+  // optional .google.genomics.v1.ImportReadGroupSetsRequest.PartitionStrategy partition_strategy = 5;
   if (this->partition_strategy() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->partition_strategy());
+  }
+
+  // repeated string source_uris = 2;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->source_uris_size());
+  for (int i = 0; i < this->source_uris_size(); i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->source_uris(i));
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -1779,7 +1976,7 @@ size_t ImportReadGroupSetsRequest::ByteSizeLong() const {
 
 void ImportReadGroupSetsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.ImportReadGroupSetsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ImportReadGroupSetsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ImportReadGroupSetsRequest>(
           &from);
@@ -1788,15 +1985,22 @@ void ImportReadGroupSetsRequest::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.ImportReadGroupSetsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ImportReadGroupSetsRequest::MergeFrom(const ImportReadGroupSetsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.ImportReadGroupSetsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  source_uris_.MergeFrom(from.source_uris_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ImportReadGroupSetsRequest::UnsafeMergeFrom(const ImportReadGroupSetsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
+  source_uris_.UnsafeMergeFrom(from.source_uris_);
   if (from.dataset_id().size() > 0) {
     set_dataset_id(from.dataset_id());
   }
@@ -1819,10 +2023,11 @@ void ImportReadGroupSetsRequest::CopyFrom(const ImportReadGroupSetsRequest& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.ImportReadGroupSetsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ImportReadGroupSetsRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -1831,13 +2036,10 @@ void ImportReadGroupSetsRequest::Swap(ImportReadGroupSetsRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    ImportReadGroupSetsRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    ImportReadGroupSetsRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void ImportReadGroupSetsRequest::UnsafeArenaSwap(ImportReadGroupSetsRequest* other) {
@@ -1846,28 +2048,32 @@ void ImportReadGroupSetsRequest::UnsafeArenaSwap(ImportReadGroupSetsRequest* oth
   InternalSwap(other);
 }
 void ImportReadGroupSetsRequest::InternalSwap(ImportReadGroupSetsRequest* other) {
-  source_uris_.UnsafeArenaSwap(&other->source_uris_);
   dataset_id_.Swap(&other->dataset_id_);
   reference_set_id_.Swap(&other->reference_set_id_);
+  source_uris_.UnsafeArenaSwap(&other->source_uris_);
   std::swap(partition_strategy_, other->partition_strategy_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ImportReadGroupSetsRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ImportReadGroupSetsRequest_descriptor_;
+  metadata.reflection = ImportReadGroupSetsRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ImportReadGroupSetsRequest
 
-// string dataset_id = 1;
+// optional string dataset_id = 1;
 void ImportReadGroupSetsRequest::clear_dataset_id() {
   dataset_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ImportReadGroupSetsRequest::dataset_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ImportReadGroupSetsRequest.dataset_id)
-  return dataset_id_.Get();
+  return dataset_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ImportReadGroupSetsRequest::set_dataset_id(const ::std::string& value) {
   
@@ -1927,13 +2133,13 @@ void ImportReadGroupSetsRequest::unsafe_arena_set_allocated_dataset_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ImportReadGroupSetsRequest.dataset_id)
 }
 
-// string reference_set_id = 4;
+// optional string reference_set_id = 4;
 void ImportReadGroupSetsRequest::clear_reference_set_id() {
   reference_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ImportReadGroupSetsRequest::reference_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ImportReadGroupSetsRequest.reference_set_id)
-  return reference_set_id_.Get();
+  return reference_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ImportReadGroupSetsRequest::set_reference_set_id(const ::std::string& value) {
   
@@ -2048,7 +2254,7 @@ ImportReadGroupSetsRequest::mutable_source_uris() {
   return &source_uris_;
 }
 
-// .google.genomics.v1.ImportReadGroupSetsRequest.PartitionStrategy partition_strategy = 5;
+// optional .google.genomics.v1.ImportReadGroupSetsRequest.PartitionStrategy partition_strategy = 5;
 void ImportReadGroupSetsRequest::clear_partition_strategy() {
   partition_strategy_ = 0;
 }
@@ -2062,6 +2268,9 @@ void ImportReadGroupSetsRequest::set_partition_strategy(::google::genomics::v1::
   // @@protoc_insertion_point(field_set:google.genomics.v1.ImportReadGroupSetsRequest.partition_strategy)
 }
 
+inline const ImportReadGroupSetsRequest* ImportReadGroupSetsRequest::internal_default_instance() {
+  return &ImportReadGroupSetsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2072,9 +2281,7 @@ const int ImportReadGroupSetsResponse::kReadGroupSetIdsFieldNumber;
 
 ImportReadGroupSetsResponse::ImportReadGroupSetsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.ImportReadGroupSetsResponse)
 }
@@ -2089,12 +2296,15 @@ ImportReadGroupSetsResponse::ImportReadGroupSetsResponse(::google::protobuf::Are
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.ImportReadGroupSetsResponse)
 }
+
+void ImportReadGroupSetsResponse::InitAsDefaultInstance() {
+}
+
 ImportReadGroupSetsResponse::ImportReadGroupSetsResponse(const ImportReadGroupSetsResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      read_group_set_ids_(from.read_group_set_ids_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.ImportReadGroupSetsResponse)
 }
 
@@ -2128,13 +2338,15 @@ void ImportReadGroupSetsResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ImportReadGroupSetsResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return ImportReadGroupSetsResponse_descriptor_;
 }
 
 const ImportReadGroupSetsResponse& ImportReadGroupSetsResponse::default_instance() {
   protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ImportReadGroupSetsResponse> ImportReadGroupSetsResponse_default_instance_;
 
 ImportReadGroupSetsResponse* ImportReadGroupSetsResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ImportReadGroupSetsResponse>(arena);
@@ -2151,13 +2363,14 @@ bool ImportReadGroupSetsResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.ImportReadGroupSetsResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated string read_group_set_ids = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
+         parse_read_group_set_ids:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_read_group_set_ids()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2168,6 +2381,8 @@ bool ImportReadGroupSetsResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_read_group_set_ids;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2247,7 +2462,7 @@ size_t ImportReadGroupSetsResponse::ByteSizeLong() const {
 
 void ImportReadGroupSetsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.ImportReadGroupSetsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ImportReadGroupSetsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ImportReadGroupSetsResponse>(
           &from);
@@ -2256,15 +2471,22 @@ void ImportReadGroupSetsResponse::MergeFrom(const ::google::protobuf::Message& f
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.ImportReadGroupSetsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ImportReadGroupSetsResponse::MergeFrom(const ImportReadGroupSetsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.ImportReadGroupSetsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  read_group_set_ids_.MergeFrom(from.read_group_set_ids_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ImportReadGroupSetsResponse::UnsafeMergeFrom(const ImportReadGroupSetsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
+  read_group_set_ids_.UnsafeMergeFrom(from.read_group_set_ids_);
 }
 
 void ImportReadGroupSetsResponse::CopyFrom(const ::google::protobuf::Message& from) {
@@ -2278,10 +2500,11 @@ void ImportReadGroupSetsResponse::CopyFrom(const ImportReadGroupSetsResponse& fr
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.ImportReadGroupSetsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ImportReadGroupSetsResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -2290,13 +2513,10 @@ void ImportReadGroupSetsResponse::Swap(ImportReadGroupSetsResponse* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    ImportReadGroupSetsResponse* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    ImportReadGroupSetsResponse temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void ImportReadGroupSetsResponse::UnsafeArenaSwap(ImportReadGroupSetsResponse* other) {
@@ -2306,12 +2526,16 @@ void ImportReadGroupSetsResponse::UnsafeArenaSwap(ImportReadGroupSetsResponse* o
 }
 void ImportReadGroupSetsResponse::InternalSwap(ImportReadGroupSetsResponse* other) {
   read_group_set_ids_.UnsafeArenaSwap(&other->read_group_set_ids_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ImportReadGroupSetsResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ImportReadGroupSetsResponse_descriptor_;
+  metadata.reflection = ImportReadGroupSetsResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -2372,6 +2596,9 @@ ImportReadGroupSetsResponse::mutable_read_group_set_ids() {
   return &read_group_set_ids_;
 }
 
+inline const ImportReadGroupSetsResponse* ImportReadGroupSetsResponse::internal_default_instance() {
+  return &ImportReadGroupSetsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2385,9 +2612,7 @@ const int ExportReadGroupSetRequest::kReferenceNamesFieldNumber;
 
 ExportReadGroupSetRequest::ExportReadGroupSetRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.ExportReadGroupSetRequest)
 }
@@ -2402,27 +2627,15 @@ ExportReadGroupSetRequest::ExportReadGroupSetRequest(::google::protobuf::Arena* 
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.ExportReadGroupSetRequest)
 }
+
+void ExportReadGroupSetRequest::InitAsDefaultInstance() {
+}
+
 ExportReadGroupSetRequest::ExportReadGroupSetRequest(const ExportReadGroupSetRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      reference_names_(from.reference_names_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id(),
-      GetArenaNoVirtual());
-  }
-  export_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.export_uri().size() > 0) {
-    export_uri_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.export_uri(),
-      GetArenaNoVirtual());
-  }
-  read_group_set_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.read_group_set_id().size() > 0) {
-    read_group_set_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.read_group_set_id(),
-      GetArenaNoVirtual());
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.ExportReadGroupSetRequest)
 }
 
@@ -2462,7 +2675,7 @@ void ExportReadGroupSetRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ExportReadGroupSetRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return ExportReadGroupSetRequest_descriptor_;
 }
 
 const ExportReadGroupSetRequest& ExportReadGroupSetRequest::default_instance() {
@@ -2470,16 +2683,18 @@ const ExportReadGroupSetRequest& ExportReadGroupSetRequest::default_instance() {
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<ExportReadGroupSetRequest> ExportReadGroupSetRequest_default_instance_;
+
 ExportReadGroupSetRequest* ExportReadGroupSetRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ExportReadGroupSetRequest>(arena);
 }
 
 void ExportReadGroupSetRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.genomics.v1.ExportReadGroupSetRequest)
-  reference_names_.Clear();
   project_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   export_uri_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   read_group_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  reference_names_.Clear();
 }
 
 bool ExportReadGroupSetRequest::MergePartialFromCodedStream(
@@ -2488,13 +2703,13 @@ bool ExportReadGroupSetRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.ExportReadGroupSetRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string project_id = 1;
+      // optional string project_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2504,12 +2719,14 @@ bool ExportReadGroupSetRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_export_uri;
         break;
       }
 
-      // string export_uri = 2;
+      // optional string export_uri = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_export_uri:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_export_uri()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2519,12 +2736,14 @@ bool ExportReadGroupSetRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_read_group_set_id;
         break;
       }
 
-      // string read_group_set_id = 3;
+      // optional string read_group_set_id = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_read_group_set_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_read_group_set_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2534,12 +2753,14 @@ bool ExportReadGroupSetRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_reference_names;
         break;
       }
 
       // repeated string reference_names = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_reference_names:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_reference_names()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2550,6 +2771,8 @@ bool ExportReadGroupSetRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_reference_names;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2577,7 +2800,7 @@ failure:
 void ExportReadGroupSetRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.genomics.v1.ExportReadGroupSetRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -2587,7 +2810,7 @@ void ExportReadGroupSetRequest::SerializeWithCachedSizes(
       1, this->project_id(), output);
   }
 
-  // string export_uri = 2;
+  // optional string export_uri = 2;
   if (this->export_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->export_uri().data(), this->export_uri().length(),
@@ -2597,7 +2820,7 @@ void ExportReadGroupSetRequest::SerializeWithCachedSizes(
       2, this->export_uri(), output);
   }
 
-  // string read_group_set_id = 3;
+  // optional string read_group_set_id = 3;
   if (this->read_group_set_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->read_group_set_id().data(), this->read_group_set_id().length(),
@@ -2624,7 +2847,7 @@ void ExportReadGroupSetRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.ExportReadGroupSetRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -2635,7 +2858,7 @@ void ExportReadGroupSetRequest::SerializeWithCachedSizes(
         1, this->project_id(), target);
   }
 
-  // string export_uri = 2;
+  // optional string export_uri = 2;
   if (this->export_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->export_uri().data(), this->export_uri().length(),
@@ -2646,7 +2869,7 @@ void ExportReadGroupSetRequest::SerializeWithCachedSizes(
         2, this->export_uri(), target);
   }
 
-  // string read_group_set_id = 3;
+  // optional string read_group_set_id = 3;
   if (this->read_group_set_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->read_group_set_id().data(), this->read_group_set_id().length(),
@@ -2675,33 +2898,33 @@ size_t ExportReadGroupSetRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.ExportReadGroupSetRequest)
   size_t total_size = 0;
 
-  // repeated string reference_names = 4;
-  total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->reference_names_size());
-  for (int i = 0; i < this->reference_names_size(); i++) {
-    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
-      this->reference_names(i));
-  }
-
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->project_id());
   }
 
-  // string export_uri = 2;
+  // optional string export_uri = 2;
   if (this->export_uri().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->export_uri());
   }
 
-  // string read_group_set_id = 3;
+  // optional string read_group_set_id = 3;
   if (this->read_group_set_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->read_group_set_id());
+  }
+
+  // repeated string reference_names = 4;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->reference_names_size());
+  for (int i = 0; i < this->reference_names_size(); i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->reference_names(i));
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -2713,7 +2936,7 @@ size_t ExportReadGroupSetRequest::ByteSizeLong() const {
 
 void ExportReadGroupSetRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.ExportReadGroupSetRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ExportReadGroupSetRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ExportReadGroupSetRequest>(
           &from);
@@ -2722,15 +2945,22 @@ void ExportReadGroupSetRequest::MergeFrom(const ::google::protobuf::Message& fro
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.ExportReadGroupSetRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ExportReadGroupSetRequest::MergeFrom(const ExportReadGroupSetRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.ExportReadGroupSetRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  reference_names_.MergeFrom(from.reference_names_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ExportReadGroupSetRequest::UnsafeMergeFrom(const ExportReadGroupSetRequest& from) {
+  GOOGLE_DCHECK(&from != this);
+  reference_names_.UnsafeMergeFrom(from.reference_names_);
   if (from.project_id().size() > 0) {
     set_project_id(from.project_id());
   }
@@ -2753,10 +2983,11 @@ void ExportReadGroupSetRequest::CopyFrom(const ExportReadGroupSetRequest& from) 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.ExportReadGroupSetRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ExportReadGroupSetRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -2765,13 +2996,10 @@ void ExportReadGroupSetRequest::Swap(ExportReadGroupSetRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    ExportReadGroupSetRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    ExportReadGroupSetRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void ExportReadGroupSetRequest::UnsafeArenaSwap(ExportReadGroupSetRequest* other) {
@@ -2780,28 +3008,32 @@ void ExportReadGroupSetRequest::UnsafeArenaSwap(ExportReadGroupSetRequest* other
   InternalSwap(other);
 }
 void ExportReadGroupSetRequest::InternalSwap(ExportReadGroupSetRequest* other) {
-  reference_names_.UnsafeArenaSwap(&other->reference_names_);
   project_id_.Swap(&other->project_id_);
   export_uri_.Swap(&other->export_uri_);
   read_group_set_id_.Swap(&other->read_group_set_id_);
+  reference_names_.UnsafeArenaSwap(&other->reference_names_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ExportReadGroupSetRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ExportReadGroupSetRequest_descriptor_;
+  metadata.reflection = ExportReadGroupSetRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ExportReadGroupSetRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 void ExportReadGroupSetRequest::clear_project_id() {
   project_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ExportReadGroupSetRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ExportReadGroupSetRequest.project_id)
-  return project_id_.Get();
+  return project_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ExportReadGroupSetRequest::set_project_id(const ::std::string& value) {
   
@@ -2861,13 +3093,13 @@ void ExportReadGroupSetRequest::unsafe_arena_set_allocated_project_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ExportReadGroupSetRequest.project_id)
 }
 
-// string export_uri = 2;
+// optional string export_uri = 2;
 void ExportReadGroupSetRequest::clear_export_uri() {
   export_uri_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ExportReadGroupSetRequest::export_uri() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ExportReadGroupSetRequest.export_uri)
-  return export_uri_.Get();
+  return export_uri_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ExportReadGroupSetRequest::set_export_uri(const ::std::string& value) {
   
@@ -2927,13 +3159,13 @@ void ExportReadGroupSetRequest::unsafe_arena_set_allocated_export_uri(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ExportReadGroupSetRequest.export_uri)
 }
 
-// string read_group_set_id = 3;
+// optional string read_group_set_id = 3;
 void ExportReadGroupSetRequest::clear_read_group_set_id() {
   read_group_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ExportReadGroupSetRequest::read_group_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ExportReadGroupSetRequest.read_group_set_id)
-  return read_group_set_id_.Get();
+  return read_group_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ExportReadGroupSetRequest::set_read_group_set_id(const ::std::string& value) {
   
@@ -3048,6 +3280,9 @@ ExportReadGroupSetRequest::mutable_reference_names() {
   return &reference_names_;
 }
 
+inline const ExportReadGroupSetRequest* ExportReadGroupSetRequest::internal_default_instance() {
+  return &ExportReadGroupSetRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3140,9 +3375,7 @@ const int UpdateReadGroupSetRequest::kUpdateMaskFieldNumber;
 
 UpdateReadGroupSetRequest::UpdateReadGroupSetRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.UpdateReadGroupSetRequest)
 }
@@ -3156,33 +3389,26 @@ UpdateReadGroupSetRequest::UpdateReadGroupSetRequest(::google::protobuf::Arena* 
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.UpdateReadGroupSetRequest)
 }
+
+void UpdateReadGroupSetRequest::InitAsDefaultInstance() {
+  read_group_set_ = const_cast< ::google::genomics::v1::ReadGroupSet*>(
+      ::google::genomics::v1::ReadGroupSet::internal_default_instance());
+  update_mask_ = const_cast< ::google::protobuf::FieldMask*>(
+      ::google::protobuf::FieldMask::internal_default_instance());
+}
+
 UpdateReadGroupSetRequest::UpdateReadGroupSetRequest(const UpdateReadGroupSetRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  read_group_set_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.read_group_set_id().size() > 0) {
-    read_group_set_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.read_group_set_id(),
-      GetArenaNoVirtual());
-  }
-  if (from.has_read_group_set()) {
-    read_group_set_ = new ::google::genomics::v1::ReadGroupSet(*from.read_group_set_);
-  } else {
-    read_group_set_ = NULL;
-  }
-  if (from.has_update_mask()) {
-    update_mask_ = new ::google::protobuf::FieldMask(*from.update_mask_);
-  } else {
-    update_mask_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.UpdateReadGroupSetRequest)
 }
 
 void UpdateReadGroupSetRequest::SharedCtor() {
   read_group_set_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&read_group_set_, 0, reinterpret_cast<char*>(&update_mask_) -
-    reinterpret_cast<char*>(&read_group_set_) + sizeof(update_mask_));
+  read_group_set_ = NULL;
+  update_mask_ = NULL;
   _cached_size_ = 0;
 }
 
@@ -3198,10 +3424,8 @@ void UpdateReadGroupSetRequest::SharedDtor() {
   }
 
   read_group_set_id_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
-  if (this != internal_default_instance()) {
+  if (this != &UpdateReadGroupSetRequest_default_instance_.get()) {
     delete read_group_set_;
-  }
-  if (this != internal_default_instance()) {
     delete update_mask_;
   }
 }
@@ -3219,13 +3443,15 @@ void UpdateReadGroupSetRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* UpdateReadGroupSetRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
+  return UpdateReadGroupSetRequest_descriptor_;
 }
 
 const UpdateReadGroupSetRequest& UpdateReadGroupSetRequest::default_instance() {
   protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<UpdateReadGroupSetRequest> UpdateReadGroupSetRequest_default_instance_;
 
 UpdateReadGroupSetRequest* UpdateReadGroupSetRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<UpdateReadGroupSetRequest>(arena);
@@ -3234,13 +3460,9 @@ UpdateReadGroupSetRequest* UpdateReadGroupSetRequest::New(::google::protobuf::Ar
 void UpdateReadGroupSetRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.genomics.v1.UpdateReadGroupSetRequest)
   read_group_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (GetArenaNoVirtual() == NULL && read_group_set_ != NULL) {
-    delete read_group_set_;
-  }
+  if (GetArenaNoVirtual() == NULL && read_group_set_ != NULL) delete read_group_set_;
   read_group_set_ = NULL;
-  if (GetArenaNoVirtual() == NULL && update_mask_ != NULL) {
-    delete update_mask_;
-  }
+  if (GetArenaNoVirtual() == NULL && update_mask_ != NULL) delete update_mask_;
   update_mask_ = NULL;
 }
 
@@ -3250,13 +3472,13 @@ bool UpdateReadGroupSetRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.UpdateReadGroupSetRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string read_group_set_id = 1;
+      // optional string read_group_set_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_read_group_set_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3266,28 +3488,33 @@ bool UpdateReadGroupSetRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_read_group_set;
         break;
       }
 
-      // .google.genomics.v1.ReadGroupSet read_group_set = 2;
+      // optional .google.genomics.v1.ReadGroupSet read_group_set = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_read_group_set:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_read_group_set()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_update_mask;
         break;
       }
 
-      // .google.protobuf.FieldMask update_mask = 3;
+      // optional .google.protobuf.FieldMask update_mask = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_update_mask:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_update_mask()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3315,7 +3542,7 @@ failure:
 void UpdateReadGroupSetRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.genomics.v1.UpdateReadGroupSetRequest)
-  // string read_group_set_id = 1;
+  // optional string read_group_set_id = 1;
   if (this->read_group_set_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->read_group_set_id().data(), this->read_group_set_id().length(),
@@ -3325,13 +3552,13 @@ void UpdateReadGroupSetRequest::SerializeWithCachedSizes(
       1, this->read_group_set_id(), output);
   }
 
-  // .google.genomics.v1.ReadGroupSet read_group_set = 2;
+  // optional .google.genomics.v1.ReadGroupSet read_group_set = 2;
   if (this->has_read_group_set()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->read_group_set_, output);
   }
 
-  // .google.protobuf.FieldMask update_mask = 3;
+  // optional .google.protobuf.FieldMask update_mask = 3;
   if (this->has_update_mask()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *this->update_mask_, output);
@@ -3344,7 +3571,7 @@ void UpdateReadGroupSetRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.UpdateReadGroupSetRequest)
-  // string read_group_set_id = 1;
+  // optional string read_group_set_id = 1;
   if (this->read_group_set_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->read_group_set_id().data(), this->read_group_set_id().length(),
@@ -3355,14 +3582,14 @@ void UpdateReadGroupSetRequest::SerializeWithCachedSizes(
         1, this->read_group_set_id(), target);
   }
 
-  // .google.genomics.v1.ReadGroupSet read_group_set = 2;
+  // optional .google.genomics.v1.ReadGroupSet read_group_set = 2;
   if (this->has_read_group_set()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *this->read_group_set_, false, target);
   }
 
-  // .google.protobuf.FieldMask update_mask = 3;
+  // optional .google.protobuf.FieldMask update_mask = 3;
   if (this->has_update_mask()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -3377,21 +3604,21 @@ size_t UpdateReadGroupSetRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.UpdateReadGroupSetRequest)
   size_t total_size = 0;
 
-  // string read_group_set_id = 1;
+  // optional string read_group_set_id = 1;
   if (this->read_group_set_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->read_group_set_id());
   }
 
-  // .google.genomics.v1.ReadGroupSet read_group_set = 2;
+  // optional .google.genomics.v1.ReadGroupSet read_group_set = 2;
   if (this->has_read_group_set()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->read_group_set_);
   }
 
-  // .google.protobuf.FieldMask update_mask = 3;
+  // optional .google.protobuf.FieldMask update_mask = 3;
   if (this->has_update_mask()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -3407,7 +3634,7 @@ size_t UpdateReadGroupSetRequest::ByteSizeLong() const {
 
 void UpdateReadGroupSetRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.UpdateReadGroupSetRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const UpdateReadGroupSetRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const UpdateReadGroupSetRequest>(
           &from);
@@ -3416,14 +3643,21 @@ void UpdateReadGroupSetRequest::MergeFrom(const ::google::protobuf::Message& fro
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.UpdateReadGroupSetRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void UpdateReadGroupSetRequest::MergeFrom(const UpdateReadGroupSetRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.UpdateReadGroupSetRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void UpdateReadGroupSetRequest::UnsafeMergeFrom(const UpdateReadGroupSetRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.read_group_set_id().size() > 0) {
     set_read_group_set_id(from.read_group_set_id());
   }
@@ -3446,10 +3680,11 @@ void UpdateReadGroupSetRequest::CopyFrom(const UpdateReadGroupSetRequest& from) 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.UpdateReadGroupSetRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool UpdateReadGroupSetRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -3458,13 +3693,10 @@ void UpdateReadGroupSetRequest::Swap(UpdateReadGroupSetRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    UpdateReadGroupSetRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    UpdateReadGroupSetRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void UpdateReadGroupSetRequest::UnsafeArenaSwap(UpdateReadGroupSetRequest* other) {
@@ -3476,24 +3708,28 @@ void UpdateReadGroupSetRequest::InternalSwap(UpdateReadGroupSetRequest* other) {
   read_group_set_id_.Swap(&other->read_group_set_id_);
   std::swap(read_group_set_, other->read_group_set_);
   std::swap(update_mask_, other->update_mask_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata UpdateReadGroupSetRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = UpdateReadGroupSetRequest_descriptor_;
+  metadata.reflection = UpdateReadGroupSetRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // UpdateReadGroupSetRequest
 
-// string read_group_set_id = 1;
+// optional string read_group_set_id = 1;
 void UpdateReadGroupSetRequest::clear_read_group_set_id() {
   read_group_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& UpdateReadGroupSetRequest::read_group_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.UpdateReadGroupSetRequest.read_group_set_id)
-  return read_group_set_id_.Get();
+  return read_group_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void UpdateReadGroupSetRequest::set_read_group_set_id(const ::std::string& value) {
   
@@ -3553,7 +3789,7 @@ void UpdateReadGroupSetRequest::unsafe_arena_set_allocated_read_group_set_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.UpdateReadGroupSetRequest.read_group_set_id)
 }
 
-// .google.genomics.v1.ReadGroupSet read_group_set = 2;
+// optional .google.genomics.v1.ReadGroupSet read_group_set = 2;
 bool UpdateReadGroupSetRequest::has_read_group_set() const {
   return this != internal_default_instance() && read_group_set_ != NULL;
 }
@@ -3602,7 +3838,7 @@ const ::google::genomics::v1::ReadGroupSet& UpdateReadGroupSetRequest::read_grou
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.UpdateReadGroupSetRequest.read_group_set)
 }
 
-// .google.protobuf.FieldMask update_mask = 3;
+// optional .google.protobuf.FieldMask update_mask = 3;
 bool UpdateReadGroupSetRequest::has_update_mask() const {
   return this != internal_default_instance() && update_mask_ != NULL;
 }
@@ -3653,6 +3889,9 @@ const ::google::protobuf::FieldMask& UpdateReadGroupSetRequest::update_mask() co
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.UpdateReadGroupSetRequest.update_mask)
 }
 
+inline const UpdateReadGroupSetRequest* UpdateReadGroupSetRequest::internal_default_instance() {
+  return &UpdateReadGroupSetRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3663,9 +3902,7 @@ const int DeleteReadGroupSetRequest::kReadGroupSetIdFieldNumber;
 
 DeleteReadGroupSetRequest::DeleteReadGroupSetRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.DeleteReadGroupSetRequest)
 }
@@ -3679,16 +3916,15 @@ DeleteReadGroupSetRequest::DeleteReadGroupSetRequest(::google::protobuf::Arena* 
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.DeleteReadGroupSetRequest)
 }
+
+void DeleteReadGroupSetRequest::InitAsDefaultInstance() {
+}
+
 DeleteReadGroupSetRequest::DeleteReadGroupSetRequest(const DeleteReadGroupSetRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  read_group_set_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.read_group_set_id().size() > 0) {
-    read_group_set_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.read_group_set_id(),
-      GetArenaNoVirtual());
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.DeleteReadGroupSetRequest)
 }
 
@@ -3724,13 +3960,15 @@ void DeleteReadGroupSetRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* DeleteReadGroupSetRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6].descriptor;
+  return DeleteReadGroupSetRequest_descriptor_;
 }
 
 const DeleteReadGroupSetRequest& DeleteReadGroupSetRequest::default_instance() {
   protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<DeleteReadGroupSetRequest> DeleteReadGroupSetRequest_default_instance_;
 
 DeleteReadGroupSetRequest* DeleteReadGroupSetRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<DeleteReadGroupSetRequest>(arena);
@@ -3747,13 +3985,13 @@ bool DeleteReadGroupSetRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.DeleteReadGroupSetRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string read_group_set_id = 1;
+      // optional string read_group_set_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_read_group_set_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3763,6 +4001,7 @@ bool DeleteReadGroupSetRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3790,7 +4029,7 @@ failure:
 void DeleteReadGroupSetRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.genomics.v1.DeleteReadGroupSetRequest)
-  // string read_group_set_id = 1;
+  // optional string read_group_set_id = 1;
   if (this->read_group_set_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->read_group_set_id().data(), this->read_group_set_id().length(),
@@ -3807,7 +4046,7 @@ void DeleteReadGroupSetRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.DeleteReadGroupSetRequest)
-  // string read_group_set_id = 1;
+  // optional string read_group_set_id = 1;
   if (this->read_group_set_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->read_group_set_id().data(), this->read_group_set_id().length(),
@@ -3826,7 +4065,7 @@ size_t DeleteReadGroupSetRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.DeleteReadGroupSetRequest)
   size_t total_size = 0;
 
-  // string read_group_set_id = 1;
+  // optional string read_group_set_id = 1;
   if (this->read_group_set_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -3842,7 +4081,7 @@ size_t DeleteReadGroupSetRequest::ByteSizeLong() const {
 
 void DeleteReadGroupSetRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.DeleteReadGroupSetRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const DeleteReadGroupSetRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteReadGroupSetRequest>(
           &from);
@@ -3851,14 +4090,21 @@ void DeleteReadGroupSetRequest::MergeFrom(const ::google::protobuf::Message& fro
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.DeleteReadGroupSetRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteReadGroupSetRequest::MergeFrom(const DeleteReadGroupSetRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.DeleteReadGroupSetRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void DeleteReadGroupSetRequest::UnsafeMergeFrom(const DeleteReadGroupSetRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.read_group_set_id().size() > 0) {
     set_read_group_set_id(from.read_group_set_id());
   }
@@ -3875,10 +4121,11 @@ void DeleteReadGroupSetRequest::CopyFrom(const DeleteReadGroupSetRequest& from) 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.DeleteReadGroupSetRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteReadGroupSetRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -3887,13 +4134,10 @@ void DeleteReadGroupSetRequest::Swap(DeleteReadGroupSetRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    DeleteReadGroupSetRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    DeleteReadGroupSetRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void DeleteReadGroupSetRequest::UnsafeArenaSwap(DeleteReadGroupSetRequest* other) {
@@ -3903,24 +4147,28 @@ void DeleteReadGroupSetRequest::UnsafeArenaSwap(DeleteReadGroupSetRequest* other
 }
 void DeleteReadGroupSetRequest::InternalSwap(DeleteReadGroupSetRequest* other) {
   read_group_set_id_.Swap(&other->read_group_set_id_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DeleteReadGroupSetRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = DeleteReadGroupSetRequest_descriptor_;
+  metadata.reflection = DeleteReadGroupSetRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // DeleteReadGroupSetRequest
 
-// string read_group_set_id = 1;
+// optional string read_group_set_id = 1;
 void DeleteReadGroupSetRequest::clear_read_group_set_id() {
   read_group_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& DeleteReadGroupSetRequest::read_group_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.DeleteReadGroupSetRequest.read_group_set_id)
-  return read_group_set_id_.Get();
+  return read_group_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void DeleteReadGroupSetRequest::set_read_group_set_id(const ::std::string& value) {
   
@@ -3980,6 +4228,9 @@ void DeleteReadGroupSetRequest::unsafe_arena_set_allocated_read_group_set_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.DeleteReadGroupSetRequest.read_group_set_id)
 }
 
+inline const DeleteReadGroupSetRequest* DeleteReadGroupSetRequest::internal_default_instance() {
+  return &DeleteReadGroupSetRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3990,9 +4241,7 @@ const int GetReadGroupSetRequest::kReadGroupSetIdFieldNumber;
 
 GetReadGroupSetRequest::GetReadGroupSetRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.GetReadGroupSetRequest)
 }
@@ -4006,16 +4255,15 @@ GetReadGroupSetRequest::GetReadGroupSetRequest(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.GetReadGroupSetRequest)
 }
+
+void GetReadGroupSetRequest::InitAsDefaultInstance() {
+}
+
 GetReadGroupSetRequest::GetReadGroupSetRequest(const GetReadGroupSetRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  read_group_set_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.read_group_set_id().size() > 0) {
-    read_group_set_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.read_group_set_id(),
-      GetArenaNoVirtual());
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.GetReadGroupSetRequest)
 }
 
@@ -4051,13 +4299,15 @@ void GetReadGroupSetRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GetReadGroupSetRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7].descriptor;
+  return GetReadGroupSetRequest_descriptor_;
 }
 
 const GetReadGroupSetRequest& GetReadGroupSetRequest::default_instance() {
   protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GetReadGroupSetRequest> GetReadGroupSetRequest_default_instance_;
 
 GetReadGroupSetRequest* GetReadGroupSetRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<GetReadGroupSetRequest>(arena);
@@ -4074,13 +4324,13 @@ bool GetReadGroupSetRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.GetReadGroupSetRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string read_group_set_id = 1;
+      // optional string read_group_set_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_read_group_set_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4090,6 +4340,7 @@ bool GetReadGroupSetRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4117,7 +4368,7 @@ failure:
 void GetReadGroupSetRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.genomics.v1.GetReadGroupSetRequest)
-  // string read_group_set_id = 1;
+  // optional string read_group_set_id = 1;
   if (this->read_group_set_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->read_group_set_id().data(), this->read_group_set_id().length(),
@@ -4134,7 +4385,7 @@ void GetReadGroupSetRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.GetReadGroupSetRequest)
-  // string read_group_set_id = 1;
+  // optional string read_group_set_id = 1;
   if (this->read_group_set_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->read_group_set_id().data(), this->read_group_set_id().length(),
@@ -4153,7 +4404,7 @@ size_t GetReadGroupSetRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.GetReadGroupSetRequest)
   size_t total_size = 0;
 
-  // string read_group_set_id = 1;
+  // optional string read_group_set_id = 1;
   if (this->read_group_set_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -4169,7 +4420,7 @@ size_t GetReadGroupSetRequest::ByteSizeLong() const {
 
 void GetReadGroupSetRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.GetReadGroupSetRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GetReadGroupSetRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetReadGroupSetRequest>(
           &from);
@@ -4178,14 +4429,21 @@ void GetReadGroupSetRequest::MergeFrom(const ::google::protobuf::Message& from) 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.GetReadGroupSetRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetReadGroupSetRequest::MergeFrom(const GetReadGroupSetRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.GetReadGroupSetRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GetReadGroupSetRequest::UnsafeMergeFrom(const GetReadGroupSetRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.read_group_set_id().size() > 0) {
     set_read_group_set_id(from.read_group_set_id());
   }
@@ -4202,10 +4460,11 @@ void GetReadGroupSetRequest::CopyFrom(const GetReadGroupSetRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.GetReadGroupSetRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetReadGroupSetRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -4214,13 +4473,10 @@ void GetReadGroupSetRequest::Swap(GetReadGroupSetRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    GetReadGroupSetRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    GetReadGroupSetRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void GetReadGroupSetRequest::UnsafeArenaSwap(GetReadGroupSetRequest* other) {
@@ -4230,24 +4486,28 @@ void GetReadGroupSetRequest::UnsafeArenaSwap(GetReadGroupSetRequest* other) {
 }
 void GetReadGroupSetRequest::InternalSwap(GetReadGroupSetRequest* other) {
   read_group_set_id_.Swap(&other->read_group_set_id_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GetReadGroupSetRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GetReadGroupSetRequest_descriptor_;
+  metadata.reflection = GetReadGroupSetRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GetReadGroupSetRequest
 
-// string read_group_set_id = 1;
+// optional string read_group_set_id = 1;
 void GetReadGroupSetRequest::clear_read_group_set_id() {
   read_group_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& GetReadGroupSetRequest::read_group_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.GetReadGroupSetRequest.read_group_set_id)
-  return read_group_set_id_.Get();
+  return read_group_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GetReadGroupSetRequest::set_read_group_set_id(const ::std::string& value) {
   
@@ -4307,6 +4567,9 @@ void GetReadGroupSetRequest::unsafe_arena_set_allocated_read_group_set_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.GetReadGroupSetRequest.read_group_set_id)
 }
 
+inline const GetReadGroupSetRequest* GetReadGroupSetRequest::internal_default_instance() {
+  return &GetReadGroupSetRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4323,9 +4586,7 @@ const int ListCoverageBucketsRequest::kPageSizeFieldNumber;
 
 ListCoverageBucketsRequest::ListCoverageBucketsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.ListCoverageBucketsRequest)
 }
@@ -4339,29 +4600,15 @@ ListCoverageBucketsRequest::ListCoverageBucketsRequest(::google::protobuf::Arena
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.ListCoverageBucketsRequest)
 }
+
+void ListCoverageBucketsRequest::InitAsDefaultInstance() {
+}
+
 ListCoverageBucketsRequest::ListCoverageBucketsRequest(const ListCoverageBucketsRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  read_group_set_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.read_group_set_id().size() > 0) {
-    read_group_set_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.read_group_set_id(),
-      GetArenaNoVirtual());
-  }
-  reference_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.reference_name().size() > 0) {
-    reference_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.reference_name(),
-      GetArenaNoVirtual());
-  }
-  page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.page_token().size() > 0) {
-    page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token(),
-      GetArenaNoVirtual());
-  }
-  ::memcpy(&start_, &from.start_,
-    reinterpret_cast<char*>(&page_size_) -
-    reinterpret_cast<char*>(&start_) + sizeof(page_size_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.ListCoverageBucketsRequest)
 }
 
@@ -4403,7 +4650,7 @@ void ListCoverageBucketsRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListCoverageBucketsRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8].descriptor;
+  return ListCoverageBucketsRequest_descriptor_;
 }
 
 const ListCoverageBucketsRequest& ListCoverageBucketsRequest::default_instance() {
@@ -4411,17 +4658,38 @@ const ListCoverageBucketsRequest& ListCoverageBucketsRequest::default_instance()
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<ListCoverageBucketsRequest> ListCoverageBucketsRequest_default_instance_;
+
 ListCoverageBucketsRequest* ListCoverageBucketsRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListCoverageBucketsRequest>(arena);
 }
 
 void ListCoverageBucketsRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.genomics.v1.ListCoverageBucketsRequest)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(ListCoverageBucketsRequest, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<ListCoverageBucketsRequest*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(start_, page_size_);
   read_group_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   reference_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  ::memset(&start_, 0, reinterpret_cast<char*>(&page_size_) -
-    reinterpret_cast<char*>(&start_) + sizeof(page_size_));
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool ListCoverageBucketsRequest::MergePartialFromCodedStream(
@@ -4430,13 +4698,13 @@ bool ListCoverageBucketsRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.ListCoverageBucketsRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string read_group_set_id = 1;
+      // optional string read_group_set_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_read_group_set_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4446,12 +4714,14 @@ bool ListCoverageBucketsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_reference_name;
         break;
       }
 
-      // string reference_name = 3;
+      // optional string reference_name = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_reference_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_reference_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4461,12 +4731,14 @@ bool ListCoverageBucketsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_start;
         break;
       }
 
-      // int64 start = 4;
+      // optional int64 start = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_start:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -4474,12 +4746,14 @@ bool ListCoverageBucketsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(40)) goto parse_end;
         break;
       }
 
-      // int64 end = 5;
+      // optional int64 end = 5;
       case 5: {
-        if (tag == 40u) {
+        if (tag == 40) {
+         parse_end:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -4487,12 +4761,14 @@ bool ListCoverageBucketsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(48)) goto parse_target_bucket_width;
         break;
       }
 
-      // int64 target_bucket_width = 6;
+      // optional int64 target_bucket_width = 6;
       case 6: {
-        if (tag == 48u) {
+        if (tag == 48) {
+         parse_target_bucket_width:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -4500,12 +4776,14 @@ bool ListCoverageBucketsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(58)) goto parse_page_token;
         break;
       }
 
-      // string page_token = 7;
+      // optional string page_token = 7;
       case 7: {
-        if (tag == 58u) {
+        if (tag == 58) {
+         parse_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4515,12 +4793,14 @@ bool ListCoverageBucketsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(64)) goto parse_page_size;
         break;
       }
 
-      // int32 page_size = 8;
+      // optional int32 page_size = 8;
       case 8: {
-        if (tag == 64u) {
+        if (tag == 64) {
+         parse_page_size:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -4528,6 +4808,7 @@ bool ListCoverageBucketsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4555,7 +4836,7 @@ failure:
 void ListCoverageBucketsRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.genomics.v1.ListCoverageBucketsRequest)
-  // string read_group_set_id = 1;
+  // optional string read_group_set_id = 1;
   if (this->read_group_set_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->read_group_set_id().data(), this->read_group_set_id().length(),
@@ -4565,7 +4846,7 @@ void ListCoverageBucketsRequest::SerializeWithCachedSizes(
       1, this->read_group_set_id(), output);
   }
 
-  // string reference_name = 3;
+  // optional string reference_name = 3;
   if (this->reference_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->reference_name().data(), this->reference_name().length(),
@@ -4575,22 +4856,22 @@ void ListCoverageBucketsRequest::SerializeWithCachedSizes(
       3, this->reference_name(), output);
   }
 
-  // int64 start = 4;
+  // optional int64 start = 4;
   if (this->start() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(4, this->start(), output);
   }
 
-  // int64 end = 5;
+  // optional int64 end = 5;
   if (this->end() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(5, this->end(), output);
   }
 
-  // int64 target_bucket_width = 6;
+  // optional int64 target_bucket_width = 6;
   if (this->target_bucket_width() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(6, this->target_bucket_width(), output);
   }
 
-  // string page_token = 7;
+  // optional string page_token = 7;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -4600,7 +4881,7 @@ void ListCoverageBucketsRequest::SerializeWithCachedSizes(
       7, this->page_token(), output);
   }
 
-  // int32 page_size = 8;
+  // optional int32 page_size = 8;
   if (this->page_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(8, this->page_size(), output);
   }
@@ -4612,7 +4893,7 @@ void ListCoverageBucketsRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.ListCoverageBucketsRequest)
-  // string read_group_set_id = 1;
+  // optional string read_group_set_id = 1;
   if (this->read_group_set_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->read_group_set_id().data(), this->read_group_set_id().length(),
@@ -4623,7 +4904,7 @@ void ListCoverageBucketsRequest::SerializeWithCachedSizes(
         1, this->read_group_set_id(), target);
   }
 
-  // string reference_name = 3;
+  // optional string reference_name = 3;
   if (this->reference_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->reference_name().data(), this->reference_name().length(),
@@ -4634,22 +4915,22 @@ void ListCoverageBucketsRequest::SerializeWithCachedSizes(
         3, this->reference_name(), target);
   }
 
-  // int64 start = 4;
+  // optional int64 start = 4;
   if (this->start() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(4, this->start(), target);
   }
 
-  // int64 end = 5;
+  // optional int64 end = 5;
   if (this->end() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(5, this->end(), target);
   }
 
-  // int64 target_bucket_width = 6;
+  // optional int64 target_bucket_width = 6;
   if (this->target_bucket_width() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(6, this->target_bucket_width(), target);
   }
 
-  // string page_token = 7;
+  // optional string page_token = 7;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -4660,7 +4941,7 @@ void ListCoverageBucketsRequest::SerializeWithCachedSizes(
         7, this->page_token(), target);
   }
 
-  // int32 page_size = 8;
+  // optional int32 page_size = 8;
   if (this->page_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(8, this->page_size(), target);
   }
@@ -4673,49 +4954,49 @@ size_t ListCoverageBucketsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.ListCoverageBucketsRequest)
   size_t total_size = 0;
 
-  // string read_group_set_id = 1;
+  // optional string read_group_set_id = 1;
   if (this->read_group_set_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->read_group_set_id());
   }
 
-  // string reference_name = 3;
+  // optional string reference_name = 3;
   if (this->reference_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->reference_name());
   }
 
-  // string page_token = 7;
-  if (this->page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->page_token());
-  }
-
-  // int64 start = 4;
+  // optional int64 start = 4;
   if (this->start() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->start());
   }
 
-  // int64 end = 5;
+  // optional int64 end = 5;
   if (this->end() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->end());
   }
 
-  // int64 target_bucket_width = 6;
+  // optional int64 target_bucket_width = 6;
   if (this->target_bucket_width() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->target_bucket_width());
   }
 
-  // int32 page_size = 8;
+  // optional string page_token = 7;
+  if (this->page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->page_token());
+  }
+
+  // optional int32 page_size = 8;
   if (this->page_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
@@ -4731,7 +5012,7 @@ size_t ListCoverageBucketsRequest::ByteSizeLong() const {
 
 void ListCoverageBucketsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.ListCoverageBucketsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListCoverageBucketsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListCoverageBucketsRequest>(
           &from);
@@ -4740,22 +5021,26 @@ void ListCoverageBucketsRequest::MergeFrom(const ::google::protobuf::Message& fr
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.ListCoverageBucketsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListCoverageBucketsRequest::MergeFrom(const ListCoverageBucketsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.ListCoverageBucketsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListCoverageBucketsRequest::UnsafeMergeFrom(const ListCoverageBucketsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.read_group_set_id().size() > 0) {
     set_read_group_set_id(from.read_group_set_id());
   }
   if (from.reference_name().size() > 0) {
     set_reference_name(from.reference_name());
-  }
-  if (from.page_token().size() > 0) {
-    set_page_token(from.page_token());
   }
   if (from.start() != 0) {
     set_start(from.start());
@@ -4765,6 +5050,9 @@ void ListCoverageBucketsRequest::MergeFrom(const ListCoverageBucketsRequest& fro
   }
   if (from.target_bucket_width() != 0) {
     set_target_bucket_width(from.target_bucket_width());
+  }
+  if (from.page_token().size() > 0) {
+    set_page_token(from.page_token());
   }
   if (from.page_size() != 0) {
     set_page_size(from.page_size());
@@ -4782,10 +5070,11 @@ void ListCoverageBucketsRequest::CopyFrom(const ListCoverageBucketsRequest& from
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.ListCoverageBucketsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListCoverageBucketsRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -4794,13 +5083,10 @@ void ListCoverageBucketsRequest::Swap(ListCoverageBucketsRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    ListCoverageBucketsRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    ListCoverageBucketsRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void ListCoverageBucketsRequest::UnsafeArenaSwap(ListCoverageBucketsRequest* other) {
@@ -4811,29 +5097,33 @@ void ListCoverageBucketsRequest::UnsafeArenaSwap(ListCoverageBucketsRequest* oth
 void ListCoverageBucketsRequest::InternalSwap(ListCoverageBucketsRequest* other) {
   read_group_set_id_.Swap(&other->read_group_set_id_);
   reference_name_.Swap(&other->reference_name_);
-  page_token_.Swap(&other->page_token_);
   std::swap(start_, other->start_);
   std::swap(end_, other->end_);
   std::swap(target_bucket_width_, other->target_bucket_width_);
+  page_token_.Swap(&other->page_token_);
   std::swap(page_size_, other->page_size_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListCoverageBucketsRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListCoverageBucketsRequest_descriptor_;
+  metadata.reflection = ListCoverageBucketsRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ListCoverageBucketsRequest
 
-// string read_group_set_id = 1;
+// optional string read_group_set_id = 1;
 void ListCoverageBucketsRequest::clear_read_group_set_id() {
   read_group_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ListCoverageBucketsRequest::read_group_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ListCoverageBucketsRequest.read_group_set_id)
-  return read_group_set_id_.Get();
+  return read_group_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListCoverageBucketsRequest::set_read_group_set_id(const ::std::string& value) {
   
@@ -4893,13 +5183,13 @@ void ListCoverageBucketsRequest::unsafe_arena_set_allocated_read_group_set_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ListCoverageBucketsRequest.read_group_set_id)
 }
 
-// string reference_name = 3;
+// optional string reference_name = 3;
 void ListCoverageBucketsRequest::clear_reference_name() {
   reference_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ListCoverageBucketsRequest::reference_name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ListCoverageBucketsRequest.reference_name)
-  return reference_name_.Get();
+  return reference_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListCoverageBucketsRequest::set_reference_name(const ::std::string& value) {
   
@@ -4959,7 +5249,7 @@ void ListCoverageBucketsRequest::unsafe_arena_set_allocated_reference_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ListCoverageBucketsRequest.reference_name)
 }
 
-// int64 start = 4;
+// optional int64 start = 4;
 void ListCoverageBucketsRequest::clear_start() {
   start_ = GOOGLE_LONGLONG(0);
 }
@@ -4973,7 +5263,7 @@ void ListCoverageBucketsRequest::set_start(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.ListCoverageBucketsRequest.start)
 }
 
-// int64 end = 5;
+// optional int64 end = 5;
 void ListCoverageBucketsRequest::clear_end() {
   end_ = GOOGLE_LONGLONG(0);
 }
@@ -4987,7 +5277,7 @@ void ListCoverageBucketsRequest::set_end(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.ListCoverageBucketsRequest.end)
 }
 
-// int64 target_bucket_width = 6;
+// optional int64 target_bucket_width = 6;
 void ListCoverageBucketsRequest::clear_target_bucket_width() {
   target_bucket_width_ = GOOGLE_LONGLONG(0);
 }
@@ -5001,13 +5291,13 @@ void ListCoverageBucketsRequest::set_target_bucket_width(::google::protobuf::int
   // @@protoc_insertion_point(field_set:google.genomics.v1.ListCoverageBucketsRequest.target_bucket_width)
 }
 
-// string page_token = 7;
+// optional string page_token = 7;
 void ListCoverageBucketsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ListCoverageBucketsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ListCoverageBucketsRequest.page_token)
-  return page_token_.Get();
+  return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListCoverageBucketsRequest::set_page_token(const ::std::string& value) {
   
@@ -5067,7 +5357,7 @@ void ListCoverageBucketsRequest::unsafe_arena_set_allocated_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ListCoverageBucketsRequest.page_token)
 }
 
-// int32 page_size = 8;
+// optional int32 page_size = 8;
 void ListCoverageBucketsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -5081,6 +5371,9 @@ void ListCoverageBucketsRequest::set_page_size(::google::protobuf::int32 value) 
   // @@protoc_insertion_point(field_set:google.genomics.v1.ListCoverageBucketsRequest.page_size)
 }
 
+inline const ListCoverageBucketsRequest* ListCoverageBucketsRequest::internal_default_instance() {
+  return &ListCoverageBucketsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5139,9 +5432,7 @@ const int CoverageBucket::kMeanCoverageFieldNumber;
 
 CoverageBucket::CoverageBucket()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.CoverageBucket)
 }
@@ -5155,23 +5446,23 @@ CoverageBucket::CoverageBucket(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.CoverageBucket)
 }
+
+void CoverageBucket::InitAsDefaultInstance() {
+  range_ = const_cast< ::google::genomics::v1::Range*>(
+      ::google::genomics::v1::Range::internal_default_instance());
+}
+
 CoverageBucket::CoverageBucket(const CoverageBucket& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_range()) {
-    range_ = new ::google::genomics::v1::Range(*from.range_);
-  } else {
-    range_ = NULL;
-  }
-  mean_coverage_ = from.mean_coverage_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.CoverageBucket)
 }
 
 void CoverageBucket::SharedCtor() {
-  ::memset(&range_, 0, reinterpret_cast<char*>(&mean_coverage_) -
-    reinterpret_cast<char*>(&range_) + sizeof(mean_coverage_));
+  range_ = NULL;
+  mean_coverage_ = 0;
   _cached_size_ = 0;
 }
 
@@ -5186,7 +5477,7 @@ void CoverageBucket::SharedDtor() {
     return;
   }
 
-  if (this != internal_default_instance()) {
+  if (this != &CoverageBucket_default_instance_.get()) {
     delete range_;
   }
 }
@@ -5204,7 +5495,7 @@ void CoverageBucket::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* CoverageBucket::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9].descriptor;
+  return CoverageBucket_descriptor_;
 }
 
 const CoverageBucket& CoverageBucket::default_instance() {
@@ -5212,15 +5503,15 @@ const CoverageBucket& CoverageBucket::default_instance() {
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<CoverageBucket> CoverageBucket_default_instance_;
+
 CoverageBucket* CoverageBucket::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<CoverageBucket>(arena);
 }
 
 void CoverageBucket::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.genomics.v1.CoverageBucket)
-  if (GetArenaNoVirtual() == NULL && range_ != NULL) {
-    delete range_;
-  }
+  if (GetArenaNoVirtual() == NULL && range_ != NULL) delete range_;
   range_ = NULL;
   mean_coverage_ = 0;
 }
@@ -5231,24 +5522,26 @@ bool CoverageBucket::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.CoverageBucket)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.genomics.v1.Range range = 1;
+      // optional .google.genomics.v1.Range range = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_range()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(21)) goto parse_mean_coverage;
         break;
       }
 
-      // float mean_coverage = 2;
+      // optional float mean_coverage = 2;
       case 2: {
-        if (tag == 21u) {
+        if (tag == 21) {
+         parse_mean_coverage:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
@@ -5256,6 +5549,7 @@ bool CoverageBucket::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -5283,13 +5577,13 @@ failure:
 void CoverageBucket::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.genomics.v1.CoverageBucket)
-  // .google.genomics.v1.Range range = 1;
+  // optional .google.genomics.v1.Range range = 1;
   if (this->has_range()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->range_, output);
   }
 
-  // float mean_coverage = 2;
+  // optional float mean_coverage = 2;
   if (this->mean_coverage() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteFloat(2, this->mean_coverage(), output);
   }
@@ -5301,14 +5595,14 @@ void CoverageBucket::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.CoverageBucket)
-  // .google.genomics.v1.Range range = 1;
+  // optional .google.genomics.v1.Range range = 1;
   if (this->has_range()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->range_, false, target);
   }
 
-  // float mean_coverage = 2;
+  // optional float mean_coverage = 2;
   if (this->mean_coverage() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(2, this->mean_coverage(), target);
   }
@@ -5321,14 +5615,14 @@ size_t CoverageBucket::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.CoverageBucket)
   size_t total_size = 0;
 
-  // .google.genomics.v1.Range range = 1;
+  // optional .google.genomics.v1.Range range = 1;
   if (this->has_range()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->range_);
   }
 
-  // float mean_coverage = 2;
+  // optional float mean_coverage = 2;
   if (this->mean_coverage() != 0) {
     total_size += 1 + 4;
   }
@@ -5342,7 +5636,7 @@ size_t CoverageBucket::ByteSizeLong() const {
 
 void CoverageBucket::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.CoverageBucket)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const CoverageBucket* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CoverageBucket>(
           &from);
@@ -5351,14 +5645,21 @@ void CoverageBucket::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.CoverageBucket)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CoverageBucket::MergeFrom(const CoverageBucket& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.CoverageBucket)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void CoverageBucket::UnsafeMergeFrom(const CoverageBucket& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_range()) {
     mutable_range()->::google::genomics::v1::Range::MergeFrom(from.range());
   }
@@ -5378,10 +5679,11 @@ void CoverageBucket::CopyFrom(const CoverageBucket& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.CoverageBucket)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CoverageBucket::IsInitialized() const {
+
   return true;
 }
 
@@ -5390,13 +5692,10 @@ void CoverageBucket::Swap(CoverageBucket* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    CoverageBucket* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    CoverageBucket temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void CoverageBucket::UnsafeArenaSwap(CoverageBucket* other) {
@@ -5407,18 +5706,22 @@ void CoverageBucket::UnsafeArenaSwap(CoverageBucket* other) {
 void CoverageBucket::InternalSwap(CoverageBucket* other) {
   std::swap(range_, other->range_);
   std::swap(mean_coverage_, other->mean_coverage_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CoverageBucket::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CoverageBucket_descriptor_;
+  metadata.reflection = CoverageBucket_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // CoverageBucket
 
-// .google.genomics.v1.Range range = 1;
+// optional .google.genomics.v1.Range range = 1;
 bool CoverageBucket::has_range() const {
   return this != internal_default_instance() && range_ != NULL;
 }
@@ -5467,7 +5770,7 @@ const ::google::genomics::v1::Range& CoverageBucket::range() const {
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.CoverageBucket.range)
 }
 
-// float mean_coverage = 2;
+// optional float mean_coverage = 2;
 void CoverageBucket::clear_mean_coverage() {
   mean_coverage_ = 0;
 }
@@ -5481,6 +5784,9 @@ void CoverageBucket::set_mean_coverage(float value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.CoverageBucket.mean_coverage)
 }
 
+inline const CoverageBucket* CoverageBucket::internal_default_instance() {
+  return &CoverageBucket_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5493,9 +5799,7 @@ const int ListCoverageBucketsResponse::kNextPageTokenFieldNumber;
 
 ListCoverageBucketsResponse::ListCoverageBucketsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.ListCoverageBucketsResponse)
 }
@@ -5510,18 +5814,15 @@ ListCoverageBucketsResponse::ListCoverageBucketsResponse(::google::protobuf::Are
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.ListCoverageBucketsResponse)
 }
+
+void ListCoverageBucketsResponse::InitAsDefaultInstance() {
+}
+
 ListCoverageBucketsResponse::ListCoverageBucketsResponse(const ListCoverageBucketsResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      coverage_buckets_(from.coverage_buckets_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_page_token().size() > 0) {
-    next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_page_token(),
-      GetArenaNoVirtual());
-  }
-  bucket_width_ = from.bucket_width_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.ListCoverageBucketsResponse)
 }
 
@@ -5558,7 +5859,7 @@ void ListCoverageBucketsResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListCoverageBucketsResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10].descriptor;
+  return ListCoverageBucketsResponse_descriptor_;
 }
 
 const ListCoverageBucketsResponse& ListCoverageBucketsResponse::default_instance() {
@@ -5566,15 +5867,17 @@ const ListCoverageBucketsResponse& ListCoverageBucketsResponse::default_instance
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<ListCoverageBucketsResponse> ListCoverageBucketsResponse_default_instance_;
+
 ListCoverageBucketsResponse* ListCoverageBucketsResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListCoverageBucketsResponse>(arena);
 }
 
 void ListCoverageBucketsResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.genomics.v1.ListCoverageBucketsResponse)
-  coverage_buckets_.Clear();
-  next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   bucket_width_ = GOOGLE_LONGLONG(0);
+  next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  coverage_buckets_.Clear();
 }
 
 bool ListCoverageBucketsResponse::MergePartialFromCodedStream(
@@ -5583,13 +5886,13 @@ bool ListCoverageBucketsResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.ListCoverageBucketsResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 bucket_width = 1;
+      // optional int64 bucket_width = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -5597,25 +5900,31 @@ bool ListCoverageBucketsResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_coverage_buckets;
         break;
       }
 
       // repeated .google.genomics.v1.CoverageBucket coverage_buckets = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_coverage_buckets:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_coverage_buckets:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_coverage_buckets()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_loop_coverage_buckets;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(26)) goto parse_next_page_token;
         break;
       }
 
-      // string next_page_token = 3;
+      // optional string next_page_token = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_next_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -5625,6 +5934,7 @@ bool ListCoverageBucketsResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -5652,7 +5962,7 @@ failure:
 void ListCoverageBucketsResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.genomics.v1.ListCoverageBucketsResponse)
-  // int64 bucket_width = 1;
+  // optional int64 bucket_width = 1;
   if (this->bucket_width() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->bucket_width(), output);
   }
@@ -5663,7 +5973,7 @@ void ListCoverageBucketsResponse::SerializeWithCachedSizes(
       2, this->coverage_buckets(i), output);
   }
 
-  // string next_page_token = 3;
+  // optional string next_page_token = 3;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -5680,7 +5990,7 @@ void ListCoverageBucketsResponse::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.ListCoverageBucketsResponse)
-  // int64 bucket_width = 1;
+  // optional int64 bucket_width = 1;
   if (this->bucket_width() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->bucket_width(), target);
   }
@@ -5692,7 +6002,7 @@ void ListCoverageBucketsResponse::SerializeWithCachedSizes(
         2, this->coverage_buckets(i), false, target);
   }
 
-  // string next_page_token = 3;
+  // optional string next_page_token = 3;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -5711,6 +6021,20 @@ size_t ListCoverageBucketsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.ListCoverageBucketsResponse)
   size_t total_size = 0;
 
+  // optional int64 bucket_width = 1;
+  if (this->bucket_width() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->bucket_width());
+  }
+
+  // optional string next_page_token = 3;
+  if (this->next_page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_page_token());
+  }
+
   // repeated .google.genomics.v1.CoverageBucket coverage_buckets = 2;
   {
     unsigned int count = this->coverage_buckets_size();
@@ -5722,20 +6046,6 @@ size_t ListCoverageBucketsResponse::ByteSizeLong() const {
     }
   }
 
-  // string next_page_token = 3;
-  if (this->next_page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_page_token());
-  }
-
-  // int64 bucket_width = 1;
-  if (this->bucket_width() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->bucket_width());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -5745,7 +6055,7 @@ size_t ListCoverageBucketsResponse::ByteSizeLong() const {
 
 void ListCoverageBucketsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.ListCoverageBucketsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListCoverageBucketsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListCoverageBucketsResponse>(
           &from);
@@ -5754,20 +6064,27 @@ void ListCoverageBucketsResponse::MergeFrom(const ::google::protobuf::Message& f
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.ListCoverageBucketsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListCoverageBucketsResponse::MergeFrom(const ListCoverageBucketsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.ListCoverageBucketsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  coverage_buckets_.MergeFrom(from.coverage_buckets_);
-  if (from.next_page_token().size() > 0) {
-    set_next_page_token(from.next_page_token());
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListCoverageBucketsResponse::UnsafeMergeFrom(const ListCoverageBucketsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
+  coverage_buckets_.MergeFrom(from.coverage_buckets_);
   if (from.bucket_width() != 0) {
     set_bucket_width(from.bucket_width());
+  }
+  if (from.next_page_token().size() > 0) {
+    set_next_page_token(from.next_page_token());
   }
 }
 
@@ -5782,10 +6099,11 @@ void ListCoverageBucketsResponse::CopyFrom(const ListCoverageBucketsResponse& fr
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.ListCoverageBucketsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListCoverageBucketsResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -5794,13 +6112,10 @@ void ListCoverageBucketsResponse::Swap(ListCoverageBucketsResponse* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    ListCoverageBucketsResponse* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    ListCoverageBucketsResponse temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void ListCoverageBucketsResponse::UnsafeArenaSwap(ListCoverageBucketsResponse* other) {
@@ -5809,21 +6124,25 @@ void ListCoverageBucketsResponse::UnsafeArenaSwap(ListCoverageBucketsResponse* o
   InternalSwap(other);
 }
 void ListCoverageBucketsResponse::InternalSwap(ListCoverageBucketsResponse* other) {
+  std::swap(bucket_width_, other->bucket_width_);
   coverage_buckets_.UnsafeArenaSwap(&other->coverage_buckets_);
   next_page_token_.Swap(&other->next_page_token_);
-  std::swap(bucket_width_, other->bucket_width_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListCoverageBucketsResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListCoverageBucketsResponse_descriptor_;
+  metadata.reflection = ListCoverageBucketsResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ListCoverageBucketsResponse
 
-// int64 bucket_width = 1;
+// optional int64 bucket_width = 1;
 void ListCoverageBucketsResponse::clear_bucket_width() {
   bucket_width_ = GOOGLE_LONGLONG(0);
 }
@@ -5867,13 +6186,13 @@ ListCoverageBucketsResponse::coverage_buckets() const {
   return coverage_buckets_;
 }
 
-// string next_page_token = 3;
+// optional string next_page_token = 3;
 void ListCoverageBucketsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ListCoverageBucketsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ListCoverageBucketsResponse.next_page_token)
-  return next_page_token_.Get();
+  return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListCoverageBucketsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -5933,6 +6252,9 @@ void ListCoverageBucketsResponse::unsafe_arena_set_allocated_next_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ListCoverageBucketsResponse.next_page_token)
 }
 
+inline const ListCoverageBucketsResponse* ListCoverageBucketsResponse::internal_default_instance() {
+  return &ListCoverageBucketsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5949,9 +6271,7 @@ const int SearchReadsRequest::kPageSizeFieldNumber;
 
 SearchReadsRequest::SearchReadsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.SearchReadsRequest)
 }
@@ -5967,26 +6287,15 @@ SearchReadsRequest::SearchReadsRequest(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.SearchReadsRequest)
 }
+
+void SearchReadsRequest::InitAsDefaultInstance() {
+}
+
 SearchReadsRequest::SearchReadsRequest(const SearchReadsRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      read_group_set_ids_(from.read_group_set_ids_),
-      read_group_ids_(from.read_group_ids_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  reference_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.reference_name().size() > 0) {
-    reference_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.reference_name(),
-      GetArenaNoVirtual());
-  }
-  page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.page_token().size() > 0) {
-    page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token(),
-      GetArenaNoVirtual());
-  }
-  ::memcpy(&start_, &from.start_,
-    reinterpret_cast<char*>(&page_size_) -
-    reinterpret_cast<char*>(&start_) + sizeof(page_size_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.SearchReadsRequest)
 }
 
@@ -6026,7 +6335,7 @@ void SearchReadsRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* SearchReadsRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11].descriptor;
+  return SearchReadsRequest_descriptor_;
 }
 
 const SearchReadsRequest& SearchReadsRequest::default_instance() {
@@ -6034,18 +6343,39 @@ const SearchReadsRequest& SearchReadsRequest::default_instance() {
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<SearchReadsRequest> SearchReadsRequest_default_instance_;
+
 SearchReadsRequest* SearchReadsRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<SearchReadsRequest>(arena);
 }
 
 void SearchReadsRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.genomics.v1.SearchReadsRequest)
-  read_group_set_ids_.Clear();
-  read_group_ids_.Clear();
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(SearchReadsRequest, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<SearchReadsRequest*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(start_, page_size_);
   reference_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  ::memset(&start_, 0, reinterpret_cast<char*>(&page_size_) -
-    reinterpret_cast<char*>(&start_) + sizeof(page_size_));
+
+#undef ZR_HELPER_
+#undef ZR_
+
+  read_group_set_ids_.Clear();
+  read_group_ids_.Clear();
 }
 
 bool SearchReadsRequest::MergePartialFromCodedStream(
@@ -6054,13 +6384,14 @@ bool SearchReadsRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.SearchReadsRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated string read_group_set_ids = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
+         parse_read_group_set_ids:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_read_group_set_ids()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -6071,12 +6402,15 @@ bool SearchReadsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_read_group_set_ids;
+        if (input->ExpectTag(26)) goto parse_page_token;
         break;
       }
 
-      // string page_token = 3;
+      // optional string page_token = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -6086,12 +6420,14 @@ bool SearchReadsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_page_size;
         break;
       }
 
-      // int32 page_size = 4;
+      // optional int32 page_size = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_page_size:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -6099,12 +6435,14 @@ bool SearchReadsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_read_group_ids;
         break;
       }
 
       // repeated string read_group_ids = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_read_group_ids:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_read_group_ids()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -6115,12 +6453,15 @@ bool SearchReadsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_read_group_ids;
+        if (input->ExpectTag(58)) goto parse_reference_name;
         break;
       }
 
-      // string reference_name = 7;
+      // optional string reference_name = 7;
       case 7: {
-        if (tag == 58u) {
+        if (tag == 58) {
+         parse_reference_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_reference_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -6130,12 +6471,14 @@ bool SearchReadsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(64)) goto parse_start;
         break;
       }
 
-      // int64 start = 8;
+      // optional int64 start = 8;
       case 8: {
-        if (tag == 64u) {
+        if (tag == 64) {
+         parse_start:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -6143,12 +6486,14 @@ bool SearchReadsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(72)) goto parse_end;
         break;
       }
 
-      // int64 end = 9;
+      // optional int64 end = 9;
       case 9: {
-        if (tag == 72u) {
+        if (tag == 72) {
+         parse_end:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -6156,6 +6501,7 @@ bool SearchReadsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -6193,7 +6539,7 @@ void SearchReadsRequest::SerializeWithCachedSizes(
       1, this->read_group_set_ids(i), output);
   }
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -6203,7 +6549,7 @@ void SearchReadsRequest::SerializeWithCachedSizes(
       3, this->page_token(), output);
   }
 
-  // int32 page_size = 4;
+  // optional int32 page_size = 4;
   if (this->page_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->page_size(), output);
   }
@@ -6218,7 +6564,7 @@ void SearchReadsRequest::SerializeWithCachedSizes(
       5, this->read_group_ids(i), output);
   }
 
-  // string reference_name = 7;
+  // optional string reference_name = 7;
   if (this->reference_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->reference_name().data(), this->reference_name().length(),
@@ -6228,12 +6574,12 @@ void SearchReadsRequest::SerializeWithCachedSizes(
       7, this->reference_name(), output);
   }
 
-  // int64 start = 8;
+  // optional int64 start = 8;
   if (this->start() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(8, this->start(), output);
   }
 
-  // int64 end = 9;
+  // optional int64 end = 9;
   if (this->end() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(9, this->end(), output);
   }
@@ -6255,7 +6601,7 @@ void SearchReadsRequest::SerializeWithCachedSizes(
       WriteStringToArray(1, this->read_group_set_ids(i), target);
   }
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -6266,7 +6612,7 @@ void SearchReadsRequest::SerializeWithCachedSizes(
         3, this->page_token(), target);
   }
 
-  // int32 page_size = 4;
+  // optional int32 page_size = 4;
   if (this->page_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->page_size(), target);
   }
@@ -6281,7 +6627,7 @@ void SearchReadsRequest::SerializeWithCachedSizes(
       WriteStringToArray(5, this->read_group_ids(i), target);
   }
 
-  // string reference_name = 7;
+  // optional string reference_name = 7;
   if (this->reference_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->reference_name().data(), this->reference_name().length(),
@@ -6292,12 +6638,12 @@ void SearchReadsRequest::SerializeWithCachedSizes(
         7, this->reference_name(), target);
   }
 
-  // int64 start = 8;
+  // optional int64 start = 8;
   if (this->start() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(8, this->start(), target);
   }
 
-  // int64 end = 9;
+  // optional int64 end = 9;
   if (this->end() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(9, this->end(), target);
   }
@@ -6309,6 +6655,41 @@ void SearchReadsRequest::SerializeWithCachedSizes(
 size_t SearchReadsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.SearchReadsRequest)
   size_t total_size = 0;
+
+  // optional string reference_name = 7;
+  if (this->reference_name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->reference_name());
+  }
+
+  // optional int64 start = 8;
+  if (this->start() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->start());
+  }
+
+  // optional int64 end = 9;
+  if (this->end() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->end());
+  }
+
+  // optional string page_token = 3;
+  if (this->page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->page_token());
+  }
+
+  // optional int32 page_size = 4;
+  if (this->page_size() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->page_size());
+  }
 
   // repeated string read_group_set_ids = 1;
   total_size += 1 *
@@ -6326,41 +6707,6 @@ size_t SearchReadsRequest::ByteSizeLong() const {
       this->read_group_ids(i));
   }
 
-  // string reference_name = 7;
-  if (this->reference_name().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->reference_name());
-  }
-
-  // string page_token = 3;
-  if (this->page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->page_token());
-  }
-
-  // int64 start = 8;
-  if (this->start() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->start());
-  }
-
-  // int64 end = 9;
-  if (this->end() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->end());
-  }
-
-  // int32 page_size = 4;
-  if (this->page_size() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->page_size());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -6370,7 +6716,7 @@ size_t SearchReadsRequest::ByteSizeLong() const {
 
 void SearchReadsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.SearchReadsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const SearchReadsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SearchReadsRequest>(
           &from);
@@ -6379,27 +6725,34 @@ void SearchReadsRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.SearchReadsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SearchReadsRequest::MergeFrom(const SearchReadsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.SearchReadsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  read_group_set_ids_.MergeFrom(from.read_group_set_ids_);
-  read_group_ids_.MergeFrom(from.read_group_ids_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void SearchReadsRequest::UnsafeMergeFrom(const SearchReadsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
+  read_group_set_ids_.UnsafeMergeFrom(from.read_group_set_ids_);
+  read_group_ids_.UnsafeMergeFrom(from.read_group_ids_);
   if (from.reference_name().size() > 0) {
     set_reference_name(from.reference_name());
-  }
-  if (from.page_token().size() > 0) {
-    set_page_token(from.page_token());
   }
   if (from.start() != 0) {
     set_start(from.start());
   }
   if (from.end() != 0) {
     set_end(from.end());
+  }
+  if (from.page_token().size() > 0) {
+    set_page_token(from.page_token());
   }
   if (from.page_size() != 0) {
     set_page_size(from.page_size());
@@ -6417,10 +6770,11 @@ void SearchReadsRequest::CopyFrom(const SearchReadsRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.SearchReadsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SearchReadsRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -6429,13 +6783,10 @@ void SearchReadsRequest::Swap(SearchReadsRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    SearchReadsRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    SearchReadsRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void SearchReadsRequest::UnsafeArenaSwap(SearchReadsRequest* other) {
@@ -6447,16 +6798,20 @@ void SearchReadsRequest::InternalSwap(SearchReadsRequest* other) {
   read_group_set_ids_.UnsafeArenaSwap(&other->read_group_set_ids_);
   read_group_ids_.UnsafeArenaSwap(&other->read_group_ids_);
   reference_name_.Swap(&other->reference_name_);
-  page_token_.Swap(&other->page_token_);
   std::swap(start_, other->start_);
   std::swap(end_, other->end_);
+  page_token_.Swap(&other->page_token_);
   std::swap(page_size_, other->page_size_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SearchReadsRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = SearchReadsRequest_descriptor_;
+  metadata.reflection = SearchReadsRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -6572,13 +6927,13 @@ SearchReadsRequest::mutable_read_group_ids() {
   return &read_group_ids_;
 }
 
-// string reference_name = 7;
+// optional string reference_name = 7;
 void SearchReadsRequest::clear_reference_name() {
   reference_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& SearchReadsRequest::reference_name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReadsRequest.reference_name)
-  return reference_name_.Get();
+  return reference_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void SearchReadsRequest::set_reference_name(const ::std::string& value) {
   
@@ -6638,7 +6993,7 @@ void SearchReadsRequest::unsafe_arena_set_allocated_reference_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.SearchReadsRequest.reference_name)
 }
 
-// int64 start = 8;
+// optional int64 start = 8;
 void SearchReadsRequest::clear_start() {
   start_ = GOOGLE_LONGLONG(0);
 }
@@ -6652,7 +7007,7 @@ void SearchReadsRequest::set_start(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchReadsRequest.start)
 }
 
-// int64 end = 9;
+// optional int64 end = 9;
 void SearchReadsRequest::clear_end() {
   end_ = GOOGLE_LONGLONG(0);
 }
@@ -6666,13 +7021,13 @@ void SearchReadsRequest::set_end(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchReadsRequest.end)
 }
 
-// string page_token = 3;
+// optional string page_token = 3;
 void SearchReadsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& SearchReadsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReadsRequest.page_token)
-  return page_token_.Get();
+  return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void SearchReadsRequest::set_page_token(const ::std::string& value) {
   
@@ -6732,7 +7087,7 @@ void SearchReadsRequest::unsafe_arena_set_allocated_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.SearchReadsRequest.page_token)
 }
 
-// int32 page_size = 4;
+// optional int32 page_size = 4;
 void SearchReadsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -6746,6 +7101,9 @@ void SearchReadsRequest::set_page_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchReadsRequest.page_size)
 }
 
+inline const SearchReadsRequest* SearchReadsRequest::internal_default_instance() {
+  return &SearchReadsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -6757,9 +7115,7 @@ const int SearchReadsResponse::kNextPageTokenFieldNumber;
 
 SearchReadsResponse::SearchReadsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.SearchReadsResponse)
 }
@@ -6774,17 +7130,15 @@ SearchReadsResponse::SearchReadsResponse(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.SearchReadsResponse)
 }
+
+void SearchReadsResponse::InitAsDefaultInstance() {
+}
+
 SearchReadsResponse::SearchReadsResponse(const SearchReadsResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      alignments_(from.alignments_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_page_token().size() > 0) {
-    next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_page_token(),
-      GetArenaNoVirtual());
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.SearchReadsResponse)
 }
 
@@ -6820,7 +7174,7 @@ void SearchReadsResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* SearchReadsResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[12].descriptor;
+  return SearchReadsResponse_descriptor_;
 }
 
 const SearchReadsResponse& SearchReadsResponse::default_instance() {
@@ -6828,14 +7182,16 @@ const SearchReadsResponse& SearchReadsResponse::default_instance() {
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<SearchReadsResponse> SearchReadsResponse_default_instance_;
+
 SearchReadsResponse* SearchReadsResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<SearchReadsResponse>(arena);
 }
 
 void SearchReadsResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.genomics.v1.SearchReadsResponse)
-  alignments_.Clear();
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  alignments_.Clear();
 }
 
 bool SearchReadsResponse::MergePartialFromCodedStream(
@@ -6844,26 +7200,30 @@ bool SearchReadsResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.SearchReadsResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.genomics.v1.Read alignments = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_alignments:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_alignments()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_alignments;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_next_page_token;
         break;
       }
 
-      // string next_page_token = 2;
+      // optional string next_page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_next_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -6873,6 +7233,7 @@ bool SearchReadsResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -6906,7 +7267,7 @@ void SearchReadsResponse::SerializeWithCachedSizes(
       1, this->alignments(i), output);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -6930,7 +7291,7 @@ void SearchReadsResponse::SerializeWithCachedSizes(
         1, this->alignments(i), false, target);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -6949,6 +7310,13 @@ size_t SearchReadsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.SearchReadsResponse)
   size_t total_size = 0;
 
+  // optional string next_page_token = 2;
+  if (this->next_page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_page_token());
+  }
+
   // repeated .google.genomics.v1.Read alignments = 1;
   {
     unsigned int count = this->alignments_size();
@@ -6960,13 +7328,6 @@ size_t SearchReadsResponse::ByteSizeLong() const {
     }
   }
 
-  // string next_page_token = 2;
-  if (this->next_page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_page_token());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -6976,7 +7337,7 @@ size_t SearchReadsResponse::ByteSizeLong() const {
 
 void SearchReadsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.SearchReadsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const SearchReadsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SearchReadsResponse>(
           &from);
@@ -6985,14 +7346,21 @@ void SearchReadsResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.SearchReadsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SearchReadsResponse::MergeFrom(const SearchReadsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.SearchReadsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void SearchReadsResponse::UnsafeMergeFrom(const SearchReadsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   alignments_.MergeFrom(from.alignments_);
   if (from.next_page_token().size() > 0) {
     set_next_page_token(from.next_page_token());
@@ -7010,10 +7378,11 @@ void SearchReadsResponse::CopyFrom(const SearchReadsResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.SearchReadsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SearchReadsResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -7022,13 +7391,10 @@ void SearchReadsResponse::Swap(SearchReadsResponse* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    SearchReadsResponse* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    SearchReadsResponse temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void SearchReadsResponse::UnsafeArenaSwap(SearchReadsResponse* other) {
@@ -7039,12 +7405,16 @@ void SearchReadsResponse::UnsafeArenaSwap(SearchReadsResponse* other) {
 void SearchReadsResponse::InternalSwap(SearchReadsResponse* other) {
   alignments_.UnsafeArenaSwap(&other->alignments_);
   next_page_token_.Swap(&other->next_page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SearchReadsResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[12];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = SearchReadsResponse_descriptor_;
+  metadata.reflection = SearchReadsResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -7080,13 +7450,13 @@ SearchReadsResponse::alignments() const {
   return alignments_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 void SearchReadsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& SearchReadsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchReadsResponse.next_page_token)
-  return next_page_token_.Get();
+  return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void SearchReadsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -7146,6 +7516,9 @@ void SearchReadsResponse::unsafe_arena_set_allocated_next_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.SearchReadsResponse.next_page_token)
 }
 
+inline const SearchReadsResponse* SearchReadsResponse::internal_default_instance() {
+  return &SearchReadsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7162,9 +7535,7 @@ const int StreamReadsRequest::kTotalShardsFieldNumber;
 
 StreamReadsRequest::StreamReadsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.StreamReadsRequest)
 }
@@ -7178,29 +7549,15 @@ StreamReadsRequest::StreamReadsRequest(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.StreamReadsRequest)
 }
+
+void StreamReadsRequest::InitAsDefaultInstance() {
+}
+
 StreamReadsRequest::StreamReadsRequest(const StreamReadsRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id(),
-      GetArenaNoVirtual());
-  }
-  read_group_set_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.read_group_set_id().size() > 0) {
-    read_group_set_id_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.read_group_set_id(),
-      GetArenaNoVirtual());
-  }
-  reference_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.reference_name().size() > 0) {
-    reference_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.reference_name(),
-      GetArenaNoVirtual());
-  }
-  ::memcpy(&start_, &from.start_,
-    reinterpret_cast<char*>(&total_shards_) -
-    reinterpret_cast<char*>(&start_) + sizeof(total_shards_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.StreamReadsRequest)
 }
 
@@ -7242,7 +7599,7 @@ void StreamReadsRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* StreamReadsRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[13].descriptor;
+  return StreamReadsRequest_descriptor_;
 }
 
 const StreamReadsRequest& StreamReadsRequest::default_instance() {
@@ -7250,17 +7607,38 @@ const StreamReadsRequest& StreamReadsRequest::default_instance() {
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<StreamReadsRequest> StreamReadsRequest_default_instance_;
+
 StreamReadsRequest* StreamReadsRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<StreamReadsRequest>(arena);
 }
 
 void StreamReadsRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.genomics.v1.StreamReadsRequest)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(StreamReadsRequest, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<StreamReadsRequest*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(start_, total_shards_);
   project_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   read_group_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   reference_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  ::memset(&start_, 0, reinterpret_cast<char*>(&total_shards_) -
-    reinterpret_cast<char*>(&start_) + sizeof(total_shards_));
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool StreamReadsRequest::MergePartialFromCodedStream(
@@ -7269,13 +7647,13 @@ bool StreamReadsRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.StreamReadsRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string project_id = 1;
+      // optional string project_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -7285,12 +7663,14 @@ bool StreamReadsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_read_group_set_id;
         break;
       }
 
-      // string read_group_set_id = 2;
+      // optional string read_group_set_id = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_read_group_set_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_read_group_set_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -7300,12 +7680,14 @@ bool StreamReadsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_reference_name;
         break;
       }
 
-      // string reference_name = 3;
+      // optional string reference_name = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_reference_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_reference_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -7315,12 +7697,14 @@ bool StreamReadsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_start;
         break;
       }
 
-      // int64 start = 4;
+      // optional int64 start = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_start:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -7328,12 +7712,14 @@ bool StreamReadsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(40)) goto parse_end;
         break;
       }
 
-      // int64 end = 5;
+      // optional int64 end = 5;
       case 5: {
-        if (tag == 40u) {
+        if (tag == 40) {
+         parse_end:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -7341,12 +7727,14 @@ bool StreamReadsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(48)) goto parse_shard;
         break;
       }
 
-      // int32 shard = 6;
+      // optional int32 shard = 6;
       case 6: {
-        if (tag == 48u) {
+        if (tag == 48) {
+         parse_shard:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -7354,12 +7742,14 @@ bool StreamReadsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(56)) goto parse_total_shards;
         break;
       }
 
-      // int32 total_shards = 7;
+      // optional int32 total_shards = 7;
       case 7: {
-        if (tag == 56u) {
+        if (tag == 56) {
+         parse_total_shards:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -7367,6 +7757,7 @@ bool StreamReadsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -7394,7 +7785,7 @@ failure:
 void StreamReadsRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.genomics.v1.StreamReadsRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -7404,7 +7795,7 @@ void StreamReadsRequest::SerializeWithCachedSizes(
       1, this->project_id(), output);
   }
 
-  // string read_group_set_id = 2;
+  // optional string read_group_set_id = 2;
   if (this->read_group_set_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->read_group_set_id().data(), this->read_group_set_id().length(),
@@ -7414,7 +7805,7 @@ void StreamReadsRequest::SerializeWithCachedSizes(
       2, this->read_group_set_id(), output);
   }
 
-  // string reference_name = 3;
+  // optional string reference_name = 3;
   if (this->reference_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->reference_name().data(), this->reference_name().length(),
@@ -7424,22 +7815,22 @@ void StreamReadsRequest::SerializeWithCachedSizes(
       3, this->reference_name(), output);
   }
 
-  // int64 start = 4;
+  // optional int64 start = 4;
   if (this->start() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(4, this->start(), output);
   }
 
-  // int64 end = 5;
+  // optional int64 end = 5;
   if (this->end() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(5, this->end(), output);
   }
 
-  // int32 shard = 6;
+  // optional int32 shard = 6;
   if (this->shard() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(6, this->shard(), output);
   }
 
-  // int32 total_shards = 7;
+  // optional int32 total_shards = 7;
   if (this->total_shards() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(7, this->total_shards(), output);
   }
@@ -7451,7 +7842,7 @@ void StreamReadsRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.genomics.v1.StreamReadsRequest)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -7462,7 +7853,7 @@ void StreamReadsRequest::SerializeWithCachedSizes(
         1, this->project_id(), target);
   }
 
-  // string read_group_set_id = 2;
+  // optional string read_group_set_id = 2;
   if (this->read_group_set_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->read_group_set_id().data(), this->read_group_set_id().length(),
@@ -7473,7 +7864,7 @@ void StreamReadsRequest::SerializeWithCachedSizes(
         2, this->read_group_set_id(), target);
   }
 
-  // string reference_name = 3;
+  // optional string reference_name = 3;
   if (this->reference_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->reference_name().data(), this->reference_name().length(),
@@ -7484,22 +7875,22 @@ void StreamReadsRequest::SerializeWithCachedSizes(
         3, this->reference_name(), target);
   }
 
-  // int64 start = 4;
+  // optional int64 start = 4;
   if (this->start() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(4, this->start(), target);
   }
 
-  // int64 end = 5;
+  // optional int64 end = 5;
   if (this->end() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(5, this->end(), target);
   }
 
-  // int32 shard = 6;
+  // optional int32 shard = 6;
   if (this->shard() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(6, this->shard(), target);
   }
 
-  // int32 total_shards = 7;
+  // optional int32 total_shards = 7;
   if (this->total_shards() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(7, this->total_shards(), target);
   }
@@ -7512,49 +7903,49 @@ size_t StreamReadsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.genomics.v1.StreamReadsRequest)
   size_t total_size = 0;
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->project_id());
   }
 
-  // string read_group_set_id = 2;
+  // optional string read_group_set_id = 2;
   if (this->read_group_set_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->read_group_set_id());
   }
 
-  // string reference_name = 3;
+  // optional string reference_name = 3;
   if (this->reference_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->reference_name());
   }
 
-  // int64 start = 4;
+  // optional int64 start = 4;
   if (this->start() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->start());
   }
 
-  // int64 end = 5;
+  // optional int64 end = 5;
   if (this->end() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->end());
   }
 
-  // int32 shard = 6;
+  // optional int32 shard = 6;
   if (this->shard() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->shard());
   }
 
-  // int32 total_shards = 7;
+  // optional int32 total_shards = 7;
   if (this->total_shards() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
@@ -7570,7 +7961,7 @@ size_t StreamReadsRequest::ByteSizeLong() const {
 
 void StreamReadsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.StreamReadsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const StreamReadsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const StreamReadsRequest>(
           &from);
@@ -7579,14 +7970,21 @@ void StreamReadsRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.StreamReadsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void StreamReadsRequest::MergeFrom(const StreamReadsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.StreamReadsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void StreamReadsRequest::UnsafeMergeFrom(const StreamReadsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
     set_project_id(from.project_id());
   }
@@ -7621,10 +8019,11 @@ void StreamReadsRequest::CopyFrom(const StreamReadsRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.StreamReadsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool StreamReadsRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -7633,13 +8032,10 @@ void StreamReadsRequest::Swap(StreamReadsRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    StreamReadsRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    StreamReadsRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void StreamReadsRequest::UnsafeArenaSwap(StreamReadsRequest* other) {
@@ -7655,24 +8051,28 @@ void StreamReadsRequest::InternalSwap(StreamReadsRequest* other) {
   std::swap(end_, other->end_);
   std::swap(shard_, other->shard_);
   std::swap(total_shards_, other->total_shards_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata StreamReadsRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[13];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = StreamReadsRequest_descriptor_;
+  metadata.reflection = StreamReadsRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // StreamReadsRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 void StreamReadsRequest::clear_project_id() {
   project_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& StreamReadsRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.StreamReadsRequest.project_id)
-  return project_id_.Get();
+  return project_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void StreamReadsRequest::set_project_id(const ::std::string& value) {
   
@@ -7732,13 +8132,13 @@ void StreamReadsRequest::unsafe_arena_set_allocated_project_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.StreamReadsRequest.project_id)
 }
 
-// string read_group_set_id = 2;
+// optional string read_group_set_id = 2;
 void StreamReadsRequest::clear_read_group_set_id() {
   read_group_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& StreamReadsRequest::read_group_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.StreamReadsRequest.read_group_set_id)
-  return read_group_set_id_.Get();
+  return read_group_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void StreamReadsRequest::set_read_group_set_id(const ::std::string& value) {
   
@@ -7798,13 +8198,13 @@ void StreamReadsRequest::unsafe_arena_set_allocated_read_group_set_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.StreamReadsRequest.read_group_set_id)
 }
 
-// string reference_name = 3;
+// optional string reference_name = 3;
 void StreamReadsRequest::clear_reference_name() {
   reference_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& StreamReadsRequest::reference_name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.StreamReadsRequest.reference_name)
-  return reference_name_.Get();
+  return reference_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void StreamReadsRequest::set_reference_name(const ::std::string& value) {
   
@@ -7864,7 +8264,7 @@ void StreamReadsRequest::unsafe_arena_set_allocated_reference_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.StreamReadsRequest.reference_name)
 }
 
-// int64 start = 4;
+// optional int64 start = 4;
 void StreamReadsRequest::clear_start() {
   start_ = GOOGLE_LONGLONG(0);
 }
@@ -7878,7 +8278,7 @@ void StreamReadsRequest::set_start(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.StreamReadsRequest.start)
 }
 
-// int64 end = 5;
+// optional int64 end = 5;
 void StreamReadsRequest::clear_end() {
   end_ = GOOGLE_LONGLONG(0);
 }
@@ -7892,7 +8292,7 @@ void StreamReadsRequest::set_end(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.StreamReadsRequest.end)
 }
 
-// int32 shard = 6;
+// optional int32 shard = 6;
 void StreamReadsRequest::clear_shard() {
   shard_ = 0;
 }
@@ -7906,7 +8306,7 @@ void StreamReadsRequest::set_shard(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.StreamReadsRequest.shard)
 }
 
-// int32 total_shards = 7;
+// optional int32 total_shards = 7;
 void StreamReadsRequest::clear_total_shards() {
   total_shards_ = 0;
 }
@@ -7920,6 +8320,9 @@ void StreamReadsRequest::set_total_shards(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.StreamReadsRequest.total_shards)
 }
 
+inline const StreamReadsRequest* StreamReadsRequest::internal_default_instance() {
+  return &StreamReadsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7930,9 +8333,7 @@ const int StreamReadsResponse::kAlignmentsFieldNumber;
 
 StreamReadsResponse::StreamReadsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.genomics.v1.StreamReadsResponse)
 }
@@ -7947,12 +8348,15 @@ StreamReadsResponse::StreamReadsResponse(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.genomics.v1.StreamReadsResponse)
 }
+
+void StreamReadsResponse::InitAsDefaultInstance() {
+}
+
 StreamReadsResponse::StreamReadsResponse(const StreamReadsResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      alignments_(from.alignments_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.genomics.v1.StreamReadsResponse)
 }
 
@@ -7986,13 +8390,15 @@ void StreamReadsResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* StreamReadsResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[14].descriptor;
+  return StreamReadsResponse_descriptor_;
 }
 
 const StreamReadsResponse& StreamReadsResponse::default_instance() {
   protobuf_InitDefaults_google_2fgenomics_2fv1_2freads_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<StreamReadsResponse> StreamReadsResponse_default_instance_;
 
 StreamReadsResponse* StreamReadsResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<StreamReadsResponse>(arena);
@@ -8009,20 +8415,23 @@ bool StreamReadsResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.genomics.v1.StreamReadsResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.genomics.v1.Read alignments = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_alignments:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_alignments()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_alignments;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -8098,7 +8507,7 @@ size_t StreamReadsResponse::ByteSizeLong() const {
 
 void StreamReadsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.genomics.v1.StreamReadsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const StreamReadsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const StreamReadsResponse>(
           &from);
@@ -8107,14 +8516,21 @@ void StreamReadsResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.genomics.v1.StreamReadsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void StreamReadsResponse::MergeFrom(const StreamReadsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.genomics.v1.StreamReadsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void StreamReadsResponse::UnsafeMergeFrom(const StreamReadsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   alignments_.MergeFrom(from.alignments_);
 }
 
@@ -8129,10 +8545,11 @@ void StreamReadsResponse::CopyFrom(const StreamReadsResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.genomics.v1.StreamReadsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool StreamReadsResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -8141,13 +8558,10 @@ void StreamReadsResponse::Swap(StreamReadsResponse* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    StreamReadsResponse* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    StreamReadsResponse temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void StreamReadsResponse::UnsafeArenaSwap(StreamReadsResponse* other) {
@@ -8157,12 +8571,16 @@ void StreamReadsResponse::UnsafeArenaSwap(StreamReadsResponse* other) {
 }
 void StreamReadsResponse::InternalSwap(StreamReadsResponse* other) {
   alignments_.UnsafeArenaSwap(&other->alignments_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata StreamReadsResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[14];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = StreamReadsResponse_descriptor_;
+  metadata.reflection = StreamReadsResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -8198,6 +8616,9 @@ StreamReadsResponse::alignments() const {
   return alignments_;
 }
 
+inline const StreamReadsResponse* StreamReadsResponse::internal_default_instance() {
+  return &StreamReadsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

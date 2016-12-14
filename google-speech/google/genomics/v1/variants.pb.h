@@ -24,8 +24,8 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/map.h>
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/generated_enum_reflection.h>
@@ -36,141 +36,6 @@
 #include <google/protobuf/field_mask.pb.h>
 #include <google/protobuf/struct.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace genomics {
-namespace v1 {
-class CallSet;
-class CallSetDefaultTypeInternal;
-extern CallSetDefaultTypeInternal _CallSet_default_instance_;
-class CreateCallSetRequest;
-class CreateCallSetRequestDefaultTypeInternal;
-extern CreateCallSetRequestDefaultTypeInternal _CreateCallSetRequest_default_instance_;
-class CreateVariantRequest;
-class CreateVariantRequestDefaultTypeInternal;
-extern CreateVariantRequestDefaultTypeInternal _CreateVariantRequest_default_instance_;
-class CreateVariantSetRequest;
-class CreateVariantSetRequestDefaultTypeInternal;
-extern CreateVariantSetRequestDefaultTypeInternal _CreateVariantSetRequest_default_instance_;
-class DeleteCallSetRequest;
-class DeleteCallSetRequestDefaultTypeInternal;
-extern DeleteCallSetRequestDefaultTypeInternal _DeleteCallSetRequest_default_instance_;
-class DeleteVariantRequest;
-class DeleteVariantRequestDefaultTypeInternal;
-extern DeleteVariantRequestDefaultTypeInternal _DeleteVariantRequest_default_instance_;
-class DeleteVariantSetRequest;
-class DeleteVariantSetRequestDefaultTypeInternal;
-extern DeleteVariantSetRequestDefaultTypeInternal _DeleteVariantSetRequest_default_instance_;
-class ExportVariantSetRequest;
-class ExportVariantSetRequestDefaultTypeInternal;
-extern ExportVariantSetRequestDefaultTypeInternal _ExportVariantSetRequest_default_instance_;
-class GetCallSetRequest;
-class GetCallSetRequestDefaultTypeInternal;
-extern GetCallSetRequestDefaultTypeInternal _GetCallSetRequest_default_instance_;
-class GetVariantRequest;
-class GetVariantRequestDefaultTypeInternal;
-extern GetVariantRequestDefaultTypeInternal _GetVariantRequest_default_instance_;
-class GetVariantSetRequest;
-class GetVariantSetRequestDefaultTypeInternal;
-extern GetVariantSetRequestDefaultTypeInternal _GetVariantSetRequest_default_instance_;
-class ImportVariantsRequest;
-class ImportVariantsRequestDefaultTypeInternal;
-extern ImportVariantsRequestDefaultTypeInternal _ImportVariantsRequest_default_instance_;
-class ImportVariantsResponse;
-class ImportVariantsResponseDefaultTypeInternal;
-extern ImportVariantsResponseDefaultTypeInternal _ImportVariantsResponse_default_instance_;
-class MergeVariantsRequest;
-class MergeVariantsRequestDefaultTypeInternal;
-extern MergeVariantsRequestDefaultTypeInternal _MergeVariantsRequest_default_instance_;
-class ReferenceBound;
-class ReferenceBoundDefaultTypeInternal;
-extern ReferenceBoundDefaultTypeInternal _ReferenceBound_default_instance_;
-class SearchCallSetsRequest;
-class SearchCallSetsRequestDefaultTypeInternal;
-extern SearchCallSetsRequestDefaultTypeInternal _SearchCallSetsRequest_default_instance_;
-class SearchCallSetsResponse;
-class SearchCallSetsResponseDefaultTypeInternal;
-extern SearchCallSetsResponseDefaultTypeInternal _SearchCallSetsResponse_default_instance_;
-class SearchVariantSetsRequest;
-class SearchVariantSetsRequestDefaultTypeInternal;
-extern SearchVariantSetsRequestDefaultTypeInternal _SearchVariantSetsRequest_default_instance_;
-class SearchVariantSetsResponse;
-class SearchVariantSetsResponseDefaultTypeInternal;
-extern SearchVariantSetsResponseDefaultTypeInternal _SearchVariantSetsResponse_default_instance_;
-class SearchVariantsRequest;
-class SearchVariantsRequestDefaultTypeInternal;
-extern SearchVariantsRequestDefaultTypeInternal _SearchVariantsRequest_default_instance_;
-class SearchVariantsResponse;
-class SearchVariantsResponseDefaultTypeInternal;
-extern SearchVariantsResponseDefaultTypeInternal _SearchVariantsResponse_default_instance_;
-class StreamVariantsRequest;
-class StreamVariantsRequestDefaultTypeInternal;
-extern StreamVariantsRequestDefaultTypeInternal _StreamVariantsRequest_default_instance_;
-class StreamVariantsResponse;
-class StreamVariantsResponseDefaultTypeInternal;
-extern StreamVariantsResponseDefaultTypeInternal _StreamVariantsResponse_default_instance_;
-class UpdateCallSetRequest;
-class UpdateCallSetRequestDefaultTypeInternal;
-extern UpdateCallSetRequestDefaultTypeInternal _UpdateCallSetRequest_default_instance_;
-class UpdateVariantRequest;
-class UpdateVariantRequestDefaultTypeInternal;
-extern UpdateVariantRequestDefaultTypeInternal _UpdateVariantRequest_default_instance_;
-class UpdateVariantSetRequest;
-class UpdateVariantSetRequestDefaultTypeInternal;
-extern UpdateVariantSetRequestDefaultTypeInternal _UpdateVariantSetRequest_default_instance_;
-class Variant;
-class VariantDefaultTypeInternal;
-extern VariantDefaultTypeInternal _Variant_default_instance_;
-class VariantCall;
-class VariantCallDefaultTypeInternal;
-extern VariantCallDefaultTypeInternal _VariantCall_default_instance_;
-class VariantSet;
-class VariantSetDefaultTypeInternal;
-extern VariantSetDefaultTypeInternal _VariantSet_default_instance_;
-class VariantSetMetadata;
-class VariantSetMetadataDefaultTypeInternal;
-extern VariantSetMetadataDefaultTypeInternal _VariantSetMetadata_default_instance_;
-}  // namespace v1
-}  // namespace genomics
-namespace longrunning {
-class CancelOperationRequest;
-class CancelOperationRequestDefaultTypeInternal;
-extern CancelOperationRequestDefaultTypeInternal _CancelOperationRequest_default_instance_;
-class DeleteOperationRequest;
-class DeleteOperationRequestDefaultTypeInternal;
-extern DeleteOperationRequestDefaultTypeInternal _DeleteOperationRequest_default_instance_;
-class GetOperationRequest;
-class GetOperationRequestDefaultTypeInternal;
-extern GetOperationRequestDefaultTypeInternal _GetOperationRequest_default_instance_;
-class ListOperationsRequest;
-class ListOperationsRequestDefaultTypeInternal;
-extern ListOperationsRequestDefaultTypeInternal _ListOperationsRequest_default_instance_;
-class ListOperationsResponse;
-class ListOperationsResponseDefaultTypeInternal;
-extern ListOperationsResponseDefaultTypeInternal _ListOperationsResponse_default_instance_;
-class Operation;
-class OperationDefaultTypeInternal;
-extern OperationDefaultTypeInternal _Operation_default_instance_;
-}  // namespace longrunning
-namespace protobuf {
-class Empty;
-class EmptyDefaultTypeInternal;
-extern EmptyDefaultTypeInternal _Empty_default_instance_;
-class FieldMask;
-class FieldMaskDefaultTypeInternal;
-extern FieldMaskDefaultTypeInternal _FieldMask_default_instance_;
-class ListValue;
-class ListValueDefaultTypeInternal;
-extern ListValueDefaultTypeInternal _ListValue_default_instance_;
-class Struct;
-class StructDefaultTypeInternal;
-extern StructDefaultTypeInternal _Struct_default_instance_;
-class Value;
-class ValueDefaultTypeInternal;
-extern ValueDefaultTypeInternal _Value_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace genomics {
@@ -179,6 +44,39 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
 void protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto();
+void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
+void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
+
+class CallSet;
+class CreateCallSetRequest;
+class CreateVariantRequest;
+class CreateVariantSetRequest;
+class DeleteCallSetRequest;
+class DeleteVariantRequest;
+class DeleteVariantSetRequest;
+class ExportVariantSetRequest;
+class GetCallSetRequest;
+class GetVariantRequest;
+class GetVariantSetRequest;
+class ImportVariantsRequest;
+class ImportVariantsResponse;
+class MergeVariantsRequest;
+class ReferenceBound;
+class SearchCallSetsRequest;
+class SearchCallSetsResponse;
+class SearchVariantSetsRequest;
+class SearchVariantSetsResponse;
+class SearchVariantsRequest;
+class SearchVariantsResponse;
+class StreamVariantsRequest;
+class StreamVariantsResponse;
+class UpdateCallSetRequest;
+class UpdateVariantRequest;
+class UpdateVariantSetRequest;
+class Variant;
+class VariantCall;
+class VariantSet;
+class VariantSetMetadata;
 
 enum VariantSetMetadata_Type {
   VariantSetMetadata_Type_TYPE_UNSPECIFIED = 0,
@@ -272,9 +170,6 @@ inline bool InfoMergeOperation_Parse(
 }
 // ===================================================================
 
-
-// -------------------------------------------------------------------
-
 class VariantSetMetadata : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.VariantSetMetadata) */ {
  public:
   VariantSetMetadata();
@@ -287,52 +182,47 @@ class VariantSetMetadata : public ::google::protobuf::Message /* @@protoc_insert
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const VariantSetMetadata& default_instance();
 
-  static inline const VariantSetMetadata* internal_default_instance() {
-    return reinterpret_cast<const VariantSetMetadata*>(
-               &_VariantSetMetadata_default_instance_);
-  }
+  static const VariantSetMetadata* internal_default_instance();
 
   void UnsafeArenaSwap(VariantSetMetadata* other);
   void Swap(VariantSetMetadata* other);
 
   // implements Message ----------------------------------------------
 
-  inline VariantSetMetadata* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline VariantSetMetadata* New() const { return New(NULL); }
 
-  VariantSetMetadata* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  VariantSetMetadata* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const VariantSetMetadata& from);
   void MergeFrom(const VariantSetMetadata& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(VariantSetMetadata* other);
+  void UnsafeMergeFrom(const VariantSetMetadata& from);
   protected:
   explicit VariantSetMetadata(::google::protobuf::Arena* arena);
   private:
@@ -347,7 +237,7 @@ class VariantSetMetadata : public ::google::protobuf::Message /* @@protoc_insert
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -388,7 +278,7 @@ class VariantSetMetadata : public ::google::protobuf::Message /* @@protoc_insert
 
   // accessors -------------------------------------------------------
 
-  // string key = 1;
+  // optional string key = 1;
   void clear_key();
   static const int kKeyFieldNumber = 1;
   const ::std::string& key() const;
@@ -402,7 +292,7 @@ class VariantSetMetadata : public ::google::protobuf::Message /* @@protoc_insert
   void unsafe_arena_set_allocated_key(
       ::std::string* key);
 
-  // string value = 2;
+  // optional string value = 2;
   void clear_value();
   static const int kValueFieldNumber = 2;
   const ::std::string& value() const;
@@ -416,7 +306,7 @@ class VariantSetMetadata : public ::google::protobuf::Message /* @@protoc_insert
   void unsafe_arena_set_allocated_value(
       ::std::string* value);
 
-  // string id = 4;
+  // optional string id = 4;
   void clear_id();
   static const int kIdFieldNumber = 4;
   const ::std::string& id() const;
@@ -430,13 +320,13 @@ class VariantSetMetadata : public ::google::protobuf::Message /* @@protoc_insert
   void unsafe_arena_set_allocated_id(
       ::std::string* id);
 
-  // .google.genomics.v1.VariantSetMetadata.Type type = 5;
+  // optional .google.genomics.v1.VariantSetMetadata.Type type = 5;
   void clear_type();
   static const int kTypeFieldNumber = 5;
   ::google::genomics::v1::VariantSetMetadata_Type type() const;
   void set_type(::google::genomics::v1::VariantSetMetadata_Type value);
 
-  // string number = 8;
+  // optional string number = 8;
   void clear_number();
   static const int kNumberFieldNumber = 8;
   const ::std::string& number() const;
@@ -450,7 +340,7 @@ class VariantSetMetadata : public ::google::protobuf::Message /* @@protoc_insert
   void unsafe_arena_set_allocated_number(
       ::std::string* number);
 
-  // string description = 7;
+  // optional string description = 7;
   void clear_description();
   static const int kDescriptionFieldNumber = 7;
   const ::std::string& description() const;
@@ -500,10 +390,13 @@ class VariantSetMetadata : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<VariantSetMetadata> VariantSetMetadata_default_instance_;
+
 // -------------------------------------------------------------------
 
 class VariantSet : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.VariantSet) */ {
@@ -518,52 +411,47 @@ class VariantSet : public ::google::protobuf::Message /* @@protoc_insertion_poin
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const VariantSet& default_instance();
 
-  static inline const VariantSet* internal_default_instance() {
-    return reinterpret_cast<const VariantSet*>(
-               &_VariantSet_default_instance_);
-  }
+  static const VariantSet* internal_default_instance();
 
   void UnsafeArenaSwap(VariantSet* other);
   void Swap(VariantSet* other);
 
   // implements Message ----------------------------------------------
 
-  inline VariantSet* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline VariantSet* New() const { return New(NULL); }
 
-  VariantSet* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  VariantSet* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const VariantSet& from);
   void MergeFrom(const VariantSet& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(VariantSet* other);
+  void UnsafeMergeFrom(const VariantSet& from);
   protected:
   explicit VariantSet(::google::protobuf::Arena* arena);
   private:
@@ -578,13 +466,13 @@ class VariantSet : public ::google::protobuf::Message /* @@protoc_insertion_poin
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string dataset_id = 1;
+  // optional string dataset_id = 1;
   void clear_dataset_id();
   static const int kDatasetIdFieldNumber = 1;
   const ::std::string& dataset_id() const;
@@ -598,7 +486,7 @@ class VariantSet : public ::google::protobuf::Message /* @@protoc_insertion_poin
   void unsafe_arena_set_allocated_dataset_id(
       ::std::string* dataset_id);
 
-  // string id = 2;
+  // optional string id = 2;
   void clear_id();
   static const int kIdFieldNumber = 2;
   const ::std::string& id() const;
@@ -612,7 +500,7 @@ class VariantSet : public ::google::protobuf::Message /* @@protoc_insertion_poin
   void unsafe_arena_set_allocated_id(
       ::std::string* id);
 
-  // string reference_set_id = 6;
+  // optional string reference_set_id = 6;
   void clear_reference_set_id();
   static const int kReferenceSetIdFieldNumber = 6;
   const ::std::string& reference_set_id() const;
@@ -650,7 +538,7 @@ class VariantSet : public ::google::protobuf::Message /* @@protoc_insertion_poin
   const ::google::protobuf::RepeatedPtrField< ::google::genomics::v1::VariantSetMetadata >&
       metadata() const;
 
-  // string name = 7;
+  // optional string name = 7;
   void clear_name();
   static const int kNameFieldNumber = 7;
   const ::std::string& name() const;
@@ -664,7 +552,7 @@ class VariantSet : public ::google::protobuf::Message /* @@protoc_insertion_poin
   void unsafe_arena_set_allocated_name(
       ::std::string* name);
 
-  // string description = 8;
+  // optional string description = 8;
   void clear_description();
   static const int kDescriptionFieldNumber = 8;
   const ::std::string& description() const;
@@ -695,12 +583,12 @@ class VariantSet : public ::google::protobuf::Message /* @@protoc_insertion_poin
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
-// -------------------------------------------------------------------
-
+extern ::google::protobuf::internal::ExplicitlyConstructed<VariantSet> VariantSet_default_instance_;
 
 // -------------------------------------------------------------------
 
@@ -716,52 +604,47 @@ class Variant : public ::google::protobuf::Message /* @@protoc_insertion_point(c
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const Variant& default_instance();
 
-  static inline const Variant* internal_default_instance() {
-    return reinterpret_cast<const Variant*>(
-               &_Variant_default_instance_);
-  }
+  static const Variant* internal_default_instance();
 
   void UnsafeArenaSwap(Variant* other);
   void Swap(Variant* other);
 
   // implements Message ----------------------------------------------
 
-  inline Variant* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Variant* New() const { return New(NULL); }
 
-  Variant* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Variant* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Variant& from);
   void MergeFrom(const Variant& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Variant* other);
+  void UnsafeMergeFrom(const Variant& from);
   protected:
   explicit Variant(::google::protobuf::Arena* arena);
   private:
@@ -776,14 +659,14 @@ class Variant : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
 
   // accessors -------------------------------------------------------
 
-  // string variant_set_id = 15;
+  // optional string variant_set_id = 15;
   void clear_variant_set_id();
   static const int kVariantSetIdFieldNumber = 15;
   const ::std::string& variant_set_id() const;
@@ -797,7 +680,7 @@ class Variant : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   void unsafe_arena_set_allocated_variant_set_id(
       ::std::string* variant_set_id);
 
-  // string id = 2;
+  // optional string id = 2;
   void clear_id();
   static const int kIdFieldNumber = 2;
   const ::std::string& id() const;
@@ -827,13 +710,13 @@ class Variant : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   const ::google::protobuf::RepeatedPtrField< ::std::string>& names() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_names();
 
-  // int64 created = 12;
+  // optional int64 created = 12;
   void clear_created();
   static const int kCreatedFieldNumber = 12;
   ::google::protobuf::int64 created() const;
   void set_created(::google::protobuf::int64 value);
 
-  // string reference_name = 14;
+  // optional string reference_name = 14;
   void clear_reference_name();
   static const int kReferenceNameFieldNumber = 14;
   const ::std::string& reference_name() const;
@@ -847,19 +730,19 @@ class Variant : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   void unsafe_arena_set_allocated_reference_name(
       ::std::string* reference_name);
 
-  // int64 start = 16;
+  // optional int64 start = 16;
   void clear_start();
   static const int kStartFieldNumber = 16;
   ::google::protobuf::int64 start() const;
   void set_start(::google::protobuf::int64 value);
 
-  // int64 end = 13;
+  // optional int64 end = 13;
   void clear_end();
   static const int kEndFieldNumber = 13;
   ::google::protobuf::int64 end() const;
   void set_end(::google::protobuf::int64 value);
 
-  // string reference_bases = 6;
+  // optional string reference_bases = 6;
   void clear_reference_bases();
   static const int kReferenceBasesFieldNumber = 6;
   const ::std::string& reference_bases() const;
@@ -889,7 +772,7 @@ class Variant : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   const ::google::protobuf::RepeatedPtrField< ::std::string>& alternate_bases() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_alternate_bases();
 
-  // double quality = 8;
+  // optional double quality = 8;
   void clear_quality();
   static const int kQualityFieldNumber = 8;
   double quality() const;
@@ -965,12 +848,12 @@ class Variant : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
-// -------------------------------------------------------------------
-
+extern ::google::protobuf::internal::ExplicitlyConstructed<Variant> Variant_default_instance_;
 
 // -------------------------------------------------------------------
 
@@ -986,52 +869,47 @@ class VariantCall : public ::google::protobuf::Message /* @@protoc_insertion_poi
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const VariantCall& default_instance();
 
-  static inline const VariantCall* internal_default_instance() {
-    return reinterpret_cast<const VariantCall*>(
-               &_VariantCall_default_instance_);
-  }
+  static const VariantCall* internal_default_instance();
 
   void UnsafeArenaSwap(VariantCall* other);
   void Swap(VariantCall* other);
 
   // implements Message ----------------------------------------------
 
-  inline VariantCall* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline VariantCall* New() const { return New(NULL); }
 
-  VariantCall* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  VariantCall* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const VariantCall& from);
   void MergeFrom(const VariantCall& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(VariantCall* other);
+  void UnsafeMergeFrom(const VariantCall& from);
   protected:
   explicit VariantCall(::google::protobuf::Arena* arena);
   private:
@@ -1046,14 +924,14 @@ class VariantCall : public ::google::protobuf::Message /* @@protoc_insertion_poi
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
 
   // accessors -------------------------------------------------------
 
-  // string call_set_id = 8;
+  // optional string call_set_id = 8;
   void clear_call_set_id();
   static const int kCallSetIdFieldNumber = 8;
   const ::std::string& call_set_id() const;
@@ -1067,7 +945,7 @@ class VariantCall : public ::google::protobuf::Message /* @@protoc_insertion_poi
   void unsafe_arena_set_allocated_call_set_id(
       ::std::string* call_set_id);
 
-  // string call_set_name = 9;
+  // optional string call_set_name = 9;
   void clear_call_set_name();
   static const int kCallSetNameFieldNumber = 9;
   const ::std::string& call_set_name() const;
@@ -1093,7 +971,7 @@ class VariantCall : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
       mutable_genotype();
 
-  // string phaseset = 5;
+  // optional string phaseset = 5;
   void clear_phaseset();
   static const int kPhasesetFieldNumber = 5;
   const ::std::string& phaseset() const;
@@ -1156,12 +1034,12 @@ class VariantCall : public ::google::protobuf::Message /* @@protoc_insertion_poi
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
-// -------------------------------------------------------------------
-
+extern ::google::protobuf::internal::ExplicitlyConstructed<VariantCall> VariantCall_default_instance_;
 
 // -------------------------------------------------------------------
 
@@ -1177,52 +1055,47 @@ class CallSet : public ::google::protobuf::Message /* @@protoc_insertion_point(c
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const CallSet& default_instance();
 
-  static inline const CallSet* internal_default_instance() {
-    return reinterpret_cast<const CallSet*>(
-               &_CallSet_default_instance_);
-  }
+  static const CallSet* internal_default_instance();
 
   void UnsafeArenaSwap(CallSet* other);
   void Swap(CallSet* other);
 
   // implements Message ----------------------------------------------
 
-  inline CallSet* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline CallSet* New() const { return New(NULL); }
 
-  CallSet* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CallSet* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const CallSet& from);
   void MergeFrom(const CallSet& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(CallSet* other);
+  void UnsafeMergeFrom(const CallSet& from);
   protected:
   explicit CallSet(::google::protobuf::Arena* arena);
   private:
@@ -1237,14 +1110,14 @@ class CallSet : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
 
   // accessors -------------------------------------------------------
 
-  // string id = 1;
+  // optional string id = 1;
   void clear_id();
   static const int kIdFieldNumber = 1;
   const ::std::string& id() const;
@@ -1258,7 +1131,7 @@ class CallSet : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   void unsafe_arena_set_allocated_id(
       ::std::string* id);
 
-  // string name = 2;
+  // optional string name = 2;
   void clear_name();
   static const int kNameFieldNumber = 2;
   const ::std::string& name() const;
@@ -1272,7 +1145,7 @@ class CallSet : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   void unsafe_arena_set_allocated_name(
       ::std::string* name);
 
-  // string sample_id = 7;
+  // optional string sample_id = 7;
   void clear_sample_id();
   static const int kSampleIdFieldNumber = 7;
   const ::std::string& sample_id() const;
@@ -1302,7 +1175,7 @@ class CallSet : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   const ::google::protobuf::RepeatedPtrField< ::std::string>& variant_set_ids() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_variant_set_ids();
 
-  // int64 created = 5;
+  // optional int64 created = 5;
   void clear_created();
   static const int kCreatedFieldNumber = 5;
   ::google::protobuf::int64 created() const;
@@ -1343,10 +1216,13 @@ class CallSet : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<CallSet> CallSet_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ReferenceBound : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.ReferenceBound) */ {
@@ -1361,52 +1237,47 @@ class ReferenceBound : public ::google::protobuf::Message /* @@protoc_insertion_
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ReferenceBound& default_instance();
 
-  static inline const ReferenceBound* internal_default_instance() {
-    return reinterpret_cast<const ReferenceBound*>(
-               &_ReferenceBound_default_instance_);
-  }
+  static const ReferenceBound* internal_default_instance();
 
   void UnsafeArenaSwap(ReferenceBound* other);
   void Swap(ReferenceBound* other);
 
   // implements Message ----------------------------------------------
 
-  inline ReferenceBound* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ReferenceBound* New() const { return New(NULL); }
 
-  ReferenceBound* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ReferenceBound* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ReferenceBound& from);
   void MergeFrom(const ReferenceBound& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ReferenceBound* other);
+  void UnsafeMergeFrom(const ReferenceBound& from);
   protected:
   explicit ReferenceBound(::google::protobuf::Arena* arena);
   private:
@@ -1421,13 +1292,13 @@ class ReferenceBound : public ::google::protobuf::Message /* @@protoc_insertion_
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string reference_name = 1;
+  // optional string reference_name = 1;
   void clear_reference_name();
   static const int kReferenceNameFieldNumber = 1;
   const ::std::string& reference_name() const;
@@ -1441,7 +1312,7 @@ class ReferenceBound : public ::google::protobuf::Message /* @@protoc_insertion_
   void unsafe_arena_set_allocated_reference_name(
       ::std::string* reference_name);
 
-  // int64 upper_bound = 2;
+  // optional int64 upper_bound = 2;
   void clear_upper_bound();
   static const int kUpperBoundFieldNumber = 2;
   ::google::protobuf::int64 upper_bound() const;
@@ -1459,12 +1330,12 @@ class ReferenceBound : public ::google::protobuf::Message /* @@protoc_insertion_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
-// -------------------------------------------------------------------
-
+extern ::google::protobuf::internal::ExplicitlyConstructed<ReferenceBound> ReferenceBound_default_instance_;
 
 // -------------------------------------------------------------------
 
@@ -1480,52 +1351,47 @@ class ImportVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ImportVariantsRequest& default_instance();
 
-  static inline const ImportVariantsRequest* internal_default_instance() {
-    return reinterpret_cast<const ImportVariantsRequest*>(
-               &_ImportVariantsRequest_default_instance_);
-  }
+  static const ImportVariantsRequest* internal_default_instance();
 
   void UnsafeArenaSwap(ImportVariantsRequest* other);
   void Swap(ImportVariantsRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ImportVariantsRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ImportVariantsRequest* New() const { return New(NULL); }
 
-  ImportVariantsRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ImportVariantsRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ImportVariantsRequest& from);
   void MergeFrom(const ImportVariantsRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ImportVariantsRequest* other);
+  void UnsafeMergeFrom(const ImportVariantsRequest& from);
   protected:
   explicit ImportVariantsRequest(::google::protobuf::Arena* arena);
   private:
@@ -1540,7 +1406,7 @@ class ImportVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1575,7 +1441,7 @@ class ImportVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
 
   // accessors -------------------------------------------------------
 
-  // string variant_set_id = 1;
+  // optional string variant_set_id = 1;
   void clear_variant_set_id();
   static const int kVariantSetIdFieldNumber = 1;
   const ::std::string& variant_set_id() const;
@@ -1605,13 +1471,13 @@ class ImportVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
   const ::google::protobuf::RepeatedPtrField< ::std::string>& source_uris() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_source_uris();
 
-  // .google.genomics.v1.ImportVariantsRequest.Format format = 3;
+  // optional .google.genomics.v1.ImportVariantsRequest.Format format = 3;
   void clear_format();
   static const int kFormatFieldNumber = 3;
   ::google::genomics::v1::ImportVariantsRequest_Format format() const;
   void set_format(::google::genomics::v1::ImportVariantsRequest_Format value);
 
-  // bool normalize_reference_names = 5;
+  // optional bool normalize_reference_names = 5;
   void clear_normalize_reference_names();
   static const int kNormalizeReferenceNamesFieldNumber = 5;
   bool normalize_reference_names() const;
@@ -1651,10 +1517,13 @@ class ImportVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ImportVariantsRequest> ImportVariantsRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ImportVariantsResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.ImportVariantsResponse) */ {
@@ -1669,52 +1538,47 @@ class ImportVariantsResponse : public ::google::protobuf::Message /* @@protoc_in
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ImportVariantsResponse& default_instance();
 
-  static inline const ImportVariantsResponse* internal_default_instance() {
-    return reinterpret_cast<const ImportVariantsResponse*>(
-               &_ImportVariantsResponse_default_instance_);
-  }
+  static const ImportVariantsResponse* internal_default_instance();
 
   void UnsafeArenaSwap(ImportVariantsResponse* other);
   void Swap(ImportVariantsResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ImportVariantsResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ImportVariantsResponse* New() const { return New(NULL); }
 
-  ImportVariantsResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ImportVariantsResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ImportVariantsResponse& from);
   void MergeFrom(const ImportVariantsResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ImportVariantsResponse* other);
+  void UnsafeMergeFrom(const ImportVariantsResponse& from);
   protected:
   explicit ImportVariantsResponse(::google::protobuf::Arena* arena);
   private:
@@ -1729,7 +1593,7 @@ class ImportVariantsResponse : public ::google::protobuf::Message /* @@protoc_in
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1762,10 +1626,13 @@ class ImportVariantsResponse : public ::google::protobuf::Message /* @@protoc_in
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ImportVariantsResponse> ImportVariantsResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class CreateVariantSetRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.CreateVariantSetRequest) */ {
@@ -1780,52 +1647,47 @@ class CreateVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const CreateVariantSetRequest& default_instance();
 
-  static inline const CreateVariantSetRequest* internal_default_instance() {
-    return reinterpret_cast<const CreateVariantSetRequest*>(
-               &_CreateVariantSetRequest_default_instance_);
-  }
+  static const CreateVariantSetRequest* internal_default_instance();
 
   void UnsafeArenaSwap(CreateVariantSetRequest* other);
   void Swap(CreateVariantSetRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline CreateVariantSetRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline CreateVariantSetRequest* New() const { return New(NULL); }
 
-  CreateVariantSetRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CreateVariantSetRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const CreateVariantSetRequest& from);
   void MergeFrom(const CreateVariantSetRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(CreateVariantSetRequest* other);
+  void UnsafeMergeFrom(const CreateVariantSetRequest& from);
   protected:
   explicit CreateVariantSetRequest(::google::protobuf::Arena* arena);
   private:
@@ -1840,13 +1702,13 @@ class CreateVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.genomics.v1.VariantSet variant_set = 1;
+  // optional .google.genomics.v1.VariantSet variant_set = 1;
   bool has_variant_set() const;
   void clear_variant_set();
   static const int kVariantSetFieldNumber = 1;
@@ -1875,10 +1737,13 @@ class CreateVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<CreateVariantSetRequest> CreateVariantSetRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ExportVariantSetRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.ExportVariantSetRequest) */ {
@@ -1893,52 +1758,47 @@ class ExportVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ExportVariantSetRequest& default_instance();
 
-  static inline const ExportVariantSetRequest* internal_default_instance() {
-    return reinterpret_cast<const ExportVariantSetRequest*>(
-               &_ExportVariantSetRequest_default_instance_);
-  }
+  static const ExportVariantSetRequest* internal_default_instance();
 
   void UnsafeArenaSwap(ExportVariantSetRequest* other);
   void Swap(ExportVariantSetRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ExportVariantSetRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ExportVariantSetRequest* New() const { return New(NULL); }
 
-  ExportVariantSetRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ExportVariantSetRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ExportVariantSetRequest& from);
   void MergeFrom(const ExportVariantSetRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ExportVariantSetRequest* other);
+  void UnsafeMergeFrom(const ExportVariantSetRequest& from);
   protected:
   explicit ExportVariantSetRequest(::google::protobuf::Arena* arena);
   private:
@@ -1953,7 +1813,7 @@ class ExportVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1985,7 +1845,7 @@ class ExportVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
 
   // accessors -------------------------------------------------------
 
-  // string variant_set_id = 1;
+  // optional string variant_set_id = 1;
   void clear_variant_set_id();
   static const int kVariantSetIdFieldNumber = 1;
   const ::std::string& variant_set_id() const;
@@ -2015,7 +1875,7 @@ class ExportVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
   const ::google::protobuf::RepeatedPtrField< ::std::string>& call_set_ids() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_call_set_ids();
 
-  // string project_id = 3;
+  // optional string project_id = 3;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 3;
   const ::std::string& project_id() const;
@@ -2029,13 +1889,13 @@ class ExportVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
   void unsafe_arena_set_allocated_project_id(
       ::std::string* project_id);
 
-  // .google.genomics.v1.ExportVariantSetRequest.Format format = 4;
+  // optional .google.genomics.v1.ExportVariantSetRequest.Format format = 4;
   void clear_format();
   static const int kFormatFieldNumber = 4;
   ::google::genomics::v1::ExportVariantSetRequest_Format format() const;
   void set_format(::google::genomics::v1::ExportVariantSetRequest_Format value);
 
-  // string bigquery_dataset = 5;
+  // optional string bigquery_dataset = 5;
   void clear_bigquery_dataset();
   static const int kBigqueryDatasetFieldNumber = 5;
   const ::std::string& bigquery_dataset() const;
@@ -2049,7 +1909,7 @@ class ExportVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
   void unsafe_arena_set_allocated_bigquery_dataset(
       ::std::string* bigquery_dataset);
 
-  // string bigquery_table = 6;
+  // optional string bigquery_table = 6;
   void clear_bigquery_table();
   static const int kBigqueryTableFieldNumber = 6;
   const ::std::string& bigquery_table() const;
@@ -2079,10 +1939,13 @@ class ExportVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ExportVariantSetRequest> ExportVariantSetRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetVariantSetRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.GetVariantSetRequest) */ {
@@ -2097,52 +1960,47 @@ class GetVariantSetRequest : public ::google::protobuf::Message /* @@protoc_inse
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetVariantSetRequest& default_instance();
 
-  static inline const GetVariantSetRequest* internal_default_instance() {
-    return reinterpret_cast<const GetVariantSetRequest*>(
-               &_GetVariantSetRequest_default_instance_);
-  }
+  static const GetVariantSetRequest* internal_default_instance();
 
   void UnsafeArenaSwap(GetVariantSetRequest* other);
   void Swap(GetVariantSetRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetVariantSetRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetVariantSetRequest* New() const { return New(NULL); }
 
-  GetVariantSetRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetVariantSetRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetVariantSetRequest& from);
   void MergeFrom(const GetVariantSetRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetVariantSetRequest* other);
+  void UnsafeMergeFrom(const GetVariantSetRequest& from);
   protected:
   explicit GetVariantSetRequest(::google::protobuf::Arena* arena);
   private:
@@ -2157,13 +2015,13 @@ class GetVariantSetRequest : public ::google::protobuf::Message /* @@protoc_inse
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string variant_set_id = 1;
+  // optional string variant_set_id = 1;
   void clear_variant_set_id();
   static const int kVariantSetIdFieldNumber = 1;
   const ::std::string& variant_set_id() const;
@@ -2188,10 +2046,13 @@ class GetVariantSetRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetVariantSetRequest> GetVariantSetRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class SearchVariantSetsRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.SearchVariantSetsRequest) */ {
@@ -2206,52 +2067,47 @@ class SearchVariantSetsRequest : public ::google::protobuf::Message /* @@protoc_
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const SearchVariantSetsRequest& default_instance();
 
-  static inline const SearchVariantSetsRequest* internal_default_instance() {
-    return reinterpret_cast<const SearchVariantSetsRequest*>(
-               &_SearchVariantSetsRequest_default_instance_);
-  }
+  static const SearchVariantSetsRequest* internal_default_instance();
 
   void UnsafeArenaSwap(SearchVariantSetsRequest* other);
   void Swap(SearchVariantSetsRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline SearchVariantSetsRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline SearchVariantSetsRequest* New() const { return New(NULL); }
 
-  SearchVariantSetsRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  SearchVariantSetsRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const SearchVariantSetsRequest& from);
   void MergeFrom(const SearchVariantSetsRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(SearchVariantSetsRequest* other);
+  void UnsafeMergeFrom(const SearchVariantSetsRequest& from);
   protected:
   explicit SearchVariantSetsRequest(::google::protobuf::Arena* arena);
   private:
@@ -2266,7 +2122,7 @@ class SearchVariantSetsRequest : public ::google::protobuf::Message /* @@protoc_
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -2288,7 +2144,7 @@ class SearchVariantSetsRequest : public ::google::protobuf::Message /* @@protoc_
   const ::google::protobuf::RepeatedPtrField< ::std::string>& dataset_ids() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_dataset_ids();
 
-  // string page_token = 2;
+  // optional string page_token = 2;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 2;
   const ::std::string& page_token() const;
@@ -2302,7 +2158,7 @@ class SearchVariantSetsRequest : public ::google::protobuf::Message /* @@protoc_
   void unsafe_arena_set_allocated_page_token(
       ::std::string* page_token);
 
-  // int32 page_size = 3;
+  // optional int32 page_size = 3;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 3;
   ::google::protobuf::int32 page_size() const;
@@ -2321,10 +2177,13 @@ class SearchVariantSetsRequest : public ::google::protobuf::Message /* @@protoc_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<SearchVariantSetsRequest> SearchVariantSetsRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class SearchVariantSetsResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.SearchVariantSetsResponse) */ {
@@ -2339,52 +2198,47 @@ class SearchVariantSetsResponse : public ::google::protobuf::Message /* @@protoc
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const SearchVariantSetsResponse& default_instance();
 
-  static inline const SearchVariantSetsResponse* internal_default_instance() {
-    return reinterpret_cast<const SearchVariantSetsResponse*>(
-               &_SearchVariantSetsResponse_default_instance_);
-  }
+  static const SearchVariantSetsResponse* internal_default_instance();
 
   void UnsafeArenaSwap(SearchVariantSetsResponse* other);
   void Swap(SearchVariantSetsResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline SearchVariantSetsResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline SearchVariantSetsResponse* New() const { return New(NULL); }
 
-  SearchVariantSetsResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  SearchVariantSetsResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const SearchVariantSetsResponse& from);
   void MergeFrom(const SearchVariantSetsResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(SearchVariantSetsResponse* other);
+  void UnsafeMergeFrom(const SearchVariantSetsResponse& from);
   protected:
   explicit SearchVariantSetsResponse(::google::protobuf::Arena* arena);
   private:
@@ -2399,7 +2253,7 @@ class SearchVariantSetsResponse : public ::google::protobuf::Message /* @@protoc
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -2417,7 +2271,7 @@ class SearchVariantSetsResponse : public ::google::protobuf::Message /* @@protoc
   const ::google::protobuf::RepeatedPtrField< ::google::genomics::v1::VariantSet >&
       variant_sets() const;
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -2443,10 +2297,13 @@ class SearchVariantSetsResponse : public ::google::protobuf::Message /* @@protoc
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<SearchVariantSetsResponse> SearchVariantSetsResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class DeleteVariantSetRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.DeleteVariantSetRequest) */ {
@@ -2461,52 +2318,47 @@ class DeleteVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const DeleteVariantSetRequest& default_instance();
 
-  static inline const DeleteVariantSetRequest* internal_default_instance() {
-    return reinterpret_cast<const DeleteVariantSetRequest*>(
-               &_DeleteVariantSetRequest_default_instance_);
-  }
+  static const DeleteVariantSetRequest* internal_default_instance();
 
   void UnsafeArenaSwap(DeleteVariantSetRequest* other);
   void Swap(DeleteVariantSetRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline DeleteVariantSetRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline DeleteVariantSetRequest* New() const { return New(NULL); }
 
-  DeleteVariantSetRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DeleteVariantSetRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const DeleteVariantSetRequest& from);
   void MergeFrom(const DeleteVariantSetRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(DeleteVariantSetRequest* other);
+  void UnsafeMergeFrom(const DeleteVariantSetRequest& from);
   protected:
   explicit DeleteVariantSetRequest(::google::protobuf::Arena* arena);
   private:
@@ -2521,13 +2373,13 @@ class DeleteVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string variant_set_id = 1;
+  // optional string variant_set_id = 1;
   void clear_variant_set_id();
   static const int kVariantSetIdFieldNumber = 1;
   const ::std::string& variant_set_id() const;
@@ -2552,10 +2404,13 @@ class DeleteVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<DeleteVariantSetRequest> DeleteVariantSetRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class UpdateVariantSetRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.UpdateVariantSetRequest) */ {
@@ -2570,52 +2425,47 @@ class UpdateVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const UpdateVariantSetRequest& default_instance();
 
-  static inline const UpdateVariantSetRequest* internal_default_instance() {
-    return reinterpret_cast<const UpdateVariantSetRequest*>(
-               &_UpdateVariantSetRequest_default_instance_);
-  }
+  static const UpdateVariantSetRequest* internal_default_instance();
 
   void UnsafeArenaSwap(UpdateVariantSetRequest* other);
   void Swap(UpdateVariantSetRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline UpdateVariantSetRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline UpdateVariantSetRequest* New() const { return New(NULL); }
 
-  UpdateVariantSetRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  UpdateVariantSetRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const UpdateVariantSetRequest& from);
   void MergeFrom(const UpdateVariantSetRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(UpdateVariantSetRequest* other);
+  void UnsafeMergeFrom(const UpdateVariantSetRequest& from);
   protected:
   explicit UpdateVariantSetRequest(::google::protobuf::Arena* arena);
   private:
@@ -2630,13 +2480,13 @@ class UpdateVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string variant_set_id = 1;
+  // optional string variant_set_id = 1;
   void clear_variant_set_id();
   static const int kVariantSetIdFieldNumber = 1;
   const ::std::string& variant_set_id() const;
@@ -2650,7 +2500,7 @@ class UpdateVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
   void unsafe_arena_set_allocated_variant_set_id(
       ::std::string* variant_set_id);
 
-  // .google.genomics.v1.VariantSet variant_set = 2;
+  // optional .google.genomics.v1.VariantSet variant_set = 2;
   bool has_variant_set() const;
   void clear_variant_set();
   static const int kVariantSetFieldNumber = 2;
@@ -2668,7 +2518,7 @@ class UpdateVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
   void unsafe_arena_set_allocated_variant_set(
       ::google::genomics::v1::VariantSet* variant_set);
 
-  // .google.protobuf.FieldMask update_mask = 5;
+  // optional .google.protobuf.FieldMask update_mask = 5;
   bool has_update_mask() const;
   void clear_update_mask();
   static const int kUpdateMaskFieldNumber = 5;
@@ -2697,10 +2547,13 @@ class UpdateVariantSetRequest : public ::google::protobuf::Message /* @@protoc_i
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<UpdateVariantSetRequest> UpdateVariantSetRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class SearchVariantsRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.SearchVariantsRequest) */ {
@@ -2715,52 +2568,47 @@ class SearchVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const SearchVariantsRequest& default_instance();
 
-  static inline const SearchVariantsRequest* internal_default_instance() {
-    return reinterpret_cast<const SearchVariantsRequest*>(
-               &_SearchVariantsRequest_default_instance_);
-  }
+  static const SearchVariantsRequest* internal_default_instance();
 
   void UnsafeArenaSwap(SearchVariantsRequest* other);
   void Swap(SearchVariantsRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline SearchVariantsRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline SearchVariantsRequest* New() const { return New(NULL); }
 
-  SearchVariantsRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  SearchVariantsRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const SearchVariantsRequest& from);
   void MergeFrom(const SearchVariantsRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(SearchVariantsRequest* other);
+  void UnsafeMergeFrom(const SearchVariantsRequest& from);
   protected:
   explicit SearchVariantsRequest(::google::protobuf::Arena* arena);
   private:
@@ -2775,7 +2623,7 @@ class SearchVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -2797,7 +2645,7 @@ class SearchVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
   const ::google::protobuf::RepeatedPtrField< ::std::string>& variant_set_ids() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_variant_set_ids();
 
-  // string variant_name = 2;
+  // optional string variant_name = 2;
   void clear_variant_name();
   static const int kVariantNameFieldNumber = 2;
   const ::std::string& variant_name() const;
@@ -2827,7 +2675,7 @@ class SearchVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
   const ::google::protobuf::RepeatedPtrField< ::std::string>& call_set_ids() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_call_set_ids();
 
-  // string reference_name = 4;
+  // optional string reference_name = 4;
   void clear_reference_name();
   static const int kReferenceNameFieldNumber = 4;
   const ::std::string& reference_name() const;
@@ -2841,19 +2689,19 @@ class SearchVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
   void unsafe_arena_set_allocated_reference_name(
       ::std::string* reference_name);
 
-  // int64 start = 5;
+  // optional int64 start = 5;
   void clear_start();
   static const int kStartFieldNumber = 5;
   ::google::protobuf::int64 start() const;
   void set_start(::google::protobuf::int64 value);
 
-  // int64 end = 6;
+  // optional int64 end = 6;
   void clear_end();
   static const int kEndFieldNumber = 6;
   ::google::protobuf::int64 end() const;
   void set_end(::google::protobuf::int64 value);
 
-  // string page_token = 7;
+  // optional string page_token = 7;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 7;
   const ::std::string& page_token() const;
@@ -2867,13 +2715,13 @@ class SearchVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
   void unsafe_arena_set_allocated_page_token(
       ::std::string* page_token);
 
-  // int32 page_size = 8;
+  // optional int32 page_size = 8;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 8;
   ::google::protobuf::int32 page_size() const;
   void set_page_size(::google::protobuf::int32 value);
 
-  // int32 max_calls = 9;
+  // optional int32 max_calls = 9;
   void clear_max_calls();
   static const int kMaxCallsFieldNumber = 9;
   ::google::protobuf::int32 max_calls() const;
@@ -2898,10 +2746,13 @@ class SearchVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<SearchVariantsRequest> SearchVariantsRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class SearchVariantsResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.SearchVariantsResponse) */ {
@@ -2916,52 +2767,47 @@ class SearchVariantsResponse : public ::google::protobuf::Message /* @@protoc_in
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const SearchVariantsResponse& default_instance();
 
-  static inline const SearchVariantsResponse* internal_default_instance() {
-    return reinterpret_cast<const SearchVariantsResponse*>(
-               &_SearchVariantsResponse_default_instance_);
-  }
+  static const SearchVariantsResponse* internal_default_instance();
 
   void UnsafeArenaSwap(SearchVariantsResponse* other);
   void Swap(SearchVariantsResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline SearchVariantsResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline SearchVariantsResponse* New() const { return New(NULL); }
 
-  SearchVariantsResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  SearchVariantsResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const SearchVariantsResponse& from);
   void MergeFrom(const SearchVariantsResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(SearchVariantsResponse* other);
+  void UnsafeMergeFrom(const SearchVariantsResponse& from);
   protected:
   explicit SearchVariantsResponse(::google::protobuf::Arena* arena);
   private:
@@ -2976,7 +2822,7 @@ class SearchVariantsResponse : public ::google::protobuf::Message /* @@protoc_in
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -2994,7 +2840,7 @@ class SearchVariantsResponse : public ::google::protobuf::Message /* @@protoc_in
   const ::google::protobuf::RepeatedPtrField< ::google::genomics::v1::Variant >&
       variants() const;
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -3020,10 +2866,13 @@ class SearchVariantsResponse : public ::google::protobuf::Message /* @@protoc_in
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<SearchVariantsResponse> SearchVariantsResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class CreateVariantRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.CreateVariantRequest) */ {
@@ -3038,52 +2887,47 @@ class CreateVariantRequest : public ::google::protobuf::Message /* @@protoc_inse
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const CreateVariantRequest& default_instance();
 
-  static inline const CreateVariantRequest* internal_default_instance() {
-    return reinterpret_cast<const CreateVariantRequest*>(
-               &_CreateVariantRequest_default_instance_);
-  }
+  static const CreateVariantRequest* internal_default_instance();
 
   void UnsafeArenaSwap(CreateVariantRequest* other);
   void Swap(CreateVariantRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline CreateVariantRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline CreateVariantRequest* New() const { return New(NULL); }
 
-  CreateVariantRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CreateVariantRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const CreateVariantRequest& from);
   void MergeFrom(const CreateVariantRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(CreateVariantRequest* other);
+  void UnsafeMergeFrom(const CreateVariantRequest& from);
   protected:
   explicit CreateVariantRequest(::google::protobuf::Arena* arena);
   private:
@@ -3098,13 +2942,13 @@ class CreateVariantRequest : public ::google::protobuf::Message /* @@protoc_inse
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.genomics.v1.Variant variant = 1;
+  // optional .google.genomics.v1.Variant variant = 1;
   bool has_variant() const;
   void clear_variant();
   static const int kVariantFieldNumber = 1;
@@ -3133,10 +2977,13 @@ class CreateVariantRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<CreateVariantRequest> CreateVariantRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class UpdateVariantRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.UpdateVariantRequest) */ {
@@ -3151,52 +2998,47 @@ class UpdateVariantRequest : public ::google::protobuf::Message /* @@protoc_inse
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const UpdateVariantRequest& default_instance();
 
-  static inline const UpdateVariantRequest* internal_default_instance() {
-    return reinterpret_cast<const UpdateVariantRequest*>(
-               &_UpdateVariantRequest_default_instance_);
-  }
+  static const UpdateVariantRequest* internal_default_instance();
 
   void UnsafeArenaSwap(UpdateVariantRequest* other);
   void Swap(UpdateVariantRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline UpdateVariantRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline UpdateVariantRequest* New() const { return New(NULL); }
 
-  UpdateVariantRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  UpdateVariantRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const UpdateVariantRequest& from);
   void MergeFrom(const UpdateVariantRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(UpdateVariantRequest* other);
+  void UnsafeMergeFrom(const UpdateVariantRequest& from);
   protected:
   explicit UpdateVariantRequest(::google::protobuf::Arena* arena);
   private:
@@ -3211,13 +3053,13 @@ class UpdateVariantRequest : public ::google::protobuf::Message /* @@protoc_inse
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string variant_id = 1;
+  // optional string variant_id = 1;
   void clear_variant_id();
   static const int kVariantIdFieldNumber = 1;
   const ::std::string& variant_id() const;
@@ -3231,7 +3073,7 @@ class UpdateVariantRequest : public ::google::protobuf::Message /* @@protoc_inse
   void unsafe_arena_set_allocated_variant_id(
       ::std::string* variant_id);
 
-  // .google.genomics.v1.Variant variant = 2;
+  // optional .google.genomics.v1.Variant variant = 2;
   bool has_variant() const;
   void clear_variant();
   static const int kVariantFieldNumber = 2;
@@ -3249,7 +3091,7 @@ class UpdateVariantRequest : public ::google::protobuf::Message /* @@protoc_inse
   void unsafe_arena_set_allocated_variant(
       ::google::genomics::v1::Variant* variant);
 
-  // .google.protobuf.FieldMask update_mask = 3;
+  // optional .google.protobuf.FieldMask update_mask = 3;
   bool has_update_mask() const;
   void clear_update_mask();
   static const int kUpdateMaskFieldNumber = 3;
@@ -3278,10 +3120,13 @@ class UpdateVariantRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<UpdateVariantRequest> UpdateVariantRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class DeleteVariantRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.DeleteVariantRequest) */ {
@@ -3296,52 +3141,47 @@ class DeleteVariantRequest : public ::google::protobuf::Message /* @@protoc_inse
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const DeleteVariantRequest& default_instance();
 
-  static inline const DeleteVariantRequest* internal_default_instance() {
-    return reinterpret_cast<const DeleteVariantRequest*>(
-               &_DeleteVariantRequest_default_instance_);
-  }
+  static const DeleteVariantRequest* internal_default_instance();
 
   void UnsafeArenaSwap(DeleteVariantRequest* other);
   void Swap(DeleteVariantRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline DeleteVariantRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline DeleteVariantRequest* New() const { return New(NULL); }
 
-  DeleteVariantRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DeleteVariantRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const DeleteVariantRequest& from);
   void MergeFrom(const DeleteVariantRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(DeleteVariantRequest* other);
+  void UnsafeMergeFrom(const DeleteVariantRequest& from);
   protected:
   explicit DeleteVariantRequest(::google::protobuf::Arena* arena);
   private:
@@ -3356,13 +3196,13 @@ class DeleteVariantRequest : public ::google::protobuf::Message /* @@protoc_inse
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string variant_id = 1;
+  // optional string variant_id = 1;
   void clear_variant_id();
   static const int kVariantIdFieldNumber = 1;
   const ::std::string& variant_id() const;
@@ -3387,10 +3227,13 @@ class DeleteVariantRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<DeleteVariantRequest> DeleteVariantRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetVariantRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.GetVariantRequest) */ {
@@ -3405,52 +3248,47 @@ class GetVariantRequest : public ::google::protobuf::Message /* @@protoc_inserti
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetVariantRequest& default_instance();
 
-  static inline const GetVariantRequest* internal_default_instance() {
-    return reinterpret_cast<const GetVariantRequest*>(
-               &_GetVariantRequest_default_instance_);
-  }
+  static const GetVariantRequest* internal_default_instance();
 
   void UnsafeArenaSwap(GetVariantRequest* other);
   void Swap(GetVariantRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetVariantRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetVariantRequest* New() const { return New(NULL); }
 
-  GetVariantRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetVariantRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetVariantRequest& from);
   void MergeFrom(const GetVariantRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetVariantRequest* other);
+  void UnsafeMergeFrom(const GetVariantRequest& from);
   protected:
   explicit GetVariantRequest(::google::protobuf::Arena* arena);
   private:
@@ -3465,13 +3303,13 @@ class GetVariantRequest : public ::google::protobuf::Message /* @@protoc_inserti
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string variant_id = 1;
+  // optional string variant_id = 1;
   void clear_variant_id();
   static const int kVariantIdFieldNumber = 1;
   const ::std::string& variant_id() const;
@@ -3496,12 +3334,12 @@ class GetVariantRequest : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
-// -------------------------------------------------------------------
-
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetVariantRequest> GetVariantRequest_default_instance_;
 
 // -------------------------------------------------------------------
 
@@ -3517,52 +3355,47 @@ class MergeVariantsRequest : public ::google::protobuf::Message /* @@protoc_inse
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const MergeVariantsRequest& default_instance();
 
-  static inline const MergeVariantsRequest* internal_default_instance() {
-    return reinterpret_cast<const MergeVariantsRequest*>(
-               &_MergeVariantsRequest_default_instance_);
-  }
+  static const MergeVariantsRequest* internal_default_instance();
 
   void UnsafeArenaSwap(MergeVariantsRequest* other);
   void Swap(MergeVariantsRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline MergeVariantsRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline MergeVariantsRequest* New() const { return New(NULL); }
 
-  MergeVariantsRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  MergeVariantsRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const MergeVariantsRequest& from);
   void MergeFrom(const MergeVariantsRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(MergeVariantsRequest* other);
+  void UnsafeMergeFrom(const MergeVariantsRequest& from);
   protected:
   explicit MergeVariantsRequest(::google::protobuf::Arena* arena);
   private:
@@ -3577,14 +3410,14 @@ class MergeVariantsRequest : public ::google::protobuf::Message /* @@protoc_inse
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
 
   // accessors -------------------------------------------------------
 
-  // string variant_set_id = 1;
+  // optional string variant_set_id = 1;
   void clear_variant_set_id();
   static const int kVariantSetIdFieldNumber = 1;
   const ::std::string& variant_set_id() const;
@@ -3642,10 +3475,13 @@ class MergeVariantsRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<MergeVariantsRequest> MergeVariantsRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class SearchCallSetsRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.SearchCallSetsRequest) */ {
@@ -3660,52 +3496,47 @@ class SearchCallSetsRequest : public ::google::protobuf::Message /* @@protoc_ins
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const SearchCallSetsRequest& default_instance();
 
-  static inline const SearchCallSetsRequest* internal_default_instance() {
-    return reinterpret_cast<const SearchCallSetsRequest*>(
-               &_SearchCallSetsRequest_default_instance_);
-  }
+  static const SearchCallSetsRequest* internal_default_instance();
 
   void UnsafeArenaSwap(SearchCallSetsRequest* other);
   void Swap(SearchCallSetsRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline SearchCallSetsRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline SearchCallSetsRequest* New() const { return New(NULL); }
 
-  SearchCallSetsRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  SearchCallSetsRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const SearchCallSetsRequest& from);
   void MergeFrom(const SearchCallSetsRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(SearchCallSetsRequest* other);
+  void UnsafeMergeFrom(const SearchCallSetsRequest& from);
   protected:
   explicit SearchCallSetsRequest(::google::protobuf::Arena* arena);
   private:
@@ -3720,7 +3551,7 @@ class SearchCallSetsRequest : public ::google::protobuf::Message /* @@protoc_ins
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -3742,7 +3573,7 @@ class SearchCallSetsRequest : public ::google::protobuf::Message /* @@protoc_ins
   const ::google::protobuf::RepeatedPtrField< ::std::string>& variant_set_ids() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_variant_set_ids();
 
-  // string name = 2;
+  // optional string name = 2;
   void clear_name();
   static const int kNameFieldNumber = 2;
   const ::std::string& name() const;
@@ -3756,7 +3587,7 @@ class SearchCallSetsRequest : public ::google::protobuf::Message /* @@protoc_ins
   void unsafe_arena_set_allocated_name(
       ::std::string* name);
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 3;
   const ::std::string& page_token() const;
@@ -3770,7 +3601,7 @@ class SearchCallSetsRequest : public ::google::protobuf::Message /* @@protoc_ins
   void unsafe_arena_set_allocated_page_token(
       ::std::string* page_token);
 
-  // int32 page_size = 4;
+  // optional int32 page_size = 4;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 4;
   ::google::protobuf::int32 page_size() const;
@@ -3790,10 +3621,13 @@ class SearchCallSetsRequest : public ::google::protobuf::Message /* @@protoc_ins
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<SearchCallSetsRequest> SearchCallSetsRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class SearchCallSetsResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.SearchCallSetsResponse) */ {
@@ -3808,52 +3642,47 @@ class SearchCallSetsResponse : public ::google::protobuf::Message /* @@protoc_in
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const SearchCallSetsResponse& default_instance();
 
-  static inline const SearchCallSetsResponse* internal_default_instance() {
-    return reinterpret_cast<const SearchCallSetsResponse*>(
-               &_SearchCallSetsResponse_default_instance_);
-  }
+  static const SearchCallSetsResponse* internal_default_instance();
 
   void UnsafeArenaSwap(SearchCallSetsResponse* other);
   void Swap(SearchCallSetsResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline SearchCallSetsResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline SearchCallSetsResponse* New() const { return New(NULL); }
 
-  SearchCallSetsResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  SearchCallSetsResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const SearchCallSetsResponse& from);
   void MergeFrom(const SearchCallSetsResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(SearchCallSetsResponse* other);
+  void UnsafeMergeFrom(const SearchCallSetsResponse& from);
   protected:
   explicit SearchCallSetsResponse(::google::protobuf::Arena* arena);
   private:
@@ -3868,7 +3697,7 @@ class SearchCallSetsResponse : public ::google::protobuf::Message /* @@protoc_in
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -3886,7 +3715,7 @@ class SearchCallSetsResponse : public ::google::protobuf::Message /* @@protoc_in
   const ::google::protobuf::RepeatedPtrField< ::google::genomics::v1::CallSet >&
       call_sets() const;
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -3912,10 +3741,13 @@ class SearchCallSetsResponse : public ::google::protobuf::Message /* @@protoc_in
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<SearchCallSetsResponse> SearchCallSetsResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class CreateCallSetRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.CreateCallSetRequest) */ {
@@ -3930,52 +3762,47 @@ class CreateCallSetRequest : public ::google::protobuf::Message /* @@protoc_inse
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const CreateCallSetRequest& default_instance();
 
-  static inline const CreateCallSetRequest* internal_default_instance() {
-    return reinterpret_cast<const CreateCallSetRequest*>(
-               &_CreateCallSetRequest_default_instance_);
-  }
+  static const CreateCallSetRequest* internal_default_instance();
 
   void UnsafeArenaSwap(CreateCallSetRequest* other);
   void Swap(CreateCallSetRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline CreateCallSetRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline CreateCallSetRequest* New() const { return New(NULL); }
 
-  CreateCallSetRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CreateCallSetRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const CreateCallSetRequest& from);
   void MergeFrom(const CreateCallSetRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(CreateCallSetRequest* other);
+  void UnsafeMergeFrom(const CreateCallSetRequest& from);
   protected:
   explicit CreateCallSetRequest(::google::protobuf::Arena* arena);
   private:
@@ -3990,13 +3817,13 @@ class CreateCallSetRequest : public ::google::protobuf::Message /* @@protoc_inse
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.genomics.v1.CallSet call_set = 1;
+  // optional .google.genomics.v1.CallSet call_set = 1;
   bool has_call_set() const;
   void clear_call_set();
   static const int kCallSetFieldNumber = 1;
@@ -4025,10 +3852,13 @@ class CreateCallSetRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<CreateCallSetRequest> CreateCallSetRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class UpdateCallSetRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.UpdateCallSetRequest) */ {
@@ -4043,52 +3873,47 @@ class UpdateCallSetRequest : public ::google::protobuf::Message /* @@protoc_inse
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const UpdateCallSetRequest& default_instance();
 
-  static inline const UpdateCallSetRequest* internal_default_instance() {
-    return reinterpret_cast<const UpdateCallSetRequest*>(
-               &_UpdateCallSetRequest_default_instance_);
-  }
+  static const UpdateCallSetRequest* internal_default_instance();
 
   void UnsafeArenaSwap(UpdateCallSetRequest* other);
   void Swap(UpdateCallSetRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline UpdateCallSetRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline UpdateCallSetRequest* New() const { return New(NULL); }
 
-  UpdateCallSetRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  UpdateCallSetRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const UpdateCallSetRequest& from);
   void MergeFrom(const UpdateCallSetRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(UpdateCallSetRequest* other);
+  void UnsafeMergeFrom(const UpdateCallSetRequest& from);
   protected:
   explicit UpdateCallSetRequest(::google::protobuf::Arena* arena);
   private:
@@ -4103,13 +3928,13 @@ class UpdateCallSetRequest : public ::google::protobuf::Message /* @@protoc_inse
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string call_set_id = 1;
+  // optional string call_set_id = 1;
   void clear_call_set_id();
   static const int kCallSetIdFieldNumber = 1;
   const ::std::string& call_set_id() const;
@@ -4123,7 +3948,7 @@ class UpdateCallSetRequest : public ::google::protobuf::Message /* @@protoc_inse
   void unsafe_arena_set_allocated_call_set_id(
       ::std::string* call_set_id);
 
-  // .google.genomics.v1.CallSet call_set = 2;
+  // optional .google.genomics.v1.CallSet call_set = 2;
   bool has_call_set() const;
   void clear_call_set();
   static const int kCallSetFieldNumber = 2;
@@ -4141,7 +3966,7 @@ class UpdateCallSetRequest : public ::google::protobuf::Message /* @@protoc_inse
   void unsafe_arena_set_allocated_call_set(
       ::google::genomics::v1::CallSet* call_set);
 
-  // .google.protobuf.FieldMask update_mask = 3;
+  // optional .google.protobuf.FieldMask update_mask = 3;
   bool has_update_mask() const;
   void clear_update_mask();
   static const int kUpdateMaskFieldNumber = 3;
@@ -4170,10 +3995,13 @@ class UpdateCallSetRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<UpdateCallSetRequest> UpdateCallSetRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class DeleteCallSetRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.DeleteCallSetRequest) */ {
@@ -4188,52 +4016,47 @@ class DeleteCallSetRequest : public ::google::protobuf::Message /* @@protoc_inse
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const DeleteCallSetRequest& default_instance();
 
-  static inline const DeleteCallSetRequest* internal_default_instance() {
-    return reinterpret_cast<const DeleteCallSetRequest*>(
-               &_DeleteCallSetRequest_default_instance_);
-  }
+  static const DeleteCallSetRequest* internal_default_instance();
 
   void UnsafeArenaSwap(DeleteCallSetRequest* other);
   void Swap(DeleteCallSetRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline DeleteCallSetRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline DeleteCallSetRequest* New() const { return New(NULL); }
 
-  DeleteCallSetRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DeleteCallSetRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const DeleteCallSetRequest& from);
   void MergeFrom(const DeleteCallSetRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(DeleteCallSetRequest* other);
+  void UnsafeMergeFrom(const DeleteCallSetRequest& from);
   protected:
   explicit DeleteCallSetRequest(::google::protobuf::Arena* arena);
   private:
@@ -4248,13 +4071,13 @@ class DeleteCallSetRequest : public ::google::protobuf::Message /* @@protoc_inse
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string call_set_id = 1;
+  // optional string call_set_id = 1;
   void clear_call_set_id();
   static const int kCallSetIdFieldNumber = 1;
   const ::std::string& call_set_id() const;
@@ -4279,10 +4102,13 @@ class DeleteCallSetRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<DeleteCallSetRequest> DeleteCallSetRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetCallSetRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.GetCallSetRequest) */ {
@@ -4297,52 +4123,47 @@ class GetCallSetRequest : public ::google::protobuf::Message /* @@protoc_inserti
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetCallSetRequest& default_instance();
 
-  static inline const GetCallSetRequest* internal_default_instance() {
-    return reinterpret_cast<const GetCallSetRequest*>(
-               &_GetCallSetRequest_default_instance_);
-  }
+  static const GetCallSetRequest* internal_default_instance();
 
   void UnsafeArenaSwap(GetCallSetRequest* other);
   void Swap(GetCallSetRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetCallSetRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetCallSetRequest* New() const { return New(NULL); }
 
-  GetCallSetRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetCallSetRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetCallSetRequest& from);
   void MergeFrom(const GetCallSetRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetCallSetRequest* other);
+  void UnsafeMergeFrom(const GetCallSetRequest& from);
   protected:
   explicit GetCallSetRequest(::google::protobuf::Arena* arena);
   private:
@@ -4357,13 +4178,13 @@ class GetCallSetRequest : public ::google::protobuf::Message /* @@protoc_inserti
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string call_set_id = 1;
+  // optional string call_set_id = 1;
   void clear_call_set_id();
   static const int kCallSetIdFieldNumber = 1;
   const ::std::string& call_set_id() const;
@@ -4388,10 +4209,13 @@ class GetCallSetRequest : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetCallSetRequest> GetCallSetRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class StreamVariantsRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.StreamVariantsRequest) */ {
@@ -4406,52 +4230,47 @@ class StreamVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const StreamVariantsRequest& default_instance();
 
-  static inline const StreamVariantsRequest* internal_default_instance() {
-    return reinterpret_cast<const StreamVariantsRequest*>(
-               &_StreamVariantsRequest_default_instance_);
-  }
+  static const StreamVariantsRequest* internal_default_instance();
 
   void UnsafeArenaSwap(StreamVariantsRequest* other);
   void Swap(StreamVariantsRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline StreamVariantsRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline StreamVariantsRequest* New() const { return New(NULL); }
 
-  StreamVariantsRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  StreamVariantsRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const StreamVariantsRequest& from);
   void MergeFrom(const StreamVariantsRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(StreamVariantsRequest* other);
+  void UnsafeMergeFrom(const StreamVariantsRequest& from);
   protected:
   explicit StreamVariantsRequest(::google::protobuf::Arena* arena);
   private:
@@ -4466,13 +4285,13 @@ class StreamVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 1;
   const ::std::string& project_id() const;
@@ -4486,7 +4305,7 @@ class StreamVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
   void unsafe_arena_set_allocated_project_id(
       ::std::string* project_id);
 
-  // string variant_set_id = 2;
+  // optional string variant_set_id = 2;
   void clear_variant_set_id();
   static const int kVariantSetIdFieldNumber = 2;
   const ::std::string& variant_set_id() const;
@@ -4516,7 +4335,7 @@ class StreamVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
   const ::google::protobuf::RepeatedPtrField< ::std::string>& call_set_ids() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_call_set_ids();
 
-  // string reference_name = 4;
+  // optional string reference_name = 4;
   void clear_reference_name();
   static const int kReferenceNameFieldNumber = 4;
   const ::std::string& reference_name() const;
@@ -4530,13 +4349,13 @@ class StreamVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
   void unsafe_arena_set_allocated_reference_name(
       ::std::string* reference_name);
 
-  // int64 start = 5;
+  // optional int64 start = 5;
   void clear_start();
   static const int kStartFieldNumber = 5;
   ::google::protobuf::int64 start() const;
   void set_start(::google::protobuf::int64 value);
 
-  // int64 end = 6;
+  // optional int64 end = 6;
   void clear_end();
   static const int kEndFieldNumber = 6;
   ::google::protobuf::int64 end() const;
@@ -4558,10 +4377,13 @@ class StreamVariantsRequest : public ::google::protobuf::Message /* @@protoc_ins
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<StreamVariantsRequest> StreamVariantsRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class StreamVariantsResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.StreamVariantsResponse) */ {
@@ -4576,52 +4398,47 @@ class StreamVariantsResponse : public ::google::protobuf::Message /* @@protoc_in
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const StreamVariantsResponse& default_instance();
 
-  static inline const StreamVariantsResponse* internal_default_instance() {
-    return reinterpret_cast<const StreamVariantsResponse*>(
-               &_StreamVariantsResponse_default_instance_);
-  }
+  static const StreamVariantsResponse* internal_default_instance();
 
   void UnsafeArenaSwap(StreamVariantsResponse* other);
   void Swap(StreamVariantsResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline StreamVariantsResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline StreamVariantsResponse* New() const { return New(NULL); }
 
-  StreamVariantsResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  StreamVariantsResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const StreamVariantsResponse& from);
   void MergeFrom(const StreamVariantsResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(StreamVariantsResponse* other);
+  void UnsafeMergeFrom(const StreamVariantsResponse& from);
   protected:
   explicit StreamVariantsResponse(::google::protobuf::Arena* arena);
   private:
@@ -4636,7 +4453,7 @@ class StreamVariantsResponse : public ::google::protobuf::Message /* @@protoc_in
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -4665,27 +4482,28 @@ class StreamVariantsResponse : public ::google::protobuf::Message /* @@protoc_in
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fvariants_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fvariants_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fvariants_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fvariants_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<StreamVariantsResponse> StreamVariantsResponse_default_instance_;
+
 // ===================================================================
 
 
 // ===================================================================
 
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // VariantSetMetadata
 
-// string key = 1;
+// optional string key = 1;
 inline void VariantSetMetadata::clear_key() {
   key_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& VariantSetMetadata::key() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.VariantSetMetadata.key)
-  return key_.Get();
+  return key_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void VariantSetMetadata::set_key(const ::std::string& value) {
   
@@ -4745,13 +4563,13 @@ inline void VariantSetMetadata::unsafe_arena_set_allocated_key(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.VariantSetMetadata.key)
 }
 
-// string value = 2;
+// optional string value = 2;
 inline void VariantSetMetadata::clear_value() {
   value_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& VariantSetMetadata::value() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.VariantSetMetadata.value)
-  return value_.Get();
+  return value_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void VariantSetMetadata::set_value(const ::std::string& value) {
   
@@ -4811,13 +4629,13 @@ inline void VariantSetMetadata::unsafe_arena_set_allocated_value(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.VariantSetMetadata.value)
 }
 
-// string id = 4;
+// optional string id = 4;
 inline void VariantSetMetadata::clear_id() {
   id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& VariantSetMetadata::id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.VariantSetMetadata.id)
-  return id_.Get();
+  return id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void VariantSetMetadata::set_id(const ::std::string& value) {
   
@@ -4877,7 +4695,7 @@ inline void VariantSetMetadata::unsafe_arena_set_allocated_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.VariantSetMetadata.id)
 }
 
-// .google.genomics.v1.VariantSetMetadata.Type type = 5;
+// optional .google.genomics.v1.VariantSetMetadata.Type type = 5;
 inline void VariantSetMetadata::clear_type() {
   type_ = 0;
 }
@@ -4891,13 +4709,13 @@ inline void VariantSetMetadata::set_type(::google::genomics::v1::VariantSetMetad
   // @@protoc_insertion_point(field_set:google.genomics.v1.VariantSetMetadata.type)
 }
 
-// string number = 8;
+// optional string number = 8;
 inline void VariantSetMetadata::clear_number() {
   number_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& VariantSetMetadata::number() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.VariantSetMetadata.number)
-  return number_.Get();
+  return number_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void VariantSetMetadata::set_number(const ::std::string& value) {
   
@@ -4957,13 +4775,13 @@ inline void VariantSetMetadata::unsafe_arena_set_allocated_number(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.VariantSetMetadata.number)
 }
 
-// string description = 7;
+// optional string description = 7;
 inline void VariantSetMetadata::clear_description() {
   description_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& VariantSetMetadata::description() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.VariantSetMetadata.description)
-  return description_.Get();
+  return description_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void VariantSetMetadata::set_description(const ::std::string& value) {
   
@@ -5041,17 +4859,20 @@ VariantSetMetadata::mutable_info() {
   return info_.MutableMap();
 }
 
+inline const VariantSetMetadata* VariantSetMetadata::internal_default_instance() {
+  return &VariantSetMetadata_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // VariantSet
 
-// string dataset_id = 1;
+// optional string dataset_id = 1;
 inline void VariantSet::clear_dataset_id() {
   dataset_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& VariantSet::dataset_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.VariantSet.dataset_id)
-  return dataset_id_.Get();
+  return dataset_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void VariantSet::set_dataset_id(const ::std::string& value) {
   
@@ -5111,13 +4932,13 @@ inline void VariantSet::unsafe_arena_set_allocated_dataset_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.VariantSet.dataset_id)
 }
 
-// string id = 2;
+// optional string id = 2;
 inline void VariantSet::clear_id() {
   id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& VariantSet::id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.VariantSet.id)
-  return id_.Get();
+  return id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void VariantSet::set_id(const ::std::string& value) {
   
@@ -5177,13 +4998,13 @@ inline void VariantSet::unsafe_arena_set_allocated_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.VariantSet.id)
 }
 
-// string reference_set_id = 6;
+// optional string reference_set_id = 6;
 inline void VariantSet::clear_reference_set_id() {
   reference_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& VariantSet::reference_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.VariantSet.reference_set_id)
-  return reference_set_id_.Get();
+  return reference_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void VariantSet::set_reference_set_id(const ::std::string& value) {
   
@@ -5303,13 +5124,13 @@ VariantSet::metadata() const {
   return metadata_;
 }
 
-// string name = 7;
+// optional string name = 7;
 inline void VariantSet::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& VariantSet::name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.VariantSet.name)
-  return name_.Get();
+  return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void VariantSet::set_name(const ::std::string& value) {
   
@@ -5369,13 +5190,13 @@ inline void VariantSet::unsafe_arena_set_allocated_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.VariantSet.name)
 }
 
-// string description = 8;
+// optional string description = 8;
 inline void VariantSet::clear_description() {
   description_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& VariantSet::description() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.VariantSet.description)
-  return description_.Get();
+  return description_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void VariantSet::set_description(const ::std::string& value) {
   
@@ -5435,19 +5256,20 @@ inline void VariantSet::unsafe_arena_set_allocated_description(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.VariantSet.description)
 }
 
-// -------------------------------------------------------------------
-
+inline const VariantSet* VariantSet::internal_default_instance() {
+  return &VariantSet_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Variant
 
-// string variant_set_id = 15;
+// optional string variant_set_id = 15;
 inline void Variant::clear_variant_set_id() {
   variant_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Variant::variant_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Variant.variant_set_id)
-  return variant_set_id_.Get();
+  return variant_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Variant::set_variant_set_id(const ::std::string& value) {
   
@@ -5507,13 +5329,13 @@ inline void Variant::unsafe_arena_set_allocated_variant_set_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.Variant.variant_set_id)
 }
 
-// string id = 2;
+// optional string id = 2;
 inline void Variant::clear_id() {
   id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Variant::id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Variant.id)
-  return id_.Get();
+  return id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Variant::set_id(const ::std::string& value) {
   
@@ -5628,7 +5450,7 @@ Variant::mutable_names() {
   return &names_;
 }
 
-// int64 created = 12;
+// optional int64 created = 12;
 inline void Variant::clear_created() {
   created_ = GOOGLE_LONGLONG(0);
 }
@@ -5642,13 +5464,13 @@ inline void Variant::set_created(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.Variant.created)
 }
 
-// string reference_name = 14;
+// optional string reference_name = 14;
 inline void Variant::clear_reference_name() {
   reference_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Variant::reference_name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Variant.reference_name)
-  return reference_name_.Get();
+  return reference_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Variant::set_reference_name(const ::std::string& value) {
   
@@ -5708,7 +5530,7 @@ inline void Variant::unsafe_arena_set_allocated_reference_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.Variant.reference_name)
 }
 
-// int64 start = 16;
+// optional int64 start = 16;
 inline void Variant::clear_start() {
   start_ = GOOGLE_LONGLONG(0);
 }
@@ -5722,7 +5544,7 @@ inline void Variant::set_start(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.Variant.start)
 }
 
-// int64 end = 13;
+// optional int64 end = 13;
 inline void Variant::clear_end() {
   end_ = GOOGLE_LONGLONG(0);
 }
@@ -5736,13 +5558,13 @@ inline void Variant::set_end(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.Variant.end)
 }
 
-// string reference_bases = 6;
+// optional string reference_bases = 6;
 inline void Variant::clear_reference_bases() {
   reference_bases_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Variant::reference_bases() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Variant.reference_bases)
-  return reference_bases_.Get();
+  return reference_bases_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Variant::set_reference_bases(const ::std::string& value) {
   
@@ -5857,7 +5679,7 @@ Variant::mutable_alternate_bases() {
   return &alternate_bases_;
 }
 
-// double quality = 8;
+// optional double quality = 8;
 inline void Variant::clear_quality() {
   quality_ = 0;
 }
@@ -5974,19 +5796,20 @@ Variant::calls() const {
   return calls_;
 }
 
-// -------------------------------------------------------------------
-
+inline const Variant* Variant::internal_default_instance() {
+  return &Variant_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // VariantCall
 
-// string call_set_id = 8;
+// optional string call_set_id = 8;
 inline void VariantCall::clear_call_set_id() {
   call_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& VariantCall::call_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.VariantCall.call_set_id)
-  return call_set_id_.Get();
+  return call_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void VariantCall::set_call_set_id(const ::std::string& value) {
   
@@ -6046,13 +5869,13 @@ inline void VariantCall::unsafe_arena_set_allocated_call_set_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.VariantCall.call_set_id)
 }
 
-// string call_set_name = 9;
+// optional string call_set_name = 9;
 inline void VariantCall::clear_call_set_name() {
   call_set_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& VariantCall::call_set_name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.VariantCall.call_set_name)
-  return call_set_name_.Get();
+  return call_set_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void VariantCall::set_call_set_name(const ::std::string& value) {
   
@@ -6142,13 +5965,13 @@ VariantCall::mutable_genotype() {
   return &genotype_;
 }
 
-// string phaseset = 5;
+// optional string phaseset = 5;
 inline void VariantCall::clear_phaseset() {
   phaseset_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& VariantCall::phaseset() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.VariantCall.phaseset)
-  return phaseset_.Get();
+  return phaseset_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void VariantCall::set_phaseset(const ::std::string& value) {
   
@@ -6256,19 +6079,20 @@ VariantCall::mutable_info() {
   return info_.MutableMap();
 }
 
-// -------------------------------------------------------------------
-
+inline const VariantCall* VariantCall::internal_default_instance() {
+  return &VariantCall_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // CallSet
 
-// string id = 1;
+// optional string id = 1;
 inline void CallSet::clear_id() {
   id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& CallSet::id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.CallSet.id)
-  return id_.Get();
+  return id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void CallSet::set_id(const ::std::string& value) {
   
@@ -6328,13 +6152,13 @@ inline void CallSet::unsafe_arena_set_allocated_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.CallSet.id)
 }
 
-// string name = 2;
+// optional string name = 2;
 inline void CallSet::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& CallSet::name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.CallSet.name)
-  return name_.Get();
+  return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void CallSet::set_name(const ::std::string& value) {
   
@@ -6394,13 +6218,13 @@ inline void CallSet::unsafe_arena_set_allocated_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.CallSet.name)
 }
 
-// string sample_id = 7;
+// optional string sample_id = 7;
 inline void CallSet::clear_sample_id() {
   sample_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& CallSet::sample_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.CallSet.sample_id)
-  return sample_id_.Get();
+  return sample_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void CallSet::set_sample_id(const ::std::string& value) {
   
@@ -6515,7 +6339,7 @@ CallSet::mutable_variant_set_ids() {
   return &variant_set_ids_;
 }
 
-// int64 created = 5;
+// optional int64 created = 5;
 inline void CallSet::clear_created() {
   created_ = GOOGLE_LONGLONG(0);
 }
@@ -6547,17 +6371,20 @@ CallSet::mutable_info() {
   return info_.MutableMap();
 }
 
+inline const CallSet* CallSet::internal_default_instance() {
+  return &CallSet_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ReferenceBound
 
-// string reference_name = 1;
+// optional string reference_name = 1;
 inline void ReferenceBound::clear_reference_name() {
   reference_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReferenceBound::reference_name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ReferenceBound.reference_name)
-  return reference_name_.Get();
+  return reference_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReferenceBound::set_reference_name(const ::std::string& value) {
   
@@ -6617,7 +6444,7 @@ inline void ReferenceBound::unsafe_arena_set_allocated_reference_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ReferenceBound.reference_name)
 }
 
-// int64 upper_bound = 2;
+// optional int64 upper_bound = 2;
 inline void ReferenceBound::clear_upper_bound() {
   upper_bound_ = GOOGLE_LONGLONG(0);
 }
@@ -6631,19 +6458,20 @@ inline void ReferenceBound::set_upper_bound(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.ReferenceBound.upper_bound)
 }
 
-// -------------------------------------------------------------------
-
+inline const ReferenceBound* ReferenceBound::internal_default_instance() {
+  return &ReferenceBound_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ImportVariantsRequest
 
-// string variant_set_id = 1;
+// optional string variant_set_id = 1;
 inline void ImportVariantsRequest::clear_variant_set_id() {
   variant_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ImportVariantsRequest::variant_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ImportVariantsRequest.variant_set_id)
-  return variant_set_id_.Get();
+  return variant_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ImportVariantsRequest::set_variant_set_id(const ::std::string& value) {
   
@@ -6758,7 +6586,7 @@ ImportVariantsRequest::mutable_source_uris() {
   return &source_uris_;
 }
 
-// .google.genomics.v1.ImportVariantsRequest.Format format = 3;
+// optional .google.genomics.v1.ImportVariantsRequest.Format format = 3;
 inline void ImportVariantsRequest::clear_format() {
   format_ = 0;
 }
@@ -6772,7 +6600,7 @@ inline void ImportVariantsRequest::set_format(::google::genomics::v1::ImportVari
   // @@protoc_insertion_point(field_set:google.genomics.v1.ImportVariantsRequest.format)
 }
 
-// bool normalize_reference_names = 5;
+// optional bool normalize_reference_names = 5;
 inline void ImportVariantsRequest::clear_normalize_reference_names() {
   normalize_reference_names_ = false;
 }
@@ -6804,6 +6632,9 @@ ImportVariantsRequest::mutable_info_merge_config() {
   return info_merge_config_.MutableMap();
 }
 
+inline const ImportVariantsRequest* ImportVariantsRequest::internal_default_instance() {
+  return &ImportVariantsRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ImportVariantsResponse
@@ -6863,11 +6694,14 @@ ImportVariantsResponse::mutable_call_set_ids() {
   return &call_set_ids_;
 }
 
+inline const ImportVariantsResponse* ImportVariantsResponse::internal_default_instance() {
+  return &ImportVariantsResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // CreateVariantSetRequest
 
-// .google.genomics.v1.VariantSet variant_set = 1;
+// optional .google.genomics.v1.VariantSet variant_set = 1;
 inline bool CreateVariantSetRequest::has_variant_set() const {
   return this != internal_default_instance() && variant_set_ != NULL;
 }
@@ -6916,17 +6750,20 @@ inline  void CreateVariantSetRequest::set_allocated_variant_set(::google::genomi
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.CreateVariantSetRequest.variant_set)
 }
 
+inline const CreateVariantSetRequest* CreateVariantSetRequest::internal_default_instance() {
+  return &CreateVariantSetRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ExportVariantSetRequest
 
-// string variant_set_id = 1;
+// optional string variant_set_id = 1;
 inline void ExportVariantSetRequest::clear_variant_set_id() {
   variant_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ExportVariantSetRequest::variant_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ExportVariantSetRequest.variant_set_id)
-  return variant_set_id_.Get();
+  return variant_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ExportVariantSetRequest::set_variant_set_id(const ::std::string& value) {
   
@@ -7041,13 +6878,13 @@ ExportVariantSetRequest::mutable_call_set_ids() {
   return &call_set_ids_;
 }
 
-// string project_id = 3;
+// optional string project_id = 3;
 inline void ExportVariantSetRequest::clear_project_id() {
   project_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ExportVariantSetRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ExportVariantSetRequest.project_id)
-  return project_id_.Get();
+  return project_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ExportVariantSetRequest::set_project_id(const ::std::string& value) {
   
@@ -7107,7 +6944,7 @@ inline void ExportVariantSetRequest::unsafe_arena_set_allocated_project_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ExportVariantSetRequest.project_id)
 }
 
-// .google.genomics.v1.ExportVariantSetRequest.Format format = 4;
+// optional .google.genomics.v1.ExportVariantSetRequest.Format format = 4;
 inline void ExportVariantSetRequest::clear_format() {
   format_ = 0;
 }
@@ -7121,13 +6958,13 @@ inline void ExportVariantSetRequest::set_format(::google::genomics::v1::ExportVa
   // @@protoc_insertion_point(field_set:google.genomics.v1.ExportVariantSetRequest.format)
 }
 
-// string bigquery_dataset = 5;
+// optional string bigquery_dataset = 5;
 inline void ExportVariantSetRequest::clear_bigquery_dataset() {
   bigquery_dataset_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ExportVariantSetRequest::bigquery_dataset() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ExportVariantSetRequest.bigquery_dataset)
-  return bigquery_dataset_.Get();
+  return bigquery_dataset_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ExportVariantSetRequest::set_bigquery_dataset(const ::std::string& value) {
   
@@ -7187,13 +7024,13 @@ inline void ExportVariantSetRequest::unsafe_arena_set_allocated_bigquery_dataset
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ExportVariantSetRequest.bigquery_dataset)
 }
 
-// string bigquery_table = 6;
+// optional string bigquery_table = 6;
 inline void ExportVariantSetRequest::clear_bigquery_table() {
   bigquery_table_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ExportVariantSetRequest::bigquery_table() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ExportVariantSetRequest.bigquery_table)
-  return bigquery_table_.Get();
+  return bigquery_table_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ExportVariantSetRequest::set_bigquery_table(const ::std::string& value) {
   
@@ -7253,17 +7090,20 @@ inline void ExportVariantSetRequest::unsafe_arena_set_allocated_bigquery_table(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ExportVariantSetRequest.bigquery_table)
 }
 
+inline const ExportVariantSetRequest* ExportVariantSetRequest::internal_default_instance() {
+  return &ExportVariantSetRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetVariantSetRequest
 
-// string variant_set_id = 1;
+// optional string variant_set_id = 1;
 inline void GetVariantSetRequest::clear_variant_set_id() {
   variant_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& GetVariantSetRequest::variant_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.GetVariantSetRequest.variant_set_id)
-  return variant_set_id_.Get();
+  return variant_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetVariantSetRequest::set_variant_set_id(const ::std::string& value) {
   
@@ -7323,6 +7163,9 @@ inline void GetVariantSetRequest::unsafe_arena_set_allocated_variant_set_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.GetVariantSetRequest.variant_set_id)
 }
 
+inline const GetVariantSetRequest* GetVariantSetRequest::internal_default_instance() {
+  return &GetVariantSetRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // SearchVariantSetsRequest
@@ -7382,13 +7225,13 @@ SearchVariantSetsRequest::mutable_dataset_ids() {
   return &dataset_ids_;
 }
 
-// string page_token = 2;
+// optional string page_token = 2;
 inline void SearchVariantSetsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& SearchVariantSetsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchVariantSetsRequest.page_token)
-  return page_token_.Get();
+  return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SearchVariantSetsRequest::set_page_token(const ::std::string& value) {
   
@@ -7448,7 +7291,7 @@ inline void SearchVariantSetsRequest::unsafe_arena_set_allocated_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.SearchVariantSetsRequest.page_token)
 }
 
-// int32 page_size = 3;
+// optional int32 page_size = 3;
 inline void SearchVariantSetsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -7462,6 +7305,9 @@ inline void SearchVariantSetsRequest::set_page_size(::google::protobuf::int32 va
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchVariantSetsRequest.page_size)
 }
 
+inline const SearchVariantSetsRequest* SearchVariantSetsRequest::internal_default_instance() {
+  return &SearchVariantSetsRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // SearchVariantSetsResponse
@@ -7496,13 +7342,13 @@ SearchVariantSetsResponse::variant_sets() const {
   return variant_sets_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void SearchVariantSetsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& SearchVariantSetsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchVariantSetsResponse.next_page_token)
-  return next_page_token_.Get();
+  return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SearchVariantSetsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -7562,17 +7408,20 @@ inline void SearchVariantSetsResponse::unsafe_arena_set_allocated_next_page_toke
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.SearchVariantSetsResponse.next_page_token)
 }
 
+inline const SearchVariantSetsResponse* SearchVariantSetsResponse::internal_default_instance() {
+  return &SearchVariantSetsResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // DeleteVariantSetRequest
 
-// string variant_set_id = 1;
+// optional string variant_set_id = 1;
 inline void DeleteVariantSetRequest::clear_variant_set_id() {
   variant_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& DeleteVariantSetRequest::variant_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.DeleteVariantSetRequest.variant_set_id)
-  return variant_set_id_.Get();
+  return variant_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DeleteVariantSetRequest::set_variant_set_id(const ::std::string& value) {
   
@@ -7632,17 +7481,20 @@ inline void DeleteVariantSetRequest::unsafe_arena_set_allocated_variant_set_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.DeleteVariantSetRequest.variant_set_id)
 }
 
+inline const DeleteVariantSetRequest* DeleteVariantSetRequest::internal_default_instance() {
+  return &DeleteVariantSetRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // UpdateVariantSetRequest
 
-// string variant_set_id = 1;
+// optional string variant_set_id = 1;
 inline void UpdateVariantSetRequest::clear_variant_set_id() {
   variant_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& UpdateVariantSetRequest::variant_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.UpdateVariantSetRequest.variant_set_id)
-  return variant_set_id_.Get();
+  return variant_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void UpdateVariantSetRequest::set_variant_set_id(const ::std::string& value) {
   
@@ -7702,7 +7554,7 @@ inline void UpdateVariantSetRequest::unsafe_arena_set_allocated_variant_set_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.UpdateVariantSetRequest.variant_set_id)
 }
 
-// .google.genomics.v1.VariantSet variant_set = 2;
+// optional .google.genomics.v1.VariantSet variant_set = 2;
 inline bool UpdateVariantSetRequest::has_variant_set() const {
   return this != internal_default_instance() && variant_set_ != NULL;
 }
@@ -7751,7 +7603,7 @@ inline  void UpdateVariantSetRequest::set_allocated_variant_set(::google::genomi
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.UpdateVariantSetRequest.variant_set)
 }
 
-// .google.protobuf.FieldMask update_mask = 5;
+// optional .google.protobuf.FieldMask update_mask = 5;
 inline bool UpdateVariantSetRequest::has_update_mask() const {
   return this != internal_default_instance() && update_mask_ != NULL;
 }
@@ -7802,6 +7654,9 @@ inline  void UpdateVariantSetRequest::set_allocated_update_mask(::google::protob
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.UpdateVariantSetRequest.update_mask)
 }
 
+inline const UpdateVariantSetRequest* UpdateVariantSetRequest::internal_default_instance() {
+  return &UpdateVariantSetRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // SearchVariantsRequest
@@ -7861,13 +7716,13 @@ SearchVariantsRequest::mutable_variant_set_ids() {
   return &variant_set_ids_;
 }
 
-// string variant_name = 2;
+// optional string variant_name = 2;
 inline void SearchVariantsRequest::clear_variant_name() {
   variant_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& SearchVariantsRequest::variant_name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchVariantsRequest.variant_name)
-  return variant_name_.Get();
+  return variant_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SearchVariantsRequest::set_variant_name(const ::std::string& value) {
   
@@ -7982,13 +7837,13 @@ SearchVariantsRequest::mutable_call_set_ids() {
   return &call_set_ids_;
 }
 
-// string reference_name = 4;
+// optional string reference_name = 4;
 inline void SearchVariantsRequest::clear_reference_name() {
   reference_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& SearchVariantsRequest::reference_name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchVariantsRequest.reference_name)
-  return reference_name_.Get();
+  return reference_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SearchVariantsRequest::set_reference_name(const ::std::string& value) {
   
@@ -8048,7 +7903,7 @@ inline void SearchVariantsRequest::unsafe_arena_set_allocated_reference_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.SearchVariantsRequest.reference_name)
 }
 
-// int64 start = 5;
+// optional int64 start = 5;
 inline void SearchVariantsRequest::clear_start() {
   start_ = GOOGLE_LONGLONG(0);
 }
@@ -8062,7 +7917,7 @@ inline void SearchVariantsRequest::set_start(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchVariantsRequest.start)
 }
 
-// int64 end = 6;
+// optional int64 end = 6;
 inline void SearchVariantsRequest::clear_end() {
   end_ = GOOGLE_LONGLONG(0);
 }
@@ -8076,13 +7931,13 @@ inline void SearchVariantsRequest::set_end(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchVariantsRequest.end)
 }
 
-// string page_token = 7;
+// optional string page_token = 7;
 inline void SearchVariantsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& SearchVariantsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchVariantsRequest.page_token)
-  return page_token_.Get();
+  return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SearchVariantsRequest::set_page_token(const ::std::string& value) {
   
@@ -8142,7 +7997,7 @@ inline void SearchVariantsRequest::unsafe_arena_set_allocated_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.SearchVariantsRequest.page_token)
 }
 
-// int32 page_size = 8;
+// optional int32 page_size = 8;
 inline void SearchVariantsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -8156,7 +8011,7 @@ inline void SearchVariantsRequest::set_page_size(::google::protobuf::int32 value
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchVariantsRequest.page_size)
 }
 
-// int32 max_calls = 9;
+// optional int32 max_calls = 9;
 inline void SearchVariantsRequest::clear_max_calls() {
   max_calls_ = 0;
 }
@@ -8170,6 +8025,9 @@ inline void SearchVariantsRequest::set_max_calls(::google::protobuf::int32 value
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchVariantsRequest.max_calls)
 }
 
+inline const SearchVariantsRequest* SearchVariantsRequest::internal_default_instance() {
+  return &SearchVariantsRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // SearchVariantsResponse
@@ -8204,13 +8062,13 @@ SearchVariantsResponse::variants() const {
   return variants_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void SearchVariantsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& SearchVariantsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchVariantsResponse.next_page_token)
-  return next_page_token_.Get();
+  return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SearchVariantsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -8270,11 +8128,14 @@ inline void SearchVariantsResponse::unsafe_arena_set_allocated_next_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.SearchVariantsResponse.next_page_token)
 }
 
+inline const SearchVariantsResponse* SearchVariantsResponse::internal_default_instance() {
+  return &SearchVariantsResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // CreateVariantRequest
 
-// .google.genomics.v1.Variant variant = 1;
+// optional .google.genomics.v1.Variant variant = 1;
 inline bool CreateVariantRequest::has_variant() const {
   return this != internal_default_instance() && variant_ != NULL;
 }
@@ -8323,17 +8184,20 @@ inline  void CreateVariantRequest::set_allocated_variant(::google::genomics::v1:
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.CreateVariantRequest.variant)
 }
 
+inline const CreateVariantRequest* CreateVariantRequest::internal_default_instance() {
+  return &CreateVariantRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // UpdateVariantRequest
 
-// string variant_id = 1;
+// optional string variant_id = 1;
 inline void UpdateVariantRequest::clear_variant_id() {
   variant_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& UpdateVariantRequest::variant_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.UpdateVariantRequest.variant_id)
-  return variant_id_.Get();
+  return variant_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void UpdateVariantRequest::set_variant_id(const ::std::string& value) {
   
@@ -8393,7 +8257,7 @@ inline void UpdateVariantRequest::unsafe_arena_set_allocated_variant_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.UpdateVariantRequest.variant_id)
 }
 
-// .google.genomics.v1.Variant variant = 2;
+// optional .google.genomics.v1.Variant variant = 2;
 inline bool UpdateVariantRequest::has_variant() const {
   return this != internal_default_instance() && variant_ != NULL;
 }
@@ -8442,7 +8306,7 @@ inline  void UpdateVariantRequest::set_allocated_variant(::google::genomics::v1:
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.UpdateVariantRequest.variant)
 }
 
-// .google.protobuf.FieldMask update_mask = 3;
+// optional .google.protobuf.FieldMask update_mask = 3;
 inline bool UpdateVariantRequest::has_update_mask() const {
   return this != internal_default_instance() && update_mask_ != NULL;
 }
@@ -8493,17 +8357,20 @@ inline  void UpdateVariantRequest::set_allocated_update_mask(::google::protobuf:
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.UpdateVariantRequest.update_mask)
 }
 
+inline const UpdateVariantRequest* UpdateVariantRequest::internal_default_instance() {
+  return &UpdateVariantRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // DeleteVariantRequest
 
-// string variant_id = 1;
+// optional string variant_id = 1;
 inline void DeleteVariantRequest::clear_variant_id() {
   variant_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& DeleteVariantRequest::variant_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.DeleteVariantRequest.variant_id)
-  return variant_id_.Get();
+  return variant_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DeleteVariantRequest::set_variant_id(const ::std::string& value) {
   
@@ -8563,17 +8430,20 @@ inline void DeleteVariantRequest::unsafe_arena_set_allocated_variant_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.DeleteVariantRequest.variant_id)
 }
 
+inline const DeleteVariantRequest* DeleteVariantRequest::internal_default_instance() {
+  return &DeleteVariantRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetVariantRequest
 
-// string variant_id = 1;
+// optional string variant_id = 1;
 inline void GetVariantRequest::clear_variant_id() {
   variant_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& GetVariantRequest::variant_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.GetVariantRequest.variant_id)
-  return variant_id_.Get();
+  return variant_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetVariantRequest::set_variant_id(const ::std::string& value) {
   
@@ -8633,19 +8503,20 @@ inline void GetVariantRequest::unsafe_arena_set_allocated_variant_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.GetVariantRequest.variant_id)
 }
 
-// -------------------------------------------------------------------
-
+inline const GetVariantRequest* GetVariantRequest::internal_default_instance() {
+  return &GetVariantRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // MergeVariantsRequest
 
-// string variant_set_id = 1;
+// optional string variant_set_id = 1;
 inline void MergeVariantsRequest::clear_variant_set_id() {
   variant_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& MergeVariantsRequest::variant_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.MergeVariantsRequest.variant_set_id)
-  return variant_set_id_.Get();
+  return variant_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void MergeVariantsRequest::set_variant_set_id(const ::std::string& value) {
   
@@ -8753,6 +8624,9 @@ MergeVariantsRequest::mutable_info_merge_config() {
   return info_merge_config_.MutableMap();
 }
 
+inline const MergeVariantsRequest* MergeVariantsRequest::internal_default_instance() {
+  return &MergeVariantsRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // SearchCallSetsRequest
@@ -8812,13 +8686,13 @@ SearchCallSetsRequest::mutable_variant_set_ids() {
   return &variant_set_ids_;
 }
 
-// string name = 2;
+// optional string name = 2;
 inline void SearchCallSetsRequest::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& SearchCallSetsRequest::name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchCallSetsRequest.name)
-  return name_.Get();
+  return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SearchCallSetsRequest::set_name(const ::std::string& value) {
   
@@ -8878,13 +8752,13 @@ inline void SearchCallSetsRequest::unsafe_arena_set_allocated_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.SearchCallSetsRequest.name)
 }
 
-// string page_token = 3;
+// optional string page_token = 3;
 inline void SearchCallSetsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& SearchCallSetsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchCallSetsRequest.page_token)
-  return page_token_.Get();
+  return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SearchCallSetsRequest::set_page_token(const ::std::string& value) {
   
@@ -8944,7 +8818,7 @@ inline void SearchCallSetsRequest::unsafe_arena_set_allocated_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.SearchCallSetsRequest.page_token)
 }
 
-// int32 page_size = 4;
+// optional int32 page_size = 4;
 inline void SearchCallSetsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -8958,6 +8832,9 @@ inline void SearchCallSetsRequest::set_page_size(::google::protobuf::int32 value
   // @@protoc_insertion_point(field_set:google.genomics.v1.SearchCallSetsRequest.page_size)
 }
 
+inline const SearchCallSetsRequest* SearchCallSetsRequest::internal_default_instance() {
+  return &SearchCallSetsRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // SearchCallSetsResponse
@@ -8992,13 +8869,13 @@ SearchCallSetsResponse::call_sets() const {
   return call_sets_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void SearchCallSetsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& SearchCallSetsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.SearchCallSetsResponse.next_page_token)
-  return next_page_token_.Get();
+  return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SearchCallSetsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -9058,11 +8935,14 @@ inline void SearchCallSetsResponse::unsafe_arena_set_allocated_next_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.SearchCallSetsResponse.next_page_token)
 }
 
+inline const SearchCallSetsResponse* SearchCallSetsResponse::internal_default_instance() {
+  return &SearchCallSetsResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // CreateCallSetRequest
 
-// .google.genomics.v1.CallSet call_set = 1;
+// optional .google.genomics.v1.CallSet call_set = 1;
 inline bool CreateCallSetRequest::has_call_set() const {
   return this != internal_default_instance() && call_set_ != NULL;
 }
@@ -9111,17 +8991,20 @@ inline  void CreateCallSetRequest::set_allocated_call_set(::google::genomics::v1
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.CreateCallSetRequest.call_set)
 }
 
+inline const CreateCallSetRequest* CreateCallSetRequest::internal_default_instance() {
+  return &CreateCallSetRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // UpdateCallSetRequest
 
-// string call_set_id = 1;
+// optional string call_set_id = 1;
 inline void UpdateCallSetRequest::clear_call_set_id() {
   call_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& UpdateCallSetRequest::call_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.UpdateCallSetRequest.call_set_id)
-  return call_set_id_.Get();
+  return call_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void UpdateCallSetRequest::set_call_set_id(const ::std::string& value) {
   
@@ -9181,7 +9064,7 @@ inline void UpdateCallSetRequest::unsafe_arena_set_allocated_call_set_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.UpdateCallSetRequest.call_set_id)
 }
 
-// .google.genomics.v1.CallSet call_set = 2;
+// optional .google.genomics.v1.CallSet call_set = 2;
 inline bool UpdateCallSetRequest::has_call_set() const {
   return this != internal_default_instance() && call_set_ != NULL;
 }
@@ -9230,7 +9113,7 @@ inline  void UpdateCallSetRequest::set_allocated_call_set(::google::genomics::v1
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.UpdateCallSetRequest.call_set)
 }
 
-// .google.protobuf.FieldMask update_mask = 3;
+// optional .google.protobuf.FieldMask update_mask = 3;
 inline bool UpdateCallSetRequest::has_update_mask() const {
   return this != internal_default_instance() && update_mask_ != NULL;
 }
@@ -9281,17 +9164,20 @@ inline  void UpdateCallSetRequest::set_allocated_update_mask(::google::protobuf:
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.UpdateCallSetRequest.update_mask)
 }
 
+inline const UpdateCallSetRequest* UpdateCallSetRequest::internal_default_instance() {
+  return &UpdateCallSetRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // DeleteCallSetRequest
 
-// string call_set_id = 1;
+// optional string call_set_id = 1;
 inline void DeleteCallSetRequest::clear_call_set_id() {
   call_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& DeleteCallSetRequest::call_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.DeleteCallSetRequest.call_set_id)
-  return call_set_id_.Get();
+  return call_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DeleteCallSetRequest::set_call_set_id(const ::std::string& value) {
   
@@ -9351,17 +9237,20 @@ inline void DeleteCallSetRequest::unsafe_arena_set_allocated_call_set_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.DeleteCallSetRequest.call_set_id)
 }
 
+inline const DeleteCallSetRequest* DeleteCallSetRequest::internal_default_instance() {
+  return &DeleteCallSetRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetCallSetRequest
 
-// string call_set_id = 1;
+// optional string call_set_id = 1;
 inline void GetCallSetRequest::clear_call_set_id() {
   call_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& GetCallSetRequest::call_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.GetCallSetRequest.call_set_id)
-  return call_set_id_.Get();
+  return call_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetCallSetRequest::set_call_set_id(const ::std::string& value) {
   
@@ -9421,17 +9310,20 @@ inline void GetCallSetRequest::unsafe_arena_set_allocated_call_set_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.GetCallSetRequest.call_set_id)
 }
 
+inline const GetCallSetRequest* GetCallSetRequest::internal_default_instance() {
+  return &GetCallSetRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // StreamVariantsRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 inline void StreamVariantsRequest::clear_project_id() {
   project_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& StreamVariantsRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.StreamVariantsRequest.project_id)
-  return project_id_.Get();
+  return project_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void StreamVariantsRequest::set_project_id(const ::std::string& value) {
   
@@ -9491,13 +9383,13 @@ inline void StreamVariantsRequest::unsafe_arena_set_allocated_project_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.StreamVariantsRequest.project_id)
 }
 
-// string variant_set_id = 2;
+// optional string variant_set_id = 2;
 inline void StreamVariantsRequest::clear_variant_set_id() {
   variant_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& StreamVariantsRequest::variant_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.StreamVariantsRequest.variant_set_id)
-  return variant_set_id_.Get();
+  return variant_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void StreamVariantsRequest::set_variant_set_id(const ::std::string& value) {
   
@@ -9612,13 +9504,13 @@ StreamVariantsRequest::mutable_call_set_ids() {
   return &call_set_ids_;
 }
 
-// string reference_name = 4;
+// optional string reference_name = 4;
 inline void StreamVariantsRequest::clear_reference_name() {
   reference_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& StreamVariantsRequest::reference_name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.StreamVariantsRequest.reference_name)
-  return reference_name_.Get();
+  return reference_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void StreamVariantsRequest::set_reference_name(const ::std::string& value) {
   
@@ -9678,7 +9570,7 @@ inline void StreamVariantsRequest::unsafe_arena_set_allocated_reference_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.StreamVariantsRequest.reference_name)
 }
 
-// int64 start = 5;
+// optional int64 start = 5;
 inline void StreamVariantsRequest::clear_start() {
   start_ = GOOGLE_LONGLONG(0);
 }
@@ -9692,7 +9584,7 @@ inline void StreamVariantsRequest::set_start(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.StreamVariantsRequest.start)
 }
 
-// int64 end = 6;
+// optional int64 end = 6;
 inline void StreamVariantsRequest::clear_end() {
   end_ = GOOGLE_LONGLONG(0);
 }
@@ -9706,6 +9598,9 @@ inline void StreamVariantsRequest::set_end(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.StreamVariantsRequest.end)
 }
 
+inline const StreamVariantsRequest* StreamVariantsRequest::internal_default_instance() {
+  return &StreamVariantsRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // StreamVariantsResponse
@@ -9740,19 +9635,10 @@ StreamVariantsResponse::variants() const {
   return variants_;
 }
 
+inline const StreamVariantsResponse* StreamVariantsResponse::internal_default_instance() {
+  return &StreamVariantsResponse_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -9813,7 +9699,6 @@ StreamVariantsResponse::variants() const {
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace genomics

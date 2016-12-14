@@ -24,20 +24,10 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-class Context;
-class ContextDefaultTypeInternal;
-extern ContextDefaultTypeInternal _Context_default_instance_;
-class ContextRule;
-class ContextRuleDefaultTypeInternal;
-extern ContextRuleDefaultTypeInternal _ContextRule_default_instance_;
-}  // namespace api
-}  // namespace google
 
 namespace google {
 namespace api {
@@ -45,6 +35,11 @@ namespace api {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fapi_2fcontext_2eproto();
 void protobuf_InitDefaults_google_2fapi_2fcontext_2eproto();
+void protobuf_AssignDesc_google_2fapi_2fcontext_2eproto();
+void protobuf_ShutdownFile_google_2fapi_2fcontext_2eproto();
+
+class Context;
+class ContextRule;
 
 // ===================================================================
 
@@ -63,52 +58,49 @@ class Context : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   static const ::google::protobuf::Descriptor* descriptor();
   static const Context& default_instance();
 
-  static inline const Context* internal_default_instance() {
-    return reinterpret_cast<const Context*>(
-               &_Context_default_instance_);
-  }
+  static const Context* internal_default_instance();
 
   void Swap(Context* other);
 
   // implements Message ----------------------------------------------
 
-  inline Context* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Context* New() const { return New(NULL); }
 
-  Context* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Context* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Context& from);
   void MergeFrom(const Context& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Context* other);
+  void UnsafeMergeFrom(const Context& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -134,10 +126,13 @@ class Context : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fcontext_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fcontext_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fcontext_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fcontext_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fcontext_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Context> Context_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ContextRule : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.api.ContextRule) */ {
@@ -155,58 +150,55 @@ class ContextRule : public ::google::protobuf::Message /* @@protoc_insertion_poi
   static const ::google::protobuf::Descriptor* descriptor();
   static const ContextRule& default_instance();
 
-  static inline const ContextRule* internal_default_instance() {
-    return reinterpret_cast<const ContextRule*>(
-               &_ContextRule_default_instance_);
-  }
+  static const ContextRule* internal_default_instance();
 
   void Swap(ContextRule* other);
 
   // implements Message ----------------------------------------------
 
-  inline ContextRule* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ContextRule* New() const { return New(NULL); }
 
-  ContextRule* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ContextRule* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ContextRule& from);
   void MergeFrom(const ContextRule& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ContextRule* other);
+  void UnsafeMergeFrom(const ContextRule& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string selector = 1;
+  // optional string selector = 1;
   void clear_selector();
   static const int kSelectorFieldNumber = 1;
   const ::std::string& selector() const;
@@ -259,10 +251,13 @@ class ContextRule : public ::google::protobuf::Message /* @@protoc_insertion_poi
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fcontext_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fcontext_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fcontext_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fcontext_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fcontext_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ContextRule> ContextRule_default_instance_;
+
 // ===================================================================
 
 
@@ -301,17 +296,20 @@ Context::rules() const {
   return rules_;
 }
 
+inline const Context* Context::internal_default_instance() {
+  return &Context_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ContextRule
 
-// string selector = 1;
+// optional string selector = 1;
 inline void ContextRule::clear_selector() {
   selector_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ContextRule::selector() const {
   // @@protoc_insertion_point(field_get:google.api.ContextRule.selector)
-  return selector_.GetNoArena();
+  return selector_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ContextRule::set_selector(const ::std::string& value) {
   
@@ -459,12 +457,14 @@ ContextRule::mutable_provided() {
   return &provided_;
 }
 
+inline const ContextRule* ContextRule::internal_default_instance() {
+  return &ContextRule_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace api
 }  // namespace google

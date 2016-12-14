@@ -21,229 +21,366 @@ namespace google {
 namespace example {
 namespace library {
 namespace v1 {
-class BookDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Book> {};
-BookDefaultTypeInternal _Book_default_instance_;
-class ShelfDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Shelf> {};
-ShelfDefaultTypeInternal _Shelf_default_instance_;
-class CreateShelfRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CreateShelfRequest> {};
-CreateShelfRequestDefaultTypeInternal _CreateShelfRequest_default_instance_;
-class GetShelfRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GetShelfRequest> {};
-GetShelfRequestDefaultTypeInternal _GetShelfRequest_default_instance_;
-class ListShelvesRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListShelvesRequest> {};
-ListShelvesRequestDefaultTypeInternal _ListShelvesRequest_default_instance_;
-class ListShelvesResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListShelvesResponse> {};
-ListShelvesResponseDefaultTypeInternal _ListShelvesResponse_default_instance_;
-class DeleteShelfRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<DeleteShelfRequest> {};
-DeleteShelfRequestDefaultTypeInternal _DeleteShelfRequest_default_instance_;
-class MergeShelvesRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<MergeShelvesRequest> {};
-MergeShelvesRequestDefaultTypeInternal _MergeShelvesRequest_default_instance_;
-class CreateBookRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CreateBookRequest> {};
-CreateBookRequestDefaultTypeInternal _CreateBookRequest_default_instance_;
-class GetBookRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GetBookRequest> {};
-GetBookRequestDefaultTypeInternal _GetBookRequest_default_instance_;
-class ListBooksRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListBooksRequest> {};
-ListBooksRequestDefaultTypeInternal _ListBooksRequest_default_instance_;
-class ListBooksResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListBooksResponse> {};
-ListBooksResponseDefaultTypeInternal _ListBooksResponse_default_instance_;
-class UpdateBookRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<UpdateBookRequest> {};
-UpdateBookRequestDefaultTypeInternal _UpdateBookRequest_default_instance_;
-class DeleteBookRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<DeleteBookRequest> {};
-DeleteBookRequestDefaultTypeInternal _DeleteBookRequest_default_instance_;
-class MoveBookRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<MoveBookRequest> {};
-MoveBookRequestDefaultTypeInternal _MoveBookRequest_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[15];
+const ::google::protobuf::Descriptor* Book_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Book_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Shelf_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Shelf_reflection_ = NULL;
+const ::google::protobuf::Descriptor* CreateShelfRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CreateShelfRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* GetShelfRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GetShelfRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListShelvesRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListShelvesRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListShelvesResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListShelvesResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* DeleteShelfRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  DeleteShelfRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* MergeShelvesRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  MergeShelvesRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* CreateBookRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CreateBookRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* GetBookRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GetBookRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListBooksRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListBooksRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListBooksResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListBooksResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* UpdateBookRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  UpdateBookRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* DeleteBookRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  DeleteBookRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* MoveBookRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  MoveBookRequest_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Book, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto() {
+  protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/example/library/v1/library.proto");
+  GOOGLE_CHECK(file != NULL);
+  Book_descriptor_ = file->message_type(0);
+  static const int Book_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Book, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Book, author_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Book, title_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Book, read_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Shelf, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Book_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Book_descriptor_,
+      Book::internal_default_instance(),
+      Book_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Book),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Book, _internal_metadata_));
+  Shelf_descriptor_ = file->message_type(1);
+  static const int Shelf_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Shelf, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Shelf, theme_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateShelfRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Shelf_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Shelf_descriptor_,
+      Shelf::internal_default_instance(),
+      Shelf_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Shelf),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Shelf, _internal_metadata_));
+  CreateShelfRequest_descriptor_ = file->message_type(2);
+  static const int CreateShelfRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateShelfRequest, shelf_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetShelfRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  CreateShelfRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      CreateShelfRequest_descriptor_,
+      CreateShelfRequest::internal_default_instance(),
+      CreateShelfRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(CreateShelfRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateShelfRequest, _internal_metadata_));
+  GetShelfRequest_descriptor_ = file->message_type(3);
+  static const int GetShelfRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetShelfRequest, name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListShelvesRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  GetShelfRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GetShelfRequest_descriptor_,
+      GetShelfRequest::internal_default_instance(),
+      GetShelfRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GetShelfRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetShelfRequest, _internal_metadata_));
+  ListShelvesRequest_descriptor_ = file->message_type(4);
+  static const int ListShelvesRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListShelvesRequest, page_size_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListShelvesRequest, page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListShelvesResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListShelvesRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListShelvesRequest_descriptor_,
+      ListShelvesRequest::internal_default_instance(),
+      ListShelvesRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListShelvesRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListShelvesRequest, _internal_metadata_));
+  ListShelvesResponse_descriptor_ = file->message_type(5);
+  static const int ListShelvesResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListShelvesResponse, shelves_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListShelvesResponse, next_page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteShelfRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListShelvesResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListShelvesResponse_descriptor_,
+      ListShelvesResponse::internal_default_instance(),
+      ListShelvesResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListShelvesResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListShelvesResponse, _internal_metadata_));
+  DeleteShelfRequest_descriptor_ = file->message_type(6);
+  static const int DeleteShelfRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteShelfRequest, name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MergeShelvesRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  DeleteShelfRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      DeleteShelfRequest_descriptor_,
+      DeleteShelfRequest::internal_default_instance(),
+      DeleteShelfRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(DeleteShelfRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteShelfRequest, _internal_metadata_));
+  MergeShelvesRequest_descriptor_ = file->message_type(7);
+  static const int MergeShelvesRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MergeShelvesRequest, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MergeShelvesRequest, other_shelf_name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateBookRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  MergeShelvesRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      MergeShelvesRequest_descriptor_,
+      MergeShelvesRequest::internal_default_instance(),
+      MergeShelvesRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(MergeShelvesRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MergeShelvesRequest, _internal_metadata_));
+  CreateBookRequest_descriptor_ = file->message_type(8);
+  static const int CreateBookRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateBookRequest, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateBookRequest, book_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetBookRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  CreateBookRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      CreateBookRequest_descriptor_,
+      CreateBookRequest::internal_default_instance(),
+      CreateBookRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(CreateBookRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CreateBookRequest, _internal_metadata_));
+  GetBookRequest_descriptor_ = file->message_type(9);
+  static const int GetBookRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetBookRequest, name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBooksRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  GetBookRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GetBookRequest_descriptor_,
+      GetBookRequest::internal_default_instance(),
+      GetBookRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GetBookRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetBookRequest, _internal_metadata_));
+  ListBooksRequest_descriptor_ = file->message_type(10);
+  static const int ListBooksRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBooksRequest, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBooksRequest, page_size_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBooksRequest, page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBooksResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListBooksRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListBooksRequest_descriptor_,
+      ListBooksRequest::internal_default_instance(),
+      ListBooksRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListBooksRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBooksRequest, _internal_metadata_));
+  ListBooksResponse_descriptor_ = file->message_type(11);
+  static const int ListBooksResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBooksResponse, books_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBooksResponse, next_page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateBookRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListBooksResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListBooksResponse_descriptor_,
+      ListBooksResponse::internal_default_instance(),
+      ListBooksResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListBooksResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListBooksResponse, _internal_metadata_));
+  UpdateBookRequest_descriptor_ = file->message_type(12);
+  static const int UpdateBookRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateBookRequest, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateBookRequest, book_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteBookRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  UpdateBookRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      UpdateBookRequest_descriptor_,
+      UpdateBookRequest::internal_default_instance(),
+      UpdateBookRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(UpdateBookRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UpdateBookRequest, _internal_metadata_));
+  DeleteBookRequest_descriptor_ = file->message_type(13);
+  static const int DeleteBookRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteBookRequest, name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MoveBookRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  DeleteBookRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      DeleteBookRequest_descriptor_,
+      DeleteBookRequest::internal_default_instance(),
+      DeleteBookRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(DeleteBookRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteBookRequest, _internal_metadata_));
+  MoveBookRequest_descriptor_ = file->message_type(14);
+  static const int MoveBookRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MoveBookRequest, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MoveBookRequest, other_shelf_name_),
   };
-  return offsets;
+  MoveBookRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      MoveBookRequest_descriptor_,
+      MoveBookRequest::internal_default_instance(),
+      MoveBookRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(MoveBookRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MoveBookRequest, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(Book)},
-  { 8, -1, sizeof(Shelf)},
-  { 14, -1, sizeof(CreateShelfRequest)},
-  { 19, -1, sizeof(GetShelfRequest)},
-  { 24, -1, sizeof(ListShelvesRequest)},
-  { 30, -1, sizeof(ListShelvesResponse)},
-  { 36, -1, sizeof(DeleteShelfRequest)},
-  { 41, -1, sizeof(MergeShelvesRequest)},
-  { 47, -1, sizeof(CreateBookRequest)},
-  { 53, -1, sizeof(GetBookRequest)},
-  { 58, -1, sizeof(ListBooksRequest)},
-  { 65, -1, sizeof(ListBooksResponse)},
-  { 71, -1, sizeof(UpdateBookRequest)},
-  { 77, -1, sizeof(DeleteBookRequest)},
-  { 82, -1, sizeof(MoveBookRequest)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Book_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Shelf_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_CreateShelfRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GetShelfRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListShelvesRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListShelvesResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_DeleteShelfRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_MergeShelvesRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_CreateBookRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GetBookRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListBooksRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListBooksResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_UpdateBookRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_DeleteBookRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_MoveBookRequest_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/example/library/v1/library.proto", schemas, file_default_instances, protobuf_Offsets_google_2fexample_2flibrary_2fv1_2flibrary_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 15);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Book_descriptor_, Book::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Shelf_descriptor_, Shelf::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      CreateShelfRequest_descriptor_, CreateShelfRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GetShelfRequest_descriptor_, GetShelfRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListShelvesRequest_descriptor_, ListShelvesRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListShelvesResponse_descriptor_, ListShelvesResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      DeleteShelfRequest_descriptor_, DeleteShelfRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      MergeShelvesRequest_descriptor_, MergeShelvesRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      CreateBookRequest_descriptor_, CreateBookRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GetBookRequest_descriptor_, GetBookRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListBooksRequest_descriptor_, ListBooksRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListBooksResponse_descriptor_, ListBooksResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      UpdateBookRequest_descriptor_, UpdateBookRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      DeleteBookRequest_descriptor_, DeleteBookRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      MoveBookRequest_descriptor_, MoveBookRequest::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fexample_2flibrary_2fv1_2flibrary_2eproto() {
-  _Book_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _Shelf_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _CreateShelfRequest_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _GetShelfRequest_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _ListShelvesRequest_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
-  _ListShelvesResponse_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
-  _DeleteShelfRequest_default_instance_.Shutdown();
-  delete file_level_metadata[6].reflection;
-  _MergeShelvesRequest_default_instance_.Shutdown();
-  delete file_level_metadata[7].reflection;
-  _CreateBookRequest_default_instance_.Shutdown();
-  delete file_level_metadata[8].reflection;
-  _GetBookRequest_default_instance_.Shutdown();
-  delete file_level_metadata[9].reflection;
-  _ListBooksRequest_default_instance_.Shutdown();
-  delete file_level_metadata[10].reflection;
-  _ListBooksResponse_default_instance_.Shutdown();
-  delete file_level_metadata[11].reflection;
-  _UpdateBookRequest_default_instance_.Shutdown();
-  delete file_level_metadata[12].reflection;
-  _DeleteBookRequest_default_instance_.Shutdown();
-  delete file_level_metadata[13].reflection;
-  _MoveBookRequest_default_instance_.Shutdown();
-  delete file_level_metadata[14].reflection;
+  Book_default_instance_.Shutdown();
+  delete Book_reflection_;
+  Shelf_default_instance_.Shutdown();
+  delete Shelf_reflection_;
+  CreateShelfRequest_default_instance_.Shutdown();
+  delete CreateShelfRequest_reflection_;
+  GetShelfRequest_default_instance_.Shutdown();
+  delete GetShelfRequest_reflection_;
+  ListShelvesRequest_default_instance_.Shutdown();
+  delete ListShelvesRequest_reflection_;
+  ListShelvesResponse_default_instance_.Shutdown();
+  delete ListShelvesResponse_reflection_;
+  DeleteShelfRequest_default_instance_.Shutdown();
+  delete DeleteShelfRequest_reflection_;
+  MergeShelvesRequest_default_instance_.Shutdown();
+  delete MergeShelvesRequest_reflection_;
+  CreateBookRequest_default_instance_.Shutdown();
+  delete CreateBookRequest_reflection_;
+  GetBookRequest_default_instance_.Shutdown();
+  delete GetBookRequest_reflection_;
+  ListBooksRequest_default_instance_.Shutdown();
+  delete ListBooksRequest_reflection_;
+  ListBooksResponse_default_instance_.Shutdown();
+  delete ListBooksResponse_reflection_;
+  UpdateBookRequest_default_instance_.Shutdown();
+  delete UpdateBookRequest_reflection_;
+  DeleteBookRequest_default_instance_.Shutdown();
+  delete DeleteBookRequest_reflection_;
+  MoveBookRequest_default_instance_.Shutdown();
+  delete MoveBookRequest_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl() {
@@ -251,106 +388,128 @@ void protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_imp
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fempty_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _Book_default_instance_.DefaultConstruct();
-  _Shelf_default_instance_.DefaultConstruct();
-  _CreateShelfRequest_default_instance_.DefaultConstruct();
-  _GetShelfRequest_default_instance_.DefaultConstruct();
-  _ListShelvesRequest_default_instance_.DefaultConstruct();
-  _ListShelvesResponse_default_instance_.DefaultConstruct();
-  _DeleteShelfRequest_default_instance_.DefaultConstruct();
-  _MergeShelvesRequest_default_instance_.DefaultConstruct();
-  _CreateBookRequest_default_instance_.DefaultConstruct();
-  _GetBookRequest_default_instance_.DefaultConstruct();
-  _ListBooksRequest_default_instance_.DefaultConstruct();
-  _ListBooksResponse_default_instance_.DefaultConstruct();
-  _UpdateBookRequest_default_instance_.DefaultConstruct();
-  _DeleteBookRequest_default_instance_.DefaultConstruct();
-  _MoveBookRequest_default_instance_.DefaultConstruct();
-  _CreateShelfRequest_default_instance_.get_mutable()->shelf_ = const_cast< ::google::example::library::v1::Shelf*>(
-      ::google::example::library::v1::Shelf::internal_default_instance());
-  _CreateBookRequest_default_instance_.get_mutable()->book_ = const_cast< ::google::example::library::v1::Book*>(
-      ::google::example::library::v1::Book::internal_default_instance());
-  _UpdateBookRequest_default_instance_.get_mutable()->book_ = const_cast< ::google::example::library::v1::Book*>(
-      ::google::example::library::v1::Book::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  Book_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Shelf_default_instance_.DefaultConstruct();
+  CreateShelfRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetShelfRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListShelvesRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListShelvesResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DeleteShelfRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  MergeShelvesRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  CreateBookRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetBookRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListBooksRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListBooksResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  UpdateBookRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  DeleteBookRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  MoveBookRequest_default_instance_.DefaultConstruct();
+  Book_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Shelf_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CreateShelfRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetShelfRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListShelvesRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListShelvesResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DeleteShelfRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  MergeShelvesRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CreateBookRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetBookRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListBooksRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListBooksResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  UpdateBookRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  DeleteBookRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  MoveBookRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_once_);
 void protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
-  static const char descriptor[] = {
-      "\n\'google/example/library/v1/library.prot"
-      "o\022\031google.example.library.v1\032\034google/api"
-      "/annotations.proto\032\033google/protobuf/empt"
-      "y.proto\"A\n\004Book\022\014\n\004name\030\001 \001(\t\022\016\n\006author\030"
-      "\002 \001(\t\022\r\n\005title\030\003 \001(\t\022\014\n\004read\030\004 \001(\010\"$\n\005Sh"
-      "elf\022\014\n\004name\030\001 \001(\t\022\r\n\005theme\030\002 \001(\t\"E\n\022Crea"
-      "teShelfRequest\022/\n\005shelf\030\001 \001(\0132 .google.e"
-      "xample.library.v1.Shelf\"\037\n\017GetShelfReque"
-      "st\022\014\n\004name\030\001 \001(\t\";\n\022ListShelvesRequest\022\021"
-      "\n\tpage_size\030\001 \001(\005\022\022\n\npage_token\030\002 \001(\t\"a\n"
-      "\023ListShelvesResponse\0221\n\007shelves\030\001 \003(\0132 ."
-      "google.example.library.v1.Shelf\022\027\n\017next_"
-      "page_token\030\002 \001(\t\"\"\n\022DeleteShelfRequest\022\014"
-      "\n\004name\030\001 \001(\t\"=\n\023MergeShelvesRequest\022\014\n\004n"
-      "ame\030\001 \001(\t\022\030\n\020other_shelf_name\030\002 \001(\t\"P\n\021C"
-      "reateBookRequest\022\014\n\004name\030\001 \001(\t\022-\n\004book\030\002"
-      " \001(\0132\037.google.example.library.v1.Book\"\036\n"
-      "\016GetBookRequest\022\014\n\004name\030\001 \001(\t\"G\n\020ListBoo"
-      "ksRequest\022\014\n\004name\030\001 \001(\t\022\021\n\tpage_size\030\002 \001"
-      "(\005\022\022\n\npage_token\030\003 \001(\t\"\\\n\021ListBooksRespo"
-      "nse\022.\n\005books\030\001 \003(\0132\037.google.example.libr"
-      "ary.v1.Book\022\027\n\017next_page_token\030\002 \001(\t\"P\n\021"
-      "UpdateBookRequest\022\014\n\004name\030\001 \001(\t\022-\n\004book\030"
-      "\002 \001(\0132\037.google.example.library.v1.Book\"!"
-      "\n\021DeleteBookRequest\022\014\n\004name\030\001 \001(\t\"9\n\017Mov"
-      "eBookRequest\022\014\n\004name\030\001 \001(\t\022\030\n\020other_shel"
-      "f_name\030\002 \001(\t2\244\013\n\016LibraryService\022z\n\013Creat"
-      "eShelf\022-.google.example.library.v1.Creat"
-      "eShelfRequest\032 .google.example.library.v"
-      "1.Shelf\"\032\202\323\344\223\002\024\"\013/v1/shelves:\005shelf\022v\n\010G"
-      "etShelf\022*.google.example.library.v1.GetS"
-      "helfRequest\032 .google.example.library.v1."
-      "Shelf\"\034\202\323\344\223\002\026\022\024/v1/{name=shelves/*}\022\201\001\n\013"
-      "ListShelves\022-.google.example.library.v1."
-      "ListShelvesRequest\032..google.example.libr"
-      "ary.v1.ListShelvesResponse\"\023\202\323\344\223\002\r\022\013/v1/"
-      "shelves\022r\n\013DeleteShelf\022-.google.example."
-      "library.v1.DeleteShelfRequest\032\026.google.p"
-      "rotobuf.Empty\"\034\202\323\344\223\002\026*\024/v1/{name=shelves"
-      "/*}\022\207\001\n\014MergeShelves\022..google.example.li"
-      "brary.v1.MergeShelvesRequest\032 .google.ex"
-      "ample.library.v1.Shelf\"%\202\323\344\223\002\037\"\032/v1/{nam"
-      "e=shelves/*}:merge:\001*\022\205\001\n\nCreateBook\022,.g"
-      "oogle.example.library.v1.CreateBookReque"
-      "st\032\037.google.example.library.v1.Book\"(\202\323\344"
-      "\223\002\"\"\032/v1/{name=shelves/*}/books:\004book\022{\n"
-      "\007GetBook\022).google.example.library.v1.Get"
-      "BookRequest\032\037.google.example.library.v1."
-      "Book\"$\202\323\344\223\002\036\022\034/v1/{name=shelves/*/books/"
-      "*}\022\212\001\n\tListBooks\022+.google.example.librar"
-      "y.v1.ListBooksRequest\032,.google.example.l"
-      "ibrary.v1.ListBooksResponse\"\"\202\323\344\223\002\034\022\032/v1"
-      "/{name=shelves/*}/books\022x\n\nDeleteBook\022,."
-      "google.example.library.v1.DeleteBookRequ"
-      "est\032\026.google.protobuf.Empty\"$\202\323\344\223\002\036*\034/v1"
-      "/{name=shelves/*/books/*}\022\207\001\n\nUpdateBook"
-      "\022,.google.example.library.v1.UpdateBookR"
-      "equest\032\037.google.example.library.v1.Book\""
-      "*\202\323\344\223\002$\032\034/v1/{name=shelves/*/books/*}:\004b"
-      "ook\022\205\001\n\010MoveBook\022*.google.example.librar"
-      "y.v1.MoveBookRequest\032\037.google.example.li"
-      "brary.v1.Book\",\202\323\344\223\002&\"!/v1/{name=shelves"
-      "/*/books/*}:move:\001*Bq\n\035com.google.exampl"
-      "e.library.v1B\014LibraryProtoP\001Z@google.gol"
-      "ang.org/genproto/googleapis/example/libr"
-      "ary/v1;libraryb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 2622);
+    "\n\'google/example/library/v1/library.prot"
+    "o\022\031google.example.library.v1\032\034google/api"
+    "/annotations.proto\032\033google/protobuf/empt"
+    "y.proto\"A\n\004Book\022\014\n\004name\030\001 \001(\t\022\016\n\006author\030"
+    "\002 \001(\t\022\r\n\005title\030\003 \001(\t\022\014\n\004read\030\004 \001(\010\"$\n\005Sh"
+    "elf\022\014\n\004name\030\001 \001(\t\022\r\n\005theme\030\002 \001(\t\"E\n\022Crea"
+    "teShelfRequest\022/\n\005shelf\030\001 \001(\0132 .google.e"
+    "xample.library.v1.Shelf\"\037\n\017GetShelfReque"
+    "st\022\014\n\004name\030\001 \001(\t\";\n\022ListShelvesRequest\022\021"
+    "\n\tpage_size\030\001 \001(\005\022\022\n\npage_token\030\002 \001(\t\"a\n"
+    "\023ListShelvesResponse\0221\n\007shelves\030\001 \003(\0132 ."
+    "google.example.library.v1.Shelf\022\027\n\017next_"
+    "page_token\030\002 \001(\t\"\"\n\022DeleteShelfRequest\022\014"
+    "\n\004name\030\001 \001(\t\"=\n\023MergeShelvesRequest\022\014\n\004n"
+    "ame\030\001 \001(\t\022\030\n\020other_shelf_name\030\002 \001(\t\"P\n\021C"
+    "reateBookRequest\022\014\n\004name\030\001 \001(\t\022-\n\004book\030\002"
+    " \001(\0132\037.google.example.library.v1.Book\"\036\n"
+    "\016GetBookRequest\022\014\n\004name\030\001 \001(\t\"G\n\020ListBoo"
+    "ksRequest\022\014\n\004name\030\001 \001(\t\022\021\n\tpage_size\030\002 \001"
+    "(\005\022\022\n\npage_token\030\003 \001(\t\"\\\n\021ListBooksRespo"
+    "nse\022.\n\005books\030\001 \003(\0132\037.google.example.libr"
+    "ary.v1.Book\022\027\n\017next_page_token\030\002 \001(\t\"P\n\021"
+    "UpdateBookRequest\022\014\n\004name\030\001 \001(\t\022-\n\004book\030"
+    "\002 \001(\0132\037.google.example.library.v1.Book\"!"
+    "\n\021DeleteBookRequest\022\014\n\004name\030\001 \001(\t\"9\n\017Mov"
+    "eBookRequest\022\014\n\004name\030\001 \001(\t\022\030\n\020other_shel"
+    "f_name\030\002 \001(\t2\244\013\n\016LibraryService\022z\n\013Creat"
+    "eShelf\022-.google.example.library.v1.Creat"
+    "eShelfRequest\032 .google.example.library.v"
+    "1.Shelf\"\032\202\323\344\223\002\024\"\013/v1/shelves:\005shelf\022v\n\010G"
+    "etShelf\022*.google.example.library.v1.GetS"
+    "helfRequest\032 .google.example.library.v1."
+    "Shelf\"\034\202\323\344\223\002\026\022\024/v1/{name=shelves/*}\022\201\001\n\013"
+    "ListShelves\022-.google.example.library.v1."
+    "ListShelvesRequest\032..google.example.libr"
+    "ary.v1.ListShelvesResponse\"\023\202\323\344\223\002\r\022\013/v1/"
+    "shelves\022r\n\013DeleteShelf\022-.google.example."
+    "library.v1.DeleteShelfRequest\032\026.google.p"
+    "rotobuf.Empty\"\034\202\323\344\223\002\026*\024/v1/{name=shelves"
+    "/*}\022\207\001\n\014MergeShelves\022..google.example.li"
+    "brary.v1.MergeShelvesRequest\032 .google.ex"
+    "ample.library.v1.Shelf\"%\202\323\344\223\002\037\"\032/v1/{nam"
+    "e=shelves/*}:merge:\001*\022\205\001\n\nCreateBook\022,.g"
+    "oogle.example.library.v1.CreateBookReque"
+    "st\032\037.google.example.library.v1.Book\"(\202\323\344"
+    "\223\002\"\"\032/v1/{name=shelves/*}/books:\004book\022{\n"
+    "\007GetBook\022).google.example.library.v1.Get"
+    "BookRequest\032\037.google.example.library.v1."
+    "Book\"$\202\323\344\223\002\036\022\034/v1/{name=shelves/*/books/"
+    "*}\022\212\001\n\tListBooks\022+.google.example.librar"
+    "y.v1.ListBooksRequest\032,.google.example.l"
+    "ibrary.v1.ListBooksResponse\"\"\202\323\344\223\002\034\022\032/v1"
+    "/{name=shelves/*}/books\022x\n\nDeleteBook\022,."
+    "google.example.library.v1.DeleteBookRequ"
+    "est\032\026.google.protobuf.Empty\"$\202\323\344\223\002\036*\034/v1"
+    "/{name=shelves/*/books/*}\022\207\001\n\nUpdateBook"
+    "\022,.google.example.library.v1.UpdateBookR"
+    "equest\032\037.google.example.library.v1.Book\""
+    "*\202\323\344\223\002$\032\034/v1/{name=shelves/*/books/*}:\004b"
+    "ook\022\205\001\n\010MoveBook\022*.google.example.librar"
+    "y.v1.MoveBookRequest\032\037.google.example.li"
+    "brary.v1.Book\",\202\323\344\223\002&\"!/v1/{name=shelves"
+    "/*/books/*}:move:\001*Bq\n\035com.google.exampl"
+    "e.library.v1B\014LibraryProtoP\001Z@google.gol"
+    "ang.org/genproto/googleapis/example/libr"
+    "ary/v1;libraryb\006proto3", 2622);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/example/library/v1/library.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -370,6 +529,16 @@ struct StaticDescriptorInitializer_google_2fexample_2flibrary_2fv1_2flibrary_2ep
   }
 } static_descriptor_initializer_google_2fexample_2flibrary_2fv1_2flibrary_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -381,30 +550,19 @@ const int Book::kReadFieldNumber;
 
 Book::Book()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.example.library.v1.Book)
 }
+
+void Book::InitAsDefaultInstance() {
+}
+
 Book::Book(const Book& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  author_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.author().size() > 0) {
-    author_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.author_);
-  }
-  title_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.title().size() > 0) {
-    title_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.title_);
-  }
-  read_ = from.read_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.example.library.v1.Book)
 }
 
@@ -434,13 +592,15 @@ void Book::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Book::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return Book_descriptor_;
 }
 
 const Book& Book::default_instance() {
   protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Book> Book_default_instance_;
 
 Book* Book::New(::google::protobuf::Arena* arena) const {
   Book* n = new Book;
@@ -464,13 +624,13 @@ bool Book::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.example.library.v1.Book)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -480,12 +640,14 @@ bool Book::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_author;
         break;
       }
 
-      // string author = 2;
+      // optional string author = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_author:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_author()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -495,12 +657,14 @@ bool Book::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_title;
         break;
       }
 
-      // string title = 3;
+      // optional string title = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_title:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_title()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -510,12 +674,14 @@ bool Book::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_read;
         break;
       }
 
-      // bool read = 4;
+      // optional bool read = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_read:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -523,6 +689,7 @@ bool Book::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -550,7 +717,7 @@ failure:
 void Book::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.example.library.v1.Book)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -560,7 +727,7 @@ void Book::SerializeWithCachedSizes(
       1, this->name(), output);
   }
 
-  // string author = 2;
+  // optional string author = 2;
   if (this->author().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->author().data(), this->author().length(),
@@ -570,7 +737,7 @@ void Book::SerializeWithCachedSizes(
       2, this->author(), output);
   }
 
-  // string title = 3;
+  // optional string title = 3;
   if (this->title().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->title().data(), this->title().length(),
@@ -580,7 +747,7 @@ void Book::SerializeWithCachedSizes(
       3, this->title(), output);
   }
 
-  // bool read = 4;
+  // optional bool read = 4;
   if (this->read() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(4, this->read(), output);
   }
@@ -592,7 +759,7 @@ void Book::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.example.library.v1.Book)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -603,7 +770,7 @@ void Book::SerializeWithCachedSizes(
         1, this->name(), target);
   }
 
-  // string author = 2;
+  // optional string author = 2;
   if (this->author().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->author().data(), this->author().length(),
@@ -614,7 +781,7 @@ void Book::SerializeWithCachedSizes(
         2, this->author(), target);
   }
 
-  // string title = 3;
+  // optional string title = 3;
   if (this->title().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->title().data(), this->title().length(),
@@ -625,7 +792,7 @@ void Book::SerializeWithCachedSizes(
         3, this->title(), target);
   }
 
-  // bool read = 4;
+  // optional bool read = 4;
   if (this->read() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(4, this->read(), target);
   }
@@ -638,28 +805,28 @@ size_t Book::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.example.library.v1.Book)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->name());
   }
 
-  // string author = 2;
+  // optional string author = 2;
   if (this->author().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->author());
   }
 
-  // string title = 3;
+  // optional string title = 3;
   if (this->title().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->title());
   }
 
-  // bool read = 4;
+  // optional bool read = 4;
   if (this->read() != 0) {
     total_size += 1 + 1;
   }
@@ -673,7 +840,7 @@ size_t Book::ByteSizeLong() const {
 
 void Book::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.example.library.v1.Book)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Book* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Book>(
           &from);
@@ -682,14 +849,21 @@ void Book::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.example.library.v1.Book)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Book::MergeFrom(const Book& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.example.library.v1.Book)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Book::UnsafeMergeFrom(const Book& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -718,10 +892,11 @@ void Book::CopyFrom(const Book& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.example.library.v1.Book)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Book::IsInitialized() const {
+
   return true;
 }
 
@@ -734,24 +909,28 @@ void Book::InternalSwap(Book* other) {
   author_.Swap(&other->author_);
   title_.Swap(&other->title_);
   std::swap(read_, other->read_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Book::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Book_descriptor_;
+  metadata.reflection = Book_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Book
 
-// string name = 1;
+// optional string name = 1;
 void Book::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Book::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.Book.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Book::set_name(const ::std::string& value) {
   
@@ -789,13 +968,13 @@ void Book::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.Book.name)
 }
 
-// string author = 2;
+// optional string author = 2;
 void Book::clear_author() {
   author_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Book::author() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.Book.author)
-  return author_.GetNoArena();
+  return author_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Book::set_author(const ::std::string& value) {
   
@@ -833,13 +1012,13 @@ void Book::set_allocated_author(::std::string* author) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.Book.author)
 }
 
-// string title = 3;
+// optional string title = 3;
 void Book::clear_title() {
   title_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Book::title() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.Book.title)
-  return title_.GetNoArena();
+  return title_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Book::set_title(const ::std::string& value) {
   
@@ -877,7 +1056,7 @@ void Book::set_allocated_title(::std::string* title) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.Book.title)
 }
 
-// bool read = 4;
+// optional bool read = 4;
 void Book::clear_read() {
   read_ = false;
 }
@@ -891,6 +1070,9 @@ void Book::set_read(bool value) {
   // @@protoc_insertion_point(field_set:google.example.library.v1.Book.read)
 }
 
+inline const Book* Book::internal_default_instance() {
+  return &Book_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -902,25 +1084,19 @@ const int Shelf::kThemeFieldNumber;
 
 Shelf::Shelf()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.example.library.v1.Shelf)
 }
+
+void Shelf::InitAsDefaultInstance() {
+}
+
 Shelf::Shelf(const Shelf& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  theme_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.theme().size() > 0) {
-    theme_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.theme_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.example.library.v1.Shelf)
 }
 
@@ -947,13 +1123,15 @@ void Shelf::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Shelf::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return Shelf_descriptor_;
 }
 
 const Shelf& Shelf::default_instance() {
   protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Shelf> Shelf_default_instance_;
 
 Shelf* Shelf::New(::google::protobuf::Arena* arena) const {
   Shelf* n = new Shelf;
@@ -975,13 +1153,13 @@ bool Shelf::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.example.library.v1.Shelf)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -991,12 +1169,14 @@ bool Shelf::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_theme;
         break;
       }
 
-      // string theme = 2;
+      // optional string theme = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_theme:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_theme()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1006,6 +1186,7 @@ bool Shelf::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1033,7 +1214,7 @@ failure:
 void Shelf::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.example.library.v1.Shelf)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -1043,7 +1224,7 @@ void Shelf::SerializeWithCachedSizes(
       1, this->name(), output);
   }
 
-  // string theme = 2;
+  // optional string theme = 2;
   if (this->theme().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->theme().data(), this->theme().length(),
@@ -1060,7 +1241,7 @@ void Shelf::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.example.library.v1.Shelf)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -1071,7 +1252,7 @@ void Shelf::SerializeWithCachedSizes(
         1, this->name(), target);
   }
 
-  // string theme = 2;
+  // optional string theme = 2;
   if (this->theme().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->theme().data(), this->theme().length(),
@@ -1090,14 +1271,14 @@ size_t Shelf::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.example.library.v1.Shelf)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->name());
   }
 
-  // string theme = 2;
+  // optional string theme = 2;
   if (this->theme().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -1113,7 +1294,7 @@ size_t Shelf::ByteSizeLong() const {
 
 void Shelf::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.example.library.v1.Shelf)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Shelf* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Shelf>(
           &from);
@@ -1122,14 +1303,21 @@ void Shelf::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.example.library.v1.Shelf)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Shelf::MergeFrom(const Shelf& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.example.library.v1.Shelf)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Shelf::UnsafeMergeFrom(const Shelf& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -1151,10 +1339,11 @@ void Shelf::CopyFrom(const Shelf& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.example.library.v1.Shelf)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Shelf::IsInitialized() const {
+
   return true;
 }
 
@@ -1165,24 +1354,28 @@ void Shelf::Swap(Shelf* other) {
 void Shelf::InternalSwap(Shelf* other) {
   name_.Swap(&other->name_);
   theme_.Swap(&other->theme_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Shelf::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Shelf_descriptor_;
+  metadata.reflection = Shelf_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Shelf
 
-// string name = 1;
+// optional string name = 1;
 void Shelf::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Shelf::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.Shelf.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Shelf::set_name(const ::std::string& value) {
   
@@ -1220,13 +1413,13 @@ void Shelf::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.Shelf.name)
 }
 
-// string theme = 2;
+// optional string theme = 2;
 void Shelf::clear_theme() {
   theme_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Shelf::theme() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.Shelf.theme)
-  return theme_.GetNoArena();
+  return theme_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Shelf::set_theme(const ::std::string& value) {
   
@@ -1264,6 +1457,9 @@ void Shelf::set_allocated_theme(::std::string* theme) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.Shelf.theme)
 }
 
+inline const Shelf* Shelf::internal_default_instance() {
+  return &Shelf_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1274,22 +1470,21 @@ const int CreateShelfRequest::kShelfFieldNumber;
 
 CreateShelfRequest::CreateShelfRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.example.library.v1.CreateShelfRequest)
 }
+
+void CreateShelfRequest::InitAsDefaultInstance() {
+  shelf_ = const_cast< ::google::example::library::v1::Shelf*>(
+      ::google::example::library::v1::Shelf::internal_default_instance());
+}
+
 CreateShelfRequest::CreateShelfRequest(const CreateShelfRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_shelf()) {
-    shelf_ = new ::google::example::library::v1::Shelf(*from.shelf_);
-  } else {
-    shelf_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.example.library.v1.CreateShelfRequest)
 }
 
@@ -1304,7 +1499,7 @@ CreateShelfRequest::~CreateShelfRequest() {
 }
 
 void CreateShelfRequest::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &CreateShelfRequest_default_instance_.get()) {
     delete shelf_;
   }
 }
@@ -1316,13 +1511,15 @@ void CreateShelfRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* CreateShelfRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return CreateShelfRequest_descriptor_;
 }
 
 const CreateShelfRequest& CreateShelfRequest::default_instance() {
   protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<CreateShelfRequest> CreateShelfRequest_default_instance_;
 
 CreateShelfRequest* CreateShelfRequest::New(::google::protobuf::Arena* arena) const {
   CreateShelfRequest* n = new CreateShelfRequest;
@@ -1334,9 +1531,7 @@ CreateShelfRequest* CreateShelfRequest::New(::google::protobuf::Arena* arena) co
 
 void CreateShelfRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.example.library.v1.CreateShelfRequest)
-  if (GetArenaNoVirtual() == NULL && shelf_ != NULL) {
-    delete shelf_;
-  }
+  if (GetArenaNoVirtual() == NULL && shelf_ != NULL) delete shelf_;
   shelf_ = NULL;
 }
 
@@ -1346,18 +1541,19 @@ bool CreateShelfRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.example.library.v1.CreateShelfRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.example.library.v1.Shelf shelf = 1;
+      // optional .google.example.library.v1.Shelf shelf = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_shelf()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1385,7 +1581,7 @@ failure:
 void CreateShelfRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.example.library.v1.CreateShelfRequest)
-  // .google.example.library.v1.Shelf shelf = 1;
+  // optional .google.example.library.v1.Shelf shelf = 1;
   if (this->has_shelf()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->shelf_, output);
@@ -1398,7 +1594,7 @@ void CreateShelfRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.example.library.v1.CreateShelfRequest)
-  // .google.example.library.v1.Shelf shelf = 1;
+  // optional .google.example.library.v1.Shelf shelf = 1;
   if (this->has_shelf()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -1413,7 +1609,7 @@ size_t CreateShelfRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.example.library.v1.CreateShelfRequest)
   size_t total_size = 0;
 
-  // .google.example.library.v1.Shelf shelf = 1;
+  // optional .google.example.library.v1.Shelf shelf = 1;
   if (this->has_shelf()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -1429,7 +1625,7 @@ size_t CreateShelfRequest::ByteSizeLong() const {
 
 void CreateShelfRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.example.library.v1.CreateShelfRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const CreateShelfRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CreateShelfRequest>(
           &from);
@@ -1438,14 +1634,21 @@ void CreateShelfRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.example.library.v1.CreateShelfRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CreateShelfRequest::MergeFrom(const CreateShelfRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.example.library.v1.CreateShelfRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void CreateShelfRequest::UnsafeMergeFrom(const CreateShelfRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_shelf()) {
     mutable_shelf()->::google::example::library::v1::Shelf::MergeFrom(from.shelf());
   }
@@ -1462,10 +1665,11 @@ void CreateShelfRequest::CopyFrom(const CreateShelfRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.example.library.v1.CreateShelfRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CreateShelfRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -1475,18 +1679,22 @@ void CreateShelfRequest::Swap(CreateShelfRequest* other) {
 }
 void CreateShelfRequest::InternalSwap(CreateShelfRequest* other) {
   std::swap(shelf_, other->shelf_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CreateShelfRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CreateShelfRequest_descriptor_;
+  metadata.reflection = CreateShelfRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // CreateShelfRequest
 
-// .google.example.library.v1.Shelf shelf = 1;
+// optional .google.example.library.v1.Shelf shelf = 1;
 bool CreateShelfRequest::has_shelf() const {
   return this != internal_default_instance() && shelf_ != NULL;
 }
@@ -1525,6 +1733,9 @@ void CreateShelfRequest::set_allocated_shelf(::google::example::library::v1::She
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.CreateShelfRequest.shelf)
 }
 
+inline const CreateShelfRequest* CreateShelfRequest::internal_default_instance() {
+  return &CreateShelfRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1535,21 +1746,19 @@ const int GetShelfRequest::kNameFieldNumber;
 
 GetShelfRequest::GetShelfRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.example.library.v1.GetShelfRequest)
 }
+
+void GetShelfRequest::InitAsDefaultInstance() {
+}
+
 GetShelfRequest::GetShelfRequest(const GetShelfRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.example.library.v1.GetShelfRequest)
 }
 
@@ -1574,13 +1783,15 @@ void GetShelfRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GetShelfRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return GetShelfRequest_descriptor_;
 }
 
 const GetShelfRequest& GetShelfRequest::default_instance() {
   protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GetShelfRequest> GetShelfRequest_default_instance_;
 
 GetShelfRequest* GetShelfRequest::New(::google::protobuf::Arena* arena) const {
   GetShelfRequest* n = new GetShelfRequest;
@@ -1601,13 +1812,13 @@ bool GetShelfRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.example.library.v1.GetShelfRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1617,6 +1828,7 @@ bool GetShelfRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1644,7 +1856,7 @@ failure:
 void GetShelfRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.example.library.v1.GetShelfRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -1661,7 +1873,7 @@ void GetShelfRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.example.library.v1.GetShelfRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -1680,7 +1892,7 @@ size_t GetShelfRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.example.library.v1.GetShelfRequest)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -1696,7 +1908,7 @@ size_t GetShelfRequest::ByteSizeLong() const {
 
 void GetShelfRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.example.library.v1.GetShelfRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GetShelfRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetShelfRequest>(
           &from);
@@ -1705,14 +1917,21 @@ void GetShelfRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.example.library.v1.GetShelfRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetShelfRequest::MergeFrom(const GetShelfRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.example.library.v1.GetShelfRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GetShelfRequest::UnsafeMergeFrom(const GetShelfRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -1730,10 +1949,11 @@ void GetShelfRequest::CopyFrom(const GetShelfRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.example.library.v1.GetShelfRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetShelfRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -1743,24 +1963,28 @@ void GetShelfRequest::Swap(GetShelfRequest* other) {
 }
 void GetShelfRequest::InternalSwap(GetShelfRequest* other) {
   name_.Swap(&other->name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GetShelfRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GetShelfRequest_descriptor_;
+  metadata.reflection = GetShelfRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GetShelfRequest
 
-// string name = 1;
+// optional string name = 1;
 void GetShelfRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GetShelfRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.GetShelfRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GetShelfRequest::set_name(const ::std::string& value) {
   
@@ -1798,6 +2022,9 @@ void GetShelfRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.GetShelfRequest.name)
 }
 
+inline const GetShelfRequest* GetShelfRequest::internal_default_instance() {
+  return &GetShelfRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1809,22 +2036,19 @@ const int ListShelvesRequest::kPageTokenFieldNumber;
 
 ListShelvesRequest::ListShelvesRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.example.library.v1.ListShelvesRequest)
 }
+
+void ListShelvesRequest::InitAsDefaultInstance() {
+}
+
 ListShelvesRequest::ListShelvesRequest(const ListShelvesRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.page_token().size() > 0) {
-    page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
-  }
-  page_size_ = from.page_size_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.example.library.v1.ListShelvesRequest)
 }
 
@@ -1850,13 +2074,15 @@ void ListShelvesRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListShelvesRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return ListShelvesRequest_descriptor_;
 }
 
 const ListShelvesRequest& ListShelvesRequest::default_instance() {
   protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListShelvesRequest> ListShelvesRequest_default_instance_;
 
 ListShelvesRequest* ListShelvesRequest::New(::google::protobuf::Arena* arena) const {
   ListShelvesRequest* n = new ListShelvesRequest;
@@ -1868,8 +2094,8 @@ ListShelvesRequest* ListShelvesRequest::New(::google::protobuf::Arena* arena) co
 
 void ListShelvesRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.example.library.v1.ListShelvesRequest)
-  page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_size_ = 0;
+  page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 bool ListShelvesRequest::MergePartialFromCodedStream(
@@ -1878,13 +2104,13 @@ bool ListShelvesRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.example.library.v1.ListShelvesRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 page_size = 1;
+      // optional int32 page_size = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -1892,12 +2118,14 @@ bool ListShelvesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_page_token;
         break;
       }
 
-      // string page_token = 2;
+      // optional string page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1907,6 +2135,7 @@ bool ListShelvesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1934,12 +2163,12 @@ failure:
 void ListShelvesRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.example.library.v1.ListShelvesRequest)
-  // int32 page_size = 1;
+  // optional int32 page_size = 1;
   if (this->page_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->page_size(), output);
   }
 
-  // string page_token = 2;
+  // optional string page_token = 2;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -1956,12 +2185,12 @@ void ListShelvesRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.example.library.v1.ListShelvesRequest)
-  // int32 page_size = 1;
+  // optional int32 page_size = 1;
   if (this->page_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->page_size(), target);
   }
 
-  // string page_token = 2;
+  // optional string page_token = 2;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -1980,18 +2209,18 @@ size_t ListShelvesRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.example.library.v1.ListShelvesRequest)
   size_t total_size = 0;
 
-  // string page_token = 2;
-  if (this->page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->page_token());
-  }
-
-  // int32 page_size = 1;
+  // optional int32 page_size = 1;
   if (this->page_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->page_size());
+  }
+
+  // optional string page_token = 2;
+  if (this->page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->page_token());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -2003,7 +2232,7 @@ size_t ListShelvesRequest::ByteSizeLong() const {
 
 void ListShelvesRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.example.library.v1.ListShelvesRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListShelvesRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListShelvesRequest>(
           &from);
@@ -2012,20 +2241,27 @@ void ListShelvesRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.example.library.v1.ListShelvesRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListShelvesRequest::MergeFrom(const ListShelvesRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.example.library.v1.ListShelvesRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListShelvesRequest::UnsafeMergeFrom(const ListShelvesRequest& from) {
+  GOOGLE_DCHECK(&from != this);
+  if (from.page_size() != 0) {
+    set_page_size(from.page_size());
+  }
   if (from.page_token().size() > 0) {
 
     page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
-  }
-  if (from.page_size() != 0) {
-    set_page_size(from.page_size());
   }
 }
 
@@ -2040,10 +2276,11 @@ void ListShelvesRequest::CopyFrom(const ListShelvesRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.example.library.v1.ListShelvesRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListShelvesRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -2052,20 +2289,24 @@ void ListShelvesRequest::Swap(ListShelvesRequest* other) {
   InternalSwap(other);
 }
 void ListShelvesRequest::InternalSwap(ListShelvesRequest* other) {
-  page_token_.Swap(&other->page_token_);
   std::swap(page_size_, other->page_size_);
+  page_token_.Swap(&other->page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListShelvesRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListShelvesRequest_descriptor_;
+  metadata.reflection = ListShelvesRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ListShelvesRequest
 
-// int32 page_size = 1;
+// optional int32 page_size = 1;
 void ListShelvesRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -2079,13 +2320,13 @@ void ListShelvesRequest::set_page_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.example.library.v1.ListShelvesRequest.page_size)
 }
 
-// string page_token = 2;
+// optional string page_token = 2;
 void ListShelvesRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListShelvesRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.ListShelvesRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListShelvesRequest::set_page_token(const ::std::string& value) {
   
@@ -2123,6 +2364,9 @@ void ListShelvesRequest::set_allocated_page_token(::std::string* page_token) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.ListShelvesRequest.page_token)
 }
 
+inline const ListShelvesRequest* ListShelvesRequest::internal_default_instance() {
+  return &ListShelvesRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2134,22 +2378,19 @@ const int ListShelvesResponse::kNextPageTokenFieldNumber;
 
 ListShelvesResponse::ListShelvesResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.example.library.v1.ListShelvesResponse)
 }
+
+void ListShelvesResponse::InitAsDefaultInstance() {
+}
+
 ListShelvesResponse::ListShelvesResponse(const ListShelvesResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      shelves_(from.shelves_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_page_token().size() > 0) {
-    next_page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_page_token_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.example.library.v1.ListShelvesResponse)
 }
 
@@ -2174,13 +2415,15 @@ void ListShelvesResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListShelvesResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
+  return ListShelvesResponse_descriptor_;
 }
 
 const ListShelvesResponse& ListShelvesResponse::default_instance() {
   protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListShelvesResponse> ListShelvesResponse_default_instance_;
 
 ListShelvesResponse* ListShelvesResponse::New(::google::protobuf::Arena* arena) const {
   ListShelvesResponse* n = new ListShelvesResponse;
@@ -2192,8 +2435,8 @@ ListShelvesResponse* ListShelvesResponse::New(::google::protobuf::Arena* arena) 
 
 void ListShelvesResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.example.library.v1.ListShelvesResponse)
-  shelves_.Clear();
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  shelves_.Clear();
 }
 
 bool ListShelvesResponse::MergePartialFromCodedStream(
@@ -2202,26 +2445,30 @@ bool ListShelvesResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.example.library.v1.ListShelvesResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.example.library.v1.Shelf shelves = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_shelves:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_shelves()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_shelves;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_next_page_token;
         break;
       }
 
-      // string next_page_token = 2;
+      // optional string next_page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_next_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2231,6 +2478,7 @@ bool ListShelvesResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2264,7 +2512,7 @@ void ListShelvesResponse::SerializeWithCachedSizes(
       1, this->shelves(i), output);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -2288,7 +2536,7 @@ void ListShelvesResponse::SerializeWithCachedSizes(
         1, this->shelves(i), false, target);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -2307,6 +2555,13 @@ size_t ListShelvesResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.example.library.v1.ListShelvesResponse)
   size_t total_size = 0;
 
+  // optional string next_page_token = 2;
+  if (this->next_page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_page_token());
+  }
+
   // repeated .google.example.library.v1.Shelf shelves = 1;
   {
     unsigned int count = this->shelves_size();
@@ -2318,13 +2573,6 @@ size_t ListShelvesResponse::ByteSizeLong() const {
     }
   }
 
-  // string next_page_token = 2;
-  if (this->next_page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_page_token());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -2334,7 +2582,7 @@ size_t ListShelvesResponse::ByteSizeLong() const {
 
 void ListShelvesResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.example.library.v1.ListShelvesResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListShelvesResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListShelvesResponse>(
           &from);
@@ -2343,14 +2591,21 @@ void ListShelvesResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.example.library.v1.ListShelvesResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListShelvesResponse::MergeFrom(const ListShelvesResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.example.library.v1.ListShelvesResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListShelvesResponse::UnsafeMergeFrom(const ListShelvesResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   shelves_.MergeFrom(from.shelves_);
   if (from.next_page_token().size() > 0) {
 
@@ -2369,10 +2624,11 @@ void ListShelvesResponse::CopyFrom(const ListShelvesResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.example.library.v1.ListShelvesResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListShelvesResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -2383,12 +2639,16 @@ void ListShelvesResponse::Swap(ListShelvesResponse* other) {
 void ListShelvesResponse::InternalSwap(ListShelvesResponse* other) {
   shelves_.UnsafeArenaSwap(&other->shelves_);
   next_page_token_.Swap(&other->next_page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListShelvesResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListShelvesResponse_descriptor_;
+  metadata.reflection = ListShelvesResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -2424,13 +2684,13 @@ ListShelvesResponse::shelves() const {
   return shelves_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 void ListShelvesResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListShelvesResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.ListShelvesResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListShelvesResponse::set_next_page_token(const ::std::string& value) {
   
@@ -2468,6 +2728,9 @@ void ListShelvesResponse::set_allocated_next_page_token(::std::string* next_page
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.ListShelvesResponse.next_page_token)
 }
 
+inline const ListShelvesResponse* ListShelvesResponse::internal_default_instance() {
+  return &ListShelvesResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2478,21 +2741,19 @@ const int DeleteShelfRequest::kNameFieldNumber;
 
 DeleteShelfRequest::DeleteShelfRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.example.library.v1.DeleteShelfRequest)
 }
+
+void DeleteShelfRequest::InitAsDefaultInstance() {
+}
+
 DeleteShelfRequest::DeleteShelfRequest(const DeleteShelfRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.example.library.v1.DeleteShelfRequest)
 }
 
@@ -2517,13 +2778,15 @@ void DeleteShelfRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* DeleteShelfRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6].descriptor;
+  return DeleteShelfRequest_descriptor_;
 }
 
 const DeleteShelfRequest& DeleteShelfRequest::default_instance() {
   protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<DeleteShelfRequest> DeleteShelfRequest_default_instance_;
 
 DeleteShelfRequest* DeleteShelfRequest::New(::google::protobuf::Arena* arena) const {
   DeleteShelfRequest* n = new DeleteShelfRequest;
@@ -2544,13 +2807,13 @@ bool DeleteShelfRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.example.library.v1.DeleteShelfRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2560,6 +2823,7 @@ bool DeleteShelfRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2587,7 +2851,7 @@ failure:
 void DeleteShelfRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.example.library.v1.DeleteShelfRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -2604,7 +2868,7 @@ void DeleteShelfRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.example.library.v1.DeleteShelfRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -2623,7 +2887,7 @@ size_t DeleteShelfRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.example.library.v1.DeleteShelfRequest)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -2639,7 +2903,7 @@ size_t DeleteShelfRequest::ByteSizeLong() const {
 
 void DeleteShelfRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.example.library.v1.DeleteShelfRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const DeleteShelfRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteShelfRequest>(
           &from);
@@ -2648,14 +2912,21 @@ void DeleteShelfRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.example.library.v1.DeleteShelfRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteShelfRequest::MergeFrom(const DeleteShelfRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.example.library.v1.DeleteShelfRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void DeleteShelfRequest::UnsafeMergeFrom(const DeleteShelfRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -2673,10 +2944,11 @@ void DeleteShelfRequest::CopyFrom(const DeleteShelfRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.example.library.v1.DeleteShelfRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteShelfRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -2686,24 +2958,28 @@ void DeleteShelfRequest::Swap(DeleteShelfRequest* other) {
 }
 void DeleteShelfRequest::InternalSwap(DeleteShelfRequest* other) {
   name_.Swap(&other->name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DeleteShelfRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = DeleteShelfRequest_descriptor_;
+  metadata.reflection = DeleteShelfRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // DeleteShelfRequest
 
-// string name = 1;
+// optional string name = 1;
 void DeleteShelfRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& DeleteShelfRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.DeleteShelfRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void DeleteShelfRequest::set_name(const ::std::string& value) {
   
@@ -2741,6 +3017,9 @@ void DeleteShelfRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.DeleteShelfRequest.name)
 }
 
+inline const DeleteShelfRequest* DeleteShelfRequest::internal_default_instance() {
+  return &DeleteShelfRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2752,25 +3031,19 @@ const int MergeShelvesRequest::kOtherShelfNameFieldNumber;
 
 MergeShelvesRequest::MergeShelvesRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.example.library.v1.MergeShelvesRequest)
 }
+
+void MergeShelvesRequest::InitAsDefaultInstance() {
+}
+
 MergeShelvesRequest::MergeShelvesRequest(const MergeShelvesRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  other_shelf_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.other_shelf_name().size() > 0) {
-    other_shelf_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.other_shelf_name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.example.library.v1.MergeShelvesRequest)
 }
 
@@ -2797,13 +3070,15 @@ void MergeShelvesRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* MergeShelvesRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7].descriptor;
+  return MergeShelvesRequest_descriptor_;
 }
 
 const MergeShelvesRequest& MergeShelvesRequest::default_instance() {
   protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<MergeShelvesRequest> MergeShelvesRequest_default_instance_;
 
 MergeShelvesRequest* MergeShelvesRequest::New(::google::protobuf::Arena* arena) const {
   MergeShelvesRequest* n = new MergeShelvesRequest;
@@ -2825,13 +3100,13 @@ bool MergeShelvesRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.example.library.v1.MergeShelvesRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2841,12 +3116,14 @@ bool MergeShelvesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_other_shelf_name;
         break;
       }
 
-      // string other_shelf_name = 2;
+      // optional string other_shelf_name = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_other_shelf_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_other_shelf_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2856,6 +3133,7 @@ bool MergeShelvesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2883,7 +3161,7 @@ failure:
 void MergeShelvesRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.example.library.v1.MergeShelvesRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -2893,7 +3171,7 @@ void MergeShelvesRequest::SerializeWithCachedSizes(
       1, this->name(), output);
   }
 
-  // string other_shelf_name = 2;
+  // optional string other_shelf_name = 2;
   if (this->other_shelf_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->other_shelf_name().data(), this->other_shelf_name().length(),
@@ -2910,7 +3188,7 @@ void MergeShelvesRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.example.library.v1.MergeShelvesRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -2921,7 +3199,7 @@ void MergeShelvesRequest::SerializeWithCachedSizes(
         1, this->name(), target);
   }
 
-  // string other_shelf_name = 2;
+  // optional string other_shelf_name = 2;
   if (this->other_shelf_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->other_shelf_name().data(), this->other_shelf_name().length(),
@@ -2940,14 +3218,14 @@ size_t MergeShelvesRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.example.library.v1.MergeShelvesRequest)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->name());
   }
 
-  // string other_shelf_name = 2;
+  // optional string other_shelf_name = 2;
   if (this->other_shelf_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -2963,7 +3241,7 @@ size_t MergeShelvesRequest::ByteSizeLong() const {
 
 void MergeShelvesRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.example.library.v1.MergeShelvesRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const MergeShelvesRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const MergeShelvesRequest>(
           &from);
@@ -2972,14 +3250,21 @@ void MergeShelvesRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.example.library.v1.MergeShelvesRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void MergeShelvesRequest::MergeFrom(const MergeShelvesRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.example.library.v1.MergeShelvesRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void MergeShelvesRequest::UnsafeMergeFrom(const MergeShelvesRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -3001,10 +3286,11 @@ void MergeShelvesRequest::CopyFrom(const MergeShelvesRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.example.library.v1.MergeShelvesRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool MergeShelvesRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -3015,24 +3301,28 @@ void MergeShelvesRequest::Swap(MergeShelvesRequest* other) {
 void MergeShelvesRequest::InternalSwap(MergeShelvesRequest* other) {
   name_.Swap(&other->name_);
   other_shelf_name_.Swap(&other->other_shelf_name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata MergeShelvesRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = MergeShelvesRequest_descriptor_;
+  metadata.reflection = MergeShelvesRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // MergeShelvesRequest
 
-// string name = 1;
+// optional string name = 1;
 void MergeShelvesRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& MergeShelvesRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.MergeShelvesRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void MergeShelvesRequest::set_name(const ::std::string& value) {
   
@@ -3070,13 +3360,13 @@ void MergeShelvesRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.MergeShelvesRequest.name)
 }
 
-// string other_shelf_name = 2;
+// optional string other_shelf_name = 2;
 void MergeShelvesRequest::clear_other_shelf_name() {
   other_shelf_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& MergeShelvesRequest::other_shelf_name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.MergeShelvesRequest.other_shelf_name)
-  return other_shelf_name_.GetNoArena();
+  return other_shelf_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void MergeShelvesRequest::set_other_shelf_name(const ::std::string& value) {
   
@@ -3114,6 +3404,9 @@ void MergeShelvesRequest::set_allocated_other_shelf_name(::std::string* other_sh
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.MergeShelvesRequest.other_shelf_name)
 }
 
+inline const MergeShelvesRequest* MergeShelvesRequest::internal_default_instance() {
+  return &MergeShelvesRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3125,26 +3418,21 @@ const int CreateBookRequest::kBookFieldNumber;
 
 CreateBookRequest::CreateBookRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.example.library.v1.CreateBookRequest)
 }
+
+void CreateBookRequest::InitAsDefaultInstance() {
+  book_ = const_cast< ::google::example::library::v1::Book*>(
+      ::google::example::library::v1::Book::internal_default_instance());
+}
+
 CreateBookRequest::CreateBookRequest(const CreateBookRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  if (from.has_book()) {
-    book_ = new ::google::example::library::v1::Book(*from.book_);
-  } else {
-    book_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.example.library.v1.CreateBookRequest)
 }
 
@@ -3161,7 +3449,7 @@ CreateBookRequest::~CreateBookRequest() {
 
 void CreateBookRequest::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &CreateBookRequest_default_instance_.get()) {
     delete book_;
   }
 }
@@ -3173,13 +3461,15 @@ void CreateBookRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* CreateBookRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8].descriptor;
+  return CreateBookRequest_descriptor_;
 }
 
 const CreateBookRequest& CreateBookRequest::default_instance() {
   protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<CreateBookRequest> CreateBookRequest_default_instance_;
 
 CreateBookRequest* CreateBookRequest::New(::google::protobuf::Arena* arena) const {
   CreateBookRequest* n = new CreateBookRequest;
@@ -3192,9 +3482,7 @@ CreateBookRequest* CreateBookRequest::New(::google::protobuf::Arena* arena) cons
 void CreateBookRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.example.library.v1.CreateBookRequest)
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && book_ != NULL) {
-    delete book_;
-  }
+  if (GetArenaNoVirtual() == NULL && book_ != NULL) delete book_;
   book_ = NULL;
 }
 
@@ -3204,13 +3492,13 @@ bool CreateBookRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.example.library.v1.CreateBookRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3220,17 +3508,20 @@ bool CreateBookRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_book;
         break;
       }
 
-      // .google.example.library.v1.Book book = 2;
+      // optional .google.example.library.v1.Book book = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_book:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_book()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3258,7 +3549,7 @@ failure:
 void CreateBookRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.example.library.v1.CreateBookRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -3268,7 +3559,7 @@ void CreateBookRequest::SerializeWithCachedSizes(
       1, this->name(), output);
   }
 
-  // .google.example.library.v1.Book book = 2;
+  // optional .google.example.library.v1.Book book = 2;
   if (this->has_book()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->book_, output);
@@ -3281,7 +3572,7 @@ void CreateBookRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.example.library.v1.CreateBookRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -3292,7 +3583,7 @@ void CreateBookRequest::SerializeWithCachedSizes(
         1, this->name(), target);
   }
 
-  // .google.example.library.v1.Book book = 2;
+  // optional .google.example.library.v1.Book book = 2;
   if (this->has_book()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -3307,14 +3598,14 @@ size_t CreateBookRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.example.library.v1.CreateBookRequest)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->name());
   }
 
-  // .google.example.library.v1.Book book = 2;
+  // optional .google.example.library.v1.Book book = 2;
   if (this->has_book()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -3330,7 +3621,7 @@ size_t CreateBookRequest::ByteSizeLong() const {
 
 void CreateBookRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.example.library.v1.CreateBookRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const CreateBookRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CreateBookRequest>(
           &from);
@@ -3339,14 +3630,21 @@ void CreateBookRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.example.library.v1.CreateBookRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CreateBookRequest::MergeFrom(const CreateBookRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.example.library.v1.CreateBookRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void CreateBookRequest::UnsafeMergeFrom(const CreateBookRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -3367,10 +3665,11 @@ void CreateBookRequest::CopyFrom(const CreateBookRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.example.library.v1.CreateBookRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CreateBookRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -3381,24 +3680,28 @@ void CreateBookRequest::Swap(CreateBookRequest* other) {
 void CreateBookRequest::InternalSwap(CreateBookRequest* other) {
   name_.Swap(&other->name_);
   std::swap(book_, other->book_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CreateBookRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CreateBookRequest_descriptor_;
+  metadata.reflection = CreateBookRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // CreateBookRequest
 
-// string name = 1;
+// optional string name = 1;
 void CreateBookRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& CreateBookRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.CreateBookRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void CreateBookRequest::set_name(const ::std::string& value) {
   
@@ -3436,7 +3739,7 @@ void CreateBookRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.CreateBookRequest.name)
 }
 
-// .google.example.library.v1.Book book = 2;
+// optional .google.example.library.v1.Book book = 2;
 bool CreateBookRequest::has_book() const {
   return this != internal_default_instance() && book_ != NULL;
 }
@@ -3475,6 +3778,9 @@ void CreateBookRequest::set_allocated_book(::google::example::library::v1::Book*
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.CreateBookRequest.book)
 }
 
+inline const CreateBookRequest* CreateBookRequest::internal_default_instance() {
+  return &CreateBookRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3485,21 +3791,19 @@ const int GetBookRequest::kNameFieldNumber;
 
 GetBookRequest::GetBookRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.example.library.v1.GetBookRequest)
 }
+
+void GetBookRequest::InitAsDefaultInstance() {
+}
+
 GetBookRequest::GetBookRequest(const GetBookRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.example.library.v1.GetBookRequest)
 }
 
@@ -3524,13 +3828,15 @@ void GetBookRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GetBookRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9].descriptor;
+  return GetBookRequest_descriptor_;
 }
 
 const GetBookRequest& GetBookRequest::default_instance() {
   protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GetBookRequest> GetBookRequest_default_instance_;
 
 GetBookRequest* GetBookRequest::New(::google::protobuf::Arena* arena) const {
   GetBookRequest* n = new GetBookRequest;
@@ -3551,13 +3857,13 @@ bool GetBookRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.example.library.v1.GetBookRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3567,6 +3873,7 @@ bool GetBookRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3594,7 +3901,7 @@ failure:
 void GetBookRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.example.library.v1.GetBookRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -3611,7 +3918,7 @@ void GetBookRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.example.library.v1.GetBookRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -3630,7 +3937,7 @@ size_t GetBookRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.example.library.v1.GetBookRequest)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -3646,7 +3953,7 @@ size_t GetBookRequest::ByteSizeLong() const {
 
 void GetBookRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.example.library.v1.GetBookRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GetBookRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetBookRequest>(
           &from);
@@ -3655,14 +3962,21 @@ void GetBookRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.example.library.v1.GetBookRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetBookRequest::MergeFrom(const GetBookRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.example.library.v1.GetBookRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GetBookRequest::UnsafeMergeFrom(const GetBookRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -3680,10 +3994,11 @@ void GetBookRequest::CopyFrom(const GetBookRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.example.library.v1.GetBookRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetBookRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -3693,24 +4008,28 @@ void GetBookRequest::Swap(GetBookRequest* other) {
 }
 void GetBookRequest::InternalSwap(GetBookRequest* other) {
   name_.Swap(&other->name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GetBookRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GetBookRequest_descriptor_;
+  metadata.reflection = GetBookRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GetBookRequest
 
-// string name = 1;
+// optional string name = 1;
 void GetBookRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GetBookRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.GetBookRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GetBookRequest::set_name(const ::std::string& value) {
   
@@ -3748,6 +4067,9 @@ void GetBookRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.GetBookRequest.name)
 }
 
+inline const GetBookRequest* GetBookRequest::internal_default_instance() {
+  return &GetBookRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3760,26 +4082,19 @@ const int ListBooksRequest::kPageTokenFieldNumber;
 
 ListBooksRequest::ListBooksRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.example.library.v1.ListBooksRequest)
 }
+
+void ListBooksRequest::InitAsDefaultInstance() {
+}
+
 ListBooksRequest::ListBooksRequest(const ListBooksRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.page_token().size() > 0) {
-    page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
-  }
-  page_size_ = from.page_size_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.example.library.v1.ListBooksRequest)
 }
 
@@ -3807,13 +4122,15 @@ void ListBooksRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListBooksRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10].descriptor;
+  return ListBooksRequest_descriptor_;
 }
 
 const ListBooksRequest& ListBooksRequest::default_instance() {
   protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListBooksRequest> ListBooksRequest_default_instance_;
 
 ListBooksRequest* ListBooksRequest::New(::google::protobuf::Arena* arena) const {
   ListBooksRequest* n = new ListBooksRequest;
@@ -3826,8 +4143,8 @@ ListBooksRequest* ListBooksRequest::New(::google::protobuf::Arena* arena) const 
 void ListBooksRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.example.library.v1.ListBooksRequest)
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   page_size_ = 0;
+  page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 bool ListBooksRequest::MergePartialFromCodedStream(
@@ -3836,13 +4153,13 @@ bool ListBooksRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.example.library.v1.ListBooksRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3852,12 +4169,14 @@ bool ListBooksRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_page_size;
         break;
       }
 
-      // int32 page_size = 2;
+      // optional int32 page_size = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_page_size:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -3865,12 +4184,14 @@ bool ListBooksRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_page_token;
         break;
       }
 
-      // string page_token = 3;
+      // optional string page_token = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3880,6 +4201,7 @@ bool ListBooksRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3907,7 +4229,7 @@ failure:
 void ListBooksRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.example.library.v1.ListBooksRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -3917,12 +4239,12 @@ void ListBooksRequest::SerializeWithCachedSizes(
       1, this->name(), output);
   }
 
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   if (this->page_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->page_size(), output);
   }
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -3939,7 +4261,7 @@ void ListBooksRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.example.library.v1.ListBooksRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -3950,12 +4272,12 @@ void ListBooksRequest::SerializeWithCachedSizes(
         1, this->name(), target);
   }
 
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   if (this->page_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->page_size(), target);
   }
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -3974,25 +4296,25 @@ size_t ListBooksRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.example.library.v1.ListBooksRequest)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->name());
   }
 
-  // string page_token = 3;
-  if (this->page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->page_token());
-  }
-
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   if (this->page_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->page_size());
+  }
+
+  // optional string page_token = 3;
+  if (this->page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->page_token());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -4004,7 +4326,7 @@ size_t ListBooksRequest::ByteSizeLong() const {
 
 void ListBooksRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.example.library.v1.ListBooksRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListBooksRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListBooksRequest>(
           &from);
@@ -4013,24 +4335,31 @@ void ListBooksRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.example.library.v1.ListBooksRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListBooksRequest::MergeFrom(const ListBooksRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.example.library.v1.ListBooksRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListBooksRequest::UnsafeMergeFrom(const ListBooksRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
   }
+  if (from.page_size() != 0) {
+    set_page_size(from.page_size());
+  }
   if (from.page_token().size() > 0) {
 
     page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token_);
-  }
-  if (from.page_size() != 0) {
-    set_page_size(from.page_size());
   }
 }
 
@@ -4045,10 +4374,11 @@ void ListBooksRequest::CopyFrom(const ListBooksRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.example.library.v1.ListBooksRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListBooksRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -4058,26 +4388,30 @@ void ListBooksRequest::Swap(ListBooksRequest* other) {
 }
 void ListBooksRequest::InternalSwap(ListBooksRequest* other) {
   name_.Swap(&other->name_);
-  page_token_.Swap(&other->page_token_);
   std::swap(page_size_, other->page_size_);
+  page_token_.Swap(&other->page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListBooksRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListBooksRequest_descriptor_;
+  metadata.reflection = ListBooksRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ListBooksRequest
 
-// string name = 1;
+// optional string name = 1;
 void ListBooksRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListBooksRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.ListBooksRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListBooksRequest::set_name(const ::std::string& value) {
   
@@ -4115,7 +4449,7 @@ void ListBooksRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.ListBooksRequest.name)
 }
 
-// int32 page_size = 2;
+// optional int32 page_size = 2;
 void ListBooksRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -4129,13 +4463,13 @@ void ListBooksRequest::set_page_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.example.library.v1.ListBooksRequest.page_size)
 }
 
-// string page_token = 3;
+// optional string page_token = 3;
 void ListBooksRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListBooksRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.ListBooksRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListBooksRequest::set_page_token(const ::std::string& value) {
   
@@ -4173,6 +4507,9 @@ void ListBooksRequest::set_allocated_page_token(::std::string* page_token) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.ListBooksRequest.page_token)
 }
 
+inline const ListBooksRequest* ListBooksRequest::internal_default_instance() {
+  return &ListBooksRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4184,22 +4521,19 @@ const int ListBooksResponse::kNextPageTokenFieldNumber;
 
 ListBooksResponse::ListBooksResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.example.library.v1.ListBooksResponse)
 }
+
+void ListBooksResponse::InitAsDefaultInstance() {
+}
+
 ListBooksResponse::ListBooksResponse(const ListBooksResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      books_(from.books_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_page_token().size() > 0) {
-    next_page_token_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_page_token_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.example.library.v1.ListBooksResponse)
 }
 
@@ -4224,13 +4558,15 @@ void ListBooksResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListBooksResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11].descriptor;
+  return ListBooksResponse_descriptor_;
 }
 
 const ListBooksResponse& ListBooksResponse::default_instance() {
   protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListBooksResponse> ListBooksResponse_default_instance_;
 
 ListBooksResponse* ListBooksResponse::New(::google::protobuf::Arena* arena) const {
   ListBooksResponse* n = new ListBooksResponse;
@@ -4242,8 +4578,8 @@ ListBooksResponse* ListBooksResponse::New(::google::protobuf::Arena* arena) cons
 
 void ListBooksResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.example.library.v1.ListBooksResponse)
-  books_.Clear();
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  books_.Clear();
 }
 
 bool ListBooksResponse::MergePartialFromCodedStream(
@@ -4252,26 +4588,30 @@ bool ListBooksResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.example.library.v1.ListBooksResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.example.library.v1.Book books = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_books:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_books()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_books;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_next_page_token;
         break;
       }
 
-      // string next_page_token = 2;
+      // optional string next_page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_next_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4281,6 +4621,7 @@ bool ListBooksResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4314,7 +4655,7 @@ void ListBooksResponse::SerializeWithCachedSizes(
       1, this->books(i), output);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -4338,7 +4679,7 @@ void ListBooksResponse::SerializeWithCachedSizes(
         1, this->books(i), false, target);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -4357,6 +4698,13 @@ size_t ListBooksResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.example.library.v1.ListBooksResponse)
   size_t total_size = 0;
 
+  // optional string next_page_token = 2;
+  if (this->next_page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_page_token());
+  }
+
   // repeated .google.example.library.v1.Book books = 1;
   {
     unsigned int count = this->books_size();
@@ -4368,13 +4716,6 @@ size_t ListBooksResponse::ByteSizeLong() const {
     }
   }
 
-  // string next_page_token = 2;
-  if (this->next_page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_page_token());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -4384,7 +4725,7 @@ size_t ListBooksResponse::ByteSizeLong() const {
 
 void ListBooksResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.example.library.v1.ListBooksResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListBooksResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListBooksResponse>(
           &from);
@@ -4393,14 +4734,21 @@ void ListBooksResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.example.library.v1.ListBooksResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListBooksResponse::MergeFrom(const ListBooksResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.example.library.v1.ListBooksResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListBooksResponse::UnsafeMergeFrom(const ListBooksResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   books_.MergeFrom(from.books_);
   if (from.next_page_token().size() > 0) {
 
@@ -4419,10 +4767,11 @@ void ListBooksResponse::CopyFrom(const ListBooksResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.example.library.v1.ListBooksResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListBooksResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -4433,12 +4782,16 @@ void ListBooksResponse::Swap(ListBooksResponse* other) {
 void ListBooksResponse::InternalSwap(ListBooksResponse* other) {
   books_.UnsafeArenaSwap(&other->books_);
   next_page_token_.Swap(&other->next_page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListBooksResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListBooksResponse_descriptor_;
+  metadata.reflection = ListBooksResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -4474,13 +4827,13 @@ ListBooksResponse::books() const {
   return books_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 void ListBooksResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ListBooksResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.ListBooksResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListBooksResponse::set_next_page_token(const ::std::string& value) {
   
@@ -4518,6 +4871,9 @@ void ListBooksResponse::set_allocated_next_page_token(::std::string* next_page_t
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.ListBooksResponse.next_page_token)
 }
 
+inline const ListBooksResponse* ListBooksResponse::internal_default_instance() {
+  return &ListBooksResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4529,26 +4885,21 @@ const int UpdateBookRequest::kBookFieldNumber;
 
 UpdateBookRequest::UpdateBookRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.example.library.v1.UpdateBookRequest)
 }
+
+void UpdateBookRequest::InitAsDefaultInstance() {
+  book_ = const_cast< ::google::example::library::v1::Book*>(
+      ::google::example::library::v1::Book::internal_default_instance());
+}
+
 UpdateBookRequest::UpdateBookRequest(const UpdateBookRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  if (from.has_book()) {
-    book_ = new ::google::example::library::v1::Book(*from.book_);
-  } else {
-    book_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.example.library.v1.UpdateBookRequest)
 }
 
@@ -4565,7 +4916,7 @@ UpdateBookRequest::~UpdateBookRequest() {
 
 void UpdateBookRequest::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &UpdateBookRequest_default_instance_.get()) {
     delete book_;
   }
 }
@@ -4577,13 +4928,15 @@ void UpdateBookRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* UpdateBookRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[12].descriptor;
+  return UpdateBookRequest_descriptor_;
 }
 
 const UpdateBookRequest& UpdateBookRequest::default_instance() {
   protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<UpdateBookRequest> UpdateBookRequest_default_instance_;
 
 UpdateBookRequest* UpdateBookRequest::New(::google::protobuf::Arena* arena) const {
   UpdateBookRequest* n = new UpdateBookRequest;
@@ -4596,9 +4949,7 @@ UpdateBookRequest* UpdateBookRequest::New(::google::protobuf::Arena* arena) cons
 void UpdateBookRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.example.library.v1.UpdateBookRequest)
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && book_ != NULL) {
-    delete book_;
-  }
+  if (GetArenaNoVirtual() == NULL && book_ != NULL) delete book_;
   book_ = NULL;
 }
 
@@ -4608,13 +4959,13 @@ bool UpdateBookRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.example.library.v1.UpdateBookRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4624,17 +4975,20 @@ bool UpdateBookRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_book;
         break;
       }
 
-      // .google.example.library.v1.Book book = 2;
+      // optional .google.example.library.v1.Book book = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_book:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_book()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4662,7 +5016,7 @@ failure:
 void UpdateBookRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.example.library.v1.UpdateBookRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -4672,7 +5026,7 @@ void UpdateBookRequest::SerializeWithCachedSizes(
       1, this->name(), output);
   }
 
-  // .google.example.library.v1.Book book = 2;
+  // optional .google.example.library.v1.Book book = 2;
   if (this->has_book()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->book_, output);
@@ -4685,7 +5039,7 @@ void UpdateBookRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.example.library.v1.UpdateBookRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -4696,7 +5050,7 @@ void UpdateBookRequest::SerializeWithCachedSizes(
         1, this->name(), target);
   }
 
-  // .google.example.library.v1.Book book = 2;
+  // optional .google.example.library.v1.Book book = 2;
   if (this->has_book()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -4711,14 +5065,14 @@ size_t UpdateBookRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.example.library.v1.UpdateBookRequest)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->name());
   }
 
-  // .google.example.library.v1.Book book = 2;
+  // optional .google.example.library.v1.Book book = 2;
   if (this->has_book()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -4734,7 +5088,7 @@ size_t UpdateBookRequest::ByteSizeLong() const {
 
 void UpdateBookRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.example.library.v1.UpdateBookRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const UpdateBookRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const UpdateBookRequest>(
           &from);
@@ -4743,14 +5097,21 @@ void UpdateBookRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.example.library.v1.UpdateBookRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void UpdateBookRequest::MergeFrom(const UpdateBookRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.example.library.v1.UpdateBookRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void UpdateBookRequest::UnsafeMergeFrom(const UpdateBookRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -4771,10 +5132,11 @@ void UpdateBookRequest::CopyFrom(const UpdateBookRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.example.library.v1.UpdateBookRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool UpdateBookRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -4785,24 +5147,28 @@ void UpdateBookRequest::Swap(UpdateBookRequest* other) {
 void UpdateBookRequest::InternalSwap(UpdateBookRequest* other) {
   name_.Swap(&other->name_);
   std::swap(book_, other->book_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata UpdateBookRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[12];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = UpdateBookRequest_descriptor_;
+  metadata.reflection = UpdateBookRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // UpdateBookRequest
 
-// string name = 1;
+// optional string name = 1;
 void UpdateBookRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& UpdateBookRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.UpdateBookRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void UpdateBookRequest::set_name(const ::std::string& value) {
   
@@ -4840,7 +5206,7 @@ void UpdateBookRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.UpdateBookRequest.name)
 }
 
-// .google.example.library.v1.Book book = 2;
+// optional .google.example.library.v1.Book book = 2;
 bool UpdateBookRequest::has_book() const {
   return this != internal_default_instance() && book_ != NULL;
 }
@@ -4879,6 +5245,9 @@ void UpdateBookRequest::set_allocated_book(::google::example::library::v1::Book*
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.UpdateBookRequest.book)
 }
 
+inline const UpdateBookRequest* UpdateBookRequest::internal_default_instance() {
+  return &UpdateBookRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4889,21 +5258,19 @@ const int DeleteBookRequest::kNameFieldNumber;
 
 DeleteBookRequest::DeleteBookRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.example.library.v1.DeleteBookRequest)
 }
+
+void DeleteBookRequest::InitAsDefaultInstance() {
+}
+
 DeleteBookRequest::DeleteBookRequest(const DeleteBookRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.example.library.v1.DeleteBookRequest)
 }
 
@@ -4928,13 +5295,15 @@ void DeleteBookRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* DeleteBookRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[13].descriptor;
+  return DeleteBookRequest_descriptor_;
 }
 
 const DeleteBookRequest& DeleteBookRequest::default_instance() {
   protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<DeleteBookRequest> DeleteBookRequest_default_instance_;
 
 DeleteBookRequest* DeleteBookRequest::New(::google::protobuf::Arena* arena) const {
   DeleteBookRequest* n = new DeleteBookRequest;
@@ -4955,13 +5324,13 @@ bool DeleteBookRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.example.library.v1.DeleteBookRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4971,6 +5340,7 @@ bool DeleteBookRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4998,7 +5368,7 @@ failure:
 void DeleteBookRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.example.library.v1.DeleteBookRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -5015,7 +5385,7 @@ void DeleteBookRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.example.library.v1.DeleteBookRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -5034,7 +5404,7 @@ size_t DeleteBookRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.example.library.v1.DeleteBookRequest)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -5050,7 +5420,7 @@ size_t DeleteBookRequest::ByteSizeLong() const {
 
 void DeleteBookRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.example.library.v1.DeleteBookRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const DeleteBookRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteBookRequest>(
           &from);
@@ -5059,14 +5429,21 @@ void DeleteBookRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.example.library.v1.DeleteBookRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteBookRequest::MergeFrom(const DeleteBookRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.example.library.v1.DeleteBookRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void DeleteBookRequest::UnsafeMergeFrom(const DeleteBookRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -5084,10 +5461,11 @@ void DeleteBookRequest::CopyFrom(const DeleteBookRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.example.library.v1.DeleteBookRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteBookRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -5097,24 +5475,28 @@ void DeleteBookRequest::Swap(DeleteBookRequest* other) {
 }
 void DeleteBookRequest::InternalSwap(DeleteBookRequest* other) {
   name_.Swap(&other->name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DeleteBookRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[13];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = DeleteBookRequest_descriptor_;
+  metadata.reflection = DeleteBookRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // DeleteBookRequest
 
-// string name = 1;
+// optional string name = 1;
 void DeleteBookRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& DeleteBookRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.DeleteBookRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void DeleteBookRequest::set_name(const ::std::string& value) {
   
@@ -5152,6 +5534,9 @@ void DeleteBookRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.DeleteBookRequest.name)
 }
 
+inline const DeleteBookRequest* DeleteBookRequest::internal_default_instance() {
+  return &DeleteBookRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5163,25 +5548,19 @@ const int MoveBookRequest::kOtherShelfNameFieldNumber;
 
 MoveBookRequest::MoveBookRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.example.library.v1.MoveBookRequest)
 }
+
+void MoveBookRequest::InitAsDefaultInstance() {
+}
+
 MoveBookRequest::MoveBookRequest(const MoveBookRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  other_shelf_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.other_shelf_name().size() > 0) {
-    other_shelf_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.other_shelf_name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.example.library.v1.MoveBookRequest)
 }
 
@@ -5208,13 +5587,15 @@ void MoveBookRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* MoveBookRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[14].descriptor;
+  return MoveBookRequest_descriptor_;
 }
 
 const MoveBookRequest& MoveBookRequest::default_instance() {
   protobuf_InitDefaults_google_2fexample_2flibrary_2fv1_2flibrary_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<MoveBookRequest> MoveBookRequest_default_instance_;
 
 MoveBookRequest* MoveBookRequest::New(::google::protobuf::Arena* arena) const {
   MoveBookRequest* n = new MoveBookRequest;
@@ -5236,13 +5617,13 @@ bool MoveBookRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.example.library.v1.MoveBookRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -5252,12 +5633,14 @@ bool MoveBookRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_other_shelf_name;
         break;
       }
 
-      // string other_shelf_name = 2;
+      // optional string other_shelf_name = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_other_shelf_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_other_shelf_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -5267,6 +5650,7 @@ bool MoveBookRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -5294,7 +5678,7 @@ failure:
 void MoveBookRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.example.library.v1.MoveBookRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -5304,7 +5688,7 @@ void MoveBookRequest::SerializeWithCachedSizes(
       1, this->name(), output);
   }
 
-  // string other_shelf_name = 2;
+  // optional string other_shelf_name = 2;
   if (this->other_shelf_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->other_shelf_name().data(), this->other_shelf_name().length(),
@@ -5321,7 +5705,7 @@ void MoveBookRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.example.library.v1.MoveBookRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -5332,7 +5716,7 @@ void MoveBookRequest::SerializeWithCachedSizes(
         1, this->name(), target);
   }
 
-  // string other_shelf_name = 2;
+  // optional string other_shelf_name = 2;
   if (this->other_shelf_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->other_shelf_name().data(), this->other_shelf_name().length(),
@@ -5351,14 +5735,14 @@ size_t MoveBookRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.example.library.v1.MoveBookRequest)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->name());
   }
 
-  // string other_shelf_name = 2;
+  // optional string other_shelf_name = 2;
   if (this->other_shelf_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -5374,7 +5758,7 @@ size_t MoveBookRequest::ByteSizeLong() const {
 
 void MoveBookRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.example.library.v1.MoveBookRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const MoveBookRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const MoveBookRequest>(
           &from);
@@ -5383,14 +5767,21 @@ void MoveBookRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.example.library.v1.MoveBookRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void MoveBookRequest::MergeFrom(const MoveBookRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.example.library.v1.MoveBookRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void MoveBookRequest::UnsafeMergeFrom(const MoveBookRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -5412,10 +5803,11 @@ void MoveBookRequest::CopyFrom(const MoveBookRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.example.library.v1.MoveBookRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool MoveBookRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -5426,24 +5818,28 @@ void MoveBookRequest::Swap(MoveBookRequest* other) {
 void MoveBookRequest::InternalSwap(MoveBookRequest* other) {
   name_.Swap(&other->name_);
   other_shelf_name_.Swap(&other->other_shelf_name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata MoveBookRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[14];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = MoveBookRequest_descriptor_;
+  metadata.reflection = MoveBookRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // MoveBookRequest
 
-// string name = 1;
+// optional string name = 1;
 void MoveBookRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& MoveBookRequest::name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.MoveBookRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void MoveBookRequest::set_name(const ::std::string& value) {
   
@@ -5481,13 +5877,13 @@ void MoveBookRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.MoveBookRequest.name)
 }
 
-// string other_shelf_name = 2;
+// optional string other_shelf_name = 2;
 void MoveBookRequest::clear_other_shelf_name() {
   other_shelf_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& MoveBookRequest::other_shelf_name() const {
   // @@protoc_insertion_point(field_get:google.example.library.v1.MoveBookRequest.other_shelf_name)
-  return other_shelf_name_.GetNoArena();
+  return other_shelf_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void MoveBookRequest::set_other_shelf_name(const ::std::string& value) {
   
@@ -5525,6 +5921,9 @@ void MoveBookRequest::set_allocated_other_shelf_name(::std::string* other_shelf_
   // @@protoc_insertion_point(field_set_allocated:google.example.library.v1.MoveBookRequest.other_shelf_name)
 }
 
+inline const MoveBookRequest* MoveBookRequest::internal_default_instance() {
+  return &MoveBookRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

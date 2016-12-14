@@ -24,54 +24,14 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/map.h>
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace devtools {
-namespace source {
-namespace v1 {
-class AliasContext;
-class AliasContextDefaultTypeInternal;
-extern AliasContextDefaultTypeInternal _AliasContext_default_instance_;
-class CloudRepoSourceContext;
-class CloudRepoSourceContextDefaultTypeInternal;
-extern CloudRepoSourceContextDefaultTypeInternal _CloudRepoSourceContext_default_instance_;
-class CloudWorkspaceId;
-class CloudWorkspaceIdDefaultTypeInternal;
-extern CloudWorkspaceIdDefaultTypeInternal _CloudWorkspaceId_default_instance_;
-class CloudWorkspaceSourceContext;
-class CloudWorkspaceSourceContextDefaultTypeInternal;
-extern CloudWorkspaceSourceContextDefaultTypeInternal _CloudWorkspaceSourceContext_default_instance_;
-class ExtendedSourceContext;
-class ExtendedSourceContextDefaultTypeInternal;
-extern ExtendedSourceContextDefaultTypeInternal _ExtendedSourceContext_default_instance_;
-class GerritSourceContext;
-class GerritSourceContextDefaultTypeInternal;
-extern GerritSourceContextDefaultTypeInternal _GerritSourceContext_default_instance_;
-class GitSourceContext;
-class GitSourceContextDefaultTypeInternal;
-extern GitSourceContextDefaultTypeInternal _GitSourceContext_default_instance_;
-class ProjectRepoId;
-class ProjectRepoIdDefaultTypeInternal;
-extern ProjectRepoIdDefaultTypeInternal _ProjectRepoId_default_instance_;
-class RepoId;
-class RepoIdDefaultTypeInternal;
-extern RepoIdDefaultTypeInternal _RepoId_default_instance_;
-class SourceContext;
-class SourceContextDefaultTypeInternal;
-extern SourceContextDefaultTypeInternal _SourceContext_default_instance_;
-}  // namespace v1
-}  // namespace source
-}  // namespace devtools
-}  // namespace google
 
 namespace google {
 namespace devtools {
@@ -81,6 +41,19 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
 void protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
+void protobuf_AssignDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
+void protobuf_ShutdownFile_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
+
+class AliasContext;
+class CloudRepoSourceContext;
+class CloudWorkspaceId;
+class CloudWorkspaceSourceContext;
+class ExtendedSourceContext;
+class GerritSourceContext;
+class GitSourceContext;
+class ProjectRepoId;
+class RepoId;
+class SourceContext;
 
 enum AliasContext_Kind {
   AliasContext_Kind_ANY = 0,
@@ -130,58 +103,55 @@ class SourceContext : public ::google::protobuf::Message /* @@protoc_insertion_p
     CONTEXT_NOT_SET = 0,
   };
 
-  static inline const SourceContext* internal_default_instance() {
-    return reinterpret_cast<const SourceContext*>(
-               &_SourceContext_default_instance_);
-  }
+  static const SourceContext* internal_default_instance();
 
   void Swap(SourceContext* other);
 
   // implements Message ----------------------------------------------
 
-  inline SourceContext* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline SourceContext* New() const { return New(NULL); }
 
-  SourceContext* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  SourceContext* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const SourceContext& from);
   void MergeFrom(const SourceContext& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(SourceContext* other);
+  void UnsafeMergeFrom(const SourceContext& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.devtools.source.v1.CloudRepoSourceContext cloud_repo = 1;
+  // optional .google.devtools.source.v1.CloudRepoSourceContext cloud_repo = 1;
   bool has_cloud_repo() const;
   void clear_cloud_repo();
   static const int kCloudRepoFieldNumber = 1;
@@ -190,7 +160,7 @@ class SourceContext : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::google::devtools::source::v1::CloudRepoSourceContext* release_cloud_repo();
   void set_allocated_cloud_repo(::google::devtools::source::v1::CloudRepoSourceContext* cloud_repo);
 
-  // .google.devtools.source.v1.CloudWorkspaceSourceContext cloud_workspace = 2;
+  // optional .google.devtools.source.v1.CloudWorkspaceSourceContext cloud_workspace = 2;
   bool has_cloud_workspace() const;
   void clear_cloud_workspace();
   static const int kCloudWorkspaceFieldNumber = 2;
@@ -199,7 +169,7 @@ class SourceContext : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::google::devtools::source::v1::CloudWorkspaceSourceContext* release_cloud_workspace();
   void set_allocated_cloud_workspace(::google::devtools::source::v1::CloudWorkspaceSourceContext* cloud_workspace);
 
-  // .google.devtools.source.v1.GerritSourceContext gerrit = 3;
+  // optional .google.devtools.source.v1.GerritSourceContext gerrit = 3;
   bool has_gerrit() const;
   void clear_gerrit();
   static const int kGerritFieldNumber = 3;
@@ -208,7 +178,7 @@ class SourceContext : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::google::devtools::source::v1::GerritSourceContext* release_gerrit();
   void set_allocated_gerrit(::google::devtools::source::v1::GerritSourceContext* gerrit);
 
-  // .google.devtools.source.v1.GitSourceContext git = 6;
+  // optional .google.devtools.source.v1.GitSourceContext git = 6;
   bool has_git() const;
   void clear_git();
   static const int kGitFieldNumber = 6;
@@ -220,10 +190,10 @@ class SourceContext : public ::google::protobuf::Message /* @@protoc_insertion_p
   ContextCase context_case() const;
   // @@protoc_insertion_point(class_scope:google.devtools.source.v1.SourceContext)
  private:
-  void set_has_cloud_repo();
-  void set_has_cloud_workspace();
-  void set_has_gerrit();
-  void set_has_git();
+  inline void set_has_cloud_repo();
+  inline void set_has_cloud_workspace();
+  inline void set_has_gerrit();
+  inline void set_has_git();
 
   inline bool has_context() const;
   void clear_context();
@@ -242,12 +212,12 @@ class SourceContext : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   friend void  protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
 
+  void InitAsDefaultInstance();
 };
-// -------------------------------------------------------------------
-
+extern ::google::protobuf::internal::ExplicitlyConstructed<SourceContext> SourceContext_default_instance_;
 
 // -------------------------------------------------------------------
 
@@ -266,59 +236,56 @@ class ExtendedSourceContext : public ::google::protobuf::Message /* @@protoc_ins
   static const ::google::protobuf::Descriptor* descriptor();
   static const ExtendedSourceContext& default_instance();
 
-  static inline const ExtendedSourceContext* internal_default_instance() {
-    return reinterpret_cast<const ExtendedSourceContext*>(
-               &_ExtendedSourceContext_default_instance_);
-  }
+  static const ExtendedSourceContext* internal_default_instance();
 
   void Swap(ExtendedSourceContext* other);
 
   // implements Message ----------------------------------------------
 
-  inline ExtendedSourceContext* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ExtendedSourceContext* New() const { return New(NULL); }
 
-  ExtendedSourceContext* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ExtendedSourceContext* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ExtendedSourceContext& from);
   void MergeFrom(const ExtendedSourceContext& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ExtendedSourceContext* other);
+  void UnsafeMergeFrom(const ExtendedSourceContext& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
 
   // accessors -------------------------------------------------------
 
-  // .google.devtools.source.v1.SourceContext context = 1;
+  // optional .google.devtools.source.v1.SourceContext context = 1;
   bool has_context() const;
   void clear_context();
   static const int kContextFieldNumber = 1;
@@ -355,10 +322,13 @@ class ExtendedSourceContext : public ::google::protobuf::Message /* @@protoc_ins
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ExtendedSourceContext> ExtendedSourceContext_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AliasContext : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.devtools.source.v1.AliasContext) */ {
@@ -376,52 +346,49 @@ class AliasContext : public ::google::protobuf::Message /* @@protoc_insertion_po
   static const ::google::protobuf::Descriptor* descriptor();
   static const AliasContext& default_instance();
 
-  static inline const AliasContext* internal_default_instance() {
-    return reinterpret_cast<const AliasContext*>(
-               &_AliasContext_default_instance_);
-  }
+  static const AliasContext* internal_default_instance();
 
   void Swap(AliasContext* other);
 
   // implements Message ----------------------------------------------
 
-  inline AliasContext* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AliasContext* New() const { return New(NULL); }
 
-  AliasContext* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AliasContext* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AliasContext& from);
   void MergeFrom(const AliasContext& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AliasContext* other);
+  void UnsafeMergeFrom(const AliasContext& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -457,13 +424,13 @@ class AliasContext : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   // accessors -------------------------------------------------------
 
-  // .google.devtools.source.v1.AliasContext.Kind kind = 1;
+  // optional .google.devtools.source.v1.AliasContext.Kind kind = 1;
   void clear_kind();
   static const int kKindFieldNumber = 1;
   ::google::devtools::source::v1::AliasContext_Kind kind() const;
   void set_kind(::google::devtools::source::v1::AliasContext_Kind value);
 
-  // string name = 2;
+  // optional string name = 2;
   void clear_name();
   static const int kNameFieldNumber = 2;
   const ::std::string& name() const;
@@ -483,10 +450,13 @@ class AliasContext : public ::google::protobuf::Message /* @@protoc_insertion_po
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AliasContext> AliasContext_default_instance_;
+
 // -------------------------------------------------------------------
 
 class CloudRepoSourceContext : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.devtools.source.v1.CloudRepoSourceContext) */ {
@@ -511,58 +481,55 @@ class CloudRepoSourceContext : public ::google::protobuf::Message /* @@protoc_in
     REVISION_NOT_SET = 0,
   };
 
-  static inline const CloudRepoSourceContext* internal_default_instance() {
-    return reinterpret_cast<const CloudRepoSourceContext*>(
-               &_CloudRepoSourceContext_default_instance_);
-  }
+  static const CloudRepoSourceContext* internal_default_instance();
 
   void Swap(CloudRepoSourceContext* other);
 
   // implements Message ----------------------------------------------
 
-  inline CloudRepoSourceContext* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline CloudRepoSourceContext* New() const { return New(NULL); }
 
-  CloudRepoSourceContext* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CloudRepoSourceContext* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const CloudRepoSourceContext& from);
   void MergeFrom(const CloudRepoSourceContext& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(CloudRepoSourceContext* other);
+  void UnsafeMergeFrom(const CloudRepoSourceContext& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.devtools.source.v1.RepoId repo_id = 1;
+  // optional .google.devtools.source.v1.RepoId repo_id = 1;
   bool has_repo_id() const;
   void clear_repo_id();
   static const int kRepoIdFieldNumber = 1;
@@ -571,7 +538,7 @@ class CloudRepoSourceContext : public ::google::protobuf::Message /* @@protoc_in
   ::google::devtools::source::v1::RepoId* release_repo_id();
   void set_allocated_repo_id(::google::devtools::source::v1::RepoId* repo_id);
 
-  // string revision_id = 2;
+  // optional string revision_id = 2;
   private:
   bool has_revision_id() const;
   public:
@@ -585,7 +552,7 @@ class CloudRepoSourceContext : public ::google::protobuf::Message /* @@protoc_in
   ::std::string* release_revision_id();
   void set_allocated_revision_id(::std::string* revision_id);
 
-  // string alias_name = 3;
+  // optional string alias_name = 3;
   private:
   bool has_alias_name() const;
   public:
@@ -599,7 +566,7 @@ class CloudRepoSourceContext : public ::google::protobuf::Message /* @@protoc_in
   ::std::string* release_alias_name();
   void set_allocated_alias_name(::std::string* alias_name);
 
-  // .google.devtools.source.v1.AliasContext alias_context = 4;
+  // optional .google.devtools.source.v1.AliasContext alias_context = 4;
   bool has_alias_context() const;
   void clear_alias_context();
   static const int kAliasContextFieldNumber = 4;
@@ -611,9 +578,9 @@ class CloudRepoSourceContext : public ::google::protobuf::Message /* @@protoc_in
   RevisionCase revision_case() const;
   // @@protoc_insertion_point(class_scope:google.devtools.source.v1.CloudRepoSourceContext)
  private:
-  void set_has_revision_id();
-  void set_has_alias_name();
-  void set_has_alias_context();
+  inline void set_has_revision_id();
+  inline void set_has_alias_name();
+  inline void set_has_alias_context();
 
   inline bool has_revision() const;
   void clear_revision();
@@ -632,10 +599,13 @@ class CloudRepoSourceContext : public ::google::protobuf::Message /* @@protoc_in
 
   friend void  protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<CloudRepoSourceContext> CloudRepoSourceContext_default_instance_;
+
 // -------------------------------------------------------------------
 
 class CloudWorkspaceSourceContext : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.devtools.source.v1.CloudWorkspaceSourceContext) */ {
@@ -653,58 +623,55 @@ class CloudWorkspaceSourceContext : public ::google::protobuf::Message /* @@prot
   static const ::google::protobuf::Descriptor* descriptor();
   static const CloudWorkspaceSourceContext& default_instance();
 
-  static inline const CloudWorkspaceSourceContext* internal_default_instance() {
-    return reinterpret_cast<const CloudWorkspaceSourceContext*>(
-               &_CloudWorkspaceSourceContext_default_instance_);
-  }
+  static const CloudWorkspaceSourceContext* internal_default_instance();
 
   void Swap(CloudWorkspaceSourceContext* other);
 
   // implements Message ----------------------------------------------
 
-  inline CloudWorkspaceSourceContext* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline CloudWorkspaceSourceContext* New() const { return New(NULL); }
 
-  CloudWorkspaceSourceContext* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CloudWorkspaceSourceContext* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const CloudWorkspaceSourceContext& from);
   void MergeFrom(const CloudWorkspaceSourceContext& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(CloudWorkspaceSourceContext* other);
+  void UnsafeMergeFrom(const CloudWorkspaceSourceContext& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.devtools.source.v1.CloudWorkspaceId workspace_id = 1;
+  // optional .google.devtools.source.v1.CloudWorkspaceId workspace_id = 1;
   bool has_workspace_id() const;
   void clear_workspace_id();
   static const int kWorkspaceIdFieldNumber = 1;
@@ -713,7 +680,7 @@ class CloudWorkspaceSourceContext : public ::google::protobuf::Message /* @@prot
   ::google::devtools::source::v1::CloudWorkspaceId* release_workspace_id();
   void set_allocated_workspace_id(::google::devtools::source::v1::CloudWorkspaceId* workspace_id);
 
-  // string snapshot_id = 2;
+  // optional string snapshot_id = 2;
   void clear_snapshot_id();
   static const int kSnapshotIdFieldNumber = 2;
   const ::std::string& snapshot_id() const;
@@ -733,10 +700,13 @@ class CloudWorkspaceSourceContext : public ::google::protobuf::Message /* @@prot
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<CloudWorkspaceSourceContext> CloudWorkspaceSourceContext_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GerritSourceContext : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.devtools.source.v1.GerritSourceContext) */ {
@@ -761,58 +731,55 @@ class GerritSourceContext : public ::google::protobuf::Message /* @@protoc_inser
     REVISION_NOT_SET = 0,
   };
 
-  static inline const GerritSourceContext* internal_default_instance() {
-    return reinterpret_cast<const GerritSourceContext*>(
-               &_GerritSourceContext_default_instance_);
-  }
+  static const GerritSourceContext* internal_default_instance();
 
   void Swap(GerritSourceContext* other);
 
   // implements Message ----------------------------------------------
 
-  inline GerritSourceContext* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GerritSourceContext* New() const { return New(NULL); }
 
-  GerritSourceContext* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GerritSourceContext* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GerritSourceContext& from);
   void MergeFrom(const GerritSourceContext& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GerritSourceContext* other);
+  void UnsafeMergeFrom(const GerritSourceContext& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string host_uri = 1;
+  // optional string host_uri = 1;
   void clear_host_uri();
   static const int kHostUriFieldNumber = 1;
   const ::std::string& host_uri() const;
@@ -823,7 +790,7 @@ class GerritSourceContext : public ::google::protobuf::Message /* @@protoc_inser
   ::std::string* release_host_uri();
   void set_allocated_host_uri(::std::string* host_uri);
 
-  // string gerrit_project = 2;
+  // optional string gerrit_project = 2;
   void clear_gerrit_project();
   static const int kGerritProjectFieldNumber = 2;
   const ::std::string& gerrit_project() const;
@@ -834,7 +801,7 @@ class GerritSourceContext : public ::google::protobuf::Message /* @@protoc_inser
   ::std::string* release_gerrit_project();
   void set_allocated_gerrit_project(::std::string* gerrit_project);
 
-  // string revision_id = 3;
+  // optional string revision_id = 3;
   private:
   bool has_revision_id() const;
   public:
@@ -848,7 +815,7 @@ class GerritSourceContext : public ::google::protobuf::Message /* @@protoc_inser
   ::std::string* release_revision_id();
   void set_allocated_revision_id(::std::string* revision_id);
 
-  // string alias_name = 4;
+  // optional string alias_name = 4;
   private:
   bool has_alias_name() const;
   public:
@@ -862,7 +829,7 @@ class GerritSourceContext : public ::google::protobuf::Message /* @@protoc_inser
   ::std::string* release_alias_name();
   void set_allocated_alias_name(::std::string* alias_name);
 
-  // .google.devtools.source.v1.AliasContext alias_context = 5;
+  // optional .google.devtools.source.v1.AliasContext alias_context = 5;
   bool has_alias_context() const;
   void clear_alias_context();
   static const int kAliasContextFieldNumber = 5;
@@ -874,9 +841,9 @@ class GerritSourceContext : public ::google::protobuf::Message /* @@protoc_inser
   RevisionCase revision_case() const;
   // @@protoc_insertion_point(class_scope:google.devtools.source.v1.GerritSourceContext)
  private:
-  void set_has_revision_id();
-  void set_has_alias_name();
-  void set_has_alias_context();
+  inline void set_has_revision_id();
+  inline void set_has_alias_name();
+  inline void set_has_alias_context();
 
   inline bool has_revision() const;
   void clear_revision();
@@ -896,10 +863,13 @@ class GerritSourceContext : public ::google::protobuf::Message /* @@protoc_inser
 
   friend void  protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GerritSourceContext> GerritSourceContext_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GitSourceContext : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.devtools.source.v1.GitSourceContext) */ {
@@ -917,58 +887,55 @@ class GitSourceContext : public ::google::protobuf::Message /* @@protoc_insertio
   static const ::google::protobuf::Descriptor* descriptor();
   static const GitSourceContext& default_instance();
 
-  static inline const GitSourceContext* internal_default_instance() {
-    return reinterpret_cast<const GitSourceContext*>(
-               &_GitSourceContext_default_instance_);
-  }
+  static const GitSourceContext* internal_default_instance();
 
   void Swap(GitSourceContext* other);
 
   // implements Message ----------------------------------------------
 
-  inline GitSourceContext* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GitSourceContext* New() const { return New(NULL); }
 
-  GitSourceContext* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GitSourceContext* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GitSourceContext& from);
   void MergeFrom(const GitSourceContext& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GitSourceContext* other);
+  void UnsafeMergeFrom(const GitSourceContext& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string url = 1;
+  // optional string url = 1;
   void clear_url();
   static const int kUrlFieldNumber = 1;
   const ::std::string& url() const;
@@ -979,7 +946,7 @@ class GitSourceContext : public ::google::protobuf::Message /* @@protoc_insertio
   ::std::string* release_url();
   void set_allocated_url(::std::string* url);
 
-  // string revision_id = 2;
+  // optional string revision_id = 2;
   void clear_revision_id();
   static const int kRevisionIdFieldNumber = 2;
   const ::std::string& revision_id() const;
@@ -999,10 +966,13 @@ class GitSourceContext : public ::google::protobuf::Message /* @@protoc_insertio
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GitSourceContext> GitSourceContext_default_instance_;
+
 // -------------------------------------------------------------------
 
 class RepoId : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.devtools.source.v1.RepoId) */ {
@@ -1026,58 +996,55 @@ class RepoId : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
     ID_NOT_SET = 0,
   };
 
-  static inline const RepoId* internal_default_instance() {
-    return reinterpret_cast<const RepoId*>(
-               &_RepoId_default_instance_);
-  }
+  static const RepoId* internal_default_instance();
 
   void Swap(RepoId* other);
 
   // implements Message ----------------------------------------------
 
-  inline RepoId* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline RepoId* New() const { return New(NULL); }
 
-  RepoId* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  RepoId* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const RepoId& from);
   void MergeFrom(const RepoId& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(RepoId* other);
+  void UnsafeMergeFrom(const RepoId& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.devtools.source.v1.ProjectRepoId project_repo_id = 1;
+  // optional .google.devtools.source.v1.ProjectRepoId project_repo_id = 1;
   bool has_project_repo_id() const;
   void clear_project_repo_id();
   static const int kProjectRepoIdFieldNumber = 1;
@@ -1086,7 +1053,7 @@ class RepoId : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   ::google::devtools::source::v1::ProjectRepoId* release_project_repo_id();
   void set_allocated_project_repo_id(::google::devtools::source::v1::ProjectRepoId* project_repo_id);
 
-  // string uid = 2;
+  // optional string uid = 2;
   private:
   bool has_uid() const;
   public:
@@ -1103,8 +1070,8 @@ class RepoId : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   IdCase id_case() const;
   // @@protoc_insertion_point(class_scope:google.devtools.source.v1.RepoId)
  private:
-  void set_has_project_repo_id();
-  void set_has_uid();
+  inline void set_has_project_repo_id();
+  inline void set_has_uid();
 
   inline bool has_id() const;
   void clear_id();
@@ -1121,10 +1088,13 @@ class RepoId : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
 
   friend void  protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<RepoId> RepoId_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ProjectRepoId : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.devtools.source.v1.ProjectRepoId) */ {
@@ -1142,58 +1112,55 @@ class ProjectRepoId : public ::google::protobuf::Message /* @@protoc_insertion_p
   static const ::google::protobuf::Descriptor* descriptor();
   static const ProjectRepoId& default_instance();
 
-  static inline const ProjectRepoId* internal_default_instance() {
-    return reinterpret_cast<const ProjectRepoId*>(
-               &_ProjectRepoId_default_instance_);
-  }
+  static const ProjectRepoId* internal_default_instance();
 
   void Swap(ProjectRepoId* other);
 
   // implements Message ----------------------------------------------
 
-  inline ProjectRepoId* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ProjectRepoId* New() const { return New(NULL); }
 
-  ProjectRepoId* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ProjectRepoId* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ProjectRepoId& from);
   void MergeFrom(const ProjectRepoId& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ProjectRepoId* other);
+  void UnsafeMergeFrom(const ProjectRepoId& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 1;
   const ::std::string& project_id() const;
@@ -1204,7 +1171,7 @@ class ProjectRepoId : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // string repo_name = 2;
+  // optional string repo_name = 2;
   void clear_repo_name();
   static const int kRepoNameFieldNumber = 2;
   const ::std::string& repo_name() const;
@@ -1224,10 +1191,13 @@ class ProjectRepoId : public ::google::protobuf::Message /* @@protoc_insertion_p
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ProjectRepoId> ProjectRepoId_default_instance_;
+
 // -------------------------------------------------------------------
 
 class CloudWorkspaceId : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.devtools.source.v1.CloudWorkspaceId) */ {
@@ -1245,58 +1215,55 @@ class CloudWorkspaceId : public ::google::protobuf::Message /* @@protoc_insertio
   static const ::google::protobuf::Descriptor* descriptor();
   static const CloudWorkspaceId& default_instance();
 
-  static inline const CloudWorkspaceId* internal_default_instance() {
-    return reinterpret_cast<const CloudWorkspaceId*>(
-               &_CloudWorkspaceId_default_instance_);
-  }
+  static const CloudWorkspaceId* internal_default_instance();
 
   void Swap(CloudWorkspaceId* other);
 
   // implements Message ----------------------------------------------
 
-  inline CloudWorkspaceId* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline CloudWorkspaceId* New() const { return New(NULL); }
 
-  CloudWorkspaceId* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CloudWorkspaceId* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const CloudWorkspaceId& from);
   void MergeFrom(const CloudWorkspaceId& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(CloudWorkspaceId* other);
+  void UnsafeMergeFrom(const CloudWorkspaceId& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.devtools.source.v1.RepoId repo_id = 1;
+  // optional .google.devtools.source.v1.RepoId repo_id = 1;
   bool has_repo_id() const;
   void clear_repo_id();
   static const int kRepoIdFieldNumber = 1;
@@ -1305,7 +1272,7 @@ class CloudWorkspaceId : public ::google::protobuf::Message /* @@protoc_insertio
   ::google::devtools::source::v1::RepoId* release_repo_id();
   void set_allocated_repo_id(::google::devtools::source::v1::RepoId* repo_id);
 
-  // string name = 2;
+  // optional string name = 2;
   void clear_name();
   static const int kNameFieldNumber = 2;
   const ::std::string& name() const;
@@ -1325,10 +1292,13 @@ class CloudWorkspaceId : public ::google::protobuf::Message /* @@protoc_insertio
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<CloudWorkspaceId> CloudWorkspaceId_default_instance_;
+
 // ===================================================================
 
 
@@ -1337,7 +1307,7 @@ class CloudWorkspaceId : public ::google::protobuf::Message /* @@protoc_insertio
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // SourceContext
 
-// .google.devtools.source.v1.CloudRepoSourceContext cloud_repo = 1;
+// optional .google.devtools.source.v1.CloudRepoSourceContext cloud_repo = 1;
 inline bool SourceContext::has_cloud_repo() const {
   return context_case() == kCloudRepo;
 }
@@ -1385,7 +1355,7 @@ inline void SourceContext::set_allocated_cloud_repo(::google::devtools::source::
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.SourceContext.cloud_repo)
 }
 
-// .google.devtools.source.v1.CloudWorkspaceSourceContext cloud_workspace = 2;
+// optional .google.devtools.source.v1.CloudWorkspaceSourceContext cloud_workspace = 2;
 inline bool SourceContext::has_cloud_workspace() const {
   return context_case() == kCloudWorkspace;
 }
@@ -1433,7 +1403,7 @@ inline void SourceContext::set_allocated_cloud_workspace(::google::devtools::sou
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.SourceContext.cloud_workspace)
 }
 
-// .google.devtools.source.v1.GerritSourceContext gerrit = 3;
+// optional .google.devtools.source.v1.GerritSourceContext gerrit = 3;
 inline bool SourceContext::has_gerrit() const {
   return context_case() == kGerrit;
 }
@@ -1481,7 +1451,7 @@ inline void SourceContext::set_allocated_gerrit(::google::devtools::source::v1::
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.SourceContext.gerrit)
 }
 
-// .google.devtools.source.v1.GitSourceContext git = 6;
+// optional .google.devtools.source.v1.GitSourceContext git = 6;
 inline bool SourceContext::has_git() const {
   return context_case() == kGit;
 }
@@ -1538,13 +1508,14 @@ inline void SourceContext::clear_has_context() {
 inline SourceContext::ContextCase SourceContext::context_case() const {
   return SourceContext::ContextCase(_oneof_case_[0]);
 }
-// -------------------------------------------------------------------
-
+inline const SourceContext* SourceContext::internal_default_instance() {
+  return &SourceContext_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ExtendedSourceContext
 
-// .google.devtools.source.v1.SourceContext context = 1;
+// optional .google.devtools.source.v1.SourceContext context = 1;
 inline bool ExtendedSourceContext::has_context() const {
   return this != internal_default_instance() && context_ != NULL;
 }
@@ -1601,11 +1572,14 @@ ExtendedSourceContext::mutable_labels() {
   return labels_.MutableMap();
 }
 
+inline const ExtendedSourceContext* ExtendedSourceContext::internal_default_instance() {
+  return &ExtendedSourceContext_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AliasContext
 
-// .google.devtools.source.v1.AliasContext.Kind kind = 1;
+// optional .google.devtools.source.v1.AliasContext.Kind kind = 1;
 inline void AliasContext::clear_kind() {
   kind_ = 0;
 }
@@ -1619,13 +1593,13 @@ inline void AliasContext::set_kind(::google::devtools::source::v1::AliasContext_
   // @@protoc_insertion_point(field_set:google.devtools.source.v1.AliasContext.kind)
 }
 
-// string name = 2;
+// optional string name = 2;
 inline void AliasContext::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AliasContext::name() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.AliasContext.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AliasContext::set_name(const ::std::string& value) {
   
@@ -1663,11 +1637,14 @@ inline void AliasContext::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.AliasContext.name)
 }
 
+inline const AliasContext* AliasContext::internal_default_instance() {
+  return &AliasContext_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // CloudRepoSourceContext
 
-// .google.devtools.source.v1.RepoId repo_id = 1;
+// optional .google.devtools.source.v1.RepoId repo_id = 1;
 inline bool CloudRepoSourceContext::has_repo_id() const {
   return this != internal_default_instance() && repo_id_ != NULL;
 }
@@ -1706,7 +1683,7 @@ inline void CloudRepoSourceContext::set_allocated_repo_id(::google::devtools::so
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.CloudRepoSourceContext.repo_id)
 }
 
-// string revision_id = 2;
+// optional string revision_id = 2;
 inline bool CloudRepoSourceContext::has_revision_id() const {
   return revision_case() == kRevisionId;
 }
@@ -1722,7 +1699,7 @@ inline void CloudRepoSourceContext::clear_revision_id() {
 inline const ::std::string& CloudRepoSourceContext::revision_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.CloudRepoSourceContext.revision_id)
   if (has_revision_id()) {
-    return revision_.revision_id_.GetNoArena();
+    return revision_.revision_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -1787,7 +1764,7 @@ inline void CloudRepoSourceContext::set_allocated_revision_id(::std::string* rev
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.CloudRepoSourceContext.revision_id)
 }
 
-// string alias_name = 3;
+// optional string alias_name = 3;
 inline bool CloudRepoSourceContext::has_alias_name() const {
   return revision_case() == kAliasName;
 }
@@ -1803,7 +1780,7 @@ inline void CloudRepoSourceContext::clear_alias_name() {
 inline const ::std::string& CloudRepoSourceContext::alias_name() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.CloudRepoSourceContext.alias_name)
   if (has_alias_name()) {
-    return revision_.alias_name_.GetNoArena();
+    return revision_.alias_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -1868,7 +1845,7 @@ inline void CloudRepoSourceContext::set_allocated_alias_name(::std::string* alia
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.CloudRepoSourceContext.alias_name)
 }
 
-// .google.devtools.source.v1.AliasContext alias_context = 4;
+// optional .google.devtools.source.v1.AliasContext alias_context = 4;
 inline bool CloudRepoSourceContext::has_alias_context() const {
   return revision_case() == kAliasContext;
 }
@@ -1925,11 +1902,14 @@ inline void CloudRepoSourceContext::clear_has_revision() {
 inline CloudRepoSourceContext::RevisionCase CloudRepoSourceContext::revision_case() const {
   return CloudRepoSourceContext::RevisionCase(_oneof_case_[0]);
 }
+inline const CloudRepoSourceContext* CloudRepoSourceContext::internal_default_instance() {
+  return &CloudRepoSourceContext_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // CloudWorkspaceSourceContext
 
-// .google.devtools.source.v1.CloudWorkspaceId workspace_id = 1;
+// optional .google.devtools.source.v1.CloudWorkspaceId workspace_id = 1;
 inline bool CloudWorkspaceSourceContext::has_workspace_id() const {
   return this != internal_default_instance() && workspace_id_ != NULL;
 }
@@ -1968,13 +1948,13 @@ inline void CloudWorkspaceSourceContext::set_allocated_workspace_id(::google::de
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.CloudWorkspaceSourceContext.workspace_id)
 }
 
-// string snapshot_id = 2;
+// optional string snapshot_id = 2;
 inline void CloudWorkspaceSourceContext::clear_snapshot_id() {
   snapshot_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& CloudWorkspaceSourceContext::snapshot_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.CloudWorkspaceSourceContext.snapshot_id)
-  return snapshot_id_.GetNoArena();
+  return snapshot_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void CloudWorkspaceSourceContext::set_snapshot_id(const ::std::string& value) {
   
@@ -2012,17 +1992,20 @@ inline void CloudWorkspaceSourceContext::set_allocated_snapshot_id(::std::string
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.CloudWorkspaceSourceContext.snapshot_id)
 }
 
+inline const CloudWorkspaceSourceContext* CloudWorkspaceSourceContext::internal_default_instance() {
+  return &CloudWorkspaceSourceContext_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GerritSourceContext
 
-// string host_uri = 1;
+// optional string host_uri = 1;
 inline void GerritSourceContext::clear_host_uri() {
   host_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GerritSourceContext::host_uri() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.GerritSourceContext.host_uri)
-  return host_uri_.GetNoArena();
+  return host_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GerritSourceContext::set_host_uri(const ::std::string& value) {
   
@@ -2060,13 +2043,13 @@ inline void GerritSourceContext::set_allocated_host_uri(::std::string* host_uri)
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.GerritSourceContext.host_uri)
 }
 
-// string gerrit_project = 2;
+// optional string gerrit_project = 2;
 inline void GerritSourceContext::clear_gerrit_project() {
   gerrit_project_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GerritSourceContext::gerrit_project() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.GerritSourceContext.gerrit_project)
-  return gerrit_project_.GetNoArena();
+  return gerrit_project_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GerritSourceContext::set_gerrit_project(const ::std::string& value) {
   
@@ -2104,7 +2087,7 @@ inline void GerritSourceContext::set_allocated_gerrit_project(::std::string* ger
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.GerritSourceContext.gerrit_project)
 }
 
-// string revision_id = 3;
+// optional string revision_id = 3;
 inline bool GerritSourceContext::has_revision_id() const {
   return revision_case() == kRevisionId;
 }
@@ -2120,7 +2103,7 @@ inline void GerritSourceContext::clear_revision_id() {
 inline const ::std::string& GerritSourceContext::revision_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.GerritSourceContext.revision_id)
   if (has_revision_id()) {
-    return revision_.revision_id_.GetNoArena();
+    return revision_.revision_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -2185,7 +2168,7 @@ inline void GerritSourceContext::set_allocated_revision_id(::std::string* revisi
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.GerritSourceContext.revision_id)
 }
 
-// string alias_name = 4;
+// optional string alias_name = 4;
 inline bool GerritSourceContext::has_alias_name() const {
   return revision_case() == kAliasName;
 }
@@ -2201,7 +2184,7 @@ inline void GerritSourceContext::clear_alias_name() {
 inline const ::std::string& GerritSourceContext::alias_name() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.GerritSourceContext.alias_name)
   if (has_alias_name()) {
-    return revision_.alias_name_.GetNoArena();
+    return revision_.alias_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -2266,7 +2249,7 @@ inline void GerritSourceContext::set_allocated_alias_name(::std::string* alias_n
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.GerritSourceContext.alias_name)
 }
 
-// .google.devtools.source.v1.AliasContext alias_context = 5;
+// optional .google.devtools.source.v1.AliasContext alias_context = 5;
 inline bool GerritSourceContext::has_alias_context() const {
   return revision_case() == kAliasContext;
 }
@@ -2323,17 +2306,20 @@ inline void GerritSourceContext::clear_has_revision() {
 inline GerritSourceContext::RevisionCase GerritSourceContext::revision_case() const {
   return GerritSourceContext::RevisionCase(_oneof_case_[0]);
 }
+inline const GerritSourceContext* GerritSourceContext::internal_default_instance() {
+  return &GerritSourceContext_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GitSourceContext
 
-// string url = 1;
+// optional string url = 1;
 inline void GitSourceContext::clear_url() {
   url_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GitSourceContext::url() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.GitSourceContext.url)
-  return url_.GetNoArena();
+  return url_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GitSourceContext::set_url(const ::std::string& value) {
   
@@ -2371,13 +2357,13 @@ inline void GitSourceContext::set_allocated_url(::std::string* url) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.GitSourceContext.url)
 }
 
-// string revision_id = 2;
+// optional string revision_id = 2;
 inline void GitSourceContext::clear_revision_id() {
   revision_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GitSourceContext::revision_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.GitSourceContext.revision_id)
-  return revision_id_.GetNoArena();
+  return revision_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GitSourceContext::set_revision_id(const ::std::string& value) {
   
@@ -2415,11 +2401,14 @@ inline void GitSourceContext::set_allocated_revision_id(::std::string* revision_
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.GitSourceContext.revision_id)
 }
 
+inline const GitSourceContext* GitSourceContext::internal_default_instance() {
+  return &GitSourceContext_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // RepoId
 
-// .google.devtools.source.v1.ProjectRepoId project_repo_id = 1;
+// optional .google.devtools.source.v1.ProjectRepoId project_repo_id = 1;
 inline bool RepoId::has_project_repo_id() const {
   return id_case() == kProjectRepoId;
 }
@@ -2467,7 +2456,7 @@ inline void RepoId::set_allocated_project_repo_id(::google::devtools::source::v1
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.RepoId.project_repo_id)
 }
 
-// string uid = 2;
+// optional string uid = 2;
 inline bool RepoId::has_uid() const {
   return id_case() == kUid;
 }
@@ -2483,7 +2472,7 @@ inline void RepoId::clear_uid() {
 inline const ::std::string& RepoId::uid() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.RepoId.uid)
   if (has_uid()) {
-    return id_.uid_.GetNoArena();
+    return id_.uid_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -2557,17 +2546,20 @@ inline void RepoId::clear_has_id() {
 inline RepoId::IdCase RepoId::id_case() const {
   return RepoId::IdCase(_oneof_case_[0]);
 }
+inline const RepoId* RepoId::internal_default_instance() {
+  return &RepoId_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ProjectRepoId
 
-// string project_id = 1;
+// optional string project_id = 1;
 inline void ProjectRepoId::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ProjectRepoId::project_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.ProjectRepoId.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ProjectRepoId::set_project_id(const ::std::string& value) {
   
@@ -2605,13 +2597,13 @@ inline void ProjectRepoId::set_allocated_project_id(::std::string* project_id) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.ProjectRepoId.project_id)
 }
 
-// string repo_name = 2;
+// optional string repo_name = 2;
 inline void ProjectRepoId::clear_repo_name() {
   repo_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ProjectRepoId::repo_name() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.ProjectRepoId.repo_name)
-  return repo_name_.GetNoArena();
+  return repo_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ProjectRepoId::set_repo_name(const ::std::string& value) {
   
@@ -2649,11 +2641,14 @@ inline void ProjectRepoId::set_allocated_repo_name(::std::string* repo_name) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.ProjectRepoId.repo_name)
 }
 
+inline const ProjectRepoId* ProjectRepoId::internal_default_instance() {
+  return &ProjectRepoId_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // CloudWorkspaceId
 
-// .google.devtools.source.v1.RepoId repo_id = 1;
+// optional .google.devtools.source.v1.RepoId repo_id = 1;
 inline bool CloudWorkspaceId::has_repo_id() const {
   return this != internal_default_instance() && repo_id_ != NULL;
 }
@@ -2692,13 +2687,13 @@ inline void CloudWorkspaceId::set_allocated_repo_id(::google::devtools::source::
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.CloudWorkspaceId.repo_id)
 }
 
-// string name = 2;
+// optional string name = 2;
 inline void CloudWorkspaceId::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& CloudWorkspaceId::name() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.CloudWorkspaceId.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void CloudWorkspaceId::set_name(const ::std::string& value) {
   
@@ -2736,9 +2731,10 @@ inline void CloudWorkspaceId::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.CloudWorkspaceId.name)
 }
 
+inline const CloudWorkspaceId* CloudWorkspaceId::internal_default_instance() {
+  return &CloudWorkspaceId_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -2759,7 +2755,6 @@ inline void CloudWorkspaceId::set_allocated_name(::std::string* name) {
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace source

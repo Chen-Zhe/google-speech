@@ -24,47 +24,11 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include <google/protobuf/wrappers.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace protobuf {
-class BoolValue;
-class BoolValueDefaultTypeInternal;
-extern BoolValueDefaultTypeInternal _BoolValue_default_instance_;
-class BytesValue;
-class BytesValueDefaultTypeInternal;
-extern BytesValueDefaultTypeInternal _BytesValue_default_instance_;
-class DoubleValue;
-class DoubleValueDefaultTypeInternal;
-extern DoubleValueDefaultTypeInternal _DoubleValue_default_instance_;
-class FloatValue;
-class FloatValueDefaultTypeInternal;
-extern FloatValueDefaultTypeInternal _FloatValue_default_instance_;
-class Int32Value;
-class Int32ValueDefaultTypeInternal;
-extern Int32ValueDefaultTypeInternal _Int32Value_default_instance_;
-class Int64Value;
-class Int64ValueDefaultTypeInternal;
-extern Int64ValueDefaultTypeInternal _Int64Value_default_instance_;
-class StringValue;
-class StringValueDefaultTypeInternal;
-extern StringValueDefaultTypeInternal _StringValue_default_instance_;
-class UInt32Value;
-class UInt32ValueDefaultTypeInternal;
-extern UInt32ValueDefaultTypeInternal _UInt32Value_default_instance_;
-class UInt64Value;
-class UInt64ValueDefaultTypeInternal;
-extern UInt64ValueDefaultTypeInternal _UInt64Value_default_instance_;
-}  // namespace protobuf
-namespace type {
-class Color;
-class ColorDefaultTypeInternal;
-extern ColorDefaultTypeInternal _Color_default_instance_;
-}  // namespace type
-}  // namespace google
 
 namespace google {
 namespace type {
@@ -72,6 +36,10 @@ namespace type {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2ftype_2fcolor_2eproto();
 void protobuf_InitDefaults_google_2ftype_2fcolor_2eproto();
+void protobuf_AssignDesc_google_2ftype_2fcolor_2eproto();
+void protobuf_ShutdownFile_google_2ftype_2fcolor_2eproto();
+
+class Color;
 
 // ===================================================================
 
@@ -90,76 +58,73 @@ class Color : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   static const ::google::protobuf::Descriptor* descriptor();
   static const Color& default_instance();
 
-  static inline const Color* internal_default_instance() {
-    return reinterpret_cast<const Color*>(
-               &_Color_default_instance_);
-  }
+  static const Color* internal_default_instance();
 
   void Swap(Color* other);
 
   // implements Message ----------------------------------------------
 
-  inline Color* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Color* New() const { return New(NULL); }
 
-  Color* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Color* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Color& from);
   void MergeFrom(const Color& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Color* other);
+  void UnsafeMergeFrom(const Color& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // float red = 1;
+  // optional float red = 1;
   void clear_red();
   static const int kRedFieldNumber = 1;
   float red() const;
   void set_red(float value);
 
-  // float green = 2;
+  // optional float green = 2;
   void clear_green();
   static const int kGreenFieldNumber = 2;
   float green() const;
   void set_green(float value);
 
-  // float blue = 3;
+  // optional float blue = 3;
   void clear_blue();
   static const int kBlueFieldNumber = 3;
   float blue() const;
   void set_blue(float value);
 
-  // .google.protobuf.FloatValue alpha = 4;
+  // optional .google.protobuf.FloatValue alpha = 4;
   bool has_alpha() const;
   void clear_alpha();
   static const int kAlphaFieldNumber = 4;
@@ -179,10 +144,13 @@ class Color : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2ftype_2fcolor_2eproto_impl();
   friend void  protobuf_AddDesc_google_2ftype_2fcolor_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2ftype_2fcolor_2eproto();
+  friend void protobuf_AssignDesc_google_2ftype_2fcolor_2eproto();
   friend void protobuf_ShutdownFile_google_2ftype_2fcolor_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Color> Color_default_instance_;
+
 // ===================================================================
 
 
@@ -191,7 +159,7 @@ class Color : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Color
 
-// float red = 1;
+// optional float red = 1;
 inline void Color::clear_red() {
   red_ = 0;
 }
@@ -205,7 +173,7 @@ inline void Color::set_red(float value) {
   // @@protoc_insertion_point(field_set:google.type.Color.red)
 }
 
-// float green = 2;
+// optional float green = 2;
 inline void Color::clear_green() {
   green_ = 0;
 }
@@ -219,7 +187,7 @@ inline void Color::set_green(float value) {
   // @@protoc_insertion_point(field_set:google.type.Color.green)
 }
 
-// float blue = 3;
+// optional float blue = 3;
 inline void Color::clear_blue() {
   blue_ = 0;
 }
@@ -233,7 +201,7 @@ inline void Color::set_blue(float value) {
   // @@protoc_insertion_point(field_set:google.type.Color.blue)
 }
 
-// .google.protobuf.FloatValue alpha = 4;
+// optional .google.protobuf.FloatValue alpha = 4;
 inline bool Color::has_alpha() const {
   return this != internal_default_instance() && alpha_ != NULL;
 }
@@ -277,10 +245,12 @@ inline void Color::set_allocated_alpha(::google::protobuf::FloatValue* alpha) {
   // @@protoc_insertion_point(field_set_allocated:google.type.Color.alpha)
 }
 
+inline const Color* Color::internal_default_instance() {
+  return &Color_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace type
 }  // namespace google

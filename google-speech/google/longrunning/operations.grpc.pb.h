@@ -23,6 +23,7 @@
 
 #include <grpc++/impl/codegen/async_stream.h>
 #include <grpc++/impl/codegen/async_unary_call.h>
+#include <grpc++/impl/codegen/method_handler_impl.h>
 #include <grpc++/impl/codegen/proto_utils.h>
 #include <grpc++/impl/codegen/rpc_method.h>
 #include <grpc++/impl/codegen/service_type.h>
@@ -50,7 +51,7 @@ namespace longrunning {
 // Google Cloud Pub/Sub API) to receive the response.  Any API service that
 // returns long-running operations should implement the `Operations` interface
 // so developers can have a consistent client experience.
-class Operations GRPC_FINAL {
+class Operations final {
  public:
   class StubInterface {
    public:
@@ -99,32 +100,32 @@ class Operations GRPC_FINAL {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncDeleteOperationRaw(::grpc::ClientContext* context, const ::google::longrunning::DeleteOperationRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::google::protobuf::Empty>* AsyncCancelOperationRaw(::grpc::ClientContext* context, const ::google::longrunning::CancelOperationRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
-  class Stub GRPC_FINAL : public StubInterface {
+  class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel);
-    ::grpc::Status ListOperations(::grpc::ClientContext* context, const ::google::longrunning::ListOperationsRequest& request, ::google::longrunning::ListOperationsResponse* response) GRPC_OVERRIDE;
+    ::grpc::Status ListOperations(::grpc::ClientContext* context, const ::google::longrunning::ListOperationsRequest& request, ::google::longrunning::ListOperationsResponse* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::ListOperationsResponse>> AsyncListOperations(::grpc::ClientContext* context, const ::google::longrunning::ListOperationsRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::ListOperationsResponse>>(AsyncListOperationsRaw(context, request, cq));
     }
-    ::grpc::Status GetOperation(::grpc::ClientContext* context, const ::google::longrunning::GetOperationRequest& request, ::google::longrunning::Operation* response) GRPC_OVERRIDE;
+    ::grpc::Status GetOperation(::grpc::ClientContext* context, const ::google::longrunning::GetOperationRequest& request, ::google::longrunning::Operation* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>> AsyncGetOperation(::grpc::ClientContext* context, const ::google::longrunning::GetOperationRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>>(AsyncGetOperationRaw(context, request, cq));
     }
-    ::grpc::Status DeleteOperation(::grpc::ClientContext* context, const ::google::longrunning::DeleteOperationRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status DeleteOperation(::grpc::ClientContext* context, const ::google::longrunning::DeleteOperationRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncDeleteOperation(::grpc::ClientContext* context, const ::google::longrunning::DeleteOperationRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncDeleteOperationRaw(context, request, cq));
     }
-    ::grpc::Status CancelOperation(::grpc::ClientContext* context, const ::google::longrunning::CancelOperationRequest& request, ::google::protobuf::Empty* response) GRPC_OVERRIDE;
+    ::grpc::Status CancelOperation(::grpc::ClientContext* context, const ::google::longrunning::CancelOperationRequest& request, ::google::protobuf::Empty* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>> AsyncCancelOperation(::grpc::ClientContext* context, const ::google::longrunning::CancelOperationRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>>(AsyncCancelOperationRaw(context, request, cq));
     }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::ListOperationsResponse>* AsyncListOperationsRaw(::grpc::ClientContext* context, const ::google::longrunning::ListOperationsRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncGetOperationRaw(::grpc::ClientContext* context, const ::google::longrunning::GetOperationRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteOperationRaw(::grpc::ClientContext* context, const ::google::longrunning::DeleteOperationRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
-    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncCancelOperationRaw(::grpc::ClientContext* context, const ::google::longrunning::CancelOperationRequest& request, ::grpc::CompletionQueue* cq) GRPC_OVERRIDE;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::ListOperationsResponse>* AsyncListOperationsRaw(::grpc::ClientContext* context, const ::google::longrunning::ListOperationsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::longrunning::Operation>* AsyncGetOperationRaw(::grpc::ClientContext* context, const ::google::longrunning::GetOperationRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncDeleteOperationRaw(::grpc::ClientContext* context, const ::google::longrunning::DeleteOperationRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::google::protobuf::Empty>* AsyncCancelOperationRaw(::grpc::ClientContext* context, const ::google::longrunning::CancelOperationRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::RpcMethod rpcmethod_ListOperations_;
     const ::grpc::RpcMethod rpcmethod_GetOperation_;
     const ::grpc::RpcMethod rpcmethod_DeleteOperation_;
@@ -171,11 +172,11 @@ class Operations GRPC_FINAL {
     WithAsyncMethod_ListOperations() {
       ::grpc::Service::MarkMethodAsync(0);
     }
-    ~WithAsyncMethod_ListOperations() GRPC_OVERRIDE {
+    ~WithAsyncMethod_ListOperations() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListOperations(::grpc::ServerContext* context, const ::google::longrunning::ListOperationsRequest* request, ::google::longrunning::ListOperationsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListOperations(::grpc::ServerContext* context, const ::google::longrunning::ListOperationsRequest* request, ::google::longrunning::ListOperationsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -191,11 +192,11 @@ class Operations GRPC_FINAL {
     WithAsyncMethod_GetOperation() {
       ::grpc::Service::MarkMethodAsync(1);
     }
-    ~WithAsyncMethod_GetOperation() GRPC_OVERRIDE {
+    ~WithAsyncMethod_GetOperation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetOperation(::grpc::ServerContext* context, const ::google::longrunning::GetOperationRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetOperation(::grpc::ServerContext* context, const ::google::longrunning::GetOperationRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -211,11 +212,11 @@ class Operations GRPC_FINAL {
     WithAsyncMethod_DeleteOperation() {
       ::grpc::Service::MarkMethodAsync(2);
     }
-    ~WithAsyncMethod_DeleteOperation() GRPC_OVERRIDE {
+    ~WithAsyncMethod_DeleteOperation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteOperation(::grpc::ServerContext* context, const ::google::longrunning::DeleteOperationRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteOperation(::grpc::ServerContext* context, const ::google::longrunning::DeleteOperationRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -231,11 +232,11 @@ class Operations GRPC_FINAL {
     WithAsyncMethod_CancelOperation() {
       ::grpc::Service::MarkMethodAsync(3);
     }
-    ~WithAsyncMethod_CancelOperation() GRPC_OVERRIDE {
+    ~WithAsyncMethod_CancelOperation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CancelOperation(::grpc::ServerContext* context, const ::google::longrunning::CancelOperationRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CancelOperation(::grpc::ServerContext* context, const ::google::longrunning::CancelOperationRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -252,11 +253,11 @@ class Operations GRPC_FINAL {
     WithGenericMethod_ListOperations() {
       ::grpc::Service::MarkMethodGeneric(0);
     }
-    ~WithGenericMethod_ListOperations() GRPC_OVERRIDE {
+    ~WithGenericMethod_ListOperations() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status ListOperations(::grpc::ServerContext* context, const ::google::longrunning::ListOperationsRequest* request, ::google::longrunning::ListOperationsResponse* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status ListOperations(::grpc::ServerContext* context, const ::google::longrunning::ListOperationsRequest* request, ::google::longrunning::ListOperationsResponse* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -269,11 +270,11 @@ class Operations GRPC_FINAL {
     WithGenericMethod_GetOperation() {
       ::grpc::Service::MarkMethodGeneric(1);
     }
-    ~WithGenericMethod_GetOperation() GRPC_OVERRIDE {
+    ~WithGenericMethod_GetOperation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetOperation(::grpc::ServerContext* context, const ::google::longrunning::GetOperationRequest* request, ::google::longrunning::Operation* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status GetOperation(::grpc::ServerContext* context, const ::google::longrunning::GetOperationRequest* request, ::google::longrunning::Operation* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -286,11 +287,11 @@ class Operations GRPC_FINAL {
     WithGenericMethod_DeleteOperation() {
       ::grpc::Service::MarkMethodGeneric(2);
     }
-    ~WithGenericMethod_DeleteOperation() GRPC_OVERRIDE {
+    ~WithGenericMethod_DeleteOperation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status DeleteOperation(::grpc::ServerContext* context, const ::google::longrunning::DeleteOperationRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status DeleteOperation(::grpc::ServerContext* context, const ::google::longrunning::DeleteOperationRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -303,15 +304,98 @@ class Operations GRPC_FINAL {
     WithGenericMethod_CancelOperation() {
       ::grpc::Service::MarkMethodGeneric(3);
     }
-    ~WithGenericMethod_CancelOperation() GRPC_OVERRIDE {
+    ~WithGenericMethod_CancelOperation() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status CancelOperation(::grpc::ServerContext* context, const ::google::longrunning::CancelOperationRequest* request, ::google::protobuf::Empty* response) GRPC_FINAL GRPC_OVERRIDE {
+    ::grpc::Status CancelOperation(::grpc::ServerContext* context, const ::google::longrunning::CancelOperationRequest* request, ::google::protobuf::Empty* response) final override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
   };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ListOperations : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_ListOperations() {
+      ::grpc::Service::MarkMethodStreamed(0,
+        new ::grpc::StreamedUnaryHandler< ::google::longrunning::ListOperationsRequest, ::google::longrunning::ListOperationsResponse>(std::bind(&WithStreamedUnaryMethod_ListOperations<BaseClass>::StreamedListOperations, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_ListOperations() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ListOperations(::grpc::ServerContext* context, const ::google::longrunning::ListOperationsRequest* request, ::google::longrunning::ListOperationsResponse* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedListOperations(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::longrunning::ListOperationsRequest,::google::longrunning::ListOperationsResponse>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_GetOperation : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_GetOperation() {
+      ::grpc::Service::MarkMethodStreamed(1,
+        new ::grpc::StreamedUnaryHandler< ::google::longrunning::GetOperationRequest, ::google::longrunning::Operation>(std::bind(&WithStreamedUnaryMethod_GetOperation<BaseClass>::StreamedGetOperation, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_GetOperation() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status GetOperation(::grpc::ServerContext* context, const ::google::longrunning::GetOperationRequest* request, ::google::longrunning::Operation* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedGetOperation(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::longrunning::GetOperationRequest,::google::longrunning::Operation>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_DeleteOperation : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_DeleteOperation() {
+      ::grpc::Service::MarkMethodStreamed(2,
+        new ::grpc::StreamedUnaryHandler< ::google::longrunning::DeleteOperationRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_DeleteOperation<BaseClass>::StreamedDeleteOperation, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_DeleteOperation() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status DeleteOperation(::grpc::ServerContext* context, const ::google::longrunning::DeleteOperationRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedDeleteOperation(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::longrunning::DeleteOperationRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CancelOperation : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithStreamedUnaryMethod_CancelOperation() {
+      ::grpc::Service::MarkMethodStreamed(3,
+        new ::grpc::StreamedUnaryHandler< ::google::longrunning::CancelOperationRequest, ::google::protobuf::Empty>(std::bind(&WithStreamedUnaryMethod_CancelOperation<BaseClass>::StreamedCancelOperation, this, std::placeholders::_1, std::placeholders::_2)));
+    }
+    ~WithStreamedUnaryMethod_CancelOperation() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CancelOperation(::grpc::ServerContext* context, const ::google::longrunning::CancelOperationRequest* request, ::google::protobuf::Empty* response) final override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCancelOperation(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::google::longrunning::CancelOperationRequest,::google::protobuf::Empty>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_ListOperations<WithStreamedUnaryMethod_GetOperation<WithStreamedUnaryMethod_DeleteOperation<WithStreamedUnaryMethod_CancelOperation<Service > > > > StreamedUnaryService;
+  typedef Service SplitStreamedService;
+  typedef WithStreamedUnaryMethod_ListOperations<WithStreamedUnaryMethod_GetOperation<WithStreamedUnaryMethod_DeleteOperation<WithStreamedUnaryMethod_CancelOperation<Service > > > > StreamedService;
 };
 
 }  // namespace longrunning

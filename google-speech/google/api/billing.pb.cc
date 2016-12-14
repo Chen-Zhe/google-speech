@@ -19,75 +19,82 @@
 
 namespace google {
 namespace api {
-class BillingDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Billing> {};
-BillingDefaultTypeInternal _Billing_default_instance_;
-class BillingStatusRuleDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<BillingStatusRule> {};
-BillingStatusRuleDefaultTypeInternal _BillingStatusRule_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[2];
+const ::google::protobuf::Descriptor* Billing_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Billing_reflection_ = NULL;
+const ::google::protobuf::Descriptor* BillingStatusRule_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  BillingStatusRule_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fbilling_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fbilling_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Billing, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fapi_2fbilling_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fapi_2fbilling_2eproto() {
+  protobuf_AddDesc_google_2fapi_2fbilling_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/api/billing.proto");
+  GOOGLE_CHECK(file != NULL);
+  Billing_descriptor_ = file->message_type(0);
+  static const int Billing_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Billing, metrics_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Billing, rules_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BillingStatusRule, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Billing_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Billing_descriptor_,
+      Billing::internal_default_instance(),
+      Billing_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Billing),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Billing, _internal_metadata_));
+  BillingStatusRule_descriptor_ = file->message_type(1);
+  static const int BillingStatusRule_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BillingStatusRule, selector_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BillingStatusRule, allowed_statuses_),
   };
-  return offsets;
+  BillingStatusRule_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      BillingStatusRule_descriptor_,
+      BillingStatusRule::internal_default_instance(),
+      BillingStatusRule_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(BillingStatusRule),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BillingStatusRule, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(Billing)},
-  { 6, -1, sizeof(BillingStatusRule)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Billing_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_BillingStatusRule_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fapi_2fbilling_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/api/billing.proto", schemas, file_default_instances, protobuf_Offsets_google_2fapi_2fbilling_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fapi_2fbilling_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 2);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Billing_descriptor_, Billing::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      BillingStatusRule_descriptor_, BillingStatusRule::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2fbilling_2eproto() {
-  _Billing_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _BillingStatusRule_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
+  Billing_default_instance_.Shutdown();
+  delete Billing_reflection_;
+  BillingStatusRule_default_instance_.Shutdown();
+  delete BillingStatusRule_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fapi_2fbilling_2eproto_impl() {
@@ -95,30 +102,33 @@ void protobuf_InitDefaults_google_2fapi_2fbilling_2eproto_impl() {
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
   ::google::api::protobuf_InitDefaults_google_2fapi_2fmetric_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _Billing_default_instance_.DefaultConstruct();
-  _BillingStatusRule_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Billing_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  BillingStatusRule_default_instance_.DefaultConstruct();
+  Billing_default_instance_.get_mutable()->InitAsDefaultInstance();
+  BillingStatusRule_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fbilling_2eproto_once_);
 void protobuf_InitDefaults_google_2fapi_2fbilling_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fapi_2fbilling_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fbilling_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fbilling_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fapi_2fbilling_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fapi_2fbilling_2eproto();
-  static const char descriptor[] = {
-      "\n\030google/api/billing.proto\022\ngoogle.api\032\034"
-      "google/api/annotations.proto\032\027google/api"
-      "/metric.proto\"H\n\007Billing\022\017\n\007metrics\030\001 \003("
-      "\t\022,\n\005rules\030\005 \003(\0132\035.google.api.BillingSta"
-      "tusRule\"\?\n\021BillingStatusRule\022\020\n\010selector"
-      "\030\001 \001(\t\022\030\n\020allowed_statuses\030\002 \003(\tBg\n\016com."
-      "google.apiB\014BillingProtoP\001ZEgoogle.golan"
-      "g.org/genproto/googleapis/api/servicecon"
-      "fig;serviceconfigb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 345);
+    "\n\030google/api/billing.proto\022\ngoogle.api\032\034"
+    "google/api/annotations.proto\032\027google/api"
+    "/metric.proto\"H\n\007Billing\022\017\n\007metrics\030\001 \003("
+    "\t\022,\n\005rules\030\005 \003(\0132\035.google.api.BillingSta"
+    "tusRule\"\?\n\021BillingStatusRule\022\020\n\010selector"
+    "\030\001 \001(\t\022\030\n\020allowed_statuses\030\002 \003(\tBg\n\016com."
+    "google.apiB\014BillingProtoP\001ZEgoogle.golan"
+    "g.org/genproto/googleapis/api/servicecon"
+    "fig;serviceconfigb\006proto3", 345);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/billing.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -138,6 +148,16 @@ struct StaticDescriptorInitializer_google_2fapi_2fbilling_2eproto {
   }
 } static_descriptor_initializer_google_2fapi_2fbilling_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -147,19 +167,19 @@ const int Billing::kRulesFieldNumber;
 
 Billing::Billing()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fbilling_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fbilling_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Billing)
 }
+
+void Billing::InitAsDefaultInstance() {
+}
+
 Billing::Billing(const Billing& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      metrics_(from.metrics_),
-      rules_(from.rules_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Billing)
 }
 
@@ -182,13 +202,15 @@ void Billing::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Billing::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return Billing_descriptor_;
 }
 
 const Billing& Billing::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fbilling_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Billing> Billing_default_instance_;
 
 Billing* Billing::New(::google::protobuf::Arena* arena) const {
   Billing* n = new Billing;
@@ -210,13 +232,14 @@ bool Billing::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.Billing)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated string metrics = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
+         parse_metrics:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_metrics()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -227,19 +250,25 @@ bool Billing::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_metrics;
+        if (input->ExpectTag(42)) goto parse_rules;
         break;
       }
 
       // repeated .google.api.BillingStatusRule rules = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_rules:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_rules:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_rules()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_loop_rules;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -343,7 +372,7 @@ size_t Billing::ByteSizeLong() const {
 
 void Billing::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Billing)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Billing* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Billing>(
           &from);
@@ -352,15 +381,22 @@ void Billing::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Billing)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Billing::MergeFrom(const Billing& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Billing)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  metrics_.MergeFrom(from.metrics_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Billing::UnsafeMergeFrom(const Billing& from) {
+  GOOGLE_DCHECK(&from != this);
+  metrics_.UnsafeMergeFrom(from.metrics_);
   rules_.MergeFrom(from.rules_);
 }
 
@@ -375,10 +411,11 @@ void Billing::CopyFrom(const Billing& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Billing)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Billing::IsInitialized() const {
+
   return true;
 }
 
@@ -389,12 +426,16 @@ void Billing::Swap(Billing* other) {
 void Billing::InternalSwap(Billing* other) {
   metrics_.UnsafeArenaSwap(&other->metrics_);
   rules_.UnsafeArenaSwap(&other->rules_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Billing::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Billing_descriptor_;
+  metadata.reflection = Billing_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -485,6 +526,9 @@ Billing::rules() const {
   return rules_;
 }
 
+inline const Billing* Billing::internal_default_instance() {
+  return &Billing_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -496,22 +540,19 @@ const int BillingStatusRule::kAllowedStatusesFieldNumber;
 
 BillingStatusRule::BillingStatusRule()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fbilling_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fbilling_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.BillingStatusRule)
 }
+
+void BillingStatusRule::InitAsDefaultInstance() {
+}
+
 BillingStatusRule::BillingStatusRule(const BillingStatusRule& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      allowed_statuses_(from.allowed_statuses_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  selector_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.selector().size() > 0) {
-    selector_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.selector_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.BillingStatusRule)
 }
 
@@ -536,13 +577,15 @@ void BillingStatusRule::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* BillingStatusRule::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return BillingStatusRule_descriptor_;
 }
 
 const BillingStatusRule& BillingStatusRule::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fbilling_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<BillingStatusRule> BillingStatusRule_default_instance_;
 
 BillingStatusRule* BillingStatusRule::New(::google::protobuf::Arena* arena) const {
   BillingStatusRule* n = new BillingStatusRule;
@@ -554,8 +597,8 @@ BillingStatusRule* BillingStatusRule::New(::google::protobuf::Arena* arena) cons
 
 void BillingStatusRule::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.api.BillingStatusRule)
-  allowed_statuses_.Clear();
   selector_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  allowed_statuses_.Clear();
 }
 
 bool BillingStatusRule::MergePartialFromCodedStream(
@@ -564,13 +607,13 @@ bool BillingStatusRule::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.BillingStatusRule)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string selector = 1;
+      // optional string selector = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_selector()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -580,12 +623,14 @@ bool BillingStatusRule::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_allowed_statuses;
         break;
       }
 
       // repeated string allowed_statuses = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_allowed_statuses:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_allowed_statuses()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -596,6 +641,8 @@ bool BillingStatusRule::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_allowed_statuses;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -623,7 +670,7 @@ failure:
 void BillingStatusRule::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.api.BillingStatusRule)
-  // string selector = 1;
+  // optional string selector = 1;
   if (this->selector().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->selector().data(), this->selector().length(),
@@ -650,7 +697,7 @@ void BillingStatusRule::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.BillingStatusRule)
-  // string selector = 1;
+  // optional string selector = 1;
   if (this->selector().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->selector().data(), this->selector().length(),
@@ -679,19 +726,19 @@ size_t BillingStatusRule::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.BillingStatusRule)
   size_t total_size = 0;
 
+  // optional string selector = 1;
+  if (this->selector().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->selector());
+  }
+
   // repeated string allowed_statuses = 2;
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->allowed_statuses_size());
   for (int i = 0; i < this->allowed_statuses_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->allowed_statuses(i));
-  }
-
-  // string selector = 1;
-  if (this->selector().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->selector());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -703,7 +750,7 @@ size_t BillingStatusRule::ByteSizeLong() const {
 
 void BillingStatusRule::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.BillingStatusRule)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const BillingStatusRule* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const BillingStatusRule>(
           &from);
@@ -712,15 +759,22 @@ void BillingStatusRule::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.BillingStatusRule)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void BillingStatusRule::MergeFrom(const BillingStatusRule& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.BillingStatusRule)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  allowed_statuses_.MergeFrom(from.allowed_statuses_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void BillingStatusRule::UnsafeMergeFrom(const BillingStatusRule& from) {
+  GOOGLE_DCHECK(&from != this);
+  allowed_statuses_.UnsafeMergeFrom(from.allowed_statuses_);
   if (from.selector().size() > 0) {
 
     selector_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.selector_);
@@ -738,10 +792,11 @@ void BillingStatusRule::CopyFrom(const BillingStatusRule& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.BillingStatusRule)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool BillingStatusRule::IsInitialized() const {
+
   return true;
 }
 
@@ -750,26 +805,30 @@ void BillingStatusRule::Swap(BillingStatusRule* other) {
   InternalSwap(other);
 }
 void BillingStatusRule::InternalSwap(BillingStatusRule* other) {
-  allowed_statuses_.UnsafeArenaSwap(&other->allowed_statuses_);
   selector_.Swap(&other->selector_);
+  allowed_statuses_.UnsafeArenaSwap(&other->allowed_statuses_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata BillingStatusRule::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = BillingStatusRule_descriptor_;
+  metadata.reflection = BillingStatusRule_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // BillingStatusRule
 
-// string selector = 1;
+// optional string selector = 1;
 void BillingStatusRule::clear_selector() {
   selector_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& BillingStatusRule::selector() const {
   // @@protoc_insertion_point(field_get:google.api.BillingStatusRule.selector)
-  return selector_.GetNoArena();
+  return selector_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void BillingStatusRule::set_selector(const ::std::string& value) {
   
@@ -862,6 +921,9 @@ BillingStatusRule::mutable_allowed_statuses() {
   return &allowed_statuses_;
 }
 
+inline const BillingStatusRule* BillingStatusRule::internal_default_instance() {
+  return &BillingStatusRule_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

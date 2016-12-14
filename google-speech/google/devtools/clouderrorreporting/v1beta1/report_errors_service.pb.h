@@ -24,58 +24,13 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include "google/devtools/clouderrorreporting/v1beta1/common.pb.h"
 #include <google/protobuf/timestamp.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace devtools {
-namespace clouderrorreporting {
-namespace v1beta1 {
-class ErrorContext;
-class ErrorContextDefaultTypeInternal;
-extern ErrorContextDefaultTypeInternal _ErrorContext_default_instance_;
-class ErrorEvent;
-class ErrorEventDefaultTypeInternal;
-extern ErrorEventDefaultTypeInternal _ErrorEvent_default_instance_;
-class ErrorGroup;
-class ErrorGroupDefaultTypeInternal;
-extern ErrorGroupDefaultTypeInternal _ErrorGroup_default_instance_;
-class HttpRequestContext;
-class HttpRequestContextDefaultTypeInternal;
-extern HttpRequestContextDefaultTypeInternal _HttpRequestContext_default_instance_;
-class ReportErrorEventRequest;
-class ReportErrorEventRequestDefaultTypeInternal;
-extern ReportErrorEventRequestDefaultTypeInternal _ReportErrorEventRequest_default_instance_;
-class ReportErrorEventResponse;
-class ReportErrorEventResponseDefaultTypeInternal;
-extern ReportErrorEventResponseDefaultTypeInternal _ReportErrorEventResponse_default_instance_;
-class ReportedErrorEvent;
-class ReportedErrorEventDefaultTypeInternal;
-extern ReportedErrorEventDefaultTypeInternal _ReportedErrorEvent_default_instance_;
-class ServiceContext;
-class ServiceContextDefaultTypeInternal;
-extern ServiceContextDefaultTypeInternal _ServiceContext_default_instance_;
-class SourceLocation;
-class SourceLocationDefaultTypeInternal;
-extern SourceLocationDefaultTypeInternal _SourceLocation_default_instance_;
-class TrackingIssue;
-class TrackingIssueDefaultTypeInternal;
-extern TrackingIssueDefaultTypeInternal _TrackingIssue_default_instance_;
-}  // namespace v1beta1
-}  // namespace clouderrorreporting
-}  // namespace devtools
-namespace protobuf {
-class Timestamp;
-class TimestampDefaultTypeInternal;
-extern TimestampDefaultTypeInternal _Timestamp_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace devtools {
@@ -85,6 +40,12 @@ namespace v1beta1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
 void protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
+void protobuf_AssignDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
+void protobuf_ShutdownFile_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
+
+class ReportErrorEventRequest;
+class ReportErrorEventResponse;
+class ReportedErrorEvent;
 
 // ===================================================================
 
@@ -103,58 +64,55 @@ class ReportErrorEventRequest : public ::google::protobuf::Message /* @@protoc_i
   static const ::google::protobuf::Descriptor* descriptor();
   static const ReportErrorEventRequest& default_instance();
 
-  static inline const ReportErrorEventRequest* internal_default_instance() {
-    return reinterpret_cast<const ReportErrorEventRequest*>(
-               &_ReportErrorEventRequest_default_instance_);
-  }
+  static const ReportErrorEventRequest* internal_default_instance();
 
   void Swap(ReportErrorEventRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ReportErrorEventRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ReportErrorEventRequest* New() const { return New(NULL); }
 
-  ReportErrorEventRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ReportErrorEventRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ReportErrorEventRequest& from);
   void MergeFrom(const ReportErrorEventRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ReportErrorEventRequest* other);
+  void UnsafeMergeFrom(const ReportErrorEventRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_name = 1;
+  // optional string project_name = 1;
   void clear_project_name();
   static const int kProjectNameFieldNumber = 1;
   const ::std::string& project_name() const;
@@ -165,7 +123,7 @@ class ReportErrorEventRequest : public ::google::protobuf::Message /* @@protoc_i
   ::std::string* release_project_name();
   void set_allocated_project_name(::std::string* project_name);
 
-  // .google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent event = 2;
+  // optional .google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent event = 2;
   bool has_event() const;
   void clear_event();
   static const int kEventFieldNumber = 2;
@@ -183,10 +141,13 @@ class ReportErrorEventRequest : public ::google::protobuf::Message /* @@protoc_i
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ReportErrorEventRequest> ReportErrorEventRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ReportErrorEventResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventResponse) */ {
@@ -204,52 +165,49 @@ class ReportErrorEventResponse : public ::google::protobuf::Message /* @@protoc_
   static const ::google::protobuf::Descriptor* descriptor();
   static const ReportErrorEventResponse& default_instance();
 
-  static inline const ReportErrorEventResponse* internal_default_instance() {
-    return reinterpret_cast<const ReportErrorEventResponse*>(
-               &_ReportErrorEventResponse_default_instance_);
-  }
+  static const ReportErrorEventResponse* internal_default_instance();
 
   void Swap(ReportErrorEventResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ReportErrorEventResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ReportErrorEventResponse* New() const { return New(NULL); }
 
-  ReportErrorEventResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ReportErrorEventResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ReportErrorEventResponse& from);
   void MergeFrom(const ReportErrorEventResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ReportErrorEventResponse* other);
+  void UnsafeMergeFrom(const ReportErrorEventResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -262,10 +220,13 @@ class ReportErrorEventResponse : public ::google::protobuf::Message /* @@protoc_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ReportErrorEventResponse> ReportErrorEventResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ReportedErrorEvent : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent) */ {
@@ -283,58 +244,55 @@ class ReportedErrorEvent : public ::google::protobuf::Message /* @@protoc_insert
   static const ::google::protobuf::Descriptor* descriptor();
   static const ReportedErrorEvent& default_instance();
 
-  static inline const ReportedErrorEvent* internal_default_instance() {
-    return reinterpret_cast<const ReportedErrorEvent*>(
-               &_ReportedErrorEvent_default_instance_);
-  }
+  static const ReportedErrorEvent* internal_default_instance();
 
   void Swap(ReportedErrorEvent* other);
 
   // implements Message ----------------------------------------------
 
-  inline ReportedErrorEvent* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ReportedErrorEvent* New() const { return New(NULL); }
 
-  ReportedErrorEvent* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ReportedErrorEvent* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ReportedErrorEvent& from);
   void MergeFrom(const ReportedErrorEvent& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ReportedErrorEvent* other);
+  void UnsafeMergeFrom(const ReportedErrorEvent& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.protobuf.Timestamp event_time = 1;
+  // optional .google.protobuf.Timestamp event_time = 1;
   bool has_event_time() const;
   void clear_event_time();
   static const int kEventTimeFieldNumber = 1;
@@ -343,7 +301,7 @@ class ReportedErrorEvent : public ::google::protobuf::Message /* @@protoc_insert
   ::google::protobuf::Timestamp* release_event_time();
   void set_allocated_event_time(::google::protobuf::Timestamp* event_time);
 
-  // .google.devtools.clouderrorreporting.v1beta1.ServiceContext service_context = 2;
+  // optional .google.devtools.clouderrorreporting.v1beta1.ServiceContext service_context = 2;
   bool has_service_context() const;
   void clear_service_context();
   static const int kServiceContextFieldNumber = 2;
@@ -352,7 +310,7 @@ class ReportedErrorEvent : public ::google::protobuf::Message /* @@protoc_insert
   ::google::devtools::clouderrorreporting::v1beta1::ServiceContext* release_service_context();
   void set_allocated_service_context(::google::devtools::clouderrorreporting::v1beta1::ServiceContext* service_context);
 
-  // string message = 3;
+  // optional string message = 3;
   void clear_message();
   static const int kMessageFieldNumber = 3;
   const ::std::string& message() const;
@@ -363,7 +321,7 @@ class ReportedErrorEvent : public ::google::protobuf::Message /* @@protoc_insert
   ::std::string* release_message();
   void set_allocated_message(::std::string* message);
 
-  // .google.devtools.clouderrorreporting.v1beta1.ErrorContext context = 4;
+  // optional .google.devtools.clouderrorreporting.v1beta1.ErrorContext context = 4;
   bool has_context() const;
   void clear_context();
   static const int kContextFieldNumber = 4;
@@ -383,10 +341,13 @@ class ReportedErrorEvent : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2freport_5ferrors_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ReportedErrorEvent> ReportedErrorEvent_default_instance_;
+
 // ===================================================================
 
 
@@ -395,13 +356,13 @@ class ReportedErrorEvent : public ::google::protobuf::Message /* @@protoc_insert
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // ReportErrorEventRequest
 
-// string project_name = 1;
+// optional string project_name = 1;
 inline void ReportErrorEventRequest::clear_project_name() {
   project_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ReportErrorEventRequest::project_name() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest.project_name)
-  return project_name_.GetNoArena();
+  return project_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReportErrorEventRequest::set_project_name(const ::std::string& value) {
   
@@ -439,7 +400,7 @@ inline void ReportErrorEventRequest::set_allocated_project_name(::std::string* p
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest.project_name)
 }
 
-// .google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent event = 2;
+// optional .google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent event = 2;
 inline bool ReportErrorEventRequest::has_event() const {
   return this != internal_default_instance() && event_ != NULL;
 }
@@ -478,15 +439,21 @@ inline void ReportErrorEventRequest::set_allocated_event(::google::devtools::clo
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ReportErrorEventRequest.event)
 }
 
+inline const ReportErrorEventRequest* ReportErrorEventRequest::internal_default_instance() {
+  return &ReportErrorEventRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ReportErrorEventResponse
 
+inline const ReportErrorEventResponse* ReportErrorEventResponse::internal_default_instance() {
+  return &ReportErrorEventResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ReportedErrorEvent
 
-// .google.protobuf.Timestamp event_time = 1;
+// optional .google.protobuf.Timestamp event_time = 1;
 inline bool ReportedErrorEvent::has_event_time() const {
   return this != internal_default_instance() && event_time_ != NULL;
 }
@@ -530,7 +497,7 @@ inline void ReportedErrorEvent::set_allocated_event_time(::google::protobuf::Tim
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent.event_time)
 }
 
-// .google.devtools.clouderrorreporting.v1beta1.ServiceContext service_context = 2;
+// optional .google.devtools.clouderrorreporting.v1beta1.ServiceContext service_context = 2;
 inline bool ReportedErrorEvent::has_service_context() const {
   return this != internal_default_instance() && service_context_ != NULL;
 }
@@ -569,13 +536,13 @@ inline void ReportedErrorEvent::set_allocated_service_context(::google::devtools
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent.service_context)
 }
 
-// string message = 3;
+// optional string message = 3;
 inline void ReportedErrorEvent::clear_message() {
   message_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ReportedErrorEvent::message() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent.message)
-  return message_.GetNoArena();
+  return message_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReportedErrorEvent::set_message(const ::std::string& value) {
   
@@ -613,7 +580,7 @@ inline void ReportedErrorEvent::set_allocated_message(::std::string* message) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent.message)
 }
 
-// .google.devtools.clouderrorreporting.v1beta1.ErrorContext context = 4;
+// optional .google.devtools.clouderrorreporting.v1beta1.ErrorContext context = 4;
 inline bool ReportedErrorEvent::has_context() const {
   return this != internal_default_instance() && context_ != NULL;
 }
@@ -652,6 +619,9 @@ inline void ReportedErrorEvent::set_allocated_context(::google::devtools::cloude
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.ReportedErrorEvent.context)
 }
 
+inline const ReportedErrorEvent* ReportedErrorEvent::internal_default_instance() {
+  return &ReportedErrorEvent_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
@@ -659,7 +629,6 @@ inline void ReportedErrorEvent::set_allocated_context(::google::devtools::cloude
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1beta1
 }  // namespace clouderrorreporting

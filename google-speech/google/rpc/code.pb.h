@@ -23,14 +23,10 @@
 #include <google/protobuf/arenastring.h>
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/generated_enum_reflection.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace rpc {
-}  // namespace rpc
-}  // namespace google
 
 namespace google {
 namespace rpc {
@@ -38,6 +34,9 @@ namespace rpc {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2frpc_2fcode_2eproto();
 void protobuf_InitDefaults_google_2frpc_2fcode_2eproto();
+void protobuf_AssignDesc_google_2frpc_2fcode_2eproto();
+void protobuf_ShutdownFile_google_2frpc_2fcode_2eproto();
+
 
 enum Code {
   OK = 0,
@@ -87,7 +86,6 @@ inline bool Code_Parse(
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace rpc
 }  // namespace google

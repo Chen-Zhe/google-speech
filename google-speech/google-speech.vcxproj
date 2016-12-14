@@ -27,11 +27,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="parse_arguments.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="parse_arguments.cc" />
-    <ClCompile Include="streaming_transcribe.cc" />
+    <ClCompile Include="streaming_transcribe.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9e0ef7cb-b88e-4343-866d-83b265be26d9}</ProjectGuid>
@@ -68,13 +64,20 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <RemoteLdToolExe>g++ -lgprc++ -lprotobuf</RemoteLdToolExe>
-    <RemoteCppCompileToolExe>g++</RemoteCppCompileToolExe>
+    <RemoteLdToolExe>g++ -lgrpc++ -lprotobuf -lpthread</RemoteLdToolExe>
+    <RemoteCppCompileToolExe>g++ -I/home/pi/google-speech-api/googleapis/gens</RemoteCppCompileToolExe>
+    <RemoteArToolExe>ar</RemoteArToolExe>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)/headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Verbose>false</Verbose>
     </ClCompile>
+    <Link>
+      <WholeArchiveBegin>false</WholeArchiveBegin>
+      <VerboseOutput>false</VerboseOutput>
+      <LibraryDependencies>googleapis</LibraryDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

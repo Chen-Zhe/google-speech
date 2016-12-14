@@ -24,65 +24,12 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include <google/protobuf/wrappers.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace bytestream {
-class QueryWriteStatusRequest;
-class QueryWriteStatusRequestDefaultTypeInternal;
-extern QueryWriteStatusRequestDefaultTypeInternal _QueryWriteStatusRequest_default_instance_;
-class QueryWriteStatusResponse;
-class QueryWriteStatusResponseDefaultTypeInternal;
-extern QueryWriteStatusResponseDefaultTypeInternal _QueryWriteStatusResponse_default_instance_;
-class ReadRequest;
-class ReadRequestDefaultTypeInternal;
-extern ReadRequestDefaultTypeInternal _ReadRequest_default_instance_;
-class ReadResponse;
-class ReadResponseDefaultTypeInternal;
-extern ReadResponseDefaultTypeInternal _ReadResponse_default_instance_;
-class WriteRequest;
-class WriteRequestDefaultTypeInternal;
-extern WriteRequestDefaultTypeInternal _WriteRequest_default_instance_;
-class WriteResponse;
-class WriteResponseDefaultTypeInternal;
-extern WriteResponseDefaultTypeInternal _WriteResponse_default_instance_;
-}  // namespace bytestream
-namespace protobuf {
-class BoolValue;
-class BoolValueDefaultTypeInternal;
-extern BoolValueDefaultTypeInternal _BoolValue_default_instance_;
-class BytesValue;
-class BytesValueDefaultTypeInternal;
-extern BytesValueDefaultTypeInternal _BytesValue_default_instance_;
-class DoubleValue;
-class DoubleValueDefaultTypeInternal;
-extern DoubleValueDefaultTypeInternal _DoubleValue_default_instance_;
-class FloatValue;
-class FloatValueDefaultTypeInternal;
-extern FloatValueDefaultTypeInternal _FloatValue_default_instance_;
-class Int32Value;
-class Int32ValueDefaultTypeInternal;
-extern Int32ValueDefaultTypeInternal _Int32Value_default_instance_;
-class Int64Value;
-class Int64ValueDefaultTypeInternal;
-extern Int64ValueDefaultTypeInternal _Int64Value_default_instance_;
-class StringValue;
-class StringValueDefaultTypeInternal;
-extern StringValueDefaultTypeInternal _StringValue_default_instance_;
-class UInt32Value;
-class UInt32ValueDefaultTypeInternal;
-extern UInt32ValueDefaultTypeInternal _UInt32Value_default_instance_;
-class UInt64Value;
-class UInt64ValueDefaultTypeInternal;
-extern UInt64ValueDefaultTypeInternal _UInt64Value_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace bytestream {
@@ -90,6 +37,15 @@ namespace bytestream {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fbytestream_2fbytestream_2eproto();
 void protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto();
+void protobuf_AssignDesc_google_2fbytestream_2fbytestream_2eproto();
+void protobuf_ShutdownFile_google_2fbytestream_2fbytestream_2eproto();
+
+class QueryWriteStatusRequest;
+class QueryWriteStatusResponse;
+class ReadRequest;
+class ReadResponse;
+class WriteRequest;
+class WriteResponse;
 
 // ===================================================================
 
@@ -108,58 +64,55 @@ class ReadRequest : public ::google::protobuf::Message /* @@protoc_insertion_poi
   static const ::google::protobuf::Descriptor* descriptor();
   static const ReadRequest& default_instance();
 
-  static inline const ReadRequest* internal_default_instance() {
-    return reinterpret_cast<const ReadRequest*>(
-               &_ReadRequest_default_instance_);
-  }
+  static const ReadRequest* internal_default_instance();
 
   void Swap(ReadRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ReadRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ReadRequest* New() const { return New(NULL); }
 
-  ReadRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ReadRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ReadRequest& from);
   void MergeFrom(const ReadRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ReadRequest* other);
+  void UnsafeMergeFrom(const ReadRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string resource_name = 1;
+  // optional string resource_name = 1;
   void clear_resource_name();
   static const int kResourceNameFieldNumber = 1;
   const ::std::string& resource_name() const;
@@ -170,13 +123,13 @@ class ReadRequest : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::std::string* release_resource_name();
   void set_allocated_resource_name(::std::string* resource_name);
 
-  // int64 read_offset = 2;
+  // optional int64 read_offset = 2;
   void clear_read_offset();
   static const int kReadOffsetFieldNumber = 2;
   ::google::protobuf::int64 read_offset() const;
   void set_read_offset(::google::protobuf::int64 value);
 
-  // int64 read_limit = 3;
+  // optional int64 read_limit = 3;
   void clear_read_limit();
   static const int kReadLimitFieldNumber = 3;
   ::google::protobuf::int64 read_limit() const;
@@ -192,10 +145,13 @@ class ReadRequest : public ::google::protobuf::Message /* @@protoc_insertion_poi
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbytestream_2fbytestream_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbytestream_2fbytestream_2eproto();
+  friend void protobuf_AssignDesc_google_2fbytestream_2fbytestream_2eproto();
   friend void protobuf_ShutdownFile_google_2fbytestream_2fbytestream_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ReadRequest> ReadRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ReadResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bytestream.ReadResponse) */ {
@@ -213,58 +169,55 @@ class ReadResponse : public ::google::protobuf::Message /* @@protoc_insertion_po
   static const ::google::protobuf::Descriptor* descriptor();
   static const ReadResponse& default_instance();
 
-  static inline const ReadResponse* internal_default_instance() {
-    return reinterpret_cast<const ReadResponse*>(
-               &_ReadResponse_default_instance_);
-  }
+  static const ReadResponse* internal_default_instance();
 
   void Swap(ReadResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ReadResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ReadResponse* New() const { return New(NULL); }
 
-  ReadResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ReadResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ReadResponse& from);
   void MergeFrom(const ReadResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ReadResponse* other);
+  void UnsafeMergeFrom(const ReadResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // bytes data = 10;
+  // optional bytes data = 10;
   void clear_data();
   static const int kDataFieldNumber = 10;
   const ::std::string& data() const;
@@ -283,10 +236,13 @@ class ReadResponse : public ::google::protobuf::Message /* @@protoc_insertion_po
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbytestream_2fbytestream_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbytestream_2fbytestream_2eproto();
+  friend void protobuf_AssignDesc_google_2fbytestream_2fbytestream_2eproto();
   friend void protobuf_ShutdownFile_google_2fbytestream_2fbytestream_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ReadResponse> ReadResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class WriteRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bytestream.WriteRequest) */ {
@@ -304,58 +260,55 @@ class WriteRequest : public ::google::protobuf::Message /* @@protoc_insertion_po
   static const ::google::protobuf::Descriptor* descriptor();
   static const WriteRequest& default_instance();
 
-  static inline const WriteRequest* internal_default_instance() {
-    return reinterpret_cast<const WriteRequest*>(
-               &_WriteRequest_default_instance_);
-  }
+  static const WriteRequest* internal_default_instance();
 
   void Swap(WriteRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline WriteRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline WriteRequest* New() const { return New(NULL); }
 
-  WriteRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  WriteRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const WriteRequest& from);
   void MergeFrom(const WriteRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(WriteRequest* other);
+  void UnsafeMergeFrom(const WriteRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string resource_name = 1;
+  // optional string resource_name = 1;
   void clear_resource_name();
   static const int kResourceNameFieldNumber = 1;
   const ::std::string& resource_name() const;
@@ -366,19 +319,19 @@ class WriteRequest : public ::google::protobuf::Message /* @@protoc_insertion_po
   ::std::string* release_resource_name();
   void set_allocated_resource_name(::std::string* resource_name);
 
-  // int64 write_offset = 2;
+  // optional int64 write_offset = 2;
   void clear_write_offset();
   static const int kWriteOffsetFieldNumber = 2;
   ::google::protobuf::int64 write_offset() const;
   void set_write_offset(::google::protobuf::int64 value);
 
-  // bool finish_write = 3;
+  // optional bool finish_write = 3;
   void clear_finish_write();
   static const int kFinishWriteFieldNumber = 3;
   bool finish_write() const;
   void set_finish_write(bool value);
 
-  // bytes data = 10;
+  // optional bytes data = 10;
   void clear_data();
   static const int kDataFieldNumber = 10;
   const ::std::string& data() const;
@@ -400,10 +353,13 @@ class WriteRequest : public ::google::protobuf::Message /* @@protoc_insertion_po
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbytestream_2fbytestream_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbytestream_2fbytestream_2eproto();
+  friend void protobuf_AssignDesc_google_2fbytestream_2fbytestream_2eproto();
   friend void protobuf_ShutdownFile_google_2fbytestream_2fbytestream_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<WriteRequest> WriteRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class WriteResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bytestream.WriteResponse) */ {
@@ -421,58 +377,55 @@ class WriteResponse : public ::google::protobuf::Message /* @@protoc_insertion_p
   static const ::google::protobuf::Descriptor* descriptor();
   static const WriteResponse& default_instance();
 
-  static inline const WriteResponse* internal_default_instance() {
-    return reinterpret_cast<const WriteResponse*>(
-               &_WriteResponse_default_instance_);
-  }
+  static const WriteResponse* internal_default_instance();
 
   void Swap(WriteResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline WriteResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline WriteResponse* New() const { return New(NULL); }
 
-  WriteResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  WriteResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const WriteResponse& from);
   void MergeFrom(const WriteResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(WriteResponse* other);
+  void UnsafeMergeFrom(const WriteResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // int64 committed_size = 1;
+  // optional int64 committed_size = 1;
   void clear_committed_size();
   static const int kCommittedSizeFieldNumber = 1;
   ::google::protobuf::int64 committed_size() const;
@@ -486,10 +439,13 @@ class WriteResponse : public ::google::protobuf::Message /* @@protoc_insertion_p
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbytestream_2fbytestream_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbytestream_2fbytestream_2eproto();
+  friend void protobuf_AssignDesc_google_2fbytestream_2fbytestream_2eproto();
   friend void protobuf_ShutdownFile_google_2fbytestream_2fbytestream_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<WriteResponse> WriteResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class QueryWriteStatusRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bytestream.QueryWriteStatusRequest) */ {
@@ -507,58 +463,55 @@ class QueryWriteStatusRequest : public ::google::protobuf::Message /* @@protoc_i
   static const ::google::protobuf::Descriptor* descriptor();
   static const QueryWriteStatusRequest& default_instance();
 
-  static inline const QueryWriteStatusRequest* internal_default_instance() {
-    return reinterpret_cast<const QueryWriteStatusRequest*>(
-               &_QueryWriteStatusRequest_default_instance_);
-  }
+  static const QueryWriteStatusRequest* internal_default_instance();
 
   void Swap(QueryWriteStatusRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline QueryWriteStatusRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline QueryWriteStatusRequest* New() const { return New(NULL); }
 
-  QueryWriteStatusRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  QueryWriteStatusRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const QueryWriteStatusRequest& from);
   void MergeFrom(const QueryWriteStatusRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(QueryWriteStatusRequest* other);
+  void UnsafeMergeFrom(const QueryWriteStatusRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string resource_name = 1;
+  // optional string resource_name = 1;
   void clear_resource_name();
   static const int kResourceNameFieldNumber = 1;
   const ::std::string& resource_name() const;
@@ -577,10 +530,13 @@ class QueryWriteStatusRequest : public ::google::protobuf::Message /* @@protoc_i
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbytestream_2fbytestream_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbytestream_2fbytestream_2eproto();
+  friend void protobuf_AssignDesc_google_2fbytestream_2fbytestream_2eproto();
   friend void protobuf_ShutdownFile_google_2fbytestream_2fbytestream_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<QueryWriteStatusRequest> QueryWriteStatusRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class QueryWriteStatusResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.bytestream.QueryWriteStatusResponse) */ {
@@ -598,64 +554,61 @@ class QueryWriteStatusResponse : public ::google::protobuf::Message /* @@protoc_
   static const ::google::protobuf::Descriptor* descriptor();
   static const QueryWriteStatusResponse& default_instance();
 
-  static inline const QueryWriteStatusResponse* internal_default_instance() {
-    return reinterpret_cast<const QueryWriteStatusResponse*>(
-               &_QueryWriteStatusResponse_default_instance_);
-  }
+  static const QueryWriteStatusResponse* internal_default_instance();
 
   void Swap(QueryWriteStatusResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline QueryWriteStatusResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline QueryWriteStatusResponse* New() const { return New(NULL); }
 
-  QueryWriteStatusResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  QueryWriteStatusResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const QueryWriteStatusResponse& from);
   void MergeFrom(const QueryWriteStatusResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(QueryWriteStatusResponse* other);
+  void UnsafeMergeFrom(const QueryWriteStatusResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // int64 committed_size = 1;
+  // optional int64 committed_size = 1;
   void clear_committed_size();
   static const int kCommittedSizeFieldNumber = 1;
   ::google::protobuf::int64 committed_size() const;
   void set_committed_size(::google::protobuf::int64 value);
 
-  // bool complete = 2;
+  // optional bool complete = 2;
   void clear_complete();
   static const int kCompleteFieldNumber = 2;
   bool complete() const;
@@ -670,10 +623,13 @@ class QueryWriteStatusResponse : public ::google::protobuf::Message /* @@protoc_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fbytestream_2fbytestream_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fbytestream_2fbytestream_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fbytestream_2fbytestream_2eproto();
+  friend void protobuf_AssignDesc_google_2fbytestream_2fbytestream_2eproto();
   friend void protobuf_ShutdownFile_google_2fbytestream_2fbytestream_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<QueryWriteStatusResponse> QueryWriteStatusResponse_default_instance_;
+
 // ===================================================================
 
 
@@ -682,13 +638,13 @@ class QueryWriteStatusResponse : public ::google::protobuf::Message /* @@protoc_
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // ReadRequest
 
-// string resource_name = 1;
+// optional string resource_name = 1;
 inline void ReadRequest::clear_resource_name() {
   resource_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ReadRequest::resource_name() const {
   // @@protoc_insertion_point(field_get:google.bytestream.ReadRequest.resource_name)
-  return resource_name_.GetNoArena();
+  return resource_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadRequest::set_resource_name(const ::std::string& value) {
   
@@ -726,7 +682,7 @@ inline void ReadRequest::set_allocated_resource_name(::std::string* resource_nam
   // @@protoc_insertion_point(field_set_allocated:google.bytestream.ReadRequest.resource_name)
 }
 
-// int64 read_offset = 2;
+// optional int64 read_offset = 2;
 inline void ReadRequest::clear_read_offset() {
   read_offset_ = GOOGLE_LONGLONG(0);
 }
@@ -740,7 +696,7 @@ inline void ReadRequest::set_read_offset(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.bytestream.ReadRequest.read_offset)
 }
 
-// int64 read_limit = 3;
+// optional int64 read_limit = 3;
 inline void ReadRequest::clear_read_limit() {
   read_limit_ = GOOGLE_LONGLONG(0);
 }
@@ -754,17 +710,20 @@ inline void ReadRequest::set_read_limit(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.bytestream.ReadRequest.read_limit)
 }
 
+inline const ReadRequest* ReadRequest::internal_default_instance() {
+  return &ReadRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ReadResponse
 
-// bytes data = 10;
+// optional bytes data = 10;
 inline void ReadResponse::clear_data() {
   data_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ReadResponse::data() const {
   // @@protoc_insertion_point(field_get:google.bytestream.ReadResponse.data)
-  return data_.GetNoArena();
+  return data_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReadResponse::set_data(const ::std::string& value) {
   
@@ -802,17 +761,20 @@ inline void ReadResponse::set_allocated_data(::std::string* data) {
   // @@protoc_insertion_point(field_set_allocated:google.bytestream.ReadResponse.data)
 }
 
+inline const ReadResponse* ReadResponse::internal_default_instance() {
+  return &ReadResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // WriteRequest
 
-// string resource_name = 1;
+// optional string resource_name = 1;
 inline void WriteRequest::clear_resource_name() {
   resource_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& WriteRequest::resource_name() const {
   // @@protoc_insertion_point(field_get:google.bytestream.WriteRequest.resource_name)
-  return resource_name_.GetNoArena();
+  return resource_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void WriteRequest::set_resource_name(const ::std::string& value) {
   
@@ -850,7 +812,7 @@ inline void WriteRequest::set_allocated_resource_name(::std::string* resource_na
   // @@protoc_insertion_point(field_set_allocated:google.bytestream.WriteRequest.resource_name)
 }
 
-// int64 write_offset = 2;
+// optional int64 write_offset = 2;
 inline void WriteRequest::clear_write_offset() {
   write_offset_ = GOOGLE_LONGLONG(0);
 }
@@ -864,7 +826,7 @@ inline void WriteRequest::set_write_offset(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.bytestream.WriteRequest.write_offset)
 }
 
-// bool finish_write = 3;
+// optional bool finish_write = 3;
 inline void WriteRequest::clear_finish_write() {
   finish_write_ = false;
 }
@@ -878,13 +840,13 @@ inline void WriteRequest::set_finish_write(bool value) {
   // @@protoc_insertion_point(field_set:google.bytestream.WriteRequest.finish_write)
 }
 
-// bytes data = 10;
+// optional bytes data = 10;
 inline void WriteRequest::clear_data() {
   data_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& WriteRequest::data() const {
   // @@protoc_insertion_point(field_get:google.bytestream.WriteRequest.data)
-  return data_.GetNoArena();
+  return data_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void WriteRequest::set_data(const ::std::string& value) {
   
@@ -922,11 +884,14 @@ inline void WriteRequest::set_allocated_data(::std::string* data) {
   // @@protoc_insertion_point(field_set_allocated:google.bytestream.WriteRequest.data)
 }
 
+inline const WriteRequest* WriteRequest::internal_default_instance() {
+  return &WriteRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // WriteResponse
 
-// int64 committed_size = 1;
+// optional int64 committed_size = 1;
 inline void WriteResponse::clear_committed_size() {
   committed_size_ = GOOGLE_LONGLONG(0);
 }
@@ -940,17 +905,20 @@ inline void WriteResponse::set_committed_size(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.bytestream.WriteResponse.committed_size)
 }
 
+inline const WriteResponse* WriteResponse::internal_default_instance() {
+  return &WriteResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // QueryWriteStatusRequest
 
-// string resource_name = 1;
+// optional string resource_name = 1;
 inline void QueryWriteStatusRequest::clear_resource_name() {
   resource_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& QueryWriteStatusRequest::resource_name() const {
   // @@protoc_insertion_point(field_get:google.bytestream.QueryWriteStatusRequest.resource_name)
-  return resource_name_.GetNoArena();
+  return resource_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void QueryWriteStatusRequest::set_resource_name(const ::std::string& value) {
   
@@ -988,11 +956,14 @@ inline void QueryWriteStatusRequest::set_allocated_resource_name(::std::string* 
   // @@protoc_insertion_point(field_set_allocated:google.bytestream.QueryWriteStatusRequest.resource_name)
 }
 
+inline const QueryWriteStatusRequest* QueryWriteStatusRequest::internal_default_instance() {
+  return &QueryWriteStatusRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // QueryWriteStatusResponse
 
-// int64 committed_size = 1;
+// optional int64 committed_size = 1;
 inline void QueryWriteStatusResponse::clear_committed_size() {
   committed_size_ = GOOGLE_LONGLONG(0);
 }
@@ -1006,7 +977,7 @@ inline void QueryWriteStatusResponse::set_committed_size(::google::protobuf::int
   // @@protoc_insertion_point(field_set:google.bytestream.QueryWriteStatusResponse.committed_size)
 }
 
-// bool complete = 2;
+// optional bool complete = 2;
 inline void QueryWriteStatusResponse::clear_complete() {
   complete_ = false;
 }
@@ -1020,6 +991,9 @@ inline void QueryWriteStatusResponse::set_complete(bool value) {
   // @@protoc_insertion_point(field_set:google.bytestream.QueryWriteStatusResponse.complete)
 }
 
+inline const QueryWriteStatusResponse* QueryWriteStatusResponse::internal_default_instance() {
+  return &QueryWriteStatusResponse_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
@@ -1033,7 +1007,6 @@ inline void QueryWriteStatusResponse::set_complete(bool value) {
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace bytestream
 }  // namespace google

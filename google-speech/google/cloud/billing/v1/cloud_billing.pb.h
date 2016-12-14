@@ -24,48 +24,11 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace cloud {
-namespace billing {
-namespace v1 {
-class BillingAccount;
-class BillingAccountDefaultTypeInternal;
-extern BillingAccountDefaultTypeInternal _BillingAccount_default_instance_;
-class GetBillingAccountRequest;
-class GetBillingAccountRequestDefaultTypeInternal;
-extern GetBillingAccountRequestDefaultTypeInternal _GetBillingAccountRequest_default_instance_;
-class GetProjectBillingInfoRequest;
-class GetProjectBillingInfoRequestDefaultTypeInternal;
-extern GetProjectBillingInfoRequestDefaultTypeInternal _GetProjectBillingInfoRequest_default_instance_;
-class ListBillingAccountsRequest;
-class ListBillingAccountsRequestDefaultTypeInternal;
-extern ListBillingAccountsRequestDefaultTypeInternal _ListBillingAccountsRequest_default_instance_;
-class ListBillingAccountsResponse;
-class ListBillingAccountsResponseDefaultTypeInternal;
-extern ListBillingAccountsResponseDefaultTypeInternal _ListBillingAccountsResponse_default_instance_;
-class ListProjectBillingInfoRequest;
-class ListProjectBillingInfoRequestDefaultTypeInternal;
-extern ListProjectBillingInfoRequestDefaultTypeInternal _ListProjectBillingInfoRequest_default_instance_;
-class ListProjectBillingInfoResponse;
-class ListProjectBillingInfoResponseDefaultTypeInternal;
-extern ListProjectBillingInfoResponseDefaultTypeInternal _ListProjectBillingInfoResponse_default_instance_;
-class ProjectBillingInfo;
-class ProjectBillingInfoDefaultTypeInternal;
-extern ProjectBillingInfoDefaultTypeInternal _ProjectBillingInfo_default_instance_;
-class UpdateProjectBillingInfoRequest;
-class UpdateProjectBillingInfoRequestDefaultTypeInternal;
-extern UpdateProjectBillingInfoRequestDefaultTypeInternal _UpdateProjectBillingInfoRequest_default_instance_;
-}  // namespace v1
-}  // namespace billing
-}  // namespace cloud
-}  // namespace google
 
 namespace google {
 namespace cloud {
@@ -75,6 +38,18 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
 void protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+void protobuf_ShutdownFile_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+
+class BillingAccount;
+class GetBillingAccountRequest;
+class GetProjectBillingInfoRequest;
+class ListBillingAccountsRequest;
+class ListBillingAccountsResponse;
+class ListProjectBillingInfoRequest;
+class ListProjectBillingInfoResponse;
+class ProjectBillingInfo;
+class UpdateProjectBillingInfoRequest;
 
 // ===================================================================
 
@@ -93,58 +68,55 @@ class BillingAccount : public ::google::protobuf::Message /* @@protoc_insertion_
   static const ::google::protobuf::Descriptor* descriptor();
   static const BillingAccount& default_instance();
 
-  static inline const BillingAccount* internal_default_instance() {
-    return reinterpret_cast<const BillingAccount*>(
-               &_BillingAccount_default_instance_);
-  }
+  static const BillingAccount* internal_default_instance();
 
   void Swap(BillingAccount* other);
 
   // implements Message ----------------------------------------------
 
-  inline BillingAccount* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline BillingAccount* New() const { return New(NULL); }
 
-  BillingAccount* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  BillingAccount* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const BillingAccount& from);
   void MergeFrom(const BillingAccount& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(BillingAccount* other);
+  void UnsafeMergeFrom(const BillingAccount& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -155,13 +127,13 @@ class BillingAccount : public ::google::protobuf::Message /* @@protoc_insertion_
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // bool open = 2;
+  // optional bool open = 2;
   void clear_open();
   static const int kOpenFieldNumber = 2;
   bool open() const;
   void set_open(bool value);
 
-  // string display_name = 3;
+  // optional string display_name = 3;
   void clear_display_name();
   static const int kDisplayNameFieldNumber = 3;
   const ::std::string& display_name() const;
@@ -182,10 +154,13 @@ class BillingAccount : public ::google::protobuf::Message /* @@protoc_insertion_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<BillingAccount> BillingAccount_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ProjectBillingInfo : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.billing.v1.ProjectBillingInfo) */ {
@@ -203,58 +178,55 @@ class ProjectBillingInfo : public ::google::protobuf::Message /* @@protoc_insert
   static const ::google::protobuf::Descriptor* descriptor();
   static const ProjectBillingInfo& default_instance();
 
-  static inline const ProjectBillingInfo* internal_default_instance() {
-    return reinterpret_cast<const ProjectBillingInfo*>(
-               &_ProjectBillingInfo_default_instance_);
-  }
+  static const ProjectBillingInfo* internal_default_instance();
 
   void Swap(ProjectBillingInfo* other);
 
   // implements Message ----------------------------------------------
 
-  inline ProjectBillingInfo* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ProjectBillingInfo* New() const { return New(NULL); }
 
-  ProjectBillingInfo* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ProjectBillingInfo* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ProjectBillingInfo& from);
   void MergeFrom(const ProjectBillingInfo& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ProjectBillingInfo* other);
+  void UnsafeMergeFrom(const ProjectBillingInfo& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -265,7 +237,7 @@ class ProjectBillingInfo : public ::google::protobuf::Message /* @@protoc_insert
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // string project_id = 2;
+  // optional string project_id = 2;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 2;
   const ::std::string& project_id() const;
@@ -276,7 +248,7 @@ class ProjectBillingInfo : public ::google::protobuf::Message /* @@protoc_insert
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // string billing_account_name = 3;
+  // optional string billing_account_name = 3;
   void clear_billing_account_name();
   static const int kBillingAccountNameFieldNumber = 3;
   const ::std::string& billing_account_name() const;
@@ -287,7 +259,7 @@ class ProjectBillingInfo : public ::google::protobuf::Message /* @@protoc_insert
   ::std::string* release_billing_account_name();
   void set_allocated_billing_account_name(::std::string* billing_account_name);
 
-  // bool billing_enabled = 4;
+  // optional bool billing_enabled = 4;
   void clear_billing_enabled();
   static const int kBillingEnabledFieldNumber = 4;
   bool billing_enabled() const;
@@ -304,10 +276,13 @@ class ProjectBillingInfo : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ProjectBillingInfo> ProjectBillingInfo_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetBillingAccountRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.billing.v1.GetBillingAccountRequest) */ {
@@ -325,58 +300,55 @@ class GetBillingAccountRequest : public ::google::protobuf::Message /* @@protoc_
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetBillingAccountRequest& default_instance();
 
-  static inline const GetBillingAccountRequest* internal_default_instance() {
-    return reinterpret_cast<const GetBillingAccountRequest*>(
-               &_GetBillingAccountRequest_default_instance_);
-  }
+  static const GetBillingAccountRequest* internal_default_instance();
 
   void Swap(GetBillingAccountRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetBillingAccountRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetBillingAccountRequest* New() const { return New(NULL); }
 
-  GetBillingAccountRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetBillingAccountRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetBillingAccountRequest& from);
   void MergeFrom(const GetBillingAccountRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetBillingAccountRequest* other);
+  void UnsafeMergeFrom(const GetBillingAccountRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -395,10 +367,13 @@ class GetBillingAccountRequest : public ::google::protobuf::Message /* @@protoc_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetBillingAccountRequest> GetBillingAccountRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListBillingAccountsRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.billing.v1.ListBillingAccountsRequest) */ {
@@ -416,64 +391,61 @@ class ListBillingAccountsRequest : public ::google::protobuf::Message /* @@proto
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListBillingAccountsRequest& default_instance();
 
-  static inline const ListBillingAccountsRequest* internal_default_instance() {
-    return reinterpret_cast<const ListBillingAccountsRequest*>(
-               &_ListBillingAccountsRequest_default_instance_);
-  }
+  static const ListBillingAccountsRequest* internal_default_instance();
 
   void Swap(ListBillingAccountsRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListBillingAccountsRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListBillingAccountsRequest* New() const { return New(NULL); }
 
-  ListBillingAccountsRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListBillingAccountsRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListBillingAccountsRequest& from);
   void MergeFrom(const ListBillingAccountsRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListBillingAccountsRequest* other);
+  void UnsafeMergeFrom(const ListBillingAccountsRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // int32 page_size = 1;
+  // optional int32 page_size = 1;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 1;
   ::google::protobuf::int32 page_size() const;
   void set_page_size(::google::protobuf::int32 value);
 
-  // string page_token = 2;
+  // optional string page_token = 2;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 2;
   const ::std::string& page_token() const;
@@ -493,10 +465,13 @@ class ListBillingAccountsRequest : public ::google::protobuf::Message /* @@proto
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListBillingAccountsRequest> ListBillingAccountsRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListBillingAccountsResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.billing.v1.ListBillingAccountsResponse) */ {
@@ -514,52 +489,49 @@ class ListBillingAccountsResponse : public ::google::protobuf::Message /* @@prot
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListBillingAccountsResponse& default_instance();
 
-  static inline const ListBillingAccountsResponse* internal_default_instance() {
-    return reinterpret_cast<const ListBillingAccountsResponse*>(
-               &_ListBillingAccountsResponse_default_instance_);
-  }
+  static const ListBillingAccountsResponse* internal_default_instance();
 
   void Swap(ListBillingAccountsResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListBillingAccountsResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListBillingAccountsResponse* New() const { return New(NULL); }
 
-  ListBillingAccountsResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListBillingAccountsResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListBillingAccountsResponse& from);
   void MergeFrom(const ListBillingAccountsResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListBillingAccountsResponse* other);
+  void UnsafeMergeFrom(const ListBillingAccountsResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -577,7 +549,7 @@ class ListBillingAccountsResponse : public ::google::protobuf::Message /* @@prot
   const ::google::protobuf::RepeatedPtrField< ::google::cloud::billing::v1::BillingAccount >&
       billing_accounts() const;
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -597,10 +569,13 @@ class ListBillingAccountsResponse : public ::google::protobuf::Message /* @@prot
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListBillingAccountsResponse> ListBillingAccountsResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListProjectBillingInfoRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.billing.v1.ListProjectBillingInfoRequest) */ {
@@ -618,58 +593,55 @@ class ListProjectBillingInfoRequest : public ::google::protobuf::Message /* @@pr
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListProjectBillingInfoRequest& default_instance();
 
-  static inline const ListProjectBillingInfoRequest* internal_default_instance() {
-    return reinterpret_cast<const ListProjectBillingInfoRequest*>(
-               &_ListProjectBillingInfoRequest_default_instance_);
-  }
+  static const ListProjectBillingInfoRequest* internal_default_instance();
 
   void Swap(ListProjectBillingInfoRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListProjectBillingInfoRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListProjectBillingInfoRequest* New() const { return New(NULL); }
 
-  ListProjectBillingInfoRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListProjectBillingInfoRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListProjectBillingInfoRequest& from);
   void MergeFrom(const ListProjectBillingInfoRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListProjectBillingInfoRequest* other);
+  void UnsafeMergeFrom(const ListProjectBillingInfoRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -680,13 +652,13 @@ class ListProjectBillingInfoRequest : public ::google::protobuf::Message /* @@pr
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 2;
   ::google::protobuf::int32 page_size() const;
   void set_page_size(::google::protobuf::int32 value);
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 3;
   const ::std::string& page_token() const;
@@ -707,10 +679,13 @@ class ListProjectBillingInfoRequest : public ::google::protobuf::Message /* @@pr
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListProjectBillingInfoRequest> ListProjectBillingInfoRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListProjectBillingInfoResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.billing.v1.ListProjectBillingInfoResponse) */ {
@@ -728,52 +703,49 @@ class ListProjectBillingInfoResponse : public ::google::protobuf::Message /* @@p
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListProjectBillingInfoResponse& default_instance();
 
-  static inline const ListProjectBillingInfoResponse* internal_default_instance() {
-    return reinterpret_cast<const ListProjectBillingInfoResponse*>(
-               &_ListProjectBillingInfoResponse_default_instance_);
-  }
+  static const ListProjectBillingInfoResponse* internal_default_instance();
 
   void Swap(ListProjectBillingInfoResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListProjectBillingInfoResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListProjectBillingInfoResponse* New() const { return New(NULL); }
 
-  ListProjectBillingInfoResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListProjectBillingInfoResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListProjectBillingInfoResponse& from);
   void MergeFrom(const ListProjectBillingInfoResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListProjectBillingInfoResponse* other);
+  void UnsafeMergeFrom(const ListProjectBillingInfoResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -791,7 +763,7 @@ class ListProjectBillingInfoResponse : public ::google::protobuf::Message /* @@p
   const ::google::protobuf::RepeatedPtrField< ::google::cloud::billing::v1::ProjectBillingInfo >&
       project_billing_info() const;
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -811,10 +783,13 @@ class ListProjectBillingInfoResponse : public ::google::protobuf::Message /* @@p
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListProjectBillingInfoResponse> ListProjectBillingInfoResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetProjectBillingInfoRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.billing.v1.GetProjectBillingInfoRequest) */ {
@@ -832,58 +807,55 @@ class GetProjectBillingInfoRequest : public ::google::protobuf::Message /* @@pro
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetProjectBillingInfoRequest& default_instance();
 
-  static inline const GetProjectBillingInfoRequest* internal_default_instance() {
-    return reinterpret_cast<const GetProjectBillingInfoRequest*>(
-               &_GetProjectBillingInfoRequest_default_instance_);
-  }
+  static const GetProjectBillingInfoRequest* internal_default_instance();
 
   void Swap(GetProjectBillingInfoRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetProjectBillingInfoRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetProjectBillingInfoRequest* New() const { return New(NULL); }
 
-  GetProjectBillingInfoRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetProjectBillingInfoRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetProjectBillingInfoRequest& from);
   void MergeFrom(const GetProjectBillingInfoRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetProjectBillingInfoRequest* other);
+  void UnsafeMergeFrom(const GetProjectBillingInfoRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -902,10 +874,13 @@ class GetProjectBillingInfoRequest : public ::google::protobuf::Message /* @@pro
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetProjectBillingInfoRequest> GetProjectBillingInfoRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class UpdateProjectBillingInfoRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.billing.v1.UpdateProjectBillingInfoRequest) */ {
@@ -923,58 +898,55 @@ class UpdateProjectBillingInfoRequest : public ::google::protobuf::Message /* @@
   static const ::google::protobuf::Descriptor* descriptor();
   static const UpdateProjectBillingInfoRequest& default_instance();
 
-  static inline const UpdateProjectBillingInfoRequest* internal_default_instance() {
-    return reinterpret_cast<const UpdateProjectBillingInfoRequest*>(
-               &_UpdateProjectBillingInfoRequest_default_instance_);
-  }
+  static const UpdateProjectBillingInfoRequest* internal_default_instance();
 
   void Swap(UpdateProjectBillingInfoRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline UpdateProjectBillingInfoRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline UpdateProjectBillingInfoRequest* New() const { return New(NULL); }
 
-  UpdateProjectBillingInfoRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  UpdateProjectBillingInfoRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const UpdateProjectBillingInfoRequest& from);
   void MergeFrom(const UpdateProjectBillingInfoRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(UpdateProjectBillingInfoRequest* other);
+  void UnsafeMergeFrom(const UpdateProjectBillingInfoRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -985,7 +957,7 @@ class UpdateProjectBillingInfoRequest : public ::google::protobuf::Message /* @@
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // .google.cloud.billing.v1.ProjectBillingInfo project_billing_info = 2;
+  // optional .google.cloud.billing.v1.ProjectBillingInfo project_billing_info = 2;
   bool has_project_billing_info() const;
   void clear_project_billing_info();
   static const int kProjectBillingInfoFieldNumber = 2;
@@ -1003,10 +975,13 @@ class UpdateProjectBillingInfoRequest : public ::google::protobuf::Message /* @@
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fbilling_2fv1_2fcloud_5fbilling_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<UpdateProjectBillingInfoRequest> UpdateProjectBillingInfoRequest_default_instance_;
+
 // ===================================================================
 
 
@@ -1015,13 +990,13 @@ class UpdateProjectBillingInfoRequest : public ::google::protobuf::Message /* @@
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // BillingAccount
 
-// string name = 1;
+// optional string name = 1;
 inline void BillingAccount::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& BillingAccount::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.BillingAccount.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void BillingAccount::set_name(const ::std::string& value) {
   
@@ -1059,7 +1034,7 @@ inline void BillingAccount::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.BillingAccount.name)
 }
 
-// bool open = 2;
+// optional bool open = 2;
 inline void BillingAccount::clear_open() {
   open_ = false;
 }
@@ -1073,13 +1048,13 @@ inline void BillingAccount::set_open(bool value) {
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.BillingAccount.open)
 }
 
-// string display_name = 3;
+// optional string display_name = 3;
 inline void BillingAccount::clear_display_name() {
   display_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& BillingAccount::display_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.BillingAccount.display_name)
-  return display_name_.GetNoArena();
+  return display_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void BillingAccount::set_display_name(const ::std::string& value) {
   
@@ -1117,17 +1092,20 @@ inline void BillingAccount::set_allocated_display_name(::std::string* display_na
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.BillingAccount.display_name)
 }
 
+inline const BillingAccount* BillingAccount::internal_default_instance() {
+  return &BillingAccount_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ProjectBillingInfo
 
-// string name = 1;
+// optional string name = 1;
 inline void ProjectBillingInfo::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ProjectBillingInfo::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ProjectBillingInfo.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ProjectBillingInfo::set_name(const ::std::string& value) {
   
@@ -1165,13 +1143,13 @@ inline void ProjectBillingInfo::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.ProjectBillingInfo.name)
 }
 
-// string project_id = 2;
+// optional string project_id = 2;
 inline void ProjectBillingInfo::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ProjectBillingInfo::project_id() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ProjectBillingInfo.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ProjectBillingInfo::set_project_id(const ::std::string& value) {
   
@@ -1209,13 +1187,13 @@ inline void ProjectBillingInfo::set_allocated_project_id(::std::string* project_
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.ProjectBillingInfo.project_id)
 }
 
-// string billing_account_name = 3;
+// optional string billing_account_name = 3;
 inline void ProjectBillingInfo::clear_billing_account_name() {
   billing_account_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ProjectBillingInfo::billing_account_name() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ProjectBillingInfo.billing_account_name)
-  return billing_account_name_.GetNoArena();
+  return billing_account_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ProjectBillingInfo::set_billing_account_name(const ::std::string& value) {
   
@@ -1253,7 +1231,7 @@ inline void ProjectBillingInfo::set_allocated_billing_account_name(::std::string
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.ProjectBillingInfo.billing_account_name)
 }
 
-// bool billing_enabled = 4;
+// optional bool billing_enabled = 4;
 inline void ProjectBillingInfo::clear_billing_enabled() {
   billing_enabled_ = false;
 }
@@ -1267,17 +1245,20 @@ inline void ProjectBillingInfo::set_billing_enabled(bool value) {
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.ProjectBillingInfo.billing_enabled)
 }
 
+inline const ProjectBillingInfo* ProjectBillingInfo::internal_default_instance() {
+  return &ProjectBillingInfo_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetBillingAccountRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void GetBillingAccountRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetBillingAccountRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.GetBillingAccountRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetBillingAccountRequest::set_name(const ::std::string& value) {
   
@@ -1315,11 +1296,14 @@ inline void GetBillingAccountRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.GetBillingAccountRequest.name)
 }
 
+inline const GetBillingAccountRequest* GetBillingAccountRequest::internal_default_instance() {
+  return &GetBillingAccountRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListBillingAccountsRequest
 
-// int32 page_size = 1;
+// optional int32 page_size = 1;
 inline void ListBillingAccountsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -1333,13 +1317,13 @@ inline void ListBillingAccountsRequest::set_page_size(::google::protobuf::int32 
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.ListBillingAccountsRequest.page_size)
 }
 
-// string page_token = 2;
+// optional string page_token = 2;
 inline void ListBillingAccountsRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListBillingAccountsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ListBillingAccountsRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListBillingAccountsRequest::set_page_token(const ::std::string& value) {
   
@@ -1377,6 +1361,9 @@ inline void ListBillingAccountsRequest::set_allocated_page_token(::std::string* 
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.ListBillingAccountsRequest.page_token)
 }
 
+inline const ListBillingAccountsRequest* ListBillingAccountsRequest::internal_default_instance() {
+  return &ListBillingAccountsRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListBillingAccountsResponse
@@ -1411,13 +1398,13 @@ ListBillingAccountsResponse::billing_accounts() const {
   return billing_accounts_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void ListBillingAccountsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListBillingAccountsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ListBillingAccountsResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListBillingAccountsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -1455,17 +1442,20 @@ inline void ListBillingAccountsResponse::set_allocated_next_page_token(::std::st
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.ListBillingAccountsResponse.next_page_token)
 }
 
+inline const ListBillingAccountsResponse* ListBillingAccountsResponse::internal_default_instance() {
+  return &ListBillingAccountsResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListProjectBillingInfoRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void ListProjectBillingInfoRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListProjectBillingInfoRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ListProjectBillingInfoRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListProjectBillingInfoRequest::set_name(const ::std::string& value) {
   
@@ -1503,7 +1493,7 @@ inline void ListProjectBillingInfoRequest::set_allocated_name(::std::string* nam
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.ListProjectBillingInfoRequest.name)
 }
 
-// int32 page_size = 2;
+// optional int32 page_size = 2;
 inline void ListProjectBillingInfoRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -1517,13 +1507,13 @@ inline void ListProjectBillingInfoRequest::set_page_size(::google::protobuf::int
   // @@protoc_insertion_point(field_set:google.cloud.billing.v1.ListProjectBillingInfoRequest.page_size)
 }
 
-// string page_token = 3;
+// optional string page_token = 3;
 inline void ListProjectBillingInfoRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListProjectBillingInfoRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ListProjectBillingInfoRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListProjectBillingInfoRequest::set_page_token(const ::std::string& value) {
   
@@ -1561,6 +1551,9 @@ inline void ListProjectBillingInfoRequest::set_allocated_page_token(::std::strin
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.ListProjectBillingInfoRequest.page_token)
 }
 
+inline const ListProjectBillingInfoRequest* ListProjectBillingInfoRequest::internal_default_instance() {
+  return &ListProjectBillingInfoRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListProjectBillingInfoResponse
@@ -1595,13 +1588,13 @@ ListProjectBillingInfoResponse::project_billing_info() const {
   return project_billing_info_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void ListProjectBillingInfoResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListProjectBillingInfoResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.ListProjectBillingInfoResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListProjectBillingInfoResponse::set_next_page_token(const ::std::string& value) {
   
@@ -1639,17 +1632,20 @@ inline void ListProjectBillingInfoResponse::set_allocated_next_page_token(::std:
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.ListProjectBillingInfoResponse.next_page_token)
 }
 
+inline const ListProjectBillingInfoResponse* ListProjectBillingInfoResponse::internal_default_instance() {
+  return &ListProjectBillingInfoResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetProjectBillingInfoRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void GetProjectBillingInfoRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetProjectBillingInfoRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.GetProjectBillingInfoRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetProjectBillingInfoRequest::set_name(const ::std::string& value) {
   
@@ -1687,17 +1683,20 @@ inline void GetProjectBillingInfoRequest::set_allocated_name(::std::string* name
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.GetProjectBillingInfoRequest.name)
 }
 
+inline const GetProjectBillingInfoRequest* GetProjectBillingInfoRequest::internal_default_instance() {
+  return &GetProjectBillingInfoRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // UpdateProjectBillingInfoRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void UpdateProjectBillingInfoRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& UpdateProjectBillingInfoRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.billing.v1.UpdateProjectBillingInfoRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void UpdateProjectBillingInfoRequest::set_name(const ::std::string& value) {
   
@@ -1735,7 +1734,7 @@ inline void UpdateProjectBillingInfoRequest::set_allocated_name(::std::string* n
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.UpdateProjectBillingInfoRequest.name)
 }
 
-// .google.cloud.billing.v1.ProjectBillingInfo project_billing_info = 2;
+// optional .google.cloud.billing.v1.ProjectBillingInfo project_billing_info = 2;
 inline bool UpdateProjectBillingInfoRequest::has_project_billing_info() const {
   return this != internal_default_instance() && project_billing_info_ != NULL;
 }
@@ -1774,6 +1773,9 @@ inline void UpdateProjectBillingInfoRequest::set_allocated_project_billing_info(
   // @@protoc_insertion_point(field_set_allocated:google.cloud.billing.v1.UpdateProjectBillingInfoRequest.project_billing_info)
 }
 
+inline const UpdateProjectBillingInfoRequest* UpdateProjectBillingInfoRequest::internal_default_instance() {
+  return &UpdateProjectBillingInfoRequest_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
@@ -1793,7 +1795,6 @@ inline void UpdateProjectBillingInfoRequest::set_allocated_project_billing_info(
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace billing

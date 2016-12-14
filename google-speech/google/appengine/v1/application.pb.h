@@ -24,31 +24,12 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include <google/protobuf/duration.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace appengine {
-namespace v1 {
-class Application;
-class ApplicationDefaultTypeInternal;
-extern ApplicationDefaultTypeInternal _Application_default_instance_;
-class UrlDispatchRule;
-class UrlDispatchRuleDefaultTypeInternal;
-extern UrlDispatchRuleDefaultTypeInternal _UrlDispatchRule_default_instance_;
-}  // namespace v1
-}  // namespace appengine
-namespace protobuf {
-class Duration;
-class DurationDefaultTypeInternal;
-extern DurationDefaultTypeInternal _Duration_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace appengine {
@@ -57,6 +38,11 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fappengine_2fv1_2fapplication_2eproto();
 void protobuf_InitDefaults_google_2fappengine_2fv1_2fapplication_2eproto();
+void protobuf_AssignDesc_google_2fappengine_2fv1_2fapplication_2eproto();
+void protobuf_ShutdownFile_google_2fappengine_2fv1_2fapplication_2eproto();
+
+class Application;
+class UrlDispatchRule;
 
 // ===================================================================
 
@@ -75,58 +61,55 @@ class Application : public ::google::protobuf::Message /* @@protoc_insertion_poi
   static const ::google::protobuf::Descriptor* descriptor();
   static const Application& default_instance();
 
-  static inline const Application* internal_default_instance() {
-    return reinterpret_cast<const Application*>(
-               &_Application_default_instance_);
-  }
+  static const Application* internal_default_instance();
 
   void Swap(Application* other);
 
   // implements Message ----------------------------------------------
 
-  inline Application* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Application* New() const { return New(NULL); }
 
-  Application* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Application* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Application& from);
   void MergeFrom(const Application& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Application* other);
+  void UnsafeMergeFrom(const Application& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -137,7 +120,7 @@ class Application : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // string id = 2;
+  // optional string id = 2;
   void clear_id();
   static const int kIdFieldNumber = 2;
   const ::std::string& id() const;
@@ -160,7 +143,7 @@ class Application : public ::google::protobuf::Message /* @@protoc_insertion_poi
   const ::google::protobuf::RepeatedPtrField< ::google::appengine::v1::UrlDispatchRule >&
       dispatch_rules() const;
 
-  // string auth_domain = 6;
+  // optional string auth_domain = 6;
   void clear_auth_domain();
   static const int kAuthDomainFieldNumber = 6;
   const ::std::string& auth_domain() const;
@@ -171,7 +154,7 @@ class Application : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::std::string* release_auth_domain();
   void set_allocated_auth_domain(::std::string* auth_domain);
 
-  // string location_id = 7;
+  // optional string location_id = 7;
   void clear_location_id();
   static const int kLocationIdFieldNumber = 7;
   const ::std::string& location_id() const;
@@ -182,7 +165,7 @@ class Application : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::std::string* release_location_id();
   void set_allocated_location_id(::std::string* location_id);
 
-  // string code_bucket = 8;
+  // optional string code_bucket = 8;
   void clear_code_bucket();
   static const int kCodeBucketFieldNumber = 8;
   const ::std::string& code_bucket() const;
@@ -193,7 +176,7 @@ class Application : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::std::string* release_code_bucket();
   void set_allocated_code_bucket(::std::string* code_bucket);
 
-  // .google.protobuf.Duration default_cookie_expiration = 9;
+  // optional .google.protobuf.Duration default_cookie_expiration = 9;
   bool has_default_cookie_expiration() const;
   void clear_default_cookie_expiration();
   static const int kDefaultCookieExpirationFieldNumber = 9;
@@ -202,7 +185,7 @@ class Application : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::google::protobuf::Duration* release_default_cookie_expiration();
   void set_allocated_default_cookie_expiration(::google::protobuf::Duration* default_cookie_expiration);
 
-  // string default_hostname = 11;
+  // optional string default_hostname = 11;
   void clear_default_hostname();
   static const int kDefaultHostnameFieldNumber = 11;
   const ::std::string& default_hostname() const;
@@ -213,7 +196,7 @@ class Application : public ::google::protobuf::Message /* @@protoc_insertion_poi
   ::std::string* release_default_hostname();
   void set_allocated_default_hostname(::std::string* default_hostname);
 
-  // string default_bucket = 12;
+  // optional string default_bucket = 12;
   void clear_default_bucket();
   static const int kDefaultBucketFieldNumber = 12;
   const ::std::string& default_bucket() const;
@@ -240,10 +223,13 @@ class Application : public ::google::protobuf::Message /* @@protoc_insertion_poi
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fapplication_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fapplication_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fapplication_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fapplication_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fapplication_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Application> Application_default_instance_;
+
 // -------------------------------------------------------------------
 
 class UrlDispatchRule : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.UrlDispatchRule) */ {
@@ -261,58 +247,55 @@ class UrlDispatchRule : public ::google::protobuf::Message /* @@protoc_insertion
   static const ::google::protobuf::Descriptor* descriptor();
   static const UrlDispatchRule& default_instance();
 
-  static inline const UrlDispatchRule* internal_default_instance() {
-    return reinterpret_cast<const UrlDispatchRule*>(
-               &_UrlDispatchRule_default_instance_);
-  }
+  static const UrlDispatchRule* internal_default_instance();
 
   void Swap(UrlDispatchRule* other);
 
   // implements Message ----------------------------------------------
 
-  inline UrlDispatchRule* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline UrlDispatchRule* New() const { return New(NULL); }
 
-  UrlDispatchRule* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  UrlDispatchRule* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const UrlDispatchRule& from);
   void MergeFrom(const UrlDispatchRule& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(UrlDispatchRule* other);
+  void UnsafeMergeFrom(const UrlDispatchRule& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string domain = 1;
+  // optional string domain = 1;
   void clear_domain();
   static const int kDomainFieldNumber = 1;
   const ::std::string& domain() const;
@@ -323,7 +306,7 @@ class UrlDispatchRule : public ::google::protobuf::Message /* @@protoc_insertion
   ::std::string* release_domain();
   void set_allocated_domain(::std::string* domain);
 
-  // string path = 2;
+  // optional string path = 2;
   void clear_path();
   static const int kPathFieldNumber = 2;
   const ::std::string& path() const;
@@ -334,7 +317,7 @@ class UrlDispatchRule : public ::google::protobuf::Message /* @@protoc_insertion
   ::std::string* release_path();
   void set_allocated_path(::std::string* path);
 
-  // string service = 3;
+  // optional string service = 3;
   void clear_service();
   static const int kServiceFieldNumber = 3;
   const ::std::string& service() const;
@@ -355,10 +338,13 @@ class UrlDispatchRule : public ::google::protobuf::Message /* @@protoc_insertion
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fapplication_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fapplication_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fapplication_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fapplication_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fapplication_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<UrlDispatchRule> UrlDispatchRule_default_instance_;
+
 // ===================================================================
 
 
@@ -367,13 +353,13 @@ class UrlDispatchRule : public ::google::protobuf::Message /* @@protoc_insertion
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Application
 
-// string name = 1;
+// optional string name = 1;
 inline void Application::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Application::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Application.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Application::set_name(const ::std::string& value) {
   
@@ -411,13 +397,13 @@ inline void Application::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Application.name)
 }
 
-// string id = 2;
+// optional string id = 2;
 inline void Application::clear_id() {
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Application::id() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Application.id)
-  return id_.GetNoArena();
+  return id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Application::set_id(const ::std::string& value) {
   
@@ -485,13 +471,13 @@ Application::dispatch_rules() const {
   return dispatch_rules_;
 }
 
-// string auth_domain = 6;
+// optional string auth_domain = 6;
 inline void Application::clear_auth_domain() {
   auth_domain_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Application::auth_domain() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Application.auth_domain)
-  return auth_domain_.GetNoArena();
+  return auth_domain_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Application::set_auth_domain(const ::std::string& value) {
   
@@ -529,13 +515,13 @@ inline void Application::set_allocated_auth_domain(::std::string* auth_domain) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Application.auth_domain)
 }
 
-// string location_id = 7;
+// optional string location_id = 7;
 inline void Application::clear_location_id() {
   location_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Application::location_id() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Application.location_id)
-  return location_id_.GetNoArena();
+  return location_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Application::set_location_id(const ::std::string& value) {
   
@@ -573,13 +559,13 @@ inline void Application::set_allocated_location_id(::std::string* location_id) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Application.location_id)
 }
 
-// string code_bucket = 8;
+// optional string code_bucket = 8;
 inline void Application::clear_code_bucket() {
   code_bucket_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Application::code_bucket() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Application.code_bucket)
-  return code_bucket_.GetNoArena();
+  return code_bucket_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Application::set_code_bucket(const ::std::string& value) {
   
@@ -617,7 +603,7 @@ inline void Application::set_allocated_code_bucket(::std::string* code_bucket) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Application.code_bucket)
 }
 
-// .google.protobuf.Duration default_cookie_expiration = 9;
+// optional .google.protobuf.Duration default_cookie_expiration = 9;
 inline bool Application::has_default_cookie_expiration() const {
   return this != internal_default_instance() && default_cookie_expiration_ != NULL;
 }
@@ -661,13 +647,13 @@ inline void Application::set_allocated_default_cookie_expiration(::google::proto
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Application.default_cookie_expiration)
 }
 
-// string default_hostname = 11;
+// optional string default_hostname = 11;
 inline void Application::clear_default_hostname() {
   default_hostname_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Application::default_hostname() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Application.default_hostname)
-  return default_hostname_.GetNoArena();
+  return default_hostname_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Application::set_default_hostname(const ::std::string& value) {
   
@@ -705,13 +691,13 @@ inline void Application::set_allocated_default_hostname(::std::string* default_h
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Application.default_hostname)
 }
 
-// string default_bucket = 12;
+// optional string default_bucket = 12;
 inline void Application::clear_default_bucket() {
   default_bucket_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Application::default_bucket() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Application.default_bucket)
-  return default_bucket_.GetNoArena();
+  return default_bucket_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Application::set_default_bucket(const ::std::string& value) {
   
@@ -749,17 +735,20 @@ inline void Application::set_allocated_default_bucket(::std::string* default_buc
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Application.default_bucket)
 }
 
+inline const Application* Application::internal_default_instance() {
+  return &Application_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // UrlDispatchRule
 
-// string domain = 1;
+// optional string domain = 1;
 inline void UrlDispatchRule::clear_domain() {
   domain_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& UrlDispatchRule::domain() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.UrlDispatchRule.domain)
-  return domain_.GetNoArena();
+  return domain_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void UrlDispatchRule::set_domain(const ::std::string& value) {
   
@@ -797,13 +786,13 @@ inline void UrlDispatchRule::set_allocated_domain(::std::string* domain) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.UrlDispatchRule.domain)
 }
 
-// string path = 2;
+// optional string path = 2;
 inline void UrlDispatchRule::clear_path() {
   path_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& UrlDispatchRule::path() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.UrlDispatchRule.path)
-  return path_.GetNoArena();
+  return path_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void UrlDispatchRule::set_path(const ::std::string& value) {
   
@@ -841,13 +830,13 @@ inline void UrlDispatchRule::set_allocated_path(::std::string* path) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.UrlDispatchRule.path)
 }
 
-// string service = 3;
+// optional string service = 3;
 inline void UrlDispatchRule::clear_service() {
   service_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& UrlDispatchRule::service() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.UrlDispatchRule.service)
-  return service_.GetNoArena();
+  return service_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void UrlDispatchRule::set_service(const ::std::string& value) {
   
@@ -885,12 +874,14 @@ inline void UrlDispatchRule::set_allocated_service(::std::string* service) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.UrlDispatchRule.service)
 }
 
+inline const UrlDispatchRule* UrlDispatchRule::internal_default_instance() {
+  return &UrlDispatchRule_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace appengine

@@ -23,19 +23,11 @@
 #include <google/protobuf/arenastring.h>
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/generated_enum_reflection.h>
 #include "google/api/annotations.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace logging {
-namespace type {
-}  // namespace type
-}  // namespace logging
-}  // namespace google
 
 namespace google {
 namespace logging {
@@ -44,6 +36,9 @@ namespace type {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2flogging_2ftype_2flog_5fseverity_2eproto();
 void protobuf_InitDefaults_google_2flogging_2ftype_2flog_5fseverity_2eproto();
+void protobuf_AssignDesc_google_2flogging_2ftype_2flog_5fseverity_2eproto();
+void protobuf_ShutdownFile_google_2flogging_2ftype_2flog_5fseverity_2eproto();
+
 
 enum LogSeverity {
   DEFAULT = 0,
@@ -85,7 +80,6 @@ inline bool LogSeverity_Parse(
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace type
 }  // namespace logging

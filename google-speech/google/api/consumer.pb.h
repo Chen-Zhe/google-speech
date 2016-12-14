@@ -24,21 +24,11 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-class ProjectProperties;
-class ProjectPropertiesDefaultTypeInternal;
-extern ProjectPropertiesDefaultTypeInternal _ProjectProperties_default_instance_;
-class Property;
-class PropertyDefaultTypeInternal;
-extern PropertyDefaultTypeInternal _Property_default_instance_;
-}  // namespace api
-}  // namespace google
 
 namespace google {
 namespace api {
@@ -46,6 +36,11 @@ namespace api {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fapi_2fconsumer_2eproto();
 void protobuf_InitDefaults_google_2fapi_2fconsumer_2eproto();
+void protobuf_AssignDesc_google_2fapi_2fconsumer_2eproto();
+void protobuf_ShutdownFile_google_2fapi_2fconsumer_2eproto();
+
+class ProjectProperties;
+class Property;
 
 enum Property_PropertyType {
   Property_PropertyType_UNSPECIFIED = 0,
@@ -88,52 +83,49 @@ class ProjectProperties : public ::google::protobuf::Message /* @@protoc_inserti
   static const ::google::protobuf::Descriptor* descriptor();
   static const ProjectProperties& default_instance();
 
-  static inline const ProjectProperties* internal_default_instance() {
-    return reinterpret_cast<const ProjectProperties*>(
-               &_ProjectProperties_default_instance_);
-  }
+  static const ProjectProperties* internal_default_instance();
 
   void Swap(ProjectProperties* other);
 
   // implements Message ----------------------------------------------
 
-  inline ProjectProperties* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ProjectProperties* New() const { return New(NULL); }
 
-  ProjectProperties* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ProjectProperties* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ProjectProperties& from);
   void MergeFrom(const ProjectProperties& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ProjectProperties* other);
+  void UnsafeMergeFrom(const ProjectProperties& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -159,10 +151,13 @@ class ProjectProperties : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fconsumer_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fconsumer_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fconsumer_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fconsumer_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fconsumer_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ProjectProperties> ProjectProperties_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Property : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.api.Property) */ {
@@ -180,52 +175,49 @@ class Property : public ::google::protobuf::Message /* @@protoc_insertion_point(
   static const ::google::protobuf::Descriptor* descriptor();
   static const Property& default_instance();
 
-  static inline const Property* internal_default_instance() {
-    return reinterpret_cast<const Property*>(
-               &_Property_default_instance_);
-  }
+  static const Property* internal_default_instance();
 
   void Swap(Property* other);
 
   // implements Message ----------------------------------------------
 
-  inline Property* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Property* New() const { return New(NULL); }
 
-  Property* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Property* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Property& from);
   void MergeFrom(const Property& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Property* other);
+  void UnsafeMergeFrom(const Property& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -263,7 +255,7 @@ class Property : public ::google::protobuf::Message /* @@protoc_insertion_point(
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -274,13 +266,13 @@ class Property : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // .google.api.Property.PropertyType type = 2;
+  // optional .google.api.Property.PropertyType type = 2;
   void clear_type();
   static const int kTypeFieldNumber = 2;
   ::google::api::Property_PropertyType type() const;
   void set_type(::google::api::Property_PropertyType value);
 
-  // string description = 3;
+  // optional string description = 3;
   void clear_description();
   static const int kDescriptionFieldNumber = 3;
   const ::std::string& description() const;
@@ -301,10 +293,13 @@ class Property : public ::google::protobuf::Message /* @@protoc_insertion_point(
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fconsumer_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fconsumer_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fconsumer_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fconsumer_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fconsumer_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Property> Property_default_instance_;
+
 // ===================================================================
 
 
@@ -343,17 +338,20 @@ ProjectProperties::properties() const {
   return properties_;
 }
 
+inline const ProjectProperties* ProjectProperties::internal_default_instance() {
+  return &ProjectProperties_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Property
 
-// string name = 1;
+// optional string name = 1;
 inline void Property::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Property::name() const {
   // @@protoc_insertion_point(field_get:google.api.Property.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Property::set_name(const ::std::string& value) {
   
@@ -391,7 +389,7 @@ inline void Property::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.api.Property.name)
 }
 
-// .google.api.Property.PropertyType type = 2;
+// optional .google.api.Property.PropertyType type = 2;
 inline void Property::clear_type() {
   type_ = 0;
 }
@@ -405,13 +403,13 @@ inline void Property::set_type(::google::api::Property_PropertyType value) {
   // @@protoc_insertion_point(field_set:google.api.Property.type)
 }
 
-// string description = 3;
+// optional string description = 3;
 inline void Property::clear_description() {
   description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Property::description() const {
   // @@protoc_insertion_point(field_get:google.api.Property.description)
-  return description_.GetNoArena();
+  return description_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Property::set_description(const ::std::string& value) {
   
@@ -449,12 +447,14 @@ inline void Property::set_allocated_description(::std::string* description) {
   // @@protoc_insertion_point(field_set_allocated:google.api.Property.description)
 }
 
+inline const Property* Property::internal_default_instance() {
+  return &Property_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace api
 }  // namespace google

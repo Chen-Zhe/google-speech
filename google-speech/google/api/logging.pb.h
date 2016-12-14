@@ -24,21 +24,11 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-class Logging;
-class LoggingDefaultTypeInternal;
-extern LoggingDefaultTypeInternal _Logging_default_instance_;
-class Logging_LoggingDestination;
-class Logging_LoggingDestinationDefaultTypeInternal;
-extern Logging_LoggingDestinationDefaultTypeInternal _Logging_LoggingDestination_default_instance_;
-}  // namespace api
-}  // namespace google
 
 namespace google {
 namespace api {
@@ -46,6 +36,11 @@ namespace api {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fapi_2flogging_2eproto();
 void protobuf_InitDefaults_google_2fapi_2flogging_2eproto();
+void protobuf_AssignDesc_google_2fapi_2flogging_2eproto();
+void protobuf_ShutdownFile_google_2fapi_2flogging_2eproto();
+
+class Logging;
+class Logging_LoggingDestination;
 
 // ===================================================================
 
@@ -64,58 +59,55 @@ class Logging_LoggingDestination : public ::google::protobuf::Message /* @@proto
   static const ::google::protobuf::Descriptor* descriptor();
   static const Logging_LoggingDestination& default_instance();
 
-  static inline const Logging_LoggingDestination* internal_default_instance() {
-    return reinterpret_cast<const Logging_LoggingDestination*>(
-               &_Logging_LoggingDestination_default_instance_);
-  }
+  static const Logging_LoggingDestination* internal_default_instance();
 
   void Swap(Logging_LoggingDestination* other);
 
   // implements Message ----------------------------------------------
 
-  inline Logging_LoggingDestination* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Logging_LoggingDestination* New() const { return New(NULL); }
 
-  Logging_LoggingDestination* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Logging_LoggingDestination* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Logging_LoggingDestination& from);
   void MergeFrom(const Logging_LoggingDestination& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Logging_LoggingDestination* other);
+  void UnsafeMergeFrom(const Logging_LoggingDestination& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string monitored_resource = 3;
+  // optional string monitored_resource = 3;
   void clear_monitored_resource();
   static const int kMonitoredResourceFieldNumber = 3;
   const ::std::string& monitored_resource() const;
@@ -151,10 +143,13 @@ class Logging_LoggingDestination : public ::google::protobuf::Message /* @@proto
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2flogging_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2flogging_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2flogging_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2flogging_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2flogging_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Logging_LoggingDestination> Logging_LoggingDestination_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Logging : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.api.Logging) */ {
@@ -172,52 +167,49 @@ class Logging : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   static const ::google::protobuf::Descriptor* descriptor();
   static const Logging& default_instance();
 
-  static inline const Logging* internal_default_instance() {
-    return reinterpret_cast<const Logging*>(
-               &_Logging_default_instance_);
-  }
+  static const Logging* internal_default_instance();
 
   void Swap(Logging* other);
 
   // implements Message ----------------------------------------------
 
-  inline Logging* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Logging* New() const { return New(NULL); }
 
-  Logging* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Logging* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Logging& from);
   void MergeFrom(const Logging& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Logging* other);
+  void UnsafeMergeFrom(const Logging& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -258,10 +250,13 @@ class Logging : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2flogging_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2flogging_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2flogging_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2flogging_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2flogging_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Logging> Logging_default_instance_;
+
 // ===================================================================
 
 
@@ -270,13 +265,13 @@ class Logging : public ::google::protobuf::Message /* @@protoc_insertion_point(c
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Logging_LoggingDestination
 
-// string monitored_resource = 3;
+// optional string monitored_resource = 3;
 inline void Logging_LoggingDestination::clear_monitored_resource() {
   monitored_resource_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Logging_LoggingDestination::monitored_resource() const {
   // @@protoc_insertion_point(field_get:google.api.Logging.LoggingDestination.monitored_resource)
-  return monitored_resource_.GetNoArena();
+  return monitored_resource_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Logging_LoggingDestination::set_monitored_resource(const ::std::string& value) {
   
@@ -369,6 +364,9 @@ Logging_LoggingDestination::mutable_logs() {
   return &logs_;
 }
 
+inline const Logging_LoggingDestination* Logging_LoggingDestination::internal_default_instance() {
+  return &Logging_LoggingDestination_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Logging
@@ -433,12 +431,14 @@ Logging::consumer_destinations() const {
   return consumer_destinations_;
 }
 
+inline const Logging* Logging::internal_default_instance() {
+  return &Logging_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace api
 }  // namespace google

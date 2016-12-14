@@ -20,174 +20,252 @@
 namespace google {
 namespace logging {
 namespace v2 {
-class DeleteLogRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<DeleteLogRequest> {};
-DeleteLogRequestDefaultTypeInternal _DeleteLogRequest_default_instance_;
-class WriteLogEntriesRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<WriteLogEntriesRequest> {};
-WriteLogEntriesRequestDefaultTypeInternal _WriteLogEntriesRequest_default_instance_;
-class WriteLogEntriesResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<WriteLogEntriesResponse> {};
-WriteLogEntriesResponseDefaultTypeInternal _WriteLogEntriesResponse_default_instance_;
-class ListLogEntriesRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListLogEntriesRequest> {};
-ListLogEntriesRequestDefaultTypeInternal _ListLogEntriesRequest_default_instance_;
-class ListLogEntriesResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListLogEntriesResponse> {};
-ListLogEntriesResponseDefaultTypeInternal _ListLogEntriesResponse_default_instance_;
-class ListMonitoredResourceDescriptorsRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListMonitoredResourceDescriptorsRequest> {};
-ListMonitoredResourceDescriptorsRequestDefaultTypeInternal _ListMonitoredResourceDescriptorsRequest_default_instance_;
-class ListMonitoredResourceDescriptorsResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListMonitoredResourceDescriptorsResponse> {};
-ListMonitoredResourceDescriptorsResponseDefaultTypeInternal _ListMonitoredResourceDescriptorsResponse_default_instance_;
-class ListLogsRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListLogsRequest> {};
-ListLogsRequestDefaultTypeInternal _ListLogsRequest_default_instance_;
-class ListLogsResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ListLogsResponse> {};
-ListLogsResponseDefaultTypeInternal _ListLogsResponse_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[10];
+const ::google::protobuf::Descriptor* DeleteLogRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  DeleteLogRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* WriteLogEntriesRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  WriteLogEntriesRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* WriteLogEntriesRequest_LabelsEntry_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* WriteLogEntriesResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  WriteLogEntriesResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListLogEntriesRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListLogEntriesRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListLogEntriesResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListLogEntriesResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListMonitoredResourceDescriptorsRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListMonitoredResourceDescriptorsRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListMonitoredResourceDescriptorsResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListMonitoredResourceDescriptorsResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListLogsRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListLogsRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ListLogsResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ListLogsResponse_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2flogging_2fv2_2flogging_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2flogging_2fv2_2flogging_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteLogRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2flogging_2fv2_2flogging_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2flogging_2fv2_2flogging_2eproto() {
+  protobuf_AddDesc_google_2flogging_2fv2_2flogging_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/logging/v2/logging.proto");
+  GOOGLE_CHECK(file != NULL);
+  DeleteLogRequest_descriptor_ = file->message_type(0);
+  static const int DeleteLogRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteLogRequest, log_name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteLogEntriesRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  DeleteLogRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      DeleteLogRequest_descriptor_,
+      DeleteLogRequest::internal_default_instance(),
+      DeleteLogRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(DeleteLogRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(DeleteLogRequest, _internal_metadata_));
+  WriteLogEntriesRequest_descriptor_ = file->message_type(1);
+  static const int WriteLogEntriesRequest_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteLogEntriesRequest, log_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteLogEntriesRequest, resource_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteLogEntriesRequest, labels_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteLogEntriesRequest, entries_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteLogEntriesRequest, partial_success_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteLogEntriesResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogEntriesRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  WriteLogEntriesRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      WriteLogEntriesRequest_descriptor_,
+      WriteLogEntriesRequest::internal_default_instance(),
+      WriteLogEntriesRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(WriteLogEntriesRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteLogEntriesRequest, _internal_metadata_));
+  WriteLogEntriesRequest_LabelsEntry_descriptor_ = WriteLogEntriesRequest_descriptor_->nested_type(0);
+  WriteLogEntriesResponse_descriptor_ = file->message_type(2);
+  static const int WriteLogEntriesResponse_offsets_[1] = {
+  };
+  WriteLogEntriesResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      WriteLogEntriesResponse_descriptor_,
+      WriteLogEntriesResponse::internal_default_instance(),
+      WriteLogEntriesResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(WriteLogEntriesResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(WriteLogEntriesResponse, _internal_metadata_));
+  ListLogEntriesRequest_descriptor_ = file->message_type(3);
+  static const int ListLogEntriesRequest_offsets_[6] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogEntriesRequest, project_ids_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogEntriesRequest, resource_names_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogEntriesRequest, filter_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogEntriesRequest, order_by_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogEntriesRequest, page_size_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogEntriesRequest, page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogEntriesResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListLogEntriesRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListLogEntriesRequest_descriptor_,
+      ListLogEntriesRequest::internal_default_instance(),
+      ListLogEntriesRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListLogEntriesRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogEntriesRequest, _internal_metadata_));
+  ListLogEntriesResponse_descriptor_ = file->message_type(4);
+  static const int ListLogEntriesResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogEntriesResponse, entries_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogEntriesResponse, next_page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListLogEntriesResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListLogEntriesResponse_descriptor_,
+      ListLogEntriesResponse::internal_default_instance(),
+      ListLogEntriesResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListLogEntriesResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogEntriesResponse, _internal_metadata_));
+  ListMonitoredResourceDescriptorsRequest_descriptor_ = file->message_type(5);
+  static const int ListMonitoredResourceDescriptorsRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsRequest, page_size_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsRequest, page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListMonitoredResourceDescriptorsRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListMonitoredResourceDescriptorsRequest_descriptor_,
+      ListMonitoredResourceDescriptorsRequest::internal_default_instance(),
+      ListMonitoredResourceDescriptorsRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListMonitoredResourceDescriptorsRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsRequest, _internal_metadata_));
+  ListMonitoredResourceDescriptorsResponse_descriptor_ = file->message_type(6);
+  static const int ListMonitoredResourceDescriptorsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsResponse, resource_descriptors_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsResponse, next_page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogsRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListMonitoredResourceDescriptorsResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListMonitoredResourceDescriptorsResponse_descriptor_,
+      ListMonitoredResourceDescriptorsResponse::internal_default_instance(),
+      ListMonitoredResourceDescriptorsResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListMonitoredResourceDescriptorsResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListMonitoredResourceDescriptorsResponse, _internal_metadata_));
+  ListLogsRequest_descriptor_ = file->message_type(7);
+  static const int ListLogsRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogsRequest, parent_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogsRequest, page_size_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogsRequest, page_token_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogsResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ListLogsRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListLogsRequest_descriptor_,
+      ListLogsRequest::internal_default_instance(),
+      ListLogsRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListLogsRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogsRequest, _internal_metadata_));
+  ListLogsResponse_descriptor_ = file->message_type(8);
+  static const int ListLogsResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogsResponse, log_names_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogsResponse, next_page_token_),
   };
-  return offsets;
+  ListLogsResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ListLogsResponse_descriptor_,
+      ListLogsResponse::internal_default_instance(),
+      ListLogsResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ListLogsResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ListLogsResponse, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(DeleteLogRequest)},
-  { 5, -1, sizeof(WriteLogEntriesRequest)},
-  { 14, -1, sizeof(WriteLogEntriesResponse)},
-  { 18, -1, sizeof(ListLogEntriesRequest)},
-  { 28, -1, sizeof(ListLogEntriesResponse)},
-  { 34, -1, sizeof(ListMonitoredResourceDescriptorsRequest)},
-  { 40, -1, sizeof(ListMonitoredResourceDescriptorsResponse)},
-  { 46, -1, sizeof(ListLogsRequest)},
-  { 53, -1, sizeof(ListLogsResponse)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_DeleteLogRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_WriteLogEntriesRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_WriteLogEntriesResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListLogEntriesRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListLogEntriesResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListMonitoredResourceDescriptorsRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListMonitoredResourceDescriptorsResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListLogsRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ListLogsResponse_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2flogging_2fv2_2flogging_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/logging/v2/logging.proto", schemas, file_default_instances, protobuf_Offsets_google_2flogging_2fv2_2flogging_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2flogging_2fv2_2flogging_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 10);
-  const ::google::protobuf::Descriptor* WriteLogEntriesRequest_LabelsEntry_descriptor = file_level_metadata[1].descriptor;
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-        WriteLogEntriesRequest_LabelsEntry_descriptor,
+      DeleteLogRequest_descriptor_, DeleteLogRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      WriteLogEntriesRequest_descriptor_, WriteLogEntriesRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+        WriteLogEntriesRequest_LabelsEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
             ::std::string,
             ::std::string,
             ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
             ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
             0>::CreateDefaultInstance(
-                WriteLogEntriesRequest_LabelsEntry_descriptor));
+                WriteLogEntriesRequest_LabelsEntry_descriptor_));
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      WriteLogEntriesResponse_descriptor_, WriteLogEntriesResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListLogEntriesRequest_descriptor_, ListLogEntriesRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListLogEntriesResponse_descriptor_, ListLogEntriesResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListMonitoredResourceDescriptorsRequest_descriptor_, ListMonitoredResourceDescriptorsRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListMonitoredResourceDescriptorsResponse_descriptor_, ListMonitoredResourceDescriptorsResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListLogsRequest_descriptor_, ListLogsRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ListLogsResponse_descriptor_, ListLogsResponse::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2flogging_2fv2_2flogging_2eproto() {
-  _DeleteLogRequest_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _WriteLogEntriesRequest_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _WriteLogEntriesResponse_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _ListLogEntriesRequest_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
-  _ListLogEntriesResponse_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
-  _ListMonitoredResourceDescriptorsRequest_default_instance_.Shutdown();
-  delete file_level_metadata[6].reflection;
-  _ListMonitoredResourceDescriptorsResponse_default_instance_.Shutdown();
-  delete file_level_metadata[7].reflection;
-  _ListLogsRequest_default_instance_.Shutdown();
-  delete file_level_metadata[8].reflection;
-  _ListLogsResponse_default_instance_.Shutdown();
-  delete file_level_metadata[9].reflection;
+  DeleteLogRequest_default_instance_.Shutdown();
+  delete DeleteLogRequest_reflection_;
+  WriteLogEntriesRequest_default_instance_.Shutdown();
+  delete WriteLogEntriesRequest_reflection_;
+  WriteLogEntriesResponse_default_instance_.Shutdown();
+  delete WriteLogEntriesResponse_reflection_;
+  ListLogEntriesRequest_default_instance_.Shutdown();
+  delete ListLogEntriesRequest_reflection_;
+  ListLogEntriesResponse_default_instance_.Shutdown();
+  delete ListLogEntriesResponse_reflection_;
+  ListMonitoredResourceDescriptorsRequest_default_instance_.Shutdown();
+  delete ListMonitoredResourceDescriptorsRequest_reflection_;
+  ListMonitoredResourceDescriptorsResponse_default_instance_.Shutdown();
+  delete ListMonitoredResourceDescriptorsResponse_reflection_;
+  ListLogsRequest_default_instance_.Shutdown();
+  delete ListLogsRequest_reflection_;
+  ListLogsResponse_default_instance_.Shutdown();
+  delete ListLogsResponse_reflection_;
 }
 
 void protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto_impl() {
@@ -200,83 +278,98 @@ void protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto_impl() {
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fempty_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
   ::google::rpc::protobuf_InitDefaults_google_2frpc_2fstatus_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _DeleteLogRequest_default_instance_.DefaultConstruct();
-  _WriteLogEntriesRequest_default_instance_.DefaultConstruct();
-  _WriteLogEntriesResponse_default_instance_.DefaultConstruct();
-  _ListLogEntriesRequest_default_instance_.DefaultConstruct();
-  _ListLogEntriesResponse_default_instance_.DefaultConstruct();
-  _ListMonitoredResourceDescriptorsRequest_default_instance_.DefaultConstruct();
-  _ListMonitoredResourceDescriptorsResponse_default_instance_.DefaultConstruct();
-  _ListLogsRequest_default_instance_.DefaultConstruct();
-  _ListLogsResponse_default_instance_.DefaultConstruct();
-  _WriteLogEntriesRequest_default_instance_.get_mutable()->resource_ = const_cast< ::google::api::MonitoredResource*>(
-      ::google::api::MonitoredResource::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  DeleteLogRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  WriteLogEntriesRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  WriteLogEntriesResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListLogEntriesRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListLogEntriesResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListMonitoredResourceDescriptorsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListMonitoredResourceDescriptorsResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListLogsRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ListLogsResponse_default_instance_.DefaultConstruct();
+  DeleteLogRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  WriteLogEntriesRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  WriteLogEntriesResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListLogEntriesRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListLogEntriesResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListMonitoredResourceDescriptorsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListMonitoredResourceDescriptorsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListLogsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ListLogsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto_once_);
 void protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto_once_,
+                 &protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto_impl);
 }
 void protobuf_AddDesc_google_2flogging_2fv2_2flogging_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
-  static const char descriptor[] = {
-      "\n\037google/logging/v2/logging.proto\022\021googl"
-      "e.logging.v2\032\034google/api/annotations.pro"
-      "to\032#google/api/monitored_resource.proto\032"
-      "!google/logging/v2/log_entry.proto\032\036goog"
-      "le/protobuf/duration.proto\032\033google/proto"
-      "buf/empty.proto\032\037google/protobuf/timesta"
-      "mp.proto\032\027google/rpc/status.proto\"$\n\020Del"
-      "eteLogRequest\022\020\n\010log_name\030\001 \001(\t\"\230\002\n\026Writ"
-      "eLogEntriesRequest\022\020\n\010log_name\030\001 \001(\t\022/\n\010"
-      "resource\030\002 \001(\0132\035.google.api.MonitoredRes"
-      "ource\022E\n\006labels\030\003 \003(\01325.google.logging.v"
-      "2.WriteLogEntriesRequest.LabelsEntry\022,\n\007"
-      "entries\030\004 \003(\0132\033.google.logging.v2.LogEnt"
-      "ry\022\027\n\017partial_success\030\005 \001(\010\032-\n\013LabelsEnt"
-      "ry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"\031\n\027Wr"
-      "iteLogEntriesResponse\"\215\001\n\025ListLogEntries"
-      "Request\022\023\n\013project_ids\030\001 \003(\t\022\026\n\016resource"
-      "_names\030\010 \003(\t\022\016\n\006filter\030\002 \001(\t\022\020\n\010order_by"
-      "\030\003 \001(\t\022\021\n\tpage_size\030\004 \001(\005\022\022\n\npage_token\030"
-      "\005 \001(\t\"_\n\026ListLogEntriesResponse\022,\n\007entri"
-      "es\030\001 \003(\0132\033.google.logging.v2.LogEntry\022\027\n"
-      "\017next_page_token\030\002 \001(\t\"P\n\'ListMonitoredR"
-      "esourceDescriptorsRequest\022\021\n\tpage_size\030\001"
-      " \001(\005\022\022\n\npage_token\030\002 \001(\t\"\212\001\n(ListMonitor"
-      "edResourceDescriptorsResponse\022E\n\024resourc"
-      "e_descriptors\030\001 \003(\0132\'.google.api.Monitor"
-      "edResourceDescriptor\022\027\n\017next_page_token\030"
-      "\002 \001(\t\"H\n\017ListLogsRequest\022\016\n\006parent\030\001 \001(\t"
-      "\022\021\n\tpage_size\030\002 \001(\005\022\022\n\npage_token\030\003 \001(\t\""
-      ">\n\020ListLogsResponse\022\021\n\tlog_names\030\003 \003(\t\022\027"
-      "\n\017next_page_token\030\002 \001(\t2\334\005\n\020LoggingServi"
-      "ceV2\022w\n\tDeleteLog\022#.google.logging.v2.De"
-      "leteLogRequest\032\026.google.protobuf.Empty\"-"
-      "\202\323\344\223\002\'*%/v2beta1/{log_name=projects/*/lo"
-      "gs/*}\022\206\001\n\017WriteLogEntries\022).google.loggi"
-      "ng.v2.WriteLogEntriesRequest\032*.google.lo"
-      "gging.v2.WriteLogEntriesResponse\"\034\202\323\344\223\002\026"
-      "\"\021/v2/entries:write:\001*\022\202\001\n\016ListLogEntrie"
-      "s\022(.google.logging.v2.ListLogEntriesRequ"
-      "est\032).google.logging.v2.ListLogEntriesRe"
-      "sponse\"\033\202\323\344\223\002\025\"\020/v2/entries:list:\001*\022\305\001\n "
-      "ListMonitoredResourceDescriptors\022:.googl"
-      "e.logging.v2.ListMonitoredResourceDescri"
-      "ptorsRequest\032;.google.logging.v2.ListMon"
-      "itoredResourceDescriptorsResponse\"(\202\323\344\223\002"
-      "\"\022 /v2/monitoredResourceDescriptors\022y\n\010L"
-      "istLogs\022\".google.logging.v2.ListLogsRequ"
-      "est\032#.google.logging.v2.ListLogsResponse"
-      "\"$\202\323\344\223\002\036\022\034/v2/{parent=projects/*}/logsB~"
-      "\n\025com.google.logging.v2B\014LoggingProtoP\001Z"
-      "8google.golang.org/genproto/googleapis/l"
-      "ogging/v2;logging\370\001\001\252\002\027Google.Cloud.Logg"
-      "ing.V2b\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 2094);
+    "\n\037google/logging/v2/logging.proto\022\021googl"
+    "e.logging.v2\032\034google/api/annotations.pro"
+    "to\032#google/api/monitored_resource.proto\032"
+    "!google/logging/v2/log_entry.proto\032\036goog"
+    "le/protobuf/duration.proto\032\033google/proto"
+    "buf/empty.proto\032\037google/protobuf/timesta"
+    "mp.proto\032\027google/rpc/status.proto\"$\n\020Del"
+    "eteLogRequest\022\020\n\010log_name\030\001 \001(\t\"\230\002\n\026Writ"
+    "eLogEntriesRequest\022\020\n\010log_name\030\001 \001(\t\022/\n\010"
+    "resource\030\002 \001(\0132\035.google.api.MonitoredRes"
+    "ource\022E\n\006labels\030\003 \003(\01325.google.logging.v"
+    "2.WriteLogEntriesRequest.LabelsEntry\022,\n\007"
+    "entries\030\004 \003(\0132\033.google.logging.v2.LogEnt"
+    "ry\022\027\n\017partial_success\030\005 \001(\010\032-\n\013LabelsEnt"
+    "ry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"\031\n\027Wr"
+    "iteLogEntriesResponse\"\215\001\n\025ListLogEntries"
+    "Request\022\023\n\013project_ids\030\001 \003(\t\022\026\n\016resource"
+    "_names\030\010 \003(\t\022\016\n\006filter\030\002 \001(\t\022\020\n\010order_by"
+    "\030\003 \001(\t\022\021\n\tpage_size\030\004 \001(\005\022\022\n\npage_token\030"
+    "\005 \001(\t\"_\n\026ListLogEntriesResponse\022,\n\007entri"
+    "es\030\001 \003(\0132\033.google.logging.v2.LogEntry\022\027\n"
+    "\017next_page_token\030\002 \001(\t\"P\n\'ListMonitoredR"
+    "esourceDescriptorsRequest\022\021\n\tpage_size\030\001"
+    " \001(\005\022\022\n\npage_token\030\002 \001(\t\"\212\001\n(ListMonitor"
+    "edResourceDescriptorsResponse\022E\n\024resourc"
+    "e_descriptors\030\001 \003(\0132\'.google.api.Monitor"
+    "edResourceDescriptor\022\027\n\017next_page_token\030"
+    "\002 \001(\t\"H\n\017ListLogsRequest\022\016\n\006parent\030\001 \001(\t"
+    "\022\021\n\tpage_size\030\002 \001(\005\022\022\n\npage_token\030\003 \001(\t\""
+    ">\n\020ListLogsResponse\022\021\n\tlog_names\030\003 \003(\t\022\027"
+    "\n\017next_page_token\030\002 \001(\t2\334\005\n\020LoggingServi"
+    "ceV2\022w\n\tDeleteLog\022#.google.logging.v2.De"
+    "leteLogRequest\032\026.google.protobuf.Empty\"-"
+    "\202\323\344\223\002\'*%/v2beta1/{log_name=projects/*/lo"
+    "gs/*}\022\206\001\n\017WriteLogEntries\022).google.loggi"
+    "ng.v2.WriteLogEntriesRequest\032*.google.lo"
+    "gging.v2.WriteLogEntriesResponse\"\034\202\323\344\223\002\026"
+    "\"\021/v2/entries:write:\001*\022\202\001\n\016ListLogEntrie"
+    "s\022(.google.logging.v2.ListLogEntriesRequ"
+    "est\032).google.logging.v2.ListLogEntriesRe"
+    "sponse\"\033\202\323\344\223\002\025\"\020/v2/entries:list:\001*\022\305\001\n "
+    "ListMonitoredResourceDescriptors\022:.googl"
+    "e.logging.v2.ListMonitoredResourceDescri"
+    "ptorsRequest\032;.google.logging.v2.ListMon"
+    "itoredResourceDescriptorsResponse\"(\202\323\344\223\002"
+    "\"\022 /v2/monitoredResourceDescriptors\022y\n\010L"
+    "istLogs\022\".google.logging.v2.ListLogsRequ"
+    "est\032#.google.logging.v2.ListLogsResponse"
+    "\"$\202\323\344\223\002\036\022\034/v2/{parent=projects/*}/logsB~"
+    "\n\025com.google.logging.v2B\014LoggingProtoP\001Z"
+    "8google.golang.org/genproto/googleapis/l"
+    "ogging/v2;logging\370\001\001\252\002\027Google.Cloud.Logg"
+    "ing.V2b\006proto3", 2094);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/logging/v2/logging.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -301,6 +394,16 @@ struct StaticDescriptorInitializer_google_2flogging_2fv2_2flogging_2eproto {
   }
 } static_descriptor_initializer_google_2flogging_2fv2_2flogging_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -309,9 +412,7 @@ const int DeleteLogRequest::kLogNameFieldNumber;
 
 DeleteLogRequest::DeleteLogRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.logging.v2.DeleteLogRequest)
 }
@@ -325,16 +426,15 @@ DeleteLogRequest::DeleteLogRequest(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.logging.v2.DeleteLogRequest)
 }
+
+void DeleteLogRequest::InitAsDefaultInstance() {
+}
+
 DeleteLogRequest::DeleteLogRequest(const DeleteLogRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  log_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.log_name().size() > 0) {
-    log_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.log_name(),
-      GetArenaNoVirtual());
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.logging.v2.DeleteLogRequest)
 }
 
@@ -370,13 +470,15 @@ void DeleteLogRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* DeleteLogRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return DeleteLogRequest_descriptor_;
 }
 
 const DeleteLogRequest& DeleteLogRequest::default_instance() {
   protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<DeleteLogRequest> DeleteLogRequest_default_instance_;
 
 DeleteLogRequest* DeleteLogRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<DeleteLogRequest>(arena);
@@ -393,13 +495,13 @@ bool DeleteLogRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.logging.v2.DeleteLogRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string log_name = 1;
+      // optional string log_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_log_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -409,6 +511,7 @@ bool DeleteLogRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -436,7 +539,7 @@ failure:
 void DeleteLogRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.logging.v2.DeleteLogRequest)
-  // string log_name = 1;
+  // optional string log_name = 1;
   if (this->log_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->log_name().data(), this->log_name().length(),
@@ -453,7 +556,7 @@ void DeleteLogRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.logging.v2.DeleteLogRequest)
-  // string log_name = 1;
+  // optional string log_name = 1;
   if (this->log_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->log_name().data(), this->log_name().length(),
@@ -472,7 +575,7 @@ size_t DeleteLogRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.logging.v2.DeleteLogRequest)
   size_t total_size = 0;
 
-  // string log_name = 1;
+  // optional string log_name = 1;
   if (this->log_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -488,7 +591,7 @@ size_t DeleteLogRequest::ByteSizeLong() const {
 
 void DeleteLogRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.logging.v2.DeleteLogRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const DeleteLogRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const DeleteLogRequest>(
           &from);
@@ -497,14 +600,21 @@ void DeleteLogRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.logging.v2.DeleteLogRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void DeleteLogRequest::MergeFrom(const DeleteLogRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.logging.v2.DeleteLogRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void DeleteLogRequest::UnsafeMergeFrom(const DeleteLogRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.log_name().size() > 0) {
     set_log_name(from.log_name());
   }
@@ -521,10 +631,11 @@ void DeleteLogRequest::CopyFrom(const DeleteLogRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.logging.v2.DeleteLogRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool DeleteLogRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -533,13 +644,10 @@ void DeleteLogRequest::Swap(DeleteLogRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    DeleteLogRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    DeleteLogRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void DeleteLogRequest::UnsafeArenaSwap(DeleteLogRequest* other) {
@@ -549,24 +657,28 @@ void DeleteLogRequest::UnsafeArenaSwap(DeleteLogRequest* other) {
 }
 void DeleteLogRequest::InternalSwap(DeleteLogRequest* other) {
   log_name_.Swap(&other->log_name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DeleteLogRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = DeleteLogRequest_descriptor_;
+  metadata.reflection = DeleteLogRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // DeleteLogRequest
 
-// string log_name = 1;
+// optional string log_name = 1;
 void DeleteLogRequest::clear_log_name() {
   log_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& DeleteLogRequest::log_name() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.DeleteLogRequest.log_name)
-  return log_name_.Get();
+  return log_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void DeleteLogRequest::set_log_name(const ::std::string& value) {
   
@@ -626,11 +738,9 @@ void DeleteLogRequest::unsafe_arena_set_allocated_log_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.logging.v2.DeleteLogRequest.log_name)
 }
 
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
-
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
+inline const DeleteLogRequest* DeleteLogRequest::internal_default_instance() {
+  return &DeleteLogRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -692,9 +802,7 @@ const int WriteLogEntriesRequest::kPartialSuccessFieldNumber;
 
 WriteLogEntriesRequest::WriteLogEntriesRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.logging.v2.WriteLogEntriesRequest)
 }
@@ -710,41 +818,28 @@ WriteLogEntriesRequest::WriteLogEntriesRequest(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.logging.v2.WriteLogEntriesRequest)
 }
+
+void WriteLogEntriesRequest::InitAsDefaultInstance() {
+  resource_ = const_cast< ::google::api::MonitoredResource*>(
+      ::google::api::MonitoredResource::internal_default_instance());
+}
+
 WriteLogEntriesRequest::WriteLogEntriesRequest(const WriteLogEntriesRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      entries_(from.entries_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  const ::google::protobuf::Descriptor*& WriteLogEntriesRequest_LabelsEntry_descriptor = file_level_metadata[1].descriptor;
-  labels_.SetAssignDescriptorCallback(
-      protobuf_AssignDescriptorsOnce);
-  labels_.SetEntryDescriptor(
-      &WriteLogEntriesRequest_LabelsEntry_descriptor);
-  labels_.MergeFrom(from.labels_);
-  log_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.log_name().size() > 0) {
-    log_name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.log_name(),
-      GetArenaNoVirtual());
-  }
-  if (from.has_resource()) {
-    resource_ = new ::google::api::MonitoredResource(*from.resource_);
-  } else {
-    resource_ = NULL;
-  }
-  partial_success_ = from.partial_success_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.logging.v2.WriteLogEntriesRequest)
 }
 
 void WriteLogEntriesRequest::SharedCtor() {
-  const ::google::protobuf::Descriptor*& WriteLogEntriesRequest_LabelsEntry_descriptor = file_level_metadata[1].descriptor;
   labels_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   labels_.SetEntryDescriptor(
-      &WriteLogEntriesRequest_LabelsEntry_descriptor);
+      &::google::logging::v2::WriteLogEntriesRequest_LabelsEntry_descriptor_);
   log_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&resource_, 0, reinterpret_cast<char*>(&partial_success_) -
-    reinterpret_cast<char*>(&resource_) + sizeof(partial_success_));
+  resource_ = NULL;
+  partial_success_ = false;
   _cached_size_ = 0;
 }
 
@@ -760,7 +855,7 @@ void WriteLogEntriesRequest::SharedDtor() {
   }
 
   log_name_.Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
-  if (this != internal_default_instance()) {
+  if (this != &WriteLogEntriesRequest_default_instance_.get()) {
     delete resource_;
   }
 }
@@ -778,7 +873,7 @@ void WriteLogEntriesRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* WriteLogEntriesRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return WriteLogEntriesRequest_descriptor_;
 }
 
 const WriteLogEntriesRequest& WriteLogEntriesRequest::default_instance() {
@@ -786,20 +881,20 @@ const WriteLogEntriesRequest& WriteLogEntriesRequest::default_instance() {
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<WriteLogEntriesRequest> WriteLogEntriesRequest_default_instance_;
+
 WriteLogEntriesRequest* WriteLogEntriesRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<WriteLogEntriesRequest>(arena);
 }
 
 void WriteLogEntriesRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.logging.v2.WriteLogEntriesRequest)
-  labels_.Clear();
-  entries_.Clear();
   log_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (GetArenaNoVirtual() == NULL && resource_ != NULL) {
-    delete resource_;
-  }
+  if (GetArenaNoVirtual() == NULL && resource_ != NULL) delete resource_;
   resource_ = NULL;
   partial_success_ = false;
+  labels_.Clear();
+  entries_.Clear();
 }
 
 bool WriteLogEntriesRequest::MergePartialFromCodedStream(
@@ -808,13 +903,13 @@ bool WriteLogEntriesRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.logging.v2.WriteLogEntriesRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string log_name = 1;
+      // optional string log_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_log_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -824,24 +919,29 @@ bool WriteLogEntriesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_resource;
         break;
       }
 
-      // .google.api.MonitoredResource resource = 2;
+      // optional .google.api.MonitoredResource resource = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_resource:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_resource()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_labels;
         break;
       }
 
       // map<string, string> labels = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_labels:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_labels:
           WriteLogEntriesRequest_LabelsEntry::Parser< ::google::protobuf::internal::MapField<
               ::std::string, ::std::string,
               ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
@@ -861,26 +961,32 @@ bool WriteLogEntriesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_loop_labels;
+        if (input->ExpectTag(34)) goto parse_loop_entries;
         input->UnsafeDecrementRecursionDepth();
         break;
       }
 
       // repeated .google.logging.v2.LogEntry entries = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_entries:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_entries()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_loop_entries;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(40)) goto parse_partial_success;
         break;
       }
 
-      // bool partial_success = 5;
+      // optional bool partial_success = 5;
       case 5: {
-        if (tag == 40u) {
+        if (tag == 40) {
+         parse_partial_success:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -888,6 +994,7 @@ bool WriteLogEntriesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -915,7 +1022,7 @@ failure:
 void WriteLogEntriesRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.logging.v2.WriteLogEntriesRequest)
-  // string log_name = 1;
+  // optional string log_name = 1;
   if (this->log_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->log_name().data(), this->log_name().length(),
@@ -925,7 +1032,7 @@ void WriteLogEntriesRequest::SerializeWithCachedSizes(
       1, this->log_name(), output);
   }
 
-  // .google.api.MonitoredResource resource = 2;
+  // optional .google.api.MonitoredResource resource = 2;
   if (this->has_resource()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->resource_, output);
@@ -950,7 +1057,7 @@ void WriteLogEntriesRequest::SerializeWithCachedSizes(
       }
     };
 
-    if (output->IsSerializationDeterministic() &&
+    if (output->IsSerializationDeterminstic() &&
         this->labels().size() > 1) {
       ::google::protobuf::scoped_array<SortItem> items(
           new SortItem[this->labels().size()]);
@@ -996,7 +1103,7 @@ void WriteLogEntriesRequest::SerializeWithCachedSizes(
       4, this->entries(i), output);
   }
 
-  // bool partial_success = 5;
+  // optional bool partial_success = 5;
   if (this->partial_success() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(5, this->partial_success(), output);
   }
@@ -1008,7 +1115,7 @@ void WriteLogEntriesRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.logging.v2.WriteLogEntriesRequest)
-  // string log_name = 1;
+  // optional string log_name = 1;
   if (this->log_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->log_name().data(), this->log_name().length(),
@@ -1019,7 +1126,7 @@ void WriteLogEntriesRequest::SerializeWithCachedSizes(
         1, this->log_name(), target);
   }
 
-  // .google.api.MonitoredResource resource = 2;
+  // optional .google.api.MonitoredResource resource = 2;
   if (this->has_resource()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -1096,7 +1203,7 @@ void WriteLogEntriesRequest::SerializeWithCachedSizes(
         4, this->entries(i), false, target);
   }
 
-  // bool partial_success = 5;
+  // optional bool partial_success = 5;
   if (this->partial_success() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(5, this->partial_success(), target);
   }
@@ -1108,6 +1215,25 @@ void WriteLogEntriesRequest::SerializeWithCachedSizes(
 size_t WriteLogEntriesRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.logging.v2.WriteLogEntriesRequest)
   size_t total_size = 0;
+
+  // optional string log_name = 1;
+  if (this->log_name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->log_name());
+  }
+
+  // optional .google.api.MonitoredResource resource = 2;
+  if (this->has_resource()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->resource_);
+  }
+
+  // optional bool partial_success = 5;
+  if (this->partial_success() != 0) {
+    total_size += 1 + 1;
+  }
 
   // map<string, string> labels = 3;
   total_size += 1 *
@@ -1140,25 +1266,6 @@ size_t WriteLogEntriesRequest::ByteSizeLong() const {
     }
   }
 
-  // string log_name = 1;
-  if (this->log_name().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->log_name());
-  }
-
-  // .google.api.MonitoredResource resource = 2;
-  if (this->has_resource()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->resource_);
-  }
-
-  // bool partial_success = 5;
-  if (this->partial_success() != 0) {
-    total_size += 1 + 1;
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -1168,7 +1275,7 @@ size_t WriteLogEntriesRequest::ByteSizeLong() const {
 
 void WriteLogEntriesRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.logging.v2.WriteLogEntriesRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const WriteLogEntriesRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const WriteLogEntriesRequest>(
           &from);
@@ -1177,14 +1284,21 @@ void WriteLogEntriesRequest::MergeFrom(const ::google::protobuf::Message& from) 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.logging.v2.WriteLogEntriesRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void WriteLogEntriesRequest::MergeFrom(const WriteLogEntriesRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.logging.v2.WriteLogEntriesRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void WriteLogEntriesRequest::UnsafeMergeFrom(const WriteLogEntriesRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   labels_.MergeFrom(from.labels_);
   entries_.MergeFrom(from.entries_);
   if (from.log_name().size() > 0) {
@@ -1209,10 +1323,11 @@ void WriteLogEntriesRequest::CopyFrom(const WriteLogEntriesRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.logging.v2.WriteLogEntriesRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool WriteLogEntriesRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -1221,13 +1336,10 @@ void WriteLogEntriesRequest::Swap(WriteLogEntriesRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    WriteLogEntriesRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    WriteLogEntriesRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void WriteLogEntriesRequest::UnsafeArenaSwap(WriteLogEntriesRequest* other) {
@@ -1236,29 +1348,33 @@ void WriteLogEntriesRequest::UnsafeArenaSwap(WriteLogEntriesRequest* other) {
   InternalSwap(other);
 }
 void WriteLogEntriesRequest::InternalSwap(WriteLogEntriesRequest* other) {
-  labels_.Swap(&other->labels_);
-  entries_.UnsafeArenaSwap(&other->entries_);
   log_name_.Swap(&other->log_name_);
   std::swap(resource_, other->resource_);
+  labels_.Swap(&other->labels_);
+  entries_.UnsafeArenaSwap(&other->entries_);
   std::swap(partial_success_, other->partial_success_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata WriteLogEntriesRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = WriteLogEntriesRequest_descriptor_;
+  metadata.reflection = WriteLogEntriesRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // WriteLogEntriesRequest
 
-// string log_name = 1;
+// optional string log_name = 1;
 void WriteLogEntriesRequest::clear_log_name() {
   log_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& WriteLogEntriesRequest::log_name() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.WriteLogEntriesRequest.log_name)
-  return log_name_.Get();
+  return log_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void WriteLogEntriesRequest::set_log_name(const ::std::string& value) {
   
@@ -1318,7 +1434,7 @@ void WriteLogEntriesRequest::unsafe_arena_set_allocated_log_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.logging.v2.WriteLogEntriesRequest.log_name)
 }
 
-// .google.api.MonitoredResource resource = 2;
+// optional .google.api.MonitoredResource resource = 2;
 bool WriteLogEntriesRequest::has_resource() const {
   return this != internal_default_instance() && resource_ != NULL;
 }
@@ -1415,7 +1531,7 @@ WriteLogEntriesRequest::entries() const {
   return entries_;
 }
 
-// bool partial_success = 5;
+// optional bool partial_success = 5;
 void WriteLogEntriesRequest::clear_partial_success() {
   partial_success_ = false;
 }
@@ -1429,6 +1545,9 @@ void WriteLogEntriesRequest::set_partial_success(bool value) {
   // @@protoc_insertion_point(field_set:google.logging.v2.WriteLogEntriesRequest.partial_success)
 }
 
+inline const WriteLogEntriesRequest* WriteLogEntriesRequest::internal_default_instance() {
+  return &WriteLogEntriesRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1438,9 +1557,7 @@ void WriteLogEntriesRequest::set_partial_success(bool value) {
 
 WriteLogEntriesResponse::WriteLogEntriesResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.logging.v2.WriteLogEntriesResponse)
 }
@@ -1454,11 +1571,15 @@ WriteLogEntriesResponse::WriteLogEntriesResponse(::google::protobuf::Arena* aren
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.logging.v2.WriteLogEntriesResponse)
 }
+
+void WriteLogEntriesResponse::InitAsDefaultInstance() {
+}
+
 WriteLogEntriesResponse::WriteLogEntriesResponse(const WriteLogEntriesResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.logging.v2.WriteLogEntriesResponse)
 }
 
@@ -1492,13 +1613,15 @@ void WriteLogEntriesResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* WriteLogEntriesResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return WriteLogEntriesResponse_descriptor_;
 }
 
 const WriteLogEntriesResponse& WriteLogEntriesResponse::default_instance() {
   protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<WriteLogEntriesResponse> WriteLogEntriesResponse_default_instance_;
 
 WriteLogEntriesResponse* WriteLogEntriesResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<WriteLogEntriesResponse>(arena);
@@ -1514,7 +1637,7 @@ bool WriteLogEntriesResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.logging.v2.WriteLogEntriesResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
   handle_unusual:
@@ -1561,7 +1684,7 @@ size_t WriteLogEntriesResponse::ByteSizeLong() const {
 
 void WriteLogEntriesResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.logging.v2.WriteLogEntriesResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const WriteLogEntriesResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const WriteLogEntriesResponse>(
           &from);
@@ -1570,14 +1693,21 @@ void WriteLogEntriesResponse::MergeFrom(const ::google::protobuf::Message& from)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.logging.v2.WriteLogEntriesResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void WriteLogEntriesResponse::MergeFrom(const WriteLogEntriesResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.logging.v2.WriteLogEntriesResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void WriteLogEntriesResponse::UnsafeMergeFrom(const WriteLogEntriesResponse& from) {
+  GOOGLE_DCHECK(&from != this);
 }
 
 void WriteLogEntriesResponse::CopyFrom(const ::google::protobuf::Message& from) {
@@ -1591,10 +1721,11 @@ void WriteLogEntriesResponse::CopyFrom(const WriteLogEntriesResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.logging.v2.WriteLogEntriesResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool WriteLogEntriesResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -1603,13 +1734,10 @@ void WriteLogEntriesResponse::Swap(WriteLogEntriesResponse* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    WriteLogEntriesResponse* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    WriteLogEntriesResponse temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void WriteLogEntriesResponse::UnsafeArenaSwap(WriteLogEntriesResponse* other) {
@@ -1618,17 +1746,24 @@ void WriteLogEntriesResponse::UnsafeArenaSwap(WriteLogEntriesResponse* other) {
   InternalSwap(other);
 }
 void WriteLogEntriesResponse::InternalSwap(WriteLogEntriesResponse* other) {
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata WriteLogEntriesResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = WriteLogEntriesResponse_descriptor_;
+  metadata.reflection = WriteLogEntriesResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // WriteLogEntriesResponse
 
+inline const WriteLogEntriesResponse* WriteLogEntriesResponse::internal_default_instance() {
+  return &WriteLogEntriesResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1644,9 +1779,7 @@ const int ListLogEntriesRequest::kPageTokenFieldNumber;
 
 ListLogEntriesRequest::ListLogEntriesRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.logging.v2.ListLogEntriesRequest)
 }
@@ -1662,29 +1795,15 @@ ListLogEntriesRequest::ListLogEntriesRequest(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.logging.v2.ListLogEntriesRequest)
 }
+
+void ListLogEntriesRequest::InitAsDefaultInstance() {
+}
+
 ListLogEntriesRequest::ListLogEntriesRequest(const ListLogEntriesRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      project_ids_(from.project_ids_),
-      resource_names_(from.resource_names_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  filter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.filter().size() > 0) {
-    filter_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.filter(),
-      GetArenaNoVirtual());
-  }
-  order_by_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.order_by().size() > 0) {
-    order_by_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.order_by(),
-      GetArenaNoVirtual());
-  }
-  page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.page_token().size() > 0) {
-    page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token(),
-      GetArenaNoVirtual());
-  }
-  page_size_ = from.page_size_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.logging.v2.ListLogEntriesRequest)
 }
 
@@ -1725,7 +1844,7 @@ void ListLogEntriesRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListLogEntriesRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return ListLogEntriesRequest_descriptor_;
 }
 
 const ListLogEntriesRequest& ListLogEntriesRequest::default_instance() {
@@ -1733,18 +1852,20 @@ const ListLogEntriesRequest& ListLogEntriesRequest::default_instance() {
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<ListLogEntriesRequest> ListLogEntriesRequest_default_instance_;
+
 ListLogEntriesRequest* ListLogEntriesRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListLogEntriesRequest>(arena);
 }
 
 void ListLogEntriesRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.logging.v2.ListLogEntriesRequest)
-  project_ids_.Clear();
-  resource_names_.Clear();
   filter_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   order_by_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   page_size_ = 0;
+  page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  project_ids_.Clear();
+  resource_names_.Clear();
 }
 
 bool ListLogEntriesRequest::MergePartialFromCodedStream(
@@ -1753,13 +1874,14 @@ bool ListLogEntriesRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.logging.v2.ListLogEntriesRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated string project_ids = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
+         parse_project_ids:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_project_ids()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1770,12 +1892,15 @@ bool ListLogEntriesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_project_ids;
+        if (input->ExpectTag(18)) goto parse_filter;
         break;
       }
 
-      // string filter = 2;
+      // optional string filter = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_filter:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_filter()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1785,12 +1910,14 @@ bool ListLogEntriesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_order_by;
         break;
       }
 
-      // string order_by = 3;
+      // optional string order_by = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_order_by:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_order_by()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1800,12 +1927,14 @@ bool ListLogEntriesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_page_size;
         break;
       }
 
-      // int32 page_size = 4;
+      // optional int32 page_size = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_page_size:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -1813,12 +1942,14 @@ bool ListLogEntriesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_page_token;
         break;
       }
 
-      // string page_token = 5;
+      // optional string page_token = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1828,12 +1959,14 @@ bool ListLogEntriesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(66)) goto parse_resource_names;
         break;
       }
 
       // repeated string resource_names = 8;
       case 8: {
-        if (tag == 66u) {
+        if (tag == 66) {
+         parse_resource_names:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_resource_names()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1844,6 +1977,8 @@ bool ListLogEntriesRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(66)) goto parse_resource_names;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1881,7 +2016,7 @@ void ListLogEntriesRequest::SerializeWithCachedSizes(
       1, this->project_ids(i), output);
   }
 
-  // string filter = 2;
+  // optional string filter = 2;
   if (this->filter().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->filter().data(), this->filter().length(),
@@ -1891,7 +2026,7 @@ void ListLogEntriesRequest::SerializeWithCachedSizes(
       2, this->filter(), output);
   }
 
-  // string order_by = 3;
+  // optional string order_by = 3;
   if (this->order_by().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->order_by().data(), this->order_by().length(),
@@ -1901,12 +2036,12 @@ void ListLogEntriesRequest::SerializeWithCachedSizes(
       3, this->order_by(), output);
   }
 
-  // int32 page_size = 4;
+  // optional int32 page_size = 4;
   if (this->page_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->page_size(), output);
   }
 
-  // string page_token = 5;
+  // optional string page_token = 5;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -1943,7 +2078,7 @@ void ListLogEntriesRequest::SerializeWithCachedSizes(
       WriteStringToArray(1, this->project_ids(i), target);
   }
 
-  // string filter = 2;
+  // optional string filter = 2;
   if (this->filter().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->filter().data(), this->filter().length(),
@@ -1954,7 +2089,7 @@ void ListLogEntriesRequest::SerializeWithCachedSizes(
         2, this->filter(), target);
   }
 
-  // string order_by = 3;
+  // optional string order_by = 3;
   if (this->order_by().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->order_by().data(), this->order_by().length(),
@@ -1965,12 +2100,12 @@ void ListLogEntriesRequest::SerializeWithCachedSizes(
         3, this->order_by(), target);
   }
 
-  // int32 page_size = 4;
+  // optional int32 page_size = 4;
   if (this->page_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->page_size(), target);
   }
 
-  // string page_token = 5;
+  // optional string page_token = 5;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -1999,6 +2134,34 @@ size_t ListLogEntriesRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.logging.v2.ListLogEntriesRequest)
   size_t total_size = 0;
 
+  // optional string filter = 2;
+  if (this->filter().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->filter());
+  }
+
+  // optional string order_by = 3;
+  if (this->order_by().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->order_by());
+  }
+
+  // optional int32 page_size = 4;
+  if (this->page_size() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->page_size());
+  }
+
+  // optional string page_token = 5;
+  if (this->page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->page_token());
+  }
+
   // repeated string project_ids = 1;
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->project_ids_size());
@@ -2015,34 +2178,6 @@ size_t ListLogEntriesRequest::ByteSizeLong() const {
       this->resource_names(i));
   }
 
-  // string filter = 2;
-  if (this->filter().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->filter());
-  }
-
-  // string order_by = 3;
-  if (this->order_by().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->order_by());
-  }
-
-  // string page_token = 5;
-  if (this->page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->page_token());
-  }
-
-  // int32 page_size = 4;
-  if (this->page_size() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->page_size());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -2052,7 +2187,7 @@ size_t ListLogEntriesRequest::ByteSizeLong() const {
 
 void ListLogEntriesRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.logging.v2.ListLogEntriesRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListLogEntriesRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListLogEntriesRequest>(
           &from);
@@ -2061,27 +2196,34 @@ void ListLogEntriesRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.logging.v2.ListLogEntriesRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListLogEntriesRequest::MergeFrom(const ListLogEntriesRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.logging.v2.ListLogEntriesRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_ids_.MergeFrom(from.project_ids_);
-  resource_names_.MergeFrom(from.resource_names_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListLogEntriesRequest::UnsafeMergeFrom(const ListLogEntriesRequest& from) {
+  GOOGLE_DCHECK(&from != this);
+  project_ids_.UnsafeMergeFrom(from.project_ids_);
+  resource_names_.UnsafeMergeFrom(from.resource_names_);
   if (from.filter().size() > 0) {
     set_filter(from.filter());
   }
   if (from.order_by().size() > 0) {
     set_order_by(from.order_by());
   }
-  if (from.page_token().size() > 0) {
-    set_page_token(from.page_token());
-  }
   if (from.page_size() != 0) {
     set_page_size(from.page_size());
+  }
+  if (from.page_token().size() > 0) {
+    set_page_token(from.page_token());
   }
 }
 
@@ -2096,10 +2238,11 @@ void ListLogEntriesRequest::CopyFrom(const ListLogEntriesRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.logging.v2.ListLogEntriesRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListLogEntriesRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -2108,13 +2251,10 @@ void ListLogEntriesRequest::Swap(ListLogEntriesRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    ListLogEntriesRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    ListLogEntriesRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void ListLogEntriesRequest::UnsafeArenaSwap(ListLogEntriesRequest* other) {
@@ -2127,14 +2267,18 @@ void ListLogEntriesRequest::InternalSwap(ListLogEntriesRequest* other) {
   resource_names_.UnsafeArenaSwap(&other->resource_names_);
   filter_.Swap(&other->filter_);
   order_by_.Swap(&other->order_by_);
-  page_token_.Swap(&other->page_token_);
   std::swap(page_size_, other->page_size_);
+  page_token_.Swap(&other->page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListLogEntriesRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListLogEntriesRequest_descriptor_;
+  metadata.reflection = ListLogEntriesRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -2250,13 +2394,13 @@ ListLogEntriesRequest::mutable_resource_names() {
   return &resource_names_;
 }
 
-// string filter = 2;
+// optional string filter = 2;
 void ListLogEntriesRequest::clear_filter() {
   filter_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ListLogEntriesRequest::filter() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.ListLogEntriesRequest.filter)
-  return filter_.Get();
+  return filter_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListLogEntriesRequest::set_filter(const ::std::string& value) {
   
@@ -2316,13 +2460,13 @@ void ListLogEntriesRequest::unsafe_arena_set_allocated_filter(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.logging.v2.ListLogEntriesRequest.filter)
 }
 
-// string order_by = 3;
+// optional string order_by = 3;
 void ListLogEntriesRequest::clear_order_by() {
   order_by_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ListLogEntriesRequest::order_by() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.ListLogEntriesRequest.order_by)
-  return order_by_.Get();
+  return order_by_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListLogEntriesRequest::set_order_by(const ::std::string& value) {
   
@@ -2382,7 +2526,7 @@ void ListLogEntriesRequest::unsafe_arena_set_allocated_order_by(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.logging.v2.ListLogEntriesRequest.order_by)
 }
 
-// int32 page_size = 4;
+// optional int32 page_size = 4;
 void ListLogEntriesRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -2396,13 +2540,13 @@ void ListLogEntriesRequest::set_page_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.logging.v2.ListLogEntriesRequest.page_size)
 }
 
-// string page_token = 5;
+// optional string page_token = 5;
 void ListLogEntriesRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ListLogEntriesRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.ListLogEntriesRequest.page_token)
-  return page_token_.Get();
+  return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListLogEntriesRequest::set_page_token(const ::std::string& value) {
   
@@ -2462,6 +2606,9 @@ void ListLogEntriesRequest::unsafe_arena_set_allocated_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.logging.v2.ListLogEntriesRequest.page_token)
 }
 
+inline const ListLogEntriesRequest* ListLogEntriesRequest::internal_default_instance() {
+  return &ListLogEntriesRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2473,9 +2620,7 @@ const int ListLogEntriesResponse::kNextPageTokenFieldNumber;
 
 ListLogEntriesResponse::ListLogEntriesResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.logging.v2.ListLogEntriesResponse)
 }
@@ -2490,17 +2635,15 @@ ListLogEntriesResponse::ListLogEntriesResponse(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.logging.v2.ListLogEntriesResponse)
 }
+
+void ListLogEntriesResponse::InitAsDefaultInstance() {
+}
+
 ListLogEntriesResponse::ListLogEntriesResponse(const ListLogEntriesResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      entries_(from.entries_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_page_token().size() > 0) {
-    next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_page_token(),
-      GetArenaNoVirtual());
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.logging.v2.ListLogEntriesResponse)
 }
 
@@ -2536,7 +2679,7 @@ void ListLogEntriesResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListLogEntriesResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
+  return ListLogEntriesResponse_descriptor_;
 }
 
 const ListLogEntriesResponse& ListLogEntriesResponse::default_instance() {
@@ -2544,14 +2687,16 @@ const ListLogEntriesResponse& ListLogEntriesResponse::default_instance() {
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<ListLogEntriesResponse> ListLogEntriesResponse_default_instance_;
+
 ListLogEntriesResponse* ListLogEntriesResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListLogEntriesResponse>(arena);
 }
 
 void ListLogEntriesResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.logging.v2.ListLogEntriesResponse)
-  entries_.Clear();
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  entries_.Clear();
 }
 
 bool ListLogEntriesResponse::MergePartialFromCodedStream(
@@ -2560,26 +2705,30 @@ bool ListLogEntriesResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.logging.v2.ListLogEntriesResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.logging.v2.LogEntry entries = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_entries:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_entries()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_entries;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_next_page_token;
         break;
       }
 
-      // string next_page_token = 2;
+      // optional string next_page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_next_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2589,6 +2738,7 @@ bool ListLogEntriesResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2622,7 +2772,7 @@ void ListLogEntriesResponse::SerializeWithCachedSizes(
       1, this->entries(i), output);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -2646,7 +2796,7 @@ void ListLogEntriesResponse::SerializeWithCachedSizes(
         1, this->entries(i), false, target);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -2665,6 +2815,13 @@ size_t ListLogEntriesResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.logging.v2.ListLogEntriesResponse)
   size_t total_size = 0;
 
+  // optional string next_page_token = 2;
+  if (this->next_page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_page_token());
+  }
+
   // repeated .google.logging.v2.LogEntry entries = 1;
   {
     unsigned int count = this->entries_size();
@@ -2676,13 +2833,6 @@ size_t ListLogEntriesResponse::ByteSizeLong() const {
     }
   }
 
-  // string next_page_token = 2;
-  if (this->next_page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_page_token());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -2692,7 +2842,7 @@ size_t ListLogEntriesResponse::ByteSizeLong() const {
 
 void ListLogEntriesResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.logging.v2.ListLogEntriesResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListLogEntriesResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListLogEntriesResponse>(
           &from);
@@ -2701,14 +2851,21 @@ void ListLogEntriesResponse::MergeFrom(const ::google::protobuf::Message& from) 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.logging.v2.ListLogEntriesResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListLogEntriesResponse::MergeFrom(const ListLogEntriesResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.logging.v2.ListLogEntriesResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListLogEntriesResponse::UnsafeMergeFrom(const ListLogEntriesResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   entries_.MergeFrom(from.entries_);
   if (from.next_page_token().size() > 0) {
     set_next_page_token(from.next_page_token());
@@ -2726,10 +2883,11 @@ void ListLogEntriesResponse::CopyFrom(const ListLogEntriesResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.logging.v2.ListLogEntriesResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListLogEntriesResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -2738,13 +2896,10 @@ void ListLogEntriesResponse::Swap(ListLogEntriesResponse* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    ListLogEntriesResponse* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    ListLogEntriesResponse temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void ListLogEntriesResponse::UnsafeArenaSwap(ListLogEntriesResponse* other) {
@@ -2755,12 +2910,16 @@ void ListLogEntriesResponse::UnsafeArenaSwap(ListLogEntriesResponse* other) {
 void ListLogEntriesResponse::InternalSwap(ListLogEntriesResponse* other) {
   entries_.UnsafeArenaSwap(&other->entries_);
   next_page_token_.Swap(&other->next_page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListLogEntriesResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListLogEntriesResponse_descriptor_;
+  metadata.reflection = ListLogEntriesResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -2796,13 +2955,13 @@ ListLogEntriesResponse::entries() const {
   return entries_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 void ListLogEntriesResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ListLogEntriesResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.ListLogEntriesResponse.next_page_token)
-  return next_page_token_.Get();
+  return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListLogEntriesResponse::set_next_page_token(const ::std::string& value) {
   
@@ -2862,6 +3021,9 @@ void ListLogEntriesResponse::unsafe_arena_set_allocated_next_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.logging.v2.ListLogEntriesResponse.next_page_token)
 }
 
+inline const ListLogEntriesResponse* ListLogEntriesResponse::internal_default_instance() {
+  return &ListLogEntriesResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2873,9 +3035,7 @@ const int ListMonitoredResourceDescriptorsRequest::kPageTokenFieldNumber;
 
 ListMonitoredResourceDescriptorsRequest::ListMonitoredResourceDescriptorsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.logging.v2.ListMonitoredResourceDescriptorsRequest)
 }
@@ -2889,17 +3049,15 @@ ListMonitoredResourceDescriptorsRequest::ListMonitoredResourceDescriptorsRequest
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.logging.v2.ListMonitoredResourceDescriptorsRequest)
 }
+
+void ListMonitoredResourceDescriptorsRequest::InitAsDefaultInstance() {
+}
+
 ListMonitoredResourceDescriptorsRequest::ListMonitoredResourceDescriptorsRequest(const ListMonitoredResourceDescriptorsRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.page_token().size() > 0) {
-    page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token(),
-      GetArenaNoVirtual());
-  }
-  page_size_ = from.page_size_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.logging.v2.ListMonitoredResourceDescriptorsRequest)
 }
 
@@ -2936,7 +3094,7 @@ void ListMonitoredResourceDescriptorsRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListMonitoredResourceDescriptorsRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6].descriptor;
+  return ListMonitoredResourceDescriptorsRequest_descriptor_;
 }
 
 const ListMonitoredResourceDescriptorsRequest& ListMonitoredResourceDescriptorsRequest::default_instance() {
@@ -2944,14 +3102,16 @@ const ListMonitoredResourceDescriptorsRequest& ListMonitoredResourceDescriptorsR
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<ListMonitoredResourceDescriptorsRequest> ListMonitoredResourceDescriptorsRequest_default_instance_;
+
 ListMonitoredResourceDescriptorsRequest* ListMonitoredResourceDescriptorsRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListMonitoredResourceDescriptorsRequest>(arena);
 }
 
 void ListMonitoredResourceDescriptorsRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.logging.v2.ListMonitoredResourceDescriptorsRequest)
-  page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   page_size_ = 0;
+  page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 
 bool ListMonitoredResourceDescriptorsRequest::MergePartialFromCodedStream(
@@ -2960,13 +3120,13 @@ bool ListMonitoredResourceDescriptorsRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.logging.v2.ListMonitoredResourceDescriptorsRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 page_size = 1;
+      // optional int32 page_size = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -2974,12 +3134,14 @@ bool ListMonitoredResourceDescriptorsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_page_token;
         break;
       }
 
-      // string page_token = 2;
+      // optional string page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2989,6 +3151,7 @@ bool ListMonitoredResourceDescriptorsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3016,12 +3179,12 @@ failure:
 void ListMonitoredResourceDescriptorsRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.logging.v2.ListMonitoredResourceDescriptorsRequest)
-  // int32 page_size = 1;
+  // optional int32 page_size = 1;
   if (this->page_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->page_size(), output);
   }
 
-  // string page_token = 2;
+  // optional string page_token = 2;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -3038,12 +3201,12 @@ void ListMonitoredResourceDescriptorsRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.logging.v2.ListMonitoredResourceDescriptorsRequest)
-  // int32 page_size = 1;
+  // optional int32 page_size = 1;
   if (this->page_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->page_size(), target);
   }
 
-  // string page_token = 2;
+  // optional string page_token = 2;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -3062,18 +3225,18 @@ size_t ListMonitoredResourceDescriptorsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.logging.v2.ListMonitoredResourceDescriptorsRequest)
   size_t total_size = 0;
 
-  // string page_token = 2;
-  if (this->page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->page_token());
-  }
-
-  // int32 page_size = 1;
+  // optional int32 page_size = 1;
   if (this->page_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->page_size());
+  }
+
+  // optional string page_token = 2;
+  if (this->page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->page_token());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -3085,7 +3248,7 @@ size_t ListMonitoredResourceDescriptorsRequest::ByteSizeLong() const {
 
 void ListMonitoredResourceDescriptorsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.logging.v2.ListMonitoredResourceDescriptorsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListMonitoredResourceDescriptorsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListMonitoredResourceDescriptorsRequest>(
           &from);
@@ -3094,19 +3257,26 @@ void ListMonitoredResourceDescriptorsRequest::MergeFrom(const ::google::protobuf
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.logging.v2.ListMonitoredResourceDescriptorsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListMonitoredResourceDescriptorsRequest::MergeFrom(const ListMonitoredResourceDescriptorsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.logging.v2.ListMonitoredResourceDescriptorsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.page_token().size() > 0) {
-    set_page_token(from.page_token());
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ListMonitoredResourceDescriptorsRequest::UnsafeMergeFrom(const ListMonitoredResourceDescriptorsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.page_size() != 0) {
     set_page_size(from.page_size());
+  }
+  if (from.page_token().size() > 0) {
+    set_page_token(from.page_token());
   }
 }
 
@@ -3121,10 +3291,11 @@ void ListMonitoredResourceDescriptorsRequest::CopyFrom(const ListMonitoredResour
 // @@protoc_insertion_point(class_specific_copy_from_start:google.logging.v2.ListMonitoredResourceDescriptorsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListMonitoredResourceDescriptorsRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -3133,13 +3304,10 @@ void ListMonitoredResourceDescriptorsRequest::Swap(ListMonitoredResourceDescript
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    ListMonitoredResourceDescriptorsRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    ListMonitoredResourceDescriptorsRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void ListMonitoredResourceDescriptorsRequest::UnsafeArenaSwap(ListMonitoredResourceDescriptorsRequest* other) {
@@ -3148,20 +3316,24 @@ void ListMonitoredResourceDescriptorsRequest::UnsafeArenaSwap(ListMonitoredResou
   InternalSwap(other);
 }
 void ListMonitoredResourceDescriptorsRequest::InternalSwap(ListMonitoredResourceDescriptorsRequest* other) {
-  page_token_.Swap(&other->page_token_);
   std::swap(page_size_, other->page_size_);
+  page_token_.Swap(&other->page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListMonitoredResourceDescriptorsRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListMonitoredResourceDescriptorsRequest_descriptor_;
+  metadata.reflection = ListMonitoredResourceDescriptorsRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ListMonitoredResourceDescriptorsRequest
 
-// int32 page_size = 1;
+// optional int32 page_size = 1;
 void ListMonitoredResourceDescriptorsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -3175,13 +3347,13 @@ void ListMonitoredResourceDescriptorsRequest::set_page_size(::google::protobuf::
   // @@protoc_insertion_point(field_set:google.logging.v2.ListMonitoredResourceDescriptorsRequest.page_size)
 }
 
-// string page_token = 2;
+// optional string page_token = 2;
 void ListMonitoredResourceDescriptorsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ListMonitoredResourceDescriptorsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.ListMonitoredResourceDescriptorsRequest.page_token)
-  return page_token_.Get();
+  return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListMonitoredResourceDescriptorsRequest::set_page_token(const ::std::string& value) {
   
@@ -3241,6 +3413,9 @@ void ListMonitoredResourceDescriptorsRequest::unsafe_arena_set_allocated_page_to
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.logging.v2.ListMonitoredResourceDescriptorsRequest.page_token)
 }
 
+inline const ListMonitoredResourceDescriptorsRequest* ListMonitoredResourceDescriptorsRequest::internal_default_instance() {
+  return &ListMonitoredResourceDescriptorsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3252,9 +3427,7 @@ const int ListMonitoredResourceDescriptorsResponse::kNextPageTokenFieldNumber;
 
 ListMonitoredResourceDescriptorsResponse::ListMonitoredResourceDescriptorsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.logging.v2.ListMonitoredResourceDescriptorsResponse)
 }
@@ -3269,17 +3442,15 @@ ListMonitoredResourceDescriptorsResponse::ListMonitoredResourceDescriptorsRespon
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.logging.v2.ListMonitoredResourceDescriptorsResponse)
 }
+
+void ListMonitoredResourceDescriptorsResponse::InitAsDefaultInstance() {
+}
+
 ListMonitoredResourceDescriptorsResponse::ListMonitoredResourceDescriptorsResponse(const ListMonitoredResourceDescriptorsResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      resource_descriptors_(from.resource_descriptors_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_page_token().size() > 0) {
-    next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_page_token(),
-      GetArenaNoVirtual());
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.logging.v2.ListMonitoredResourceDescriptorsResponse)
 }
 
@@ -3315,7 +3486,7 @@ void ListMonitoredResourceDescriptorsResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListMonitoredResourceDescriptorsResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7].descriptor;
+  return ListMonitoredResourceDescriptorsResponse_descriptor_;
 }
 
 const ListMonitoredResourceDescriptorsResponse& ListMonitoredResourceDescriptorsResponse::default_instance() {
@@ -3323,14 +3494,16 @@ const ListMonitoredResourceDescriptorsResponse& ListMonitoredResourceDescriptors
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<ListMonitoredResourceDescriptorsResponse> ListMonitoredResourceDescriptorsResponse_default_instance_;
+
 ListMonitoredResourceDescriptorsResponse* ListMonitoredResourceDescriptorsResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListMonitoredResourceDescriptorsResponse>(arena);
 }
 
 void ListMonitoredResourceDescriptorsResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.logging.v2.ListMonitoredResourceDescriptorsResponse)
-  resource_descriptors_.Clear();
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  resource_descriptors_.Clear();
 }
 
 bool ListMonitoredResourceDescriptorsResponse::MergePartialFromCodedStream(
@@ -3339,26 +3512,30 @@ bool ListMonitoredResourceDescriptorsResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.logging.v2.ListMonitoredResourceDescriptorsResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.api.MonitoredResourceDescriptor resource_descriptors = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_resource_descriptors:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_resource_descriptors()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_resource_descriptors;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_next_page_token;
         break;
       }
 
-      // string next_page_token = 2;
+      // optional string next_page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_next_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3368,6 +3545,7 @@ bool ListMonitoredResourceDescriptorsResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3401,7 +3579,7 @@ void ListMonitoredResourceDescriptorsResponse::SerializeWithCachedSizes(
       1, this->resource_descriptors(i), output);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -3425,7 +3603,7 @@ void ListMonitoredResourceDescriptorsResponse::SerializeWithCachedSizes(
         1, this->resource_descriptors(i), false, target);
   }
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -3444,6 +3622,13 @@ size_t ListMonitoredResourceDescriptorsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.logging.v2.ListMonitoredResourceDescriptorsResponse)
   size_t total_size = 0;
 
+  // optional string next_page_token = 2;
+  if (this->next_page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_page_token());
+  }
+
   // repeated .google.api.MonitoredResourceDescriptor resource_descriptors = 1;
   {
     unsigned int count = this->resource_descriptors_size();
@@ -3455,13 +3640,6 @@ size_t ListMonitoredResourceDescriptorsResponse::ByteSizeLong() const {
     }
   }
 
-  // string next_page_token = 2;
-  if (this->next_page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_page_token());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -3471,7 +3649,7 @@ size_t ListMonitoredResourceDescriptorsResponse::ByteSizeLong() const {
 
 void ListMonitoredResourceDescriptorsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.logging.v2.ListMonitoredResourceDescriptorsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListMonitoredResourceDescriptorsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListMonitoredResourceDescriptorsResponse>(
           &from);
@@ -3480,14 +3658,21 @@ void ListMonitoredResourceDescriptorsResponse::MergeFrom(const ::google::protobu
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.logging.v2.ListMonitoredResourceDescriptorsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListMonitoredResourceDescriptorsResponse::MergeFrom(const ListMonitoredResourceDescriptorsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.logging.v2.ListMonitoredResourceDescriptorsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListMonitoredResourceDescriptorsResponse::UnsafeMergeFrom(const ListMonitoredResourceDescriptorsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   resource_descriptors_.MergeFrom(from.resource_descriptors_);
   if (from.next_page_token().size() > 0) {
     set_next_page_token(from.next_page_token());
@@ -3505,10 +3690,11 @@ void ListMonitoredResourceDescriptorsResponse::CopyFrom(const ListMonitoredResou
 // @@protoc_insertion_point(class_specific_copy_from_start:google.logging.v2.ListMonitoredResourceDescriptorsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListMonitoredResourceDescriptorsResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -3517,13 +3703,10 @@ void ListMonitoredResourceDescriptorsResponse::Swap(ListMonitoredResourceDescrip
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    ListMonitoredResourceDescriptorsResponse* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    ListMonitoredResourceDescriptorsResponse temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void ListMonitoredResourceDescriptorsResponse::UnsafeArenaSwap(ListMonitoredResourceDescriptorsResponse* other) {
@@ -3534,12 +3717,16 @@ void ListMonitoredResourceDescriptorsResponse::UnsafeArenaSwap(ListMonitoredReso
 void ListMonitoredResourceDescriptorsResponse::InternalSwap(ListMonitoredResourceDescriptorsResponse* other) {
   resource_descriptors_.UnsafeArenaSwap(&other->resource_descriptors_);
   next_page_token_.Swap(&other->next_page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListMonitoredResourceDescriptorsResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListMonitoredResourceDescriptorsResponse_descriptor_;
+  metadata.reflection = ListMonitoredResourceDescriptorsResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -3575,13 +3762,13 @@ ListMonitoredResourceDescriptorsResponse::resource_descriptors() const {
   return resource_descriptors_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 void ListMonitoredResourceDescriptorsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ListMonitoredResourceDescriptorsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.ListMonitoredResourceDescriptorsResponse.next_page_token)
-  return next_page_token_.Get();
+  return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListMonitoredResourceDescriptorsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -3641,6 +3828,9 @@ void ListMonitoredResourceDescriptorsResponse::unsafe_arena_set_allocated_next_p
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.logging.v2.ListMonitoredResourceDescriptorsResponse.next_page_token)
 }
 
+inline const ListMonitoredResourceDescriptorsResponse* ListMonitoredResourceDescriptorsResponse::internal_default_instance() {
+  return &ListMonitoredResourceDescriptorsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3653,9 +3843,7 @@ const int ListLogsRequest::kPageTokenFieldNumber;
 
 ListLogsRequest::ListLogsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.logging.v2.ListLogsRequest)
 }
@@ -3669,22 +3857,15 @@ ListLogsRequest::ListLogsRequest(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.logging.v2.ListLogsRequest)
 }
+
+void ListLogsRequest::InitAsDefaultInstance() {
+}
+
 ListLogsRequest::ListLogsRequest(const ListLogsRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  parent_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.parent().size() > 0) {
-    parent_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.parent(),
-      GetArenaNoVirtual());
-  }
-  page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.page_token().size() > 0) {
-    page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.page_token(),
-      GetArenaNoVirtual());
-  }
-  page_size_ = from.page_size_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.logging.v2.ListLogsRequest)
 }
 
@@ -3723,13 +3904,15 @@ void ListLogsRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListLogsRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8].descriptor;
+  return ListLogsRequest_descriptor_;
 }
 
 const ListLogsRequest& ListLogsRequest::default_instance() {
   protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ListLogsRequest> ListLogsRequest_default_instance_;
 
 ListLogsRequest* ListLogsRequest::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListLogsRequest>(arena);
@@ -3738,8 +3921,8 @@ ListLogsRequest* ListLogsRequest::New(::google::protobuf::Arena* arena) const {
 void ListLogsRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.logging.v2.ListLogsRequest)
   parent_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
   page_size_ = 0;
+  page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 
 bool ListLogsRequest::MergePartialFromCodedStream(
@@ -3748,13 +3931,13 @@ bool ListLogsRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.logging.v2.ListLogsRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string parent = 1;
+      // optional string parent = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_parent()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3764,12 +3947,14 @@ bool ListLogsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_page_size;
         break;
       }
 
-      // int32 page_size = 2;
+      // optional int32 page_size = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_page_size:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -3777,12 +3962,14 @@ bool ListLogsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_page_token;
         break;
       }
 
-      // string page_token = 3;
+      // optional string page_token = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_page_token:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3792,6 +3979,7 @@ bool ListLogsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3819,7 +4007,7 @@ failure:
 void ListLogsRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.logging.v2.ListLogsRequest)
-  // string parent = 1;
+  // optional string parent = 1;
   if (this->parent().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->parent().data(), this->parent().length(),
@@ -3829,12 +4017,12 @@ void ListLogsRequest::SerializeWithCachedSizes(
       1, this->parent(), output);
   }
 
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   if (this->page_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->page_size(), output);
   }
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -3851,7 +4039,7 @@ void ListLogsRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.logging.v2.ListLogsRequest)
-  // string parent = 1;
+  // optional string parent = 1;
   if (this->parent().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->parent().data(), this->parent().length(),
@@ -3862,12 +4050,12 @@ void ListLogsRequest::SerializeWithCachedSizes(
         1, this->parent(), target);
   }
 
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   if (this->page_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->page_size(), target);
   }
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   if (this->page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->page_token().data(), this->page_token().length(),
@@ -3886,25 +4074,25 @@ size_t ListLogsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.logging.v2.ListLogsRequest)
   size_t total_size = 0;
 
-  // string parent = 1;
+  // optional string parent = 1;
   if (this->parent().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->parent());
   }
 
-  // string page_token = 3;
-  if (this->page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->page_token());
-  }
-
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   if (this->page_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->page_size());
+  }
+
+  // optional string page_token = 3;
+  if (this->page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->page_token());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -3916,7 +4104,7 @@ size_t ListLogsRequest::ByteSizeLong() const {
 
 void ListLogsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.logging.v2.ListLogsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListLogsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListLogsRequest>(
           &from);
@@ -3925,22 +4113,29 @@ void ListLogsRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.logging.v2.ListLogsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListLogsRequest::MergeFrom(const ListLogsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.logging.v2.ListLogsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListLogsRequest::UnsafeMergeFrom(const ListLogsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.parent().size() > 0) {
     set_parent(from.parent());
   }
-  if (from.page_token().size() > 0) {
-    set_page_token(from.page_token());
-  }
   if (from.page_size() != 0) {
     set_page_size(from.page_size());
+  }
+  if (from.page_token().size() > 0) {
+    set_page_token(from.page_token());
   }
 }
 
@@ -3955,10 +4150,11 @@ void ListLogsRequest::CopyFrom(const ListLogsRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.logging.v2.ListLogsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListLogsRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -3967,13 +4163,10 @@ void ListLogsRequest::Swap(ListLogsRequest* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    ListLogsRequest* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    ListLogsRequest temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void ListLogsRequest::UnsafeArenaSwap(ListLogsRequest* other) {
@@ -3983,26 +4176,30 @@ void ListLogsRequest::UnsafeArenaSwap(ListLogsRequest* other) {
 }
 void ListLogsRequest::InternalSwap(ListLogsRequest* other) {
   parent_.Swap(&other->parent_);
-  page_token_.Swap(&other->page_token_);
   std::swap(page_size_, other->page_size_);
+  page_token_.Swap(&other->page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListLogsRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListLogsRequest_descriptor_;
+  metadata.reflection = ListLogsRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ListLogsRequest
 
-// string parent = 1;
+// optional string parent = 1;
 void ListLogsRequest::clear_parent() {
   parent_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ListLogsRequest::parent() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.ListLogsRequest.parent)
-  return parent_.Get();
+  return parent_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListLogsRequest::set_parent(const ::std::string& value) {
   
@@ -4062,7 +4259,7 @@ void ListLogsRequest::unsafe_arena_set_allocated_parent(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.logging.v2.ListLogsRequest.parent)
 }
 
-// int32 page_size = 2;
+// optional int32 page_size = 2;
 void ListLogsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -4076,13 +4273,13 @@ void ListLogsRequest::set_page_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.logging.v2.ListLogsRequest.page_size)
 }
 
-// string page_token = 3;
+// optional string page_token = 3;
 void ListLogsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ListLogsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.ListLogsRequest.page_token)
-  return page_token_.Get();
+  return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListLogsRequest::set_page_token(const ::std::string& value) {
   
@@ -4142,6 +4339,9 @@ void ListLogsRequest::unsafe_arena_set_allocated_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.logging.v2.ListLogsRequest.page_token)
 }
 
+inline const ListLogsRequest* ListLogsRequest::internal_default_instance() {
+  return &ListLogsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4153,9 +4353,7 @@ const int ListLogsResponse::kNextPageTokenFieldNumber;
 
 ListLogsResponse::ListLogsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2flogging_2fv2_2flogging_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.logging.v2.ListLogsResponse)
 }
@@ -4170,17 +4368,15 @@ ListLogsResponse::ListLogsResponse(::google::protobuf::Arena* arena)
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.logging.v2.ListLogsResponse)
 }
+
+void ListLogsResponse::InitAsDefaultInstance() {
+}
+
 ListLogsResponse::ListLogsResponse(const ListLogsResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      log_names_(from.log_names_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  next_page_token_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.next_page_token().size() > 0) {
-    next_page_token_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.next_page_token(),
-      GetArenaNoVirtual());
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.logging.v2.ListLogsResponse)
 }
 
@@ -4216,7 +4412,7 @@ void ListLogsResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ListLogsResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9].descriptor;
+  return ListLogsResponse_descriptor_;
 }
 
 const ListLogsResponse& ListLogsResponse::default_instance() {
@@ -4224,14 +4420,16 @@ const ListLogsResponse& ListLogsResponse::default_instance() {
   return *internal_default_instance();
 }
 
+::google::protobuf::internal::ExplicitlyConstructed<ListLogsResponse> ListLogsResponse_default_instance_;
+
 ListLogsResponse* ListLogsResponse::New(::google::protobuf::Arena* arena) const {
   return ::google::protobuf::Arena::CreateMessage<ListLogsResponse>(arena);
 }
 
 void ListLogsResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.logging.v2.ListLogsResponse)
-  log_names_.Clear();
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  log_names_.Clear();
 }
 
 bool ListLogsResponse::MergePartialFromCodedStream(
@@ -4240,13 +4438,13 @@ bool ListLogsResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.logging.v2.ListLogsResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string next_page_token = 2;
+      // optional string next_page_token = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_next_page_token()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4256,12 +4454,14 @@ bool ListLogsResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_log_names;
         break;
       }
 
       // repeated string log_names = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_log_names:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_log_names()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4272,6 +4472,8 @@ bool ListLogsResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_log_names;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4299,7 +4501,7 @@ failure:
 void ListLogsResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.logging.v2.ListLogsResponse)
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -4326,7 +4528,7 @@ void ListLogsResponse::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.logging.v2.ListLogsResponse)
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   if (this->next_page_token().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->next_page_token().data(), this->next_page_token().length(),
@@ -4355,19 +4557,19 @@ size_t ListLogsResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.logging.v2.ListLogsResponse)
   size_t total_size = 0;
 
+  // optional string next_page_token = 2;
+  if (this->next_page_token().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->next_page_token());
+  }
+
   // repeated string log_names = 3;
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->log_names_size());
   for (int i = 0; i < this->log_names_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->log_names(i));
-  }
-
-  // string next_page_token = 2;
-  if (this->next_page_token().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->next_page_token());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -4379,7 +4581,7 @@ size_t ListLogsResponse::ByteSizeLong() const {
 
 void ListLogsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.logging.v2.ListLogsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ListLogsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ListLogsResponse>(
           &from);
@@ -4388,15 +4590,22 @@ void ListLogsResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.logging.v2.ListLogsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ListLogsResponse::MergeFrom(const ListLogsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.logging.v2.ListLogsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  log_names_.MergeFrom(from.log_names_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ListLogsResponse::UnsafeMergeFrom(const ListLogsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
+  log_names_.UnsafeMergeFrom(from.log_names_);
   if (from.next_page_token().size() > 0) {
     set_next_page_token(from.next_page_token());
   }
@@ -4413,10 +4622,11 @@ void ListLogsResponse::CopyFrom(const ListLogsResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.logging.v2.ListLogsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ListLogsResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -4425,13 +4635,10 @@ void ListLogsResponse::Swap(ListLogsResponse* other) {
   if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
     InternalSwap(other);
   } else {
-    ListLogsResponse* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == NULL) {
-      delete temp;
-    }
+    ListLogsResponse temp;
+    temp.UnsafeMergeFrom(*this);
+    CopyFrom(*other);
+    other->CopyFrom(temp);
   }
 }
 void ListLogsResponse::UnsafeArenaSwap(ListLogsResponse* other) {
@@ -4442,12 +4649,16 @@ void ListLogsResponse::UnsafeArenaSwap(ListLogsResponse* other) {
 void ListLogsResponse::InternalSwap(ListLogsResponse* other) {
   log_names_.UnsafeArenaSwap(&other->log_names_);
   next_page_token_.Swap(&other->next_page_token_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ListLogsResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ListLogsResponse_descriptor_;
+  metadata.reflection = ListLogsResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -4508,13 +4719,13 @@ ListLogsResponse::mutable_log_names() {
   return &log_names_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 void ListLogsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 const ::std::string& ListLogsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.logging.v2.ListLogsResponse.next_page_token)
-  return next_page_token_.Get();
+  return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ListLogsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -4574,6 +4785,9 @@ void ListLogsResponse::unsafe_arena_set_allocated_next_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.logging.v2.ListLogsResponse.next_page_token)
 }
 
+inline const ListLogsResponse* ListLogsResponse::internal_default_instance() {
+  return &ListLogsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

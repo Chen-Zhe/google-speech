@@ -24,78 +24,14 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/map.h>
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace cloud {
-namespace language {
-namespace v1beta1 {
-class AnalyzeEntitiesRequest;
-class AnalyzeEntitiesRequestDefaultTypeInternal;
-extern AnalyzeEntitiesRequestDefaultTypeInternal _AnalyzeEntitiesRequest_default_instance_;
-class AnalyzeEntitiesResponse;
-class AnalyzeEntitiesResponseDefaultTypeInternal;
-extern AnalyzeEntitiesResponseDefaultTypeInternal _AnalyzeEntitiesResponse_default_instance_;
-class AnalyzeSentimentRequest;
-class AnalyzeSentimentRequestDefaultTypeInternal;
-extern AnalyzeSentimentRequestDefaultTypeInternal _AnalyzeSentimentRequest_default_instance_;
-class AnalyzeSentimentResponse;
-class AnalyzeSentimentResponseDefaultTypeInternal;
-extern AnalyzeSentimentResponseDefaultTypeInternal _AnalyzeSentimentResponse_default_instance_;
-class AnalyzeSyntaxRequest;
-class AnalyzeSyntaxRequestDefaultTypeInternal;
-extern AnalyzeSyntaxRequestDefaultTypeInternal _AnalyzeSyntaxRequest_default_instance_;
-class AnalyzeSyntaxResponse;
-class AnalyzeSyntaxResponseDefaultTypeInternal;
-extern AnalyzeSyntaxResponseDefaultTypeInternal _AnalyzeSyntaxResponse_default_instance_;
-class AnnotateTextRequest;
-class AnnotateTextRequestDefaultTypeInternal;
-extern AnnotateTextRequestDefaultTypeInternal _AnnotateTextRequest_default_instance_;
-class AnnotateTextRequest_Features;
-class AnnotateTextRequest_FeaturesDefaultTypeInternal;
-extern AnnotateTextRequest_FeaturesDefaultTypeInternal _AnnotateTextRequest_Features_default_instance_;
-class AnnotateTextResponse;
-class AnnotateTextResponseDefaultTypeInternal;
-extern AnnotateTextResponseDefaultTypeInternal _AnnotateTextResponse_default_instance_;
-class DependencyEdge;
-class DependencyEdgeDefaultTypeInternal;
-extern DependencyEdgeDefaultTypeInternal _DependencyEdge_default_instance_;
-class Document;
-class DocumentDefaultTypeInternal;
-extern DocumentDefaultTypeInternal _Document_default_instance_;
-class Entity;
-class EntityDefaultTypeInternal;
-extern EntityDefaultTypeInternal _Entity_default_instance_;
-class EntityMention;
-class EntityMentionDefaultTypeInternal;
-extern EntityMentionDefaultTypeInternal _EntityMention_default_instance_;
-class PartOfSpeech;
-class PartOfSpeechDefaultTypeInternal;
-extern PartOfSpeechDefaultTypeInternal _PartOfSpeech_default_instance_;
-class Sentence;
-class SentenceDefaultTypeInternal;
-extern SentenceDefaultTypeInternal _Sentence_default_instance_;
-class Sentiment;
-class SentimentDefaultTypeInternal;
-extern SentimentDefaultTypeInternal _Sentiment_default_instance_;
-class TextSpan;
-class TextSpanDefaultTypeInternal;
-extern TextSpanDefaultTypeInternal _TextSpan_default_instance_;
-class Token;
-class TokenDefaultTypeInternal;
-extern TokenDefaultTypeInternal _Token_default_instance_;
-}  // namespace v1beta1
-}  // namespace language
-}  // namespace cloud
-}  // namespace google
 
 namespace google {
 namespace cloud {
@@ -105,6 +41,27 @@ namespace v1beta1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 void protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+
+class AnalyzeEntitiesRequest;
+class AnalyzeEntitiesResponse;
+class AnalyzeSentimentRequest;
+class AnalyzeSentimentResponse;
+class AnalyzeSyntaxRequest;
+class AnalyzeSyntaxResponse;
+class AnnotateTextRequest;
+class AnnotateTextRequest_Features;
+class AnnotateTextResponse;
+class DependencyEdge;
+class Document;
+class Entity;
+class EntityMention;
+class PartOfSpeech;
+class Sentence;
+class Sentiment;
+class TextSpan;
+class Token;
 
 enum Document_Type {
   Document_Type_TYPE_UNSPECIFIED = 0,
@@ -629,52 +586,49 @@ class Document : public ::google::protobuf::Message /* @@protoc_insertion_point(
     SOURCE_NOT_SET = 0,
   };
 
-  static inline const Document* internal_default_instance() {
-    return reinterpret_cast<const Document*>(
-               &_Document_default_instance_);
-  }
+  static const Document* internal_default_instance();
 
   void Swap(Document* other);
 
   // implements Message ----------------------------------------------
 
-  inline Document* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Document* New() const { return New(NULL); }
 
-  Document* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Document* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Document& from);
   void MergeFrom(const Document& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Document* other);
+  void UnsafeMergeFrom(const Document& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -708,13 +662,13 @@ class Document : public ::google::protobuf::Message /* @@protoc_insertion_point(
 
   // accessors -------------------------------------------------------
 
-  // .google.cloud.language.v1beta1.Document.Type type = 1;
+  // optional .google.cloud.language.v1beta1.Document.Type type = 1;
   void clear_type();
   static const int kTypeFieldNumber = 1;
   ::google::cloud::language::v1beta1::Document_Type type() const;
   void set_type(::google::cloud::language::v1beta1::Document_Type value);
 
-  // string content = 2;
+  // optional string content = 2;
   private:
   bool has_content() const;
   public:
@@ -728,7 +682,7 @@ class Document : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_content();
   void set_allocated_content(::std::string* content);
 
-  // string gcs_content_uri = 3;
+  // optional string gcs_content_uri = 3;
   private:
   bool has_gcs_content_uri() const;
   public:
@@ -742,7 +696,7 @@ class Document : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_gcs_content_uri();
   void set_allocated_gcs_content_uri(::std::string* gcs_content_uri);
 
-  // string language = 4;
+  // optional string language = 4;
   void clear_language();
   static const int kLanguageFieldNumber = 4;
   const ::std::string& language() const;
@@ -756,8 +710,8 @@ class Document : public ::google::protobuf::Message /* @@protoc_insertion_point(
   SourceCase source_case() const;
   // @@protoc_insertion_point(class_scope:google.cloud.language.v1beta1.Document)
  private:
-  void set_has_content();
-  void set_has_gcs_content_uri();
+  inline void set_has_content();
+  inline void set_has_gcs_content_uri();
 
   inline bool has_source() const;
   void clear_source();
@@ -776,10 +730,13 @@ class Document : public ::google::protobuf::Message /* @@protoc_insertion_point(
 
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Document> Document_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Sentence : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.language.v1beta1.Sentence) */ {
@@ -797,58 +754,55 @@ class Sentence : public ::google::protobuf::Message /* @@protoc_insertion_point(
   static const ::google::protobuf::Descriptor* descriptor();
   static const Sentence& default_instance();
 
-  static inline const Sentence* internal_default_instance() {
-    return reinterpret_cast<const Sentence*>(
-               &_Sentence_default_instance_);
-  }
+  static const Sentence* internal_default_instance();
 
   void Swap(Sentence* other);
 
   // implements Message ----------------------------------------------
 
-  inline Sentence* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Sentence* New() const { return New(NULL); }
 
-  Sentence* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Sentence* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Sentence& from);
   void MergeFrom(const Sentence& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Sentence* other);
+  void UnsafeMergeFrom(const Sentence& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.cloud.language.v1beta1.TextSpan text = 1;
+  // optional .google.cloud.language.v1beta1.TextSpan text = 1;
   bool has_text() const;
   void clear_text();
   static const int kTextFieldNumber = 1;
@@ -857,7 +811,7 @@ class Sentence : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::google::cloud::language::v1beta1::TextSpan* release_text();
   void set_allocated_text(::google::cloud::language::v1beta1::TextSpan* text);
 
-  // .google.cloud.language.v1beta1.Sentiment sentiment = 2;
+  // optional .google.cloud.language.v1beta1.Sentiment sentiment = 2;
   bool has_sentiment() const;
   void clear_sentiment();
   static const int kSentimentFieldNumber = 2;
@@ -875,12 +829,12 @@ class Sentence : public ::google::protobuf::Message /* @@protoc_insertion_point(
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
-// -------------------------------------------------------------------
-
+extern ::google::protobuf::internal::ExplicitlyConstructed<Sentence> Sentence_default_instance_;
 
 // -------------------------------------------------------------------
 
@@ -899,52 +853,49 @@ class Entity : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   static const ::google::protobuf::Descriptor* descriptor();
   static const Entity& default_instance();
 
-  static inline const Entity* internal_default_instance() {
-    return reinterpret_cast<const Entity*>(
-               &_Entity_default_instance_);
-  }
+  static const Entity* internal_default_instance();
 
   void Swap(Entity* other);
 
   // implements Message ----------------------------------------------
 
-  inline Entity* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Entity* New() const { return New(NULL); }
 
-  Entity* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Entity* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Entity& from);
   void MergeFrom(const Entity& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Entity* other);
+  void UnsafeMergeFrom(const Entity& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -989,7 +940,7 @@ class Entity : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -1000,7 +951,7 @@ class Entity : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // .google.cloud.language.v1beta1.Entity.Type type = 2;
+  // optional .google.cloud.language.v1beta1.Entity.Type type = 2;
   void clear_type();
   static const int kTypeFieldNumber = 2;
   ::google::cloud::language::v1beta1::Entity_Type type() const;
@@ -1015,7 +966,7 @@ class Entity : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   ::google::protobuf::Map< ::std::string, ::std::string >*
       mutable_metadata();
 
-  // float salience = 4;
+  // optional float salience = 4;
   void clear_salience();
   static const int kSalienceFieldNumber = 4;
   float salience() const;
@@ -1055,10 +1006,13 @@ class Entity : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Entity> Entity_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Token : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.language.v1beta1.Token) */ {
@@ -1076,58 +1030,55 @@ class Token : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   static const ::google::protobuf::Descriptor* descriptor();
   static const Token& default_instance();
 
-  static inline const Token* internal_default_instance() {
-    return reinterpret_cast<const Token*>(
-               &_Token_default_instance_);
-  }
+  static const Token* internal_default_instance();
 
   void Swap(Token* other);
 
   // implements Message ----------------------------------------------
 
-  inline Token* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Token* New() const { return New(NULL); }
 
-  Token* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Token* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Token& from);
   void MergeFrom(const Token& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Token* other);
+  void UnsafeMergeFrom(const Token& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.cloud.language.v1beta1.TextSpan text = 1;
+  // optional .google.cloud.language.v1beta1.TextSpan text = 1;
   bool has_text() const;
   void clear_text();
   static const int kTextFieldNumber = 1;
@@ -1136,7 +1087,7 @@ class Token : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   ::google::cloud::language::v1beta1::TextSpan* release_text();
   void set_allocated_text(::google::cloud::language::v1beta1::TextSpan* text);
 
-  // .google.cloud.language.v1beta1.PartOfSpeech part_of_speech = 2;
+  // optional .google.cloud.language.v1beta1.PartOfSpeech part_of_speech = 2;
   bool has_part_of_speech() const;
   void clear_part_of_speech();
   static const int kPartOfSpeechFieldNumber = 2;
@@ -1145,7 +1096,7 @@ class Token : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   ::google::cloud::language::v1beta1::PartOfSpeech* release_part_of_speech();
   void set_allocated_part_of_speech(::google::cloud::language::v1beta1::PartOfSpeech* part_of_speech);
 
-  // .google.cloud.language.v1beta1.DependencyEdge dependency_edge = 3;
+  // optional .google.cloud.language.v1beta1.DependencyEdge dependency_edge = 3;
   bool has_dependency_edge() const;
   void clear_dependency_edge();
   static const int kDependencyEdgeFieldNumber = 3;
@@ -1154,7 +1105,7 @@ class Token : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   ::google::cloud::language::v1beta1::DependencyEdge* release_dependency_edge();
   void set_allocated_dependency_edge(::google::cloud::language::v1beta1::DependencyEdge* dependency_edge);
 
-  // string lemma = 4;
+  // optional string lemma = 4;
   void clear_lemma();
   static const int kLemmaFieldNumber = 4;
   const ::std::string& lemma() const;
@@ -1176,10 +1127,13 @@ class Token : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Token> Token_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Sentiment : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.language.v1beta1.Sentiment) */ {
@@ -1197,70 +1151,67 @@ class Sentiment : public ::google::protobuf::Message /* @@protoc_insertion_point
   static const ::google::protobuf::Descriptor* descriptor();
   static const Sentiment& default_instance();
 
-  static inline const Sentiment* internal_default_instance() {
-    return reinterpret_cast<const Sentiment*>(
-               &_Sentiment_default_instance_);
-  }
+  static const Sentiment* internal_default_instance();
 
   void Swap(Sentiment* other);
 
   // implements Message ----------------------------------------------
 
-  inline Sentiment* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Sentiment* New() const { return New(NULL); }
 
-  Sentiment* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Sentiment* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Sentiment& from);
   void MergeFrom(const Sentiment& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Sentiment* other);
+  void UnsafeMergeFrom(const Sentiment& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // float polarity = 1;
+  // optional float polarity = 1;
   void clear_polarity();
   static const int kPolarityFieldNumber = 1;
   float polarity() const;
   void set_polarity(float value);
 
-  // float magnitude = 2;
+  // optional float magnitude = 2;
   void clear_magnitude();
   static const int kMagnitudeFieldNumber = 2;
   float magnitude() const;
   void set_magnitude(float value);
 
-  // float score = 3;
+  // optional float score = 3;
   void clear_score();
   static const int kScoreFieldNumber = 3;
   float score() const;
@@ -1276,10 +1227,13 @@ class Sentiment : public ::google::protobuf::Message /* @@protoc_insertion_point
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Sentiment> Sentiment_default_instance_;
+
 // -------------------------------------------------------------------
 
 class PartOfSpeech : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.language.v1beta1.PartOfSpeech) */ {
@@ -1297,52 +1251,49 @@ class PartOfSpeech : public ::google::protobuf::Message /* @@protoc_insertion_po
   static const ::google::protobuf::Descriptor* descriptor();
   static const PartOfSpeech& default_instance();
 
-  static inline const PartOfSpeech* internal_default_instance() {
-    return reinterpret_cast<const PartOfSpeech*>(
-               &_PartOfSpeech_default_instance_);
-  }
+  static const PartOfSpeech* internal_default_instance();
 
   void Swap(PartOfSpeech* other);
 
   // implements Message ----------------------------------------------
 
-  inline PartOfSpeech* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline PartOfSpeech* New() const { return New(NULL); }
 
-  PartOfSpeech* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PartOfSpeech* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const PartOfSpeech& from);
   void MergeFrom(const PartOfSpeech& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(PartOfSpeech* other);
+  void UnsafeMergeFrom(const PartOfSpeech& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1776,73 +1727,73 @@ class PartOfSpeech : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   // accessors -------------------------------------------------------
 
-  // .google.cloud.language.v1beta1.PartOfSpeech.Tag tag = 1;
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Tag tag = 1;
   void clear_tag();
   static const int kTagFieldNumber = 1;
   ::google::cloud::language::v1beta1::PartOfSpeech_Tag tag() const;
   void set_tag(::google::cloud::language::v1beta1::PartOfSpeech_Tag value);
 
-  // .google.cloud.language.v1beta1.PartOfSpeech.Aspect aspect = 2;
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Aspect aspect = 2;
   void clear_aspect();
   static const int kAspectFieldNumber = 2;
   ::google::cloud::language::v1beta1::PartOfSpeech_Aspect aspect() const;
   void set_aspect(::google::cloud::language::v1beta1::PartOfSpeech_Aspect value);
 
-  // .google.cloud.language.v1beta1.PartOfSpeech.Case case = 3;
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Case case = 3;
   void clear_case_();
   static const int kCaseFieldNumber = 3;
   ::google::cloud::language::v1beta1::PartOfSpeech_Case case_() const;
   void set_case_(::google::cloud::language::v1beta1::PartOfSpeech_Case value);
 
-  // .google.cloud.language.v1beta1.PartOfSpeech.Form form = 4;
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Form form = 4;
   void clear_form();
   static const int kFormFieldNumber = 4;
   ::google::cloud::language::v1beta1::PartOfSpeech_Form form() const;
   void set_form(::google::cloud::language::v1beta1::PartOfSpeech_Form value);
 
-  // .google.cloud.language.v1beta1.PartOfSpeech.Gender gender = 5;
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Gender gender = 5;
   void clear_gender();
   static const int kGenderFieldNumber = 5;
   ::google::cloud::language::v1beta1::PartOfSpeech_Gender gender() const;
   void set_gender(::google::cloud::language::v1beta1::PartOfSpeech_Gender value);
 
-  // .google.cloud.language.v1beta1.PartOfSpeech.Mood mood = 6;
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Mood mood = 6;
   void clear_mood();
   static const int kMoodFieldNumber = 6;
   ::google::cloud::language::v1beta1::PartOfSpeech_Mood mood() const;
   void set_mood(::google::cloud::language::v1beta1::PartOfSpeech_Mood value);
 
-  // .google.cloud.language.v1beta1.PartOfSpeech.Number number = 7;
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Number number = 7;
   void clear_number();
   static const int kNumberFieldNumber = 7;
   ::google::cloud::language::v1beta1::PartOfSpeech_Number number() const;
   void set_number(::google::cloud::language::v1beta1::PartOfSpeech_Number value);
 
-  // .google.cloud.language.v1beta1.PartOfSpeech.Person person = 8;
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Person person = 8;
   void clear_person();
   static const int kPersonFieldNumber = 8;
   ::google::cloud::language::v1beta1::PartOfSpeech_Person person() const;
   void set_person(::google::cloud::language::v1beta1::PartOfSpeech_Person value);
 
-  // .google.cloud.language.v1beta1.PartOfSpeech.Proper proper = 9;
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Proper proper = 9;
   void clear_proper();
   static const int kProperFieldNumber = 9;
   ::google::cloud::language::v1beta1::PartOfSpeech_Proper proper() const;
   void set_proper(::google::cloud::language::v1beta1::PartOfSpeech_Proper value);
 
-  // .google.cloud.language.v1beta1.PartOfSpeech.Reciprocity reciprocity = 10;
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Reciprocity reciprocity = 10;
   void clear_reciprocity();
   static const int kReciprocityFieldNumber = 10;
   ::google::cloud::language::v1beta1::PartOfSpeech_Reciprocity reciprocity() const;
   void set_reciprocity(::google::cloud::language::v1beta1::PartOfSpeech_Reciprocity value);
 
-  // .google.cloud.language.v1beta1.PartOfSpeech.Tense tense = 11;
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Tense tense = 11;
   void clear_tense();
   static const int kTenseFieldNumber = 11;
   ::google::cloud::language::v1beta1::PartOfSpeech_Tense tense() const;
   void set_tense(::google::cloud::language::v1beta1::PartOfSpeech_Tense value);
 
-  // .google.cloud.language.v1beta1.PartOfSpeech.Voice voice = 12;
+  // optional .google.cloud.language.v1beta1.PartOfSpeech.Voice voice = 12;
   void clear_voice();
   static const int kVoiceFieldNumber = 12;
   ::google::cloud::language::v1beta1::PartOfSpeech_Voice voice() const;
@@ -1867,10 +1818,13 @@ class PartOfSpeech : public ::google::protobuf::Message /* @@protoc_insertion_po
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<PartOfSpeech> PartOfSpeech_default_instance_;
+
 // -------------------------------------------------------------------
 
 class DependencyEdge : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.language.v1beta1.DependencyEdge) */ {
@@ -1888,52 +1842,49 @@ class DependencyEdge : public ::google::protobuf::Message /* @@protoc_insertion_
   static const ::google::protobuf::Descriptor* descriptor();
   static const DependencyEdge& default_instance();
 
-  static inline const DependencyEdge* internal_default_instance() {
-    return reinterpret_cast<const DependencyEdge*>(
-               &_DependencyEdge_default_instance_);
-  }
+  static const DependencyEdge* internal_default_instance();
 
   void Swap(DependencyEdge* other);
 
   // implements Message ----------------------------------------------
 
-  inline DependencyEdge* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline DependencyEdge* New() const { return New(NULL); }
 
-  DependencyEdge* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DependencyEdge* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const DependencyEdge& from);
   void MergeFrom(const DependencyEdge& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(DependencyEdge* other);
+  void UnsafeMergeFrom(const DependencyEdge& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -2115,13 +2066,13 @@ class DependencyEdge : public ::google::protobuf::Message /* @@protoc_insertion_
 
   // accessors -------------------------------------------------------
 
-  // int32 head_token_index = 1;
+  // optional int32 head_token_index = 1;
   void clear_head_token_index();
   static const int kHeadTokenIndexFieldNumber = 1;
   ::google::protobuf::int32 head_token_index() const;
   void set_head_token_index(::google::protobuf::int32 value);
 
-  // .google.cloud.language.v1beta1.DependencyEdge.Label label = 2;
+  // optional .google.cloud.language.v1beta1.DependencyEdge.Label label = 2;
   void clear_label();
   static const int kLabelFieldNumber = 2;
   ::google::cloud::language::v1beta1::DependencyEdge_Label label() const;
@@ -2136,10 +2087,13 @@ class DependencyEdge : public ::google::protobuf::Message /* @@protoc_insertion_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<DependencyEdge> DependencyEdge_default_instance_;
+
 // -------------------------------------------------------------------
 
 class EntityMention : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.language.v1beta1.EntityMention) */ {
@@ -2157,52 +2111,49 @@ class EntityMention : public ::google::protobuf::Message /* @@protoc_insertion_p
   static const ::google::protobuf::Descriptor* descriptor();
   static const EntityMention& default_instance();
 
-  static inline const EntityMention* internal_default_instance() {
-    return reinterpret_cast<const EntityMention*>(
-               &_EntityMention_default_instance_);
-  }
+  static const EntityMention* internal_default_instance();
 
   void Swap(EntityMention* other);
 
   // implements Message ----------------------------------------------
 
-  inline EntityMention* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline EntityMention* New() const { return New(NULL); }
 
-  EntityMention* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  EntityMention* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const EntityMention& from);
   void MergeFrom(const EntityMention& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(EntityMention* other);
+  void UnsafeMergeFrom(const EntityMention& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -2236,7 +2187,7 @@ class EntityMention : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   // accessors -------------------------------------------------------
 
-  // .google.cloud.language.v1beta1.TextSpan text = 1;
+  // optional .google.cloud.language.v1beta1.TextSpan text = 1;
   bool has_text() const;
   void clear_text();
   static const int kTextFieldNumber = 1;
@@ -2245,7 +2196,7 @@ class EntityMention : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::google::cloud::language::v1beta1::TextSpan* release_text();
   void set_allocated_text(::google::cloud::language::v1beta1::TextSpan* text);
 
-  // .google.cloud.language.v1beta1.EntityMention.Type type = 2;
+  // optional .google.cloud.language.v1beta1.EntityMention.Type type = 2;
   void clear_type();
   static const int kTypeFieldNumber = 2;
   ::google::cloud::language::v1beta1::EntityMention_Type type() const;
@@ -2260,10 +2211,13 @@ class EntityMention : public ::google::protobuf::Message /* @@protoc_insertion_p
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<EntityMention> EntityMention_default_instance_;
+
 // -------------------------------------------------------------------
 
 class TextSpan : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.language.v1beta1.TextSpan) */ {
@@ -2281,58 +2235,55 @@ class TextSpan : public ::google::protobuf::Message /* @@protoc_insertion_point(
   static const ::google::protobuf::Descriptor* descriptor();
   static const TextSpan& default_instance();
 
-  static inline const TextSpan* internal_default_instance() {
-    return reinterpret_cast<const TextSpan*>(
-               &_TextSpan_default_instance_);
-  }
+  static const TextSpan* internal_default_instance();
 
   void Swap(TextSpan* other);
 
   // implements Message ----------------------------------------------
 
-  inline TextSpan* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline TextSpan* New() const { return New(NULL); }
 
-  TextSpan* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  TextSpan* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const TextSpan& from);
   void MergeFrom(const TextSpan& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(TextSpan* other);
+  void UnsafeMergeFrom(const TextSpan& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string content = 1;
+  // optional string content = 1;
   void clear_content();
   static const int kContentFieldNumber = 1;
   const ::std::string& content() const;
@@ -2343,7 +2294,7 @@ class TextSpan : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_content();
   void set_allocated_content(::std::string* content);
 
-  // int32 begin_offset = 2;
+  // optional int32 begin_offset = 2;
   void clear_begin_offset();
   static const int kBeginOffsetFieldNumber = 2;
   ::google::protobuf::int32 begin_offset() const;
@@ -2358,10 +2309,13 @@ class TextSpan : public ::google::protobuf::Message /* @@protoc_insertion_point(
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<TextSpan> TextSpan_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AnalyzeSentimentRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.language.v1beta1.AnalyzeSentimentRequest) */ {
@@ -2379,58 +2333,55 @@ class AnalyzeSentimentRequest : public ::google::protobuf::Message /* @@protoc_i
   static const ::google::protobuf::Descriptor* descriptor();
   static const AnalyzeSentimentRequest& default_instance();
 
-  static inline const AnalyzeSentimentRequest* internal_default_instance() {
-    return reinterpret_cast<const AnalyzeSentimentRequest*>(
-               &_AnalyzeSentimentRequest_default_instance_);
-  }
+  static const AnalyzeSentimentRequest* internal_default_instance();
 
   void Swap(AnalyzeSentimentRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline AnalyzeSentimentRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AnalyzeSentimentRequest* New() const { return New(NULL); }
 
-  AnalyzeSentimentRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AnalyzeSentimentRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AnalyzeSentimentRequest& from);
   void MergeFrom(const AnalyzeSentimentRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AnalyzeSentimentRequest* other);
+  void UnsafeMergeFrom(const AnalyzeSentimentRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.cloud.language.v1beta1.Document document = 1;
+  // optional .google.cloud.language.v1beta1.Document document = 1;
   bool has_document() const;
   void clear_document();
   static const int kDocumentFieldNumber = 1;
@@ -2439,7 +2390,7 @@ class AnalyzeSentimentRequest : public ::google::protobuf::Message /* @@protoc_i
   ::google::cloud::language::v1beta1::Document* release_document();
   void set_allocated_document(::google::cloud::language::v1beta1::Document* document);
 
-  // .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+  // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
   void clear_encoding_type();
   static const int kEncodingTypeFieldNumber = 2;
   ::google::cloud::language::v1beta1::EncodingType encoding_type() const;
@@ -2454,10 +2405,13 @@ class AnalyzeSentimentRequest : public ::google::protobuf::Message /* @@protoc_i
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AnalyzeSentimentRequest> AnalyzeSentimentRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AnalyzeSentimentResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.language.v1beta1.AnalyzeSentimentResponse) */ {
@@ -2475,58 +2429,55 @@ class AnalyzeSentimentResponse : public ::google::protobuf::Message /* @@protoc_
   static const ::google::protobuf::Descriptor* descriptor();
   static const AnalyzeSentimentResponse& default_instance();
 
-  static inline const AnalyzeSentimentResponse* internal_default_instance() {
-    return reinterpret_cast<const AnalyzeSentimentResponse*>(
-               &_AnalyzeSentimentResponse_default_instance_);
-  }
+  static const AnalyzeSentimentResponse* internal_default_instance();
 
   void Swap(AnalyzeSentimentResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline AnalyzeSentimentResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AnalyzeSentimentResponse* New() const { return New(NULL); }
 
-  AnalyzeSentimentResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AnalyzeSentimentResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AnalyzeSentimentResponse& from);
   void MergeFrom(const AnalyzeSentimentResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AnalyzeSentimentResponse* other);
+  void UnsafeMergeFrom(const AnalyzeSentimentResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.cloud.language.v1beta1.Sentiment document_sentiment = 1;
+  // optional .google.cloud.language.v1beta1.Sentiment document_sentiment = 1;
   bool has_document_sentiment() const;
   void clear_document_sentiment();
   static const int kDocumentSentimentFieldNumber = 1;
@@ -2535,7 +2486,7 @@ class AnalyzeSentimentResponse : public ::google::protobuf::Message /* @@protoc_
   ::google::cloud::language::v1beta1::Sentiment* release_document_sentiment();
   void set_allocated_document_sentiment(::google::cloud::language::v1beta1::Sentiment* document_sentiment);
 
-  // string language = 2;
+  // optional string language = 2;
   void clear_language();
   static const int kLanguageFieldNumber = 2;
   const ::std::string& language() const;
@@ -2568,10 +2519,13 @@ class AnalyzeSentimentResponse : public ::google::protobuf::Message /* @@protoc_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AnalyzeSentimentResponse> AnalyzeSentimentResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AnalyzeEntitiesRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.language.v1beta1.AnalyzeEntitiesRequest) */ {
@@ -2589,58 +2543,55 @@ class AnalyzeEntitiesRequest : public ::google::protobuf::Message /* @@protoc_in
   static const ::google::protobuf::Descriptor* descriptor();
   static const AnalyzeEntitiesRequest& default_instance();
 
-  static inline const AnalyzeEntitiesRequest* internal_default_instance() {
-    return reinterpret_cast<const AnalyzeEntitiesRequest*>(
-               &_AnalyzeEntitiesRequest_default_instance_);
-  }
+  static const AnalyzeEntitiesRequest* internal_default_instance();
 
   void Swap(AnalyzeEntitiesRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline AnalyzeEntitiesRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AnalyzeEntitiesRequest* New() const { return New(NULL); }
 
-  AnalyzeEntitiesRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AnalyzeEntitiesRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AnalyzeEntitiesRequest& from);
   void MergeFrom(const AnalyzeEntitiesRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AnalyzeEntitiesRequest* other);
+  void UnsafeMergeFrom(const AnalyzeEntitiesRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.cloud.language.v1beta1.Document document = 1;
+  // optional .google.cloud.language.v1beta1.Document document = 1;
   bool has_document() const;
   void clear_document();
   static const int kDocumentFieldNumber = 1;
@@ -2649,7 +2600,7 @@ class AnalyzeEntitiesRequest : public ::google::protobuf::Message /* @@protoc_in
   ::google::cloud::language::v1beta1::Document* release_document();
   void set_allocated_document(::google::cloud::language::v1beta1::Document* document);
 
-  // .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+  // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
   void clear_encoding_type();
   static const int kEncodingTypeFieldNumber = 2;
   ::google::cloud::language::v1beta1::EncodingType encoding_type() const;
@@ -2664,10 +2615,13 @@ class AnalyzeEntitiesRequest : public ::google::protobuf::Message /* @@protoc_in
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AnalyzeEntitiesRequest> AnalyzeEntitiesRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AnalyzeEntitiesResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.language.v1beta1.AnalyzeEntitiesResponse) */ {
@@ -2685,52 +2639,49 @@ class AnalyzeEntitiesResponse : public ::google::protobuf::Message /* @@protoc_i
   static const ::google::protobuf::Descriptor* descriptor();
   static const AnalyzeEntitiesResponse& default_instance();
 
-  static inline const AnalyzeEntitiesResponse* internal_default_instance() {
-    return reinterpret_cast<const AnalyzeEntitiesResponse*>(
-               &_AnalyzeEntitiesResponse_default_instance_);
-  }
+  static const AnalyzeEntitiesResponse* internal_default_instance();
 
   void Swap(AnalyzeEntitiesResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline AnalyzeEntitiesResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AnalyzeEntitiesResponse* New() const { return New(NULL); }
 
-  AnalyzeEntitiesResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AnalyzeEntitiesResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AnalyzeEntitiesResponse& from);
   void MergeFrom(const AnalyzeEntitiesResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AnalyzeEntitiesResponse* other);
+  void UnsafeMergeFrom(const AnalyzeEntitiesResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -2748,7 +2699,7 @@ class AnalyzeEntitiesResponse : public ::google::protobuf::Message /* @@protoc_i
   const ::google::protobuf::RepeatedPtrField< ::google::cloud::language::v1beta1::Entity >&
       entities() const;
 
-  // string language = 2;
+  // optional string language = 2;
   void clear_language();
   static const int kLanguageFieldNumber = 2;
   const ::std::string& language() const;
@@ -2768,10 +2719,13 @@ class AnalyzeEntitiesResponse : public ::google::protobuf::Message /* @@protoc_i
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AnalyzeEntitiesResponse> AnalyzeEntitiesResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AnalyzeSyntaxRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.language.v1beta1.AnalyzeSyntaxRequest) */ {
@@ -2789,58 +2743,55 @@ class AnalyzeSyntaxRequest : public ::google::protobuf::Message /* @@protoc_inse
   static const ::google::protobuf::Descriptor* descriptor();
   static const AnalyzeSyntaxRequest& default_instance();
 
-  static inline const AnalyzeSyntaxRequest* internal_default_instance() {
-    return reinterpret_cast<const AnalyzeSyntaxRequest*>(
-               &_AnalyzeSyntaxRequest_default_instance_);
-  }
+  static const AnalyzeSyntaxRequest* internal_default_instance();
 
   void Swap(AnalyzeSyntaxRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline AnalyzeSyntaxRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AnalyzeSyntaxRequest* New() const { return New(NULL); }
 
-  AnalyzeSyntaxRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AnalyzeSyntaxRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AnalyzeSyntaxRequest& from);
   void MergeFrom(const AnalyzeSyntaxRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AnalyzeSyntaxRequest* other);
+  void UnsafeMergeFrom(const AnalyzeSyntaxRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.cloud.language.v1beta1.Document document = 1;
+  // optional .google.cloud.language.v1beta1.Document document = 1;
   bool has_document() const;
   void clear_document();
   static const int kDocumentFieldNumber = 1;
@@ -2849,7 +2800,7 @@ class AnalyzeSyntaxRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::google::cloud::language::v1beta1::Document* release_document();
   void set_allocated_document(::google::cloud::language::v1beta1::Document* document);
 
-  // .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+  // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
   void clear_encoding_type();
   static const int kEncodingTypeFieldNumber = 2;
   ::google::cloud::language::v1beta1::EncodingType encoding_type() const;
@@ -2864,10 +2815,13 @@ class AnalyzeSyntaxRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AnalyzeSyntaxRequest> AnalyzeSyntaxRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AnalyzeSyntaxResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.language.v1beta1.AnalyzeSyntaxResponse) */ {
@@ -2885,52 +2839,49 @@ class AnalyzeSyntaxResponse : public ::google::protobuf::Message /* @@protoc_ins
   static const ::google::protobuf::Descriptor* descriptor();
   static const AnalyzeSyntaxResponse& default_instance();
 
-  static inline const AnalyzeSyntaxResponse* internal_default_instance() {
-    return reinterpret_cast<const AnalyzeSyntaxResponse*>(
-               &_AnalyzeSyntaxResponse_default_instance_);
-  }
+  static const AnalyzeSyntaxResponse* internal_default_instance();
 
   void Swap(AnalyzeSyntaxResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline AnalyzeSyntaxResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AnalyzeSyntaxResponse* New() const { return New(NULL); }
 
-  AnalyzeSyntaxResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AnalyzeSyntaxResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AnalyzeSyntaxResponse& from);
   void MergeFrom(const AnalyzeSyntaxResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AnalyzeSyntaxResponse* other);
+  void UnsafeMergeFrom(const AnalyzeSyntaxResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -2960,7 +2911,7 @@ class AnalyzeSyntaxResponse : public ::google::protobuf::Message /* @@protoc_ins
   const ::google::protobuf::RepeatedPtrField< ::google::cloud::language::v1beta1::Token >&
       tokens() const;
 
-  // string language = 3;
+  // optional string language = 3;
   void clear_language();
   static const int kLanguageFieldNumber = 3;
   const ::std::string& language() const;
@@ -2981,10 +2932,13 @@ class AnalyzeSyntaxResponse : public ::google::protobuf::Message /* @@protoc_ins
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AnalyzeSyntaxResponse> AnalyzeSyntaxResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AnnotateTextRequest_Features : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.language.v1beta1.AnnotateTextRequest.Features) */ {
@@ -3002,70 +2956,67 @@ class AnnotateTextRequest_Features : public ::google::protobuf::Message /* @@pro
   static const ::google::protobuf::Descriptor* descriptor();
   static const AnnotateTextRequest_Features& default_instance();
 
-  static inline const AnnotateTextRequest_Features* internal_default_instance() {
-    return reinterpret_cast<const AnnotateTextRequest_Features*>(
-               &_AnnotateTextRequest_Features_default_instance_);
-  }
+  static const AnnotateTextRequest_Features* internal_default_instance();
 
   void Swap(AnnotateTextRequest_Features* other);
 
   // implements Message ----------------------------------------------
 
-  inline AnnotateTextRequest_Features* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AnnotateTextRequest_Features* New() const { return New(NULL); }
 
-  AnnotateTextRequest_Features* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AnnotateTextRequest_Features* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AnnotateTextRequest_Features& from);
   void MergeFrom(const AnnotateTextRequest_Features& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AnnotateTextRequest_Features* other);
+  void UnsafeMergeFrom(const AnnotateTextRequest_Features& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // bool extract_syntax = 1;
+  // optional bool extract_syntax = 1;
   void clear_extract_syntax();
   static const int kExtractSyntaxFieldNumber = 1;
   bool extract_syntax() const;
   void set_extract_syntax(bool value);
 
-  // bool extract_entities = 2;
+  // optional bool extract_entities = 2;
   void clear_extract_entities();
   static const int kExtractEntitiesFieldNumber = 2;
   bool extract_entities() const;
   void set_extract_entities(bool value);
 
-  // bool extract_document_sentiment = 3;
+  // optional bool extract_document_sentiment = 3;
   void clear_extract_document_sentiment();
   static const int kExtractDocumentSentimentFieldNumber = 3;
   bool extract_document_sentiment() const;
@@ -3081,10 +3032,13 @@ class AnnotateTextRequest_Features : public ::google::protobuf::Message /* @@pro
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AnnotateTextRequest_Features> AnnotateTextRequest_Features_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AnnotateTextRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.language.v1beta1.AnnotateTextRequest) */ {
@@ -3102,52 +3056,49 @@ class AnnotateTextRequest : public ::google::protobuf::Message /* @@protoc_inser
   static const ::google::protobuf::Descriptor* descriptor();
   static const AnnotateTextRequest& default_instance();
 
-  static inline const AnnotateTextRequest* internal_default_instance() {
-    return reinterpret_cast<const AnnotateTextRequest*>(
-               &_AnnotateTextRequest_default_instance_);
-  }
+  static const AnnotateTextRequest* internal_default_instance();
 
   void Swap(AnnotateTextRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline AnnotateTextRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AnnotateTextRequest* New() const { return New(NULL); }
 
-  AnnotateTextRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AnnotateTextRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AnnotateTextRequest& from);
   void MergeFrom(const AnnotateTextRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AnnotateTextRequest* other);
+  void UnsafeMergeFrom(const AnnotateTextRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -3155,7 +3106,7 @@ class AnnotateTextRequest : public ::google::protobuf::Message /* @@protoc_inser
 
   // accessors -------------------------------------------------------
 
-  // .google.cloud.language.v1beta1.Document document = 1;
+  // optional .google.cloud.language.v1beta1.Document document = 1;
   bool has_document() const;
   void clear_document();
   static const int kDocumentFieldNumber = 1;
@@ -3164,7 +3115,7 @@ class AnnotateTextRequest : public ::google::protobuf::Message /* @@protoc_inser
   ::google::cloud::language::v1beta1::Document* release_document();
   void set_allocated_document(::google::cloud::language::v1beta1::Document* document);
 
-  // .google.cloud.language.v1beta1.AnnotateTextRequest.Features features = 2;
+  // optional .google.cloud.language.v1beta1.AnnotateTextRequest.Features features = 2;
   bool has_features() const;
   void clear_features();
   static const int kFeaturesFieldNumber = 2;
@@ -3173,7 +3124,7 @@ class AnnotateTextRequest : public ::google::protobuf::Message /* @@protoc_inser
   ::google::cloud::language::v1beta1::AnnotateTextRequest_Features* release_features();
   void set_allocated_features(::google::cloud::language::v1beta1::AnnotateTextRequest_Features* features);
 
-  // .google.cloud.language.v1beta1.EncodingType encoding_type = 3;
+  // optional .google.cloud.language.v1beta1.EncodingType encoding_type = 3;
   void clear_encoding_type();
   static const int kEncodingTypeFieldNumber = 3;
   ::google::cloud::language::v1beta1::EncodingType encoding_type() const;
@@ -3189,10 +3140,13 @@ class AnnotateTextRequest : public ::google::protobuf::Message /* @@protoc_inser
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AnnotateTextRequest> AnnotateTextRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AnnotateTextResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.cloud.language.v1beta1.AnnotateTextResponse) */ {
@@ -3210,52 +3164,49 @@ class AnnotateTextResponse : public ::google::protobuf::Message /* @@protoc_inse
   static const ::google::protobuf::Descriptor* descriptor();
   static const AnnotateTextResponse& default_instance();
 
-  static inline const AnnotateTextResponse* internal_default_instance() {
-    return reinterpret_cast<const AnnotateTextResponse*>(
-               &_AnnotateTextResponse_default_instance_);
-  }
+  static const AnnotateTextResponse* internal_default_instance();
 
   void Swap(AnnotateTextResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline AnnotateTextResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AnnotateTextResponse* New() const { return New(NULL); }
 
-  AnnotateTextResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AnnotateTextResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AnnotateTextResponse& from);
   void MergeFrom(const AnnotateTextResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AnnotateTextResponse* other);
+  void UnsafeMergeFrom(const AnnotateTextResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -3297,7 +3248,7 @@ class AnnotateTextResponse : public ::google::protobuf::Message /* @@protoc_inse
   const ::google::protobuf::RepeatedPtrField< ::google::cloud::language::v1beta1::Entity >&
       entities() const;
 
-  // .google.cloud.language.v1beta1.Sentiment document_sentiment = 4;
+  // optional .google.cloud.language.v1beta1.Sentiment document_sentiment = 4;
   bool has_document_sentiment() const;
   void clear_document_sentiment();
   static const int kDocumentSentimentFieldNumber = 4;
@@ -3306,7 +3257,7 @@ class AnnotateTextResponse : public ::google::protobuf::Message /* @@protoc_inse
   ::google::cloud::language::v1beta1::Sentiment* release_document_sentiment();
   void set_allocated_document_sentiment(::google::cloud::language::v1beta1::Sentiment* document_sentiment);
 
-  // string language = 5;
+  // optional string language = 5;
   void clear_language();
   static const int kLanguageFieldNumber = 5;
   const ::std::string& language() const;
@@ -3329,10 +3280,13 @@ class AnnotateTextResponse : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2flanguage_2fv1beta1_2flanguage_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AnnotateTextResponse> AnnotateTextResponse_default_instance_;
+
 // ===================================================================
 
 
@@ -3341,7 +3295,7 @@ class AnnotateTextResponse : public ::google::protobuf::Message /* @@protoc_inse
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Document
 
-// .google.cloud.language.v1beta1.Document.Type type = 1;
+// optional .google.cloud.language.v1beta1.Document.Type type = 1;
 inline void Document::clear_type() {
   type_ = 0;
 }
@@ -3355,7 +3309,7 @@ inline void Document::set_type(::google::cloud::language::v1beta1::Document_Type
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Document.type)
 }
 
-// string content = 2;
+// optional string content = 2;
 inline bool Document::has_content() const {
   return source_case() == kContent;
 }
@@ -3371,7 +3325,7 @@ inline void Document::clear_content() {
 inline const ::std::string& Document::content() const {
   // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Document.content)
   if (has_content()) {
-    return source_.content_.GetNoArena();
+    return source_.content_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3436,7 +3390,7 @@ inline void Document::set_allocated_content(::std::string* content) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Document.content)
 }
 
-// string gcs_content_uri = 3;
+// optional string gcs_content_uri = 3;
 inline bool Document::has_gcs_content_uri() const {
   return source_case() == kGcsContentUri;
 }
@@ -3452,7 +3406,7 @@ inline void Document::clear_gcs_content_uri() {
 inline const ::std::string& Document::gcs_content_uri() const {
   // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Document.gcs_content_uri)
   if (has_gcs_content_uri()) {
-    return source_.gcs_content_uri_.GetNoArena();
+    return source_.gcs_content_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3517,13 +3471,13 @@ inline void Document::set_allocated_gcs_content_uri(::std::string* gcs_content_u
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Document.gcs_content_uri)
 }
 
-// string language = 4;
+// optional string language = 4;
 inline void Document::clear_language() {
   language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Document::language() const {
   // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Document.language)
-  return language_.GetNoArena();
+  return language_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Document::set_language(const ::std::string& value) {
   
@@ -3570,11 +3524,14 @@ inline void Document::clear_has_source() {
 inline Document::SourceCase Document::source_case() const {
   return Document::SourceCase(_oneof_case_[0]);
 }
+inline const Document* Document::internal_default_instance() {
+  return &Document_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Sentence
 
-// .google.cloud.language.v1beta1.TextSpan text = 1;
+// optional .google.cloud.language.v1beta1.TextSpan text = 1;
 inline bool Sentence::has_text() const {
   return this != internal_default_instance() && text_ != NULL;
 }
@@ -3613,7 +3570,7 @@ inline void Sentence::set_allocated_text(::google::cloud::language::v1beta1::Tex
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Sentence.text)
 }
 
-// .google.cloud.language.v1beta1.Sentiment sentiment = 2;
+// optional .google.cloud.language.v1beta1.Sentiment sentiment = 2;
 inline bool Sentence::has_sentiment() const {
   return this != internal_default_instance() && sentiment_ != NULL;
 }
@@ -3652,19 +3609,20 @@ inline void Sentence::set_allocated_sentiment(::google::cloud::language::v1beta1
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Sentence.sentiment)
 }
 
-// -------------------------------------------------------------------
-
+inline const Sentence* Sentence::internal_default_instance() {
+  return &Sentence_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Entity
 
-// string name = 1;
+// optional string name = 1;
 inline void Entity::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Entity::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Entity.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Entity::set_name(const ::std::string& value) {
   
@@ -3702,7 +3660,7 @@ inline void Entity::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Entity.name)
 }
 
-// .google.cloud.language.v1beta1.Entity.Type type = 2;
+// optional .google.cloud.language.v1beta1.Entity.Type type = 2;
 inline void Entity::clear_type() {
   type_ = 0;
 }
@@ -3734,7 +3692,7 @@ Entity::mutable_metadata() {
   return metadata_.MutableMap();
 }
 
-// float salience = 4;
+// optional float salience = 4;
 inline void Entity::clear_salience() {
   salience_ = 0;
 }
@@ -3778,11 +3736,14 @@ Entity::mentions() const {
   return mentions_;
 }
 
+inline const Entity* Entity::internal_default_instance() {
+  return &Entity_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Token
 
-// .google.cloud.language.v1beta1.TextSpan text = 1;
+// optional .google.cloud.language.v1beta1.TextSpan text = 1;
 inline bool Token::has_text() const {
   return this != internal_default_instance() && text_ != NULL;
 }
@@ -3821,7 +3782,7 @@ inline void Token::set_allocated_text(::google::cloud::language::v1beta1::TextSp
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Token.text)
 }
 
-// .google.cloud.language.v1beta1.PartOfSpeech part_of_speech = 2;
+// optional .google.cloud.language.v1beta1.PartOfSpeech part_of_speech = 2;
 inline bool Token::has_part_of_speech() const {
   return this != internal_default_instance() && part_of_speech_ != NULL;
 }
@@ -3860,7 +3821,7 @@ inline void Token::set_allocated_part_of_speech(::google::cloud::language::v1bet
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Token.part_of_speech)
 }
 
-// .google.cloud.language.v1beta1.DependencyEdge dependency_edge = 3;
+// optional .google.cloud.language.v1beta1.DependencyEdge dependency_edge = 3;
 inline bool Token::has_dependency_edge() const {
   return this != internal_default_instance() && dependency_edge_ != NULL;
 }
@@ -3899,13 +3860,13 @@ inline void Token::set_allocated_dependency_edge(::google::cloud::language::v1be
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Token.dependency_edge)
 }
 
-// string lemma = 4;
+// optional string lemma = 4;
 inline void Token::clear_lemma() {
   lemma_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Token::lemma() const {
   // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.Token.lemma)
-  return lemma_.GetNoArena();
+  return lemma_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Token::set_lemma(const ::std::string& value) {
   
@@ -3943,11 +3904,14 @@ inline void Token::set_allocated_lemma(::std::string* lemma) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.Token.lemma)
 }
 
+inline const Token* Token::internal_default_instance() {
+  return &Token_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Sentiment
 
-// float polarity = 1;
+// optional float polarity = 1;
 inline void Sentiment::clear_polarity() {
   polarity_ = 0;
 }
@@ -3961,7 +3925,7 @@ inline void Sentiment::set_polarity(float value) {
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Sentiment.polarity)
 }
 
-// float magnitude = 2;
+// optional float magnitude = 2;
 inline void Sentiment::clear_magnitude() {
   magnitude_ = 0;
 }
@@ -3975,7 +3939,7 @@ inline void Sentiment::set_magnitude(float value) {
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Sentiment.magnitude)
 }
 
-// float score = 3;
+// optional float score = 3;
 inline void Sentiment::clear_score() {
   score_ = 0;
 }
@@ -3989,11 +3953,14 @@ inline void Sentiment::set_score(float value) {
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.Sentiment.score)
 }
 
+inline const Sentiment* Sentiment::internal_default_instance() {
+  return &Sentiment_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // PartOfSpeech
 
-// .google.cloud.language.v1beta1.PartOfSpeech.Tag tag = 1;
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Tag tag = 1;
 inline void PartOfSpeech::clear_tag() {
   tag_ = 0;
 }
@@ -4007,7 +3974,7 @@ inline void PartOfSpeech::set_tag(::google::cloud::language::v1beta1::PartOfSpee
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.tag)
 }
 
-// .google.cloud.language.v1beta1.PartOfSpeech.Aspect aspect = 2;
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Aspect aspect = 2;
 inline void PartOfSpeech::clear_aspect() {
   aspect_ = 0;
 }
@@ -4021,7 +3988,7 @@ inline void PartOfSpeech::set_aspect(::google::cloud::language::v1beta1::PartOfS
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.aspect)
 }
 
-// .google.cloud.language.v1beta1.PartOfSpeech.Case case = 3;
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Case case = 3;
 inline void PartOfSpeech::clear_case_() {
   case__ = 0;
 }
@@ -4035,7 +4002,7 @@ inline void PartOfSpeech::set_case_(::google::cloud::language::v1beta1::PartOfSp
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.case)
 }
 
-// .google.cloud.language.v1beta1.PartOfSpeech.Form form = 4;
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Form form = 4;
 inline void PartOfSpeech::clear_form() {
   form_ = 0;
 }
@@ -4049,7 +4016,7 @@ inline void PartOfSpeech::set_form(::google::cloud::language::v1beta1::PartOfSpe
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.form)
 }
 
-// .google.cloud.language.v1beta1.PartOfSpeech.Gender gender = 5;
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Gender gender = 5;
 inline void PartOfSpeech::clear_gender() {
   gender_ = 0;
 }
@@ -4063,7 +4030,7 @@ inline void PartOfSpeech::set_gender(::google::cloud::language::v1beta1::PartOfS
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.gender)
 }
 
-// .google.cloud.language.v1beta1.PartOfSpeech.Mood mood = 6;
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Mood mood = 6;
 inline void PartOfSpeech::clear_mood() {
   mood_ = 0;
 }
@@ -4077,7 +4044,7 @@ inline void PartOfSpeech::set_mood(::google::cloud::language::v1beta1::PartOfSpe
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.mood)
 }
 
-// .google.cloud.language.v1beta1.PartOfSpeech.Number number = 7;
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Number number = 7;
 inline void PartOfSpeech::clear_number() {
   number_ = 0;
 }
@@ -4091,7 +4058,7 @@ inline void PartOfSpeech::set_number(::google::cloud::language::v1beta1::PartOfS
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.number)
 }
 
-// .google.cloud.language.v1beta1.PartOfSpeech.Person person = 8;
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Person person = 8;
 inline void PartOfSpeech::clear_person() {
   person_ = 0;
 }
@@ -4105,7 +4072,7 @@ inline void PartOfSpeech::set_person(::google::cloud::language::v1beta1::PartOfS
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.person)
 }
 
-// .google.cloud.language.v1beta1.PartOfSpeech.Proper proper = 9;
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Proper proper = 9;
 inline void PartOfSpeech::clear_proper() {
   proper_ = 0;
 }
@@ -4119,7 +4086,7 @@ inline void PartOfSpeech::set_proper(::google::cloud::language::v1beta1::PartOfS
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.proper)
 }
 
-// .google.cloud.language.v1beta1.PartOfSpeech.Reciprocity reciprocity = 10;
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Reciprocity reciprocity = 10;
 inline void PartOfSpeech::clear_reciprocity() {
   reciprocity_ = 0;
 }
@@ -4133,7 +4100,7 @@ inline void PartOfSpeech::set_reciprocity(::google::cloud::language::v1beta1::Pa
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.reciprocity)
 }
 
-// .google.cloud.language.v1beta1.PartOfSpeech.Tense tense = 11;
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Tense tense = 11;
 inline void PartOfSpeech::clear_tense() {
   tense_ = 0;
 }
@@ -4147,7 +4114,7 @@ inline void PartOfSpeech::set_tense(::google::cloud::language::v1beta1::PartOfSp
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.tense)
 }
 
-// .google.cloud.language.v1beta1.PartOfSpeech.Voice voice = 12;
+// optional .google.cloud.language.v1beta1.PartOfSpeech.Voice voice = 12;
 inline void PartOfSpeech::clear_voice() {
   voice_ = 0;
 }
@@ -4161,11 +4128,14 @@ inline void PartOfSpeech::set_voice(::google::cloud::language::v1beta1::PartOfSp
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.PartOfSpeech.voice)
 }
 
+inline const PartOfSpeech* PartOfSpeech::internal_default_instance() {
+  return &PartOfSpeech_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // DependencyEdge
 
-// int32 head_token_index = 1;
+// optional int32 head_token_index = 1;
 inline void DependencyEdge::clear_head_token_index() {
   head_token_index_ = 0;
 }
@@ -4179,7 +4149,7 @@ inline void DependencyEdge::set_head_token_index(::google::protobuf::int32 value
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.DependencyEdge.head_token_index)
 }
 
-// .google.cloud.language.v1beta1.DependencyEdge.Label label = 2;
+// optional .google.cloud.language.v1beta1.DependencyEdge.Label label = 2;
 inline void DependencyEdge::clear_label() {
   label_ = 0;
 }
@@ -4193,11 +4163,14 @@ inline void DependencyEdge::set_label(::google::cloud::language::v1beta1::Depend
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.DependencyEdge.label)
 }
 
+inline const DependencyEdge* DependencyEdge::internal_default_instance() {
+  return &DependencyEdge_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // EntityMention
 
-// .google.cloud.language.v1beta1.TextSpan text = 1;
+// optional .google.cloud.language.v1beta1.TextSpan text = 1;
 inline bool EntityMention::has_text() const {
   return this != internal_default_instance() && text_ != NULL;
 }
@@ -4236,7 +4209,7 @@ inline void EntityMention::set_allocated_text(::google::cloud::language::v1beta1
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.EntityMention.text)
 }
 
-// .google.cloud.language.v1beta1.EntityMention.Type type = 2;
+// optional .google.cloud.language.v1beta1.EntityMention.Type type = 2;
 inline void EntityMention::clear_type() {
   type_ = 0;
 }
@@ -4250,17 +4223,20 @@ inline void EntityMention::set_type(::google::cloud::language::v1beta1::EntityMe
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.EntityMention.type)
 }
 
+inline const EntityMention* EntityMention::internal_default_instance() {
+  return &EntityMention_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // TextSpan
 
-// string content = 1;
+// optional string content = 1;
 inline void TextSpan::clear_content() {
   content_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& TextSpan::content() const {
   // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.TextSpan.content)
-  return content_.GetNoArena();
+  return content_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void TextSpan::set_content(const ::std::string& value) {
   
@@ -4298,7 +4274,7 @@ inline void TextSpan::set_allocated_content(::std::string* content) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.TextSpan.content)
 }
 
-// int32 begin_offset = 2;
+// optional int32 begin_offset = 2;
 inline void TextSpan::clear_begin_offset() {
   begin_offset_ = 0;
 }
@@ -4312,11 +4288,14 @@ inline void TextSpan::set_begin_offset(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.TextSpan.begin_offset)
 }
 
+inline const TextSpan* TextSpan::internal_default_instance() {
+  return &TextSpan_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AnalyzeSentimentRequest
 
-// .google.cloud.language.v1beta1.Document document = 1;
+// optional .google.cloud.language.v1beta1.Document document = 1;
 inline bool AnalyzeSentimentRequest::has_document() const {
   return this != internal_default_instance() && document_ != NULL;
 }
@@ -4355,7 +4334,7 @@ inline void AnalyzeSentimentRequest::set_allocated_document(::google::cloud::lan
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnalyzeSentimentRequest.document)
 }
 
-// .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+// optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
 inline void AnalyzeSentimentRequest::clear_encoding_type() {
   encoding_type_ = 0;
 }
@@ -4369,11 +4348,14 @@ inline void AnalyzeSentimentRequest::set_encoding_type(::google::cloud::language
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.AnalyzeSentimentRequest.encoding_type)
 }
 
+inline const AnalyzeSentimentRequest* AnalyzeSentimentRequest::internal_default_instance() {
+  return &AnalyzeSentimentRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AnalyzeSentimentResponse
 
-// .google.cloud.language.v1beta1.Sentiment document_sentiment = 1;
+// optional .google.cloud.language.v1beta1.Sentiment document_sentiment = 1;
 inline bool AnalyzeSentimentResponse::has_document_sentiment() const {
   return this != internal_default_instance() && document_sentiment_ != NULL;
 }
@@ -4412,13 +4394,13 @@ inline void AnalyzeSentimentResponse::set_allocated_document_sentiment(::google:
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnalyzeSentimentResponse.document_sentiment)
 }
 
-// string language = 2;
+// optional string language = 2;
 inline void AnalyzeSentimentResponse::clear_language() {
   language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AnalyzeSentimentResponse::language() const {
   // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.AnalyzeSentimentResponse.language)
-  return language_.GetNoArena();
+  return language_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AnalyzeSentimentResponse::set_language(const ::std::string& value) {
   
@@ -4486,11 +4468,14 @@ AnalyzeSentimentResponse::sentences() const {
   return sentences_;
 }
 
+inline const AnalyzeSentimentResponse* AnalyzeSentimentResponse::internal_default_instance() {
+  return &AnalyzeSentimentResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AnalyzeEntitiesRequest
 
-// .google.cloud.language.v1beta1.Document document = 1;
+// optional .google.cloud.language.v1beta1.Document document = 1;
 inline bool AnalyzeEntitiesRequest::has_document() const {
   return this != internal_default_instance() && document_ != NULL;
 }
@@ -4529,7 +4514,7 @@ inline void AnalyzeEntitiesRequest::set_allocated_document(::google::cloud::lang
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnalyzeEntitiesRequest.document)
 }
 
-// .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+// optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
 inline void AnalyzeEntitiesRequest::clear_encoding_type() {
   encoding_type_ = 0;
 }
@@ -4543,6 +4528,9 @@ inline void AnalyzeEntitiesRequest::set_encoding_type(::google::cloud::language:
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.AnalyzeEntitiesRequest.encoding_type)
 }
 
+inline const AnalyzeEntitiesRequest* AnalyzeEntitiesRequest::internal_default_instance() {
+  return &AnalyzeEntitiesRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AnalyzeEntitiesResponse
@@ -4577,13 +4565,13 @@ AnalyzeEntitiesResponse::entities() const {
   return entities_;
 }
 
-// string language = 2;
+// optional string language = 2;
 inline void AnalyzeEntitiesResponse::clear_language() {
   language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AnalyzeEntitiesResponse::language() const {
   // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.AnalyzeEntitiesResponse.language)
-  return language_.GetNoArena();
+  return language_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AnalyzeEntitiesResponse::set_language(const ::std::string& value) {
   
@@ -4621,11 +4609,14 @@ inline void AnalyzeEntitiesResponse::set_allocated_language(::std::string* langu
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnalyzeEntitiesResponse.language)
 }
 
+inline const AnalyzeEntitiesResponse* AnalyzeEntitiesResponse::internal_default_instance() {
+  return &AnalyzeEntitiesResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AnalyzeSyntaxRequest
 
-// .google.cloud.language.v1beta1.Document document = 1;
+// optional .google.cloud.language.v1beta1.Document document = 1;
 inline bool AnalyzeSyntaxRequest::has_document() const {
   return this != internal_default_instance() && document_ != NULL;
 }
@@ -4664,7 +4655,7 @@ inline void AnalyzeSyntaxRequest::set_allocated_document(::google::cloud::langua
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnalyzeSyntaxRequest.document)
 }
 
-// .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
+// optional .google.cloud.language.v1beta1.EncodingType encoding_type = 2;
 inline void AnalyzeSyntaxRequest::clear_encoding_type() {
   encoding_type_ = 0;
 }
@@ -4678,6 +4669,9 @@ inline void AnalyzeSyntaxRequest::set_encoding_type(::google::cloud::language::v
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.AnalyzeSyntaxRequest.encoding_type)
 }
 
+inline const AnalyzeSyntaxRequest* AnalyzeSyntaxRequest::internal_default_instance() {
+  return &AnalyzeSyntaxRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AnalyzeSyntaxResponse
@@ -4742,13 +4736,13 @@ AnalyzeSyntaxResponse::tokens() const {
   return tokens_;
 }
 
-// string language = 3;
+// optional string language = 3;
 inline void AnalyzeSyntaxResponse::clear_language() {
   language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AnalyzeSyntaxResponse::language() const {
   // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.AnalyzeSyntaxResponse.language)
-  return language_.GetNoArena();
+  return language_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AnalyzeSyntaxResponse::set_language(const ::std::string& value) {
   
@@ -4786,11 +4780,14 @@ inline void AnalyzeSyntaxResponse::set_allocated_language(::std::string* languag
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnalyzeSyntaxResponse.language)
 }
 
+inline const AnalyzeSyntaxResponse* AnalyzeSyntaxResponse::internal_default_instance() {
+  return &AnalyzeSyntaxResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AnnotateTextRequest_Features
 
-// bool extract_syntax = 1;
+// optional bool extract_syntax = 1;
 inline void AnnotateTextRequest_Features::clear_extract_syntax() {
   extract_syntax_ = false;
 }
@@ -4804,7 +4801,7 @@ inline void AnnotateTextRequest_Features::set_extract_syntax(bool value) {
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.AnnotateTextRequest.Features.extract_syntax)
 }
 
-// bool extract_entities = 2;
+// optional bool extract_entities = 2;
 inline void AnnotateTextRequest_Features::clear_extract_entities() {
   extract_entities_ = false;
 }
@@ -4818,7 +4815,7 @@ inline void AnnotateTextRequest_Features::set_extract_entities(bool value) {
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.AnnotateTextRequest.Features.extract_entities)
 }
 
-// bool extract_document_sentiment = 3;
+// optional bool extract_document_sentiment = 3;
 inline void AnnotateTextRequest_Features::clear_extract_document_sentiment() {
   extract_document_sentiment_ = false;
 }
@@ -4832,11 +4829,14 @@ inline void AnnotateTextRequest_Features::set_extract_document_sentiment(bool va
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.AnnotateTextRequest.Features.extract_document_sentiment)
 }
 
+inline const AnnotateTextRequest_Features* AnnotateTextRequest_Features::internal_default_instance() {
+  return &AnnotateTextRequest_Features_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AnnotateTextRequest
 
-// .google.cloud.language.v1beta1.Document document = 1;
+// optional .google.cloud.language.v1beta1.Document document = 1;
 inline bool AnnotateTextRequest::has_document() const {
   return this != internal_default_instance() && document_ != NULL;
 }
@@ -4875,7 +4875,7 @@ inline void AnnotateTextRequest::set_allocated_document(::google::cloud::languag
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnnotateTextRequest.document)
 }
 
-// .google.cloud.language.v1beta1.AnnotateTextRequest.Features features = 2;
+// optional .google.cloud.language.v1beta1.AnnotateTextRequest.Features features = 2;
 inline bool AnnotateTextRequest::has_features() const {
   return this != internal_default_instance() && features_ != NULL;
 }
@@ -4914,7 +4914,7 @@ inline void AnnotateTextRequest::set_allocated_features(::google::cloud::languag
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnnotateTextRequest.features)
 }
 
-// .google.cloud.language.v1beta1.EncodingType encoding_type = 3;
+// optional .google.cloud.language.v1beta1.EncodingType encoding_type = 3;
 inline void AnnotateTextRequest::clear_encoding_type() {
   encoding_type_ = 0;
 }
@@ -4928,6 +4928,9 @@ inline void AnnotateTextRequest::set_encoding_type(::google::cloud::language::v1
   // @@protoc_insertion_point(field_set:google.cloud.language.v1beta1.AnnotateTextRequest.encoding_type)
 }
 
+inline const AnnotateTextRequest* AnnotateTextRequest::internal_default_instance() {
+  return &AnnotateTextRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AnnotateTextResponse
@@ -5022,7 +5025,7 @@ AnnotateTextResponse::entities() const {
   return entities_;
 }
 
-// .google.cloud.language.v1beta1.Sentiment document_sentiment = 4;
+// optional .google.cloud.language.v1beta1.Sentiment document_sentiment = 4;
 inline bool AnnotateTextResponse::has_document_sentiment() const {
   return this != internal_default_instance() && document_sentiment_ != NULL;
 }
@@ -5061,13 +5064,13 @@ inline void AnnotateTextResponse::set_allocated_document_sentiment(::google::clo
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnnotateTextResponse.document_sentiment)
 }
 
-// string language = 5;
+// optional string language = 5;
 inline void AnnotateTextResponse::clear_language() {
   language_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& AnnotateTextResponse::language() const {
   // @@protoc_insertion_point(field_get:google.cloud.language.v1beta1.AnnotateTextResponse.language)
-  return language_.GetNoArena();
+  return language_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AnnotateTextResponse::set_language(const ::std::string& value) {
   
@@ -5105,9 +5108,10 @@ inline void AnnotateTextResponse::set_allocated_language(::std::string* language
   // @@protoc_insertion_point(field_set_allocated:google.cloud.language.v1beta1.AnnotateTextResponse.language)
 }
 
+inline const AnnotateTextResponse* AnnotateTextResponse::internal_default_instance() {
+  return &AnnotateTextResponse_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -5144,7 +5148,6 @@ inline void AnnotateTextResponse::set_allocated_language(::std::string* language
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1beta1
 }  // namespace language

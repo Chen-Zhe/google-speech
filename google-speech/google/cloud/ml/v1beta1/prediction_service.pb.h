@@ -24,28 +24,12 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include "google/api/httpbody.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-class HttpBody;
-class HttpBodyDefaultTypeInternal;
-extern HttpBodyDefaultTypeInternal _HttpBody_default_instance_;
-}  // namespace api
-namespace cloud {
-namespace ml {
-namespace v1beta1 {
-class PredictRequest;
-class PredictRequestDefaultTypeInternal;
-extern PredictRequestDefaultTypeInternal _PredictRequest_default_instance_;
-}  // namespace v1beta1
-}  // namespace ml
-}  // namespace cloud
-}  // namespace google
 
 namespace google {
 namespace cloud {
@@ -55,6 +39,10 @@ namespace v1beta1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto();
 void protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto();
+void protobuf_AssignDesc_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto();
+void protobuf_ShutdownFile_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto();
+
+class PredictRequest;
 
 // ===================================================================
 
@@ -73,58 +61,55 @@ class PredictRequest : public ::google::protobuf::Message /* @@protoc_insertion_
   static const ::google::protobuf::Descriptor* descriptor();
   static const PredictRequest& default_instance();
 
-  static inline const PredictRequest* internal_default_instance() {
-    return reinterpret_cast<const PredictRequest*>(
-               &_PredictRequest_default_instance_);
-  }
+  static const PredictRequest* internal_default_instance();
 
   void Swap(PredictRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline PredictRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline PredictRequest* New() const { return New(NULL); }
 
-  PredictRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PredictRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const PredictRequest& from);
   void MergeFrom(const PredictRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(PredictRequest* other);
+  void UnsafeMergeFrom(const PredictRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -135,7 +120,7 @@ class PredictRequest : public ::google::protobuf::Message /* @@protoc_insertion_
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // .google.api.HttpBody http_body = 2;
+  // optional .google.api.HttpBody http_body = 2;
   bool has_http_body() const;
   void clear_http_body();
   static const int kHttpBodyFieldNumber = 2;
@@ -153,10 +138,13 @@ class PredictRequest : public ::google::protobuf::Message /* @@protoc_insertion_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcloud_2fml_2fv1beta1_2fprediction_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<PredictRequest> PredictRequest_default_instance_;
+
 // ===================================================================
 
 
@@ -165,13 +153,13 @@ class PredictRequest : public ::google::protobuf::Message /* @@protoc_insertion_
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // PredictRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void PredictRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& PredictRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.PredictRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PredictRequest::set_name(const ::std::string& value) {
   
@@ -209,7 +197,7 @@ inline void PredictRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.PredictRequest.name)
 }
 
-// .google.api.HttpBody http_body = 2;
+// optional .google.api.HttpBody http_body = 2;
 inline bool PredictRequest::has_http_body() const {
   return this != internal_default_instance() && http_body_ != NULL;
 }
@@ -248,10 +236,12 @@ inline void PredictRequest::set_allocated_http_body(::google::api::HttpBody* htt
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.PredictRequest.http_body)
 }
 
+inline const PredictRequest* PredictRequest::internal_default_instance() {
+  return &PredictRequest_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1beta1
 }  // namespace ml

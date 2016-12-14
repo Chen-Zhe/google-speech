@@ -24,8 +24,8 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/map.h>
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/unknown_field_set.h>
@@ -33,94 +33,6 @@
 #include <google/protobuf/empty.pb.h>
 #include <google/protobuf/timestamp.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace protobuf {
-class Empty;
-class EmptyDefaultTypeInternal;
-extern EmptyDefaultTypeInternal _Empty_default_instance_;
-class Timestamp;
-class TimestampDefaultTypeInternal;
-extern TimestampDefaultTypeInternal _Timestamp_default_instance_;
-}  // namespace protobuf
-namespace pubsub {
-namespace v1 {
-class AcknowledgeRequest;
-class AcknowledgeRequestDefaultTypeInternal;
-extern AcknowledgeRequestDefaultTypeInternal _AcknowledgeRequest_default_instance_;
-class DeleteSubscriptionRequest;
-class DeleteSubscriptionRequestDefaultTypeInternal;
-extern DeleteSubscriptionRequestDefaultTypeInternal _DeleteSubscriptionRequest_default_instance_;
-class DeleteTopicRequest;
-class DeleteTopicRequestDefaultTypeInternal;
-extern DeleteTopicRequestDefaultTypeInternal _DeleteTopicRequest_default_instance_;
-class GetSubscriptionRequest;
-class GetSubscriptionRequestDefaultTypeInternal;
-extern GetSubscriptionRequestDefaultTypeInternal _GetSubscriptionRequest_default_instance_;
-class GetTopicRequest;
-class GetTopicRequestDefaultTypeInternal;
-extern GetTopicRequestDefaultTypeInternal _GetTopicRequest_default_instance_;
-class ListSubscriptionsRequest;
-class ListSubscriptionsRequestDefaultTypeInternal;
-extern ListSubscriptionsRequestDefaultTypeInternal _ListSubscriptionsRequest_default_instance_;
-class ListSubscriptionsResponse;
-class ListSubscriptionsResponseDefaultTypeInternal;
-extern ListSubscriptionsResponseDefaultTypeInternal _ListSubscriptionsResponse_default_instance_;
-class ListTopicSubscriptionsRequest;
-class ListTopicSubscriptionsRequestDefaultTypeInternal;
-extern ListTopicSubscriptionsRequestDefaultTypeInternal _ListTopicSubscriptionsRequest_default_instance_;
-class ListTopicSubscriptionsResponse;
-class ListTopicSubscriptionsResponseDefaultTypeInternal;
-extern ListTopicSubscriptionsResponseDefaultTypeInternal _ListTopicSubscriptionsResponse_default_instance_;
-class ListTopicsRequest;
-class ListTopicsRequestDefaultTypeInternal;
-extern ListTopicsRequestDefaultTypeInternal _ListTopicsRequest_default_instance_;
-class ListTopicsResponse;
-class ListTopicsResponseDefaultTypeInternal;
-extern ListTopicsResponseDefaultTypeInternal _ListTopicsResponse_default_instance_;
-class ModifyAckDeadlineRequest;
-class ModifyAckDeadlineRequestDefaultTypeInternal;
-extern ModifyAckDeadlineRequestDefaultTypeInternal _ModifyAckDeadlineRequest_default_instance_;
-class ModifyPushConfigRequest;
-class ModifyPushConfigRequestDefaultTypeInternal;
-extern ModifyPushConfigRequestDefaultTypeInternal _ModifyPushConfigRequest_default_instance_;
-class PublishRequest;
-class PublishRequestDefaultTypeInternal;
-extern PublishRequestDefaultTypeInternal _PublishRequest_default_instance_;
-class PublishResponse;
-class PublishResponseDefaultTypeInternal;
-extern PublishResponseDefaultTypeInternal _PublishResponse_default_instance_;
-class PubsubMessage;
-class PubsubMessageDefaultTypeInternal;
-extern PubsubMessageDefaultTypeInternal _PubsubMessage_default_instance_;
-class PullRequest;
-class PullRequestDefaultTypeInternal;
-extern PullRequestDefaultTypeInternal _PullRequest_default_instance_;
-class PullResponse;
-class PullResponseDefaultTypeInternal;
-extern PullResponseDefaultTypeInternal _PullResponse_default_instance_;
-class PushConfig;
-class PushConfigDefaultTypeInternal;
-extern PushConfigDefaultTypeInternal _PushConfig_default_instance_;
-class ReceivedMessage;
-class ReceivedMessageDefaultTypeInternal;
-extern ReceivedMessageDefaultTypeInternal _ReceivedMessage_default_instance_;
-class StreamingPullRequest;
-class StreamingPullRequestDefaultTypeInternal;
-extern StreamingPullRequestDefaultTypeInternal _StreamingPullRequest_default_instance_;
-class StreamingPullResponse;
-class StreamingPullResponseDefaultTypeInternal;
-extern StreamingPullResponseDefaultTypeInternal _StreamingPullResponse_default_instance_;
-class Subscription;
-class SubscriptionDefaultTypeInternal;
-extern SubscriptionDefaultTypeInternal _Subscription_default_instance_;
-class Topic;
-class TopicDefaultTypeInternal;
-extern TopicDefaultTypeInternal _Topic_default_instance_;
-}  // namespace v1
-}  // namespace pubsub
-}  // namespace google
 
 namespace google {
 namespace pubsub {
@@ -129,6 +41,33 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
 void protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto();
+void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
+void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
+
+class AcknowledgeRequest;
+class DeleteSubscriptionRequest;
+class DeleteTopicRequest;
+class GetSubscriptionRequest;
+class GetTopicRequest;
+class ListSubscriptionsRequest;
+class ListSubscriptionsResponse;
+class ListTopicSubscriptionsRequest;
+class ListTopicSubscriptionsResponse;
+class ListTopicsRequest;
+class ListTopicsResponse;
+class ModifyAckDeadlineRequest;
+class ModifyPushConfigRequest;
+class PublishRequest;
+class PublishResponse;
+class PubsubMessage;
+class PullRequest;
+class PullResponse;
+class PushConfig;
+class ReceivedMessage;
+class StreamingPullRequest;
+class StreamingPullResponse;
+class Subscription;
+class Topic;
 
 // ===================================================================
 
@@ -144,52 +83,47 @@ class Topic : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const Topic& default_instance();
 
-  static inline const Topic* internal_default_instance() {
-    return reinterpret_cast<const Topic*>(
-               &_Topic_default_instance_);
-  }
+  static const Topic* internal_default_instance();
 
   void UnsafeArenaSwap(Topic* other);
   void Swap(Topic* other);
 
   // implements Message ----------------------------------------------
 
-  inline Topic* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Topic* New() const { return New(NULL); }
 
-  Topic* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Topic* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Topic& from);
   void MergeFrom(const Topic& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Topic* other);
+  void UnsafeMergeFrom(const Topic& from);
   protected:
   explicit Topic(::google::protobuf::Arena* arena);
   private:
@@ -204,13 +138,13 @@ class Topic : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -235,12 +169,12 @@ class Topic : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
-// -------------------------------------------------------------------
-
+extern ::google::protobuf::internal::ExplicitlyConstructed<Topic> Topic_default_instance_;
 
 // -------------------------------------------------------------------
 
@@ -256,52 +190,47 @@ class PubsubMessage : public ::google::protobuf::Message /* @@protoc_insertion_p
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const PubsubMessage& default_instance();
 
-  static inline const PubsubMessage* internal_default_instance() {
-    return reinterpret_cast<const PubsubMessage*>(
-               &_PubsubMessage_default_instance_);
-  }
+  static const PubsubMessage* internal_default_instance();
 
   void UnsafeArenaSwap(PubsubMessage* other);
   void Swap(PubsubMessage* other);
 
   // implements Message ----------------------------------------------
 
-  inline PubsubMessage* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline PubsubMessage* New() const { return New(NULL); }
 
-  PubsubMessage* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PubsubMessage* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const PubsubMessage& from);
   void MergeFrom(const PubsubMessage& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(PubsubMessage* other);
+  void UnsafeMergeFrom(const PubsubMessage& from);
   protected:
   explicit PubsubMessage(::google::protobuf::Arena* arena);
   private:
@@ -316,14 +245,14 @@ class PubsubMessage : public ::google::protobuf::Message /* @@protoc_insertion_p
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
 
   // accessors -------------------------------------------------------
 
-  // bytes data = 1;
+  // optional bytes data = 1;
   void clear_data();
   static const int kDataFieldNumber = 1;
   const ::std::string& data() const;
@@ -346,7 +275,7 @@ class PubsubMessage : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::google::protobuf::Map< ::std::string, ::std::string >*
       mutable_attributes();
 
-  // string message_id = 3;
+  // optional string message_id = 3;
   void clear_message_id();
   static const int kMessageIdFieldNumber = 3;
   const ::std::string& message_id() const;
@@ -360,7 +289,7 @@ class PubsubMessage : public ::google::protobuf::Message /* @@protoc_insertion_p
   void unsafe_arena_set_allocated_message_id(
       ::std::string* message_id);
 
-  // .google.protobuf.Timestamp publish_time = 4;
+  // optional .google.protobuf.Timestamp publish_time = 4;
   bool has_publish_time() const;
   void clear_publish_time();
   static const int kPublishTimeFieldNumber = 4;
@@ -402,10 +331,13 @@ class PubsubMessage : public ::google::protobuf::Message /* @@protoc_insertion_p
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<PubsubMessage> PubsubMessage_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetTopicRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.GetTopicRequest) */ {
@@ -420,52 +352,47 @@ class GetTopicRequest : public ::google::protobuf::Message /* @@protoc_insertion
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetTopicRequest& default_instance();
 
-  static inline const GetTopicRequest* internal_default_instance() {
-    return reinterpret_cast<const GetTopicRequest*>(
-               &_GetTopicRequest_default_instance_);
-  }
+  static const GetTopicRequest* internal_default_instance();
 
   void UnsafeArenaSwap(GetTopicRequest* other);
   void Swap(GetTopicRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetTopicRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetTopicRequest* New() const { return New(NULL); }
 
-  GetTopicRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetTopicRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetTopicRequest& from);
   void MergeFrom(const GetTopicRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetTopicRequest* other);
+  void UnsafeMergeFrom(const GetTopicRequest& from);
   protected:
   explicit GetTopicRequest(::google::protobuf::Arena* arena);
   private:
@@ -480,13 +407,13 @@ class GetTopicRequest : public ::google::protobuf::Message /* @@protoc_insertion
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string topic = 1;
+  // optional string topic = 1;
   void clear_topic();
   static const int kTopicFieldNumber = 1;
   const ::std::string& topic() const;
@@ -511,10 +438,13 @@ class GetTopicRequest : public ::google::protobuf::Message /* @@protoc_insertion
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetTopicRequest> GetTopicRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class PublishRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.PublishRequest) */ {
@@ -529,52 +459,47 @@ class PublishRequest : public ::google::protobuf::Message /* @@protoc_insertion_
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const PublishRequest& default_instance();
 
-  static inline const PublishRequest* internal_default_instance() {
-    return reinterpret_cast<const PublishRequest*>(
-               &_PublishRequest_default_instance_);
-  }
+  static const PublishRequest* internal_default_instance();
 
   void UnsafeArenaSwap(PublishRequest* other);
   void Swap(PublishRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline PublishRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline PublishRequest* New() const { return New(NULL); }
 
-  PublishRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PublishRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const PublishRequest& from);
   void MergeFrom(const PublishRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(PublishRequest* other);
+  void UnsafeMergeFrom(const PublishRequest& from);
   protected:
   explicit PublishRequest(::google::protobuf::Arena* arena);
   private:
@@ -589,13 +514,13 @@ class PublishRequest : public ::google::protobuf::Message /* @@protoc_insertion_
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string topic = 1;
+  // optional string topic = 1;
   void clear_topic();
   static const int kTopicFieldNumber = 1;
   const ::std::string& topic() const;
@@ -633,10 +558,13 @@ class PublishRequest : public ::google::protobuf::Message /* @@protoc_insertion_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<PublishRequest> PublishRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class PublishResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.PublishResponse) */ {
@@ -651,52 +579,47 @@ class PublishResponse : public ::google::protobuf::Message /* @@protoc_insertion
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const PublishResponse& default_instance();
 
-  static inline const PublishResponse* internal_default_instance() {
-    return reinterpret_cast<const PublishResponse*>(
-               &_PublishResponse_default_instance_);
-  }
+  static const PublishResponse* internal_default_instance();
 
   void UnsafeArenaSwap(PublishResponse* other);
   void Swap(PublishResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline PublishResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline PublishResponse* New() const { return New(NULL); }
 
-  PublishResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PublishResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const PublishResponse& from);
   void MergeFrom(const PublishResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(PublishResponse* other);
+  void UnsafeMergeFrom(const PublishResponse& from);
   protected:
   explicit PublishResponse(::google::protobuf::Arena* arena);
   private:
@@ -711,7 +634,7 @@ class PublishResponse : public ::google::protobuf::Message /* @@protoc_insertion
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -744,10 +667,13 @@ class PublishResponse : public ::google::protobuf::Message /* @@protoc_insertion
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<PublishResponse> PublishResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListTopicsRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.ListTopicsRequest) */ {
@@ -762,52 +688,47 @@ class ListTopicsRequest : public ::google::protobuf::Message /* @@protoc_inserti
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListTopicsRequest& default_instance();
 
-  static inline const ListTopicsRequest* internal_default_instance() {
-    return reinterpret_cast<const ListTopicsRequest*>(
-               &_ListTopicsRequest_default_instance_);
-  }
+  static const ListTopicsRequest* internal_default_instance();
 
   void UnsafeArenaSwap(ListTopicsRequest* other);
   void Swap(ListTopicsRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListTopicsRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListTopicsRequest* New() const { return New(NULL); }
 
-  ListTopicsRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListTopicsRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListTopicsRequest& from);
   void MergeFrom(const ListTopicsRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListTopicsRequest* other);
+  void UnsafeMergeFrom(const ListTopicsRequest& from);
   protected:
   explicit ListTopicsRequest(::google::protobuf::Arena* arena);
   private:
@@ -822,13 +743,13 @@ class ListTopicsRequest : public ::google::protobuf::Message /* @@protoc_inserti
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project = 1;
+  // optional string project = 1;
   void clear_project();
   static const int kProjectFieldNumber = 1;
   const ::std::string& project() const;
@@ -842,13 +763,13 @@ class ListTopicsRequest : public ::google::protobuf::Message /* @@protoc_inserti
   void unsafe_arena_set_allocated_project(
       ::std::string* project);
 
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 2;
   ::google::protobuf::int32 page_size() const;
   void set_page_size(::google::protobuf::int32 value);
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 3;
   const ::std::string& page_token() const;
@@ -875,10 +796,13 @@ class ListTopicsRequest : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListTopicsRequest> ListTopicsRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListTopicsResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.ListTopicsResponse) */ {
@@ -893,52 +817,47 @@ class ListTopicsResponse : public ::google::protobuf::Message /* @@protoc_insert
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListTopicsResponse& default_instance();
 
-  static inline const ListTopicsResponse* internal_default_instance() {
-    return reinterpret_cast<const ListTopicsResponse*>(
-               &_ListTopicsResponse_default_instance_);
-  }
+  static const ListTopicsResponse* internal_default_instance();
 
   void UnsafeArenaSwap(ListTopicsResponse* other);
   void Swap(ListTopicsResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListTopicsResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListTopicsResponse* New() const { return New(NULL); }
 
-  ListTopicsResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListTopicsResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListTopicsResponse& from);
   void MergeFrom(const ListTopicsResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListTopicsResponse* other);
+  void UnsafeMergeFrom(const ListTopicsResponse& from);
   protected:
   explicit ListTopicsResponse(::google::protobuf::Arena* arena);
   private:
@@ -953,7 +872,7 @@ class ListTopicsResponse : public ::google::protobuf::Message /* @@protoc_insert
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -971,7 +890,7 @@ class ListTopicsResponse : public ::google::protobuf::Message /* @@protoc_insert
   const ::google::protobuf::RepeatedPtrField< ::google::pubsub::v1::Topic >&
       topics() const;
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -997,10 +916,13 @@ class ListTopicsResponse : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListTopicsResponse> ListTopicsResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListTopicSubscriptionsRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.ListTopicSubscriptionsRequest) */ {
@@ -1015,52 +937,47 @@ class ListTopicSubscriptionsRequest : public ::google::protobuf::Message /* @@pr
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListTopicSubscriptionsRequest& default_instance();
 
-  static inline const ListTopicSubscriptionsRequest* internal_default_instance() {
-    return reinterpret_cast<const ListTopicSubscriptionsRequest*>(
-               &_ListTopicSubscriptionsRequest_default_instance_);
-  }
+  static const ListTopicSubscriptionsRequest* internal_default_instance();
 
   void UnsafeArenaSwap(ListTopicSubscriptionsRequest* other);
   void Swap(ListTopicSubscriptionsRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListTopicSubscriptionsRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListTopicSubscriptionsRequest* New() const { return New(NULL); }
 
-  ListTopicSubscriptionsRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListTopicSubscriptionsRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListTopicSubscriptionsRequest& from);
   void MergeFrom(const ListTopicSubscriptionsRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListTopicSubscriptionsRequest* other);
+  void UnsafeMergeFrom(const ListTopicSubscriptionsRequest& from);
   protected:
   explicit ListTopicSubscriptionsRequest(::google::protobuf::Arena* arena);
   private:
@@ -1075,13 +992,13 @@ class ListTopicSubscriptionsRequest : public ::google::protobuf::Message /* @@pr
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string topic = 1;
+  // optional string topic = 1;
   void clear_topic();
   static const int kTopicFieldNumber = 1;
   const ::std::string& topic() const;
@@ -1095,13 +1012,13 @@ class ListTopicSubscriptionsRequest : public ::google::protobuf::Message /* @@pr
   void unsafe_arena_set_allocated_topic(
       ::std::string* topic);
 
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 2;
   ::google::protobuf::int32 page_size() const;
   void set_page_size(::google::protobuf::int32 value);
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 3;
   const ::std::string& page_token() const;
@@ -1128,10 +1045,13 @@ class ListTopicSubscriptionsRequest : public ::google::protobuf::Message /* @@pr
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListTopicSubscriptionsRequest> ListTopicSubscriptionsRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListTopicSubscriptionsResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.ListTopicSubscriptionsResponse) */ {
@@ -1146,52 +1066,47 @@ class ListTopicSubscriptionsResponse : public ::google::protobuf::Message /* @@p
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListTopicSubscriptionsResponse& default_instance();
 
-  static inline const ListTopicSubscriptionsResponse* internal_default_instance() {
-    return reinterpret_cast<const ListTopicSubscriptionsResponse*>(
-               &_ListTopicSubscriptionsResponse_default_instance_);
-  }
+  static const ListTopicSubscriptionsResponse* internal_default_instance();
 
   void UnsafeArenaSwap(ListTopicSubscriptionsResponse* other);
   void Swap(ListTopicSubscriptionsResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListTopicSubscriptionsResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListTopicSubscriptionsResponse* New() const { return New(NULL); }
 
-  ListTopicSubscriptionsResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListTopicSubscriptionsResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListTopicSubscriptionsResponse& from);
   void MergeFrom(const ListTopicSubscriptionsResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListTopicSubscriptionsResponse* other);
+  void UnsafeMergeFrom(const ListTopicSubscriptionsResponse& from);
   protected:
   explicit ListTopicSubscriptionsResponse(::google::protobuf::Arena* arena);
   private:
@@ -1206,7 +1121,7 @@ class ListTopicSubscriptionsResponse : public ::google::protobuf::Message /* @@p
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1228,7 +1143,7 @@ class ListTopicSubscriptionsResponse : public ::google::protobuf::Message /* @@p
   const ::google::protobuf::RepeatedPtrField< ::std::string>& subscriptions() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_subscriptions();
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -1254,10 +1169,13 @@ class ListTopicSubscriptionsResponse : public ::google::protobuf::Message /* @@p
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListTopicSubscriptionsResponse> ListTopicSubscriptionsResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class DeleteTopicRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.DeleteTopicRequest) */ {
@@ -1272,52 +1190,47 @@ class DeleteTopicRequest : public ::google::protobuf::Message /* @@protoc_insert
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const DeleteTopicRequest& default_instance();
 
-  static inline const DeleteTopicRequest* internal_default_instance() {
-    return reinterpret_cast<const DeleteTopicRequest*>(
-               &_DeleteTopicRequest_default_instance_);
-  }
+  static const DeleteTopicRequest* internal_default_instance();
 
   void UnsafeArenaSwap(DeleteTopicRequest* other);
   void Swap(DeleteTopicRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline DeleteTopicRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline DeleteTopicRequest* New() const { return New(NULL); }
 
-  DeleteTopicRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DeleteTopicRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const DeleteTopicRequest& from);
   void MergeFrom(const DeleteTopicRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(DeleteTopicRequest* other);
+  void UnsafeMergeFrom(const DeleteTopicRequest& from);
   protected:
   explicit DeleteTopicRequest(::google::protobuf::Arena* arena);
   private:
@@ -1332,13 +1245,13 @@ class DeleteTopicRequest : public ::google::protobuf::Message /* @@protoc_insert
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string topic = 1;
+  // optional string topic = 1;
   void clear_topic();
   static const int kTopicFieldNumber = 1;
   const ::std::string& topic() const;
@@ -1363,10 +1276,13 @@ class DeleteTopicRequest : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<DeleteTopicRequest> DeleteTopicRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Subscription : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.Subscription) */ {
@@ -1381,52 +1297,47 @@ class Subscription : public ::google::protobuf::Message /* @@protoc_insertion_po
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const Subscription& default_instance();
 
-  static inline const Subscription* internal_default_instance() {
-    return reinterpret_cast<const Subscription*>(
-               &_Subscription_default_instance_);
-  }
+  static const Subscription* internal_default_instance();
 
   void UnsafeArenaSwap(Subscription* other);
   void Swap(Subscription* other);
 
   // implements Message ----------------------------------------------
 
-  inline Subscription* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Subscription* New() const { return New(NULL); }
 
-  Subscription* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Subscription* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Subscription& from);
   void MergeFrom(const Subscription& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Subscription* other);
+  void UnsafeMergeFrom(const Subscription& from);
   protected:
   explicit Subscription(::google::protobuf::Arena* arena);
   private:
@@ -1441,13 +1352,13 @@ class Subscription : public ::google::protobuf::Message /* @@protoc_insertion_po
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -1461,7 +1372,7 @@ class Subscription : public ::google::protobuf::Message /* @@protoc_insertion_po
   void unsafe_arena_set_allocated_name(
       ::std::string* name);
 
-  // string topic = 2;
+  // optional string topic = 2;
   void clear_topic();
   static const int kTopicFieldNumber = 2;
   const ::std::string& topic() const;
@@ -1475,7 +1386,7 @@ class Subscription : public ::google::protobuf::Message /* @@protoc_insertion_po
   void unsafe_arena_set_allocated_topic(
       ::std::string* topic);
 
-  // .google.pubsub.v1.PushConfig push_config = 4;
+  // optional .google.pubsub.v1.PushConfig push_config = 4;
   bool has_push_config() const;
   void clear_push_config();
   static const int kPushConfigFieldNumber = 4;
@@ -1493,7 +1404,7 @@ class Subscription : public ::google::protobuf::Message /* @@protoc_insertion_po
   void unsafe_arena_set_allocated_push_config(
       ::google::pubsub::v1::PushConfig* push_config);
 
-  // int32 ack_deadline_seconds = 5;
+  // optional int32 ack_deadline_seconds = 5;
   void clear_ack_deadline_seconds();
   static const int kAckDeadlineSecondsFieldNumber = 5;
   ::google::protobuf::int32 ack_deadline_seconds() const;
@@ -1513,12 +1424,12 @@ class Subscription : public ::google::protobuf::Message /* @@protoc_insertion_po
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
-// -------------------------------------------------------------------
-
+extern ::google::protobuf::internal::ExplicitlyConstructed<Subscription> Subscription_default_instance_;
 
 // -------------------------------------------------------------------
 
@@ -1534,52 +1445,47 @@ class PushConfig : public ::google::protobuf::Message /* @@protoc_insertion_poin
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const PushConfig& default_instance();
 
-  static inline const PushConfig* internal_default_instance() {
-    return reinterpret_cast<const PushConfig*>(
-               &_PushConfig_default_instance_);
-  }
+  static const PushConfig* internal_default_instance();
 
   void UnsafeArenaSwap(PushConfig* other);
   void Swap(PushConfig* other);
 
   // implements Message ----------------------------------------------
 
-  inline PushConfig* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline PushConfig* New() const { return New(NULL); }
 
-  PushConfig* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PushConfig* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const PushConfig& from);
   void MergeFrom(const PushConfig& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(PushConfig* other);
+  void UnsafeMergeFrom(const PushConfig& from);
   protected:
   explicit PushConfig(::google::protobuf::Arena* arena);
   private:
@@ -1594,14 +1500,14 @@ class PushConfig : public ::google::protobuf::Message /* @@protoc_insertion_poin
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
 
   // accessors -------------------------------------------------------
 
-  // string push_endpoint = 1;
+  // optional string push_endpoint = 1;
   void clear_push_endpoint();
   static const int kPushEndpointFieldNumber = 1;
   const ::std::string& push_endpoint() const;
@@ -1646,10 +1552,13 @@ class PushConfig : public ::google::protobuf::Message /* @@protoc_insertion_poin
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<PushConfig> PushConfig_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ReceivedMessage : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.ReceivedMessage) */ {
@@ -1664,52 +1573,47 @@ class ReceivedMessage : public ::google::protobuf::Message /* @@protoc_insertion
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ReceivedMessage& default_instance();
 
-  static inline const ReceivedMessage* internal_default_instance() {
-    return reinterpret_cast<const ReceivedMessage*>(
-               &_ReceivedMessage_default_instance_);
-  }
+  static const ReceivedMessage* internal_default_instance();
 
   void UnsafeArenaSwap(ReceivedMessage* other);
   void Swap(ReceivedMessage* other);
 
   // implements Message ----------------------------------------------
 
-  inline ReceivedMessage* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ReceivedMessage* New() const { return New(NULL); }
 
-  ReceivedMessage* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ReceivedMessage* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ReceivedMessage& from);
   void MergeFrom(const ReceivedMessage& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ReceivedMessage* other);
+  void UnsafeMergeFrom(const ReceivedMessage& from);
   protected:
   explicit ReceivedMessage(::google::protobuf::Arena* arena);
   private:
@@ -1724,13 +1628,13 @@ class ReceivedMessage : public ::google::protobuf::Message /* @@protoc_insertion
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string ack_id = 1;
+  // optional string ack_id = 1;
   void clear_ack_id();
   static const int kAckIdFieldNumber = 1;
   const ::std::string& ack_id() const;
@@ -1744,7 +1648,7 @@ class ReceivedMessage : public ::google::protobuf::Message /* @@protoc_insertion
   void unsafe_arena_set_allocated_ack_id(
       ::std::string* ack_id);
 
-  // .google.pubsub.v1.PubsubMessage message = 2;
+  // optional .google.pubsub.v1.PubsubMessage message = 2;
   bool has_message() const;
   void clear_message();
   static const int kMessageFieldNumber = 2;
@@ -1774,10 +1678,13 @@ class ReceivedMessage : public ::google::protobuf::Message /* @@protoc_insertion
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ReceivedMessage> ReceivedMessage_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetSubscriptionRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.GetSubscriptionRequest) */ {
@@ -1792,52 +1699,47 @@ class GetSubscriptionRequest : public ::google::protobuf::Message /* @@protoc_in
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetSubscriptionRequest& default_instance();
 
-  static inline const GetSubscriptionRequest* internal_default_instance() {
-    return reinterpret_cast<const GetSubscriptionRequest*>(
-               &_GetSubscriptionRequest_default_instance_);
-  }
+  static const GetSubscriptionRequest* internal_default_instance();
 
   void UnsafeArenaSwap(GetSubscriptionRequest* other);
   void Swap(GetSubscriptionRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetSubscriptionRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetSubscriptionRequest* New() const { return New(NULL); }
 
-  GetSubscriptionRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetSubscriptionRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetSubscriptionRequest& from);
   void MergeFrom(const GetSubscriptionRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetSubscriptionRequest* other);
+  void UnsafeMergeFrom(const GetSubscriptionRequest& from);
   protected:
   explicit GetSubscriptionRequest(::google::protobuf::Arena* arena);
   private:
@@ -1852,13 +1754,13 @@ class GetSubscriptionRequest : public ::google::protobuf::Message /* @@protoc_in
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string subscription = 1;
+  // optional string subscription = 1;
   void clear_subscription();
   static const int kSubscriptionFieldNumber = 1;
   const ::std::string& subscription() const;
@@ -1883,10 +1785,13 @@ class GetSubscriptionRequest : public ::google::protobuf::Message /* @@protoc_in
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetSubscriptionRequest> GetSubscriptionRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListSubscriptionsRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.ListSubscriptionsRequest) */ {
@@ -1901,52 +1806,47 @@ class ListSubscriptionsRequest : public ::google::protobuf::Message /* @@protoc_
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListSubscriptionsRequest& default_instance();
 
-  static inline const ListSubscriptionsRequest* internal_default_instance() {
-    return reinterpret_cast<const ListSubscriptionsRequest*>(
-               &_ListSubscriptionsRequest_default_instance_);
-  }
+  static const ListSubscriptionsRequest* internal_default_instance();
 
   void UnsafeArenaSwap(ListSubscriptionsRequest* other);
   void Swap(ListSubscriptionsRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListSubscriptionsRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListSubscriptionsRequest* New() const { return New(NULL); }
 
-  ListSubscriptionsRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListSubscriptionsRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListSubscriptionsRequest& from);
   void MergeFrom(const ListSubscriptionsRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListSubscriptionsRequest* other);
+  void UnsafeMergeFrom(const ListSubscriptionsRequest& from);
   protected:
   explicit ListSubscriptionsRequest(::google::protobuf::Arena* arena);
   private:
@@ -1961,13 +1861,13 @@ class ListSubscriptionsRequest : public ::google::protobuf::Message /* @@protoc_
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project = 1;
+  // optional string project = 1;
   void clear_project();
   static const int kProjectFieldNumber = 1;
   const ::std::string& project() const;
@@ -1981,13 +1881,13 @@ class ListSubscriptionsRequest : public ::google::protobuf::Message /* @@protoc_
   void unsafe_arena_set_allocated_project(
       ::std::string* project);
 
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 2;
   ::google::protobuf::int32 page_size() const;
   void set_page_size(::google::protobuf::int32 value);
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 3;
   const ::std::string& page_token() const;
@@ -2014,10 +1914,13 @@ class ListSubscriptionsRequest : public ::google::protobuf::Message /* @@protoc_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListSubscriptionsRequest> ListSubscriptionsRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListSubscriptionsResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.ListSubscriptionsResponse) */ {
@@ -2032,52 +1935,47 @@ class ListSubscriptionsResponse : public ::google::protobuf::Message /* @@protoc
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListSubscriptionsResponse& default_instance();
 
-  static inline const ListSubscriptionsResponse* internal_default_instance() {
-    return reinterpret_cast<const ListSubscriptionsResponse*>(
-               &_ListSubscriptionsResponse_default_instance_);
-  }
+  static const ListSubscriptionsResponse* internal_default_instance();
 
   void UnsafeArenaSwap(ListSubscriptionsResponse* other);
   void Swap(ListSubscriptionsResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListSubscriptionsResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListSubscriptionsResponse* New() const { return New(NULL); }
 
-  ListSubscriptionsResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListSubscriptionsResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListSubscriptionsResponse& from);
   void MergeFrom(const ListSubscriptionsResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListSubscriptionsResponse* other);
+  void UnsafeMergeFrom(const ListSubscriptionsResponse& from);
   protected:
   explicit ListSubscriptionsResponse(::google::protobuf::Arena* arena);
   private:
@@ -2092,7 +1990,7 @@ class ListSubscriptionsResponse : public ::google::protobuf::Message /* @@protoc
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -2110,7 +2008,7 @@ class ListSubscriptionsResponse : public ::google::protobuf::Message /* @@protoc
   const ::google::protobuf::RepeatedPtrField< ::google::pubsub::v1::Subscription >&
       subscriptions() const;
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -2136,10 +2034,13 @@ class ListSubscriptionsResponse : public ::google::protobuf::Message /* @@protoc
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListSubscriptionsResponse> ListSubscriptionsResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class DeleteSubscriptionRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.DeleteSubscriptionRequest) */ {
@@ -2154,52 +2055,47 @@ class DeleteSubscriptionRequest : public ::google::protobuf::Message /* @@protoc
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const DeleteSubscriptionRequest& default_instance();
 
-  static inline const DeleteSubscriptionRequest* internal_default_instance() {
-    return reinterpret_cast<const DeleteSubscriptionRequest*>(
-               &_DeleteSubscriptionRequest_default_instance_);
-  }
+  static const DeleteSubscriptionRequest* internal_default_instance();
 
   void UnsafeArenaSwap(DeleteSubscriptionRequest* other);
   void Swap(DeleteSubscriptionRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline DeleteSubscriptionRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline DeleteSubscriptionRequest* New() const { return New(NULL); }
 
-  DeleteSubscriptionRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DeleteSubscriptionRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const DeleteSubscriptionRequest& from);
   void MergeFrom(const DeleteSubscriptionRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(DeleteSubscriptionRequest* other);
+  void UnsafeMergeFrom(const DeleteSubscriptionRequest& from);
   protected:
   explicit DeleteSubscriptionRequest(::google::protobuf::Arena* arena);
   private:
@@ -2214,13 +2110,13 @@ class DeleteSubscriptionRequest : public ::google::protobuf::Message /* @@protoc
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string subscription = 1;
+  // optional string subscription = 1;
   void clear_subscription();
   static const int kSubscriptionFieldNumber = 1;
   const ::std::string& subscription() const;
@@ -2245,10 +2141,13 @@ class DeleteSubscriptionRequest : public ::google::protobuf::Message /* @@protoc
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<DeleteSubscriptionRequest> DeleteSubscriptionRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ModifyPushConfigRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.ModifyPushConfigRequest) */ {
@@ -2263,52 +2162,47 @@ class ModifyPushConfigRequest : public ::google::protobuf::Message /* @@protoc_i
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ModifyPushConfigRequest& default_instance();
 
-  static inline const ModifyPushConfigRequest* internal_default_instance() {
-    return reinterpret_cast<const ModifyPushConfigRequest*>(
-               &_ModifyPushConfigRequest_default_instance_);
-  }
+  static const ModifyPushConfigRequest* internal_default_instance();
 
   void UnsafeArenaSwap(ModifyPushConfigRequest* other);
   void Swap(ModifyPushConfigRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ModifyPushConfigRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ModifyPushConfigRequest* New() const { return New(NULL); }
 
-  ModifyPushConfigRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ModifyPushConfigRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ModifyPushConfigRequest& from);
   void MergeFrom(const ModifyPushConfigRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ModifyPushConfigRequest* other);
+  void UnsafeMergeFrom(const ModifyPushConfigRequest& from);
   protected:
   explicit ModifyPushConfigRequest(::google::protobuf::Arena* arena);
   private:
@@ -2323,13 +2217,13 @@ class ModifyPushConfigRequest : public ::google::protobuf::Message /* @@protoc_i
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string subscription = 1;
+  // optional string subscription = 1;
   void clear_subscription();
   static const int kSubscriptionFieldNumber = 1;
   const ::std::string& subscription() const;
@@ -2343,7 +2237,7 @@ class ModifyPushConfigRequest : public ::google::protobuf::Message /* @@protoc_i
   void unsafe_arena_set_allocated_subscription(
       ::std::string* subscription);
 
-  // .google.pubsub.v1.PushConfig push_config = 2;
+  // optional .google.pubsub.v1.PushConfig push_config = 2;
   bool has_push_config() const;
   void clear_push_config();
   static const int kPushConfigFieldNumber = 2;
@@ -2373,10 +2267,13 @@ class ModifyPushConfigRequest : public ::google::protobuf::Message /* @@protoc_i
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ModifyPushConfigRequest> ModifyPushConfigRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class PullRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.PullRequest) */ {
@@ -2391,52 +2288,47 @@ class PullRequest : public ::google::protobuf::Message /* @@protoc_insertion_poi
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const PullRequest& default_instance();
 
-  static inline const PullRequest* internal_default_instance() {
-    return reinterpret_cast<const PullRequest*>(
-               &_PullRequest_default_instance_);
-  }
+  static const PullRequest* internal_default_instance();
 
   void UnsafeArenaSwap(PullRequest* other);
   void Swap(PullRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline PullRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline PullRequest* New() const { return New(NULL); }
 
-  PullRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PullRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const PullRequest& from);
   void MergeFrom(const PullRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(PullRequest* other);
+  void UnsafeMergeFrom(const PullRequest& from);
   protected:
   explicit PullRequest(::google::protobuf::Arena* arena);
   private:
@@ -2451,13 +2343,13 @@ class PullRequest : public ::google::protobuf::Message /* @@protoc_insertion_poi
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string subscription = 1;
+  // optional string subscription = 1;
   void clear_subscription();
   static const int kSubscriptionFieldNumber = 1;
   const ::std::string& subscription() const;
@@ -2471,13 +2363,13 @@ class PullRequest : public ::google::protobuf::Message /* @@protoc_insertion_poi
   void unsafe_arena_set_allocated_subscription(
       ::std::string* subscription);
 
-  // bool return_immediately = 2;
+  // optional bool return_immediately = 2;
   void clear_return_immediately();
   static const int kReturnImmediatelyFieldNumber = 2;
   bool return_immediately() const;
   void set_return_immediately(bool value);
 
-  // int32 max_messages = 3;
+  // optional int32 max_messages = 3;
   void clear_max_messages();
   static const int kMaxMessagesFieldNumber = 3;
   ::google::protobuf::int32 max_messages() const;
@@ -2496,10 +2388,13 @@ class PullRequest : public ::google::protobuf::Message /* @@protoc_insertion_poi
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<PullRequest> PullRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class PullResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.PullResponse) */ {
@@ -2514,52 +2409,47 @@ class PullResponse : public ::google::protobuf::Message /* @@protoc_insertion_po
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const PullResponse& default_instance();
 
-  static inline const PullResponse* internal_default_instance() {
-    return reinterpret_cast<const PullResponse*>(
-               &_PullResponse_default_instance_);
-  }
+  static const PullResponse* internal_default_instance();
 
   void UnsafeArenaSwap(PullResponse* other);
   void Swap(PullResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline PullResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline PullResponse* New() const { return New(NULL); }
 
-  PullResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PullResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const PullResponse& from);
   void MergeFrom(const PullResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(PullResponse* other);
+  void UnsafeMergeFrom(const PullResponse& from);
   protected:
   explicit PullResponse(::google::protobuf::Arena* arena);
   private:
@@ -2574,7 +2464,7 @@ class PullResponse : public ::google::protobuf::Message /* @@protoc_insertion_po
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -2603,10 +2493,13 @@ class PullResponse : public ::google::protobuf::Message /* @@protoc_insertion_po
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<PullResponse> PullResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ModifyAckDeadlineRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.ModifyAckDeadlineRequest) */ {
@@ -2621,52 +2514,47 @@ class ModifyAckDeadlineRequest : public ::google::protobuf::Message /* @@protoc_
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ModifyAckDeadlineRequest& default_instance();
 
-  static inline const ModifyAckDeadlineRequest* internal_default_instance() {
-    return reinterpret_cast<const ModifyAckDeadlineRequest*>(
-               &_ModifyAckDeadlineRequest_default_instance_);
-  }
+  static const ModifyAckDeadlineRequest* internal_default_instance();
 
   void UnsafeArenaSwap(ModifyAckDeadlineRequest* other);
   void Swap(ModifyAckDeadlineRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ModifyAckDeadlineRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ModifyAckDeadlineRequest* New() const { return New(NULL); }
 
-  ModifyAckDeadlineRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ModifyAckDeadlineRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ModifyAckDeadlineRequest& from);
   void MergeFrom(const ModifyAckDeadlineRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ModifyAckDeadlineRequest* other);
+  void UnsafeMergeFrom(const ModifyAckDeadlineRequest& from);
   protected:
   explicit ModifyAckDeadlineRequest(::google::protobuf::Arena* arena);
   private:
@@ -2681,13 +2569,13 @@ class ModifyAckDeadlineRequest : public ::google::protobuf::Message /* @@protoc_
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string subscription = 1;
+  // optional string subscription = 1;
   void clear_subscription();
   static const int kSubscriptionFieldNumber = 1;
   const ::std::string& subscription() const;
@@ -2717,7 +2605,7 @@ class ModifyAckDeadlineRequest : public ::google::protobuf::Message /* @@protoc_
   const ::google::protobuf::RepeatedPtrField< ::std::string>& ack_ids() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_ack_ids();
 
-  // int32 ack_deadline_seconds = 3;
+  // optional int32 ack_deadline_seconds = 3;
   void clear_ack_deadline_seconds();
   static const int kAckDeadlineSecondsFieldNumber = 3;
   ::google::protobuf::int32 ack_deadline_seconds() const;
@@ -2736,10 +2624,13 @@ class ModifyAckDeadlineRequest : public ::google::protobuf::Message /* @@protoc_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ModifyAckDeadlineRequest> ModifyAckDeadlineRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AcknowledgeRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.AcknowledgeRequest) */ {
@@ -2754,52 +2645,47 @@ class AcknowledgeRequest : public ::google::protobuf::Message /* @@protoc_insert
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const AcknowledgeRequest& default_instance();
 
-  static inline const AcknowledgeRequest* internal_default_instance() {
-    return reinterpret_cast<const AcknowledgeRequest*>(
-               &_AcknowledgeRequest_default_instance_);
-  }
+  static const AcknowledgeRequest* internal_default_instance();
 
   void UnsafeArenaSwap(AcknowledgeRequest* other);
   void Swap(AcknowledgeRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline AcknowledgeRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AcknowledgeRequest* New() const { return New(NULL); }
 
-  AcknowledgeRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AcknowledgeRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AcknowledgeRequest& from);
   void MergeFrom(const AcknowledgeRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AcknowledgeRequest* other);
+  void UnsafeMergeFrom(const AcknowledgeRequest& from);
   protected:
   explicit AcknowledgeRequest(::google::protobuf::Arena* arena);
   private:
@@ -2814,13 +2700,13 @@ class AcknowledgeRequest : public ::google::protobuf::Message /* @@protoc_insert
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string subscription = 1;
+  // optional string subscription = 1;
   void clear_subscription();
   static const int kSubscriptionFieldNumber = 1;
   const ::std::string& subscription() const;
@@ -2862,10 +2748,13 @@ class AcknowledgeRequest : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AcknowledgeRequest> AcknowledgeRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class StreamingPullRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.StreamingPullRequest) */ {
@@ -2880,52 +2769,47 @@ class StreamingPullRequest : public ::google::protobuf::Message /* @@protoc_inse
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const StreamingPullRequest& default_instance();
 
-  static inline const StreamingPullRequest* internal_default_instance() {
-    return reinterpret_cast<const StreamingPullRequest*>(
-               &_StreamingPullRequest_default_instance_);
-  }
+  static const StreamingPullRequest* internal_default_instance();
 
   void UnsafeArenaSwap(StreamingPullRequest* other);
   void Swap(StreamingPullRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline StreamingPullRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline StreamingPullRequest* New() const { return New(NULL); }
 
-  StreamingPullRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  StreamingPullRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const StreamingPullRequest& from);
   void MergeFrom(const StreamingPullRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(StreamingPullRequest* other);
+  void UnsafeMergeFrom(const StreamingPullRequest& from);
   protected:
   explicit StreamingPullRequest(::google::protobuf::Arena* arena);
   private:
@@ -2940,13 +2824,13 @@ class StreamingPullRequest : public ::google::protobuf::Message /* @@protoc_inse
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string subscription = 1;
+  // optional string subscription = 1;
   void clear_subscription();
   static const int kSubscriptionFieldNumber = 1;
   const ::std::string& subscription() const;
@@ -3004,7 +2888,7 @@ class StreamingPullRequest : public ::google::protobuf::Message /* @@protoc_inse
   const ::google::protobuf::RepeatedPtrField< ::std::string>& modify_deadline_ack_ids() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_modify_deadline_ack_ids();
 
-  // int32 stream_ack_deadline_seconds = 5;
+  // optional int32 stream_ack_deadline_seconds = 5;
   void clear_stream_ack_deadline_seconds();
   static const int kStreamAckDeadlineSecondsFieldNumber = 5;
   ::google::protobuf::int32 stream_ack_deadline_seconds() const;
@@ -3026,10 +2910,13 @@ class StreamingPullRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<StreamingPullRequest> StreamingPullRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class StreamingPullResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.pubsub.v1.StreamingPullResponse) */ {
@@ -3044,52 +2931,47 @@ class StreamingPullResponse : public ::google::protobuf::Message /* @@protoc_ins
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const StreamingPullResponse& default_instance();
 
-  static inline const StreamingPullResponse* internal_default_instance() {
-    return reinterpret_cast<const StreamingPullResponse*>(
-               &_StreamingPullResponse_default_instance_);
-  }
+  static const StreamingPullResponse* internal_default_instance();
 
   void UnsafeArenaSwap(StreamingPullResponse* other);
   void Swap(StreamingPullResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline StreamingPullResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline StreamingPullResponse* New() const { return New(NULL); }
 
-  StreamingPullResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  StreamingPullResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const StreamingPullResponse& from);
   void MergeFrom(const StreamingPullResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(StreamingPullResponse* other);
+  void UnsafeMergeFrom(const StreamingPullResponse& from);
   protected:
   explicit StreamingPullResponse(::google::protobuf::Arena* arena);
   private:
@@ -3104,7 +2986,7 @@ class StreamingPullResponse : public ::google::protobuf::Message /* @@protoc_ins
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -3133,10 +3015,13 @@ class StreamingPullResponse : public ::google::protobuf::Message /* @@protoc_ins
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fpubsub_2fv1_2fpubsub_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fpubsub_2fv1_2fpubsub_2eproto();
+  friend void protobuf_AssignDesc_google_2fpubsub_2fv1_2fpubsub_2eproto();
   friend void protobuf_ShutdownFile_google_2fpubsub_2fv1_2fpubsub_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<StreamingPullResponse> StreamingPullResponse_default_instance_;
+
 // ===================================================================
 
 
@@ -3145,13 +3030,13 @@ class StreamingPullResponse : public ::google::protobuf::Message /* @@protoc_ins
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Topic
 
-// string name = 1;
+// optional string name = 1;
 inline void Topic::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Topic::name() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.Topic.name)
-  return name_.Get();
+  return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Topic::set_name(const ::std::string& value) {
   
@@ -3211,19 +3096,20 @@ inline void Topic::unsafe_arena_set_allocated_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.Topic.name)
 }
 
-// -------------------------------------------------------------------
-
+inline const Topic* Topic::internal_default_instance() {
+  return &Topic_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // PubsubMessage
 
-// bytes data = 1;
+// optional bytes data = 1;
 inline void PubsubMessage::clear_data() {
   data_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& PubsubMessage::data() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.PubsubMessage.data)
-  return data_.Get();
+  return data_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PubsubMessage::set_data(const ::std::string& value) {
   
@@ -3301,13 +3187,13 @@ PubsubMessage::mutable_attributes() {
   return attributes_.MutableMap();
 }
 
-// string message_id = 3;
+// optional string message_id = 3;
 inline void PubsubMessage::clear_message_id() {
   message_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& PubsubMessage::message_id() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.PubsubMessage.message_id)
-  return message_id_.Get();
+  return message_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PubsubMessage::set_message_id(const ::std::string& value) {
   
@@ -3367,7 +3253,7 @@ inline void PubsubMessage::unsafe_arena_set_allocated_message_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.PubsubMessage.message_id)
 }
 
-// .google.protobuf.Timestamp publish_time = 4;
+// optional .google.protobuf.Timestamp publish_time = 4;
 inline bool PubsubMessage::has_publish_time() const {
   return this != internal_default_instance() && publish_time_ != NULL;
 }
@@ -3416,17 +3302,20 @@ inline  void PubsubMessage::set_allocated_publish_time(::google::protobuf::Times
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.PubsubMessage.publish_time)
 }
 
+inline const PubsubMessage* PubsubMessage::internal_default_instance() {
+  return &PubsubMessage_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetTopicRequest
 
-// string topic = 1;
+// optional string topic = 1;
 inline void GetTopicRequest::clear_topic() {
   topic_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& GetTopicRequest::topic() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.GetTopicRequest.topic)
-  return topic_.Get();
+  return topic_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetTopicRequest::set_topic(const ::std::string& value) {
   
@@ -3486,17 +3375,20 @@ inline void GetTopicRequest::unsafe_arena_set_allocated_topic(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.GetTopicRequest.topic)
 }
 
+inline const GetTopicRequest* GetTopicRequest::internal_default_instance() {
+  return &GetTopicRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // PublishRequest
 
-// string topic = 1;
+// optional string topic = 1;
 inline void PublishRequest::clear_topic() {
   topic_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& PublishRequest::topic() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.PublishRequest.topic)
-  return topic_.Get();
+  return topic_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PublishRequest::set_topic(const ::std::string& value) {
   
@@ -3586,6 +3478,9 @@ PublishRequest::messages() const {
   return messages_;
 }
 
+inline const PublishRequest* PublishRequest::internal_default_instance() {
+  return &PublishRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // PublishResponse
@@ -3645,17 +3540,20 @@ PublishResponse::mutable_message_ids() {
   return &message_ids_;
 }
 
+inline const PublishResponse* PublishResponse::internal_default_instance() {
+  return &PublishResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListTopicsRequest
 
-// string project = 1;
+// optional string project = 1;
 inline void ListTopicsRequest::clear_project() {
   project_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ListTopicsRequest::project() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListTopicsRequest.project)
-  return project_.Get();
+  return project_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListTopicsRequest::set_project(const ::std::string& value) {
   
@@ -3715,7 +3613,7 @@ inline void ListTopicsRequest::unsafe_arena_set_allocated_project(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.ListTopicsRequest.project)
 }
 
-// int32 page_size = 2;
+// optional int32 page_size = 2;
 inline void ListTopicsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -3729,13 +3627,13 @@ inline void ListTopicsRequest::set_page_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ListTopicsRequest.page_size)
 }
 
-// string page_token = 3;
+// optional string page_token = 3;
 inline void ListTopicsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ListTopicsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListTopicsRequest.page_token)
-  return page_token_.Get();
+  return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListTopicsRequest::set_page_token(const ::std::string& value) {
   
@@ -3795,6 +3693,9 @@ inline void ListTopicsRequest::unsafe_arena_set_allocated_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.ListTopicsRequest.page_token)
 }
 
+inline const ListTopicsRequest* ListTopicsRequest::internal_default_instance() {
+  return &ListTopicsRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListTopicsResponse
@@ -3829,13 +3730,13 @@ ListTopicsResponse::topics() const {
   return topics_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void ListTopicsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ListTopicsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListTopicsResponse.next_page_token)
-  return next_page_token_.Get();
+  return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListTopicsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -3895,17 +3796,20 @@ inline void ListTopicsResponse::unsafe_arena_set_allocated_next_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.ListTopicsResponse.next_page_token)
 }
 
+inline const ListTopicsResponse* ListTopicsResponse::internal_default_instance() {
+  return &ListTopicsResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListTopicSubscriptionsRequest
 
-// string topic = 1;
+// optional string topic = 1;
 inline void ListTopicSubscriptionsRequest::clear_topic() {
   topic_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ListTopicSubscriptionsRequest::topic() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListTopicSubscriptionsRequest.topic)
-  return topic_.Get();
+  return topic_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListTopicSubscriptionsRequest::set_topic(const ::std::string& value) {
   
@@ -3965,7 +3869,7 @@ inline void ListTopicSubscriptionsRequest::unsafe_arena_set_allocated_topic(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.ListTopicSubscriptionsRequest.topic)
 }
 
-// int32 page_size = 2;
+// optional int32 page_size = 2;
 inline void ListTopicSubscriptionsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -3979,13 +3883,13 @@ inline void ListTopicSubscriptionsRequest::set_page_size(::google::protobuf::int
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ListTopicSubscriptionsRequest.page_size)
 }
 
-// string page_token = 3;
+// optional string page_token = 3;
 inline void ListTopicSubscriptionsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ListTopicSubscriptionsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListTopicSubscriptionsRequest.page_token)
-  return page_token_.Get();
+  return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListTopicSubscriptionsRequest::set_page_token(const ::std::string& value) {
   
@@ -4045,6 +3949,9 @@ inline void ListTopicSubscriptionsRequest::unsafe_arena_set_allocated_page_token
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.ListTopicSubscriptionsRequest.page_token)
 }
 
+inline const ListTopicSubscriptionsRequest* ListTopicSubscriptionsRequest::internal_default_instance() {
+  return &ListTopicSubscriptionsRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListTopicSubscriptionsResponse
@@ -4104,13 +4011,13 @@ ListTopicSubscriptionsResponse::mutable_subscriptions() {
   return &subscriptions_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void ListTopicSubscriptionsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ListTopicSubscriptionsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListTopicSubscriptionsResponse.next_page_token)
-  return next_page_token_.Get();
+  return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListTopicSubscriptionsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -4170,17 +4077,20 @@ inline void ListTopicSubscriptionsResponse::unsafe_arena_set_allocated_next_page
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.ListTopicSubscriptionsResponse.next_page_token)
 }
 
+inline const ListTopicSubscriptionsResponse* ListTopicSubscriptionsResponse::internal_default_instance() {
+  return &ListTopicSubscriptionsResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // DeleteTopicRequest
 
-// string topic = 1;
+// optional string topic = 1;
 inline void DeleteTopicRequest::clear_topic() {
   topic_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& DeleteTopicRequest::topic() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.DeleteTopicRequest.topic)
-  return topic_.Get();
+  return topic_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DeleteTopicRequest::set_topic(const ::std::string& value) {
   
@@ -4240,17 +4150,20 @@ inline void DeleteTopicRequest::unsafe_arena_set_allocated_topic(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.DeleteTopicRequest.topic)
 }
 
+inline const DeleteTopicRequest* DeleteTopicRequest::internal_default_instance() {
+  return &DeleteTopicRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Subscription
 
-// string name = 1;
+// optional string name = 1;
 inline void Subscription::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Subscription::name() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.Subscription.name)
-  return name_.Get();
+  return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Subscription::set_name(const ::std::string& value) {
   
@@ -4310,13 +4223,13 @@ inline void Subscription::unsafe_arena_set_allocated_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.Subscription.name)
 }
 
-// string topic = 2;
+// optional string topic = 2;
 inline void Subscription::clear_topic() {
   topic_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Subscription::topic() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.Subscription.topic)
-  return topic_.Get();
+  return topic_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Subscription::set_topic(const ::std::string& value) {
   
@@ -4376,7 +4289,7 @@ inline void Subscription::unsafe_arena_set_allocated_topic(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.Subscription.topic)
 }
 
-// .google.pubsub.v1.PushConfig push_config = 4;
+// optional .google.pubsub.v1.PushConfig push_config = 4;
 inline bool Subscription::has_push_config() const {
   return this != internal_default_instance() && push_config_ != NULL;
 }
@@ -4425,7 +4338,7 @@ inline  void Subscription::set_allocated_push_config(::google::pubsub::v1::PushC
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.Subscription.push_config)
 }
 
-// int32 ack_deadline_seconds = 5;
+// optional int32 ack_deadline_seconds = 5;
 inline void Subscription::clear_ack_deadline_seconds() {
   ack_deadline_seconds_ = 0;
 }
@@ -4439,19 +4352,20 @@ inline void Subscription::set_ack_deadline_seconds(::google::protobuf::int32 val
   // @@protoc_insertion_point(field_set:google.pubsub.v1.Subscription.ack_deadline_seconds)
 }
 
-// -------------------------------------------------------------------
-
+inline const Subscription* Subscription::internal_default_instance() {
+  return &Subscription_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // PushConfig
 
-// string push_endpoint = 1;
+// optional string push_endpoint = 1;
 inline void PushConfig::clear_push_endpoint() {
   push_endpoint_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& PushConfig::push_endpoint() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.PushConfig.push_endpoint)
-  return push_endpoint_.Get();
+  return push_endpoint_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PushConfig::set_push_endpoint(const ::std::string& value) {
   
@@ -4529,17 +4443,20 @@ PushConfig::mutable_attributes() {
   return attributes_.MutableMap();
 }
 
+inline const PushConfig* PushConfig::internal_default_instance() {
+  return &PushConfig_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ReceivedMessage
 
-// string ack_id = 1;
+// optional string ack_id = 1;
 inline void ReceivedMessage::clear_ack_id() {
   ack_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ReceivedMessage::ack_id() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ReceivedMessage.ack_id)
-  return ack_id_.Get();
+  return ack_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ReceivedMessage::set_ack_id(const ::std::string& value) {
   
@@ -4599,7 +4516,7 @@ inline void ReceivedMessage::unsafe_arena_set_allocated_ack_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.ReceivedMessage.ack_id)
 }
 
-// .google.pubsub.v1.PubsubMessage message = 2;
+// optional .google.pubsub.v1.PubsubMessage message = 2;
 inline bool ReceivedMessage::has_message() const {
   return this != internal_default_instance() && message_ != NULL;
 }
@@ -4648,17 +4565,20 @@ inline  void ReceivedMessage::set_allocated_message(::google::pubsub::v1::Pubsub
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.ReceivedMessage.message)
 }
 
+inline const ReceivedMessage* ReceivedMessage::internal_default_instance() {
+  return &ReceivedMessage_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetSubscriptionRequest
 
-// string subscription = 1;
+// optional string subscription = 1;
 inline void GetSubscriptionRequest::clear_subscription() {
   subscription_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& GetSubscriptionRequest::subscription() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.GetSubscriptionRequest.subscription)
-  return subscription_.Get();
+  return subscription_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetSubscriptionRequest::set_subscription(const ::std::string& value) {
   
@@ -4718,17 +4638,20 @@ inline void GetSubscriptionRequest::unsafe_arena_set_allocated_subscription(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.GetSubscriptionRequest.subscription)
 }
 
+inline const GetSubscriptionRequest* GetSubscriptionRequest::internal_default_instance() {
+  return &GetSubscriptionRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListSubscriptionsRequest
 
-// string project = 1;
+// optional string project = 1;
 inline void ListSubscriptionsRequest::clear_project() {
   project_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ListSubscriptionsRequest::project() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListSubscriptionsRequest.project)
-  return project_.Get();
+  return project_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListSubscriptionsRequest::set_project(const ::std::string& value) {
   
@@ -4788,7 +4711,7 @@ inline void ListSubscriptionsRequest::unsafe_arena_set_allocated_project(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.ListSubscriptionsRequest.project)
 }
 
-// int32 page_size = 2;
+// optional int32 page_size = 2;
 inline void ListSubscriptionsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -4802,13 +4725,13 @@ inline void ListSubscriptionsRequest::set_page_size(::google::protobuf::int32 va
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ListSubscriptionsRequest.page_size)
 }
 
-// string page_token = 3;
+// optional string page_token = 3;
 inline void ListSubscriptionsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ListSubscriptionsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListSubscriptionsRequest.page_token)
-  return page_token_.Get();
+  return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListSubscriptionsRequest::set_page_token(const ::std::string& value) {
   
@@ -4868,6 +4791,9 @@ inline void ListSubscriptionsRequest::unsafe_arena_set_allocated_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.ListSubscriptionsRequest.page_token)
 }
 
+inline const ListSubscriptionsRequest* ListSubscriptionsRequest::internal_default_instance() {
+  return &ListSubscriptionsRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListSubscriptionsResponse
@@ -4902,13 +4828,13 @@ ListSubscriptionsResponse::subscriptions() const {
   return subscriptions_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void ListSubscriptionsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ListSubscriptionsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ListSubscriptionsResponse.next_page_token)
-  return next_page_token_.Get();
+  return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListSubscriptionsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -4968,17 +4894,20 @@ inline void ListSubscriptionsResponse::unsafe_arena_set_allocated_next_page_toke
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.ListSubscriptionsResponse.next_page_token)
 }
 
+inline const ListSubscriptionsResponse* ListSubscriptionsResponse::internal_default_instance() {
+  return &ListSubscriptionsResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // DeleteSubscriptionRequest
 
-// string subscription = 1;
+// optional string subscription = 1;
 inline void DeleteSubscriptionRequest::clear_subscription() {
   subscription_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& DeleteSubscriptionRequest::subscription() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.DeleteSubscriptionRequest.subscription)
-  return subscription_.Get();
+  return subscription_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DeleteSubscriptionRequest::set_subscription(const ::std::string& value) {
   
@@ -5038,17 +4967,20 @@ inline void DeleteSubscriptionRequest::unsafe_arena_set_allocated_subscription(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.DeleteSubscriptionRequest.subscription)
 }
 
+inline const DeleteSubscriptionRequest* DeleteSubscriptionRequest::internal_default_instance() {
+  return &DeleteSubscriptionRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ModifyPushConfigRequest
 
-// string subscription = 1;
+// optional string subscription = 1;
 inline void ModifyPushConfigRequest::clear_subscription() {
   subscription_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ModifyPushConfigRequest::subscription() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ModifyPushConfigRequest.subscription)
-  return subscription_.Get();
+  return subscription_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ModifyPushConfigRequest::set_subscription(const ::std::string& value) {
   
@@ -5108,7 +5040,7 @@ inline void ModifyPushConfigRequest::unsafe_arena_set_allocated_subscription(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.ModifyPushConfigRequest.subscription)
 }
 
-// .google.pubsub.v1.PushConfig push_config = 2;
+// optional .google.pubsub.v1.PushConfig push_config = 2;
 inline bool ModifyPushConfigRequest::has_push_config() const {
   return this != internal_default_instance() && push_config_ != NULL;
 }
@@ -5157,17 +5089,20 @@ inline  void ModifyPushConfigRequest::set_allocated_push_config(::google::pubsub
   // @@protoc_insertion_point(field_set_allocated:google.pubsub.v1.ModifyPushConfigRequest.push_config)
 }
 
+inline const ModifyPushConfigRequest* ModifyPushConfigRequest::internal_default_instance() {
+  return &ModifyPushConfigRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // PullRequest
 
-// string subscription = 1;
+// optional string subscription = 1;
 inline void PullRequest::clear_subscription() {
   subscription_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& PullRequest::subscription() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.PullRequest.subscription)
-  return subscription_.Get();
+  return subscription_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PullRequest::set_subscription(const ::std::string& value) {
   
@@ -5227,7 +5162,7 @@ inline void PullRequest::unsafe_arena_set_allocated_subscription(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.pubsub.v1.PullRequest.subscription)
 }
 
-// bool return_immediately = 2;
+// optional bool return_immediately = 2;
 inline void PullRequest::clear_return_immediately() {
   return_immediately_ = false;
 }
@@ -5241,7 +5176,7 @@ inline void PullRequest::set_return_immediately(bool value) {
   // @@protoc_insertion_point(field_set:google.pubsub.v1.PullRequest.return_immediately)
 }
 
-// int32 max_messages = 3;
+// optional int32 max_messages = 3;
 inline void PullRequest::clear_max_messages() {
   max_messages_ = 0;
 }
@@ -5255,6 +5190,9 @@ inline void PullRequest::set_max_messages(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.pubsub.v1.PullRequest.max_messages)
 }
 
+inline const PullRequest* PullRequest::internal_default_instance() {
+  return &PullRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // PullResponse
@@ -5289,17 +5227,20 @@ PullResponse::received_messages() const {
   return received_messages_;
 }
 
+inline const PullResponse* PullResponse::internal_default_instance() {
+  return &PullResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ModifyAckDeadlineRequest
 
-// string subscription = 1;
+// optional string subscription = 1;
 inline void ModifyAckDeadlineRequest::clear_subscription() {
   subscription_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ModifyAckDeadlineRequest::subscription() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.ModifyAckDeadlineRequest.subscription)
-  return subscription_.Get();
+  return subscription_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ModifyAckDeadlineRequest::set_subscription(const ::std::string& value) {
   
@@ -5414,7 +5355,7 @@ ModifyAckDeadlineRequest::mutable_ack_ids() {
   return &ack_ids_;
 }
 
-// int32 ack_deadline_seconds = 3;
+// optional int32 ack_deadline_seconds = 3;
 inline void ModifyAckDeadlineRequest::clear_ack_deadline_seconds() {
   ack_deadline_seconds_ = 0;
 }
@@ -5428,17 +5369,20 @@ inline void ModifyAckDeadlineRequest::set_ack_deadline_seconds(::google::protobu
   // @@protoc_insertion_point(field_set:google.pubsub.v1.ModifyAckDeadlineRequest.ack_deadline_seconds)
 }
 
+inline const ModifyAckDeadlineRequest* ModifyAckDeadlineRequest::internal_default_instance() {
+  return &ModifyAckDeadlineRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AcknowledgeRequest
 
-// string subscription = 1;
+// optional string subscription = 1;
 inline void AcknowledgeRequest::clear_subscription() {
   subscription_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& AcknowledgeRequest::subscription() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.AcknowledgeRequest.subscription)
-  return subscription_.Get();
+  return subscription_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void AcknowledgeRequest::set_subscription(const ::std::string& value) {
   
@@ -5553,17 +5497,20 @@ AcknowledgeRequest::mutable_ack_ids() {
   return &ack_ids_;
 }
 
+inline const AcknowledgeRequest* AcknowledgeRequest::internal_default_instance() {
+  return &AcknowledgeRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // StreamingPullRequest
 
-// string subscription = 1;
+// optional string subscription = 1;
 inline void StreamingPullRequest::clear_subscription() {
   subscription_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& StreamingPullRequest::subscription() const {
   // @@protoc_insertion_point(field_get:google.pubsub.v1.StreamingPullRequest.subscription)
-  return subscription_.Get();
+  return subscription_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void StreamingPullRequest::set_subscription(const ::std::string& value) {
   
@@ -5763,7 +5710,7 @@ StreamingPullRequest::mutable_modify_deadline_ack_ids() {
   return &modify_deadline_ack_ids_;
 }
 
-// int32 stream_ack_deadline_seconds = 5;
+// optional int32 stream_ack_deadline_seconds = 5;
 inline void StreamingPullRequest::clear_stream_ack_deadline_seconds() {
   stream_ack_deadline_seconds_ = 0;
 }
@@ -5777,6 +5724,9 @@ inline void StreamingPullRequest::set_stream_ack_deadline_seconds(::google::prot
   // @@protoc_insertion_point(field_set:google.pubsub.v1.StreamingPullRequest.stream_ack_deadline_seconds)
 }
 
+inline const StreamingPullRequest* StreamingPullRequest::internal_default_instance() {
+  return &StreamingPullRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // StreamingPullResponse
@@ -5811,11 +5761,10 @@ StreamingPullResponse::received_messages() const {
   return received_messages_;
 }
 
+inline const StreamingPullResponse* StreamingPullResponse::internal_default_instance() {
+  return &StreamingPullResponse_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -5864,7 +5813,6 @@ StreamingPullResponse::received_messages() const {
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace pubsub

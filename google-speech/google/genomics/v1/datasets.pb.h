@@ -24,8 +24,8 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include "google/iam/v1/iam_policy.pb.h"
@@ -34,71 +34,6 @@
 #include <google/protobuf/field_mask.pb.h>
 #include <google/protobuf/timestamp.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace genomics {
-namespace v1 {
-class CreateDatasetRequest;
-class CreateDatasetRequestDefaultTypeInternal;
-extern CreateDatasetRequestDefaultTypeInternal _CreateDatasetRequest_default_instance_;
-class Dataset;
-class DatasetDefaultTypeInternal;
-extern DatasetDefaultTypeInternal _Dataset_default_instance_;
-class DeleteDatasetRequest;
-class DeleteDatasetRequestDefaultTypeInternal;
-extern DeleteDatasetRequestDefaultTypeInternal _DeleteDatasetRequest_default_instance_;
-class GetDatasetRequest;
-class GetDatasetRequestDefaultTypeInternal;
-extern GetDatasetRequestDefaultTypeInternal _GetDatasetRequest_default_instance_;
-class ListDatasetsRequest;
-class ListDatasetsRequestDefaultTypeInternal;
-extern ListDatasetsRequestDefaultTypeInternal _ListDatasetsRequest_default_instance_;
-class ListDatasetsResponse;
-class ListDatasetsResponseDefaultTypeInternal;
-extern ListDatasetsResponseDefaultTypeInternal _ListDatasetsResponse_default_instance_;
-class UndeleteDatasetRequest;
-class UndeleteDatasetRequestDefaultTypeInternal;
-extern UndeleteDatasetRequestDefaultTypeInternal _UndeleteDatasetRequest_default_instance_;
-class UpdateDatasetRequest;
-class UpdateDatasetRequestDefaultTypeInternal;
-extern UpdateDatasetRequestDefaultTypeInternal _UpdateDatasetRequest_default_instance_;
-}  // namespace v1
-}  // namespace genomics
-namespace iam {
-namespace v1 {
-class Binding;
-class BindingDefaultTypeInternal;
-extern BindingDefaultTypeInternal _Binding_default_instance_;
-class GetIamPolicyRequest;
-class GetIamPolicyRequestDefaultTypeInternal;
-extern GetIamPolicyRequestDefaultTypeInternal _GetIamPolicyRequest_default_instance_;
-class Policy;
-class PolicyDefaultTypeInternal;
-extern PolicyDefaultTypeInternal _Policy_default_instance_;
-class SetIamPolicyRequest;
-class SetIamPolicyRequestDefaultTypeInternal;
-extern SetIamPolicyRequestDefaultTypeInternal _SetIamPolicyRequest_default_instance_;
-class TestIamPermissionsRequest;
-class TestIamPermissionsRequestDefaultTypeInternal;
-extern TestIamPermissionsRequestDefaultTypeInternal _TestIamPermissionsRequest_default_instance_;
-class TestIamPermissionsResponse;
-class TestIamPermissionsResponseDefaultTypeInternal;
-extern TestIamPermissionsResponseDefaultTypeInternal _TestIamPermissionsResponse_default_instance_;
-}  // namespace v1
-}  // namespace iam
-namespace protobuf {
-class Empty;
-class EmptyDefaultTypeInternal;
-extern EmptyDefaultTypeInternal _Empty_default_instance_;
-class FieldMask;
-class FieldMaskDefaultTypeInternal;
-extern FieldMaskDefaultTypeInternal _FieldMask_default_instance_;
-class Timestamp;
-class TimestampDefaultTypeInternal;
-extern TimestampDefaultTypeInternal _Timestamp_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace genomics {
@@ -107,6 +42,17 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fgenomics_2fv1_2fdatasets_2eproto();
 void protobuf_InitDefaults_google_2fgenomics_2fv1_2fdatasets_2eproto();
+void protobuf_AssignDesc_google_2fgenomics_2fv1_2fdatasets_2eproto();
+void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fdatasets_2eproto();
+
+class CreateDatasetRequest;
+class Dataset;
+class DeleteDatasetRequest;
+class GetDatasetRequest;
+class ListDatasetsRequest;
+class ListDatasetsResponse;
+class UndeleteDatasetRequest;
+class UpdateDatasetRequest;
 
 // ===================================================================
 
@@ -122,52 +68,47 @@ class Dataset : public ::google::protobuf::Message /* @@protoc_insertion_point(c
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const Dataset& default_instance();
 
-  static inline const Dataset* internal_default_instance() {
-    return reinterpret_cast<const Dataset*>(
-               &_Dataset_default_instance_);
-  }
+  static const Dataset* internal_default_instance();
 
   void UnsafeArenaSwap(Dataset* other);
   void Swap(Dataset* other);
 
   // implements Message ----------------------------------------------
 
-  inline Dataset* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Dataset* New() const { return New(NULL); }
 
-  Dataset* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Dataset* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Dataset& from);
   void MergeFrom(const Dataset& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Dataset* other);
+  void UnsafeMergeFrom(const Dataset& from);
   protected:
   explicit Dataset(::google::protobuf::Arena* arena);
   private:
@@ -182,13 +123,13 @@ class Dataset : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string id = 1;
+  // optional string id = 1;
   void clear_id();
   static const int kIdFieldNumber = 1;
   const ::std::string& id() const;
@@ -202,7 +143,7 @@ class Dataset : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   void unsafe_arena_set_allocated_id(
       ::std::string* id);
 
-  // string project_id = 2;
+  // optional string project_id = 2;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 2;
   const ::std::string& project_id() const;
@@ -216,7 +157,7 @@ class Dataset : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   void unsafe_arena_set_allocated_project_id(
       ::std::string* project_id);
 
-  // string name = 3;
+  // optional string name = 3;
   void clear_name();
   static const int kNameFieldNumber = 3;
   const ::std::string& name() const;
@@ -230,7 +171,7 @@ class Dataset : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   void unsafe_arena_set_allocated_name(
       ::std::string* name);
 
-  // .google.protobuf.Timestamp create_time = 4;
+  // optional .google.protobuf.Timestamp create_time = 4;
   bool has_create_time() const;
   void clear_create_time();
   static const int kCreateTimeFieldNumber = 4;
@@ -262,10 +203,13 @@ class Dataset : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fdatasets_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fdatasets_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fdatasets_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fdatasets_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fdatasets_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Dataset> Dataset_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListDatasetsRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.ListDatasetsRequest) */ {
@@ -280,52 +224,47 @@ class ListDatasetsRequest : public ::google::protobuf::Message /* @@protoc_inser
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListDatasetsRequest& default_instance();
 
-  static inline const ListDatasetsRequest* internal_default_instance() {
-    return reinterpret_cast<const ListDatasetsRequest*>(
-               &_ListDatasetsRequest_default_instance_);
-  }
+  static const ListDatasetsRequest* internal_default_instance();
 
   void UnsafeArenaSwap(ListDatasetsRequest* other);
   void Swap(ListDatasetsRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListDatasetsRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListDatasetsRequest* New() const { return New(NULL); }
 
-  ListDatasetsRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListDatasetsRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListDatasetsRequest& from);
   void MergeFrom(const ListDatasetsRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListDatasetsRequest* other);
+  void UnsafeMergeFrom(const ListDatasetsRequest& from);
   protected:
   explicit ListDatasetsRequest(::google::protobuf::Arena* arena);
   private:
@@ -340,13 +279,13 @@ class ListDatasetsRequest : public ::google::protobuf::Message /* @@protoc_inser
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 1;
   const ::std::string& project_id() const;
@@ -360,13 +299,13 @@ class ListDatasetsRequest : public ::google::protobuf::Message /* @@protoc_inser
   void unsafe_arena_set_allocated_project_id(
       ::std::string* project_id);
 
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 2;
   ::google::protobuf::int32 page_size() const;
   void set_page_size(::google::protobuf::int32 value);
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 3;
   const ::std::string& page_token() const;
@@ -393,10 +332,13 @@ class ListDatasetsRequest : public ::google::protobuf::Message /* @@protoc_inser
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fdatasets_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fdatasets_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fdatasets_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fdatasets_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fdatasets_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListDatasetsRequest> ListDatasetsRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListDatasetsResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.ListDatasetsResponse) */ {
@@ -411,52 +353,47 @@ class ListDatasetsResponse : public ::google::protobuf::Message /* @@protoc_inse
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListDatasetsResponse& default_instance();
 
-  static inline const ListDatasetsResponse* internal_default_instance() {
-    return reinterpret_cast<const ListDatasetsResponse*>(
-               &_ListDatasetsResponse_default_instance_);
-  }
+  static const ListDatasetsResponse* internal_default_instance();
 
   void UnsafeArenaSwap(ListDatasetsResponse* other);
   void Swap(ListDatasetsResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListDatasetsResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListDatasetsResponse* New() const { return New(NULL); }
 
-  ListDatasetsResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListDatasetsResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListDatasetsResponse& from);
   void MergeFrom(const ListDatasetsResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListDatasetsResponse* other);
+  void UnsafeMergeFrom(const ListDatasetsResponse& from);
   protected:
   explicit ListDatasetsResponse(::google::protobuf::Arena* arena);
   private:
@@ -471,7 +408,7 @@ class ListDatasetsResponse : public ::google::protobuf::Message /* @@protoc_inse
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -489,7 +426,7 @@ class ListDatasetsResponse : public ::google::protobuf::Message /* @@protoc_inse
   const ::google::protobuf::RepeatedPtrField< ::google::genomics::v1::Dataset >&
       datasets() const;
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -515,10 +452,13 @@ class ListDatasetsResponse : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fdatasets_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fdatasets_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fdatasets_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fdatasets_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fdatasets_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListDatasetsResponse> ListDatasetsResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class CreateDatasetRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.CreateDatasetRequest) */ {
@@ -533,52 +473,47 @@ class CreateDatasetRequest : public ::google::protobuf::Message /* @@protoc_inse
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const CreateDatasetRequest& default_instance();
 
-  static inline const CreateDatasetRequest* internal_default_instance() {
-    return reinterpret_cast<const CreateDatasetRequest*>(
-               &_CreateDatasetRequest_default_instance_);
-  }
+  static const CreateDatasetRequest* internal_default_instance();
 
   void UnsafeArenaSwap(CreateDatasetRequest* other);
   void Swap(CreateDatasetRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline CreateDatasetRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline CreateDatasetRequest* New() const { return New(NULL); }
 
-  CreateDatasetRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CreateDatasetRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const CreateDatasetRequest& from);
   void MergeFrom(const CreateDatasetRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(CreateDatasetRequest* other);
+  void UnsafeMergeFrom(const CreateDatasetRequest& from);
   protected:
   explicit CreateDatasetRequest(::google::protobuf::Arena* arena);
   private:
@@ -593,13 +528,13 @@ class CreateDatasetRequest : public ::google::protobuf::Message /* @@protoc_inse
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.genomics.v1.Dataset dataset = 1;
+  // optional .google.genomics.v1.Dataset dataset = 1;
   bool has_dataset() const;
   void clear_dataset();
   static const int kDatasetFieldNumber = 1;
@@ -628,10 +563,13 @@ class CreateDatasetRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fdatasets_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fdatasets_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fdatasets_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fdatasets_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fdatasets_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<CreateDatasetRequest> CreateDatasetRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class UpdateDatasetRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.UpdateDatasetRequest) */ {
@@ -646,52 +584,47 @@ class UpdateDatasetRequest : public ::google::protobuf::Message /* @@protoc_inse
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const UpdateDatasetRequest& default_instance();
 
-  static inline const UpdateDatasetRequest* internal_default_instance() {
-    return reinterpret_cast<const UpdateDatasetRequest*>(
-               &_UpdateDatasetRequest_default_instance_);
-  }
+  static const UpdateDatasetRequest* internal_default_instance();
 
   void UnsafeArenaSwap(UpdateDatasetRequest* other);
   void Swap(UpdateDatasetRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline UpdateDatasetRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline UpdateDatasetRequest* New() const { return New(NULL); }
 
-  UpdateDatasetRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  UpdateDatasetRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const UpdateDatasetRequest& from);
   void MergeFrom(const UpdateDatasetRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(UpdateDatasetRequest* other);
+  void UnsafeMergeFrom(const UpdateDatasetRequest& from);
   protected:
   explicit UpdateDatasetRequest(::google::protobuf::Arena* arena);
   private:
@@ -706,13 +639,13 @@ class UpdateDatasetRequest : public ::google::protobuf::Message /* @@protoc_inse
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string dataset_id = 1;
+  // optional string dataset_id = 1;
   void clear_dataset_id();
   static const int kDatasetIdFieldNumber = 1;
   const ::std::string& dataset_id() const;
@@ -726,7 +659,7 @@ class UpdateDatasetRequest : public ::google::protobuf::Message /* @@protoc_inse
   void unsafe_arena_set_allocated_dataset_id(
       ::std::string* dataset_id);
 
-  // .google.genomics.v1.Dataset dataset = 2;
+  // optional .google.genomics.v1.Dataset dataset = 2;
   bool has_dataset() const;
   void clear_dataset();
   static const int kDatasetFieldNumber = 2;
@@ -744,7 +677,7 @@ class UpdateDatasetRequest : public ::google::protobuf::Message /* @@protoc_inse
   void unsafe_arena_set_allocated_dataset(
       ::google::genomics::v1::Dataset* dataset);
 
-  // .google.protobuf.FieldMask update_mask = 3;
+  // optional .google.protobuf.FieldMask update_mask = 3;
   bool has_update_mask() const;
   void clear_update_mask();
   static const int kUpdateMaskFieldNumber = 3;
@@ -773,10 +706,13 @@ class UpdateDatasetRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fdatasets_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fdatasets_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fdatasets_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fdatasets_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fdatasets_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<UpdateDatasetRequest> UpdateDatasetRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class DeleteDatasetRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.DeleteDatasetRequest) */ {
@@ -791,52 +727,47 @@ class DeleteDatasetRequest : public ::google::protobuf::Message /* @@protoc_inse
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const DeleteDatasetRequest& default_instance();
 
-  static inline const DeleteDatasetRequest* internal_default_instance() {
-    return reinterpret_cast<const DeleteDatasetRequest*>(
-               &_DeleteDatasetRequest_default_instance_);
-  }
+  static const DeleteDatasetRequest* internal_default_instance();
 
   void UnsafeArenaSwap(DeleteDatasetRequest* other);
   void Swap(DeleteDatasetRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline DeleteDatasetRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline DeleteDatasetRequest* New() const { return New(NULL); }
 
-  DeleteDatasetRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DeleteDatasetRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const DeleteDatasetRequest& from);
   void MergeFrom(const DeleteDatasetRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(DeleteDatasetRequest* other);
+  void UnsafeMergeFrom(const DeleteDatasetRequest& from);
   protected:
   explicit DeleteDatasetRequest(::google::protobuf::Arena* arena);
   private:
@@ -851,13 +782,13 @@ class DeleteDatasetRequest : public ::google::protobuf::Message /* @@protoc_inse
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string dataset_id = 1;
+  // optional string dataset_id = 1;
   void clear_dataset_id();
   static const int kDatasetIdFieldNumber = 1;
   const ::std::string& dataset_id() const;
@@ -882,10 +813,13 @@ class DeleteDatasetRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fdatasets_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fdatasets_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fdatasets_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fdatasets_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fdatasets_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<DeleteDatasetRequest> DeleteDatasetRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class UndeleteDatasetRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.UndeleteDatasetRequest) */ {
@@ -900,52 +834,47 @@ class UndeleteDatasetRequest : public ::google::protobuf::Message /* @@protoc_in
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const UndeleteDatasetRequest& default_instance();
 
-  static inline const UndeleteDatasetRequest* internal_default_instance() {
-    return reinterpret_cast<const UndeleteDatasetRequest*>(
-               &_UndeleteDatasetRequest_default_instance_);
-  }
+  static const UndeleteDatasetRequest* internal_default_instance();
 
   void UnsafeArenaSwap(UndeleteDatasetRequest* other);
   void Swap(UndeleteDatasetRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline UndeleteDatasetRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline UndeleteDatasetRequest* New() const { return New(NULL); }
 
-  UndeleteDatasetRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  UndeleteDatasetRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const UndeleteDatasetRequest& from);
   void MergeFrom(const UndeleteDatasetRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(UndeleteDatasetRequest* other);
+  void UnsafeMergeFrom(const UndeleteDatasetRequest& from);
   protected:
   explicit UndeleteDatasetRequest(::google::protobuf::Arena* arena);
   private:
@@ -960,13 +889,13 @@ class UndeleteDatasetRequest : public ::google::protobuf::Message /* @@protoc_in
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string dataset_id = 1;
+  // optional string dataset_id = 1;
   void clear_dataset_id();
   static const int kDatasetIdFieldNumber = 1;
   const ::std::string& dataset_id() const;
@@ -991,10 +920,13 @@ class UndeleteDatasetRequest : public ::google::protobuf::Message /* @@protoc_in
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fdatasets_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fdatasets_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fdatasets_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fdatasets_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fdatasets_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<UndeleteDatasetRequest> UndeleteDatasetRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetDatasetRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.GetDatasetRequest) */ {
@@ -1009,52 +941,47 @@ class GetDatasetRequest : public ::google::protobuf::Message /* @@protoc_inserti
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetDatasetRequest& default_instance();
 
-  static inline const GetDatasetRequest* internal_default_instance() {
-    return reinterpret_cast<const GetDatasetRequest*>(
-               &_GetDatasetRequest_default_instance_);
-  }
+  static const GetDatasetRequest* internal_default_instance();
 
   void UnsafeArenaSwap(GetDatasetRequest* other);
   void Swap(GetDatasetRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetDatasetRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetDatasetRequest* New() const { return New(NULL); }
 
-  GetDatasetRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetDatasetRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetDatasetRequest& from);
   void MergeFrom(const GetDatasetRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetDatasetRequest* other);
+  void UnsafeMergeFrom(const GetDatasetRequest& from);
   protected:
   explicit GetDatasetRequest(::google::protobuf::Arena* arena);
   private:
@@ -1069,13 +996,13 @@ class GetDatasetRequest : public ::google::protobuf::Message /* @@protoc_inserti
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string dataset_id = 1;
+  // optional string dataset_id = 1;
   void clear_dataset_id();
   static const int kDatasetIdFieldNumber = 1;
   const ::std::string& dataset_id() const;
@@ -1100,10 +1027,13 @@ class GetDatasetRequest : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2fdatasets_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2fdatasets_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2fdatasets_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2fdatasets_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2fdatasets_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetDatasetRequest> GetDatasetRequest_default_instance_;
+
 // ===================================================================
 
 
@@ -1112,13 +1042,13 @@ class GetDatasetRequest : public ::google::protobuf::Message /* @@protoc_inserti
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Dataset
 
-// string id = 1;
+// optional string id = 1;
 inline void Dataset::clear_id() {
   id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Dataset::id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Dataset.id)
-  return id_.Get();
+  return id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Dataset::set_id(const ::std::string& value) {
   
@@ -1178,13 +1108,13 @@ inline void Dataset::unsafe_arena_set_allocated_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.Dataset.id)
 }
 
-// string project_id = 2;
+// optional string project_id = 2;
 inline void Dataset::clear_project_id() {
   project_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Dataset::project_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Dataset.project_id)
-  return project_id_.Get();
+  return project_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Dataset::set_project_id(const ::std::string& value) {
   
@@ -1244,13 +1174,13 @@ inline void Dataset::unsafe_arena_set_allocated_project_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.Dataset.project_id)
 }
 
-// string name = 3;
+// optional string name = 3;
 inline void Dataset::clear_name() {
   name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Dataset::name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Dataset.name)
-  return name_.Get();
+  return name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Dataset::set_name(const ::std::string& value) {
   
@@ -1310,7 +1240,7 @@ inline void Dataset::unsafe_arena_set_allocated_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.Dataset.name)
 }
 
-// .google.protobuf.Timestamp create_time = 4;
+// optional .google.protobuf.Timestamp create_time = 4;
 inline bool Dataset::has_create_time() const {
   return this != internal_default_instance() && create_time_ != NULL;
 }
@@ -1359,17 +1289,20 @@ inline  void Dataset::set_allocated_create_time(::google::protobuf::Timestamp* c
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.Dataset.create_time)
 }
 
+inline const Dataset* Dataset::internal_default_instance() {
+  return &Dataset_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListDatasetsRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 inline void ListDatasetsRequest::clear_project_id() {
   project_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ListDatasetsRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ListDatasetsRequest.project_id)
-  return project_id_.Get();
+  return project_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListDatasetsRequest::set_project_id(const ::std::string& value) {
   
@@ -1429,7 +1362,7 @@ inline void ListDatasetsRequest::unsafe_arena_set_allocated_project_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ListDatasetsRequest.project_id)
 }
 
-// int32 page_size = 2;
+// optional int32 page_size = 2;
 inline void ListDatasetsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -1443,13 +1376,13 @@ inline void ListDatasetsRequest::set_page_size(::google::protobuf::int32 value) 
   // @@protoc_insertion_point(field_set:google.genomics.v1.ListDatasetsRequest.page_size)
 }
 
-// string page_token = 3;
+// optional string page_token = 3;
 inline void ListDatasetsRequest::clear_page_token() {
   page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ListDatasetsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ListDatasetsRequest.page_token)
-  return page_token_.Get();
+  return page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListDatasetsRequest::set_page_token(const ::std::string& value) {
   
@@ -1509,6 +1442,9 @@ inline void ListDatasetsRequest::unsafe_arena_set_allocated_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ListDatasetsRequest.page_token)
 }
 
+inline const ListDatasetsRequest* ListDatasetsRequest::internal_default_instance() {
+  return &ListDatasetsRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListDatasetsResponse
@@ -1543,13 +1479,13 @@ ListDatasetsResponse::datasets() const {
   return datasets_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void ListDatasetsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& ListDatasetsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.ListDatasetsResponse.next_page_token)
-  return next_page_token_.Get();
+  return next_page_token_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListDatasetsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -1609,11 +1545,14 @@ inline void ListDatasetsResponse::unsafe_arena_set_allocated_next_page_token(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.ListDatasetsResponse.next_page_token)
 }
 
+inline const ListDatasetsResponse* ListDatasetsResponse::internal_default_instance() {
+  return &ListDatasetsResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // CreateDatasetRequest
 
-// .google.genomics.v1.Dataset dataset = 1;
+// optional .google.genomics.v1.Dataset dataset = 1;
 inline bool CreateDatasetRequest::has_dataset() const {
   return this != internal_default_instance() && dataset_ != NULL;
 }
@@ -1662,17 +1601,20 @@ inline  void CreateDatasetRequest::set_allocated_dataset(::google::genomics::v1:
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.CreateDatasetRequest.dataset)
 }
 
+inline const CreateDatasetRequest* CreateDatasetRequest::internal_default_instance() {
+  return &CreateDatasetRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // UpdateDatasetRequest
 
-// string dataset_id = 1;
+// optional string dataset_id = 1;
 inline void UpdateDatasetRequest::clear_dataset_id() {
   dataset_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& UpdateDatasetRequest::dataset_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.UpdateDatasetRequest.dataset_id)
-  return dataset_id_.Get();
+  return dataset_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void UpdateDatasetRequest::set_dataset_id(const ::std::string& value) {
   
@@ -1732,7 +1674,7 @@ inline void UpdateDatasetRequest::unsafe_arena_set_allocated_dataset_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.UpdateDatasetRequest.dataset_id)
 }
 
-// .google.genomics.v1.Dataset dataset = 2;
+// optional .google.genomics.v1.Dataset dataset = 2;
 inline bool UpdateDatasetRequest::has_dataset() const {
   return this != internal_default_instance() && dataset_ != NULL;
 }
@@ -1781,7 +1723,7 @@ inline  void UpdateDatasetRequest::set_allocated_dataset(::google::genomics::v1:
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.UpdateDatasetRequest.dataset)
 }
 
-// .google.protobuf.FieldMask update_mask = 3;
+// optional .google.protobuf.FieldMask update_mask = 3;
 inline bool UpdateDatasetRequest::has_update_mask() const {
   return this != internal_default_instance() && update_mask_ != NULL;
 }
@@ -1832,17 +1774,20 @@ inline  void UpdateDatasetRequest::set_allocated_update_mask(::google::protobuf:
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.UpdateDatasetRequest.update_mask)
 }
 
+inline const UpdateDatasetRequest* UpdateDatasetRequest::internal_default_instance() {
+  return &UpdateDatasetRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // DeleteDatasetRequest
 
-// string dataset_id = 1;
+// optional string dataset_id = 1;
 inline void DeleteDatasetRequest::clear_dataset_id() {
   dataset_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& DeleteDatasetRequest::dataset_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.DeleteDatasetRequest.dataset_id)
-  return dataset_id_.Get();
+  return dataset_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DeleteDatasetRequest::set_dataset_id(const ::std::string& value) {
   
@@ -1902,17 +1847,20 @@ inline void DeleteDatasetRequest::unsafe_arena_set_allocated_dataset_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.DeleteDatasetRequest.dataset_id)
 }
 
+inline const DeleteDatasetRequest* DeleteDatasetRequest::internal_default_instance() {
+  return &DeleteDatasetRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // UndeleteDatasetRequest
 
-// string dataset_id = 1;
+// optional string dataset_id = 1;
 inline void UndeleteDatasetRequest::clear_dataset_id() {
   dataset_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& UndeleteDatasetRequest::dataset_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.UndeleteDatasetRequest.dataset_id)
-  return dataset_id_.Get();
+  return dataset_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void UndeleteDatasetRequest::set_dataset_id(const ::std::string& value) {
   
@@ -1972,17 +1920,20 @@ inline void UndeleteDatasetRequest::unsafe_arena_set_allocated_dataset_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.UndeleteDatasetRequest.dataset_id)
 }
 
+inline const UndeleteDatasetRequest* UndeleteDatasetRequest::internal_default_instance() {
+  return &UndeleteDatasetRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetDatasetRequest
 
-// string dataset_id = 1;
+// optional string dataset_id = 1;
 inline void GetDatasetRequest::clear_dataset_id() {
   dataset_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& GetDatasetRequest::dataset_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.GetDatasetRequest.dataset_id)
-  return dataset_id_.Get();
+  return dataset_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetDatasetRequest::set_dataset_id(const ::std::string& value) {
   
@@ -2042,6 +1993,9 @@ inline void GetDatasetRequest::unsafe_arena_set_allocated_dataset_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.GetDatasetRequest.dataset_id)
 }
 
+inline const GetDatasetRequest* GetDatasetRequest::internal_default_instance() {
+  return &GetDatasetRequest_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
@@ -2059,7 +2013,6 @@ inline void GetDatasetRequest::unsafe_arena_set_allocated_dataset_id(
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace genomics

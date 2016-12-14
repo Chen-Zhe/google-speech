@@ -20,61 +20,89 @@
 namespace google {
 namespace datastore {
 namespace v1beta3 {
-class EntityResultDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<EntityResult> {};
-EntityResultDefaultTypeInternal _EntityResult_default_instance_;
-class QueryDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Query> {};
-QueryDefaultTypeInternal _Query_default_instance_;
-class KindExpressionDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<KindExpression> {};
-KindExpressionDefaultTypeInternal _KindExpression_default_instance_;
-class PropertyReferenceDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<PropertyReference> {};
-PropertyReferenceDefaultTypeInternal _PropertyReference_default_instance_;
-class ProjectionDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Projection> {};
-ProjectionDefaultTypeInternal _Projection_default_instance_;
-class PropertyOrderDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<PropertyOrder> {};
-PropertyOrderDefaultTypeInternal _PropertyOrder_default_instance_;
-class FilterDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Filter> {};
-FilterDefaultTypeInternal _Filter_default_instance_;
-class CompositeFilterDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CompositeFilter> {};
-CompositeFilterDefaultTypeInternal _CompositeFilter_default_instance_;
-class PropertyFilterDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<PropertyFilter> {};
-PropertyFilterDefaultTypeInternal _PropertyFilter_default_instance_;
-class GqlQueryDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GqlQuery> {};
-GqlQueryDefaultTypeInternal _GqlQuery_default_instance_;
-class GqlQueryParameterDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GqlQueryParameter> {};
-GqlQueryParameterDefaultTypeInternal _GqlQueryParameter_default_instance_;
-class QueryResultBatchDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<QueryResultBatch> {};
-QueryResultBatchDefaultTypeInternal _QueryResultBatch_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[13];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[5];
+const ::google::protobuf::Descriptor* EntityResult_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  EntityResult_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* EntityResult_ResultType_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* Query_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Query_reflection_ = NULL;
+const ::google::protobuf::Descriptor* KindExpression_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  KindExpression_reflection_ = NULL;
+const ::google::protobuf::Descriptor* PropertyReference_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  PropertyReference_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Projection_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Projection_reflection_ = NULL;
+const ::google::protobuf::Descriptor* PropertyOrder_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  PropertyOrder_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* PropertyOrder_Direction_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* Filter_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Filter_reflection_ = NULL;
 struct FilterOneofInstance {
   const ::google::datastore::v1beta3::CompositeFilter* composite_filter_;
   const ::google::datastore::v1beta3::PropertyFilter* property_filter_;
-} Filter_default_oneof_instance_;
+}* Filter_default_oneof_instance_ = NULL;
+const ::google::protobuf::Descriptor* CompositeFilter_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CompositeFilter_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* CompositeFilter_Operator_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* PropertyFilter_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  PropertyFilter_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* PropertyFilter_Operator_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* GqlQuery_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GqlQuery_reflection_ = NULL;
+const ::google::protobuf::Descriptor* GqlQuery_NamedBindingsEntry_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* GqlQueryParameter_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GqlQueryParameter_reflection_ = NULL;
 struct GqlQueryParameterOneofInstance {
   const ::google::datastore::v1beta3::Value* value_;
   ::google::protobuf::internal::ArenaStringPtr cursor_;
-} GqlQueryParameter_default_oneof_instance_;
+}* GqlQueryParameter_default_oneof_instance_ = NULL;
+const ::google::protobuf::Descriptor* QueryResultBatch_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  QueryResultBatch_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* QueryResultBatch_MoreResultsType_descriptor_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_2fquery_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_2fquery_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EntityResult, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fquery_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fquery_2eproto() {
+  protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fquery_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/datastore/v1beta3/query.proto");
+  GOOGLE_CHECK(file != NULL);
+  EntityResult_descriptor_ = file->message_type(0);
+  static const int EntityResult_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EntityResult, entity_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EntityResult, version_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EntityResult, cursor_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  EntityResult_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      EntityResult_descriptor_,
+      EntityResult::internal_default_instance(),
+      EntityResult_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(EntityResult),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(EntityResult, _internal_metadata_));
+  EntityResult_ResultType_descriptor_ = EntityResult_descriptor_->enum_type(0);
+  Query_descriptor_ = file->message_type(1);
+  static const int Query_offsets_[9] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, projection_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, kind_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, filter_),
@@ -84,66 +112,164 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, end_cursor_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, offset_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, limit_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(KindExpression, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Query_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Query_descriptor_,
+      Query::internal_default_instance(),
+      Query_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Query),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, _internal_metadata_));
+  KindExpression_descriptor_ = file->message_type(2);
+  static const int KindExpression_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(KindExpression, name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PropertyReference, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  KindExpression_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      KindExpression_descriptor_,
+      KindExpression::internal_default_instance(),
+      KindExpression_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(KindExpression),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(KindExpression, _internal_metadata_));
+  PropertyReference_descriptor_ = file->message_type(3);
+  static const int PropertyReference_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PropertyReference, name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Projection, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  PropertyReference_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      PropertyReference_descriptor_,
+      PropertyReference::internal_default_instance(),
+      PropertyReference_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(PropertyReference),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PropertyReference, _internal_metadata_));
+  Projection_descriptor_ = file->message_type(4);
+  static const int Projection_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Projection, property_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PropertyOrder, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Projection_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Projection_descriptor_,
+      Projection::internal_default_instance(),
+      Projection_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Projection),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Projection, _internal_metadata_));
+  PropertyOrder_descriptor_ = file->message_type(5);
+  static const int PropertyOrder_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PropertyOrder, property_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PropertyOrder, direction_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Filter, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Filter, _oneof_case_[0]),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Filter_default_oneof_instance_), composite_filter_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Filter_default_oneof_instance_), property_filter_),
+  };
+  PropertyOrder_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      PropertyOrder_descriptor_,
+      PropertyOrder::internal_default_instance(),
+      PropertyOrder_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(PropertyOrder),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PropertyOrder, _internal_metadata_));
+  PropertyOrder_Direction_descriptor_ = PropertyOrder_descriptor_->enum_type(0);
+  Filter_descriptor_ = file->message_type(6);
+  static const int Filter_offsets_[3] = {
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Filter_default_oneof_instance_, composite_filter_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Filter_default_oneof_instance_, property_filter_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Filter, filter_type_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompositeFilter, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Filter_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Filter_descriptor_,
+      Filter::internal_default_instance(),
+      Filter_offsets_,
+      -1,
+      -1,
+      -1,
+      Filter_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Filter, _oneof_case_[0]),
+      sizeof(Filter),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Filter, _internal_metadata_));
+  CompositeFilter_descriptor_ = file->message_type(7);
+  static const int CompositeFilter_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompositeFilter, op_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompositeFilter, filters_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PropertyFilter, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  CompositeFilter_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      CompositeFilter_descriptor_,
+      CompositeFilter::internal_default_instance(),
+      CompositeFilter_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(CompositeFilter),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CompositeFilter, _internal_metadata_));
+  CompositeFilter_Operator_descriptor_ = CompositeFilter_descriptor_->enum_type(0);
+  PropertyFilter_descriptor_ = file->message_type(8);
+  static const int PropertyFilter_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PropertyFilter, property_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PropertyFilter, op_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PropertyFilter, value_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GqlQuery, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  PropertyFilter_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      PropertyFilter_descriptor_,
+      PropertyFilter::internal_default_instance(),
+      PropertyFilter_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(PropertyFilter),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(PropertyFilter, _internal_metadata_));
+  PropertyFilter_Operator_descriptor_ = PropertyFilter_descriptor_->enum_type(0);
+  GqlQuery_descriptor_ = file->message_type(9);
+  static const int GqlQuery_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GqlQuery, query_string_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GqlQuery, allow_literals_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GqlQuery, named_bindings_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GqlQuery, positional_bindings_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GqlQueryParameter, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GqlQueryParameter, _oneof_case_[0]),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&GqlQueryParameter_default_oneof_instance_), value_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&GqlQueryParameter_default_oneof_instance_), cursor_),
+  };
+  GqlQuery_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GqlQuery_descriptor_,
+      GqlQuery::internal_default_instance(),
+      GqlQuery_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GqlQuery),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GqlQuery, _internal_metadata_));
+  GqlQuery_NamedBindingsEntry_descriptor_ = GqlQuery_descriptor_->nested_type(0);
+  GqlQueryParameter_descriptor_ = file->message_type(10);
+  static const int GqlQueryParameter_offsets_[3] = {
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(GqlQueryParameter_default_oneof_instance_, value_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(GqlQueryParameter_default_oneof_instance_, cursor_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GqlQueryParameter, parameter_type_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryResultBatch, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  GqlQueryParameter_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GqlQueryParameter_descriptor_,
+      GqlQueryParameter::internal_default_instance(),
+      GqlQueryParameter_offsets_,
+      -1,
+      -1,
+      -1,
+      GqlQueryParameter_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GqlQueryParameter, _oneof_case_[0]),
+      sizeof(GqlQueryParameter),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GqlQueryParameter, _internal_metadata_));
+  QueryResultBatch_descriptor_ = file->message_type(11);
+  static const int QueryResultBatch_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryResultBatch, skipped_results_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryResultBatch, skipped_cursor_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryResultBatch, entity_result_type_),
@@ -152,97 +278,94 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1beta3_
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryResultBatch, more_results_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryResultBatch, snapshot_version_),
   };
-  return offsets;
+  QueryResultBatch_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      QueryResultBatch_descriptor_,
+      QueryResultBatch::internal_default_instance(),
+      QueryResultBatch_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(QueryResultBatch),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(QueryResultBatch, _internal_metadata_));
+  QueryResultBatch_MoreResultsType_descriptor_ = QueryResultBatch_descriptor_->enum_type(0);
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(EntityResult)},
-  { 7, -1, sizeof(Query)},
-  { 20, -1, sizeof(KindExpression)},
-  { 25, -1, sizeof(PropertyReference)},
-  { 30, -1, sizeof(Projection)},
-  { 35, -1, sizeof(PropertyOrder)},
-  { 41, -1, sizeof(Filter)},
-  { 48, -1, sizeof(CompositeFilter)},
-  { 54, -1, sizeof(PropertyFilter)},
-  { 61, -1, sizeof(GqlQuery)},
-  { 69, -1, sizeof(GqlQueryParameter)},
-  { 76, -1, sizeof(QueryResultBatch)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_EntityResult_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Query_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_KindExpression_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_PropertyReference_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Projection_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_PropertyOrder_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Filter_default_instance_), &Filter_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_CompositeFilter_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_PropertyFilter_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GqlQuery_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GqlQueryParameter_default_instance_), &GqlQueryParameter_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_QueryResultBatch_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fquery_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/datastore/v1beta3/query.proto", schemas, file_default_instances, protobuf_Offsets_google_2fdatastore_2fv1beta3_2fquery_2eproto(), factory,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fdatastore_2fv1beta3_2fquery_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 13);
-  const ::google::protobuf::Descriptor* GqlQuery_NamedBindingsEntry_descriptor = file_level_metadata[9].descriptor;
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-        GqlQuery_NamedBindingsEntry_descriptor,
+      EntityResult_descriptor_, EntityResult::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Query_descriptor_, Query::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      KindExpression_descriptor_, KindExpression::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      PropertyReference_descriptor_, PropertyReference::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Projection_descriptor_, Projection::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      PropertyOrder_descriptor_, PropertyOrder::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Filter_descriptor_, Filter::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      CompositeFilter_descriptor_, CompositeFilter::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      PropertyFilter_descriptor_, PropertyFilter::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GqlQuery_descriptor_, GqlQuery::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+        GqlQuery_NamedBindingsEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
             ::std::string,
             ::google::datastore::v1beta3::GqlQueryParameter,
             ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
             ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE,
             0>::CreateDefaultInstance(
-                GqlQuery_NamedBindingsEntry_descriptor));
+                GqlQuery_NamedBindingsEntry_descriptor_));
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GqlQueryParameter_descriptor_, GqlQueryParameter::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      QueryResultBatch_descriptor_, QueryResultBatch::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fdatastore_2fv1beta3_2fquery_2eproto() {
-  _EntityResult_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _Query_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _KindExpression_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _PropertyReference_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _Projection_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
-  _PropertyOrder_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
-  _Filter_default_instance_.Shutdown();
-  delete file_level_metadata[6].reflection;
-  _CompositeFilter_default_instance_.Shutdown();
-  delete file_level_metadata[7].reflection;
-  _PropertyFilter_default_instance_.Shutdown();
-  delete file_level_metadata[8].reflection;
-  _GqlQuery_default_instance_.Shutdown();
-  delete file_level_metadata[10].reflection;
-  _GqlQueryParameter_default_instance_.Shutdown();
-  delete file_level_metadata[11].reflection;
-  _QueryResultBatch_default_instance_.Shutdown();
-  delete file_level_metadata[12].reflection;
+  EntityResult_default_instance_.Shutdown();
+  delete EntityResult_reflection_;
+  Query_default_instance_.Shutdown();
+  delete Query_reflection_;
+  KindExpression_default_instance_.Shutdown();
+  delete KindExpression_reflection_;
+  PropertyReference_default_instance_.Shutdown();
+  delete PropertyReference_reflection_;
+  Projection_default_instance_.Shutdown();
+  delete Projection_reflection_;
+  PropertyOrder_default_instance_.Shutdown();
+  delete PropertyOrder_reflection_;
+  Filter_default_instance_.Shutdown();
+  delete Filter_default_oneof_instance_;
+  delete Filter_reflection_;
+  CompositeFilter_default_instance_.Shutdown();
+  delete CompositeFilter_reflection_;
+  PropertyFilter_default_instance_.Shutdown();
+  delete PropertyFilter_reflection_;
+  GqlQuery_default_instance_.Shutdown();
+  delete GqlQuery_reflection_;
+  GqlQueryParameter_default_instance_.Shutdown();
+  delete GqlQueryParameter_default_oneof_instance_;
+  delete GqlQueryParameter_reflection_;
+  QueryResultBatch_default_instance_.Shutdown();
+  delete QueryResultBatch_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto_impl() {
@@ -252,126 +375,125 @@ void protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto_impl() {
   ::google::datastore::v1beta3::protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fentity_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fwrappers_2eproto();
   ::google::type::protobuf_InitDefaults_google_2ftype_2flatlng_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _EntityResult_default_instance_.DefaultConstruct();
-  _Query_default_instance_.DefaultConstruct();
-  _KindExpression_default_instance_.DefaultConstruct();
-  _PropertyReference_default_instance_.DefaultConstruct();
-  _Projection_default_instance_.DefaultConstruct();
-  _PropertyOrder_default_instance_.DefaultConstruct();
-  _Filter_default_instance_.DefaultConstruct();
-  _CompositeFilter_default_instance_.DefaultConstruct();
-  _PropertyFilter_default_instance_.DefaultConstruct();
-  _GqlQuery_default_instance_.DefaultConstruct();
-  _GqlQueryParameter_default_instance_.DefaultConstruct();
-  _QueryResultBatch_default_instance_.DefaultConstruct();
-  _EntityResult_default_instance_.get_mutable()->entity_ = const_cast< ::google::datastore::v1beta3::Entity*>(
-      ::google::datastore::v1beta3::Entity::internal_default_instance());
-  _Query_default_instance_.get_mutable()->filter_ = const_cast< ::google::datastore::v1beta3::Filter*>(
-      ::google::datastore::v1beta3::Filter::internal_default_instance());
-  _Query_default_instance_.get_mutable()->limit_ = const_cast< ::google::protobuf::Int32Value*>(
-      ::google::protobuf::Int32Value::internal_default_instance());
-  _Projection_default_instance_.get_mutable()->property_ = const_cast< ::google::datastore::v1beta3::PropertyReference*>(
-      ::google::datastore::v1beta3::PropertyReference::internal_default_instance());
-  _PropertyOrder_default_instance_.get_mutable()->property_ = const_cast< ::google::datastore::v1beta3::PropertyReference*>(
-      ::google::datastore::v1beta3::PropertyReference::internal_default_instance());
-  Filter_default_oneof_instance_.composite_filter_ = const_cast< ::google::datastore::v1beta3::CompositeFilter*>(
-      ::google::datastore::v1beta3::CompositeFilter::internal_default_instance());
-  Filter_default_oneof_instance_.property_filter_ = const_cast< ::google::datastore::v1beta3::PropertyFilter*>(
-      ::google::datastore::v1beta3::PropertyFilter::internal_default_instance());
-  _PropertyFilter_default_instance_.get_mutable()->property_ = const_cast< ::google::datastore::v1beta3::PropertyReference*>(
-      ::google::datastore::v1beta3::PropertyReference::internal_default_instance());
-  _PropertyFilter_default_instance_.get_mutable()->value_ = const_cast< ::google::datastore::v1beta3::Value*>(
-      ::google::datastore::v1beta3::Value::internal_default_instance());
-  GqlQueryParameter_default_oneof_instance_.value_ = const_cast< ::google::datastore::v1beta3::Value*>(
-      ::google::datastore::v1beta3::Value::internal_default_instance());
-  GqlQueryParameter_default_oneof_instance_.cursor_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::google::protobuf::internal::GetEmptyString();
+  EntityResult_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Query_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  KindExpression_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  PropertyReference_default_instance_.DefaultConstruct();
+  Projection_default_instance_.DefaultConstruct();
+  PropertyOrder_default_instance_.DefaultConstruct();
+  Filter_default_instance_.DefaultConstruct();
+  Filter_default_oneof_instance_ = new FilterOneofInstance();
+  CompositeFilter_default_instance_.DefaultConstruct();
+  PropertyFilter_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GqlQuery_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ::google::protobuf::internal::GetEmptyString();
+  GqlQueryParameter_default_instance_.DefaultConstruct();
+  GqlQueryParameter_default_oneof_instance_ = new GqlQueryParameterOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  QueryResultBatch_default_instance_.DefaultConstruct();
+  EntityResult_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Query_default_instance_.get_mutable()->InitAsDefaultInstance();
+  KindExpression_default_instance_.get_mutable()->InitAsDefaultInstance();
+  PropertyReference_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Projection_default_instance_.get_mutable()->InitAsDefaultInstance();
+  PropertyOrder_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Filter_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CompositeFilter_default_instance_.get_mutable()->InitAsDefaultInstance();
+  PropertyFilter_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GqlQuery_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GqlQueryParameter_default_instance_.get_mutable()->InitAsDefaultInstance();
+  QueryResultBatch_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto_once_);
 void protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fquery_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
-  static const char descriptor[] = {
-      "\n$google/datastore/v1beta3/query.proto\022\030"
-      "google.datastore.v1beta3\032\034google/api/ann"
-      "otations.proto\032%google/datastore/v1beta3"
-      "/entity.proto\032\036google/protobuf/wrappers."
-      "proto\032\030google/type/latlng.proto\"\264\001\n\014Enti"
-      "tyResult\0220\n\006entity\030\001 \001(\0132 .google.datast"
-      "ore.v1beta3.Entity\022\017\n\007version\030\004 \001(\003\022\016\n\006c"
-      "ursor\030\003 \001(\014\"Q\n\nResultType\022\033\n\027RESULT_TYPE"
-      "_UNSPECIFIED\020\000\022\010\n\004FULL\020\001\022\016\n\nPROJECTION\020\002"
-      "\022\014\n\010KEY_ONLY\020\003\"\213\003\n\005Query\0228\n\nprojection\030\002"
-      " \003(\0132$.google.datastore.v1beta3.Projecti"
-      "on\0226\n\004kind\030\003 \003(\0132(.google.datastore.v1be"
-      "ta3.KindExpression\0220\n\006filter\030\004 \001(\0132 .goo"
-      "gle.datastore.v1beta3.Filter\0226\n\005order\030\005 "
-      "\003(\0132\'.google.datastore.v1beta3.PropertyO"
-      "rder\022@\n\013distinct_on\030\006 \003(\0132+.google.datas"
-      "tore.v1beta3.PropertyReference\022\024\n\014start_"
-      "cursor\030\007 \001(\014\022\022\n\nend_cursor\030\010 \001(\014\022\016\n\006offs"
-      "et\030\n \001(\005\022*\n\005limit\030\014 \001(\0132\033.google.protobu"
-      "f.Int32Value\"\036\n\016KindExpression\022\014\n\004name\030\001"
-      " \001(\t\"!\n\021PropertyReference\022\014\n\004name\030\002 \001(\t\""
-      "K\n\nProjection\022=\n\010property\030\001 \001(\0132+.google"
-      ".datastore.v1beta3.PropertyReference\"\333\001\n"
-      "\rPropertyOrder\022=\n\010property\030\001 \001(\0132+.googl"
-      "e.datastore.v1beta3.PropertyReference\022D\n"
-      "\tdirection\030\002 \001(\01621.google.datastore.v1be"
-      "ta3.PropertyOrder.Direction\"E\n\tDirection"
-      "\022\031\n\025DIRECTION_UNSPECIFIED\020\000\022\r\n\tASCENDING"
-      "\020\001\022\016\n\nDESCENDING\020\002\"\243\001\n\006Filter\022E\n\020composi"
-      "te_filter\030\001 \001(\0132).google.datastore.v1bet"
-      "a3.CompositeFilterH\000\022C\n\017property_filter\030"
-      "\002 \001(\0132(.google.datastore.v1beta3.Propert"
-      "yFilterH\000B\r\n\013filter_type\"\263\001\n\017CompositeFi"
-      "lter\022>\n\002op\030\001 \001(\01622.google.datastore.v1be"
-      "ta3.CompositeFilter.Operator\0221\n\007filters\030"
-      "\002 \003(\0132 .google.datastore.v1beta3.Filter\""
-      "-\n\010Operator\022\030\n\024OPERATOR_UNSPECIFIED\020\000\022\007\n"
-      "\003AND\020\001\"\326\002\n\016PropertyFilter\022=\n\010property\030\001 "
-      "\001(\0132+.google.datastore.v1beta3.PropertyR"
-      "eference\022=\n\002op\030\002 \001(\01621.google.datastore."
-      "v1beta3.PropertyFilter.Operator\022.\n\005value"
-      "\030\003 \001(\0132\037.google.datastore.v1beta3.Value\""
-      "\225\001\n\010Operator\022\030\n\024OPERATOR_UNSPECIFIED\020\000\022\r"
-      "\n\tLESS_THAN\020\001\022\026\n\022LESS_THAN_OR_EQUAL\020\002\022\020\n"
-      "\014GREATER_THAN\020\003\022\031\n\025GREATER_THAN_OR_EQUAL"
-      "\020\004\022\t\n\005EQUAL\020\005\022\020\n\014HAS_ANCESTOR\020\013\"\264\002\n\010GqlQ"
-      "uery\022\024\n\014query_string\030\001 \001(\t\022\026\n\016allow_lite"
-      "rals\030\002 \001(\010\022M\n\016named_bindings\030\005 \003(\01325.goo"
-      "gle.datastore.v1beta3.GqlQuery.NamedBind"
-      "ingsEntry\022H\n\023positional_bindings\030\004 \003(\0132+"
-      ".google.datastore.v1beta3.GqlQueryParame"
-      "ter\032a\n\022NamedBindingsEntry\022\013\n\003key\030\001 \001(\t\022:"
-      "\n\005value\030\002 \001(\0132+.google.datastore.v1beta3"
-      ".GqlQueryParameter:\0028\001\"i\n\021GqlQueryParame"
-      "ter\0220\n\005value\030\002 \001(\0132\037.google.datastore.v1"
-      "beta3.ValueH\000\022\020\n\006cursor\030\003 \001(\014H\000B\020\n\016param"
-      "eter_type\"\355\003\n\020QueryResultBatch\022\027\n\017skippe"
-      "d_results\030\006 \001(\005\022\026\n\016skipped_cursor\030\003 \001(\014\022"
-      "M\n\022entity_result_type\030\001 \001(\01621.google.dat"
-      "astore.v1beta3.EntityResult.ResultType\022>"
-      "\n\016entity_results\030\002 \003(\0132&.google.datastor"
-      "e.v1beta3.EntityResult\022\022\n\nend_cursor\030\004 \001"
-      "(\014\022P\n\014more_results\030\005 \001(\0162:.google.datast"
-      "ore.v1beta3.QueryResultBatch.MoreResults"
-      "Type\022\030\n\020snapshot_version\030\007 \001(\003\"\230\001\n\017MoreR"
-      "esultsType\022!\n\035MORE_RESULTS_TYPE_UNSPECIF"
-      "IED\020\000\022\020\n\014NOT_FINISHED\020\001\022\034\n\030MORE_RESULTS_"
-      "AFTER_LIMIT\020\002\022\035\n\031MORE_RESULTS_AFTER_CURS"
-      "OR\020\004\022\023\n\017NO_MORE_RESULTS\020\003B\220\001\n\034com.google"
-      ".datastore.v1beta3B\nQueryProtoP\001ZAgoogle"
-      ".golang.org/genproto/googleapis/datastor"
-      "e/v1beta3;datastore\252\002\036Google.Cloud.Datas"
-      "tore.V1Beta3b\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 2900);
+    "\n$google/datastore/v1beta3/query.proto\022\030"
+    "google.datastore.v1beta3\032\034google/api/ann"
+    "otations.proto\032%google/datastore/v1beta3"
+    "/entity.proto\032\036google/protobuf/wrappers."
+    "proto\032\030google/type/latlng.proto\"\264\001\n\014Enti"
+    "tyResult\0220\n\006entity\030\001 \001(\0132 .google.datast"
+    "ore.v1beta3.Entity\022\017\n\007version\030\004 \001(\003\022\016\n\006c"
+    "ursor\030\003 \001(\014\"Q\n\nResultType\022\033\n\027RESULT_TYPE"
+    "_UNSPECIFIED\020\000\022\010\n\004FULL\020\001\022\016\n\nPROJECTION\020\002"
+    "\022\014\n\010KEY_ONLY\020\003\"\213\003\n\005Query\0228\n\nprojection\030\002"
+    " \003(\0132$.google.datastore.v1beta3.Projecti"
+    "on\0226\n\004kind\030\003 \003(\0132(.google.datastore.v1be"
+    "ta3.KindExpression\0220\n\006filter\030\004 \001(\0132 .goo"
+    "gle.datastore.v1beta3.Filter\0226\n\005order\030\005 "
+    "\003(\0132\'.google.datastore.v1beta3.PropertyO"
+    "rder\022@\n\013distinct_on\030\006 \003(\0132+.google.datas"
+    "tore.v1beta3.PropertyReference\022\024\n\014start_"
+    "cursor\030\007 \001(\014\022\022\n\nend_cursor\030\010 \001(\014\022\016\n\006offs"
+    "et\030\n \001(\005\022*\n\005limit\030\014 \001(\0132\033.google.protobu"
+    "f.Int32Value\"\036\n\016KindExpression\022\014\n\004name\030\001"
+    " \001(\t\"!\n\021PropertyReference\022\014\n\004name\030\002 \001(\t\""
+    "K\n\nProjection\022=\n\010property\030\001 \001(\0132+.google"
+    ".datastore.v1beta3.PropertyReference\"\333\001\n"
+    "\rPropertyOrder\022=\n\010property\030\001 \001(\0132+.googl"
+    "e.datastore.v1beta3.PropertyReference\022D\n"
+    "\tdirection\030\002 \001(\01621.google.datastore.v1be"
+    "ta3.PropertyOrder.Direction\"E\n\tDirection"
+    "\022\031\n\025DIRECTION_UNSPECIFIED\020\000\022\r\n\tASCENDING"
+    "\020\001\022\016\n\nDESCENDING\020\002\"\243\001\n\006Filter\022E\n\020composi"
+    "te_filter\030\001 \001(\0132).google.datastore.v1bet"
+    "a3.CompositeFilterH\000\022C\n\017property_filter\030"
+    "\002 \001(\0132(.google.datastore.v1beta3.Propert"
+    "yFilterH\000B\r\n\013filter_type\"\263\001\n\017CompositeFi"
+    "lter\022>\n\002op\030\001 \001(\01622.google.datastore.v1be"
+    "ta3.CompositeFilter.Operator\0221\n\007filters\030"
+    "\002 \003(\0132 .google.datastore.v1beta3.Filter\""
+    "-\n\010Operator\022\030\n\024OPERATOR_UNSPECIFIED\020\000\022\007\n"
+    "\003AND\020\001\"\326\002\n\016PropertyFilter\022=\n\010property\030\001 "
+    "\001(\0132+.google.datastore.v1beta3.PropertyR"
+    "eference\022=\n\002op\030\002 \001(\01621.google.datastore."
+    "v1beta3.PropertyFilter.Operator\022.\n\005value"
+    "\030\003 \001(\0132\037.google.datastore.v1beta3.Value\""
+    "\225\001\n\010Operator\022\030\n\024OPERATOR_UNSPECIFIED\020\000\022\r"
+    "\n\tLESS_THAN\020\001\022\026\n\022LESS_THAN_OR_EQUAL\020\002\022\020\n"
+    "\014GREATER_THAN\020\003\022\031\n\025GREATER_THAN_OR_EQUAL"
+    "\020\004\022\t\n\005EQUAL\020\005\022\020\n\014HAS_ANCESTOR\020\013\"\264\002\n\010GqlQ"
+    "uery\022\024\n\014query_string\030\001 \001(\t\022\026\n\016allow_lite"
+    "rals\030\002 \001(\010\022M\n\016named_bindings\030\005 \003(\01325.goo"
+    "gle.datastore.v1beta3.GqlQuery.NamedBind"
+    "ingsEntry\022H\n\023positional_bindings\030\004 \003(\0132+"
+    ".google.datastore.v1beta3.GqlQueryParame"
+    "ter\032a\n\022NamedBindingsEntry\022\013\n\003key\030\001 \001(\t\022:"
+    "\n\005value\030\002 \001(\0132+.google.datastore.v1beta3"
+    ".GqlQueryParameter:\0028\001\"i\n\021GqlQueryParame"
+    "ter\0220\n\005value\030\002 \001(\0132\037.google.datastore.v1"
+    "beta3.ValueH\000\022\020\n\006cursor\030\003 \001(\014H\000B\020\n\016param"
+    "eter_type\"\355\003\n\020QueryResultBatch\022\027\n\017skippe"
+    "d_results\030\006 \001(\005\022\026\n\016skipped_cursor\030\003 \001(\014\022"
+    "M\n\022entity_result_type\030\001 \001(\01621.google.dat"
+    "astore.v1beta3.EntityResult.ResultType\022>"
+    "\n\016entity_results\030\002 \003(\0132&.google.datastor"
+    "e.v1beta3.EntityResult\022\022\n\nend_cursor\030\004 \001"
+    "(\014\022P\n\014more_results\030\005 \001(\0162:.google.datast"
+    "ore.v1beta3.QueryResultBatch.MoreResults"
+    "Type\022\030\n\020snapshot_version\030\007 \001(\003\"\230\001\n\017MoreR"
+    "esultsType\022!\n\035MORE_RESULTS_TYPE_UNSPECIF"
+    "IED\020\000\022\020\n\014NOT_FINISHED\020\001\022\034\n\030MORE_RESULTS_"
+    "AFTER_LIMIT\020\002\022\035\n\031MORE_RESULTS_AFTER_CURS"
+    "OR\020\004\022\023\n\017NO_MORE_RESULTS\020\003B\220\001\n\034com.google"
+    ".datastore.v1beta3B\nQueryProtoP\001ZAgoogle"
+    ".golang.org/genproto/googleapis/datastor"
+    "e/v1beta3;datastore\252\002\036Google.Cloud.Datas"
+    "tore.V1Beta3b\006proto3", 2900);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/datastore/v1beta3/query.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -392,9 +514,22 @@ struct StaticDescriptorInitializer_google_2fdatastore_2fv1beta3_2fquery_2eproto 
     protobuf_AddDesc_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   }
 } static_descriptor_initializer_google_2fdatastore_2fv1beta3_2fquery_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
+// ===================================================================
+
 const ::google::protobuf::EnumDescriptor* EntityResult_ResultType_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
+  return EntityResult_ResultType_descriptor_;
 }
 bool EntityResult_ResultType_IsValid(int value) {
   switch (value) {
@@ -417,111 +552,6 @@ const EntityResult_ResultType EntityResult::ResultType_MIN;
 const EntityResult_ResultType EntityResult::ResultType_MAX;
 const int EntityResult::ResultType_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-const ::google::protobuf::EnumDescriptor* PropertyOrder_Direction_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[1];
-}
-bool PropertyOrder_Direction_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const PropertyOrder_Direction PropertyOrder::DIRECTION_UNSPECIFIED;
-const PropertyOrder_Direction PropertyOrder::ASCENDING;
-const PropertyOrder_Direction PropertyOrder::DESCENDING;
-const PropertyOrder_Direction PropertyOrder::Direction_MIN;
-const PropertyOrder_Direction PropertyOrder::Direction_MAX;
-const int PropertyOrder::Direction_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-const ::google::protobuf::EnumDescriptor* CompositeFilter_Operator_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[2];
-}
-bool CompositeFilter_Operator_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const CompositeFilter_Operator CompositeFilter::OPERATOR_UNSPECIFIED;
-const CompositeFilter_Operator CompositeFilter::AND;
-const CompositeFilter_Operator CompositeFilter::Operator_MIN;
-const CompositeFilter_Operator CompositeFilter::Operator_MAX;
-const int CompositeFilter::Operator_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-const ::google::protobuf::EnumDescriptor* PropertyFilter_Operator_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[3];
-}
-bool PropertyFilter_Operator_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 11:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const PropertyFilter_Operator PropertyFilter::OPERATOR_UNSPECIFIED;
-const PropertyFilter_Operator PropertyFilter::LESS_THAN;
-const PropertyFilter_Operator PropertyFilter::LESS_THAN_OR_EQUAL;
-const PropertyFilter_Operator PropertyFilter::GREATER_THAN;
-const PropertyFilter_Operator PropertyFilter::GREATER_THAN_OR_EQUAL;
-const PropertyFilter_Operator PropertyFilter::EQUAL;
-const PropertyFilter_Operator PropertyFilter::HAS_ANCESTOR;
-const PropertyFilter_Operator PropertyFilter::Operator_MIN;
-const PropertyFilter_Operator PropertyFilter::Operator_MAX;
-const int PropertyFilter::Operator_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-const ::google::protobuf::EnumDescriptor* QueryResultBatch_MoreResultsType_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[4];
-}
-bool QueryResultBatch_MoreResultsType_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const QueryResultBatch_MoreResultsType QueryResultBatch::MORE_RESULTS_TYPE_UNSPECIFIED;
-const QueryResultBatch_MoreResultsType QueryResultBatch::NOT_FINISHED;
-const QueryResultBatch_MoreResultsType QueryResultBatch::MORE_RESULTS_AFTER_LIMIT;
-const QueryResultBatch_MoreResultsType QueryResultBatch::MORE_RESULTS_AFTER_CURSOR;
-const QueryResultBatch_MoreResultsType QueryResultBatch::NO_MORE_RESULTS;
-const QueryResultBatch_MoreResultsType QueryResultBatch::MoreResultsType_MIN;
-const QueryResultBatch_MoreResultsType QueryResultBatch::MoreResultsType_MAX;
-const int QueryResultBatch::MoreResultsType_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-// ===================================================================
-
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int EntityResult::kEntityFieldNumber;
 const int EntityResult::kVersionFieldNumber;
@@ -530,34 +560,28 @@ const int EntityResult::kCursorFieldNumber;
 
 EntityResult::EntityResult()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1beta3.EntityResult)
 }
+
+void EntityResult::InitAsDefaultInstance() {
+  entity_ = const_cast< ::google::datastore::v1beta3::Entity*>(
+      ::google::datastore::v1beta3::Entity::internal_default_instance());
+}
+
 EntityResult::EntityResult(const EntityResult& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  cursor_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.cursor().size() > 0) {
-    cursor_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cursor_);
-  }
-  if (from.has_entity()) {
-    entity_ = new ::google::datastore::v1beta3::Entity(*from.entity_);
-  } else {
-    entity_ = NULL;
-  }
-  version_ = from.version_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1beta3.EntityResult)
 }
 
 void EntityResult::SharedCtor() {
   cursor_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&entity_, 0, reinterpret_cast<char*>(&version_) -
-    reinterpret_cast<char*>(&entity_) + sizeof(version_));
+  entity_ = NULL;
+  version_ = GOOGLE_LONGLONG(0);
   _cached_size_ = 0;
 }
 
@@ -568,7 +592,7 @@ EntityResult::~EntityResult() {
 
 void EntityResult::SharedDtor() {
   cursor_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &EntityResult_default_instance_.get()) {
     delete entity_;
   }
 }
@@ -580,13 +604,15 @@ void EntityResult::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* EntityResult::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return EntityResult_descriptor_;
 }
 
 const EntityResult& EntityResult::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<EntityResult> EntityResult_default_instance_;
 
 EntityResult* EntityResult::New(::google::protobuf::Arena* arena) const {
   EntityResult* n = new EntityResult;
@@ -598,12 +624,10 @@ EntityResult* EntityResult::New(::google::protobuf::Arena* arena) const {
 
 void EntityResult::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.datastore.v1beta3.EntityResult)
-  cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && entity_ != NULL) {
-    delete entity_;
-  }
+  if (GetArenaNoVirtual() == NULL && entity_ != NULL) delete entity_;
   entity_ = NULL;
   version_ = GOOGLE_LONGLONG(0);
+  cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 bool EntityResult::MergePartialFromCodedStream(
@@ -612,35 +636,39 @@ bool EntityResult::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1beta3.EntityResult)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.datastore.v1beta3.Entity entity = 1;
+      // optional .google.datastore.v1beta3.Entity entity = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_entity()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_cursor;
         break;
       }
 
-      // bytes cursor = 3;
+      // optional bytes cursor = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_cursor:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_cursor()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_version;
         break;
       }
 
-      // int64 version = 4;
+      // optional int64 version = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_version:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -648,6 +676,7 @@ bool EntityResult::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -675,19 +704,19 @@ failure:
 void EntityResult::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1beta3.EntityResult)
-  // .google.datastore.v1beta3.Entity entity = 1;
+  // optional .google.datastore.v1beta3.Entity entity = 1;
   if (this->has_entity()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->entity_, output);
   }
 
-  // bytes cursor = 3;
+  // optional bytes cursor = 3;
   if (this->cursor().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       3, this->cursor(), output);
   }
 
-  // int64 version = 4;
+  // optional int64 version = 4;
   if (this->version() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(4, this->version(), output);
   }
@@ -699,21 +728,21 @@ void EntityResult::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1beta3.EntityResult)
-  // .google.datastore.v1beta3.Entity entity = 1;
+  // optional .google.datastore.v1beta3.Entity entity = 1;
   if (this->has_entity()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->entity_, false, target);
   }
 
-  // bytes cursor = 3;
+  // optional bytes cursor = 3;
   if (this->cursor().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         3, this->cursor(), target);
   }
 
-  // int64 version = 4;
+  // optional int64 version = 4;
   if (this->version() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(4, this->version(), target);
   }
@@ -726,25 +755,25 @@ size_t EntityResult::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1beta3.EntityResult)
   size_t total_size = 0;
 
-  // bytes cursor = 3;
-  if (this->cursor().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->cursor());
-  }
-
-  // .google.datastore.v1beta3.Entity entity = 1;
+  // optional .google.datastore.v1beta3.Entity entity = 1;
   if (this->has_entity()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->entity_);
   }
 
-  // int64 version = 4;
+  // optional int64 version = 4;
   if (this->version() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->version());
+  }
+
+  // optional bytes cursor = 3;
+  if (this->cursor().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::BytesSize(
+        this->cursor());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -756,7 +785,7 @@ size_t EntityResult::ByteSizeLong() const {
 
 void EntityResult::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1beta3.EntityResult)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const EntityResult* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const EntityResult>(
           &from);
@@ -765,23 +794,30 @@ void EntityResult::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1beta3.EntityResult)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void EntityResult::MergeFrom(const EntityResult& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1beta3.EntityResult)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.cursor().size() > 0) {
-
-    cursor_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cursor_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void EntityResult::UnsafeMergeFrom(const EntityResult& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_entity()) {
     mutable_entity()->::google::datastore::v1beta3::Entity::MergeFrom(from.entity());
   }
   if (from.version() != 0) {
     set_version(from.version());
+  }
+  if (from.cursor().size() > 0) {
+
+    cursor_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.cursor_);
   }
 }
 
@@ -796,10 +832,11 @@ void EntityResult::CopyFrom(const EntityResult& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1beta3.EntityResult)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool EntityResult::IsInitialized() const {
+
   return true;
 }
 
@@ -808,21 +845,25 @@ void EntityResult::Swap(EntityResult* other) {
   InternalSwap(other);
 }
 void EntityResult::InternalSwap(EntityResult* other) {
-  cursor_.Swap(&other->cursor_);
   std::swap(entity_, other->entity_);
   std::swap(version_, other->version_);
+  cursor_.Swap(&other->cursor_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata EntityResult::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = EntityResult_descriptor_;
+  metadata.reflection = EntityResult_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // EntityResult
 
-// .google.datastore.v1beta3.Entity entity = 1;
+// optional .google.datastore.v1beta3.Entity entity = 1;
 bool EntityResult::has_entity() const {
   return this != internal_default_instance() && entity_ != NULL;
 }
@@ -861,7 +902,7 @@ void EntityResult::set_allocated_entity(::google::datastore::v1beta3::Entity* en
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.EntityResult.entity)
 }
 
-// int64 version = 4;
+// optional int64 version = 4;
 void EntityResult::clear_version() {
   version_ = GOOGLE_LONGLONG(0);
 }
@@ -875,13 +916,13 @@ void EntityResult::set_version(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.datastore.v1beta3.EntityResult.version)
 }
 
-// bytes cursor = 3;
+// optional bytes cursor = 3;
 void EntityResult::clear_cursor() {
   cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& EntityResult::cursor() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.EntityResult.cursor)
-  return cursor_.GetNoArena();
+  return cursor_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void EntityResult::set_cursor(const ::std::string& value) {
   
@@ -919,6 +960,9 @@ void EntityResult::set_allocated_cursor(::std::string* cursor) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.EntityResult.cursor)
 }
 
+inline const EntityResult* EntityResult::internal_default_instance() {
+  return &EntityResult_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -937,48 +981,32 @@ const int Query::kLimitFieldNumber;
 
 Query::Query()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1beta3.Query)
 }
+
+void Query::InitAsDefaultInstance() {
+  filter_ = const_cast< ::google::datastore::v1beta3::Filter*>(
+      ::google::datastore::v1beta3::Filter::internal_default_instance());
+  limit_ = const_cast< ::google::protobuf::Int32Value*>(
+      ::google::protobuf::Int32Value::internal_default_instance());
+}
+
 Query::Query(const Query& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      projection_(from.projection_),
-      kind_(from.kind_),
-      order_(from.order_),
-      distinct_on_(from.distinct_on_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  start_cursor_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.start_cursor().size() > 0) {
-    start_cursor_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.start_cursor_);
-  }
-  end_cursor_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.end_cursor().size() > 0) {
-    end_cursor_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.end_cursor_);
-  }
-  if (from.has_filter()) {
-    filter_ = new ::google::datastore::v1beta3::Filter(*from.filter_);
-  } else {
-    filter_ = NULL;
-  }
-  if (from.has_limit()) {
-    limit_ = new ::google::protobuf::Int32Value(*from.limit_);
-  } else {
-    limit_ = NULL;
-  }
-  offset_ = from.offset_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1beta3.Query)
 }
 
 void Query::SharedCtor() {
   start_cursor_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   end_cursor_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&filter_, 0, reinterpret_cast<char*>(&offset_) -
-    reinterpret_cast<char*>(&filter_) + sizeof(offset_));
+  filter_ = NULL;
+  limit_ = NULL;
+  offset_ = 0;
   _cached_size_ = 0;
 }
 
@@ -990,10 +1018,8 @@ Query::~Query() {
 void Query::SharedDtor() {
   start_cursor_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   end_cursor_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &Query_default_instance_.get()) {
     delete filter_;
-  }
-  if (this != internal_default_instance()) {
     delete limit_;
   }
 }
@@ -1005,13 +1031,15 @@ void Query::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Query::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return Query_descriptor_;
 }
 
 const Query& Query::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Query> Query_default_instance_;
 
 Query* Query::New(::google::protobuf::Arena* arena) const {
   Query* n = new Query;
@@ -1023,21 +1051,17 @@ Query* Query::New(::google::protobuf::Arena* arena) const {
 
 void Query::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.datastore.v1beta3.Query)
+  if (GetArenaNoVirtual() == NULL && filter_ != NULL) delete filter_;
+  filter_ = NULL;
+  start_cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  end_cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  offset_ = 0;
+  if (GetArenaNoVirtual() == NULL && limit_ != NULL) delete limit_;
+  limit_ = NULL;
   projection_.Clear();
   kind_.Clear();
   order_.Clear();
   distinct_on_.Clear();
-  start_cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  end_cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && filter_ != NULL) {
-    delete filter_;
-  }
-  filter_ = NULL;
-  if (GetArenaNoVirtual() == NULL && limit_ != NULL) {
-    delete limit_;
-  }
-  limit_ = NULL;
-  offset_ = 0;
 }
 
 bool Query::MergePartialFromCodedStream(
@@ -1046,98 +1070,118 @@ bool Query::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1beta3.Query)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.datastore.v1beta3.Projection projection = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_projection:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_projection()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_loop_projection;
+        if (input->ExpectTag(26)) goto parse_loop_kind;
         input->UnsafeDecrementRecursionDepth();
         break;
       }
 
       // repeated .google.datastore.v1beta3.KindExpression kind = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_kind:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_kind()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_loop_kind;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(34)) goto parse_filter;
         break;
       }
 
-      // .google.datastore.v1beta3.Filter filter = 4;
+      // optional .google.datastore.v1beta3.Filter filter = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_filter:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_filter()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_order;
         break;
       }
 
       // repeated .google.datastore.v1beta3.PropertyOrder order = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_order:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_order:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_order()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_loop_order;
+        if (input->ExpectTag(50)) goto parse_loop_distinct_on;
         input->UnsafeDecrementRecursionDepth();
         break;
       }
 
       // repeated .google.datastore.v1beta3.PropertyReference distinct_on = 6;
       case 6: {
-        if (tag == 50u) {
+        if (tag == 50) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_distinct_on:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_distinct_on()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(50)) goto parse_loop_distinct_on;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(58)) goto parse_start_cursor;
         break;
       }
 
-      // bytes start_cursor = 7;
+      // optional bytes start_cursor = 7;
       case 7: {
-        if (tag == 58u) {
+        if (tag == 58) {
+         parse_start_cursor:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_start_cursor()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(66)) goto parse_end_cursor;
         break;
       }
 
-      // bytes end_cursor = 8;
+      // optional bytes end_cursor = 8;
       case 8: {
-        if (tag == 66u) {
+        if (tag == 66) {
+         parse_end_cursor:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_end_cursor()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(80)) goto parse_offset;
         break;
       }
 
-      // int32 offset = 10;
+      // optional int32 offset = 10;
       case 10: {
-        if (tag == 80u) {
+        if (tag == 80) {
+         parse_offset:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -1145,17 +1189,20 @@ bool Query::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(98)) goto parse_limit;
         break;
       }
 
-      // .google.protobuf.Int32Value limit = 12;
+      // optional .google.protobuf.Int32Value limit = 12;
       case 12: {
-        if (tag == 98u) {
+        if (tag == 98) {
+         parse_limit:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_limit()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1195,7 +1242,7 @@ void Query::SerializeWithCachedSizes(
       3, this->kind(i), output);
   }
 
-  // .google.datastore.v1beta3.Filter filter = 4;
+  // optional .google.datastore.v1beta3.Filter filter = 4;
   if (this->has_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, *this->filter_, output);
@@ -1213,24 +1260,24 @@ void Query::SerializeWithCachedSizes(
       6, this->distinct_on(i), output);
   }
 
-  // bytes start_cursor = 7;
+  // optional bytes start_cursor = 7;
   if (this->start_cursor().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       7, this->start_cursor(), output);
   }
 
-  // bytes end_cursor = 8;
+  // optional bytes end_cursor = 8;
   if (this->end_cursor().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       8, this->end_cursor(), output);
   }
 
-  // int32 offset = 10;
+  // optional int32 offset = 10;
   if (this->offset() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(10, this->offset(), output);
   }
 
-  // .google.protobuf.Int32Value limit = 12;
+  // optional .google.protobuf.Int32Value limit = 12;
   if (this->has_limit()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       12, *this->limit_, output);
@@ -1257,7 +1304,7 @@ void Query::SerializeWithCachedSizes(
         3, this->kind(i), false, target);
   }
 
-  // .google.datastore.v1beta3.Filter filter = 4;
+  // optional .google.datastore.v1beta3.Filter filter = 4;
   if (this->has_filter()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -1278,26 +1325,26 @@ void Query::SerializeWithCachedSizes(
         6, this->distinct_on(i), false, target);
   }
 
-  // bytes start_cursor = 7;
+  // optional bytes start_cursor = 7;
   if (this->start_cursor().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         7, this->start_cursor(), target);
   }
 
-  // bytes end_cursor = 8;
+  // optional bytes end_cursor = 8;
   if (this->end_cursor().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         8, this->end_cursor(), target);
   }
 
-  // int32 offset = 10;
+  // optional int32 offset = 10;
   if (this->offset() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(10, this->offset(), target);
   }
 
-  // .google.protobuf.Int32Value limit = 12;
+  // optional .google.protobuf.Int32Value limit = 12;
   if (this->has_limit()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -1311,6 +1358,41 @@ void Query::SerializeWithCachedSizes(
 size_t Query::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1beta3.Query)
   size_t total_size = 0;
+
+  // optional .google.datastore.v1beta3.Filter filter = 4;
+  if (this->has_filter()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->filter_);
+  }
+
+  // optional bytes start_cursor = 7;
+  if (this->start_cursor().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::BytesSize(
+        this->start_cursor());
+  }
+
+  // optional bytes end_cursor = 8;
+  if (this->end_cursor().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::BytesSize(
+        this->end_cursor());
+  }
+
+  // optional int32 offset = 10;
+  if (this->offset() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->offset());
+  }
+
+  // optional .google.protobuf.Int32Value limit = 12;
+  if (this->has_limit()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->limit_);
+  }
 
   // repeated .google.datastore.v1beta3.Projection projection = 2;
   {
@@ -1356,41 +1438,6 @@ size_t Query::ByteSizeLong() const {
     }
   }
 
-  // bytes start_cursor = 7;
-  if (this->start_cursor().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->start_cursor());
-  }
-
-  // bytes end_cursor = 8;
-  if (this->end_cursor().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->end_cursor());
-  }
-
-  // .google.datastore.v1beta3.Filter filter = 4;
-  if (this->has_filter()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->filter_);
-  }
-
-  // .google.protobuf.Int32Value limit = 12;
-  if (this->has_limit()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->limit_);
-  }
-
-  // int32 offset = 10;
-  if (this->offset() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->offset());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -1400,7 +1447,7 @@ size_t Query::ByteSizeLong() const {
 
 void Query::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1beta3.Query)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Query* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Query>(
           &from);
@@ -1409,18 +1456,28 @@ void Query::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1beta3.Query)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Query::MergeFrom(const Query& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1beta3.Query)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Query::UnsafeMergeFrom(const Query& from) {
+  GOOGLE_DCHECK(&from != this);
   projection_.MergeFrom(from.projection_);
   kind_.MergeFrom(from.kind_);
   order_.MergeFrom(from.order_);
   distinct_on_.MergeFrom(from.distinct_on_);
+  if (from.has_filter()) {
+    mutable_filter()->::google::datastore::v1beta3::Filter::MergeFrom(from.filter());
+  }
   if (from.start_cursor().size() > 0) {
 
     start_cursor_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.start_cursor_);
@@ -1429,14 +1486,11 @@ void Query::MergeFrom(const Query& from) {
 
     end_cursor_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.end_cursor_);
   }
-  if (from.has_filter()) {
-    mutable_filter()->::google::datastore::v1beta3::Filter::MergeFrom(from.filter());
+  if (from.offset() != 0) {
+    set_offset(from.offset());
   }
   if (from.has_limit()) {
     mutable_limit()->::google::protobuf::Int32Value::MergeFrom(from.limit());
-  }
-  if (from.offset() != 0) {
-    set_offset(from.offset());
   }
 }
 
@@ -1451,10 +1505,11 @@ void Query::CopyFrom(const Query& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1beta3.Query)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Query::IsInitialized() const {
+
   return true;
 }
 
@@ -1465,19 +1520,23 @@ void Query::Swap(Query* other) {
 void Query::InternalSwap(Query* other) {
   projection_.UnsafeArenaSwap(&other->projection_);
   kind_.UnsafeArenaSwap(&other->kind_);
+  std::swap(filter_, other->filter_);
   order_.UnsafeArenaSwap(&other->order_);
   distinct_on_.UnsafeArenaSwap(&other->distinct_on_);
   start_cursor_.Swap(&other->start_cursor_);
   end_cursor_.Swap(&other->end_cursor_);
-  std::swap(filter_, other->filter_);
-  std::swap(limit_, other->limit_);
   std::swap(offset_, other->offset_);
+  std::swap(limit_, other->limit_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Query::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Query_descriptor_;
+  metadata.reflection = Query_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -1543,7 +1602,7 @@ Query::kind() const {
   return kind_;
 }
 
-// .google.datastore.v1beta3.Filter filter = 4;
+// optional .google.datastore.v1beta3.Filter filter = 4;
 bool Query::has_filter() const {
   return this != internal_default_instance() && filter_ != NULL;
 }
@@ -1642,13 +1701,13 @@ Query::distinct_on() const {
   return distinct_on_;
 }
 
-// bytes start_cursor = 7;
+// optional bytes start_cursor = 7;
 void Query::clear_start_cursor() {
   start_cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Query::start_cursor() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.Query.start_cursor)
-  return start_cursor_.GetNoArena();
+  return start_cursor_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Query::set_start_cursor(const ::std::string& value) {
   
@@ -1686,13 +1745,13 @@ void Query::set_allocated_start_cursor(::std::string* start_cursor) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.Query.start_cursor)
 }
 
-// bytes end_cursor = 8;
+// optional bytes end_cursor = 8;
 void Query::clear_end_cursor() {
   end_cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Query::end_cursor() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.Query.end_cursor)
-  return end_cursor_.GetNoArena();
+  return end_cursor_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Query::set_end_cursor(const ::std::string& value) {
   
@@ -1730,7 +1789,7 @@ void Query::set_allocated_end_cursor(::std::string* end_cursor) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.Query.end_cursor)
 }
 
-// int32 offset = 10;
+// optional int32 offset = 10;
 void Query::clear_offset() {
   offset_ = 0;
 }
@@ -1744,7 +1803,7 @@ void Query::set_offset(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.datastore.v1beta3.Query.offset)
 }
 
-// .google.protobuf.Int32Value limit = 12;
+// optional .google.protobuf.Int32Value limit = 12;
 bool Query::has_limit() const {
   return this != internal_default_instance() && limit_ != NULL;
 }
@@ -1788,6 +1847,9 @@ void Query::set_allocated_limit(::google::protobuf::Int32Value* limit) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.Query.limit)
 }
 
+inline const Query* Query::internal_default_instance() {
+  return &Query_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1798,21 +1860,19 @@ const int KindExpression::kNameFieldNumber;
 
 KindExpression::KindExpression()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1beta3.KindExpression)
 }
+
+void KindExpression::InitAsDefaultInstance() {
+}
+
 KindExpression::KindExpression(const KindExpression& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1beta3.KindExpression)
 }
 
@@ -1837,13 +1897,15 @@ void KindExpression::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* KindExpression::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return KindExpression_descriptor_;
 }
 
 const KindExpression& KindExpression::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<KindExpression> KindExpression_default_instance_;
 
 KindExpression* KindExpression::New(::google::protobuf::Arena* arena) const {
   KindExpression* n = new KindExpression;
@@ -1864,13 +1926,13 @@ bool KindExpression::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1beta3.KindExpression)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1880,6 +1942,7 @@ bool KindExpression::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1907,7 +1970,7 @@ failure:
 void KindExpression::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1beta3.KindExpression)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -1924,7 +1987,7 @@ void KindExpression::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1beta3.KindExpression)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -1943,7 +2006,7 @@ size_t KindExpression::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1beta3.KindExpression)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -1959,7 +2022,7 @@ size_t KindExpression::ByteSizeLong() const {
 
 void KindExpression::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1beta3.KindExpression)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const KindExpression* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const KindExpression>(
           &from);
@@ -1968,14 +2031,21 @@ void KindExpression::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1beta3.KindExpression)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void KindExpression::MergeFrom(const KindExpression& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1beta3.KindExpression)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void KindExpression::UnsafeMergeFrom(const KindExpression& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -1993,10 +2063,11 @@ void KindExpression::CopyFrom(const KindExpression& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1beta3.KindExpression)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool KindExpression::IsInitialized() const {
+
   return true;
 }
 
@@ -2006,24 +2077,28 @@ void KindExpression::Swap(KindExpression* other) {
 }
 void KindExpression::InternalSwap(KindExpression* other) {
   name_.Swap(&other->name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata KindExpression::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = KindExpression_descriptor_;
+  metadata.reflection = KindExpression_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // KindExpression
 
-// string name = 1;
+// optional string name = 1;
 void KindExpression::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& KindExpression::name() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.KindExpression.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void KindExpression::set_name(const ::std::string& value) {
   
@@ -2061,6 +2136,9 @@ void KindExpression::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.KindExpression.name)
 }
 
+inline const KindExpression* KindExpression::internal_default_instance() {
+  return &KindExpression_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2071,21 +2149,19 @@ const int PropertyReference::kNameFieldNumber;
 
 PropertyReference::PropertyReference()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1beta3.PropertyReference)
 }
+
+void PropertyReference::InitAsDefaultInstance() {
+}
+
 PropertyReference::PropertyReference(const PropertyReference& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1beta3.PropertyReference)
 }
 
@@ -2110,13 +2186,15 @@ void PropertyReference::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* PropertyReference::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return PropertyReference_descriptor_;
 }
 
 const PropertyReference& PropertyReference::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<PropertyReference> PropertyReference_default_instance_;
 
 PropertyReference* PropertyReference::New(::google::protobuf::Arena* arena) const {
   PropertyReference* n = new PropertyReference;
@@ -2137,13 +2215,13 @@ bool PropertyReference::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1beta3.PropertyReference)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 2;
+      // optional string name = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2153,6 +2231,7 @@ bool PropertyReference::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2180,7 +2259,7 @@ failure:
 void PropertyReference::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1beta3.PropertyReference)
-  // string name = 2;
+  // optional string name = 2;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -2197,7 +2276,7 @@ void PropertyReference::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1beta3.PropertyReference)
-  // string name = 2;
+  // optional string name = 2;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -2216,7 +2295,7 @@ size_t PropertyReference::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1beta3.PropertyReference)
   size_t total_size = 0;
 
-  // string name = 2;
+  // optional string name = 2;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -2232,7 +2311,7 @@ size_t PropertyReference::ByteSizeLong() const {
 
 void PropertyReference::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1beta3.PropertyReference)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const PropertyReference* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const PropertyReference>(
           &from);
@@ -2241,14 +2320,21 @@ void PropertyReference::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1beta3.PropertyReference)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void PropertyReference::MergeFrom(const PropertyReference& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1beta3.PropertyReference)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void PropertyReference::UnsafeMergeFrom(const PropertyReference& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -2266,10 +2352,11 @@ void PropertyReference::CopyFrom(const PropertyReference& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1beta3.PropertyReference)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool PropertyReference::IsInitialized() const {
+
   return true;
 }
 
@@ -2279,24 +2366,28 @@ void PropertyReference::Swap(PropertyReference* other) {
 }
 void PropertyReference::InternalSwap(PropertyReference* other) {
   name_.Swap(&other->name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata PropertyReference::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = PropertyReference_descriptor_;
+  metadata.reflection = PropertyReference_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // PropertyReference
 
-// string name = 2;
+// optional string name = 2;
 void PropertyReference::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& PropertyReference::name() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.PropertyReference.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void PropertyReference::set_name(const ::std::string& value) {
   
@@ -2334,6 +2425,9 @@ void PropertyReference::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.PropertyReference.name)
 }
 
+inline const PropertyReference* PropertyReference::internal_default_instance() {
+  return &PropertyReference_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2344,22 +2438,21 @@ const int Projection::kPropertyFieldNumber;
 
 Projection::Projection()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1beta3.Projection)
 }
+
+void Projection::InitAsDefaultInstance() {
+  property_ = const_cast< ::google::datastore::v1beta3::PropertyReference*>(
+      ::google::datastore::v1beta3::PropertyReference::internal_default_instance());
+}
+
 Projection::Projection(const Projection& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_property()) {
-    property_ = new ::google::datastore::v1beta3::PropertyReference(*from.property_);
-  } else {
-    property_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1beta3.Projection)
 }
 
@@ -2374,7 +2467,7 @@ Projection::~Projection() {
 }
 
 void Projection::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &Projection_default_instance_.get()) {
     delete property_;
   }
 }
@@ -2386,13 +2479,15 @@ void Projection::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Projection::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return Projection_descriptor_;
 }
 
 const Projection& Projection::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Projection> Projection_default_instance_;
 
 Projection* Projection::New(::google::protobuf::Arena* arena) const {
   Projection* n = new Projection;
@@ -2404,9 +2499,7 @@ Projection* Projection::New(::google::protobuf::Arena* arena) const {
 
 void Projection::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.datastore.v1beta3.Projection)
-  if (GetArenaNoVirtual() == NULL && property_ != NULL) {
-    delete property_;
-  }
+  if (GetArenaNoVirtual() == NULL && property_ != NULL) delete property_;
   property_ = NULL;
 }
 
@@ -2416,18 +2509,19 @@ bool Projection::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1beta3.Projection)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.datastore.v1beta3.PropertyReference property = 1;
+      // optional .google.datastore.v1beta3.PropertyReference property = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_property()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2455,7 +2549,7 @@ failure:
 void Projection::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1beta3.Projection)
-  // .google.datastore.v1beta3.PropertyReference property = 1;
+  // optional .google.datastore.v1beta3.PropertyReference property = 1;
   if (this->has_property()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->property_, output);
@@ -2468,7 +2562,7 @@ void Projection::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1beta3.Projection)
-  // .google.datastore.v1beta3.PropertyReference property = 1;
+  // optional .google.datastore.v1beta3.PropertyReference property = 1;
   if (this->has_property()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -2483,7 +2577,7 @@ size_t Projection::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1beta3.Projection)
   size_t total_size = 0;
 
-  // .google.datastore.v1beta3.PropertyReference property = 1;
+  // optional .google.datastore.v1beta3.PropertyReference property = 1;
   if (this->has_property()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -2499,7 +2593,7 @@ size_t Projection::ByteSizeLong() const {
 
 void Projection::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1beta3.Projection)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Projection* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Projection>(
           &from);
@@ -2508,14 +2602,21 @@ void Projection::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1beta3.Projection)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Projection::MergeFrom(const Projection& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1beta3.Projection)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Projection::UnsafeMergeFrom(const Projection& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_property()) {
     mutable_property()->::google::datastore::v1beta3::PropertyReference::MergeFrom(from.property());
   }
@@ -2532,10 +2633,11 @@ void Projection::CopyFrom(const Projection& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1beta3.Projection)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Projection::IsInitialized() const {
+
   return true;
 }
 
@@ -2545,18 +2647,22 @@ void Projection::Swap(Projection* other) {
 }
 void Projection::InternalSwap(Projection* other) {
   std::swap(property_, other->property_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Projection::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Projection_descriptor_;
+  metadata.reflection = Projection_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Projection
 
-// .google.datastore.v1beta3.PropertyReference property = 1;
+// optional .google.datastore.v1beta3.PropertyReference property = 1;
 bool Projection::has_property() const {
   return this != internal_default_instance() && property_ != NULL;
 }
@@ -2595,10 +2701,36 @@ void Projection::set_allocated_property(::google::datastore::v1beta3::PropertyRe
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.Projection.property)
 }
 
+inline const Projection* Projection::internal_default_instance() {
+  return &Projection_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* PropertyOrder_Direction_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return PropertyOrder_Direction_descriptor_;
+}
+bool PropertyOrder_Direction_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const PropertyOrder_Direction PropertyOrder::DIRECTION_UNSPECIFIED;
+const PropertyOrder_Direction PropertyOrder::ASCENDING;
+const PropertyOrder_Direction PropertyOrder::DESCENDING;
+const PropertyOrder_Direction PropertyOrder::Direction_MIN;
+const PropertyOrder_Direction PropertyOrder::Direction_MAX;
+const int PropertyOrder::Direction_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int PropertyOrder::kPropertyFieldNumber;
 const int PropertyOrder::kDirectionFieldNumber;
@@ -2606,29 +2738,27 @@ const int PropertyOrder::kDirectionFieldNumber;
 
 PropertyOrder::PropertyOrder()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1beta3.PropertyOrder)
 }
+
+void PropertyOrder::InitAsDefaultInstance() {
+  property_ = const_cast< ::google::datastore::v1beta3::PropertyReference*>(
+      ::google::datastore::v1beta3::PropertyReference::internal_default_instance());
+}
+
 PropertyOrder::PropertyOrder(const PropertyOrder& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_property()) {
-    property_ = new ::google::datastore::v1beta3::PropertyReference(*from.property_);
-  } else {
-    property_ = NULL;
-  }
-  direction_ = from.direction_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1beta3.PropertyOrder)
 }
 
 void PropertyOrder::SharedCtor() {
-  ::memset(&property_, 0, reinterpret_cast<char*>(&direction_) -
-    reinterpret_cast<char*>(&property_) + sizeof(direction_));
+  property_ = NULL;
+  direction_ = 0;
   _cached_size_ = 0;
 }
 
@@ -2638,7 +2768,7 @@ PropertyOrder::~PropertyOrder() {
 }
 
 void PropertyOrder::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &PropertyOrder_default_instance_.get()) {
     delete property_;
   }
 }
@@ -2650,13 +2780,15 @@ void PropertyOrder::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* PropertyOrder::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
+  return PropertyOrder_descriptor_;
 }
 
 const PropertyOrder& PropertyOrder::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<PropertyOrder> PropertyOrder_default_instance_;
 
 PropertyOrder* PropertyOrder::New(::google::protobuf::Arena* arena) const {
   PropertyOrder* n = new PropertyOrder;
@@ -2668,9 +2800,7 @@ PropertyOrder* PropertyOrder::New(::google::protobuf::Arena* arena) const {
 
 void PropertyOrder::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.datastore.v1beta3.PropertyOrder)
-  if (GetArenaNoVirtual() == NULL && property_ != NULL) {
-    delete property_;
-  }
+  if (GetArenaNoVirtual() == NULL && property_ != NULL) delete property_;
   property_ = NULL;
   direction_ = 0;
 }
@@ -2681,24 +2811,26 @@ bool PropertyOrder::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1beta3.PropertyOrder)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.datastore.v1beta3.PropertyReference property = 1;
+      // optional .google.datastore.v1beta3.PropertyReference property = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_property()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_direction;
         break;
       }
 
-      // .google.datastore.v1beta3.PropertyOrder.Direction direction = 2;
+      // optional .google.datastore.v1beta3.PropertyOrder.Direction direction = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_direction:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -2707,6 +2839,7 @@ bool PropertyOrder::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2734,13 +2867,13 @@ failure:
 void PropertyOrder::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1beta3.PropertyOrder)
-  // .google.datastore.v1beta3.PropertyReference property = 1;
+  // optional .google.datastore.v1beta3.PropertyReference property = 1;
   if (this->has_property()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->property_, output);
   }
 
-  // .google.datastore.v1beta3.PropertyOrder.Direction direction = 2;
+  // optional .google.datastore.v1beta3.PropertyOrder.Direction direction = 2;
   if (this->direction() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       2, this->direction(), output);
@@ -2753,14 +2886,14 @@ void PropertyOrder::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1beta3.PropertyOrder)
-  // .google.datastore.v1beta3.PropertyReference property = 1;
+  // optional .google.datastore.v1beta3.PropertyReference property = 1;
   if (this->has_property()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->property_, false, target);
   }
 
-  // .google.datastore.v1beta3.PropertyOrder.Direction direction = 2;
+  // optional .google.datastore.v1beta3.PropertyOrder.Direction direction = 2;
   if (this->direction() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       2, this->direction(), target);
@@ -2774,14 +2907,14 @@ size_t PropertyOrder::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1beta3.PropertyOrder)
   size_t total_size = 0;
 
-  // .google.datastore.v1beta3.PropertyReference property = 1;
+  // optional .google.datastore.v1beta3.PropertyReference property = 1;
   if (this->has_property()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->property_);
   }
 
-  // .google.datastore.v1beta3.PropertyOrder.Direction direction = 2;
+  // optional .google.datastore.v1beta3.PropertyOrder.Direction direction = 2;
   if (this->direction() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->direction());
@@ -2796,7 +2929,7 @@ size_t PropertyOrder::ByteSizeLong() const {
 
 void PropertyOrder::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1beta3.PropertyOrder)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const PropertyOrder* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const PropertyOrder>(
           &from);
@@ -2805,14 +2938,21 @@ void PropertyOrder::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1beta3.PropertyOrder)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void PropertyOrder::MergeFrom(const PropertyOrder& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1beta3.PropertyOrder)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void PropertyOrder::UnsafeMergeFrom(const PropertyOrder& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_property()) {
     mutable_property()->::google::datastore::v1beta3::PropertyReference::MergeFrom(from.property());
   }
@@ -2832,10 +2972,11 @@ void PropertyOrder::CopyFrom(const PropertyOrder& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1beta3.PropertyOrder)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool PropertyOrder::IsInitialized() const {
+
   return true;
 }
 
@@ -2846,18 +2987,22 @@ void PropertyOrder::Swap(PropertyOrder* other) {
 void PropertyOrder::InternalSwap(PropertyOrder* other) {
   std::swap(property_, other->property_);
   std::swap(direction_, other->direction_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata PropertyOrder::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = PropertyOrder_descriptor_;
+  metadata.reflection = PropertyOrder_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // PropertyOrder
 
-// .google.datastore.v1beta3.PropertyReference property = 1;
+// optional .google.datastore.v1beta3.PropertyReference property = 1;
 bool PropertyOrder::has_property() const {
   return this != internal_default_instance() && property_ != NULL;
 }
@@ -2896,7 +3041,7 @@ void PropertyOrder::set_allocated_property(::google::datastore::v1beta3::Propert
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.PropertyOrder.property)
 }
 
-// .google.datastore.v1beta3.PropertyOrder.Direction direction = 2;
+// optional .google.datastore.v1beta3.PropertyOrder.Direction direction = 2;
 void PropertyOrder::clear_direction() {
   direction_ = 0;
 }
@@ -2910,6 +3055,9 @@ void PropertyOrder::set_direction(::google::datastore::v1beta3::PropertyOrder_Di
   // @@protoc_insertion_point(field_set:google.datastore.v1beta3.PropertyOrder.direction)
 }
 
+inline const PropertyOrder* PropertyOrder::internal_default_instance() {
+  return &PropertyOrder_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2921,31 +3069,23 @@ const int Filter::kPropertyFilterFieldNumber;
 
 Filter::Filter()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1beta3.Filter)
 }
+
+void Filter::InitAsDefaultInstance() {
+  Filter_default_oneof_instance_->composite_filter_ = const_cast< ::google::datastore::v1beta3::CompositeFilter*>(
+      ::google::datastore::v1beta3::CompositeFilter::internal_default_instance());
+  Filter_default_oneof_instance_->property_filter_ = const_cast< ::google::datastore::v1beta3::PropertyFilter*>(
+      ::google::datastore::v1beta3::PropertyFilter::internal_default_instance());
+}
+
 Filter::Filter(const Filter& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  clear_has_filter_type();
-  switch (from.filter_type_case()) {
-    case kCompositeFilter: {
-      mutable_composite_filter()->::google::datastore::v1beta3::CompositeFilter::MergeFrom(from.composite_filter());
-      break;
-    }
-    case kPropertyFilter: {
-      mutable_property_filter()->::google::datastore::v1beta3::PropertyFilter::MergeFrom(from.property_filter());
-      break;
-    }
-    case FILTER_TYPE_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1beta3.Filter)
 }
 
@@ -2972,13 +3112,15 @@ void Filter::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Filter::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6].descriptor;
+  return Filter_descriptor_;
 }
 
 const Filter& Filter::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Filter> Filter_default_instance_;
 
 Filter* Filter::New(::google::protobuf::Arena* arena) const {
   Filter* n = new Filter;
@@ -3018,29 +3160,32 @@ bool Filter::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1beta3.Filter)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.datastore.v1beta3.CompositeFilter composite_filter = 1;
+      // optional .google.datastore.v1beta3.CompositeFilter composite_filter = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_composite_filter()));
         } else {
           goto handle_unusual;
         }
+        goto after_property_filter;
         break;
       }
 
-      // .google.datastore.v1beta3.PropertyFilter property_filter = 2;
+      // optional .google.datastore.v1beta3.PropertyFilter property_filter = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_property_filter()));
         } else {
           goto handle_unusual;
         }
+       after_property_filter:
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3068,13 +3213,13 @@ failure:
 void Filter::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1beta3.Filter)
-  // .google.datastore.v1beta3.CompositeFilter composite_filter = 1;
+  // optional .google.datastore.v1beta3.CompositeFilter composite_filter = 1;
   if (has_composite_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *filter_type_.composite_filter_, output);
   }
 
-  // .google.datastore.v1beta3.PropertyFilter property_filter = 2;
+  // optional .google.datastore.v1beta3.PropertyFilter property_filter = 2;
   if (has_property_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *filter_type_.property_filter_, output);
@@ -3087,14 +3232,14 @@ void Filter::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1beta3.Filter)
-  // .google.datastore.v1beta3.CompositeFilter composite_filter = 1;
+  // optional .google.datastore.v1beta3.CompositeFilter composite_filter = 1;
   if (has_composite_filter()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *filter_type_.composite_filter_, false, target);
   }
 
-  // .google.datastore.v1beta3.PropertyFilter property_filter = 2;
+  // optional .google.datastore.v1beta3.PropertyFilter property_filter = 2;
   if (has_property_filter()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -3110,14 +3255,14 @@ size_t Filter::ByteSizeLong() const {
   size_t total_size = 0;
 
   switch (filter_type_case()) {
-    // .google.datastore.v1beta3.CompositeFilter composite_filter = 1;
+    // optional .google.datastore.v1beta3.CompositeFilter composite_filter = 1;
     case kCompositeFilter: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *filter_type_.composite_filter_);
       break;
     }
-    // .google.datastore.v1beta3.PropertyFilter property_filter = 2;
+    // optional .google.datastore.v1beta3.PropertyFilter property_filter = 2;
     case kPropertyFilter: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -3137,7 +3282,7 @@ size_t Filter::ByteSizeLong() const {
 
 void Filter::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1beta3.Filter)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Filter* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Filter>(
           &from);
@@ -3146,14 +3291,21 @@ void Filter::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1beta3.Filter)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Filter::MergeFrom(const Filter& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1beta3.Filter)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Filter::UnsafeMergeFrom(const Filter& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.filter_type_case()) {
     case kCompositeFilter: {
       mutable_composite_filter()->::google::datastore::v1beta3::CompositeFilter::MergeFrom(from.composite_filter());
@@ -3180,10 +3332,11 @@ void Filter::CopyFrom(const Filter& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1beta3.Filter)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Filter::IsInitialized() const {
+
   return true;
 }
 
@@ -3194,18 +3347,22 @@ void Filter::Swap(Filter* other) {
 void Filter::InternalSwap(Filter* other) {
   std::swap(filter_type_, other->filter_type_);
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Filter::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Filter_descriptor_;
+  metadata.reflection = Filter_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Filter
 
-// .google.datastore.v1beta3.CompositeFilter composite_filter = 1;
+// optional .google.datastore.v1beta3.CompositeFilter composite_filter = 1;
 bool Filter::has_composite_filter() const {
   return filter_type_case() == kCompositeFilter;
 }
@@ -3253,7 +3410,7 @@ void Filter::set_allocated_composite_filter(::google::datastore::v1beta3::Compos
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.Filter.composite_filter)
 }
 
-// .google.datastore.v1beta3.PropertyFilter property_filter = 2;
+// optional .google.datastore.v1beta3.PropertyFilter property_filter = 2;
 bool Filter::has_property_filter() const {
   return filter_type_case() == kPropertyFilter;
 }
@@ -3310,10 +3467,34 @@ void Filter::clear_has_filter_type() {
 Filter::FilterTypeCase Filter::filter_type_case() const {
   return Filter::FilterTypeCase(_oneof_case_[0]);
 }
+inline const Filter* Filter::internal_default_instance() {
+  return &Filter_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* CompositeFilter_Operator_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return CompositeFilter_Operator_descriptor_;
+}
+bool CompositeFilter_Operator_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const CompositeFilter_Operator CompositeFilter::OPERATOR_UNSPECIFIED;
+const CompositeFilter_Operator CompositeFilter::AND;
+const CompositeFilter_Operator CompositeFilter::Operator_MIN;
+const CompositeFilter_Operator CompositeFilter::Operator_MAX;
+const int CompositeFilter::Operator_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CompositeFilter::kOpFieldNumber;
 const int CompositeFilter::kFiltersFieldNumber;
@@ -3321,19 +3502,19 @@ const int CompositeFilter::kFiltersFieldNumber;
 
 CompositeFilter::CompositeFilter()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1beta3.CompositeFilter)
 }
+
+void CompositeFilter::InitAsDefaultInstance() {
+}
+
 CompositeFilter::CompositeFilter(const CompositeFilter& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      filters_(from.filters_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  op_ = from.op_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1beta3.CompositeFilter)
 }
 
@@ -3357,13 +3538,15 @@ void CompositeFilter::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* CompositeFilter::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7].descriptor;
+  return CompositeFilter_descriptor_;
 }
 
 const CompositeFilter& CompositeFilter::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<CompositeFilter> CompositeFilter_default_instance_;
 
 CompositeFilter* CompositeFilter::New(::google::protobuf::Arena* arena) const {
   CompositeFilter* n = new CompositeFilter;
@@ -3375,8 +3558,8 @@ CompositeFilter* CompositeFilter::New(::google::protobuf::Arena* arena) const {
 
 void CompositeFilter::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.datastore.v1beta3.CompositeFilter)
-  filters_.Clear();
   op_ = 0;
+  filters_.Clear();
 }
 
 bool CompositeFilter::MergePartialFromCodedStream(
@@ -3385,13 +3568,13 @@ bool CompositeFilter::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1beta3.CompositeFilter)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.datastore.v1beta3.CompositeFilter.Operator op = 1;
+      // optional .google.datastore.v1beta3.CompositeFilter.Operator op = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -3400,19 +3583,24 @@ bool CompositeFilter::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_filters;
         break;
       }
 
       // repeated .google.datastore.v1beta3.Filter filters = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_filters:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_filters:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_filters()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_loop_filters;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3440,7 +3628,7 @@ failure:
 void CompositeFilter::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1beta3.CompositeFilter)
-  // .google.datastore.v1beta3.CompositeFilter.Operator op = 1;
+  // optional .google.datastore.v1beta3.CompositeFilter.Operator op = 1;
   if (this->op() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       1, this->op(), output);
@@ -3459,7 +3647,7 @@ void CompositeFilter::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1beta3.CompositeFilter)
-  // .google.datastore.v1beta3.CompositeFilter.Operator op = 1;
+  // optional .google.datastore.v1beta3.CompositeFilter.Operator op = 1;
   if (this->op() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       1, this->op(), target);
@@ -3480,6 +3668,12 @@ size_t CompositeFilter::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1beta3.CompositeFilter)
   size_t total_size = 0;
 
+  // optional .google.datastore.v1beta3.CompositeFilter.Operator op = 1;
+  if (this->op() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->op());
+  }
+
   // repeated .google.datastore.v1beta3.Filter filters = 2;
   {
     unsigned int count = this->filters_size();
@@ -3491,12 +3685,6 @@ size_t CompositeFilter::ByteSizeLong() const {
     }
   }
 
-  // .google.datastore.v1beta3.CompositeFilter.Operator op = 1;
-  if (this->op() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->op());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -3506,7 +3694,7 @@ size_t CompositeFilter::ByteSizeLong() const {
 
 void CompositeFilter::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1beta3.CompositeFilter)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const CompositeFilter* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CompositeFilter>(
           &from);
@@ -3515,14 +3703,21 @@ void CompositeFilter::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1beta3.CompositeFilter)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CompositeFilter::MergeFrom(const CompositeFilter& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1beta3.CompositeFilter)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void CompositeFilter::UnsafeMergeFrom(const CompositeFilter& from) {
+  GOOGLE_DCHECK(&from != this);
   filters_.MergeFrom(from.filters_);
   if (from.op() != 0) {
     set_op(from.op());
@@ -3540,10 +3735,11 @@ void CompositeFilter::CopyFrom(const CompositeFilter& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1beta3.CompositeFilter)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CompositeFilter::IsInitialized() const {
+
   return true;
 }
 
@@ -3552,20 +3748,24 @@ void CompositeFilter::Swap(CompositeFilter* other) {
   InternalSwap(other);
 }
 void CompositeFilter::InternalSwap(CompositeFilter* other) {
-  filters_.UnsafeArenaSwap(&other->filters_);
   std::swap(op_, other->op_);
+  filters_.UnsafeArenaSwap(&other->filters_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CompositeFilter::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CompositeFilter_descriptor_;
+  metadata.reflection = CompositeFilter_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // CompositeFilter
 
-// .google.datastore.v1beta3.CompositeFilter.Operator op = 1;
+// optional .google.datastore.v1beta3.CompositeFilter.Operator op = 1;
 void CompositeFilter::clear_op() {
   op_ = 0;
 }
@@ -3609,10 +3809,44 @@ CompositeFilter::filters() const {
   return filters_;
 }
 
+inline const CompositeFilter* CompositeFilter::internal_default_instance() {
+  return &CompositeFilter_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* PropertyFilter_Operator_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return PropertyFilter_Operator_descriptor_;
+}
+bool PropertyFilter_Operator_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 11:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const PropertyFilter_Operator PropertyFilter::OPERATOR_UNSPECIFIED;
+const PropertyFilter_Operator PropertyFilter::LESS_THAN;
+const PropertyFilter_Operator PropertyFilter::LESS_THAN_OR_EQUAL;
+const PropertyFilter_Operator PropertyFilter::GREATER_THAN;
+const PropertyFilter_Operator PropertyFilter::GREATER_THAN_OR_EQUAL;
+const PropertyFilter_Operator PropertyFilter::EQUAL;
+const PropertyFilter_Operator PropertyFilter::HAS_ANCESTOR;
+const PropertyFilter_Operator PropertyFilter::Operator_MIN;
+const PropertyFilter_Operator PropertyFilter::Operator_MAX;
+const int PropertyFilter::Operator_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int PropertyFilter::kPropertyFieldNumber;
 const int PropertyFilter::kOpFieldNumber;
@@ -3621,34 +3855,30 @@ const int PropertyFilter::kValueFieldNumber;
 
 PropertyFilter::PropertyFilter()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1beta3.PropertyFilter)
 }
+
+void PropertyFilter::InitAsDefaultInstance() {
+  property_ = const_cast< ::google::datastore::v1beta3::PropertyReference*>(
+      ::google::datastore::v1beta3::PropertyReference::internal_default_instance());
+  value_ = const_cast< ::google::datastore::v1beta3::Value*>(
+      ::google::datastore::v1beta3::Value::internal_default_instance());
+}
+
 PropertyFilter::PropertyFilter(const PropertyFilter& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_property()) {
-    property_ = new ::google::datastore::v1beta3::PropertyReference(*from.property_);
-  } else {
-    property_ = NULL;
-  }
-  if (from.has_value()) {
-    value_ = new ::google::datastore::v1beta3::Value(*from.value_);
-  } else {
-    value_ = NULL;
-  }
-  op_ = from.op_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1beta3.PropertyFilter)
 }
 
 void PropertyFilter::SharedCtor() {
-  ::memset(&property_, 0, reinterpret_cast<char*>(&op_) -
-    reinterpret_cast<char*>(&property_) + sizeof(op_));
+  property_ = NULL;
+  value_ = NULL;
+  op_ = 0;
   _cached_size_ = 0;
 }
 
@@ -3658,10 +3888,8 @@ PropertyFilter::~PropertyFilter() {
 }
 
 void PropertyFilter::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &PropertyFilter_default_instance_.get()) {
     delete property_;
-  }
-  if (this != internal_default_instance()) {
     delete value_;
   }
 }
@@ -3673,13 +3901,15 @@ void PropertyFilter::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* PropertyFilter::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8].descriptor;
+  return PropertyFilter_descriptor_;
 }
 
 const PropertyFilter& PropertyFilter::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<PropertyFilter> PropertyFilter_default_instance_;
 
 PropertyFilter* PropertyFilter::New(::google::protobuf::Arena* arena) const {
   PropertyFilter* n = new PropertyFilter;
@@ -3691,15 +3921,11 @@ PropertyFilter* PropertyFilter::New(::google::protobuf::Arena* arena) const {
 
 void PropertyFilter::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.datastore.v1beta3.PropertyFilter)
-  if (GetArenaNoVirtual() == NULL && property_ != NULL) {
-    delete property_;
-  }
+  if (GetArenaNoVirtual() == NULL && property_ != NULL) delete property_;
   property_ = NULL;
-  if (GetArenaNoVirtual() == NULL && value_ != NULL) {
-    delete value_;
-  }
-  value_ = NULL;
   op_ = 0;
+  if (GetArenaNoVirtual() == NULL && value_ != NULL) delete value_;
+  value_ = NULL;
 }
 
 bool PropertyFilter::MergePartialFromCodedStream(
@@ -3708,24 +3934,26 @@ bool PropertyFilter::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1beta3.PropertyFilter)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.datastore.v1beta3.PropertyReference property = 1;
+      // optional .google.datastore.v1beta3.PropertyReference property = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_property()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_op;
         break;
       }
 
-      // .google.datastore.v1beta3.PropertyFilter.Operator op = 2;
+      // optional .google.datastore.v1beta3.PropertyFilter.Operator op = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_op:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -3734,17 +3962,20 @@ bool PropertyFilter::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_value;
         break;
       }
 
-      // .google.datastore.v1beta3.Value value = 3;
+      // optional .google.datastore.v1beta3.Value value = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_value:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_value()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3772,19 +4003,19 @@ failure:
 void PropertyFilter::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1beta3.PropertyFilter)
-  // .google.datastore.v1beta3.PropertyReference property = 1;
+  // optional .google.datastore.v1beta3.PropertyReference property = 1;
   if (this->has_property()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->property_, output);
   }
 
-  // .google.datastore.v1beta3.PropertyFilter.Operator op = 2;
+  // optional .google.datastore.v1beta3.PropertyFilter.Operator op = 2;
   if (this->op() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       2, this->op(), output);
   }
 
-  // .google.datastore.v1beta3.Value value = 3;
+  // optional .google.datastore.v1beta3.Value value = 3;
   if (this->has_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *this->value_, output);
@@ -3797,20 +4028,20 @@ void PropertyFilter::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1beta3.PropertyFilter)
-  // .google.datastore.v1beta3.PropertyReference property = 1;
+  // optional .google.datastore.v1beta3.PropertyReference property = 1;
   if (this->has_property()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->property_, false, target);
   }
 
-  // .google.datastore.v1beta3.PropertyFilter.Operator op = 2;
+  // optional .google.datastore.v1beta3.PropertyFilter.Operator op = 2;
   if (this->op() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       2, this->op(), target);
   }
 
-  // .google.datastore.v1beta3.Value value = 3;
+  // optional .google.datastore.v1beta3.Value value = 3;
   if (this->has_value()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -3825,24 +4056,24 @@ size_t PropertyFilter::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1beta3.PropertyFilter)
   size_t total_size = 0;
 
-  // .google.datastore.v1beta3.PropertyReference property = 1;
+  // optional .google.datastore.v1beta3.PropertyReference property = 1;
   if (this->has_property()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->property_);
   }
 
-  // .google.datastore.v1beta3.Value value = 3;
+  // optional .google.datastore.v1beta3.PropertyFilter.Operator op = 2;
+  if (this->op() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->op());
+  }
+
+  // optional .google.datastore.v1beta3.Value value = 3;
   if (this->has_value()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->value_);
-  }
-
-  // .google.datastore.v1beta3.PropertyFilter.Operator op = 2;
-  if (this->op() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->op());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -3854,7 +4085,7 @@ size_t PropertyFilter::ByteSizeLong() const {
 
 void PropertyFilter::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1beta3.PropertyFilter)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const PropertyFilter* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const PropertyFilter>(
           &from);
@@ -3863,22 +4094,29 @@ void PropertyFilter::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1beta3.PropertyFilter)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void PropertyFilter::MergeFrom(const PropertyFilter& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1beta3.PropertyFilter)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void PropertyFilter::UnsafeMergeFrom(const PropertyFilter& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_property()) {
     mutable_property()->::google::datastore::v1beta3::PropertyReference::MergeFrom(from.property());
   }
-  if (from.has_value()) {
-    mutable_value()->::google::datastore::v1beta3::Value::MergeFrom(from.value());
-  }
   if (from.op() != 0) {
     set_op(from.op());
+  }
+  if (from.has_value()) {
+    mutable_value()->::google::datastore::v1beta3::Value::MergeFrom(from.value());
   }
 }
 
@@ -3893,10 +4131,11 @@ void PropertyFilter::CopyFrom(const PropertyFilter& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1beta3.PropertyFilter)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool PropertyFilter::IsInitialized() const {
+
   return true;
 }
 
@@ -3906,20 +4145,24 @@ void PropertyFilter::Swap(PropertyFilter* other) {
 }
 void PropertyFilter::InternalSwap(PropertyFilter* other) {
   std::swap(property_, other->property_);
-  std::swap(value_, other->value_);
   std::swap(op_, other->op_);
+  std::swap(value_, other->value_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata PropertyFilter::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = PropertyFilter_descriptor_;
+  metadata.reflection = PropertyFilter_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // PropertyFilter
 
-// .google.datastore.v1beta3.PropertyReference property = 1;
+// optional .google.datastore.v1beta3.PropertyReference property = 1;
 bool PropertyFilter::has_property() const {
   return this != internal_default_instance() && property_ != NULL;
 }
@@ -3958,7 +4201,7 @@ void PropertyFilter::set_allocated_property(::google::datastore::v1beta3::Proper
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.PropertyFilter.property)
 }
 
-// .google.datastore.v1beta3.PropertyFilter.Operator op = 2;
+// optional .google.datastore.v1beta3.PropertyFilter.Operator op = 2;
 void PropertyFilter::clear_op() {
   op_ = 0;
 }
@@ -3972,7 +4215,7 @@ void PropertyFilter::set_op(::google::datastore::v1beta3::PropertyFilter_Operato
   // @@protoc_insertion_point(field_set:google.datastore.v1beta3.PropertyFilter.op)
 }
 
-// .google.datastore.v1beta3.Value value = 3;
+// optional .google.datastore.v1beta3.Value value = 3;
 bool PropertyFilter::has_value() const {
   return this != internal_default_instance() && value_ != NULL;
 }
@@ -4011,11 +4254,9 @@ void PropertyFilter::set_allocated_value(::google::datastore::v1beta3::Value* va
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.PropertyFilter.value)
 }
 
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
-
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
+inline const PropertyFilter* PropertyFilter::internal_default_instance() {
+  return &PropertyFilter_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4029,38 +4270,27 @@ const int GqlQuery::kPositionalBindingsFieldNumber;
 
 GqlQuery::GqlQuery()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1beta3.GqlQuery)
 }
+
+void GqlQuery::InitAsDefaultInstance() {
+}
+
 GqlQuery::GqlQuery(const GqlQuery& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      positional_bindings_(from.positional_bindings_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  const ::google::protobuf::Descriptor*& GqlQuery_NamedBindingsEntry_descriptor = file_level_metadata[9].descriptor;
-  named_bindings_.SetAssignDescriptorCallback(
-      protobuf_AssignDescriptorsOnce);
-  named_bindings_.SetEntryDescriptor(
-      &GqlQuery_NamedBindingsEntry_descriptor);
-  named_bindings_.MergeFrom(from.named_bindings_);
-  query_string_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.query_string().size() > 0) {
-    query_string_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.query_string_);
-  }
-  allow_literals_ = from.allow_literals_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1beta3.GqlQuery)
 }
 
 void GqlQuery::SharedCtor() {
-  const ::google::protobuf::Descriptor*& GqlQuery_NamedBindingsEntry_descriptor = file_level_metadata[9].descriptor;
   named_bindings_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   named_bindings_.SetEntryDescriptor(
-      &GqlQuery_NamedBindingsEntry_descriptor);
+      &::google::datastore::v1beta3::GqlQuery_NamedBindingsEntry_descriptor_);
   query_string_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   allow_literals_ = false;
   _cached_size_ = 0;
@@ -4082,13 +4312,15 @@ void GqlQuery::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GqlQuery::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10].descriptor;
+  return GqlQuery_descriptor_;
 }
 
 const GqlQuery& GqlQuery::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GqlQuery> GqlQuery_default_instance_;
 
 GqlQuery* GqlQuery::New(::google::protobuf::Arena* arena) const {
   GqlQuery* n = new GqlQuery;
@@ -4100,10 +4332,10 @@ GqlQuery* GqlQuery::New(::google::protobuf::Arena* arena) const {
 
 void GqlQuery::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.datastore.v1beta3.GqlQuery)
-  named_bindings_.Clear();
-  positional_bindings_.Clear();
   query_string_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   allow_literals_ = false;
+  named_bindings_.Clear();
+  positional_bindings_.Clear();
 }
 
 bool GqlQuery::MergePartialFromCodedStream(
@@ -4112,13 +4344,13 @@ bool GqlQuery::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1beta3.GqlQuery)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string query_string = 1;
+      // optional string query_string = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_query_string()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4128,12 +4360,14 @@ bool GqlQuery::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_allow_literals;
         break;
       }
 
-      // bool allow_literals = 2;
+      // optional bool allow_literals = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_allow_literals:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -4141,26 +4375,32 @@ bool GqlQuery::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_positional_bindings;
         break;
       }
 
       // repeated .google.datastore.v1beta3.GqlQueryParameter positional_bindings = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_positional_bindings:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_positional_bindings:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_positional_bindings()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_loop_positional_bindings;
+        if (input->ExpectTag(42)) goto parse_loop_named_bindings;
         input->UnsafeDecrementRecursionDepth();
         break;
       }
 
       // map<string, .google.datastore.v1beta3.GqlQueryParameter> named_bindings = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_named_bindings:
           GqlQuery_NamedBindingsEntry::Parser< ::google::protobuf::internal::MapField<
               ::std::string, ::google::datastore::v1beta3::GqlQueryParameter,
               ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
@@ -4176,7 +4416,9 @@ bool GqlQuery::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_loop_named_bindings;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4204,7 +4446,7 @@ failure:
 void GqlQuery::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1beta3.GqlQuery)
-  // string query_string = 1;
+  // optional string query_string = 1;
   if (this->query_string().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->query_string().data(), this->query_string().length(),
@@ -4214,7 +4456,7 @@ void GqlQuery::SerializeWithCachedSizes(
       1, this->query_string(), output);
   }
 
-  // bool allow_literals = 2;
+  // optional bool allow_literals = 2;
   if (this->allow_literals() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(2, this->allow_literals(), output);
   }
@@ -4240,7 +4482,7 @@ void GqlQuery::SerializeWithCachedSizes(
       }
     };
 
-    if (output->IsSerializationDeterministic() &&
+    if (output->IsSerializationDeterminstic() &&
         this->named_bindings().size() > 1) {
       ::google::protobuf::scoped_array<SortItem> items(
           new SortItem[this->named_bindings().size()]);
@@ -4281,7 +4523,7 @@ void GqlQuery::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1beta3.GqlQuery)
-  // string query_string = 1;
+  // optional string query_string = 1;
   if (this->query_string().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->query_string().data(), this->query_string().length(),
@@ -4292,7 +4534,7 @@ void GqlQuery::SerializeWithCachedSizes(
         1, this->query_string(), target);
   }
 
-  // bool allow_literals = 2;
+  // optional bool allow_literals = 2;
   if (this->allow_literals() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(2, this->allow_literals(), target);
   }
@@ -4365,6 +4607,18 @@ size_t GqlQuery::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1beta3.GqlQuery)
   size_t total_size = 0;
 
+  // optional string query_string = 1;
+  if (this->query_string().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->query_string());
+  }
+
+  // optional bool allow_literals = 2;
+  if (this->allow_literals() != 0) {
+    total_size += 1 + 1;
+  }
+
   // map<string, .google.datastore.v1beta3.GqlQueryParameter> named_bindings = 5;
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->named_bindings_size());
@@ -4390,18 +4644,6 @@ size_t GqlQuery::ByteSizeLong() const {
     }
   }
 
-  // string query_string = 1;
-  if (this->query_string().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->query_string());
-  }
-
-  // bool allow_literals = 2;
-  if (this->allow_literals() != 0) {
-    total_size += 1 + 1;
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -4411,7 +4653,7 @@ size_t GqlQuery::ByteSizeLong() const {
 
 void GqlQuery::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1beta3.GqlQuery)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GqlQuery* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GqlQuery>(
           &from);
@@ -4420,14 +4662,21 @@ void GqlQuery::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1beta3.GqlQuery)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GqlQuery::MergeFrom(const GqlQuery& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1beta3.GqlQuery)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GqlQuery::UnsafeMergeFrom(const GqlQuery& from) {
+  GOOGLE_DCHECK(&from != this);
   named_bindings_.MergeFrom(from.named_bindings_);
   positional_bindings_.MergeFrom(from.positional_bindings_);
   if (from.query_string().size() > 0) {
@@ -4450,10 +4699,11 @@ void GqlQuery::CopyFrom(const GqlQuery& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1beta3.GqlQuery)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GqlQuery::IsInitialized() const {
+
   return true;
 }
 
@@ -4462,28 +4712,32 @@ void GqlQuery::Swap(GqlQuery* other) {
   InternalSwap(other);
 }
 void GqlQuery::InternalSwap(GqlQuery* other) {
-  named_bindings_.Swap(&other->named_bindings_);
-  positional_bindings_.UnsafeArenaSwap(&other->positional_bindings_);
   query_string_.Swap(&other->query_string_);
   std::swap(allow_literals_, other->allow_literals_);
+  named_bindings_.Swap(&other->named_bindings_);
+  positional_bindings_.UnsafeArenaSwap(&other->positional_bindings_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GqlQuery::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GqlQuery_descriptor_;
+  metadata.reflection = GqlQuery_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GqlQuery
 
-// string query_string = 1;
+// optional string query_string = 1;
 void GqlQuery::clear_query_string() {
   query_string_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GqlQuery::query_string() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.GqlQuery.query_string)
-  return query_string_.GetNoArena();
+  return query_string_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GqlQuery::set_query_string(const ::std::string& value) {
   
@@ -4521,7 +4775,7 @@ void GqlQuery::set_allocated_query_string(::std::string* query_string) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.GqlQuery.query_string)
 }
 
-// bool allow_literals = 2;
+// optional bool allow_literals = 2;
 void GqlQuery::clear_allow_literals() {
   allow_literals_ = false;
 }
@@ -4583,6 +4837,9 @@ GqlQuery::positional_bindings() const {
   return positional_bindings_;
 }
 
+inline const GqlQuery* GqlQuery::internal_default_instance() {
+  return &GqlQuery_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4594,31 +4851,22 @@ const int GqlQueryParameter::kCursorFieldNumber;
 
 GqlQueryParameter::GqlQueryParameter()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1beta3.GqlQueryParameter)
 }
+
+void GqlQueryParameter::InitAsDefaultInstance() {
+  GqlQueryParameter_default_oneof_instance_->value_ = const_cast< ::google::datastore::v1beta3::Value*>(
+      ::google::datastore::v1beta3::Value::internal_default_instance());
+  GqlQueryParameter_default_oneof_instance_->cursor_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
 GqlQueryParameter::GqlQueryParameter(const GqlQueryParameter& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  clear_has_parameter_type();
-  switch (from.parameter_type_case()) {
-    case kValue: {
-      mutable_value()->::google::datastore::v1beta3::Value::MergeFrom(from.value());
-      break;
-    }
-    case kCursor: {
-      set_cursor(from.cursor());
-      break;
-    }
-    case PARAMETER_TYPE_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1beta3.GqlQueryParameter)
 }
 
@@ -4645,13 +4893,15 @@ void GqlQueryParameter::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GqlQueryParameter::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11].descriptor;
+  return GqlQueryParameter_descriptor_;
 }
 
 const GqlQueryParameter& GqlQueryParameter::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GqlQueryParameter> GqlQueryParameter_default_instance_;
 
 GqlQueryParameter* GqlQueryParameter::New(::google::protobuf::Arena* arena) const {
   GqlQueryParameter* n = new GqlQueryParameter;
@@ -4691,29 +4941,32 @@ bool GqlQueryParameter::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1beta3.GqlQueryParameter)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.datastore.v1beta3.Value value = 2;
+      // optional .google.datastore.v1beta3.Value value = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_value()));
         } else {
           goto handle_unusual;
         }
+        goto after_cursor;
         break;
       }
 
-      // bytes cursor = 3;
+      // optional bytes cursor = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_cursor()));
         } else {
           goto handle_unusual;
         }
+       after_cursor:
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4741,13 +4994,13 @@ failure:
 void GqlQueryParameter::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1beta3.GqlQueryParameter)
-  // .google.datastore.v1beta3.Value value = 2;
+  // optional .google.datastore.v1beta3.Value value = 2;
   if (has_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *parameter_type_.value_, output);
   }
 
-  // bytes cursor = 3;
+  // optional bytes cursor = 3;
   if (has_cursor()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       3, this->cursor(), output);
@@ -4760,14 +5013,14 @@ void GqlQueryParameter::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1beta3.GqlQueryParameter)
-  // .google.datastore.v1beta3.Value value = 2;
+  // optional .google.datastore.v1beta3.Value value = 2;
   if (has_value()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *parameter_type_.value_, false, target);
   }
 
-  // bytes cursor = 3;
+  // optional bytes cursor = 3;
   if (has_cursor()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
@@ -4783,14 +5036,14 @@ size_t GqlQueryParameter::ByteSizeLong() const {
   size_t total_size = 0;
 
   switch (parameter_type_case()) {
-    // .google.datastore.v1beta3.Value value = 2;
+    // optional .google.datastore.v1beta3.Value value = 2;
     case kValue: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *parameter_type_.value_);
       break;
     }
-    // bytes cursor = 3;
+    // optional bytes cursor = 3;
     case kCursor: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
@@ -4810,7 +5063,7 @@ size_t GqlQueryParameter::ByteSizeLong() const {
 
 void GqlQueryParameter::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1beta3.GqlQueryParameter)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GqlQueryParameter* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GqlQueryParameter>(
           &from);
@@ -4819,14 +5072,21 @@ void GqlQueryParameter::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1beta3.GqlQueryParameter)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GqlQueryParameter::MergeFrom(const GqlQueryParameter& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1beta3.GqlQueryParameter)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GqlQueryParameter::UnsafeMergeFrom(const GqlQueryParameter& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.parameter_type_case()) {
     case kValue: {
       mutable_value()->::google::datastore::v1beta3::Value::MergeFrom(from.value());
@@ -4853,10 +5113,11 @@ void GqlQueryParameter::CopyFrom(const GqlQueryParameter& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1beta3.GqlQueryParameter)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GqlQueryParameter::IsInitialized() const {
+
   return true;
 }
 
@@ -4867,18 +5128,22 @@ void GqlQueryParameter::Swap(GqlQueryParameter* other) {
 void GqlQueryParameter::InternalSwap(GqlQueryParameter* other) {
   std::swap(parameter_type_, other->parameter_type_);
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GqlQueryParameter::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GqlQueryParameter_descriptor_;
+  metadata.reflection = GqlQueryParameter_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GqlQueryParameter
 
-// .google.datastore.v1beta3.Value value = 2;
+// optional .google.datastore.v1beta3.Value value = 2;
 bool GqlQueryParameter::has_value() const {
   return parameter_type_case() == kValue;
 }
@@ -4926,7 +5191,7 @@ void GqlQueryParameter::set_allocated_value(::google::datastore::v1beta3::Value*
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.GqlQueryParameter.value)
 }
 
-// bytes cursor = 3;
+// optional bytes cursor = 3;
 bool GqlQueryParameter::has_cursor() const {
   return parameter_type_case() == kCursor;
 }
@@ -4942,7 +5207,7 @@ void GqlQueryParameter::clear_cursor() {
 const ::std::string& GqlQueryParameter::cursor() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.GqlQueryParameter.cursor)
   if (has_cursor()) {
-    return parameter_type_.cursor_.GetNoArena();
+    return parameter_type_.cursor_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -5016,10 +5281,40 @@ void GqlQueryParameter::clear_has_parameter_type() {
 GqlQueryParameter::ParameterTypeCase GqlQueryParameter::parameter_type_case() const {
   return GqlQueryParameter::ParameterTypeCase(_oneof_case_[0]);
 }
+inline const GqlQueryParameter* GqlQueryParameter::internal_default_instance() {
+  return &GqlQueryParameter_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* QueryResultBatch_MoreResultsType_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return QueryResultBatch_MoreResultsType_descriptor_;
+}
+bool QueryResultBatch_MoreResultsType_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const QueryResultBatch_MoreResultsType QueryResultBatch::MORE_RESULTS_TYPE_UNSPECIFIED;
+const QueryResultBatch_MoreResultsType QueryResultBatch::NOT_FINISHED;
+const QueryResultBatch_MoreResultsType QueryResultBatch::MORE_RESULTS_AFTER_LIMIT;
+const QueryResultBatch_MoreResultsType QueryResultBatch::MORE_RESULTS_AFTER_CURSOR;
+const QueryResultBatch_MoreResultsType QueryResultBatch::NO_MORE_RESULTS;
+const QueryResultBatch_MoreResultsType QueryResultBatch::MoreResultsType_MIN;
+const QueryResultBatch_MoreResultsType QueryResultBatch::MoreResultsType_MAX;
+const int QueryResultBatch::MoreResultsType_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int QueryResultBatch::kSkippedResultsFieldNumber;
 const int QueryResultBatch::kSkippedCursorFieldNumber;
@@ -5032,29 +5327,19 @@ const int QueryResultBatch::kSnapshotVersionFieldNumber;
 
 QueryResultBatch::QueryResultBatch()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1beta3.QueryResultBatch)
 }
+
+void QueryResultBatch::InitAsDefaultInstance() {
+}
+
 QueryResultBatch::QueryResultBatch(const QueryResultBatch& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      entity_results_(from.entity_results_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  skipped_cursor_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.skipped_cursor().size() > 0) {
-    skipped_cursor_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.skipped_cursor_);
-  }
-  end_cursor_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.end_cursor().size() > 0) {
-    end_cursor_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.end_cursor_);
-  }
-  ::memcpy(&skipped_results_, &from.skipped_results_,
-    reinterpret_cast<char*>(&more_results_) -
-    reinterpret_cast<char*>(&skipped_results_) + sizeof(more_results_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1beta3.QueryResultBatch)
 }
 
@@ -5083,13 +5368,15 @@ void QueryResultBatch::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* QueryResultBatch::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[12].descriptor;
+  return QueryResultBatch_descriptor_;
 }
 
 const QueryResultBatch& QueryResultBatch::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1beta3_2fquery_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<QueryResultBatch> QueryResultBatch_default_instance_;
 
 QueryResultBatch* QueryResultBatch::New(::google::protobuf::Arena* arena) const {
   QueryResultBatch* n = new QueryResultBatch;
@@ -5101,11 +5388,30 @@ QueryResultBatch* QueryResultBatch::New(::google::protobuf::Arena* arena) const 
 
 void QueryResultBatch::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.datastore.v1beta3.QueryResultBatch)
-  entity_results_.Clear();
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(QueryResultBatch, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<QueryResultBatch*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(skipped_results_, more_results_);
   skipped_cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   end_cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&skipped_results_, 0, reinterpret_cast<char*>(&more_results_) -
-    reinterpret_cast<char*>(&skipped_results_) + sizeof(more_results_));
+
+#undef ZR_HELPER_
+#undef ZR_
+
+  entity_results_.Clear();
 }
 
 bool QueryResultBatch::MergePartialFromCodedStream(
@@ -5114,13 +5420,13 @@ bool QueryResultBatch::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1beta3.QueryResultBatch)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.datastore.v1beta3.EntityResult.ResultType entity_result_type = 1;
+      // optional .google.datastore.v1beta3.EntityResult.ResultType entity_result_type = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -5129,47 +5435,57 @@ bool QueryResultBatch::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_entity_results;
         break;
       }
 
       // repeated .google.datastore.v1beta3.EntityResult entity_results = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_entity_results:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_entity_results:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_entity_results()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_loop_entity_results;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(26)) goto parse_skipped_cursor;
         break;
       }
 
-      // bytes skipped_cursor = 3;
+      // optional bytes skipped_cursor = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_skipped_cursor:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_skipped_cursor()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_end_cursor;
         break;
       }
 
-      // bytes end_cursor = 4;
+      // optional bytes end_cursor = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_end_cursor:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_end_cursor()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(40)) goto parse_more_results;
         break;
       }
 
-      // .google.datastore.v1beta3.QueryResultBatch.MoreResultsType more_results = 5;
+      // optional .google.datastore.v1beta3.QueryResultBatch.MoreResultsType more_results = 5;
       case 5: {
-        if (tag == 40u) {
+        if (tag == 40) {
+         parse_more_results:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -5178,12 +5494,14 @@ bool QueryResultBatch::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(48)) goto parse_skipped_results;
         break;
       }
 
-      // int32 skipped_results = 6;
+      // optional int32 skipped_results = 6;
       case 6: {
-        if (tag == 48u) {
+        if (tag == 48) {
+         parse_skipped_results:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -5191,12 +5509,14 @@ bool QueryResultBatch::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(56)) goto parse_snapshot_version;
         break;
       }
 
-      // int64 snapshot_version = 7;
+      // optional int64 snapshot_version = 7;
       case 7: {
-        if (tag == 56u) {
+        if (tag == 56) {
+         parse_snapshot_version:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -5204,6 +5524,7 @@ bool QueryResultBatch::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -5231,7 +5552,7 @@ failure:
 void QueryResultBatch::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1beta3.QueryResultBatch)
-  // .google.datastore.v1beta3.EntityResult.ResultType entity_result_type = 1;
+  // optional .google.datastore.v1beta3.EntityResult.ResultType entity_result_type = 1;
   if (this->entity_result_type() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       1, this->entity_result_type(), output);
@@ -5243,30 +5564,30 @@ void QueryResultBatch::SerializeWithCachedSizes(
       2, this->entity_results(i), output);
   }
 
-  // bytes skipped_cursor = 3;
+  // optional bytes skipped_cursor = 3;
   if (this->skipped_cursor().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       3, this->skipped_cursor(), output);
   }
 
-  // bytes end_cursor = 4;
+  // optional bytes end_cursor = 4;
   if (this->end_cursor().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       4, this->end_cursor(), output);
   }
 
-  // .google.datastore.v1beta3.QueryResultBatch.MoreResultsType more_results = 5;
+  // optional .google.datastore.v1beta3.QueryResultBatch.MoreResultsType more_results = 5;
   if (this->more_results() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       5, this->more_results(), output);
   }
 
-  // int32 skipped_results = 6;
+  // optional int32 skipped_results = 6;
   if (this->skipped_results() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(6, this->skipped_results(), output);
   }
 
-  // int64 snapshot_version = 7;
+  // optional int64 snapshot_version = 7;
   if (this->snapshot_version() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(7, this->snapshot_version(), output);
   }
@@ -5278,7 +5599,7 @@ void QueryResultBatch::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1beta3.QueryResultBatch)
-  // .google.datastore.v1beta3.EntityResult.ResultType entity_result_type = 1;
+  // optional .google.datastore.v1beta3.EntityResult.ResultType entity_result_type = 1;
   if (this->entity_result_type() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       1, this->entity_result_type(), target);
@@ -5291,32 +5612,32 @@ void QueryResultBatch::SerializeWithCachedSizes(
         2, this->entity_results(i), false, target);
   }
 
-  // bytes skipped_cursor = 3;
+  // optional bytes skipped_cursor = 3;
   if (this->skipped_cursor().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         3, this->skipped_cursor(), target);
   }
 
-  // bytes end_cursor = 4;
+  // optional bytes end_cursor = 4;
   if (this->end_cursor().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         4, this->end_cursor(), target);
   }
 
-  // .google.datastore.v1beta3.QueryResultBatch.MoreResultsType more_results = 5;
+  // optional .google.datastore.v1beta3.QueryResultBatch.MoreResultsType more_results = 5;
   if (this->more_results() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       5, this->more_results(), target);
   }
 
-  // int32 skipped_results = 6;
+  // optional int32 skipped_results = 6;
   if (this->skipped_results() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(6, this->skipped_results(), target);
   }
 
-  // int64 snapshot_version = 7;
+  // optional int64 snapshot_version = 7;
   if (this->snapshot_version() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(7, this->snapshot_version(), target);
   }
@@ -5329,6 +5650,46 @@ size_t QueryResultBatch::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1beta3.QueryResultBatch)
   size_t total_size = 0;
 
+  // optional int32 skipped_results = 6;
+  if (this->skipped_results() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->skipped_results());
+  }
+
+  // optional bytes skipped_cursor = 3;
+  if (this->skipped_cursor().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::BytesSize(
+        this->skipped_cursor());
+  }
+
+  // optional .google.datastore.v1beta3.EntityResult.ResultType entity_result_type = 1;
+  if (this->entity_result_type() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->entity_result_type());
+  }
+
+  // optional bytes end_cursor = 4;
+  if (this->end_cursor().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::BytesSize(
+        this->end_cursor());
+  }
+
+  // optional .google.datastore.v1beta3.QueryResultBatch.MoreResultsType more_results = 5;
+  if (this->more_results() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->more_results());
+  }
+
+  // optional int64 snapshot_version = 7;
+  if (this->snapshot_version() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->snapshot_version());
+  }
+
   // repeated .google.datastore.v1beta3.EntityResult entity_results = 2;
   {
     unsigned int count = this->entity_results_size();
@@ -5340,46 +5701,6 @@ size_t QueryResultBatch::ByteSizeLong() const {
     }
   }
 
-  // bytes skipped_cursor = 3;
-  if (this->skipped_cursor().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->skipped_cursor());
-  }
-
-  // bytes end_cursor = 4;
-  if (this->end_cursor().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->end_cursor());
-  }
-
-  // int32 skipped_results = 6;
-  if (this->skipped_results() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->skipped_results());
-  }
-
-  // .google.datastore.v1beta3.EntityResult.ResultType entity_result_type = 1;
-  if (this->entity_result_type() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->entity_result_type());
-  }
-
-  // int64 snapshot_version = 7;
-  if (this->snapshot_version() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->snapshot_version());
-  }
-
-  // .google.datastore.v1beta3.QueryResultBatch.MoreResultsType more_results = 5;
-  if (this->more_results() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->more_results());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -5389,7 +5710,7 @@ size_t QueryResultBatch::ByteSizeLong() const {
 
 void QueryResultBatch::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1beta3.QueryResultBatch)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const QueryResultBatch* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const QueryResultBatch>(
           &from);
@@ -5398,34 +5719,41 @@ void QueryResultBatch::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1beta3.QueryResultBatch)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void QueryResultBatch::MergeFrom(const QueryResultBatch& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1beta3.QueryResultBatch)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void QueryResultBatch::UnsafeMergeFrom(const QueryResultBatch& from) {
+  GOOGLE_DCHECK(&from != this);
   entity_results_.MergeFrom(from.entity_results_);
+  if (from.skipped_results() != 0) {
+    set_skipped_results(from.skipped_results());
+  }
   if (from.skipped_cursor().size() > 0) {
 
     skipped_cursor_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.skipped_cursor_);
+  }
+  if (from.entity_result_type() != 0) {
+    set_entity_result_type(from.entity_result_type());
   }
   if (from.end_cursor().size() > 0) {
 
     end_cursor_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.end_cursor_);
   }
-  if (from.skipped_results() != 0) {
-    set_skipped_results(from.skipped_results());
-  }
-  if (from.entity_result_type() != 0) {
-    set_entity_result_type(from.entity_result_type());
+  if (from.more_results() != 0) {
+    set_more_results(from.more_results());
   }
   if (from.snapshot_version() != 0) {
     set_snapshot_version(from.snapshot_version());
-  }
-  if (from.more_results() != 0) {
-    set_more_results(from.more_results());
   }
 }
 
@@ -5440,10 +5768,11 @@ void QueryResultBatch::CopyFrom(const QueryResultBatch& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1beta3.QueryResultBatch)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool QueryResultBatch::IsInitialized() const {
+
   return true;
 }
 
@@ -5452,25 +5781,29 @@ void QueryResultBatch::Swap(QueryResultBatch* other) {
   InternalSwap(other);
 }
 void QueryResultBatch::InternalSwap(QueryResultBatch* other) {
-  entity_results_.UnsafeArenaSwap(&other->entity_results_);
-  skipped_cursor_.Swap(&other->skipped_cursor_);
-  end_cursor_.Swap(&other->end_cursor_);
   std::swap(skipped_results_, other->skipped_results_);
+  skipped_cursor_.Swap(&other->skipped_cursor_);
   std::swap(entity_result_type_, other->entity_result_type_);
-  std::swap(snapshot_version_, other->snapshot_version_);
+  entity_results_.UnsafeArenaSwap(&other->entity_results_);
+  end_cursor_.Swap(&other->end_cursor_);
   std::swap(more_results_, other->more_results_);
+  std::swap(snapshot_version_, other->snapshot_version_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata QueryResultBatch::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[12];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = QueryResultBatch_descriptor_;
+  metadata.reflection = QueryResultBatch_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // QueryResultBatch
 
-// int32 skipped_results = 6;
+// optional int32 skipped_results = 6;
 void QueryResultBatch::clear_skipped_results() {
   skipped_results_ = 0;
 }
@@ -5484,13 +5817,13 @@ void QueryResultBatch::set_skipped_results(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.datastore.v1beta3.QueryResultBatch.skipped_results)
 }
 
-// bytes skipped_cursor = 3;
+// optional bytes skipped_cursor = 3;
 void QueryResultBatch::clear_skipped_cursor() {
   skipped_cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& QueryResultBatch::skipped_cursor() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.QueryResultBatch.skipped_cursor)
-  return skipped_cursor_.GetNoArena();
+  return skipped_cursor_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void QueryResultBatch::set_skipped_cursor(const ::std::string& value) {
   
@@ -5528,7 +5861,7 @@ void QueryResultBatch::set_allocated_skipped_cursor(::std::string* skipped_curso
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.QueryResultBatch.skipped_cursor)
 }
 
-// .google.datastore.v1beta3.EntityResult.ResultType entity_result_type = 1;
+// optional .google.datastore.v1beta3.EntityResult.ResultType entity_result_type = 1;
 void QueryResultBatch::clear_entity_result_type() {
   entity_result_type_ = 0;
 }
@@ -5572,13 +5905,13 @@ QueryResultBatch::entity_results() const {
   return entity_results_;
 }
 
-// bytes end_cursor = 4;
+// optional bytes end_cursor = 4;
 void QueryResultBatch::clear_end_cursor() {
   end_cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& QueryResultBatch::end_cursor() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1beta3.QueryResultBatch.end_cursor)
-  return end_cursor_.GetNoArena();
+  return end_cursor_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void QueryResultBatch::set_end_cursor(const ::std::string& value) {
   
@@ -5616,7 +5949,7 @@ void QueryResultBatch::set_allocated_end_cursor(::std::string* end_cursor) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1beta3.QueryResultBatch.end_cursor)
 }
 
-// .google.datastore.v1beta3.QueryResultBatch.MoreResultsType more_results = 5;
+// optional .google.datastore.v1beta3.QueryResultBatch.MoreResultsType more_results = 5;
 void QueryResultBatch::clear_more_results() {
   more_results_ = 0;
 }
@@ -5630,7 +5963,7 @@ void QueryResultBatch::set_more_results(::google::datastore::v1beta3::QueryResul
   // @@protoc_insertion_point(field_set:google.datastore.v1beta3.QueryResultBatch.more_results)
 }
 
-// int64 snapshot_version = 7;
+// optional int64 snapshot_version = 7;
 void QueryResultBatch::clear_snapshot_version() {
   snapshot_version_ = GOOGLE_LONGLONG(0);
 }
@@ -5644,6 +5977,9 @@ void QueryResultBatch::set_snapshot_version(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.datastore.v1beta3.QueryResultBatch.snapshot_version)
 }
 
+inline const QueryResultBatch* QueryResultBatch::internal_default_instance() {
+  return &QueryResultBatch_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

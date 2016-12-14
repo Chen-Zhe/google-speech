@@ -24,8 +24,8 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include "google/api/monitored_resource.pb.h"
@@ -33,61 +33,6 @@
 #include "google/monitoring/v3/group.pb.h"
 #include <google/protobuf/empty.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-class MonitoredResource;
-class MonitoredResourceDefaultTypeInternal;
-extern MonitoredResourceDefaultTypeInternal _MonitoredResource_default_instance_;
-class MonitoredResourceDescriptor;
-class MonitoredResourceDescriptorDefaultTypeInternal;
-extern MonitoredResourceDescriptorDefaultTypeInternal _MonitoredResourceDescriptor_default_instance_;
-}  // namespace api
-namespace monitoring {
-namespace v3 {
-class Aggregation;
-class AggregationDefaultTypeInternal;
-extern AggregationDefaultTypeInternal _Aggregation_default_instance_;
-class CreateGroupRequest;
-class CreateGroupRequestDefaultTypeInternal;
-extern CreateGroupRequestDefaultTypeInternal _CreateGroupRequest_default_instance_;
-class DeleteGroupRequest;
-class DeleteGroupRequestDefaultTypeInternal;
-extern DeleteGroupRequestDefaultTypeInternal _DeleteGroupRequest_default_instance_;
-class GetGroupRequest;
-class GetGroupRequestDefaultTypeInternal;
-extern GetGroupRequestDefaultTypeInternal _GetGroupRequest_default_instance_;
-class Group;
-class GroupDefaultTypeInternal;
-extern GroupDefaultTypeInternal _Group_default_instance_;
-class ListGroupMembersRequest;
-class ListGroupMembersRequestDefaultTypeInternal;
-extern ListGroupMembersRequestDefaultTypeInternal _ListGroupMembersRequest_default_instance_;
-class ListGroupMembersResponse;
-class ListGroupMembersResponseDefaultTypeInternal;
-extern ListGroupMembersResponseDefaultTypeInternal _ListGroupMembersResponse_default_instance_;
-class ListGroupsRequest;
-class ListGroupsRequestDefaultTypeInternal;
-extern ListGroupsRequestDefaultTypeInternal _ListGroupsRequest_default_instance_;
-class ListGroupsResponse;
-class ListGroupsResponseDefaultTypeInternal;
-extern ListGroupsResponseDefaultTypeInternal _ListGroupsResponse_default_instance_;
-class TimeInterval;
-class TimeIntervalDefaultTypeInternal;
-extern TimeIntervalDefaultTypeInternal _TimeInterval_default_instance_;
-class TypedValue;
-class TypedValueDefaultTypeInternal;
-extern TypedValueDefaultTypeInternal _TypedValue_default_instance_;
-class UpdateGroupRequest;
-class UpdateGroupRequestDefaultTypeInternal;
-extern UpdateGroupRequestDefaultTypeInternal _UpdateGroupRequest_default_instance_;
-}  // namespace v3
-}  // namespace monitoring
-namespace protobuf {
-class Empty;
-class EmptyDefaultTypeInternal;
-extern EmptyDefaultTypeInternal _Empty_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace monitoring {
@@ -96,6 +41,17 @@ namespace v3 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
 void protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+void protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+
+class CreateGroupRequest;
+class DeleteGroupRequest;
+class GetGroupRequest;
+class ListGroupMembersRequest;
+class ListGroupMembersResponse;
+class ListGroupsRequest;
+class ListGroupsResponse;
+class UpdateGroupRequest;
 
 // ===================================================================
 
@@ -121,58 +77,55 @@ class ListGroupsRequest : public ::google::protobuf::Message /* @@protoc_inserti
     FILTER_NOT_SET = 0,
   };
 
-  static inline const ListGroupsRequest* internal_default_instance() {
-    return reinterpret_cast<const ListGroupsRequest*>(
-               &_ListGroupsRequest_default_instance_);
-  }
+  static const ListGroupsRequest* internal_default_instance();
 
   void Swap(ListGroupsRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListGroupsRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListGroupsRequest* New() const { return New(NULL); }
 
-  ListGroupsRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListGroupsRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListGroupsRequest& from);
   void MergeFrom(const ListGroupsRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListGroupsRequest* other);
+  void UnsafeMergeFrom(const ListGroupsRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 7;
+  // optional string name = 7;
   void clear_name();
   static const int kNameFieldNumber = 7;
   const ::std::string& name() const;
@@ -183,7 +136,7 @@ class ListGroupsRequest : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // string children_of_group = 2;
+  // optional string children_of_group = 2;
   private:
   bool has_children_of_group() const;
   public:
@@ -197,7 +150,7 @@ class ListGroupsRequest : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_children_of_group();
   void set_allocated_children_of_group(::std::string* children_of_group);
 
-  // string ancestors_of_group = 3;
+  // optional string ancestors_of_group = 3;
   private:
   bool has_ancestors_of_group() const;
   public:
@@ -211,7 +164,7 @@ class ListGroupsRequest : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_ancestors_of_group();
   void set_allocated_ancestors_of_group(::std::string* ancestors_of_group);
 
-  // string descendants_of_group = 4;
+  // optional string descendants_of_group = 4;
   private:
   bool has_descendants_of_group() const;
   public:
@@ -225,13 +178,13 @@ class ListGroupsRequest : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_descendants_of_group();
   void set_allocated_descendants_of_group(::std::string* descendants_of_group);
 
-  // int32 page_size = 5;
+  // optional int32 page_size = 5;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 5;
   ::google::protobuf::int32 page_size() const;
   void set_page_size(::google::protobuf::int32 value);
 
-  // string page_token = 6;
+  // optional string page_token = 6;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 6;
   const ::std::string& page_token() const;
@@ -245,9 +198,9 @@ class ListGroupsRequest : public ::google::protobuf::Message /* @@protoc_inserti
   FilterCase filter_case() const;
   // @@protoc_insertion_point(class_scope:google.monitoring.v3.ListGroupsRequest)
  private:
-  void set_has_children_of_group();
-  void set_has_ancestors_of_group();
-  void set_has_descendants_of_group();
+  inline void set_has_children_of_group();
+  inline void set_has_ancestors_of_group();
+  inline void set_has_descendants_of_group();
 
   inline bool has_filter() const;
   void clear_filter();
@@ -268,10 +221,13 @@ class ListGroupsRequest : public ::google::protobuf::Message /* @@protoc_inserti
 
   friend void  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListGroupsRequest> ListGroupsRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListGroupsResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.monitoring.v3.ListGroupsResponse) */ {
@@ -289,52 +245,49 @@ class ListGroupsResponse : public ::google::protobuf::Message /* @@protoc_insert
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListGroupsResponse& default_instance();
 
-  static inline const ListGroupsResponse* internal_default_instance() {
-    return reinterpret_cast<const ListGroupsResponse*>(
-               &_ListGroupsResponse_default_instance_);
-  }
+  static const ListGroupsResponse* internal_default_instance();
 
   void Swap(ListGroupsResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListGroupsResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListGroupsResponse* New() const { return New(NULL); }
 
-  ListGroupsResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListGroupsResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListGroupsResponse& from);
   void MergeFrom(const ListGroupsResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListGroupsResponse* other);
+  void UnsafeMergeFrom(const ListGroupsResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -352,7 +305,7 @@ class ListGroupsResponse : public ::google::protobuf::Message /* @@protoc_insert
   const ::google::protobuf::RepeatedPtrField< ::google::monitoring::v3::Group >&
       group() const;
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -372,10 +325,13 @@ class ListGroupsResponse : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListGroupsResponse> ListGroupsResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetGroupRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.monitoring.v3.GetGroupRequest) */ {
@@ -393,58 +349,55 @@ class GetGroupRequest : public ::google::protobuf::Message /* @@protoc_insertion
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetGroupRequest& default_instance();
 
-  static inline const GetGroupRequest* internal_default_instance() {
-    return reinterpret_cast<const GetGroupRequest*>(
-               &_GetGroupRequest_default_instance_);
-  }
+  static const GetGroupRequest* internal_default_instance();
 
   void Swap(GetGroupRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetGroupRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetGroupRequest* New() const { return New(NULL); }
 
-  GetGroupRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetGroupRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetGroupRequest& from);
   void MergeFrom(const GetGroupRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetGroupRequest* other);
+  void UnsafeMergeFrom(const GetGroupRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 3;
+  // optional string name = 3;
   void clear_name();
   static const int kNameFieldNumber = 3;
   const ::std::string& name() const;
@@ -463,10 +416,13 @@ class GetGroupRequest : public ::google::protobuf::Message /* @@protoc_insertion
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetGroupRequest> GetGroupRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class CreateGroupRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.monitoring.v3.CreateGroupRequest) */ {
@@ -484,58 +440,55 @@ class CreateGroupRequest : public ::google::protobuf::Message /* @@protoc_insert
   static const ::google::protobuf::Descriptor* descriptor();
   static const CreateGroupRequest& default_instance();
 
-  static inline const CreateGroupRequest* internal_default_instance() {
-    return reinterpret_cast<const CreateGroupRequest*>(
-               &_CreateGroupRequest_default_instance_);
-  }
+  static const CreateGroupRequest* internal_default_instance();
 
   void Swap(CreateGroupRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline CreateGroupRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline CreateGroupRequest* New() const { return New(NULL); }
 
-  CreateGroupRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CreateGroupRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const CreateGroupRequest& from);
   void MergeFrom(const CreateGroupRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(CreateGroupRequest* other);
+  void UnsafeMergeFrom(const CreateGroupRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 4;
+  // optional string name = 4;
   void clear_name();
   static const int kNameFieldNumber = 4;
   const ::std::string& name() const;
@@ -546,7 +499,7 @@ class CreateGroupRequest : public ::google::protobuf::Message /* @@protoc_insert
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // .google.monitoring.v3.Group group = 2;
+  // optional .google.monitoring.v3.Group group = 2;
   bool has_group() const;
   void clear_group();
   static const int kGroupFieldNumber = 2;
@@ -555,7 +508,7 @@ class CreateGroupRequest : public ::google::protobuf::Message /* @@protoc_insert
   ::google::monitoring::v3::Group* release_group();
   void set_allocated_group(::google::monitoring::v3::Group* group);
 
-  // bool validate_only = 3;
+  // optional bool validate_only = 3;
   void clear_validate_only();
   static const int kValidateOnlyFieldNumber = 3;
   bool validate_only() const;
@@ -571,10 +524,13 @@ class CreateGroupRequest : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<CreateGroupRequest> CreateGroupRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class UpdateGroupRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.monitoring.v3.UpdateGroupRequest) */ {
@@ -592,58 +548,55 @@ class UpdateGroupRequest : public ::google::protobuf::Message /* @@protoc_insert
   static const ::google::protobuf::Descriptor* descriptor();
   static const UpdateGroupRequest& default_instance();
 
-  static inline const UpdateGroupRequest* internal_default_instance() {
-    return reinterpret_cast<const UpdateGroupRequest*>(
-               &_UpdateGroupRequest_default_instance_);
-  }
+  static const UpdateGroupRequest* internal_default_instance();
 
   void Swap(UpdateGroupRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline UpdateGroupRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline UpdateGroupRequest* New() const { return New(NULL); }
 
-  UpdateGroupRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  UpdateGroupRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const UpdateGroupRequest& from);
   void MergeFrom(const UpdateGroupRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(UpdateGroupRequest* other);
+  void UnsafeMergeFrom(const UpdateGroupRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.monitoring.v3.Group group = 2;
+  // optional .google.monitoring.v3.Group group = 2;
   bool has_group() const;
   void clear_group();
   static const int kGroupFieldNumber = 2;
@@ -652,7 +605,7 @@ class UpdateGroupRequest : public ::google::protobuf::Message /* @@protoc_insert
   ::google::monitoring::v3::Group* release_group();
   void set_allocated_group(::google::monitoring::v3::Group* group);
 
-  // bool validate_only = 3;
+  // optional bool validate_only = 3;
   void clear_validate_only();
   static const int kValidateOnlyFieldNumber = 3;
   bool validate_only() const;
@@ -667,10 +620,13 @@ class UpdateGroupRequest : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<UpdateGroupRequest> UpdateGroupRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class DeleteGroupRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.monitoring.v3.DeleteGroupRequest) */ {
@@ -688,58 +644,55 @@ class DeleteGroupRequest : public ::google::protobuf::Message /* @@protoc_insert
   static const ::google::protobuf::Descriptor* descriptor();
   static const DeleteGroupRequest& default_instance();
 
-  static inline const DeleteGroupRequest* internal_default_instance() {
-    return reinterpret_cast<const DeleteGroupRequest*>(
-               &_DeleteGroupRequest_default_instance_);
-  }
+  static const DeleteGroupRequest* internal_default_instance();
 
   void Swap(DeleteGroupRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline DeleteGroupRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline DeleteGroupRequest* New() const { return New(NULL); }
 
-  DeleteGroupRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DeleteGroupRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const DeleteGroupRequest& from);
   void MergeFrom(const DeleteGroupRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(DeleteGroupRequest* other);
+  void UnsafeMergeFrom(const DeleteGroupRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 3;
+  // optional string name = 3;
   void clear_name();
   static const int kNameFieldNumber = 3;
   const ::std::string& name() const;
@@ -758,10 +711,13 @@ class DeleteGroupRequest : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<DeleteGroupRequest> DeleteGroupRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListGroupMembersRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.monitoring.v3.ListGroupMembersRequest) */ {
@@ -779,58 +735,55 @@ class ListGroupMembersRequest : public ::google::protobuf::Message /* @@protoc_i
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListGroupMembersRequest& default_instance();
 
-  static inline const ListGroupMembersRequest* internal_default_instance() {
-    return reinterpret_cast<const ListGroupMembersRequest*>(
-               &_ListGroupMembersRequest_default_instance_);
-  }
+  static const ListGroupMembersRequest* internal_default_instance();
 
   void Swap(ListGroupMembersRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListGroupMembersRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListGroupMembersRequest* New() const { return New(NULL); }
 
-  ListGroupMembersRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListGroupMembersRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListGroupMembersRequest& from);
   void MergeFrom(const ListGroupMembersRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListGroupMembersRequest* other);
+  void UnsafeMergeFrom(const ListGroupMembersRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 7;
+  // optional string name = 7;
   void clear_name();
   static const int kNameFieldNumber = 7;
   const ::std::string& name() const;
@@ -841,13 +794,13 @@ class ListGroupMembersRequest : public ::google::protobuf::Message /* @@protoc_i
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // int32 page_size = 3;
+  // optional int32 page_size = 3;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 3;
   ::google::protobuf::int32 page_size() const;
   void set_page_size(::google::protobuf::int32 value);
 
-  // string page_token = 4;
+  // optional string page_token = 4;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 4;
   const ::std::string& page_token() const;
@@ -858,7 +811,7 @@ class ListGroupMembersRequest : public ::google::protobuf::Message /* @@protoc_i
   ::std::string* release_page_token();
   void set_allocated_page_token(::std::string* page_token);
 
-  // string filter = 5;
+  // optional string filter = 5;
   void clear_filter();
   static const int kFilterFieldNumber = 5;
   const ::std::string& filter() const;
@@ -869,7 +822,7 @@ class ListGroupMembersRequest : public ::google::protobuf::Message /* @@protoc_i
   ::std::string* release_filter();
   void set_allocated_filter(::std::string* filter);
 
-  // .google.monitoring.v3.TimeInterval interval = 6;
+  // optional .google.monitoring.v3.TimeInterval interval = 6;
   bool has_interval() const;
   void clear_interval();
   static const int kIntervalFieldNumber = 6;
@@ -890,10 +843,13 @@ class ListGroupMembersRequest : public ::google::protobuf::Message /* @@protoc_i
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListGroupMembersRequest> ListGroupMembersRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListGroupMembersResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.monitoring.v3.ListGroupMembersResponse) */ {
@@ -911,52 +867,49 @@ class ListGroupMembersResponse : public ::google::protobuf::Message /* @@protoc_
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListGroupMembersResponse& default_instance();
 
-  static inline const ListGroupMembersResponse* internal_default_instance() {
-    return reinterpret_cast<const ListGroupMembersResponse*>(
-               &_ListGroupMembersResponse_default_instance_);
-  }
+  static const ListGroupMembersResponse* internal_default_instance();
 
   void Swap(ListGroupMembersResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListGroupMembersResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListGroupMembersResponse* New() const { return New(NULL); }
 
-  ListGroupMembersResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListGroupMembersResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListGroupMembersResponse& from);
   void MergeFrom(const ListGroupMembersResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListGroupMembersResponse* other);
+  void UnsafeMergeFrom(const ListGroupMembersResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -974,7 +927,7 @@ class ListGroupMembersResponse : public ::google::protobuf::Message /* @@protoc_
   const ::google::protobuf::RepeatedPtrField< ::google::api::MonitoredResource >&
       members() const;
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -985,7 +938,7 @@ class ListGroupMembersResponse : public ::google::protobuf::Message /* @@protoc_
   ::std::string* release_next_page_token();
   void set_allocated_next_page_token(::std::string* next_page_token);
 
-  // int32 total_size = 3;
+  // optional int32 total_size = 3;
   void clear_total_size();
   static const int kTotalSizeFieldNumber = 3;
   ::google::protobuf::int32 total_size() const;
@@ -1001,10 +954,13 @@ class ListGroupMembersResponse : public ::google::protobuf::Message /* @@protoc_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fgroup_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListGroupMembersResponse> ListGroupMembersResponse_default_instance_;
+
 // ===================================================================
 
 
@@ -1013,13 +969,13 @@ class ListGroupMembersResponse : public ::google::protobuf::Message /* @@protoc_
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // ListGroupsRequest
 
-// string name = 7;
+// optional string name = 7;
 inline void ListGroupsRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListGroupsRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupsRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListGroupsRequest::set_name(const ::std::string& value) {
   
@@ -1057,7 +1013,7 @@ inline void ListGroupsRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListGroupsRequest.name)
 }
 
-// string children_of_group = 2;
+// optional string children_of_group = 2;
 inline bool ListGroupsRequest::has_children_of_group() const {
   return filter_case() == kChildrenOfGroup;
 }
@@ -1073,7 +1029,7 @@ inline void ListGroupsRequest::clear_children_of_group() {
 inline const ::std::string& ListGroupsRequest::children_of_group() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupsRequest.children_of_group)
   if (has_children_of_group()) {
-    return filter_.children_of_group_.GetNoArena();
+    return filter_.children_of_group_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -1138,7 +1094,7 @@ inline void ListGroupsRequest::set_allocated_children_of_group(::std::string* ch
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListGroupsRequest.children_of_group)
 }
 
-// string ancestors_of_group = 3;
+// optional string ancestors_of_group = 3;
 inline bool ListGroupsRequest::has_ancestors_of_group() const {
   return filter_case() == kAncestorsOfGroup;
 }
@@ -1154,7 +1110,7 @@ inline void ListGroupsRequest::clear_ancestors_of_group() {
 inline const ::std::string& ListGroupsRequest::ancestors_of_group() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupsRequest.ancestors_of_group)
   if (has_ancestors_of_group()) {
-    return filter_.ancestors_of_group_.GetNoArena();
+    return filter_.ancestors_of_group_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -1219,7 +1175,7 @@ inline void ListGroupsRequest::set_allocated_ancestors_of_group(::std::string* a
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListGroupsRequest.ancestors_of_group)
 }
 
-// string descendants_of_group = 4;
+// optional string descendants_of_group = 4;
 inline bool ListGroupsRequest::has_descendants_of_group() const {
   return filter_case() == kDescendantsOfGroup;
 }
@@ -1235,7 +1191,7 @@ inline void ListGroupsRequest::clear_descendants_of_group() {
 inline const ::std::string& ListGroupsRequest::descendants_of_group() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupsRequest.descendants_of_group)
   if (has_descendants_of_group()) {
-    return filter_.descendants_of_group_.GetNoArena();
+    return filter_.descendants_of_group_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -1300,7 +1256,7 @@ inline void ListGroupsRequest::set_allocated_descendants_of_group(::std::string*
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListGroupsRequest.descendants_of_group)
 }
 
-// int32 page_size = 5;
+// optional int32 page_size = 5;
 inline void ListGroupsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -1314,13 +1270,13 @@ inline void ListGroupsRequest::set_page_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupsRequest.page_size)
 }
 
-// string page_token = 6;
+// optional string page_token = 6;
 inline void ListGroupsRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListGroupsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupsRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListGroupsRequest::set_page_token(const ::std::string& value) {
   
@@ -1367,6 +1323,9 @@ inline void ListGroupsRequest::clear_has_filter() {
 inline ListGroupsRequest::FilterCase ListGroupsRequest::filter_case() const {
   return ListGroupsRequest::FilterCase(_oneof_case_[0]);
 }
+inline const ListGroupsRequest* ListGroupsRequest::internal_default_instance() {
+  return &ListGroupsRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListGroupsResponse
@@ -1401,13 +1360,13 @@ ListGroupsResponse::group() const {
   return group_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void ListGroupsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListGroupsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupsResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListGroupsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -1445,17 +1404,20 @@ inline void ListGroupsResponse::set_allocated_next_page_token(::std::string* nex
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListGroupsResponse.next_page_token)
 }
 
+inline const ListGroupsResponse* ListGroupsResponse::internal_default_instance() {
+  return &ListGroupsResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetGroupRequest
 
-// string name = 3;
+// optional string name = 3;
 inline void GetGroupRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetGroupRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.GetGroupRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetGroupRequest::set_name(const ::std::string& value) {
   
@@ -1493,17 +1455,20 @@ inline void GetGroupRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.GetGroupRequest.name)
 }
 
+inline const GetGroupRequest* GetGroupRequest::internal_default_instance() {
+  return &GetGroupRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // CreateGroupRequest
 
-// string name = 4;
+// optional string name = 4;
 inline void CreateGroupRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& CreateGroupRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.CreateGroupRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void CreateGroupRequest::set_name(const ::std::string& value) {
   
@@ -1541,7 +1506,7 @@ inline void CreateGroupRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.CreateGroupRequest.name)
 }
 
-// .google.monitoring.v3.Group group = 2;
+// optional .google.monitoring.v3.Group group = 2;
 inline bool CreateGroupRequest::has_group() const {
   return this != internal_default_instance() && group_ != NULL;
 }
@@ -1580,7 +1545,7 @@ inline void CreateGroupRequest::set_allocated_group(::google::monitoring::v3::Gr
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.CreateGroupRequest.group)
 }
 
-// bool validate_only = 3;
+// optional bool validate_only = 3;
 inline void CreateGroupRequest::clear_validate_only() {
   validate_only_ = false;
 }
@@ -1594,11 +1559,14 @@ inline void CreateGroupRequest::set_validate_only(bool value) {
   // @@protoc_insertion_point(field_set:google.monitoring.v3.CreateGroupRequest.validate_only)
 }
 
+inline const CreateGroupRequest* CreateGroupRequest::internal_default_instance() {
+  return &CreateGroupRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // UpdateGroupRequest
 
-// .google.monitoring.v3.Group group = 2;
+// optional .google.monitoring.v3.Group group = 2;
 inline bool UpdateGroupRequest::has_group() const {
   return this != internal_default_instance() && group_ != NULL;
 }
@@ -1637,7 +1605,7 @@ inline void UpdateGroupRequest::set_allocated_group(::google::monitoring::v3::Gr
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.UpdateGroupRequest.group)
 }
 
-// bool validate_only = 3;
+// optional bool validate_only = 3;
 inline void UpdateGroupRequest::clear_validate_only() {
   validate_only_ = false;
 }
@@ -1651,17 +1619,20 @@ inline void UpdateGroupRequest::set_validate_only(bool value) {
   // @@protoc_insertion_point(field_set:google.monitoring.v3.UpdateGroupRequest.validate_only)
 }
 
+inline const UpdateGroupRequest* UpdateGroupRequest::internal_default_instance() {
+  return &UpdateGroupRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // DeleteGroupRequest
 
-// string name = 3;
+// optional string name = 3;
 inline void DeleteGroupRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& DeleteGroupRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.DeleteGroupRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DeleteGroupRequest::set_name(const ::std::string& value) {
   
@@ -1699,17 +1670,20 @@ inline void DeleteGroupRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.DeleteGroupRequest.name)
 }
 
+inline const DeleteGroupRequest* DeleteGroupRequest::internal_default_instance() {
+  return &DeleteGroupRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListGroupMembersRequest
 
-// string name = 7;
+// optional string name = 7;
 inline void ListGroupMembersRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListGroupMembersRequest::name() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupMembersRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListGroupMembersRequest::set_name(const ::std::string& value) {
   
@@ -1747,7 +1721,7 @@ inline void ListGroupMembersRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListGroupMembersRequest.name)
 }
 
-// int32 page_size = 3;
+// optional int32 page_size = 3;
 inline void ListGroupMembersRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -1761,13 +1735,13 @@ inline void ListGroupMembersRequest::set_page_size(::google::protobuf::int32 val
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupMembersRequest.page_size)
 }
 
-// string page_token = 4;
+// optional string page_token = 4;
 inline void ListGroupMembersRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListGroupMembersRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupMembersRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListGroupMembersRequest::set_page_token(const ::std::string& value) {
   
@@ -1805,13 +1779,13 @@ inline void ListGroupMembersRequest::set_allocated_page_token(::std::string* pag
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListGroupMembersRequest.page_token)
 }
 
-// string filter = 5;
+// optional string filter = 5;
 inline void ListGroupMembersRequest::clear_filter() {
   filter_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListGroupMembersRequest::filter() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupMembersRequest.filter)
-  return filter_.GetNoArena();
+  return filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListGroupMembersRequest::set_filter(const ::std::string& value) {
   
@@ -1849,7 +1823,7 @@ inline void ListGroupMembersRequest::set_allocated_filter(::std::string* filter)
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListGroupMembersRequest.filter)
 }
 
-// .google.monitoring.v3.TimeInterval interval = 6;
+// optional .google.monitoring.v3.TimeInterval interval = 6;
 inline bool ListGroupMembersRequest::has_interval() const {
   return this != internal_default_instance() && interval_ != NULL;
 }
@@ -1888,6 +1862,9 @@ inline void ListGroupMembersRequest::set_allocated_interval(::google::monitoring
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListGroupMembersRequest.interval)
 }
 
+inline const ListGroupMembersRequest* ListGroupMembersRequest::internal_default_instance() {
+  return &ListGroupMembersRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListGroupMembersResponse
@@ -1922,13 +1899,13 @@ ListGroupMembersResponse::members() const {
   return members_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void ListGroupMembersResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListGroupMembersResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.ListGroupMembersResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListGroupMembersResponse::set_next_page_token(const ::std::string& value) {
   
@@ -1966,7 +1943,7 @@ inline void ListGroupMembersResponse::set_allocated_next_page_token(::std::strin
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.ListGroupMembersResponse.next_page_token)
 }
 
-// int32 total_size = 3;
+// optional int32 total_size = 3;
 inline void ListGroupMembersResponse::clear_total_size() {
   total_size_ = 0;
 }
@@ -1980,6 +1957,9 @@ inline void ListGroupMembersResponse::set_total_size(::google::protobuf::int32 v
   // @@protoc_insertion_point(field_set:google.monitoring.v3.ListGroupMembersResponse.total_size)
 }
 
+inline const ListGroupMembersResponse* ListGroupMembersResponse::internal_default_instance() {
+  return &ListGroupMembersResponse_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
@@ -1997,7 +1977,6 @@ inline void ListGroupMembersResponse::set_total_size(::google::protobuf::int32 v
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v3
 }  // namespace monitoring

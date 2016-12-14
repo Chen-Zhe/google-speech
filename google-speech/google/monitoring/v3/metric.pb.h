@@ -24,48 +24,13 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/metric.pb.h"
 #include "google/api/monitored_resource.pb.h"
 #include "google/monitoring/v3/common.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-class Metric;
-class MetricDefaultTypeInternal;
-extern MetricDefaultTypeInternal _Metric_default_instance_;
-class MetricDescriptor;
-class MetricDescriptorDefaultTypeInternal;
-extern MetricDescriptorDefaultTypeInternal _MetricDescriptor_default_instance_;
-class MonitoredResource;
-class MonitoredResourceDefaultTypeInternal;
-extern MonitoredResourceDefaultTypeInternal _MonitoredResource_default_instance_;
-class MonitoredResourceDescriptor;
-class MonitoredResourceDescriptorDefaultTypeInternal;
-extern MonitoredResourceDescriptorDefaultTypeInternal _MonitoredResourceDescriptor_default_instance_;
-}  // namespace api
-namespace monitoring {
-namespace v3 {
-class Aggregation;
-class AggregationDefaultTypeInternal;
-extern AggregationDefaultTypeInternal _Aggregation_default_instance_;
-class Point;
-class PointDefaultTypeInternal;
-extern PointDefaultTypeInternal _Point_default_instance_;
-class TimeInterval;
-class TimeIntervalDefaultTypeInternal;
-extern TimeIntervalDefaultTypeInternal _TimeInterval_default_instance_;
-class TimeSeries;
-class TimeSeriesDefaultTypeInternal;
-extern TimeSeriesDefaultTypeInternal _TimeSeries_default_instance_;
-class TypedValue;
-class TypedValueDefaultTypeInternal;
-extern TypedValueDefaultTypeInternal _TypedValue_default_instance_;
-}  // namespace v3
-}  // namespace monitoring
-}  // namespace google
 
 namespace google {
 namespace monitoring {
@@ -74,6 +39,11 @@ namespace v3 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fmonitoring_2fv3_2fmetric_2eproto();
 void protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_2eproto();
+void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fmetric_2eproto();
+void protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fmetric_2eproto();
+
+class Point;
+class TimeSeries;
 
 // ===================================================================
 
@@ -92,58 +62,55 @@ class Point : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   static const ::google::protobuf::Descriptor* descriptor();
   static const Point& default_instance();
 
-  static inline const Point* internal_default_instance() {
-    return reinterpret_cast<const Point*>(
-               &_Point_default_instance_);
-  }
+  static const Point* internal_default_instance();
 
   void Swap(Point* other);
 
   // implements Message ----------------------------------------------
 
-  inline Point* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Point* New() const { return New(NULL); }
 
-  Point* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Point* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Point& from);
   void MergeFrom(const Point& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Point* other);
+  void UnsafeMergeFrom(const Point& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.monitoring.v3.TimeInterval interval = 1;
+  // optional .google.monitoring.v3.TimeInterval interval = 1;
   bool has_interval() const;
   void clear_interval();
   static const int kIntervalFieldNumber = 1;
@@ -152,7 +119,7 @@ class Point : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   ::google::monitoring::v3::TimeInterval* release_interval();
   void set_allocated_interval(::google::monitoring::v3::TimeInterval* interval);
 
-  // .google.monitoring.v3.TypedValue value = 2;
+  // optional .google.monitoring.v3.TypedValue value = 2;
   bool has_value() const;
   void clear_value();
   static const int kValueFieldNumber = 2;
@@ -170,10 +137,13 @@ class Point : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fmonitoring_2fv3_2fmetric_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fmonitoring_2fv3_2fmetric_2eproto();
+  friend void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fmetric_2eproto();
   friend void protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fmetric_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Point> Point_default_instance_;
+
 // -------------------------------------------------------------------
 
 class TimeSeries : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.monitoring.v3.TimeSeries) */ {
@@ -191,58 +161,55 @@ class TimeSeries : public ::google::protobuf::Message /* @@protoc_insertion_poin
   static const ::google::protobuf::Descriptor* descriptor();
   static const TimeSeries& default_instance();
 
-  static inline const TimeSeries* internal_default_instance() {
-    return reinterpret_cast<const TimeSeries*>(
-               &_TimeSeries_default_instance_);
-  }
+  static const TimeSeries* internal_default_instance();
 
   void Swap(TimeSeries* other);
 
   // implements Message ----------------------------------------------
 
-  inline TimeSeries* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline TimeSeries* New() const { return New(NULL); }
 
-  TimeSeries* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  TimeSeries* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const TimeSeries& from);
   void MergeFrom(const TimeSeries& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(TimeSeries* other);
+  void UnsafeMergeFrom(const TimeSeries& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.api.Metric metric = 1;
+  // optional .google.api.Metric metric = 1;
   bool has_metric() const;
   void clear_metric();
   static const int kMetricFieldNumber = 1;
@@ -251,7 +218,7 @@ class TimeSeries : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::google::api::Metric* release_metric();
   void set_allocated_metric(::google::api::Metric* metric);
 
-  // .google.api.MonitoredResource resource = 2;
+  // optional .google.api.MonitoredResource resource = 2;
   bool has_resource() const;
   void clear_resource();
   static const int kResourceFieldNumber = 2;
@@ -260,13 +227,13 @@ class TimeSeries : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::google::api::MonitoredResource* release_resource();
   void set_allocated_resource(::google::api::MonitoredResource* resource);
 
-  // .google.api.MetricDescriptor.MetricKind metric_kind = 3;
+  // optional .google.api.MetricDescriptor.MetricKind metric_kind = 3;
   void clear_metric_kind();
   static const int kMetricKindFieldNumber = 3;
   ::google::api::MetricDescriptor_MetricKind metric_kind() const;
   void set_metric_kind(::google::api::MetricDescriptor_MetricKind value);
 
-  // .google.api.MetricDescriptor.ValueType value_type = 4;
+  // optional .google.api.MetricDescriptor.ValueType value_type = 4;
   void clear_value_type();
   static const int kValueTypeFieldNumber = 4;
   ::google::api::MetricDescriptor_ValueType value_type() const;
@@ -296,10 +263,13 @@ class TimeSeries : public ::google::protobuf::Message /* @@protoc_insertion_poin
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fmonitoring_2fv3_2fmetric_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fmonitoring_2fv3_2fmetric_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fmonitoring_2fv3_2fmetric_2eproto();
+  friend void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fmetric_2eproto();
   friend void protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fmetric_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<TimeSeries> TimeSeries_default_instance_;
+
 // ===================================================================
 
 
@@ -308,7 +278,7 @@ class TimeSeries : public ::google::protobuf::Message /* @@protoc_insertion_poin
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Point
 
-// .google.monitoring.v3.TimeInterval interval = 1;
+// optional .google.monitoring.v3.TimeInterval interval = 1;
 inline bool Point::has_interval() const {
   return this != internal_default_instance() && interval_ != NULL;
 }
@@ -347,7 +317,7 @@ inline void Point::set_allocated_interval(::google::monitoring::v3::TimeInterval
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.Point.interval)
 }
 
-// .google.monitoring.v3.TypedValue value = 2;
+// optional .google.monitoring.v3.TypedValue value = 2;
 inline bool Point::has_value() const {
   return this != internal_default_instance() && value_ != NULL;
 }
@@ -386,11 +356,14 @@ inline void Point::set_allocated_value(::google::monitoring::v3::TypedValue* val
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.Point.value)
 }
 
+inline const Point* Point::internal_default_instance() {
+  return &Point_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // TimeSeries
 
-// .google.api.Metric metric = 1;
+// optional .google.api.Metric metric = 1;
 inline bool TimeSeries::has_metric() const {
   return this != internal_default_instance() && metric_ != NULL;
 }
@@ -429,7 +402,7 @@ inline void TimeSeries::set_allocated_metric(::google::api::Metric* metric) {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.TimeSeries.metric)
 }
 
-// .google.api.MonitoredResource resource = 2;
+// optional .google.api.MonitoredResource resource = 2;
 inline bool TimeSeries::has_resource() const {
   return this != internal_default_instance() && resource_ != NULL;
 }
@@ -473,7 +446,7 @@ inline void TimeSeries::set_allocated_resource(::google::api::MonitoredResource*
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.TimeSeries.resource)
 }
 
-// .google.api.MetricDescriptor.MetricKind metric_kind = 3;
+// optional .google.api.MetricDescriptor.MetricKind metric_kind = 3;
 inline void TimeSeries::clear_metric_kind() {
   metric_kind_ = 0;
 }
@@ -487,7 +460,7 @@ inline void TimeSeries::set_metric_kind(::google::api::MetricDescriptor_MetricKi
   // @@protoc_insertion_point(field_set:google.monitoring.v3.TimeSeries.metric_kind)
 }
 
-// .google.api.MetricDescriptor.ValueType value_type = 4;
+// optional .google.api.MetricDescriptor.ValueType value_type = 4;
 inline void TimeSeries::clear_value_type() {
   value_type_ = 0;
 }
@@ -531,12 +504,14 @@ TimeSeries::points() const {
   return points_;
 }
 
+inline const TimeSeries* TimeSeries::internal_default_instance() {
+  return &TimeSeries_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v3
 }  // namespace monitoring

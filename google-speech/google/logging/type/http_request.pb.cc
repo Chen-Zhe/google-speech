@@ -20,23 +20,25 @@
 namespace google {
 namespace logging {
 namespace type {
-class HttpRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<HttpRequest> {};
-HttpRequestDefaultTypeInternal _HttpRequest_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[1];
+const ::google::protobuf::Descriptor* HttpRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  HttpRequest_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2flogging_2ftype_2fhttp_5frequest_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2flogging_2ftype_2fhttp_5frequest_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HttpRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2flogging_2ftype_2fhttp_5frequest_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2flogging_2ftype_2fhttp_5frequest_2eproto() {
+  protobuf_AddDesc_google_2flogging_2ftype_2fhttp_5frequest_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/logging/type/http_request.proto");
+  GOOGLE_CHECK(file != NULL);
+  HttpRequest_descriptor_ = file->message_type(0);
+  static const int HttpRequest_offsets_[14] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HttpRequest, request_method_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HttpRequest, request_url_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HttpRequest, request_size_),
@@ -52,43 +54,38 @@ const ::google::protobuf::uint32* protobuf_Offsets_google_2flogging_2ftype_2fhtt
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HttpRequest, cache_validated_with_origin_server_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HttpRequest, cache_fill_bytes_),
   };
-  return offsets;
+  HttpRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      HttpRequest_descriptor_,
+      HttpRequest::internal_default_instance(),
+      HttpRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(HttpRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(HttpRequest, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(HttpRequest)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_HttpRequest_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2flogging_2ftype_2fhttp_5frequest_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/logging/type/http_request.proto", schemas, file_default_instances, protobuf_Offsets_google_2flogging_2ftype_2fhttp_5frequest_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2flogging_2ftype_2fhttp_5frequest_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      HttpRequest_descriptor_, HttpRequest::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2flogging_2ftype_2fhttp_5frequest_2eproto() {
-  _HttpRequest_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
+  HttpRequest_default_instance_.Shutdown();
+  delete HttpRequest_reflection_;
 }
 
 void protobuf_InitDefaults_google_2flogging_2ftype_2fhttp_5frequest_2eproto_impl() {
@@ -96,38 +93,37 @@ void protobuf_InitDefaults_google_2flogging_2ftype_2fhttp_5frequest_2eproto_impl
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fduration_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _HttpRequest_default_instance_.DefaultConstruct();
-  _HttpRequest_default_instance_.get_mutable()->latency_ = const_cast< ::google::protobuf::Duration*>(
-      ::google::protobuf::Duration::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  HttpRequest_default_instance_.DefaultConstruct();
+  HttpRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2flogging_2ftype_2fhttp_5frequest_2eproto_once_);
 void protobuf_InitDefaults_google_2flogging_2ftype_2fhttp_5frequest_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2flogging_2ftype_2fhttp_5frequest_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2flogging_2ftype_2fhttp_5frequest_2eproto_once_,
+                 &protobuf_InitDefaults_google_2flogging_2ftype_2fhttp_5frequest_2eproto_impl);
 }
 void protobuf_AddDesc_google_2flogging_2ftype_2fhttp_5frequest_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2flogging_2ftype_2fhttp_5frequest_2eproto();
-  static const char descriptor[] = {
-      "\n&google/logging/type/http_request.proto"
-      "\022\023google.logging.type\032\034google/api/annota"
-      "tions.proto\032\036google/protobuf/duration.pr"
-      "oto\"\335\002\n\013HttpRequest\022\026\n\016request_method\030\001 "
-      "\001(\t\022\023\n\013request_url\030\002 \001(\t\022\024\n\014request_size"
-      "\030\003 \001(\003\022\016\n\006status\030\004 \001(\005\022\025\n\rresponse_size\030"
-      "\005 \001(\003\022\022\n\nuser_agent\030\006 \001(\t\022\021\n\tremote_ip\030\007"
-      " \001(\t\022\021\n\tserver_ip\030\r \001(\t\022\017\n\007referer\030\010 \001(\t"
-      "\022*\n\007latency\030\016 \001(\0132\031.google.protobuf.Dura"
-      "tion\022\024\n\014cache_lookup\030\013 \001(\010\022\021\n\tcache_hit\030"
-      "\t \001(\010\022*\n\"cache_validated_with_origin_ser"
-      "ver\030\n \001(\010\022\030\n\020cache_fill_bytes\030\014 \001(\003B\203\001\n\027"
-      "com.google.logging.typeB\020HttpRequestProt"
-      "oP\001Z8google.golang.org/genproto/googleap"
-      "is/logging/type;ltype\252\002\031Google.Cloud.Log"
-      "ging.Typeb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 617);
+    "\n&google/logging/type/http_request.proto"
+    "\022\023google.logging.type\032\034google/api/annota"
+    "tions.proto\032\036google/protobuf/duration.pr"
+    "oto\"\335\002\n\013HttpRequest\022\026\n\016request_method\030\001 "
+    "\001(\t\022\023\n\013request_url\030\002 \001(\t\022\024\n\014request_size"
+    "\030\003 \001(\003\022\016\n\006status\030\004 \001(\005\022\025\n\rresponse_size\030"
+    "\005 \001(\003\022\022\n\nuser_agent\030\006 \001(\t\022\021\n\tremote_ip\030\007"
+    " \001(\t\022\021\n\tserver_ip\030\r \001(\t\022\017\n\007referer\030\010 \001(\t"
+    "\022*\n\007latency\030\016 \001(\0132\031.google.protobuf.Dura"
+    "tion\022\024\n\014cache_lookup\030\013 \001(\010\022\021\n\tcache_hit\030"
+    "\t \001(\010\022*\n\"cache_validated_with_origin_ser"
+    "ver\030\n \001(\010\022\030\n\020cache_fill_bytes\030\014 \001(\003B\203\001\n\027"
+    "com.google.logging.typeB\020HttpRequestProt"
+    "oP\001Z8google.golang.org/genproto/googleap"
+    "is/logging/type;ltype\252\002\031Google.Cloud.Log"
+    "ging.Typeb\006proto3", 617);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/logging/type/http_request.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -146,6 +142,16 @@ struct StaticDescriptorInitializer_google_2flogging_2ftype_2fhttp_5frequest_2epr
     protobuf_AddDesc_google_2flogging_2ftype_2fhttp_5frequest_2eproto();
   }
 } static_descriptor_initializer_google_2flogging_2ftype_2fhttp_5frequest_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -168,49 +174,21 @@ const int HttpRequest::kCacheFillBytesFieldNumber;
 
 HttpRequest::HttpRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2flogging_2ftype_2fhttp_5frequest_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2flogging_2ftype_2fhttp_5frequest_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.logging.type.HttpRequest)
 }
+
+void HttpRequest::InitAsDefaultInstance() {
+  latency_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
+}
+
 HttpRequest::HttpRequest(const HttpRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  request_method_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.request_method().size() > 0) {
-    request_method_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.request_method_);
-  }
-  request_url_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.request_url().size() > 0) {
-    request_url_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.request_url_);
-  }
-  user_agent_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.user_agent().size() > 0) {
-    user_agent_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.user_agent_);
-  }
-  remote_ip_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.remote_ip().size() > 0) {
-    remote_ip_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.remote_ip_);
-  }
-  server_ip_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.server_ip().size() > 0) {
-    server_ip_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.server_ip_);
-  }
-  referer_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.referer().size() > 0) {
-    referer_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.referer_);
-  }
-  if (from.has_latency()) {
-    latency_ = new ::google::protobuf::Duration(*from.latency_);
-  } else {
-    latency_ = NULL;
-  }
-  ::memcpy(&request_size_, &from.request_size_,
-    reinterpret_cast<char*>(&cache_fill_bytes_) -
-    reinterpret_cast<char*>(&request_size_) + sizeof(cache_fill_bytes_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.logging.type.HttpRequest)
 }
 
@@ -221,8 +199,9 @@ void HttpRequest::SharedCtor() {
   remote_ip_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   server_ip_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   referer_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&latency_, 0, reinterpret_cast<char*>(&cache_fill_bytes_) -
-    reinterpret_cast<char*>(&latency_) + sizeof(cache_fill_bytes_));
+  latency_ = NULL;
+  ::memset(&request_size_, 0, reinterpret_cast<char*>(&cache_fill_bytes_) -
+    reinterpret_cast<char*>(&request_size_) + sizeof(cache_fill_bytes_));
   _cached_size_ = 0;
 }
 
@@ -238,7 +217,7 @@ void HttpRequest::SharedDtor() {
   remote_ip_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   server_ip_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   referer_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &HttpRequest_default_instance_.get()) {
     delete latency_;
   }
 }
@@ -250,13 +229,15 @@ void HttpRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* HttpRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return HttpRequest_descriptor_;
 }
 
 const HttpRequest& HttpRequest::default_instance() {
   protobuf_InitDefaults_google_2flogging_2ftype_2fhttp_5frequest_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<HttpRequest> HttpRequest_default_instance_;
 
 HttpRequest* HttpRequest::New(::google::protobuf::Arena* arena) const {
   HttpRequest* n = new HttpRequest;
@@ -268,18 +249,36 @@ HttpRequest* HttpRequest::New(::google::protobuf::Arena* arena) const {
 
 void HttpRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.logging.type.HttpRequest)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(HttpRequest, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<HttpRequest*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(request_size_, status_);
   request_method_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   request_url_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   user_agent_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   remote_ip_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   server_ip_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ZR_(cache_lookup_, cache_fill_bytes_);
   referer_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && latency_ != NULL) {
-    delete latency_;
-  }
+  if (GetArenaNoVirtual() == NULL && latency_ != NULL) delete latency_;
   latency_ = NULL;
-  ::memset(&request_size_, 0, reinterpret_cast<char*>(&cache_fill_bytes_) -
-    reinterpret_cast<char*>(&request_size_) + sizeof(cache_fill_bytes_));
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool HttpRequest::MergePartialFromCodedStream(
@@ -288,13 +287,13 @@ bool HttpRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.logging.type.HttpRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string request_method = 1;
+      // optional string request_method = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_request_method()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -304,12 +303,14 @@ bool HttpRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_request_url;
         break;
       }
 
-      // string request_url = 2;
+      // optional string request_url = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_request_url:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_request_url()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -319,12 +320,14 @@ bool HttpRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_request_size;
         break;
       }
 
-      // int64 request_size = 3;
+      // optional int64 request_size = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_request_size:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -332,12 +335,14 @@ bool HttpRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_status;
         break;
       }
 
-      // int32 status = 4;
+      // optional int32 status = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_status:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -345,12 +350,14 @@ bool HttpRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(40)) goto parse_response_size;
         break;
       }
 
-      // int64 response_size = 5;
+      // optional int64 response_size = 5;
       case 5: {
-        if (tag == 40u) {
+        if (tag == 40) {
+         parse_response_size:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -358,12 +365,14 @@ bool HttpRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(50)) goto parse_user_agent;
         break;
       }
 
-      // string user_agent = 6;
+      // optional string user_agent = 6;
       case 6: {
-        if (tag == 50u) {
+        if (tag == 50) {
+         parse_user_agent:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_user_agent()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -373,12 +382,14 @@ bool HttpRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(58)) goto parse_remote_ip;
         break;
       }
 
-      // string remote_ip = 7;
+      // optional string remote_ip = 7;
       case 7: {
-        if (tag == 58u) {
+        if (tag == 58) {
+         parse_remote_ip:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_remote_ip()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -388,12 +399,14 @@ bool HttpRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(66)) goto parse_referer;
         break;
       }
 
-      // string referer = 8;
+      // optional string referer = 8;
       case 8: {
-        if (tag == 66u) {
+        if (tag == 66) {
+         parse_referer:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_referer()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -403,12 +416,14 @@ bool HttpRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(72)) goto parse_cache_hit;
         break;
       }
 
-      // bool cache_hit = 9;
+      // optional bool cache_hit = 9;
       case 9: {
-        if (tag == 72u) {
+        if (tag == 72) {
+         parse_cache_hit:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -416,12 +431,14 @@ bool HttpRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(80)) goto parse_cache_validated_with_origin_server;
         break;
       }
 
-      // bool cache_validated_with_origin_server = 10;
+      // optional bool cache_validated_with_origin_server = 10;
       case 10: {
-        if (tag == 80u) {
+        if (tag == 80) {
+         parse_cache_validated_with_origin_server:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -429,12 +446,14 @@ bool HttpRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(88)) goto parse_cache_lookup;
         break;
       }
 
-      // bool cache_lookup = 11;
+      // optional bool cache_lookup = 11;
       case 11: {
-        if (tag == 88u) {
+        if (tag == 88) {
+         parse_cache_lookup:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -442,12 +461,14 @@ bool HttpRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(96)) goto parse_cache_fill_bytes;
         break;
       }
 
-      // int64 cache_fill_bytes = 12;
+      // optional int64 cache_fill_bytes = 12;
       case 12: {
-        if (tag == 96u) {
+        if (tag == 96) {
+         parse_cache_fill_bytes:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -455,12 +476,14 @@ bool HttpRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(106)) goto parse_server_ip;
         break;
       }
 
-      // string server_ip = 13;
+      // optional string server_ip = 13;
       case 13: {
-        if (tag == 106u) {
+        if (tag == 106) {
+         parse_server_ip:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_server_ip()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -470,17 +493,20 @@ bool HttpRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(114)) goto parse_latency;
         break;
       }
 
-      // .google.protobuf.Duration latency = 14;
+      // optional .google.protobuf.Duration latency = 14;
       case 14: {
-        if (tag == 114u) {
+        if (tag == 114) {
+         parse_latency:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_latency()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -508,7 +534,7 @@ failure:
 void HttpRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.logging.type.HttpRequest)
-  // string request_method = 1;
+  // optional string request_method = 1;
   if (this->request_method().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->request_method().data(), this->request_method().length(),
@@ -518,7 +544,7 @@ void HttpRequest::SerializeWithCachedSizes(
       1, this->request_method(), output);
   }
 
-  // string request_url = 2;
+  // optional string request_url = 2;
   if (this->request_url().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->request_url().data(), this->request_url().length(),
@@ -528,22 +554,22 @@ void HttpRequest::SerializeWithCachedSizes(
       2, this->request_url(), output);
   }
 
-  // int64 request_size = 3;
+  // optional int64 request_size = 3;
   if (this->request_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(3, this->request_size(), output);
   }
 
-  // int32 status = 4;
+  // optional int32 status = 4;
   if (this->status() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->status(), output);
   }
 
-  // int64 response_size = 5;
+  // optional int64 response_size = 5;
   if (this->response_size() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(5, this->response_size(), output);
   }
 
-  // string user_agent = 6;
+  // optional string user_agent = 6;
   if (this->user_agent().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->user_agent().data(), this->user_agent().length(),
@@ -553,7 +579,7 @@ void HttpRequest::SerializeWithCachedSizes(
       6, this->user_agent(), output);
   }
 
-  // string remote_ip = 7;
+  // optional string remote_ip = 7;
   if (this->remote_ip().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->remote_ip().data(), this->remote_ip().length(),
@@ -563,7 +589,7 @@ void HttpRequest::SerializeWithCachedSizes(
       7, this->remote_ip(), output);
   }
 
-  // string referer = 8;
+  // optional string referer = 8;
   if (this->referer().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->referer().data(), this->referer().length(),
@@ -573,27 +599,27 @@ void HttpRequest::SerializeWithCachedSizes(
       8, this->referer(), output);
   }
 
-  // bool cache_hit = 9;
+  // optional bool cache_hit = 9;
   if (this->cache_hit() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(9, this->cache_hit(), output);
   }
 
-  // bool cache_validated_with_origin_server = 10;
+  // optional bool cache_validated_with_origin_server = 10;
   if (this->cache_validated_with_origin_server() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(10, this->cache_validated_with_origin_server(), output);
   }
 
-  // bool cache_lookup = 11;
+  // optional bool cache_lookup = 11;
   if (this->cache_lookup() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(11, this->cache_lookup(), output);
   }
 
-  // int64 cache_fill_bytes = 12;
+  // optional int64 cache_fill_bytes = 12;
   if (this->cache_fill_bytes() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(12, this->cache_fill_bytes(), output);
   }
 
-  // string server_ip = 13;
+  // optional string server_ip = 13;
   if (this->server_ip().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->server_ip().data(), this->server_ip().length(),
@@ -603,7 +629,7 @@ void HttpRequest::SerializeWithCachedSizes(
       13, this->server_ip(), output);
   }
 
-  // .google.protobuf.Duration latency = 14;
+  // optional .google.protobuf.Duration latency = 14;
   if (this->has_latency()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       14, *this->latency_, output);
@@ -616,7 +642,7 @@ void HttpRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.logging.type.HttpRequest)
-  // string request_method = 1;
+  // optional string request_method = 1;
   if (this->request_method().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->request_method().data(), this->request_method().length(),
@@ -627,7 +653,7 @@ void HttpRequest::SerializeWithCachedSizes(
         1, this->request_method(), target);
   }
 
-  // string request_url = 2;
+  // optional string request_url = 2;
   if (this->request_url().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->request_url().data(), this->request_url().length(),
@@ -638,22 +664,22 @@ void HttpRequest::SerializeWithCachedSizes(
         2, this->request_url(), target);
   }
 
-  // int64 request_size = 3;
+  // optional int64 request_size = 3;
   if (this->request_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(3, this->request_size(), target);
   }
 
-  // int32 status = 4;
+  // optional int32 status = 4;
   if (this->status() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->status(), target);
   }
 
-  // int64 response_size = 5;
+  // optional int64 response_size = 5;
   if (this->response_size() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(5, this->response_size(), target);
   }
 
-  // string user_agent = 6;
+  // optional string user_agent = 6;
   if (this->user_agent().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->user_agent().data(), this->user_agent().length(),
@@ -664,7 +690,7 @@ void HttpRequest::SerializeWithCachedSizes(
         6, this->user_agent(), target);
   }
 
-  // string remote_ip = 7;
+  // optional string remote_ip = 7;
   if (this->remote_ip().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->remote_ip().data(), this->remote_ip().length(),
@@ -675,7 +701,7 @@ void HttpRequest::SerializeWithCachedSizes(
         7, this->remote_ip(), target);
   }
 
-  // string referer = 8;
+  // optional string referer = 8;
   if (this->referer().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->referer().data(), this->referer().length(),
@@ -686,27 +712,27 @@ void HttpRequest::SerializeWithCachedSizes(
         8, this->referer(), target);
   }
 
-  // bool cache_hit = 9;
+  // optional bool cache_hit = 9;
   if (this->cache_hit() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(9, this->cache_hit(), target);
   }
 
-  // bool cache_validated_with_origin_server = 10;
+  // optional bool cache_validated_with_origin_server = 10;
   if (this->cache_validated_with_origin_server() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(10, this->cache_validated_with_origin_server(), target);
   }
 
-  // bool cache_lookup = 11;
+  // optional bool cache_lookup = 11;
   if (this->cache_lookup() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(11, this->cache_lookup(), target);
   }
 
-  // int64 cache_fill_bytes = 12;
+  // optional int64 cache_fill_bytes = 12;
   if (this->cache_fill_bytes() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(12, this->cache_fill_bytes(), target);
   }
 
-  // string server_ip = 13;
+  // optional string server_ip = 13;
   if (this->server_ip().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->server_ip().data(), this->server_ip().length(),
@@ -717,7 +743,7 @@ void HttpRequest::SerializeWithCachedSizes(
         13, this->server_ip(), target);
   }
 
-  // .google.protobuf.Duration latency = 14;
+  // optional .google.protobuf.Duration latency = 14;
   if (this->has_latency()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -732,92 +758,92 @@ size_t HttpRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.logging.type.HttpRequest)
   size_t total_size = 0;
 
-  // string request_method = 1;
+  // optional string request_method = 1;
   if (this->request_method().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->request_method());
   }
 
-  // string request_url = 2;
+  // optional string request_url = 2;
   if (this->request_url().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->request_url());
   }
 
-  // string user_agent = 6;
-  if (this->user_agent().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->user_agent());
-  }
-
-  // string remote_ip = 7;
-  if (this->remote_ip().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->remote_ip());
-  }
-
-  // string server_ip = 13;
-  if (this->server_ip().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->server_ip());
-  }
-
-  // string referer = 8;
-  if (this->referer().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->referer());
-  }
-
-  // .google.protobuf.Duration latency = 14;
-  if (this->has_latency()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->latency_);
-  }
-
-  // int64 request_size = 3;
+  // optional int64 request_size = 3;
   if (this->request_size() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->request_size());
   }
 
-  // int64 response_size = 5;
-  if (this->response_size() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->response_size());
-  }
-
-  // int32 status = 4;
+  // optional int32 status = 4;
   if (this->status() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->status());
   }
 
-  // bool cache_lookup = 11;
+  // optional int64 response_size = 5;
+  if (this->response_size() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->response_size());
+  }
+
+  // optional string user_agent = 6;
+  if (this->user_agent().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->user_agent());
+  }
+
+  // optional string remote_ip = 7;
+  if (this->remote_ip().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->remote_ip());
+  }
+
+  // optional string server_ip = 13;
+  if (this->server_ip().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->server_ip());
+  }
+
+  // optional string referer = 8;
+  if (this->referer().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->referer());
+  }
+
+  // optional .google.protobuf.Duration latency = 14;
+  if (this->has_latency()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->latency_);
+  }
+
+  // optional bool cache_lookup = 11;
   if (this->cache_lookup() != 0) {
     total_size += 1 + 1;
   }
 
-  // bool cache_hit = 9;
+  // optional bool cache_hit = 9;
   if (this->cache_hit() != 0) {
     total_size += 1 + 1;
   }
 
-  // bool cache_validated_with_origin_server = 10;
+  // optional bool cache_validated_with_origin_server = 10;
   if (this->cache_validated_with_origin_server() != 0) {
     total_size += 1 + 1;
   }
 
-  // int64 cache_fill_bytes = 12;
+  // optional int64 cache_fill_bytes = 12;
   if (this->cache_fill_bytes() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
@@ -833,7 +859,7 @@ size_t HttpRequest::ByteSizeLong() const {
 
 void HttpRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.logging.type.HttpRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const HttpRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const HttpRequest>(
           &from);
@@ -842,14 +868,21 @@ void HttpRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.logging.type.HttpRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void HttpRequest::MergeFrom(const HttpRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.logging.type.HttpRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void HttpRequest::UnsafeMergeFrom(const HttpRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.request_method().size() > 0) {
 
     request_method_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.request_method_);
@@ -857,6 +890,15 @@ void HttpRequest::MergeFrom(const HttpRequest& from) {
   if (from.request_url().size() > 0) {
 
     request_url_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.request_url_);
+  }
+  if (from.request_size() != 0) {
+    set_request_size(from.request_size());
+  }
+  if (from.status() != 0) {
+    set_status(from.status());
+  }
+  if (from.response_size() != 0) {
+    set_response_size(from.response_size());
   }
   if (from.user_agent().size() > 0) {
 
@@ -876,15 +918,6 @@ void HttpRequest::MergeFrom(const HttpRequest& from) {
   }
   if (from.has_latency()) {
     mutable_latency()->::google::protobuf::Duration::MergeFrom(from.latency());
-  }
-  if (from.request_size() != 0) {
-    set_request_size(from.request_size());
-  }
-  if (from.response_size() != 0) {
-    set_response_size(from.response_size());
-  }
-  if (from.status() != 0) {
-    set_status(from.status());
   }
   if (from.cache_lookup() != 0) {
     set_cache_lookup(from.cache_lookup());
@@ -911,10 +944,11 @@ void HttpRequest::CopyFrom(const HttpRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.logging.type.HttpRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool HttpRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -925,36 +959,40 @@ void HttpRequest::Swap(HttpRequest* other) {
 void HttpRequest::InternalSwap(HttpRequest* other) {
   request_method_.Swap(&other->request_method_);
   request_url_.Swap(&other->request_url_);
+  std::swap(request_size_, other->request_size_);
+  std::swap(status_, other->status_);
+  std::swap(response_size_, other->response_size_);
   user_agent_.Swap(&other->user_agent_);
   remote_ip_.Swap(&other->remote_ip_);
   server_ip_.Swap(&other->server_ip_);
   referer_.Swap(&other->referer_);
   std::swap(latency_, other->latency_);
-  std::swap(request_size_, other->request_size_);
-  std::swap(response_size_, other->response_size_);
-  std::swap(status_, other->status_);
   std::swap(cache_lookup_, other->cache_lookup_);
   std::swap(cache_hit_, other->cache_hit_);
   std::swap(cache_validated_with_origin_server_, other->cache_validated_with_origin_server_);
   std::swap(cache_fill_bytes_, other->cache_fill_bytes_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata HttpRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = HttpRequest_descriptor_;
+  metadata.reflection = HttpRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // HttpRequest
 
-// string request_method = 1;
+// optional string request_method = 1;
 void HttpRequest::clear_request_method() {
   request_method_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& HttpRequest::request_method() const {
   // @@protoc_insertion_point(field_get:google.logging.type.HttpRequest.request_method)
-  return request_method_.GetNoArena();
+  return request_method_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void HttpRequest::set_request_method(const ::std::string& value) {
   
@@ -992,13 +1030,13 @@ void HttpRequest::set_allocated_request_method(::std::string* request_method) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.type.HttpRequest.request_method)
 }
 
-// string request_url = 2;
+// optional string request_url = 2;
 void HttpRequest::clear_request_url() {
   request_url_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& HttpRequest::request_url() const {
   // @@protoc_insertion_point(field_get:google.logging.type.HttpRequest.request_url)
-  return request_url_.GetNoArena();
+  return request_url_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void HttpRequest::set_request_url(const ::std::string& value) {
   
@@ -1036,7 +1074,7 @@ void HttpRequest::set_allocated_request_url(::std::string* request_url) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.type.HttpRequest.request_url)
 }
 
-// int64 request_size = 3;
+// optional int64 request_size = 3;
 void HttpRequest::clear_request_size() {
   request_size_ = GOOGLE_LONGLONG(0);
 }
@@ -1050,7 +1088,7 @@ void HttpRequest::set_request_size(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.logging.type.HttpRequest.request_size)
 }
 
-// int32 status = 4;
+// optional int32 status = 4;
 void HttpRequest::clear_status() {
   status_ = 0;
 }
@@ -1064,7 +1102,7 @@ void HttpRequest::set_status(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.logging.type.HttpRequest.status)
 }
 
-// int64 response_size = 5;
+// optional int64 response_size = 5;
 void HttpRequest::clear_response_size() {
   response_size_ = GOOGLE_LONGLONG(0);
 }
@@ -1078,13 +1116,13 @@ void HttpRequest::set_response_size(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.logging.type.HttpRequest.response_size)
 }
 
-// string user_agent = 6;
+// optional string user_agent = 6;
 void HttpRequest::clear_user_agent() {
   user_agent_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& HttpRequest::user_agent() const {
   // @@protoc_insertion_point(field_get:google.logging.type.HttpRequest.user_agent)
-  return user_agent_.GetNoArena();
+  return user_agent_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void HttpRequest::set_user_agent(const ::std::string& value) {
   
@@ -1122,13 +1160,13 @@ void HttpRequest::set_allocated_user_agent(::std::string* user_agent) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.type.HttpRequest.user_agent)
 }
 
-// string remote_ip = 7;
+// optional string remote_ip = 7;
 void HttpRequest::clear_remote_ip() {
   remote_ip_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& HttpRequest::remote_ip() const {
   // @@protoc_insertion_point(field_get:google.logging.type.HttpRequest.remote_ip)
-  return remote_ip_.GetNoArena();
+  return remote_ip_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void HttpRequest::set_remote_ip(const ::std::string& value) {
   
@@ -1166,13 +1204,13 @@ void HttpRequest::set_allocated_remote_ip(::std::string* remote_ip) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.type.HttpRequest.remote_ip)
 }
 
-// string server_ip = 13;
+// optional string server_ip = 13;
 void HttpRequest::clear_server_ip() {
   server_ip_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& HttpRequest::server_ip() const {
   // @@protoc_insertion_point(field_get:google.logging.type.HttpRequest.server_ip)
-  return server_ip_.GetNoArena();
+  return server_ip_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void HttpRequest::set_server_ip(const ::std::string& value) {
   
@@ -1210,13 +1248,13 @@ void HttpRequest::set_allocated_server_ip(::std::string* server_ip) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.type.HttpRequest.server_ip)
 }
 
-// string referer = 8;
+// optional string referer = 8;
 void HttpRequest::clear_referer() {
   referer_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& HttpRequest::referer() const {
   // @@protoc_insertion_point(field_get:google.logging.type.HttpRequest.referer)
-  return referer_.GetNoArena();
+  return referer_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void HttpRequest::set_referer(const ::std::string& value) {
   
@@ -1254,7 +1292,7 @@ void HttpRequest::set_allocated_referer(::std::string* referer) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.type.HttpRequest.referer)
 }
 
-// .google.protobuf.Duration latency = 14;
+// optional .google.protobuf.Duration latency = 14;
 bool HttpRequest::has_latency() const {
   return this != internal_default_instance() && latency_ != NULL;
 }
@@ -1298,7 +1336,7 @@ void HttpRequest::set_allocated_latency(::google::protobuf::Duration* latency) {
   // @@protoc_insertion_point(field_set_allocated:google.logging.type.HttpRequest.latency)
 }
 
-// bool cache_lookup = 11;
+// optional bool cache_lookup = 11;
 void HttpRequest::clear_cache_lookup() {
   cache_lookup_ = false;
 }
@@ -1312,7 +1350,7 @@ void HttpRequest::set_cache_lookup(bool value) {
   // @@protoc_insertion_point(field_set:google.logging.type.HttpRequest.cache_lookup)
 }
 
-// bool cache_hit = 9;
+// optional bool cache_hit = 9;
 void HttpRequest::clear_cache_hit() {
   cache_hit_ = false;
 }
@@ -1326,7 +1364,7 @@ void HttpRequest::set_cache_hit(bool value) {
   // @@protoc_insertion_point(field_set:google.logging.type.HttpRequest.cache_hit)
 }
 
-// bool cache_validated_with_origin_server = 10;
+// optional bool cache_validated_with_origin_server = 10;
 void HttpRequest::clear_cache_validated_with_origin_server() {
   cache_validated_with_origin_server_ = false;
 }
@@ -1340,7 +1378,7 @@ void HttpRequest::set_cache_validated_with_origin_server(bool value) {
   // @@protoc_insertion_point(field_set:google.logging.type.HttpRequest.cache_validated_with_origin_server)
 }
 
-// int64 cache_fill_bytes = 12;
+// optional int64 cache_fill_bytes = 12;
 void HttpRequest::clear_cache_fill_bytes() {
   cache_fill_bytes_ = GOOGLE_LONGLONG(0);
 }
@@ -1354,6 +1392,9 @@ void HttpRequest::set_cache_fill_bytes(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.logging.type.HttpRequest.cache_fill_bytes)
 }
 
+inline const HttpRequest* HttpRequest::internal_default_instance() {
+  return &HttpRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

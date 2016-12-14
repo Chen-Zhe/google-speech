@@ -21,80 +21,90 @@ namespace google {
 namespace bigtable {
 namespace admin {
 namespace v2 {
-class InstanceDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Instance> {};
-InstanceDefaultTypeInternal _Instance_default_instance_;
-class ClusterDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Cluster> {};
-ClusterDefaultTypeInternal _Cluster_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[2];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[2];
+const ::google::protobuf::Descriptor* Instance_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Instance_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* Instance_State_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* Cluster_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Cluster_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* Cluster_State_descriptor_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Instance, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto() {
+  protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/bigtable/admin/v2/instance.proto");
+  GOOGLE_CHECK(file != NULL);
+  Instance_descriptor_ = file->message_type(0);
+  static const int Instance_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Instance, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Instance, display_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Instance, state_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Instance_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Instance_descriptor_,
+      Instance::internal_default_instance(),
+      Instance_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Instance),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Instance, _internal_metadata_));
+  Instance_State_descriptor_ = Instance_descriptor_->enum_type(0);
+  Cluster_descriptor_ = file->message_type(1);
+  static const int Cluster_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, location_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, state_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, serve_nodes_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, default_storage_type_),
   };
-  return offsets;
+  Cluster_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Cluster_descriptor_,
+      Cluster::internal_default_instance(),
+      Cluster_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Cluster),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cluster, _internal_metadata_));
+  Cluster_State_descriptor_ = Cluster_descriptor_->enum_type(0);
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(Instance)},
-  { 7, -1, sizeof(Cluster)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Instance_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Cluster_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/bigtable/admin/v2/instance.proto", schemas, file_default_instances, protobuf_Offsets_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto(), factory,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 2);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Instance_descriptor_, Instance::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Cluster_descriptor_, Cluster::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto() {
-  _Instance_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _Cluster_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
+  Instance_default_instance_.Shutdown();
+  delete Instance_reflection_;
+  Cluster_default_instance_.Shutdown();
+  delete Cluster_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto_impl() {
@@ -102,39 +112,42 @@ void protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto_imp
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
   ::google::bigtable::admin::v2::protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2fcommon_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _Instance_default_instance_.DefaultConstruct();
-  _Cluster_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Instance_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Cluster_default_instance_.DefaultConstruct();
+  Instance_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Cluster_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto_once_);
 void protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto();
-  static const char descriptor[] = {
-      "\n\'google/bigtable/admin/v2/instance.prot"
-      "o\022\030google.bigtable.admin.v2\032\034google/api/"
-      "annotations.proto\032%google/bigtable/admin"
-      "/v2/common.proto\"\236\001\n\010Instance\022\014\n\004name\030\001 "
-      "\001(\t\022\024\n\014display_name\030\002 \001(\t\0227\n\005state\030\003 \001(\016"
-      "2(.google.bigtable.admin.v2.Instance.Sta"
-      "te\"5\n\005State\022\023\n\017STATE_NOT_KNOWN\020\000\022\t\n\005READ"
-      "Y\020\001\022\014\n\010CREATING\020\002\"\216\002\n\007Cluster\022\014\n\004name\030\001 "
-      "\001(\t\022\020\n\010location\030\002 \001(\t\0226\n\005state\030\003 \001(\0162\'.g"
-      "oogle.bigtable.admin.v2.Cluster.State\022\023\n"
-      "\013serve_nodes\030\004 \001(\005\022C\n\024default_storage_ty"
-      "pe\030\005 \001(\0162%.google.bigtable.admin.v2.Stor"
-      "ageType\"Q\n\005State\022\023\n\017STATE_NOT_KNOWN\020\000\022\t\n"
-      "\005READY\020\001\022\014\n\010CREATING\020\002\022\014\n\010RESIZING\020\003\022\014\n\010"
-      "DISABLED\020\004Bn\n\034com.google.bigtable.admin."
-      "v2B\rInstanceProtoP\001Z=google.golang.org/g"
-      "enproto/googleapis/bigtable/admin/v2;adm"
-      "inb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 690);
+    "\n\'google/bigtable/admin/v2/instance.prot"
+    "o\022\030google.bigtable.admin.v2\032\034google/api/"
+    "annotations.proto\032%google/bigtable/admin"
+    "/v2/common.proto\"\236\001\n\010Instance\022\014\n\004name\030\001 "
+    "\001(\t\022\024\n\014display_name\030\002 \001(\t\0227\n\005state\030\003 \001(\016"
+    "2(.google.bigtable.admin.v2.Instance.Sta"
+    "te\"5\n\005State\022\023\n\017STATE_NOT_KNOWN\020\000\022\t\n\005READ"
+    "Y\020\001\022\014\n\010CREATING\020\002\"\216\002\n\007Cluster\022\014\n\004name\030\001 "
+    "\001(\t\022\020\n\010location\030\002 \001(\t\0226\n\005state\030\003 \001(\0162\'.g"
+    "oogle.bigtable.admin.v2.Cluster.State\022\023\n"
+    "\013serve_nodes\030\004 \001(\005\022C\n\024default_storage_ty"
+    "pe\030\005 \001(\0162%.google.bigtable.admin.v2.Stor"
+    "ageType\"Q\n\005State\022\023\n\017STATE_NOT_KNOWN\020\000\022\t\n"
+    "\005READY\020\001\022\014\n\010CREATING\020\002\022\014\n\010RESIZING\020\003\022\014\n\010"
+    "DISABLED\020\004Bn\n\034com.google.bigtable.admin."
+    "v2B\rInstanceProtoP\001Z=google.golang.org/g"
+    "enproto/googleapis/bigtable/admin/v2;adm"
+    "inb\006proto3", 690);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/bigtable/admin/v2/instance.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -153,9 +166,22 @@ struct StaticDescriptorInitializer_google_2fbigtable_2fadmin_2fv2_2finstance_2ep
     protobuf_AddDesc_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto();
   }
 } static_descriptor_initializer_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
+// ===================================================================
+
 const ::google::protobuf::EnumDescriptor* Instance_State_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
+  return Instance_State_descriptor_;
 }
 bool Instance_State_IsValid(int value) {
   switch (value) {
@@ -176,36 +202,6 @@ const Instance_State Instance::State_MIN;
 const Instance_State Instance::State_MAX;
 const int Instance::State_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-const ::google::protobuf::EnumDescriptor* Cluster_State_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[1];
-}
-bool Cluster_State_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-      return true;
-    default:
-      return false;
-  }
-}
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const Cluster_State Cluster::STATE_NOT_KNOWN;
-const Cluster_State Cluster::READY;
-const Cluster_State Cluster::CREATING;
-const Cluster_State Cluster::RESIZING;
-const Cluster_State Cluster::DISABLED;
-const Cluster_State Cluster::State_MIN;
-const Cluster_State Cluster::State_MAX;
-const int Cluster::State_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-// ===================================================================
-
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Instance::kNameFieldNumber;
 const int Instance::kDisplayNameFieldNumber;
@@ -214,26 +210,19 @@ const int Instance::kStateFieldNumber;
 
 Instance::Instance()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.admin.v2.Instance)
 }
+
+void Instance::InitAsDefaultInstance() {
+}
+
 Instance::Instance(const Instance& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  display_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.display_name().size() > 0) {
-    display_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.display_name_);
-  }
-  state_ = from.state_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.admin.v2.Instance)
 }
 
@@ -261,13 +250,15 @@ void Instance::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Instance::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return Instance_descriptor_;
 }
 
 const Instance& Instance::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Instance> Instance_default_instance_;
 
 Instance* Instance::New(::google::protobuf::Arena* arena) const {
   Instance* n = new Instance;
@@ -290,13 +281,13 @@ bool Instance::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.admin.v2.Instance)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -306,12 +297,14 @@ bool Instance::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_display_name;
         break;
       }
 
-      // string display_name = 2;
+      // optional string display_name = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_display_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_display_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -321,12 +314,14 @@ bool Instance::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_state;
         break;
       }
 
-      // .google.bigtable.admin.v2.Instance.State state = 3;
+      // optional .google.bigtable.admin.v2.Instance.State state = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_state:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -335,6 +330,7 @@ bool Instance::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -362,7 +358,7 @@ failure:
 void Instance::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.admin.v2.Instance)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -372,7 +368,7 @@ void Instance::SerializeWithCachedSizes(
       1, this->name(), output);
   }
 
-  // string display_name = 2;
+  // optional string display_name = 2;
   if (this->display_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->display_name().data(), this->display_name().length(),
@@ -382,7 +378,7 @@ void Instance::SerializeWithCachedSizes(
       2, this->display_name(), output);
   }
 
-  // .google.bigtable.admin.v2.Instance.State state = 3;
+  // optional .google.bigtable.admin.v2.Instance.State state = 3;
   if (this->state() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       3, this->state(), output);
@@ -395,7 +391,7 @@ void Instance::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.admin.v2.Instance)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -406,7 +402,7 @@ void Instance::SerializeWithCachedSizes(
         1, this->name(), target);
   }
 
-  // string display_name = 2;
+  // optional string display_name = 2;
   if (this->display_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->display_name().data(), this->display_name().length(),
@@ -417,7 +413,7 @@ void Instance::SerializeWithCachedSizes(
         2, this->display_name(), target);
   }
 
-  // .google.bigtable.admin.v2.Instance.State state = 3;
+  // optional .google.bigtable.admin.v2.Instance.State state = 3;
   if (this->state() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       3, this->state(), target);
@@ -431,21 +427,21 @@ size_t Instance::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bigtable.admin.v2.Instance)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->name());
   }
 
-  // string display_name = 2;
+  // optional string display_name = 2;
   if (this->display_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->display_name());
   }
 
-  // .google.bigtable.admin.v2.Instance.State state = 3;
+  // optional .google.bigtable.admin.v2.Instance.State state = 3;
   if (this->state() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->state());
@@ -460,7 +456,7 @@ size_t Instance::ByteSizeLong() const {
 
 void Instance::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.admin.v2.Instance)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Instance* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Instance>(
           &from);
@@ -469,14 +465,21 @@ void Instance::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.admin.v2.Instance)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Instance::MergeFrom(const Instance& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.admin.v2.Instance)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Instance::UnsafeMergeFrom(const Instance& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -501,10 +504,11 @@ void Instance::CopyFrom(const Instance& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.admin.v2.Instance)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Instance::IsInitialized() const {
+
   return true;
 }
 
@@ -516,24 +520,28 @@ void Instance::InternalSwap(Instance* other) {
   name_.Swap(&other->name_);
   display_name_.Swap(&other->display_name_);
   std::swap(state_, other->state_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Instance::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Instance_descriptor_;
+  metadata.reflection = Instance_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Instance
 
-// string name = 1;
+// optional string name = 1;
 void Instance::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Instance::name() const {
   // @@protoc_insertion_point(field_get:google.bigtable.admin.v2.Instance.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Instance::set_name(const ::std::string& value) {
   
@@ -571,13 +579,13 @@ void Instance::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.admin.v2.Instance.name)
 }
 
-// string display_name = 2;
+// optional string display_name = 2;
 void Instance::clear_display_name() {
   display_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Instance::display_name() const {
   // @@protoc_insertion_point(field_get:google.bigtable.admin.v2.Instance.display_name)
-  return display_name_.GetNoArena();
+  return display_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Instance::set_display_name(const ::std::string& value) {
   
@@ -615,7 +623,7 @@ void Instance::set_allocated_display_name(::std::string* display_name) {
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.admin.v2.Instance.display_name)
 }
 
-// .google.bigtable.admin.v2.Instance.State state = 3;
+// optional .google.bigtable.admin.v2.Instance.State state = 3;
 void Instance::clear_state() {
   state_ = 0;
 }
@@ -629,10 +637,40 @@ void Instance::set_state(::google::bigtable::admin::v2::Instance_State value) {
   // @@protoc_insertion_point(field_set:google.bigtable.admin.v2.Instance.state)
 }
 
+inline const Instance* Instance::internal_default_instance() {
+  return &Instance_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* Cluster_State_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return Cluster_State_descriptor_;
+}
+bool Cluster_State_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const Cluster_State Cluster::STATE_NOT_KNOWN;
+const Cluster_State Cluster::READY;
+const Cluster_State Cluster::CREATING;
+const Cluster_State Cluster::RESIZING;
+const Cluster_State Cluster::DISABLED;
+const Cluster_State Cluster::State_MIN;
+const Cluster_State Cluster::State_MAX;
+const int Cluster::State_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Cluster::kNameFieldNumber;
 const int Cluster::kLocationFieldNumber;
@@ -643,28 +681,19 @@ const int Cluster::kDefaultStorageTypeFieldNumber;
 
 Cluster::Cluster()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.admin.v2.Cluster)
 }
+
+void Cluster::InitAsDefaultInstance() {
+}
+
 Cluster::Cluster(const Cluster& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  location_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.location().size() > 0) {
-    location_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.location_);
-  }
-  ::memcpy(&state_, &from.state_,
-    reinterpret_cast<char*>(&default_storage_type_) -
-    reinterpret_cast<char*>(&state_) + sizeof(default_storage_type_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.admin.v2.Cluster)
 }
 
@@ -693,13 +722,15 @@ void Cluster::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Cluster::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return Cluster_descriptor_;
 }
 
 const Cluster& Cluster::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fadmin_2fv2_2finstance_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Cluster> Cluster_default_instance_;
 
 Cluster* Cluster::New(::google::protobuf::Arena* arena) const {
   Cluster* n = new Cluster;
@@ -711,10 +742,29 @@ Cluster* Cluster::New(::google::protobuf::Arena* arena) const {
 
 void Cluster::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.bigtable.admin.v2.Cluster)
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(Cluster, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<Cluster*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(state_, default_storage_type_);
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   location_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&state_, 0, reinterpret_cast<char*>(&default_storage_type_) -
-    reinterpret_cast<char*>(&state_) + sizeof(default_storage_type_));
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool Cluster::MergePartialFromCodedStream(
@@ -723,13 +773,13 @@ bool Cluster::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.admin.v2.Cluster)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -739,12 +789,14 @@ bool Cluster::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_location;
         break;
       }
 
-      // string location = 2;
+      // optional string location = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_location:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_location()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -754,12 +806,14 @@ bool Cluster::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_state;
         break;
       }
 
-      // .google.bigtable.admin.v2.Cluster.State state = 3;
+      // optional .google.bigtable.admin.v2.Cluster.State state = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_state:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -768,12 +822,14 @@ bool Cluster::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_serve_nodes;
         break;
       }
 
-      // int32 serve_nodes = 4;
+      // optional int32 serve_nodes = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_serve_nodes:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -781,12 +837,14 @@ bool Cluster::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(40)) goto parse_default_storage_type;
         break;
       }
 
-      // .google.bigtable.admin.v2.StorageType default_storage_type = 5;
+      // optional .google.bigtable.admin.v2.StorageType default_storage_type = 5;
       case 5: {
-        if (tag == 40u) {
+        if (tag == 40) {
+         parse_default_storage_type:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -795,6 +853,7 @@ bool Cluster::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -822,7 +881,7 @@ failure:
 void Cluster::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.admin.v2.Cluster)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -832,7 +891,7 @@ void Cluster::SerializeWithCachedSizes(
       1, this->name(), output);
   }
 
-  // string location = 2;
+  // optional string location = 2;
   if (this->location().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->location().data(), this->location().length(),
@@ -842,18 +901,18 @@ void Cluster::SerializeWithCachedSizes(
       2, this->location(), output);
   }
 
-  // .google.bigtable.admin.v2.Cluster.State state = 3;
+  // optional .google.bigtable.admin.v2.Cluster.State state = 3;
   if (this->state() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       3, this->state(), output);
   }
 
-  // int32 serve_nodes = 4;
+  // optional int32 serve_nodes = 4;
   if (this->serve_nodes() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->serve_nodes(), output);
   }
 
-  // .google.bigtable.admin.v2.StorageType default_storage_type = 5;
+  // optional .google.bigtable.admin.v2.StorageType default_storage_type = 5;
   if (this->default_storage_type() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       5, this->default_storage_type(), output);
@@ -866,7 +925,7 @@ void Cluster::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.admin.v2.Cluster)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -877,7 +936,7 @@ void Cluster::SerializeWithCachedSizes(
         1, this->name(), target);
   }
 
-  // string location = 2;
+  // optional string location = 2;
   if (this->location().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->location().data(), this->location().length(),
@@ -888,18 +947,18 @@ void Cluster::SerializeWithCachedSizes(
         2, this->location(), target);
   }
 
-  // .google.bigtable.admin.v2.Cluster.State state = 3;
+  // optional .google.bigtable.admin.v2.Cluster.State state = 3;
   if (this->state() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       3, this->state(), target);
   }
 
-  // int32 serve_nodes = 4;
+  // optional int32 serve_nodes = 4;
   if (this->serve_nodes() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->serve_nodes(), target);
   }
 
-  // .google.bigtable.admin.v2.StorageType default_storage_type = 5;
+  // optional .google.bigtable.admin.v2.StorageType default_storage_type = 5;
   if (this->default_storage_type() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       5, this->default_storage_type(), target);
@@ -913,34 +972,34 @@ size_t Cluster::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bigtable.admin.v2.Cluster)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->name());
   }
 
-  // string location = 2;
+  // optional string location = 2;
   if (this->location().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->location());
   }
 
-  // .google.bigtable.admin.v2.Cluster.State state = 3;
+  // optional .google.bigtable.admin.v2.Cluster.State state = 3;
   if (this->state() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->state());
   }
 
-  // int32 serve_nodes = 4;
+  // optional int32 serve_nodes = 4;
   if (this->serve_nodes() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
         this->serve_nodes());
   }
 
-  // .google.bigtable.admin.v2.StorageType default_storage_type = 5;
+  // optional .google.bigtable.admin.v2.StorageType default_storage_type = 5;
   if (this->default_storage_type() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->default_storage_type());
@@ -955,7 +1014,7 @@ size_t Cluster::ByteSizeLong() const {
 
 void Cluster::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.admin.v2.Cluster)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Cluster* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Cluster>(
           &from);
@@ -964,14 +1023,21 @@ void Cluster::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.admin.v2.Cluster)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Cluster::MergeFrom(const Cluster& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.admin.v2.Cluster)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Cluster::UnsafeMergeFrom(const Cluster& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -1002,10 +1068,11 @@ void Cluster::CopyFrom(const Cluster& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.admin.v2.Cluster)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Cluster::IsInitialized() const {
+
   return true;
 }
 
@@ -1019,24 +1086,28 @@ void Cluster::InternalSwap(Cluster* other) {
   std::swap(state_, other->state_);
   std::swap(serve_nodes_, other->serve_nodes_);
   std::swap(default_storage_type_, other->default_storage_type_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Cluster::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Cluster_descriptor_;
+  metadata.reflection = Cluster_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Cluster
 
-// string name = 1;
+// optional string name = 1;
 void Cluster::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Cluster::name() const {
   // @@protoc_insertion_point(field_get:google.bigtable.admin.v2.Cluster.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Cluster::set_name(const ::std::string& value) {
   
@@ -1074,13 +1145,13 @@ void Cluster::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.admin.v2.Cluster.name)
 }
 
-// string location = 2;
+// optional string location = 2;
 void Cluster::clear_location() {
   location_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Cluster::location() const {
   // @@protoc_insertion_point(field_get:google.bigtable.admin.v2.Cluster.location)
-  return location_.GetNoArena();
+  return location_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Cluster::set_location(const ::std::string& value) {
   
@@ -1118,7 +1189,7 @@ void Cluster::set_allocated_location(::std::string* location) {
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.admin.v2.Cluster.location)
 }
 
-// .google.bigtable.admin.v2.Cluster.State state = 3;
+// optional .google.bigtable.admin.v2.Cluster.State state = 3;
 void Cluster::clear_state() {
   state_ = 0;
 }
@@ -1132,7 +1203,7 @@ void Cluster::set_state(::google::bigtable::admin::v2::Cluster_State value) {
   // @@protoc_insertion_point(field_set:google.bigtable.admin.v2.Cluster.state)
 }
 
-// int32 serve_nodes = 4;
+// optional int32 serve_nodes = 4;
 void Cluster::clear_serve_nodes() {
   serve_nodes_ = 0;
 }
@@ -1146,7 +1217,7 @@ void Cluster::set_serve_nodes(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.bigtable.admin.v2.Cluster.serve_nodes)
 }
 
-// .google.bigtable.admin.v2.StorageType default_storage_type = 5;
+// optional .google.bigtable.admin.v2.StorageType default_storage_type = 5;
 void Cluster::clear_default_storage_type() {
   default_storage_type_ = 0;
 }
@@ -1160,6 +1231,9 @@ void Cluster::set_default_storage_type(::google::bigtable::admin::v2::StorageTyp
   // @@protoc_insertion_point(field_set:google.bigtable.admin.v2.Cluster.default_storage_type)
 }
 
+inline const Cluster* Cluster::internal_default_instance() {
+  return &Cluster_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

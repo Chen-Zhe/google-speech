@@ -20,261 +20,413 @@
 namespace google {
 namespace datastore {
 namespace v1 {
-class LookupRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<LookupRequest> {};
-LookupRequestDefaultTypeInternal _LookupRequest_default_instance_;
-class LookupResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<LookupResponse> {};
-LookupResponseDefaultTypeInternal _LookupResponse_default_instance_;
-class RunQueryRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<RunQueryRequest> {};
-RunQueryRequestDefaultTypeInternal _RunQueryRequest_default_instance_;
-class RunQueryResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<RunQueryResponse> {};
-RunQueryResponseDefaultTypeInternal _RunQueryResponse_default_instance_;
-class BeginTransactionRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<BeginTransactionRequest> {};
-BeginTransactionRequestDefaultTypeInternal _BeginTransactionRequest_default_instance_;
-class BeginTransactionResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<BeginTransactionResponse> {};
-BeginTransactionResponseDefaultTypeInternal _BeginTransactionResponse_default_instance_;
-class RollbackRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<RollbackRequest> {};
-RollbackRequestDefaultTypeInternal _RollbackRequest_default_instance_;
-class RollbackResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<RollbackResponse> {};
-RollbackResponseDefaultTypeInternal _RollbackResponse_default_instance_;
-class CommitRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CommitRequest> {};
-CommitRequestDefaultTypeInternal _CommitRequest_default_instance_;
-class CommitResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CommitResponse> {};
-CommitResponseDefaultTypeInternal _CommitResponse_default_instance_;
-class AllocateIdsRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<AllocateIdsRequest> {};
-AllocateIdsRequestDefaultTypeInternal _AllocateIdsRequest_default_instance_;
-class AllocateIdsResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<AllocateIdsResponse> {};
-AllocateIdsResponseDefaultTypeInternal _AllocateIdsResponse_default_instance_;
-class MutationDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Mutation> {};
-MutationDefaultTypeInternal _Mutation_default_instance_;
-class MutationResultDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<MutationResult> {};
-MutationResultDefaultTypeInternal _MutationResult_default_instance_;
-class ReadOptionsDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ReadOptions> {};
-ReadOptionsDefaultTypeInternal _ReadOptions_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[15];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[2];
+const ::google::protobuf::Descriptor* LookupRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  LookupRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* LookupResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  LookupResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* RunQueryRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  RunQueryRequest_reflection_ = NULL;
 struct RunQueryRequestOneofInstance {
   const ::google::datastore::v1::Query* query_;
   const ::google::datastore::v1::GqlQuery* gql_query_;
-} RunQueryRequest_default_oneof_instance_;
+}* RunQueryRequest_default_oneof_instance_ = NULL;
+const ::google::protobuf::Descriptor* RunQueryResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  RunQueryResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* BeginTransactionRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  BeginTransactionRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* BeginTransactionResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  BeginTransactionResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* RollbackRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  RollbackRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* RollbackResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  RollbackResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* CommitRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CommitRequest_reflection_ = NULL;
 struct CommitRequestOneofInstance {
   ::google::protobuf::internal::ArenaStringPtr transaction_;
-} CommitRequest_default_oneof_instance_;
+}* CommitRequest_default_oneof_instance_ = NULL;
+const ::google::protobuf::EnumDescriptor* CommitRequest_Mode_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* CommitResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CommitResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* AllocateIdsRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  AllocateIdsRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* AllocateIdsResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  AllocateIdsResponse_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Mutation_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Mutation_reflection_ = NULL;
 struct MutationOneofInstance {
   const ::google::datastore::v1::Entity* insert_;
   const ::google::datastore::v1::Entity* update_;
   const ::google::datastore::v1::Entity* upsert_;
   const ::google::datastore::v1::Key* delete__;
   ::google::protobuf::int64 base_version_;
-} Mutation_default_oneof_instance_;
+}* Mutation_default_oneof_instance_ = NULL;
+const ::google::protobuf::Descriptor* MutationResult_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  MutationResult_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ReadOptions_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ReadOptions_reflection_ = NULL;
 struct ReadOptionsOneofInstance {
   int read_consistency_;
   ::google::protobuf::internal::ArenaStringPtr transaction_;
-} ReadOptions_default_oneof_instance_;
+}* ReadOptions_default_oneof_instance_ = NULL;
+const ::google::protobuf::EnumDescriptor* ReadOptions_ReadConsistency_descriptor_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1_2fdatastore_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1_2fdatastore_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LookupRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fdatastore_2fv1_2fdatastore_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fdatastore_2fv1_2fdatastore_2eproto() {
+  protobuf_AddDesc_google_2fdatastore_2fv1_2fdatastore_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/datastore/v1/datastore.proto");
+  GOOGLE_CHECK(file != NULL);
+  LookupRequest_descriptor_ = file->message_type(0);
+  static const int LookupRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LookupRequest, project_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LookupRequest, read_options_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LookupRequest, keys_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LookupResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  LookupRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      LookupRequest_descriptor_,
+      LookupRequest::internal_default_instance(),
+      LookupRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(LookupRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LookupRequest, _internal_metadata_));
+  LookupResponse_descriptor_ = file->message_type(1);
+  static const int LookupResponse_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LookupResponse, found_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LookupResponse, missing_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LookupResponse, deferred_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RunQueryRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RunQueryRequest, _oneof_case_[0]),
+  };
+  LookupResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      LookupResponse_descriptor_,
+      LookupResponse::internal_default_instance(),
+      LookupResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(LookupResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LookupResponse, _internal_metadata_));
+  RunQueryRequest_descriptor_ = file->message_type(2);
+  static const int RunQueryRequest_offsets_[6] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RunQueryRequest, project_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RunQueryRequest, partition_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RunQueryRequest, read_options_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RunQueryRequest_default_oneof_instance_), query_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RunQueryRequest_default_oneof_instance_), gql_query_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RunQueryRequest_default_oneof_instance_, query_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RunQueryRequest_default_oneof_instance_, gql_query_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RunQueryRequest, query_type_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RunQueryResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  RunQueryRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      RunQueryRequest_descriptor_,
+      RunQueryRequest::internal_default_instance(),
+      RunQueryRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      RunQueryRequest_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RunQueryRequest, _oneof_case_[0]),
+      sizeof(RunQueryRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RunQueryRequest, _internal_metadata_));
+  RunQueryResponse_descriptor_ = file->message_type(3);
+  static const int RunQueryResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RunQueryResponse, batch_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RunQueryResponse, query_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BeginTransactionRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  RunQueryResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      RunQueryResponse_descriptor_,
+      RunQueryResponse::internal_default_instance(),
+      RunQueryResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(RunQueryResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RunQueryResponse, _internal_metadata_));
+  BeginTransactionRequest_descriptor_ = file->message_type(4);
+  static const int BeginTransactionRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BeginTransactionRequest, project_id_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BeginTransactionResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  BeginTransactionRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      BeginTransactionRequest_descriptor_,
+      BeginTransactionRequest::internal_default_instance(),
+      BeginTransactionRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(BeginTransactionRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BeginTransactionRequest, _internal_metadata_));
+  BeginTransactionResponse_descriptor_ = file->message_type(5);
+  static const int BeginTransactionResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BeginTransactionResponse, transaction_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RollbackRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  BeginTransactionResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      BeginTransactionResponse_descriptor_,
+      BeginTransactionResponse::internal_default_instance(),
+      BeginTransactionResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(BeginTransactionResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(BeginTransactionResponse, _internal_metadata_));
+  RollbackRequest_descriptor_ = file->message_type(6);
+  static const int RollbackRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RollbackRequest, project_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RollbackRequest, transaction_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RollbackResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CommitRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CommitRequest, _oneof_case_[0]),
+  };
+  RollbackRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      RollbackRequest_descriptor_,
+      RollbackRequest::internal_default_instance(),
+      RollbackRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(RollbackRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RollbackRequest, _internal_metadata_));
+  RollbackResponse_descriptor_ = file->message_type(7);
+  static const int RollbackResponse_offsets_[1] = {
+  };
+  RollbackResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      RollbackResponse_descriptor_,
+      RollbackResponse::internal_default_instance(),
+      RollbackResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(RollbackResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RollbackResponse, _internal_metadata_));
+  CommitRequest_descriptor_ = file->message_type(8);
+  static const int CommitRequest_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CommitRequest, project_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CommitRequest, mode_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&CommitRequest_default_oneof_instance_), transaction_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(CommitRequest_default_oneof_instance_, transaction_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CommitRequest, mutations_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CommitRequest, transaction_selector_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CommitResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  CommitRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      CommitRequest_descriptor_,
+      CommitRequest::internal_default_instance(),
+      CommitRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      CommitRequest_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CommitRequest, _oneof_case_[0]),
+      sizeof(CommitRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CommitRequest, _internal_metadata_));
+  CommitRequest_Mode_descriptor_ = CommitRequest_descriptor_->enum_type(0);
+  CommitResponse_descriptor_ = file->message_type(9);
+  static const int CommitResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CommitResponse, mutation_results_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CommitResponse, index_updates_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AllocateIdsRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  CommitResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      CommitResponse_descriptor_,
+      CommitResponse::internal_default_instance(),
+      CommitResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(CommitResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CommitResponse, _internal_metadata_));
+  AllocateIdsRequest_descriptor_ = file->message_type(10);
+  static const int AllocateIdsRequest_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AllocateIdsRequest, project_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AllocateIdsRequest, keys_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AllocateIdsResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  AllocateIdsRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      AllocateIdsRequest_descriptor_,
+      AllocateIdsRequest::internal_default_instance(),
+      AllocateIdsRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(AllocateIdsRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AllocateIdsRequest, _internal_metadata_));
+  AllocateIdsResponse_descriptor_ = file->message_type(11);
+  static const int AllocateIdsResponse_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AllocateIdsResponse, keys_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation, _oneof_case_[0]),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Mutation_default_oneof_instance_), insert_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Mutation_default_oneof_instance_), update_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Mutation_default_oneof_instance_), upsert_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Mutation_default_oneof_instance_), delete__),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Mutation_default_oneof_instance_), base_version_),
+  };
+  AllocateIdsResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      AllocateIdsResponse_descriptor_,
+      AllocateIdsResponse::internal_default_instance(),
+      AllocateIdsResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(AllocateIdsResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AllocateIdsResponse, _internal_metadata_));
+  Mutation_descriptor_ = file->message_type(12);
+  static const int Mutation_offsets_[7] = {
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Mutation_default_oneof_instance_, insert_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Mutation_default_oneof_instance_, update_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Mutation_default_oneof_instance_, upsert_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Mutation_default_oneof_instance_, delete__),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Mutation_default_oneof_instance_, base_version_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation, operation_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation, conflict_detection_strategy_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MutationResult, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Mutation_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Mutation_descriptor_,
+      Mutation::internal_default_instance(),
+      Mutation_offsets_,
+      -1,
+      -1,
+      -1,
+      Mutation_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation, _oneof_case_[0]),
+      sizeof(Mutation),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation, _internal_metadata_));
+  MutationResult_descriptor_ = file->message_type(13);
+  static const int MutationResult_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MutationResult, key_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MutationResult, version_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MutationResult, conflict_detected_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadOptions, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadOptions, _oneof_case_[0]),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&ReadOptions_default_oneof_instance_), read_consistency_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&ReadOptions_default_oneof_instance_), transaction_),
+  };
+  MutationResult_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      MutationResult_descriptor_,
+      MutationResult::internal_default_instance(),
+      MutationResult_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(MutationResult),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(MutationResult, _internal_metadata_));
+  ReadOptions_descriptor_ = file->message_type(14);
+  static const int ReadOptions_offsets_[3] = {
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(ReadOptions_default_oneof_instance_, read_consistency_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(ReadOptions_default_oneof_instance_, transaction_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadOptions, consistency_type_),
   };
-  return offsets;
+  ReadOptions_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ReadOptions_descriptor_,
+      ReadOptions::internal_default_instance(),
+      ReadOptions_offsets_,
+      -1,
+      -1,
+      -1,
+      ReadOptions_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadOptions, _oneof_case_[0]),
+      sizeof(ReadOptions),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadOptions, _internal_metadata_));
+  ReadOptions_ReadConsistency_descriptor_ = ReadOptions_descriptor_->enum_type(0);
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(LookupRequest)},
-  { 7, -1, sizeof(LookupResponse)},
-  { 14, -1, sizeof(RunQueryRequest)},
-  { 24, -1, sizeof(RunQueryResponse)},
-  { 30, -1, sizeof(BeginTransactionRequest)},
-  { 35, -1, sizeof(BeginTransactionResponse)},
-  { 40, -1, sizeof(RollbackRequest)},
-  { 46, -1, sizeof(RollbackResponse)},
-  { 50, -1, sizeof(CommitRequest)},
-  { 59, -1, sizeof(CommitResponse)},
-  { 65, -1, sizeof(AllocateIdsRequest)},
-  { 71, -1, sizeof(AllocateIdsResponse)},
-  { 76, -1, sizeof(Mutation)},
-  { 87, -1, sizeof(MutationResult)},
-  { 94, -1, sizeof(ReadOptions)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_LookupRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_LookupResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_RunQueryRequest_default_instance_), &RunQueryRequest_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_RunQueryResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_BeginTransactionRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_BeginTransactionResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_RollbackRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_RollbackResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_CommitRequest_default_instance_), &CommitRequest_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_CommitResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_AllocateIdsRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_AllocateIdsResponse_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Mutation_default_instance_), &Mutation_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_MutationResult_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ReadOptions_default_instance_), &ReadOptions_default_oneof_instance_},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fdatastore_2fv1_2fdatastore_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/datastore/v1/datastore.proto", schemas, file_default_instances, protobuf_Offsets_google_2fdatastore_2fv1_2fdatastore_2eproto(), factory,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fdatastore_2fv1_2fdatastore_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 15);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      LookupRequest_descriptor_, LookupRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      LookupResponse_descriptor_, LookupResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      RunQueryRequest_descriptor_, RunQueryRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      RunQueryResponse_descriptor_, RunQueryResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      BeginTransactionRequest_descriptor_, BeginTransactionRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      BeginTransactionResponse_descriptor_, BeginTransactionResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      RollbackRequest_descriptor_, RollbackRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      RollbackResponse_descriptor_, RollbackResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      CommitRequest_descriptor_, CommitRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      CommitResponse_descriptor_, CommitResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      AllocateIdsRequest_descriptor_, AllocateIdsRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      AllocateIdsResponse_descriptor_, AllocateIdsResponse::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Mutation_descriptor_, Mutation::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      MutationResult_descriptor_, MutationResult::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ReadOptions_descriptor_, ReadOptions::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fdatastore_2fv1_2fdatastore_2eproto() {
-  _LookupRequest_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _LookupResponse_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _RunQueryRequest_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _RunQueryResponse_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _BeginTransactionRequest_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
-  _BeginTransactionResponse_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
-  _RollbackRequest_default_instance_.Shutdown();
-  delete file_level_metadata[6].reflection;
-  _RollbackResponse_default_instance_.Shutdown();
-  delete file_level_metadata[7].reflection;
-  _CommitRequest_default_instance_.Shutdown();
-  delete file_level_metadata[8].reflection;
-  _CommitResponse_default_instance_.Shutdown();
-  delete file_level_metadata[9].reflection;
-  _AllocateIdsRequest_default_instance_.Shutdown();
-  delete file_level_metadata[10].reflection;
-  _AllocateIdsResponse_default_instance_.Shutdown();
-  delete file_level_metadata[11].reflection;
-  _Mutation_default_instance_.Shutdown();
-  delete file_level_metadata[12].reflection;
-  _MutationResult_default_instance_.Shutdown();
-  delete file_level_metadata[13].reflection;
-  _ReadOptions_default_instance_.Shutdown();
-  delete file_level_metadata[14].reflection;
+  LookupRequest_default_instance_.Shutdown();
+  delete LookupRequest_reflection_;
+  LookupResponse_default_instance_.Shutdown();
+  delete LookupResponse_reflection_;
+  RunQueryRequest_default_instance_.Shutdown();
+  delete RunQueryRequest_default_oneof_instance_;
+  delete RunQueryRequest_reflection_;
+  RunQueryResponse_default_instance_.Shutdown();
+  delete RunQueryResponse_reflection_;
+  BeginTransactionRequest_default_instance_.Shutdown();
+  delete BeginTransactionRequest_reflection_;
+  BeginTransactionResponse_default_instance_.Shutdown();
+  delete BeginTransactionResponse_reflection_;
+  RollbackRequest_default_instance_.Shutdown();
+  delete RollbackRequest_reflection_;
+  RollbackResponse_default_instance_.Shutdown();
+  delete RollbackResponse_reflection_;
+  CommitRequest_default_instance_.Shutdown();
+  delete CommitRequest_default_oneof_instance_;
+  delete CommitRequest_reflection_;
+  CommitResponse_default_instance_.Shutdown();
+  delete CommitResponse_reflection_;
+  AllocateIdsRequest_default_instance_.Shutdown();
+  delete AllocateIdsRequest_reflection_;
+  AllocateIdsResponse_default_instance_.Shutdown();
+  delete AllocateIdsResponse_reflection_;
+  Mutation_default_instance_.Shutdown();
+  delete Mutation_default_oneof_instance_;
+  delete Mutation_reflection_;
+  MutationResult_default_instance_.Shutdown();
+  delete MutationResult_reflection_;
+  ReadOptions_default_instance_.Shutdown();
+  delete ReadOptions_default_oneof_instance_;
+  delete ReadOptions_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto_impl() {
@@ -283,142 +435,138 @@ void protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto_impl() {
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
   ::google::datastore::v1::protobuf_InitDefaults_google_2fdatastore_2fv1_2fentity_2eproto();
   ::google::datastore::v1::protobuf_InitDefaults_google_2fdatastore_2fv1_2fquery_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _LookupRequest_default_instance_.DefaultConstruct();
-  _LookupResponse_default_instance_.DefaultConstruct();
-  _RunQueryRequest_default_instance_.DefaultConstruct();
-  _RunQueryResponse_default_instance_.DefaultConstruct();
-  _BeginTransactionRequest_default_instance_.DefaultConstruct();
-  _BeginTransactionResponse_default_instance_.DefaultConstruct();
-  _RollbackRequest_default_instance_.DefaultConstruct();
-  _RollbackResponse_default_instance_.DefaultConstruct();
-  _CommitRequest_default_instance_.DefaultConstruct();
-  _CommitResponse_default_instance_.DefaultConstruct();
-  _AllocateIdsRequest_default_instance_.DefaultConstruct();
-  _AllocateIdsResponse_default_instance_.DefaultConstruct();
-  _Mutation_default_instance_.DefaultConstruct();
-  _MutationResult_default_instance_.DefaultConstruct();
-  _ReadOptions_default_instance_.DefaultConstruct();
-  _LookupRequest_default_instance_.get_mutable()->read_options_ = const_cast< ::google::datastore::v1::ReadOptions*>(
-      ::google::datastore::v1::ReadOptions::internal_default_instance());
-  _RunQueryRequest_default_instance_.get_mutable()->partition_id_ = const_cast< ::google::datastore::v1::PartitionId*>(
-      ::google::datastore::v1::PartitionId::internal_default_instance());
-  _RunQueryRequest_default_instance_.get_mutable()->read_options_ = const_cast< ::google::datastore::v1::ReadOptions*>(
-      ::google::datastore::v1::ReadOptions::internal_default_instance());
-  RunQueryRequest_default_oneof_instance_.query_ = const_cast< ::google::datastore::v1::Query*>(
-      ::google::datastore::v1::Query::internal_default_instance());
-  RunQueryRequest_default_oneof_instance_.gql_query_ = const_cast< ::google::datastore::v1::GqlQuery*>(
-      ::google::datastore::v1::GqlQuery::internal_default_instance());
-  _RunQueryResponse_default_instance_.get_mutable()->batch_ = const_cast< ::google::datastore::v1::QueryResultBatch*>(
-      ::google::datastore::v1::QueryResultBatch::internal_default_instance());
-  _RunQueryResponse_default_instance_.get_mutable()->query_ = const_cast< ::google::datastore::v1::Query*>(
-      ::google::datastore::v1::Query::internal_default_instance());
-  CommitRequest_default_oneof_instance_.transaction_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  Mutation_default_oneof_instance_.insert_ = const_cast< ::google::datastore::v1::Entity*>(
-      ::google::datastore::v1::Entity::internal_default_instance());
-  Mutation_default_oneof_instance_.update_ = const_cast< ::google::datastore::v1::Entity*>(
-      ::google::datastore::v1::Entity::internal_default_instance());
-  Mutation_default_oneof_instance_.upsert_ = const_cast< ::google::datastore::v1::Entity*>(
-      ::google::datastore::v1::Entity::internal_default_instance());
-  Mutation_default_oneof_instance_.delete__ = const_cast< ::google::datastore::v1::Key*>(
-      ::google::datastore::v1::Key::internal_default_instance());
-    Mutation_default_oneof_instance_.base_version_ = GOOGLE_LONGLONG(0);
-  _MutationResult_default_instance_.get_mutable()->key_ = const_cast< ::google::datastore::v1::Key*>(
-      ::google::datastore::v1::Key::internal_default_instance());
-    ReadOptions_default_oneof_instance_.read_consistency_ = 0;
-  ReadOptions_default_oneof_instance_.transaction_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::google::protobuf::internal::GetEmptyString();
+  LookupRequest_default_instance_.DefaultConstruct();
+  LookupResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  RunQueryRequest_default_instance_.DefaultConstruct();
+  RunQueryRequest_default_oneof_instance_ = new RunQueryRequestOneofInstance();
+  RunQueryResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  BeginTransactionRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  BeginTransactionResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  RollbackRequest_default_instance_.DefaultConstruct();
+  RollbackResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  CommitRequest_default_instance_.DefaultConstruct();
+  CommitRequest_default_oneof_instance_ = new CommitRequestOneofInstance();
+  CommitResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  AllocateIdsRequest_default_instance_.DefaultConstruct();
+  AllocateIdsResponse_default_instance_.DefaultConstruct();
+  Mutation_default_instance_.DefaultConstruct();
+  Mutation_default_oneof_instance_ = new MutationOneofInstance();
+  MutationResult_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ReadOptions_default_instance_.DefaultConstruct();
+  ReadOptions_default_oneof_instance_ = new ReadOptionsOneofInstance();
+  LookupRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  LookupResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  RunQueryRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  RunQueryResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  BeginTransactionRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  BeginTransactionResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  RollbackRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  RollbackResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CommitRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CommitResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AllocateIdsRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AllocateIdsResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Mutation_default_instance_.get_mutable()->InitAsDefaultInstance();
+  MutationResult_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ReadOptions_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto_once_);
 void protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fdatastore_2fv1_2fdatastore_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
-  static const char descriptor[] = {
-      "\n#google/datastore/v1/datastore.proto\022\023g"
-      "oogle.datastore.v1\032\034google/api/annotatio"
-      "ns.proto\032 google/datastore/v1/entity.pro"
-      "to\032\037google/datastore/v1/query.proto\"\203\001\n\r"
-      "LookupRequest\022\022\n\nproject_id\030\010 \001(\t\0226\n\014rea"
-      "d_options\030\001 \001(\0132 .google.datastore.v1.Re"
-      "adOptions\022&\n\004keys\030\003 \003(\0132\030.google.datasto"
-      "re.v1.Key\"\242\001\n\016LookupResponse\0220\n\005found\030\001 "
-      "\003(\0132!.google.datastore.v1.EntityResult\0222"
-      "\n\007missing\030\002 \003(\0132!.google.datastore.v1.En"
-      "tityResult\022*\n\010deferred\030\003 \003(\0132\030.google.da"
-      "tastore.v1.Key\"\204\002\n\017RunQueryRequest\022\022\n\npr"
-      "oject_id\030\010 \001(\t\0226\n\014partition_id\030\002 \001(\0132 .g"
-      "oogle.datastore.v1.PartitionId\0226\n\014read_o"
-      "ptions\030\001 \001(\0132 .google.datastore.v1.ReadO"
-      "ptions\022+\n\005query\030\003 \001(\0132\032.google.datastore"
-      ".v1.QueryH\000\0222\n\tgql_query\030\007 \001(\0132\035.google."
-      "datastore.v1.GqlQueryH\000B\014\n\nquery_type\"s\n"
-      "\020RunQueryResponse\0224\n\005batch\030\001 \001(\0132%.googl"
-      "e.datastore.v1.QueryResultBatch\022)\n\005query"
-      "\030\002 \001(\0132\032.google.datastore.v1.Query\"-\n\027Be"
-      "ginTransactionRequest\022\022\n\nproject_id\030\010 \001("
-      "\t\"/\n\030BeginTransactionResponse\022\023\n\013transac"
-      "tion\030\001 \001(\014\":\n\017RollbackRequest\022\022\n\nproject"
-      "_id\030\010 \001(\t\022\023\n\013transaction\030\001 \001(\014\"\022\n\020Rollba"
-      "ckResponse\"\203\002\n\rCommitRequest\022\022\n\nproject_"
-      "id\030\010 \001(\t\0225\n\004mode\030\005 \001(\0162\'.google.datastor"
-      "e.v1.CommitRequest.Mode\022\025\n\013transaction\030\001"
-      " \001(\014H\000\0220\n\tmutations\030\006 \003(\0132\035.google.datas"
-      "tore.v1.Mutation\"F\n\004Mode\022\024\n\020MODE_UNSPECI"
-      "FIED\020\000\022\021\n\rTRANSACTIONAL\020\001\022\025\n\021NON_TRANSAC"
-      "TIONAL\020\002B\026\n\024transaction_selector\"f\n\016Comm"
-      "itResponse\022=\n\020mutation_results\030\003 \003(\0132#.g"
-      "oogle.datastore.v1.MutationResult\022\025\n\rind"
-      "ex_updates\030\004 \001(\005\"P\n\022AllocateIdsRequest\022\022"
-      "\n\nproject_id\030\010 \001(\t\022&\n\004keys\030\001 \003(\0132\030.googl"
-      "e.datastore.v1.Key\"=\n\023AllocateIdsRespons"
-      "e\022&\n\004keys\030\001 \003(\0132\030.google.datastore.v1.Ke"
-      "y\"\207\002\n\010Mutation\022-\n\006insert\030\004 \001(\0132\033.google."
-      "datastore.v1.EntityH\000\022-\n\006update\030\005 \001(\0132\033."
-      "google.datastore.v1.EntityH\000\022-\n\006upsert\030\006"
-      " \001(\0132\033.google.datastore.v1.EntityH\000\022*\n\006d"
-      "elete\030\007 \001(\0132\030.google.datastore.v1.KeyH\000\022"
-      "\026\n\014base_version\030\010 \001(\003H\001B\013\n\toperationB\035\n\033"
-      "conflict_detection_strategy\"c\n\016MutationR"
-      "esult\022%\n\003key\030\003 \001(\0132\030.google.datastore.v1"
-      ".Key\022\017\n\007version\030\004 \001(\003\022\031\n\021conflict_detect"
-      "ed\030\005 \001(\010\"\325\001\n\013ReadOptions\022L\n\020read_consist"
-      "ency\030\001 \001(\01620.google.datastore.v1.ReadOpt"
-      "ions.ReadConsistencyH\000\022\025\n\013transaction\030\002 "
-      "\001(\014H\000\"M\n\017ReadConsistency\022 \n\034READ_CONSIST"
-      "ENCY_UNSPECIFIED\020\000\022\n\n\006STRONG\020\001\022\014\n\010EVENTU"
-      "AL\020\002B\022\n\020consistency_type2\333\006\n\tDatastore\022~"
-      "\n\006Lookup\022\".google.datastore.v1.LookupReq"
-      "uest\032#.google.datastore.v1.LookupRespons"
-      "e\"+\202\323\344\223\002%\" /v1/projects/{project_id}:loo"
-      "kup:\001*\022\206\001\n\010RunQuery\022$.google.datastore.v"
-      "1.RunQueryRequest\032%.google.datastore.v1."
-      "RunQueryResponse\"-\202\323\344\223\002\'\"\"/v1/projects/{"
-      "project_id}:runQuery:\001*\022\246\001\n\020BeginTransac"
-      "tion\022,.google.datastore.v1.BeginTransact"
-      "ionRequest\032-.google.datastore.v1.BeginTr"
-      "ansactionResponse\"5\202\323\344\223\002/\"*/v1/projects/"
-      "{project_id}:beginTransaction:\001*\022~\n\006Comm"
-      "it\022\".google.datastore.v1.CommitRequest\032#"
-      ".google.datastore.v1.CommitResponse\"+\202\323\344"
-      "\223\002%\" /v1/projects/{project_id}:commit:\001*"
-      "\022\206\001\n\010Rollback\022$.google.datastore.v1.Roll"
-      "backRequest\032%.google.datastore.v1.Rollba"
-      "ckResponse\"-\202\323\344\223\002\'\"\"/v1/projects/{projec"
-      "t_id}:rollback:\001*\022\222\001\n\013AllocateIds\022\'.goog"
-      "le.datastore.v1.AllocateIdsRequest\032(.goo"
-      "gle.datastore.v1.AllocateIdsResponse\"0\202\323"
-      "\344\223\002*\"%/v1/projects/{project_id}:allocate"
-      "Ids:\001*B\205\001\n\027com.google.datastore.v1B\016Data"
-      "storeProtoP\001Z<google.golang.org/genproto"
-      "/googleapis/datastore/v1;datastore\252\002\031Goo"
-      "gle.Cloud.Datastore.V1b\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 3110);
+    "\n#google/datastore/v1/datastore.proto\022\023g"
+    "oogle.datastore.v1\032\034google/api/annotatio"
+    "ns.proto\032 google/datastore/v1/entity.pro"
+    "to\032\037google/datastore/v1/query.proto\"\203\001\n\r"
+    "LookupRequest\022\022\n\nproject_id\030\010 \001(\t\0226\n\014rea"
+    "d_options\030\001 \001(\0132 .google.datastore.v1.Re"
+    "adOptions\022&\n\004keys\030\003 \003(\0132\030.google.datasto"
+    "re.v1.Key\"\242\001\n\016LookupResponse\0220\n\005found\030\001 "
+    "\003(\0132!.google.datastore.v1.EntityResult\0222"
+    "\n\007missing\030\002 \003(\0132!.google.datastore.v1.En"
+    "tityResult\022*\n\010deferred\030\003 \003(\0132\030.google.da"
+    "tastore.v1.Key\"\204\002\n\017RunQueryRequest\022\022\n\npr"
+    "oject_id\030\010 \001(\t\0226\n\014partition_id\030\002 \001(\0132 .g"
+    "oogle.datastore.v1.PartitionId\0226\n\014read_o"
+    "ptions\030\001 \001(\0132 .google.datastore.v1.ReadO"
+    "ptions\022+\n\005query\030\003 \001(\0132\032.google.datastore"
+    ".v1.QueryH\000\0222\n\tgql_query\030\007 \001(\0132\035.google."
+    "datastore.v1.GqlQueryH\000B\014\n\nquery_type\"s\n"
+    "\020RunQueryResponse\0224\n\005batch\030\001 \001(\0132%.googl"
+    "e.datastore.v1.QueryResultBatch\022)\n\005query"
+    "\030\002 \001(\0132\032.google.datastore.v1.Query\"-\n\027Be"
+    "ginTransactionRequest\022\022\n\nproject_id\030\010 \001("
+    "\t\"/\n\030BeginTransactionResponse\022\023\n\013transac"
+    "tion\030\001 \001(\014\":\n\017RollbackRequest\022\022\n\nproject"
+    "_id\030\010 \001(\t\022\023\n\013transaction\030\001 \001(\014\"\022\n\020Rollba"
+    "ckResponse\"\203\002\n\rCommitRequest\022\022\n\nproject_"
+    "id\030\010 \001(\t\0225\n\004mode\030\005 \001(\0162\'.google.datastor"
+    "e.v1.CommitRequest.Mode\022\025\n\013transaction\030\001"
+    " \001(\014H\000\0220\n\tmutations\030\006 \003(\0132\035.google.datas"
+    "tore.v1.Mutation\"F\n\004Mode\022\024\n\020MODE_UNSPECI"
+    "FIED\020\000\022\021\n\rTRANSACTIONAL\020\001\022\025\n\021NON_TRANSAC"
+    "TIONAL\020\002B\026\n\024transaction_selector\"f\n\016Comm"
+    "itResponse\022=\n\020mutation_results\030\003 \003(\0132#.g"
+    "oogle.datastore.v1.MutationResult\022\025\n\rind"
+    "ex_updates\030\004 \001(\005\"P\n\022AllocateIdsRequest\022\022"
+    "\n\nproject_id\030\010 \001(\t\022&\n\004keys\030\001 \003(\0132\030.googl"
+    "e.datastore.v1.Key\"=\n\023AllocateIdsRespons"
+    "e\022&\n\004keys\030\001 \003(\0132\030.google.datastore.v1.Ke"
+    "y\"\207\002\n\010Mutation\022-\n\006insert\030\004 \001(\0132\033.google."
+    "datastore.v1.EntityH\000\022-\n\006update\030\005 \001(\0132\033."
+    "google.datastore.v1.EntityH\000\022-\n\006upsert\030\006"
+    " \001(\0132\033.google.datastore.v1.EntityH\000\022*\n\006d"
+    "elete\030\007 \001(\0132\030.google.datastore.v1.KeyH\000\022"
+    "\026\n\014base_version\030\010 \001(\003H\001B\013\n\toperationB\035\n\033"
+    "conflict_detection_strategy\"c\n\016MutationR"
+    "esult\022%\n\003key\030\003 \001(\0132\030.google.datastore.v1"
+    ".Key\022\017\n\007version\030\004 \001(\003\022\031\n\021conflict_detect"
+    "ed\030\005 \001(\010\"\325\001\n\013ReadOptions\022L\n\020read_consist"
+    "ency\030\001 \001(\01620.google.datastore.v1.ReadOpt"
+    "ions.ReadConsistencyH\000\022\025\n\013transaction\030\002 "
+    "\001(\014H\000\"M\n\017ReadConsistency\022 \n\034READ_CONSIST"
+    "ENCY_UNSPECIFIED\020\000\022\n\n\006STRONG\020\001\022\014\n\010EVENTU"
+    "AL\020\002B\022\n\020consistency_type2\333\006\n\tDatastore\022~"
+    "\n\006Lookup\022\".google.datastore.v1.LookupReq"
+    "uest\032#.google.datastore.v1.LookupRespons"
+    "e\"+\202\323\344\223\002%\" /v1/projects/{project_id}:loo"
+    "kup:\001*\022\206\001\n\010RunQuery\022$.google.datastore.v"
+    "1.RunQueryRequest\032%.google.datastore.v1."
+    "RunQueryResponse\"-\202\323\344\223\002\'\"\"/v1/projects/{"
+    "project_id}:runQuery:\001*\022\246\001\n\020BeginTransac"
+    "tion\022,.google.datastore.v1.BeginTransact"
+    "ionRequest\032-.google.datastore.v1.BeginTr"
+    "ansactionResponse\"5\202\323\344\223\002/\"*/v1/projects/"
+    "{project_id}:beginTransaction:\001*\022~\n\006Comm"
+    "it\022\".google.datastore.v1.CommitRequest\032#"
+    ".google.datastore.v1.CommitResponse\"+\202\323\344"
+    "\223\002%\" /v1/projects/{project_id}:commit:\001*"
+    "\022\206\001\n\010Rollback\022$.google.datastore.v1.Roll"
+    "backRequest\032%.google.datastore.v1.Rollba"
+    "ckResponse\"-\202\323\344\223\002\'\"\"/v1/projects/{projec"
+    "t_id}:rollback:\001*\022\222\001\n\013AllocateIds\022\'.goog"
+    "le.datastore.v1.AllocateIdsRequest\032(.goo"
+    "gle.datastore.v1.AllocateIdsResponse\"0\202\323"
+    "\344\223\002*\"%/v1/projects/{project_id}:allocate"
+    "Ids:\001*B\205\001\n\027com.google.datastore.v1B\016Data"
+    "storeProtoP\001Z<google.golang.org/genproto"
+    "/googleapis/datastore/v1;datastore\252\002\031Goo"
+    "gle.Cloud.Datastore.V1b\006proto3", 3110);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/datastore/v1/datastore.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -438,52 +586,16 @@ struct StaticDescriptorInitializer_google_2fdatastore_2fv1_2fdatastore_2eproto {
     protobuf_AddDesc_google_2fdatastore_2fv1_2fdatastore_2eproto();
   }
 } static_descriptor_initializer_google_2fdatastore_2fv1_2fdatastore_2eproto_;
-const ::google::protobuf::EnumDescriptor* CommitRequest_Mode_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
-}
-bool CommitRequest_Mode_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
 }
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const CommitRequest_Mode CommitRequest::MODE_UNSPECIFIED;
-const CommitRequest_Mode CommitRequest::TRANSACTIONAL;
-const CommitRequest_Mode CommitRequest::NON_TRANSACTIONAL;
-const CommitRequest_Mode CommitRequest::Mode_MIN;
-const CommitRequest_Mode CommitRequest::Mode_MAX;
-const int CommitRequest::Mode_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-const ::google::protobuf::EnumDescriptor* ReadOptions_ReadConsistency_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[1];
-}
-bool ReadOptions_ReadConsistency_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-      return true;
-    default:
-      return false;
-  }
-}
+}  // namespace
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const ReadOptions_ReadConsistency ReadOptions::READ_CONSISTENCY_UNSPECIFIED;
-const ReadOptions_ReadConsistency ReadOptions::STRONG;
-const ReadOptions_ReadConsistency ReadOptions::EVENTUAL;
-const ReadOptions_ReadConsistency ReadOptions::ReadConsistency_MIN;
-const ReadOptions_ReadConsistency ReadOptions::ReadConsistency_MAX;
-const int ReadOptions::ReadConsistency_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 // ===================================================================
 
@@ -495,27 +607,21 @@ const int LookupRequest::kKeysFieldNumber;
 
 LookupRequest::LookupRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1.LookupRequest)
 }
+
+void LookupRequest::InitAsDefaultInstance() {
+  read_options_ = const_cast< ::google::datastore::v1::ReadOptions*>(
+      ::google::datastore::v1::ReadOptions::internal_default_instance());
+}
+
 LookupRequest::LookupRequest(const LookupRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      keys_(from.keys_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
-  }
-  if (from.has_read_options()) {
-    read_options_ = new ::google::datastore::v1::ReadOptions(*from.read_options_);
-  } else {
-    read_options_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1.LookupRequest)
 }
 
@@ -532,7 +638,7 @@ LookupRequest::~LookupRequest() {
 
 void LookupRequest::SharedDtor() {
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &LookupRequest_default_instance_.get()) {
     delete read_options_;
   }
 }
@@ -544,13 +650,15 @@ void LookupRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* LookupRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return LookupRequest_descriptor_;
 }
 
 const LookupRequest& LookupRequest::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<LookupRequest> LookupRequest_default_instance_;
 
 LookupRequest* LookupRequest::New(::google::protobuf::Arena* arena) const {
   LookupRequest* n = new LookupRequest;
@@ -562,12 +670,10 @@ LookupRequest* LookupRequest::New(::google::protobuf::Arena* arena) const {
 
 void LookupRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.datastore.v1.LookupRequest)
-  keys_.Clear();
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && read_options_ != NULL) {
-    delete read_options_;
-  }
+  if (GetArenaNoVirtual() == NULL && read_options_ != NULL) delete read_options_;
   read_options_ = NULL;
+  keys_.Clear();
 }
 
 bool LookupRequest::MergePartialFromCodedStream(
@@ -576,37 +682,43 @@ bool LookupRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1.LookupRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.datastore.v1.ReadOptions read_options = 1;
+      // optional .google.datastore.v1.ReadOptions read_options = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_read_options()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_keys;
         break;
       }
 
       // repeated .google.datastore.v1.Key keys = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_keys:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_keys:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_keys()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_loop_keys;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(66)) goto parse_project_id;
         break;
       }
 
-      // string project_id = 8;
+      // optional string project_id = 8;
       case 8: {
-        if (tag == 66u) {
+        if (tag == 66) {
+         parse_project_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -616,6 +728,7 @@ bool LookupRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -643,7 +756,7 @@ failure:
 void LookupRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1.LookupRequest)
-  // .google.datastore.v1.ReadOptions read_options = 1;
+  // optional .google.datastore.v1.ReadOptions read_options = 1;
   if (this->has_read_options()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->read_options_, output);
@@ -655,7 +768,7 @@ void LookupRequest::SerializeWithCachedSizes(
       3, this->keys(i), output);
   }
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -672,7 +785,7 @@ void LookupRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1.LookupRequest)
-  // .google.datastore.v1.ReadOptions read_options = 1;
+  // optional .google.datastore.v1.ReadOptions read_options = 1;
   if (this->has_read_options()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -686,7 +799,7 @@ void LookupRequest::SerializeWithCachedSizes(
         3, this->keys(i), false, target);
   }
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -705,6 +818,20 @@ size_t LookupRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1.LookupRequest)
   size_t total_size = 0;
 
+  // optional string project_id = 8;
+  if (this->project_id().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->project_id());
+  }
+
+  // optional .google.datastore.v1.ReadOptions read_options = 1;
+  if (this->has_read_options()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->read_options_);
+  }
+
   // repeated .google.datastore.v1.Key keys = 3;
   {
     unsigned int count = this->keys_size();
@@ -716,20 +843,6 @@ size_t LookupRequest::ByteSizeLong() const {
     }
   }
 
-  // string project_id = 8;
-  if (this->project_id().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->project_id());
-  }
-
-  // .google.datastore.v1.ReadOptions read_options = 1;
-  if (this->has_read_options()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->read_options_);
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -739,7 +852,7 @@ size_t LookupRequest::ByteSizeLong() const {
 
 void LookupRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1.LookupRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const LookupRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const LookupRequest>(
           &from);
@@ -748,14 +861,21 @@ void LookupRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1.LookupRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void LookupRequest::MergeFrom(const LookupRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1.LookupRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void LookupRequest::UnsafeMergeFrom(const LookupRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   keys_.MergeFrom(from.keys_);
   if (from.project_id().size() > 0) {
 
@@ -777,10 +897,11 @@ void LookupRequest::CopyFrom(const LookupRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1.LookupRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool LookupRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -789,27 +910,31 @@ void LookupRequest::Swap(LookupRequest* other) {
   InternalSwap(other);
 }
 void LookupRequest::InternalSwap(LookupRequest* other) {
-  keys_.UnsafeArenaSwap(&other->keys_);
   project_id_.Swap(&other->project_id_);
   std::swap(read_options_, other->read_options_);
+  keys_.UnsafeArenaSwap(&other->keys_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata LookupRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = LookupRequest_descriptor_;
+  metadata.reflection = LookupRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // LookupRequest
 
-// string project_id = 8;
+// optional string project_id = 8;
 void LookupRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& LookupRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.LookupRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void LookupRequest::set_project_id(const ::std::string& value) {
   
@@ -847,7 +972,7 @@ void LookupRequest::set_allocated_project_id(::std::string* project_id) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.LookupRequest.project_id)
 }
 
-// .google.datastore.v1.ReadOptions read_options = 1;
+// optional .google.datastore.v1.ReadOptions read_options = 1;
 bool LookupRequest::has_read_options() const {
   return this != internal_default_instance() && read_options_ != NULL;
 }
@@ -916,6 +1041,9 @@ LookupRequest::keys() const {
   return keys_;
 }
 
+inline const LookupRequest* LookupRequest::internal_default_instance() {
+  return &LookupRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -928,20 +1056,19 @@ const int LookupResponse::kDeferredFieldNumber;
 
 LookupResponse::LookupResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1.LookupResponse)
 }
+
+void LookupResponse::InitAsDefaultInstance() {
+}
+
 LookupResponse::LookupResponse(const LookupResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      found_(from.found_),
-      missing_(from.missing_),
-      deferred_(from.deferred_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1.LookupResponse)
 }
 
@@ -964,13 +1091,15 @@ void LookupResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* LookupResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return LookupResponse_descriptor_;
 }
 
 const LookupResponse& LookupResponse::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<LookupResponse> LookupResponse_default_instance_;
 
 LookupResponse* LookupResponse::New(::google::protobuf::Arena* arena) const {
   LookupResponse* n = new LookupResponse;
@@ -993,46 +1122,55 @@ bool LookupResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1.LookupResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.datastore.v1.EntityResult found = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_found:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_found()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_found;
+        if (input->ExpectTag(18)) goto parse_loop_missing;
         input->UnsafeDecrementRecursionDepth();
         break;
       }
 
       // repeated .google.datastore.v1.EntityResult missing = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_missing:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_missing()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_loop_missing;
+        if (input->ExpectTag(26)) goto parse_loop_deferred;
         input->UnsafeDecrementRecursionDepth();
         break;
       }
 
       // repeated .google.datastore.v1.Key deferred = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_deferred:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_deferred()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_loop_deferred;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1156,7 +1294,7 @@ size_t LookupResponse::ByteSizeLong() const {
 
 void LookupResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1.LookupResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const LookupResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const LookupResponse>(
           &from);
@@ -1165,14 +1303,21 @@ void LookupResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1.LookupResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void LookupResponse::MergeFrom(const LookupResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1.LookupResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void LookupResponse::UnsafeMergeFrom(const LookupResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   found_.MergeFrom(from.found_);
   missing_.MergeFrom(from.missing_);
   deferred_.MergeFrom(from.deferred_);
@@ -1189,10 +1334,11 @@ void LookupResponse::CopyFrom(const LookupResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1.LookupResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool LookupResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -1204,12 +1350,16 @@ void LookupResponse::InternalSwap(LookupResponse* other) {
   found_.UnsafeArenaSwap(&other->found_);
   missing_.UnsafeArenaSwap(&other->missing_);
   deferred_.UnsafeArenaSwap(&other->deferred_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata LookupResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = LookupResponse_descriptor_;
+  metadata.reflection = LookupResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -1305,6 +1455,9 @@ LookupResponse::deferred() const {
   return deferred_;
 }
 
+inline const LookupResponse* LookupResponse::internal_default_instance() {
+  return &LookupResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1319,52 +1472,34 @@ const int RunQueryRequest::kGqlQueryFieldNumber;
 
 RunQueryRequest::RunQueryRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1.RunQueryRequest)
 }
+
+void RunQueryRequest::InitAsDefaultInstance() {
+  partition_id_ = const_cast< ::google::datastore::v1::PartitionId*>(
+      ::google::datastore::v1::PartitionId::internal_default_instance());
+  read_options_ = const_cast< ::google::datastore::v1::ReadOptions*>(
+      ::google::datastore::v1::ReadOptions::internal_default_instance());
+  RunQueryRequest_default_oneof_instance_->query_ = const_cast< ::google::datastore::v1::Query*>(
+      ::google::datastore::v1::Query::internal_default_instance());
+  RunQueryRequest_default_oneof_instance_->gql_query_ = const_cast< ::google::datastore::v1::GqlQuery*>(
+      ::google::datastore::v1::GqlQuery::internal_default_instance());
+}
+
 RunQueryRequest::RunQueryRequest(const RunQueryRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
-  }
-  if (from.has_partition_id()) {
-    partition_id_ = new ::google::datastore::v1::PartitionId(*from.partition_id_);
-  } else {
-    partition_id_ = NULL;
-  }
-  if (from.has_read_options()) {
-    read_options_ = new ::google::datastore::v1::ReadOptions(*from.read_options_);
-  } else {
-    read_options_ = NULL;
-  }
-  clear_has_query_type();
-  switch (from.query_type_case()) {
-    case kQuery: {
-      mutable_query()->::google::datastore::v1::Query::MergeFrom(from.query());
-      break;
-    }
-    case kGqlQuery: {
-      mutable_gql_query()->::google::datastore::v1::GqlQuery::MergeFrom(from.gql_query());
-      break;
-    }
-    case QUERY_TYPE_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1.RunQueryRequest)
 }
 
 void RunQueryRequest::SharedCtor() {
   project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&partition_id_, 0, reinterpret_cast<char*>(&read_options_) -
-    reinterpret_cast<char*>(&partition_id_) + sizeof(read_options_));
+  partition_id_ = NULL;
+  read_options_ = NULL;
   clear_has_query_type();
   _cached_size_ = 0;
 }
@@ -1376,14 +1511,12 @@ RunQueryRequest::~RunQueryRequest() {
 
 void RunQueryRequest::SharedDtor() {
   project_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
-    delete partition_id_;
-  }
-  if (this != internal_default_instance()) {
-    delete read_options_;
-  }
   if (has_query_type()) {
     clear_query_type();
+  }
+  if (this != &RunQueryRequest_default_instance_.get()) {
+    delete partition_id_;
+    delete read_options_;
   }
 }
 
@@ -1394,13 +1527,15 @@ void RunQueryRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* RunQueryRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return RunQueryRequest_descriptor_;
 }
 
 const RunQueryRequest& RunQueryRequest::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<RunQueryRequest> RunQueryRequest_default_instance_;
 
 RunQueryRequest* RunQueryRequest::New(::google::protobuf::Arena* arena) const {
   RunQueryRequest* n = new RunQueryRequest;
@@ -1432,13 +1567,9 @@ void RunQueryRequest::clear_query_type() {
 void RunQueryRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.datastore.v1.RunQueryRequest)
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && partition_id_ != NULL) {
-    delete partition_id_;
-  }
+  if (GetArenaNoVirtual() == NULL && partition_id_ != NULL) delete partition_id_;
   partition_id_ = NULL;
-  if (GetArenaNoVirtual() == NULL && read_options_ != NULL) {
-    delete read_options_;
-  }
+  if (GetArenaNoVirtual() == NULL && read_options_ != NULL) delete read_options_;
   read_options_ = NULL;
   clear_query_type();
 }
@@ -1449,57 +1580,65 @@ bool RunQueryRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1.RunQueryRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.datastore.v1.ReadOptions read_options = 1;
+      // optional .google.datastore.v1.ReadOptions read_options = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_read_options()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_partition_id;
         break;
       }
 
-      // .google.datastore.v1.PartitionId partition_id = 2;
+      // optional .google.datastore.v1.PartitionId partition_id = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_partition_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_partition_id()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_query;
         break;
       }
 
-      // .google.datastore.v1.Query query = 3;
+      // optional .google.datastore.v1.Query query = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_query:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_query()));
         } else {
           goto handle_unusual;
         }
+        goto after_gql_query;
         break;
       }
 
-      // .google.datastore.v1.GqlQuery gql_query = 7;
+      // optional .google.datastore.v1.GqlQuery gql_query = 7;
       case 7: {
-        if (tag == 58u) {
+        if (tag == 58) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_gql_query()));
         } else {
           goto handle_unusual;
         }
+       after_gql_query:
+        if (input->ExpectTag(66)) goto parse_project_id;
         break;
       }
 
-      // string project_id = 8;
+      // optional string project_id = 8;
       case 8: {
-        if (tag == 66u) {
+        if (tag == 66) {
+         parse_project_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1509,6 +1648,7 @@ bool RunQueryRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1536,31 +1676,31 @@ failure:
 void RunQueryRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1.RunQueryRequest)
-  // .google.datastore.v1.ReadOptions read_options = 1;
+  // optional .google.datastore.v1.ReadOptions read_options = 1;
   if (this->has_read_options()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->read_options_, output);
   }
 
-  // .google.datastore.v1.PartitionId partition_id = 2;
+  // optional .google.datastore.v1.PartitionId partition_id = 2;
   if (this->has_partition_id()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->partition_id_, output);
   }
 
-  // .google.datastore.v1.Query query = 3;
+  // optional .google.datastore.v1.Query query = 3;
   if (has_query()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *query_type_.query_, output);
   }
 
-  // .google.datastore.v1.GqlQuery gql_query = 7;
+  // optional .google.datastore.v1.GqlQuery gql_query = 7;
   if (has_gql_query()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       7, *query_type_.gql_query_, output);
   }
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -1577,35 +1717,35 @@ void RunQueryRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1.RunQueryRequest)
-  // .google.datastore.v1.ReadOptions read_options = 1;
+  // optional .google.datastore.v1.ReadOptions read_options = 1;
   if (this->has_read_options()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->read_options_, false, target);
   }
 
-  // .google.datastore.v1.PartitionId partition_id = 2;
+  // optional .google.datastore.v1.PartitionId partition_id = 2;
   if (this->has_partition_id()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *this->partition_id_, false, target);
   }
 
-  // .google.datastore.v1.Query query = 3;
+  // optional .google.datastore.v1.Query query = 3;
   if (has_query()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         3, *query_type_.query_, false, target);
   }
 
-  // .google.datastore.v1.GqlQuery gql_query = 7;
+  // optional .google.datastore.v1.GqlQuery gql_query = 7;
   if (has_gql_query()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         7, *query_type_.gql_query_, false, target);
   }
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -1624,21 +1764,21 @@ size_t RunQueryRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1.RunQueryRequest)
   size_t total_size = 0;
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   if (this->project_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->project_id());
   }
 
-  // .google.datastore.v1.PartitionId partition_id = 2;
+  // optional .google.datastore.v1.PartitionId partition_id = 2;
   if (this->has_partition_id()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->partition_id_);
   }
 
-  // .google.datastore.v1.ReadOptions read_options = 1;
+  // optional .google.datastore.v1.ReadOptions read_options = 1;
   if (this->has_read_options()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -1646,14 +1786,14 @@ size_t RunQueryRequest::ByteSizeLong() const {
   }
 
   switch (query_type_case()) {
-    // .google.datastore.v1.Query query = 3;
+    // optional .google.datastore.v1.Query query = 3;
     case kQuery: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *query_type_.query_);
       break;
     }
-    // .google.datastore.v1.GqlQuery gql_query = 7;
+    // optional .google.datastore.v1.GqlQuery gql_query = 7;
     case kGqlQuery: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -1673,7 +1813,7 @@ size_t RunQueryRequest::ByteSizeLong() const {
 
 void RunQueryRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1.RunQueryRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const RunQueryRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const RunQueryRequest>(
           &from);
@@ -1682,24 +1822,21 @@ void RunQueryRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1.RunQueryRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void RunQueryRequest::MergeFrom(const RunQueryRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1.RunQueryRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.project_id().size() > 0) {
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
 
-    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
-  }
-  if (from.has_partition_id()) {
-    mutable_partition_id()->::google::datastore::v1::PartitionId::MergeFrom(from.partition_id());
-  }
-  if (from.has_read_options()) {
-    mutable_read_options()->::google::datastore::v1::ReadOptions::MergeFrom(from.read_options());
-  }
+void RunQueryRequest::UnsafeMergeFrom(const RunQueryRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.query_type_case()) {
     case kQuery: {
       mutable_query()->::google::datastore::v1::Query::MergeFrom(from.query());
@@ -1712,6 +1849,16 @@ void RunQueryRequest::MergeFrom(const RunQueryRequest& from) {
     case QUERY_TYPE_NOT_SET: {
       break;
     }
+  }
+  if (from.project_id().size() > 0) {
+
+    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
+  }
+  if (from.has_partition_id()) {
+    mutable_partition_id()->::google::datastore::v1::PartitionId::MergeFrom(from.partition_id());
+  }
+  if (from.has_read_options()) {
+    mutable_read_options()->::google::datastore::v1::ReadOptions::MergeFrom(from.read_options());
   }
 }
 
@@ -1726,10 +1873,11 @@ void RunQueryRequest::CopyFrom(const RunQueryRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1.RunQueryRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool RunQueryRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -1743,24 +1891,28 @@ void RunQueryRequest::InternalSwap(RunQueryRequest* other) {
   std::swap(read_options_, other->read_options_);
   std::swap(query_type_, other->query_type_);
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata RunQueryRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = RunQueryRequest_descriptor_;
+  metadata.reflection = RunQueryRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // RunQueryRequest
 
-// string project_id = 8;
+// optional string project_id = 8;
 void RunQueryRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& RunQueryRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.RunQueryRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void RunQueryRequest::set_project_id(const ::std::string& value) {
   
@@ -1798,7 +1950,7 @@ void RunQueryRequest::set_allocated_project_id(::std::string* project_id) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.RunQueryRequest.project_id)
 }
 
-// .google.datastore.v1.PartitionId partition_id = 2;
+// optional .google.datastore.v1.PartitionId partition_id = 2;
 bool RunQueryRequest::has_partition_id() const {
   return this != internal_default_instance() && partition_id_ != NULL;
 }
@@ -1837,7 +1989,7 @@ void RunQueryRequest::set_allocated_partition_id(::google::datastore::v1::Partit
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.RunQueryRequest.partition_id)
 }
 
-// .google.datastore.v1.ReadOptions read_options = 1;
+// optional .google.datastore.v1.ReadOptions read_options = 1;
 bool RunQueryRequest::has_read_options() const {
   return this != internal_default_instance() && read_options_ != NULL;
 }
@@ -1876,7 +2028,7 @@ void RunQueryRequest::set_allocated_read_options(::google::datastore::v1::ReadOp
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.RunQueryRequest.read_options)
 }
 
-// .google.datastore.v1.Query query = 3;
+// optional .google.datastore.v1.Query query = 3;
 bool RunQueryRequest::has_query() const {
   return query_type_case() == kQuery;
 }
@@ -1924,7 +2076,7 @@ void RunQueryRequest::set_allocated_query(::google::datastore::v1::Query* query)
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.RunQueryRequest.query)
 }
 
-// .google.datastore.v1.GqlQuery gql_query = 7;
+// optional .google.datastore.v1.GqlQuery gql_query = 7;
 bool RunQueryRequest::has_gql_query() const {
   return query_type_case() == kGqlQuery;
 }
@@ -1981,6 +2133,9 @@ void RunQueryRequest::clear_has_query_type() {
 RunQueryRequest::QueryTypeCase RunQueryRequest::query_type_case() const {
   return RunQueryRequest::QueryTypeCase(_oneof_case_[0]);
 }
+inline const RunQueryRequest* RunQueryRequest::internal_default_instance() {
+  return &RunQueryRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1992,33 +2147,29 @@ const int RunQueryResponse::kQueryFieldNumber;
 
 RunQueryResponse::RunQueryResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1.RunQueryResponse)
 }
+
+void RunQueryResponse::InitAsDefaultInstance() {
+  batch_ = const_cast< ::google::datastore::v1::QueryResultBatch*>(
+      ::google::datastore::v1::QueryResultBatch::internal_default_instance());
+  query_ = const_cast< ::google::datastore::v1::Query*>(
+      ::google::datastore::v1::Query::internal_default_instance());
+}
+
 RunQueryResponse::RunQueryResponse(const RunQueryResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_batch()) {
-    batch_ = new ::google::datastore::v1::QueryResultBatch(*from.batch_);
-  } else {
-    batch_ = NULL;
-  }
-  if (from.has_query()) {
-    query_ = new ::google::datastore::v1::Query(*from.query_);
-  } else {
-    query_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1.RunQueryResponse)
 }
 
 void RunQueryResponse::SharedCtor() {
-  ::memset(&batch_, 0, reinterpret_cast<char*>(&query_) -
-    reinterpret_cast<char*>(&batch_) + sizeof(query_));
+  batch_ = NULL;
+  query_ = NULL;
   _cached_size_ = 0;
 }
 
@@ -2028,10 +2179,8 @@ RunQueryResponse::~RunQueryResponse() {
 }
 
 void RunQueryResponse::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &RunQueryResponse_default_instance_.get()) {
     delete batch_;
-  }
-  if (this != internal_default_instance()) {
     delete query_;
   }
 }
@@ -2043,13 +2192,15 @@ void RunQueryResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* RunQueryResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return RunQueryResponse_descriptor_;
 }
 
 const RunQueryResponse& RunQueryResponse::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<RunQueryResponse> RunQueryResponse_default_instance_;
 
 RunQueryResponse* RunQueryResponse::New(::google::protobuf::Arena* arena) const {
   RunQueryResponse* n = new RunQueryResponse;
@@ -2061,13 +2212,9 @@ RunQueryResponse* RunQueryResponse::New(::google::protobuf::Arena* arena) const 
 
 void RunQueryResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.datastore.v1.RunQueryResponse)
-  if (GetArenaNoVirtual() == NULL && batch_ != NULL) {
-    delete batch_;
-  }
+  if (GetArenaNoVirtual() == NULL && batch_ != NULL) delete batch_;
   batch_ = NULL;
-  if (GetArenaNoVirtual() == NULL && query_ != NULL) {
-    delete query_;
-  }
+  if (GetArenaNoVirtual() == NULL && query_ != NULL) delete query_;
   query_ = NULL;
 }
 
@@ -2077,29 +2224,32 @@ bool RunQueryResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1.RunQueryResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.datastore.v1.QueryResultBatch batch = 1;
+      // optional .google.datastore.v1.QueryResultBatch batch = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_batch()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_query;
         break;
       }
 
-      // .google.datastore.v1.Query query = 2;
+      // optional .google.datastore.v1.Query query = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_query:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_query()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2127,13 +2277,13 @@ failure:
 void RunQueryResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1.RunQueryResponse)
-  // .google.datastore.v1.QueryResultBatch batch = 1;
+  // optional .google.datastore.v1.QueryResultBatch batch = 1;
   if (this->has_batch()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->batch_, output);
   }
 
-  // .google.datastore.v1.Query query = 2;
+  // optional .google.datastore.v1.Query query = 2;
   if (this->has_query()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->query_, output);
@@ -2146,14 +2296,14 @@ void RunQueryResponse::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1.RunQueryResponse)
-  // .google.datastore.v1.QueryResultBatch batch = 1;
+  // optional .google.datastore.v1.QueryResultBatch batch = 1;
   if (this->has_batch()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->batch_, false, target);
   }
 
-  // .google.datastore.v1.Query query = 2;
+  // optional .google.datastore.v1.Query query = 2;
   if (this->has_query()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -2168,14 +2318,14 @@ size_t RunQueryResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1.RunQueryResponse)
   size_t total_size = 0;
 
-  // .google.datastore.v1.QueryResultBatch batch = 1;
+  // optional .google.datastore.v1.QueryResultBatch batch = 1;
   if (this->has_batch()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->batch_);
   }
 
-  // .google.datastore.v1.Query query = 2;
+  // optional .google.datastore.v1.Query query = 2;
   if (this->has_query()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -2191,7 +2341,7 @@ size_t RunQueryResponse::ByteSizeLong() const {
 
 void RunQueryResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1.RunQueryResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const RunQueryResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const RunQueryResponse>(
           &from);
@@ -2200,14 +2350,21 @@ void RunQueryResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1.RunQueryResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void RunQueryResponse::MergeFrom(const RunQueryResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1.RunQueryResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void RunQueryResponse::UnsafeMergeFrom(const RunQueryResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_batch()) {
     mutable_batch()->::google::datastore::v1::QueryResultBatch::MergeFrom(from.batch());
   }
@@ -2227,10 +2384,11 @@ void RunQueryResponse::CopyFrom(const RunQueryResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1.RunQueryResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool RunQueryResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -2241,18 +2399,22 @@ void RunQueryResponse::Swap(RunQueryResponse* other) {
 void RunQueryResponse::InternalSwap(RunQueryResponse* other) {
   std::swap(batch_, other->batch_);
   std::swap(query_, other->query_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata RunQueryResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = RunQueryResponse_descriptor_;
+  metadata.reflection = RunQueryResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // RunQueryResponse
 
-// .google.datastore.v1.QueryResultBatch batch = 1;
+// optional .google.datastore.v1.QueryResultBatch batch = 1;
 bool RunQueryResponse::has_batch() const {
   return this != internal_default_instance() && batch_ != NULL;
 }
@@ -2291,7 +2453,7 @@ void RunQueryResponse::set_allocated_batch(::google::datastore::v1::QueryResultB
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.RunQueryResponse.batch)
 }
 
-// .google.datastore.v1.Query query = 2;
+// optional .google.datastore.v1.Query query = 2;
 bool RunQueryResponse::has_query() const {
   return this != internal_default_instance() && query_ != NULL;
 }
@@ -2330,6 +2492,9 @@ void RunQueryResponse::set_allocated_query(::google::datastore::v1::Query* query
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.RunQueryResponse.query)
 }
 
+inline const RunQueryResponse* RunQueryResponse::internal_default_instance() {
+  return &RunQueryResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2340,21 +2505,19 @@ const int BeginTransactionRequest::kProjectIdFieldNumber;
 
 BeginTransactionRequest::BeginTransactionRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1.BeginTransactionRequest)
 }
+
+void BeginTransactionRequest::InitAsDefaultInstance() {
+}
+
 BeginTransactionRequest::BeginTransactionRequest(const BeginTransactionRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1.BeginTransactionRequest)
 }
 
@@ -2379,13 +2542,15 @@ void BeginTransactionRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* BeginTransactionRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return BeginTransactionRequest_descriptor_;
 }
 
 const BeginTransactionRequest& BeginTransactionRequest::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<BeginTransactionRequest> BeginTransactionRequest_default_instance_;
 
 BeginTransactionRequest* BeginTransactionRequest::New(::google::protobuf::Arena* arena) const {
   BeginTransactionRequest* n = new BeginTransactionRequest;
@@ -2406,13 +2571,13 @@ bool BeginTransactionRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1.BeginTransactionRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string project_id = 8;
+      // optional string project_id = 8;
       case 8: {
-        if (tag == 66u) {
+        if (tag == 66) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2422,6 +2587,7 @@ bool BeginTransactionRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2449,7 +2615,7 @@ failure:
 void BeginTransactionRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1.BeginTransactionRequest)
-  // string project_id = 8;
+  // optional string project_id = 8;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -2466,7 +2632,7 @@ void BeginTransactionRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1.BeginTransactionRequest)
-  // string project_id = 8;
+  // optional string project_id = 8;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -2485,7 +2651,7 @@ size_t BeginTransactionRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1.BeginTransactionRequest)
   size_t total_size = 0;
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   if (this->project_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -2501,7 +2667,7 @@ size_t BeginTransactionRequest::ByteSizeLong() const {
 
 void BeginTransactionRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1.BeginTransactionRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const BeginTransactionRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const BeginTransactionRequest>(
           &from);
@@ -2510,14 +2676,21 @@ void BeginTransactionRequest::MergeFrom(const ::google::protobuf::Message& from)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1.BeginTransactionRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void BeginTransactionRequest::MergeFrom(const BeginTransactionRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1.BeginTransactionRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void BeginTransactionRequest::UnsafeMergeFrom(const BeginTransactionRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -2535,10 +2708,11 @@ void BeginTransactionRequest::CopyFrom(const BeginTransactionRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1.BeginTransactionRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool BeginTransactionRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -2548,24 +2722,28 @@ void BeginTransactionRequest::Swap(BeginTransactionRequest* other) {
 }
 void BeginTransactionRequest::InternalSwap(BeginTransactionRequest* other) {
   project_id_.Swap(&other->project_id_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata BeginTransactionRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = BeginTransactionRequest_descriptor_;
+  metadata.reflection = BeginTransactionRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // BeginTransactionRequest
 
-// string project_id = 8;
+// optional string project_id = 8;
 void BeginTransactionRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& BeginTransactionRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.BeginTransactionRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void BeginTransactionRequest::set_project_id(const ::std::string& value) {
   
@@ -2603,6 +2781,9 @@ void BeginTransactionRequest::set_allocated_project_id(::std::string* project_id
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.BeginTransactionRequest.project_id)
 }
 
+inline const BeginTransactionRequest* BeginTransactionRequest::internal_default_instance() {
+  return &BeginTransactionRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2613,21 +2794,19 @@ const int BeginTransactionResponse::kTransactionFieldNumber;
 
 BeginTransactionResponse::BeginTransactionResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1.BeginTransactionResponse)
 }
+
+void BeginTransactionResponse::InitAsDefaultInstance() {
+}
+
 BeginTransactionResponse::BeginTransactionResponse(const BeginTransactionResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  transaction_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.transaction().size() > 0) {
-    transaction_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.transaction_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1.BeginTransactionResponse)
 }
 
@@ -2652,13 +2831,15 @@ void BeginTransactionResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* BeginTransactionResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
+  return BeginTransactionResponse_descriptor_;
 }
 
 const BeginTransactionResponse& BeginTransactionResponse::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<BeginTransactionResponse> BeginTransactionResponse_default_instance_;
 
 BeginTransactionResponse* BeginTransactionResponse::New(::google::protobuf::Arena* arena) const {
   BeginTransactionResponse* n = new BeginTransactionResponse;
@@ -2679,18 +2860,19 @@ bool BeginTransactionResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1.BeginTransactionResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // bytes transaction = 1;
+      // optional bytes transaction = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_transaction()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2718,7 +2900,7 @@ failure:
 void BeginTransactionResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1.BeginTransactionResponse)
-  // bytes transaction = 1;
+  // optional bytes transaction = 1;
   if (this->transaction().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       1, this->transaction(), output);
@@ -2731,7 +2913,7 @@ void BeginTransactionResponse::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1.BeginTransactionResponse)
-  // bytes transaction = 1;
+  // optional bytes transaction = 1;
   if (this->transaction().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
@@ -2746,7 +2928,7 @@ size_t BeginTransactionResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1.BeginTransactionResponse)
   size_t total_size = 0;
 
-  // bytes transaction = 1;
+  // optional bytes transaction = 1;
   if (this->transaction().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
@@ -2762,7 +2944,7 @@ size_t BeginTransactionResponse::ByteSizeLong() const {
 
 void BeginTransactionResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1.BeginTransactionResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const BeginTransactionResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const BeginTransactionResponse>(
           &from);
@@ -2771,14 +2953,21 @@ void BeginTransactionResponse::MergeFrom(const ::google::protobuf::Message& from
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1.BeginTransactionResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void BeginTransactionResponse::MergeFrom(const BeginTransactionResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1.BeginTransactionResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void BeginTransactionResponse::UnsafeMergeFrom(const BeginTransactionResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.transaction().size() > 0) {
 
     transaction_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.transaction_);
@@ -2796,10 +2985,11 @@ void BeginTransactionResponse::CopyFrom(const BeginTransactionResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1.BeginTransactionResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool BeginTransactionResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -2809,24 +2999,28 @@ void BeginTransactionResponse::Swap(BeginTransactionResponse* other) {
 }
 void BeginTransactionResponse::InternalSwap(BeginTransactionResponse* other) {
   transaction_.Swap(&other->transaction_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata BeginTransactionResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = BeginTransactionResponse_descriptor_;
+  metadata.reflection = BeginTransactionResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // BeginTransactionResponse
 
-// bytes transaction = 1;
+// optional bytes transaction = 1;
 void BeginTransactionResponse::clear_transaction() {
   transaction_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& BeginTransactionResponse::transaction() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.BeginTransactionResponse.transaction)
-  return transaction_.GetNoArena();
+  return transaction_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void BeginTransactionResponse::set_transaction(const ::std::string& value) {
   
@@ -2864,6 +3058,9 @@ void BeginTransactionResponse::set_allocated_transaction(::std::string* transact
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.BeginTransactionResponse.transaction)
 }
 
+inline const BeginTransactionResponse* BeginTransactionResponse::internal_default_instance() {
+  return &BeginTransactionResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2875,25 +3072,19 @@ const int RollbackRequest::kTransactionFieldNumber;
 
 RollbackRequest::RollbackRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1.RollbackRequest)
 }
+
+void RollbackRequest::InitAsDefaultInstance() {
+}
+
 RollbackRequest::RollbackRequest(const RollbackRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
-  }
-  transaction_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.transaction().size() > 0) {
-    transaction_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.transaction_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1.RollbackRequest)
 }
 
@@ -2920,13 +3111,15 @@ void RollbackRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* RollbackRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6].descriptor;
+  return RollbackRequest_descriptor_;
 }
 
 const RollbackRequest& RollbackRequest::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<RollbackRequest> RollbackRequest_default_instance_;
 
 RollbackRequest* RollbackRequest::New(::google::protobuf::Arena* arena) const {
   RollbackRequest* n = new RollbackRequest;
@@ -2948,24 +3141,26 @@ bool RollbackRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1.RollbackRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // bytes transaction = 1;
+      // optional bytes transaction = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_transaction()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(66)) goto parse_project_id;
         break;
       }
 
-      // string project_id = 8;
+      // optional string project_id = 8;
       case 8: {
-        if (tag == 66u) {
+        if (tag == 66) {
+         parse_project_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2975,6 +3170,7 @@ bool RollbackRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3002,13 +3198,13 @@ failure:
 void RollbackRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1.RollbackRequest)
-  // bytes transaction = 1;
+  // optional bytes transaction = 1;
   if (this->transaction().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       1, this->transaction(), output);
   }
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -3025,14 +3221,14 @@ void RollbackRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1.RollbackRequest)
-  // bytes transaction = 1;
+  // optional bytes transaction = 1;
   if (this->transaction().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         1, this->transaction(), target);
   }
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -3051,14 +3247,14 @@ size_t RollbackRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1.RollbackRequest)
   size_t total_size = 0;
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   if (this->project_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->project_id());
   }
 
-  // bytes transaction = 1;
+  // optional bytes transaction = 1;
   if (this->transaction().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
@@ -3074,7 +3270,7 @@ size_t RollbackRequest::ByteSizeLong() const {
 
 void RollbackRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1.RollbackRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const RollbackRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const RollbackRequest>(
           &from);
@@ -3083,14 +3279,21 @@ void RollbackRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1.RollbackRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void RollbackRequest::MergeFrom(const RollbackRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1.RollbackRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void RollbackRequest::UnsafeMergeFrom(const RollbackRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -3112,10 +3315,11 @@ void RollbackRequest::CopyFrom(const RollbackRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1.RollbackRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool RollbackRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -3126,24 +3330,28 @@ void RollbackRequest::Swap(RollbackRequest* other) {
 void RollbackRequest::InternalSwap(RollbackRequest* other) {
   project_id_.Swap(&other->project_id_);
   transaction_.Swap(&other->transaction_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata RollbackRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = RollbackRequest_descriptor_;
+  metadata.reflection = RollbackRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // RollbackRequest
 
-// string project_id = 8;
+// optional string project_id = 8;
 void RollbackRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& RollbackRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.RollbackRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void RollbackRequest::set_project_id(const ::std::string& value) {
   
@@ -3181,13 +3389,13 @@ void RollbackRequest::set_allocated_project_id(::std::string* project_id) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.RollbackRequest.project_id)
 }
 
-// bytes transaction = 1;
+// optional bytes transaction = 1;
 void RollbackRequest::clear_transaction() {
   transaction_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& RollbackRequest::transaction() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.RollbackRequest.transaction)
-  return transaction_.GetNoArena();
+  return transaction_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void RollbackRequest::set_transaction(const ::std::string& value) {
   
@@ -3225,6 +3433,9 @@ void RollbackRequest::set_allocated_transaction(::std::string* transaction) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.RollbackRequest.transaction)
 }
 
+inline const RollbackRequest* RollbackRequest::internal_default_instance() {
+  return &RollbackRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3234,17 +3445,19 @@ void RollbackRequest::set_allocated_transaction(::std::string* transaction) {
 
 RollbackResponse::RollbackResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1.RollbackResponse)
 }
+
+void RollbackResponse::InitAsDefaultInstance() {
+}
+
 RollbackResponse::RollbackResponse(const RollbackResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1.RollbackResponse)
 }
 
@@ -3267,13 +3480,15 @@ void RollbackResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* RollbackResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7].descriptor;
+  return RollbackResponse_descriptor_;
 }
 
 const RollbackResponse& RollbackResponse::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<RollbackResponse> RollbackResponse_default_instance_;
 
 RollbackResponse* RollbackResponse::New(::google::protobuf::Arena* arena) const {
   RollbackResponse* n = new RollbackResponse;
@@ -3293,7 +3508,7 @@ bool RollbackResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1.RollbackResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
   handle_unusual:
@@ -3340,7 +3555,7 @@ size_t RollbackResponse::ByteSizeLong() const {
 
 void RollbackResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1.RollbackResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const RollbackResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const RollbackResponse>(
           &from);
@@ -3349,14 +3564,21 @@ void RollbackResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1.RollbackResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void RollbackResponse::MergeFrom(const RollbackResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1.RollbackResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void RollbackResponse::UnsafeMergeFrom(const RollbackResponse& from) {
+  GOOGLE_DCHECK(&from != this);
 }
 
 void RollbackResponse::CopyFrom(const ::google::protobuf::Message& from) {
@@ -3370,10 +3592,11 @@ void RollbackResponse::CopyFrom(const RollbackResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1.RollbackResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool RollbackResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -3382,21 +3605,51 @@ void RollbackResponse::Swap(RollbackResponse* other) {
   InternalSwap(other);
 }
 void RollbackResponse::InternalSwap(RollbackResponse* other) {
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata RollbackResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = RollbackResponse_descriptor_;
+  metadata.reflection = RollbackResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // RollbackResponse
 
+inline const RollbackResponse* RollbackResponse::internal_default_instance() {
+  return &RollbackResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* CommitRequest_Mode_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return CommitRequest_Mode_descriptor_;
+}
+bool CommitRequest_Mode_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const CommitRequest_Mode CommitRequest::MODE_UNSPECIFIED;
+const CommitRequest_Mode CommitRequest::TRANSACTIONAL;
+const CommitRequest_Mode CommitRequest::NON_TRANSACTIONAL;
+const CommitRequest_Mode CommitRequest::Mode_MIN;
+const CommitRequest_Mode CommitRequest::Mode_MAX;
+const int CommitRequest::Mode_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int CommitRequest::kProjectIdFieldNumber;
 const int CommitRequest::kModeFieldNumber;
@@ -3406,33 +3659,20 @@ const int CommitRequest::kMutationsFieldNumber;
 
 CommitRequest::CommitRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1.CommitRequest)
 }
+
+void CommitRequest::InitAsDefaultInstance() {
+  CommitRequest_default_oneof_instance_->transaction_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
 CommitRequest::CommitRequest(const CommitRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      mutations_(from.mutations_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
-  }
-  mode_ = from.mode_;
-  clear_has_transaction_selector();
-  switch (from.transaction_selector_case()) {
-    case kTransaction: {
-      set_transaction(from.transaction());
-      break;
-    }
-    case TRANSACTION_SELECTOR_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1.CommitRequest)
 }
 
@@ -3462,13 +3702,15 @@ void CommitRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* CommitRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8].descriptor;
+  return CommitRequest_descriptor_;
 }
 
 const CommitRequest& CommitRequest::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<CommitRequest> CommitRequest_default_instance_;
 
 CommitRequest* CommitRequest::New(::google::protobuf::Arena* arena) const {
   CommitRequest* n = new CommitRequest;
@@ -3495,9 +3737,9 @@ void CommitRequest::clear_transaction_selector() {
 
 void CommitRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.datastore.v1.CommitRequest)
-  mutations_.Clear();
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   mode_ = 0;
+  mutations_.Clear();
   clear_transaction_selector();
 }
 
@@ -3507,24 +3749,26 @@ bool CommitRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1.CommitRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // bytes transaction = 1;
+      // optional bytes transaction = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_transaction()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(40)) goto parse_mode;
         break;
       }
 
-      // .google.datastore.v1.CommitRequest.Mode mode = 5;
+      // optional .google.datastore.v1.CommitRequest.Mode mode = 5;
       case 5: {
-        if (tag == 40u) {
+        if (tag == 40) {
+         parse_mode:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -3533,25 +3777,31 @@ bool CommitRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(50)) goto parse_mutations;
         break;
       }
 
       // repeated .google.datastore.v1.Mutation mutations = 6;
       case 6: {
-        if (tag == 50u) {
+        if (tag == 50) {
+         parse_mutations:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_mutations:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_mutations()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(50)) goto parse_loop_mutations;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(66)) goto parse_project_id;
         break;
       }
 
-      // string project_id = 8;
+      // optional string project_id = 8;
       case 8: {
-        if (tag == 66u) {
+        if (tag == 66) {
+         parse_project_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3561,6 +3811,7 @@ bool CommitRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3588,13 +3839,13 @@ failure:
 void CommitRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1.CommitRequest)
-  // bytes transaction = 1;
+  // optional bytes transaction = 1;
   if (has_transaction()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       1, this->transaction(), output);
   }
 
-  // .google.datastore.v1.CommitRequest.Mode mode = 5;
+  // optional .google.datastore.v1.CommitRequest.Mode mode = 5;
   if (this->mode() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       5, this->mode(), output);
@@ -3606,7 +3857,7 @@ void CommitRequest::SerializeWithCachedSizes(
       6, this->mutations(i), output);
   }
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -3623,14 +3874,14 @@ void CommitRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1.CommitRequest)
-  // bytes transaction = 1;
+  // optional bytes transaction = 1;
   if (has_transaction()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         1, this->transaction(), target);
   }
 
-  // .google.datastore.v1.CommitRequest.Mode mode = 5;
+  // optional .google.datastore.v1.CommitRequest.Mode mode = 5;
   if (this->mode() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       5, this->mode(), target);
@@ -3643,7 +3894,7 @@ void CommitRequest::SerializeWithCachedSizes(
         6, this->mutations(i), false, target);
   }
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -3662,6 +3913,19 @@ size_t CommitRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1.CommitRequest)
   size_t total_size = 0;
 
+  // optional string project_id = 8;
+  if (this->project_id().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->project_id());
+  }
+
+  // optional .google.datastore.v1.CommitRequest.Mode mode = 5;
+  if (this->mode() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->mode());
+  }
+
   // repeated .google.datastore.v1.Mutation mutations = 6;
   {
     unsigned int count = this->mutations_size();
@@ -3673,21 +3937,8 @@ size_t CommitRequest::ByteSizeLong() const {
     }
   }
 
-  // string project_id = 8;
-  if (this->project_id().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->project_id());
-  }
-
-  // .google.datastore.v1.CommitRequest.Mode mode = 5;
-  if (this->mode() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->mode());
-  }
-
   switch (transaction_selector_case()) {
-    // bytes transaction = 1;
+    // optional bytes transaction = 1;
     case kTransaction: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
@@ -3707,7 +3958,7 @@ size_t CommitRequest::ByteSizeLong() const {
 
 void CommitRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1.CommitRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const CommitRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CommitRequest>(
           &from);
@@ -3716,22 +3967,22 @@ void CommitRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1.CommitRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CommitRequest::MergeFrom(const CommitRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1.CommitRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  mutations_.MergeFrom(from.mutations_);
-  if (from.project_id().size() > 0) {
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
 
-    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
-  }
-  if (from.mode() != 0) {
-    set_mode(from.mode());
-  }
+void CommitRequest::UnsafeMergeFrom(const CommitRequest& from) {
+  GOOGLE_DCHECK(&from != this);
+  mutations_.MergeFrom(from.mutations_);
   switch (from.transaction_selector_case()) {
     case kTransaction: {
       set_transaction(from.transaction());
@@ -3740,6 +3991,13 @@ void CommitRequest::MergeFrom(const CommitRequest& from) {
     case TRANSACTION_SELECTOR_NOT_SET: {
       break;
     }
+  }
+  if (from.project_id().size() > 0) {
+
+    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
+  }
+  if (from.mode() != 0) {
+    set_mode(from.mode());
   }
 }
 
@@ -3754,10 +4012,11 @@ void CommitRequest::CopyFrom(const CommitRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1.CommitRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CommitRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -3766,29 +4025,33 @@ void CommitRequest::Swap(CommitRequest* other) {
   InternalSwap(other);
 }
 void CommitRequest::InternalSwap(CommitRequest* other) {
-  mutations_.UnsafeArenaSwap(&other->mutations_);
   project_id_.Swap(&other->project_id_);
   std::swap(mode_, other->mode_);
+  mutations_.UnsafeArenaSwap(&other->mutations_);
   std::swap(transaction_selector_, other->transaction_selector_);
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CommitRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CommitRequest_descriptor_;
+  metadata.reflection = CommitRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // CommitRequest
 
-// string project_id = 8;
+// optional string project_id = 8;
 void CommitRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& CommitRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.CommitRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void CommitRequest::set_project_id(const ::std::string& value) {
   
@@ -3826,7 +4089,7 @@ void CommitRequest::set_allocated_project_id(::std::string* project_id) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.CommitRequest.project_id)
 }
 
-// .google.datastore.v1.CommitRequest.Mode mode = 5;
+// optional .google.datastore.v1.CommitRequest.Mode mode = 5;
 void CommitRequest::clear_mode() {
   mode_ = 0;
 }
@@ -3840,7 +4103,7 @@ void CommitRequest::set_mode(::google::datastore::v1::CommitRequest_Mode value) 
   // @@protoc_insertion_point(field_set:google.datastore.v1.CommitRequest.mode)
 }
 
-// bytes transaction = 1;
+// optional bytes transaction = 1;
 bool CommitRequest::has_transaction() const {
   return transaction_selector_case() == kTransaction;
 }
@@ -3856,7 +4119,7 @@ void CommitRequest::clear_transaction() {
 const ::std::string& CommitRequest::transaction() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.CommitRequest.transaction)
   if (has_transaction()) {
-    return transaction_selector_.transaction_.GetNoArena();
+    return transaction_selector_.transaction_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3960,6 +4223,9 @@ void CommitRequest::clear_has_transaction_selector() {
 CommitRequest::TransactionSelectorCase CommitRequest::transaction_selector_case() const {
   return CommitRequest::TransactionSelectorCase(_oneof_case_[0]);
 }
+inline const CommitRequest* CommitRequest::internal_default_instance() {
+  return &CommitRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3971,19 +4237,19 @@ const int CommitResponse::kIndexUpdatesFieldNumber;
 
 CommitResponse::CommitResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1.CommitResponse)
 }
+
+void CommitResponse::InitAsDefaultInstance() {
+}
+
 CommitResponse::CommitResponse(const CommitResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      mutation_results_(from.mutation_results_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  index_updates_ = from.index_updates_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1.CommitResponse)
 }
 
@@ -4007,13 +4273,15 @@ void CommitResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* CommitResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9].descriptor;
+  return CommitResponse_descriptor_;
 }
 
 const CommitResponse& CommitResponse::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<CommitResponse> CommitResponse_default_instance_;
 
 CommitResponse* CommitResponse::New(::google::protobuf::Arena* arena) const {
   CommitResponse* n = new CommitResponse;
@@ -4025,8 +4293,8 @@ CommitResponse* CommitResponse::New(::google::protobuf::Arena* arena) const {
 
 void CommitResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.datastore.v1.CommitResponse)
-  mutation_results_.Clear();
   index_updates_ = 0;
+  mutation_results_.Clear();
 }
 
 bool CommitResponse::MergePartialFromCodedStream(
@@ -4035,26 +4303,30 @@ bool CommitResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1.CommitResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.datastore.v1.MutationResult mutation_results = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_mutation_results:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_mutation_results()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_loop_mutation_results;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(32)) goto parse_index_updates;
         break;
       }
 
-      // int32 index_updates = 4;
+      // optional int32 index_updates = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_index_updates:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -4062,6 +4334,7 @@ bool CommitResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4095,7 +4368,7 @@ void CommitResponse::SerializeWithCachedSizes(
       3, this->mutation_results(i), output);
   }
 
-  // int32 index_updates = 4;
+  // optional int32 index_updates = 4;
   if (this->index_updates() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->index_updates(), output);
   }
@@ -4114,7 +4387,7 @@ void CommitResponse::SerializeWithCachedSizes(
         3, this->mutation_results(i), false, target);
   }
 
-  // int32 index_updates = 4;
+  // optional int32 index_updates = 4;
   if (this->index_updates() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->index_updates(), target);
   }
@@ -4127,6 +4400,13 @@ size_t CommitResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1.CommitResponse)
   size_t total_size = 0;
 
+  // optional int32 index_updates = 4;
+  if (this->index_updates() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->index_updates());
+  }
+
   // repeated .google.datastore.v1.MutationResult mutation_results = 3;
   {
     unsigned int count = this->mutation_results_size();
@@ -4138,13 +4418,6 @@ size_t CommitResponse::ByteSizeLong() const {
     }
   }
 
-  // int32 index_updates = 4;
-  if (this->index_updates() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->index_updates());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -4154,7 +4427,7 @@ size_t CommitResponse::ByteSizeLong() const {
 
 void CommitResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1.CommitResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const CommitResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CommitResponse>(
           &from);
@@ -4163,14 +4436,21 @@ void CommitResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1.CommitResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CommitResponse::MergeFrom(const CommitResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1.CommitResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void CommitResponse::UnsafeMergeFrom(const CommitResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   mutation_results_.MergeFrom(from.mutation_results_);
   if (from.index_updates() != 0) {
     set_index_updates(from.index_updates());
@@ -4188,10 +4468,11 @@ void CommitResponse::CopyFrom(const CommitResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1.CommitResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CommitResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -4202,12 +4483,16 @@ void CommitResponse::Swap(CommitResponse* other) {
 void CommitResponse::InternalSwap(CommitResponse* other) {
   mutation_results_.UnsafeArenaSwap(&other->mutation_results_);
   std::swap(index_updates_, other->index_updates_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CommitResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CommitResponse_descriptor_;
+  metadata.reflection = CommitResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -4243,7 +4528,7 @@ CommitResponse::mutation_results() const {
   return mutation_results_;
 }
 
-// int32 index_updates = 4;
+// optional int32 index_updates = 4;
 void CommitResponse::clear_index_updates() {
   index_updates_ = 0;
 }
@@ -4257,6 +4542,9 @@ void CommitResponse::set_index_updates(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.datastore.v1.CommitResponse.index_updates)
 }
 
+inline const CommitResponse* CommitResponse::internal_default_instance() {
+  return &CommitResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4268,22 +4556,19 @@ const int AllocateIdsRequest::kKeysFieldNumber;
 
 AllocateIdsRequest::AllocateIdsRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1.AllocateIdsRequest)
 }
+
+void AllocateIdsRequest::InitAsDefaultInstance() {
+}
+
 AllocateIdsRequest::AllocateIdsRequest(const AllocateIdsRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      keys_(from.keys_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1.AllocateIdsRequest)
 }
 
@@ -4308,13 +4593,15 @@ void AllocateIdsRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* AllocateIdsRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10].descriptor;
+  return AllocateIdsRequest_descriptor_;
 }
 
 const AllocateIdsRequest& AllocateIdsRequest::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<AllocateIdsRequest> AllocateIdsRequest_default_instance_;
 
 AllocateIdsRequest* AllocateIdsRequest::New(::google::protobuf::Arena* arena) const {
   AllocateIdsRequest* n = new AllocateIdsRequest;
@@ -4326,8 +4613,8 @@ AllocateIdsRequest* AllocateIdsRequest::New(::google::protobuf::Arena* arena) co
 
 void AllocateIdsRequest::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.datastore.v1.AllocateIdsRequest)
-  keys_.Clear();
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  keys_.Clear();
 }
 
 bool AllocateIdsRequest::MergePartialFromCodedStream(
@@ -4336,26 +4623,30 @@ bool AllocateIdsRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1.AllocateIdsRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.datastore.v1.Key keys = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_keys:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_keys()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_keys;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(66)) goto parse_project_id;
         break;
       }
 
-      // string project_id = 8;
+      // optional string project_id = 8;
       case 8: {
-        if (tag == 66u) {
+        if (tag == 66) {
+         parse_project_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4365,6 +4656,7 @@ bool AllocateIdsRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4398,7 +4690,7 @@ void AllocateIdsRequest::SerializeWithCachedSizes(
       1, this->keys(i), output);
   }
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -4422,7 +4714,7 @@ void AllocateIdsRequest::SerializeWithCachedSizes(
         1, this->keys(i), false, target);
   }
 
-  // string project_id = 8;
+  // optional string project_id = 8;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -4441,6 +4733,13 @@ size_t AllocateIdsRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1.AllocateIdsRequest)
   size_t total_size = 0;
 
+  // optional string project_id = 8;
+  if (this->project_id().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->project_id());
+  }
+
   // repeated .google.datastore.v1.Key keys = 1;
   {
     unsigned int count = this->keys_size();
@@ -4452,13 +4751,6 @@ size_t AllocateIdsRequest::ByteSizeLong() const {
     }
   }
 
-  // string project_id = 8;
-  if (this->project_id().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->project_id());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -4468,7 +4760,7 @@ size_t AllocateIdsRequest::ByteSizeLong() const {
 
 void AllocateIdsRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1.AllocateIdsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const AllocateIdsRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AllocateIdsRequest>(
           &from);
@@ -4477,14 +4769,21 @@ void AllocateIdsRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1.AllocateIdsRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AllocateIdsRequest::MergeFrom(const AllocateIdsRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1.AllocateIdsRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void AllocateIdsRequest::UnsafeMergeFrom(const AllocateIdsRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   keys_.MergeFrom(from.keys_);
   if (from.project_id().size() > 0) {
 
@@ -4503,10 +4802,11 @@ void AllocateIdsRequest::CopyFrom(const AllocateIdsRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1.AllocateIdsRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AllocateIdsRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -4515,26 +4815,30 @@ void AllocateIdsRequest::Swap(AllocateIdsRequest* other) {
   InternalSwap(other);
 }
 void AllocateIdsRequest::InternalSwap(AllocateIdsRequest* other) {
-  keys_.UnsafeArenaSwap(&other->keys_);
   project_id_.Swap(&other->project_id_);
+  keys_.UnsafeArenaSwap(&other->keys_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata AllocateIdsRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = AllocateIdsRequest_descriptor_;
+  metadata.reflection = AllocateIdsRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // AllocateIdsRequest
 
-// string project_id = 8;
+// optional string project_id = 8;
 void AllocateIdsRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& AllocateIdsRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.AllocateIdsRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void AllocateIdsRequest::set_project_id(const ::std::string& value) {
   
@@ -4602,6 +4906,9 @@ AllocateIdsRequest::keys() const {
   return keys_;
 }
 
+inline const AllocateIdsRequest* AllocateIdsRequest::internal_default_instance() {
+  return &AllocateIdsRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4612,18 +4919,19 @@ const int AllocateIdsResponse::kKeysFieldNumber;
 
 AllocateIdsResponse::AllocateIdsResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1.AllocateIdsResponse)
 }
+
+void AllocateIdsResponse::InitAsDefaultInstance() {
+}
+
 AllocateIdsResponse::AllocateIdsResponse(const AllocateIdsResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      keys_(from.keys_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1.AllocateIdsResponse)
 }
 
@@ -4646,13 +4954,15 @@ void AllocateIdsResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* AllocateIdsResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11].descriptor;
+  return AllocateIdsResponse_descriptor_;
 }
 
 const AllocateIdsResponse& AllocateIdsResponse::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<AllocateIdsResponse> AllocateIdsResponse_default_instance_;
 
 AllocateIdsResponse* AllocateIdsResponse::New(::google::protobuf::Arena* arena) const {
   AllocateIdsResponse* n = new AllocateIdsResponse;
@@ -4673,20 +4983,23 @@ bool AllocateIdsResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1.AllocateIdsResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.datastore.v1.Key keys = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_keys:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_keys()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_keys;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4762,7 +5075,7 @@ size_t AllocateIdsResponse::ByteSizeLong() const {
 
 void AllocateIdsResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1.AllocateIdsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const AllocateIdsResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AllocateIdsResponse>(
           &from);
@@ -4771,14 +5084,21 @@ void AllocateIdsResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1.AllocateIdsResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AllocateIdsResponse::MergeFrom(const AllocateIdsResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1.AllocateIdsResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void AllocateIdsResponse::UnsafeMergeFrom(const AllocateIdsResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   keys_.MergeFrom(from.keys_);
 }
 
@@ -4793,10 +5113,11 @@ void AllocateIdsResponse::CopyFrom(const AllocateIdsResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1.AllocateIdsResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AllocateIdsResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -4806,12 +5127,16 @@ void AllocateIdsResponse::Swap(AllocateIdsResponse* other) {
 }
 void AllocateIdsResponse::InternalSwap(AllocateIdsResponse* other) {
   keys_.UnsafeArenaSwap(&other->keys_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata AllocateIdsResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = AllocateIdsResponse_descriptor_;
+  metadata.reflection = AllocateIdsResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -4847,6 +5172,9 @@ AllocateIdsResponse::keys() const {
   return keys_;
 }
 
+inline const AllocateIdsResponse* AllocateIdsResponse::internal_default_instance() {
+  return &AllocateIdsResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4861,49 +5189,28 @@ const int Mutation::kBaseVersionFieldNumber;
 
 Mutation::Mutation()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1.Mutation)
 }
+
+void Mutation::InitAsDefaultInstance() {
+  Mutation_default_oneof_instance_->insert_ = const_cast< ::google::datastore::v1::Entity*>(
+      ::google::datastore::v1::Entity::internal_default_instance());
+  Mutation_default_oneof_instance_->update_ = const_cast< ::google::datastore::v1::Entity*>(
+      ::google::datastore::v1::Entity::internal_default_instance());
+  Mutation_default_oneof_instance_->upsert_ = const_cast< ::google::datastore::v1::Entity*>(
+      ::google::datastore::v1::Entity::internal_default_instance());
+  Mutation_default_oneof_instance_->delete__ = const_cast< ::google::datastore::v1::Key*>(
+      ::google::datastore::v1::Key::internal_default_instance());
+  Mutation_default_oneof_instance_->base_version_ = GOOGLE_LONGLONG(0);
+}
+
 Mutation::Mutation(const Mutation& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  clear_has_operation();
-  switch (from.operation_case()) {
-    case kInsert: {
-      mutable_insert()->::google::datastore::v1::Entity::MergeFrom(from.insert());
-      break;
-    }
-    case kUpdate: {
-      mutable_update()->::google::datastore::v1::Entity::MergeFrom(from.update());
-      break;
-    }
-    case kUpsert: {
-      mutable_upsert()->::google::datastore::v1::Entity::MergeFrom(from.upsert());
-      break;
-    }
-    case kDelete: {
-      mutable_delete_()->::google::datastore::v1::Key::MergeFrom(from.delete_());
-      break;
-    }
-    case OPERATION_NOT_SET: {
-      break;
-    }
-  }
-  clear_has_conflict_detection_strategy();
-  switch (from.conflict_detection_strategy_case()) {
-    case kBaseVersion: {
-      set_base_version(from.base_version());
-      break;
-    }
-    case CONFLICT_DETECTION_STRATEGY_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1.Mutation)
 }
 
@@ -4934,13 +5241,15 @@ void Mutation::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Mutation::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[12].descriptor;
+  return Mutation_descriptor_;
 }
 
 const Mutation& Mutation::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Mutation> Mutation_default_instance_;
 
 Mutation* Mutation::New(::google::protobuf::Arena* arena) const {
   Mutation* n = new Mutation;
@@ -5003,57 +5312,64 @@ bool Mutation::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1.Mutation)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.datastore.v1.Entity insert = 4;
+      // optional .google.datastore.v1.Entity insert = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_insert()));
         } else {
           goto handle_unusual;
         }
+        goto after_delete_;
         break;
       }
 
-      // .google.datastore.v1.Entity update = 5;
+      // optional .google.datastore.v1.Entity update = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_update()));
         } else {
           goto handle_unusual;
         }
+        goto after_delete_;
         break;
       }
 
-      // .google.datastore.v1.Entity upsert = 6;
+      // optional .google.datastore.v1.Entity upsert = 6;
       case 6: {
-        if (tag == 50u) {
+        if (tag == 50) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_upsert()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(58)) goto parse_delete;
         break;
       }
 
-      // .google.datastore.v1.Key delete = 7;
+      // optional .google.datastore.v1.Key delete = 7;
       case 7: {
-        if (tag == 58u) {
+        if (tag == 58) {
+         parse_delete:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_delete_()));
         } else {
           goto handle_unusual;
         }
+       after_delete_:
+        if (input->ExpectTag(64)) goto parse_base_version;
         break;
       }
 
-      // int64 base_version = 8;
+      // optional int64 base_version = 8;
       case 8: {
-        if (tag == 64u) {
+        if (tag == 64) {
+         parse_base_version:
           clear_conflict_detection_strategy();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -5062,6 +5378,7 @@ bool Mutation::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -5089,31 +5406,31 @@ failure:
 void Mutation::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1.Mutation)
-  // .google.datastore.v1.Entity insert = 4;
+  // optional .google.datastore.v1.Entity insert = 4;
   if (has_insert()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, *operation_.insert_, output);
   }
 
-  // .google.datastore.v1.Entity update = 5;
+  // optional .google.datastore.v1.Entity update = 5;
   if (has_update()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       5, *operation_.update_, output);
   }
 
-  // .google.datastore.v1.Entity upsert = 6;
+  // optional .google.datastore.v1.Entity upsert = 6;
   if (has_upsert()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       6, *operation_.upsert_, output);
   }
 
-  // .google.datastore.v1.Key delete = 7;
+  // optional .google.datastore.v1.Key delete = 7;
   if (has_delete_()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       7, *operation_.delete__, output);
   }
 
-  // int64 base_version = 8;
+  // optional int64 base_version = 8;
   if (has_base_version()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(8, this->base_version(), output);
   }
@@ -5125,35 +5442,35 @@ void Mutation::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1.Mutation)
-  // .google.datastore.v1.Entity insert = 4;
+  // optional .google.datastore.v1.Entity insert = 4;
   if (has_insert()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         4, *operation_.insert_, false, target);
   }
 
-  // .google.datastore.v1.Entity update = 5;
+  // optional .google.datastore.v1.Entity update = 5;
   if (has_update()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         5, *operation_.update_, false, target);
   }
 
-  // .google.datastore.v1.Entity upsert = 6;
+  // optional .google.datastore.v1.Entity upsert = 6;
   if (has_upsert()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         6, *operation_.upsert_, false, target);
   }
 
-  // .google.datastore.v1.Key delete = 7;
+  // optional .google.datastore.v1.Key delete = 7;
   if (has_delete_()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         7, *operation_.delete__, false, target);
   }
 
-  // int64 base_version = 8;
+  // optional int64 base_version = 8;
   if (has_base_version()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(8, this->base_version(), target);
   }
@@ -5167,28 +5484,28 @@ size_t Mutation::ByteSizeLong() const {
   size_t total_size = 0;
 
   switch (operation_case()) {
-    // .google.datastore.v1.Entity insert = 4;
+    // optional .google.datastore.v1.Entity insert = 4;
     case kInsert: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *operation_.insert_);
       break;
     }
-    // .google.datastore.v1.Entity update = 5;
+    // optional .google.datastore.v1.Entity update = 5;
     case kUpdate: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *operation_.update_);
       break;
     }
-    // .google.datastore.v1.Entity upsert = 6;
+    // optional .google.datastore.v1.Entity upsert = 6;
     case kUpsert: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *operation_.upsert_);
       break;
     }
-    // .google.datastore.v1.Key delete = 7;
+    // optional .google.datastore.v1.Key delete = 7;
     case kDelete: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -5200,7 +5517,7 @@ size_t Mutation::ByteSizeLong() const {
     }
   }
   switch (conflict_detection_strategy_case()) {
-    // int64 base_version = 8;
+    // optional int64 base_version = 8;
     case kBaseVersion: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int64Size(
@@ -5220,7 +5537,7 @@ size_t Mutation::ByteSizeLong() const {
 
 void Mutation::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1.Mutation)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Mutation* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Mutation>(
           &from);
@@ -5229,14 +5546,21 @@ void Mutation::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1.Mutation)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Mutation::MergeFrom(const Mutation& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1.Mutation)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Mutation::UnsafeMergeFrom(const Mutation& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.operation_case()) {
     case kInsert: {
       mutable_insert()->::google::datastore::v1::Entity::MergeFrom(from.insert());
@@ -5280,10 +5604,11 @@ void Mutation::CopyFrom(const Mutation& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1.Mutation)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Mutation::IsInitialized() const {
+
   return true;
 }
 
@@ -5296,18 +5621,22 @@ void Mutation::InternalSwap(Mutation* other) {
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
   std::swap(conflict_detection_strategy_, other->conflict_detection_strategy_);
   std::swap(_oneof_case_[1], other->_oneof_case_[1]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Mutation::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[12];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Mutation_descriptor_;
+  metadata.reflection = Mutation_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Mutation
 
-// .google.datastore.v1.Entity insert = 4;
+// optional .google.datastore.v1.Entity insert = 4;
 bool Mutation::has_insert() const {
   return operation_case() == kInsert;
 }
@@ -5355,7 +5684,7 @@ void Mutation::set_allocated_insert(::google::datastore::v1::Entity* insert) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.Mutation.insert)
 }
 
-// .google.datastore.v1.Entity update = 5;
+// optional .google.datastore.v1.Entity update = 5;
 bool Mutation::has_update() const {
   return operation_case() == kUpdate;
 }
@@ -5403,7 +5732,7 @@ void Mutation::set_allocated_update(::google::datastore::v1::Entity* update) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.Mutation.update)
 }
 
-// .google.datastore.v1.Entity upsert = 6;
+// optional .google.datastore.v1.Entity upsert = 6;
 bool Mutation::has_upsert() const {
   return operation_case() == kUpsert;
 }
@@ -5451,7 +5780,7 @@ void Mutation::set_allocated_upsert(::google::datastore::v1::Entity* upsert) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.Mutation.upsert)
 }
 
-// .google.datastore.v1.Key delete = 7;
+// optional .google.datastore.v1.Key delete = 7;
 bool Mutation::has_delete_() const {
   return operation_case() == kDelete;
 }
@@ -5499,7 +5828,7 @@ void Mutation::set_allocated_delete_(::google::datastore::v1::Key* delete_) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.Mutation.delete)
 }
 
-// int64 base_version = 8;
+// optional int64 base_version = 8;
 bool Mutation::has_base_version() const {
   return conflict_detection_strategy_case() == kBaseVersion;
 }
@@ -5546,6 +5875,9 @@ Mutation::OperationCase Mutation::operation_case() const {
 Mutation::ConflictDetectionStrategyCase Mutation::conflict_detection_strategy_case() const {
   return Mutation::ConflictDetectionStrategyCase(_oneof_case_[1]);
 }
+inline const Mutation* Mutation::internal_default_instance() {
+  return &Mutation_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -5558,31 +5890,28 @@ const int MutationResult::kConflictDetectedFieldNumber;
 
 MutationResult::MutationResult()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1.MutationResult)
 }
+
+void MutationResult::InitAsDefaultInstance() {
+  key_ = const_cast< ::google::datastore::v1::Key*>(
+      ::google::datastore::v1::Key::internal_default_instance());
+}
+
 MutationResult::MutationResult(const MutationResult& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_key()) {
-    key_ = new ::google::datastore::v1::Key(*from.key_);
-  } else {
-    key_ = NULL;
-  }
-  ::memcpy(&version_, &from.version_,
-    reinterpret_cast<char*>(&conflict_detected_) -
-    reinterpret_cast<char*>(&version_) + sizeof(conflict_detected_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1.MutationResult)
 }
 
 void MutationResult::SharedCtor() {
-  ::memset(&key_, 0, reinterpret_cast<char*>(&conflict_detected_) -
-    reinterpret_cast<char*>(&key_) + sizeof(conflict_detected_));
+  key_ = NULL;
+  ::memset(&version_, 0, reinterpret_cast<char*>(&conflict_detected_) -
+    reinterpret_cast<char*>(&version_) + sizeof(conflict_detected_));
   _cached_size_ = 0;
 }
 
@@ -5592,7 +5921,7 @@ MutationResult::~MutationResult() {
 }
 
 void MutationResult::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &MutationResult_default_instance_.get()) {
     delete key_;
   }
 }
@@ -5604,13 +5933,15 @@ void MutationResult::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* MutationResult::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[13].descriptor;
+  return MutationResult_descriptor_;
 }
 
 const MutationResult& MutationResult::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<MutationResult> MutationResult_default_instance_;
 
 MutationResult* MutationResult::New(::google::protobuf::Arena* arena) const {
   MutationResult* n = new MutationResult;
@@ -5622,12 +5953,29 @@ MutationResult* MutationResult::New(::google::protobuf::Arena* arena) const {
 
 void MutationResult::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.datastore.v1.MutationResult)
-  if (GetArenaNoVirtual() == NULL && key_ != NULL) {
-    delete key_;
-  }
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(MutationResult, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<MutationResult*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(version_, conflict_detected_);
+  if (GetArenaNoVirtual() == NULL && key_ != NULL) delete key_;
   key_ = NULL;
-  ::memset(&version_, 0, reinterpret_cast<char*>(&conflict_detected_) -
-    reinterpret_cast<char*>(&version_) + sizeof(conflict_detected_));
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool MutationResult::MergePartialFromCodedStream(
@@ -5636,24 +5984,26 @@ bool MutationResult::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1.MutationResult)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.datastore.v1.Key key = 3;
+      // optional .google.datastore.v1.Key key = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_key()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_version;
         break;
       }
 
-      // int64 version = 4;
+      // optional int64 version = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_version:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -5661,12 +6011,14 @@ bool MutationResult::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(40)) goto parse_conflict_detected;
         break;
       }
 
-      // bool conflict_detected = 5;
+      // optional bool conflict_detected = 5;
       case 5: {
-        if (tag == 40u) {
+        if (tag == 40) {
+         parse_conflict_detected:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -5674,6 +6026,7 @@ bool MutationResult::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -5701,18 +6054,18 @@ failure:
 void MutationResult::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1.MutationResult)
-  // .google.datastore.v1.Key key = 3;
+  // optional .google.datastore.v1.Key key = 3;
   if (this->has_key()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *this->key_, output);
   }
 
-  // int64 version = 4;
+  // optional int64 version = 4;
   if (this->version() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(4, this->version(), output);
   }
 
-  // bool conflict_detected = 5;
+  // optional bool conflict_detected = 5;
   if (this->conflict_detected() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(5, this->conflict_detected(), output);
   }
@@ -5724,19 +6077,19 @@ void MutationResult::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1.MutationResult)
-  // .google.datastore.v1.Key key = 3;
+  // optional .google.datastore.v1.Key key = 3;
   if (this->has_key()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         3, *this->key_, false, target);
   }
 
-  // int64 version = 4;
+  // optional int64 version = 4;
   if (this->version() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(4, this->version(), target);
   }
 
-  // bool conflict_detected = 5;
+  // optional bool conflict_detected = 5;
   if (this->conflict_detected() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(5, this->conflict_detected(), target);
   }
@@ -5749,21 +6102,21 @@ size_t MutationResult::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.datastore.v1.MutationResult)
   size_t total_size = 0;
 
-  // .google.datastore.v1.Key key = 3;
+  // optional .google.datastore.v1.Key key = 3;
   if (this->has_key()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->key_);
   }
 
-  // int64 version = 4;
+  // optional int64 version = 4;
   if (this->version() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->version());
   }
 
-  // bool conflict_detected = 5;
+  // optional bool conflict_detected = 5;
   if (this->conflict_detected() != 0) {
     total_size += 1 + 1;
   }
@@ -5777,7 +6130,7 @@ size_t MutationResult::ByteSizeLong() const {
 
 void MutationResult::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1.MutationResult)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const MutationResult* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const MutationResult>(
           &from);
@@ -5786,14 +6139,21 @@ void MutationResult::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1.MutationResult)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void MutationResult::MergeFrom(const MutationResult& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1.MutationResult)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void MutationResult::UnsafeMergeFrom(const MutationResult& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_key()) {
     mutable_key()->::google::datastore::v1::Key::MergeFrom(from.key());
   }
@@ -5816,10 +6176,11 @@ void MutationResult::CopyFrom(const MutationResult& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1.MutationResult)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool MutationResult::IsInitialized() const {
+
   return true;
 }
 
@@ -5831,18 +6192,22 @@ void MutationResult::InternalSwap(MutationResult* other) {
   std::swap(key_, other->key_);
   std::swap(version_, other->version_);
   std::swap(conflict_detected_, other->conflict_detected_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata MutationResult::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[13];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = MutationResult_descriptor_;
+  metadata.reflection = MutationResult_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // MutationResult
 
-// .google.datastore.v1.Key key = 3;
+// optional .google.datastore.v1.Key key = 3;
 bool MutationResult::has_key() const {
   return this != internal_default_instance() && key_ != NULL;
 }
@@ -5881,7 +6246,7 @@ void MutationResult::set_allocated_key(::google::datastore::v1::Key* key) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.MutationResult.key)
 }
 
-// int64 version = 4;
+// optional int64 version = 4;
 void MutationResult::clear_version() {
   version_ = GOOGLE_LONGLONG(0);
 }
@@ -5895,7 +6260,7 @@ void MutationResult::set_version(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.datastore.v1.MutationResult.version)
 }
 
-// bool conflict_detected = 5;
+// optional bool conflict_detected = 5;
 void MutationResult::clear_conflict_detected() {
   conflict_detected_ = false;
 }
@@ -5909,10 +6274,36 @@ void MutationResult::set_conflict_detected(bool value) {
   // @@protoc_insertion_point(field_set:google.datastore.v1.MutationResult.conflict_detected)
 }
 
+inline const MutationResult* MutationResult::internal_default_instance() {
+  return &MutationResult_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* ReadOptions_ReadConsistency_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return ReadOptions_ReadConsistency_descriptor_;
+}
+bool ReadOptions_ReadConsistency_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const ReadOptions_ReadConsistency ReadOptions::READ_CONSISTENCY_UNSPECIFIED;
+const ReadOptions_ReadConsistency ReadOptions::STRONG;
+const ReadOptions_ReadConsistency ReadOptions::EVENTUAL;
+const ReadOptions_ReadConsistency ReadOptions::ReadConsistency_MIN;
+const ReadOptions_ReadConsistency ReadOptions::ReadConsistency_MAX;
+const int ReadOptions::ReadConsistency_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ReadOptions::kReadConsistencyFieldNumber;
 const int ReadOptions::kTransactionFieldNumber;
@@ -5920,31 +6311,21 @@ const int ReadOptions::kTransactionFieldNumber;
 
 ReadOptions::ReadOptions()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.datastore.v1.ReadOptions)
 }
+
+void ReadOptions::InitAsDefaultInstance() {
+  ReadOptions_default_oneof_instance_->read_consistency_ = 0;
+  ReadOptions_default_oneof_instance_->transaction_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
 ReadOptions::ReadOptions(const ReadOptions& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  clear_has_consistency_type();
-  switch (from.consistency_type_case()) {
-    case kReadConsistency: {
-      set_read_consistency(from.read_consistency());
-      break;
-    }
-    case kTransaction: {
-      set_transaction(from.transaction());
-      break;
-    }
-    case CONSISTENCY_TYPE_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.datastore.v1.ReadOptions)
 }
 
@@ -5971,13 +6352,15 @@ void ReadOptions::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ReadOptions::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[14].descriptor;
+  return ReadOptions_descriptor_;
 }
 
 const ReadOptions& ReadOptions::default_instance() {
   protobuf_InitDefaults_google_2fdatastore_2fv1_2fdatastore_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ReadOptions> ReadOptions_default_instance_;
 
 ReadOptions* ReadOptions::New(::google::protobuf::Arena* arena) const {
   ReadOptions* n = new ReadOptions;
@@ -6017,13 +6400,13 @@ bool ReadOptions::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.datastore.v1.ReadOptions)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.datastore.v1.ReadOptions.ReadConsistency read_consistency = 1;
+      // optional .google.datastore.v1.ReadOptions.ReadConsistency read_consistency = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -6032,17 +6415,20 @@ bool ReadOptions::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        goto after_transaction;
         break;
       }
 
-      // bytes transaction = 2;
+      // optional bytes transaction = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_transaction()));
         } else {
           goto handle_unusual;
         }
+       after_transaction:
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -6070,13 +6456,13 @@ failure:
 void ReadOptions::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.datastore.v1.ReadOptions)
-  // .google.datastore.v1.ReadOptions.ReadConsistency read_consistency = 1;
+  // optional .google.datastore.v1.ReadOptions.ReadConsistency read_consistency = 1;
   if (has_read_consistency()) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       1, this->read_consistency(), output);
   }
 
-  // bytes transaction = 2;
+  // optional bytes transaction = 2;
   if (has_transaction()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       2, this->transaction(), output);
@@ -6089,13 +6475,13 @@ void ReadOptions::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.datastore.v1.ReadOptions)
-  // .google.datastore.v1.ReadOptions.ReadConsistency read_consistency = 1;
+  // optional .google.datastore.v1.ReadOptions.ReadConsistency read_consistency = 1;
   if (has_read_consistency()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       1, this->read_consistency(), target);
   }
 
-  // bytes transaction = 2;
+  // optional bytes transaction = 2;
   if (has_transaction()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
@@ -6111,13 +6497,13 @@ size_t ReadOptions::ByteSizeLong() const {
   size_t total_size = 0;
 
   switch (consistency_type_case()) {
-    // .google.datastore.v1.ReadOptions.ReadConsistency read_consistency = 1;
+    // optional .google.datastore.v1.ReadOptions.ReadConsistency read_consistency = 1;
     case kReadConsistency: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::EnumSize(this->read_consistency());
       break;
     }
-    // bytes transaction = 2;
+    // optional bytes transaction = 2;
     case kTransaction: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
@@ -6137,7 +6523,7 @@ size_t ReadOptions::ByteSizeLong() const {
 
 void ReadOptions::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.datastore.v1.ReadOptions)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ReadOptions* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ReadOptions>(
           &from);
@@ -6146,14 +6532,21 @@ void ReadOptions::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.datastore.v1.ReadOptions)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ReadOptions::MergeFrom(const ReadOptions& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.datastore.v1.ReadOptions)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ReadOptions::UnsafeMergeFrom(const ReadOptions& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.consistency_type_case()) {
     case kReadConsistency: {
       set_read_consistency(from.read_consistency());
@@ -6180,10 +6573,11 @@ void ReadOptions::CopyFrom(const ReadOptions& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.datastore.v1.ReadOptions)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ReadOptions::IsInitialized() const {
+
   return true;
 }
 
@@ -6194,18 +6588,22 @@ void ReadOptions::Swap(ReadOptions* other) {
 void ReadOptions::InternalSwap(ReadOptions* other) {
   std::swap(consistency_type_, other->consistency_type_);
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ReadOptions::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[14];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ReadOptions_descriptor_;
+  metadata.reflection = ReadOptions_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ReadOptions
 
-// .google.datastore.v1.ReadOptions.ReadConsistency read_consistency = 1;
+// optional .google.datastore.v1.ReadOptions.ReadConsistency read_consistency = 1;
 bool ReadOptions::has_read_consistency() const {
   return consistency_type_case() == kReadConsistency;
 }
@@ -6234,7 +6632,7 @@ void ReadOptions::set_read_consistency(::google::datastore::v1::ReadOptions_Read
   // @@protoc_insertion_point(field_set:google.datastore.v1.ReadOptions.read_consistency)
 }
 
-// bytes transaction = 2;
+// optional bytes transaction = 2;
 bool ReadOptions::has_transaction() const {
   return consistency_type_case() == kTransaction;
 }
@@ -6250,7 +6648,7 @@ void ReadOptions::clear_transaction() {
 const ::std::string& ReadOptions::transaction() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.ReadOptions.transaction)
   if (has_transaction()) {
-    return consistency_type_.transaction_.GetNoArena();
+    return consistency_type_.transaction_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -6323,6 +6721,9 @@ void ReadOptions::clear_has_consistency_type() {
 }
 ReadOptions::ConsistencyTypeCase ReadOptions::consistency_type_case() const {
   return ReadOptions::ConsistencyTypeCase(_oneof_case_[0]);
+}
+inline const ReadOptions* ReadOptions::internal_default_instance() {
+  return &ReadOptions_default_instance_.get();
 }
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 

@@ -24,8 +24,8 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
@@ -39,163 +39,6 @@
 #include <google/protobuf/empty.pb.h>
 #include <google/protobuf/field_mask.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace appengine {
-namespace v1 {
-class Application;
-class ApplicationDefaultTypeInternal;
-extern ApplicationDefaultTypeInternal _Application_default_instance_;
-class AutomaticScaling;
-class AutomaticScalingDefaultTypeInternal;
-extern AutomaticScalingDefaultTypeInternal _AutomaticScaling_default_instance_;
-class BasicScaling;
-class BasicScalingDefaultTypeInternal;
-extern BasicScalingDefaultTypeInternal _BasicScaling_default_instance_;
-class CpuUtilization;
-class CpuUtilizationDefaultTypeInternal;
-extern CpuUtilizationDefaultTypeInternal _CpuUtilization_default_instance_;
-class CreateVersionRequest;
-class CreateVersionRequestDefaultTypeInternal;
-extern CreateVersionRequestDefaultTypeInternal _CreateVersionRequest_default_instance_;
-class DebugInstanceRequest;
-class DebugInstanceRequestDefaultTypeInternal;
-extern DebugInstanceRequestDefaultTypeInternal _DebugInstanceRequest_default_instance_;
-class DeleteInstanceRequest;
-class DeleteInstanceRequestDefaultTypeInternal;
-extern DeleteInstanceRequestDefaultTypeInternal _DeleteInstanceRequest_default_instance_;
-class DeleteServiceRequest;
-class DeleteServiceRequestDefaultTypeInternal;
-extern DeleteServiceRequestDefaultTypeInternal _DeleteServiceRequest_default_instance_;
-class DeleteVersionRequest;
-class DeleteVersionRequestDefaultTypeInternal;
-extern DeleteVersionRequestDefaultTypeInternal _DeleteVersionRequest_default_instance_;
-class DiskUtilization;
-class DiskUtilizationDefaultTypeInternal;
-extern DiskUtilizationDefaultTypeInternal _DiskUtilization_default_instance_;
-class GetApplicationRequest;
-class GetApplicationRequestDefaultTypeInternal;
-extern GetApplicationRequestDefaultTypeInternal _GetApplicationRequest_default_instance_;
-class GetInstanceRequest;
-class GetInstanceRequestDefaultTypeInternal;
-extern GetInstanceRequestDefaultTypeInternal _GetInstanceRequest_default_instance_;
-class GetServiceRequest;
-class GetServiceRequestDefaultTypeInternal;
-extern GetServiceRequestDefaultTypeInternal _GetServiceRequest_default_instance_;
-class GetVersionRequest;
-class GetVersionRequestDefaultTypeInternal;
-extern GetVersionRequestDefaultTypeInternal _GetVersionRequest_default_instance_;
-class Instance;
-class InstanceDefaultTypeInternal;
-extern InstanceDefaultTypeInternal _Instance_default_instance_;
-class ListInstancesRequest;
-class ListInstancesRequestDefaultTypeInternal;
-extern ListInstancesRequestDefaultTypeInternal _ListInstancesRequest_default_instance_;
-class ListInstancesResponse;
-class ListInstancesResponseDefaultTypeInternal;
-extern ListInstancesResponseDefaultTypeInternal _ListInstancesResponse_default_instance_;
-class ListServicesRequest;
-class ListServicesRequestDefaultTypeInternal;
-extern ListServicesRequestDefaultTypeInternal _ListServicesRequest_default_instance_;
-class ListServicesResponse;
-class ListServicesResponseDefaultTypeInternal;
-extern ListServicesResponseDefaultTypeInternal _ListServicesResponse_default_instance_;
-class ListVersionsRequest;
-class ListVersionsRequestDefaultTypeInternal;
-extern ListVersionsRequestDefaultTypeInternal _ListVersionsRequest_default_instance_;
-class ListVersionsResponse;
-class ListVersionsResponseDefaultTypeInternal;
-extern ListVersionsResponseDefaultTypeInternal _ListVersionsResponse_default_instance_;
-class ManualScaling;
-class ManualScalingDefaultTypeInternal;
-extern ManualScalingDefaultTypeInternal _ManualScaling_default_instance_;
-class Network;
-class NetworkDefaultTypeInternal;
-extern NetworkDefaultTypeInternal _Network_default_instance_;
-class NetworkUtilization;
-class NetworkUtilizationDefaultTypeInternal;
-extern NetworkUtilizationDefaultTypeInternal _NetworkUtilization_default_instance_;
-class RepairApplicationRequest;
-class RepairApplicationRequestDefaultTypeInternal;
-extern RepairApplicationRequestDefaultTypeInternal _RepairApplicationRequest_default_instance_;
-class RequestUtilization;
-class RequestUtilizationDefaultTypeInternal;
-extern RequestUtilizationDefaultTypeInternal _RequestUtilization_default_instance_;
-class Resources;
-class ResourcesDefaultTypeInternal;
-extern ResourcesDefaultTypeInternal _Resources_default_instance_;
-class Service;
-class ServiceDefaultTypeInternal;
-extern ServiceDefaultTypeInternal _Service_default_instance_;
-class TrafficSplit;
-class TrafficSplitDefaultTypeInternal;
-extern TrafficSplitDefaultTypeInternal _TrafficSplit_default_instance_;
-class UpdateServiceRequest;
-class UpdateServiceRequestDefaultTypeInternal;
-extern UpdateServiceRequestDefaultTypeInternal _UpdateServiceRequest_default_instance_;
-class UpdateVersionRequest;
-class UpdateVersionRequestDefaultTypeInternal;
-extern UpdateVersionRequestDefaultTypeInternal _UpdateVersionRequest_default_instance_;
-class UrlDispatchRule;
-class UrlDispatchRuleDefaultTypeInternal;
-extern UrlDispatchRuleDefaultTypeInternal _UrlDispatchRule_default_instance_;
-class Version;
-class VersionDefaultTypeInternal;
-extern VersionDefaultTypeInternal _Version_default_instance_;
-}  // namespace v1
-}  // namespace appengine
-namespace iam {
-namespace v1 {
-class Binding;
-class BindingDefaultTypeInternal;
-extern BindingDefaultTypeInternal _Binding_default_instance_;
-class GetIamPolicyRequest;
-class GetIamPolicyRequestDefaultTypeInternal;
-extern GetIamPolicyRequestDefaultTypeInternal _GetIamPolicyRequest_default_instance_;
-class Policy;
-class PolicyDefaultTypeInternal;
-extern PolicyDefaultTypeInternal _Policy_default_instance_;
-class SetIamPolicyRequest;
-class SetIamPolicyRequestDefaultTypeInternal;
-extern SetIamPolicyRequestDefaultTypeInternal _SetIamPolicyRequest_default_instance_;
-class TestIamPermissionsRequest;
-class TestIamPermissionsRequestDefaultTypeInternal;
-extern TestIamPermissionsRequestDefaultTypeInternal _TestIamPermissionsRequest_default_instance_;
-class TestIamPermissionsResponse;
-class TestIamPermissionsResponseDefaultTypeInternal;
-extern TestIamPermissionsResponseDefaultTypeInternal _TestIamPermissionsResponse_default_instance_;
-}  // namespace v1
-}  // namespace iam
-namespace longrunning {
-class CancelOperationRequest;
-class CancelOperationRequestDefaultTypeInternal;
-extern CancelOperationRequestDefaultTypeInternal _CancelOperationRequest_default_instance_;
-class DeleteOperationRequest;
-class DeleteOperationRequestDefaultTypeInternal;
-extern DeleteOperationRequestDefaultTypeInternal _DeleteOperationRequest_default_instance_;
-class GetOperationRequest;
-class GetOperationRequestDefaultTypeInternal;
-extern GetOperationRequestDefaultTypeInternal _GetOperationRequest_default_instance_;
-class ListOperationsRequest;
-class ListOperationsRequestDefaultTypeInternal;
-extern ListOperationsRequestDefaultTypeInternal _ListOperationsRequest_default_instance_;
-class ListOperationsResponse;
-class ListOperationsResponseDefaultTypeInternal;
-extern ListOperationsResponseDefaultTypeInternal _ListOperationsResponse_default_instance_;
-class Operation;
-class OperationDefaultTypeInternal;
-extern OperationDefaultTypeInternal _Operation_default_instance_;
-}  // namespace longrunning
-namespace protobuf {
-class Empty;
-class EmptyDefaultTypeInternal;
-extern EmptyDefaultTypeInternal _Empty_default_instance_;
-class FieldMask;
-class FieldMaskDefaultTypeInternal;
-extern FieldMaskDefaultTypeInternal _FieldMask_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace appengine {
@@ -204,6 +47,27 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto();
 void protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto();
+void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
+void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
+
+class CreateVersionRequest;
+class DebugInstanceRequest;
+class DeleteInstanceRequest;
+class DeleteServiceRequest;
+class DeleteVersionRequest;
+class GetApplicationRequest;
+class GetInstanceRequest;
+class GetServiceRequest;
+class GetVersionRequest;
+class ListInstancesRequest;
+class ListInstancesResponse;
+class ListServicesRequest;
+class ListServicesResponse;
+class ListVersionsRequest;
+class ListVersionsResponse;
+class RepairApplicationRequest;
+class UpdateServiceRequest;
+class UpdateVersionRequest;
 
 enum VersionView {
   BASIC = 0,
@@ -243,58 +107,55 @@ class GetApplicationRequest : public ::google::protobuf::Message /* @@protoc_ins
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetApplicationRequest& default_instance();
 
-  static inline const GetApplicationRequest* internal_default_instance() {
-    return reinterpret_cast<const GetApplicationRequest*>(
-               &_GetApplicationRequest_default_instance_);
-  }
+  static const GetApplicationRequest* internal_default_instance();
 
   void Swap(GetApplicationRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetApplicationRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetApplicationRequest* New() const { return New(NULL); }
 
-  GetApplicationRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetApplicationRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetApplicationRequest& from);
   void MergeFrom(const GetApplicationRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetApplicationRequest* other);
+  void UnsafeMergeFrom(const GetApplicationRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -313,10 +174,13 @@ class GetApplicationRequest : public ::google::protobuf::Message /* @@protoc_ins
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetApplicationRequest> GetApplicationRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class RepairApplicationRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.RepairApplicationRequest) */ {
@@ -334,58 +198,55 @@ class RepairApplicationRequest : public ::google::protobuf::Message /* @@protoc_
   static const ::google::protobuf::Descriptor* descriptor();
   static const RepairApplicationRequest& default_instance();
 
-  static inline const RepairApplicationRequest* internal_default_instance() {
-    return reinterpret_cast<const RepairApplicationRequest*>(
-               &_RepairApplicationRequest_default_instance_);
-  }
+  static const RepairApplicationRequest* internal_default_instance();
 
   void Swap(RepairApplicationRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline RepairApplicationRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline RepairApplicationRequest* New() const { return New(NULL); }
 
-  RepairApplicationRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  RepairApplicationRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const RepairApplicationRequest& from);
   void MergeFrom(const RepairApplicationRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(RepairApplicationRequest* other);
+  void UnsafeMergeFrom(const RepairApplicationRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -404,10 +265,13 @@ class RepairApplicationRequest : public ::google::protobuf::Message /* @@protoc_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<RepairApplicationRequest> RepairApplicationRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListServicesRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.ListServicesRequest) */ {
@@ -425,58 +289,55 @@ class ListServicesRequest : public ::google::protobuf::Message /* @@protoc_inser
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListServicesRequest& default_instance();
 
-  static inline const ListServicesRequest* internal_default_instance() {
-    return reinterpret_cast<const ListServicesRequest*>(
-               &_ListServicesRequest_default_instance_);
-  }
+  static const ListServicesRequest* internal_default_instance();
 
   void Swap(ListServicesRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListServicesRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListServicesRequest* New() const { return New(NULL); }
 
-  ListServicesRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListServicesRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListServicesRequest& from);
   void MergeFrom(const ListServicesRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListServicesRequest* other);
+  void UnsafeMergeFrom(const ListServicesRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string parent = 1;
+  // optional string parent = 1;
   void clear_parent();
   static const int kParentFieldNumber = 1;
   const ::std::string& parent() const;
@@ -487,13 +348,13 @@ class ListServicesRequest : public ::google::protobuf::Message /* @@protoc_inser
   ::std::string* release_parent();
   void set_allocated_parent(::std::string* parent);
 
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 2;
   ::google::protobuf::int32 page_size() const;
   void set_page_size(::google::protobuf::int32 value);
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 3;
   const ::std::string& page_token() const;
@@ -514,10 +375,13 @@ class ListServicesRequest : public ::google::protobuf::Message /* @@protoc_inser
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListServicesRequest> ListServicesRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListServicesResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.ListServicesResponse) */ {
@@ -535,52 +399,49 @@ class ListServicesResponse : public ::google::protobuf::Message /* @@protoc_inse
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListServicesResponse& default_instance();
 
-  static inline const ListServicesResponse* internal_default_instance() {
-    return reinterpret_cast<const ListServicesResponse*>(
-               &_ListServicesResponse_default_instance_);
-  }
+  static const ListServicesResponse* internal_default_instance();
 
   void Swap(ListServicesResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListServicesResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListServicesResponse* New() const { return New(NULL); }
 
-  ListServicesResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListServicesResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListServicesResponse& from);
   void MergeFrom(const ListServicesResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListServicesResponse* other);
+  void UnsafeMergeFrom(const ListServicesResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -598,7 +459,7 @@ class ListServicesResponse : public ::google::protobuf::Message /* @@protoc_inse
   const ::google::protobuf::RepeatedPtrField< ::google::appengine::v1::Service >&
       services() const;
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -618,10 +479,13 @@ class ListServicesResponse : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListServicesResponse> ListServicesResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetServiceRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.GetServiceRequest) */ {
@@ -639,58 +503,55 @@ class GetServiceRequest : public ::google::protobuf::Message /* @@protoc_inserti
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetServiceRequest& default_instance();
 
-  static inline const GetServiceRequest* internal_default_instance() {
-    return reinterpret_cast<const GetServiceRequest*>(
-               &_GetServiceRequest_default_instance_);
-  }
+  static const GetServiceRequest* internal_default_instance();
 
   void Swap(GetServiceRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetServiceRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetServiceRequest* New() const { return New(NULL); }
 
-  GetServiceRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetServiceRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetServiceRequest& from);
   void MergeFrom(const GetServiceRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetServiceRequest* other);
+  void UnsafeMergeFrom(const GetServiceRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -709,10 +570,13 @@ class GetServiceRequest : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetServiceRequest> GetServiceRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class UpdateServiceRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.UpdateServiceRequest) */ {
@@ -730,58 +594,55 @@ class UpdateServiceRequest : public ::google::protobuf::Message /* @@protoc_inse
   static const ::google::protobuf::Descriptor* descriptor();
   static const UpdateServiceRequest& default_instance();
 
-  static inline const UpdateServiceRequest* internal_default_instance() {
-    return reinterpret_cast<const UpdateServiceRequest*>(
-               &_UpdateServiceRequest_default_instance_);
-  }
+  static const UpdateServiceRequest* internal_default_instance();
 
   void Swap(UpdateServiceRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline UpdateServiceRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline UpdateServiceRequest* New() const { return New(NULL); }
 
-  UpdateServiceRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  UpdateServiceRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const UpdateServiceRequest& from);
   void MergeFrom(const UpdateServiceRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(UpdateServiceRequest* other);
+  void UnsafeMergeFrom(const UpdateServiceRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -792,7 +653,7 @@ class UpdateServiceRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // .google.appengine.v1.Service service = 2;
+  // optional .google.appengine.v1.Service service = 2;
   bool has_service() const;
   void clear_service();
   static const int kServiceFieldNumber = 2;
@@ -801,7 +662,7 @@ class UpdateServiceRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::google::appengine::v1::Service* release_service();
   void set_allocated_service(::google::appengine::v1::Service* service);
 
-  // .google.protobuf.FieldMask update_mask = 3;
+  // optional .google.protobuf.FieldMask update_mask = 3;
   bool has_update_mask() const;
   void clear_update_mask();
   static const int kUpdateMaskFieldNumber = 3;
@@ -810,7 +671,7 @@ class UpdateServiceRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::google::protobuf::FieldMask* release_update_mask();
   void set_allocated_update_mask(::google::protobuf::FieldMask* update_mask);
 
-  // bool migrate_traffic = 4;
+  // optional bool migrate_traffic = 4;
   void clear_migrate_traffic();
   static const int kMigrateTrafficFieldNumber = 4;
   bool migrate_traffic() const;
@@ -827,10 +688,13 @@ class UpdateServiceRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<UpdateServiceRequest> UpdateServiceRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class DeleteServiceRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.DeleteServiceRequest) */ {
@@ -848,58 +712,55 @@ class DeleteServiceRequest : public ::google::protobuf::Message /* @@protoc_inse
   static const ::google::protobuf::Descriptor* descriptor();
   static const DeleteServiceRequest& default_instance();
 
-  static inline const DeleteServiceRequest* internal_default_instance() {
-    return reinterpret_cast<const DeleteServiceRequest*>(
-               &_DeleteServiceRequest_default_instance_);
-  }
+  static const DeleteServiceRequest* internal_default_instance();
 
   void Swap(DeleteServiceRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline DeleteServiceRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline DeleteServiceRequest* New() const { return New(NULL); }
 
-  DeleteServiceRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DeleteServiceRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const DeleteServiceRequest& from);
   void MergeFrom(const DeleteServiceRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(DeleteServiceRequest* other);
+  void UnsafeMergeFrom(const DeleteServiceRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -918,10 +779,13 @@ class DeleteServiceRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<DeleteServiceRequest> DeleteServiceRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListVersionsRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.ListVersionsRequest) */ {
@@ -939,58 +803,55 @@ class ListVersionsRequest : public ::google::protobuf::Message /* @@protoc_inser
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListVersionsRequest& default_instance();
 
-  static inline const ListVersionsRequest* internal_default_instance() {
-    return reinterpret_cast<const ListVersionsRequest*>(
-               &_ListVersionsRequest_default_instance_);
-  }
+  static const ListVersionsRequest* internal_default_instance();
 
   void Swap(ListVersionsRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListVersionsRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListVersionsRequest* New() const { return New(NULL); }
 
-  ListVersionsRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListVersionsRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListVersionsRequest& from);
   void MergeFrom(const ListVersionsRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListVersionsRequest* other);
+  void UnsafeMergeFrom(const ListVersionsRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string parent = 1;
+  // optional string parent = 1;
   void clear_parent();
   static const int kParentFieldNumber = 1;
   const ::std::string& parent() const;
@@ -1001,19 +862,19 @@ class ListVersionsRequest : public ::google::protobuf::Message /* @@protoc_inser
   ::std::string* release_parent();
   void set_allocated_parent(::std::string* parent);
 
-  // .google.appengine.v1.VersionView view = 2;
+  // optional .google.appengine.v1.VersionView view = 2;
   void clear_view();
   static const int kViewFieldNumber = 2;
   ::google::appengine::v1::VersionView view() const;
   void set_view(::google::appengine::v1::VersionView value);
 
-  // int32 page_size = 3;
+  // optional int32 page_size = 3;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 3;
   ::google::protobuf::int32 page_size() const;
   void set_page_size(::google::protobuf::int32 value);
 
-  // string page_token = 4;
+  // optional string page_token = 4;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 4;
   const ::std::string& page_token() const;
@@ -1035,10 +896,13 @@ class ListVersionsRequest : public ::google::protobuf::Message /* @@protoc_inser
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListVersionsRequest> ListVersionsRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListVersionsResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.ListVersionsResponse) */ {
@@ -1056,52 +920,49 @@ class ListVersionsResponse : public ::google::protobuf::Message /* @@protoc_inse
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListVersionsResponse& default_instance();
 
-  static inline const ListVersionsResponse* internal_default_instance() {
-    return reinterpret_cast<const ListVersionsResponse*>(
-               &_ListVersionsResponse_default_instance_);
-  }
+  static const ListVersionsResponse* internal_default_instance();
 
   void Swap(ListVersionsResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListVersionsResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListVersionsResponse* New() const { return New(NULL); }
 
-  ListVersionsResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListVersionsResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListVersionsResponse& from);
   void MergeFrom(const ListVersionsResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListVersionsResponse* other);
+  void UnsafeMergeFrom(const ListVersionsResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1119,7 +980,7 @@ class ListVersionsResponse : public ::google::protobuf::Message /* @@protoc_inse
   const ::google::protobuf::RepeatedPtrField< ::google::appengine::v1::Version >&
       versions() const;
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -1139,10 +1000,13 @@ class ListVersionsResponse : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListVersionsResponse> ListVersionsResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetVersionRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.GetVersionRequest) */ {
@@ -1160,58 +1024,55 @@ class GetVersionRequest : public ::google::protobuf::Message /* @@protoc_inserti
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetVersionRequest& default_instance();
 
-  static inline const GetVersionRequest* internal_default_instance() {
-    return reinterpret_cast<const GetVersionRequest*>(
-               &_GetVersionRequest_default_instance_);
-  }
+  static const GetVersionRequest* internal_default_instance();
 
   void Swap(GetVersionRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetVersionRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetVersionRequest* New() const { return New(NULL); }
 
-  GetVersionRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetVersionRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetVersionRequest& from);
   void MergeFrom(const GetVersionRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetVersionRequest* other);
+  void UnsafeMergeFrom(const GetVersionRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -1222,7 +1083,7 @@ class GetVersionRequest : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // .google.appengine.v1.VersionView view = 2;
+  // optional .google.appengine.v1.VersionView view = 2;
   void clear_view();
   static const int kViewFieldNumber = 2;
   ::google::appengine::v1::VersionView view() const;
@@ -1237,10 +1098,13 @@ class GetVersionRequest : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetVersionRequest> GetVersionRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class CreateVersionRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.CreateVersionRequest) */ {
@@ -1258,58 +1122,55 @@ class CreateVersionRequest : public ::google::protobuf::Message /* @@protoc_inse
   static const ::google::protobuf::Descriptor* descriptor();
   static const CreateVersionRequest& default_instance();
 
-  static inline const CreateVersionRequest* internal_default_instance() {
-    return reinterpret_cast<const CreateVersionRequest*>(
-               &_CreateVersionRequest_default_instance_);
-  }
+  static const CreateVersionRequest* internal_default_instance();
 
   void Swap(CreateVersionRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline CreateVersionRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline CreateVersionRequest* New() const { return New(NULL); }
 
-  CreateVersionRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CreateVersionRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const CreateVersionRequest& from);
   void MergeFrom(const CreateVersionRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(CreateVersionRequest* other);
+  void UnsafeMergeFrom(const CreateVersionRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string parent = 1;
+  // optional string parent = 1;
   void clear_parent();
   static const int kParentFieldNumber = 1;
   const ::std::string& parent() const;
@@ -1320,7 +1181,7 @@ class CreateVersionRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::std::string* release_parent();
   void set_allocated_parent(::std::string* parent);
 
-  // .google.appengine.v1.Version version = 2;
+  // optional .google.appengine.v1.Version version = 2;
   bool has_version() const;
   void clear_version();
   static const int kVersionFieldNumber = 2;
@@ -1338,10 +1199,13 @@ class CreateVersionRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<CreateVersionRequest> CreateVersionRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class UpdateVersionRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.UpdateVersionRequest) */ {
@@ -1359,58 +1223,55 @@ class UpdateVersionRequest : public ::google::protobuf::Message /* @@protoc_inse
   static const ::google::protobuf::Descriptor* descriptor();
   static const UpdateVersionRequest& default_instance();
 
-  static inline const UpdateVersionRequest* internal_default_instance() {
-    return reinterpret_cast<const UpdateVersionRequest*>(
-               &_UpdateVersionRequest_default_instance_);
-  }
+  static const UpdateVersionRequest* internal_default_instance();
 
   void Swap(UpdateVersionRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline UpdateVersionRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline UpdateVersionRequest* New() const { return New(NULL); }
 
-  UpdateVersionRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  UpdateVersionRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const UpdateVersionRequest& from);
   void MergeFrom(const UpdateVersionRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(UpdateVersionRequest* other);
+  void UnsafeMergeFrom(const UpdateVersionRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -1421,7 +1282,7 @@ class UpdateVersionRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // .google.appengine.v1.Version version = 2;
+  // optional .google.appengine.v1.Version version = 2;
   bool has_version() const;
   void clear_version();
   static const int kVersionFieldNumber = 2;
@@ -1430,7 +1291,7 @@ class UpdateVersionRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::google::appengine::v1::Version* release_version();
   void set_allocated_version(::google::appengine::v1::Version* version);
 
-  // .google.protobuf.FieldMask update_mask = 3;
+  // optional .google.protobuf.FieldMask update_mask = 3;
   bool has_update_mask() const;
   void clear_update_mask();
   static const int kUpdateMaskFieldNumber = 3;
@@ -1449,10 +1310,13 @@ class UpdateVersionRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<UpdateVersionRequest> UpdateVersionRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class DeleteVersionRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.DeleteVersionRequest) */ {
@@ -1470,58 +1334,55 @@ class DeleteVersionRequest : public ::google::protobuf::Message /* @@protoc_inse
   static const ::google::protobuf::Descriptor* descriptor();
   static const DeleteVersionRequest& default_instance();
 
-  static inline const DeleteVersionRequest* internal_default_instance() {
-    return reinterpret_cast<const DeleteVersionRequest*>(
-               &_DeleteVersionRequest_default_instance_);
-  }
+  static const DeleteVersionRequest* internal_default_instance();
 
   void Swap(DeleteVersionRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline DeleteVersionRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline DeleteVersionRequest* New() const { return New(NULL); }
 
-  DeleteVersionRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DeleteVersionRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const DeleteVersionRequest& from);
   void MergeFrom(const DeleteVersionRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(DeleteVersionRequest* other);
+  void UnsafeMergeFrom(const DeleteVersionRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -1540,10 +1401,13 @@ class DeleteVersionRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<DeleteVersionRequest> DeleteVersionRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListInstancesRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.ListInstancesRequest) */ {
@@ -1561,58 +1425,55 @@ class ListInstancesRequest : public ::google::protobuf::Message /* @@protoc_inse
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListInstancesRequest& default_instance();
 
-  static inline const ListInstancesRequest* internal_default_instance() {
-    return reinterpret_cast<const ListInstancesRequest*>(
-               &_ListInstancesRequest_default_instance_);
-  }
+  static const ListInstancesRequest* internal_default_instance();
 
   void Swap(ListInstancesRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListInstancesRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListInstancesRequest* New() const { return New(NULL); }
 
-  ListInstancesRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListInstancesRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListInstancesRequest& from);
   void MergeFrom(const ListInstancesRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListInstancesRequest* other);
+  void UnsafeMergeFrom(const ListInstancesRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string parent = 1;
+  // optional string parent = 1;
   void clear_parent();
   static const int kParentFieldNumber = 1;
   const ::std::string& parent() const;
@@ -1623,13 +1484,13 @@ class ListInstancesRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::std::string* release_parent();
   void set_allocated_parent(::std::string* parent);
 
-  // int32 page_size = 2;
+  // optional int32 page_size = 2;
   void clear_page_size();
   static const int kPageSizeFieldNumber = 2;
   ::google::protobuf::int32 page_size() const;
   void set_page_size(::google::protobuf::int32 value);
 
-  // string page_token = 3;
+  // optional string page_token = 3;
   void clear_page_token();
   static const int kPageTokenFieldNumber = 3;
   const ::std::string& page_token() const;
@@ -1650,10 +1511,13 @@ class ListInstancesRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListInstancesRequest> ListInstancesRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListInstancesResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.ListInstancesResponse) */ {
@@ -1671,52 +1535,49 @@ class ListInstancesResponse : public ::google::protobuf::Message /* @@protoc_ins
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListInstancesResponse& default_instance();
 
-  static inline const ListInstancesResponse* internal_default_instance() {
-    return reinterpret_cast<const ListInstancesResponse*>(
-               &_ListInstancesResponse_default_instance_);
-  }
+  static const ListInstancesResponse* internal_default_instance();
 
   void Swap(ListInstancesResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListInstancesResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListInstancesResponse* New() const { return New(NULL); }
 
-  ListInstancesResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListInstancesResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListInstancesResponse& from);
   void MergeFrom(const ListInstancesResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListInstancesResponse* other);
+  void UnsafeMergeFrom(const ListInstancesResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1734,7 +1595,7 @@ class ListInstancesResponse : public ::google::protobuf::Message /* @@protoc_ins
   const ::google::protobuf::RepeatedPtrField< ::google::appengine::v1::Instance >&
       instances() const;
 
-  // string next_page_token = 2;
+  // optional string next_page_token = 2;
   void clear_next_page_token();
   static const int kNextPageTokenFieldNumber = 2;
   const ::std::string& next_page_token() const;
@@ -1754,10 +1615,13 @@ class ListInstancesResponse : public ::google::protobuf::Message /* @@protoc_ins
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListInstancesResponse> ListInstancesResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetInstanceRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.GetInstanceRequest) */ {
@@ -1775,58 +1639,55 @@ class GetInstanceRequest : public ::google::protobuf::Message /* @@protoc_insert
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetInstanceRequest& default_instance();
 
-  static inline const GetInstanceRequest* internal_default_instance() {
-    return reinterpret_cast<const GetInstanceRequest*>(
-               &_GetInstanceRequest_default_instance_);
-  }
+  static const GetInstanceRequest* internal_default_instance();
 
   void Swap(GetInstanceRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetInstanceRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetInstanceRequest* New() const { return New(NULL); }
 
-  GetInstanceRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetInstanceRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetInstanceRequest& from);
   void MergeFrom(const GetInstanceRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetInstanceRequest* other);
+  void UnsafeMergeFrom(const GetInstanceRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -1845,10 +1706,13 @@ class GetInstanceRequest : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetInstanceRequest> GetInstanceRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class DeleteInstanceRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.DeleteInstanceRequest) */ {
@@ -1866,58 +1730,55 @@ class DeleteInstanceRequest : public ::google::protobuf::Message /* @@protoc_ins
   static const ::google::protobuf::Descriptor* descriptor();
   static const DeleteInstanceRequest& default_instance();
 
-  static inline const DeleteInstanceRequest* internal_default_instance() {
-    return reinterpret_cast<const DeleteInstanceRequest*>(
-               &_DeleteInstanceRequest_default_instance_);
-  }
+  static const DeleteInstanceRequest* internal_default_instance();
 
   void Swap(DeleteInstanceRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline DeleteInstanceRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline DeleteInstanceRequest* New() const { return New(NULL); }
 
-  DeleteInstanceRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DeleteInstanceRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const DeleteInstanceRequest& from);
   void MergeFrom(const DeleteInstanceRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(DeleteInstanceRequest* other);
+  void UnsafeMergeFrom(const DeleteInstanceRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -1936,10 +1797,13 @@ class DeleteInstanceRequest : public ::google::protobuf::Message /* @@protoc_ins
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<DeleteInstanceRequest> DeleteInstanceRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class DebugInstanceRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.appengine.v1.DebugInstanceRequest) */ {
@@ -1957,58 +1821,55 @@ class DebugInstanceRequest : public ::google::protobuf::Message /* @@protoc_inse
   static const ::google::protobuf::Descriptor* descriptor();
   static const DebugInstanceRequest& default_instance();
 
-  static inline const DebugInstanceRequest* internal_default_instance() {
-    return reinterpret_cast<const DebugInstanceRequest*>(
-               &_DebugInstanceRequest_default_instance_);
-  }
+  static const DebugInstanceRequest* internal_default_instance();
 
   void Swap(DebugInstanceRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline DebugInstanceRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline DebugInstanceRequest* New() const { return New(NULL); }
 
-  DebugInstanceRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DebugInstanceRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const DebugInstanceRequest& from);
   void MergeFrom(const DebugInstanceRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(DebugInstanceRequest* other);
+  void UnsafeMergeFrom(const DebugInstanceRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -2027,10 +1888,13 @@ class DebugInstanceRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fappengine_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fappengine_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fappengine_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fappengine_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fappengine_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<DebugInstanceRequest> DebugInstanceRequest_default_instance_;
+
 // ===================================================================
 
 
@@ -2039,13 +1903,13 @@ class DebugInstanceRequest : public ::google::protobuf::Message /* @@protoc_inse
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // GetApplicationRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void GetApplicationRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetApplicationRequest::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.GetApplicationRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetApplicationRequest::set_name(const ::std::string& value) {
   
@@ -2083,17 +1947,20 @@ inline void GetApplicationRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.GetApplicationRequest.name)
 }
 
+inline const GetApplicationRequest* GetApplicationRequest::internal_default_instance() {
+  return &GetApplicationRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // RepairApplicationRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void RepairApplicationRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& RepairApplicationRequest::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.RepairApplicationRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void RepairApplicationRequest::set_name(const ::std::string& value) {
   
@@ -2131,17 +1998,20 @@ inline void RepairApplicationRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.RepairApplicationRequest.name)
 }
 
+inline const RepairApplicationRequest* RepairApplicationRequest::internal_default_instance() {
+  return &RepairApplicationRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListServicesRequest
 
-// string parent = 1;
+// optional string parent = 1;
 inline void ListServicesRequest::clear_parent() {
   parent_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListServicesRequest::parent() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ListServicesRequest.parent)
-  return parent_.GetNoArena();
+  return parent_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListServicesRequest::set_parent(const ::std::string& value) {
   
@@ -2179,7 +2049,7 @@ inline void ListServicesRequest::set_allocated_parent(::std::string* parent) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.ListServicesRequest.parent)
 }
 
-// int32 page_size = 2;
+// optional int32 page_size = 2;
 inline void ListServicesRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -2193,13 +2063,13 @@ inline void ListServicesRequest::set_page_size(::google::protobuf::int32 value) 
   // @@protoc_insertion_point(field_set:google.appengine.v1.ListServicesRequest.page_size)
 }
 
-// string page_token = 3;
+// optional string page_token = 3;
 inline void ListServicesRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListServicesRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ListServicesRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListServicesRequest::set_page_token(const ::std::string& value) {
   
@@ -2237,6 +2107,9 @@ inline void ListServicesRequest::set_allocated_page_token(::std::string* page_to
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.ListServicesRequest.page_token)
 }
 
+inline const ListServicesRequest* ListServicesRequest::internal_default_instance() {
+  return &ListServicesRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListServicesResponse
@@ -2271,13 +2144,13 @@ ListServicesResponse::services() const {
   return services_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void ListServicesResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListServicesResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ListServicesResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListServicesResponse::set_next_page_token(const ::std::string& value) {
   
@@ -2315,17 +2188,20 @@ inline void ListServicesResponse::set_allocated_next_page_token(::std::string* n
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.ListServicesResponse.next_page_token)
 }
 
+inline const ListServicesResponse* ListServicesResponse::internal_default_instance() {
+  return &ListServicesResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetServiceRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void GetServiceRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetServiceRequest::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.GetServiceRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetServiceRequest::set_name(const ::std::string& value) {
   
@@ -2363,17 +2239,20 @@ inline void GetServiceRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.GetServiceRequest.name)
 }
 
+inline const GetServiceRequest* GetServiceRequest::internal_default_instance() {
+  return &GetServiceRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // UpdateServiceRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void UpdateServiceRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& UpdateServiceRequest::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.UpdateServiceRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void UpdateServiceRequest::set_name(const ::std::string& value) {
   
@@ -2411,7 +2290,7 @@ inline void UpdateServiceRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.UpdateServiceRequest.name)
 }
 
-// .google.appengine.v1.Service service = 2;
+// optional .google.appengine.v1.Service service = 2;
 inline bool UpdateServiceRequest::has_service() const {
   return this != internal_default_instance() && service_ != NULL;
 }
@@ -2450,7 +2329,7 @@ inline void UpdateServiceRequest::set_allocated_service(::google::appengine::v1:
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.UpdateServiceRequest.service)
 }
 
-// .google.protobuf.FieldMask update_mask = 3;
+// optional .google.protobuf.FieldMask update_mask = 3;
 inline bool UpdateServiceRequest::has_update_mask() const {
   return this != internal_default_instance() && update_mask_ != NULL;
 }
@@ -2489,7 +2368,7 @@ inline void UpdateServiceRequest::set_allocated_update_mask(::google::protobuf::
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.UpdateServiceRequest.update_mask)
 }
 
-// bool migrate_traffic = 4;
+// optional bool migrate_traffic = 4;
 inline void UpdateServiceRequest::clear_migrate_traffic() {
   migrate_traffic_ = false;
 }
@@ -2503,17 +2382,20 @@ inline void UpdateServiceRequest::set_migrate_traffic(bool value) {
   // @@protoc_insertion_point(field_set:google.appengine.v1.UpdateServiceRequest.migrate_traffic)
 }
 
+inline const UpdateServiceRequest* UpdateServiceRequest::internal_default_instance() {
+  return &UpdateServiceRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // DeleteServiceRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void DeleteServiceRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& DeleteServiceRequest::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.DeleteServiceRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DeleteServiceRequest::set_name(const ::std::string& value) {
   
@@ -2551,17 +2433,20 @@ inline void DeleteServiceRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.DeleteServiceRequest.name)
 }
 
+inline const DeleteServiceRequest* DeleteServiceRequest::internal_default_instance() {
+  return &DeleteServiceRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListVersionsRequest
 
-// string parent = 1;
+// optional string parent = 1;
 inline void ListVersionsRequest::clear_parent() {
   parent_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListVersionsRequest::parent() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ListVersionsRequest.parent)
-  return parent_.GetNoArena();
+  return parent_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListVersionsRequest::set_parent(const ::std::string& value) {
   
@@ -2599,7 +2484,7 @@ inline void ListVersionsRequest::set_allocated_parent(::std::string* parent) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.ListVersionsRequest.parent)
 }
 
-// .google.appengine.v1.VersionView view = 2;
+// optional .google.appengine.v1.VersionView view = 2;
 inline void ListVersionsRequest::clear_view() {
   view_ = 0;
 }
@@ -2613,7 +2498,7 @@ inline void ListVersionsRequest::set_view(::google::appengine::v1::VersionView v
   // @@protoc_insertion_point(field_set:google.appengine.v1.ListVersionsRequest.view)
 }
 
-// int32 page_size = 3;
+// optional int32 page_size = 3;
 inline void ListVersionsRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -2627,13 +2512,13 @@ inline void ListVersionsRequest::set_page_size(::google::protobuf::int32 value) 
   // @@protoc_insertion_point(field_set:google.appengine.v1.ListVersionsRequest.page_size)
 }
 
-// string page_token = 4;
+// optional string page_token = 4;
 inline void ListVersionsRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListVersionsRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ListVersionsRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListVersionsRequest::set_page_token(const ::std::string& value) {
   
@@ -2671,6 +2556,9 @@ inline void ListVersionsRequest::set_allocated_page_token(::std::string* page_to
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.ListVersionsRequest.page_token)
 }
 
+inline const ListVersionsRequest* ListVersionsRequest::internal_default_instance() {
+  return &ListVersionsRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListVersionsResponse
@@ -2705,13 +2593,13 @@ ListVersionsResponse::versions() const {
   return versions_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void ListVersionsResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListVersionsResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ListVersionsResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListVersionsResponse::set_next_page_token(const ::std::string& value) {
   
@@ -2749,17 +2637,20 @@ inline void ListVersionsResponse::set_allocated_next_page_token(::std::string* n
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.ListVersionsResponse.next_page_token)
 }
 
+inline const ListVersionsResponse* ListVersionsResponse::internal_default_instance() {
+  return &ListVersionsResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetVersionRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void GetVersionRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetVersionRequest::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.GetVersionRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetVersionRequest::set_name(const ::std::string& value) {
   
@@ -2797,7 +2688,7 @@ inline void GetVersionRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.GetVersionRequest.name)
 }
 
-// .google.appengine.v1.VersionView view = 2;
+// optional .google.appengine.v1.VersionView view = 2;
 inline void GetVersionRequest::clear_view() {
   view_ = 0;
 }
@@ -2811,17 +2702,20 @@ inline void GetVersionRequest::set_view(::google::appengine::v1::VersionView val
   // @@protoc_insertion_point(field_set:google.appengine.v1.GetVersionRequest.view)
 }
 
+inline const GetVersionRequest* GetVersionRequest::internal_default_instance() {
+  return &GetVersionRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // CreateVersionRequest
 
-// string parent = 1;
+// optional string parent = 1;
 inline void CreateVersionRequest::clear_parent() {
   parent_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& CreateVersionRequest::parent() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.CreateVersionRequest.parent)
-  return parent_.GetNoArena();
+  return parent_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void CreateVersionRequest::set_parent(const ::std::string& value) {
   
@@ -2859,7 +2753,7 @@ inline void CreateVersionRequest::set_allocated_parent(::std::string* parent) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.CreateVersionRequest.parent)
 }
 
-// .google.appengine.v1.Version version = 2;
+// optional .google.appengine.v1.Version version = 2;
 inline bool CreateVersionRequest::has_version() const {
   return this != internal_default_instance() && version_ != NULL;
 }
@@ -2898,17 +2792,20 @@ inline void CreateVersionRequest::set_allocated_version(::google::appengine::v1:
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.CreateVersionRequest.version)
 }
 
+inline const CreateVersionRequest* CreateVersionRequest::internal_default_instance() {
+  return &CreateVersionRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // UpdateVersionRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void UpdateVersionRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& UpdateVersionRequest::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.UpdateVersionRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void UpdateVersionRequest::set_name(const ::std::string& value) {
   
@@ -2946,7 +2843,7 @@ inline void UpdateVersionRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.UpdateVersionRequest.name)
 }
 
-// .google.appengine.v1.Version version = 2;
+// optional .google.appengine.v1.Version version = 2;
 inline bool UpdateVersionRequest::has_version() const {
   return this != internal_default_instance() && version_ != NULL;
 }
@@ -2985,7 +2882,7 @@ inline void UpdateVersionRequest::set_allocated_version(::google::appengine::v1:
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.UpdateVersionRequest.version)
 }
 
-// .google.protobuf.FieldMask update_mask = 3;
+// optional .google.protobuf.FieldMask update_mask = 3;
 inline bool UpdateVersionRequest::has_update_mask() const {
   return this != internal_default_instance() && update_mask_ != NULL;
 }
@@ -3024,17 +2921,20 @@ inline void UpdateVersionRequest::set_allocated_update_mask(::google::protobuf::
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.UpdateVersionRequest.update_mask)
 }
 
+inline const UpdateVersionRequest* UpdateVersionRequest::internal_default_instance() {
+  return &UpdateVersionRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // DeleteVersionRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void DeleteVersionRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& DeleteVersionRequest::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.DeleteVersionRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DeleteVersionRequest::set_name(const ::std::string& value) {
   
@@ -3072,17 +2972,20 @@ inline void DeleteVersionRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.DeleteVersionRequest.name)
 }
 
+inline const DeleteVersionRequest* DeleteVersionRequest::internal_default_instance() {
+  return &DeleteVersionRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListInstancesRequest
 
-// string parent = 1;
+// optional string parent = 1;
 inline void ListInstancesRequest::clear_parent() {
   parent_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListInstancesRequest::parent() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ListInstancesRequest.parent)
-  return parent_.GetNoArena();
+  return parent_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListInstancesRequest::set_parent(const ::std::string& value) {
   
@@ -3120,7 +3023,7 @@ inline void ListInstancesRequest::set_allocated_parent(::std::string* parent) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.ListInstancesRequest.parent)
 }
 
-// int32 page_size = 2;
+// optional int32 page_size = 2;
 inline void ListInstancesRequest::clear_page_size() {
   page_size_ = 0;
 }
@@ -3134,13 +3037,13 @@ inline void ListInstancesRequest::set_page_size(::google::protobuf::int32 value)
   // @@protoc_insertion_point(field_set:google.appengine.v1.ListInstancesRequest.page_size)
 }
 
-// string page_token = 3;
+// optional string page_token = 3;
 inline void ListInstancesRequest::clear_page_token() {
   page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListInstancesRequest::page_token() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ListInstancesRequest.page_token)
-  return page_token_.GetNoArena();
+  return page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListInstancesRequest::set_page_token(const ::std::string& value) {
   
@@ -3178,6 +3081,9 @@ inline void ListInstancesRequest::set_allocated_page_token(::std::string* page_t
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.ListInstancesRequest.page_token)
 }
 
+inline const ListInstancesRequest* ListInstancesRequest::internal_default_instance() {
+  return &ListInstancesRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListInstancesResponse
@@ -3212,13 +3118,13 @@ ListInstancesResponse::instances() const {
   return instances_;
 }
 
-// string next_page_token = 2;
+// optional string next_page_token = 2;
 inline void ListInstancesResponse::clear_next_page_token() {
   next_page_token_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListInstancesResponse::next_page_token() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ListInstancesResponse.next_page_token)
-  return next_page_token_.GetNoArena();
+  return next_page_token_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListInstancesResponse::set_next_page_token(const ::std::string& value) {
   
@@ -3256,17 +3162,20 @@ inline void ListInstancesResponse::set_allocated_next_page_token(::std::string* 
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.ListInstancesResponse.next_page_token)
 }
 
+inline const ListInstancesResponse* ListInstancesResponse::internal_default_instance() {
+  return &ListInstancesResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetInstanceRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void GetInstanceRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetInstanceRequest::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.GetInstanceRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetInstanceRequest::set_name(const ::std::string& value) {
   
@@ -3304,17 +3213,20 @@ inline void GetInstanceRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.GetInstanceRequest.name)
 }
 
+inline const GetInstanceRequest* GetInstanceRequest::internal_default_instance() {
+  return &GetInstanceRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // DeleteInstanceRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void DeleteInstanceRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& DeleteInstanceRequest::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.DeleteInstanceRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DeleteInstanceRequest::set_name(const ::std::string& value) {
   
@@ -3352,17 +3264,20 @@ inline void DeleteInstanceRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.DeleteInstanceRequest.name)
 }
 
+inline const DeleteInstanceRequest* DeleteInstanceRequest::internal_default_instance() {
+  return &DeleteInstanceRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // DebugInstanceRequest
 
-// string name = 1;
+// optional string name = 1;
 inline void DebugInstanceRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& DebugInstanceRequest::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.DebugInstanceRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DebugInstanceRequest::set_name(const ::std::string& value) {
   
@@ -3400,6 +3315,9 @@ inline void DebugInstanceRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.DebugInstanceRequest.name)
 }
 
+inline const DebugInstanceRequest* DebugInstanceRequest::internal_default_instance() {
+  return &DebugInstanceRequest_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
@@ -3437,7 +3355,6 @@ inline void DebugInstanceRequest::set_allocated_name(::std::string* name) {
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace appengine

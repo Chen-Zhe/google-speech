@@ -25,22 +25,22 @@ namespace {
 
 }  // namespace
 
-inline ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fannotations_2eproto() { return NULL; }
-static const ::google::protobuf::internal::MigrationSchema* schemas = NULL;
-static const ::google::protobuf::internal::DefaultInstanceData* file_default_instances = NULL;
-namespace {
 
-void protobuf_AssignDescriptors() {
+void protobuf_AssignDesc_google_2fapi_2fannotations_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fapi_2fannotations_2eproto() {
   protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/api/annotations.proto", schemas, file_default_instances, protobuf_Offsets_google_2fapi_2fannotations_2eproto(), factory,
-      NULL, NULL, NULL);
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/api/annotations.proto");
+  GOOGLE_CHECK(file != NULL);
 }
 
+namespace {
+
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fapi_2fannotations_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
@@ -58,31 +58,30 @@ void protobuf_InitDefaults_google_2fapi_2fannotations_2eproto_impl() {
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fhttp_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fdescriptor_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
   ::google::protobuf::internal::ExtensionSet::RegisterMessageExtension(
     ::google::protobuf::MethodOptions::internal_default_instance(),
     72295728, 11, false, false,
     ::google::api::HttpRule::internal_default_instance());
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fannotations_2eproto_once_);
 void protobuf_InitDefaults_google_2fapi_2fannotations_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fapi_2fannotations_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fannotations_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fannotations_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fapi_2fannotations_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
-  static const char descriptor[] = {
-      "\n\034google/api/annotations.proto\022\ngoogle.a"
-      "pi\032\025google/api/http.proto\032 google/protob"
-      "uf/descriptor.proto:E\n\004http\022\036.google.pro"
-      "tobuf.MethodOptions\030\260\312\274\" \001(\0132\024.google.ap"
-      "i.HttpRuleBn\n\016com.google.apiB\020Annotation"
-      "sProtoP\001ZAgoogle.golang.org/genproto/goo"
-      "gleapis/api/annotations;annotations\242\002\004GA"
-      "PIb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 290);
+    "\n\034google/api/annotations.proto\022\ngoogle.a"
+    "pi\032\025google/api/http.proto\032 google/protob"
+    "uf/descriptor.proto:E\n\004http\022\036.google.pro"
+    "tobuf.MethodOptions\030\260\312\274\" \001(\0132\024.google.ap"
+    "i.HttpRuleBn\n\016com.google.apiB\020Annotation"
+    "sProtoP\001ZAgoogle.golang.org/genproto/goo"
+    "gleapis/api/annotations;annotations\242\002\004GA"
+    "PIb\006proto3", 290);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/annotations.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fhttp_2eproto();

@@ -24,49 +24,12 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include "google/devtools/clouderrorreporting/v1beta1/common.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace devtools {
-namespace clouderrorreporting {
-namespace v1beta1 {
-class ErrorContext;
-class ErrorContextDefaultTypeInternal;
-extern ErrorContextDefaultTypeInternal _ErrorContext_default_instance_;
-class ErrorEvent;
-class ErrorEventDefaultTypeInternal;
-extern ErrorEventDefaultTypeInternal _ErrorEvent_default_instance_;
-class ErrorGroup;
-class ErrorGroupDefaultTypeInternal;
-extern ErrorGroupDefaultTypeInternal _ErrorGroup_default_instance_;
-class GetGroupRequest;
-class GetGroupRequestDefaultTypeInternal;
-extern GetGroupRequestDefaultTypeInternal _GetGroupRequest_default_instance_;
-class HttpRequestContext;
-class HttpRequestContextDefaultTypeInternal;
-extern HttpRequestContextDefaultTypeInternal _HttpRequestContext_default_instance_;
-class ServiceContext;
-class ServiceContextDefaultTypeInternal;
-extern ServiceContextDefaultTypeInternal _ServiceContext_default_instance_;
-class SourceLocation;
-class SourceLocationDefaultTypeInternal;
-extern SourceLocationDefaultTypeInternal _SourceLocation_default_instance_;
-class TrackingIssue;
-class TrackingIssueDefaultTypeInternal;
-extern TrackingIssueDefaultTypeInternal _TrackingIssue_default_instance_;
-class UpdateGroupRequest;
-class UpdateGroupRequestDefaultTypeInternal;
-extern UpdateGroupRequestDefaultTypeInternal _UpdateGroupRequest_default_instance_;
-}  // namespace v1beta1
-}  // namespace clouderrorreporting
-}  // namespace devtools
-}  // namespace google
 
 namespace google {
 namespace devtools {
@@ -76,6 +39,11 @@ namespace v1beta1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fgroup_5fservice_2eproto();
 void protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fgroup_5fservice_2eproto();
+void protobuf_AssignDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fgroup_5fservice_2eproto();
+void protobuf_ShutdownFile_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fgroup_5fservice_2eproto();
+
+class GetGroupRequest;
+class UpdateGroupRequest;
 
 // ===================================================================
 
@@ -94,58 +62,55 @@ class GetGroupRequest : public ::google::protobuf::Message /* @@protoc_insertion
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetGroupRequest& default_instance();
 
-  static inline const GetGroupRequest* internal_default_instance() {
-    return reinterpret_cast<const GetGroupRequest*>(
-               &_GetGroupRequest_default_instance_);
-  }
+  static const GetGroupRequest* internal_default_instance();
 
   void Swap(GetGroupRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetGroupRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetGroupRequest* New() const { return New(NULL); }
 
-  GetGroupRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetGroupRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetGroupRequest& from);
   void MergeFrom(const GetGroupRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetGroupRequest* other);
+  void UnsafeMergeFrom(const GetGroupRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string group_name = 1;
+  // optional string group_name = 1;
   void clear_group_name();
   static const int kGroupNameFieldNumber = 1;
   const ::std::string& group_name() const;
@@ -164,10 +129,13 @@ class GetGroupRequest : public ::google::protobuf::Message /* @@protoc_insertion
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fgroup_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fgroup_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fgroup_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fgroup_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fgroup_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetGroupRequest> GetGroupRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class UpdateGroupRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.devtools.clouderrorreporting.v1beta1.UpdateGroupRequest) */ {
@@ -185,58 +153,55 @@ class UpdateGroupRequest : public ::google::protobuf::Message /* @@protoc_insert
   static const ::google::protobuf::Descriptor* descriptor();
   static const UpdateGroupRequest& default_instance();
 
-  static inline const UpdateGroupRequest* internal_default_instance() {
-    return reinterpret_cast<const UpdateGroupRequest*>(
-               &_UpdateGroupRequest_default_instance_);
-  }
+  static const UpdateGroupRequest* internal_default_instance();
 
   void Swap(UpdateGroupRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline UpdateGroupRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline UpdateGroupRequest* New() const { return New(NULL); }
 
-  UpdateGroupRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  UpdateGroupRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const UpdateGroupRequest& from);
   void MergeFrom(const UpdateGroupRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(UpdateGroupRequest* other);
+  void UnsafeMergeFrom(const UpdateGroupRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.devtools.clouderrorreporting.v1beta1.ErrorGroup group = 1;
+  // optional .google.devtools.clouderrorreporting.v1beta1.ErrorGroup group = 1;
   bool has_group() const;
   void clear_group();
   static const int kGroupFieldNumber = 1;
@@ -253,10 +218,13 @@ class UpdateGroupRequest : public ::google::protobuf::Message /* @@protoc_insert
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fgroup_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fgroup_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fgroup_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fgroup_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fdevtools_2fclouderrorreporting_2fv1beta1_2ferror_5fgroup_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<UpdateGroupRequest> UpdateGroupRequest_default_instance_;
+
 // ===================================================================
 
 
@@ -265,13 +233,13 @@ class UpdateGroupRequest : public ::google::protobuf::Message /* @@protoc_insert
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // GetGroupRequest
 
-// string group_name = 1;
+// optional string group_name = 1;
 inline void GetGroupRequest::clear_group_name() {
   group_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetGroupRequest::group_name() const {
   // @@protoc_insertion_point(field_get:google.devtools.clouderrorreporting.v1beta1.GetGroupRequest.group_name)
-  return group_name_.GetNoArena();
+  return group_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetGroupRequest::set_group_name(const ::std::string& value) {
   
@@ -309,11 +277,14 @@ inline void GetGroupRequest::set_allocated_group_name(::std::string* group_name)
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.GetGroupRequest.group_name)
 }
 
+inline const GetGroupRequest* GetGroupRequest::internal_default_instance() {
+  return &GetGroupRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // UpdateGroupRequest
 
-// .google.devtools.clouderrorreporting.v1beta1.ErrorGroup group = 1;
+// optional .google.devtools.clouderrorreporting.v1beta1.ErrorGroup group = 1;
 inline bool UpdateGroupRequest::has_group() const {
   return this != internal_default_instance() && group_ != NULL;
 }
@@ -352,12 +323,14 @@ inline void UpdateGroupRequest::set_allocated_group(::google::devtools::clouderr
   // @@protoc_insertion_point(field_set_allocated:google.devtools.clouderrorreporting.v1beta1.UpdateGroupRequest.group)
 }
 
+inline const UpdateGroupRequest* UpdateGroupRequest::internal_default_instance() {
+  return &UpdateGroupRequest_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1beta1
 }  // namespace clouderrorreporting

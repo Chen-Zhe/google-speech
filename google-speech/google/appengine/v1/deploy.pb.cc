@@ -20,152 +20,184 @@
 namespace google {
 namespace appengine {
 namespace v1 {
-class DeploymentDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Deployment> {};
-DeploymentDefaultTypeInternal _Deployment_default_instance_;
-class FileInfoDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<FileInfo> {};
-FileInfoDefaultTypeInternal _FileInfo_default_instance_;
-class ContainerInfoDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ContainerInfo> {};
-ContainerInfoDefaultTypeInternal _ContainerInfo_default_instance_;
-class ZipInfoDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ZipInfo> {};
-ZipInfoDefaultTypeInternal _ZipInfo_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[5];
+const ::google::protobuf::Descriptor* Deployment_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Deployment_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Deployment_FilesEntry_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* FileInfo_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  FileInfo_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ContainerInfo_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ContainerInfo_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ZipInfo_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ZipInfo_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fdeploy_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fdeploy_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Deployment, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fappengine_2fv1_2fdeploy_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fappengine_2fv1_2fdeploy_2eproto() {
+  protobuf_AddDesc_google_2fappengine_2fv1_2fdeploy_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/appengine/v1/deploy.proto");
+  GOOGLE_CHECK(file != NULL);
+  Deployment_descriptor_ = file->message_type(0);
+  static const int Deployment_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Deployment, files_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Deployment, container_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Deployment, zip_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FileInfo, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Deployment_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Deployment_descriptor_,
+      Deployment::internal_default_instance(),
+      Deployment_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Deployment),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Deployment, _internal_metadata_));
+  Deployment_FilesEntry_descriptor_ = Deployment_descriptor_->nested_type(0);
+  FileInfo_descriptor_ = file->message_type(1);
+  static const int FileInfo_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FileInfo, source_url_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FileInfo, sha1_sum_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FileInfo, mime_type_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ContainerInfo, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  FileInfo_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      FileInfo_descriptor_,
+      FileInfo::internal_default_instance(),
+      FileInfo_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(FileInfo),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(FileInfo, _internal_metadata_));
+  ContainerInfo_descriptor_ = file->message_type(2);
+  static const int ContainerInfo_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ContainerInfo, image_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ZipInfo, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ContainerInfo_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ContainerInfo_descriptor_,
+      ContainerInfo::internal_default_instance(),
+      ContainerInfo_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ContainerInfo),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ContainerInfo, _internal_metadata_));
+  ZipInfo_descriptor_ = file->message_type(3);
+  static const int ZipInfo_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ZipInfo, source_url_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ZipInfo, files_count_),
   };
-  return offsets;
+  ZipInfo_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ZipInfo_descriptor_,
+      ZipInfo::internal_default_instance(),
+      ZipInfo_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ZipInfo),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ZipInfo, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(Deployment)},
-  { 7, -1, sizeof(FileInfo)},
-  { 14, -1, sizeof(ContainerInfo)},
-  { 19, -1, sizeof(ZipInfo)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Deployment_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_FileInfo_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ContainerInfo_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ZipInfo_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fappengine_2fv1_2fdeploy_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/appengine/v1/deploy.proto", schemas, file_default_instances, protobuf_Offsets_google_2fappengine_2fv1_2fdeploy_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fappengine_2fv1_2fdeploy_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 5);
-  const ::google::protobuf::Descriptor* Deployment_FilesEntry_descriptor = file_level_metadata[0].descriptor;
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-        Deployment_FilesEntry_descriptor,
+      Deployment_descriptor_, Deployment::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+        Deployment_FilesEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
             ::std::string,
             ::google::appengine::v1::FileInfo,
             ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
             ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE,
             0>::CreateDefaultInstance(
-                Deployment_FilesEntry_descriptor));
+                Deployment_FilesEntry_descriptor_));
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      FileInfo_descriptor_, FileInfo::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ContainerInfo_descriptor_, ContainerInfo::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ZipInfo_descriptor_, ZipInfo::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fappengine_2fv1_2fdeploy_2eproto() {
-  _Deployment_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _FileInfo_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _ContainerInfo_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _ZipInfo_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
+  Deployment_default_instance_.Shutdown();
+  delete Deployment_reflection_;
+  FileInfo_default_instance_.Shutdown();
+  delete FileInfo_reflection_;
+  ContainerInfo_default_instance_.Shutdown();
+  delete ContainerInfo_reflection_;
+  ZipInfo_default_instance_.Shutdown();
+  delete ZipInfo_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _Deployment_default_instance_.DefaultConstruct();
-  _FileInfo_default_instance_.DefaultConstruct();
-  _ContainerInfo_default_instance_.DefaultConstruct();
-  _ZipInfo_default_instance_.DefaultConstruct();
-  _Deployment_default_instance_.get_mutable()->container_ = const_cast< ::google::appengine::v1::ContainerInfo*>(
-      ::google::appengine::v1::ContainerInfo::internal_default_instance());
-  _Deployment_default_instance_.get_mutable()->zip_ = const_cast< ::google::appengine::v1::ZipInfo*>(
-      ::google::appengine::v1::ZipInfo::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  Deployment_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ::google::protobuf::internal::GetEmptyString();
+  FileInfo_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ContainerInfo_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ZipInfo_default_instance_.DefaultConstruct();
+  Deployment_default_instance_.get_mutable()->InitAsDefaultInstance();
+  FileInfo_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ContainerInfo_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ZipInfo_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto_once_);
 void protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fappengine_2fv1_2fdeploy_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto();
-  static const char descriptor[] = {
-      "\n google/appengine/v1/deploy.proto\022\023goog"
-      "le.appengine.v1\032\034google/api/annotations."
-      "proto\"\366\001\n\nDeployment\0229\n\005files\030\001 \003(\0132*.go"
-      "ogle.appengine.v1.Deployment.FilesEntry\022"
-      "5\n\tcontainer\030\002 \001(\0132\".google.appengine.v1"
-      ".ContainerInfo\022)\n\003zip\030\003 \001(\0132\034.google.app"
-      "engine.v1.ZipInfo\032K\n\nFilesEntry\022\013\n\003key\030\001"
-      " \001(\t\022,\n\005value\030\002 \001(\0132\035.google.appengine.v"
-      "1.FileInfo:\0028\001\"C\n\010FileInfo\022\022\n\nsource_url"
-      "\030\001 \001(\t\022\020\n\010sha1_sum\030\002 \001(\t\022\021\n\tmime_type\030\003 "
-      "\001(\t\"\036\n\rContainerInfo\022\r\n\005image\030\001 \001(\t\"2\n\007Z"
-      "ipInfo\022\022\n\nsource_url\030\003 \001(\t\022\023\n\013files_coun"
-      "t\030\004 \001(\005Bf\n\027com.google.appengine.v1B\013Depl"
-      "oyProtoP\001Z<google.golang.org/genproto/go"
-      "ogleapis/appengine/v1;appengineb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 599);
+    "\n google/appengine/v1/deploy.proto\022\023goog"
+    "le.appengine.v1\032\034google/api/annotations."
+    "proto\"\366\001\n\nDeployment\0229\n\005files\030\001 \003(\0132*.go"
+    "ogle.appengine.v1.Deployment.FilesEntry\022"
+    "5\n\tcontainer\030\002 \001(\0132\".google.appengine.v1"
+    ".ContainerInfo\022)\n\003zip\030\003 \001(\0132\034.google.app"
+    "engine.v1.ZipInfo\032K\n\nFilesEntry\022\013\n\003key\030\001"
+    " \001(\t\022,\n\005value\030\002 \001(\0132\035.google.appengine.v"
+    "1.FileInfo:\0028\001\"C\n\010FileInfo\022\022\n\nsource_url"
+    "\030\001 \001(\t\022\020\n\010sha1_sum\030\002 \001(\t\022\021\n\tmime_type\030\003 "
+    "\001(\t\"\036\n\rContainerInfo\022\r\n\005image\030\001 \001(\t\"2\n\007Z"
+    "ipInfo\022\022\n\nsource_url\030\003 \001(\t\022\023\n\013files_coun"
+    "t\030\004 \001(\005Bf\n\027com.google.appengine.v1B\013Depl"
+    "oyProtoP\001Z<google.golang.org/genproto/go"
+    "ogleapis/appengine/v1;appengineb\006proto3", 599);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/appengine/v1/deploy.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -184,10 +216,15 @@ struct StaticDescriptorInitializer_google_2fappengine_2fv1_2fdeploy_2eproto {
   }
 } static_descriptor_initializer_google_2fappengine_2fv1_2fdeploy_2eproto_;
 
-// ===================================================================
+namespace {
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
 
 // ===================================================================
 
@@ -199,44 +236,33 @@ const int Deployment::kZipFieldNumber;
 
 Deployment::Deployment()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.Deployment)
 }
+
+void Deployment::InitAsDefaultInstance() {
+  container_ = const_cast< ::google::appengine::v1::ContainerInfo*>(
+      ::google::appengine::v1::ContainerInfo::internal_default_instance());
+  zip_ = const_cast< ::google::appengine::v1::ZipInfo*>(
+      ::google::appengine::v1::ZipInfo::internal_default_instance());
+}
+
 Deployment::Deployment(const Deployment& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  const ::google::protobuf::Descriptor*& Deployment_FilesEntry_descriptor = file_level_metadata[0].descriptor;
-  files_.SetAssignDescriptorCallback(
-      protobuf_AssignDescriptorsOnce);
-  files_.SetEntryDescriptor(
-      &Deployment_FilesEntry_descriptor);
-  files_.MergeFrom(from.files_);
-  if (from.has_container()) {
-    container_ = new ::google::appengine::v1::ContainerInfo(*from.container_);
-  } else {
-    container_ = NULL;
-  }
-  if (from.has_zip()) {
-    zip_ = new ::google::appengine::v1::ZipInfo(*from.zip_);
-  } else {
-    zip_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.Deployment)
 }
 
 void Deployment::SharedCtor() {
-  const ::google::protobuf::Descriptor*& Deployment_FilesEntry_descriptor = file_level_metadata[0].descriptor;
   files_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   files_.SetEntryDescriptor(
-      &Deployment_FilesEntry_descriptor);
-  ::memset(&container_, 0, reinterpret_cast<char*>(&zip_) -
-    reinterpret_cast<char*>(&container_) + sizeof(zip_));
+      &::google::appengine::v1::Deployment_FilesEntry_descriptor_);
+  container_ = NULL;
+  zip_ = NULL;
   _cached_size_ = 0;
 }
 
@@ -246,10 +272,8 @@ Deployment::~Deployment() {
 }
 
 void Deployment::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &Deployment_default_instance_.get()) {
     delete container_;
-  }
-  if (this != internal_default_instance()) {
     delete zip_;
   }
 }
@@ -261,13 +285,15 @@ void Deployment::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Deployment::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return Deployment_descriptor_;
 }
 
 const Deployment& Deployment::default_instance() {
   protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Deployment> Deployment_default_instance_;
 
 Deployment* Deployment::New(::google::protobuf::Arena* arena) const {
   Deployment* n = new Deployment;
@@ -279,15 +305,11 @@ Deployment* Deployment::New(::google::protobuf::Arena* arena) const {
 
 void Deployment::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.appengine.v1.Deployment)
-  files_.Clear();
-  if (GetArenaNoVirtual() == NULL && container_ != NULL) {
-    delete container_;
-  }
+  if (GetArenaNoVirtual() == NULL && container_ != NULL) delete container_;
   container_ = NULL;
-  if (GetArenaNoVirtual() == NULL && zip_ != NULL) {
-    delete zip_;
-  }
+  if (GetArenaNoVirtual() == NULL && zip_ != NULL) delete zip_;
   zip_ = NULL;
+  files_.Clear();
 }
 
 bool Deployment::MergePartialFromCodedStream(
@@ -296,14 +318,15 @@ bool Deployment::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.appengine.v1.Deployment)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // map<string, .google.appengine.v1.FileInfo> files = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_files:
           Deployment_FilesEntry::Parser< ::google::protobuf::internal::MapField<
               ::std::string, ::google::appengine::v1::FileInfo,
               ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
@@ -319,29 +342,35 @@ bool Deployment::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_files;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(18)) goto parse_container;
         break;
       }
 
-      // .google.appengine.v1.ContainerInfo container = 2;
+      // optional .google.appengine.v1.ContainerInfo container = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_container:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_container()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_zip;
         break;
       }
 
-      // .google.appengine.v1.ZipInfo zip = 3;
+      // optional .google.appengine.v1.ZipInfo zip = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_zip:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_zip()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -384,7 +413,7 @@ void Deployment::SerializeWithCachedSizes(
       }
     };
 
-    if (output->IsSerializationDeterministic() &&
+    if (output->IsSerializationDeterminstic() &&
         this->files().size() > 1) {
       ::google::protobuf::scoped_array<SortItem> items(
           new SortItem[this->files().size()]);
@@ -418,13 +447,13 @@ void Deployment::SerializeWithCachedSizes(
     }
   }
 
-  // .google.appengine.v1.ContainerInfo container = 2;
+  // optional .google.appengine.v1.ContainerInfo container = 2;
   if (this->has_container()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->container_, output);
   }
 
-  // .google.appengine.v1.ZipInfo zip = 3;
+  // optional .google.appengine.v1.ZipInfo zip = 3;
   if (this->has_zip()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *this->zip_, output);
@@ -490,14 +519,14 @@ void Deployment::SerializeWithCachedSizes(
     }
   }
 
-  // .google.appengine.v1.ContainerInfo container = 2;
+  // optional .google.appengine.v1.ContainerInfo container = 2;
   if (this->has_container()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *this->container_, false, target);
   }
 
-  // .google.appengine.v1.ZipInfo zip = 3;
+  // optional .google.appengine.v1.ZipInfo zip = 3;
   if (this->has_zip()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -511,6 +540,20 @@ void Deployment::SerializeWithCachedSizes(
 size_t Deployment::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.Deployment)
   size_t total_size = 0;
+
+  // optional .google.appengine.v1.ContainerInfo container = 2;
+  if (this->has_container()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->container_);
+  }
+
+  // optional .google.appengine.v1.ZipInfo zip = 3;
+  if (this->has_zip()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->zip_);
+  }
 
   // map<string, .google.appengine.v1.FileInfo> files = 1;
   total_size += 1 *
@@ -526,20 +569,6 @@ size_t Deployment::ByteSizeLong() const {
     }
   }
 
-  // .google.appengine.v1.ContainerInfo container = 2;
-  if (this->has_container()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->container_);
-  }
-
-  // .google.appengine.v1.ZipInfo zip = 3;
-  if (this->has_zip()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->zip_);
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -549,7 +578,7 @@ size_t Deployment::ByteSizeLong() const {
 
 void Deployment::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.Deployment)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Deployment* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Deployment>(
           &from);
@@ -558,14 +587,21 @@ void Deployment::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.Deployment)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Deployment::MergeFrom(const Deployment& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.Deployment)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Deployment::UnsafeMergeFrom(const Deployment& from) {
+  GOOGLE_DCHECK(&from != this);
   files_.MergeFrom(from.files_);
   if (from.has_container()) {
     mutable_container()->::google::appengine::v1::ContainerInfo::MergeFrom(from.container());
@@ -586,10 +622,11 @@ void Deployment::CopyFrom(const Deployment& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.Deployment)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Deployment::IsInitialized() const {
+
   return true;
 }
 
@@ -601,12 +638,16 @@ void Deployment::InternalSwap(Deployment* other) {
   files_.Swap(&other->files_);
   std::swap(container_, other->container_);
   std::swap(zip_, other->zip_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Deployment::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Deployment_descriptor_;
+  metadata.reflection = Deployment_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -630,7 +671,7 @@ Deployment::mutable_files() {
   return files_.MutableMap();
 }
 
-// .google.appengine.v1.ContainerInfo container = 2;
+// optional .google.appengine.v1.ContainerInfo container = 2;
 bool Deployment::has_container() const {
   return this != internal_default_instance() && container_ != NULL;
 }
@@ -669,7 +710,7 @@ void Deployment::set_allocated_container(::google::appengine::v1::ContainerInfo*
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Deployment.container)
 }
 
-// .google.appengine.v1.ZipInfo zip = 3;
+// optional .google.appengine.v1.ZipInfo zip = 3;
 bool Deployment::has_zip() const {
   return this != internal_default_instance() && zip_ != NULL;
 }
@@ -708,6 +749,9 @@ void Deployment::set_allocated_zip(::google::appengine::v1::ZipInfo* zip) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Deployment.zip)
 }
 
+inline const Deployment* Deployment::internal_default_instance() {
+  return &Deployment_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -720,29 +764,19 @@ const int FileInfo::kMimeTypeFieldNumber;
 
 FileInfo::FileInfo()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.FileInfo)
 }
+
+void FileInfo::InitAsDefaultInstance() {
+}
+
 FileInfo::FileInfo(const FileInfo& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  source_url_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.source_url().size() > 0) {
-    source_url_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.source_url_);
-  }
-  sha1_sum_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.sha1_sum().size() > 0) {
-    sha1_sum_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.sha1_sum_);
-  }
-  mime_type_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.mime_type().size() > 0) {
-    mime_type_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.mime_type_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.FileInfo)
 }
 
@@ -771,13 +805,15 @@ void FileInfo::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* FileInfo::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return FileInfo_descriptor_;
 }
 
 const FileInfo& FileInfo::default_instance() {
   protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<FileInfo> FileInfo_default_instance_;
 
 FileInfo* FileInfo::New(::google::protobuf::Arena* arena) const {
   FileInfo* n = new FileInfo;
@@ -800,13 +836,13 @@ bool FileInfo::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.appengine.v1.FileInfo)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string source_url = 1;
+      // optional string source_url = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_source_url()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -816,12 +852,14 @@ bool FileInfo::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_sha1_sum;
         break;
       }
 
-      // string sha1_sum = 2;
+      // optional string sha1_sum = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_sha1_sum:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_sha1_sum()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -831,12 +869,14 @@ bool FileInfo::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_mime_type;
         break;
       }
 
-      // string mime_type = 3;
+      // optional string mime_type = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_mime_type:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_mime_type()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -846,6 +886,7 @@ bool FileInfo::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -873,7 +914,7 @@ failure:
 void FileInfo::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.appengine.v1.FileInfo)
-  // string source_url = 1;
+  // optional string source_url = 1;
   if (this->source_url().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->source_url().data(), this->source_url().length(),
@@ -883,7 +924,7 @@ void FileInfo::SerializeWithCachedSizes(
       1, this->source_url(), output);
   }
 
-  // string sha1_sum = 2;
+  // optional string sha1_sum = 2;
   if (this->sha1_sum().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->sha1_sum().data(), this->sha1_sum().length(),
@@ -893,7 +934,7 @@ void FileInfo::SerializeWithCachedSizes(
       2, this->sha1_sum(), output);
   }
 
-  // string mime_type = 3;
+  // optional string mime_type = 3;
   if (this->mime_type().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->mime_type().data(), this->mime_type().length(),
@@ -910,7 +951,7 @@ void FileInfo::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.FileInfo)
-  // string source_url = 1;
+  // optional string source_url = 1;
   if (this->source_url().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->source_url().data(), this->source_url().length(),
@@ -921,7 +962,7 @@ void FileInfo::SerializeWithCachedSizes(
         1, this->source_url(), target);
   }
 
-  // string sha1_sum = 2;
+  // optional string sha1_sum = 2;
   if (this->sha1_sum().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->sha1_sum().data(), this->sha1_sum().length(),
@@ -932,7 +973,7 @@ void FileInfo::SerializeWithCachedSizes(
         2, this->sha1_sum(), target);
   }
 
-  // string mime_type = 3;
+  // optional string mime_type = 3;
   if (this->mime_type().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->mime_type().data(), this->mime_type().length(),
@@ -951,21 +992,21 @@ size_t FileInfo::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.FileInfo)
   size_t total_size = 0;
 
-  // string source_url = 1;
+  // optional string source_url = 1;
   if (this->source_url().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->source_url());
   }
 
-  // string sha1_sum = 2;
+  // optional string sha1_sum = 2;
   if (this->sha1_sum().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->sha1_sum());
   }
 
-  // string mime_type = 3;
+  // optional string mime_type = 3;
   if (this->mime_type().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -981,7 +1022,7 @@ size_t FileInfo::ByteSizeLong() const {
 
 void FileInfo::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.FileInfo)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const FileInfo* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const FileInfo>(
           &from);
@@ -990,14 +1031,21 @@ void FileInfo::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.FileInfo)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void FileInfo::MergeFrom(const FileInfo& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.FileInfo)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void FileInfo::UnsafeMergeFrom(const FileInfo& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.source_url().size() > 0) {
 
     source_url_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.source_url_);
@@ -1023,10 +1071,11 @@ void FileInfo::CopyFrom(const FileInfo& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.FileInfo)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool FileInfo::IsInitialized() const {
+
   return true;
 }
 
@@ -1038,24 +1087,28 @@ void FileInfo::InternalSwap(FileInfo* other) {
   source_url_.Swap(&other->source_url_);
   sha1_sum_.Swap(&other->sha1_sum_);
   mime_type_.Swap(&other->mime_type_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata FileInfo::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = FileInfo_descriptor_;
+  metadata.reflection = FileInfo_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // FileInfo
 
-// string source_url = 1;
+// optional string source_url = 1;
 void FileInfo::clear_source_url() {
   source_url_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& FileInfo::source_url() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.FileInfo.source_url)
-  return source_url_.GetNoArena();
+  return source_url_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void FileInfo::set_source_url(const ::std::string& value) {
   
@@ -1093,13 +1146,13 @@ void FileInfo::set_allocated_source_url(::std::string* source_url) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.FileInfo.source_url)
 }
 
-// string sha1_sum = 2;
+// optional string sha1_sum = 2;
 void FileInfo::clear_sha1_sum() {
   sha1_sum_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& FileInfo::sha1_sum() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.FileInfo.sha1_sum)
-  return sha1_sum_.GetNoArena();
+  return sha1_sum_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void FileInfo::set_sha1_sum(const ::std::string& value) {
   
@@ -1137,13 +1190,13 @@ void FileInfo::set_allocated_sha1_sum(::std::string* sha1_sum) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.FileInfo.sha1_sum)
 }
 
-// string mime_type = 3;
+// optional string mime_type = 3;
 void FileInfo::clear_mime_type() {
   mime_type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& FileInfo::mime_type() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.FileInfo.mime_type)
-  return mime_type_.GetNoArena();
+  return mime_type_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void FileInfo::set_mime_type(const ::std::string& value) {
   
@@ -1181,6 +1234,9 @@ void FileInfo::set_allocated_mime_type(::std::string* mime_type) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.FileInfo.mime_type)
 }
 
+inline const FileInfo* FileInfo::internal_default_instance() {
+  return &FileInfo_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1191,21 +1247,19 @@ const int ContainerInfo::kImageFieldNumber;
 
 ContainerInfo::ContainerInfo()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.ContainerInfo)
 }
+
+void ContainerInfo::InitAsDefaultInstance() {
+}
+
 ContainerInfo::ContainerInfo(const ContainerInfo& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  image_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.image().size() > 0) {
-    image_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.image_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.ContainerInfo)
 }
 
@@ -1230,13 +1284,15 @@ void ContainerInfo::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ContainerInfo::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return ContainerInfo_descriptor_;
 }
 
 const ContainerInfo& ContainerInfo::default_instance() {
   protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ContainerInfo> ContainerInfo_default_instance_;
 
 ContainerInfo* ContainerInfo::New(::google::protobuf::Arena* arena) const {
   ContainerInfo* n = new ContainerInfo;
@@ -1257,13 +1313,13 @@ bool ContainerInfo::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.appengine.v1.ContainerInfo)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string image = 1;
+      // optional string image = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_image()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1273,6 +1329,7 @@ bool ContainerInfo::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1300,7 +1357,7 @@ failure:
 void ContainerInfo::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.appengine.v1.ContainerInfo)
-  // string image = 1;
+  // optional string image = 1;
   if (this->image().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->image().data(), this->image().length(),
@@ -1317,7 +1374,7 @@ void ContainerInfo::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.ContainerInfo)
-  // string image = 1;
+  // optional string image = 1;
   if (this->image().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->image().data(), this->image().length(),
@@ -1336,7 +1393,7 @@ size_t ContainerInfo::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.ContainerInfo)
   size_t total_size = 0;
 
-  // string image = 1;
+  // optional string image = 1;
   if (this->image().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -1352,7 +1409,7 @@ size_t ContainerInfo::ByteSizeLong() const {
 
 void ContainerInfo::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.ContainerInfo)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ContainerInfo* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ContainerInfo>(
           &from);
@@ -1361,14 +1418,21 @@ void ContainerInfo::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.ContainerInfo)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ContainerInfo::MergeFrom(const ContainerInfo& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.ContainerInfo)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ContainerInfo::UnsafeMergeFrom(const ContainerInfo& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.image().size() > 0) {
 
     image_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.image_);
@@ -1386,10 +1450,11 @@ void ContainerInfo::CopyFrom(const ContainerInfo& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.ContainerInfo)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ContainerInfo::IsInitialized() const {
+
   return true;
 }
 
@@ -1399,24 +1464,28 @@ void ContainerInfo::Swap(ContainerInfo* other) {
 }
 void ContainerInfo::InternalSwap(ContainerInfo* other) {
   image_.Swap(&other->image_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ContainerInfo::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ContainerInfo_descriptor_;
+  metadata.reflection = ContainerInfo_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ContainerInfo
 
-// string image = 1;
+// optional string image = 1;
 void ContainerInfo::clear_image() {
   image_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ContainerInfo::image() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ContainerInfo.image)
-  return image_.GetNoArena();
+  return image_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ContainerInfo::set_image(const ::std::string& value) {
   
@@ -1454,6 +1523,9 @@ void ContainerInfo::set_allocated_image(::std::string* image) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.ContainerInfo.image)
 }
 
+inline const ContainerInfo* ContainerInfo::internal_default_instance() {
+  return &ContainerInfo_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1465,22 +1537,19 @@ const int ZipInfo::kFilesCountFieldNumber;
 
 ZipInfo::ZipInfo()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.appengine.v1.ZipInfo)
 }
+
+void ZipInfo::InitAsDefaultInstance() {
+}
+
 ZipInfo::ZipInfo(const ZipInfo& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  source_url_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.source_url().size() > 0) {
-    source_url_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.source_url_);
-  }
-  files_count_ = from.files_count_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.appengine.v1.ZipInfo)
 }
 
@@ -1506,13 +1575,15 @@ void ZipInfo::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ZipInfo::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return ZipInfo_descriptor_;
 }
 
 const ZipInfo& ZipInfo::default_instance() {
   protobuf_InitDefaults_google_2fappengine_2fv1_2fdeploy_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ZipInfo> ZipInfo_default_instance_;
 
 ZipInfo* ZipInfo::New(::google::protobuf::Arena* arena) const {
   ZipInfo* n = new ZipInfo;
@@ -1534,13 +1605,13 @@ bool ZipInfo::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.appengine.v1.ZipInfo)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string source_url = 3;
+      // optional string source_url = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_source_url()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1550,12 +1621,14 @@ bool ZipInfo::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_files_count;
         break;
       }
 
-      // int32 files_count = 4;
+      // optional int32 files_count = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_files_count:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -1563,6 +1636,7 @@ bool ZipInfo::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1590,7 +1664,7 @@ failure:
 void ZipInfo::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.appengine.v1.ZipInfo)
-  // string source_url = 3;
+  // optional string source_url = 3;
   if (this->source_url().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->source_url().data(), this->source_url().length(),
@@ -1600,7 +1674,7 @@ void ZipInfo::SerializeWithCachedSizes(
       3, this->source_url(), output);
   }
 
-  // int32 files_count = 4;
+  // optional int32 files_count = 4;
   if (this->files_count() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->files_count(), output);
   }
@@ -1612,7 +1686,7 @@ void ZipInfo::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.appengine.v1.ZipInfo)
-  // string source_url = 3;
+  // optional string source_url = 3;
   if (this->source_url().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->source_url().data(), this->source_url().length(),
@@ -1623,7 +1697,7 @@ void ZipInfo::SerializeWithCachedSizes(
         3, this->source_url(), target);
   }
 
-  // int32 files_count = 4;
+  // optional int32 files_count = 4;
   if (this->files_count() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->files_count(), target);
   }
@@ -1636,14 +1710,14 @@ size_t ZipInfo::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.appengine.v1.ZipInfo)
   size_t total_size = 0;
 
-  // string source_url = 3;
+  // optional string source_url = 3;
   if (this->source_url().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->source_url());
   }
 
-  // int32 files_count = 4;
+  // optional int32 files_count = 4;
   if (this->files_count() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int32Size(
@@ -1659,7 +1733,7 @@ size_t ZipInfo::ByteSizeLong() const {
 
 void ZipInfo::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.appengine.v1.ZipInfo)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ZipInfo* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ZipInfo>(
           &from);
@@ -1668,14 +1742,21 @@ void ZipInfo::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.appengine.v1.ZipInfo)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ZipInfo::MergeFrom(const ZipInfo& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.appengine.v1.ZipInfo)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ZipInfo::UnsafeMergeFrom(const ZipInfo& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.source_url().size() > 0) {
 
     source_url_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.source_url_);
@@ -1696,10 +1777,11 @@ void ZipInfo::CopyFrom(const ZipInfo& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.appengine.v1.ZipInfo)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ZipInfo::IsInitialized() const {
+
   return true;
 }
 
@@ -1710,24 +1792,28 @@ void ZipInfo::Swap(ZipInfo* other) {
 void ZipInfo::InternalSwap(ZipInfo* other) {
   source_url_.Swap(&other->source_url_);
   std::swap(files_count_, other->files_count_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ZipInfo::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ZipInfo_descriptor_;
+  metadata.reflection = ZipInfo_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ZipInfo
 
-// string source_url = 3;
+// optional string source_url = 3;
 void ZipInfo::clear_source_url() {
   source_url_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ZipInfo::source_url() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.ZipInfo.source_url)
-  return source_url_.GetNoArena();
+  return source_url_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ZipInfo::set_source_url(const ::std::string& value) {
   
@@ -1765,7 +1851,7 @@ void ZipInfo::set_allocated_source_url(::std::string* source_url) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.ZipInfo.source_url)
 }
 
-// int32 files_count = 4;
+// optional int32 files_count = 4;
 void ZipInfo::clear_files_count() {
   files_count_ = 0;
 }
@@ -1779,6 +1865,9 @@ void ZipInfo::set_files_count(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.appengine.v1.ZipInfo.files_count)
 }
 
+inline const ZipInfo* ZipInfo::internal_default_instance() {
+  return &ZipInfo_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

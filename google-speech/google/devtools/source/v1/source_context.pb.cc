@@ -21,317 +21,409 @@ namespace google {
 namespace devtools {
 namespace source {
 namespace v1 {
-class SourceContextDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<SourceContext> {};
-SourceContextDefaultTypeInternal _SourceContext_default_instance_;
-class ExtendedSourceContextDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ExtendedSourceContext> {};
-ExtendedSourceContextDefaultTypeInternal _ExtendedSourceContext_default_instance_;
-class AliasContextDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<AliasContext> {};
-AliasContextDefaultTypeInternal _AliasContext_default_instance_;
-class CloudRepoSourceContextDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CloudRepoSourceContext> {};
-CloudRepoSourceContextDefaultTypeInternal _CloudRepoSourceContext_default_instance_;
-class CloudWorkspaceSourceContextDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CloudWorkspaceSourceContext> {};
-CloudWorkspaceSourceContextDefaultTypeInternal _CloudWorkspaceSourceContext_default_instance_;
-class GerritSourceContextDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GerritSourceContext> {};
-GerritSourceContextDefaultTypeInternal _GerritSourceContext_default_instance_;
-class GitSourceContextDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GitSourceContext> {};
-GitSourceContextDefaultTypeInternal _GitSourceContext_default_instance_;
-class RepoIdDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<RepoId> {};
-RepoIdDefaultTypeInternal _RepoId_default_instance_;
-class ProjectRepoIdDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ProjectRepoId> {};
-ProjectRepoIdDefaultTypeInternal _ProjectRepoId_default_instance_;
-class CloudWorkspaceIdDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<CloudWorkspaceId> {};
-CloudWorkspaceIdDefaultTypeInternal _CloudWorkspaceId_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[11];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+const ::google::protobuf::Descriptor* SourceContext_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  SourceContext_reflection_ = NULL;
 struct SourceContextOneofInstance {
   const ::google::devtools::source::v1::CloudRepoSourceContext* cloud_repo_;
   const ::google::devtools::source::v1::CloudWorkspaceSourceContext* cloud_workspace_;
   const ::google::devtools::source::v1::GerritSourceContext* gerrit_;
   const ::google::devtools::source::v1::GitSourceContext* git_;
-} SourceContext_default_oneof_instance_;
+}* SourceContext_default_oneof_instance_ = NULL;
+const ::google::protobuf::Descriptor* ExtendedSourceContext_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ExtendedSourceContext_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ExtendedSourceContext_LabelsEntry_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* AliasContext_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  AliasContext_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* AliasContext_Kind_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* CloudRepoSourceContext_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CloudRepoSourceContext_reflection_ = NULL;
 struct CloudRepoSourceContextOneofInstance {
   ::google::protobuf::internal::ArenaStringPtr revision_id_;
   ::google::protobuf::internal::ArenaStringPtr alias_name_;
   const ::google::devtools::source::v1::AliasContext* alias_context_;
-} CloudRepoSourceContext_default_oneof_instance_;
+}* CloudRepoSourceContext_default_oneof_instance_ = NULL;
+const ::google::protobuf::Descriptor* CloudWorkspaceSourceContext_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CloudWorkspaceSourceContext_reflection_ = NULL;
+const ::google::protobuf::Descriptor* GerritSourceContext_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GerritSourceContext_reflection_ = NULL;
 struct GerritSourceContextOneofInstance {
   ::google::protobuf::internal::ArenaStringPtr revision_id_;
   ::google::protobuf::internal::ArenaStringPtr alias_name_;
   const ::google::devtools::source::v1::AliasContext* alias_context_;
-} GerritSourceContext_default_oneof_instance_;
+}* GerritSourceContext_default_oneof_instance_ = NULL;
+const ::google::protobuf::Descriptor* GitSourceContext_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GitSourceContext_reflection_ = NULL;
+const ::google::protobuf::Descriptor* RepoId_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  RepoId_reflection_ = NULL;
 struct RepoIdOneofInstance {
   const ::google::devtools::source::v1::ProjectRepoId* project_repo_id_;
   ::google::protobuf::internal::ArenaStringPtr uid_;
-} RepoId_default_oneof_instance_;
+}* RepoId_default_oneof_instance_ = NULL;
+const ::google::protobuf::Descriptor* ProjectRepoId_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ProjectRepoId_reflection_ = NULL;
+const ::google::protobuf::Descriptor* CloudWorkspaceId_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  CloudWorkspaceId_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SourceContext, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SourceContext, _oneof_case_[0]),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&SourceContext_default_oneof_instance_), cloud_repo_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&SourceContext_default_oneof_instance_), cloud_workspace_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&SourceContext_default_oneof_instance_), gerrit_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&SourceContext_default_oneof_instance_), git_),
+void protobuf_AssignDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto() {
+  protobuf_AddDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/devtools/source/v1/source_context.proto");
+  GOOGLE_CHECK(file != NULL);
+  SourceContext_descriptor_ = file->message_type(0);
+  static const int SourceContext_offsets_[5] = {
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(SourceContext_default_oneof_instance_, cloud_repo_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(SourceContext_default_oneof_instance_, cloud_workspace_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(SourceContext_default_oneof_instance_, gerrit_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(SourceContext_default_oneof_instance_, git_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SourceContext, context_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExtendedSourceContext, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  SourceContext_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      SourceContext_descriptor_,
+      SourceContext::internal_default_instance(),
+      SourceContext_offsets_,
+      -1,
+      -1,
+      -1,
+      SourceContext_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SourceContext, _oneof_case_[0]),
+      sizeof(SourceContext),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(SourceContext, _internal_metadata_));
+  ExtendedSourceContext_descriptor_ = file->message_type(1);
+  static const int ExtendedSourceContext_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExtendedSourceContext, context_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExtendedSourceContext, labels_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AliasContext, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ExtendedSourceContext_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ExtendedSourceContext_descriptor_,
+      ExtendedSourceContext::internal_default_instance(),
+      ExtendedSourceContext_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ExtendedSourceContext),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ExtendedSourceContext, _internal_metadata_));
+  ExtendedSourceContext_LabelsEntry_descriptor_ = ExtendedSourceContext_descriptor_->nested_type(0);
+  AliasContext_descriptor_ = file->message_type(2);
+  static const int AliasContext_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AliasContext, kind_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AliasContext, name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudRepoSourceContext, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudRepoSourceContext, _oneof_case_[0]),
+  };
+  AliasContext_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      AliasContext_descriptor_,
+      AliasContext::internal_default_instance(),
+      AliasContext_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(AliasContext),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(AliasContext, _internal_metadata_));
+  AliasContext_Kind_descriptor_ = AliasContext_descriptor_->enum_type(0);
+  CloudRepoSourceContext_descriptor_ = file->message_type(3);
+  static const int CloudRepoSourceContext_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudRepoSourceContext, repo_id_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&CloudRepoSourceContext_default_oneof_instance_), revision_id_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&CloudRepoSourceContext_default_oneof_instance_), alias_name_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&CloudRepoSourceContext_default_oneof_instance_), alias_context_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(CloudRepoSourceContext_default_oneof_instance_, revision_id_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(CloudRepoSourceContext_default_oneof_instance_, alias_name_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(CloudRepoSourceContext_default_oneof_instance_, alias_context_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudRepoSourceContext, revision_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudWorkspaceSourceContext, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  CloudRepoSourceContext_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      CloudRepoSourceContext_descriptor_,
+      CloudRepoSourceContext::internal_default_instance(),
+      CloudRepoSourceContext_offsets_,
+      -1,
+      -1,
+      -1,
+      CloudRepoSourceContext_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudRepoSourceContext, _oneof_case_[0]),
+      sizeof(CloudRepoSourceContext),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudRepoSourceContext, _internal_metadata_));
+  CloudWorkspaceSourceContext_descriptor_ = file->message_type(4);
+  static const int CloudWorkspaceSourceContext_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudWorkspaceSourceContext, workspace_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudWorkspaceSourceContext, snapshot_id_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GerritSourceContext, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GerritSourceContext, _oneof_case_[0]),
+  };
+  CloudWorkspaceSourceContext_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      CloudWorkspaceSourceContext_descriptor_,
+      CloudWorkspaceSourceContext::internal_default_instance(),
+      CloudWorkspaceSourceContext_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(CloudWorkspaceSourceContext),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudWorkspaceSourceContext, _internal_metadata_));
+  GerritSourceContext_descriptor_ = file->message_type(5);
+  static const int GerritSourceContext_offsets_[6] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GerritSourceContext, host_uri_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GerritSourceContext, gerrit_project_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&GerritSourceContext_default_oneof_instance_), revision_id_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&GerritSourceContext_default_oneof_instance_), alias_name_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&GerritSourceContext_default_oneof_instance_), alias_context_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(GerritSourceContext_default_oneof_instance_, revision_id_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(GerritSourceContext_default_oneof_instance_, alias_name_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(GerritSourceContext_default_oneof_instance_, alias_context_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GerritSourceContext, revision_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GitSourceContext, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  GerritSourceContext_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GerritSourceContext_descriptor_,
+      GerritSourceContext::internal_default_instance(),
+      GerritSourceContext_offsets_,
+      -1,
+      -1,
+      -1,
+      GerritSourceContext_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GerritSourceContext, _oneof_case_[0]),
+      sizeof(GerritSourceContext),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GerritSourceContext, _internal_metadata_));
+  GitSourceContext_descriptor_ = file->message_type(6);
+  static const int GitSourceContext_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GitSourceContext, url_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GitSourceContext, revision_id_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RepoId, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RepoId, _oneof_case_[0]),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RepoId_default_oneof_instance_), project_repo_id_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RepoId_default_oneof_instance_), uid_),
+  };
+  GitSourceContext_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GitSourceContext_descriptor_,
+      GitSourceContext::internal_default_instance(),
+      GitSourceContext_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GitSourceContext),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GitSourceContext, _internal_metadata_));
+  RepoId_descriptor_ = file->message_type(7);
+  static const int RepoId_offsets_[3] = {
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RepoId_default_oneof_instance_, project_repo_id_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RepoId_default_oneof_instance_, uid_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RepoId, id_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ProjectRepoId, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  RepoId_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      RepoId_descriptor_,
+      RepoId::internal_default_instance(),
+      RepoId_offsets_,
+      -1,
+      -1,
+      -1,
+      RepoId_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RepoId, _oneof_case_[0]),
+      sizeof(RepoId),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RepoId, _internal_metadata_));
+  ProjectRepoId_descriptor_ = file->message_type(8);
+  static const int ProjectRepoId_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ProjectRepoId, project_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ProjectRepoId, repo_name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudWorkspaceId, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ProjectRepoId_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ProjectRepoId_descriptor_,
+      ProjectRepoId::internal_default_instance(),
+      ProjectRepoId_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ProjectRepoId),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ProjectRepoId, _internal_metadata_));
+  CloudWorkspaceId_descriptor_ = file->message_type(9);
+  static const int CloudWorkspaceId_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudWorkspaceId, repo_id_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudWorkspaceId, name_),
   };
-  return offsets;
+  CloudWorkspaceId_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      CloudWorkspaceId_descriptor_,
+      CloudWorkspaceId::internal_default_instance(),
+      CloudWorkspaceId_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(CloudWorkspaceId),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(CloudWorkspaceId, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(SourceContext)},
-  { 9, -1, sizeof(ExtendedSourceContext)},
-  { 15, -1, sizeof(AliasContext)},
-  { 21, -1, sizeof(CloudRepoSourceContext)},
-  { 30, -1, sizeof(CloudWorkspaceSourceContext)},
-  { 36, -1, sizeof(GerritSourceContext)},
-  { 46, -1, sizeof(GitSourceContext)},
-  { 52, -1, sizeof(RepoId)},
-  { 59, -1, sizeof(ProjectRepoId)},
-  { 65, -1, sizeof(CloudWorkspaceId)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_SourceContext_default_instance_), &SourceContext_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ExtendedSourceContext_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_AliasContext_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_CloudRepoSourceContext_default_instance_), &CloudRepoSourceContext_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_CloudWorkspaceSourceContext_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GerritSourceContext_default_instance_), &GerritSourceContext_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GitSourceContext_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_RepoId_default_instance_), &RepoId_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ProjectRepoId_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_CloudWorkspaceId_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/devtools/source/v1/source_context.proto", schemas, file_default_instances, protobuf_Offsets_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto(), factory,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 11);
-  const ::google::protobuf::Descriptor* ExtendedSourceContext_LabelsEntry_descriptor = file_level_metadata[1].descriptor;
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-        ExtendedSourceContext_LabelsEntry_descriptor,
+      SourceContext_descriptor_, SourceContext::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ExtendedSourceContext_descriptor_, ExtendedSourceContext::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+        ExtendedSourceContext_LabelsEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
             ::std::string,
             ::std::string,
             ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
             ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
             0>::CreateDefaultInstance(
-                ExtendedSourceContext_LabelsEntry_descriptor));
+                ExtendedSourceContext_LabelsEntry_descriptor_));
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      AliasContext_descriptor_, AliasContext::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      CloudRepoSourceContext_descriptor_, CloudRepoSourceContext::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      CloudWorkspaceSourceContext_descriptor_, CloudWorkspaceSourceContext::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GerritSourceContext_descriptor_, GerritSourceContext::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GitSourceContext_descriptor_, GitSourceContext::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      RepoId_descriptor_, RepoId::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ProjectRepoId_descriptor_, ProjectRepoId::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      CloudWorkspaceId_descriptor_, CloudWorkspaceId::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto() {
-  _SourceContext_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _ExtendedSourceContext_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _AliasContext_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _CloudRepoSourceContext_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
-  _CloudWorkspaceSourceContext_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
-  _GerritSourceContext_default_instance_.Shutdown();
-  delete file_level_metadata[6].reflection;
-  _GitSourceContext_default_instance_.Shutdown();
-  delete file_level_metadata[7].reflection;
-  _RepoId_default_instance_.Shutdown();
-  delete file_level_metadata[8].reflection;
-  _ProjectRepoId_default_instance_.Shutdown();
-  delete file_level_metadata[9].reflection;
-  _CloudWorkspaceId_default_instance_.Shutdown();
-  delete file_level_metadata[10].reflection;
+  SourceContext_default_instance_.Shutdown();
+  delete SourceContext_default_oneof_instance_;
+  delete SourceContext_reflection_;
+  ExtendedSourceContext_default_instance_.Shutdown();
+  delete ExtendedSourceContext_reflection_;
+  AliasContext_default_instance_.Shutdown();
+  delete AliasContext_reflection_;
+  CloudRepoSourceContext_default_instance_.Shutdown();
+  delete CloudRepoSourceContext_default_oneof_instance_;
+  delete CloudRepoSourceContext_reflection_;
+  CloudWorkspaceSourceContext_default_instance_.Shutdown();
+  delete CloudWorkspaceSourceContext_reflection_;
+  GerritSourceContext_default_instance_.Shutdown();
+  delete GerritSourceContext_default_oneof_instance_;
+  delete GerritSourceContext_reflection_;
+  GitSourceContext_default_instance_.Shutdown();
+  delete GitSourceContext_reflection_;
+  RepoId_default_instance_.Shutdown();
+  delete RepoId_default_oneof_instance_;
+  delete RepoId_reflection_;
+  ProjectRepoId_default_instance_.Shutdown();
+  delete ProjectRepoId_reflection_;
+  CloudWorkspaceId_default_instance_.Shutdown();
+  delete CloudWorkspaceId_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _SourceContext_default_instance_.DefaultConstruct();
-  _ExtendedSourceContext_default_instance_.DefaultConstruct();
-  _AliasContext_default_instance_.DefaultConstruct();
-  _CloudRepoSourceContext_default_instance_.DefaultConstruct();
-  _CloudWorkspaceSourceContext_default_instance_.DefaultConstruct();
-  _GerritSourceContext_default_instance_.DefaultConstruct();
-  _GitSourceContext_default_instance_.DefaultConstruct();
-  _RepoId_default_instance_.DefaultConstruct();
-  _ProjectRepoId_default_instance_.DefaultConstruct();
-  _CloudWorkspaceId_default_instance_.DefaultConstruct();
-  SourceContext_default_oneof_instance_.cloud_repo_ = const_cast< ::google::devtools::source::v1::CloudRepoSourceContext*>(
-      ::google::devtools::source::v1::CloudRepoSourceContext::internal_default_instance());
-  SourceContext_default_oneof_instance_.cloud_workspace_ = const_cast< ::google::devtools::source::v1::CloudWorkspaceSourceContext*>(
-      ::google::devtools::source::v1::CloudWorkspaceSourceContext::internal_default_instance());
-  SourceContext_default_oneof_instance_.gerrit_ = const_cast< ::google::devtools::source::v1::GerritSourceContext*>(
-      ::google::devtools::source::v1::GerritSourceContext::internal_default_instance());
-  SourceContext_default_oneof_instance_.git_ = const_cast< ::google::devtools::source::v1::GitSourceContext*>(
-      ::google::devtools::source::v1::GitSourceContext::internal_default_instance());
-  _ExtendedSourceContext_default_instance_.get_mutable()->context_ = const_cast< ::google::devtools::source::v1::SourceContext*>(
-      ::google::devtools::source::v1::SourceContext::internal_default_instance());
-  _CloudRepoSourceContext_default_instance_.get_mutable()->repo_id_ = const_cast< ::google::devtools::source::v1::RepoId*>(
-      ::google::devtools::source::v1::RepoId::internal_default_instance());
-  CloudRepoSourceContext_default_oneof_instance_.revision_id_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  CloudRepoSourceContext_default_oneof_instance_.alias_name_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  CloudRepoSourceContext_default_oneof_instance_.alias_context_ = const_cast< ::google::devtools::source::v1::AliasContext*>(
-      ::google::devtools::source::v1::AliasContext::internal_default_instance());
-  _CloudWorkspaceSourceContext_default_instance_.get_mutable()->workspace_id_ = const_cast< ::google::devtools::source::v1::CloudWorkspaceId*>(
-      ::google::devtools::source::v1::CloudWorkspaceId::internal_default_instance());
-  GerritSourceContext_default_oneof_instance_.revision_id_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  GerritSourceContext_default_oneof_instance_.alias_name_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  GerritSourceContext_default_oneof_instance_.alias_context_ = const_cast< ::google::devtools::source::v1::AliasContext*>(
-      ::google::devtools::source::v1::AliasContext::internal_default_instance());
-  RepoId_default_oneof_instance_.project_repo_id_ = const_cast< ::google::devtools::source::v1::ProjectRepoId*>(
-      ::google::devtools::source::v1::ProjectRepoId::internal_default_instance());
-  RepoId_default_oneof_instance_.uid_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _CloudWorkspaceId_default_instance_.get_mutable()->repo_id_ = const_cast< ::google::devtools::source::v1::RepoId*>(
-      ::google::devtools::source::v1::RepoId::internal_default_instance());
+  SourceContext_default_instance_.DefaultConstruct();
+  SourceContext_default_oneof_instance_ = new SourceContextOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  ExtendedSourceContext_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ::google::protobuf::internal::GetEmptyString();
+  AliasContext_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  CloudRepoSourceContext_default_instance_.DefaultConstruct();
+  CloudRepoSourceContext_default_oneof_instance_ = new CloudRepoSourceContextOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  CloudWorkspaceSourceContext_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GerritSourceContext_default_instance_.DefaultConstruct();
+  GerritSourceContext_default_oneof_instance_ = new GerritSourceContextOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  GitSourceContext_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  RepoId_default_instance_.DefaultConstruct();
+  RepoId_default_oneof_instance_ = new RepoIdOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  ProjectRepoId_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  CloudWorkspaceId_default_instance_.DefaultConstruct();
+  SourceContext_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ExtendedSourceContext_default_instance_.get_mutable()->InitAsDefaultInstance();
+  AliasContext_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CloudRepoSourceContext_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CloudWorkspaceSourceContext_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GerritSourceContext_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GitSourceContext_default_instance_.get_mutable()->InitAsDefaultInstance();
+  RepoId_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ProjectRepoId_default_instance_.get_mutable()->InitAsDefaultInstance();
+  CloudWorkspaceId_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_once_);
 void protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
-  static const char descriptor[] = {
-      "\n.google/devtools/source/v1/source_conte"
-      "xt.proto\022\031google.devtools.source.v1\032\034goo"
-      "gle/api/annotations.proto\"\264\002\n\rSourceCont"
-      "ext\022G\n\ncloud_repo\030\001 \001(\01321.google.devtool"
-      "s.source.v1.CloudRepoSourceContextH\000\022Q\n\017"
-      "cloud_workspace\030\002 \001(\01326.google.devtools."
-      "source.v1.CloudWorkspaceSourceContextH\000\022"
-      "@\n\006gerrit\030\003 \001(\0132..google.devtools.source"
-      ".v1.GerritSourceContextH\000\022:\n\003git\030\006 \001(\0132+"
-      ".google.devtools.source.v1.GitSourceCont"
-      "extH\000B\t\n\007context\"\317\001\n\025ExtendedSourceConte"
-      "xt\0229\n\007context\030\001 \001(\0132(.google.devtools.so"
-      "urce.v1.SourceContext\022L\n\006labels\030\002 \003(\0132<."
-      "google.devtools.source.v1.ExtendedSource"
-      "Context.LabelsEntry\032-\n\013LabelsEntry\022\013\n\003ke"
-      "y\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"\214\001\n\014AliasCont"
-      "ext\022:\n\004kind\030\001 \001(\0162,.google.devtools.sour"
-      "ce.v1.AliasContext.Kind\022\014\n\004name\030\002 \001(\t\"2\n"
-      "\004Kind\022\007\n\003ANY\020\000\022\t\n\005FIXED\020\001\022\013\n\007MOVABLE\020\002\022\t"
-      "\n\005OTHER\020\004\"\307\001\n\026CloudRepoSourceContext\0222\n\007"
-      "repo_id\030\001 \001(\0132!.google.devtools.source.v"
-      "1.RepoId\022\025\n\013revision_id\030\002 \001(\tH\000\022\024\n\nalias"
-      "_name\030\003 \001(\tH\000\022@\n\ralias_context\030\004 \001(\0132\'.g"
-      "oogle.devtools.source.v1.AliasContextH\000B"
-      "\n\n\010revision\"u\n\033CloudWorkspaceSourceConte"
-      "xt\022A\n\014workspace_id\030\001 \001(\0132+.google.devtoo"
-      "ls.source.v1.CloudWorkspaceId\022\023\n\013snapsho"
-      "t_id\030\002 \001(\t\"\272\001\n\023GerritSourceContext\022\020\n\010ho"
-      "st_uri\030\001 \001(\t\022\026\n\016gerrit_project\030\002 \001(\t\022\025\n\013"
-      "revision_id\030\003 \001(\tH\000\022\024\n\nalias_name\030\004 \001(\tH"
-      "\000\022@\n\ralias_context\030\005 \001(\0132\'.google.devtoo"
-      "ls.source.v1.AliasContextH\000B\n\n\010revision\""
-      "4\n\020GitSourceContext\022\013\n\003url\030\001 \001(\t\022\023\n\013revi"
-      "sion_id\030\002 \001(\t\"b\n\006RepoId\022C\n\017project_repo_"
-      "id\030\001 \001(\0132(.google.devtools.source.v1.Pro"
-      "jectRepoIdH\000\022\r\n\003uid\030\002 \001(\tH\000B\004\n\002id\"6\n\rPro"
-      "jectRepoId\022\022\n\nproject_id\030\001 \001(\t\022\021\n\trepo_n"
-      "ame\030\002 \001(\t\"T\n\020CloudWorkspaceId\0222\n\007repo_id"
-      "\030\001 \001(\0132!.google.devtools.source.v1.RepoI"
-      "d\022\014\n\004name\030\002 \001(\tBv\n\035com.google.devtools.s"
-      "ource.v1B\022SourceContextProtoP\001Z\?google.g"
-      "olang.org/genproto/googleapis/devtools/s"
-      "ource/v1;sourceb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1703);
+    "\n.google/devtools/source/v1/source_conte"
+    "xt.proto\022\031google.devtools.source.v1\032\034goo"
+    "gle/api/annotations.proto\"\264\002\n\rSourceCont"
+    "ext\022G\n\ncloud_repo\030\001 \001(\01321.google.devtool"
+    "s.source.v1.CloudRepoSourceContextH\000\022Q\n\017"
+    "cloud_workspace\030\002 \001(\01326.google.devtools."
+    "source.v1.CloudWorkspaceSourceContextH\000\022"
+    "@\n\006gerrit\030\003 \001(\0132..google.devtools.source"
+    ".v1.GerritSourceContextH\000\022:\n\003git\030\006 \001(\0132+"
+    ".google.devtools.source.v1.GitSourceCont"
+    "extH\000B\t\n\007context\"\317\001\n\025ExtendedSourceConte"
+    "xt\0229\n\007context\030\001 \001(\0132(.google.devtools.so"
+    "urce.v1.SourceContext\022L\n\006labels\030\002 \003(\0132<."
+    "google.devtools.source.v1.ExtendedSource"
+    "Context.LabelsEntry\032-\n\013LabelsEntry\022\013\n\003ke"
+    "y\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"\214\001\n\014AliasCont"
+    "ext\022:\n\004kind\030\001 \001(\0162,.google.devtools.sour"
+    "ce.v1.AliasContext.Kind\022\014\n\004name\030\002 \001(\t\"2\n"
+    "\004Kind\022\007\n\003ANY\020\000\022\t\n\005FIXED\020\001\022\013\n\007MOVABLE\020\002\022\t"
+    "\n\005OTHER\020\004\"\307\001\n\026CloudRepoSourceContext\0222\n\007"
+    "repo_id\030\001 \001(\0132!.google.devtools.source.v"
+    "1.RepoId\022\025\n\013revision_id\030\002 \001(\tH\000\022\024\n\nalias"
+    "_name\030\003 \001(\tH\000\022@\n\ralias_context\030\004 \001(\0132\'.g"
+    "oogle.devtools.source.v1.AliasContextH\000B"
+    "\n\n\010revision\"u\n\033CloudWorkspaceSourceConte"
+    "xt\022A\n\014workspace_id\030\001 \001(\0132+.google.devtoo"
+    "ls.source.v1.CloudWorkspaceId\022\023\n\013snapsho"
+    "t_id\030\002 \001(\t\"\272\001\n\023GerritSourceContext\022\020\n\010ho"
+    "st_uri\030\001 \001(\t\022\026\n\016gerrit_project\030\002 \001(\t\022\025\n\013"
+    "revision_id\030\003 \001(\tH\000\022\024\n\nalias_name\030\004 \001(\tH"
+    "\000\022@\n\ralias_context\030\005 \001(\0132\'.google.devtoo"
+    "ls.source.v1.AliasContextH\000B\n\n\010revision\""
+    "4\n\020GitSourceContext\022\013\n\003url\030\001 \001(\t\022\023\n\013revi"
+    "sion_id\030\002 \001(\t\"b\n\006RepoId\022C\n\017project_repo_"
+    "id\030\001 \001(\0132(.google.devtools.source.v1.Pro"
+    "jectRepoIdH\000\022\r\n\003uid\030\002 \001(\tH\000B\004\n\002id\"6\n\rPro"
+    "jectRepoId\022\022\n\nproject_id\030\001 \001(\t\022\021\n\trepo_n"
+    "ame\030\002 \001(\t\"T\n\020CloudWorkspaceId\0222\n\007repo_id"
+    "\030\001 \001(\0132!.google.devtools.source.v1.RepoI"
+    "d\022\014\n\004name\030\002 \001(\tBv\n\035com.google.devtools.s"
+    "ource.v1B\022SourceContextProtoP\001Z\?google.g"
+    "olang.org/genproto/googleapis/devtools/s"
+    "ource/v1;sourceb\006proto3", 1703);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/devtools/source/v1/source_context.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -349,31 +441,16 @@ struct StaticDescriptorInitializer_google_2fdevtools_2fsource_2fv1_2fsource_5fco
     protobuf_AddDesc_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   }
 } static_descriptor_initializer_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto_;
-const ::google::protobuf::EnumDescriptor* AliasContext_Kind_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
-}
-bool AliasContext_Kind_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-    case 4:
-      return true;
-    default:
-      return false;
-  }
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
 }
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const AliasContext_Kind AliasContext::ANY;
-const AliasContext_Kind AliasContext::FIXED;
-const AliasContext_Kind AliasContext::MOVABLE;
-const AliasContext_Kind AliasContext::OTHER;
-const AliasContext_Kind AliasContext::Kind_MIN;
-const AliasContext_Kind AliasContext::Kind_MAX;
-const int AliasContext::Kind_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+}  // namespace
+
 
 // ===================================================================
 
@@ -386,39 +463,27 @@ const int SourceContext::kGitFieldNumber;
 
 SourceContext::SourceContext()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.source.v1.SourceContext)
 }
+
+void SourceContext::InitAsDefaultInstance() {
+  SourceContext_default_oneof_instance_->cloud_repo_ = const_cast< ::google::devtools::source::v1::CloudRepoSourceContext*>(
+      ::google::devtools::source::v1::CloudRepoSourceContext::internal_default_instance());
+  SourceContext_default_oneof_instance_->cloud_workspace_ = const_cast< ::google::devtools::source::v1::CloudWorkspaceSourceContext*>(
+      ::google::devtools::source::v1::CloudWorkspaceSourceContext::internal_default_instance());
+  SourceContext_default_oneof_instance_->gerrit_ = const_cast< ::google::devtools::source::v1::GerritSourceContext*>(
+      ::google::devtools::source::v1::GerritSourceContext::internal_default_instance());
+  SourceContext_default_oneof_instance_->git_ = const_cast< ::google::devtools::source::v1::GitSourceContext*>(
+      ::google::devtools::source::v1::GitSourceContext::internal_default_instance());
+}
+
 SourceContext::SourceContext(const SourceContext& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  clear_has_context();
-  switch (from.context_case()) {
-    case kCloudRepo: {
-      mutable_cloud_repo()->::google::devtools::source::v1::CloudRepoSourceContext::MergeFrom(from.cloud_repo());
-      break;
-    }
-    case kCloudWorkspace: {
-      mutable_cloud_workspace()->::google::devtools::source::v1::CloudWorkspaceSourceContext::MergeFrom(from.cloud_workspace());
-      break;
-    }
-    case kGerrit: {
-      mutable_gerrit()->::google::devtools::source::v1::GerritSourceContext::MergeFrom(from.gerrit());
-      break;
-    }
-    case kGit: {
-      mutable_git()->::google::devtools::source::v1::GitSourceContext::MergeFrom(from.git());
-      break;
-    }
-    case CONTEXT_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.source.v1.SourceContext)
 }
 
@@ -445,13 +510,15 @@ void SourceContext::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* SourceContext::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return SourceContext_descriptor_;
 }
 
 const SourceContext& SourceContext::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<SourceContext> SourceContext_default_instance_;
 
 SourceContext* SourceContext::New(::google::protobuf::Arena* arena) const {
   SourceContext* n = new SourceContext;
@@ -499,51 +566,57 @@ bool SourceContext::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.source.v1.SourceContext)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.devtools.source.v1.CloudRepoSourceContext cloud_repo = 1;
+      // optional .google.devtools.source.v1.CloudRepoSourceContext cloud_repo = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_cloud_repo()));
         } else {
           goto handle_unusual;
         }
+        goto after_git;
         break;
       }
 
-      // .google.devtools.source.v1.CloudWorkspaceSourceContext cloud_workspace = 2;
+      // optional .google.devtools.source.v1.CloudWorkspaceSourceContext cloud_workspace = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_cloud_workspace()));
         } else {
           goto handle_unusual;
         }
+        goto after_git;
         break;
       }
 
-      // .google.devtools.source.v1.GerritSourceContext gerrit = 3;
+      // optional .google.devtools.source.v1.GerritSourceContext gerrit = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_gerrit()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(50)) goto parse_git;
         break;
       }
 
-      // .google.devtools.source.v1.GitSourceContext git = 6;
+      // optional .google.devtools.source.v1.GitSourceContext git = 6;
       case 6: {
-        if (tag == 50u) {
+        if (tag == 50) {
+         parse_git:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_git()));
         } else {
           goto handle_unusual;
         }
+       after_git:
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -571,25 +644,25 @@ failure:
 void SourceContext::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.source.v1.SourceContext)
-  // .google.devtools.source.v1.CloudRepoSourceContext cloud_repo = 1;
+  // optional .google.devtools.source.v1.CloudRepoSourceContext cloud_repo = 1;
   if (has_cloud_repo()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *context_.cloud_repo_, output);
   }
 
-  // .google.devtools.source.v1.CloudWorkspaceSourceContext cloud_workspace = 2;
+  // optional .google.devtools.source.v1.CloudWorkspaceSourceContext cloud_workspace = 2;
   if (has_cloud_workspace()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *context_.cloud_workspace_, output);
   }
 
-  // .google.devtools.source.v1.GerritSourceContext gerrit = 3;
+  // optional .google.devtools.source.v1.GerritSourceContext gerrit = 3;
   if (has_gerrit()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *context_.gerrit_, output);
   }
 
-  // .google.devtools.source.v1.GitSourceContext git = 6;
+  // optional .google.devtools.source.v1.GitSourceContext git = 6;
   if (has_git()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       6, *context_.git_, output);
@@ -602,28 +675,28 @@ void SourceContext::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.source.v1.SourceContext)
-  // .google.devtools.source.v1.CloudRepoSourceContext cloud_repo = 1;
+  // optional .google.devtools.source.v1.CloudRepoSourceContext cloud_repo = 1;
   if (has_cloud_repo()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *context_.cloud_repo_, false, target);
   }
 
-  // .google.devtools.source.v1.CloudWorkspaceSourceContext cloud_workspace = 2;
+  // optional .google.devtools.source.v1.CloudWorkspaceSourceContext cloud_workspace = 2;
   if (has_cloud_workspace()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *context_.cloud_workspace_, false, target);
   }
 
-  // .google.devtools.source.v1.GerritSourceContext gerrit = 3;
+  // optional .google.devtools.source.v1.GerritSourceContext gerrit = 3;
   if (has_gerrit()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         3, *context_.gerrit_, false, target);
   }
 
-  // .google.devtools.source.v1.GitSourceContext git = 6;
+  // optional .google.devtools.source.v1.GitSourceContext git = 6;
   if (has_git()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -639,28 +712,28 @@ size_t SourceContext::ByteSizeLong() const {
   size_t total_size = 0;
 
   switch (context_case()) {
-    // .google.devtools.source.v1.CloudRepoSourceContext cloud_repo = 1;
+    // optional .google.devtools.source.v1.CloudRepoSourceContext cloud_repo = 1;
     case kCloudRepo: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *context_.cloud_repo_);
       break;
     }
-    // .google.devtools.source.v1.CloudWorkspaceSourceContext cloud_workspace = 2;
+    // optional .google.devtools.source.v1.CloudWorkspaceSourceContext cloud_workspace = 2;
     case kCloudWorkspace: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *context_.cloud_workspace_);
       break;
     }
-    // .google.devtools.source.v1.GerritSourceContext gerrit = 3;
+    // optional .google.devtools.source.v1.GerritSourceContext gerrit = 3;
     case kGerrit: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *context_.gerrit_);
       break;
     }
-    // .google.devtools.source.v1.GitSourceContext git = 6;
+    // optional .google.devtools.source.v1.GitSourceContext git = 6;
     case kGit: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -680,7 +753,7 @@ size_t SourceContext::ByteSizeLong() const {
 
 void SourceContext::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.source.v1.SourceContext)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const SourceContext* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const SourceContext>(
           &from);
@@ -689,14 +762,21 @@ void SourceContext::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.source.v1.SourceContext)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void SourceContext::MergeFrom(const SourceContext& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.source.v1.SourceContext)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void SourceContext::UnsafeMergeFrom(const SourceContext& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.context_case()) {
     case kCloudRepo: {
       mutable_cloud_repo()->::google::devtools::source::v1::CloudRepoSourceContext::MergeFrom(from.cloud_repo());
@@ -731,10 +811,11 @@ void SourceContext::CopyFrom(const SourceContext& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.source.v1.SourceContext)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool SourceContext::IsInitialized() const {
+
   return true;
 }
 
@@ -745,18 +826,22 @@ void SourceContext::Swap(SourceContext* other) {
 void SourceContext::InternalSwap(SourceContext* other) {
   std::swap(context_, other->context_);
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata SourceContext::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = SourceContext_descriptor_;
+  metadata.reflection = SourceContext_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // SourceContext
 
-// .google.devtools.source.v1.CloudRepoSourceContext cloud_repo = 1;
+// optional .google.devtools.source.v1.CloudRepoSourceContext cloud_repo = 1;
 bool SourceContext::has_cloud_repo() const {
   return context_case() == kCloudRepo;
 }
@@ -804,7 +889,7 @@ void SourceContext::set_allocated_cloud_repo(::google::devtools::source::v1::Clo
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.SourceContext.cloud_repo)
 }
 
-// .google.devtools.source.v1.CloudWorkspaceSourceContext cloud_workspace = 2;
+// optional .google.devtools.source.v1.CloudWorkspaceSourceContext cloud_workspace = 2;
 bool SourceContext::has_cloud_workspace() const {
   return context_case() == kCloudWorkspace;
 }
@@ -852,7 +937,7 @@ void SourceContext::set_allocated_cloud_workspace(::google::devtools::source::v1
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.SourceContext.cloud_workspace)
 }
 
-// .google.devtools.source.v1.GerritSourceContext gerrit = 3;
+// optional .google.devtools.source.v1.GerritSourceContext gerrit = 3;
 bool SourceContext::has_gerrit() const {
   return context_case() == kGerrit;
 }
@@ -900,7 +985,7 @@ void SourceContext::set_allocated_gerrit(::google::devtools::source::v1::GerritS
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.SourceContext.gerrit)
 }
 
-// .google.devtools.source.v1.GitSourceContext git = 6;
+// optional .google.devtools.source.v1.GitSourceContext git = 6;
 bool SourceContext::has_git() const {
   return context_case() == kGit;
 }
@@ -957,11 +1042,9 @@ void SourceContext::clear_has_context() {
 SourceContext::ContextCase SourceContext::context_case() const {
   return SourceContext::ContextCase(_oneof_case_[0]);
 }
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
-
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
+inline const SourceContext* SourceContext::internal_default_instance() {
+  return &SourceContext_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -973,37 +1056,29 @@ const int ExtendedSourceContext::kLabelsFieldNumber;
 
 ExtendedSourceContext::ExtendedSourceContext()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.source.v1.ExtendedSourceContext)
 }
+
+void ExtendedSourceContext::InitAsDefaultInstance() {
+  context_ = const_cast< ::google::devtools::source::v1::SourceContext*>(
+      ::google::devtools::source::v1::SourceContext::internal_default_instance());
+}
+
 ExtendedSourceContext::ExtendedSourceContext(const ExtendedSourceContext& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  const ::google::protobuf::Descriptor*& ExtendedSourceContext_LabelsEntry_descriptor = file_level_metadata[1].descriptor;
-  labels_.SetAssignDescriptorCallback(
-      protobuf_AssignDescriptorsOnce);
-  labels_.SetEntryDescriptor(
-      &ExtendedSourceContext_LabelsEntry_descriptor);
-  labels_.MergeFrom(from.labels_);
-  if (from.has_context()) {
-    context_ = new ::google::devtools::source::v1::SourceContext(*from.context_);
-  } else {
-    context_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.source.v1.ExtendedSourceContext)
 }
 
 void ExtendedSourceContext::SharedCtor() {
-  const ::google::protobuf::Descriptor*& ExtendedSourceContext_LabelsEntry_descriptor = file_level_metadata[1].descriptor;
   labels_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   labels_.SetEntryDescriptor(
-      &ExtendedSourceContext_LabelsEntry_descriptor);
+      &::google::devtools::source::v1::ExtendedSourceContext_LabelsEntry_descriptor_);
   context_ = NULL;
   _cached_size_ = 0;
 }
@@ -1014,7 +1089,7 @@ ExtendedSourceContext::~ExtendedSourceContext() {
 }
 
 void ExtendedSourceContext::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &ExtendedSourceContext_default_instance_.get()) {
     delete context_;
   }
 }
@@ -1026,13 +1101,15 @@ void ExtendedSourceContext::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ExtendedSourceContext::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return ExtendedSourceContext_descriptor_;
 }
 
 const ExtendedSourceContext& ExtendedSourceContext::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ExtendedSourceContext> ExtendedSourceContext_default_instance_;
 
 ExtendedSourceContext* ExtendedSourceContext::New(::google::protobuf::Arena* arena) const {
   ExtendedSourceContext* n = new ExtendedSourceContext;
@@ -1044,11 +1121,9 @@ ExtendedSourceContext* ExtendedSourceContext::New(::google::protobuf::Arena* are
 
 void ExtendedSourceContext::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.devtools.source.v1.ExtendedSourceContext)
-  labels_.Clear();
-  if (GetArenaNoVirtual() == NULL && context_ != NULL) {
-    delete context_;
-  }
+  if (GetArenaNoVirtual() == NULL && context_ != NULL) delete context_;
   context_ = NULL;
+  labels_.Clear();
 }
 
 bool ExtendedSourceContext::MergePartialFromCodedStream(
@@ -1057,25 +1132,28 @@ bool ExtendedSourceContext::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.source.v1.ExtendedSourceContext)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.devtools.source.v1.SourceContext context = 1;
+      // optional .google.devtools.source.v1.SourceContext context = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_context()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_labels;
         break;
       }
 
       // map<string, string> labels = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_labels:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_labels:
           ExtendedSourceContext_LabelsEntry::Parser< ::google::protobuf::internal::MapField<
               ::std::string, ::std::string,
               ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
@@ -1095,7 +1173,9 @@ bool ExtendedSourceContext::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_loop_labels;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1123,7 +1203,7 @@ failure:
 void ExtendedSourceContext::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.source.v1.ExtendedSourceContext)
-  // .google.devtools.source.v1.SourceContext context = 1;
+  // optional .google.devtools.source.v1.SourceContext context = 1;
   if (this->has_context()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->context_, output);
@@ -1148,7 +1228,7 @@ void ExtendedSourceContext::SerializeWithCachedSizes(
       }
     };
 
-    if (output->IsSerializationDeterministic() &&
+    if (output->IsSerializationDeterminstic() &&
         this->labels().size() > 1) {
       ::google::protobuf::scoped_array<SortItem> items(
           new SortItem[this->labels().size()]);
@@ -1189,7 +1269,7 @@ void ExtendedSourceContext::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.source.v1.ExtendedSourceContext)
-  // .google.devtools.source.v1.SourceContext context = 1;
+  // optional .google.devtools.source.v1.SourceContext context = 1;
   if (this->has_context()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -1261,6 +1341,13 @@ size_t ExtendedSourceContext::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.source.v1.ExtendedSourceContext)
   size_t total_size = 0;
 
+  // optional .google.devtools.source.v1.SourceContext context = 1;
+  if (this->has_context()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->context_);
+  }
+
   // map<string, string> labels = 2;
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->labels_size());
@@ -1275,13 +1362,6 @@ size_t ExtendedSourceContext::ByteSizeLong() const {
     }
   }
 
-  // .google.devtools.source.v1.SourceContext context = 1;
-  if (this->has_context()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->context_);
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -1291,7 +1371,7 @@ size_t ExtendedSourceContext::ByteSizeLong() const {
 
 void ExtendedSourceContext::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.source.v1.ExtendedSourceContext)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ExtendedSourceContext* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ExtendedSourceContext>(
           &from);
@@ -1300,14 +1380,21 @@ void ExtendedSourceContext::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.source.v1.ExtendedSourceContext)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ExtendedSourceContext::MergeFrom(const ExtendedSourceContext& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.source.v1.ExtendedSourceContext)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ExtendedSourceContext::UnsafeMergeFrom(const ExtendedSourceContext& from) {
+  GOOGLE_DCHECK(&from != this);
   labels_.MergeFrom(from.labels_);
   if (from.has_context()) {
     mutable_context()->::google::devtools::source::v1::SourceContext::MergeFrom(from.context());
@@ -1325,10 +1412,11 @@ void ExtendedSourceContext::CopyFrom(const ExtendedSourceContext& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.source.v1.ExtendedSourceContext)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ExtendedSourceContext::IsInitialized() const {
+
   return true;
 }
 
@@ -1337,20 +1425,24 @@ void ExtendedSourceContext::Swap(ExtendedSourceContext* other) {
   InternalSwap(other);
 }
 void ExtendedSourceContext::InternalSwap(ExtendedSourceContext* other) {
-  labels_.Swap(&other->labels_);
   std::swap(context_, other->context_);
+  labels_.Swap(&other->labels_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ExtendedSourceContext::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ExtendedSourceContext_descriptor_;
+  metadata.reflection = ExtendedSourceContext_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ExtendedSourceContext
 
-// .google.devtools.source.v1.SourceContext context = 1;
+// optional .google.devtools.source.v1.SourceContext context = 1;
 bool ExtendedSourceContext::has_context() const {
   return this != internal_default_instance() && context_ != NULL;
 }
@@ -1407,10 +1499,38 @@ ExtendedSourceContext::mutable_labels() {
   return labels_.MutableMap();
 }
 
+inline const ExtendedSourceContext* ExtendedSourceContext::internal_default_instance() {
+  return &ExtendedSourceContext_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* AliasContext_Kind_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return AliasContext_Kind_descriptor_;
+}
+bool AliasContext_Kind_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 4:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const AliasContext_Kind AliasContext::ANY;
+const AliasContext_Kind AliasContext::FIXED;
+const AliasContext_Kind AliasContext::MOVABLE;
+const AliasContext_Kind AliasContext::OTHER;
+const AliasContext_Kind AliasContext::Kind_MIN;
+const AliasContext_Kind AliasContext::Kind_MAX;
+const int AliasContext::Kind_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int AliasContext::kKindFieldNumber;
 const int AliasContext::kNameFieldNumber;
@@ -1418,22 +1538,19 @@ const int AliasContext::kNameFieldNumber;
 
 AliasContext::AliasContext()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.source.v1.AliasContext)
 }
+
+void AliasContext::InitAsDefaultInstance() {
+}
+
 AliasContext::AliasContext(const AliasContext& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  kind_ = from.kind_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.source.v1.AliasContext)
 }
 
@@ -1459,13 +1576,15 @@ void AliasContext::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* AliasContext::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return AliasContext_descriptor_;
 }
 
 const AliasContext& AliasContext::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<AliasContext> AliasContext_default_instance_;
 
 AliasContext* AliasContext::New(::google::protobuf::Arena* arena) const {
   AliasContext* n = new AliasContext;
@@ -1477,8 +1596,8 @@ AliasContext* AliasContext::New(::google::protobuf::Arena* arena) const {
 
 void AliasContext::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.devtools.source.v1.AliasContext)
-  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   kind_ = 0;
+  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 bool AliasContext::MergePartialFromCodedStream(
@@ -1487,13 +1606,13 @@ bool AliasContext::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.source.v1.AliasContext)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.devtools.source.v1.AliasContext.Kind kind = 1;
+      // optional .google.devtools.source.v1.AliasContext.Kind kind = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -1502,12 +1621,14 @@ bool AliasContext::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_name;
         break;
       }
 
-      // string name = 2;
+      // optional string name = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1517,6 +1638,7 @@ bool AliasContext::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1544,13 +1666,13 @@ failure:
 void AliasContext::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.source.v1.AliasContext)
-  // .google.devtools.source.v1.AliasContext.Kind kind = 1;
+  // optional .google.devtools.source.v1.AliasContext.Kind kind = 1;
   if (this->kind() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       1, this->kind(), output);
   }
 
-  // string name = 2;
+  // optional string name = 2;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -1567,13 +1689,13 @@ void AliasContext::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.source.v1.AliasContext)
-  // .google.devtools.source.v1.AliasContext.Kind kind = 1;
+  // optional .google.devtools.source.v1.AliasContext.Kind kind = 1;
   if (this->kind() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       1, this->kind(), target);
   }
 
-  // string name = 2;
+  // optional string name = 2;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -1592,17 +1714,17 @@ size_t AliasContext::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.source.v1.AliasContext)
   size_t total_size = 0;
 
-  // string name = 2;
+  // optional .google.devtools.source.v1.AliasContext.Kind kind = 1;
+  if (this->kind() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->kind());
+  }
+
+  // optional string name = 2;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->name());
-  }
-
-  // .google.devtools.source.v1.AliasContext.Kind kind = 1;
-  if (this->kind() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->kind());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -1614,7 +1736,7 @@ size_t AliasContext::ByteSizeLong() const {
 
 void AliasContext::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.source.v1.AliasContext)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const AliasContext* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const AliasContext>(
           &from);
@@ -1623,20 +1745,27 @@ void AliasContext::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.source.v1.AliasContext)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void AliasContext::MergeFrom(const AliasContext& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.source.v1.AliasContext)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void AliasContext::UnsafeMergeFrom(const AliasContext& from) {
+  GOOGLE_DCHECK(&from != this);
+  if (from.kind() != 0) {
+    set_kind(from.kind());
+  }
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  if (from.kind() != 0) {
-    set_kind(from.kind());
   }
 }
 
@@ -1651,10 +1780,11 @@ void AliasContext::CopyFrom(const AliasContext& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.source.v1.AliasContext)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool AliasContext::IsInitialized() const {
+
   return true;
 }
 
@@ -1663,20 +1793,24 @@ void AliasContext::Swap(AliasContext* other) {
   InternalSwap(other);
 }
 void AliasContext::InternalSwap(AliasContext* other) {
-  name_.Swap(&other->name_);
   std::swap(kind_, other->kind_);
+  name_.Swap(&other->name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata AliasContext::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = AliasContext_descriptor_;
+  metadata.reflection = AliasContext_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // AliasContext
 
-// .google.devtools.source.v1.AliasContext.Kind kind = 1;
+// optional .google.devtools.source.v1.AliasContext.Kind kind = 1;
 void AliasContext::clear_kind() {
   kind_ = 0;
 }
@@ -1690,13 +1824,13 @@ void AliasContext::set_kind(::google::devtools::source::v1::AliasContext_Kind va
   // @@protoc_insertion_point(field_set:google.devtools.source.v1.AliasContext.kind)
 }
 
-// string name = 2;
+// optional string name = 2;
 void AliasContext::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& AliasContext::name() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.AliasContext.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void AliasContext::set_name(const ::std::string& value) {
   
@@ -1734,6 +1868,9 @@ void AliasContext::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.AliasContext.name)
 }
 
+inline const AliasContext* AliasContext::internal_default_instance() {
+  return &AliasContext_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1747,40 +1884,25 @@ const int CloudRepoSourceContext::kAliasContextFieldNumber;
 
 CloudRepoSourceContext::CloudRepoSourceContext()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.source.v1.CloudRepoSourceContext)
 }
+
+void CloudRepoSourceContext::InitAsDefaultInstance() {
+  repo_id_ = const_cast< ::google::devtools::source::v1::RepoId*>(
+      ::google::devtools::source::v1::RepoId::internal_default_instance());
+  CloudRepoSourceContext_default_oneof_instance_->revision_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  CloudRepoSourceContext_default_oneof_instance_->alias_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  CloudRepoSourceContext_default_oneof_instance_->alias_context_ = const_cast< ::google::devtools::source::v1::AliasContext*>(
+      ::google::devtools::source::v1::AliasContext::internal_default_instance());
+}
+
 CloudRepoSourceContext::CloudRepoSourceContext(const CloudRepoSourceContext& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_repo_id()) {
-    repo_id_ = new ::google::devtools::source::v1::RepoId(*from.repo_id_);
-  } else {
-    repo_id_ = NULL;
-  }
-  clear_has_revision();
-  switch (from.revision_case()) {
-    case kRevisionId: {
-      set_revision_id(from.revision_id());
-      break;
-    }
-    case kAliasName: {
-      set_alias_name(from.alias_name());
-      break;
-    }
-    case kAliasContext: {
-      mutable_alias_context()->::google::devtools::source::v1::AliasContext::MergeFrom(from.alias_context());
-      break;
-    }
-    case REVISION_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.source.v1.CloudRepoSourceContext)
 }
 
@@ -1796,11 +1918,11 @@ CloudRepoSourceContext::~CloudRepoSourceContext() {
 }
 
 void CloudRepoSourceContext::SharedDtor() {
-  if (this != internal_default_instance()) {
-    delete repo_id_;
-  }
   if (has_revision()) {
     clear_revision();
+  }
+  if (this != &CloudRepoSourceContext_default_instance_.get()) {
+    delete repo_id_;
   }
 }
 
@@ -1811,13 +1933,15 @@ void CloudRepoSourceContext::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* CloudRepoSourceContext::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return CloudRepoSourceContext_descriptor_;
 }
 
 const CloudRepoSourceContext& CloudRepoSourceContext::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<CloudRepoSourceContext> CloudRepoSourceContext_default_instance_;
 
 CloudRepoSourceContext* CloudRepoSourceContext::New(::google::protobuf::Arena* arena) const {
   CloudRepoSourceContext* n = new CloudRepoSourceContext;
@@ -1852,9 +1976,7 @@ void CloudRepoSourceContext::clear_revision() {
 
 void CloudRepoSourceContext::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.devtools.source.v1.CloudRepoSourceContext)
-  if (GetArenaNoVirtual() == NULL && repo_id_ != NULL) {
-    delete repo_id_;
-  }
+  if (GetArenaNoVirtual() == NULL && repo_id_ != NULL) delete repo_id_;
   repo_id_ = NULL;
   clear_revision();
 }
@@ -1865,24 +1987,26 @@ bool CloudRepoSourceContext::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.source.v1.CloudRepoSourceContext)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.devtools.source.v1.RepoId repo_id = 1;
+      // optional .google.devtools.source.v1.RepoId repo_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_repo_id()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_revision_id;
         break;
       }
 
-      // string revision_id = 2;
+      // optional string revision_id = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_revision_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_revision_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1892,12 +2016,13 @@ bool CloudRepoSourceContext::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        goto after_alias_context;
         break;
       }
 
-      // string alias_name = 3;
+      // optional string alias_name = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_alias_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1907,17 +2032,21 @@ bool CloudRepoSourceContext::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_alias_context;
         break;
       }
 
-      // .google.devtools.source.v1.AliasContext alias_context = 4;
+      // optional .google.devtools.source.v1.AliasContext alias_context = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_alias_context:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_alias_context()));
         } else {
           goto handle_unusual;
         }
+       after_alias_context:
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1945,13 +2074,13 @@ failure:
 void CloudRepoSourceContext::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.source.v1.CloudRepoSourceContext)
-  // .google.devtools.source.v1.RepoId repo_id = 1;
+  // optional .google.devtools.source.v1.RepoId repo_id = 1;
   if (this->has_repo_id()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->repo_id_, output);
   }
 
-  // string revision_id = 2;
+  // optional string revision_id = 2;
   if (has_revision_id()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->revision_id().data(), this->revision_id().length(),
@@ -1961,7 +2090,7 @@ void CloudRepoSourceContext::SerializeWithCachedSizes(
       2, this->revision_id(), output);
   }
 
-  // string alias_name = 3;
+  // optional string alias_name = 3;
   if (has_alias_name()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->alias_name().data(), this->alias_name().length(),
@@ -1971,7 +2100,7 @@ void CloudRepoSourceContext::SerializeWithCachedSizes(
       3, this->alias_name(), output);
   }
 
-  // .google.devtools.source.v1.AliasContext alias_context = 4;
+  // optional .google.devtools.source.v1.AliasContext alias_context = 4;
   if (has_alias_context()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, *revision_.alias_context_, output);
@@ -1984,14 +2113,14 @@ void CloudRepoSourceContext::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.source.v1.CloudRepoSourceContext)
-  // .google.devtools.source.v1.RepoId repo_id = 1;
+  // optional .google.devtools.source.v1.RepoId repo_id = 1;
   if (this->has_repo_id()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->repo_id_, false, target);
   }
 
-  // string revision_id = 2;
+  // optional string revision_id = 2;
   if (has_revision_id()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->revision_id().data(), this->revision_id().length(),
@@ -2002,7 +2131,7 @@ void CloudRepoSourceContext::SerializeWithCachedSizes(
         2, this->revision_id(), target);
   }
 
-  // string alias_name = 3;
+  // optional string alias_name = 3;
   if (has_alias_name()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->alias_name().data(), this->alias_name().length(),
@@ -2013,7 +2142,7 @@ void CloudRepoSourceContext::SerializeWithCachedSizes(
         3, this->alias_name(), target);
   }
 
-  // .google.devtools.source.v1.AliasContext alias_context = 4;
+  // optional .google.devtools.source.v1.AliasContext alias_context = 4;
   if (has_alias_context()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -2028,7 +2157,7 @@ size_t CloudRepoSourceContext::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.source.v1.CloudRepoSourceContext)
   size_t total_size = 0;
 
-  // .google.devtools.source.v1.RepoId repo_id = 1;
+  // optional .google.devtools.source.v1.RepoId repo_id = 1;
   if (this->has_repo_id()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -2036,21 +2165,21 @@ size_t CloudRepoSourceContext::ByteSizeLong() const {
   }
 
   switch (revision_case()) {
-    // string revision_id = 2;
+    // optional string revision_id = 2;
     case kRevisionId: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->revision_id());
       break;
     }
-    // string alias_name = 3;
+    // optional string alias_name = 3;
     case kAliasName: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->alias_name());
       break;
     }
-    // .google.devtools.source.v1.AliasContext alias_context = 4;
+    // optional .google.devtools.source.v1.AliasContext alias_context = 4;
     case kAliasContext: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -2070,7 +2199,7 @@ size_t CloudRepoSourceContext::ByteSizeLong() const {
 
 void CloudRepoSourceContext::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.source.v1.CloudRepoSourceContext)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const CloudRepoSourceContext* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CloudRepoSourceContext>(
           &from);
@@ -2079,17 +2208,21 @@ void CloudRepoSourceContext::MergeFrom(const ::google::protobuf::Message& from) 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.source.v1.CloudRepoSourceContext)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CloudRepoSourceContext::MergeFrom(const CloudRepoSourceContext& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.source.v1.CloudRepoSourceContext)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_repo_id()) {
-    mutable_repo_id()->::google::devtools::source::v1::RepoId::MergeFrom(from.repo_id());
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void CloudRepoSourceContext::UnsafeMergeFrom(const CloudRepoSourceContext& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.revision_case()) {
     case kRevisionId: {
       set_revision_id(from.revision_id());
@@ -2107,6 +2240,9 @@ void CloudRepoSourceContext::MergeFrom(const CloudRepoSourceContext& from) {
       break;
     }
   }
+  if (from.has_repo_id()) {
+    mutable_repo_id()->::google::devtools::source::v1::RepoId::MergeFrom(from.repo_id());
+  }
 }
 
 void CloudRepoSourceContext::CopyFrom(const ::google::protobuf::Message& from) {
@@ -2120,10 +2256,11 @@ void CloudRepoSourceContext::CopyFrom(const CloudRepoSourceContext& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.source.v1.CloudRepoSourceContext)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CloudRepoSourceContext::IsInitialized() const {
+
   return true;
 }
 
@@ -2135,18 +2272,22 @@ void CloudRepoSourceContext::InternalSwap(CloudRepoSourceContext* other) {
   std::swap(repo_id_, other->repo_id_);
   std::swap(revision_, other->revision_);
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CloudRepoSourceContext::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CloudRepoSourceContext_descriptor_;
+  metadata.reflection = CloudRepoSourceContext_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // CloudRepoSourceContext
 
-// .google.devtools.source.v1.RepoId repo_id = 1;
+// optional .google.devtools.source.v1.RepoId repo_id = 1;
 bool CloudRepoSourceContext::has_repo_id() const {
   return this != internal_default_instance() && repo_id_ != NULL;
 }
@@ -2185,7 +2326,7 @@ void CloudRepoSourceContext::set_allocated_repo_id(::google::devtools::source::v
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.CloudRepoSourceContext.repo_id)
 }
 
-// string revision_id = 2;
+// optional string revision_id = 2;
 bool CloudRepoSourceContext::has_revision_id() const {
   return revision_case() == kRevisionId;
 }
@@ -2201,7 +2342,7 @@ void CloudRepoSourceContext::clear_revision_id() {
 const ::std::string& CloudRepoSourceContext::revision_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.CloudRepoSourceContext.revision_id)
   if (has_revision_id()) {
-    return revision_.revision_id_.GetNoArena();
+    return revision_.revision_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -2266,7 +2407,7 @@ void CloudRepoSourceContext::set_allocated_revision_id(::std::string* revision_i
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.CloudRepoSourceContext.revision_id)
 }
 
-// string alias_name = 3;
+// optional string alias_name = 3;
 bool CloudRepoSourceContext::has_alias_name() const {
   return revision_case() == kAliasName;
 }
@@ -2282,7 +2423,7 @@ void CloudRepoSourceContext::clear_alias_name() {
 const ::std::string& CloudRepoSourceContext::alias_name() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.CloudRepoSourceContext.alias_name)
   if (has_alias_name()) {
-    return revision_.alias_name_.GetNoArena();
+    return revision_.alias_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -2347,7 +2488,7 @@ void CloudRepoSourceContext::set_allocated_alias_name(::std::string* alias_name)
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.CloudRepoSourceContext.alias_name)
 }
 
-// .google.devtools.source.v1.AliasContext alias_context = 4;
+// optional .google.devtools.source.v1.AliasContext alias_context = 4;
 bool CloudRepoSourceContext::has_alias_context() const {
   return revision_case() == kAliasContext;
 }
@@ -2404,6 +2545,9 @@ void CloudRepoSourceContext::clear_has_revision() {
 CloudRepoSourceContext::RevisionCase CloudRepoSourceContext::revision_case() const {
   return CloudRepoSourceContext::RevisionCase(_oneof_case_[0]);
 }
+inline const CloudRepoSourceContext* CloudRepoSourceContext::internal_default_instance() {
+  return &CloudRepoSourceContext_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2415,26 +2559,21 @@ const int CloudWorkspaceSourceContext::kSnapshotIdFieldNumber;
 
 CloudWorkspaceSourceContext::CloudWorkspaceSourceContext()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.source.v1.CloudWorkspaceSourceContext)
 }
+
+void CloudWorkspaceSourceContext::InitAsDefaultInstance() {
+  workspace_id_ = const_cast< ::google::devtools::source::v1::CloudWorkspaceId*>(
+      ::google::devtools::source::v1::CloudWorkspaceId::internal_default_instance());
+}
+
 CloudWorkspaceSourceContext::CloudWorkspaceSourceContext(const CloudWorkspaceSourceContext& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  snapshot_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.snapshot_id().size() > 0) {
-    snapshot_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.snapshot_id_);
-  }
-  if (from.has_workspace_id()) {
-    workspace_id_ = new ::google::devtools::source::v1::CloudWorkspaceId(*from.workspace_id_);
-  } else {
-    workspace_id_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.source.v1.CloudWorkspaceSourceContext)
 }
 
@@ -2451,7 +2590,7 @@ CloudWorkspaceSourceContext::~CloudWorkspaceSourceContext() {
 
 void CloudWorkspaceSourceContext::SharedDtor() {
   snapshot_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &CloudWorkspaceSourceContext_default_instance_.get()) {
     delete workspace_id_;
   }
 }
@@ -2463,13 +2602,15 @@ void CloudWorkspaceSourceContext::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* CloudWorkspaceSourceContext::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
+  return CloudWorkspaceSourceContext_descriptor_;
 }
 
 const CloudWorkspaceSourceContext& CloudWorkspaceSourceContext::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<CloudWorkspaceSourceContext> CloudWorkspaceSourceContext_default_instance_;
 
 CloudWorkspaceSourceContext* CloudWorkspaceSourceContext::New(::google::protobuf::Arena* arena) const {
   CloudWorkspaceSourceContext* n = new CloudWorkspaceSourceContext;
@@ -2481,11 +2622,9 @@ CloudWorkspaceSourceContext* CloudWorkspaceSourceContext::New(::google::protobuf
 
 void CloudWorkspaceSourceContext::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.devtools.source.v1.CloudWorkspaceSourceContext)
-  snapshot_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && workspace_id_ != NULL) {
-    delete workspace_id_;
-  }
+  if (GetArenaNoVirtual() == NULL && workspace_id_ != NULL) delete workspace_id_;
   workspace_id_ = NULL;
+  snapshot_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 bool CloudWorkspaceSourceContext::MergePartialFromCodedStream(
@@ -2494,24 +2633,26 @@ bool CloudWorkspaceSourceContext::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.source.v1.CloudWorkspaceSourceContext)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.devtools.source.v1.CloudWorkspaceId workspace_id = 1;
+      // optional .google.devtools.source.v1.CloudWorkspaceId workspace_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_workspace_id()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_snapshot_id;
         break;
       }
 
-      // string snapshot_id = 2;
+      // optional string snapshot_id = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_snapshot_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_snapshot_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2521,6 +2662,7 @@ bool CloudWorkspaceSourceContext::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2548,13 +2690,13 @@ failure:
 void CloudWorkspaceSourceContext::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.source.v1.CloudWorkspaceSourceContext)
-  // .google.devtools.source.v1.CloudWorkspaceId workspace_id = 1;
+  // optional .google.devtools.source.v1.CloudWorkspaceId workspace_id = 1;
   if (this->has_workspace_id()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->workspace_id_, output);
   }
 
-  // string snapshot_id = 2;
+  // optional string snapshot_id = 2;
   if (this->snapshot_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->snapshot_id().data(), this->snapshot_id().length(),
@@ -2571,14 +2713,14 @@ void CloudWorkspaceSourceContext::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.source.v1.CloudWorkspaceSourceContext)
-  // .google.devtools.source.v1.CloudWorkspaceId workspace_id = 1;
+  // optional .google.devtools.source.v1.CloudWorkspaceId workspace_id = 1;
   if (this->has_workspace_id()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->workspace_id_, false, target);
   }
 
-  // string snapshot_id = 2;
+  // optional string snapshot_id = 2;
   if (this->snapshot_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->snapshot_id().data(), this->snapshot_id().length(),
@@ -2597,18 +2739,18 @@ size_t CloudWorkspaceSourceContext::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.source.v1.CloudWorkspaceSourceContext)
   size_t total_size = 0;
 
-  // string snapshot_id = 2;
-  if (this->snapshot_id().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->snapshot_id());
-  }
-
-  // .google.devtools.source.v1.CloudWorkspaceId workspace_id = 1;
+  // optional .google.devtools.source.v1.CloudWorkspaceId workspace_id = 1;
   if (this->has_workspace_id()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->workspace_id_);
+  }
+
+  // optional string snapshot_id = 2;
+  if (this->snapshot_id().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->snapshot_id());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -2620,7 +2762,7 @@ size_t CloudWorkspaceSourceContext::ByteSizeLong() const {
 
 void CloudWorkspaceSourceContext::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.source.v1.CloudWorkspaceSourceContext)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const CloudWorkspaceSourceContext* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CloudWorkspaceSourceContext>(
           &from);
@@ -2629,20 +2771,27 @@ void CloudWorkspaceSourceContext::MergeFrom(const ::google::protobuf::Message& f
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.source.v1.CloudWorkspaceSourceContext)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CloudWorkspaceSourceContext::MergeFrom(const CloudWorkspaceSourceContext& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.source.v1.CloudWorkspaceSourceContext)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void CloudWorkspaceSourceContext::UnsafeMergeFrom(const CloudWorkspaceSourceContext& from) {
+  GOOGLE_DCHECK(&from != this);
+  if (from.has_workspace_id()) {
+    mutable_workspace_id()->::google::devtools::source::v1::CloudWorkspaceId::MergeFrom(from.workspace_id());
+  }
   if (from.snapshot_id().size() > 0) {
 
     snapshot_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.snapshot_id_);
-  }
-  if (from.has_workspace_id()) {
-    mutable_workspace_id()->::google::devtools::source::v1::CloudWorkspaceId::MergeFrom(from.workspace_id());
   }
 }
 
@@ -2657,10 +2806,11 @@ void CloudWorkspaceSourceContext::CopyFrom(const CloudWorkspaceSourceContext& fr
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.source.v1.CloudWorkspaceSourceContext)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CloudWorkspaceSourceContext::IsInitialized() const {
+
   return true;
 }
 
@@ -2669,20 +2819,24 @@ void CloudWorkspaceSourceContext::Swap(CloudWorkspaceSourceContext* other) {
   InternalSwap(other);
 }
 void CloudWorkspaceSourceContext::InternalSwap(CloudWorkspaceSourceContext* other) {
-  snapshot_id_.Swap(&other->snapshot_id_);
   std::swap(workspace_id_, other->workspace_id_);
+  snapshot_id_.Swap(&other->snapshot_id_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CloudWorkspaceSourceContext::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CloudWorkspaceSourceContext_descriptor_;
+  metadata.reflection = CloudWorkspaceSourceContext_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // CloudWorkspaceSourceContext
 
-// .google.devtools.source.v1.CloudWorkspaceId workspace_id = 1;
+// optional .google.devtools.source.v1.CloudWorkspaceId workspace_id = 1;
 bool CloudWorkspaceSourceContext::has_workspace_id() const {
   return this != internal_default_instance() && workspace_id_ != NULL;
 }
@@ -2721,13 +2875,13 @@ void CloudWorkspaceSourceContext::set_allocated_workspace_id(::google::devtools:
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.CloudWorkspaceSourceContext.workspace_id)
 }
 
-// string snapshot_id = 2;
+// optional string snapshot_id = 2;
 void CloudWorkspaceSourceContext::clear_snapshot_id() {
   snapshot_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& CloudWorkspaceSourceContext::snapshot_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.CloudWorkspaceSourceContext.snapshot_id)
-  return snapshot_id_.GetNoArena();
+  return snapshot_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void CloudWorkspaceSourceContext::set_snapshot_id(const ::std::string& value) {
   
@@ -2765,6 +2919,9 @@ void CloudWorkspaceSourceContext::set_allocated_snapshot_id(::std::string* snaps
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.CloudWorkspaceSourceContext.snapshot_id)
 }
 
+inline const CloudWorkspaceSourceContext* CloudWorkspaceSourceContext::internal_default_instance() {
+  return &CloudWorkspaceSourceContext_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2779,43 +2936,23 @@ const int GerritSourceContext::kAliasContextFieldNumber;
 
 GerritSourceContext::GerritSourceContext()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.source.v1.GerritSourceContext)
 }
+
+void GerritSourceContext::InitAsDefaultInstance() {
+  GerritSourceContext_default_oneof_instance_->revision_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  GerritSourceContext_default_oneof_instance_->alias_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  GerritSourceContext_default_oneof_instance_->alias_context_ = const_cast< ::google::devtools::source::v1::AliasContext*>(
+      ::google::devtools::source::v1::AliasContext::internal_default_instance());
+}
+
 GerritSourceContext::GerritSourceContext(const GerritSourceContext& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  host_uri_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.host_uri().size() > 0) {
-    host_uri_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.host_uri_);
-  }
-  gerrit_project_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.gerrit_project().size() > 0) {
-    gerrit_project_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.gerrit_project_);
-  }
-  clear_has_revision();
-  switch (from.revision_case()) {
-    case kRevisionId: {
-      set_revision_id(from.revision_id());
-      break;
-    }
-    case kAliasName: {
-      set_alias_name(from.alias_name());
-      break;
-    }
-    case kAliasContext: {
-      mutable_alias_context()->::google::devtools::source::v1::AliasContext::MergeFrom(from.alias_context());
-      break;
-    }
-    case REVISION_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.source.v1.GerritSourceContext)
 }
 
@@ -2846,13 +2983,15 @@ void GerritSourceContext::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GerritSourceContext::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6].descriptor;
+  return GerritSourceContext_descriptor_;
 }
 
 const GerritSourceContext& GerritSourceContext::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GerritSourceContext> GerritSourceContext_default_instance_;
 
 GerritSourceContext* GerritSourceContext::New(::google::protobuf::Arena* arena) const {
   GerritSourceContext* n = new GerritSourceContext;
@@ -2898,13 +3037,13 @@ bool GerritSourceContext::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.source.v1.GerritSourceContext)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string host_uri = 1;
+      // optional string host_uri = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_host_uri()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2914,12 +3053,14 @@ bool GerritSourceContext::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_gerrit_project;
         break;
       }
 
-      // string gerrit_project = 2;
+      // optional string gerrit_project = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_gerrit_project:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_gerrit_project()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2929,12 +3070,14 @@ bool GerritSourceContext::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_revision_id;
         break;
       }
 
-      // string revision_id = 3;
+      // optional string revision_id = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_revision_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_revision_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2944,12 +3087,13 @@ bool GerritSourceContext::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        goto after_alias_context;
         break;
       }
 
-      // string alias_name = 4;
+      // optional string alias_name = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_alias_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2959,17 +3103,21 @@ bool GerritSourceContext::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_alias_context;
         break;
       }
 
-      // .google.devtools.source.v1.AliasContext alias_context = 5;
+      // optional .google.devtools.source.v1.AliasContext alias_context = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_alias_context:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_alias_context()));
         } else {
           goto handle_unusual;
         }
+       after_alias_context:
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2997,7 +3145,7 @@ failure:
 void GerritSourceContext::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.source.v1.GerritSourceContext)
-  // string host_uri = 1;
+  // optional string host_uri = 1;
   if (this->host_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->host_uri().data(), this->host_uri().length(),
@@ -3007,7 +3155,7 @@ void GerritSourceContext::SerializeWithCachedSizes(
       1, this->host_uri(), output);
   }
 
-  // string gerrit_project = 2;
+  // optional string gerrit_project = 2;
   if (this->gerrit_project().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->gerrit_project().data(), this->gerrit_project().length(),
@@ -3017,7 +3165,7 @@ void GerritSourceContext::SerializeWithCachedSizes(
       2, this->gerrit_project(), output);
   }
 
-  // string revision_id = 3;
+  // optional string revision_id = 3;
   if (has_revision_id()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->revision_id().data(), this->revision_id().length(),
@@ -3027,7 +3175,7 @@ void GerritSourceContext::SerializeWithCachedSizes(
       3, this->revision_id(), output);
   }
 
-  // string alias_name = 4;
+  // optional string alias_name = 4;
   if (has_alias_name()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->alias_name().data(), this->alias_name().length(),
@@ -3037,7 +3185,7 @@ void GerritSourceContext::SerializeWithCachedSizes(
       4, this->alias_name(), output);
   }
 
-  // .google.devtools.source.v1.AliasContext alias_context = 5;
+  // optional .google.devtools.source.v1.AliasContext alias_context = 5;
   if (has_alias_context()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       5, *revision_.alias_context_, output);
@@ -3050,7 +3198,7 @@ void GerritSourceContext::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.source.v1.GerritSourceContext)
-  // string host_uri = 1;
+  // optional string host_uri = 1;
   if (this->host_uri().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->host_uri().data(), this->host_uri().length(),
@@ -3061,7 +3209,7 @@ void GerritSourceContext::SerializeWithCachedSizes(
         1, this->host_uri(), target);
   }
 
-  // string gerrit_project = 2;
+  // optional string gerrit_project = 2;
   if (this->gerrit_project().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->gerrit_project().data(), this->gerrit_project().length(),
@@ -3072,7 +3220,7 @@ void GerritSourceContext::SerializeWithCachedSizes(
         2, this->gerrit_project(), target);
   }
 
-  // string revision_id = 3;
+  // optional string revision_id = 3;
   if (has_revision_id()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->revision_id().data(), this->revision_id().length(),
@@ -3083,7 +3231,7 @@ void GerritSourceContext::SerializeWithCachedSizes(
         3, this->revision_id(), target);
   }
 
-  // string alias_name = 4;
+  // optional string alias_name = 4;
   if (has_alias_name()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->alias_name().data(), this->alias_name().length(),
@@ -3094,7 +3242,7 @@ void GerritSourceContext::SerializeWithCachedSizes(
         4, this->alias_name(), target);
   }
 
-  // .google.devtools.source.v1.AliasContext alias_context = 5;
+  // optional .google.devtools.source.v1.AliasContext alias_context = 5;
   if (has_alias_context()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -3109,14 +3257,14 @@ size_t GerritSourceContext::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.source.v1.GerritSourceContext)
   size_t total_size = 0;
 
-  // string host_uri = 1;
+  // optional string host_uri = 1;
   if (this->host_uri().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->host_uri());
   }
 
-  // string gerrit_project = 2;
+  // optional string gerrit_project = 2;
   if (this->gerrit_project().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -3124,21 +3272,21 @@ size_t GerritSourceContext::ByteSizeLong() const {
   }
 
   switch (revision_case()) {
-    // string revision_id = 3;
+    // optional string revision_id = 3;
     case kRevisionId: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->revision_id());
       break;
     }
-    // string alias_name = 4;
+    // optional string alias_name = 4;
     case kAliasName: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->alias_name());
       break;
     }
-    // .google.devtools.source.v1.AliasContext alias_context = 5;
+    // optional .google.devtools.source.v1.AliasContext alias_context = 5;
     case kAliasContext: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -3158,7 +3306,7 @@ size_t GerritSourceContext::ByteSizeLong() const {
 
 void GerritSourceContext::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.source.v1.GerritSourceContext)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GerritSourceContext* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GerritSourceContext>(
           &from);
@@ -3167,22 +3315,21 @@ void GerritSourceContext::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.source.v1.GerritSourceContext)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GerritSourceContext::MergeFrom(const GerritSourceContext& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.source.v1.GerritSourceContext)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.host_uri().size() > 0) {
-
-    host_uri_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.host_uri_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  if (from.gerrit_project().size() > 0) {
+}
 
-    gerrit_project_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.gerrit_project_);
-  }
+void GerritSourceContext::UnsafeMergeFrom(const GerritSourceContext& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.revision_case()) {
     case kRevisionId: {
       set_revision_id(from.revision_id());
@@ -3200,6 +3347,14 @@ void GerritSourceContext::MergeFrom(const GerritSourceContext& from) {
       break;
     }
   }
+  if (from.host_uri().size() > 0) {
+
+    host_uri_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.host_uri_);
+  }
+  if (from.gerrit_project().size() > 0) {
+
+    gerrit_project_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.gerrit_project_);
+  }
 }
 
 void GerritSourceContext::CopyFrom(const ::google::protobuf::Message& from) {
@@ -3213,10 +3368,11 @@ void GerritSourceContext::CopyFrom(const GerritSourceContext& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.source.v1.GerritSourceContext)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GerritSourceContext::IsInitialized() const {
+
   return true;
 }
 
@@ -3229,24 +3385,28 @@ void GerritSourceContext::InternalSwap(GerritSourceContext* other) {
   gerrit_project_.Swap(&other->gerrit_project_);
   std::swap(revision_, other->revision_);
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GerritSourceContext::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GerritSourceContext_descriptor_;
+  metadata.reflection = GerritSourceContext_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GerritSourceContext
 
-// string host_uri = 1;
+// optional string host_uri = 1;
 void GerritSourceContext::clear_host_uri() {
   host_uri_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GerritSourceContext::host_uri() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.GerritSourceContext.host_uri)
-  return host_uri_.GetNoArena();
+  return host_uri_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GerritSourceContext::set_host_uri(const ::std::string& value) {
   
@@ -3284,13 +3444,13 @@ void GerritSourceContext::set_allocated_host_uri(::std::string* host_uri) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.GerritSourceContext.host_uri)
 }
 
-// string gerrit_project = 2;
+// optional string gerrit_project = 2;
 void GerritSourceContext::clear_gerrit_project() {
   gerrit_project_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GerritSourceContext::gerrit_project() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.GerritSourceContext.gerrit_project)
-  return gerrit_project_.GetNoArena();
+  return gerrit_project_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GerritSourceContext::set_gerrit_project(const ::std::string& value) {
   
@@ -3328,7 +3488,7 @@ void GerritSourceContext::set_allocated_gerrit_project(::std::string* gerrit_pro
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.GerritSourceContext.gerrit_project)
 }
 
-// string revision_id = 3;
+// optional string revision_id = 3;
 bool GerritSourceContext::has_revision_id() const {
   return revision_case() == kRevisionId;
 }
@@ -3344,7 +3504,7 @@ void GerritSourceContext::clear_revision_id() {
 const ::std::string& GerritSourceContext::revision_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.GerritSourceContext.revision_id)
   if (has_revision_id()) {
-    return revision_.revision_id_.GetNoArena();
+    return revision_.revision_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3409,7 +3569,7 @@ void GerritSourceContext::set_allocated_revision_id(::std::string* revision_id) 
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.GerritSourceContext.revision_id)
 }
 
-// string alias_name = 4;
+// optional string alias_name = 4;
 bool GerritSourceContext::has_alias_name() const {
   return revision_case() == kAliasName;
 }
@@ -3425,7 +3585,7 @@ void GerritSourceContext::clear_alias_name() {
 const ::std::string& GerritSourceContext::alias_name() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.GerritSourceContext.alias_name)
   if (has_alias_name()) {
-    return revision_.alias_name_.GetNoArena();
+    return revision_.alias_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3490,7 +3650,7 @@ void GerritSourceContext::set_allocated_alias_name(::std::string* alias_name) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.GerritSourceContext.alias_name)
 }
 
-// .google.devtools.source.v1.AliasContext alias_context = 5;
+// optional .google.devtools.source.v1.AliasContext alias_context = 5;
 bool GerritSourceContext::has_alias_context() const {
   return revision_case() == kAliasContext;
 }
@@ -3547,6 +3707,9 @@ void GerritSourceContext::clear_has_revision() {
 GerritSourceContext::RevisionCase GerritSourceContext::revision_case() const {
   return GerritSourceContext::RevisionCase(_oneof_case_[0]);
 }
+inline const GerritSourceContext* GerritSourceContext::internal_default_instance() {
+  return &GerritSourceContext_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3558,25 +3721,19 @@ const int GitSourceContext::kRevisionIdFieldNumber;
 
 GitSourceContext::GitSourceContext()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.source.v1.GitSourceContext)
 }
+
+void GitSourceContext::InitAsDefaultInstance() {
+}
+
 GitSourceContext::GitSourceContext(const GitSourceContext& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  url_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.url().size() > 0) {
-    url_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.url_);
-  }
-  revision_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.revision_id().size() > 0) {
-    revision_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.revision_id_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.source.v1.GitSourceContext)
 }
 
@@ -3603,13 +3760,15 @@ void GitSourceContext::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GitSourceContext::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7].descriptor;
+  return GitSourceContext_descriptor_;
 }
 
 const GitSourceContext& GitSourceContext::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GitSourceContext> GitSourceContext_default_instance_;
 
 GitSourceContext* GitSourceContext::New(::google::protobuf::Arena* arena) const {
   GitSourceContext* n = new GitSourceContext;
@@ -3631,13 +3790,13 @@ bool GitSourceContext::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.source.v1.GitSourceContext)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string url = 1;
+      // optional string url = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_url()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3647,12 +3806,14 @@ bool GitSourceContext::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_revision_id;
         break;
       }
 
-      // string revision_id = 2;
+      // optional string revision_id = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_revision_id:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_revision_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -3662,6 +3823,7 @@ bool GitSourceContext::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3689,7 +3851,7 @@ failure:
 void GitSourceContext::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.source.v1.GitSourceContext)
-  // string url = 1;
+  // optional string url = 1;
   if (this->url().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->url().data(), this->url().length(),
@@ -3699,7 +3861,7 @@ void GitSourceContext::SerializeWithCachedSizes(
       1, this->url(), output);
   }
 
-  // string revision_id = 2;
+  // optional string revision_id = 2;
   if (this->revision_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->revision_id().data(), this->revision_id().length(),
@@ -3716,7 +3878,7 @@ void GitSourceContext::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.source.v1.GitSourceContext)
-  // string url = 1;
+  // optional string url = 1;
   if (this->url().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->url().data(), this->url().length(),
@@ -3727,7 +3889,7 @@ void GitSourceContext::SerializeWithCachedSizes(
         1, this->url(), target);
   }
 
-  // string revision_id = 2;
+  // optional string revision_id = 2;
   if (this->revision_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->revision_id().data(), this->revision_id().length(),
@@ -3746,14 +3908,14 @@ size_t GitSourceContext::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.source.v1.GitSourceContext)
   size_t total_size = 0;
 
-  // string url = 1;
+  // optional string url = 1;
   if (this->url().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->url());
   }
 
-  // string revision_id = 2;
+  // optional string revision_id = 2;
   if (this->revision_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -3769,7 +3931,7 @@ size_t GitSourceContext::ByteSizeLong() const {
 
 void GitSourceContext::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.source.v1.GitSourceContext)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GitSourceContext* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GitSourceContext>(
           &from);
@@ -3778,14 +3940,21 @@ void GitSourceContext::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.source.v1.GitSourceContext)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GitSourceContext::MergeFrom(const GitSourceContext& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.source.v1.GitSourceContext)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GitSourceContext::UnsafeMergeFrom(const GitSourceContext& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.url().size() > 0) {
 
     url_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.url_);
@@ -3807,10 +3976,11 @@ void GitSourceContext::CopyFrom(const GitSourceContext& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.source.v1.GitSourceContext)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GitSourceContext::IsInitialized() const {
+
   return true;
 }
 
@@ -3821,24 +3991,28 @@ void GitSourceContext::Swap(GitSourceContext* other) {
 void GitSourceContext::InternalSwap(GitSourceContext* other) {
   url_.Swap(&other->url_);
   revision_id_.Swap(&other->revision_id_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GitSourceContext::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GitSourceContext_descriptor_;
+  metadata.reflection = GitSourceContext_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GitSourceContext
 
-// string url = 1;
+// optional string url = 1;
 void GitSourceContext::clear_url() {
   url_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GitSourceContext::url() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.GitSourceContext.url)
-  return url_.GetNoArena();
+  return url_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GitSourceContext::set_url(const ::std::string& value) {
   
@@ -3876,13 +4050,13 @@ void GitSourceContext::set_allocated_url(::std::string* url) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.GitSourceContext.url)
 }
 
-// string revision_id = 2;
+// optional string revision_id = 2;
 void GitSourceContext::clear_revision_id() {
   revision_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GitSourceContext::revision_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.GitSourceContext.revision_id)
-  return revision_id_.GetNoArena();
+  return revision_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GitSourceContext::set_revision_id(const ::std::string& value) {
   
@@ -3920,6 +4094,9 @@ void GitSourceContext::set_allocated_revision_id(::std::string* revision_id) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.GitSourceContext.revision_id)
 }
 
+inline const GitSourceContext* GitSourceContext::internal_default_instance() {
+  return &GitSourceContext_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3931,31 +4108,22 @@ const int RepoId::kUidFieldNumber;
 
 RepoId::RepoId()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.source.v1.RepoId)
 }
+
+void RepoId::InitAsDefaultInstance() {
+  RepoId_default_oneof_instance_->project_repo_id_ = const_cast< ::google::devtools::source::v1::ProjectRepoId*>(
+      ::google::devtools::source::v1::ProjectRepoId::internal_default_instance());
+  RepoId_default_oneof_instance_->uid_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
 RepoId::RepoId(const RepoId& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  clear_has_id();
-  switch (from.id_case()) {
-    case kProjectRepoId: {
-      mutable_project_repo_id()->::google::devtools::source::v1::ProjectRepoId::MergeFrom(from.project_repo_id());
-      break;
-    }
-    case kUid: {
-      set_uid(from.uid());
-      break;
-    }
-    case ID_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.source.v1.RepoId)
 }
 
@@ -3982,13 +4150,15 @@ void RepoId::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* RepoId::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8].descriptor;
+  return RepoId_descriptor_;
 }
 
 const RepoId& RepoId::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<RepoId> RepoId_default_instance_;
 
 RepoId* RepoId::New(::google::protobuf::Arena* arena) const {
   RepoId* n = new RepoId;
@@ -4028,24 +4198,25 @@ bool RepoId::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.source.v1.RepoId)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.devtools.source.v1.ProjectRepoId project_repo_id = 1;
+      // optional .google.devtools.source.v1.ProjectRepoId project_repo_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_project_repo_id()));
         } else {
           goto handle_unusual;
         }
+        goto after_uid;
         break;
       }
 
-      // string uid = 2;
+      // optional string uid = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_uid()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4055,6 +4226,8 @@ bool RepoId::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+       after_uid:
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4082,13 +4255,13 @@ failure:
 void RepoId::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.source.v1.RepoId)
-  // .google.devtools.source.v1.ProjectRepoId project_repo_id = 1;
+  // optional .google.devtools.source.v1.ProjectRepoId project_repo_id = 1;
   if (has_project_repo_id()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *id_.project_repo_id_, output);
   }
 
-  // string uid = 2;
+  // optional string uid = 2;
   if (has_uid()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->uid().data(), this->uid().length(),
@@ -4105,14 +4278,14 @@ void RepoId::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.source.v1.RepoId)
-  // .google.devtools.source.v1.ProjectRepoId project_repo_id = 1;
+  // optional .google.devtools.source.v1.ProjectRepoId project_repo_id = 1;
   if (has_project_repo_id()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *id_.project_repo_id_, false, target);
   }
 
-  // string uid = 2;
+  // optional string uid = 2;
   if (has_uid()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->uid().data(), this->uid().length(),
@@ -4132,14 +4305,14 @@ size_t RepoId::ByteSizeLong() const {
   size_t total_size = 0;
 
   switch (id_case()) {
-    // .google.devtools.source.v1.ProjectRepoId project_repo_id = 1;
+    // optional .google.devtools.source.v1.ProjectRepoId project_repo_id = 1;
     case kProjectRepoId: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *id_.project_repo_id_);
       break;
     }
-    // string uid = 2;
+    // optional string uid = 2;
     case kUid: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -4159,7 +4332,7 @@ size_t RepoId::ByteSizeLong() const {
 
 void RepoId::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.source.v1.RepoId)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const RepoId* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const RepoId>(
           &from);
@@ -4168,14 +4341,21 @@ void RepoId::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.source.v1.RepoId)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void RepoId::MergeFrom(const RepoId& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.source.v1.RepoId)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void RepoId::UnsafeMergeFrom(const RepoId& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.id_case()) {
     case kProjectRepoId: {
       mutable_project_repo_id()->::google::devtools::source::v1::ProjectRepoId::MergeFrom(from.project_repo_id());
@@ -4202,10 +4382,11 @@ void RepoId::CopyFrom(const RepoId& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.source.v1.RepoId)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool RepoId::IsInitialized() const {
+
   return true;
 }
 
@@ -4216,18 +4397,22 @@ void RepoId::Swap(RepoId* other) {
 void RepoId::InternalSwap(RepoId* other) {
   std::swap(id_, other->id_);
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata RepoId::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = RepoId_descriptor_;
+  metadata.reflection = RepoId_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // RepoId
 
-// .google.devtools.source.v1.ProjectRepoId project_repo_id = 1;
+// optional .google.devtools.source.v1.ProjectRepoId project_repo_id = 1;
 bool RepoId::has_project_repo_id() const {
   return id_case() == kProjectRepoId;
 }
@@ -4275,7 +4460,7 @@ void RepoId::set_allocated_project_repo_id(::google::devtools::source::v1::Proje
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.RepoId.project_repo_id)
 }
 
-// string uid = 2;
+// optional string uid = 2;
 bool RepoId::has_uid() const {
   return id_case() == kUid;
 }
@@ -4291,7 +4476,7 @@ void RepoId::clear_uid() {
 const ::std::string& RepoId::uid() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.RepoId.uid)
   if (has_uid()) {
-    return id_.uid_.GetNoArena();
+    return id_.uid_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -4365,6 +4550,9 @@ void RepoId::clear_has_id() {
 RepoId::IdCase RepoId::id_case() const {
   return RepoId::IdCase(_oneof_case_[0]);
 }
+inline const RepoId* RepoId::internal_default_instance() {
+  return &RepoId_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4376,25 +4564,19 @@ const int ProjectRepoId::kRepoNameFieldNumber;
 
 ProjectRepoId::ProjectRepoId()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.source.v1.ProjectRepoId)
 }
+
+void ProjectRepoId::InitAsDefaultInstance() {
+}
+
 ProjectRepoId::ProjectRepoId(const ProjectRepoId& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  project_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.project_id().size() > 0) {
-    project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
-  }
-  repo_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.repo_name().size() > 0) {
-    repo_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.repo_name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.source.v1.ProjectRepoId)
 }
 
@@ -4421,13 +4603,15 @@ void ProjectRepoId::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ProjectRepoId::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9].descriptor;
+  return ProjectRepoId_descriptor_;
 }
 
 const ProjectRepoId& ProjectRepoId::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ProjectRepoId> ProjectRepoId_default_instance_;
 
 ProjectRepoId* ProjectRepoId::New(::google::protobuf::Arena* arena) const {
   ProjectRepoId* n = new ProjectRepoId;
@@ -4449,13 +4633,13 @@ bool ProjectRepoId::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.source.v1.ProjectRepoId)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string project_id = 1;
+      // optional string project_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_project_id()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4465,12 +4649,14 @@ bool ProjectRepoId::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_repo_name;
         break;
       }
 
-      // string repo_name = 2;
+      // optional string repo_name = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_repo_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_repo_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4480,6 +4666,7 @@ bool ProjectRepoId::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4507,7 +4694,7 @@ failure:
 void ProjectRepoId::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.source.v1.ProjectRepoId)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -4517,7 +4704,7 @@ void ProjectRepoId::SerializeWithCachedSizes(
       1, this->project_id(), output);
   }
 
-  // string repo_name = 2;
+  // optional string repo_name = 2;
   if (this->repo_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->repo_name().data(), this->repo_name().length(),
@@ -4534,7 +4721,7 @@ void ProjectRepoId::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.source.v1.ProjectRepoId)
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->project_id().data(), this->project_id().length(),
@@ -4545,7 +4732,7 @@ void ProjectRepoId::SerializeWithCachedSizes(
         1, this->project_id(), target);
   }
 
-  // string repo_name = 2;
+  // optional string repo_name = 2;
   if (this->repo_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->repo_name().data(), this->repo_name().length(),
@@ -4564,14 +4751,14 @@ size_t ProjectRepoId::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.source.v1.ProjectRepoId)
   size_t total_size = 0;
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   if (this->project_id().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->project_id());
   }
 
-  // string repo_name = 2;
+  // optional string repo_name = 2;
   if (this->repo_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -4587,7 +4774,7 @@ size_t ProjectRepoId::ByteSizeLong() const {
 
 void ProjectRepoId::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.source.v1.ProjectRepoId)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ProjectRepoId* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ProjectRepoId>(
           &from);
@@ -4596,14 +4783,21 @@ void ProjectRepoId::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.source.v1.ProjectRepoId)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ProjectRepoId::MergeFrom(const ProjectRepoId& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.source.v1.ProjectRepoId)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ProjectRepoId::UnsafeMergeFrom(const ProjectRepoId& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.project_id().size() > 0) {
 
     project_id_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.project_id_);
@@ -4625,10 +4819,11 @@ void ProjectRepoId::CopyFrom(const ProjectRepoId& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.source.v1.ProjectRepoId)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ProjectRepoId::IsInitialized() const {
+
   return true;
 }
 
@@ -4639,24 +4834,28 @@ void ProjectRepoId::Swap(ProjectRepoId* other) {
 void ProjectRepoId::InternalSwap(ProjectRepoId* other) {
   project_id_.Swap(&other->project_id_);
   repo_name_.Swap(&other->repo_name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ProjectRepoId::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ProjectRepoId_descriptor_;
+  metadata.reflection = ProjectRepoId_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ProjectRepoId
 
-// string project_id = 1;
+// optional string project_id = 1;
 void ProjectRepoId::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ProjectRepoId::project_id() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.ProjectRepoId.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ProjectRepoId::set_project_id(const ::std::string& value) {
   
@@ -4694,13 +4893,13 @@ void ProjectRepoId::set_allocated_project_id(::std::string* project_id) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.ProjectRepoId.project_id)
 }
 
-// string repo_name = 2;
+// optional string repo_name = 2;
 void ProjectRepoId::clear_repo_name() {
   repo_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ProjectRepoId::repo_name() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.ProjectRepoId.repo_name)
-  return repo_name_.GetNoArena();
+  return repo_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ProjectRepoId::set_repo_name(const ::std::string& value) {
   
@@ -4738,6 +4937,9 @@ void ProjectRepoId::set_allocated_repo_name(::std::string* repo_name) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.ProjectRepoId.repo_name)
 }
 
+inline const ProjectRepoId* ProjectRepoId::internal_default_instance() {
+  return &ProjectRepoId_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4749,26 +4951,21 @@ const int CloudWorkspaceId::kNameFieldNumber;
 
 CloudWorkspaceId::CloudWorkspaceId()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.devtools.source.v1.CloudWorkspaceId)
 }
+
+void CloudWorkspaceId::InitAsDefaultInstance() {
+  repo_id_ = const_cast< ::google::devtools::source::v1::RepoId*>(
+      ::google::devtools::source::v1::RepoId::internal_default_instance());
+}
+
 CloudWorkspaceId::CloudWorkspaceId(const CloudWorkspaceId& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  if (from.has_repo_id()) {
-    repo_id_ = new ::google::devtools::source::v1::RepoId(*from.repo_id_);
-  } else {
-    repo_id_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.devtools.source.v1.CloudWorkspaceId)
 }
 
@@ -4785,7 +4982,7 @@ CloudWorkspaceId::~CloudWorkspaceId() {
 
 void CloudWorkspaceId::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &CloudWorkspaceId_default_instance_.get()) {
     delete repo_id_;
   }
 }
@@ -4797,13 +4994,15 @@ void CloudWorkspaceId::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* CloudWorkspaceId::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10].descriptor;
+  return CloudWorkspaceId_descriptor_;
 }
 
 const CloudWorkspaceId& CloudWorkspaceId::default_instance() {
   protobuf_InitDefaults_google_2fdevtools_2fsource_2fv1_2fsource_5fcontext_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<CloudWorkspaceId> CloudWorkspaceId_default_instance_;
 
 CloudWorkspaceId* CloudWorkspaceId::New(::google::protobuf::Arena* arena) const {
   CloudWorkspaceId* n = new CloudWorkspaceId;
@@ -4815,11 +5014,9 @@ CloudWorkspaceId* CloudWorkspaceId::New(::google::protobuf::Arena* arena) const 
 
 void CloudWorkspaceId::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.devtools.source.v1.CloudWorkspaceId)
-  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && repo_id_ != NULL) {
-    delete repo_id_;
-  }
+  if (GetArenaNoVirtual() == NULL && repo_id_ != NULL) delete repo_id_;
   repo_id_ = NULL;
+  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 bool CloudWorkspaceId::MergePartialFromCodedStream(
@@ -4828,24 +5025,26 @@ bool CloudWorkspaceId::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.devtools.source.v1.CloudWorkspaceId)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.devtools.source.v1.RepoId repo_id = 1;
+      // optional .google.devtools.source.v1.RepoId repo_id = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_repo_id()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_name;
         break;
       }
 
-      // string name = 2;
+      // optional string name = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -4855,6 +5054,7 @@ bool CloudWorkspaceId::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4882,13 +5082,13 @@ failure:
 void CloudWorkspaceId::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.devtools.source.v1.CloudWorkspaceId)
-  // .google.devtools.source.v1.RepoId repo_id = 1;
+  // optional .google.devtools.source.v1.RepoId repo_id = 1;
   if (this->has_repo_id()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->repo_id_, output);
   }
 
-  // string name = 2;
+  // optional string name = 2;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -4905,14 +5105,14 @@ void CloudWorkspaceId::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.devtools.source.v1.CloudWorkspaceId)
-  // .google.devtools.source.v1.RepoId repo_id = 1;
+  // optional .google.devtools.source.v1.RepoId repo_id = 1;
   if (this->has_repo_id()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->repo_id_, false, target);
   }
 
-  // string name = 2;
+  // optional string name = 2;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -4931,18 +5131,18 @@ size_t CloudWorkspaceId::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.devtools.source.v1.CloudWorkspaceId)
   size_t total_size = 0;
 
-  // string name = 2;
-  if (this->name().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->name());
-  }
-
-  // .google.devtools.source.v1.RepoId repo_id = 1;
+  // optional .google.devtools.source.v1.RepoId repo_id = 1;
   if (this->has_repo_id()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->repo_id_);
+  }
+
+  // optional string name = 2;
+  if (this->name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->name());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -4954,7 +5154,7 @@ size_t CloudWorkspaceId::ByteSizeLong() const {
 
 void CloudWorkspaceId::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.devtools.source.v1.CloudWorkspaceId)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const CloudWorkspaceId* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const CloudWorkspaceId>(
           &from);
@@ -4963,20 +5163,27 @@ void CloudWorkspaceId::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.devtools.source.v1.CloudWorkspaceId)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void CloudWorkspaceId::MergeFrom(const CloudWorkspaceId& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.devtools.source.v1.CloudWorkspaceId)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void CloudWorkspaceId::UnsafeMergeFrom(const CloudWorkspaceId& from) {
+  GOOGLE_DCHECK(&from != this);
+  if (from.has_repo_id()) {
+    mutable_repo_id()->::google::devtools::source::v1::RepoId::MergeFrom(from.repo_id());
+  }
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  if (from.has_repo_id()) {
-    mutable_repo_id()->::google::devtools::source::v1::RepoId::MergeFrom(from.repo_id());
   }
 }
 
@@ -4991,10 +5198,11 @@ void CloudWorkspaceId::CopyFrom(const CloudWorkspaceId& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.devtools.source.v1.CloudWorkspaceId)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool CloudWorkspaceId::IsInitialized() const {
+
   return true;
 }
 
@@ -5003,20 +5211,24 @@ void CloudWorkspaceId::Swap(CloudWorkspaceId* other) {
   InternalSwap(other);
 }
 void CloudWorkspaceId::InternalSwap(CloudWorkspaceId* other) {
-  name_.Swap(&other->name_);
   std::swap(repo_id_, other->repo_id_);
+  name_.Swap(&other->name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata CloudWorkspaceId::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = CloudWorkspaceId_descriptor_;
+  metadata.reflection = CloudWorkspaceId_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // CloudWorkspaceId
 
-// .google.devtools.source.v1.RepoId repo_id = 1;
+// optional .google.devtools.source.v1.RepoId repo_id = 1;
 bool CloudWorkspaceId::has_repo_id() const {
   return this != internal_default_instance() && repo_id_ != NULL;
 }
@@ -5055,13 +5267,13 @@ void CloudWorkspaceId::set_allocated_repo_id(::google::devtools::source::v1::Rep
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.CloudWorkspaceId.repo_id)
 }
 
-// string name = 2;
+// optional string name = 2;
 void CloudWorkspaceId::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& CloudWorkspaceId::name() const {
   // @@protoc_insertion_point(field_get:google.devtools.source.v1.CloudWorkspaceId.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void CloudWorkspaceId::set_name(const ::std::string& value) {
   
@@ -5099,6 +5311,9 @@ void CloudWorkspaceId::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.devtools.source.v1.CloudWorkspaceId.name)
 }
 
+inline const CloudWorkspaceId* CloudWorkspaceId::internal_default_instance() {
+  return &CloudWorkspaceId_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

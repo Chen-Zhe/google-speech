@@ -24,17 +24,10 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace type {
-class PostalAddress;
-class PostalAddressDefaultTypeInternal;
-extern PostalAddressDefaultTypeInternal _PostalAddress_default_instance_;
-}  // namespace type
-}  // namespace google
 
 namespace google {
 namespace type {
@@ -42,6 +35,10 @@ namespace type {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2ftype_2fpostal_5faddress_2eproto();
 void protobuf_InitDefaults_google_2ftype_2fpostal_5faddress_2eproto();
+void protobuf_AssignDesc_google_2ftype_2fpostal_5faddress_2eproto();
+void protobuf_ShutdownFile_google_2ftype_2fpostal_5faddress_2eproto();
+
+class PostalAddress;
 
 // ===================================================================
 
@@ -60,64 +57,61 @@ class PostalAddress : public ::google::protobuf::Message /* @@protoc_insertion_p
   static const ::google::protobuf::Descriptor* descriptor();
   static const PostalAddress& default_instance();
 
-  static inline const PostalAddress* internal_default_instance() {
-    return reinterpret_cast<const PostalAddress*>(
-               &_PostalAddress_default_instance_);
-  }
+  static const PostalAddress* internal_default_instance();
 
   void Swap(PostalAddress* other);
 
   // implements Message ----------------------------------------------
 
-  inline PostalAddress* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline PostalAddress* New() const { return New(NULL); }
 
-  PostalAddress* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PostalAddress* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const PostalAddress& from);
   void MergeFrom(const PostalAddress& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(PostalAddress* other);
+  void UnsafeMergeFrom(const PostalAddress& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // int32 revision = 1;
+  // optional int32 revision = 1;
   void clear_revision();
   static const int kRevisionFieldNumber = 1;
   ::google::protobuf::int32 revision() const;
   void set_revision(::google::protobuf::int32 value);
 
-  // string region_code = 2;
+  // optional string region_code = 2;
   void clear_region_code();
   static const int kRegionCodeFieldNumber = 2;
   const ::std::string& region_code() const;
@@ -128,7 +122,7 @@ class PostalAddress : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::std::string* release_region_code();
   void set_allocated_region_code(::std::string* region_code);
 
-  // string language_code = 3;
+  // optional string language_code = 3;
   void clear_language_code();
   static const int kLanguageCodeFieldNumber = 3;
   const ::std::string& language_code() const;
@@ -139,7 +133,7 @@ class PostalAddress : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::std::string* release_language_code();
   void set_allocated_language_code(::std::string* language_code);
 
-  // string postal_code = 4;
+  // optional string postal_code = 4;
   void clear_postal_code();
   static const int kPostalCodeFieldNumber = 4;
   const ::std::string& postal_code() const;
@@ -150,7 +144,7 @@ class PostalAddress : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::std::string* release_postal_code();
   void set_allocated_postal_code(::std::string* postal_code);
 
-  // string sorting_code = 5;
+  // optional string sorting_code = 5;
   void clear_sorting_code();
   static const int kSortingCodeFieldNumber = 5;
   const ::std::string& sorting_code() const;
@@ -161,7 +155,7 @@ class PostalAddress : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::std::string* release_sorting_code();
   void set_allocated_sorting_code(::std::string* sorting_code);
 
-  // string administrative_area = 6;
+  // optional string administrative_area = 6;
   void clear_administrative_area();
   static const int kAdministrativeAreaFieldNumber = 6;
   const ::std::string& administrative_area() const;
@@ -172,7 +166,7 @@ class PostalAddress : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::std::string* release_administrative_area();
   void set_allocated_administrative_area(::std::string* administrative_area);
 
-  // string locality = 7;
+  // optional string locality = 7;
   void clear_locality();
   static const int kLocalityFieldNumber = 7;
   const ::std::string& locality() const;
@@ -183,7 +177,7 @@ class PostalAddress : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::std::string* release_locality();
   void set_allocated_locality(::std::string* locality);
 
-  // string sublocality = 8;
+  // optional string sublocality = 8;
   void clear_sublocality();
   static const int kSublocalityFieldNumber = 8;
   const ::std::string& sublocality() const;
@@ -226,7 +220,7 @@ class PostalAddress : public ::google::protobuf::Message /* @@protoc_insertion_p
   const ::google::protobuf::RepeatedPtrField< ::std::string>& recipients() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_recipients();
 
-  // string organization = 11;
+  // optional string organization = 11;
   void clear_organization();
   static const int kOrganizationFieldNumber = 11;
   const ::std::string& organization() const;
@@ -255,10 +249,13 @@ class PostalAddress : public ::google::protobuf::Message /* @@protoc_insertion_p
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2ftype_2fpostal_5faddress_2eproto_impl();
   friend void  protobuf_AddDesc_google_2ftype_2fpostal_5faddress_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2ftype_2fpostal_5faddress_2eproto();
+  friend void protobuf_AssignDesc_google_2ftype_2fpostal_5faddress_2eproto();
   friend void protobuf_ShutdownFile_google_2ftype_2fpostal_5faddress_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<PostalAddress> PostalAddress_default_instance_;
+
 // ===================================================================
 
 
@@ -267,7 +264,7 @@ class PostalAddress : public ::google::protobuf::Message /* @@protoc_insertion_p
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // PostalAddress
 
-// int32 revision = 1;
+// optional int32 revision = 1;
 inline void PostalAddress::clear_revision() {
   revision_ = 0;
 }
@@ -281,13 +278,13 @@ inline void PostalAddress::set_revision(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.type.PostalAddress.revision)
 }
 
-// string region_code = 2;
+// optional string region_code = 2;
 inline void PostalAddress::clear_region_code() {
   region_code_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& PostalAddress::region_code() const {
   // @@protoc_insertion_point(field_get:google.type.PostalAddress.region_code)
-  return region_code_.GetNoArena();
+  return region_code_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PostalAddress::set_region_code(const ::std::string& value) {
   
@@ -325,13 +322,13 @@ inline void PostalAddress::set_allocated_region_code(::std::string* region_code)
   // @@protoc_insertion_point(field_set_allocated:google.type.PostalAddress.region_code)
 }
 
-// string language_code = 3;
+// optional string language_code = 3;
 inline void PostalAddress::clear_language_code() {
   language_code_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& PostalAddress::language_code() const {
   // @@protoc_insertion_point(field_get:google.type.PostalAddress.language_code)
-  return language_code_.GetNoArena();
+  return language_code_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PostalAddress::set_language_code(const ::std::string& value) {
   
@@ -369,13 +366,13 @@ inline void PostalAddress::set_allocated_language_code(::std::string* language_c
   // @@protoc_insertion_point(field_set_allocated:google.type.PostalAddress.language_code)
 }
 
-// string postal_code = 4;
+// optional string postal_code = 4;
 inline void PostalAddress::clear_postal_code() {
   postal_code_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& PostalAddress::postal_code() const {
   // @@protoc_insertion_point(field_get:google.type.PostalAddress.postal_code)
-  return postal_code_.GetNoArena();
+  return postal_code_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PostalAddress::set_postal_code(const ::std::string& value) {
   
@@ -413,13 +410,13 @@ inline void PostalAddress::set_allocated_postal_code(::std::string* postal_code)
   // @@protoc_insertion_point(field_set_allocated:google.type.PostalAddress.postal_code)
 }
 
-// string sorting_code = 5;
+// optional string sorting_code = 5;
 inline void PostalAddress::clear_sorting_code() {
   sorting_code_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& PostalAddress::sorting_code() const {
   // @@protoc_insertion_point(field_get:google.type.PostalAddress.sorting_code)
-  return sorting_code_.GetNoArena();
+  return sorting_code_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PostalAddress::set_sorting_code(const ::std::string& value) {
   
@@ -457,13 +454,13 @@ inline void PostalAddress::set_allocated_sorting_code(::std::string* sorting_cod
   // @@protoc_insertion_point(field_set_allocated:google.type.PostalAddress.sorting_code)
 }
 
-// string administrative_area = 6;
+// optional string administrative_area = 6;
 inline void PostalAddress::clear_administrative_area() {
   administrative_area_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& PostalAddress::administrative_area() const {
   // @@protoc_insertion_point(field_get:google.type.PostalAddress.administrative_area)
-  return administrative_area_.GetNoArena();
+  return administrative_area_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PostalAddress::set_administrative_area(const ::std::string& value) {
   
@@ -501,13 +498,13 @@ inline void PostalAddress::set_allocated_administrative_area(::std::string* admi
   // @@protoc_insertion_point(field_set_allocated:google.type.PostalAddress.administrative_area)
 }
 
-// string locality = 7;
+// optional string locality = 7;
 inline void PostalAddress::clear_locality() {
   locality_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& PostalAddress::locality() const {
   // @@protoc_insertion_point(field_get:google.type.PostalAddress.locality)
-  return locality_.GetNoArena();
+  return locality_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PostalAddress::set_locality(const ::std::string& value) {
   
@@ -545,13 +542,13 @@ inline void PostalAddress::set_allocated_locality(::std::string* locality) {
   // @@protoc_insertion_point(field_set_allocated:google.type.PostalAddress.locality)
 }
 
-// string sublocality = 8;
+// optional string sublocality = 8;
 inline void PostalAddress::clear_sublocality() {
   sublocality_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& PostalAddress::sublocality() const {
   // @@protoc_insertion_point(field_get:google.type.PostalAddress.sublocality)
-  return sublocality_.GetNoArena();
+  return sublocality_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PostalAddress::set_sublocality(const ::std::string& value) {
   
@@ -699,13 +696,13 @@ PostalAddress::mutable_recipients() {
   return &recipients_;
 }
 
-// string organization = 11;
+// optional string organization = 11;
 inline void PostalAddress::clear_organization() {
   organization_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& PostalAddress::organization() const {
   // @@protoc_insertion_point(field_get:google.type.PostalAddress.organization)
-  return organization_.GetNoArena();
+  return organization_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PostalAddress::set_organization(const ::std::string& value) {
   
@@ -743,10 +740,12 @@ inline void PostalAddress::set_allocated_organization(::std::string* organizatio
   // @@protoc_insertion_point(field_set_allocated:google.type.PostalAddress.organization)
 }
 
+inline const PostalAddress* PostalAddress::internal_default_instance() {
+  return &PostalAddress_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace type
 }  // namespace google

@@ -24,79 +24,14 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/map.h>
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace container {
-namespace v1 {
-class AddonsConfig;
-class AddonsConfigDefaultTypeInternal;
-extern AddonsConfigDefaultTypeInternal _AddonsConfig_default_instance_;
-class Cluster;
-class ClusterDefaultTypeInternal;
-extern ClusterDefaultTypeInternal _Cluster_default_instance_;
-class ClusterUpdate;
-class ClusterUpdateDefaultTypeInternal;
-extern ClusterUpdateDefaultTypeInternal _ClusterUpdate_default_instance_;
-class CreateClusterRequest;
-class CreateClusterRequestDefaultTypeInternal;
-extern CreateClusterRequestDefaultTypeInternal _CreateClusterRequest_default_instance_;
-class DeleteClusterRequest;
-class DeleteClusterRequestDefaultTypeInternal;
-extern DeleteClusterRequestDefaultTypeInternal _DeleteClusterRequest_default_instance_;
-class GetClusterRequest;
-class GetClusterRequestDefaultTypeInternal;
-extern GetClusterRequestDefaultTypeInternal _GetClusterRequest_default_instance_;
-class GetOperationRequest;
-class GetOperationRequestDefaultTypeInternal;
-extern GetOperationRequestDefaultTypeInternal _GetOperationRequest_default_instance_;
-class GetServerConfigRequest;
-class GetServerConfigRequestDefaultTypeInternal;
-extern GetServerConfigRequestDefaultTypeInternal _GetServerConfigRequest_default_instance_;
-class HorizontalPodAutoscaling;
-class HorizontalPodAutoscalingDefaultTypeInternal;
-extern HorizontalPodAutoscalingDefaultTypeInternal _HorizontalPodAutoscaling_default_instance_;
-class HttpLoadBalancing;
-class HttpLoadBalancingDefaultTypeInternal;
-extern HttpLoadBalancingDefaultTypeInternal _HttpLoadBalancing_default_instance_;
-class ListClustersRequest;
-class ListClustersRequestDefaultTypeInternal;
-extern ListClustersRequestDefaultTypeInternal _ListClustersRequest_default_instance_;
-class ListClustersResponse;
-class ListClustersResponseDefaultTypeInternal;
-extern ListClustersResponseDefaultTypeInternal _ListClustersResponse_default_instance_;
-class ListOperationsRequest;
-class ListOperationsRequestDefaultTypeInternal;
-extern ListOperationsRequestDefaultTypeInternal _ListOperationsRequest_default_instance_;
-class ListOperationsResponse;
-class ListOperationsResponseDefaultTypeInternal;
-extern ListOperationsResponseDefaultTypeInternal _ListOperationsResponse_default_instance_;
-class MasterAuth;
-class MasterAuthDefaultTypeInternal;
-extern MasterAuthDefaultTypeInternal _MasterAuth_default_instance_;
-class NodeConfig;
-class NodeConfigDefaultTypeInternal;
-extern NodeConfigDefaultTypeInternal _NodeConfig_default_instance_;
-class Operation;
-class OperationDefaultTypeInternal;
-extern OperationDefaultTypeInternal _Operation_default_instance_;
-class ServerConfig;
-class ServerConfigDefaultTypeInternal;
-extern ServerConfigDefaultTypeInternal _ServerConfig_default_instance_;
-class UpdateClusterRequest;
-class UpdateClusterRequestDefaultTypeInternal;
-extern UpdateClusterRequestDefaultTypeInternal _UpdateClusterRequest_default_instance_;
-}  // namespace v1
-}  // namespace container
-}  // namespace google
 
 namespace google {
 namespace container {
@@ -105,6 +40,28 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 void protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+
+class AddonsConfig;
+class Cluster;
+class ClusterUpdate;
+class CreateClusterRequest;
+class DeleteClusterRequest;
+class GetClusterRequest;
+class GetOperationRequest;
+class GetServerConfigRequest;
+class HorizontalPodAutoscaling;
+class HttpLoadBalancing;
+class ListClustersRequest;
+class ListClustersResponse;
+class ListOperationsRequest;
+class ListOperationsResponse;
+class MasterAuth;
+class NodeConfig;
+class Operation;
+class ServerConfig;
+class UpdateClusterRequest;
 
 enum Cluster_Status {
   Cluster_Status_STATUS_UNSPECIFIED = 0,
@@ -184,9 +141,6 @@ inline bool Operation_Type_Parse(
 }
 // ===================================================================
 
-
-// -------------------------------------------------------------------
-
 class NodeConfig : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.NodeConfig) */ {
  public:
   NodeConfig();
@@ -202,59 +156,56 @@ class NodeConfig : public ::google::protobuf::Message /* @@protoc_insertion_poin
   static const ::google::protobuf::Descriptor* descriptor();
   static const NodeConfig& default_instance();
 
-  static inline const NodeConfig* internal_default_instance() {
-    return reinterpret_cast<const NodeConfig*>(
-               &_NodeConfig_default_instance_);
-  }
+  static const NodeConfig* internal_default_instance();
 
   void Swap(NodeConfig* other);
 
   // implements Message ----------------------------------------------
 
-  inline NodeConfig* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline NodeConfig* New() const { return New(NULL); }
 
-  NodeConfig* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  NodeConfig* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const NodeConfig& from);
   void MergeFrom(const NodeConfig& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(NodeConfig* other);
+  void UnsafeMergeFrom(const NodeConfig& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
 
   // accessors -------------------------------------------------------
 
-  // string machine_type = 1;
+  // optional string machine_type = 1;
   void clear_machine_type();
   static const int kMachineTypeFieldNumber = 1;
   const ::std::string& machine_type() const;
@@ -265,7 +216,7 @@ class NodeConfig : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::std::string* release_machine_type();
   void set_allocated_machine_type(::std::string* machine_type);
 
-  // int32 disk_size_gb = 2;
+  // optional int32 disk_size_gb = 2;
   void clear_disk_size_gb();
   static const int kDiskSizeGbFieldNumber = 2;
   ::google::protobuf::int32 disk_size_gb() const;
@@ -317,10 +268,13 @@ class NodeConfig : public ::google::protobuf::Message /* @@protoc_insertion_poin
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<NodeConfig> NodeConfig_default_instance_;
+
 // -------------------------------------------------------------------
 
 class MasterAuth : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.MasterAuth) */ {
@@ -338,58 +292,55 @@ class MasterAuth : public ::google::protobuf::Message /* @@protoc_insertion_poin
   static const ::google::protobuf::Descriptor* descriptor();
   static const MasterAuth& default_instance();
 
-  static inline const MasterAuth* internal_default_instance() {
-    return reinterpret_cast<const MasterAuth*>(
-               &_MasterAuth_default_instance_);
-  }
+  static const MasterAuth* internal_default_instance();
 
   void Swap(MasterAuth* other);
 
   // implements Message ----------------------------------------------
 
-  inline MasterAuth* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline MasterAuth* New() const { return New(NULL); }
 
-  MasterAuth* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  MasterAuth* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const MasterAuth& from);
   void MergeFrom(const MasterAuth& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(MasterAuth* other);
+  void UnsafeMergeFrom(const MasterAuth& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string username = 1;
+  // optional string username = 1;
   void clear_username();
   static const int kUsernameFieldNumber = 1;
   const ::std::string& username() const;
@@ -400,7 +351,7 @@ class MasterAuth : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::std::string* release_username();
   void set_allocated_username(::std::string* username);
 
-  // string password = 2;
+  // optional string password = 2;
   void clear_password();
   static const int kPasswordFieldNumber = 2;
   const ::std::string& password() const;
@@ -411,7 +362,7 @@ class MasterAuth : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::std::string* release_password();
   void set_allocated_password(::std::string* password);
 
-  // string cluster_ca_certificate = 100;
+  // optional string cluster_ca_certificate = 100;
   void clear_cluster_ca_certificate();
   static const int kClusterCaCertificateFieldNumber = 100;
   const ::std::string& cluster_ca_certificate() const;
@@ -422,7 +373,7 @@ class MasterAuth : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::std::string* release_cluster_ca_certificate();
   void set_allocated_cluster_ca_certificate(::std::string* cluster_ca_certificate);
 
-  // string client_certificate = 101;
+  // optional string client_certificate = 101;
   void clear_client_certificate();
   static const int kClientCertificateFieldNumber = 101;
   const ::std::string& client_certificate() const;
@@ -433,7 +384,7 @@ class MasterAuth : public ::google::protobuf::Message /* @@protoc_insertion_poin
   ::std::string* release_client_certificate();
   void set_allocated_client_certificate(::std::string* client_certificate);
 
-  // string client_key = 102;
+  // optional string client_key = 102;
   void clear_client_key();
   static const int kClientKeyFieldNumber = 102;
   const ::std::string& client_key() const;
@@ -456,10 +407,13 @@ class MasterAuth : public ::google::protobuf::Message /* @@protoc_insertion_poin
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<MasterAuth> MasterAuth_default_instance_;
+
 // -------------------------------------------------------------------
 
 class AddonsConfig : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.AddonsConfig) */ {
@@ -477,58 +431,55 @@ class AddonsConfig : public ::google::protobuf::Message /* @@protoc_insertion_po
   static const ::google::protobuf::Descriptor* descriptor();
   static const AddonsConfig& default_instance();
 
-  static inline const AddonsConfig* internal_default_instance() {
-    return reinterpret_cast<const AddonsConfig*>(
-               &_AddonsConfig_default_instance_);
-  }
+  static const AddonsConfig* internal_default_instance();
 
   void Swap(AddonsConfig* other);
 
   // implements Message ----------------------------------------------
 
-  inline AddonsConfig* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline AddonsConfig* New() const { return New(NULL); }
 
-  AddonsConfig* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AddonsConfig* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const AddonsConfig& from);
   void MergeFrom(const AddonsConfig& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(AddonsConfig* other);
+  void UnsafeMergeFrom(const AddonsConfig& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.container.v1.HttpLoadBalancing http_load_balancing = 1;
+  // optional .google.container.v1.HttpLoadBalancing http_load_balancing = 1;
   bool has_http_load_balancing() const;
   void clear_http_load_balancing();
   static const int kHttpLoadBalancingFieldNumber = 1;
@@ -537,7 +488,7 @@ class AddonsConfig : public ::google::protobuf::Message /* @@protoc_insertion_po
   ::google::container::v1::HttpLoadBalancing* release_http_load_balancing();
   void set_allocated_http_load_balancing(::google::container::v1::HttpLoadBalancing* http_load_balancing);
 
-  // .google.container.v1.HorizontalPodAutoscaling horizontal_pod_autoscaling = 2;
+  // optional .google.container.v1.HorizontalPodAutoscaling horizontal_pod_autoscaling = 2;
   bool has_horizontal_pod_autoscaling() const;
   void clear_horizontal_pod_autoscaling();
   static const int kHorizontalPodAutoscalingFieldNumber = 2;
@@ -555,10 +506,13 @@ class AddonsConfig : public ::google::protobuf::Message /* @@protoc_insertion_po
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<AddonsConfig> AddonsConfig_default_instance_;
+
 // -------------------------------------------------------------------
 
 class HttpLoadBalancing : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.HttpLoadBalancing) */ {
@@ -576,58 +530,55 @@ class HttpLoadBalancing : public ::google::protobuf::Message /* @@protoc_inserti
   static const ::google::protobuf::Descriptor* descriptor();
   static const HttpLoadBalancing& default_instance();
 
-  static inline const HttpLoadBalancing* internal_default_instance() {
-    return reinterpret_cast<const HttpLoadBalancing*>(
-               &_HttpLoadBalancing_default_instance_);
-  }
+  static const HttpLoadBalancing* internal_default_instance();
 
   void Swap(HttpLoadBalancing* other);
 
   // implements Message ----------------------------------------------
 
-  inline HttpLoadBalancing* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline HttpLoadBalancing* New() const { return New(NULL); }
 
-  HttpLoadBalancing* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  HttpLoadBalancing* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const HttpLoadBalancing& from);
   void MergeFrom(const HttpLoadBalancing& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(HttpLoadBalancing* other);
+  void UnsafeMergeFrom(const HttpLoadBalancing& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // bool disabled = 1;
+  // optional bool disabled = 1;
   void clear_disabled();
   static const int kDisabledFieldNumber = 1;
   bool disabled() const;
@@ -641,10 +592,13 @@ class HttpLoadBalancing : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<HttpLoadBalancing> HttpLoadBalancing_default_instance_;
+
 // -------------------------------------------------------------------
 
 class HorizontalPodAutoscaling : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.HorizontalPodAutoscaling) */ {
@@ -662,58 +616,55 @@ class HorizontalPodAutoscaling : public ::google::protobuf::Message /* @@protoc_
   static const ::google::protobuf::Descriptor* descriptor();
   static const HorizontalPodAutoscaling& default_instance();
 
-  static inline const HorizontalPodAutoscaling* internal_default_instance() {
-    return reinterpret_cast<const HorizontalPodAutoscaling*>(
-               &_HorizontalPodAutoscaling_default_instance_);
-  }
+  static const HorizontalPodAutoscaling* internal_default_instance();
 
   void Swap(HorizontalPodAutoscaling* other);
 
   // implements Message ----------------------------------------------
 
-  inline HorizontalPodAutoscaling* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline HorizontalPodAutoscaling* New() const { return New(NULL); }
 
-  HorizontalPodAutoscaling* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  HorizontalPodAutoscaling* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const HorizontalPodAutoscaling& from);
   void MergeFrom(const HorizontalPodAutoscaling& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(HorizontalPodAutoscaling* other);
+  void UnsafeMergeFrom(const HorizontalPodAutoscaling& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // bool disabled = 1;
+  // optional bool disabled = 1;
   void clear_disabled();
   static const int kDisabledFieldNumber = 1;
   bool disabled() const;
@@ -727,10 +678,13 @@ class HorizontalPodAutoscaling : public ::google::protobuf::Message /* @@protoc_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<HorizontalPodAutoscaling> HorizontalPodAutoscaling_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.Cluster) */ {
@@ -748,52 +702,49 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   static const ::google::protobuf::Descriptor* descriptor();
   static const Cluster& default_instance();
 
-  static inline const Cluster* internal_default_instance() {
-    return reinterpret_cast<const Cluster*>(
-               &_Cluster_default_instance_);
-  }
+  static const Cluster* internal_default_instance();
 
   void Swap(Cluster* other);
 
   // implements Message ----------------------------------------------
 
-  inline Cluster* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Cluster* New() const { return New(NULL); }
 
-  Cluster* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Cluster* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Cluster& from);
   void MergeFrom(const Cluster& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Cluster* other);
+  void UnsafeMergeFrom(const Cluster& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -833,7 +784,7 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -844,7 +795,7 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // string description = 2;
+  // optional string description = 2;
   void clear_description();
   static const int kDescriptionFieldNumber = 2;
   const ::std::string& description() const;
@@ -855,13 +806,13 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_description();
   void set_allocated_description(::std::string* description);
 
-  // int32 initial_node_count = 3;
+  // optional int32 initial_node_count = 3;
   void clear_initial_node_count();
   static const int kInitialNodeCountFieldNumber = 3;
   ::google::protobuf::int32 initial_node_count() const;
   void set_initial_node_count(::google::protobuf::int32 value);
 
-  // .google.container.v1.NodeConfig node_config = 4;
+  // optional .google.container.v1.NodeConfig node_config = 4;
   bool has_node_config() const;
   void clear_node_config();
   static const int kNodeConfigFieldNumber = 4;
@@ -870,7 +821,7 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::google::container::v1::NodeConfig* release_node_config();
   void set_allocated_node_config(::google::container::v1::NodeConfig* node_config);
 
-  // .google.container.v1.MasterAuth master_auth = 5;
+  // optional .google.container.v1.MasterAuth master_auth = 5;
   bool has_master_auth() const;
   void clear_master_auth();
   static const int kMasterAuthFieldNumber = 5;
@@ -879,7 +830,7 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::google::container::v1::MasterAuth* release_master_auth();
   void set_allocated_master_auth(::google::container::v1::MasterAuth* master_auth);
 
-  // string logging_service = 6;
+  // optional string logging_service = 6;
   void clear_logging_service();
   static const int kLoggingServiceFieldNumber = 6;
   const ::std::string& logging_service() const;
@@ -890,7 +841,7 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_logging_service();
   void set_allocated_logging_service(::std::string* logging_service);
 
-  // string monitoring_service = 7;
+  // optional string monitoring_service = 7;
   void clear_monitoring_service();
   static const int kMonitoringServiceFieldNumber = 7;
   const ::std::string& monitoring_service() const;
@@ -901,7 +852,7 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_monitoring_service();
   void set_allocated_monitoring_service(::std::string* monitoring_service);
 
-  // string network = 8;
+  // optional string network = 8;
   void clear_network();
   static const int kNetworkFieldNumber = 8;
   const ::std::string& network() const;
@@ -912,7 +863,7 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_network();
   void set_allocated_network(::std::string* network);
 
-  // string cluster_ipv4_cidr = 9;
+  // optional string cluster_ipv4_cidr = 9;
   void clear_cluster_ipv4_cidr();
   static const int kClusterIpv4CidrFieldNumber = 9;
   const ::std::string& cluster_ipv4_cidr() const;
@@ -923,7 +874,7 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_cluster_ipv4_cidr();
   void set_allocated_cluster_ipv4_cidr(::std::string* cluster_ipv4_cidr);
 
-  // .google.container.v1.AddonsConfig addons_config = 10;
+  // optional .google.container.v1.AddonsConfig addons_config = 10;
   bool has_addons_config() const;
   void clear_addons_config();
   static const int kAddonsConfigFieldNumber = 10;
@@ -932,7 +883,7 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::google::container::v1::AddonsConfig* release_addons_config();
   void set_allocated_addons_config(::google::container::v1::AddonsConfig* addons_config);
 
-  // string subnetwork = 11;
+  // optional string subnetwork = 11;
   void clear_subnetwork();
   static const int kSubnetworkFieldNumber = 11;
   const ::std::string& subnetwork() const;
@@ -943,7 +894,7 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_subnetwork();
   void set_allocated_subnetwork(::std::string* subnetwork);
 
-  // string self_link = 100;
+  // optional string self_link = 100;
   void clear_self_link();
   static const int kSelfLinkFieldNumber = 100;
   const ::std::string& self_link() const;
@@ -954,7 +905,7 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_self_link();
   void set_allocated_self_link(::std::string* self_link);
 
-  // string zone = 101;
+  // optional string zone = 101;
   void clear_zone();
   static const int kZoneFieldNumber = 101;
   const ::std::string& zone() const;
@@ -965,7 +916,7 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_zone();
   void set_allocated_zone(::std::string* zone);
 
-  // string endpoint = 102;
+  // optional string endpoint = 102;
   void clear_endpoint();
   static const int kEndpointFieldNumber = 102;
   const ::std::string& endpoint() const;
@@ -976,7 +927,7 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_endpoint();
   void set_allocated_endpoint(::std::string* endpoint);
 
-  // string initial_cluster_version = 103;
+  // optional string initial_cluster_version = 103;
   void clear_initial_cluster_version();
   static const int kInitialClusterVersionFieldNumber = 103;
   const ::std::string& initial_cluster_version() const;
@@ -987,7 +938,7 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_initial_cluster_version();
   void set_allocated_initial_cluster_version(::std::string* initial_cluster_version);
 
-  // string current_master_version = 104;
+  // optional string current_master_version = 104;
   void clear_current_master_version();
   static const int kCurrentMasterVersionFieldNumber = 104;
   const ::std::string& current_master_version() const;
@@ -998,7 +949,7 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_current_master_version();
   void set_allocated_current_master_version(::std::string* current_master_version);
 
-  // string current_node_version = 105;
+  // optional string current_node_version = 105;
   void clear_current_node_version();
   static const int kCurrentNodeVersionFieldNumber = 105;
   const ::std::string& current_node_version() const;
@@ -1009,7 +960,7 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_current_node_version();
   void set_allocated_current_node_version(::std::string* current_node_version);
 
-  // string create_time = 106;
+  // optional string create_time = 106;
   void clear_create_time();
   static const int kCreateTimeFieldNumber = 106;
   const ::std::string& create_time() const;
@@ -1020,13 +971,13 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_create_time();
   void set_allocated_create_time(::std::string* create_time);
 
-  // .google.container.v1.Cluster.Status status = 107;
+  // optional .google.container.v1.Cluster.Status status = 107;
   void clear_status();
   static const int kStatusFieldNumber = 107;
   ::google::container::v1::Cluster_Status status() const;
   void set_status(::google::container::v1::Cluster_Status value);
 
-  // string status_message = 108;
+  // optional string status_message = 108;
   void clear_status_message();
   static const int kStatusMessageFieldNumber = 108;
   const ::std::string& status_message() const;
@@ -1037,13 +988,13 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_status_message();
   void set_allocated_status_message(::std::string* status_message);
 
-  // int32 node_ipv4_cidr_size = 109;
+  // optional int32 node_ipv4_cidr_size = 109;
   void clear_node_ipv4_cidr_size();
   static const int kNodeIpv4CidrSizeFieldNumber = 109;
   ::google::protobuf::int32 node_ipv4_cidr_size() const;
   void set_node_ipv4_cidr_size(::google::protobuf::int32 value);
 
-  // string services_ipv4_cidr = 110;
+  // optional string services_ipv4_cidr = 110;
   void clear_services_ipv4_cidr();
   static const int kServicesIpv4CidrFieldNumber = 110;
   const ::std::string& services_ipv4_cidr() const;
@@ -1070,7 +1021,7 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   const ::google::protobuf::RepeatedPtrField< ::std::string>& instance_group_urls() const;
   ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_instance_group_urls();
 
-  // int32 current_node_count = 112;
+  // optional int32 current_node_count = 112;
   void clear_current_node_count();
   static const int kCurrentNodeCountFieldNumber = 112;
   ::google::protobuf::int32 current_node_count() const;
@@ -1107,10 +1058,13 @@ class Cluster : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Cluster> Cluster_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ClusterUpdate : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.ClusterUpdate) */ {
@@ -1128,58 +1082,55 @@ class ClusterUpdate : public ::google::protobuf::Message /* @@protoc_insertion_p
   static const ::google::protobuf::Descriptor* descriptor();
   static const ClusterUpdate& default_instance();
 
-  static inline const ClusterUpdate* internal_default_instance() {
-    return reinterpret_cast<const ClusterUpdate*>(
-               &_ClusterUpdate_default_instance_);
-  }
+  static const ClusterUpdate* internal_default_instance();
 
   void Swap(ClusterUpdate* other);
 
   // implements Message ----------------------------------------------
 
-  inline ClusterUpdate* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ClusterUpdate* New() const { return New(NULL); }
 
-  ClusterUpdate* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ClusterUpdate* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ClusterUpdate& from);
   void MergeFrom(const ClusterUpdate& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ClusterUpdate* other);
+  void UnsafeMergeFrom(const ClusterUpdate& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string desired_node_version = 4;
+  // optional string desired_node_version = 4;
   void clear_desired_node_version();
   static const int kDesiredNodeVersionFieldNumber = 4;
   const ::std::string& desired_node_version() const;
@@ -1190,7 +1141,7 @@ class ClusterUpdate : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::std::string* release_desired_node_version();
   void set_allocated_desired_node_version(::std::string* desired_node_version);
 
-  // string desired_monitoring_service = 5;
+  // optional string desired_monitoring_service = 5;
   void clear_desired_monitoring_service();
   static const int kDesiredMonitoringServiceFieldNumber = 5;
   const ::std::string& desired_monitoring_service() const;
@@ -1201,7 +1152,7 @@ class ClusterUpdate : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::std::string* release_desired_monitoring_service();
   void set_allocated_desired_monitoring_service(::std::string* desired_monitoring_service);
 
-  // .google.container.v1.AddonsConfig desired_addons_config = 6;
+  // optional .google.container.v1.AddonsConfig desired_addons_config = 6;
   bool has_desired_addons_config() const;
   void clear_desired_addons_config();
   static const int kDesiredAddonsConfigFieldNumber = 6;
@@ -1210,7 +1161,7 @@ class ClusterUpdate : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::google::container::v1::AddonsConfig* release_desired_addons_config();
   void set_allocated_desired_addons_config(::google::container::v1::AddonsConfig* desired_addons_config);
 
-  // string desired_master_version = 100;
+  // optional string desired_master_version = 100;
   void clear_desired_master_version();
   static const int kDesiredMasterVersionFieldNumber = 100;
   const ::std::string& desired_master_version() const;
@@ -1232,10 +1183,13 @@ class ClusterUpdate : public ::google::protobuf::Message /* @@protoc_insertion_p
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ClusterUpdate> ClusterUpdate_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.Operation) */ {
@@ -1253,52 +1207,49 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   static const ::google::protobuf::Descriptor* descriptor();
   static const Operation& default_instance();
 
-  static inline const Operation* internal_default_instance() {
-    return reinterpret_cast<const Operation*>(
-               &_Operation_default_instance_);
-  }
+  static const Operation* internal_default_instance();
 
   void Swap(Operation* other);
 
   // implements Message ----------------------------------------------
 
-  inline Operation* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Operation* New() const { return New(NULL); }
 
-  Operation* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Operation* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Operation& from);
   void MergeFrom(const Operation& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Operation* other);
+  void UnsafeMergeFrom(const Operation& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1374,7 +1325,7 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -1385,7 +1336,7 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // string zone = 2;
+  // optional string zone = 2;
   void clear_zone();
   static const int kZoneFieldNumber = 2;
   const ::std::string& zone() const;
@@ -1396,19 +1347,19 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::std::string* release_zone();
   void set_allocated_zone(::std::string* zone);
 
-  // .google.container.v1.Operation.Type operation_type = 3;
+  // optional .google.container.v1.Operation.Type operation_type = 3;
   void clear_operation_type();
   static const int kOperationTypeFieldNumber = 3;
   ::google::container::v1::Operation_Type operation_type() const;
   void set_operation_type(::google::container::v1::Operation_Type value);
 
-  // .google.container.v1.Operation.Status status = 4;
+  // optional .google.container.v1.Operation.Status status = 4;
   void clear_status();
   static const int kStatusFieldNumber = 4;
   ::google::container::v1::Operation_Status status() const;
   void set_status(::google::container::v1::Operation_Status value);
 
-  // string detail = 8;
+  // optional string detail = 8;
   void clear_detail();
   static const int kDetailFieldNumber = 8;
   const ::std::string& detail() const;
@@ -1419,7 +1370,7 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::std::string* release_detail();
   void set_allocated_detail(::std::string* detail);
 
-  // string status_message = 5;
+  // optional string status_message = 5;
   void clear_status_message();
   static const int kStatusMessageFieldNumber = 5;
   const ::std::string& status_message() const;
@@ -1430,7 +1381,7 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::std::string* release_status_message();
   void set_allocated_status_message(::std::string* status_message);
 
-  // string self_link = 6;
+  // optional string self_link = 6;
   void clear_self_link();
   static const int kSelfLinkFieldNumber = 6;
   const ::std::string& self_link() const;
@@ -1441,7 +1392,7 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::std::string* release_self_link();
   void set_allocated_self_link(::std::string* self_link);
 
-  // string target_link = 7;
+  // optional string target_link = 7;
   void clear_target_link();
   static const int kTargetLinkFieldNumber = 7;
   const ::std::string& target_link() const;
@@ -1467,10 +1418,13 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Operation> Operation_default_instance_;
+
 // -------------------------------------------------------------------
 
 class CreateClusterRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.CreateClusterRequest) */ {
@@ -1488,58 +1442,55 @@ class CreateClusterRequest : public ::google::protobuf::Message /* @@protoc_inse
   static const ::google::protobuf::Descriptor* descriptor();
   static const CreateClusterRequest& default_instance();
 
-  static inline const CreateClusterRequest* internal_default_instance() {
-    return reinterpret_cast<const CreateClusterRequest*>(
-               &_CreateClusterRequest_default_instance_);
-  }
+  static const CreateClusterRequest* internal_default_instance();
 
   void Swap(CreateClusterRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline CreateClusterRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline CreateClusterRequest* New() const { return New(NULL); }
 
-  CreateClusterRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CreateClusterRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const CreateClusterRequest& from);
   void MergeFrom(const CreateClusterRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(CreateClusterRequest* other);
+  void UnsafeMergeFrom(const CreateClusterRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 1;
   const ::std::string& project_id() const;
@@ -1550,7 +1501,7 @@ class CreateClusterRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // string zone = 2;
+  // optional string zone = 2;
   void clear_zone();
   static const int kZoneFieldNumber = 2;
   const ::std::string& zone() const;
@@ -1561,7 +1512,7 @@ class CreateClusterRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::std::string* release_zone();
   void set_allocated_zone(::std::string* zone);
 
-  // .google.container.v1.Cluster cluster = 3;
+  // optional .google.container.v1.Cluster cluster = 3;
   bool has_cluster() const;
   void clear_cluster();
   static const int kClusterFieldNumber = 3;
@@ -1580,10 +1531,13 @@ class CreateClusterRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<CreateClusterRequest> CreateClusterRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetClusterRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.GetClusterRequest) */ {
@@ -1601,58 +1555,55 @@ class GetClusterRequest : public ::google::protobuf::Message /* @@protoc_inserti
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetClusterRequest& default_instance();
 
-  static inline const GetClusterRequest* internal_default_instance() {
-    return reinterpret_cast<const GetClusterRequest*>(
-               &_GetClusterRequest_default_instance_);
-  }
+  static const GetClusterRequest* internal_default_instance();
 
   void Swap(GetClusterRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetClusterRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetClusterRequest* New() const { return New(NULL); }
 
-  GetClusterRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetClusterRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetClusterRequest& from);
   void MergeFrom(const GetClusterRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetClusterRequest* other);
+  void UnsafeMergeFrom(const GetClusterRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 1;
   const ::std::string& project_id() const;
@@ -1663,7 +1614,7 @@ class GetClusterRequest : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // string zone = 2;
+  // optional string zone = 2;
   void clear_zone();
   static const int kZoneFieldNumber = 2;
   const ::std::string& zone() const;
@@ -1674,7 +1625,7 @@ class GetClusterRequest : public ::google::protobuf::Message /* @@protoc_inserti
   ::std::string* release_zone();
   void set_allocated_zone(::std::string* zone);
 
-  // string cluster_id = 3;
+  // optional string cluster_id = 3;
   void clear_cluster_id();
   static const int kClusterIdFieldNumber = 3;
   const ::std::string& cluster_id() const;
@@ -1695,10 +1646,13 @@ class GetClusterRequest : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetClusterRequest> GetClusterRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class UpdateClusterRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.UpdateClusterRequest) */ {
@@ -1716,58 +1670,55 @@ class UpdateClusterRequest : public ::google::protobuf::Message /* @@protoc_inse
   static const ::google::protobuf::Descriptor* descriptor();
   static const UpdateClusterRequest& default_instance();
 
-  static inline const UpdateClusterRequest* internal_default_instance() {
-    return reinterpret_cast<const UpdateClusterRequest*>(
-               &_UpdateClusterRequest_default_instance_);
-  }
+  static const UpdateClusterRequest* internal_default_instance();
 
   void Swap(UpdateClusterRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline UpdateClusterRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline UpdateClusterRequest* New() const { return New(NULL); }
 
-  UpdateClusterRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  UpdateClusterRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const UpdateClusterRequest& from);
   void MergeFrom(const UpdateClusterRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(UpdateClusterRequest* other);
+  void UnsafeMergeFrom(const UpdateClusterRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 1;
   const ::std::string& project_id() const;
@@ -1778,7 +1729,7 @@ class UpdateClusterRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // string zone = 2;
+  // optional string zone = 2;
   void clear_zone();
   static const int kZoneFieldNumber = 2;
   const ::std::string& zone() const;
@@ -1789,7 +1740,7 @@ class UpdateClusterRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::std::string* release_zone();
   void set_allocated_zone(::std::string* zone);
 
-  // string cluster_id = 3;
+  // optional string cluster_id = 3;
   void clear_cluster_id();
   static const int kClusterIdFieldNumber = 3;
   const ::std::string& cluster_id() const;
@@ -1800,7 +1751,7 @@ class UpdateClusterRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::std::string* release_cluster_id();
   void set_allocated_cluster_id(::std::string* cluster_id);
 
-  // .google.container.v1.ClusterUpdate update = 4;
+  // optional .google.container.v1.ClusterUpdate update = 4;
   bool has_update() const;
   void clear_update();
   static const int kUpdateFieldNumber = 4;
@@ -1820,10 +1771,13 @@ class UpdateClusterRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<UpdateClusterRequest> UpdateClusterRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class DeleteClusterRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.DeleteClusterRequest) */ {
@@ -1841,58 +1795,55 @@ class DeleteClusterRequest : public ::google::protobuf::Message /* @@protoc_inse
   static const ::google::protobuf::Descriptor* descriptor();
   static const DeleteClusterRequest& default_instance();
 
-  static inline const DeleteClusterRequest* internal_default_instance() {
-    return reinterpret_cast<const DeleteClusterRequest*>(
-               &_DeleteClusterRequest_default_instance_);
-  }
+  static const DeleteClusterRequest* internal_default_instance();
 
   void Swap(DeleteClusterRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline DeleteClusterRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline DeleteClusterRequest* New() const { return New(NULL); }
 
-  DeleteClusterRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DeleteClusterRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const DeleteClusterRequest& from);
   void MergeFrom(const DeleteClusterRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(DeleteClusterRequest* other);
+  void UnsafeMergeFrom(const DeleteClusterRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 1;
   const ::std::string& project_id() const;
@@ -1903,7 +1854,7 @@ class DeleteClusterRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // string zone = 2;
+  // optional string zone = 2;
   void clear_zone();
   static const int kZoneFieldNumber = 2;
   const ::std::string& zone() const;
@@ -1914,7 +1865,7 @@ class DeleteClusterRequest : public ::google::protobuf::Message /* @@protoc_inse
   ::std::string* release_zone();
   void set_allocated_zone(::std::string* zone);
 
-  // string cluster_id = 3;
+  // optional string cluster_id = 3;
   void clear_cluster_id();
   static const int kClusterIdFieldNumber = 3;
   const ::std::string& cluster_id() const;
@@ -1935,10 +1886,13 @@ class DeleteClusterRequest : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<DeleteClusterRequest> DeleteClusterRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListClustersRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.ListClustersRequest) */ {
@@ -1956,58 +1910,55 @@ class ListClustersRequest : public ::google::protobuf::Message /* @@protoc_inser
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListClustersRequest& default_instance();
 
-  static inline const ListClustersRequest* internal_default_instance() {
-    return reinterpret_cast<const ListClustersRequest*>(
-               &_ListClustersRequest_default_instance_);
-  }
+  static const ListClustersRequest* internal_default_instance();
 
   void Swap(ListClustersRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListClustersRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListClustersRequest* New() const { return New(NULL); }
 
-  ListClustersRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListClustersRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListClustersRequest& from);
   void MergeFrom(const ListClustersRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListClustersRequest* other);
+  void UnsafeMergeFrom(const ListClustersRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 1;
   const ::std::string& project_id() const;
@@ -2018,7 +1969,7 @@ class ListClustersRequest : public ::google::protobuf::Message /* @@protoc_inser
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // string zone = 2;
+  // optional string zone = 2;
   void clear_zone();
   static const int kZoneFieldNumber = 2;
   const ::std::string& zone() const;
@@ -2038,10 +1989,13 @@ class ListClustersRequest : public ::google::protobuf::Message /* @@protoc_inser
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListClustersRequest> ListClustersRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListClustersResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.ListClustersResponse) */ {
@@ -2059,52 +2013,49 @@ class ListClustersResponse : public ::google::protobuf::Message /* @@protoc_inse
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListClustersResponse& default_instance();
 
-  static inline const ListClustersResponse* internal_default_instance() {
-    return reinterpret_cast<const ListClustersResponse*>(
-               &_ListClustersResponse_default_instance_);
-  }
+  static const ListClustersResponse* internal_default_instance();
 
   void Swap(ListClustersResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListClustersResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListClustersResponse* New() const { return New(NULL); }
 
-  ListClustersResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListClustersResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListClustersResponse& from);
   void MergeFrom(const ListClustersResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListClustersResponse* other);
+  void UnsafeMergeFrom(const ListClustersResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -2147,10 +2098,13 @@ class ListClustersResponse : public ::google::protobuf::Message /* @@protoc_inse
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListClustersResponse> ListClustersResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetOperationRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.GetOperationRequest) */ {
@@ -2168,58 +2122,55 @@ class GetOperationRequest : public ::google::protobuf::Message /* @@protoc_inser
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetOperationRequest& default_instance();
 
-  static inline const GetOperationRequest* internal_default_instance() {
-    return reinterpret_cast<const GetOperationRequest*>(
-               &_GetOperationRequest_default_instance_);
-  }
+  static const GetOperationRequest* internal_default_instance();
 
   void Swap(GetOperationRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetOperationRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetOperationRequest* New() const { return New(NULL); }
 
-  GetOperationRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetOperationRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetOperationRequest& from);
   void MergeFrom(const GetOperationRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetOperationRequest* other);
+  void UnsafeMergeFrom(const GetOperationRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 1;
   const ::std::string& project_id() const;
@@ -2230,7 +2181,7 @@ class GetOperationRequest : public ::google::protobuf::Message /* @@protoc_inser
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // string zone = 2;
+  // optional string zone = 2;
   void clear_zone();
   static const int kZoneFieldNumber = 2;
   const ::std::string& zone() const;
@@ -2241,7 +2192,7 @@ class GetOperationRequest : public ::google::protobuf::Message /* @@protoc_inser
   ::std::string* release_zone();
   void set_allocated_zone(::std::string* zone);
 
-  // string operation_id = 3;
+  // optional string operation_id = 3;
   void clear_operation_id();
   static const int kOperationIdFieldNumber = 3;
   const ::std::string& operation_id() const;
@@ -2262,10 +2213,13 @@ class GetOperationRequest : public ::google::protobuf::Message /* @@protoc_inser
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetOperationRequest> GetOperationRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListOperationsRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.ListOperationsRequest) */ {
@@ -2283,58 +2237,55 @@ class ListOperationsRequest : public ::google::protobuf::Message /* @@protoc_ins
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListOperationsRequest& default_instance();
 
-  static inline const ListOperationsRequest* internal_default_instance() {
-    return reinterpret_cast<const ListOperationsRequest*>(
-               &_ListOperationsRequest_default_instance_);
-  }
+  static const ListOperationsRequest* internal_default_instance();
 
   void Swap(ListOperationsRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListOperationsRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListOperationsRequest* New() const { return New(NULL); }
 
-  ListOperationsRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListOperationsRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListOperationsRequest& from);
   void MergeFrom(const ListOperationsRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListOperationsRequest* other);
+  void UnsafeMergeFrom(const ListOperationsRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 1;
   const ::std::string& project_id() const;
@@ -2345,7 +2296,7 @@ class ListOperationsRequest : public ::google::protobuf::Message /* @@protoc_ins
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // string zone = 2;
+  // optional string zone = 2;
   void clear_zone();
   static const int kZoneFieldNumber = 2;
   const ::std::string& zone() const;
@@ -2365,10 +2316,13 @@ class ListOperationsRequest : public ::google::protobuf::Message /* @@protoc_ins
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListOperationsRequest> ListOperationsRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ListOperationsResponse : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.ListOperationsResponse) */ {
@@ -2386,52 +2340,49 @@ class ListOperationsResponse : public ::google::protobuf::Message /* @@protoc_in
   static const ::google::protobuf::Descriptor* descriptor();
   static const ListOperationsResponse& default_instance();
 
-  static inline const ListOperationsResponse* internal_default_instance() {
-    return reinterpret_cast<const ListOperationsResponse*>(
-               &_ListOperationsResponse_default_instance_);
-  }
+  static const ListOperationsResponse* internal_default_instance();
 
   void Swap(ListOperationsResponse* other);
 
   // implements Message ----------------------------------------------
 
-  inline ListOperationsResponse* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ListOperationsResponse* New() const { return New(NULL); }
 
-  ListOperationsResponse* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ListOperationsResponse* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ListOperationsResponse& from);
   void MergeFrom(const ListOperationsResponse& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ListOperationsResponse* other);
+  void UnsafeMergeFrom(const ListOperationsResponse& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -2474,10 +2425,13 @@ class ListOperationsResponse : public ::google::protobuf::Message /* @@protoc_in
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ListOperationsResponse> ListOperationsResponse_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GetServerConfigRequest : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.GetServerConfigRequest) */ {
@@ -2495,58 +2449,55 @@ class GetServerConfigRequest : public ::google::protobuf::Message /* @@protoc_in
   static const ::google::protobuf::Descriptor* descriptor();
   static const GetServerConfigRequest& default_instance();
 
-  static inline const GetServerConfigRequest* internal_default_instance() {
-    return reinterpret_cast<const GetServerConfigRequest*>(
-               &_GetServerConfigRequest_default_instance_);
-  }
+  static const GetServerConfigRequest* internal_default_instance();
 
   void Swap(GetServerConfigRequest* other);
 
   // implements Message ----------------------------------------------
 
-  inline GetServerConfigRequest* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GetServerConfigRequest* New() const { return New(NULL); }
 
-  GetServerConfigRequest* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GetServerConfigRequest* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GetServerConfigRequest& from);
   void MergeFrom(const GetServerConfigRequest& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GetServerConfigRequest* other);
+  void UnsafeMergeFrom(const GetServerConfigRequest& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 1;
   const ::std::string& project_id() const;
@@ -2557,7 +2508,7 @@ class GetServerConfigRequest : public ::google::protobuf::Message /* @@protoc_in
   ::std::string* release_project_id();
   void set_allocated_project_id(::std::string* project_id);
 
-  // string zone = 2;
+  // optional string zone = 2;
   void clear_zone();
   static const int kZoneFieldNumber = 2;
   const ::std::string& zone() const;
@@ -2577,10 +2528,13 @@ class GetServerConfigRequest : public ::google::protobuf::Message /* @@protoc_in
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GetServerConfigRequest> GetServerConfigRequest_default_instance_;
+
 // -------------------------------------------------------------------
 
 class ServerConfig : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.container.v1.ServerConfig) */ {
@@ -2598,58 +2552,55 @@ class ServerConfig : public ::google::protobuf::Message /* @@protoc_insertion_po
   static const ::google::protobuf::Descriptor* descriptor();
   static const ServerConfig& default_instance();
 
-  static inline const ServerConfig* internal_default_instance() {
-    return reinterpret_cast<const ServerConfig*>(
-               &_ServerConfig_default_instance_);
-  }
+  static const ServerConfig* internal_default_instance();
 
   void Swap(ServerConfig* other);
 
   // implements Message ----------------------------------------------
 
-  inline ServerConfig* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline ServerConfig* New() const { return New(NULL); }
 
-  ServerConfig* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ServerConfig* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const ServerConfig& from);
   void MergeFrom(const ServerConfig& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(ServerConfig* other);
+  void UnsafeMergeFrom(const ServerConfig& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string default_cluster_version = 1;
+  // optional string default_cluster_version = 1;
   void clear_default_cluster_version();
   static const int kDefaultClusterVersionFieldNumber = 1;
   const ::std::string& default_cluster_version() const;
@@ -2685,27 +2636,28 @@ class ServerConfig : public ::google::protobuf::Message /* @@protoc_insertion_po
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fcontainer_2fv1_2fcluster_5fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<ServerConfig> ServerConfig_default_instance_;
+
 // ===================================================================
 
 
 // ===================================================================
 
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // NodeConfig
 
-// string machine_type = 1;
+// optional string machine_type = 1;
 inline void NodeConfig::clear_machine_type() {
   machine_type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& NodeConfig::machine_type() const {
   // @@protoc_insertion_point(field_get:google.container.v1.NodeConfig.machine_type)
-  return machine_type_.GetNoArena();
+  return machine_type_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void NodeConfig::set_machine_type(const ::std::string& value) {
   
@@ -2743,7 +2695,7 @@ inline void NodeConfig::set_allocated_machine_type(::std::string* machine_type) 
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.NodeConfig.machine_type)
 }
 
-// int32 disk_size_gb = 2;
+// optional int32 disk_size_gb = 2;
 inline void NodeConfig::clear_disk_size_gb() {
   disk_size_gb_ = 0;
 }
@@ -2830,17 +2782,20 @@ NodeConfig::mutable_metadata() {
   return metadata_.MutableMap();
 }
 
+inline const NodeConfig* NodeConfig::internal_default_instance() {
+  return &NodeConfig_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // MasterAuth
 
-// string username = 1;
+// optional string username = 1;
 inline void MasterAuth::clear_username() {
   username_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& MasterAuth::username() const {
   // @@protoc_insertion_point(field_get:google.container.v1.MasterAuth.username)
-  return username_.GetNoArena();
+  return username_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void MasterAuth::set_username(const ::std::string& value) {
   
@@ -2878,13 +2833,13 @@ inline void MasterAuth::set_allocated_username(::std::string* username) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.MasterAuth.username)
 }
 
-// string password = 2;
+// optional string password = 2;
 inline void MasterAuth::clear_password() {
   password_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& MasterAuth::password() const {
   // @@protoc_insertion_point(field_get:google.container.v1.MasterAuth.password)
-  return password_.GetNoArena();
+  return password_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void MasterAuth::set_password(const ::std::string& value) {
   
@@ -2922,13 +2877,13 @@ inline void MasterAuth::set_allocated_password(::std::string* password) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.MasterAuth.password)
 }
 
-// string cluster_ca_certificate = 100;
+// optional string cluster_ca_certificate = 100;
 inline void MasterAuth::clear_cluster_ca_certificate() {
   cluster_ca_certificate_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& MasterAuth::cluster_ca_certificate() const {
   // @@protoc_insertion_point(field_get:google.container.v1.MasterAuth.cluster_ca_certificate)
-  return cluster_ca_certificate_.GetNoArena();
+  return cluster_ca_certificate_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void MasterAuth::set_cluster_ca_certificate(const ::std::string& value) {
   
@@ -2966,13 +2921,13 @@ inline void MasterAuth::set_allocated_cluster_ca_certificate(::std::string* clus
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.MasterAuth.cluster_ca_certificate)
 }
 
-// string client_certificate = 101;
+// optional string client_certificate = 101;
 inline void MasterAuth::clear_client_certificate() {
   client_certificate_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& MasterAuth::client_certificate() const {
   // @@protoc_insertion_point(field_get:google.container.v1.MasterAuth.client_certificate)
-  return client_certificate_.GetNoArena();
+  return client_certificate_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void MasterAuth::set_client_certificate(const ::std::string& value) {
   
@@ -3010,13 +2965,13 @@ inline void MasterAuth::set_allocated_client_certificate(::std::string* client_c
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.MasterAuth.client_certificate)
 }
 
-// string client_key = 102;
+// optional string client_key = 102;
 inline void MasterAuth::clear_client_key() {
   client_key_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& MasterAuth::client_key() const {
   // @@protoc_insertion_point(field_get:google.container.v1.MasterAuth.client_key)
-  return client_key_.GetNoArena();
+  return client_key_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void MasterAuth::set_client_key(const ::std::string& value) {
   
@@ -3054,11 +3009,14 @@ inline void MasterAuth::set_allocated_client_key(::std::string* client_key) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.MasterAuth.client_key)
 }
 
+inline const MasterAuth* MasterAuth::internal_default_instance() {
+  return &MasterAuth_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // AddonsConfig
 
-// .google.container.v1.HttpLoadBalancing http_load_balancing = 1;
+// optional .google.container.v1.HttpLoadBalancing http_load_balancing = 1;
 inline bool AddonsConfig::has_http_load_balancing() const {
   return this != internal_default_instance() && http_load_balancing_ != NULL;
 }
@@ -3097,7 +3055,7 @@ inline void AddonsConfig::set_allocated_http_load_balancing(::google::container:
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.AddonsConfig.http_load_balancing)
 }
 
-// .google.container.v1.HorizontalPodAutoscaling horizontal_pod_autoscaling = 2;
+// optional .google.container.v1.HorizontalPodAutoscaling horizontal_pod_autoscaling = 2;
 inline bool AddonsConfig::has_horizontal_pod_autoscaling() const {
   return this != internal_default_instance() && horizontal_pod_autoscaling_ != NULL;
 }
@@ -3136,11 +3094,14 @@ inline void AddonsConfig::set_allocated_horizontal_pod_autoscaling(::google::con
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.AddonsConfig.horizontal_pod_autoscaling)
 }
 
+inline const AddonsConfig* AddonsConfig::internal_default_instance() {
+  return &AddonsConfig_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // HttpLoadBalancing
 
-// bool disabled = 1;
+// optional bool disabled = 1;
 inline void HttpLoadBalancing::clear_disabled() {
   disabled_ = false;
 }
@@ -3154,11 +3115,14 @@ inline void HttpLoadBalancing::set_disabled(bool value) {
   // @@protoc_insertion_point(field_set:google.container.v1.HttpLoadBalancing.disabled)
 }
 
+inline const HttpLoadBalancing* HttpLoadBalancing::internal_default_instance() {
+  return &HttpLoadBalancing_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // HorizontalPodAutoscaling
 
-// bool disabled = 1;
+// optional bool disabled = 1;
 inline void HorizontalPodAutoscaling::clear_disabled() {
   disabled_ = false;
 }
@@ -3172,17 +3136,20 @@ inline void HorizontalPodAutoscaling::set_disabled(bool value) {
   // @@protoc_insertion_point(field_set:google.container.v1.HorizontalPodAutoscaling.disabled)
 }
 
+inline const HorizontalPodAutoscaling* HorizontalPodAutoscaling::internal_default_instance() {
+  return &HorizontalPodAutoscaling_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Cluster
 
-// string name = 1;
+// optional string name = 1;
 inline void Cluster::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Cluster::name() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Cluster.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Cluster::set_name(const ::std::string& value) {
   
@@ -3220,13 +3187,13 @@ inline void Cluster::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.name)
 }
 
-// string description = 2;
+// optional string description = 2;
 inline void Cluster::clear_description() {
   description_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Cluster::description() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Cluster.description)
-  return description_.GetNoArena();
+  return description_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Cluster::set_description(const ::std::string& value) {
   
@@ -3264,7 +3231,7 @@ inline void Cluster::set_allocated_description(::std::string* description) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.description)
 }
 
-// int32 initial_node_count = 3;
+// optional int32 initial_node_count = 3;
 inline void Cluster::clear_initial_node_count() {
   initial_node_count_ = 0;
 }
@@ -3278,7 +3245,7 @@ inline void Cluster::set_initial_node_count(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.container.v1.Cluster.initial_node_count)
 }
 
-// .google.container.v1.NodeConfig node_config = 4;
+// optional .google.container.v1.NodeConfig node_config = 4;
 inline bool Cluster::has_node_config() const {
   return this != internal_default_instance() && node_config_ != NULL;
 }
@@ -3317,7 +3284,7 @@ inline void Cluster::set_allocated_node_config(::google::container::v1::NodeConf
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.node_config)
 }
 
-// .google.container.v1.MasterAuth master_auth = 5;
+// optional .google.container.v1.MasterAuth master_auth = 5;
 inline bool Cluster::has_master_auth() const {
   return this != internal_default_instance() && master_auth_ != NULL;
 }
@@ -3356,13 +3323,13 @@ inline void Cluster::set_allocated_master_auth(::google::container::v1::MasterAu
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.master_auth)
 }
 
-// string logging_service = 6;
+// optional string logging_service = 6;
 inline void Cluster::clear_logging_service() {
   logging_service_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Cluster::logging_service() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Cluster.logging_service)
-  return logging_service_.GetNoArena();
+  return logging_service_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Cluster::set_logging_service(const ::std::string& value) {
   
@@ -3400,13 +3367,13 @@ inline void Cluster::set_allocated_logging_service(::std::string* logging_servic
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.logging_service)
 }
 
-// string monitoring_service = 7;
+// optional string monitoring_service = 7;
 inline void Cluster::clear_monitoring_service() {
   monitoring_service_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Cluster::monitoring_service() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Cluster.monitoring_service)
-  return monitoring_service_.GetNoArena();
+  return monitoring_service_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Cluster::set_monitoring_service(const ::std::string& value) {
   
@@ -3444,13 +3411,13 @@ inline void Cluster::set_allocated_monitoring_service(::std::string* monitoring_
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.monitoring_service)
 }
 
-// string network = 8;
+// optional string network = 8;
 inline void Cluster::clear_network() {
   network_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Cluster::network() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Cluster.network)
-  return network_.GetNoArena();
+  return network_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Cluster::set_network(const ::std::string& value) {
   
@@ -3488,13 +3455,13 @@ inline void Cluster::set_allocated_network(::std::string* network) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.network)
 }
 
-// string cluster_ipv4_cidr = 9;
+// optional string cluster_ipv4_cidr = 9;
 inline void Cluster::clear_cluster_ipv4_cidr() {
   cluster_ipv4_cidr_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Cluster::cluster_ipv4_cidr() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Cluster.cluster_ipv4_cidr)
-  return cluster_ipv4_cidr_.GetNoArena();
+  return cluster_ipv4_cidr_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Cluster::set_cluster_ipv4_cidr(const ::std::string& value) {
   
@@ -3532,7 +3499,7 @@ inline void Cluster::set_allocated_cluster_ipv4_cidr(::std::string* cluster_ipv4
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.cluster_ipv4_cidr)
 }
 
-// .google.container.v1.AddonsConfig addons_config = 10;
+// optional .google.container.v1.AddonsConfig addons_config = 10;
 inline bool Cluster::has_addons_config() const {
   return this != internal_default_instance() && addons_config_ != NULL;
 }
@@ -3571,13 +3538,13 @@ inline void Cluster::set_allocated_addons_config(::google::container::v1::Addons
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.addons_config)
 }
 
-// string subnetwork = 11;
+// optional string subnetwork = 11;
 inline void Cluster::clear_subnetwork() {
   subnetwork_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Cluster::subnetwork() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Cluster.subnetwork)
-  return subnetwork_.GetNoArena();
+  return subnetwork_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Cluster::set_subnetwork(const ::std::string& value) {
   
@@ -3615,13 +3582,13 @@ inline void Cluster::set_allocated_subnetwork(::std::string* subnetwork) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.subnetwork)
 }
 
-// string self_link = 100;
+// optional string self_link = 100;
 inline void Cluster::clear_self_link() {
   self_link_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Cluster::self_link() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Cluster.self_link)
-  return self_link_.GetNoArena();
+  return self_link_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Cluster::set_self_link(const ::std::string& value) {
   
@@ -3659,13 +3626,13 @@ inline void Cluster::set_allocated_self_link(::std::string* self_link) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.self_link)
 }
 
-// string zone = 101;
+// optional string zone = 101;
 inline void Cluster::clear_zone() {
   zone_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Cluster::zone() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Cluster.zone)
-  return zone_.GetNoArena();
+  return zone_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Cluster::set_zone(const ::std::string& value) {
   
@@ -3703,13 +3670,13 @@ inline void Cluster::set_allocated_zone(::std::string* zone) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.zone)
 }
 
-// string endpoint = 102;
+// optional string endpoint = 102;
 inline void Cluster::clear_endpoint() {
   endpoint_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Cluster::endpoint() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Cluster.endpoint)
-  return endpoint_.GetNoArena();
+  return endpoint_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Cluster::set_endpoint(const ::std::string& value) {
   
@@ -3747,13 +3714,13 @@ inline void Cluster::set_allocated_endpoint(::std::string* endpoint) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.endpoint)
 }
 
-// string initial_cluster_version = 103;
+// optional string initial_cluster_version = 103;
 inline void Cluster::clear_initial_cluster_version() {
   initial_cluster_version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Cluster::initial_cluster_version() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Cluster.initial_cluster_version)
-  return initial_cluster_version_.GetNoArena();
+  return initial_cluster_version_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Cluster::set_initial_cluster_version(const ::std::string& value) {
   
@@ -3791,13 +3758,13 @@ inline void Cluster::set_allocated_initial_cluster_version(::std::string* initia
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.initial_cluster_version)
 }
 
-// string current_master_version = 104;
+// optional string current_master_version = 104;
 inline void Cluster::clear_current_master_version() {
   current_master_version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Cluster::current_master_version() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Cluster.current_master_version)
-  return current_master_version_.GetNoArena();
+  return current_master_version_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Cluster::set_current_master_version(const ::std::string& value) {
   
@@ -3835,13 +3802,13 @@ inline void Cluster::set_allocated_current_master_version(::std::string* current
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.current_master_version)
 }
 
-// string current_node_version = 105;
+// optional string current_node_version = 105;
 inline void Cluster::clear_current_node_version() {
   current_node_version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Cluster::current_node_version() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Cluster.current_node_version)
-  return current_node_version_.GetNoArena();
+  return current_node_version_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Cluster::set_current_node_version(const ::std::string& value) {
   
@@ -3879,13 +3846,13 @@ inline void Cluster::set_allocated_current_node_version(::std::string* current_n
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.current_node_version)
 }
 
-// string create_time = 106;
+// optional string create_time = 106;
 inline void Cluster::clear_create_time() {
   create_time_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Cluster::create_time() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Cluster.create_time)
-  return create_time_.GetNoArena();
+  return create_time_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Cluster::set_create_time(const ::std::string& value) {
   
@@ -3923,7 +3890,7 @@ inline void Cluster::set_allocated_create_time(::std::string* create_time) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.create_time)
 }
 
-// .google.container.v1.Cluster.Status status = 107;
+// optional .google.container.v1.Cluster.Status status = 107;
 inline void Cluster::clear_status() {
   status_ = 0;
 }
@@ -3937,13 +3904,13 @@ inline void Cluster::set_status(::google::container::v1::Cluster_Status value) {
   // @@protoc_insertion_point(field_set:google.container.v1.Cluster.status)
 }
 
-// string status_message = 108;
+// optional string status_message = 108;
 inline void Cluster::clear_status_message() {
   status_message_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Cluster::status_message() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Cluster.status_message)
-  return status_message_.GetNoArena();
+  return status_message_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Cluster::set_status_message(const ::std::string& value) {
   
@@ -3981,7 +3948,7 @@ inline void Cluster::set_allocated_status_message(::std::string* status_message)
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Cluster.status_message)
 }
 
-// int32 node_ipv4_cidr_size = 109;
+// optional int32 node_ipv4_cidr_size = 109;
 inline void Cluster::clear_node_ipv4_cidr_size() {
   node_ipv4_cidr_size_ = 0;
 }
@@ -3995,13 +3962,13 @@ inline void Cluster::set_node_ipv4_cidr_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.container.v1.Cluster.node_ipv4_cidr_size)
 }
 
-// string services_ipv4_cidr = 110;
+// optional string services_ipv4_cidr = 110;
 inline void Cluster::clear_services_ipv4_cidr() {
   services_ipv4_cidr_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Cluster::services_ipv4_cidr() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Cluster.services_ipv4_cidr)
-  return services_ipv4_cidr_.GetNoArena();
+  return services_ipv4_cidr_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Cluster::set_services_ipv4_cidr(const ::std::string& value) {
   
@@ -4094,7 +4061,7 @@ Cluster::mutable_instance_group_urls() {
   return &instance_group_urls_;
 }
 
-// int32 current_node_count = 112;
+// optional int32 current_node_count = 112;
 inline void Cluster::clear_current_node_count() {
   current_node_count_ = 0;
 }
@@ -4108,17 +4075,20 @@ inline void Cluster::set_current_node_count(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.container.v1.Cluster.current_node_count)
 }
 
+inline const Cluster* Cluster::internal_default_instance() {
+  return &Cluster_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ClusterUpdate
 
-// string desired_node_version = 4;
+// optional string desired_node_version = 4;
 inline void ClusterUpdate::clear_desired_node_version() {
   desired_node_version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ClusterUpdate::desired_node_version() const {
   // @@protoc_insertion_point(field_get:google.container.v1.ClusterUpdate.desired_node_version)
-  return desired_node_version_.GetNoArena();
+  return desired_node_version_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ClusterUpdate::set_desired_node_version(const ::std::string& value) {
   
@@ -4156,13 +4126,13 @@ inline void ClusterUpdate::set_allocated_desired_node_version(::std::string* des
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.ClusterUpdate.desired_node_version)
 }
 
-// string desired_monitoring_service = 5;
+// optional string desired_monitoring_service = 5;
 inline void ClusterUpdate::clear_desired_monitoring_service() {
   desired_monitoring_service_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ClusterUpdate::desired_monitoring_service() const {
   // @@protoc_insertion_point(field_get:google.container.v1.ClusterUpdate.desired_monitoring_service)
-  return desired_monitoring_service_.GetNoArena();
+  return desired_monitoring_service_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ClusterUpdate::set_desired_monitoring_service(const ::std::string& value) {
   
@@ -4200,7 +4170,7 @@ inline void ClusterUpdate::set_allocated_desired_monitoring_service(::std::strin
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.ClusterUpdate.desired_monitoring_service)
 }
 
-// .google.container.v1.AddonsConfig desired_addons_config = 6;
+// optional .google.container.v1.AddonsConfig desired_addons_config = 6;
 inline bool ClusterUpdate::has_desired_addons_config() const {
   return this != internal_default_instance() && desired_addons_config_ != NULL;
 }
@@ -4239,13 +4209,13 @@ inline void ClusterUpdate::set_allocated_desired_addons_config(::google::contain
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.ClusterUpdate.desired_addons_config)
 }
 
-// string desired_master_version = 100;
+// optional string desired_master_version = 100;
 inline void ClusterUpdate::clear_desired_master_version() {
   desired_master_version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ClusterUpdate::desired_master_version() const {
   // @@protoc_insertion_point(field_get:google.container.v1.ClusterUpdate.desired_master_version)
-  return desired_master_version_.GetNoArena();
+  return desired_master_version_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ClusterUpdate::set_desired_master_version(const ::std::string& value) {
   
@@ -4283,17 +4253,20 @@ inline void ClusterUpdate::set_allocated_desired_master_version(::std::string* d
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.ClusterUpdate.desired_master_version)
 }
 
+inline const ClusterUpdate* ClusterUpdate::internal_default_instance() {
+  return &ClusterUpdate_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Operation
 
-// string name = 1;
+// optional string name = 1;
 inline void Operation::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Operation::name() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Operation.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Operation::set_name(const ::std::string& value) {
   
@@ -4331,13 +4304,13 @@ inline void Operation::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Operation.name)
 }
 
-// string zone = 2;
+// optional string zone = 2;
 inline void Operation::clear_zone() {
   zone_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Operation::zone() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Operation.zone)
-  return zone_.GetNoArena();
+  return zone_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Operation::set_zone(const ::std::string& value) {
   
@@ -4375,7 +4348,7 @@ inline void Operation::set_allocated_zone(::std::string* zone) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Operation.zone)
 }
 
-// .google.container.v1.Operation.Type operation_type = 3;
+// optional .google.container.v1.Operation.Type operation_type = 3;
 inline void Operation::clear_operation_type() {
   operation_type_ = 0;
 }
@@ -4389,7 +4362,7 @@ inline void Operation::set_operation_type(::google::container::v1::Operation_Typ
   // @@protoc_insertion_point(field_set:google.container.v1.Operation.operation_type)
 }
 
-// .google.container.v1.Operation.Status status = 4;
+// optional .google.container.v1.Operation.Status status = 4;
 inline void Operation::clear_status() {
   status_ = 0;
 }
@@ -4403,13 +4376,13 @@ inline void Operation::set_status(::google::container::v1::Operation_Status valu
   // @@protoc_insertion_point(field_set:google.container.v1.Operation.status)
 }
 
-// string detail = 8;
+// optional string detail = 8;
 inline void Operation::clear_detail() {
   detail_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Operation::detail() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Operation.detail)
-  return detail_.GetNoArena();
+  return detail_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Operation::set_detail(const ::std::string& value) {
   
@@ -4447,13 +4420,13 @@ inline void Operation::set_allocated_detail(::std::string* detail) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Operation.detail)
 }
 
-// string status_message = 5;
+// optional string status_message = 5;
 inline void Operation::clear_status_message() {
   status_message_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Operation::status_message() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Operation.status_message)
-  return status_message_.GetNoArena();
+  return status_message_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Operation::set_status_message(const ::std::string& value) {
   
@@ -4491,13 +4464,13 @@ inline void Operation::set_allocated_status_message(::std::string* status_messag
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Operation.status_message)
 }
 
-// string self_link = 6;
+// optional string self_link = 6;
 inline void Operation::clear_self_link() {
   self_link_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Operation::self_link() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Operation.self_link)
-  return self_link_.GetNoArena();
+  return self_link_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Operation::set_self_link(const ::std::string& value) {
   
@@ -4535,13 +4508,13 @@ inline void Operation::set_allocated_self_link(::std::string* self_link) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Operation.self_link)
 }
 
-// string target_link = 7;
+// optional string target_link = 7;
 inline void Operation::clear_target_link() {
   target_link_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Operation::target_link() const {
   // @@protoc_insertion_point(field_get:google.container.v1.Operation.target_link)
-  return target_link_.GetNoArena();
+  return target_link_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Operation::set_target_link(const ::std::string& value) {
   
@@ -4579,17 +4552,20 @@ inline void Operation::set_allocated_target_link(::std::string* target_link) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.Operation.target_link)
 }
 
+inline const Operation* Operation::internal_default_instance() {
+  return &Operation_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // CreateClusterRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 inline void CreateClusterRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& CreateClusterRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.container.v1.CreateClusterRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void CreateClusterRequest::set_project_id(const ::std::string& value) {
   
@@ -4627,13 +4603,13 @@ inline void CreateClusterRequest::set_allocated_project_id(::std::string* projec
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.CreateClusterRequest.project_id)
 }
 
-// string zone = 2;
+// optional string zone = 2;
 inline void CreateClusterRequest::clear_zone() {
   zone_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& CreateClusterRequest::zone() const {
   // @@protoc_insertion_point(field_get:google.container.v1.CreateClusterRequest.zone)
-  return zone_.GetNoArena();
+  return zone_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void CreateClusterRequest::set_zone(const ::std::string& value) {
   
@@ -4671,7 +4647,7 @@ inline void CreateClusterRequest::set_allocated_zone(::std::string* zone) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.CreateClusterRequest.zone)
 }
 
-// .google.container.v1.Cluster cluster = 3;
+// optional .google.container.v1.Cluster cluster = 3;
 inline bool CreateClusterRequest::has_cluster() const {
   return this != internal_default_instance() && cluster_ != NULL;
 }
@@ -4710,17 +4686,20 @@ inline void CreateClusterRequest::set_allocated_cluster(::google::container::v1:
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.CreateClusterRequest.cluster)
 }
 
+inline const CreateClusterRequest* CreateClusterRequest::internal_default_instance() {
+  return &CreateClusterRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetClusterRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 inline void GetClusterRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetClusterRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.container.v1.GetClusterRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetClusterRequest::set_project_id(const ::std::string& value) {
   
@@ -4758,13 +4737,13 @@ inline void GetClusterRequest::set_allocated_project_id(::std::string* project_i
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.GetClusterRequest.project_id)
 }
 
-// string zone = 2;
+// optional string zone = 2;
 inline void GetClusterRequest::clear_zone() {
   zone_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetClusterRequest::zone() const {
   // @@protoc_insertion_point(field_get:google.container.v1.GetClusterRequest.zone)
-  return zone_.GetNoArena();
+  return zone_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetClusterRequest::set_zone(const ::std::string& value) {
   
@@ -4802,13 +4781,13 @@ inline void GetClusterRequest::set_allocated_zone(::std::string* zone) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.GetClusterRequest.zone)
 }
 
-// string cluster_id = 3;
+// optional string cluster_id = 3;
 inline void GetClusterRequest::clear_cluster_id() {
   cluster_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetClusterRequest::cluster_id() const {
   // @@protoc_insertion_point(field_get:google.container.v1.GetClusterRequest.cluster_id)
-  return cluster_id_.GetNoArena();
+  return cluster_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetClusterRequest::set_cluster_id(const ::std::string& value) {
   
@@ -4846,17 +4825,20 @@ inline void GetClusterRequest::set_allocated_cluster_id(::std::string* cluster_i
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.GetClusterRequest.cluster_id)
 }
 
+inline const GetClusterRequest* GetClusterRequest::internal_default_instance() {
+  return &GetClusterRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // UpdateClusterRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 inline void UpdateClusterRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& UpdateClusterRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.container.v1.UpdateClusterRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void UpdateClusterRequest::set_project_id(const ::std::string& value) {
   
@@ -4894,13 +4876,13 @@ inline void UpdateClusterRequest::set_allocated_project_id(::std::string* projec
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.UpdateClusterRequest.project_id)
 }
 
-// string zone = 2;
+// optional string zone = 2;
 inline void UpdateClusterRequest::clear_zone() {
   zone_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& UpdateClusterRequest::zone() const {
   // @@protoc_insertion_point(field_get:google.container.v1.UpdateClusterRequest.zone)
-  return zone_.GetNoArena();
+  return zone_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void UpdateClusterRequest::set_zone(const ::std::string& value) {
   
@@ -4938,13 +4920,13 @@ inline void UpdateClusterRequest::set_allocated_zone(::std::string* zone) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.UpdateClusterRequest.zone)
 }
 
-// string cluster_id = 3;
+// optional string cluster_id = 3;
 inline void UpdateClusterRequest::clear_cluster_id() {
   cluster_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& UpdateClusterRequest::cluster_id() const {
   // @@protoc_insertion_point(field_get:google.container.v1.UpdateClusterRequest.cluster_id)
-  return cluster_id_.GetNoArena();
+  return cluster_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void UpdateClusterRequest::set_cluster_id(const ::std::string& value) {
   
@@ -4982,7 +4964,7 @@ inline void UpdateClusterRequest::set_allocated_cluster_id(::std::string* cluste
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.UpdateClusterRequest.cluster_id)
 }
 
-// .google.container.v1.ClusterUpdate update = 4;
+// optional .google.container.v1.ClusterUpdate update = 4;
 inline bool UpdateClusterRequest::has_update() const {
   return this != internal_default_instance() && update_ != NULL;
 }
@@ -5021,17 +5003,20 @@ inline void UpdateClusterRequest::set_allocated_update(::google::container::v1::
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.UpdateClusterRequest.update)
 }
 
+inline const UpdateClusterRequest* UpdateClusterRequest::internal_default_instance() {
+  return &UpdateClusterRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // DeleteClusterRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 inline void DeleteClusterRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& DeleteClusterRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.container.v1.DeleteClusterRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DeleteClusterRequest::set_project_id(const ::std::string& value) {
   
@@ -5069,13 +5054,13 @@ inline void DeleteClusterRequest::set_allocated_project_id(::std::string* projec
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.DeleteClusterRequest.project_id)
 }
 
-// string zone = 2;
+// optional string zone = 2;
 inline void DeleteClusterRequest::clear_zone() {
   zone_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& DeleteClusterRequest::zone() const {
   // @@protoc_insertion_point(field_get:google.container.v1.DeleteClusterRequest.zone)
-  return zone_.GetNoArena();
+  return zone_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DeleteClusterRequest::set_zone(const ::std::string& value) {
   
@@ -5113,13 +5098,13 @@ inline void DeleteClusterRequest::set_allocated_zone(::std::string* zone) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.DeleteClusterRequest.zone)
 }
 
-// string cluster_id = 3;
+// optional string cluster_id = 3;
 inline void DeleteClusterRequest::clear_cluster_id() {
   cluster_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& DeleteClusterRequest::cluster_id() const {
   // @@protoc_insertion_point(field_get:google.container.v1.DeleteClusterRequest.cluster_id)
-  return cluster_id_.GetNoArena();
+  return cluster_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DeleteClusterRequest::set_cluster_id(const ::std::string& value) {
   
@@ -5157,17 +5142,20 @@ inline void DeleteClusterRequest::set_allocated_cluster_id(::std::string* cluste
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.DeleteClusterRequest.cluster_id)
 }
 
+inline const DeleteClusterRequest* DeleteClusterRequest::internal_default_instance() {
+  return &DeleteClusterRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListClustersRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 inline void ListClustersRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListClustersRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.container.v1.ListClustersRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListClustersRequest::set_project_id(const ::std::string& value) {
   
@@ -5205,13 +5193,13 @@ inline void ListClustersRequest::set_allocated_project_id(::std::string* project
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.ListClustersRequest.project_id)
 }
 
-// string zone = 2;
+// optional string zone = 2;
 inline void ListClustersRequest::clear_zone() {
   zone_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListClustersRequest::zone() const {
   // @@protoc_insertion_point(field_get:google.container.v1.ListClustersRequest.zone)
-  return zone_.GetNoArena();
+  return zone_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListClustersRequest::set_zone(const ::std::string& value) {
   
@@ -5249,6 +5237,9 @@ inline void ListClustersRequest::set_allocated_zone(::std::string* zone) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.ListClustersRequest.zone)
 }
 
+inline const ListClustersRequest* ListClustersRequest::internal_default_instance() {
+  return &ListClustersRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListClustersResponse
@@ -5338,17 +5329,20 @@ ListClustersResponse::mutable_missing_zones() {
   return &missing_zones_;
 }
 
+inline const ListClustersResponse* ListClustersResponse::internal_default_instance() {
+  return &ListClustersResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetOperationRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 inline void GetOperationRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetOperationRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.container.v1.GetOperationRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetOperationRequest::set_project_id(const ::std::string& value) {
   
@@ -5386,13 +5380,13 @@ inline void GetOperationRequest::set_allocated_project_id(::std::string* project
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.GetOperationRequest.project_id)
 }
 
-// string zone = 2;
+// optional string zone = 2;
 inline void GetOperationRequest::clear_zone() {
   zone_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetOperationRequest::zone() const {
   // @@protoc_insertion_point(field_get:google.container.v1.GetOperationRequest.zone)
-  return zone_.GetNoArena();
+  return zone_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetOperationRequest::set_zone(const ::std::string& value) {
   
@@ -5430,13 +5424,13 @@ inline void GetOperationRequest::set_allocated_zone(::std::string* zone) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.GetOperationRequest.zone)
 }
 
-// string operation_id = 3;
+// optional string operation_id = 3;
 inline void GetOperationRequest::clear_operation_id() {
   operation_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetOperationRequest::operation_id() const {
   // @@protoc_insertion_point(field_get:google.container.v1.GetOperationRequest.operation_id)
-  return operation_id_.GetNoArena();
+  return operation_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetOperationRequest::set_operation_id(const ::std::string& value) {
   
@@ -5474,17 +5468,20 @@ inline void GetOperationRequest::set_allocated_operation_id(::std::string* opera
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.GetOperationRequest.operation_id)
 }
 
+inline const GetOperationRequest* GetOperationRequest::internal_default_instance() {
+  return &GetOperationRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListOperationsRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 inline void ListOperationsRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListOperationsRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.container.v1.ListOperationsRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListOperationsRequest::set_project_id(const ::std::string& value) {
   
@@ -5522,13 +5519,13 @@ inline void ListOperationsRequest::set_allocated_project_id(::std::string* proje
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.ListOperationsRequest.project_id)
 }
 
-// string zone = 2;
+// optional string zone = 2;
 inline void ListOperationsRequest::clear_zone() {
   zone_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ListOperationsRequest::zone() const {
   // @@protoc_insertion_point(field_get:google.container.v1.ListOperationsRequest.zone)
-  return zone_.GetNoArena();
+  return zone_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ListOperationsRequest::set_zone(const ::std::string& value) {
   
@@ -5566,6 +5563,9 @@ inline void ListOperationsRequest::set_allocated_zone(::std::string* zone) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.ListOperationsRequest.zone)
 }
 
+inline const ListOperationsRequest* ListOperationsRequest::internal_default_instance() {
+  return &ListOperationsRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ListOperationsResponse
@@ -5655,17 +5655,20 @@ ListOperationsResponse::mutable_missing_zones() {
   return &missing_zones_;
 }
 
+inline const ListOperationsResponse* ListOperationsResponse::internal_default_instance() {
+  return &ListOperationsResponse_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GetServerConfigRequest
 
-// string project_id = 1;
+// optional string project_id = 1;
 inline void GetServerConfigRequest::clear_project_id() {
   project_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetServerConfigRequest::project_id() const {
   // @@protoc_insertion_point(field_get:google.container.v1.GetServerConfigRequest.project_id)
-  return project_id_.GetNoArena();
+  return project_id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetServerConfigRequest::set_project_id(const ::std::string& value) {
   
@@ -5703,13 +5706,13 @@ inline void GetServerConfigRequest::set_allocated_project_id(::std::string* proj
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.GetServerConfigRequest.project_id)
 }
 
-// string zone = 2;
+// optional string zone = 2;
 inline void GetServerConfigRequest::clear_zone() {
   zone_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GetServerConfigRequest::zone() const {
   // @@protoc_insertion_point(field_get:google.container.v1.GetServerConfigRequest.zone)
-  return zone_.GetNoArena();
+  return zone_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GetServerConfigRequest::set_zone(const ::std::string& value) {
   
@@ -5747,17 +5750,20 @@ inline void GetServerConfigRequest::set_allocated_zone(::std::string* zone) {
   // @@protoc_insertion_point(field_set_allocated:google.container.v1.GetServerConfigRequest.zone)
 }
 
+inline const GetServerConfigRequest* GetServerConfigRequest::internal_default_instance() {
+  return &GetServerConfigRequest_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // ServerConfig
 
-// string default_cluster_version = 1;
+// optional string default_cluster_version = 1;
 inline void ServerConfig::clear_default_cluster_version() {
   default_cluster_version_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& ServerConfig::default_cluster_version() const {
   // @@protoc_insertion_point(field_get:google.container.v1.ServerConfig.default_cluster_version)
-  return default_cluster_version_.GetNoArena();
+  return default_cluster_version_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ServerConfig::set_default_cluster_version(const ::std::string& value) {
   
@@ -5850,9 +5856,10 @@ ServerConfig::mutable_valid_node_versions() {
   return &valid_node_versions_;
 }
 
+inline const ServerConfig* ServerConfig::internal_default_instance() {
+  return &ServerConfig_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -5891,7 +5898,6 @@ ServerConfig::mutable_valid_node_versions() {
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace container

@@ -20,60 +20,51 @@
 namespace google {
 namespace bigtable {
 namespace v1 {
-class RowDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Row> {};
-RowDefaultTypeInternal _Row_default_instance_;
-class FamilyDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Family> {};
-FamilyDefaultTypeInternal _Family_default_instance_;
-class ColumnDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Column> {};
-ColumnDefaultTypeInternal _Column_default_instance_;
-class CellDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Cell> {};
-CellDefaultTypeInternal _Cell_default_instance_;
-class RowRangeDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<RowRange> {};
-RowRangeDefaultTypeInternal _RowRange_default_instance_;
-class RowSetDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<RowSet> {};
-RowSetDefaultTypeInternal _RowSet_default_instance_;
-class ColumnRangeDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ColumnRange> {};
-ColumnRangeDefaultTypeInternal _ColumnRange_default_instance_;
-class TimestampRangeDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<TimestampRange> {};
-TimestampRangeDefaultTypeInternal _TimestampRange_default_instance_;
-class ValueRangeDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ValueRange> {};
-ValueRangeDefaultTypeInternal _ValueRange_default_instance_;
-class RowFilter_ChainDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<RowFilter_Chain> {};
-RowFilter_ChainDefaultTypeInternal _RowFilter_Chain_default_instance_;
-class RowFilter_InterleaveDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<RowFilter_Interleave> {};
-RowFilter_InterleaveDefaultTypeInternal _RowFilter_Interleave_default_instance_;
-class RowFilter_ConditionDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<RowFilter_Condition> {};
-RowFilter_ConditionDefaultTypeInternal _RowFilter_Condition_default_instance_;
-class RowFilterDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<RowFilter> {};
-RowFilterDefaultTypeInternal _RowFilter_default_instance_;
-class Mutation_SetCellDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Mutation_SetCell> {};
-Mutation_SetCellDefaultTypeInternal _Mutation_SetCell_default_instance_;
-class Mutation_DeleteFromColumnDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Mutation_DeleteFromColumn> {};
-Mutation_DeleteFromColumnDefaultTypeInternal _Mutation_DeleteFromColumn_default_instance_;
-class Mutation_DeleteFromFamilyDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Mutation_DeleteFromFamily> {};
-Mutation_DeleteFromFamilyDefaultTypeInternal _Mutation_DeleteFromFamily_default_instance_;
-class Mutation_DeleteFromRowDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Mutation_DeleteFromRow> {};
-Mutation_DeleteFromRowDefaultTypeInternal _Mutation_DeleteFromRow_default_instance_;
-class MutationDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Mutation> {};
-MutationDefaultTypeInternal _Mutation_default_instance_;
-class ReadModifyWriteRuleDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ReadModifyWriteRule> {};
-ReadModifyWriteRuleDefaultTypeInternal _ReadModifyWriteRule_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[19];
+const ::google::protobuf::Descriptor* Row_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Row_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Family_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Family_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Column_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Column_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Cell_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Cell_reflection_ = NULL;
+const ::google::protobuf::Descriptor* RowRange_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  RowRange_reflection_ = NULL;
+const ::google::protobuf::Descriptor* RowSet_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  RowSet_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ColumnRange_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ColumnRange_reflection_ = NULL;
 struct ColumnRangeOneofInstance {
   ::google::protobuf::internal::ArenaStringPtr start_qualifier_inclusive_;
   ::google::protobuf::internal::ArenaStringPtr start_qualifier_exclusive_;
   ::google::protobuf::internal::ArenaStringPtr end_qualifier_inclusive_;
   ::google::protobuf::internal::ArenaStringPtr end_qualifier_exclusive_;
-} ColumnRange_default_oneof_instance_;
+}* ColumnRange_default_oneof_instance_ = NULL;
+const ::google::protobuf::Descriptor* TimestampRange_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TimestampRange_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ValueRange_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ValueRange_reflection_ = NULL;
 struct ValueRangeOneofInstance {
   ::google::protobuf::internal::ArenaStringPtr start_value_inclusive_;
   ::google::protobuf::internal::ArenaStringPtr start_value_exclusive_;
   ::google::protobuf::internal::ArenaStringPtr end_value_inclusive_;
   ::google::protobuf::internal::ArenaStringPtr end_value_exclusive_;
-} ValueRange_default_oneof_instance_;
+}* ValueRange_default_oneof_instance_ = NULL;
+const ::google::protobuf::Descriptor* RowFilter_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  RowFilter_reflection_ = NULL;
 struct RowFilterOneofInstance {
   const ::google::bigtable::v1::RowFilter_Chain* chain_;
   const ::google::bigtable::v1::RowFilter_Interleave* interleave_;
@@ -94,455 +85,627 @@ struct RowFilterOneofInstance {
   ::google::protobuf::int32 cells_per_column_limit_filter_;
   bool strip_value_transformer_;
   ::google::protobuf::internal::ArenaStringPtr apply_label_transformer_;
-} RowFilter_default_oneof_instance_;
+}* RowFilter_default_oneof_instance_ = NULL;
+const ::google::protobuf::Descriptor* RowFilter_Chain_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  RowFilter_Chain_reflection_ = NULL;
+const ::google::protobuf::Descriptor* RowFilter_Interleave_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  RowFilter_Interleave_reflection_ = NULL;
+const ::google::protobuf::Descriptor* RowFilter_Condition_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  RowFilter_Condition_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Mutation_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Mutation_reflection_ = NULL;
 struct MutationOneofInstance {
   const ::google::bigtable::v1::Mutation_SetCell* set_cell_;
   const ::google::bigtable::v1::Mutation_DeleteFromColumn* delete_from_column_;
   const ::google::bigtable::v1::Mutation_DeleteFromFamily* delete_from_family_;
   const ::google::bigtable::v1::Mutation_DeleteFromRow* delete_from_row_;
-} Mutation_default_oneof_instance_;
+}* Mutation_default_oneof_instance_ = NULL;
+const ::google::protobuf::Descriptor* Mutation_SetCell_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Mutation_SetCell_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Mutation_DeleteFromColumn_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Mutation_DeleteFromColumn_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Mutation_DeleteFromFamily_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Mutation_DeleteFromFamily_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Mutation_DeleteFromRow_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Mutation_DeleteFromRow_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ReadModifyWriteRule_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ReadModifyWriteRule_reflection_ = NULL;
 struct ReadModifyWriteRuleOneofInstance {
   ::google::protobuf::internal::ArenaStringPtr append_value_;
   ::google::protobuf::int64 increment_amount_;
-} ReadModifyWriteRule_default_oneof_instance_;
+}* ReadModifyWriteRule_default_oneof_instance_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Row, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto() {
+  protobuf_AddDesc_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/bigtable/v1/bigtable_data.proto");
+  GOOGLE_CHECK(file != NULL);
+  Row_descriptor_ = file->message_type(0);
+  static const int Row_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Row, key_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Row, families_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Family, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Row_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Row_descriptor_,
+      Row::internal_default_instance(),
+      Row_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Row),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Row, _internal_metadata_));
+  Family_descriptor_ = file->message_type(1);
+  static const int Family_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Family, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Family, columns_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Column, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Family_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Family_descriptor_,
+      Family::internal_default_instance(),
+      Family_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Family),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Family, _internal_metadata_));
+  Column_descriptor_ = file->message_type(2);
+  static const int Column_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Column, qualifier_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Column, cells_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cell, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Column_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Column_descriptor_,
+      Column::internal_default_instance(),
+      Column_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Column),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Column, _internal_metadata_));
+  Cell_descriptor_ = file->message_type(3);
+  static const int Cell_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cell, timestamp_micros_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cell, value_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cell, labels_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowRange, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Cell_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Cell_descriptor_,
+      Cell::internal_default_instance(),
+      Cell_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Cell),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Cell, _internal_metadata_));
+  RowRange_descriptor_ = file->message_type(4);
+  static const int RowRange_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowRange, start_key_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowRange, end_key_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowSet, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  RowRange_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      RowRange_descriptor_,
+      RowRange::internal_default_instance(),
+      RowRange_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(RowRange),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowRange, _internal_metadata_));
+  RowSet_descriptor_ = file->message_type(5);
+  static const int RowSet_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowSet, row_keys_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowSet, row_ranges_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ColumnRange, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ColumnRange, _oneof_case_[0]),
+  };
+  RowSet_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      RowSet_descriptor_,
+      RowSet::internal_default_instance(),
+      RowSet_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(RowSet),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowSet, _internal_metadata_));
+  ColumnRange_descriptor_ = file->message_type(6);
+  static const int ColumnRange_offsets_[7] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ColumnRange, family_name_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&ColumnRange_default_oneof_instance_), start_qualifier_inclusive_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&ColumnRange_default_oneof_instance_), start_qualifier_exclusive_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&ColumnRange_default_oneof_instance_), end_qualifier_inclusive_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&ColumnRange_default_oneof_instance_), end_qualifier_exclusive_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(ColumnRange_default_oneof_instance_, start_qualifier_inclusive_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(ColumnRange_default_oneof_instance_, start_qualifier_exclusive_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(ColumnRange_default_oneof_instance_, end_qualifier_inclusive_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(ColumnRange_default_oneof_instance_, end_qualifier_exclusive_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ColumnRange, start_qualifier_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ColumnRange, end_qualifier_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimestampRange, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ColumnRange_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ColumnRange_descriptor_,
+      ColumnRange::internal_default_instance(),
+      ColumnRange_offsets_,
+      -1,
+      -1,
+      -1,
+      ColumnRange_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ColumnRange, _oneof_case_[0]),
+      sizeof(ColumnRange),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ColumnRange, _internal_metadata_));
+  TimestampRange_descriptor_ = file->message_type(7);
+  static const int TimestampRange_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimestampRange, start_timestamp_micros_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimestampRange, end_timestamp_micros_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ValueRange, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ValueRange, _oneof_case_[0]),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&ValueRange_default_oneof_instance_), start_value_inclusive_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&ValueRange_default_oneof_instance_), start_value_exclusive_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&ValueRange_default_oneof_instance_), end_value_inclusive_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&ValueRange_default_oneof_instance_), end_value_exclusive_),
+  };
+  TimestampRange_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      TimestampRange_descriptor_,
+      TimestampRange::internal_default_instance(),
+      TimestampRange_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(TimestampRange),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimestampRange, _internal_metadata_));
+  ValueRange_descriptor_ = file->message_type(8);
+  static const int ValueRange_offsets_[6] = {
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(ValueRange_default_oneof_instance_, start_value_inclusive_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(ValueRange_default_oneof_instance_, start_value_exclusive_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(ValueRange_default_oneof_instance_, end_value_inclusive_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(ValueRange_default_oneof_instance_, end_value_exclusive_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ValueRange, start_value_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ValueRange, end_value_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowFilter_Chain, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  ValueRange_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ValueRange_descriptor_,
+      ValueRange::internal_default_instance(),
+      ValueRange_offsets_,
+      -1,
+      -1,
+      -1,
+      ValueRange_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ValueRange, _oneof_case_[0]),
+      sizeof(ValueRange),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ValueRange, _internal_metadata_));
+  RowFilter_descriptor_ = file->message_type(9);
+  static const int RowFilter_offsets_[20] = {
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, chain_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, interleave_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, condition_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, sink_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, pass_all_filter_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, block_all_filter_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, row_key_regex_filter_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, row_sample_filter_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, family_name_regex_filter_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, column_qualifier_regex_filter_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, column_range_filter_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, timestamp_range_filter_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, value_regex_filter_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, value_range_filter_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, cells_per_row_offset_filter_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, cells_per_row_limit_filter_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, cells_per_column_limit_filter_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, strip_value_transformer_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(RowFilter_default_oneof_instance_, apply_label_transformer_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowFilter, filter_),
+  };
+  RowFilter_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      RowFilter_descriptor_,
+      RowFilter::internal_default_instance(),
+      RowFilter_offsets_,
+      -1,
+      -1,
+      -1,
+      RowFilter_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowFilter, _oneof_case_[0]),
+      sizeof(RowFilter),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowFilter, _internal_metadata_));
+  RowFilter_Chain_descriptor_ = RowFilter_descriptor_->nested_type(0);
+  static const int RowFilter_Chain_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowFilter_Chain, filters_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowFilter_Interleave, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  RowFilter_Chain_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      RowFilter_Chain_descriptor_,
+      RowFilter_Chain::internal_default_instance(),
+      RowFilter_Chain_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(RowFilter_Chain),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowFilter_Chain, _internal_metadata_));
+  RowFilter_Interleave_descriptor_ = RowFilter_descriptor_->nested_type(1);
+  static const int RowFilter_Interleave_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowFilter_Interleave, filters_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowFilter_Condition, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  RowFilter_Interleave_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      RowFilter_Interleave_descriptor_,
+      RowFilter_Interleave::internal_default_instance(),
+      RowFilter_Interleave_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(RowFilter_Interleave),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowFilter_Interleave, _internal_metadata_));
+  RowFilter_Condition_descriptor_ = RowFilter_descriptor_->nested_type(2);
+  static const int RowFilter_Condition_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowFilter_Condition, predicate_filter_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowFilter_Condition, true_filter_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowFilter_Condition, false_filter_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowFilter, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowFilter, _oneof_case_[0]),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), chain_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), interleave_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), condition_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), sink_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), pass_all_filter_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), block_all_filter_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), row_key_regex_filter_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), row_sample_filter_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), family_name_regex_filter_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), column_qualifier_regex_filter_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), column_range_filter_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), timestamp_range_filter_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), value_regex_filter_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), value_range_filter_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), cells_per_row_offset_filter_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), cells_per_row_limit_filter_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), cells_per_column_limit_filter_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), strip_value_transformer_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&RowFilter_default_oneof_instance_), apply_label_transformer_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowFilter, filter_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation_SetCell, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  RowFilter_Condition_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      RowFilter_Condition_descriptor_,
+      RowFilter_Condition::internal_default_instance(),
+      RowFilter_Condition_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(RowFilter_Condition),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RowFilter_Condition, _internal_metadata_));
+  Mutation_descriptor_ = file->message_type(10);
+  static const int Mutation_offsets_[5] = {
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Mutation_default_oneof_instance_, set_cell_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Mutation_default_oneof_instance_, delete_from_column_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Mutation_default_oneof_instance_, delete_from_family_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(Mutation_default_oneof_instance_, delete_from_row_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation, mutation_),
+  };
+  Mutation_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Mutation_descriptor_,
+      Mutation::internal_default_instance(),
+      Mutation_offsets_,
+      -1,
+      -1,
+      -1,
+      Mutation_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation, _oneof_case_[0]),
+      sizeof(Mutation),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation, _internal_metadata_));
+  Mutation_SetCell_descriptor_ = Mutation_descriptor_->nested_type(0);
+  static const int Mutation_SetCell_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation_SetCell, family_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation_SetCell, column_qualifier_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation_SetCell, timestamp_micros_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation_SetCell, value_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation_DeleteFromColumn, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Mutation_SetCell_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Mutation_SetCell_descriptor_,
+      Mutation_SetCell::internal_default_instance(),
+      Mutation_SetCell_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Mutation_SetCell),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation_SetCell, _internal_metadata_));
+  Mutation_DeleteFromColumn_descriptor_ = Mutation_descriptor_->nested_type(1);
+  static const int Mutation_DeleteFromColumn_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation_DeleteFromColumn, family_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation_DeleteFromColumn, column_qualifier_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation_DeleteFromColumn, time_range_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation_DeleteFromFamily, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Mutation_DeleteFromColumn_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Mutation_DeleteFromColumn_descriptor_,
+      Mutation_DeleteFromColumn::internal_default_instance(),
+      Mutation_DeleteFromColumn_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Mutation_DeleteFromColumn),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation_DeleteFromColumn, _internal_metadata_));
+  Mutation_DeleteFromFamily_descriptor_ = Mutation_descriptor_->nested_type(2);
+  static const int Mutation_DeleteFromFamily_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation_DeleteFromFamily, family_name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation_DeleteFromRow, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation, _oneof_case_[0]),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Mutation_default_oneof_instance_), set_cell_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Mutation_default_oneof_instance_), delete_from_column_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Mutation_default_oneof_instance_), delete_from_family_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&Mutation_default_oneof_instance_), delete_from_row_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation, mutation_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadModifyWriteRule, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadModifyWriteRule, _oneof_case_[0]),
+  };
+  Mutation_DeleteFromFamily_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Mutation_DeleteFromFamily_descriptor_,
+      Mutation_DeleteFromFamily::internal_default_instance(),
+      Mutation_DeleteFromFamily_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Mutation_DeleteFromFamily),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation_DeleteFromFamily, _internal_metadata_));
+  Mutation_DeleteFromRow_descriptor_ = Mutation_descriptor_->nested_type(3);
+  static const int Mutation_DeleteFromRow_offsets_[1] = {
+  };
+  Mutation_DeleteFromRow_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Mutation_DeleteFromRow_descriptor_,
+      Mutation_DeleteFromRow::internal_default_instance(),
+      Mutation_DeleteFromRow_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Mutation_DeleteFromRow),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Mutation_DeleteFromRow, _internal_metadata_));
+  ReadModifyWriteRule_descriptor_ = file->message_type(11);
+  static const int ReadModifyWriteRule_offsets_[5] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadModifyWriteRule, family_name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadModifyWriteRule, column_qualifier_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&ReadModifyWriteRule_default_oneof_instance_), append_value_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&ReadModifyWriteRule_default_oneof_instance_), increment_amount_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(ReadModifyWriteRule_default_oneof_instance_, append_value_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(ReadModifyWriteRule_default_oneof_instance_, increment_amount_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadModifyWriteRule, rule_),
   };
-  return offsets;
+  ReadModifyWriteRule_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ReadModifyWriteRule_descriptor_,
+      ReadModifyWriteRule::internal_default_instance(),
+      ReadModifyWriteRule_offsets_,
+      -1,
+      -1,
+      -1,
+      ReadModifyWriteRule_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadModifyWriteRule, _oneof_case_[0]),
+      sizeof(ReadModifyWriteRule),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ReadModifyWriteRule, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(Row)},
-  { 6, -1, sizeof(Family)},
-  { 12, -1, sizeof(Column)},
-  { 18, -1, sizeof(Cell)},
-  { 25, -1, sizeof(RowRange)},
-  { 31, -1, sizeof(RowSet)},
-  { 37, -1, sizeof(ColumnRange)},
-  { 48, -1, sizeof(TimestampRange)},
-  { 54, -1, sizeof(ValueRange)},
-  { 64, -1, sizeof(RowFilter_Chain)},
-  { 69, -1, sizeof(RowFilter_Interleave)},
-  { 74, -1, sizeof(RowFilter_Condition)},
-  { 81, -1, sizeof(RowFilter)},
-  { 105, -1, sizeof(Mutation_SetCell)},
-  { 113, -1, sizeof(Mutation_DeleteFromColumn)},
-  { 120, -1, sizeof(Mutation_DeleteFromFamily)},
-  { 125, -1, sizeof(Mutation_DeleteFromRow)},
-  { 129, -1, sizeof(Mutation)},
-  { 138, -1, sizeof(ReadModifyWriteRule)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Row_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Family_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Column_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Cell_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_RowRange_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_RowSet_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ColumnRange_default_instance_), &ColumnRange_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_TimestampRange_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ValueRange_default_instance_), &ValueRange_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_RowFilter_Chain_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_RowFilter_Interleave_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_RowFilter_Condition_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_RowFilter_default_instance_), &RowFilter_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Mutation_SetCell_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Mutation_DeleteFromColumn_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Mutation_DeleteFromFamily_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Mutation_DeleteFromRow_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Mutation_default_instance_), &Mutation_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ReadModifyWriteRule_default_instance_), &ReadModifyWriteRule_default_oneof_instance_},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/bigtable/v1/bigtable_data.proto", schemas, file_default_instances, protobuf_Offsets_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 19);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Row_descriptor_, Row::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Family_descriptor_, Family::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Column_descriptor_, Column::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Cell_descriptor_, Cell::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      RowRange_descriptor_, RowRange::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      RowSet_descriptor_, RowSet::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ColumnRange_descriptor_, ColumnRange::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      TimestampRange_descriptor_, TimestampRange::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ValueRange_descriptor_, ValueRange::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      RowFilter_descriptor_, RowFilter::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      RowFilter_Chain_descriptor_, RowFilter_Chain::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      RowFilter_Interleave_descriptor_, RowFilter_Interleave::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      RowFilter_Condition_descriptor_, RowFilter_Condition::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Mutation_descriptor_, Mutation::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Mutation_SetCell_descriptor_, Mutation_SetCell::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Mutation_DeleteFromColumn_descriptor_, Mutation_DeleteFromColumn::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Mutation_DeleteFromFamily_descriptor_, Mutation_DeleteFromFamily::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Mutation_DeleteFromRow_descriptor_, Mutation_DeleteFromRow::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ReadModifyWriteRule_descriptor_, ReadModifyWriteRule::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto() {
-  _Row_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _Family_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _Column_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _Cell_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _RowRange_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
-  _RowSet_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
-  _ColumnRange_default_instance_.Shutdown();
-  delete file_level_metadata[6].reflection;
-  _TimestampRange_default_instance_.Shutdown();
-  delete file_level_metadata[7].reflection;
-  _ValueRange_default_instance_.Shutdown();
-  delete file_level_metadata[8].reflection;
-  _RowFilter_Chain_default_instance_.Shutdown();
-  delete file_level_metadata[9].reflection;
-  _RowFilter_Interleave_default_instance_.Shutdown();
-  delete file_level_metadata[10].reflection;
-  _RowFilter_Condition_default_instance_.Shutdown();
-  delete file_level_metadata[11].reflection;
-  _RowFilter_default_instance_.Shutdown();
-  delete file_level_metadata[12].reflection;
-  _Mutation_SetCell_default_instance_.Shutdown();
-  delete file_level_metadata[13].reflection;
-  _Mutation_DeleteFromColumn_default_instance_.Shutdown();
-  delete file_level_metadata[14].reflection;
-  _Mutation_DeleteFromFamily_default_instance_.Shutdown();
-  delete file_level_metadata[15].reflection;
-  _Mutation_DeleteFromRow_default_instance_.Shutdown();
-  delete file_level_metadata[16].reflection;
-  _Mutation_default_instance_.Shutdown();
-  delete file_level_metadata[17].reflection;
-  _ReadModifyWriteRule_default_instance_.Shutdown();
-  delete file_level_metadata[18].reflection;
+  Row_default_instance_.Shutdown();
+  delete Row_reflection_;
+  Family_default_instance_.Shutdown();
+  delete Family_reflection_;
+  Column_default_instance_.Shutdown();
+  delete Column_reflection_;
+  Cell_default_instance_.Shutdown();
+  delete Cell_reflection_;
+  RowRange_default_instance_.Shutdown();
+  delete RowRange_reflection_;
+  RowSet_default_instance_.Shutdown();
+  delete RowSet_reflection_;
+  ColumnRange_default_instance_.Shutdown();
+  delete ColumnRange_default_oneof_instance_;
+  delete ColumnRange_reflection_;
+  TimestampRange_default_instance_.Shutdown();
+  delete TimestampRange_reflection_;
+  ValueRange_default_instance_.Shutdown();
+  delete ValueRange_default_oneof_instance_;
+  delete ValueRange_reflection_;
+  RowFilter_default_instance_.Shutdown();
+  delete RowFilter_default_oneof_instance_;
+  delete RowFilter_reflection_;
+  RowFilter_Chain_default_instance_.Shutdown();
+  delete RowFilter_Chain_reflection_;
+  RowFilter_Interleave_default_instance_.Shutdown();
+  delete RowFilter_Interleave_reflection_;
+  RowFilter_Condition_default_instance_.Shutdown();
+  delete RowFilter_Condition_reflection_;
+  Mutation_default_instance_.Shutdown();
+  delete Mutation_default_oneof_instance_;
+  delete Mutation_reflection_;
+  Mutation_SetCell_default_instance_.Shutdown();
+  delete Mutation_SetCell_reflection_;
+  Mutation_DeleteFromColumn_default_instance_.Shutdown();
+  delete Mutation_DeleteFromColumn_reflection_;
+  Mutation_DeleteFromFamily_default_instance_.Shutdown();
+  delete Mutation_DeleteFromFamily_reflection_;
+  Mutation_DeleteFromRow_default_instance_.Shutdown();
+  delete Mutation_DeleteFromRow_reflection_;
+  ReadModifyWriteRule_default_instance_.Shutdown();
+  delete ReadModifyWriteRule_default_oneof_instance_;
+  delete ReadModifyWriteRule_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _Row_default_instance_.DefaultConstruct();
-  _Family_default_instance_.DefaultConstruct();
-  _Column_default_instance_.DefaultConstruct();
-  _Cell_default_instance_.DefaultConstruct();
-  _RowRange_default_instance_.DefaultConstruct();
-  _RowSet_default_instance_.DefaultConstruct();
-  _ColumnRange_default_instance_.DefaultConstruct();
-  _TimestampRange_default_instance_.DefaultConstruct();
-  _ValueRange_default_instance_.DefaultConstruct();
-  _RowFilter_Chain_default_instance_.DefaultConstruct();
-  _RowFilter_Interleave_default_instance_.DefaultConstruct();
-  _RowFilter_Condition_default_instance_.DefaultConstruct();
-  _RowFilter_default_instance_.DefaultConstruct();
-  _Mutation_SetCell_default_instance_.DefaultConstruct();
-  _Mutation_DeleteFromColumn_default_instance_.DefaultConstruct();
-  _Mutation_DeleteFromFamily_default_instance_.DefaultConstruct();
-  _Mutation_DeleteFromRow_default_instance_.DefaultConstruct();
-  _Mutation_default_instance_.DefaultConstruct();
-  _ReadModifyWriteRule_default_instance_.DefaultConstruct();
-  ColumnRange_default_oneof_instance_.start_qualifier_inclusive_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ColumnRange_default_oneof_instance_.start_qualifier_exclusive_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ColumnRange_default_oneof_instance_.end_qualifier_inclusive_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ColumnRange_default_oneof_instance_.end_qualifier_exclusive_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ValueRange_default_oneof_instance_.start_value_inclusive_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ValueRange_default_oneof_instance_.start_value_exclusive_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ValueRange_default_oneof_instance_.end_value_inclusive_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ValueRange_default_oneof_instance_.end_value_exclusive_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _RowFilter_Condition_default_instance_.get_mutable()->predicate_filter_ = const_cast< ::google::bigtable::v1::RowFilter*>(
-      ::google::bigtable::v1::RowFilter::internal_default_instance());
-  _RowFilter_Condition_default_instance_.get_mutable()->true_filter_ = const_cast< ::google::bigtable::v1::RowFilter*>(
-      ::google::bigtable::v1::RowFilter::internal_default_instance());
-  _RowFilter_Condition_default_instance_.get_mutable()->false_filter_ = const_cast< ::google::bigtable::v1::RowFilter*>(
-      ::google::bigtable::v1::RowFilter::internal_default_instance());
-  RowFilter_default_oneof_instance_.chain_ = const_cast< ::google::bigtable::v1::RowFilter_Chain*>(
-      ::google::bigtable::v1::RowFilter_Chain::internal_default_instance());
-  RowFilter_default_oneof_instance_.interleave_ = const_cast< ::google::bigtable::v1::RowFilter_Interleave*>(
-      ::google::bigtable::v1::RowFilter_Interleave::internal_default_instance());
-  RowFilter_default_oneof_instance_.condition_ = const_cast< ::google::bigtable::v1::RowFilter_Condition*>(
-      ::google::bigtable::v1::RowFilter_Condition::internal_default_instance());
-    RowFilter_default_oneof_instance_.sink_ = false;
-    RowFilter_default_oneof_instance_.pass_all_filter_ = false;
-    RowFilter_default_oneof_instance_.block_all_filter_ = false;
-  RowFilter_default_oneof_instance_.row_key_regex_filter_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-    RowFilter_default_oneof_instance_.row_sample_filter_ = 0;
-  RowFilter_default_oneof_instance_.family_name_regex_filter_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  RowFilter_default_oneof_instance_.column_qualifier_regex_filter_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  RowFilter_default_oneof_instance_.column_range_filter_ = const_cast< ::google::bigtable::v1::ColumnRange*>(
-      ::google::bigtable::v1::ColumnRange::internal_default_instance());
-  RowFilter_default_oneof_instance_.timestamp_range_filter_ = const_cast< ::google::bigtable::v1::TimestampRange*>(
-      ::google::bigtable::v1::TimestampRange::internal_default_instance());
-  RowFilter_default_oneof_instance_.value_regex_filter_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  RowFilter_default_oneof_instance_.value_range_filter_ = const_cast< ::google::bigtable::v1::ValueRange*>(
-      ::google::bigtable::v1::ValueRange::internal_default_instance());
-    RowFilter_default_oneof_instance_.cells_per_row_offset_filter_ = 0;
-    RowFilter_default_oneof_instance_.cells_per_row_limit_filter_ = 0;
-    RowFilter_default_oneof_instance_.cells_per_column_limit_filter_ = 0;
-    RowFilter_default_oneof_instance_.strip_value_transformer_ = false;
-  RowFilter_default_oneof_instance_.apply_label_transformer_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _Mutation_DeleteFromColumn_default_instance_.get_mutable()->time_range_ = const_cast< ::google::bigtable::v1::TimestampRange*>(
-      ::google::bigtable::v1::TimestampRange::internal_default_instance());
-  Mutation_default_oneof_instance_.set_cell_ = const_cast< ::google::bigtable::v1::Mutation_SetCell*>(
-      ::google::bigtable::v1::Mutation_SetCell::internal_default_instance());
-  Mutation_default_oneof_instance_.delete_from_column_ = const_cast< ::google::bigtable::v1::Mutation_DeleteFromColumn*>(
-      ::google::bigtable::v1::Mutation_DeleteFromColumn::internal_default_instance());
-  Mutation_default_oneof_instance_.delete_from_family_ = const_cast< ::google::bigtable::v1::Mutation_DeleteFromFamily*>(
-      ::google::bigtable::v1::Mutation_DeleteFromFamily::internal_default_instance());
-  Mutation_default_oneof_instance_.delete_from_row_ = const_cast< ::google::bigtable::v1::Mutation_DeleteFromRow*>(
-      ::google::bigtable::v1::Mutation_DeleteFromRow::internal_default_instance());
-  ReadModifyWriteRule_default_oneof_instance_.append_value_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-    ReadModifyWriteRule_default_oneof_instance_.increment_amount_ = GOOGLE_LONGLONG(0);
+  ::google::protobuf::internal::GetEmptyString();
+  Row_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Family_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Column_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Cell_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  RowRange_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  RowSet_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ColumnRange_default_instance_.DefaultConstruct();
+  ColumnRange_default_oneof_instance_ = new ColumnRangeOneofInstance();
+  TimestampRange_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ValueRange_default_instance_.DefaultConstruct();
+  ValueRange_default_oneof_instance_ = new ValueRangeOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  RowFilter_default_instance_.DefaultConstruct();
+  RowFilter_default_oneof_instance_ = new RowFilterOneofInstance();
+  RowFilter_Chain_default_instance_.DefaultConstruct();
+  RowFilter_Interleave_default_instance_.DefaultConstruct();
+  RowFilter_Condition_default_instance_.DefaultConstruct();
+  Mutation_default_instance_.DefaultConstruct();
+  Mutation_default_oneof_instance_ = new MutationOneofInstance();
+  ::google::protobuf::internal::GetEmptyString();
+  Mutation_SetCell_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Mutation_DeleteFromColumn_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Mutation_DeleteFromFamily_default_instance_.DefaultConstruct();
+  Mutation_DeleteFromRow_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ReadModifyWriteRule_default_instance_.DefaultConstruct();
+  ReadModifyWriteRule_default_oneof_instance_ = new ReadModifyWriteRuleOneofInstance();
+  Row_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Family_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Column_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Cell_default_instance_.get_mutable()->InitAsDefaultInstance();
+  RowRange_default_instance_.get_mutable()->InitAsDefaultInstance();
+  RowSet_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ColumnRange_default_instance_.get_mutable()->InitAsDefaultInstance();
+  TimestampRange_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ValueRange_default_instance_.get_mutable()->InitAsDefaultInstance();
+  RowFilter_default_instance_.get_mutable()->InitAsDefaultInstance();
+  RowFilter_Chain_default_instance_.get_mutable()->InitAsDefaultInstance();
+  RowFilter_Interleave_default_instance_.get_mutable()->InitAsDefaultInstance();
+  RowFilter_Condition_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Mutation_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Mutation_SetCell_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Mutation_DeleteFromColumn_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Mutation_DeleteFromFamily_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Mutation_DeleteFromRow_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ReadModifyWriteRule_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto_once_);
 void protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  static const char descriptor[] = {
-      "\n&google/bigtable/v1/bigtable_data.proto"
-      "\022\022google.bigtable.v1\"@\n\003Row\022\013\n\003key\030\001 \001(\014"
-      "\022,\n\010families\030\002 \003(\0132\032.google.bigtable.v1."
-      "Family\"C\n\006Family\022\014\n\004name\030\001 \001(\t\022+\n\007column"
-      "s\030\002 \003(\0132\032.google.bigtable.v1.Column\"D\n\006C"
-      "olumn\022\021\n\tqualifier\030\001 \001(\014\022\'\n\005cells\030\002 \003(\0132"
-      "\030.google.bigtable.v1.Cell\"\?\n\004Cell\022\030\n\020tim"
-      "estamp_micros\030\001 \001(\003\022\r\n\005value\030\002 \001(\014\022\016\n\006la"
-      "bels\030\003 \003(\t\".\n\010RowRange\022\021\n\tstart_key\030\002 \001("
-      "\014\022\017\n\007end_key\030\003 \001(\014\"L\n\006RowSet\022\020\n\010row_keys"
-      "\030\001 \003(\014\0220\n\nrow_ranges\030\002 \003(\0132\034.google.bigt"
-      "able.v1.RowRange\"\326\001\n\013ColumnRange\022\023\n\013fami"
-      "ly_name\030\001 \001(\t\022#\n\031start_qualifier_inclusi"
-      "ve\030\002 \001(\014H\000\022#\n\031start_qualifier_exclusive\030"
-      "\003 \001(\014H\000\022!\n\027end_qualifier_inclusive\030\004 \001(\014"
-      "H\001\022!\n\027end_qualifier_exclusive\030\005 \001(\014H\001B\021\n"
-      "\017start_qualifierB\017\n\rend_qualifier\"N\n\016Tim"
-      "estampRange\022\036\n\026start_timestamp_micros\030\001 "
-      "\001(\003\022\034\n\024end_timestamp_micros\030\002 \001(\003\"\250\001\n\nVa"
-      "lueRange\022\037\n\025start_value_inclusive\030\001 \001(\014H"
-      "\000\022\037\n\025start_value_exclusive\030\002 \001(\014H\000\022\035\n\023en"
-      "d_value_inclusive\030\003 \001(\014H\001\022\035\n\023end_value_e"
-      "xclusive\030\004 \001(\014H\001B\r\n\013start_valueB\013\n\tend_v"
-      "alue\"\337\010\n\tRowFilter\0224\n\005chain\030\001 \001(\0132#.goog"
-      "le.bigtable.v1.RowFilter.ChainH\000\022>\n\ninte"
-      "rleave\030\002 \001(\0132(.google.bigtable.v1.RowFil"
-      "ter.InterleaveH\000\022<\n\tcondition\030\003 \001(\0132\'.go"
-      "ogle.bigtable.v1.RowFilter.ConditionH\000\022\016"
-      "\n\004sink\030\020 \001(\010H\000\022\031\n\017pass_all_filter\030\021 \001(\010H"
-      "\000\022\032\n\020block_all_filter\030\022 \001(\010H\000\022\036\n\024row_key"
-      "_regex_filter\030\004 \001(\014H\000\022\033\n\021row_sample_filt"
-      "er\030\016 \001(\001H\000\022\"\n\030family_name_regex_filter\030\005"
-      " \001(\tH\000\022\'\n\035column_qualifier_regex_filter\030"
-      "\006 \001(\014H\000\022>\n\023column_range_filter\030\007 \001(\0132\037.g"
-      "oogle.bigtable.v1.ColumnRangeH\000\022D\n\026times"
-      "tamp_range_filter\030\010 \001(\0132\".google.bigtabl"
-      "e.v1.TimestampRangeH\000\022\034\n\022value_regex_fil"
-      "ter\030\t \001(\014H\000\022<\n\022value_range_filter\030\017 \001(\0132"
-      "\036.google.bigtable.v1.ValueRangeH\000\022%\n\033cel"
-      "ls_per_row_offset_filter\030\n \001(\005H\000\022$\n\032cell"
-      "s_per_row_limit_filter\030\013 \001(\005H\000\022\'\n\035cells_"
-      "per_column_limit_filter\030\014 \001(\005H\000\022!\n\027strip"
-      "_value_transformer\030\r \001(\010H\000\022!\n\027apply_labe"
-      "l_transformer\030\023 \001(\tH\000\0327\n\005Chain\022.\n\007filter"
-      "s\030\001 \003(\0132\035.google.bigtable.v1.RowFilter\032<"
-      "\n\nInterleave\022.\n\007filters\030\001 \003(\0132\035.google.b"
-      "igtable.v1.RowFilter\032\255\001\n\tCondition\0227\n\020pr"
-      "edicate_filter\030\001 \001(\0132\035.google.bigtable.v"
-      "1.RowFilter\0222\n\013true_filter\030\002 \001(\0132\035.googl"
-      "e.bigtable.v1.RowFilter\0223\n\014false_filter\030"
-      "\003 \001(\0132\035.google.bigtable.v1.RowFilterB\010\n\006"
-      "filter\"\311\004\n\010Mutation\0228\n\010set_cell\030\001 \001(\0132$."
-      "google.bigtable.v1.Mutation.SetCellH\000\022K\n"
-      "\022delete_from_column\030\002 \001(\0132-.google.bigta"
-      "ble.v1.Mutation.DeleteFromColumnH\000\022K\n\022de"
-      "lete_from_family\030\003 \001(\0132-.google.bigtable"
-      ".v1.Mutation.DeleteFromFamilyH\000\022E\n\017delet"
-      "e_from_row\030\004 \001(\0132*.google.bigtable.v1.Mu"
-      "tation.DeleteFromRowH\000\032a\n\007SetCell\022\023\n\013fam"
-      "ily_name\030\001 \001(\t\022\030\n\020column_qualifier\030\002 \001(\014"
-      "\022\030\n\020timestamp_micros\030\003 \001(\003\022\r\n\005value\030\004 \001("
-      "\014\032y\n\020DeleteFromColumn\022\023\n\013family_name\030\001 \001"
-      "(\t\022\030\n\020column_qualifier\030\002 \001(\014\0226\n\ntime_ran"
-      "ge\030\003 \001(\0132\".google.bigtable.v1.TimestampR"
-      "ange\032\'\n\020DeleteFromFamily\022\023\n\013family_name\030"
-      "\001 \001(\t\032\017\n\rDeleteFromRowB\n\n\010mutation\"\200\001\n\023R"
-      "eadModifyWriteRule\022\023\n\013family_name\030\001 \001(\t\022"
-      "\030\n\020column_qualifier\030\002 \001(\014\022\026\n\014append_valu"
-      "e\030\003 \001(\014H\000\022\032\n\020increment_amount\030\004 \001(\003H\000B\006\n"
-      "\004ruleBi\n\026com.google.bigtable.v1B\021Bigtabl"
-      "eDataProtoP\001Z:google.golang.org/genproto"
-      "/googleapis/bigtable/v1;bigtableb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 2880);
+    "\n&google/bigtable/v1/bigtable_data.proto"
+    "\022\022google.bigtable.v1\"@\n\003Row\022\013\n\003key\030\001 \001(\014"
+    "\022,\n\010families\030\002 \003(\0132\032.google.bigtable.v1."
+    "Family\"C\n\006Family\022\014\n\004name\030\001 \001(\t\022+\n\007column"
+    "s\030\002 \003(\0132\032.google.bigtable.v1.Column\"D\n\006C"
+    "olumn\022\021\n\tqualifier\030\001 \001(\014\022\'\n\005cells\030\002 \003(\0132"
+    "\030.google.bigtable.v1.Cell\"\?\n\004Cell\022\030\n\020tim"
+    "estamp_micros\030\001 \001(\003\022\r\n\005value\030\002 \001(\014\022\016\n\006la"
+    "bels\030\003 \003(\t\".\n\010RowRange\022\021\n\tstart_key\030\002 \001("
+    "\014\022\017\n\007end_key\030\003 \001(\014\"L\n\006RowSet\022\020\n\010row_keys"
+    "\030\001 \003(\014\0220\n\nrow_ranges\030\002 \003(\0132\034.google.bigt"
+    "able.v1.RowRange\"\326\001\n\013ColumnRange\022\023\n\013fami"
+    "ly_name\030\001 \001(\t\022#\n\031start_qualifier_inclusi"
+    "ve\030\002 \001(\014H\000\022#\n\031start_qualifier_exclusive\030"
+    "\003 \001(\014H\000\022!\n\027end_qualifier_inclusive\030\004 \001(\014"
+    "H\001\022!\n\027end_qualifier_exclusive\030\005 \001(\014H\001B\021\n"
+    "\017start_qualifierB\017\n\rend_qualifier\"N\n\016Tim"
+    "estampRange\022\036\n\026start_timestamp_micros\030\001 "
+    "\001(\003\022\034\n\024end_timestamp_micros\030\002 \001(\003\"\250\001\n\nVa"
+    "lueRange\022\037\n\025start_value_inclusive\030\001 \001(\014H"
+    "\000\022\037\n\025start_value_exclusive\030\002 \001(\014H\000\022\035\n\023en"
+    "d_value_inclusive\030\003 \001(\014H\001\022\035\n\023end_value_e"
+    "xclusive\030\004 \001(\014H\001B\r\n\013start_valueB\013\n\tend_v"
+    "alue\"\337\010\n\tRowFilter\0224\n\005chain\030\001 \001(\0132#.goog"
+    "le.bigtable.v1.RowFilter.ChainH\000\022>\n\ninte"
+    "rleave\030\002 \001(\0132(.google.bigtable.v1.RowFil"
+    "ter.InterleaveH\000\022<\n\tcondition\030\003 \001(\0132\'.go"
+    "ogle.bigtable.v1.RowFilter.ConditionH\000\022\016"
+    "\n\004sink\030\020 \001(\010H\000\022\031\n\017pass_all_filter\030\021 \001(\010H"
+    "\000\022\032\n\020block_all_filter\030\022 \001(\010H\000\022\036\n\024row_key"
+    "_regex_filter\030\004 \001(\014H\000\022\033\n\021row_sample_filt"
+    "er\030\016 \001(\001H\000\022\"\n\030family_name_regex_filter\030\005"
+    " \001(\tH\000\022\'\n\035column_qualifier_regex_filter\030"
+    "\006 \001(\014H\000\022>\n\023column_range_filter\030\007 \001(\0132\037.g"
+    "oogle.bigtable.v1.ColumnRangeH\000\022D\n\026times"
+    "tamp_range_filter\030\010 \001(\0132\".google.bigtabl"
+    "e.v1.TimestampRangeH\000\022\034\n\022value_regex_fil"
+    "ter\030\t \001(\014H\000\022<\n\022value_range_filter\030\017 \001(\0132"
+    "\036.google.bigtable.v1.ValueRangeH\000\022%\n\033cel"
+    "ls_per_row_offset_filter\030\n \001(\005H\000\022$\n\032cell"
+    "s_per_row_limit_filter\030\013 \001(\005H\000\022\'\n\035cells_"
+    "per_column_limit_filter\030\014 \001(\005H\000\022!\n\027strip"
+    "_value_transformer\030\r \001(\010H\000\022!\n\027apply_labe"
+    "l_transformer\030\023 \001(\tH\000\0327\n\005Chain\022.\n\007filter"
+    "s\030\001 \003(\0132\035.google.bigtable.v1.RowFilter\032<"
+    "\n\nInterleave\022.\n\007filters\030\001 \003(\0132\035.google.b"
+    "igtable.v1.RowFilter\032\255\001\n\tCondition\0227\n\020pr"
+    "edicate_filter\030\001 \001(\0132\035.google.bigtable.v"
+    "1.RowFilter\0222\n\013true_filter\030\002 \001(\0132\035.googl"
+    "e.bigtable.v1.RowFilter\0223\n\014false_filter\030"
+    "\003 \001(\0132\035.google.bigtable.v1.RowFilterB\010\n\006"
+    "filter\"\311\004\n\010Mutation\0228\n\010set_cell\030\001 \001(\0132$."
+    "google.bigtable.v1.Mutation.SetCellH\000\022K\n"
+    "\022delete_from_column\030\002 \001(\0132-.google.bigta"
+    "ble.v1.Mutation.DeleteFromColumnH\000\022K\n\022de"
+    "lete_from_family\030\003 \001(\0132-.google.bigtable"
+    ".v1.Mutation.DeleteFromFamilyH\000\022E\n\017delet"
+    "e_from_row\030\004 \001(\0132*.google.bigtable.v1.Mu"
+    "tation.DeleteFromRowH\000\032a\n\007SetCell\022\023\n\013fam"
+    "ily_name\030\001 \001(\t\022\030\n\020column_qualifier\030\002 \001(\014"
+    "\022\030\n\020timestamp_micros\030\003 \001(\003\022\r\n\005value\030\004 \001("
+    "\014\032y\n\020DeleteFromColumn\022\023\n\013family_name\030\001 \001"
+    "(\t\022\030\n\020column_qualifier\030\002 \001(\014\0226\n\ntime_ran"
+    "ge\030\003 \001(\0132\".google.bigtable.v1.TimestampR"
+    "ange\032\'\n\020DeleteFromFamily\022\023\n\013family_name\030"
+    "\001 \001(\t\032\017\n\rDeleteFromRowB\n\n\010mutation\"\200\001\n\023R"
+    "eadModifyWriteRule\022\023\n\013family_name\030\001 \001(\t\022"
+    "\030\n\020column_qualifier\030\002 \001(\014\022\026\n\014append_valu"
+    "e\030\003 \001(\014H\000\022\032\n\020increment_amount\030\004 \001(\003H\000B\006\n"
+    "\004ruleBi\n\026com.google.bigtable.v1B\021Bigtabl"
+    "eDataProtoP\001Z:google.golang.org/genproto"
+    "/googleapis/bigtable/v1;bigtableb\006proto3", 2880);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/bigtable/v1/bigtable_data.proto", &protobuf_RegisterTypes);
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto);
@@ -560,6 +723,16 @@ struct StaticDescriptorInitializer_google_2fbigtable_2fv1_2fbigtable_5fdata_2epr
   }
 } static_descriptor_initializer_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -569,22 +742,19 @@ const int Row::kFamiliesFieldNumber;
 
 Row::Row()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.Row)
 }
+
+void Row::InitAsDefaultInstance() {
+}
+
 Row::Row(const Row& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      families_(from.families_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.key().size() > 0) {
-    key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.key_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.Row)
 }
 
@@ -609,13 +779,15 @@ void Row::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Row::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return Row_descriptor_;
 }
 
 const Row& Row::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Row> Row_default_instance_;
 
 Row* Row::New(::google::protobuf::Arena* arena) const {
   Row* n = new Row;
@@ -627,8 +799,8 @@ Row* Row::New(::google::protobuf::Arena* arena) const {
 
 void Row::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.bigtable.v1.Row)
-  families_.Clear();
   key_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  families_.Clear();
 }
 
 bool Row::MergePartialFromCodedStream(
@@ -637,31 +809,36 @@ bool Row::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.Row)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // bytes key = 1;
+      // optional bytes key = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_key()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_families;
         break;
       }
 
       // repeated .google.bigtable.v1.Family families = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_families:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_families:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_families()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_loop_families;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -689,7 +866,7 @@ failure:
 void Row::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.v1.Row)
-  // bytes key = 1;
+  // optional bytes key = 1;
   if (this->key().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       1, this->key(), output);
@@ -708,7 +885,7 @@ void Row::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.v1.Row)
-  // bytes key = 1;
+  // optional bytes key = 1;
   if (this->key().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
@@ -730,6 +907,13 @@ size_t Row::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bigtable.v1.Row)
   size_t total_size = 0;
 
+  // optional bytes key = 1;
+  if (this->key().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::BytesSize(
+        this->key());
+  }
+
   // repeated .google.bigtable.v1.Family families = 2;
   {
     unsigned int count = this->families_size();
@@ -741,13 +925,6 @@ size_t Row::ByteSizeLong() const {
     }
   }
 
-  // bytes key = 1;
-  if (this->key().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->key());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -757,7 +934,7 @@ size_t Row::ByteSizeLong() const {
 
 void Row::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.Row)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Row* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Row>(
           &from);
@@ -766,14 +943,21 @@ void Row::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.Row)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Row::MergeFrom(const Row& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.Row)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Row::UnsafeMergeFrom(const Row& from) {
+  GOOGLE_DCHECK(&from != this);
   families_.MergeFrom(from.families_);
   if (from.key().size() > 0) {
 
@@ -792,10 +976,11 @@ void Row::CopyFrom(const Row& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.Row)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Row::IsInitialized() const {
+
   return true;
 }
 
@@ -804,26 +989,30 @@ void Row::Swap(Row* other) {
   InternalSwap(other);
 }
 void Row::InternalSwap(Row* other) {
-  families_.UnsafeArenaSwap(&other->families_);
   key_.Swap(&other->key_);
+  families_.UnsafeArenaSwap(&other->families_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Row::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Row_descriptor_;
+  metadata.reflection = Row_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Row
 
-// bytes key = 1;
+// optional bytes key = 1;
 void Row::clear_key() {
   key_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Row::key() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.Row.key)
-  return key_.GetNoArena();
+  return key_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Row::set_key(const ::std::string& value) {
   
@@ -891,6 +1080,9 @@ Row::families() const {
   return families_;
 }
 
+inline const Row* Row::internal_default_instance() {
+  return &Row_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -902,22 +1094,19 @@ const int Family::kColumnsFieldNumber;
 
 Family::Family()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.Family)
 }
+
+void Family::InitAsDefaultInstance() {
+}
+
 Family::Family(const Family& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      columns_(from.columns_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.Family)
 }
 
@@ -942,13 +1131,15 @@ void Family::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Family::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return Family_descriptor_;
 }
 
 const Family& Family::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Family> Family_default_instance_;
 
 Family* Family::New(::google::protobuf::Arena* arena) const {
   Family* n = new Family;
@@ -960,8 +1151,8 @@ Family* Family::New(::google::protobuf::Arena* arena) const {
 
 void Family::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.bigtable.v1.Family)
-  columns_.Clear();
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  columns_.Clear();
 }
 
 bool Family::MergePartialFromCodedStream(
@@ -970,13 +1161,13 @@ bool Family::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.Family)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -986,19 +1177,24 @@ bool Family::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_columns;
         break;
       }
 
       // repeated .google.bigtable.v1.Column columns = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_columns:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_columns:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_columns()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_loop_columns;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1026,7 +1222,7 @@ failure:
 void Family::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.v1.Family)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -1049,7 +1245,7 @@ void Family::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.v1.Family)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -1075,6 +1271,13 @@ size_t Family::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bigtable.v1.Family)
   size_t total_size = 0;
 
+  // optional string name = 1;
+  if (this->name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->name());
+  }
+
   // repeated .google.bigtable.v1.Column columns = 2;
   {
     unsigned int count = this->columns_size();
@@ -1086,13 +1289,6 @@ size_t Family::ByteSizeLong() const {
     }
   }
 
-  // string name = 1;
-  if (this->name().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->name());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -1102,7 +1298,7 @@ size_t Family::ByteSizeLong() const {
 
 void Family::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.Family)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Family* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Family>(
           &from);
@@ -1111,14 +1307,21 @@ void Family::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.Family)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Family::MergeFrom(const Family& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.Family)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Family::UnsafeMergeFrom(const Family& from) {
+  GOOGLE_DCHECK(&from != this);
   columns_.MergeFrom(from.columns_);
   if (from.name().size() > 0) {
 
@@ -1137,10 +1340,11 @@ void Family::CopyFrom(const Family& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.Family)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Family::IsInitialized() const {
+
   return true;
 }
 
@@ -1149,26 +1353,30 @@ void Family::Swap(Family* other) {
   InternalSwap(other);
 }
 void Family::InternalSwap(Family* other) {
-  columns_.UnsafeArenaSwap(&other->columns_);
   name_.Swap(&other->name_);
+  columns_.UnsafeArenaSwap(&other->columns_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Family::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Family_descriptor_;
+  metadata.reflection = Family_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Family
 
-// string name = 1;
+// optional string name = 1;
 void Family::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Family::name() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.Family.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Family::set_name(const ::std::string& value) {
   
@@ -1236,6 +1444,9 @@ Family::columns() const {
   return columns_;
 }
 
+inline const Family* Family::internal_default_instance() {
+  return &Family_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1247,22 +1458,19 @@ const int Column::kCellsFieldNumber;
 
 Column::Column()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.Column)
 }
+
+void Column::InitAsDefaultInstance() {
+}
+
 Column::Column(const Column& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      cells_(from.cells_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  qualifier_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.qualifier().size() > 0) {
-    qualifier_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.qualifier_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.Column)
 }
 
@@ -1287,13 +1495,15 @@ void Column::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Column::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return Column_descriptor_;
 }
 
 const Column& Column::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Column> Column_default_instance_;
 
 Column* Column::New(::google::protobuf::Arena* arena) const {
   Column* n = new Column;
@@ -1305,8 +1515,8 @@ Column* Column::New(::google::protobuf::Arena* arena) const {
 
 void Column::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.bigtable.v1.Column)
-  cells_.Clear();
   qualifier_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  cells_.Clear();
 }
 
 bool Column::MergePartialFromCodedStream(
@@ -1315,31 +1525,36 @@ bool Column::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.Column)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // bytes qualifier = 1;
+      // optional bytes qualifier = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_qualifier()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_cells;
         break;
       }
 
       // repeated .google.bigtable.v1.Cell cells = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_cells:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_cells:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_cells()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_loop_cells;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1367,7 +1582,7 @@ failure:
 void Column::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.v1.Column)
-  // bytes qualifier = 1;
+  // optional bytes qualifier = 1;
   if (this->qualifier().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       1, this->qualifier(), output);
@@ -1386,7 +1601,7 @@ void Column::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.v1.Column)
-  // bytes qualifier = 1;
+  // optional bytes qualifier = 1;
   if (this->qualifier().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
@@ -1408,6 +1623,13 @@ size_t Column::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bigtable.v1.Column)
   size_t total_size = 0;
 
+  // optional bytes qualifier = 1;
+  if (this->qualifier().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::BytesSize(
+        this->qualifier());
+  }
+
   // repeated .google.bigtable.v1.Cell cells = 2;
   {
     unsigned int count = this->cells_size();
@@ -1419,13 +1641,6 @@ size_t Column::ByteSizeLong() const {
     }
   }
 
-  // bytes qualifier = 1;
-  if (this->qualifier().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->qualifier());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -1435,7 +1650,7 @@ size_t Column::ByteSizeLong() const {
 
 void Column::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.Column)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Column* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Column>(
           &from);
@@ -1444,14 +1659,21 @@ void Column::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.Column)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Column::MergeFrom(const Column& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.Column)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Column::UnsafeMergeFrom(const Column& from) {
+  GOOGLE_DCHECK(&from != this);
   cells_.MergeFrom(from.cells_);
   if (from.qualifier().size() > 0) {
 
@@ -1470,10 +1692,11 @@ void Column::CopyFrom(const Column& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.Column)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Column::IsInitialized() const {
+
   return true;
 }
 
@@ -1482,26 +1705,30 @@ void Column::Swap(Column* other) {
   InternalSwap(other);
 }
 void Column::InternalSwap(Column* other) {
-  cells_.UnsafeArenaSwap(&other->cells_);
   qualifier_.Swap(&other->qualifier_);
+  cells_.UnsafeArenaSwap(&other->cells_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Column::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Column_descriptor_;
+  metadata.reflection = Column_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Column
 
-// bytes qualifier = 1;
+// optional bytes qualifier = 1;
 void Column::clear_qualifier() {
   qualifier_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Column::qualifier() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.Column.qualifier)
-  return qualifier_.GetNoArena();
+  return qualifier_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Column::set_qualifier(const ::std::string& value) {
   
@@ -1569,6 +1796,9 @@ Column::cells() const {
   return cells_;
 }
 
+inline const Column* Column::internal_default_instance() {
+  return &Column_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1581,23 +1811,19 @@ const int Cell::kLabelsFieldNumber;
 
 Cell::Cell()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.Cell)
 }
+
+void Cell::InitAsDefaultInstance() {
+}
+
 Cell::Cell(const Cell& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      labels_(from.labels_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.value().size() > 0) {
-    value_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.value_);
-  }
-  timestamp_micros_ = from.timestamp_micros_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.Cell)
 }
 
@@ -1623,13 +1849,15 @@ void Cell::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Cell::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return Cell_descriptor_;
 }
 
 const Cell& Cell::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Cell> Cell_default_instance_;
 
 Cell* Cell::New(::google::protobuf::Arena* arena) const {
   Cell* n = new Cell;
@@ -1641,9 +1869,9 @@ Cell* Cell::New(::google::protobuf::Arena* arena) const {
 
 void Cell::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.bigtable.v1.Cell)
-  labels_.Clear();
-  value_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   timestamp_micros_ = GOOGLE_LONGLONG(0);
+  value_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  labels_.Clear();
 }
 
 bool Cell::MergePartialFromCodedStream(
@@ -1652,13 +1880,13 @@ bool Cell::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.Cell)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 timestamp_micros = 1;
+      // optional int64 timestamp_micros = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -1666,23 +1894,27 @@ bool Cell::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_value;
         break;
       }
 
-      // bytes value = 2;
+      // optional bytes value = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_value:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_value()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_labels;
         break;
       }
 
       // repeated string labels = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_labels:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_labels()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1693,6 +1925,8 @@ bool Cell::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_labels;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1720,12 +1954,12 @@ failure:
 void Cell::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.v1.Cell)
-  // int64 timestamp_micros = 1;
+  // optional int64 timestamp_micros = 1;
   if (this->timestamp_micros() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->timestamp_micros(), output);
   }
 
-  // bytes value = 2;
+  // optional bytes value = 2;
   if (this->value().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       2, this->value(), output);
@@ -1748,12 +1982,12 @@ void Cell::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.v1.Cell)
-  // int64 timestamp_micros = 1;
+  // optional int64 timestamp_micros = 1;
   if (this->timestamp_micros() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->timestamp_micros(), target);
   }
 
-  // bytes value = 2;
+  // optional bytes value = 2;
   if (this->value().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
@@ -1778,26 +2012,26 @@ size_t Cell::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bigtable.v1.Cell)
   size_t total_size = 0;
 
-  // repeated string labels = 3;
-  total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->labels_size());
-  for (int i = 0; i < this->labels_size(); i++) {
-    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
-      this->labels(i));
+  // optional int64 timestamp_micros = 1;
+  if (this->timestamp_micros() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int64Size(
+        this->timestamp_micros());
   }
 
-  // bytes value = 2;
+  // optional bytes value = 2;
   if (this->value().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->value());
   }
 
-  // int64 timestamp_micros = 1;
-  if (this->timestamp_micros() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->timestamp_micros());
+  // repeated string labels = 3;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->labels_size());
+  for (int i = 0; i < this->labels_size(); i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->labels(i));
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -1809,7 +2043,7 @@ size_t Cell::ByteSizeLong() const {
 
 void Cell::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.Cell)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Cell* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Cell>(
           &from);
@@ -1818,21 +2052,28 @@ void Cell::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.Cell)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Cell::MergeFrom(const Cell& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.Cell)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  labels_.MergeFrom(from.labels_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Cell::UnsafeMergeFrom(const Cell& from) {
+  GOOGLE_DCHECK(&from != this);
+  labels_.UnsafeMergeFrom(from.labels_);
+  if (from.timestamp_micros() != 0) {
+    set_timestamp_micros(from.timestamp_micros());
+  }
   if (from.value().size() > 0) {
 
     value_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.value_);
-  }
-  if (from.timestamp_micros() != 0) {
-    set_timestamp_micros(from.timestamp_micros());
   }
 }
 
@@ -1847,10 +2088,11 @@ void Cell::CopyFrom(const Cell& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.Cell)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Cell::IsInitialized() const {
+
   return true;
 }
 
@@ -1859,21 +2101,25 @@ void Cell::Swap(Cell* other) {
   InternalSwap(other);
 }
 void Cell::InternalSwap(Cell* other) {
-  labels_.UnsafeArenaSwap(&other->labels_);
-  value_.Swap(&other->value_);
   std::swap(timestamp_micros_, other->timestamp_micros_);
+  value_.Swap(&other->value_);
+  labels_.UnsafeArenaSwap(&other->labels_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Cell::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Cell_descriptor_;
+  metadata.reflection = Cell_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Cell
 
-// int64 timestamp_micros = 1;
+// optional int64 timestamp_micros = 1;
 void Cell::clear_timestamp_micros() {
   timestamp_micros_ = GOOGLE_LONGLONG(0);
 }
@@ -1887,13 +2133,13 @@ void Cell::set_timestamp_micros(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.bigtable.v1.Cell.timestamp_micros)
 }
 
-// bytes value = 2;
+// optional bytes value = 2;
 void Cell::clear_value() {
   value_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Cell::value() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.Cell.value)
-  return value_.GetNoArena();
+  return value_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Cell::set_value(const ::std::string& value) {
   
@@ -1986,6 +2232,9 @@ Cell::mutable_labels() {
   return &labels_;
 }
 
+inline const Cell* Cell::internal_default_instance() {
+  return &Cell_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1997,25 +2246,19 @@ const int RowRange::kEndKeyFieldNumber;
 
 RowRange::RowRange()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.RowRange)
 }
+
+void RowRange::InitAsDefaultInstance() {
+}
+
 RowRange::RowRange(const RowRange& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  start_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.start_key().size() > 0) {
-    start_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.start_key_);
-  }
-  end_key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.end_key().size() > 0) {
-    end_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.end_key_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.RowRange)
 }
 
@@ -2042,13 +2285,15 @@ void RowRange::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* RowRange::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return RowRange_descriptor_;
 }
 
 const RowRange& RowRange::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<RowRange> RowRange_default_instance_;
 
 RowRange* RowRange::New(::google::protobuf::Arena* arena) const {
   RowRange* n = new RowRange;
@@ -2070,29 +2315,32 @@ bool RowRange::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.RowRange)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // bytes start_key = 2;
+      // optional bytes start_key = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_start_key()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_end_key;
         break;
       }
 
-      // bytes end_key = 3;
+      // optional bytes end_key = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_end_key:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_end_key()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2120,13 +2368,13 @@ failure:
 void RowRange::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.v1.RowRange)
-  // bytes start_key = 2;
+  // optional bytes start_key = 2;
   if (this->start_key().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       2, this->start_key(), output);
   }
 
-  // bytes end_key = 3;
+  // optional bytes end_key = 3;
   if (this->end_key().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       3, this->end_key(), output);
@@ -2139,14 +2387,14 @@ void RowRange::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.v1.RowRange)
-  // bytes start_key = 2;
+  // optional bytes start_key = 2;
   if (this->start_key().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         2, this->start_key(), target);
   }
 
-  // bytes end_key = 3;
+  // optional bytes end_key = 3;
   if (this->end_key().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
@@ -2161,14 +2409,14 @@ size_t RowRange::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bigtable.v1.RowRange)
   size_t total_size = 0;
 
-  // bytes start_key = 2;
+  // optional bytes start_key = 2;
   if (this->start_key().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->start_key());
   }
 
-  // bytes end_key = 3;
+  // optional bytes end_key = 3;
   if (this->end_key().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
@@ -2184,7 +2432,7 @@ size_t RowRange::ByteSizeLong() const {
 
 void RowRange::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.RowRange)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const RowRange* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const RowRange>(
           &from);
@@ -2193,14 +2441,21 @@ void RowRange::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.RowRange)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void RowRange::MergeFrom(const RowRange& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.RowRange)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void RowRange::UnsafeMergeFrom(const RowRange& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.start_key().size() > 0) {
 
     start_key_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.start_key_);
@@ -2222,10 +2477,11 @@ void RowRange::CopyFrom(const RowRange& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.RowRange)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool RowRange::IsInitialized() const {
+
   return true;
 }
 
@@ -2236,24 +2492,28 @@ void RowRange::Swap(RowRange* other) {
 void RowRange::InternalSwap(RowRange* other) {
   start_key_.Swap(&other->start_key_);
   end_key_.Swap(&other->end_key_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata RowRange::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = RowRange_descriptor_;
+  metadata.reflection = RowRange_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // RowRange
 
-// bytes start_key = 2;
+// optional bytes start_key = 2;
 void RowRange::clear_start_key() {
   start_key_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& RowRange::start_key() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.RowRange.start_key)
-  return start_key_.GetNoArena();
+  return start_key_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void RowRange::set_start_key(const ::std::string& value) {
   
@@ -2291,13 +2551,13 @@ void RowRange::set_allocated_start_key(::std::string* start_key) {
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowRange.start_key)
 }
 
-// bytes end_key = 3;
+// optional bytes end_key = 3;
 void RowRange::clear_end_key() {
   end_key_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& RowRange::end_key() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.RowRange.end_key)
-  return end_key_.GetNoArena();
+  return end_key_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void RowRange::set_end_key(const ::std::string& value) {
   
@@ -2335,6 +2595,9 @@ void RowRange::set_allocated_end_key(::std::string* end_key) {
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowRange.end_key)
 }
 
+inline const RowRange* RowRange::internal_default_instance() {
+  return &RowRange_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2346,19 +2609,19 @@ const int RowSet::kRowRangesFieldNumber;
 
 RowSet::RowSet()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.RowSet)
 }
+
+void RowSet::InitAsDefaultInstance() {
+}
+
 RowSet::RowSet(const RowSet& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      row_keys_(from.row_keys_),
-      row_ranges_(from.row_ranges_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.RowSet)
 }
 
@@ -2381,13 +2644,15 @@ void RowSet::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* RowSet::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
+  return RowSet_descriptor_;
 }
 
 const RowSet& RowSet::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<RowSet> RowSet_default_instance_;
 
 RowSet* RowSet::New(::google::protobuf::Arena* arena) const {
   RowSet* n = new RowSet;
@@ -2409,31 +2674,38 @@ bool RowSet::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.RowSet)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated bytes row_keys = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
+         parse_row_keys:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->add_row_keys()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_row_keys;
+        if (input->ExpectTag(18)) goto parse_row_ranges;
         break;
       }
 
       // repeated .google.bigtable.v1.RowRange row_ranges = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_row_ranges:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_row_ranges:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_row_ranges()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_loop_row_ranges;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2529,7 +2801,7 @@ size_t RowSet::ByteSizeLong() const {
 
 void RowSet::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.RowSet)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const RowSet* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const RowSet>(
           &from);
@@ -2538,15 +2810,22 @@ void RowSet::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.RowSet)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void RowSet::MergeFrom(const RowSet& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.RowSet)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  row_keys_.MergeFrom(from.row_keys_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void RowSet::UnsafeMergeFrom(const RowSet& from) {
+  GOOGLE_DCHECK(&from != this);
+  row_keys_.UnsafeMergeFrom(from.row_keys_);
   row_ranges_.MergeFrom(from.row_ranges_);
 }
 
@@ -2561,10 +2840,11 @@ void RowSet::CopyFrom(const RowSet& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.RowSet)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool RowSet::IsInitialized() const {
+
   return true;
 }
 
@@ -2575,12 +2855,16 @@ void RowSet::Swap(RowSet* other) {
 void RowSet::InternalSwap(RowSet* other) {
   row_keys_.UnsafeArenaSwap(&other->row_keys_);
   row_ranges_.UnsafeArenaSwap(&other->row_ranges_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata RowSet::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = RowSet_descriptor_;
+  metadata.reflection = RowSet_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -2671,6 +2955,9 @@ RowSet::row_ranges() const {
   return row_ranges_;
 }
 
+inline const RowSet* RowSet::internal_default_instance() {
+  return &RowSet_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -2685,49 +2972,23 @@ const int ColumnRange::kEndQualifierExclusiveFieldNumber;
 
 ColumnRange::ColumnRange()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.ColumnRange)
 }
+
+void ColumnRange::InitAsDefaultInstance() {
+  ColumnRange_default_oneof_instance_->start_qualifier_inclusive_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ColumnRange_default_oneof_instance_->start_qualifier_exclusive_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ColumnRange_default_oneof_instance_->end_qualifier_inclusive_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ColumnRange_default_oneof_instance_->end_qualifier_exclusive_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
 ColumnRange::ColumnRange(const ColumnRange& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  family_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.family_name().size() > 0) {
-    family_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.family_name_);
-  }
-  clear_has_start_qualifier();
-  switch (from.start_qualifier_case()) {
-    case kStartQualifierInclusive: {
-      set_start_qualifier_inclusive(from.start_qualifier_inclusive());
-      break;
-    }
-    case kStartQualifierExclusive: {
-      set_start_qualifier_exclusive(from.start_qualifier_exclusive());
-      break;
-    }
-    case START_QUALIFIER_NOT_SET: {
-      break;
-    }
-  }
-  clear_has_end_qualifier();
-  switch (from.end_qualifier_case()) {
-    case kEndQualifierInclusive: {
-      set_end_qualifier_inclusive(from.end_qualifier_inclusive());
-      break;
-    }
-    case kEndQualifierExclusive: {
-      set_end_qualifier_exclusive(from.end_qualifier_exclusive());
-      break;
-    }
-    case END_QUALIFIER_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.ColumnRange)
 }
 
@@ -2760,13 +3021,15 @@ void ColumnRange::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ColumnRange::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6].descriptor;
+  return ColumnRange_descriptor_;
 }
 
 const ColumnRange& ColumnRange::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ColumnRange> ColumnRange_default_instance_;
 
 ColumnRange* ColumnRange::New(::google::protobuf::Arena* arena) const {
   ColumnRange* n = new ColumnRange;
@@ -2826,13 +3089,13 @@ bool ColumnRange::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.ColumnRange)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string family_name = 1;
+      // optional string family_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_family_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -2842,50 +3105,59 @@ bool ColumnRange::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_start_qualifier_inclusive;
         break;
       }
 
-      // bytes start_qualifier_inclusive = 2;
+      // optional bytes start_qualifier_inclusive = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_start_qualifier_inclusive:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_start_qualifier_inclusive()));
         } else {
           goto handle_unusual;
         }
+        goto after_start_qualifier_exclusive;
         break;
       }
 
-      // bytes start_qualifier_exclusive = 3;
+      // optional bytes start_qualifier_exclusive = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_start_qualifier_exclusive()));
         } else {
           goto handle_unusual;
         }
+       after_start_qualifier_exclusive:
+        if (input->ExpectTag(34)) goto parse_end_qualifier_inclusive;
         break;
       }
 
-      // bytes end_qualifier_inclusive = 4;
+      // optional bytes end_qualifier_inclusive = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_end_qualifier_inclusive:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_end_qualifier_inclusive()));
         } else {
           goto handle_unusual;
         }
+        goto after_end_qualifier_exclusive;
         break;
       }
 
-      // bytes end_qualifier_exclusive = 5;
+      // optional bytes end_qualifier_exclusive = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_end_qualifier_exclusive()));
         } else {
           goto handle_unusual;
         }
+       after_end_qualifier_exclusive:
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -2913,7 +3185,7 @@ failure:
 void ColumnRange::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.v1.ColumnRange)
-  // string family_name = 1;
+  // optional string family_name = 1;
   if (this->family_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->family_name().data(), this->family_name().length(),
@@ -2923,25 +3195,25 @@ void ColumnRange::SerializeWithCachedSizes(
       1, this->family_name(), output);
   }
 
-  // bytes start_qualifier_inclusive = 2;
+  // optional bytes start_qualifier_inclusive = 2;
   if (has_start_qualifier_inclusive()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       2, this->start_qualifier_inclusive(), output);
   }
 
-  // bytes start_qualifier_exclusive = 3;
+  // optional bytes start_qualifier_exclusive = 3;
   if (has_start_qualifier_exclusive()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       3, this->start_qualifier_exclusive(), output);
   }
 
-  // bytes end_qualifier_inclusive = 4;
+  // optional bytes end_qualifier_inclusive = 4;
   if (has_end_qualifier_inclusive()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       4, this->end_qualifier_inclusive(), output);
   }
 
-  // bytes end_qualifier_exclusive = 5;
+  // optional bytes end_qualifier_exclusive = 5;
   if (has_end_qualifier_exclusive()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       5, this->end_qualifier_exclusive(), output);
@@ -2954,7 +3226,7 @@ void ColumnRange::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.v1.ColumnRange)
-  // string family_name = 1;
+  // optional string family_name = 1;
   if (this->family_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->family_name().data(), this->family_name().length(),
@@ -2965,28 +3237,28 @@ void ColumnRange::SerializeWithCachedSizes(
         1, this->family_name(), target);
   }
 
-  // bytes start_qualifier_inclusive = 2;
+  // optional bytes start_qualifier_inclusive = 2;
   if (has_start_qualifier_inclusive()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         2, this->start_qualifier_inclusive(), target);
   }
 
-  // bytes start_qualifier_exclusive = 3;
+  // optional bytes start_qualifier_exclusive = 3;
   if (has_start_qualifier_exclusive()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         3, this->start_qualifier_exclusive(), target);
   }
 
-  // bytes end_qualifier_inclusive = 4;
+  // optional bytes end_qualifier_inclusive = 4;
   if (has_end_qualifier_inclusive()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         4, this->end_qualifier_inclusive(), target);
   }
 
-  // bytes end_qualifier_exclusive = 5;
+  // optional bytes end_qualifier_exclusive = 5;
   if (has_end_qualifier_exclusive()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
@@ -3001,7 +3273,7 @@ size_t ColumnRange::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bigtable.v1.ColumnRange)
   size_t total_size = 0;
 
-  // string family_name = 1;
+  // optional string family_name = 1;
   if (this->family_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -3009,14 +3281,14 @@ size_t ColumnRange::ByteSizeLong() const {
   }
 
   switch (start_qualifier_case()) {
-    // bytes start_qualifier_inclusive = 2;
+    // optional bytes start_qualifier_inclusive = 2;
     case kStartQualifierInclusive: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->start_qualifier_inclusive());
       break;
     }
-    // bytes start_qualifier_exclusive = 3;
+    // optional bytes start_qualifier_exclusive = 3;
     case kStartQualifierExclusive: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
@@ -3028,14 +3300,14 @@ size_t ColumnRange::ByteSizeLong() const {
     }
   }
   switch (end_qualifier_case()) {
-    // bytes end_qualifier_inclusive = 4;
+    // optional bytes end_qualifier_inclusive = 4;
     case kEndQualifierInclusive: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->end_qualifier_inclusive());
       break;
     }
-    // bytes end_qualifier_exclusive = 5;
+    // optional bytes end_qualifier_exclusive = 5;
     case kEndQualifierExclusive: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
@@ -3055,7 +3327,7 @@ size_t ColumnRange::ByteSizeLong() const {
 
 void ColumnRange::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.ColumnRange)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ColumnRange* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ColumnRange>(
           &from);
@@ -3064,18 +3336,21 @@ void ColumnRange::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.ColumnRange)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ColumnRange::MergeFrom(const ColumnRange& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.ColumnRange)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.family_name().size() > 0) {
-
-    family_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.family_name_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
+}
+
+void ColumnRange::UnsafeMergeFrom(const ColumnRange& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.start_qualifier_case()) {
     case kStartQualifierInclusive: {
       set_start_qualifier_inclusive(from.start_qualifier_inclusive());
@@ -3102,6 +3377,10 @@ void ColumnRange::MergeFrom(const ColumnRange& from) {
       break;
     }
   }
+  if (from.family_name().size() > 0) {
+
+    family_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.family_name_);
+  }
 }
 
 void ColumnRange::CopyFrom(const ::google::protobuf::Message& from) {
@@ -3115,10 +3394,11 @@ void ColumnRange::CopyFrom(const ColumnRange& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.ColumnRange)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ColumnRange::IsInitialized() const {
+
   return true;
 }
 
@@ -3132,24 +3412,28 @@ void ColumnRange::InternalSwap(ColumnRange* other) {
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
   std::swap(end_qualifier_, other->end_qualifier_);
   std::swap(_oneof_case_[1], other->_oneof_case_[1]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ColumnRange::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[6];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ColumnRange_descriptor_;
+  metadata.reflection = ColumnRange_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ColumnRange
 
-// string family_name = 1;
+// optional string family_name = 1;
 void ColumnRange::clear_family_name() {
   family_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ColumnRange::family_name() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.ColumnRange.family_name)
-  return family_name_.GetNoArena();
+  return family_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ColumnRange::set_family_name(const ::std::string& value) {
   
@@ -3187,7 +3471,7 @@ void ColumnRange::set_allocated_family_name(::std::string* family_name) {
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.ColumnRange.family_name)
 }
 
-// bytes start_qualifier_inclusive = 2;
+// optional bytes start_qualifier_inclusive = 2;
 bool ColumnRange::has_start_qualifier_inclusive() const {
   return start_qualifier_case() == kStartQualifierInclusive;
 }
@@ -3203,7 +3487,7 @@ void ColumnRange::clear_start_qualifier_inclusive() {
 const ::std::string& ColumnRange::start_qualifier_inclusive() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.ColumnRange.start_qualifier_inclusive)
   if (has_start_qualifier_inclusive()) {
-    return start_qualifier_.start_qualifier_inclusive_.GetNoArena();
+    return start_qualifier_.start_qualifier_inclusive_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3268,7 +3552,7 @@ void ColumnRange::set_allocated_start_qualifier_inclusive(::std::string* start_q
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.ColumnRange.start_qualifier_inclusive)
 }
 
-// bytes start_qualifier_exclusive = 3;
+// optional bytes start_qualifier_exclusive = 3;
 bool ColumnRange::has_start_qualifier_exclusive() const {
   return start_qualifier_case() == kStartQualifierExclusive;
 }
@@ -3284,7 +3568,7 @@ void ColumnRange::clear_start_qualifier_exclusive() {
 const ::std::string& ColumnRange::start_qualifier_exclusive() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.ColumnRange.start_qualifier_exclusive)
   if (has_start_qualifier_exclusive()) {
-    return start_qualifier_.start_qualifier_exclusive_.GetNoArena();
+    return start_qualifier_.start_qualifier_exclusive_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3349,7 +3633,7 @@ void ColumnRange::set_allocated_start_qualifier_exclusive(::std::string* start_q
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.ColumnRange.start_qualifier_exclusive)
 }
 
-// bytes end_qualifier_inclusive = 4;
+// optional bytes end_qualifier_inclusive = 4;
 bool ColumnRange::has_end_qualifier_inclusive() const {
   return end_qualifier_case() == kEndQualifierInclusive;
 }
@@ -3365,7 +3649,7 @@ void ColumnRange::clear_end_qualifier_inclusive() {
 const ::std::string& ColumnRange::end_qualifier_inclusive() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.ColumnRange.end_qualifier_inclusive)
   if (has_end_qualifier_inclusive()) {
-    return end_qualifier_.end_qualifier_inclusive_.GetNoArena();
+    return end_qualifier_.end_qualifier_inclusive_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3430,7 +3714,7 @@ void ColumnRange::set_allocated_end_qualifier_inclusive(::std::string* end_quali
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.ColumnRange.end_qualifier_inclusive)
 }
 
-// bytes end_qualifier_exclusive = 5;
+// optional bytes end_qualifier_exclusive = 5;
 bool ColumnRange::has_end_qualifier_exclusive() const {
   return end_qualifier_case() == kEndQualifierExclusive;
 }
@@ -3446,7 +3730,7 @@ void ColumnRange::clear_end_qualifier_exclusive() {
 const ::std::string& ColumnRange::end_qualifier_exclusive() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.ColumnRange.end_qualifier_exclusive)
   if (has_end_qualifier_exclusive()) {
-    return end_qualifier_.end_qualifier_exclusive_.GetNoArena();
+    return end_qualifier_.end_qualifier_exclusive_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -3529,6 +3813,9 @@ ColumnRange::StartQualifierCase ColumnRange::start_qualifier_case() const {
 ColumnRange::EndQualifierCase ColumnRange::end_qualifier_case() const {
   return ColumnRange::EndQualifierCase(_oneof_case_[1]);
 }
+inline const ColumnRange* ColumnRange::internal_default_instance() {
+  return &ColumnRange_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3540,20 +3827,19 @@ const int TimestampRange::kEndTimestampMicrosFieldNumber;
 
 TimestampRange::TimestampRange()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.TimestampRange)
 }
+
+void TimestampRange::InitAsDefaultInstance() {
+}
+
 TimestampRange::TimestampRange(const TimestampRange& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::memcpy(&start_timestamp_micros_, &from.start_timestamp_micros_,
-    reinterpret_cast<char*>(&end_timestamp_micros_) -
-    reinterpret_cast<char*>(&start_timestamp_micros_) + sizeof(end_timestamp_micros_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.TimestampRange)
 }
 
@@ -3578,13 +3864,15 @@ void TimestampRange::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* TimestampRange::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7].descriptor;
+  return TimestampRange_descriptor_;
 }
 
 const TimestampRange& TimestampRange::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<TimestampRange> TimestampRange_default_instance_;
 
 TimestampRange* TimestampRange::New(::google::protobuf::Arena* arena) const {
   TimestampRange* n = new TimestampRange;
@@ -3596,8 +3884,27 @@ TimestampRange* TimestampRange::New(::google::protobuf::Arena* arena) const {
 
 void TimestampRange::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.bigtable.v1.TimestampRange)
-  ::memset(&start_timestamp_micros_, 0, reinterpret_cast<char*>(&end_timestamp_micros_) -
-    reinterpret_cast<char*>(&start_timestamp_micros_) + sizeof(end_timestamp_micros_));
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(TimestampRange, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<TimestampRange*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(start_timestamp_micros_, end_timestamp_micros_);
+
+#undef ZR_HELPER_
+#undef ZR_
+
 }
 
 bool TimestampRange::MergePartialFromCodedStream(
@@ -3606,13 +3913,13 @@ bool TimestampRange::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.TimestampRange)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 start_timestamp_micros = 1;
+      // optional int64 start_timestamp_micros = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -3620,12 +3927,14 @@ bool TimestampRange::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_end_timestamp_micros;
         break;
       }
 
-      // int64 end_timestamp_micros = 2;
+      // optional int64 end_timestamp_micros = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_end_timestamp_micros:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -3633,6 +3942,7 @@ bool TimestampRange::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -3660,12 +3970,12 @@ failure:
 void TimestampRange::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.v1.TimestampRange)
-  // int64 start_timestamp_micros = 1;
+  // optional int64 start_timestamp_micros = 1;
   if (this->start_timestamp_micros() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->start_timestamp_micros(), output);
   }
 
-  // int64 end_timestamp_micros = 2;
+  // optional int64 end_timestamp_micros = 2;
   if (this->end_timestamp_micros() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(2, this->end_timestamp_micros(), output);
   }
@@ -3677,12 +3987,12 @@ void TimestampRange::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.v1.TimestampRange)
-  // int64 start_timestamp_micros = 1;
+  // optional int64 start_timestamp_micros = 1;
   if (this->start_timestamp_micros() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->start_timestamp_micros(), target);
   }
 
-  // int64 end_timestamp_micros = 2;
+  // optional int64 end_timestamp_micros = 2;
   if (this->end_timestamp_micros() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(2, this->end_timestamp_micros(), target);
   }
@@ -3695,14 +4005,14 @@ size_t TimestampRange::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bigtable.v1.TimestampRange)
   size_t total_size = 0;
 
-  // int64 start_timestamp_micros = 1;
+  // optional int64 start_timestamp_micros = 1;
   if (this->start_timestamp_micros() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->start_timestamp_micros());
   }
 
-  // int64 end_timestamp_micros = 2;
+  // optional int64 end_timestamp_micros = 2;
   if (this->end_timestamp_micros() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
@@ -3718,7 +4028,7 @@ size_t TimestampRange::ByteSizeLong() const {
 
 void TimestampRange::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.TimestampRange)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const TimestampRange* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const TimestampRange>(
           &from);
@@ -3727,14 +4037,21 @@ void TimestampRange::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.TimestampRange)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void TimestampRange::MergeFrom(const TimestampRange& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.TimestampRange)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void TimestampRange::UnsafeMergeFrom(const TimestampRange& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.start_timestamp_micros() != 0) {
     set_start_timestamp_micros(from.start_timestamp_micros());
   }
@@ -3754,10 +4071,11 @@ void TimestampRange::CopyFrom(const TimestampRange& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.TimestampRange)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool TimestampRange::IsInitialized() const {
+
   return true;
 }
 
@@ -3768,18 +4086,22 @@ void TimestampRange::Swap(TimestampRange* other) {
 void TimestampRange::InternalSwap(TimestampRange* other) {
   std::swap(start_timestamp_micros_, other->start_timestamp_micros_);
   std::swap(end_timestamp_micros_, other->end_timestamp_micros_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata TimestampRange::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[7];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TimestampRange_descriptor_;
+  metadata.reflection = TimestampRange_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // TimestampRange
 
-// int64 start_timestamp_micros = 1;
+// optional int64 start_timestamp_micros = 1;
 void TimestampRange::clear_start_timestamp_micros() {
   start_timestamp_micros_ = GOOGLE_LONGLONG(0);
 }
@@ -3793,7 +4115,7 @@ void TimestampRange::set_start_timestamp_micros(::google::protobuf::int64 value)
   // @@protoc_insertion_point(field_set:google.bigtable.v1.TimestampRange.start_timestamp_micros)
 }
 
-// int64 end_timestamp_micros = 2;
+// optional int64 end_timestamp_micros = 2;
 void TimestampRange::clear_end_timestamp_micros() {
   end_timestamp_micros_ = GOOGLE_LONGLONG(0);
 }
@@ -3807,6 +4129,9 @@ void TimestampRange::set_end_timestamp_micros(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.bigtable.v1.TimestampRange.end_timestamp_micros)
 }
 
+inline const TimestampRange* TimestampRange::internal_default_instance() {
+  return &TimestampRange_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -3820,45 +4145,23 @@ const int ValueRange::kEndValueExclusiveFieldNumber;
 
 ValueRange::ValueRange()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.ValueRange)
 }
+
+void ValueRange::InitAsDefaultInstance() {
+  ValueRange_default_oneof_instance_->start_value_inclusive_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ValueRange_default_oneof_instance_->start_value_exclusive_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ValueRange_default_oneof_instance_->end_value_inclusive_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ValueRange_default_oneof_instance_->end_value_exclusive_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
 ValueRange::ValueRange(const ValueRange& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  clear_has_start_value();
-  switch (from.start_value_case()) {
-    case kStartValueInclusive: {
-      set_start_value_inclusive(from.start_value_inclusive());
-      break;
-    }
-    case kStartValueExclusive: {
-      set_start_value_exclusive(from.start_value_exclusive());
-      break;
-    }
-    case START_VALUE_NOT_SET: {
-      break;
-    }
-  }
-  clear_has_end_value();
-  switch (from.end_value_case()) {
-    case kEndValueInclusive: {
-      set_end_value_inclusive(from.end_value_inclusive());
-      break;
-    }
-    case kEndValueExclusive: {
-      set_end_value_exclusive(from.end_value_exclusive());
-      break;
-    }
-    case END_VALUE_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.ValueRange)
 }
 
@@ -3889,13 +4192,15 @@ void ValueRange::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ValueRange::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8].descriptor;
+  return ValueRange_descriptor_;
 }
 
 const ValueRange& ValueRange::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ValueRange> ValueRange_default_instance_;
 
 ValueRange* ValueRange::New(::google::protobuf::Arena* arena) const {
   ValueRange* n = new ValueRange;
@@ -3954,51 +4259,58 @@ bool ValueRange::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.ValueRange)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // bytes start_value_inclusive = 1;
+      // optional bytes start_value_inclusive = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_start_value_inclusive()));
         } else {
           goto handle_unusual;
         }
+        goto after_start_value_exclusive;
         break;
       }
 
-      // bytes start_value_exclusive = 2;
+      // optional bytes start_value_exclusive = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_start_value_exclusive()));
         } else {
           goto handle_unusual;
         }
+       after_start_value_exclusive:
+        if (input->ExpectTag(26)) goto parse_end_value_inclusive;
         break;
       }
 
-      // bytes end_value_inclusive = 3;
+      // optional bytes end_value_inclusive = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_end_value_inclusive:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_end_value_inclusive()));
         } else {
           goto handle_unusual;
         }
+        goto after_end_value_exclusive;
         break;
       }
 
-      // bytes end_value_exclusive = 4;
+      // optional bytes end_value_exclusive = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_end_value_exclusive()));
         } else {
           goto handle_unusual;
         }
+       after_end_value_exclusive:
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4026,25 +4338,25 @@ failure:
 void ValueRange::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.v1.ValueRange)
-  // bytes start_value_inclusive = 1;
+  // optional bytes start_value_inclusive = 1;
   if (has_start_value_inclusive()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       1, this->start_value_inclusive(), output);
   }
 
-  // bytes start_value_exclusive = 2;
+  // optional bytes start_value_exclusive = 2;
   if (has_start_value_exclusive()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       2, this->start_value_exclusive(), output);
   }
 
-  // bytes end_value_inclusive = 3;
+  // optional bytes end_value_inclusive = 3;
   if (has_end_value_inclusive()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       3, this->end_value_inclusive(), output);
   }
 
-  // bytes end_value_exclusive = 4;
+  // optional bytes end_value_exclusive = 4;
   if (has_end_value_exclusive()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       4, this->end_value_exclusive(), output);
@@ -4057,28 +4369,28 @@ void ValueRange::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.v1.ValueRange)
-  // bytes start_value_inclusive = 1;
+  // optional bytes start_value_inclusive = 1;
   if (has_start_value_inclusive()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         1, this->start_value_inclusive(), target);
   }
 
-  // bytes start_value_exclusive = 2;
+  // optional bytes start_value_exclusive = 2;
   if (has_start_value_exclusive()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         2, this->start_value_exclusive(), target);
   }
 
-  // bytes end_value_inclusive = 3;
+  // optional bytes end_value_inclusive = 3;
   if (has_end_value_inclusive()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         3, this->end_value_inclusive(), target);
   }
 
-  // bytes end_value_exclusive = 4;
+  // optional bytes end_value_exclusive = 4;
   if (has_end_value_exclusive()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
@@ -4094,14 +4406,14 @@ size_t ValueRange::ByteSizeLong() const {
   size_t total_size = 0;
 
   switch (start_value_case()) {
-    // bytes start_value_inclusive = 1;
+    // optional bytes start_value_inclusive = 1;
     case kStartValueInclusive: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->start_value_inclusive());
       break;
     }
-    // bytes start_value_exclusive = 2;
+    // optional bytes start_value_exclusive = 2;
     case kStartValueExclusive: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
@@ -4113,14 +4425,14 @@ size_t ValueRange::ByteSizeLong() const {
     }
   }
   switch (end_value_case()) {
-    // bytes end_value_inclusive = 3;
+    // optional bytes end_value_inclusive = 3;
     case kEndValueInclusive: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->end_value_inclusive());
       break;
     }
-    // bytes end_value_exclusive = 4;
+    // optional bytes end_value_exclusive = 4;
     case kEndValueExclusive: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
@@ -4140,7 +4452,7 @@ size_t ValueRange::ByteSizeLong() const {
 
 void ValueRange::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.ValueRange)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ValueRange* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ValueRange>(
           &from);
@@ -4149,14 +4461,21 @@ void ValueRange::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.ValueRange)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ValueRange::MergeFrom(const ValueRange& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.ValueRange)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ValueRange::UnsafeMergeFrom(const ValueRange& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.start_value_case()) {
     case kStartValueInclusive: {
       set_start_value_inclusive(from.start_value_inclusive());
@@ -4196,10 +4515,11 @@ void ValueRange::CopyFrom(const ValueRange& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.ValueRange)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ValueRange::IsInitialized() const {
+
   return true;
 }
 
@@ -4212,18 +4532,22 @@ void ValueRange::InternalSwap(ValueRange* other) {
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
   std::swap(end_value_, other->end_value_);
   std::swap(_oneof_case_[1], other->_oneof_case_[1]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ValueRange::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[8];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ValueRange_descriptor_;
+  metadata.reflection = ValueRange_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ValueRange
 
-// bytes start_value_inclusive = 1;
+// optional bytes start_value_inclusive = 1;
 bool ValueRange::has_start_value_inclusive() const {
   return start_value_case() == kStartValueInclusive;
 }
@@ -4239,7 +4563,7 @@ void ValueRange::clear_start_value_inclusive() {
 const ::std::string& ValueRange::start_value_inclusive() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.ValueRange.start_value_inclusive)
   if (has_start_value_inclusive()) {
-    return start_value_.start_value_inclusive_.GetNoArena();
+    return start_value_.start_value_inclusive_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -4304,7 +4628,7 @@ void ValueRange::set_allocated_start_value_inclusive(::std::string* start_value_
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.ValueRange.start_value_inclusive)
 }
 
-// bytes start_value_exclusive = 2;
+// optional bytes start_value_exclusive = 2;
 bool ValueRange::has_start_value_exclusive() const {
   return start_value_case() == kStartValueExclusive;
 }
@@ -4320,7 +4644,7 @@ void ValueRange::clear_start_value_exclusive() {
 const ::std::string& ValueRange::start_value_exclusive() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.ValueRange.start_value_exclusive)
   if (has_start_value_exclusive()) {
-    return start_value_.start_value_exclusive_.GetNoArena();
+    return start_value_.start_value_exclusive_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -4385,7 +4709,7 @@ void ValueRange::set_allocated_start_value_exclusive(::std::string* start_value_
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.ValueRange.start_value_exclusive)
 }
 
-// bytes end_value_inclusive = 3;
+// optional bytes end_value_inclusive = 3;
 bool ValueRange::has_end_value_inclusive() const {
   return end_value_case() == kEndValueInclusive;
 }
@@ -4401,7 +4725,7 @@ void ValueRange::clear_end_value_inclusive() {
 const ::std::string& ValueRange::end_value_inclusive() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.ValueRange.end_value_inclusive)
   if (has_end_value_inclusive()) {
-    return end_value_.end_value_inclusive_.GetNoArena();
+    return end_value_.end_value_inclusive_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -4466,7 +4790,7 @@ void ValueRange::set_allocated_end_value_inclusive(::std::string* end_value_incl
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.ValueRange.end_value_inclusive)
 }
 
-// bytes end_value_exclusive = 4;
+// optional bytes end_value_exclusive = 4;
 bool ValueRange::has_end_value_exclusive() const {
   return end_value_case() == kEndValueExclusive;
 }
@@ -4482,7 +4806,7 @@ void ValueRange::clear_end_value_exclusive() {
 const ::std::string& ValueRange::end_value_exclusive() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.ValueRange.end_value_exclusive)
   if (has_end_value_exclusive()) {
-    return end_value_.end_value_exclusive_.GetNoArena();
+    return end_value_.end_value_exclusive_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -4565,6 +4889,9 @@ ValueRange::StartValueCase ValueRange::start_value_case() const {
 ValueRange::EndValueCase ValueRange::end_value_case() const {
   return ValueRange::EndValueCase(_oneof_case_[1]);
 }
+inline const ValueRange* ValueRange::internal_default_instance() {
+  return &ValueRange_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -4575,18 +4902,19 @@ const int RowFilter_Chain::kFiltersFieldNumber;
 
 RowFilter_Chain::RowFilter_Chain()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.RowFilter.Chain)
 }
+
+void RowFilter_Chain::InitAsDefaultInstance() {
+}
+
 RowFilter_Chain::RowFilter_Chain(const RowFilter_Chain& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      filters_(from.filters_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.RowFilter.Chain)
 }
 
@@ -4609,13 +4937,15 @@ void RowFilter_Chain::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* RowFilter_Chain::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9].descriptor;
+  return RowFilter_Chain_descriptor_;
 }
 
 const RowFilter_Chain& RowFilter_Chain::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<RowFilter_Chain> RowFilter_Chain_default_instance_;
 
 RowFilter_Chain* RowFilter_Chain::New(::google::protobuf::Arena* arena) const {
   RowFilter_Chain* n = new RowFilter_Chain;
@@ -4636,20 +4966,23 @@ bool RowFilter_Chain::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.RowFilter.Chain)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.bigtable.v1.RowFilter filters = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_filters:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_filters()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_filters;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4725,7 +5058,7 @@ size_t RowFilter_Chain::ByteSizeLong() const {
 
 void RowFilter_Chain::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.RowFilter.Chain)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const RowFilter_Chain* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const RowFilter_Chain>(
           &from);
@@ -4734,14 +5067,21 @@ void RowFilter_Chain::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.RowFilter.Chain)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void RowFilter_Chain::MergeFrom(const RowFilter_Chain& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.RowFilter.Chain)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void RowFilter_Chain::UnsafeMergeFrom(const RowFilter_Chain& from) {
+  GOOGLE_DCHECK(&from != this);
   filters_.MergeFrom(from.filters_);
 }
 
@@ -4756,10 +5096,11 @@ void RowFilter_Chain::CopyFrom(const RowFilter_Chain& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.RowFilter.Chain)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool RowFilter_Chain::IsInitialized() const {
+
   return true;
 }
 
@@ -4769,50 +5110,20 @@ void RowFilter_Chain::Swap(RowFilter_Chain* other) {
 }
 void RowFilter_Chain::InternalSwap(RowFilter_Chain* other) {
   filters_.UnsafeArenaSwap(&other->filters_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata RowFilter_Chain::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[9];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = RowFilter_Chain_descriptor_;
+  metadata.reflection = RowFilter_Chain_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// RowFilter_Chain
 
-// repeated .google.bigtable.v1.RowFilter filters = 1;
-int RowFilter_Chain::filters_size() const {
-  return filters_.size();
-}
-void RowFilter_Chain::clear_filters() {
-  filters_.Clear();
-}
-const ::google::bigtable::v1::RowFilter& RowFilter_Chain::filters(int index) const {
-  // @@protoc_insertion_point(field_get:google.bigtable.v1.RowFilter.Chain.filters)
-  return filters_.Get(index);
-}
-::google::bigtable::v1::RowFilter* RowFilter_Chain::mutable_filters(int index) {
-  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.RowFilter.Chain.filters)
-  return filters_.Mutable(index);
-}
-::google::bigtable::v1::RowFilter* RowFilter_Chain::add_filters() {
-  // @@protoc_insertion_point(field_add:google.bigtable.v1.RowFilter.Chain.filters)
-  return filters_.Add();
-}
-::google::protobuf::RepeatedPtrField< ::google::bigtable::v1::RowFilter >*
-RowFilter_Chain::mutable_filters() {
-  // @@protoc_insertion_point(field_mutable_list:google.bigtable.v1.RowFilter.Chain.filters)
-  return &filters_;
-}
-const ::google::protobuf::RepeatedPtrField< ::google::bigtable::v1::RowFilter >&
-RowFilter_Chain::filters() const {
-  // @@protoc_insertion_point(field_list:google.bigtable.v1.RowFilter.Chain.filters)
-  return filters_;
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
+// -------------------------------------------------------------------
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int RowFilter_Interleave::kFiltersFieldNumber;
@@ -4820,18 +5131,19 @@ const int RowFilter_Interleave::kFiltersFieldNumber;
 
 RowFilter_Interleave::RowFilter_Interleave()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.RowFilter.Interleave)
 }
+
+void RowFilter_Interleave::InitAsDefaultInstance() {
+}
+
 RowFilter_Interleave::RowFilter_Interleave(const RowFilter_Interleave& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      filters_(from.filters_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.RowFilter.Interleave)
 }
 
@@ -4854,13 +5166,15 @@ void RowFilter_Interleave::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* RowFilter_Interleave::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10].descriptor;
+  return RowFilter_Interleave_descriptor_;
 }
 
 const RowFilter_Interleave& RowFilter_Interleave::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<RowFilter_Interleave> RowFilter_Interleave_default_instance_;
 
 RowFilter_Interleave* RowFilter_Interleave::New(::google::protobuf::Arena* arena) const {
   RowFilter_Interleave* n = new RowFilter_Interleave;
@@ -4881,20 +5195,23 @@ bool RowFilter_Interleave::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.RowFilter.Interleave)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.bigtable.v1.RowFilter filters = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_filters:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_filters()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_filters;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -4970,7 +5287,7 @@ size_t RowFilter_Interleave::ByteSizeLong() const {
 
 void RowFilter_Interleave::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.RowFilter.Interleave)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const RowFilter_Interleave* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const RowFilter_Interleave>(
           &from);
@@ -4979,14 +5296,21 @@ void RowFilter_Interleave::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.RowFilter.Interleave)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void RowFilter_Interleave::MergeFrom(const RowFilter_Interleave& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.RowFilter.Interleave)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void RowFilter_Interleave::UnsafeMergeFrom(const RowFilter_Interleave& from) {
+  GOOGLE_DCHECK(&from != this);
   filters_.MergeFrom(from.filters_);
 }
 
@@ -5001,10 +5325,11 @@ void RowFilter_Interleave::CopyFrom(const RowFilter_Interleave& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.RowFilter.Interleave)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool RowFilter_Interleave::IsInitialized() const {
+
   return true;
 }
 
@@ -5014,50 +5339,20 @@ void RowFilter_Interleave::Swap(RowFilter_Interleave* other) {
 }
 void RowFilter_Interleave::InternalSwap(RowFilter_Interleave* other) {
   filters_.UnsafeArenaSwap(&other->filters_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata RowFilter_Interleave::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[10];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = RowFilter_Interleave_descriptor_;
+  metadata.reflection = RowFilter_Interleave_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// RowFilter_Interleave
 
-// repeated .google.bigtable.v1.RowFilter filters = 1;
-int RowFilter_Interleave::filters_size() const {
-  return filters_.size();
-}
-void RowFilter_Interleave::clear_filters() {
-  filters_.Clear();
-}
-const ::google::bigtable::v1::RowFilter& RowFilter_Interleave::filters(int index) const {
-  // @@protoc_insertion_point(field_get:google.bigtable.v1.RowFilter.Interleave.filters)
-  return filters_.Get(index);
-}
-::google::bigtable::v1::RowFilter* RowFilter_Interleave::mutable_filters(int index) {
-  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.RowFilter.Interleave.filters)
-  return filters_.Mutable(index);
-}
-::google::bigtable::v1::RowFilter* RowFilter_Interleave::add_filters() {
-  // @@protoc_insertion_point(field_add:google.bigtable.v1.RowFilter.Interleave.filters)
-  return filters_.Add();
-}
-::google::protobuf::RepeatedPtrField< ::google::bigtable::v1::RowFilter >*
-RowFilter_Interleave::mutable_filters() {
-  // @@protoc_insertion_point(field_mutable_list:google.bigtable.v1.RowFilter.Interleave.filters)
-  return &filters_;
-}
-const ::google::protobuf::RepeatedPtrField< ::google::bigtable::v1::RowFilter >&
-RowFilter_Interleave::filters() const {
-  // @@protoc_insertion_point(field_list:google.bigtable.v1.RowFilter.Interleave.filters)
-  return filters_;
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
+// -------------------------------------------------------------------
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int RowFilter_Condition::kPredicateFilterFieldNumber;
@@ -5067,38 +5362,32 @@ const int RowFilter_Condition::kFalseFilterFieldNumber;
 
 RowFilter_Condition::RowFilter_Condition()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.RowFilter.Condition)
 }
+
+void RowFilter_Condition::InitAsDefaultInstance() {
+  predicate_filter_ = const_cast< ::google::bigtable::v1::RowFilter*>(
+      ::google::bigtable::v1::RowFilter::internal_default_instance());
+  true_filter_ = const_cast< ::google::bigtable::v1::RowFilter*>(
+      ::google::bigtable::v1::RowFilter::internal_default_instance());
+  false_filter_ = const_cast< ::google::bigtable::v1::RowFilter*>(
+      ::google::bigtable::v1::RowFilter::internal_default_instance());
+}
+
 RowFilter_Condition::RowFilter_Condition(const RowFilter_Condition& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_predicate_filter()) {
-    predicate_filter_ = new ::google::bigtable::v1::RowFilter(*from.predicate_filter_);
-  } else {
-    predicate_filter_ = NULL;
-  }
-  if (from.has_true_filter()) {
-    true_filter_ = new ::google::bigtable::v1::RowFilter(*from.true_filter_);
-  } else {
-    true_filter_ = NULL;
-  }
-  if (from.has_false_filter()) {
-    false_filter_ = new ::google::bigtable::v1::RowFilter(*from.false_filter_);
-  } else {
-    false_filter_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.RowFilter.Condition)
 }
 
 void RowFilter_Condition::SharedCtor() {
-  ::memset(&predicate_filter_, 0, reinterpret_cast<char*>(&false_filter_) -
-    reinterpret_cast<char*>(&predicate_filter_) + sizeof(false_filter_));
+  predicate_filter_ = NULL;
+  true_filter_ = NULL;
+  false_filter_ = NULL;
   _cached_size_ = 0;
 }
 
@@ -5108,13 +5397,9 @@ RowFilter_Condition::~RowFilter_Condition() {
 }
 
 void RowFilter_Condition::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &RowFilter_Condition_default_instance_.get()) {
     delete predicate_filter_;
-  }
-  if (this != internal_default_instance()) {
     delete true_filter_;
-  }
-  if (this != internal_default_instance()) {
     delete false_filter_;
   }
 }
@@ -5126,13 +5411,15 @@ void RowFilter_Condition::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* RowFilter_Condition::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11].descriptor;
+  return RowFilter_Condition_descriptor_;
 }
 
 const RowFilter_Condition& RowFilter_Condition::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<RowFilter_Condition> RowFilter_Condition_default_instance_;
 
 RowFilter_Condition* RowFilter_Condition::New(::google::protobuf::Arena* arena) const {
   RowFilter_Condition* n = new RowFilter_Condition;
@@ -5144,17 +5431,11 @@ RowFilter_Condition* RowFilter_Condition::New(::google::protobuf::Arena* arena) 
 
 void RowFilter_Condition::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.bigtable.v1.RowFilter.Condition)
-  if (GetArenaNoVirtual() == NULL && predicate_filter_ != NULL) {
-    delete predicate_filter_;
-  }
+  if (GetArenaNoVirtual() == NULL && predicate_filter_ != NULL) delete predicate_filter_;
   predicate_filter_ = NULL;
-  if (GetArenaNoVirtual() == NULL && true_filter_ != NULL) {
-    delete true_filter_;
-  }
+  if (GetArenaNoVirtual() == NULL && true_filter_ != NULL) delete true_filter_;
   true_filter_ = NULL;
-  if (GetArenaNoVirtual() == NULL && false_filter_ != NULL) {
-    delete false_filter_;
-  }
+  if (GetArenaNoVirtual() == NULL && false_filter_ != NULL) delete false_filter_;
   false_filter_ = NULL;
 }
 
@@ -5164,40 +5445,45 @@ bool RowFilter_Condition::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.RowFilter.Condition)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.bigtable.v1.RowFilter predicate_filter = 1;
+      // optional .google.bigtable.v1.RowFilter predicate_filter = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_predicate_filter()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_true_filter;
         break;
       }
 
-      // .google.bigtable.v1.RowFilter true_filter = 2;
+      // optional .google.bigtable.v1.RowFilter true_filter = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_true_filter:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_true_filter()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_false_filter;
         break;
       }
 
-      // .google.bigtable.v1.RowFilter false_filter = 3;
+      // optional .google.bigtable.v1.RowFilter false_filter = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_false_filter:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_false_filter()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -5225,19 +5511,19 @@ failure:
 void RowFilter_Condition::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.v1.RowFilter.Condition)
-  // .google.bigtable.v1.RowFilter predicate_filter = 1;
+  // optional .google.bigtable.v1.RowFilter predicate_filter = 1;
   if (this->has_predicate_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->predicate_filter_, output);
   }
 
-  // .google.bigtable.v1.RowFilter true_filter = 2;
+  // optional .google.bigtable.v1.RowFilter true_filter = 2;
   if (this->has_true_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->true_filter_, output);
   }
 
-  // .google.bigtable.v1.RowFilter false_filter = 3;
+  // optional .google.bigtable.v1.RowFilter false_filter = 3;
   if (this->has_false_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *this->false_filter_, output);
@@ -5250,21 +5536,21 @@ void RowFilter_Condition::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.v1.RowFilter.Condition)
-  // .google.bigtable.v1.RowFilter predicate_filter = 1;
+  // optional .google.bigtable.v1.RowFilter predicate_filter = 1;
   if (this->has_predicate_filter()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->predicate_filter_, false, target);
   }
 
-  // .google.bigtable.v1.RowFilter true_filter = 2;
+  // optional .google.bigtable.v1.RowFilter true_filter = 2;
   if (this->has_true_filter()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *this->true_filter_, false, target);
   }
 
-  // .google.bigtable.v1.RowFilter false_filter = 3;
+  // optional .google.bigtable.v1.RowFilter false_filter = 3;
   if (this->has_false_filter()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -5279,21 +5565,21 @@ size_t RowFilter_Condition::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bigtable.v1.RowFilter.Condition)
   size_t total_size = 0;
 
-  // .google.bigtable.v1.RowFilter predicate_filter = 1;
+  // optional .google.bigtable.v1.RowFilter predicate_filter = 1;
   if (this->has_predicate_filter()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->predicate_filter_);
   }
 
-  // .google.bigtable.v1.RowFilter true_filter = 2;
+  // optional .google.bigtable.v1.RowFilter true_filter = 2;
   if (this->has_true_filter()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->true_filter_);
   }
 
-  // .google.bigtable.v1.RowFilter false_filter = 3;
+  // optional .google.bigtable.v1.RowFilter false_filter = 3;
   if (this->has_false_filter()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -5309,7 +5595,7 @@ size_t RowFilter_Condition::ByteSizeLong() const {
 
 void RowFilter_Condition::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.RowFilter.Condition)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const RowFilter_Condition* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const RowFilter_Condition>(
           &from);
@@ -5318,14 +5604,21 @@ void RowFilter_Condition::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.RowFilter.Condition)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void RowFilter_Condition::MergeFrom(const RowFilter_Condition& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.RowFilter.Condition)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void RowFilter_Condition::UnsafeMergeFrom(const RowFilter_Condition& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_predicate_filter()) {
     mutable_predicate_filter()->::google::bigtable::v1::RowFilter::MergeFrom(from.predicate_filter());
   }
@@ -5348,10 +5641,11 @@ void RowFilter_Condition::CopyFrom(const RowFilter_Condition& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.RowFilter.Condition)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool RowFilter_Condition::IsInitialized() const {
+
   return true;
 }
 
@@ -5363,137 +5657,20 @@ void RowFilter_Condition::InternalSwap(RowFilter_Condition* other) {
   std::swap(predicate_filter_, other->predicate_filter_);
   std::swap(true_filter_, other->true_filter_);
   std::swap(false_filter_, other->false_filter_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata RowFilter_Condition::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[11];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = RowFilter_Condition_descriptor_;
+  metadata.reflection = RowFilter_Condition_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// RowFilter_Condition
 
-// .google.bigtable.v1.RowFilter predicate_filter = 1;
-bool RowFilter_Condition::has_predicate_filter() const {
-  return this != internal_default_instance() && predicate_filter_ != NULL;
-}
-void RowFilter_Condition::clear_predicate_filter() {
-  if (GetArenaNoVirtual() == NULL && predicate_filter_ != NULL) delete predicate_filter_;
-  predicate_filter_ = NULL;
-}
-const ::google::bigtable::v1::RowFilter& RowFilter_Condition::predicate_filter() const {
-  // @@protoc_insertion_point(field_get:google.bigtable.v1.RowFilter.Condition.predicate_filter)
-  return predicate_filter_ != NULL ? *predicate_filter_
-                         : *::google::bigtable::v1::RowFilter::internal_default_instance();
-}
-::google::bigtable::v1::RowFilter* RowFilter_Condition::mutable_predicate_filter() {
-  
-  if (predicate_filter_ == NULL) {
-    predicate_filter_ = new ::google::bigtable::v1::RowFilter;
-  }
-  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.RowFilter.Condition.predicate_filter)
-  return predicate_filter_;
-}
-::google::bigtable::v1::RowFilter* RowFilter_Condition::release_predicate_filter() {
-  // @@protoc_insertion_point(field_release:google.bigtable.v1.RowFilter.Condition.predicate_filter)
-  
-  ::google::bigtable::v1::RowFilter* temp = predicate_filter_;
-  predicate_filter_ = NULL;
-  return temp;
-}
-void RowFilter_Condition::set_allocated_predicate_filter(::google::bigtable::v1::RowFilter* predicate_filter) {
-  delete predicate_filter_;
-  predicate_filter_ = predicate_filter;
-  if (predicate_filter) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowFilter.Condition.predicate_filter)
-}
-
-// .google.bigtable.v1.RowFilter true_filter = 2;
-bool RowFilter_Condition::has_true_filter() const {
-  return this != internal_default_instance() && true_filter_ != NULL;
-}
-void RowFilter_Condition::clear_true_filter() {
-  if (GetArenaNoVirtual() == NULL && true_filter_ != NULL) delete true_filter_;
-  true_filter_ = NULL;
-}
-const ::google::bigtable::v1::RowFilter& RowFilter_Condition::true_filter() const {
-  // @@protoc_insertion_point(field_get:google.bigtable.v1.RowFilter.Condition.true_filter)
-  return true_filter_ != NULL ? *true_filter_
-                         : *::google::bigtable::v1::RowFilter::internal_default_instance();
-}
-::google::bigtable::v1::RowFilter* RowFilter_Condition::mutable_true_filter() {
-  
-  if (true_filter_ == NULL) {
-    true_filter_ = new ::google::bigtable::v1::RowFilter;
-  }
-  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.RowFilter.Condition.true_filter)
-  return true_filter_;
-}
-::google::bigtable::v1::RowFilter* RowFilter_Condition::release_true_filter() {
-  // @@protoc_insertion_point(field_release:google.bigtable.v1.RowFilter.Condition.true_filter)
-  
-  ::google::bigtable::v1::RowFilter* temp = true_filter_;
-  true_filter_ = NULL;
-  return temp;
-}
-void RowFilter_Condition::set_allocated_true_filter(::google::bigtable::v1::RowFilter* true_filter) {
-  delete true_filter_;
-  true_filter_ = true_filter;
-  if (true_filter) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowFilter.Condition.true_filter)
-}
-
-// .google.bigtable.v1.RowFilter false_filter = 3;
-bool RowFilter_Condition::has_false_filter() const {
-  return this != internal_default_instance() && false_filter_ != NULL;
-}
-void RowFilter_Condition::clear_false_filter() {
-  if (GetArenaNoVirtual() == NULL && false_filter_ != NULL) delete false_filter_;
-  false_filter_ = NULL;
-}
-const ::google::bigtable::v1::RowFilter& RowFilter_Condition::false_filter() const {
-  // @@protoc_insertion_point(field_get:google.bigtable.v1.RowFilter.Condition.false_filter)
-  return false_filter_ != NULL ? *false_filter_
-                         : *::google::bigtable::v1::RowFilter::internal_default_instance();
-}
-::google::bigtable::v1::RowFilter* RowFilter_Condition::mutable_false_filter() {
-  
-  if (false_filter_ == NULL) {
-    false_filter_ = new ::google::bigtable::v1::RowFilter;
-  }
-  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.RowFilter.Condition.false_filter)
-  return false_filter_;
-}
-::google::bigtable::v1::RowFilter* RowFilter_Condition::release_false_filter() {
-  // @@protoc_insertion_point(field_release:google.bigtable.v1.RowFilter.Condition.false_filter)
-  
-  ::google::bigtable::v1::RowFilter* temp = false_filter_;
-  false_filter_ = NULL;
-  return temp;
-}
-void RowFilter_Condition::set_allocated_false_filter(::google::bigtable::v1::RowFilter* false_filter) {
-  delete false_filter_;
-  false_filter_ = false_filter;
-  if (false_filter) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowFilter.Condition.false_filter)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
+// -------------------------------------------------------------------
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int RowFilter::kChainFieldNumber;
@@ -5519,99 +5696,44 @@ const int RowFilter::kApplyLabelTransformerFieldNumber;
 
 RowFilter::RowFilter()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.RowFilter)
 }
+
+void RowFilter::InitAsDefaultInstance() {
+  RowFilter_default_oneof_instance_->chain_ = const_cast< ::google::bigtable::v1::RowFilter_Chain*>(
+      ::google::bigtable::v1::RowFilter_Chain::internal_default_instance());
+  RowFilter_default_oneof_instance_->interleave_ = const_cast< ::google::bigtable::v1::RowFilter_Interleave*>(
+      ::google::bigtable::v1::RowFilter_Interleave::internal_default_instance());
+  RowFilter_default_oneof_instance_->condition_ = const_cast< ::google::bigtable::v1::RowFilter_Condition*>(
+      ::google::bigtable::v1::RowFilter_Condition::internal_default_instance());
+  RowFilter_default_oneof_instance_->sink_ = false;
+  RowFilter_default_oneof_instance_->pass_all_filter_ = false;
+  RowFilter_default_oneof_instance_->block_all_filter_ = false;
+  RowFilter_default_oneof_instance_->row_key_regex_filter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  RowFilter_default_oneof_instance_->row_sample_filter_ = 0;
+  RowFilter_default_oneof_instance_->family_name_regex_filter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  RowFilter_default_oneof_instance_->column_qualifier_regex_filter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  RowFilter_default_oneof_instance_->column_range_filter_ = const_cast< ::google::bigtable::v1::ColumnRange*>(
+      ::google::bigtable::v1::ColumnRange::internal_default_instance());
+  RowFilter_default_oneof_instance_->timestamp_range_filter_ = const_cast< ::google::bigtable::v1::TimestampRange*>(
+      ::google::bigtable::v1::TimestampRange::internal_default_instance());
+  RowFilter_default_oneof_instance_->value_regex_filter_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  RowFilter_default_oneof_instance_->value_range_filter_ = const_cast< ::google::bigtable::v1::ValueRange*>(
+      ::google::bigtable::v1::ValueRange::internal_default_instance());
+  RowFilter_default_oneof_instance_->cells_per_row_offset_filter_ = 0;
+  RowFilter_default_oneof_instance_->cells_per_row_limit_filter_ = 0;
+  RowFilter_default_oneof_instance_->cells_per_column_limit_filter_ = 0;
+  RowFilter_default_oneof_instance_->strip_value_transformer_ = false;
+  RowFilter_default_oneof_instance_->apply_label_transformer_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+
 RowFilter::RowFilter(const RowFilter& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  clear_has_filter();
-  switch (from.filter_case()) {
-    case kChain: {
-      mutable_chain()->::google::bigtable::v1::RowFilter_Chain::MergeFrom(from.chain());
-      break;
-    }
-    case kInterleave: {
-      mutable_interleave()->::google::bigtable::v1::RowFilter_Interleave::MergeFrom(from.interleave());
-      break;
-    }
-    case kCondition: {
-      mutable_condition()->::google::bigtable::v1::RowFilter_Condition::MergeFrom(from.condition());
-      break;
-    }
-    case kSink: {
-      set_sink(from.sink());
-      break;
-    }
-    case kPassAllFilter: {
-      set_pass_all_filter(from.pass_all_filter());
-      break;
-    }
-    case kBlockAllFilter: {
-      set_block_all_filter(from.block_all_filter());
-      break;
-    }
-    case kRowKeyRegexFilter: {
-      set_row_key_regex_filter(from.row_key_regex_filter());
-      break;
-    }
-    case kRowSampleFilter: {
-      set_row_sample_filter(from.row_sample_filter());
-      break;
-    }
-    case kFamilyNameRegexFilter: {
-      set_family_name_regex_filter(from.family_name_regex_filter());
-      break;
-    }
-    case kColumnQualifierRegexFilter: {
-      set_column_qualifier_regex_filter(from.column_qualifier_regex_filter());
-      break;
-    }
-    case kColumnRangeFilter: {
-      mutable_column_range_filter()->::google::bigtable::v1::ColumnRange::MergeFrom(from.column_range_filter());
-      break;
-    }
-    case kTimestampRangeFilter: {
-      mutable_timestamp_range_filter()->::google::bigtable::v1::TimestampRange::MergeFrom(from.timestamp_range_filter());
-      break;
-    }
-    case kValueRegexFilter: {
-      set_value_regex_filter(from.value_regex_filter());
-      break;
-    }
-    case kValueRangeFilter: {
-      mutable_value_range_filter()->::google::bigtable::v1::ValueRange::MergeFrom(from.value_range_filter());
-      break;
-    }
-    case kCellsPerRowOffsetFilter: {
-      set_cells_per_row_offset_filter(from.cells_per_row_offset_filter());
-      break;
-    }
-    case kCellsPerRowLimitFilter: {
-      set_cells_per_row_limit_filter(from.cells_per_row_limit_filter());
-      break;
-    }
-    case kCellsPerColumnLimitFilter: {
-      set_cells_per_column_limit_filter(from.cells_per_column_limit_filter());
-      break;
-    }
-    case kStripValueTransformer: {
-      set_strip_value_transformer(from.strip_value_transformer());
-      break;
-    }
-    case kApplyLabelTransformer: {
-      set_apply_label_transformer(from.apply_label_transformer());
-      break;
-    }
-    case FILTER_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.RowFilter)
 }
 
@@ -5638,13 +5760,15 @@ void RowFilter::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* RowFilter::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[12].descriptor;
+  return RowFilter_descriptor_;
 }
 
 const RowFilter& RowFilter::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<RowFilter> RowFilter_default_instance_;
 
 RowFilter* RowFilter::New(::google::protobuf::Arena* arena) const {
   RowFilter* n = new RowFilter;
@@ -5752,57 +5876,61 @@ bool RowFilter::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.RowFilter)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(16383u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(16383);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.bigtable.v1.RowFilter.Chain chain = 1;
+      // optional .google.bigtable.v1.RowFilter.Chain chain = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_chain()));
         } else {
           goto handle_unusual;
         }
+        goto after_apply_label_transformer;
         break;
       }
 
-      // .google.bigtable.v1.RowFilter.Interleave interleave = 2;
+      // optional .google.bigtable.v1.RowFilter.Interleave interleave = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_interleave()));
         } else {
           goto handle_unusual;
         }
+        goto after_apply_label_transformer;
         break;
       }
 
-      // .google.bigtable.v1.RowFilter.Condition condition = 3;
+      // optional .google.bigtable.v1.RowFilter.Condition condition = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_condition()));
         } else {
           goto handle_unusual;
         }
+        goto after_apply_label_transformer;
         break;
       }
 
-      // bytes row_key_regex_filter = 4;
+      // optional bytes row_key_regex_filter = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_row_key_regex_filter()));
         } else {
           goto handle_unusual;
         }
+        goto after_apply_label_transformer;
         break;
       }
 
-      // string family_name_regex_filter = 5;
+      // optional string family_name_regex_filter = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_family_name_regex_filter()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -5812,56 +5940,61 @@ bool RowFilter::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        goto after_apply_label_transformer;
         break;
       }
 
-      // bytes column_qualifier_regex_filter = 6;
+      // optional bytes column_qualifier_regex_filter = 6;
       case 6: {
-        if (tag == 50u) {
+        if (tag == 50) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_column_qualifier_regex_filter()));
         } else {
           goto handle_unusual;
         }
+        goto after_apply_label_transformer;
         break;
       }
 
-      // .google.bigtable.v1.ColumnRange column_range_filter = 7;
+      // optional .google.bigtable.v1.ColumnRange column_range_filter = 7;
       case 7: {
-        if (tag == 58u) {
+        if (tag == 58) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_column_range_filter()));
         } else {
           goto handle_unusual;
         }
+        goto after_apply_label_transformer;
         break;
       }
 
-      // .google.bigtable.v1.TimestampRange timestamp_range_filter = 8;
+      // optional .google.bigtable.v1.TimestampRange timestamp_range_filter = 8;
       case 8: {
-        if (tag == 66u) {
+        if (tag == 66) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_timestamp_range_filter()));
         } else {
           goto handle_unusual;
         }
+        goto after_apply_label_transformer;
         break;
       }
 
-      // bytes value_regex_filter = 9;
+      // optional bytes value_regex_filter = 9;
       case 9: {
-        if (tag == 74u) {
+        if (tag == 74) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_value_regex_filter()));
         } else {
           goto handle_unusual;
         }
+        goto after_apply_label_transformer;
         break;
       }
 
-      // int32 cells_per_row_offset_filter = 10;
+      // optional int32 cells_per_row_offset_filter = 10;
       case 10: {
-        if (tag == 80u) {
+        if (tag == 80) {
           clear_filter();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -5870,12 +6003,13 @@ bool RowFilter::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        goto after_apply_label_transformer;
         break;
       }
 
-      // int32 cells_per_row_limit_filter = 11;
+      // optional int32 cells_per_row_limit_filter = 11;
       case 11: {
-        if (tag == 88u) {
+        if (tag == 88) {
           clear_filter();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -5884,12 +6018,13 @@ bool RowFilter::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        goto after_apply_label_transformer;
         break;
       }
 
-      // int32 cells_per_column_limit_filter = 12;
+      // optional int32 cells_per_column_limit_filter = 12;
       case 12: {
-        if (tag == 96u) {
+        if (tag == 96) {
           clear_filter();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -5898,12 +6033,13 @@ bool RowFilter::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        goto after_apply_label_transformer;
         break;
       }
 
-      // bool strip_value_transformer = 13;
+      // optional bool strip_value_transformer = 13;
       case 13: {
-        if (tag == 104u) {
+        if (tag == 104) {
           clear_filter();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -5912,12 +6048,13 @@ bool RowFilter::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        goto after_apply_label_transformer;
         break;
       }
 
-      // double row_sample_filter = 14;
+      // optional double row_sample_filter = 14;
       case 14: {
-        if (tag == 113u) {
+        if (tag == 113) {
           clear_filter();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
@@ -5926,23 +6063,25 @@ bool RowFilter::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        goto after_apply_label_transformer;
         break;
       }
 
-      // .google.bigtable.v1.ValueRange value_range_filter = 15;
+      // optional .google.bigtable.v1.ValueRange value_range_filter = 15;
       case 15: {
-        if (tag == 122u) {
+        if (tag == 122) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_value_range_filter()));
         } else {
           goto handle_unusual;
         }
+        goto after_apply_label_transformer;
         break;
       }
 
-      // bool sink = 16;
+      // optional bool sink = 16;
       case 16: {
-        if (tag == 128u) {
+        if (tag == 128) {
           clear_filter();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -5951,12 +6090,13 @@ bool RowFilter::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        goto after_apply_label_transformer;
         break;
       }
 
-      // bool pass_all_filter = 17;
+      // optional bool pass_all_filter = 17;
       case 17: {
-        if (tag == 136u) {
+        if (tag == 136) {
           clear_filter();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -5965,12 +6105,13 @@ bool RowFilter::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        goto after_apply_label_transformer;
         break;
       }
 
-      // bool block_all_filter = 18;
+      // optional bool block_all_filter = 18;
       case 18: {
-        if (tag == 144u) {
+        if (tag == 144) {
           clear_filter();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -5979,12 +6120,14 @@ bool RowFilter::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(154)) goto parse_apply_label_transformer;
         break;
       }
 
-      // string apply_label_transformer = 19;
+      // optional string apply_label_transformer = 19;
       case 19: {
-        if (tag == 154u) {
+        if (tag == 154) {
+         parse_apply_label_transformer:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_apply_label_transformer()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -5994,6 +6137,8 @@ bool RowFilter::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+       after_apply_label_transformer:
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -6021,31 +6166,31 @@ failure:
 void RowFilter::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.v1.RowFilter)
-  // .google.bigtable.v1.RowFilter.Chain chain = 1;
+  // optional .google.bigtable.v1.RowFilter.Chain chain = 1;
   if (has_chain()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *filter_.chain_, output);
   }
 
-  // .google.bigtable.v1.RowFilter.Interleave interleave = 2;
+  // optional .google.bigtable.v1.RowFilter.Interleave interleave = 2;
   if (has_interleave()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *filter_.interleave_, output);
   }
 
-  // .google.bigtable.v1.RowFilter.Condition condition = 3;
+  // optional .google.bigtable.v1.RowFilter.Condition condition = 3;
   if (has_condition()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *filter_.condition_, output);
   }
 
-  // bytes row_key_regex_filter = 4;
+  // optional bytes row_key_regex_filter = 4;
   if (has_row_key_regex_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       4, this->row_key_regex_filter(), output);
   }
 
-  // string family_name_regex_filter = 5;
+  // optional string family_name_regex_filter = 5;
   if (has_family_name_regex_filter()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->family_name_regex_filter().data(), this->family_name_regex_filter().length(),
@@ -6055,77 +6200,77 @@ void RowFilter::SerializeWithCachedSizes(
       5, this->family_name_regex_filter(), output);
   }
 
-  // bytes column_qualifier_regex_filter = 6;
+  // optional bytes column_qualifier_regex_filter = 6;
   if (has_column_qualifier_regex_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       6, this->column_qualifier_regex_filter(), output);
   }
 
-  // .google.bigtable.v1.ColumnRange column_range_filter = 7;
+  // optional .google.bigtable.v1.ColumnRange column_range_filter = 7;
   if (has_column_range_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       7, *filter_.column_range_filter_, output);
   }
 
-  // .google.bigtable.v1.TimestampRange timestamp_range_filter = 8;
+  // optional .google.bigtable.v1.TimestampRange timestamp_range_filter = 8;
   if (has_timestamp_range_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       8, *filter_.timestamp_range_filter_, output);
   }
 
-  // bytes value_regex_filter = 9;
+  // optional bytes value_regex_filter = 9;
   if (has_value_regex_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       9, this->value_regex_filter(), output);
   }
 
-  // int32 cells_per_row_offset_filter = 10;
+  // optional int32 cells_per_row_offset_filter = 10;
   if (has_cells_per_row_offset_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(10, this->cells_per_row_offset_filter(), output);
   }
 
-  // int32 cells_per_row_limit_filter = 11;
+  // optional int32 cells_per_row_limit_filter = 11;
   if (has_cells_per_row_limit_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(11, this->cells_per_row_limit_filter(), output);
   }
 
-  // int32 cells_per_column_limit_filter = 12;
+  // optional int32 cells_per_column_limit_filter = 12;
   if (has_cells_per_column_limit_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(12, this->cells_per_column_limit_filter(), output);
   }
 
-  // bool strip_value_transformer = 13;
+  // optional bool strip_value_transformer = 13;
   if (has_strip_value_transformer()) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(13, this->strip_value_transformer(), output);
   }
 
-  // double row_sample_filter = 14;
+  // optional double row_sample_filter = 14;
   if (has_row_sample_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(14, this->row_sample_filter(), output);
   }
 
-  // .google.bigtable.v1.ValueRange value_range_filter = 15;
+  // optional .google.bigtable.v1.ValueRange value_range_filter = 15;
   if (has_value_range_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       15, *filter_.value_range_filter_, output);
   }
 
-  // bool sink = 16;
+  // optional bool sink = 16;
   if (has_sink()) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(16, this->sink(), output);
   }
 
-  // bool pass_all_filter = 17;
+  // optional bool pass_all_filter = 17;
   if (has_pass_all_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(17, this->pass_all_filter(), output);
   }
 
-  // bool block_all_filter = 18;
+  // optional bool block_all_filter = 18;
   if (has_block_all_filter()) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(18, this->block_all_filter(), output);
   }
 
-  // string apply_label_transformer = 19;
+  // optional string apply_label_transformer = 19;
   if (has_apply_label_transformer()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->apply_label_transformer().data(), this->apply_label_transformer().length(),
@@ -6142,35 +6287,35 @@ void RowFilter::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.v1.RowFilter)
-  // .google.bigtable.v1.RowFilter.Chain chain = 1;
+  // optional .google.bigtable.v1.RowFilter.Chain chain = 1;
   if (has_chain()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *filter_.chain_, false, target);
   }
 
-  // .google.bigtable.v1.RowFilter.Interleave interleave = 2;
+  // optional .google.bigtable.v1.RowFilter.Interleave interleave = 2;
   if (has_interleave()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *filter_.interleave_, false, target);
   }
 
-  // .google.bigtable.v1.RowFilter.Condition condition = 3;
+  // optional .google.bigtable.v1.RowFilter.Condition condition = 3;
   if (has_condition()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         3, *filter_.condition_, false, target);
   }
 
-  // bytes row_key_regex_filter = 4;
+  // optional bytes row_key_regex_filter = 4;
   if (has_row_key_regex_filter()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         4, this->row_key_regex_filter(), target);
   }
 
-  // string family_name_regex_filter = 5;
+  // optional string family_name_regex_filter = 5;
   if (has_family_name_regex_filter()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->family_name_regex_filter().data(), this->family_name_regex_filter().length(),
@@ -6181,82 +6326,82 @@ void RowFilter::SerializeWithCachedSizes(
         5, this->family_name_regex_filter(), target);
   }
 
-  // bytes column_qualifier_regex_filter = 6;
+  // optional bytes column_qualifier_regex_filter = 6;
   if (has_column_qualifier_regex_filter()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         6, this->column_qualifier_regex_filter(), target);
   }
 
-  // .google.bigtable.v1.ColumnRange column_range_filter = 7;
+  // optional .google.bigtable.v1.ColumnRange column_range_filter = 7;
   if (has_column_range_filter()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         7, *filter_.column_range_filter_, false, target);
   }
 
-  // .google.bigtable.v1.TimestampRange timestamp_range_filter = 8;
+  // optional .google.bigtable.v1.TimestampRange timestamp_range_filter = 8;
   if (has_timestamp_range_filter()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         8, *filter_.timestamp_range_filter_, false, target);
   }
 
-  // bytes value_regex_filter = 9;
+  // optional bytes value_regex_filter = 9;
   if (has_value_regex_filter()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         9, this->value_regex_filter(), target);
   }
 
-  // int32 cells_per_row_offset_filter = 10;
+  // optional int32 cells_per_row_offset_filter = 10;
   if (has_cells_per_row_offset_filter()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(10, this->cells_per_row_offset_filter(), target);
   }
 
-  // int32 cells_per_row_limit_filter = 11;
+  // optional int32 cells_per_row_limit_filter = 11;
   if (has_cells_per_row_limit_filter()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(11, this->cells_per_row_limit_filter(), target);
   }
 
-  // int32 cells_per_column_limit_filter = 12;
+  // optional int32 cells_per_column_limit_filter = 12;
   if (has_cells_per_column_limit_filter()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(12, this->cells_per_column_limit_filter(), target);
   }
 
-  // bool strip_value_transformer = 13;
+  // optional bool strip_value_transformer = 13;
   if (has_strip_value_transformer()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(13, this->strip_value_transformer(), target);
   }
 
-  // double row_sample_filter = 14;
+  // optional double row_sample_filter = 14;
   if (has_row_sample_filter()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(14, this->row_sample_filter(), target);
   }
 
-  // .google.bigtable.v1.ValueRange value_range_filter = 15;
+  // optional .google.bigtable.v1.ValueRange value_range_filter = 15;
   if (has_value_range_filter()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         15, *filter_.value_range_filter_, false, target);
   }
 
-  // bool sink = 16;
+  // optional bool sink = 16;
   if (has_sink()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(16, this->sink(), target);
   }
 
-  // bool pass_all_filter = 17;
+  // optional bool pass_all_filter = 17;
   if (has_pass_all_filter()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(17, this->pass_all_filter(), target);
   }
 
-  // bool block_all_filter = 18;
+  // optional bool block_all_filter = 18;
   if (has_block_all_filter()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(18, this->block_all_filter(), target);
   }
 
-  // string apply_label_transformer = 19;
+  // optional string apply_label_transformer = 19;
   if (has_apply_label_transformer()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->apply_label_transformer().data(), this->apply_label_transformer().length(),
@@ -6276,123 +6421,123 @@ size_t RowFilter::ByteSizeLong() const {
   size_t total_size = 0;
 
   switch (filter_case()) {
-    // .google.bigtable.v1.RowFilter.Chain chain = 1;
+    // optional .google.bigtable.v1.RowFilter.Chain chain = 1;
     case kChain: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *filter_.chain_);
       break;
     }
-    // .google.bigtable.v1.RowFilter.Interleave interleave = 2;
+    // optional .google.bigtable.v1.RowFilter.Interleave interleave = 2;
     case kInterleave: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *filter_.interleave_);
       break;
     }
-    // .google.bigtable.v1.RowFilter.Condition condition = 3;
+    // optional .google.bigtable.v1.RowFilter.Condition condition = 3;
     case kCondition: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *filter_.condition_);
       break;
     }
-    // bool sink = 16;
+    // optional bool sink = 16;
     case kSink: {
       total_size += 2 + 1;
       break;
     }
-    // bool pass_all_filter = 17;
+    // optional bool pass_all_filter = 17;
     case kPassAllFilter: {
       total_size += 2 + 1;
       break;
     }
-    // bool block_all_filter = 18;
+    // optional bool block_all_filter = 18;
     case kBlockAllFilter: {
       total_size += 2 + 1;
       break;
     }
-    // bytes row_key_regex_filter = 4;
+    // optional bytes row_key_regex_filter = 4;
     case kRowKeyRegexFilter: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->row_key_regex_filter());
       break;
     }
-    // double row_sample_filter = 14;
+    // optional double row_sample_filter = 14;
     case kRowSampleFilter: {
       total_size += 1 + 8;
       break;
     }
-    // string family_name_regex_filter = 5;
+    // optional string family_name_regex_filter = 5;
     case kFamilyNameRegexFilter: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->family_name_regex_filter());
       break;
     }
-    // bytes column_qualifier_regex_filter = 6;
+    // optional bytes column_qualifier_regex_filter = 6;
     case kColumnQualifierRegexFilter: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->column_qualifier_regex_filter());
       break;
     }
-    // .google.bigtable.v1.ColumnRange column_range_filter = 7;
+    // optional .google.bigtable.v1.ColumnRange column_range_filter = 7;
     case kColumnRangeFilter: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *filter_.column_range_filter_);
       break;
     }
-    // .google.bigtable.v1.TimestampRange timestamp_range_filter = 8;
+    // optional .google.bigtable.v1.TimestampRange timestamp_range_filter = 8;
     case kTimestampRangeFilter: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *filter_.timestamp_range_filter_);
       break;
     }
-    // bytes value_regex_filter = 9;
+    // optional bytes value_regex_filter = 9;
     case kValueRegexFilter: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->value_regex_filter());
       break;
     }
-    // .google.bigtable.v1.ValueRange value_range_filter = 15;
+    // optional .google.bigtable.v1.ValueRange value_range_filter = 15;
     case kValueRangeFilter: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *filter_.value_range_filter_);
       break;
     }
-    // int32 cells_per_row_offset_filter = 10;
+    // optional int32 cells_per_row_offset_filter = 10;
     case kCellsPerRowOffsetFilter: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->cells_per_row_offset_filter());
       break;
     }
-    // int32 cells_per_row_limit_filter = 11;
+    // optional int32 cells_per_row_limit_filter = 11;
     case kCellsPerRowLimitFilter: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->cells_per_row_limit_filter());
       break;
     }
-    // int32 cells_per_column_limit_filter = 12;
+    // optional int32 cells_per_column_limit_filter = 12;
     case kCellsPerColumnLimitFilter: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->cells_per_column_limit_filter());
       break;
     }
-    // bool strip_value_transformer = 13;
+    // optional bool strip_value_transformer = 13;
     case kStripValueTransformer: {
       total_size += 1 + 1;
       break;
     }
-    // string apply_label_transformer = 19;
+    // optional string apply_label_transformer = 19;
     case kApplyLabelTransformer: {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -6412,7 +6557,7 @@ size_t RowFilter::ByteSizeLong() const {
 
 void RowFilter::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.RowFilter)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const RowFilter* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const RowFilter>(
           &from);
@@ -6421,14 +6566,21 @@ void RowFilter::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.RowFilter)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void RowFilter::MergeFrom(const RowFilter& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.RowFilter)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void RowFilter::UnsafeMergeFrom(const RowFilter& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.filter_case()) {
     case kChain: {
       mutable_chain()->::google::bigtable::v1::RowFilter_Chain::MergeFrom(from.chain());
@@ -6523,10 +6675,11 @@ void RowFilter::CopyFrom(const RowFilter& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.RowFilter)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool RowFilter::IsInitialized() const {
+
   return true;
 }
 
@@ -6537,18 +6690,220 @@ void RowFilter::Swap(RowFilter* other) {
 void RowFilter::InternalSwap(RowFilter* other) {
   std::swap(filter_, other->filter_);
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata RowFilter::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[12];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = RowFilter_descriptor_;
+  metadata.reflection = RowFilter_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
+// RowFilter_Chain
+
+// repeated .google.bigtable.v1.RowFilter filters = 1;
+int RowFilter_Chain::filters_size() const {
+  return filters_.size();
+}
+void RowFilter_Chain::clear_filters() {
+  filters_.Clear();
+}
+const ::google::bigtable::v1::RowFilter& RowFilter_Chain::filters(int index) const {
+  // @@protoc_insertion_point(field_get:google.bigtable.v1.RowFilter.Chain.filters)
+  return filters_.Get(index);
+}
+::google::bigtable::v1::RowFilter* RowFilter_Chain::mutable_filters(int index) {
+  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.RowFilter.Chain.filters)
+  return filters_.Mutable(index);
+}
+::google::bigtable::v1::RowFilter* RowFilter_Chain::add_filters() {
+  // @@protoc_insertion_point(field_add:google.bigtable.v1.RowFilter.Chain.filters)
+  return filters_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::google::bigtable::v1::RowFilter >*
+RowFilter_Chain::mutable_filters() {
+  // @@protoc_insertion_point(field_mutable_list:google.bigtable.v1.RowFilter.Chain.filters)
+  return &filters_;
+}
+const ::google::protobuf::RepeatedPtrField< ::google::bigtable::v1::RowFilter >&
+RowFilter_Chain::filters() const {
+  // @@protoc_insertion_point(field_list:google.bigtable.v1.RowFilter.Chain.filters)
+  return filters_;
+}
+
+inline const RowFilter_Chain* RowFilter_Chain::internal_default_instance() {
+  return &RowFilter_Chain_default_instance_.get();
+}
+// -------------------------------------------------------------------
+
+// RowFilter_Interleave
+
+// repeated .google.bigtable.v1.RowFilter filters = 1;
+int RowFilter_Interleave::filters_size() const {
+  return filters_.size();
+}
+void RowFilter_Interleave::clear_filters() {
+  filters_.Clear();
+}
+const ::google::bigtable::v1::RowFilter& RowFilter_Interleave::filters(int index) const {
+  // @@protoc_insertion_point(field_get:google.bigtable.v1.RowFilter.Interleave.filters)
+  return filters_.Get(index);
+}
+::google::bigtable::v1::RowFilter* RowFilter_Interleave::mutable_filters(int index) {
+  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.RowFilter.Interleave.filters)
+  return filters_.Mutable(index);
+}
+::google::bigtable::v1::RowFilter* RowFilter_Interleave::add_filters() {
+  // @@protoc_insertion_point(field_add:google.bigtable.v1.RowFilter.Interleave.filters)
+  return filters_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::google::bigtable::v1::RowFilter >*
+RowFilter_Interleave::mutable_filters() {
+  // @@protoc_insertion_point(field_mutable_list:google.bigtable.v1.RowFilter.Interleave.filters)
+  return &filters_;
+}
+const ::google::protobuf::RepeatedPtrField< ::google::bigtable::v1::RowFilter >&
+RowFilter_Interleave::filters() const {
+  // @@protoc_insertion_point(field_list:google.bigtable.v1.RowFilter.Interleave.filters)
+  return filters_;
+}
+
+inline const RowFilter_Interleave* RowFilter_Interleave::internal_default_instance() {
+  return &RowFilter_Interleave_default_instance_.get();
+}
+// -------------------------------------------------------------------
+
+// RowFilter_Condition
+
+// optional .google.bigtable.v1.RowFilter predicate_filter = 1;
+bool RowFilter_Condition::has_predicate_filter() const {
+  return this != internal_default_instance() && predicate_filter_ != NULL;
+}
+void RowFilter_Condition::clear_predicate_filter() {
+  if (GetArenaNoVirtual() == NULL && predicate_filter_ != NULL) delete predicate_filter_;
+  predicate_filter_ = NULL;
+}
+const ::google::bigtable::v1::RowFilter& RowFilter_Condition::predicate_filter() const {
+  // @@protoc_insertion_point(field_get:google.bigtable.v1.RowFilter.Condition.predicate_filter)
+  return predicate_filter_ != NULL ? *predicate_filter_
+                         : *::google::bigtable::v1::RowFilter::internal_default_instance();
+}
+::google::bigtable::v1::RowFilter* RowFilter_Condition::mutable_predicate_filter() {
+  
+  if (predicate_filter_ == NULL) {
+    predicate_filter_ = new ::google::bigtable::v1::RowFilter;
+  }
+  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.RowFilter.Condition.predicate_filter)
+  return predicate_filter_;
+}
+::google::bigtable::v1::RowFilter* RowFilter_Condition::release_predicate_filter() {
+  // @@protoc_insertion_point(field_release:google.bigtable.v1.RowFilter.Condition.predicate_filter)
+  
+  ::google::bigtable::v1::RowFilter* temp = predicate_filter_;
+  predicate_filter_ = NULL;
+  return temp;
+}
+void RowFilter_Condition::set_allocated_predicate_filter(::google::bigtable::v1::RowFilter* predicate_filter) {
+  delete predicate_filter_;
+  predicate_filter_ = predicate_filter;
+  if (predicate_filter) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowFilter.Condition.predicate_filter)
+}
+
+// optional .google.bigtable.v1.RowFilter true_filter = 2;
+bool RowFilter_Condition::has_true_filter() const {
+  return this != internal_default_instance() && true_filter_ != NULL;
+}
+void RowFilter_Condition::clear_true_filter() {
+  if (GetArenaNoVirtual() == NULL && true_filter_ != NULL) delete true_filter_;
+  true_filter_ = NULL;
+}
+const ::google::bigtable::v1::RowFilter& RowFilter_Condition::true_filter() const {
+  // @@protoc_insertion_point(field_get:google.bigtable.v1.RowFilter.Condition.true_filter)
+  return true_filter_ != NULL ? *true_filter_
+                         : *::google::bigtable::v1::RowFilter::internal_default_instance();
+}
+::google::bigtable::v1::RowFilter* RowFilter_Condition::mutable_true_filter() {
+  
+  if (true_filter_ == NULL) {
+    true_filter_ = new ::google::bigtable::v1::RowFilter;
+  }
+  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.RowFilter.Condition.true_filter)
+  return true_filter_;
+}
+::google::bigtable::v1::RowFilter* RowFilter_Condition::release_true_filter() {
+  // @@protoc_insertion_point(field_release:google.bigtable.v1.RowFilter.Condition.true_filter)
+  
+  ::google::bigtable::v1::RowFilter* temp = true_filter_;
+  true_filter_ = NULL;
+  return temp;
+}
+void RowFilter_Condition::set_allocated_true_filter(::google::bigtable::v1::RowFilter* true_filter) {
+  delete true_filter_;
+  true_filter_ = true_filter;
+  if (true_filter) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowFilter.Condition.true_filter)
+}
+
+// optional .google.bigtable.v1.RowFilter false_filter = 3;
+bool RowFilter_Condition::has_false_filter() const {
+  return this != internal_default_instance() && false_filter_ != NULL;
+}
+void RowFilter_Condition::clear_false_filter() {
+  if (GetArenaNoVirtual() == NULL && false_filter_ != NULL) delete false_filter_;
+  false_filter_ = NULL;
+}
+const ::google::bigtable::v1::RowFilter& RowFilter_Condition::false_filter() const {
+  // @@protoc_insertion_point(field_get:google.bigtable.v1.RowFilter.Condition.false_filter)
+  return false_filter_ != NULL ? *false_filter_
+                         : *::google::bigtable::v1::RowFilter::internal_default_instance();
+}
+::google::bigtable::v1::RowFilter* RowFilter_Condition::mutable_false_filter() {
+  
+  if (false_filter_ == NULL) {
+    false_filter_ = new ::google::bigtable::v1::RowFilter;
+  }
+  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.RowFilter.Condition.false_filter)
+  return false_filter_;
+}
+::google::bigtable::v1::RowFilter* RowFilter_Condition::release_false_filter() {
+  // @@protoc_insertion_point(field_release:google.bigtable.v1.RowFilter.Condition.false_filter)
+  
+  ::google::bigtable::v1::RowFilter* temp = false_filter_;
+  false_filter_ = NULL;
+  return temp;
+}
+void RowFilter_Condition::set_allocated_false_filter(::google::bigtable::v1::RowFilter* false_filter) {
+  delete false_filter_;
+  false_filter_ = false_filter;
+  if (false_filter) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowFilter.Condition.false_filter)
+}
+
+inline const RowFilter_Condition* RowFilter_Condition::internal_default_instance() {
+  return &RowFilter_Condition_default_instance_.get();
+}
+// -------------------------------------------------------------------
+
 // RowFilter
 
-// .google.bigtable.v1.RowFilter.Chain chain = 1;
+// optional .google.bigtable.v1.RowFilter.Chain chain = 1;
 bool RowFilter::has_chain() const {
   return filter_case() == kChain;
 }
@@ -6596,7 +6951,7 @@ void RowFilter::set_allocated_chain(::google::bigtable::v1::RowFilter_Chain* cha
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowFilter.chain)
 }
 
-// .google.bigtable.v1.RowFilter.Interleave interleave = 2;
+// optional .google.bigtable.v1.RowFilter.Interleave interleave = 2;
 bool RowFilter::has_interleave() const {
   return filter_case() == kInterleave;
 }
@@ -6644,7 +6999,7 @@ void RowFilter::set_allocated_interleave(::google::bigtable::v1::RowFilter_Inter
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowFilter.interleave)
 }
 
-// .google.bigtable.v1.RowFilter.Condition condition = 3;
+// optional .google.bigtable.v1.RowFilter.Condition condition = 3;
 bool RowFilter::has_condition() const {
   return filter_case() == kCondition;
 }
@@ -6692,7 +7047,7 @@ void RowFilter::set_allocated_condition(::google::bigtable::v1::RowFilter_Condit
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowFilter.condition)
 }
 
-// bool sink = 16;
+// optional bool sink = 16;
 bool RowFilter::has_sink() const {
   return filter_case() == kSink;
 }
@@ -6721,7 +7076,7 @@ void RowFilter::set_sink(bool value) {
   // @@protoc_insertion_point(field_set:google.bigtable.v1.RowFilter.sink)
 }
 
-// bool pass_all_filter = 17;
+// optional bool pass_all_filter = 17;
 bool RowFilter::has_pass_all_filter() const {
   return filter_case() == kPassAllFilter;
 }
@@ -6750,7 +7105,7 @@ void RowFilter::set_pass_all_filter(bool value) {
   // @@protoc_insertion_point(field_set:google.bigtable.v1.RowFilter.pass_all_filter)
 }
 
-// bool block_all_filter = 18;
+// optional bool block_all_filter = 18;
 bool RowFilter::has_block_all_filter() const {
   return filter_case() == kBlockAllFilter;
 }
@@ -6779,7 +7134,7 @@ void RowFilter::set_block_all_filter(bool value) {
   // @@protoc_insertion_point(field_set:google.bigtable.v1.RowFilter.block_all_filter)
 }
 
-// bytes row_key_regex_filter = 4;
+// optional bytes row_key_regex_filter = 4;
 bool RowFilter::has_row_key_regex_filter() const {
   return filter_case() == kRowKeyRegexFilter;
 }
@@ -6795,7 +7150,7 @@ void RowFilter::clear_row_key_regex_filter() {
 const ::std::string& RowFilter::row_key_regex_filter() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.RowFilter.row_key_regex_filter)
   if (has_row_key_regex_filter()) {
-    return filter_.row_key_regex_filter_.GetNoArena();
+    return filter_.row_key_regex_filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -6860,7 +7215,7 @@ void RowFilter::set_allocated_row_key_regex_filter(::std::string* row_key_regex_
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowFilter.row_key_regex_filter)
 }
 
-// double row_sample_filter = 14;
+// optional double row_sample_filter = 14;
 bool RowFilter::has_row_sample_filter() const {
   return filter_case() == kRowSampleFilter;
 }
@@ -6889,7 +7244,7 @@ void RowFilter::set_row_sample_filter(double value) {
   // @@protoc_insertion_point(field_set:google.bigtable.v1.RowFilter.row_sample_filter)
 }
 
-// string family_name_regex_filter = 5;
+// optional string family_name_regex_filter = 5;
 bool RowFilter::has_family_name_regex_filter() const {
   return filter_case() == kFamilyNameRegexFilter;
 }
@@ -6905,7 +7260,7 @@ void RowFilter::clear_family_name_regex_filter() {
 const ::std::string& RowFilter::family_name_regex_filter() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.RowFilter.family_name_regex_filter)
   if (has_family_name_regex_filter()) {
-    return filter_.family_name_regex_filter_.GetNoArena();
+    return filter_.family_name_regex_filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -6970,7 +7325,7 @@ void RowFilter::set_allocated_family_name_regex_filter(::std::string* family_nam
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowFilter.family_name_regex_filter)
 }
 
-// bytes column_qualifier_regex_filter = 6;
+// optional bytes column_qualifier_regex_filter = 6;
 bool RowFilter::has_column_qualifier_regex_filter() const {
   return filter_case() == kColumnQualifierRegexFilter;
 }
@@ -6986,7 +7341,7 @@ void RowFilter::clear_column_qualifier_regex_filter() {
 const ::std::string& RowFilter::column_qualifier_regex_filter() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.RowFilter.column_qualifier_regex_filter)
   if (has_column_qualifier_regex_filter()) {
-    return filter_.column_qualifier_regex_filter_.GetNoArena();
+    return filter_.column_qualifier_regex_filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -7051,7 +7406,7 @@ void RowFilter::set_allocated_column_qualifier_regex_filter(::std::string* colum
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowFilter.column_qualifier_regex_filter)
 }
 
-// .google.bigtable.v1.ColumnRange column_range_filter = 7;
+// optional .google.bigtable.v1.ColumnRange column_range_filter = 7;
 bool RowFilter::has_column_range_filter() const {
   return filter_case() == kColumnRangeFilter;
 }
@@ -7099,7 +7454,7 @@ void RowFilter::set_allocated_column_range_filter(::google::bigtable::v1::Column
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowFilter.column_range_filter)
 }
 
-// .google.bigtable.v1.TimestampRange timestamp_range_filter = 8;
+// optional .google.bigtable.v1.TimestampRange timestamp_range_filter = 8;
 bool RowFilter::has_timestamp_range_filter() const {
   return filter_case() == kTimestampRangeFilter;
 }
@@ -7147,7 +7502,7 @@ void RowFilter::set_allocated_timestamp_range_filter(::google::bigtable::v1::Tim
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowFilter.timestamp_range_filter)
 }
 
-// bytes value_regex_filter = 9;
+// optional bytes value_regex_filter = 9;
 bool RowFilter::has_value_regex_filter() const {
   return filter_case() == kValueRegexFilter;
 }
@@ -7163,7 +7518,7 @@ void RowFilter::clear_value_regex_filter() {
 const ::std::string& RowFilter::value_regex_filter() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.RowFilter.value_regex_filter)
   if (has_value_regex_filter()) {
-    return filter_.value_regex_filter_.GetNoArena();
+    return filter_.value_regex_filter_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -7228,7 +7583,7 @@ void RowFilter::set_allocated_value_regex_filter(::std::string* value_regex_filt
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowFilter.value_regex_filter)
 }
 
-// .google.bigtable.v1.ValueRange value_range_filter = 15;
+// optional .google.bigtable.v1.ValueRange value_range_filter = 15;
 bool RowFilter::has_value_range_filter() const {
   return filter_case() == kValueRangeFilter;
 }
@@ -7276,7 +7631,7 @@ void RowFilter::set_allocated_value_range_filter(::google::bigtable::v1::ValueRa
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.RowFilter.value_range_filter)
 }
 
-// int32 cells_per_row_offset_filter = 10;
+// optional int32 cells_per_row_offset_filter = 10;
 bool RowFilter::has_cells_per_row_offset_filter() const {
   return filter_case() == kCellsPerRowOffsetFilter;
 }
@@ -7305,7 +7660,7 @@ void RowFilter::set_cells_per_row_offset_filter(::google::protobuf::int32 value)
   // @@protoc_insertion_point(field_set:google.bigtable.v1.RowFilter.cells_per_row_offset_filter)
 }
 
-// int32 cells_per_row_limit_filter = 11;
+// optional int32 cells_per_row_limit_filter = 11;
 bool RowFilter::has_cells_per_row_limit_filter() const {
   return filter_case() == kCellsPerRowLimitFilter;
 }
@@ -7334,7 +7689,7 @@ void RowFilter::set_cells_per_row_limit_filter(::google::protobuf::int32 value) 
   // @@protoc_insertion_point(field_set:google.bigtable.v1.RowFilter.cells_per_row_limit_filter)
 }
 
-// int32 cells_per_column_limit_filter = 12;
+// optional int32 cells_per_column_limit_filter = 12;
 bool RowFilter::has_cells_per_column_limit_filter() const {
   return filter_case() == kCellsPerColumnLimitFilter;
 }
@@ -7363,7 +7718,7 @@ void RowFilter::set_cells_per_column_limit_filter(::google::protobuf::int32 valu
   // @@protoc_insertion_point(field_set:google.bigtable.v1.RowFilter.cells_per_column_limit_filter)
 }
 
-// bool strip_value_transformer = 13;
+// optional bool strip_value_transformer = 13;
 bool RowFilter::has_strip_value_transformer() const {
   return filter_case() == kStripValueTransformer;
 }
@@ -7392,7 +7747,7 @@ void RowFilter::set_strip_value_transformer(bool value) {
   // @@protoc_insertion_point(field_set:google.bigtable.v1.RowFilter.strip_value_transformer)
 }
 
-// string apply_label_transformer = 19;
+// optional string apply_label_transformer = 19;
 bool RowFilter::has_apply_label_transformer() const {
   return filter_case() == kApplyLabelTransformer;
 }
@@ -7408,7 +7763,7 @@ void RowFilter::clear_apply_label_transformer() {
 const ::std::string& RowFilter::apply_label_transformer() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.RowFilter.apply_label_transformer)
   if (has_apply_label_transformer()) {
-    return filter_.apply_label_transformer_.GetNoArena();
+    return filter_.apply_label_transformer_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -7482,6 +7837,9 @@ void RowFilter::clear_has_filter() {
 RowFilter::FilterCase RowFilter::filter_case() const {
   return RowFilter::FilterCase(_oneof_case_[0]);
 }
+inline const RowFilter* RowFilter::internal_default_instance() {
+  return &RowFilter_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -7495,30 +7853,19 @@ const int Mutation_SetCell::kValueFieldNumber;
 
 Mutation_SetCell::Mutation_SetCell()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.Mutation.SetCell)
 }
+
+void Mutation_SetCell::InitAsDefaultInstance() {
+}
+
 Mutation_SetCell::Mutation_SetCell(const Mutation_SetCell& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  family_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.family_name().size() > 0) {
-    family_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.family_name_);
-  }
-  column_qualifier_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.column_qualifier().size() > 0) {
-    column_qualifier_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.column_qualifier_);
-  }
-  value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.value().size() > 0) {
-    value_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.value_);
-  }
-  timestamp_micros_ = from.timestamp_micros_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.Mutation.SetCell)
 }
 
@@ -7548,13 +7895,15 @@ void Mutation_SetCell::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Mutation_SetCell::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[13].descriptor;
+  return Mutation_SetCell_descriptor_;
 }
 
 const Mutation_SetCell& Mutation_SetCell::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Mutation_SetCell> Mutation_SetCell_default_instance_;
 
 Mutation_SetCell* Mutation_SetCell::New(::google::protobuf::Arena* arena) const {
   Mutation_SetCell* n = new Mutation_SetCell;
@@ -7568,8 +7917,8 @@ void Mutation_SetCell::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.bigtable.v1.Mutation.SetCell)
   family_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   column_qualifier_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  value_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   timestamp_micros_ = GOOGLE_LONGLONG(0);
+  value_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 bool Mutation_SetCell::MergePartialFromCodedStream(
@@ -7578,13 +7927,13 @@ bool Mutation_SetCell::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.Mutation.SetCell)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string family_name = 1;
+      // optional string family_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_family_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -7594,23 +7943,27 @@ bool Mutation_SetCell::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_column_qualifier;
         break;
       }
 
-      // bytes column_qualifier = 2;
+      // optional bytes column_qualifier = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_column_qualifier:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_column_qualifier()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_timestamp_micros;
         break;
       }
 
-      // int64 timestamp_micros = 3;
+      // optional int64 timestamp_micros = 3;
       case 3: {
-        if (tag == 24u) {
+        if (tag == 24) {
+         parse_timestamp_micros:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -7618,17 +7971,20 @@ bool Mutation_SetCell::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_value;
         break;
       }
 
-      // bytes value = 4;
+      // optional bytes value = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_value:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_value()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -7656,7 +8012,7 @@ failure:
 void Mutation_SetCell::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.v1.Mutation.SetCell)
-  // string family_name = 1;
+  // optional string family_name = 1;
   if (this->family_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->family_name().data(), this->family_name().length(),
@@ -7666,18 +8022,18 @@ void Mutation_SetCell::SerializeWithCachedSizes(
       1, this->family_name(), output);
   }
 
-  // bytes column_qualifier = 2;
+  // optional bytes column_qualifier = 2;
   if (this->column_qualifier().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       2, this->column_qualifier(), output);
   }
 
-  // int64 timestamp_micros = 3;
+  // optional int64 timestamp_micros = 3;
   if (this->timestamp_micros() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(3, this->timestamp_micros(), output);
   }
 
-  // bytes value = 4;
+  // optional bytes value = 4;
   if (this->value().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       4, this->value(), output);
@@ -7690,7 +8046,7 @@ void Mutation_SetCell::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.v1.Mutation.SetCell)
-  // string family_name = 1;
+  // optional string family_name = 1;
   if (this->family_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->family_name().data(), this->family_name().length(),
@@ -7701,19 +8057,19 @@ void Mutation_SetCell::SerializeWithCachedSizes(
         1, this->family_name(), target);
   }
 
-  // bytes column_qualifier = 2;
+  // optional bytes column_qualifier = 2;
   if (this->column_qualifier().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         2, this->column_qualifier(), target);
   }
 
-  // int64 timestamp_micros = 3;
+  // optional int64 timestamp_micros = 3;
   if (this->timestamp_micros() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(3, this->timestamp_micros(), target);
   }
 
-  // bytes value = 4;
+  // optional bytes value = 4;
   if (this->value().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
@@ -7728,32 +8084,32 @@ size_t Mutation_SetCell::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bigtable.v1.Mutation.SetCell)
   size_t total_size = 0;
 
-  // string family_name = 1;
+  // optional string family_name = 1;
   if (this->family_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->family_name());
   }
 
-  // bytes column_qualifier = 2;
+  // optional bytes column_qualifier = 2;
   if (this->column_qualifier().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->column_qualifier());
   }
 
-  // bytes value = 4;
-  if (this->value().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::BytesSize(
-        this->value());
-  }
-
-  // int64 timestamp_micros = 3;
+  // optional int64 timestamp_micros = 3;
   if (this->timestamp_micros() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
         this->timestamp_micros());
+  }
+
+  // optional bytes value = 4;
+  if (this->value().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::BytesSize(
+        this->value());
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -7765,7 +8121,7 @@ size_t Mutation_SetCell::ByteSizeLong() const {
 
 void Mutation_SetCell::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.Mutation.SetCell)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Mutation_SetCell* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Mutation_SetCell>(
           &from);
@@ -7774,14 +8130,21 @@ void Mutation_SetCell::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.Mutation.SetCell)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Mutation_SetCell::MergeFrom(const Mutation_SetCell& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.Mutation.SetCell)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Mutation_SetCell::UnsafeMergeFrom(const Mutation_SetCell& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.family_name().size() > 0) {
 
     family_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.family_name_);
@@ -7790,12 +8153,12 @@ void Mutation_SetCell::MergeFrom(const Mutation_SetCell& from) {
 
     column_qualifier_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.column_qualifier_);
   }
+  if (from.timestamp_micros() != 0) {
+    set_timestamp_micros(from.timestamp_micros());
+  }
   if (from.value().size() > 0) {
 
     value_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.value_);
-  }
-  if (from.timestamp_micros() != 0) {
-    set_timestamp_micros(from.timestamp_micros());
   }
 }
 
@@ -7810,10 +8173,11 @@ void Mutation_SetCell::CopyFrom(const Mutation_SetCell& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.Mutation.SetCell)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Mutation_SetCell::IsInitialized() const {
+
   return true;
 }
 
@@ -7824,168 +8188,22 @@ void Mutation_SetCell::Swap(Mutation_SetCell* other) {
 void Mutation_SetCell::InternalSwap(Mutation_SetCell* other) {
   family_name_.Swap(&other->family_name_);
   column_qualifier_.Swap(&other->column_qualifier_);
-  value_.Swap(&other->value_);
   std::swap(timestamp_micros_, other->timestamp_micros_);
+  value_.Swap(&other->value_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Mutation_SetCell::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[13];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Mutation_SetCell_descriptor_;
+  metadata.reflection = Mutation_SetCell_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// Mutation_SetCell
 
-// string family_name = 1;
-void Mutation_SetCell::clear_family_name() {
-  family_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-const ::std::string& Mutation_SetCell::family_name() const {
-  // @@protoc_insertion_point(field_get:google.bigtable.v1.Mutation.SetCell.family_name)
-  return family_name_.GetNoArena();
-}
-void Mutation_SetCell::set_family_name(const ::std::string& value) {
-  
-  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:google.bigtable.v1.Mutation.SetCell.family_name)
-}
-void Mutation_SetCell::set_family_name(const char* value) {
-  
-  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:google.bigtable.v1.Mutation.SetCell.family_name)
-}
-void Mutation_SetCell::set_family_name(const char* value, size_t size) {
-  
-  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:google.bigtable.v1.Mutation.SetCell.family_name)
-}
-::std::string* Mutation_SetCell::mutable_family_name() {
-  
-  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.Mutation.SetCell.family_name)
-  return family_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* Mutation_SetCell::release_family_name() {
-  // @@protoc_insertion_point(field_release:google.bigtable.v1.Mutation.SetCell.family_name)
-  
-  return family_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void Mutation_SetCell::set_allocated_family_name(::std::string* family_name) {
-  if (family_name != NULL) {
-    
-  } else {
-    
-  }
-  family_name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), family_name);
-  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.Mutation.SetCell.family_name)
-}
-
-// bytes column_qualifier = 2;
-void Mutation_SetCell::clear_column_qualifier() {
-  column_qualifier_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-const ::std::string& Mutation_SetCell::column_qualifier() const {
-  // @@protoc_insertion_point(field_get:google.bigtable.v1.Mutation.SetCell.column_qualifier)
-  return column_qualifier_.GetNoArena();
-}
-void Mutation_SetCell::set_column_qualifier(const ::std::string& value) {
-  
-  column_qualifier_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:google.bigtable.v1.Mutation.SetCell.column_qualifier)
-}
-void Mutation_SetCell::set_column_qualifier(const char* value) {
-  
-  column_qualifier_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:google.bigtable.v1.Mutation.SetCell.column_qualifier)
-}
-void Mutation_SetCell::set_column_qualifier(const void* value, size_t size) {
-  
-  column_qualifier_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:google.bigtable.v1.Mutation.SetCell.column_qualifier)
-}
-::std::string* Mutation_SetCell::mutable_column_qualifier() {
-  
-  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.Mutation.SetCell.column_qualifier)
-  return column_qualifier_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* Mutation_SetCell::release_column_qualifier() {
-  // @@protoc_insertion_point(field_release:google.bigtable.v1.Mutation.SetCell.column_qualifier)
-  
-  return column_qualifier_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void Mutation_SetCell::set_allocated_column_qualifier(::std::string* column_qualifier) {
-  if (column_qualifier != NULL) {
-    
-  } else {
-    
-  }
-  column_qualifier_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), column_qualifier);
-  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.Mutation.SetCell.column_qualifier)
-}
-
-// int64 timestamp_micros = 3;
-void Mutation_SetCell::clear_timestamp_micros() {
-  timestamp_micros_ = GOOGLE_LONGLONG(0);
-}
-::google::protobuf::int64 Mutation_SetCell::timestamp_micros() const {
-  // @@protoc_insertion_point(field_get:google.bigtable.v1.Mutation.SetCell.timestamp_micros)
-  return timestamp_micros_;
-}
-void Mutation_SetCell::set_timestamp_micros(::google::protobuf::int64 value) {
-  
-  timestamp_micros_ = value;
-  // @@protoc_insertion_point(field_set:google.bigtable.v1.Mutation.SetCell.timestamp_micros)
-}
-
-// bytes value = 4;
-void Mutation_SetCell::clear_value() {
-  value_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-const ::std::string& Mutation_SetCell::value() const {
-  // @@protoc_insertion_point(field_get:google.bigtable.v1.Mutation.SetCell.value)
-  return value_.GetNoArena();
-}
-void Mutation_SetCell::set_value(const ::std::string& value) {
-  
-  value_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:google.bigtable.v1.Mutation.SetCell.value)
-}
-void Mutation_SetCell::set_value(const char* value) {
-  
-  value_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:google.bigtable.v1.Mutation.SetCell.value)
-}
-void Mutation_SetCell::set_value(const void* value, size_t size) {
-  
-  value_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:google.bigtable.v1.Mutation.SetCell.value)
-}
-::std::string* Mutation_SetCell::mutable_value() {
-  
-  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.Mutation.SetCell.value)
-  return value_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* Mutation_SetCell::release_value() {
-  // @@protoc_insertion_point(field_release:google.bigtable.v1.Mutation.SetCell.value)
-  
-  return value_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void Mutation_SetCell::set_allocated_value(::std::string* value) {
-  if (value != NULL) {
-    
-  } else {
-    
-  }
-  value_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.Mutation.SetCell.value)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
+// -------------------------------------------------------------------
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Mutation_DeleteFromColumn::kFamilyNameFieldNumber;
@@ -7995,30 +8213,21 @@ const int Mutation_DeleteFromColumn::kTimeRangeFieldNumber;
 
 Mutation_DeleteFromColumn::Mutation_DeleteFromColumn()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.Mutation.DeleteFromColumn)
 }
+
+void Mutation_DeleteFromColumn::InitAsDefaultInstance() {
+  time_range_ = const_cast< ::google::bigtable::v1::TimestampRange*>(
+      ::google::bigtable::v1::TimestampRange::internal_default_instance());
+}
+
 Mutation_DeleteFromColumn::Mutation_DeleteFromColumn(const Mutation_DeleteFromColumn& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  family_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.family_name().size() > 0) {
-    family_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.family_name_);
-  }
-  column_qualifier_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.column_qualifier().size() > 0) {
-    column_qualifier_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.column_qualifier_);
-  }
-  if (from.has_time_range()) {
-    time_range_ = new ::google::bigtable::v1::TimestampRange(*from.time_range_);
-  } else {
-    time_range_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.Mutation.DeleteFromColumn)
 }
 
@@ -8037,7 +8246,7 @@ Mutation_DeleteFromColumn::~Mutation_DeleteFromColumn() {
 void Mutation_DeleteFromColumn::SharedDtor() {
   family_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   column_qualifier_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &Mutation_DeleteFromColumn_default_instance_.get()) {
     delete time_range_;
   }
 }
@@ -8049,13 +8258,15 @@ void Mutation_DeleteFromColumn::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Mutation_DeleteFromColumn::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[14].descriptor;
+  return Mutation_DeleteFromColumn_descriptor_;
 }
 
 const Mutation_DeleteFromColumn& Mutation_DeleteFromColumn::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Mutation_DeleteFromColumn> Mutation_DeleteFromColumn_default_instance_;
 
 Mutation_DeleteFromColumn* Mutation_DeleteFromColumn::New(::google::protobuf::Arena* arena) const {
   Mutation_DeleteFromColumn* n = new Mutation_DeleteFromColumn;
@@ -8069,9 +8280,7 @@ void Mutation_DeleteFromColumn::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.bigtable.v1.Mutation.DeleteFromColumn)
   family_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   column_qualifier_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && time_range_ != NULL) {
-    delete time_range_;
-  }
+  if (GetArenaNoVirtual() == NULL && time_range_ != NULL) delete time_range_;
   time_range_ = NULL;
 }
 
@@ -8081,13 +8290,13 @@ bool Mutation_DeleteFromColumn::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.Mutation.DeleteFromColumn)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string family_name = 1;
+      // optional string family_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_family_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -8097,28 +8306,33 @@ bool Mutation_DeleteFromColumn::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_column_qualifier;
         break;
       }
 
-      // bytes column_qualifier = 2;
+      // optional bytes column_qualifier = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_column_qualifier:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_column_qualifier()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_time_range;
         break;
       }
 
-      // .google.bigtable.v1.TimestampRange time_range = 3;
+      // optional .google.bigtable.v1.TimestampRange time_range = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_time_range:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_time_range()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -8146,7 +8360,7 @@ failure:
 void Mutation_DeleteFromColumn::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.v1.Mutation.DeleteFromColumn)
-  // string family_name = 1;
+  // optional string family_name = 1;
   if (this->family_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->family_name().data(), this->family_name().length(),
@@ -8156,13 +8370,13 @@ void Mutation_DeleteFromColumn::SerializeWithCachedSizes(
       1, this->family_name(), output);
   }
 
-  // bytes column_qualifier = 2;
+  // optional bytes column_qualifier = 2;
   if (this->column_qualifier().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       2, this->column_qualifier(), output);
   }
 
-  // .google.bigtable.v1.TimestampRange time_range = 3;
+  // optional .google.bigtable.v1.TimestampRange time_range = 3;
   if (this->has_time_range()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *this->time_range_, output);
@@ -8175,7 +8389,7 @@ void Mutation_DeleteFromColumn::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.v1.Mutation.DeleteFromColumn)
-  // string family_name = 1;
+  // optional string family_name = 1;
   if (this->family_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->family_name().data(), this->family_name().length(),
@@ -8186,14 +8400,14 @@ void Mutation_DeleteFromColumn::SerializeWithCachedSizes(
         1, this->family_name(), target);
   }
 
-  // bytes column_qualifier = 2;
+  // optional bytes column_qualifier = 2;
   if (this->column_qualifier().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         2, this->column_qualifier(), target);
   }
 
-  // .google.bigtable.v1.TimestampRange time_range = 3;
+  // optional .google.bigtable.v1.TimestampRange time_range = 3;
   if (this->has_time_range()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -8208,21 +8422,21 @@ size_t Mutation_DeleteFromColumn::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bigtable.v1.Mutation.DeleteFromColumn)
   size_t total_size = 0;
 
-  // string family_name = 1;
+  // optional string family_name = 1;
   if (this->family_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->family_name());
   }
 
-  // bytes column_qualifier = 2;
+  // optional bytes column_qualifier = 2;
   if (this->column_qualifier().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
         this->column_qualifier());
   }
 
-  // .google.bigtable.v1.TimestampRange time_range = 3;
+  // optional .google.bigtable.v1.TimestampRange time_range = 3;
   if (this->has_time_range()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -8238,7 +8452,7 @@ size_t Mutation_DeleteFromColumn::ByteSizeLong() const {
 
 void Mutation_DeleteFromColumn::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.Mutation.DeleteFromColumn)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Mutation_DeleteFromColumn* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Mutation_DeleteFromColumn>(
           &from);
@@ -8247,14 +8461,21 @@ void Mutation_DeleteFromColumn::MergeFrom(const ::google::protobuf::Message& fro
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.Mutation.DeleteFromColumn)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Mutation_DeleteFromColumn::MergeFrom(const Mutation_DeleteFromColumn& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.Mutation.DeleteFromColumn)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Mutation_DeleteFromColumn::UnsafeMergeFrom(const Mutation_DeleteFromColumn& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.family_name().size() > 0) {
 
     family_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.family_name_);
@@ -8279,10 +8500,11 @@ void Mutation_DeleteFromColumn::CopyFrom(const Mutation_DeleteFromColumn& from) 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.Mutation.DeleteFromColumn)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Mutation_DeleteFromColumn::IsInitialized() const {
+
   return true;
 }
 
@@ -8294,147 +8516,20 @@ void Mutation_DeleteFromColumn::InternalSwap(Mutation_DeleteFromColumn* other) {
   family_name_.Swap(&other->family_name_);
   column_qualifier_.Swap(&other->column_qualifier_);
   std::swap(time_range_, other->time_range_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Mutation_DeleteFromColumn::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[14];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Mutation_DeleteFromColumn_descriptor_;
+  metadata.reflection = Mutation_DeleteFromColumn_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// Mutation_DeleteFromColumn
 
-// string family_name = 1;
-void Mutation_DeleteFromColumn::clear_family_name() {
-  family_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-const ::std::string& Mutation_DeleteFromColumn::family_name() const {
-  // @@protoc_insertion_point(field_get:google.bigtable.v1.Mutation.DeleteFromColumn.family_name)
-  return family_name_.GetNoArena();
-}
-void Mutation_DeleteFromColumn::set_family_name(const ::std::string& value) {
-  
-  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:google.bigtable.v1.Mutation.DeleteFromColumn.family_name)
-}
-void Mutation_DeleteFromColumn::set_family_name(const char* value) {
-  
-  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:google.bigtable.v1.Mutation.DeleteFromColumn.family_name)
-}
-void Mutation_DeleteFromColumn::set_family_name(const char* value, size_t size) {
-  
-  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:google.bigtable.v1.Mutation.DeleteFromColumn.family_name)
-}
-::std::string* Mutation_DeleteFromColumn::mutable_family_name() {
-  
-  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.Mutation.DeleteFromColumn.family_name)
-  return family_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* Mutation_DeleteFromColumn::release_family_name() {
-  // @@protoc_insertion_point(field_release:google.bigtable.v1.Mutation.DeleteFromColumn.family_name)
-  
-  return family_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void Mutation_DeleteFromColumn::set_allocated_family_name(::std::string* family_name) {
-  if (family_name != NULL) {
-    
-  } else {
-    
-  }
-  family_name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), family_name);
-  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.Mutation.DeleteFromColumn.family_name)
-}
-
-// bytes column_qualifier = 2;
-void Mutation_DeleteFromColumn::clear_column_qualifier() {
-  column_qualifier_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-const ::std::string& Mutation_DeleteFromColumn::column_qualifier() const {
-  // @@protoc_insertion_point(field_get:google.bigtable.v1.Mutation.DeleteFromColumn.column_qualifier)
-  return column_qualifier_.GetNoArena();
-}
-void Mutation_DeleteFromColumn::set_column_qualifier(const ::std::string& value) {
-  
-  column_qualifier_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:google.bigtable.v1.Mutation.DeleteFromColumn.column_qualifier)
-}
-void Mutation_DeleteFromColumn::set_column_qualifier(const char* value) {
-  
-  column_qualifier_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:google.bigtable.v1.Mutation.DeleteFromColumn.column_qualifier)
-}
-void Mutation_DeleteFromColumn::set_column_qualifier(const void* value, size_t size) {
-  
-  column_qualifier_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:google.bigtable.v1.Mutation.DeleteFromColumn.column_qualifier)
-}
-::std::string* Mutation_DeleteFromColumn::mutable_column_qualifier() {
-  
-  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.Mutation.DeleteFromColumn.column_qualifier)
-  return column_qualifier_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* Mutation_DeleteFromColumn::release_column_qualifier() {
-  // @@protoc_insertion_point(field_release:google.bigtable.v1.Mutation.DeleteFromColumn.column_qualifier)
-  
-  return column_qualifier_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void Mutation_DeleteFromColumn::set_allocated_column_qualifier(::std::string* column_qualifier) {
-  if (column_qualifier != NULL) {
-    
-  } else {
-    
-  }
-  column_qualifier_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), column_qualifier);
-  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.Mutation.DeleteFromColumn.column_qualifier)
-}
-
-// .google.bigtable.v1.TimestampRange time_range = 3;
-bool Mutation_DeleteFromColumn::has_time_range() const {
-  return this != internal_default_instance() && time_range_ != NULL;
-}
-void Mutation_DeleteFromColumn::clear_time_range() {
-  if (GetArenaNoVirtual() == NULL && time_range_ != NULL) delete time_range_;
-  time_range_ = NULL;
-}
-const ::google::bigtable::v1::TimestampRange& Mutation_DeleteFromColumn::time_range() const {
-  // @@protoc_insertion_point(field_get:google.bigtable.v1.Mutation.DeleteFromColumn.time_range)
-  return time_range_ != NULL ? *time_range_
-                         : *::google::bigtable::v1::TimestampRange::internal_default_instance();
-}
-::google::bigtable::v1::TimestampRange* Mutation_DeleteFromColumn::mutable_time_range() {
-  
-  if (time_range_ == NULL) {
-    time_range_ = new ::google::bigtable::v1::TimestampRange;
-  }
-  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.Mutation.DeleteFromColumn.time_range)
-  return time_range_;
-}
-::google::bigtable::v1::TimestampRange* Mutation_DeleteFromColumn::release_time_range() {
-  // @@protoc_insertion_point(field_release:google.bigtable.v1.Mutation.DeleteFromColumn.time_range)
-  
-  ::google::bigtable::v1::TimestampRange* temp = time_range_;
-  time_range_ = NULL;
-  return temp;
-}
-void Mutation_DeleteFromColumn::set_allocated_time_range(::google::bigtable::v1::TimestampRange* time_range) {
-  delete time_range_;
-  time_range_ = time_range;
-  if (time_range) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.Mutation.DeleteFromColumn.time_range)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
+// -------------------------------------------------------------------
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Mutation_DeleteFromFamily::kFamilyNameFieldNumber;
@@ -8442,21 +8537,19 @@ const int Mutation_DeleteFromFamily::kFamilyNameFieldNumber;
 
 Mutation_DeleteFromFamily::Mutation_DeleteFromFamily()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.Mutation.DeleteFromFamily)
 }
+
+void Mutation_DeleteFromFamily::InitAsDefaultInstance() {
+}
+
 Mutation_DeleteFromFamily::Mutation_DeleteFromFamily(const Mutation_DeleteFromFamily& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  family_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.family_name().size() > 0) {
-    family_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.family_name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.Mutation.DeleteFromFamily)
 }
 
@@ -8481,13 +8574,15 @@ void Mutation_DeleteFromFamily::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Mutation_DeleteFromFamily::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[15].descriptor;
+  return Mutation_DeleteFromFamily_descriptor_;
 }
 
 const Mutation_DeleteFromFamily& Mutation_DeleteFromFamily::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Mutation_DeleteFromFamily> Mutation_DeleteFromFamily_default_instance_;
 
 Mutation_DeleteFromFamily* Mutation_DeleteFromFamily::New(::google::protobuf::Arena* arena) const {
   Mutation_DeleteFromFamily* n = new Mutation_DeleteFromFamily;
@@ -8508,13 +8603,13 @@ bool Mutation_DeleteFromFamily::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.Mutation.DeleteFromFamily)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string family_name = 1;
+      // optional string family_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_family_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -8524,6 +8619,7 @@ bool Mutation_DeleteFromFamily::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -8551,7 +8647,7 @@ failure:
 void Mutation_DeleteFromFamily::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.v1.Mutation.DeleteFromFamily)
-  // string family_name = 1;
+  // optional string family_name = 1;
   if (this->family_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->family_name().data(), this->family_name().length(),
@@ -8568,7 +8664,7 @@ void Mutation_DeleteFromFamily::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.v1.Mutation.DeleteFromFamily)
-  // string family_name = 1;
+  // optional string family_name = 1;
   if (this->family_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->family_name().data(), this->family_name().length(),
@@ -8587,7 +8683,7 @@ size_t Mutation_DeleteFromFamily::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bigtable.v1.Mutation.DeleteFromFamily)
   size_t total_size = 0;
 
-  // string family_name = 1;
+  // optional string family_name = 1;
   if (this->family_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -8603,7 +8699,7 @@ size_t Mutation_DeleteFromFamily::ByteSizeLong() const {
 
 void Mutation_DeleteFromFamily::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.Mutation.DeleteFromFamily)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Mutation_DeleteFromFamily* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Mutation_DeleteFromFamily>(
           &from);
@@ -8612,14 +8708,21 @@ void Mutation_DeleteFromFamily::MergeFrom(const ::google::protobuf::Message& fro
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.Mutation.DeleteFromFamily)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Mutation_DeleteFromFamily::MergeFrom(const Mutation_DeleteFromFamily& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.Mutation.DeleteFromFamily)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Mutation_DeleteFromFamily::UnsafeMergeFrom(const Mutation_DeleteFromFamily& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.family_name().size() > 0) {
 
     family_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.family_name_);
@@ -8637,10 +8740,11 @@ void Mutation_DeleteFromFamily::CopyFrom(const Mutation_DeleteFromFamily& from) 
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.Mutation.DeleteFromFamily)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Mutation_DeleteFromFamily::IsInitialized() const {
+
   return true;
 }
 
@@ -8650,81 +8754,39 @@ void Mutation_DeleteFromFamily::Swap(Mutation_DeleteFromFamily* other) {
 }
 void Mutation_DeleteFromFamily::InternalSwap(Mutation_DeleteFromFamily* other) {
   family_name_.Swap(&other->family_name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Mutation_DeleteFromFamily::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[15];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Mutation_DeleteFromFamily_descriptor_;
+  metadata.reflection = Mutation_DeleteFromFamily_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// Mutation_DeleteFromFamily
 
-// string family_name = 1;
-void Mutation_DeleteFromFamily::clear_family_name() {
-  family_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-const ::std::string& Mutation_DeleteFromFamily::family_name() const {
-  // @@protoc_insertion_point(field_get:google.bigtable.v1.Mutation.DeleteFromFamily.family_name)
-  return family_name_.GetNoArena();
-}
-void Mutation_DeleteFromFamily::set_family_name(const ::std::string& value) {
-  
-  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:google.bigtable.v1.Mutation.DeleteFromFamily.family_name)
-}
-void Mutation_DeleteFromFamily::set_family_name(const char* value) {
-  
-  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:google.bigtable.v1.Mutation.DeleteFromFamily.family_name)
-}
-void Mutation_DeleteFromFamily::set_family_name(const char* value, size_t size) {
-  
-  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:google.bigtable.v1.Mutation.DeleteFromFamily.family_name)
-}
-::std::string* Mutation_DeleteFromFamily::mutable_family_name() {
-  
-  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.Mutation.DeleteFromFamily.family_name)
-  return family_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* Mutation_DeleteFromFamily::release_family_name() {
-  // @@protoc_insertion_point(field_release:google.bigtable.v1.Mutation.DeleteFromFamily.family_name)
-  
-  return family_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void Mutation_DeleteFromFamily::set_allocated_family_name(::std::string* family_name) {
-  if (family_name != NULL) {
-    
-  } else {
-    
-  }
-  family_name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), family_name);
-  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.Mutation.DeleteFromFamily.family_name)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
+// -------------------------------------------------------------------
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 Mutation_DeleteFromRow::Mutation_DeleteFromRow()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.Mutation.DeleteFromRow)
 }
+
+void Mutation_DeleteFromRow::InitAsDefaultInstance() {
+}
+
 Mutation_DeleteFromRow::Mutation_DeleteFromRow(const Mutation_DeleteFromRow& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.Mutation.DeleteFromRow)
 }
 
@@ -8747,13 +8809,15 @@ void Mutation_DeleteFromRow::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Mutation_DeleteFromRow::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[16].descriptor;
+  return Mutation_DeleteFromRow_descriptor_;
 }
 
 const Mutation_DeleteFromRow& Mutation_DeleteFromRow::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Mutation_DeleteFromRow> Mutation_DeleteFromRow_default_instance_;
 
 Mutation_DeleteFromRow* Mutation_DeleteFromRow::New(::google::protobuf::Arena* arena) const {
   Mutation_DeleteFromRow* n = new Mutation_DeleteFromRow;
@@ -8773,7 +8837,7 @@ bool Mutation_DeleteFromRow::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.Mutation.DeleteFromRow)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
   handle_unusual:
@@ -8820,7 +8884,7 @@ size_t Mutation_DeleteFromRow::ByteSizeLong() const {
 
 void Mutation_DeleteFromRow::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.Mutation.DeleteFromRow)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Mutation_DeleteFromRow* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Mutation_DeleteFromRow>(
           &from);
@@ -8829,14 +8893,21 @@ void Mutation_DeleteFromRow::MergeFrom(const ::google::protobuf::Message& from) 
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.Mutation.DeleteFromRow)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Mutation_DeleteFromRow::MergeFrom(const Mutation_DeleteFromRow& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.Mutation.DeleteFromRow)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Mutation_DeleteFromRow::UnsafeMergeFrom(const Mutation_DeleteFromRow& from) {
+  GOOGLE_DCHECK(&from != this);
 }
 
 void Mutation_DeleteFromRow::CopyFrom(const ::google::protobuf::Message& from) {
@@ -8850,10 +8921,11 @@ void Mutation_DeleteFromRow::CopyFrom(const Mutation_DeleteFromRow& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.Mutation.DeleteFromRow)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Mutation_DeleteFromRow::IsInitialized() const {
+
   return true;
 }
 
@@ -8862,20 +8934,20 @@ void Mutation_DeleteFromRow::Swap(Mutation_DeleteFromRow* other) {
   InternalSwap(other);
 }
 void Mutation_DeleteFromRow::InternalSwap(Mutation_DeleteFromRow* other) {
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Mutation_DeleteFromRow::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[16];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Mutation_DeleteFromRow_descriptor_;
+  metadata.reflection = Mutation_DeleteFromRow_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// Mutation_DeleteFromRow
 
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
+// -------------------------------------------------------------------
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Mutation::kSetCellFieldNumber;
@@ -8886,39 +8958,27 @@ const int Mutation::kDeleteFromRowFieldNumber;
 
 Mutation::Mutation()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.Mutation)
 }
+
+void Mutation::InitAsDefaultInstance() {
+  Mutation_default_oneof_instance_->set_cell_ = const_cast< ::google::bigtable::v1::Mutation_SetCell*>(
+      ::google::bigtable::v1::Mutation_SetCell::internal_default_instance());
+  Mutation_default_oneof_instance_->delete_from_column_ = const_cast< ::google::bigtable::v1::Mutation_DeleteFromColumn*>(
+      ::google::bigtable::v1::Mutation_DeleteFromColumn::internal_default_instance());
+  Mutation_default_oneof_instance_->delete_from_family_ = const_cast< ::google::bigtable::v1::Mutation_DeleteFromFamily*>(
+      ::google::bigtable::v1::Mutation_DeleteFromFamily::internal_default_instance());
+  Mutation_default_oneof_instance_->delete_from_row_ = const_cast< ::google::bigtable::v1::Mutation_DeleteFromRow*>(
+      ::google::bigtable::v1::Mutation_DeleteFromRow::internal_default_instance());
+}
+
 Mutation::Mutation(const Mutation& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  clear_has_mutation();
-  switch (from.mutation_case()) {
-    case kSetCell: {
-      mutable_set_cell()->::google::bigtable::v1::Mutation_SetCell::MergeFrom(from.set_cell());
-      break;
-    }
-    case kDeleteFromColumn: {
-      mutable_delete_from_column()->::google::bigtable::v1::Mutation_DeleteFromColumn::MergeFrom(from.delete_from_column());
-      break;
-    }
-    case kDeleteFromFamily: {
-      mutable_delete_from_family()->::google::bigtable::v1::Mutation_DeleteFromFamily::MergeFrom(from.delete_from_family());
-      break;
-    }
-    case kDeleteFromRow: {
-      mutable_delete_from_row()->::google::bigtable::v1::Mutation_DeleteFromRow::MergeFrom(from.delete_from_row());
-      break;
-    }
-    case MUTATION_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.Mutation)
 }
 
@@ -8945,13 +9005,15 @@ void Mutation::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Mutation::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[17].descriptor;
+  return Mutation_descriptor_;
 }
 
 const Mutation& Mutation::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Mutation> Mutation_default_instance_;
 
 Mutation* Mutation::New(::google::protobuf::Arena* arena) const {
   Mutation* n = new Mutation;
@@ -8999,51 +9061,57 @@ bool Mutation::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.Mutation)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.bigtable.v1.Mutation.SetCell set_cell = 1;
+      // optional .google.bigtable.v1.Mutation.SetCell set_cell = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_set_cell()));
         } else {
           goto handle_unusual;
         }
+        goto after_delete_from_row;
         break;
       }
 
-      // .google.bigtable.v1.Mutation.DeleteFromColumn delete_from_column = 2;
+      // optional .google.bigtable.v1.Mutation.DeleteFromColumn delete_from_column = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_delete_from_column()));
         } else {
           goto handle_unusual;
         }
+        goto after_delete_from_row;
         break;
       }
 
-      // .google.bigtable.v1.Mutation.DeleteFromFamily delete_from_family = 3;
+      // optional .google.bigtable.v1.Mutation.DeleteFromFamily delete_from_family = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_delete_from_family()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_delete_from_row;
         break;
       }
 
-      // .google.bigtable.v1.Mutation.DeleteFromRow delete_from_row = 4;
+      // optional .google.bigtable.v1.Mutation.DeleteFromRow delete_from_row = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_delete_from_row:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_delete_from_row()));
         } else {
           goto handle_unusual;
         }
+       after_delete_from_row:
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -9071,25 +9139,25 @@ failure:
 void Mutation::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.v1.Mutation)
-  // .google.bigtable.v1.Mutation.SetCell set_cell = 1;
+  // optional .google.bigtable.v1.Mutation.SetCell set_cell = 1;
   if (has_set_cell()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *mutation_.set_cell_, output);
   }
 
-  // .google.bigtable.v1.Mutation.DeleteFromColumn delete_from_column = 2;
+  // optional .google.bigtable.v1.Mutation.DeleteFromColumn delete_from_column = 2;
   if (has_delete_from_column()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *mutation_.delete_from_column_, output);
   }
 
-  // .google.bigtable.v1.Mutation.DeleteFromFamily delete_from_family = 3;
+  // optional .google.bigtable.v1.Mutation.DeleteFromFamily delete_from_family = 3;
   if (has_delete_from_family()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *mutation_.delete_from_family_, output);
   }
 
-  // .google.bigtable.v1.Mutation.DeleteFromRow delete_from_row = 4;
+  // optional .google.bigtable.v1.Mutation.DeleteFromRow delete_from_row = 4;
   if (has_delete_from_row()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, *mutation_.delete_from_row_, output);
@@ -9102,28 +9170,28 @@ void Mutation::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.v1.Mutation)
-  // .google.bigtable.v1.Mutation.SetCell set_cell = 1;
+  // optional .google.bigtable.v1.Mutation.SetCell set_cell = 1;
   if (has_set_cell()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *mutation_.set_cell_, false, target);
   }
 
-  // .google.bigtable.v1.Mutation.DeleteFromColumn delete_from_column = 2;
+  // optional .google.bigtable.v1.Mutation.DeleteFromColumn delete_from_column = 2;
   if (has_delete_from_column()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *mutation_.delete_from_column_, false, target);
   }
 
-  // .google.bigtable.v1.Mutation.DeleteFromFamily delete_from_family = 3;
+  // optional .google.bigtable.v1.Mutation.DeleteFromFamily delete_from_family = 3;
   if (has_delete_from_family()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         3, *mutation_.delete_from_family_, false, target);
   }
 
-  // .google.bigtable.v1.Mutation.DeleteFromRow delete_from_row = 4;
+  // optional .google.bigtable.v1.Mutation.DeleteFromRow delete_from_row = 4;
   if (has_delete_from_row()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -9139,28 +9207,28 @@ size_t Mutation::ByteSizeLong() const {
   size_t total_size = 0;
 
   switch (mutation_case()) {
-    // .google.bigtable.v1.Mutation.SetCell set_cell = 1;
+    // optional .google.bigtable.v1.Mutation.SetCell set_cell = 1;
     case kSetCell: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *mutation_.set_cell_);
       break;
     }
-    // .google.bigtable.v1.Mutation.DeleteFromColumn delete_from_column = 2;
+    // optional .google.bigtable.v1.Mutation.DeleteFromColumn delete_from_column = 2;
     case kDeleteFromColumn: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *mutation_.delete_from_column_);
       break;
     }
-    // .google.bigtable.v1.Mutation.DeleteFromFamily delete_from_family = 3;
+    // optional .google.bigtable.v1.Mutation.DeleteFromFamily delete_from_family = 3;
     case kDeleteFromFamily: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *mutation_.delete_from_family_);
       break;
     }
-    // .google.bigtable.v1.Mutation.DeleteFromRow delete_from_row = 4;
+    // optional .google.bigtable.v1.Mutation.DeleteFromRow delete_from_row = 4;
     case kDeleteFromRow: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -9180,7 +9248,7 @@ size_t Mutation::ByteSizeLong() const {
 
 void Mutation::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.Mutation)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Mutation* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Mutation>(
           &from);
@@ -9189,14 +9257,21 @@ void Mutation::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.Mutation)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Mutation::MergeFrom(const Mutation& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.Mutation)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Mutation::UnsafeMergeFrom(const Mutation& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.mutation_case()) {
     case kSetCell: {
       mutable_set_cell()->::google::bigtable::v1::Mutation_SetCell::MergeFrom(from.set_cell());
@@ -9231,10 +9306,11 @@ void Mutation::CopyFrom(const Mutation& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.Mutation)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Mutation::IsInitialized() const {
+
   return true;
 }
 
@@ -9245,18 +9321,367 @@ void Mutation::Swap(Mutation* other) {
 void Mutation::InternalSwap(Mutation* other) {
   std::swap(mutation_, other->mutation_);
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Mutation::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[17];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Mutation_descriptor_;
+  metadata.reflection = Mutation_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
+// Mutation_SetCell
+
+// optional string family_name = 1;
+void Mutation_SetCell::clear_family_name() {
+  family_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+const ::std::string& Mutation_SetCell::family_name() const {
+  // @@protoc_insertion_point(field_get:google.bigtable.v1.Mutation.SetCell.family_name)
+  return family_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Mutation_SetCell::set_family_name(const ::std::string& value) {
+  
+  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:google.bigtable.v1.Mutation.SetCell.family_name)
+}
+void Mutation_SetCell::set_family_name(const char* value) {
+  
+  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:google.bigtable.v1.Mutation.SetCell.family_name)
+}
+void Mutation_SetCell::set_family_name(const char* value, size_t size) {
+  
+  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:google.bigtable.v1.Mutation.SetCell.family_name)
+}
+::std::string* Mutation_SetCell::mutable_family_name() {
+  
+  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.Mutation.SetCell.family_name)
+  return family_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+::std::string* Mutation_SetCell::release_family_name() {
+  // @@protoc_insertion_point(field_release:google.bigtable.v1.Mutation.SetCell.family_name)
+  
+  return family_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Mutation_SetCell::set_allocated_family_name(::std::string* family_name) {
+  if (family_name != NULL) {
+    
+  } else {
+    
+  }
+  family_name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), family_name);
+  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.Mutation.SetCell.family_name)
+}
+
+// optional bytes column_qualifier = 2;
+void Mutation_SetCell::clear_column_qualifier() {
+  column_qualifier_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+const ::std::string& Mutation_SetCell::column_qualifier() const {
+  // @@protoc_insertion_point(field_get:google.bigtable.v1.Mutation.SetCell.column_qualifier)
+  return column_qualifier_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Mutation_SetCell::set_column_qualifier(const ::std::string& value) {
+  
+  column_qualifier_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:google.bigtable.v1.Mutation.SetCell.column_qualifier)
+}
+void Mutation_SetCell::set_column_qualifier(const char* value) {
+  
+  column_qualifier_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:google.bigtable.v1.Mutation.SetCell.column_qualifier)
+}
+void Mutation_SetCell::set_column_qualifier(const void* value, size_t size) {
+  
+  column_qualifier_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:google.bigtable.v1.Mutation.SetCell.column_qualifier)
+}
+::std::string* Mutation_SetCell::mutable_column_qualifier() {
+  
+  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.Mutation.SetCell.column_qualifier)
+  return column_qualifier_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+::std::string* Mutation_SetCell::release_column_qualifier() {
+  // @@protoc_insertion_point(field_release:google.bigtable.v1.Mutation.SetCell.column_qualifier)
+  
+  return column_qualifier_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Mutation_SetCell::set_allocated_column_qualifier(::std::string* column_qualifier) {
+  if (column_qualifier != NULL) {
+    
+  } else {
+    
+  }
+  column_qualifier_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), column_qualifier);
+  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.Mutation.SetCell.column_qualifier)
+}
+
+// optional int64 timestamp_micros = 3;
+void Mutation_SetCell::clear_timestamp_micros() {
+  timestamp_micros_ = GOOGLE_LONGLONG(0);
+}
+::google::protobuf::int64 Mutation_SetCell::timestamp_micros() const {
+  // @@protoc_insertion_point(field_get:google.bigtable.v1.Mutation.SetCell.timestamp_micros)
+  return timestamp_micros_;
+}
+void Mutation_SetCell::set_timestamp_micros(::google::protobuf::int64 value) {
+  
+  timestamp_micros_ = value;
+  // @@protoc_insertion_point(field_set:google.bigtable.v1.Mutation.SetCell.timestamp_micros)
+}
+
+// optional bytes value = 4;
+void Mutation_SetCell::clear_value() {
+  value_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+const ::std::string& Mutation_SetCell::value() const {
+  // @@protoc_insertion_point(field_get:google.bigtable.v1.Mutation.SetCell.value)
+  return value_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Mutation_SetCell::set_value(const ::std::string& value) {
+  
+  value_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:google.bigtable.v1.Mutation.SetCell.value)
+}
+void Mutation_SetCell::set_value(const char* value) {
+  
+  value_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:google.bigtable.v1.Mutation.SetCell.value)
+}
+void Mutation_SetCell::set_value(const void* value, size_t size) {
+  
+  value_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:google.bigtable.v1.Mutation.SetCell.value)
+}
+::std::string* Mutation_SetCell::mutable_value() {
+  
+  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.Mutation.SetCell.value)
+  return value_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+::std::string* Mutation_SetCell::release_value() {
+  // @@protoc_insertion_point(field_release:google.bigtable.v1.Mutation.SetCell.value)
+  
+  return value_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Mutation_SetCell::set_allocated_value(::std::string* value) {
+  if (value != NULL) {
+    
+  } else {
+    
+  }
+  value_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.Mutation.SetCell.value)
+}
+
+inline const Mutation_SetCell* Mutation_SetCell::internal_default_instance() {
+  return &Mutation_SetCell_default_instance_.get();
+}
+// -------------------------------------------------------------------
+
+// Mutation_DeleteFromColumn
+
+// optional string family_name = 1;
+void Mutation_DeleteFromColumn::clear_family_name() {
+  family_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+const ::std::string& Mutation_DeleteFromColumn::family_name() const {
+  // @@protoc_insertion_point(field_get:google.bigtable.v1.Mutation.DeleteFromColumn.family_name)
+  return family_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Mutation_DeleteFromColumn::set_family_name(const ::std::string& value) {
+  
+  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:google.bigtable.v1.Mutation.DeleteFromColumn.family_name)
+}
+void Mutation_DeleteFromColumn::set_family_name(const char* value) {
+  
+  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:google.bigtable.v1.Mutation.DeleteFromColumn.family_name)
+}
+void Mutation_DeleteFromColumn::set_family_name(const char* value, size_t size) {
+  
+  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:google.bigtable.v1.Mutation.DeleteFromColumn.family_name)
+}
+::std::string* Mutation_DeleteFromColumn::mutable_family_name() {
+  
+  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.Mutation.DeleteFromColumn.family_name)
+  return family_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+::std::string* Mutation_DeleteFromColumn::release_family_name() {
+  // @@protoc_insertion_point(field_release:google.bigtable.v1.Mutation.DeleteFromColumn.family_name)
+  
+  return family_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Mutation_DeleteFromColumn::set_allocated_family_name(::std::string* family_name) {
+  if (family_name != NULL) {
+    
+  } else {
+    
+  }
+  family_name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), family_name);
+  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.Mutation.DeleteFromColumn.family_name)
+}
+
+// optional bytes column_qualifier = 2;
+void Mutation_DeleteFromColumn::clear_column_qualifier() {
+  column_qualifier_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+const ::std::string& Mutation_DeleteFromColumn::column_qualifier() const {
+  // @@protoc_insertion_point(field_get:google.bigtable.v1.Mutation.DeleteFromColumn.column_qualifier)
+  return column_qualifier_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Mutation_DeleteFromColumn::set_column_qualifier(const ::std::string& value) {
+  
+  column_qualifier_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:google.bigtable.v1.Mutation.DeleteFromColumn.column_qualifier)
+}
+void Mutation_DeleteFromColumn::set_column_qualifier(const char* value) {
+  
+  column_qualifier_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:google.bigtable.v1.Mutation.DeleteFromColumn.column_qualifier)
+}
+void Mutation_DeleteFromColumn::set_column_qualifier(const void* value, size_t size) {
+  
+  column_qualifier_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:google.bigtable.v1.Mutation.DeleteFromColumn.column_qualifier)
+}
+::std::string* Mutation_DeleteFromColumn::mutable_column_qualifier() {
+  
+  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.Mutation.DeleteFromColumn.column_qualifier)
+  return column_qualifier_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+::std::string* Mutation_DeleteFromColumn::release_column_qualifier() {
+  // @@protoc_insertion_point(field_release:google.bigtable.v1.Mutation.DeleteFromColumn.column_qualifier)
+  
+  return column_qualifier_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Mutation_DeleteFromColumn::set_allocated_column_qualifier(::std::string* column_qualifier) {
+  if (column_qualifier != NULL) {
+    
+  } else {
+    
+  }
+  column_qualifier_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), column_qualifier);
+  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.Mutation.DeleteFromColumn.column_qualifier)
+}
+
+// optional .google.bigtable.v1.TimestampRange time_range = 3;
+bool Mutation_DeleteFromColumn::has_time_range() const {
+  return this != internal_default_instance() && time_range_ != NULL;
+}
+void Mutation_DeleteFromColumn::clear_time_range() {
+  if (GetArenaNoVirtual() == NULL && time_range_ != NULL) delete time_range_;
+  time_range_ = NULL;
+}
+const ::google::bigtable::v1::TimestampRange& Mutation_DeleteFromColumn::time_range() const {
+  // @@protoc_insertion_point(field_get:google.bigtable.v1.Mutation.DeleteFromColumn.time_range)
+  return time_range_ != NULL ? *time_range_
+                         : *::google::bigtable::v1::TimestampRange::internal_default_instance();
+}
+::google::bigtable::v1::TimestampRange* Mutation_DeleteFromColumn::mutable_time_range() {
+  
+  if (time_range_ == NULL) {
+    time_range_ = new ::google::bigtable::v1::TimestampRange;
+  }
+  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.Mutation.DeleteFromColumn.time_range)
+  return time_range_;
+}
+::google::bigtable::v1::TimestampRange* Mutation_DeleteFromColumn::release_time_range() {
+  // @@protoc_insertion_point(field_release:google.bigtable.v1.Mutation.DeleteFromColumn.time_range)
+  
+  ::google::bigtable::v1::TimestampRange* temp = time_range_;
+  time_range_ = NULL;
+  return temp;
+}
+void Mutation_DeleteFromColumn::set_allocated_time_range(::google::bigtable::v1::TimestampRange* time_range) {
+  delete time_range_;
+  time_range_ = time_range;
+  if (time_range) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.Mutation.DeleteFromColumn.time_range)
+}
+
+inline const Mutation_DeleteFromColumn* Mutation_DeleteFromColumn::internal_default_instance() {
+  return &Mutation_DeleteFromColumn_default_instance_.get();
+}
+// -------------------------------------------------------------------
+
+// Mutation_DeleteFromFamily
+
+// optional string family_name = 1;
+void Mutation_DeleteFromFamily::clear_family_name() {
+  family_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+const ::std::string& Mutation_DeleteFromFamily::family_name() const {
+  // @@protoc_insertion_point(field_get:google.bigtable.v1.Mutation.DeleteFromFamily.family_name)
+  return family_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Mutation_DeleteFromFamily::set_family_name(const ::std::string& value) {
+  
+  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  // @@protoc_insertion_point(field_set:google.bigtable.v1.Mutation.DeleteFromFamily.family_name)
+}
+void Mutation_DeleteFromFamily::set_family_name(const char* value) {
+  
+  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:google.bigtable.v1.Mutation.DeleteFromFamily.family_name)
+}
+void Mutation_DeleteFromFamily::set_family_name(const char* value, size_t size) {
+  
+  family_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:google.bigtable.v1.Mutation.DeleteFromFamily.family_name)
+}
+::std::string* Mutation_DeleteFromFamily::mutable_family_name() {
+  
+  // @@protoc_insertion_point(field_mutable:google.bigtable.v1.Mutation.DeleteFromFamily.family_name)
+  return family_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+::std::string* Mutation_DeleteFromFamily::release_family_name() {
+  // @@protoc_insertion_point(field_release:google.bigtable.v1.Mutation.DeleteFromFamily.family_name)
+  
+  return family_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+}
+void Mutation_DeleteFromFamily::set_allocated_family_name(::std::string* family_name) {
+  if (family_name != NULL) {
+    
+  } else {
+    
+  }
+  family_name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), family_name);
+  // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.Mutation.DeleteFromFamily.family_name)
+}
+
+inline const Mutation_DeleteFromFamily* Mutation_DeleteFromFamily::internal_default_instance() {
+  return &Mutation_DeleteFromFamily_default_instance_.get();
+}
+// -------------------------------------------------------------------
+
+// Mutation_DeleteFromRow
+
+inline const Mutation_DeleteFromRow* Mutation_DeleteFromRow::internal_default_instance() {
+  return &Mutation_DeleteFromRow_default_instance_.get();
+}
+// -------------------------------------------------------------------
+
 // Mutation
 
-// .google.bigtable.v1.Mutation.SetCell set_cell = 1;
+// optional .google.bigtable.v1.Mutation.SetCell set_cell = 1;
 bool Mutation::has_set_cell() const {
   return mutation_case() == kSetCell;
 }
@@ -9304,7 +9729,7 @@ void Mutation::set_allocated_set_cell(::google::bigtable::v1::Mutation_SetCell* 
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.Mutation.set_cell)
 }
 
-// .google.bigtable.v1.Mutation.DeleteFromColumn delete_from_column = 2;
+// optional .google.bigtable.v1.Mutation.DeleteFromColumn delete_from_column = 2;
 bool Mutation::has_delete_from_column() const {
   return mutation_case() == kDeleteFromColumn;
 }
@@ -9352,7 +9777,7 @@ void Mutation::set_allocated_delete_from_column(::google::bigtable::v1::Mutation
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.Mutation.delete_from_column)
 }
 
-// .google.bigtable.v1.Mutation.DeleteFromFamily delete_from_family = 3;
+// optional .google.bigtable.v1.Mutation.DeleteFromFamily delete_from_family = 3;
 bool Mutation::has_delete_from_family() const {
   return mutation_case() == kDeleteFromFamily;
 }
@@ -9400,7 +9825,7 @@ void Mutation::set_allocated_delete_from_family(::google::bigtable::v1::Mutation
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.Mutation.delete_from_family)
 }
 
-// .google.bigtable.v1.Mutation.DeleteFromRow delete_from_row = 4;
+// optional .google.bigtable.v1.Mutation.DeleteFromRow delete_from_row = 4;
 bool Mutation::has_delete_from_row() const {
   return mutation_case() == kDeleteFromRow;
 }
@@ -9457,6 +9882,9 @@ void Mutation::clear_has_mutation() {
 Mutation::MutationCase Mutation::mutation_case() const {
   return Mutation::MutationCase(_oneof_case_[0]);
 }
+inline const Mutation* Mutation::internal_default_instance() {
+  return &Mutation_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -9470,39 +9898,21 @@ const int ReadModifyWriteRule::kIncrementAmountFieldNumber;
 
 ReadModifyWriteRule::ReadModifyWriteRule()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.v1.ReadModifyWriteRule)
 }
+
+void ReadModifyWriteRule::InitAsDefaultInstance() {
+  ReadModifyWriteRule_default_oneof_instance_->append_value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ReadModifyWriteRule_default_oneof_instance_->increment_amount_ = GOOGLE_LONGLONG(0);
+}
+
 ReadModifyWriteRule::ReadModifyWriteRule(const ReadModifyWriteRule& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  family_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.family_name().size() > 0) {
-    family_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.family_name_);
-  }
-  column_qualifier_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.column_qualifier().size() > 0) {
-    column_qualifier_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.column_qualifier_);
-  }
-  clear_has_rule();
-  switch (from.rule_case()) {
-    case kAppendValue: {
-      set_append_value(from.append_value());
-      break;
-    }
-    case kIncrementAmount: {
-      set_increment_amount(from.increment_amount());
-      break;
-    }
-    case RULE_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.v1.ReadModifyWriteRule)
 }
 
@@ -9533,13 +9943,15 @@ void ReadModifyWriteRule::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ReadModifyWriteRule::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[18].descriptor;
+  return ReadModifyWriteRule_descriptor_;
 }
 
 const ReadModifyWriteRule& ReadModifyWriteRule::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fv1_2fbigtable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ReadModifyWriteRule> ReadModifyWriteRule_default_instance_;
 
 ReadModifyWriteRule* ReadModifyWriteRule::New(::google::protobuf::Arena* arena) const {
   ReadModifyWriteRule* n = new ReadModifyWriteRule;
@@ -9581,13 +9993,13 @@ bool ReadModifyWriteRule::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.v1.ReadModifyWriteRule)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string family_name = 1;
+      // optional string family_name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_family_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -9597,34 +10009,39 @@ bool ReadModifyWriteRule::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_column_qualifier;
         break;
       }
 
-      // bytes column_qualifier = 2;
+      // optional bytes column_qualifier = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_column_qualifier:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_column_qualifier()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_append_value;
         break;
       }
 
-      // bytes append_value = 3;
+      // optional bytes append_value = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_append_value:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_append_value()));
         } else {
           goto handle_unusual;
         }
+        goto after_increment_amount;
         break;
       }
 
-      // int64 increment_amount = 4;
+      // optional int64 increment_amount = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
           clear_rule();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -9633,6 +10050,8 @@ bool ReadModifyWriteRule::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+       after_increment_amount:
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -9660,7 +10079,7 @@ failure:
 void ReadModifyWriteRule::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.v1.ReadModifyWriteRule)
-  // string family_name = 1;
+  // optional string family_name = 1;
   if (this->family_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->family_name().data(), this->family_name().length(),
@@ -9670,19 +10089,19 @@ void ReadModifyWriteRule::SerializeWithCachedSizes(
       1, this->family_name(), output);
   }
 
-  // bytes column_qualifier = 2;
+  // optional bytes column_qualifier = 2;
   if (this->column_qualifier().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       2, this->column_qualifier(), output);
   }
 
-  // bytes append_value = 3;
+  // optional bytes append_value = 3;
   if (has_append_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       3, this->append_value(), output);
   }
 
-  // int64 increment_amount = 4;
+  // optional int64 increment_amount = 4;
   if (has_increment_amount()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(4, this->increment_amount(), output);
   }
@@ -9694,7 +10113,7 @@ void ReadModifyWriteRule::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.v1.ReadModifyWriteRule)
-  // string family_name = 1;
+  // optional string family_name = 1;
   if (this->family_name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->family_name().data(), this->family_name().length(),
@@ -9705,21 +10124,21 @@ void ReadModifyWriteRule::SerializeWithCachedSizes(
         1, this->family_name(), target);
   }
 
-  // bytes column_qualifier = 2;
+  // optional bytes column_qualifier = 2;
   if (this->column_qualifier().size() > 0) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         2, this->column_qualifier(), target);
   }
 
-  // bytes append_value = 3;
+  // optional bytes append_value = 3;
   if (has_append_value()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         3, this->append_value(), target);
   }
 
-  // int64 increment_amount = 4;
+  // optional int64 increment_amount = 4;
   if (has_increment_amount()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(4, this->increment_amount(), target);
   }
@@ -9732,14 +10151,14 @@ size_t ReadModifyWriteRule::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bigtable.v1.ReadModifyWriteRule)
   size_t total_size = 0;
 
-  // string family_name = 1;
+  // optional string family_name = 1;
   if (this->family_name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->family_name());
   }
 
-  // bytes column_qualifier = 2;
+  // optional bytes column_qualifier = 2;
   if (this->column_qualifier().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::BytesSize(
@@ -9747,14 +10166,14 @@ size_t ReadModifyWriteRule::ByteSizeLong() const {
   }
 
   switch (rule_case()) {
-    // bytes append_value = 3;
+    // optional bytes append_value = 3;
     case kAppendValue: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::BytesSize(
           this->append_value());
       break;
     }
-    // int64 increment_amount = 4;
+    // optional int64 increment_amount = 4;
     case kIncrementAmount: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int64Size(
@@ -9774,7 +10193,7 @@ size_t ReadModifyWriteRule::ByteSizeLong() const {
 
 void ReadModifyWriteRule::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.v1.ReadModifyWriteRule)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ReadModifyWriteRule* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ReadModifyWriteRule>(
           &from);
@@ -9783,22 +10202,21 @@ void ReadModifyWriteRule::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.v1.ReadModifyWriteRule)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ReadModifyWriteRule::MergeFrom(const ReadModifyWriteRule& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.v1.ReadModifyWriteRule)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.family_name().size() > 0) {
-
-    family_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.family_name_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
   }
-  if (from.column_qualifier().size() > 0) {
+}
 
-    column_qualifier_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.column_qualifier_);
-  }
+void ReadModifyWriteRule::UnsafeMergeFrom(const ReadModifyWriteRule& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.rule_case()) {
     case kAppendValue: {
       set_append_value(from.append_value());
@@ -9811,6 +10229,14 @@ void ReadModifyWriteRule::MergeFrom(const ReadModifyWriteRule& from) {
     case RULE_NOT_SET: {
       break;
     }
+  }
+  if (from.family_name().size() > 0) {
+
+    family_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.family_name_);
+  }
+  if (from.column_qualifier().size() > 0) {
+
+    column_qualifier_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.column_qualifier_);
   }
 }
 
@@ -9825,10 +10251,11 @@ void ReadModifyWriteRule::CopyFrom(const ReadModifyWriteRule& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.v1.ReadModifyWriteRule)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ReadModifyWriteRule::IsInitialized() const {
+
   return true;
 }
 
@@ -9841,24 +10268,28 @@ void ReadModifyWriteRule::InternalSwap(ReadModifyWriteRule* other) {
   column_qualifier_.Swap(&other->column_qualifier_);
   std::swap(rule_, other->rule_);
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ReadModifyWriteRule::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[18];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ReadModifyWriteRule_descriptor_;
+  metadata.reflection = ReadModifyWriteRule_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ReadModifyWriteRule
 
-// string family_name = 1;
+// optional string family_name = 1;
 void ReadModifyWriteRule::clear_family_name() {
   family_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ReadModifyWriteRule::family_name() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.ReadModifyWriteRule.family_name)
-  return family_name_.GetNoArena();
+  return family_name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ReadModifyWriteRule::set_family_name(const ::std::string& value) {
   
@@ -9896,13 +10327,13 @@ void ReadModifyWriteRule::set_allocated_family_name(::std::string* family_name) 
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.ReadModifyWriteRule.family_name)
 }
 
-// bytes column_qualifier = 2;
+// optional bytes column_qualifier = 2;
 void ReadModifyWriteRule::clear_column_qualifier() {
   column_qualifier_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ReadModifyWriteRule::column_qualifier() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.ReadModifyWriteRule.column_qualifier)
-  return column_qualifier_.GetNoArena();
+  return column_qualifier_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ReadModifyWriteRule::set_column_qualifier(const ::std::string& value) {
   
@@ -9940,7 +10371,7 @@ void ReadModifyWriteRule::set_allocated_column_qualifier(::std::string* column_q
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.ReadModifyWriteRule.column_qualifier)
 }
 
-// bytes append_value = 3;
+// optional bytes append_value = 3;
 bool ReadModifyWriteRule::has_append_value() const {
   return rule_case() == kAppendValue;
 }
@@ -9956,7 +10387,7 @@ void ReadModifyWriteRule::clear_append_value() {
 const ::std::string& ReadModifyWriteRule::append_value() const {
   // @@protoc_insertion_point(field_get:google.bigtable.v1.ReadModifyWriteRule.append_value)
   if (has_append_value()) {
-    return rule_.append_value_.GetNoArena();
+    return rule_.append_value_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -10021,7 +10452,7 @@ void ReadModifyWriteRule::set_allocated_append_value(::std::string* append_value
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.v1.ReadModifyWriteRule.append_value)
 }
 
-// int64 increment_amount = 4;
+// optional int64 increment_amount = 4;
 bool ReadModifyWriteRule::has_increment_amount() const {
   return rule_case() == kIncrementAmount;
 }
@@ -10058,6 +10489,9 @@ void ReadModifyWriteRule::clear_has_rule() {
 }
 ReadModifyWriteRule::RuleCase ReadModifyWriteRule::rule_case() const {
   return ReadModifyWriteRule::RuleCase(_oneof_case_[0]);
+}
+inline const ReadModifyWriteRule* ReadModifyWriteRule::internal_default_instance() {
+  return &ReadModifyWriteRule_default_instance_.get();
 }
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 

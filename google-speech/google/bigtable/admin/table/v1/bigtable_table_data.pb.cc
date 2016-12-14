@@ -22,132 +22,174 @@ namespace bigtable {
 namespace admin {
 namespace table {
 namespace v1 {
-class TableDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Table> {};
-TableDefaultTypeInternal _Table_default_instance_;
-class ColumnFamilyDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ColumnFamily> {};
-ColumnFamilyDefaultTypeInternal _ColumnFamily_default_instance_;
-class GcRule_IntersectionDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GcRule_Intersection> {};
-GcRule_IntersectionDefaultTypeInternal _GcRule_Intersection_default_instance_;
-class GcRule_UnionDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GcRule_Union> {};
-GcRule_UnionDefaultTypeInternal _GcRule_Union_default_instance_;
-class GcRuleDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GcRule> {};
-GcRuleDefaultTypeInternal _GcRule_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[6];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+const ::google::protobuf::Descriptor* Table_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Table_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Table_ColumnFamiliesEntry_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* Table_TimestampGranularity_descriptor_ = NULL;
+const ::google::protobuf::Descriptor* ColumnFamily_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ColumnFamily_reflection_ = NULL;
+const ::google::protobuf::Descriptor* GcRule_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GcRule_reflection_ = NULL;
 struct GcRuleOneofInstance {
   ::google::protobuf::int32 max_num_versions_;
   const ::google::protobuf::Duration* max_age_;
   const ::google::bigtable::admin::table::v1::GcRule_Intersection* intersection_;
   const ::google::bigtable::admin::table::v1::GcRule_Union* union__;
-} GcRule_default_oneof_instance_;
+}* GcRule_default_oneof_instance_ = NULL;
+const ::google::protobuf::Descriptor* GcRule_Intersection_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GcRule_Intersection_reflection_ = NULL;
+const ::google::protobuf::Descriptor* GcRule_Union_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GcRule_Union_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Table, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto() {
+  protobuf_AddDesc_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/bigtable/admin/table/v1/bigtable_table_data.proto");
+  GOOGLE_CHECK(file != NULL);
+  Table_descriptor_ = file->message_type(0);
+  static const int Table_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Table, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Table, current_operation_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Table, column_families_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Table, granularity_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ColumnFamily, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Table_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Table_descriptor_,
+      Table::internal_default_instance(),
+      Table_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Table),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Table, _internal_metadata_));
+  Table_ColumnFamiliesEntry_descriptor_ = Table_descriptor_->nested_type(0);
+  Table_TimestampGranularity_descriptor_ = Table_descriptor_->enum_type(0);
+  ColumnFamily_descriptor_ = file->message_type(1);
+  static const int ColumnFamily_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ColumnFamily, name_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ColumnFamily, gc_expression_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ColumnFamily, gc_rule_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GcRule_Intersection, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GcRule_Intersection, rules_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GcRule_Union, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GcRule_Union, rules_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GcRule, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GcRule, _oneof_case_[0]),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&GcRule_default_oneof_instance_), max_num_versions_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&GcRule_default_oneof_instance_), max_age_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&GcRule_default_oneof_instance_), intersection_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&GcRule_default_oneof_instance_), union__),
+  };
+  ColumnFamily_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ColumnFamily_descriptor_,
+      ColumnFamily::internal_default_instance(),
+      ColumnFamily_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ColumnFamily),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ColumnFamily, _internal_metadata_));
+  GcRule_descriptor_ = file->message_type(2);
+  static const int GcRule_offsets_[5] = {
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(GcRule_default_oneof_instance_, max_num_versions_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(GcRule_default_oneof_instance_, max_age_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(GcRule_default_oneof_instance_, intersection_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(GcRule_default_oneof_instance_, union__),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GcRule, rule_),
   };
-  return offsets;
+  GcRule_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GcRule_descriptor_,
+      GcRule::internal_default_instance(),
+      GcRule_offsets_,
+      -1,
+      -1,
+      -1,
+      GcRule_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GcRule, _oneof_case_[0]),
+      sizeof(GcRule),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GcRule, _internal_metadata_));
+  GcRule_Intersection_descriptor_ = GcRule_descriptor_->nested_type(0);
+  static const int GcRule_Intersection_offsets_[1] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GcRule_Intersection, rules_),
+  };
+  GcRule_Intersection_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GcRule_Intersection_descriptor_,
+      GcRule_Intersection::internal_default_instance(),
+      GcRule_Intersection_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GcRule_Intersection),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GcRule_Intersection, _internal_metadata_));
+  GcRule_Union_descriptor_ = GcRule_descriptor_->nested_type(1);
+  static const int GcRule_Union_offsets_[1] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GcRule_Union, rules_),
+  };
+  GcRule_Union_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GcRule_Union_descriptor_,
+      GcRule_Union::internal_default_instance(),
+      GcRule_Union_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GcRule_Union),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GcRule_Union, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(Table)},
-  { 8, -1, sizeof(ColumnFamily)},
-  { 15, -1, sizeof(GcRule_Intersection)},
-  { 20, -1, sizeof(GcRule_Union)},
-  { 25, -1, sizeof(GcRule)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Table_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ColumnFamily_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GcRule_Intersection_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GcRule_Union_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GcRule_default_instance_), &GcRule_default_oneof_instance_},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/bigtable/admin/table/v1/bigtable_table_data.proto", schemas, file_default_instances, protobuf_Offsets_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto(), factory,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 6);
-  const ::google::protobuf::Descriptor* Table_ColumnFamiliesEntry_descriptor = file_level_metadata[0].descriptor;
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-        Table_ColumnFamiliesEntry_descriptor,
+      Table_descriptor_, Table::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+        Table_ColumnFamiliesEntry_descriptor_,
         ::google::protobuf::internal::MapEntry<
             ::std::string,
             ::google::bigtable::admin::table::v1::ColumnFamily,
             ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
             ::google::protobuf::internal::WireFormatLite::TYPE_MESSAGE,
             0>::CreateDefaultInstance(
-                Table_ColumnFamiliesEntry_descriptor));
+                Table_ColumnFamiliesEntry_descriptor_));
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ColumnFamily_descriptor_, ColumnFamily::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GcRule_descriptor_, GcRule::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GcRule_Intersection_descriptor_, GcRule_Intersection::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GcRule_Union_descriptor_, GcRule_Union::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto() {
-  _Table_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _ColumnFamily_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
-  _GcRule_Intersection_default_instance_.Shutdown();
-  delete file_level_metadata[3].reflection;
-  _GcRule_Union_default_instance_.Shutdown();
-  delete file_level_metadata[4].reflection;
-  _GcRule_default_instance_.Shutdown();
-  delete file_level_metadata[5].reflection;
+  Table_default_instance_.Shutdown();
+  delete Table_reflection_;
+  ColumnFamily_default_instance_.Shutdown();
+  delete ColumnFamily_reflection_;
+  GcRule_default_instance_.Shutdown();
+  delete GcRule_default_oneof_instance_;
+  delete GcRule_reflection_;
+  GcRule_Intersection_default_instance_.Shutdown();
+  delete GcRule_Intersection_reflection_;
+  GcRule_Union_default_instance_.Shutdown();
+  delete GcRule_Union_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto_impl() {
@@ -155,65 +197,61 @@ void protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ft
 
   ::google::longrunning::protobuf_InitDefaults_google_2flongrunning_2foperations_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fduration_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _Table_default_instance_.DefaultConstruct();
-  _ColumnFamily_default_instance_.DefaultConstruct();
-  _GcRule_Intersection_default_instance_.DefaultConstruct();
-  _GcRule_Union_default_instance_.DefaultConstruct();
-  _GcRule_default_instance_.DefaultConstruct();
-  _Table_default_instance_.get_mutable()->current_operation_ = const_cast< ::google::longrunning::Operation*>(
-      ::google::longrunning::Operation::internal_default_instance());
-  _ColumnFamily_default_instance_.get_mutable()->gc_rule_ = const_cast< ::google::bigtable::admin::table::v1::GcRule*>(
-      ::google::bigtable::admin::table::v1::GcRule::internal_default_instance());
-    GcRule_default_oneof_instance_.max_num_versions_ = 0;
-  GcRule_default_oneof_instance_.max_age_ = const_cast< ::google::protobuf::Duration*>(
-      ::google::protobuf::Duration::internal_default_instance());
-  GcRule_default_oneof_instance_.intersection_ = const_cast< ::google::bigtable::admin::table::v1::GcRule_Intersection*>(
-      ::google::bigtable::admin::table::v1::GcRule_Intersection::internal_default_instance());
-  GcRule_default_oneof_instance_.union__ = const_cast< ::google::bigtable::admin::table::v1::GcRule_Union*>(
-      ::google::bigtable::admin::table::v1::GcRule_Union::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  Table_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ColumnFamily_default_instance_.DefaultConstruct();
+  GcRule_default_instance_.DefaultConstruct();
+  GcRule_default_oneof_instance_ = new GcRuleOneofInstance();
+  GcRule_Intersection_default_instance_.DefaultConstruct();
+  GcRule_Union_default_instance_.DefaultConstruct();
+  Table_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ColumnFamily_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GcRule_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GcRule_Intersection_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GcRule_Union_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto_once_);
 void protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
-  static const char descriptor[] = {
-      "\n8google/bigtable/admin/table/v1/bigtabl"
-      "e_table_data.proto\022\036google.bigtable.admi"
-      "n.table.v1\032#google/longrunning/operation"
-      "s.proto\032\036google/protobuf/duration.proto\""
-      "\375\002\n\005Table\022\014\n\004name\030\001 \001(\t\0228\n\021current_opera"
-      "tion\030\002 \001(\0132\035.google.longrunning.Operatio"
-      "n\022R\n\017column_families\030\003 \003(\01329.google.bigt"
-      "able.admin.table.v1.Table.ColumnFamilies"
-      "Entry\022O\n\013granularity\030\004 \001(\0162:.google.bigt"
-      "able.admin.table.v1.Table.TimestampGranu"
-      "larity\032c\n\023ColumnFamiliesEntry\022\013\n\003key\030\001 \001"
-      "(\t\022;\n\005value\030\002 \001(\0132,.google.bigtable.admi"
-      "n.table.v1.ColumnFamily:\0028\001\"\"\n\024Timestamp"
-      "Granularity\022\n\n\006MILLIS\020\000\"l\n\014ColumnFamily\022"
-      "\014\n\004name\030\001 \001(\t\022\025\n\rgc_expression\030\002 \001(\t\0227\n\007"
-      "gc_rule\030\003 \001(\0132&.google.bigtable.admin.ta"
-      "ble.v1.GcRule\"\355\002\n\006GcRule\022\032\n\020max_num_vers"
-      "ions\030\001 \001(\005H\000\022,\n\007max_age\030\002 \001(\0132\031.google.p"
-      "rotobuf.DurationH\000\022K\n\014intersection\030\003 \001(\013"
-      "23.google.bigtable.admin.table.v1.GcRule"
-      ".IntersectionH\000\022=\n\005union\030\004 \001(\0132,.google."
-      "bigtable.admin.table.v1.GcRule.UnionH\000\032E"
-      "\n\014Intersection\0225\n\005rules\030\001 \003(\0132&.google.b"
-      "igtable.admin.table.v1.GcRule\032>\n\005Union\0225"
-      "\n\005rules\030\001 \003(\0132&.google.bigtable.admin.ta"
-      "ble.v1.GcRuleB\006\n\004ruleB\203\001\n\"com.google.big"
-      "table.admin.table.v1B\026BigtableTableDataP"
-      "rotoP\001ZCgoogle.golang.org/genproto/googl"
-      "eapis/bigtable/admin/table/v1;tableb\006pro"
-      "to3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1163);
+    "\n8google/bigtable/admin/table/v1/bigtabl"
+    "e_table_data.proto\022\036google.bigtable.admi"
+    "n.table.v1\032#google/longrunning/operation"
+    "s.proto\032\036google/protobuf/duration.proto\""
+    "\375\002\n\005Table\022\014\n\004name\030\001 \001(\t\0228\n\021current_opera"
+    "tion\030\002 \001(\0132\035.google.longrunning.Operatio"
+    "n\022R\n\017column_families\030\003 \003(\01329.google.bigt"
+    "able.admin.table.v1.Table.ColumnFamilies"
+    "Entry\022O\n\013granularity\030\004 \001(\0162:.google.bigt"
+    "able.admin.table.v1.Table.TimestampGranu"
+    "larity\032c\n\023ColumnFamiliesEntry\022\013\n\003key\030\001 \001"
+    "(\t\022;\n\005value\030\002 \001(\0132,.google.bigtable.admi"
+    "n.table.v1.ColumnFamily:\0028\001\"\"\n\024Timestamp"
+    "Granularity\022\n\n\006MILLIS\020\000\"l\n\014ColumnFamily\022"
+    "\014\n\004name\030\001 \001(\t\022\025\n\rgc_expression\030\002 \001(\t\0227\n\007"
+    "gc_rule\030\003 \001(\0132&.google.bigtable.admin.ta"
+    "ble.v1.GcRule\"\355\002\n\006GcRule\022\032\n\020max_num_vers"
+    "ions\030\001 \001(\005H\000\022,\n\007max_age\030\002 \001(\0132\031.google.p"
+    "rotobuf.DurationH\000\022K\n\014intersection\030\003 \001(\013"
+    "23.google.bigtable.admin.table.v1.GcRule"
+    ".IntersectionH\000\022=\n\005union\030\004 \001(\0132,.google."
+    "bigtable.admin.table.v1.GcRule.UnionH\000\032E"
+    "\n\014Intersection\0225\n\005rules\030\001 \003(\0132&.google.b"
+    "igtable.admin.table.v1.GcRule\032>\n\005Union\0225"
+    "\n\005rules\030\001 \003(\0132&.google.bigtable.admin.ta"
+    "ble.v1.GcRuleB\006\n\004ruleB\203\001\n\"com.google.big"
+    "table.admin.table.v1B\026BigtableTableDataP"
+    "rotoP\001ZCgoogle.golang.org/genproto/googl"
+    "eapis/bigtable/admin/table/v1;tableb\006pro"
+    "to3", 1163);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/bigtable/admin/table/v1/bigtable_table_data.proto", &protobuf_RegisterTypes);
   ::google::longrunning::protobuf_AddDesc_google_2flongrunning_2foperations_2eproto();
@@ -232,9 +270,22 @@ struct StaticDescriptorInitializer_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigt
     protobuf_AddDesc_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
   }
 } static_descriptor_initializer_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto_;
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
+// ===================================================================
+
 const ::google::protobuf::EnumDescriptor* Table_TimestampGranularity_descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
+  return Table_TimestampGranularity_descriptor_;
 }
 bool Table_TimestampGranularity_IsValid(int value) {
   switch (value) {
@@ -251,14 +302,6 @@ const Table_TimestampGranularity Table::TimestampGranularity_MIN;
 const Table_TimestampGranularity Table::TimestampGranularity_MAX;
 const int Table::TimestampGranularity_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-// ===================================================================
-
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
-
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Table::kNameFieldNumber;
 const int Table::kCurrentOperationFieldNumber;
@@ -268,45 +311,32 @@ const int Table::kGranularityFieldNumber;
 
 Table::Table()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.admin.table.v1.Table)
 }
+
+void Table::InitAsDefaultInstance() {
+  current_operation_ = const_cast< ::google::longrunning::Operation*>(
+      ::google::longrunning::Operation::internal_default_instance());
+}
+
 Table::Table(const Table& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  const ::google::protobuf::Descriptor*& Table_ColumnFamiliesEntry_descriptor = file_level_metadata[0].descriptor;
-  column_families_.SetAssignDescriptorCallback(
-      protobuf_AssignDescriptorsOnce);
-  column_families_.SetEntryDescriptor(
-      &Table_ColumnFamiliesEntry_descriptor);
-  column_families_.MergeFrom(from.column_families_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  if (from.has_current_operation()) {
-    current_operation_ = new ::google::longrunning::Operation(*from.current_operation_);
-  } else {
-    current_operation_ = NULL;
-  }
-  granularity_ = from.granularity_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.admin.table.v1.Table)
 }
 
 void Table::SharedCtor() {
-  const ::google::protobuf::Descriptor*& Table_ColumnFamiliesEntry_descriptor = file_level_metadata[0].descriptor;
   column_families_.SetAssignDescriptorCallback(
       protobuf_AssignDescriptorsOnce);
   column_families_.SetEntryDescriptor(
-      &Table_ColumnFamiliesEntry_descriptor);
+      &::google::bigtable::admin::table::v1::Table_ColumnFamiliesEntry_descriptor_);
   name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&current_operation_, 0, reinterpret_cast<char*>(&granularity_) -
-    reinterpret_cast<char*>(&current_operation_) + sizeof(granularity_));
+  current_operation_ = NULL;
+  granularity_ = 0;
   _cached_size_ = 0;
 }
 
@@ -317,7 +347,7 @@ Table::~Table() {
 
 void Table::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &Table_default_instance_.get()) {
     delete current_operation_;
   }
 }
@@ -329,13 +359,15 @@ void Table::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Table::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return Table_descriptor_;
 }
 
 const Table& Table::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Table> Table_default_instance_;
 
 Table* Table::New(::google::protobuf::Arena* arena) const {
   Table* n = new Table;
@@ -347,13 +379,11 @@ Table* Table::New(::google::protobuf::Arena* arena) const {
 
 void Table::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.bigtable.admin.table.v1.Table)
-  column_families_.Clear();
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && current_operation_ != NULL) {
-    delete current_operation_;
-  }
+  if (GetArenaNoVirtual() == NULL && current_operation_ != NULL) delete current_operation_;
   current_operation_ = NULL;
   granularity_ = 0;
+  column_families_.Clear();
 }
 
 bool Table::MergePartialFromCodedStream(
@@ -362,13 +392,13 @@ bool Table::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.admin.table.v1.Table)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -378,24 +408,29 @@ bool Table::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_current_operation;
         break;
       }
 
-      // .google.longrunning.Operation current_operation = 2;
+      // optional .google.longrunning.Operation current_operation = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_current_operation:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_current_operation()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_column_families;
         break;
       }
 
       // map<string, .google.bigtable.admin.table.v1.ColumnFamily> column_families = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_column_families:
           DO_(input->IncrementRecursionDepth());
+         parse_loop_column_families:
           Table_ColumnFamiliesEntry::Parser< ::google::protobuf::internal::MapField<
               ::std::string, ::google::bigtable::admin::table::v1::ColumnFamily,
               ::google::protobuf::internal::WireFormatLite::TYPE_STRING,
@@ -411,13 +446,16 @@ bool Table::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_loop_column_families;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectTag(32)) goto parse_granularity;
         break;
       }
 
-      // .google.bigtable.admin.table.v1.Table.TimestampGranularity granularity = 4;
+      // optional .google.bigtable.admin.table.v1.Table.TimestampGranularity granularity = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_granularity:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -426,6 +464,7 @@ bool Table::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -453,7 +492,7 @@ failure:
 void Table::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.admin.table.v1.Table)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -463,7 +502,7 @@ void Table::SerializeWithCachedSizes(
       1, this->name(), output);
   }
 
-  // .google.longrunning.Operation current_operation = 2;
+  // optional .google.longrunning.Operation current_operation = 2;
   if (this->has_current_operation()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->current_operation_, output);
@@ -484,7 +523,7 @@ void Table::SerializeWithCachedSizes(
       }
     };
 
-    if (output->IsSerializationDeterministic() &&
+    if (output->IsSerializationDeterminstic() &&
         this->column_families().size() > 1) {
       ::google::protobuf::scoped_array<SortItem> items(
           new SortItem[this->column_families().size()]);
@@ -518,7 +557,7 @@ void Table::SerializeWithCachedSizes(
     }
   }
 
-  // .google.bigtable.admin.table.v1.Table.TimestampGranularity granularity = 4;
+  // optional .google.bigtable.admin.table.v1.Table.TimestampGranularity granularity = 4;
   if (this->granularity() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       4, this->granularity(), output);
@@ -531,7 +570,7 @@ void Table::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.admin.table.v1.Table)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -542,7 +581,7 @@ void Table::SerializeWithCachedSizes(
         1, this->name(), target);
   }
 
-  // .google.longrunning.Operation current_operation = 2;
+  // optional .google.longrunning.Operation current_operation = 2;
   if (this->has_current_operation()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -602,7 +641,7 @@ void Table::SerializeWithCachedSizes(
     }
   }
 
-  // .google.bigtable.admin.table.v1.Table.TimestampGranularity granularity = 4;
+  // optional .google.bigtable.admin.table.v1.Table.TimestampGranularity granularity = 4;
   if (this->granularity() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       4, this->granularity(), target);
@@ -615,6 +654,26 @@ void Table::SerializeWithCachedSizes(
 size_t Table::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bigtable.admin.table.v1.Table)
   size_t total_size = 0;
+
+  // optional string name = 1;
+  if (this->name().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->name());
+  }
+
+  // optional .google.longrunning.Operation current_operation = 2;
+  if (this->has_current_operation()) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        *this->current_operation_);
+  }
+
+  // optional .google.bigtable.admin.table.v1.Table.TimestampGranularity granularity = 4;
+  if (this->granularity() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::EnumSize(this->granularity());
+  }
 
   // map<string, .google.bigtable.admin.table.v1.ColumnFamily> column_families = 3;
   total_size += 1 *
@@ -630,26 +689,6 @@ size_t Table::ByteSizeLong() const {
     }
   }
 
-  // string name = 1;
-  if (this->name().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->name());
-  }
-
-  // .google.longrunning.Operation current_operation = 2;
-  if (this->has_current_operation()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->current_operation_);
-  }
-
-  // .google.bigtable.admin.table.v1.Table.TimestampGranularity granularity = 4;
-  if (this->granularity() != 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->granularity());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -659,7 +698,7 @@ size_t Table::ByteSizeLong() const {
 
 void Table::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.admin.table.v1.Table)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Table* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Table>(
           &from);
@@ -668,14 +707,21 @@ void Table::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.admin.table.v1.Table)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Table::MergeFrom(const Table& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.admin.table.v1.Table)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Table::UnsafeMergeFrom(const Table& from) {
+  GOOGLE_DCHECK(&from != this);
   column_families_.MergeFrom(from.column_families_);
   if (from.name().size() > 0) {
 
@@ -700,10 +746,11 @@ void Table::CopyFrom(const Table& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.admin.table.v1.Table)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Table::IsInitialized() const {
+
   return true;
 }
 
@@ -712,28 +759,32 @@ void Table::Swap(Table* other) {
   InternalSwap(other);
 }
 void Table::InternalSwap(Table* other) {
-  column_families_.Swap(&other->column_families_);
   name_.Swap(&other->name_);
   std::swap(current_operation_, other->current_operation_);
+  column_families_.Swap(&other->column_families_);
   std::swap(granularity_, other->granularity_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Table::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Table_descriptor_;
+  metadata.reflection = Table_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Table
 
-// string name = 1;
+// optional string name = 1;
 void Table::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& Table::name() const {
   // @@protoc_insertion_point(field_get:google.bigtable.admin.table.v1.Table.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void Table::set_name(const ::std::string& value) {
   
@@ -771,7 +822,7 @@ void Table::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.admin.table.v1.Table.name)
 }
 
-// .google.longrunning.Operation current_operation = 2;
+// optional .google.longrunning.Operation current_operation = 2;
 bool Table::has_current_operation() const {
   return this != internal_default_instance() && current_operation_ != NULL;
 }
@@ -828,7 +879,7 @@ Table::mutable_column_families() {
   return column_families_.MutableMap();
 }
 
-// .google.bigtable.admin.table.v1.Table.TimestampGranularity granularity = 4;
+// optional .google.bigtable.admin.table.v1.Table.TimestampGranularity granularity = 4;
 void Table::clear_granularity() {
   granularity_ = 0;
 }
@@ -842,6 +893,9 @@ void Table::set_granularity(::google::bigtable::admin::table::v1::Table_Timestam
   // @@protoc_insertion_point(field_set:google.bigtable.admin.table.v1.Table.granularity)
 }
 
+inline const Table* Table::internal_default_instance() {
+  return &Table_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -854,30 +908,21 @@ const int ColumnFamily::kGcRuleFieldNumber;
 
 ColumnFamily::ColumnFamily()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.admin.table.v1.ColumnFamily)
 }
+
+void ColumnFamily::InitAsDefaultInstance() {
+  gc_rule_ = const_cast< ::google::bigtable::admin::table::v1::GcRule*>(
+      ::google::bigtable::admin::table::v1::GcRule::internal_default_instance());
+}
+
 ColumnFamily::ColumnFamily(const ColumnFamily& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
-  gc_expression_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.gc_expression().size() > 0) {
-    gc_expression_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.gc_expression_);
-  }
-  if (from.has_gc_rule()) {
-    gc_rule_ = new ::google::bigtable::admin::table::v1::GcRule(*from.gc_rule_);
-  } else {
-    gc_rule_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.admin.table.v1.ColumnFamily)
 }
 
@@ -896,7 +941,7 @@ ColumnFamily::~ColumnFamily() {
 void ColumnFamily::SharedDtor() {
   name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   gc_expression_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) {
+  if (this != &ColumnFamily_default_instance_.get()) {
     delete gc_rule_;
   }
 }
@@ -908,13 +953,15 @@ void ColumnFamily::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ColumnFamily::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return ColumnFamily_descriptor_;
 }
 
 const ColumnFamily& ColumnFamily::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ColumnFamily> ColumnFamily_default_instance_;
 
 ColumnFamily* ColumnFamily::New(::google::protobuf::Arena* arena) const {
   ColumnFamily* n = new ColumnFamily;
@@ -928,9 +975,7 @@ void ColumnFamily::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.bigtable.admin.table.v1.ColumnFamily)
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   gc_expression_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == NULL && gc_rule_ != NULL) {
-    delete gc_rule_;
-  }
+  if (GetArenaNoVirtual() == NULL && gc_rule_ != NULL) delete gc_rule_;
   gc_rule_ = NULL;
 }
 
@@ -940,13 +985,13 @@ bool ColumnFamily::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.admin.table.v1.ColumnFamily)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -956,12 +1001,14 @@ bool ColumnFamily::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_gc_expression;
         break;
       }
 
-      // string gc_expression = 2;
+      // optional string gc_expression = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_gc_expression:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_gc_expression()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -971,17 +1018,20 @@ bool ColumnFamily::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_gc_rule;
         break;
       }
 
-      // .google.bigtable.admin.table.v1.GcRule gc_rule = 3;
+      // optional .google.bigtable.admin.table.v1.GcRule gc_rule = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_gc_rule:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_gc_rule()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1009,7 +1059,7 @@ failure:
 void ColumnFamily::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.admin.table.v1.ColumnFamily)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -1019,7 +1069,7 @@ void ColumnFamily::SerializeWithCachedSizes(
       1, this->name(), output);
   }
 
-  // string gc_expression = 2;
+  // optional string gc_expression = 2;
   if (this->gc_expression().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->gc_expression().data(), this->gc_expression().length(),
@@ -1029,7 +1079,7 @@ void ColumnFamily::SerializeWithCachedSizes(
       2, this->gc_expression(), output);
   }
 
-  // .google.bigtable.admin.table.v1.GcRule gc_rule = 3;
+  // optional .google.bigtable.admin.table.v1.GcRule gc_rule = 3;
   if (this->has_gc_rule()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *this->gc_rule_, output);
@@ -1042,7 +1092,7 @@ void ColumnFamily::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.admin.table.v1.ColumnFamily)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -1053,7 +1103,7 @@ void ColumnFamily::SerializeWithCachedSizes(
         1, this->name(), target);
   }
 
-  // string gc_expression = 2;
+  // optional string gc_expression = 2;
   if (this->gc_expression().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->gc_expression().data(), this->gc_expression().length(),
@@ -1064,7 +1114,7 @@ void ColumnFamily::SerializeWithCachedSizes(
         2, this->gc_expression(), target);
   }
 
-  // .google.bigtable.admin.table.v1.GcRule gc_rule = 3;
+  // optional .google.bigtable.admin.table.v1.GcRule gc_rule = 3;
   if (this->has_gc_rule()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -1079,21 +1129,21 @@ size_t ColumnFamily::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.bigtable.admin.table.v1.ColumnFamily)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->name());
   }
 
-  // string gc_expression = 2;
+  // optional string gc_expression = 2;
   if (this->gc_expression().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->gc_expression());
   }
 
-  // .google.bigtable.admin.table.v1.GcRule gc_rule = 3;
+  // optional .google.bigtable.admin.table.v1.GcRule gc_rule = 3;
   if (this->has_gc_rule()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -1109,7 +1159,7 @@ size_t ColumnFamily::ByteSizeLong() const {
 
 void ColumnFamily::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.admin.table.v1.ColumnFamily)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ColumnFamily* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ColumnFamily>(
           &from);
@@ -1118,14 +1168,21 @@ void ColumnFamily::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.admin.table.v1.ColumnFamily)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ColumnFamily::MergeFrom(const ColumnFamily& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.admin.table.v1.ColumnFamily)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ColumnFamily::UnsafeMergeFrom(const ColumnFamily& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -1150,10 +1207,11 @@ void ColumnFamily::CopyFrom(const ColumnFamily& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.admin.table.v1.ColumnFamily)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ColumnFamily::IsInitialized() const {
+
   return true;
 }
 
@@ -1165,24 +1223,28 @@ void ColumnFamily::InternalSwap(ColumnFamily* other) {
   name_.Swap(&other->name_);
   gc_expression_.Swap(&other->gc_expression_);
   std::swap(gc_rule_, other->gc_rule_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ColumnFamily::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ColumnFamily_descriptor_;
+  metadata.reflection = ColumnFamily_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ColumnFamily
 
-// string name = 1;
+// optional string name = 1;
 void ColumnFamily::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ColumnFamily::name() const {
   // @@protoc_insertion_point(field_get:google.bigtable.admin.table.v1.ColumnFamily.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ColumnFamily::set_name(const ::std::string& value) {
   
@@ -1220,13 +1282,13 @@ void ColumnFamily::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.admin.table.v1.ColumnFamily.name)
 }
 
-// string gc_expression = 2;
+// optional string gc_expression = 2;
 void ColumnFamily::clear_gc_expression() {
   gc_expression_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ColumnFamily::gc_expression() const {
   // @@protoc_insertion_point(field_get:google.bigtable.admin.table.v1.ColumnFamily.gc_expression)
-  return gc_expression_.GetNoArena();
+  return gc_expression_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ColumnFamily::set_gc_expression(const ::std::string& value) {
   
@@ -1264,7 +1326,7 @@ void ColumnFamily::set_allocated_gc_expression(::std::string* gc_expression) {
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.admin.table.v1.ColumnFamily.gc_expression)
 }
 
-// .google.bigtable.admin.table.v1.GcRule gc_rule = 3;
+// optional .google.bigtable.admin.table.v1.GcRule gc_rule = 3;
 bool ColumnFamily::has_gc_rule() const {
   return this != internal_default_instance() && gc_rule_ != NULL;
 }
@@ -1303,6 +1365,9 @@ void ColumnFamily::set_allocated_gc_rule(::google::bigtable::admin::table::v1::G
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.admin.table.v1.ColumnFamily.gc_rule)
 }
 
+inline const ColumnFamily* ColumnFamily::internal_default_instance() {
+  return &ColumnFamily_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -1313,18 +1378,19 @@ const int GcRule_Intersection::kRulesFieldNumber;
 
 GcRule_Intersection::GcRule_Intersection()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.admin.table.v1.GcRule.Intersection)
 }
+
+void GcRule_Intersection::InitAsDefaultInstance() {
+}
+
 GcRule_Intersection::GcRule_Intersection(const GcRule_Intersection& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      rules_(from.rules_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.admin.table.v1.GcRule.Intersection)
 }
 
@@ -1347,13 +1413,15 @@ void GcRule_Intersection::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GcRule_Intersection::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3].descriptor;
+  return GcRule_Intersection_descriptor_;
 }
 
 const GcRule_Intersection& GcRule_Intersection::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GcRule_Intersection> GcRule_Intersection_default_instance_;
 
 GcRule_Intersection* GcRule_Intersection::New(::google::protobuf::Arena* arena) const {
   GcRule_Intersection* n = new GcRule_Intersection;
@@ -1374,20 +1442,23 @@ bool GcRule_Intersection::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.admin.table.v1.GcRule.Intersection)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.bigtable.admin.table.v1.GcRule rules = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_rules:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_rules()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_rules;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1463,7 +1534,7 @@ size_t GcRule_Intersection::ByteSizeLong() const {
 
 void GcRule_Intersection::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.admin.table.v1.GcRule.Intersection)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GcRule_Intersection* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GcRule_Intersection>(
           &from);
@@ -1472,14 +1543,21 @@ void GcRule_Intersection::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.admin.table.v1.GcRule.Intersection)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GcRule_Intersection::MergeFrom(const GcRule_Intersection& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.admin.table.v1.GcRule.Intersection)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GcRule_Intersection::UnsafeMergeFrom(const GcRule_Intersection& from) {
+  GOOGLE_DCHECK(&from != this);
   rules_.MergeFrom(from.rules_);
 }
 
@@ -1494,10 +1572,11 @@ void GcRule_Intersection::CopyFrom(const GcRule_Intersection& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.admin.table.v1.GcRule.Intersection)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GcRule_Intersection::IsInitialized() const {
+
   return true;
 }
 
@@ -1507,50 +1586,20 @@ void GcRule_Intersection::Swap(GcRule_Intersection* other) {
 }
 void GcRule_Intersection::InternalSwap(GcRule_Intersection* other) {
   rules_.UnsafeArenaSwap(&other->rules_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GcRule_Intersection::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[3];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GcRule_Intersection_descriptor_;
+  metadata.reflection = GcRule_Intersection_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// GcRule_Intersection
 
-// repeated .google.bigtable.admin.table.v1.GcRule rules = 1;
-int GcRule_Intersection::rules_size() const {
-  return rules_.size();
-}
-void GcRule_Intersection::clear_rules() {
-  rules_.Clear();
-}
-const ::google::bigtable::admin::table::v1::GcRule& GcRule_Intersection::rules(int index) const {
-  // @@protoc_insertion_point(field_get:google.bigtable.admin.table.v1.GcRule.Intersection.rules)
-  return rules_.Get(index);
-}
-::google::bigtable::admin::table::v1::GcRule* GcRule_Intersection::mutable_rules(int index) {
-  // @@protoc_insertion_point(field_mutable:google.bigtable.admin.table.v1.GcRule.Intersection.rules)
-  return rules_.Mutable(index);
-}
-::google::bigtable::admin::table::v1::GcRule* GcRule_Intersection::add_rules() {
-  // @@protoc_insertion_point(field_add:google.bigtable.admin.table.v1.GcRule.Intersection.rules)
-  return rules_.Add();
-}
-::google::protobuf::RepeatedPtrField< ::google::bigtable::admin::table::v1::GcRule >*
-GcRule_Intersection::mutable_rules() {
-  // @@protoc_insertion_point(field_mutable_list:google.bigtable.admin.table.v1.GcRule.Intersection.rules)
-  return &rules_;
-}
-const ::google::protobuf::RepeatedPtrField< ::google::bigtable::admin::table::v1::GcRule >&
-GcRule_Intersection::rules() const {
-  // @@protoc_insertion_point(field_list:google.bigtable.admin.table.v1.GcRule.Intersection.rules)
-  return rules_;
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
+// -------------------------------------------------------------------
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int GcRule_Union::kRulesFieldNumber;
@@ -1558,18 +1607,19 @@ const int GcRule_Union::kRulesFieldNumber;
 
 GcRule_Union::GcRule_Union()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.admin.table.v1.GcRule.Union)
 }
+
+void GcRule_Union::InitAsDefaultInstance() {
+}
+
 GcRule_Union::GcRule_Union(const GcRule_Union& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      rules_(from.rules_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.admin.table.v1.GcRule.Union)
 }
 
@@ -1592,13 +1642,15 @@ void GcRule_Union::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GcRule_Union::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4].descriptor;
+  return GcRule_Union_descriptor_;
 }
 
 const GcRule_Union& GcRule_Union::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GcRule_Union> GcRule_Union_default_instance_;
 
 GcRule_Union* GcRule_Union::New(::google::protobuf::Arena* arena) const {
   GcRule_Union* n = new GcRule_Union;
@@ -1619,20 +1671,23 @@ bool GcRule_Union::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.admin.table.v1.GcRule.Union)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.bigtable.admin.table.v1.GcRule rules = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_rules:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_rules()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_rules;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1708,7 +1763,7 @@ size_t GcRule_Union::ByteSizeLong() const {
 
 void GcRule_Union::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.admin.table.v1.GcRule.Union)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GcRule_Union* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GcRule_Union>(
           &from);
@@ -1717,14 +1772,21 @@ void GcRule_Union::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.admin.table.v1.GcRule.Union)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GcRule_Union::MergeFrom(const GcRule_Union& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.admin.table.v1.GcRule.Union)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GcRule_Union::UnsafeMergeFrom(const GcRule_Union& from) {
+  GOOGLE_DCHECK(&from != this);
   rules_.MergeFrom(from.rules_);
 }
 
@@ -1739,10 +1801,11 @@ void GcRule_Union::CopyFrom(const GcRule_Union& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.admin.table.v1.GcRule.Union)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GcRule_Union::IsInitialized() const {
+
   return true;
 }
 
@@ -1752,50 +1815,20 @@ void GcRule_Union::Swap(GcRule_Union* other) {
 }
 void GcRule_Union::InternalSwap(GcRule_Union* other) {
   rules_.UnsafeArenaSwap(&other->rules_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GcRule_Union::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[4];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GcRule_Union_descriptor_;
+  metadata.reflection = GcRule_Union_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// GcRule_Union
 
-// repeated .google.bigtable.admin.table.v1.GcRule rules = 1;
-int GcRule_Union::rules_size() const {
-  return rules_.size();
-}
-void GcRule_Union::clear_rules() {
-  rules_.Clear();
-}
-const ::google::bigtable::admin::table::v1::GcRule& GcRule_Union::rules(int index) const {
-  // @@protoc_insertion_point(field_get:google.bigtable.admin.table.v1.GcRule.Union.rules)
-  return rules_.Get(index);
-}
-::google::bigtable::admin::table::v1::GcRule* GcRule_Union::mutable_rules(int index) {
-  // @@protoc_insertion_point(field_mutable:google.bigtable.admin.table.v1.GcRule.Union.rules)
-  return rules_.Mutable(index);
-}
-::google::bigtable::admin::table::v1::GcRule* GcRule_Union::add_rules() {
-  // @@protoc_insertion_point(field_add:google.bigtable.admin.table.v1.GcRule.Union.rules)
-  return rules_.Add();
-}
-::google::protobuf::RepeatedPtrField< ::google::bigtable::admin::table::v1::GcRule >*
-GcRule_Union::mutable_rules() {
-  // @@protoc_insertion_point(field_mutable_list:google.bigtable.admin.table.v1.GcRule.Union.rules)
-  return &rules_;
-}
-const ::google::protobuf::RepeatedPtrField< ::google::bigtable::admin::table::v1::GcRule >&
-GcRule_Union::rules() const {
-  // @@protoc_insertion_point(field_list:google.bigtable.admin.table.v1.GcRule.Union.rules)
-  return rules_;
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
+// -------------------------------------------------------------------
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int GcRule::kMaxNumVersionsFieldNumber;
@@ -1806,39 +1839,26 @@ const int GcRule::kUnionFieldNumber;
 
 GcRule::GcRule()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.bigtable.admin.table.v1.GcRule)
 }
+
+void GcRule::InitAsDefaultInstance() {
+  GcRule_default_oneof_instance_->max_num_versions_ = 0;
+  GcRule_default_oneof_instance_->max_age_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
+  GcRule_default_oneof_instance_->intersection_ = const_cast< ::google::bigtable::admin::table::v1::GcRule_Intersection*>(
+      ::google::bigtable::admin::table::v1::GcRule_Intersection::internal_default_instance());
+  GcRule_default_oneof_instance_->union__ = const_cast< ::google::bigtable::admin::table::v1::GcRule_Union*>(
+      ::google::bigtable::admin::table::v1::GcRule_Union::internal_default_instance());
+}
+
 GcRule::GcRule(const GcRule& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  clear_has_rule();
-  switch (from.rule_case()) {
-    case kMaxNumVersions: {
-      set_max_num_versions(from.max_num_versions());
-      break;
-    }
-    case kMaxAge: {
-      mutable_max_age()->::google::protobuf::Duration::MergeFrom(from.max_age());
-      break;
-    }
-    case kIntersection: {
-      mutable_intersection()->::google::bigtable::admin::table::v1::GcRule_Intersection::MergeFrom(from.intersection());
-      break;
-    }
-    case kUnion: {
-      mutable_union_()->::google::bigtable::admin::table::v1::GcRule_Union::MergeFrom(from.union_());
-      break;
-    }
-    case RULE_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.bigtable.admin.table.v1.GcRule)
 }
 
@@ -1865,13 +1885,15 @@ void GcRule::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GcRule::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5].descriptor;
+  return GcRule_descriptor_;
 }
 
 const GcRule& GcRule::default_instance() {
   protobuf_InitDefaults_google_2fbigtable_2fadmin_2ftable_2fv1_2fbigtable_5ftable_5fdata_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GcRule> GcRule_default_instance_;
 
 GcRule* GcRule::New(::google::protobuf::Arena* arena) const {
   GcRule* n = new GcRule;
@@ -1919,13 +1941,13 @@ bool GcRule::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.bigtable.admin.table.v1.GcRule)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int32 max_num_versions = 1;
+      // optional int32 max_num_versions = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
           clear_rule();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -1934,39 +1956,45 @@ bool GcRule::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        goto after_union_;
         break;
       }
 
-      // .google.protobuf.Duration max_age = 2;
+      // optional .google.protobuf.Duration max_age = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_max_age()));
         } else {
           goto handle_unusual;
         }
+        goto after_union_;
         break;
       }
 
-      // .google.bigtable.admin.table.v1.GcRule.Intersection intersection = 3;
+      // optional .google.bigtable.admin.table.v1.GcRule.Intersection intersection = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_intersection()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_union;
         break;
       }
 
-      // .google.bigtable.admin.table.v1.GcRule.Union union = 4;
+      // optional .google.bigtable.admin.table.v1.GcRule.Union union = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
+         parse_union:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_union_()));
         } else {
           goto handle_unusual;
         }
+       after_union_:
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1994,24 +2022,24 @@ failure:
 void GcRule::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.bigtable.admin.table.v1.GcRule)
-  // int32 max_num_versions = 1;
+  // optional int32 max_num_versions = 1;
   if (has_max_num_versions()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->max_num_versions(), output);
   }
 
-  // .google.protobuf.Duration max_age = 2;
+  // optional .google.protobuf.Duration max_age = 2;
   if (has_max_age()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *rule_.max_age_, output);
   }
 
-  // .google.bigtable.admin.table.v1.GcRule.Intersection intersection = 3;
+  // optional .google.bigtable.admin.table.v1.GcRule.Intersection intersection = 3;
   if (has_intersection()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, *rule_.intersection_, output);
   }
 
-  // .google.bigtable.admin.table.v1.GcRule.Union union = 4;
+  // optional .google.bigtable.admin.table.v1.GcRule.Union union = 4;
   if (has_union_()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       4, *rule_.union__, output);
@@ -2024,26 +2052,26 @@ void GcRule::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.bigtable.admin.table.v1.GcRule)
-  // int32 max_num_versions = 1;
+  // optional int32 max_num_versions = 1;
   if (has_max_num_versions()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->max_num_versions(), target);
   }
 
-  // .google.protobuf.Duration max_age = 2;
+  // optional .google.protobuf.Duration max_age = 2;
   if (has_max_age()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         2, *rule_.max_age_, false, target);
   }
 
-  // .google.bigtable.admin.table.v1.GcRule.Intersection intersection = 3;
+  // optional .google.bigtable.admin.table.v1.GcRule.Intersection intersection = 3;
   if (has_intersection()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         3, *rule_.intersection_, false, target);
   }
 
-  // .google.bigtable.admin.table.v1.GcRule.Union union = 4;
+  // optional .google.bigtable.admin.table.v1.GcRule.Union union = 4;
   if (has_union_()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -2059,28 +2087,28 @@ size_t GcRule::ByteSizeLong() const {
   size_t total_size = 0;
 
   switch (rule_case()) {
-    // int32 max_num_versions = 1;
+    // optional int32 max_num_versions = 1;
     case kMaxNumVersions: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(
           this->max_num_versions());
       break;
     }
-    // .google.protobuf.Duration max_age = 2;
+    // optional .google.protobuf.Duration max_age = 2;
     case kMaxAge: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *rule_.max_age_);
       break;
     }
-    // .google.bigtable.admin.table.v1.GcRule.Intersection intersection = 3;
+    // optional .google.bigtable.admin.table.v1.GcRule.Intersection intersection = 3;
     case kIntersection: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
           *rule_.intersection_);
       break;
     }
-    // .google.bigtable.admin.table.v1.GcRule.Union union = 4;
+    // optional .google.bigtable.admin.table.v1.GcRule.Union union = 4;
     case kUnion: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -2100,7 +2128,7 @@ size_t GcRule::ByteSizeLong() const {
 
 void GcRule::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.bigtable.admin.table.v1.GcRule)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GcRule* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GcRule>(
           &from);
@@ -2109,14 +2137,21 @@ void GcRule::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.bigtable.admin.table.v1.GcRule)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GcRule::MergeFrom(const GcRule& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.bigtable.admin.table.v1.GcRule)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GcRule::UnsafeMergeFrom(const GcRule& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.rule_case()) {
     case kMaxNumVersions: {
       set_max_num_versions(from.max_num_versions());
@@ -2151,10 +2186,11 @@ void GcRule::CopyFrom(const GcRule& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.bigtable.admin.table.v1.GcRule)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GcRule::IsInitialized() const {
+
   return true;
 }
 
@@ -2165,18 +2201,96 @@ void GcRule::Swap(GcRule* other) {
 void GcRule::InternalSwap(GcRule* other) {
   std::swap(rule_, other->rule_);
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GcRule::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[5];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GcRule_descriptor_;
+  metadata.reflection = GcRule_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
+// GcRule_Intersection
+
+// repeated .google.bigtable.admin.table.v1.GcRule rules = 1;
+int GcRule_Intersection::rules_size() const {
+  return rules_.size();
+}
+void GcRule_Intersection::clear_rules() {
+  rules_.Clear();
+}
+const ::google::bigtable::admin::table::v1::GcRule& GcRule_Intersection::rules(int index) const {
+  // @@protoc_insertion_point(field_get:google.bigtable.admin.table.v1.GcRule.Intersection.rules)
+  return rules_.Get(index);
+}
+::google::bigtable::admin::table::v1::GcRule* GcRule_Intersection::mutable_rules(int index) {
+  // @@protoc_insertion_point(field_mutable:google.bigtable.admin.table.v1.GcRule.Intersection.rules)
+  return rules_.Mutable(index);
+}
+::google::bigtable::admin::table::v1::GcRule* GcRule_Intersection::add_rules() {
+  // @@protoc_insertion_point(field_add:google.bigtable.admin.table.v1.GcRule.Intersection.rules)
+  return rules_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::google::bigtable::admin::table::v1::GcRule >*
+GcRule_Intersection::mutable_rules() {
+  // @@protoc_insertion_point(field_mutable_list:google.bigtable.admin.table.v1.GcRule.Intersection.rules)
+  return &rules_;
+}
+const ::google::protobuf::RepeatedPtrField< ::google::bigtable::admin::table::v1::GcRule >&
+GcRule_Intersection::rules() const {
+  // @@protoc_insertion_point(field_list:google.bigtable.admin.table.v1.GcRule.Intersection.rules)
+  return rules_;
+}
+
+inline const GcRule_Intersection* GcRule_Intersection::internal_default_instance() {
+  return &GcRule_Intersection_default_instance_.get();
+}
+// -------------------------------------------------------------------
+
+// GcRule_Union
+
+// repeated .google.bigtable.admin.table.v1.GcRule rules = 1;
+int GcRule_Union::rules_size() const {
+  return rules_.size();
+}
+void GcRule_Union::clear_rules() {
+  rules_.Clear();
+}
+const ::google::bigtable::admin::table::v1::GcRule& GcRule_Union::rules(int index) const {
+  // @@protoc_insertion_point(field_get:google.bigtable.admin.table.v1.GcRule.Union.rules)
+  return rules_.Get(index);
+}
+::google::bigtable::admin::table::v1::GcRule* GcRule_Union::mutable_rules(int index) {
+  // @@protoc_insertion_point(field_mutable:google.bigtable.admin.table.v1.GcRule.Union.rules)
+  return rules_.Mutable(index);
+}
+::google::bigtable::admin::table::v1::GcRule* GcRule_Union::add_rules() {
+  // @@protoc_insertion_point(field_add:google.bigtable.admin.table.v1.GcRule.Union.rules)
+  return rules_.Add();
+}
+::google::protobuf::RepeatedPtrField< ::google::bigtable::admin::table::v1::GcRule >*
+GcRule_Union::mutable_rules() {
+  // @@protoc_insertion_point(field_mutable_list:google.bigtable.admin.table.v1.GcRule.Union.rules)
+  return &rules_;
+}
+const ::google::protobuf::RepeatedPtrField< ::google::bigtable::admin::table::v1::GcRule >&
+GcRule_Union::rules() const {
+  // @@protoc_insertion_point(field_list:google.bigtable.admin.table.v1.GcRule.Union.rules)
+  return rules_;
+}
+
+inline const GcRule_Union* GcRule_Union::internal_default_instance() {
+  return &GcRule_Union_default_instance_.get();
+}
+// -------------------------------------------------------------------
+
 // GcRule
 
-// int32 max_num_versions = 1;
+// optional int32 max_num_versions = 1;
 bool GcRule::has_max_num_versions() const {
   return rule_case() == kMaxNumVersions;
 }
@@ -2205,7 +2319,7 @@ void GcRule::set_max_num_versions(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.bigtable.admin.table.v1.GcRule.max_num_versions)
 }
 
-// .google.protobuf.Duration max_age = 2;
+// optional .google.protobuf.Duration max_age = 2;
 bool GcRule::has_max_age() const {
   return rule_case() == kMaxAge;
 }
@@ -2258,7 +2372,7 @@ void GcRule::set_allocated_max_age(::google::protobuf::Duration* max_age) {
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.admin.table.v1.GcRule.max_age)
 }
 
-// .google.bigtable.admin.table.v1.GcRule.Intersection intersection = 3;
+// optional .google.bigtable.admin.table.v1.GcRule.Intersection intersection = 3;
 bool GcRule::has_intersection() const {
   return rule_case() == kIntersection;
 }
@@ -2306,7 +2420,7 @@ void GcRule::set_allocated_intersection(::google::bigtable::admin::table::v1::Gc
   // @@protoc_insertion_point(field_set_allocated:google.bigtable.admin.table.v1.GcRule.intersection)
 }
 
-// .google.bigtable.admin.table.v1.GcRule.Union union = 4;
+// optional .google.bigtable.admin.table.v1.GcRule.Union union = 4;
 bool GcRule::has_union_() const {
   return rule_case() == kUnion;
 }
@@ -2362,6 +2476,9 @@ void GcRule::clear_has_rule() {
 }
 GcRule::RuleCase GcRule::rule_case() const {
   return GcRule::RuleCase(_oneof_case_[0]);
+}
+inline const GcRule* GcRule::internal_default_instance() {
+  return &GcRule_default_instance_.get();
 }
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 

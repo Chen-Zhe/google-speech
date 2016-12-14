@@ -24,35 +24,13 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 #include <google/protobuf/any.pb.h>
 #include <google/protobuf/timestamp.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace genomics {
-namespace v1 {
-class OperationEvent;
-class OperationEventDefaultTypeInternal;
-extern OperationEventDefaultTypeInternal _OperationEvent_default_instance_;
-class OperationMetadata;
-class OperationMetadataDefaultTypeInternal;
-extern OperationMetadataDefaultTypeInternal _OperationMetadata_default_instance_;
-}  // namespace v1
-}  // namespace genomics
-namespace protobuf {
-class Any;
-class AnyDefaultTypeInternal;
-extern AnyDefaultTypeInternal _Any_default_instance_;
-class Timestamp;
-class TimestampDefaultTypeInternal;
-extern TimestampDefaultTypeInternal _Timestamp_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace genomics {
@@ -61,6 +39,11 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fgenomics_2fv1_2foperations_2eproto();
 void protobuf_InitDefaults_google_2fgenomics_2fv1_2foperations_2eproto();
+void protobuf_AssignDesc_google_2fgenomics_2fv1_2foperations_2eproto();
+void protobuf_ShutdownFile_google_2fgenomics_2fv1_2foperations_2eproto();
+
+class OperationEvent;
+class OperationMetadata;
 
 // ===================================================================
 
@@ -76,52 +59,47 @@ class OperationMetadata : public ::google::protobuf::Message /* @@protoc_inserti
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const OperationMetadata& default_instance();
 
-  static inline const OperationMetadata* internal_default_instance() {
-    return reinterpret_cast<const OperationMetadata*>(
-               &_OperationMetadata_default_instance_);
-  }
+  static const OperationMetadata* internal_default_instance();
 
   void UnsafeArenaSwap(OperationMetadata* other);
   void Swap(OperationMetadata* other);
 
   // implements Message ----------------------------------------------
 
-  inline OperationMetadata* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline OperationMetadata* New() const { return New(NULL); }
 
-  OperationMetadata* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  OperationMetadata* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const OperationMetadata& from);
   void MergeFrom(const OperationMetadata& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(OperationMetadata* other);
+  void UnsafeMergeFrom(const OperationMetadata& from);
   protected:
   explicit OperationMetadata(::google::protobuf::Arena* arena);
   private:
@@ -136,13 +114,13 @@ class OperationMetadata : public ::google::protobuf::Message /* @@protoc_inserti
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string project_id = 1;
+  // optional string project_id = 1;
   void clear_project_id();
   static const int kProjectIdFieldNumber = 1;
   const ::std::string& project_id() const;
@@ -156,7 +134,7 @@ class OperationMetadata : public ::google::protobuf::Message /* @@protoc_inserti
   void unsafe_arena_set_allocated_project_id(
       ::std::string* project_id);
 
-  // .google.protobuf.Timestamp create_time = 2;
+  // optional .google.protobuf.Timestamp create_time = 2;
   bool has_create_time() const;
   void clear_create_time();
   static const int kCreateTimeFieldNumber = 2;
@@ -174,7 +152,7 @@ class OperationMetadata : public ::google::protobuf::Message /* @@protoc_inserti
   void unsafe_arena_set_allocated_create_time(
       ::google::protobuf::Timestamp* create_time);
 
-  // .google.protobuf.Timestamp start_time = 3;
+  // optional .google.protobuf.Timestamp start_time = 3;
   bool has_start_time() const;
   void clear_start_time();
   static const int kStartTimeFieldNumber = 3;
@@ -192,7 +170,7 @@ class OperationMetadata : public ::google::protobuf::Message /* @@protoc_inserti
   void unsafe_arena_set_allocated_start_time(
       ::google::protobuf::Timestamp* start_time);
 
-  // .google.protobuf.Timestamp end_time = 4;
+  // optional .google.protobuf.Timestamp end_time = 4;
   bool has_end_time() const;
   void clear_end_time();
   static const int kEndTimeFieldNumber = 4;
@@ -210,7 +188,7 @@ class OperationMetadata : public ::google::protobuf::Message /* @@protoc_inserti
   void unsafe_arena_set_allocated_end_time(
       ::google::protobuf::Timestamp* end_time);
 
-  // .google.protobuf.Any request = 5;
+  // optional .google.protobuf.Any request = 5;
   bool has_request() const;
   void clear_request();
   static const int kRequestFieldNumber = 5;
@@ -238,7 +216,7 @@ class OperationMetadata : public ::google::protobuf::Message /* @@protoc_inserti
   const ::google::protobuf::RepeatedPtrField< ::google::genomics::v1::OperationEvent >&
       events() const;
 
-  // string client_id = 7;
+  // optional string client_id = 7;
   void clear_client_id();
   static const int kClientIdFieldNumber = 7;
   const ::std::string& client_id() const;
@@ -252,7 +230,7 @@ class OperationMetadata : public ::google::protobuf::Message /* @@protoc_inserti
   void unsafe_arena_set_allocated_client_id(
       ::std::string* client_id);
 
-  // .google.protobuf.Any runtime_metadata = 8;
+  // optional .google.protobuf.Any runtime_metadata = 8;
   bool has_runtime_metadata() const;
   void clear_runtime_metadata();
   static const int kRuntimeMetadataFieldNumber = 8;
@@ -286,10 +264,13 @@ class OperationMetadata : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2foperations_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2foperations_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2foperations_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2foperations_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2foperations_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<OperationMetadata> OperationMetadata_default_instance_;
+
 // -------------------------------------------------------------------
 
 class OperationEvent : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.genomics.v1.OperationEvent) */ {
@@ -304,52 +285,47 @@ class OperationEvent : public ::google::protobuf::Message /* @@protoc_insertion_
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const OperationEvent& default_instance();
 
-  static inline const OperationEvent* internal_default_instance() {
-    return reinterpret_cast<const OperationEvent*>(
-               &_OperationEvent_default_instance_);
-  }
+  static const OperationEvent* internal_default_instance();
 
   void UnsafeArenaSwap(OperationEvent* other);
   void Swap(OperationEvent* other);
 
   // implements Message ----------------------------------------------
 
-  inline OperationEvent* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline OperationEvent* New() const { return New(NULL); }
 
-  OperationEvent* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  OperationEvent* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const OperationEvent& from);
   void MergeFrom(const OperationEvent& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(OperationEvent* other);
+  void UnsafeMergeFrom(const OperationEvent& from);
   protected:
   explicit OperationEvent(::google::protobuf::Arena* arena);
   private:
@@ -364,13 +340,13 @@ class OperationEvent : public ::google::protobuf::Message /* @@protoc_insertion_
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.protobuf.Timestamp start_time = 1;
+  // optional .google.protobuf.Timestamp start_time = 1;
   bool has_start_time() const;
   void clear_start_time();
   static const int kStartTimeFieldNumber = 1;
@@ -388,7 +364,7 @@ class OperationEvent : public ::google::protobuf::Message /* @@protoc_insertion_
   void unsafe_arena_set_allocated_start_time(
       ::google::protobuf::Timestamp* start_time);
 
-  // .google.protobuf.Timestamp end_time = 2;
+  // optional .google.protobuf.Timestamp end_time = 2;
   bool has_end_time() const;
   void clear_end_time();
   static const int kEndTimeFieldNumber = 2;
@@ -406,7 +382,7 @@ class OperationEvent : public ::google::protobuf::Message /* @@protoc_insertion_
   void unsafe_arena_set_allocated_end_time(
       ::google::protobuf::Timestamp* end_time);
 
-  // string description = 3;
+  // optional string description = 3;
   void clear_description();
   static const int kDescriptionFieldNumber = 3;
   const ::std::string& description() const;
@@ -433,10 +409,13 @@ class OperationEvent : public ::google::protobuf::Message /* @@protoc_insertion_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2foperations_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2foperations_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2foperations_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2foperations_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2foperations_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<OperationEvent> OperationEvent_default_instance_;
+
 // ===================================================================
 
 
@@ -445,13 +424,13 @@ class OperationEvent : public ::google::protobuf::Message /* @@protoc_insertion_
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // OperationMetadata
 
-// string project_id = 1;
+// optional string project_id = 1;
 inline void OperationMetadata::clear_project_id() {
   project_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& OperationMetadata::project_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.OperationMetadata.project_id)
-  return project_id_.Get();
+  return project_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void OperationMetadata::set_project_id(const ::std::string& value) {
   
@@ -511,7 +490,7 @@ inline void OperationMetadata::unsafe_arena_set_allocated_project_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.OperationMetadata.project_id)
 }
 
-// .google.protobuf.Timestamp create_time = 2;
+// optional .google.protobuf.Timestamp create_time = 2;
 inline bool OperationMetadata::has_create_time() const {
   return this != internal_default_instance() && create_time_ != NULL;
 }
@@ -560,7 +539,7 @@ inline  void OperationMetadata::set_allocated_create_time(::google::protobuf::Ti
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.OperationMetadata.create_time)
 }
 
-// .google.protobuf.Timestamp start_time = 3;
+// optional .google.protobuf.Timestamp start_time = 3;
 inline bool OperationMetadata::has_start_time() const {
   return this != internal_default_instance() && start_time_ != NULL;
 }
@@ -609,7 +588,7 @@ inline  void OperationMetadata::set_allocated_start_time(::google::protobuf::Tim
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.OperationMetadata.start_time)
 }
 
-// .google.protobuf.Timestamp end_time = 4;
+// optional .google.protobuf.Timestamp end_time = 4;
 inline bool OperationMetadata::has_end_time() const {
   return this != internal_default_instance() && end_time_ != NULL;
 }
@@ -658,7 +637,7 @@ inline  void OperationMetadata::set_allocated_end_time(::google::protobuf::Times
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.OperationMetadata.end_time)
 }
 
-// .google.protobuf.Any request = 5;
+// optional .google.protobuf.Any request = 5;
 inline bool OperationMetadata::has_request() const {
   return this != internal_default_instance() && request_ != NULL;
 }
@@ -739,13 +718,13 @@ OperationMetadata::events() const {
   return events_;
 }
 
-// string client_id = 7;
+// optional string client_id = 7;
 inline void OperationMetadata::clear_client_id() {
   client_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& OperationMetadata::client_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.OperationMetadata.client_id)
-  return client_id_.Get();
+  return client_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void OperationMetadata::set_client_id(const ::std::string& value) {
   
@@ -805,7 +784,7 @@ inline void OperationMetadata::unsafe_arena_set_allocated_client_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.OperationMetadata.client_id)
 }
 
-// .google.protobuf.Any runtime_metadata = 8;
+// optional .google.protobuf.Any runtime_metadata = 8;
 inline bool OperationMetadata::has_runtime_metadata() const {
   return this != internal_default_instance() && runtime_metadata_ != NULL;
 }
@@ -856,11 +835,14 @@ inline  void OperationMetadata::set_allocated_runtime_metadata(::google::protobu
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.OperationMetadata.runtime_metadata)
 }
 
+inline const OperationMetadata* OperationMetadata::internal_default_instance() {
+  return &OperationMetadata_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // OperationEvent
 
-// .google.protobuf.Timestamp start_time = 1;
+// optional .google.protobuf.Timestamp start_time = 1;
 inline bool OperationEvent::has_start_time() const {
   return this != internal_default_instance() && start_time_ != NULL;
 }
@@ -909,7 +891,7 @@ inline  void OperationEvent::set_allocated_start_time(::google::protobuf::Timest
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.OperationEvent.start_time)
 }
 
-// .google.protobuf.Timestamp end_time = 2;
+// optional .google.protobuf.Timestamp end_time = 2;
 inline bool OperationEvent::has_end_time() const {
   return this != internal_default_instance() && end_time_ != NULL;
 }
@@ -958,13 +940,13 @@ inline  void OperationEvent::set_allocated_end_time(::google::protobuf::Timestam
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.OperationEvent.end_time)
 }
 
-// string description = 3;
+// optional string description = 3;
 inline void OperationEvent::clear_description() {
   description_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& OperationEvent::description() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.OperationEvent.description)
-  return description_.Get();
+  return description_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void OperationEvent::set_description(const ::std::string& value) {
   
@@ -1024,12 +1006,14 @@ inline void OperationEvent::unsafe_arena_set_allocated_description(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.OperationEvent.description)
 }
 
+inline const OperationEvent* OperationEvent::internal_default_instance() {
+  return &OperationEvent_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
 // -------------------------------------------------------------------
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace genomics

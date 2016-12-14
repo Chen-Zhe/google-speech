@@ -24,8 +24,8 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/map.h>
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/generated_enum_reflection.h>
@@ -35,102 +35,6 @@
 #include <google/protobuf/wrappers.pb.h>
 #include "google/type/latlng.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace datastore {
-namespace v1 {
-class ArrayValue;
-class ArrayValueDefaultTypeInternal;
-extern ArrayValueDefaultTypeInternal _ArrayValue_default_instance_;
-class CompositeFilter;
-class CompositeFilterDefaultTypeInternal;
-extern CompositeFilterDefaultTypeInternal _CompositeFilter_default_instance_;
-class Entity;
-class EntityDefaultTypeInternal;
-extern EntityDefaultTypeInternal _Entity_default_instance_;
-class EntityResult;
-class EntityResultDefaultTypeInternal;
-extern EntityResultDefaultTypeInternal _EntityResult_default_instance_;
-class Filter;
-class FilterDefaultTypeInternal;
-extern FilterDefaultTypeInternal _Filter_default_instance_;
-class GqlQuery;
-class GqlQueryDefaultTypeInternal;
-extern GqlQueryDefaultTypeInternal _GqlQuery_default_instance_;
-class GqlQueryParameter;
-class GqlQueryParameterDefaultTypeInternal;
-extern GqlQueryParameterDefaultTypeInternal _GqlQueryParameter_default_instance_;
-class Key;
-class KeyDefaultTypeInternal;
-extern KeyDefaultTypeInternal _Key_default_instance_;
-class Key_PathElement;
-class Key_PathElementDefaultTypeInternal;
-extern Key_PathElementDefaultTypeInternal _Key_PathElement_default_instance_;
-class KindExpression;
-class KindExpressionDefaultTypeInternal;
-extern KindExpressionDefaultTypeInternal _KindExpression_default_instance_;
-class PartitionId;
-class PartitionIdDefaultTypeInternal;
-extern PartitionIdDefaultTypeInternal _PartitionId_default_instance_;
-class Projection;
-class ProjectionDefaultTypeInternal;
-extern ProjectionDefaultTypeInternal _Projection_default_instance_;
-class PropertyFilter;
-class PropertyFilterDefaultTypeInternal;
-extern PropertyFilterDefaultTypeInternal _PropertyFilter_default_instance_;
-class PropertyOrder;
-class PropertyOrderDefaultTypeInternal;
-extern PropertyOrderDefaultTypeInternal _PropertyOrder_default_instance_;
-class PropertyReference;
-class PropertyReferenceDefaultTypeInternal;
-extern PropertyReferenceDefaultTypeInternal _PropertyReference_default_instance_;
-class Query;
-class QueryDefaultTypeInternal;
-extern QueryDefaultTypeInternal _Query_default_instance_;
-class QueryResultBatch;
-class QueryResultBatchDefaultTypeInternal;
-extern QueryResultBatchDefaultTypeInternal _QueryResultBatch_default_instance_;
-class Value;
-class ValueDefaultTypeInternal;
-extern ValueDefaultTypeInternal _Value_default_instance_;
-}  // namespace v1
-}  // namespace datastore
-namespace protobuf {
-class BoolValue;
-class BoolValueDefaultTypeInternal;
-extern BoolValueDefaultTypeInternal _BoolValue_default_instance_;
-class BytesValue;
-class BytesValueDefaultTypeInternal;
-extern BytesValueDefaultTypeInternal _BytesValue_default_instance_;
-class DoubleValue;
-class DoubleValueDefaultTypeInternal;
-extern DoubleValueDefaultTypeInternal _DoubleValue_default_instance_;
-class FloatValue;
-class FloatValueDefaultTypeInternal;
-extern FloatValueDefaultTypeInternal _FloatValue_default_instance_;
-class Int32Value;
-class Int32ValueDefaultTypeInternal;
-extern Int32ValueDefaultTypeInternal _Int32Value_default_instance_;
-class Int64Value;
-class Int64ValueDefaultTypeInternal;
-extern Int64ValueDefaultTypeInternal _Int64Value_default_instance_;
-class StringValue;
-class StringValueDefaultTypeInternal;
-extern StringValueDefaultTypeInternal _StringValue_default_instance_;
-class UInt32Value;
-class UInt32ValueDefaultTypeInternal;
-extern UInt32ValueDefaultTypeInternal _UInt32Value_default_instance_;
-class UInt64Value;
-class UInt64ValueDefaultTypeInternal;
-extern UInt64ValueDefaultTypeInternal _UInt64Value_default_instance_;
-}  // namespace protobuf
-namespace type {
-class LatLng;
-class LatLngDefaultTypeInternal;
-extern LatLngDefaultTypeInternal _LatLng_default_instance_;
-}  // namespace type
-}  // namespace google
 
 namespace google {
 namespace datastore {
@@ -139,6 +43,21 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fdatastore_2fv1_2fquery_2eproto();
 void protobuf_InitDefaults_google_2fdatastore_2fv1_2fquery_2eproto();
+void protobuf_AssignDesc_google_2fdatastore_2fv1_2fquery_2eproto();
+void protobuf_ShutdownFile_google_2fdatastore_2fv1_2fquery_2eproto();
+
+class CompositeFilter;
+class EntityResult;
+class Filter;
+class GqlQuery;
+class GqlQueryParameter;
+class KindExpression;
+class Projection;
+class PropertyFilter;
+class PropertyOrder;
+class PropertyReference;
+class Query;
+class QueryResultBatch;
 
 enum EntityResult_ResultType {
   EntityResult_ResultType_RESULT_TYPE_UNSPECIFIED = 0,
@@ -273,52 +192,49 @@ class EntityResult : public ::google::protobuf::Message /* @@protoc_insertion_po
   static const ::google::protobuf::Descriptor* descriptor();
   static const EntityResult& default_instance();
 
-  static inline const EntityResult* internal_default_instance() {
-    return reinterpret_cast<const EntityResult*>(
-               &_EntityResult_default_instance_);
-  }
+  static const EntityResult* internal_default_instance();
 
   void Swap(EntityResult* other);
 
   // implements Message ----------------------------------------------
 
-  inline EntityResult* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline EntityResult* New() const { return New(NULL); }
 
-  EntityResult* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  EntityResult* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const EntityResult& from);
   void MergeFrom(const EntityResult& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(EntityResult* other);
+  void UnsafeMergeFrom(const EntityResult& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -354,7 +270,7 @@ class EntityResult : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   // accessors -------------------------------------------------------
 
-  // .google.datastore.v1.Entity entity = 1;
+  // optional .google.datastore.v1.Entity entity = 1;
   bool has_entity() const;
   void clear_entity();
   static const int kEntityFieldNumber = 1;
@@ -363,13 +279,13 @@ class EntityResult : public ::google::protobuf::Message /* @@protoc_insertion_po
   ::google::datastore::v1::Entity* release_entity();
   void set_allocated_entity(::google::datastore::v1::Entity* entity);
 
-  // int64 version = 4;
+  // optional int64 version = 4;
   void clear_version();
   static const int kVersionFieldNumber = 4;
   ::google::protobuf::int64 version() const;
   void set_version(::google::protobuf::int64 value);
 
-  // bytes cursor = 3;
+  // optional bytes cursor = 3;
   void clear_cursor();
   static const int kCursorFieldNumber = 3;
   const ::std::string& cursor() const;
@@ -390,10 +306,13 @@ class EntityResult : public ::google::protobuf::Message /* @@protoc_insertion_po
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1_2fquery_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1_2fquery_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1_2fquery_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1_2fquery_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1_2fquery_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<EntityResult> EntityResult_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Query : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1.Query) */ {
@@ -411,52 +330,49 @@ class Query : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   static const ::google::protobuf::Descriptor* descriptor();
   static const Query& default_instance();
 
-  static inline const Query* internal_default_instance() {
-    return reinterpret_cast<const Query*>(
-               &_Query_default_instance_);
-  }
+  static const Query* internal_default_instance();
 
   void Swap(Query* other);
 
   // implements Message ----------------------------------------------
 
-  inline Query* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Query* New() const { return New(NULL); }
 
-  Query* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Query* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Query& from);
   void MergeFrom(const Query& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Query* other);
+  void UnsafeMergeFrom(const Query& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -486,7 +402,7 @@ class Query : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   const ::google::protobuf::RepeatedPtrField< ::google::datastore::v1::KindExpression >&
       kind() const;
 
-  // .google.datastore.v1.Filter filter = 4;
+  // optional .google.datastore.v1.Filter filter = 4;
   bool has_filter() const;
   void clear_filter();
   static const int kFilterFieldNumber = 4;
@@ -519,7 +435,7 @@ class Query : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   const ::google::protobuf::RepeatedPtrField< ::google::datastore::v1::PropertyReference >&
       distinct_on() const;
 
-  // bytes start_cursor = 7;
+  // optional bytes start_cursor = 7;
   void clear_start_cursor();
   static const int kStartCursorFieldNumber = 7;
   const ::std::string& start_cursor() const;
@@ -530,7 +446,7 @@ class Query : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   ::std::string* release_start_cursor();
   void set_allocated_start_cursor(::std::string* start_cursor);
 
-  // bytes end_cursor = 8;
+  // optional bytes end_cursor = 8;
   void clear_end_cursor();
   static const int kEndCursorFieldNumber = 8;
   const ::std::string& end_cursor() const;
@@ -541,13 +457,13 @@ class Query : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   ::std::string* release_end_cursor();
   void set_allocated_end_cursor(::std::string* end_cursor);
 
-  // int32 offset = 10;
+  // optional int32 offset = 10;
   void clear_offset();
   static const int kOffsetFieldNumber = 10;
   ::google::protobuf::int32 offset() const;
   void set_offset(::google::protobuf::int32 value);
 
-  // .google.protobuf.Int32Value limit = 12;
+  // optional .google.protobuf.Int32Value limit = 12;
   bool has_limit() const;
   void clear_limit();
   static const int kLimitFieldNumber = 12;
@@ -572,10 +488,13 @@ class Query : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1_2fquery_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1_2fquery_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1_2fquery_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1_2fquery_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1_2fquery_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Query> Query_default_instance_;
+
 // -------------------------------------------------------------------
 
 class KindExpression : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1.KindExpression) */ {
@@ -593,58 +512,55 @@ class KindExpression : public ::google::protobuf::Message /* @@protoc_insertion_
   static const ::google::protobuf::Descriptor* descriptor();
   static const KindExpression& default_instance();
 
-  static inline const KindExpression* internal_default_instance() {
-    return reinterpret_cast<const KindExpression*>(
-               &_KindExpression_default_instance_);
-  }
+  static const KindExpression* internal_default_instance();
 
   void Swap(KindExpression* other);
 
   // implements Message ----------------------------------------------
 
-  inline KindExpression* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline KindExpression* New() const { return New(NULL); }
 
-  KindExpression* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  KindExpression* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const KindExpression& from);
   void MergeFrom(const KindExpression& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(KindExpression* other);
+  void UnsafeMergeFrom(const KindExpression& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -663,10 +579,13 @@ class KindExpression : public ::google::protobuf::Message /* @@protoc_insertion_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1_2fquery_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1_2fquery_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1_2fquery_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1_2fquery_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1_2fquery_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<KindExpression> KindExpression_default_instance_;
+
 // -------------------------------------------------------------------
 
 class PropertyReference : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1.PropertyReference) */ {
@@ -684,58 +603,55 @@ class PropertyReference : public ::google::protobuf::Message /* @@protoc_inserti
   static const ::google::protobuf::Descriptor* descriptor();
   static const PropertyReference& default_instance();
 
-  static inline const PropertyReference* internal_default_instance() {
-    return reinterpret_cast<const PropertyReference*>(
-               &_PropertyReference_default_instance_);
-  }
+  static const PropertyReference* internal_default_instance();
 
   void Swap(PropertyReference* other);
 
   // implements Message ----------------------------------------------
 
-  inline PropertyReference* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline PropertyReference* New() const { return New(NULL); }
 
-  PropertyReference* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PropertyReference* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const PropertyReference& from);
   void MergeFrom(const PropertyReference& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(PropertyReference* other);
+  void UnsafeMergeFrom(const PropertyReference& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 2;
+  // optional string name = 2;
   void clear_name();
   static const int kNameFieldNumber = 2;
   const ::std::string& name() const;
@@ -754,10 +670,13 @@ class PropertyReference : public ::google::protobuf::Message /* @@protoc_inserti
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1_2fquery_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1_2fquery_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1_2fquery_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1_2fquery_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1_2fquery_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<PropertyReference> PropertyReference_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Projection : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1.Projection) */ {
@@ -775,58 +694,55 @@ class Projection : public ::google::protobuf::Message /* @@protoc_insertion_poin
   static const ::google::protobuf::Descriptor* descriptor();
   static const Projection& default_instance();
 
-  static inline const Projection* internal_default_instance() {
-    return reinterpret_cast<const Projection*>(
-               &_Projection_default_instance_);
-  }
+  static const Projection* internal_default_instance();
 
   void Swap(Projection* other);
 
   // implements Message ----------------------------------------------
 
-  inline Projection* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Projection* New() const { return New(NULL); }
 
-  Projection* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Projection* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Projection& from);
   void MergeFrom(const Projection& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Projection* other);
+  void UnsafeMergeFrom(const Projection& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.datastore.v1.PropertyReference property = 1;
+  // optional .google.datastore.v1.PropertyReference property = 1;
   bool has_property() const;
   void clear_property();
   static const int kPropertyFieldNumber = 1;
@@ -843,10 +759,13 @@ class Projection : public ::google::protobuf::Message /* @@protoc_insertion_poin
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1_2fquery_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1_2fquery_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1_2fquery_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1_2fquery_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1_2fquery_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Projection> Projection_default_instance_;
+
 // -------------------------------------------------------------------
 
 class PropertyOrder : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1.PropertyOrder) */ {
@@ -864,52 +783,49 @@ class PropertyOrder : public ::google::protobuf::Message /* @@protoc_insertion_p
   static const ::google::protobuf::Descriptor* descriptor();
   static const PropertyOrder& default_instance();
 
-  static inline const PropertyOrder* internal_default_instance() {
-    return reinterpret_cast<const PropertyOrder*>(
-               &_PropertyOrder_default_instance_);
-  }
+  static const PropertyOrder* internal_default_instance();
 
   void Swap(PropertyOrder* other);
 
   // implements Message ----------------------------------------------
 
-  inline PropertyOrder* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline PropertyOrder* New() const { return New(NULL); }
 
-  PropertyOrder* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PropertyOrder* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const PropertyOrder& from);
   void MergeFrom(const PropertyOrder& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(PropertyOrder* other);
+  void UnsafeMergeFrom(const PropertyOrder& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -943,7 +859,7 @@ class PropertyOrder : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   // accessors -------------------------------------------------------
 
-  // .google.datastore.v1.PropertyReference property = 1;
+  // optional .google.datastore.v1.PropertyReference property = 1;
   bool has_property() const;
   void clear_property();
   static const int kPropertyFieldNumber = 1;
@@ -952,7 +868,7 @@ class PropertyOrder : public ::google::protobuf::Message /* @@protoc_insertion_p
   ::google::datastore::v1::PropertyReference* release_property();
   void set_allocated_property(::google::datastore::v1::PropertyReference* property);
 
-  // .google.datastore.v1.PropertyOrder.Direction direction = 2;
+  // optional .google.datastore.v1.PropertyOrder.Direction direction = 2;
   void clear_direction();
   static const int kDirectionFieldNumber = 2;
   ::google::datastore::v1::PropertyOrder_Direction direction() const;
@@ -967,10 +883,13 @@ class PropertyOrder : public ::google::protobuf::Message /* @@protoc_insertion_p
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1_2fquery_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1_2fquery_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1_2fquery_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1_2fquery_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1_2fquery_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<PropertyOrder> PropertyOrder_default_instance_;
+
 // -------------------------------------------------------------------
 
 class Filter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1.Filter) */ {
@@ -994,58 +913,55 @@ class Filter : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
     FILTER_TYPE_NOT_SET = 0,
   };
 
-  static inline const Filter* internal_default_instance() {
-    return reinterpret_cast<const Filter*>(
-               &_Filter_default_instance_);
-  }
+  static const Filter* internal_default_instance();
 
   void Swap(Filter* other);
 
   // implements Message ----------------------------------------------
 
-  inline Filter* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Filter* New() const { return New(NULL); }
 
-  Filter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Filter* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Filter& from);
   void MergeFrom(const Filter& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Filter* other);
+  void UnsafeMergeFrom(const Filter& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.datastore.v1.CompositeFilter composite_filter = 1;
+  // optional .google.datastore.v1.CompositeFilter composite_filter = 1;
   bool has_composite_filter() const;
   void clear_composite_filter();
   static const int kCompositeFilterFieldNumber = 1;
@@ -1054,7 +970,7 @@ class Filter : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   ::google::datastore::v1::CompositeFilter* release_composite_filter();
   void set_allocated_composite_filter(::google::datastore::v1::CompositeFilter* composite_filter);
 
-  // .google.datastore.v1.PropertyFilter property_filter = 2;
+  // optional .google.datastore.v1.PropertyFilter property_filter = 2;
   bool has_property_filter() const;
   void clear_property_filter();
   static const int kPropertyFilterFieldNumber = 2;
@@ -1066,8 +982,8 @@ class Filter : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   FilterTypeCase filter_type_case() const;
   // @@protoc_insertion_point(class_scope:google.datastore.v1.Filter)
  private:
-  void set_has_composite_filter();
-  void set_has_property_filter();
+  inline void set_has_composite_filter();
+  inline void set_has_property_filter();
 
   inline bool has_filter_type() const;
   void clear_filter_type();
@@ -1084,10 +1000,13 @@ class Filter : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
 
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1_2fquery_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1_2fquery_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1_2fquery_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1_2fquery_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1_2fquery_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Filter> Filter_default_instance_;
+
 // -------------------------------------------------------------------
 
 class CompositeFilter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1.CompositeFilter) */ {
@@ -1105,52 +1024,49 @@ class CompositeFilter : public ::google::protobuf::Message /* @@protoc_insertion
   static const ::google::protobuf::Descriptor* descriptor();
   static const CompositeFilter& default_instance();
 
-  static inline const CompositeFilter* internal_default_instance() {
-    return reinterpret_cast<const CompositeFilter*>(
-               &_CompositeFilter_default_instance_);
-  }
+  static const CompositeFilter* internal_default_instance();
 
   void Swap(CompositeFilter* other);
 
   // implements Message ----------------------------------------------
 
-  inline CompositeFilter* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline CompositeFilter* New() const { return New(NULL); }
 
-  CompositeFilter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CompositeFilter* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const CompositeFilter& from);
   void MergeFrom(const CompositeFilter& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(CompositeFilter* other);
+  void UnsafeMergeFrom(const CompositeFilter& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1182,7 +1098,7 @@ class CompositeFilter : public ::google::protobuf::Message /* @@protoc_insertion
 
   // accessors -------------------------------------------------------
 
-  // .google.datastore.v1.CompositeFilter.Operator op = 1;
+  // optional .google.datastore.v1.CompositeFilter.Operator op = 1;
   void clear_op();
   static const int kOpFieldNumber = 1;
   ::google::datastore::v1::CompositeFilter_Operator op() const;
@@ -1209,10 +1125,13 @@ class CompositeFilter : public ::google::protobuf::Message /* @@protoc_insertion
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1_2fquery_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1_2fquery_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1_2fquery_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1_2fquery_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1_2fquery_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<CompositeFilter> CompositeFilter_default_instance_;
+
 // -------------------------------------------------------------------
 
 class PropertyFilter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1.PropertyFilter) */ {
@@ -1230,52 +1149,49 @@ class PropertyFilter : public ::google::protobuf::Message /* @@protoc_insertion_
   static const ::google::protobuf::Descriptor* descriptor();
   static const PropertyFilter& default_instance();
 
-  static inline const PropertyFilter* internal_default_instance() {
-    return reinterpret_cast<const PropertyFilter*>(
-               &_PropertyFilter_default_instance_);
-  }
+  static const PropertyFilter* internal_default_instance();
 
   void Swap(PropertyFilter* other);
 
   // implements Message ----------------------------------------------
 
-  inline PropertyFilter* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline PropertyFilter* New() const { return New(NULL); }
 
-  PropertyFilter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PropertyFilter* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const PropertyFilter& from);
   void MergeFrom(const PropertyFilter& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(PropertyFilter* other);
+  void UnsafeMergeFrom(const PropertyFilter& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1317,7 +1233,7 @@ class PropertyFilter : public ::google::protobuf::Message /* @@protoc_insertion_
 
   // accessors -------------------------------------------------------
 
-  // .google.datastore.v1.PropertyReference property = 1;
+  // optional .google.datastore.v1.PropertyReference property = 1;
   bool has_property() const;
   void clear_property();
   static const int kPropertyFieldNumber = 1;
@@ -1326,13 +1242,13 @@ class PropertyFilter : public ::google::protobuf::Message /* @@protoc_insertion_
   ::google::datastore::v1::PropertyReference* release_property();
   void set_allocated_property(::google::datastore::v1::PropertyReference* property);
 
-  // .google.datastore.v1.PropertyFilter.Operator op = 2;
+  // optional .google.datastore.v1.PropertyFilter.Operator op = 2;
   void clear_op();
   static const int kOpFieldNumber = 2;
   ::google::datastore::v1::PropertyFilter_Operator op() const;
   void set_op(::google::datastore::v1::PropertyFilter_Operator value);
 
-  // .google.datastore.v1.Value value = 3;
+  // optional .google.datastore.v1.Value value = 3;
   bool has_value() const;
   void clear_value();
   static const int kValueFieldNumber = 3;
@@ -1351,12 +1267,12 @@ class PropertyFilter : public ::google::protobuf::Message /* @@protoc_insertion_
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1_2fquery_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1_2fquery_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1_2fquery_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1_2fquery_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1_2fquery_2eproto();
 
+  void InitAsDefaultInstance();
 };
-// -------------------------------------------------------------------
-
+extern ::google::protobuf::internal::ExplicitlyConstructed<PropertyFilter> PropertyFilter_default_instance_;
 
 // -------------------------------------------------------------------
 
@@ -1375,59 +1291,56 @@ class GqlQuery : public ::google::protobuf::Message /* @@protoc_insertion_point(
   static const ::google::protobuf::Descriptor* descriptor();
   static const GqlQuery& default_instance();
 
-  static inline const GqlQuery* internal_default_instance() {
-    return reinterpret_cast<const GqlQuery*>(
-               &_GqlQuery_default_instance_);
-  }
+  static const GqlQuery* internal_default_instance();
 
   void Swap(GqlQuery* other);
 
   // implements Message ----------------------------------------------
 
-  inline GqlQuery* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GqlQuery* New() const { return New(NULL); }
 
-  GqlQuery* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GqlQuery* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GqlQuery& from);
   void MergeFrom(const GqlQuery& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GqlQuery* other);
+  void UnsafeMergeFrom(const GqlQuery& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
 
   // accessors -------------------------------------------------------
 
-  // string query_string = 1;
+  // optional string query_string = 1;
   void clear_query_string();
   static const int kQueryStringFieldNumber = 1;
   const ::std::string& query_string() const;
@@ -1438,7 +1351,7 @@ class GqlQuery : public ::google::protobuf::Message /* @@protoc_insertion_point(
   ::std::string* release_query_string();
   void set_allocated_query_string(::std::string* query_string);
 
-  // bool allow_literals = 2;
+  // optional bool allow_literals = 2;
   void clear_allow_literals();
   static const int kAllowLiteralsFieldNumber = 2;
   bool allow_literals() const;
@@ -1486,10 +1399,13 @@ class GqlQuery : public ::google::protobuf::Message /* @@protoc_insertion_point(
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1_2fquery_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1_2fquery_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1_2fquery_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1_2fquery_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1_2fquery_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GqlQuery> GqlQuery_default_instance_;
+
 // -------------------------------------------------------------------
 
 class GqlQueryParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1.GqlQueryParameter) */ {
@@ -1513,58 +1429,55 @@ class GqlQueryParameter : public ::google::protobuf::Message /* @@protoc_inserti
     PARAMETER_TYPE_NOT_SET = 0,
   };
 
-  static inline const GqlQueryParameter* internal_default_instance() {
-    return reinterpret_cast<const GqlQueryParameter*>(
-               &_GqlQueryParameter_default_instance_);
-  }
+  static const GqlQueryParameter* internal_default_instance();
 
   void Swap(GqlQueryParameter* other);
 
   // implements Message ----------------------------------------------
 
-  inline GqlQueryParameter* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline GqlQueryParameter* New() const { return New(NULL); }
 
-  GqlQueryParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  GqlQueryParameter* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const GqlQueryParameter& from);
   void MergeFrom(const GqlQueryParameter& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(GqlQueryParameter* other);
+  void UnsafeMergeFrom(const GqlQueryParameter& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.datastore.v1.Value value = 2;
+  // optional .google.datastore.v1.Value value = 2;
   bool has_value() const;
   void clear_value();
   static const int kValueFieldNumber = 2;
@@ -1573,7 +1486,7 @@ class GqlQueryParameter : public ::google::protobuf::Message /* @@protoc_inserti
   ::google::datastore::v1::Value* release_value();
   void set_allocated_value(::google::datastore::v1::Value* value);
 
-  // bytes cursor = 3;
+  // optional bytes cursor = 3;
   private:
   bool has_cursor() const;
   public:
@@ -1590,8 +1503,8 @@ class GqlQueryParameter : public ::google::protobuf::Message /* @@protoc_inserti
   ParameterTypeCase parameter_type_case() const;
   // @@protoc_insertion_point(class_scope:google.datastore.v1.GqlQueryParameter)
  private:
-  void set_has_value();
-  void set_has_cursor();
+  inline void set_has_value();
+  inline void set_has_cursor();
 
   inline bool has_parameter_type() const;
   void clear_parameter_type();
@@ -1608,10 +1521,13 @@ class GqlQueryParameter : public ::google::protobuf::Message /* @@protoc_inserti
 
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1_2fquery_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1_2fquery_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1_2fquery_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1_2fquery_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1_2fquery_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<GqlQueryParameter> GqlQueryParameter_default_instance_;
+
 // -------------------------------------------------------------------
 
 class QueryResultBatch : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.datastore.v1.QueryResultBatch) */ {
@@ -1629,52 +1545,49 @@ class QueryResultBatch : public ::google::protobuf::Message /* @@protoc_insertio
   static const ::google::protobuf::Descriptor* descriptor();
   static const QueryResultBatch& default_instance();
 
-  static inline const QueryResultBatch* internal_default_instance() {
-    return reinterpret_cast<const QueryResultBatch*>(
-               &_QueryResultBatch_default_instance_);
-  }
+  static const QueryResultBatch* internal_default_instance();
 
   void Swap(QueryResultBatch* other);
 
   // implements Message ----------------------------------------------
 
-  inline QueryResultBatch* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline QueryResultBatch* New() const { return New(NULL); }
 
-  QueryResultBatch* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  QueryResultBatch* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const QueryResultBatch& from);
   void MergeFrom(const QueryResultBatch& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(QueryResultBatch* other);
+  void UnsafeMergeFrom(const QueryResultBatch& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -1712,13 +1625,13 @@ class QueryResultBatch : public ::google::protobuf::Message /* @@protoc_insertio
 
   // accessors -------------------------------------------------------
 
-  // int32 skipped_results = 6;
+  // optional int32 skipped_results = 6;
   void clear_skipped_results();
   static const int kSkippedResultsFieldNumber = 6;
   ::google::protobuf::int32 skipped_results() const;
   void set_skipped_results(::google::protobuf::int32 value);
 
-  // bytes skipped_cursor = 3;
+  // optional bytes skipped_cursor = 3;
   void clear_skipped_cursor();
   static const int kSkippedCursorFieldNumber = 3;
   const ::std::string& skipped_cursor() const;
@@ -1729,7 +1642,7 @@ class QueryResultBatch : public ::google::protobuf::Message /* @@protoc_insertio
   ::std::string* release_skipped_cursor();
   void set_allocated_skipped_cursor(::std::string* skipped_cursor);
 
-  // .google.datastore.v1.EntityResult.ResultType entity_result_type = 1;
+  // optional .google.datastore.v1.EntityResult.ResultType entity_result_type = 1;
   void clear_entity_result_type();
   static const int kEntityResultTypeFieldNumber = 1;
   ::google::datastore::v1::EntityResult_ResultType entity_result_type() const;
@@ -1747,7 +1660,7 @@ class QueryResultBatch : public ::google::protobuf::Message /* @@protoc_insertio
   const ::google::protobuf::RepeatedPtrField< ::google::datastore::v1::EntityResult >&
       entity_results() const;
 
-  // bytes end_cursor = 4;
+  // optional bytes end_cursor = 4;
   void clear_end_cursor();
   static const int kEndCursorFieldNumber = 4;
   const ::std::string& end_cursor() const;
@@ -1758,13 +1671,13 @@ class QueryResultBatch : public ::google::protobuf::Message /* @@protoc_insertio
   ::std::string* release_end_cursor();
   void set_allocated_end_cursor(::std::string* end_cursor);
 
-  // .google.datastore.v1.QueryResultBatch.MoreResultsType more_results = 5;
+  // optional .google.datastore.v1.QueryResultBatch.MoreResultsType more_results = 5;
   void clear_more_results();
   static const int kMoreResultsFieldNumber = 5;
   ::google::datastore::v1::QueryResultBatch_MoreResultsType more_results() const;
   void set_more_results(::google::datastore::v1::QueryResultBatch_MoreResultsType value);
 
-  // int64 snapshot_version = 7;
+  // optional int64 snapshot_version = 7;
   void clear_snapshot_version();
   static const int kSnapshotVersionFieldNumber = 7;
   ::google::protobuf::int64 snapshot_version() const;
@@ -1784,10 +1697,13 @@ class QueryResultBatch : public ::google::protobuf::Message /* @@protoc_insertio
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fdatastore_2fv1_2fquery_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fdatastore_2fv1_2fquery_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fdatastore_2fv1_2fquery_2eproto();
+  friend void protobuf_AssignDesc_google_2fdatastore_2fv1_2fquery_2eproto();
   friend void protobuf_ShutdownFile_google_2fdatastore_2fv1_2fquery_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<QueryResultBatch> QueryResultBatch_default_instance_;
+
 // ===================================================================
 
 
@@ -1796,7 +1712,7 @@ class QueryResultBatch : public ::google::protobuf::Message /* @@protoc_insertio
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // EntityResult
 
-// .google.datastore.v1.Entity entity = 1;
+// optional .google.datastore.v1.Entity entity = 1;
 inline bool EntityResult::has_entity() const {
   return this != internal_default_instance() && entity_ != NULL;
 }
@@ -1835,7 +1751,7 @@ inline void EntityResult::set_allocated_entity(::google::datastore::v1::Entity* 
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.EntityResult.entity)
 }
 
-// int64 version = 4;
+// optional int64 version = 4;
 inline void EntityResult::clear_version() {
   version_ = GOOGLE_LONGLONG(0);
 }
@@ -1849,13 +1765,13 @@ inline void EntityResult::set_version(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.datastore.v1.EntityResult.version)
 }
 
-// bytes cursor = 3;
+// optional bytes cursor = 3;
 inline void EntityResult::clear_cursor() {
   cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& EntityResult::cursor() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.EntityResult.cursor)
-  return cursor_.GetNoArena();
+  return cursor_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void EntityResult::set_cursor(const ::std::string& value) {
   
@@ -1893,6 +1809,9 @@ inline void EntityResult::set_allocated_cursor(::std::string* cursor) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.EntityResult.cursor)
 }
 
+inline const EntityResult* EntityResult::internal_default_instance() {
+  return &EntityResult_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Query
@@ -1957,7 +1876,7 @@ Query::kind() const {
   return kind_;
 }
 
-// .google.datastore.v1.Filter filter = 4;
+// optional .google.datastore.v1.Filter filter = 4;
 inline bool Query::has_filter() const {
   return this != internal_default_instance() && filter_ != NULL;
 }
@@ -2056,13 +1975,13 @@ Query::distinct_on() const {
   return distinct_on_;
 }
 
-// bytes start_cursor = 7;
+// optional bytes start_cursor = 7;
 inline void Query::clear_start_cursor() {
   start_cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Query::start_cursor() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.Query.start_cursor)
-  return start_cursor_.GetNoArena();
+  return start_cursor_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Query::set_start_cursor(const ::std::string& value) {
   
@@ -2100,13 +2019,13 @@ inline void Query::set_allocated_start_cursor(::std::string* start_cursor) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.Query.start_cursor)
 }
 
-// bytes end_cursor = 8;
+// optional bytes end_cursor = 8;
 inline void Query::clear_end_cursor() {
   end_cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Query::end_cursor() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.Query.end_cursor)
-  return end_cursor_.GetNoArena();
+  return end_cursor_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Query::set_end_cursor(const ::std::string& value) {
   
@@ -2144,7 +2063,7 @@ inline void Query::set_allocated_end_cursor(::std::string* end_cursor) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.Query.end_cursor)
 }
 
-// int32 offset = 10;
+// optional int32 offset = 10;
 inline void Query::clear_offset() {
   offset_ = 0;
 }
@@ -2158,7 +2077,7 @@ inline void Query::set_offset(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.datastore.v1.Query.offset)
 }
 
-// .google.protobuf.Int32Value limit = 12;
+// optional .google.protobuf.Int32Value limit = 12;
 inline bool Query::has_limit() const {
   return this != internal_default_instance() && limit_ != NULL;
 }
@@ -2202,17 +2121,20 @@ inline void Query::set_allocated_limit(::google::protobuf::Int32Value* limit) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.Query.limit)
 }
 
+inline const Query* Query::internal_default_instance() {
+  return &Query_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // KindExpression
 
-// string name = 1;
+// optional string name = 1;
 inline void KindExpression::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& KindExpression::name() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.KindExpression.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void KindExpression::set_name(const ::std::string& value) {
   
@@ -2250,17 +2172,20 @@ inline void KindExpression::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.KindExpression.name)
 }
 
+inline const KindExpression* KindExpression::internal_default_instance() {
+  return &KindExpression_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // PropertyReference
 
-// string name = 2;
+// optional string name = 2;
 inline void PropertyReference::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& PropertyReference::name() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.PropertyReference.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PropertyReference::set_name(const ::std::string& value) {
   
@@ -2298,11 +2223,14 @@ inline void PropertyReference::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.PropertyReference.name)
 }
 
+inline const PropertyReference* PropertyReference::internal_default_instance() {
+  return &PropertyReference_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Projection
 
-// .google.datastore.v1.PropertyReference property = 1;
+// optional .google.datastore.v1.PropertyReference property = 1;
 inline bool Projection::has_property() const {
   return this != internal_default_instance() && property_ != NULL;
 }
@@ -2341,11 +2269,14 @@ inline void Projection::set_allocated_property(::google::datastore::v1::Property
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.Projection.property)
 }
 
+inline const Projection* Projection::internal_default_instance() {
+  return &Projection_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // PropertyOrder
 
-// .google.datastore.v1.PropertyReference property = 1;
+// optional .google.datastore.v1.PropertyReference property = 1;
 inline bool PropertyOrder::has_property() const {
   return this != internal_default_instance() && property_ != NULL;
 }
@@ -2384,7 +2315,7 @@ inline void PropertyOrder::set_allocated_property(::google::datastore::v1::Prope
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.PropertyOrder.property)
 }
 
-// .google.datastore.v1.PropertyOrder.Direction direction = 2;
+// optional .google.datastore.v1.PropertyOrder.Direction direction = 2;
 inline void PropertyOrder::clear_direction() {
   direction_ = 0;
 }
@@ -2398,11 +2329,14 @@ inline void PropertyOrder::set_direction(::google::datastore::v1::PropertyOrder_
   // @@protoc_insertion_point(field_set:google.datastore.v1.PropertyOrder.direction)
 }
 
+inline const PropertyOrder* PropertyOrder::internal_default_instance() {
+  return &PropertyOrder_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Filter
 
-// .google.datastore.v1.CompositeFilter composite_filter = 1;
+// optional .google.datastore.v1.CompositeFilter composite_filter = 1;
 inline bool Filter::has_composite_filter() const {
   return filter_type_case() == kCompositeFilter;
 }
@@ -2450,7 +2384,7 @@ inline void Filter::set_allocated_composite_filter(::google::datastore::v1::Comp
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.Filter.composite_filter)
 }
 
-// .google.datastore.v1.PropertyFilter property_filter = 2;
+// optional .google.datastore.v1.PropertyFilter property_filter = 2;
 inline bool Filter::has_property_filter() const {
   return filter_type_case() == kPropertyFilter;
 }
@@ -2507,11 +2441,14 @@ inline void Filter::clear_has_filter_type() {
 inline Filter::FilterTypeCase Filter::filter_type_case() const {
   return Filter::FilterTypeCase(_oneof_case_[0]);
 }
+inline const Filter* Filter::internal_default_instance() {
+  return &Filter_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // CompositeFilter
 
-// .google.datastore.v1.CompositeFilter.Operator op = 1;
+// optional .google.datastore.v1.CompositeFilter.Operator op = 1;
 inline void CompositeFilter::clear_op() {
   op_ = 0;
 }
@@ -2555,11 +2492,14 @@ CompositeFilter::filters() const {
   return filters_;
 }
 
+inline const CompositeFilter* CompositeFilter::internal_default_instance() {
+  return &CompositeFilter_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // PropertyFilter
 
-// .google.datastore.v1.PropertyReference property = 1;
+// optional .google.datastore.v1.PropertyReference property = 1;
 inline bool PropertyFilter::has_property() const {
   return this != internal_default_instance() && property_ != NULL;
 }
@@ -2598,7 +2538,7 @@ inline void PropertyFilter::set_allocated_property(::google::datastore::v1::Prop
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.PropertyFilter.property)
 }
 
-// .google.datastore.v1.PropertyFilter.Operator op = 2;
+// optional .google.datastore.v1.PropertyFilter.Operator op = 2;
 inline void PropertyFilter::clear_op() {
   op_ = 0;
 }
@@ -2612,7 +2552,7 @@ inline void PropertyFilter::set_op(::google::datastore::v1::PropertyFilter_Opera
   // @@protoc_insertion_point(field_set:google.datastore.v1.PropertyFilter.op)
 }
 
-// .google.datastore.v1.Value value = 3;
+// optional .google.datastore.v1.Value value = 3;
 inline bool PropertyFilter::has_value() const {
   return this != internal_default_instance() && value_ != NULL;
 }
@@ -2651,19 +2591,20 @@ inline void PropertyFilter::set_allocated_value(::google::datastore::v1::Value* 
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.PropertyFilter.value)
 }
 
-// -------------------------------------------------------------------
-
+inline const PropertyFilter* PropertyFilter::internal_default_instance() {
+  return &PropertyFilter_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GqlQuery
 
-// string query_string = 1;
+// optional string query_string = 1;
 inline void GqlQuery::clear_query_string() {
   query_string_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& GqlQuery::query_string() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.GqlQuery.query_string)
-  return query_string_.GetNoArena();
+  return query_string_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void GqlQuery::set_query_string(const ::std::string& value) {
   
@@ -2701,7 +2642,7 @@ inline void GqlQuery::set_allocated_query_string(::std::string* query_string) {
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.GqlQuery.query_string)
 }
 
-// bool allow_literals = 2;
+// optional bool allow_literals = 2;
 inline void GqlQuery::clear_allow_literals() {
   allow_literals_ = false;
 }
@@ -2763,11 +2704,14 @@ GqlQuery::positional_bindings() const {
   return positional_bindings_;
 }
 
+inline const GqlQuery* GqlQuery::internal_default_instance() {
+  return &GqlQuery_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // GqlQueryParameter
 
-// .google.datastore.v1.Value value = 2;
+// optional .google.datastore.v1.Value value = 2;
 inline bool GqlQueryParameter::has_value() const {
   return parameter_type_case() == kValue;
 }
@@ -2815,7 +2759,7 @@ inline void GqlQueryParameter::set_allocated_value(::google::datastore::v1::Valu
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.GqlQueryParameter.value)
 }
 
-// bytes cursor = 3;
+// optional bytes cursor = 3;
 inline bool GqlQueryParameter::has_cursor() const {
   return parameter_type_case() == kCursor;
 }
@@ -2831,7 +2775,7 @@ inline void GqlQueryParameter::clear_cursor() {
 inline const ::std::string& GqlQueryParameter::cursor() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.GqlQueryParameter.cursor)
   if (has_cursor()) {
-    return parameter_type_.cursor_.GetNoArena();
+    return parameter_type_.cursor_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -2905,11 +2849,14 @@ inline void GqlQueryParameter::clear_has_parameter_type() {
 inline GqlQueryParameter::ParameterTypeCase GqlQueryParameter::parameter_type_case() const {
   return GqlQueryParameter::ParameterTypeCase(_oneof_case_[0]);
 }
+inline const GqlQueryParameter* GqlQueryParameter::internal_default_instance() {
+  return &GqlQueryParameter_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // QueryResultBatch
 
-// int32 skipped_results = 6;
+// optional int32 skipped_results = 6;
 inline void QueryResultBatch::clear_skipped_results() {
   skipped_results_ = 0;
 }
@@ -2923,13 +2870,13 @@ inline void QueryResultBatch::set_skipped_results(::google::protobuf::int32 valu
   // @@protoc_insertion_point(field_set:google.datastore.v1.QueryResultBatch.skipped_results)
 }
 
-// bytes skipped_cursor = 3;
+// optional bytes skipped_cursor = 3;
 inline void QueryResultBatch::clear_skipped_cursor() {
   skipped_cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& QueryResultBatch::skipped_cursor() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.QueryResultBatch.skipped_cursor)
-  return skipped_cursor_.GetNoArena();
+  return skipped_cursor_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void QueryResultBatch::set_skipped_cursor(const ::std::string& value) {
   
@@ -2967,7 +2914,7 @@ inline void QueryResultBatch::set_allocated_skipped_cursor(::std::string* skippe
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.QueryResultBatch.skipped_cursor)
 }
 
-// .google.datastore.v1.EntityResult.ResultType entity_result_type = 1;
+// optional .google.datastore.v1.EntityResult.ResultType entity_result_type = 1;
 inline void QueryResultBatch::clear_entity_result_type() {
   entity_result_type_ = 0;
 }
@@ -3011,13 +2958,13 @@ QueryResultBatch::entity_results() const {
   return entity_results_;
 }
 
-// bytes end_cursor = 4;
+// optional bytes end_cursor = 4;
 inline void QueryResultBatch::clear_end_cursor() {
   end_cursor_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& QueryResultBatch::end_cursor() const {
   // @@protoc_insertion_point(field_get:google.datastore.v1.QueryResultBatch.end_cursor)
-  return end_cursor_.GetNoArena();
+  return end_cursor_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void QueryResultBatch::set_end_cursor(const ::std::string& value) {
   
@@ -3055,7 +3002,7 @@ inline void QueryResultBatch::set_allocated_end_cursor(::std::string* end_cursor
   // @@protoc_insertion_point(field_set_allocated:google.datastore.v1.QueryResultBatch.end_cursor)
 }
 
-// .google.datastore.v1.QueryResultBatch.MoreResultsType more_results = 5;
+// optional .google.datastore.v1.QueryResultBatch.MoreResultsType more_results = 5;
 inline void QueryResultBatch::clear_more_results() {
   more_results_ = 0;
 }
@@ -3069,7 +3016,7 @@ inline void QueryResultBatch::set_more_results(::google::datastore::v1::QueryRes
   // @@protoc_insertion_point(field_set:google.datastore.v1.QueryResultBatch.more_results)
 }
 
-// int64 snapshot_version = 7;
+// optional int64 snapshot_version = 7;
 inline void QueryResultBatch::clear_snapshot_version() {
   snapshot_version_ = GOOGLE_LONGLONG(0);
 }
@@ -3083,9 +3030,10 @@ inline void QueryResultBatch::set_snapshot_version(::google::protobuf::int64 val
   // @@protoc_insertion_point(field_set:google.datastore.v1.QueryResultBatch.snapshot_version)
 }
 
+inline const QueryResultBatch* QueryResultBatch::internal_default_instance() {
+  return &QueryResultBatch_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
@@ -3110,7 +3058,6 @@ inline void QueryResultBatch::set_snapshot_version(::google::protobuf::int64 val
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace datastore

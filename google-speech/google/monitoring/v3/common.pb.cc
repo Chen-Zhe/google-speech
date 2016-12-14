@@ -20,101 +20,124 @@
 namespace google {
 namespace monitoring {
 namespace v3 {
-class TypedValueDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<TypedValue> {};
-TypedValueDefaultTypeInternal _TypedValue_default_instance_;
-class TimeIntervalDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<TimeInterval> {};
-TimeIntervalDefaultTypeInternal _TimeInterval_default_instance_;
-class AggregationDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Aggregation> {};
-AggregationDefaultTypeInternal _Aggregation_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[3];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[2];
+const ::google::protobuf::Descriptor* TypedValue_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TypedValue_reflection_ = NULL;
 struct TypedValueOneofInstance {
   bool bool_value_;
   ::google::protobuf::int64 int64_value_;
   double double_value_;
   ::google::protobuf::internal::ArenaStringPtr string_value_;
   const ::google::api::Distribution* distribution_value_;
-} TypedValue_default_oneof_instance_;
+}* TypedValue_default_oneof_instance_ = NULL;
+const ::google::protobuf::Descriptor* TimeInterval_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  TimeInterval_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Aggregation_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Aggregation_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* Aggregation_Aligner_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* Aggregation_Reducer_descriptor_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fmonitoring_2fv3_2fcommon_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fmonitoring_2fv3_2fcommon_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TypedValue, _internal_metadata_),
-    ~0u,  // no _extensions_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TypedValue, _oneof_case_[0]),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&TypedValue_default_oneof_instance_), bool_value_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&TypedValue_default_oneof_instance_), int64_value_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&TypedValue_default_oneof_instance_), double_value_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&TypedValue_default_oneof_instance_), string_value_),
-    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET((&TypedValue_default_oneof_instance_), distribution_value_),
+void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fcommon_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fmonitoring_2fv3_2fcommon_2eproto() {
+  protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/monitoring/v3/common.proto");
+  GOOGLE_CHECK(file != NULL);
+  TypedValue_descriptor_ = file->message_type(0);
+  static const int TypedValue_offsets_[6] = {
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(TypedValue_default_oneof_instance_, bool_value_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(TypedValue_default_oneof_instance_, int64_value_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(TypedValue_default_oneof_instance_, double_value_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(TypedValue_default_oneof_instance_, string_value_),
+    PROTO2_GENERATED_DEFAULT_ONEOF_FIELD_OFFSET(TypedValue_default_oneof_instance_, distribution_value_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TypedValue, value_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimeInterval, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  TypedValue_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      TypedValue_descriptor_,
+      TypedValue::internal_default_instance(),
+      TypedValue_offsets_,
+      -1,
+      -1,
+      -1,
+      TypedValue_default_oneof_instance_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TypedValue, _oneof_case_[0]),
+      sizeof(TypedValue),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TypedValue, _internal_metadata_));
+  TimeInterval_descriptor_ = file->message_type(1);
+  static const int TimeInterval_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimeInterval, end_time_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimeInterval, start_time_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Aggregation, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  TimeInterval_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      TimeInterval_descriptor_,
+      TimeInterval::internal_default_instance(),
+      TimeInterval_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(TimeInterval),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TimeInterval, _internal_metadata_));
+  Aggregation_descriptor_ = file->message_type(2);
+  static const int Aggregation_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Aggregation, alignment_period_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Aggregation, per_series_aligner_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Aggregation, cross_series_reducer_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Aggregation, group_by_fields_),
   };
-  return offsets;
+  Aggregation_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Aggregation_descriptor_,
+      Aggregation::internal_default_instance(),
+      Aggregation_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Aggregation),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Aggregation, _internal_metadata_));
+  Aggregation_Aligner_descriptor_ = Aggregation_descriptor_->enum_type(0);
+  Aggregation_Reducer_descriptor_ = Aggregation_descriptor_->enum_type(1);
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(TypedValue)},
-  { 10, -1, sizeof(TimeInterval)},
-  { 16, -1, sizeof(Aggregation)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_TypedValue_default_instance_), &TypedValue_default_oneof_instance_},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_TimeInterval_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Aggregation_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/monitoring/v3/common.proto", schemas, file_default_instances, protobuf_Offsets_google_2fmonitoring_2fv3_2fcommon_2eproto(), factory,
-      file_level_metadata, file_level_enum_descriptors, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fmonitoring_2fv3_2fcommon_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 3);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      TypedValue_descriptor_, TypedValue::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      TimeInterval_descriptor_, TimeInterval::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Aggregation_descriptor_, Aggregation::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fmonitoring_2fv3_2fcommon_2eproto() {
-  _TypedValue_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _TimeInterval_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
-  _Aggregation_default_instance_.Shutdown();
-  delete file_level_metadata[2].reflection;
+  TypedValue_default_instance_.Shutdown();
+  delete TypedValue_default_oneof_instance_;
+  delete TypedValue_reflection_;
+  TimeInterval_default_instance_.Shutdown();
+  delete TimeInterval_reflection_;
+  Aggregation_default_instance_.Shutdown();
+  delete Aggregation_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto_impl() {
@@ -123,72 +146,64 @@ void protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto_impl() {
   ::google::api::protobuf_InitDefaults_google_2fapi_2fdistribution_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2fduration_2eproto();
   ::google::protobuf::protobuf_InitDefaults_google_2fprotobuf_2ftimestamp_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _TypedValue_default_instance_.DefaultConstruct();
-  _TimeInterval_default_instance_.DefaultConstruct();
-  _Aggregation_default_instance_.DefaultConstruct();
-    TypedValue_default_oneof_instance_.bool_value_ = false;
-    TypedValue_default_oneof_instance_.int64_value_ = GOOGLE_LONGLONG(0);
-    TypedValue_default_oneof_instance_.double_value_ = 0;
-  TypedValue_default_oneof_instance_.string_value_.UnsafeSetDefault(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  TypedValue_default_oneof_instance_.distribution_value_ = const_cast< ::google::api::Distribution*>(
-      ::google::api::Distribution::internal_default_instance());
-  _TimeInterval_default_instance_.get_mutable()->end_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  _TimeInterval_default_instance_.get_mutable()->start_time_ = const_cast< ::google::protobuf::Timestamp*>(
-      ::google::protobuf::Timestamp::internal_default_instance());
-  _Aggregation_default_instance_.get_mutable()->alignment_period_ = const_cast< ::google::protobuf::Duration*>(
-      ::google::protobuf::Duration::internal_default_instance());
+  ::google::protobuf::internal::GetEmptyString();
+  TypedValue_default_instance_.DefaultConstruct();
+  TypedValue_default_oneof_instance_ = new TypedValueOneofInstance();
+  TimeInterval_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  Aggregation_default_instance_.DefaultConstruct();
+  TypedValue_default_instance_.get_mutable()->InitAsDefaultInstance();
+  TimeInterval_default_instance_.get_mutable()->InitAsDefaultInstance();
+  Aggregation_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto_once_);
 void protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
-  static const char descriptor[] = {
-      "\n!google/monitoring/v3/common.proto\022\024goo"
-      "gle.monitoring.v3\032\035google/api/distributi"
-      "on.proto\032\036google/protobuf/duration.proto"
-      "\032\037google/protobuf/timestamp.proto\"\252\001\n\nTy"
-      "pedValue\022\024\n\nbool_value\030\001 \001(\010H\000\022\025\n\013int64_"
-      "value\030\002 \001(\003H\000\022\026\n\014double_value\030\003 \001(\001H\000\022\026\n"
-      "\014string_value\030\004 \001(\tH\000\0226\n\022distribution_va"
-      "lue\030\005 \001(\0132\030.google.api.DistributionH\000B\007\n"
-      "\005value\"l\n\014TimeInterval\022,\n\010end_time\030\002 \001(\013"
-      "2\032.google.protobuf.Timestamp\022.\n\nstart_ti"
-      "me\030\001 \001(\0132\032.google.protobuf.Timestamp\"\344\006\n"
-      "\013Aggregation\0223\n\020alignment_period\030\001 \001(\0132\031"
-      ".google.protobuf.Duration\022E\n\022per_series_"
-      "aligner\030\002 \001(\0162).google.monitoring.v3.Agg"
-      "regation.Aligner\022G\n\024cross_series_reducer"
-      "\030\004 \001(\0162).google.monitoring.v3.Aggregatio"
-      "n.Reducer\022\027\n\017group_by_fields\030\005 \003(\t\"\332\002\n\007A"
-      "ligner\022\016\n\nALIGN_NONE\020\000\022\017\n\013ALIGN_DELTA\020\001\022"
-      "\016\n\nALIGN_RATE\020\002\022\025\n\021ALIGN_INTERPOLATE\020\003\022\024"
-      "\n\020ALIGN_NEXT_OLDER\020\004\022\r\n\tALIGN_MIN\020\n\022\r\n\tA"
-      "LIGN_MAX\020\013\022\016\n\nALIGN_MEAN\020\014\022\017\n\013ALIGN_COUN"
-      "T\020\r\022\r\n\tALIGN_SUM\020\016\022\020\n\014ALIGN_STDDEV\020\017\022\024\n\020"
-      "ALIGN_COUNT_TRUE\020\020\022\027\n\023ALIGN_FRACTION_TRU"
-      "E\020\021\022\027\n\023ALIGN_PERCENTILE_99\020\022\022\027\n\023ALIGN_PE"
-      "RCENTILE_95\020\023\022\027\n\023ALIGN_PERCENTILE_50\020\024\022\027"
-      "\n\023ALIGN_PERCENTILE_05\020\025\"\231\002\n\007Reducer\022\017\n\013R"
-      "EDUCE_NONE\020\000\022\017\n\013REDUCE_MEAN\020\001\022\016\n\nREDUCE_"
-      "MIN\020\002\022\016\n\nREDUCE_MAX\020\003\022\016\n\nREDUCE_SUM\020\004\022\021\n"
-      "\rREDUCE_STDDEV\020\005\022\020\n\014REDUCE_COUNT\020\006\022\025\n\021RE"
-      "DUCE_COUNT_TRUE\020\007\022\030\n\024REDUCE_FRACTION_TRU"
-      "E\020\010\022\030\n\024REDUCE_PERCENTILE_99\020\t\022\030\n\024REDUCE_"
-      "PERCENTILE_95\020\n\022\030\n\024REDUCE_PERCENTILE_50\020"
-      "\013\022\030\n\024REDUCE_PERCENTILE_05\020\014B\206\001\n\030com.goog"
-      "le.monitoring.v3B\013CommonProtoP\001Z>google."
-      "golang.org/genproto/googleapis/monitorin"
-      "g/v3;monitoring\252\002\032Google.Cloud.Monitorin"
-      "g.V3b\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 1452);
+    "\n!google/monitoring/v3/common.proto\022\024goo"
+    "gle.monitoring.v3\032\035google/api/distributi"
+    "on.proto\032\036google/protobuf/duration.proto"
+    "\032\037google/protobuf/timestamp.proto\"\252\001\n\nTy"
+    "pedValue\022\024\n\nbool_value\030\001 \001(\010H\000\022\025\n\013int64_"
+    "value\030\002 \001(\003H\000\022\026\n\014double_value\030\003 \001(\001H\000\022\026\n"
+    "\014string_value\030\004 \001(\tH\000\0226\n\022distribution_va"
+    "lue\030\005 \001(\0132\030.google.api.DistributionH\000B\007\n"
+    "\005value\"l\n\014TimeInterval\022,\n\010end_time\030\002 \001(\013"
+    "2\032.google.protobuf.Timestamp\022.\n\nstart_ti"
+    "me\030\001 \001(\0132\032.google.protobuf.Timestamp\"\344\006\n"
+    "\013Aggregation\0223\n\020alignment_period\030\001 \001(\0132\031"
+    ".google.protobuf.Duration\022E\n\022per_series_"
+    "aligner\030\002 \001(\0162).google.monitoring.v3.Agg"
+    "regation.Aligner\022G\n\024cross_series_reducer"
+    "\030\004 \001(\0162).google.monitoring.v3.Aggregatio"
+    "n.Reducer\022\027\n\017group_by_fields\030\005 \003(\t\"\332\002\n\007A"
+    "ligner\022\016\n\nALIGN_NONE\020\000\022\017\n\013ALIGN_DELTA\020\001\022"
+    "\016\n\nALIGN_RATE\020\002\022\025\n\021ALIGN_INTERPOLATE\020\003\022\024"
+    "\n\020ALIGN_NEXT_OLDER\020\004\022\r\n\tALIGN_MIN\020\n\022\r\n\tA"
+    "LIGN_MAX\020\013\022\016\n\nALIGN_MEAN\020\014\022\017\n\013ALIGN_COUN"
+    "T\020\r\022\r\n\tALIGN_SUM\020\016\022\020\n\014ALIGN_STDDEV\020\017\022\024\n\020"
+    "ALIGN_COUNT_TRUE\020\020\022\027\n\023ALIGN_FRACTION_TRU"
+    "E\020\021\022\027\n\023ALIGN_PERCENTILE_99\020\022\022\027\n\023ALIGN_PE"
+    "RCENTILE_95\020\023\022\027\n\023ALIGN_PERCENTILE_50\020\024\022\027"
+    "\n\023ALIGN_PERCENTILE_05\020\025\"\231\002\n\007Reducer\022\017\n\013R"
+    "EDUCE_NONE\020\000\022\017\n\013REDUCE_MEAN\020\001\022\016\n\nREDUCE_"
+    "MIN\020\002\022\016\n\nREDUCE_MAX\020\003\022\016\n\nREDUCE_SUM\020\004\022\021\n"
+    "\rREDUCE_STDDEV\020\005\022\020\n\014REDUCE_COUNT\020\006\022\025\n\021RE"
+    "DUCE_COUNT_TRUE\020\007\022\030\n\024REDUCE_FRACTION_TRU"
+    "E\020\010\022\030\n\024REDUCE_PERCENTILE_99\020\t\022\030\n\024REDUCE_"
+    "PERCENTILE_95\020\n\022\030\n\024REDUCE_PERCENTILE_50\020"
+    "\013\022\030\n\024REDUCE_PERCENTILE_05\020\014B\206\001\n\030com.goog"
+    "le.monitoring.v3B\013CommonProtoP\001Z>google."
+    "golang.org/genproto/googleapis/monitorin"
+    "g/v3;monitoring\252\002\032Google.Cloud.Monitorin"
+    "g.V3b\006proto3", 1452);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/monitoring/v3/common.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fdistribution_2eproto();
@@ -208,100 +223,16 @@ struct StaticDescriptorInitializer_google_2fmonitoring_2fv3_2fcommon_2eproto {
     protobuf_AddDesc_google_2fmonitoring_2fv3_2fcommon_2eproto();
   }
 } static_descriptor_initializer_google_2fmonitoring_2fv3_2fcommon_2eproto_;
-const ::google::protobuf::EnumDescriptor* Aggregation_Aligner_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[0];
-}
-bool Aggregation_Aligner_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 10:
-    case 11:
-    case 12:
-    case 13:
-    case 14:
-    case 15:
-    case 16:
-    case 17:
-    case 18:
-    case 19:
-    case 20:
-    case 21:
-      return true;
-    default:
-      return false;
-  }
+
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
 }
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const Aggregation_Aligner Aggregation::ALIGN_NONE;
-const Aggregation_Aligner Aggregation::ALIGN_DELTA;
-const Aggregation_Aligner Aggregation::ALIGN_RATE;
-const Aggregation_Aligner Aggregation::ALIGN_INTERPOLATE;
-const Aggregation_Aligner Aggregation::ALIGN_NEXT_OLDER;
-const Aggregation_Aligner Aggregation::ALIGN_MIN;
-const Aggregation_Aligner Aggregation::ALIGN_MAX;
-const Aggregation_Aligner Aggregation::ALIGN_MEAN;
-const Aggregation_Aligner Aggregation::ALIGN_COUNT;
-const Aggregation_Aligner Aggregation::ALIGN_SUM;
-const Aggregation_Aligner Aggregation::ALIGN_STDDEV;
-const Aggregation_Aligner Aggregation::ALIGN_COUNT_TRUE;
-const Aggregation_Aligner Aggregation::ALIGN_FRACTION_TRUE;
-const Aggregation_Aligner Aggregation::ALIGN_PERCENTILE_99;
-const Aggregation_Aligner Aggregation::ALIGN_PERCENTILE_95;
-const Aggregation_Aligner Aggregation::ALIGN_PERCENTILE_50;
-const Aggregation_Aligner Aggregation::ALIGN_PERCENTILE_05;
-const Aggregation_Aligner Aggregation::Aligner_MIN;
-const Aggregation_Aligner Aggregation::Aligner_MAX;
-const int Aggregation::Aligner_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-const ::google::protobuf::EnumDescriptor* Aggregation_Reducer_descriptor() {
-  protobuf_AssignDescriptorsOnce();
-  return file_level_enum_descriptors[1];
-}
-bool Aggregation_Reducer_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-    case 7:
-    case 8:
-    case 9:
-    case 10:
-    case 11:
-    case 12:
-      return true;
-    default:
-      return false;
-  }
-}
+}  // namespace
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const Aggregation_Reducer Aggregation::REDUCE_NONE;
-const Aggregation_Reducer Aggregation::REDUCE_MEAN;
-const Aggregation_Reducer Aggregation::REDUCE_MIN;
-const Aggregation_Reducer Aggregation::REDUCE_MAX;
-const Aggregation_Reducer Aggregation::REDUCE_SUM;
-const Aggregation_Reducer Aggregation::REDUCE_STDDEV;
-const Aggregation_Reducer Aggregation::REDUCE_COUNT;
-const Aggregation_Reducer Aggregation::REDUCE_COUNT_TRUE;
-const Aggregation_Reducer Aggregation::REDUCE_FRACTION_TRUE;
-const Aggregation_Reducer Aggregation::REDUCE_PERCENTILE_99;
-const Aggregation_Reducer Aggregation::REDUCE_PERCENTILE_95;
-const Aggregation_Reducer Aggregation::REDUCE_PERCENTILE_50;
-const Aggregation_Reducer Aggregation::REDUCE_PERCENTILE_05;
-const Aggregation_Reducer Aggregation::Reducer_MIN;
-const Aggregation_Reducer Aggregation::Reducer_MAX;
-const int Aggregation::Reducer_ARRAYSIZE;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 // ===================================================================
 
@@ -315,43 +246,25 @@ const int TypedValue::kDistributionValueFieldNumber;
 
 TypedValue::TypedValue()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.TypedValue)
 }
+
+void TypedValue::InitAsDefaultInstance() {
+  TypedValue_default_oneof_instance_->bool_value_ = false;
+  TypedValue_default_oneof_instance_->int64_value_ = GOOGLE_LONGLONG(0);
+  TypedValue_default_oneof_instance_->double_value_ = 0;
+  TypedValue_default_oneof_instance_->string_value_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  TypedValue_default_oneof_instance_->distribution_value_ = const_cast< ::google::api::Distribution*>(
+      ::google::api::Distribution::internal_default_instance());
+}
+
 TypedValue::TypedValue(const TypedValue& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  clear_has_value();
-  switch (from.value_case()) {
-    case kBoolValue: {
-      set_bool_value(from.bool_value());
-      break;
-    }
-    case kInt64Value: {
-      set_int64_value(from.int64_value());
-      break;
-    }
-    case kDoubleValue: {
-      set_double_value(from.double_value());
-      break;
-    }
-    case kStringValue: {
-      set_string_value(from.string_value());
-      break;
-    }
-    case kDistributionValue: {
-      mutable_distribution_value()->::google::api::Distribution::MergeFrom(from.distribution_value());
-      break;
-    }
-    case VALUE_NOT_SET: {
-      break;
-    }
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.TypedValue)
 }
 
@@ -378,13 +291,15 @@ void TypedValue::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* TypedValue::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return TypedValue_descriptor_;
 }
 
 const TypedValue& TypedValue::default_instance() {
   protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<TypedValue> TypedValue_default_instance_;
 
 TypedValue* TypedValue::New(::google::protobuf::Arena* arena) const {
   TypedValue* n = new TypedValue;
@@ -436,13 +351,13 @@ bool TypedValue::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.monitoring.v3.TypedValue)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // bool bool_value = 1;
+      // optional bool bool_value = 1;
       case 1: {
-        if (tag == 8u) {
+        if (tag == 8) {
           clear_value();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -451,12 +366,13 @@ bool TypedValue::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        goto after_distribution_value;
         break;
       }
 
-      // int64 int64_value = 2;
+      // optional int64 int64_value = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
           clear_value();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -465,12 +381,13 @@ bool TypedValue::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        goto after_distribution_value;
         break;
       }
 
-      // double double_value = 3;
+      // optional double double_value = 3;
       case 3: {
-        if (tag == 25u) {
+        if (tag == 25) {
           clear_value();
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    double, ::google::protobuf::internal::WireFormatLite::TYPE_DOUBLE>(
@@ -479,12 +396,13 @@ bool TypedValue::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        goto after_distribution_value;
         break;
       }
 
-      // string string_value = 4;
+      // optional string string_value = 4;
       case 4: {
-        if (tag == 34u) {
+        if (tag == 34) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_string_value()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -494,17 +412,21 @@ bool TypedValue::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_distribution_value;
         break;
       }
 
-      // .google.api.Distribution distribution_value = 5;
+      // optional .google.api.Distribution distribution_value = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_distribution_value:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_distribution_value()));
         } else {
           goto handle_unusual;
         }
+       after_distribution_value:
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -532,22 +454,22 @@ failure:
 void TypedValue::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.monitoring.v3.TypedValue)
-  // bool bool_value = 1;
+  // optional bool bool_value = 1;
   if (has_bool_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteBool(1, this->bool_value(), output);
   }
 
-  // int64 int64_value = 2;
+  // optional int64 int64_value = 2;
   if (has_int64_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(2, this->int64_value(), output);
   }
 
-  // double double_value = 3;
+  // optional double double_value = 3;
   if (has_double_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteDouble(3, this->double_value(), output);
   }
 
-  // string string_value = 4;
+  // optional string string_value = 4;
   if (has_string_value()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->string_value().data(), this->string_value().length(),
@@ -557,7 +479,7 @@ void TypedValue::SerializeWithCachedSizes(
       4, this->string_value(), output);
   }
 
-  // .google.api.Distribution distribution_value = 5;
+  // optional .google.api.Distribution distribution_value = 5;
   if (has_distribution_value()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       5, *value_.distribution_value_, output);
@@ -570,22 +492,22 @@ void TypedValue::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.TypedValue)
-  // bool bool_value = 1;
+  // optional bool bool_value = 1;
   if (has_bool_value()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(1, this->bool_value(), target);
   }
 
-  // int64 int64_value = 2;
+  // optional int64 int64_value = 2;
   if (has_int64_value()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(2, this->int64_value(), target);
   }
 
-  // double double_value = 3;
+  // optional double double_value = 3;
   if (has_double_value()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteDoubleToArray(3, this->double_value(), target);
   }
 
-  // string string_value = 4;
+  // optional string string_value = 4;
   if (has_string_value()) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->string_value().data(), this->string_value().length(),
@@ -596,7 +518,7 @@ void TypedValue::SerializeWithCachedSizes(
         4, this->string_value(), target);
   }
 
-  // .google.api.Distribution distribution_value = 5;
+  // optional .google.api.Distribution distribution_value = 5;
   if (has_distribution_value()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -612,31 +534,31 @@ size_t TypedValue::ByteSizeLong() const {
   size_t total_size = 0;
 
   switch (value_case()) {
-    // bool bool_value = 1;
+    // optional bool bool_value = 1;
     case kBoolValue: {
       total_size += 1 + 1;
       break;
     }
-    // int64 int64_value = 2;
+    // optional int64 int64_value = 2;
     case kInt64Value: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int64Size(
           this->int64_value());
       break;
     }
-    // double double_value = 3;
+    // optional double double_value = 3;
     case kDoubleValue: {
       total_size += 1 + 8;
       break;
     }
-    // string string_value = 4;
+    // optional string string_value = 4;
     case kStringValue: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::StringSize(
           this->string_value());
       break;
     }
-    // .google.api.Distribution distribution_value = 5;
+    // optional .google.api.Distribution distribution_value = 5;
     case kDistributionValue: {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -656,7 +578,7 @@ size_t TypedValue::ByteSizeLong() const {
 
 void TypedValue::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.TypedValue)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const TypedValue* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const TypedValue>(
           &from);
@@ -665,14 +587,21 @@ void TypedValue::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.TypedValue)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void TypedValue::MergeFrom(const TypedValue& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.TypedValue)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void TypedValue::UnsafeMergeFrom(const TypedValue& from) {
+  GOOGLE_DCHECK(&from != this);
   switch (from.value_case()) {
     case kBoolValue: {
       set_bool_value(from.bool_value());
@@ -711,10 +640,11 @@ void TypedValue::CopyFrom(const TypedValue& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.TypedValue)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool TypedValue::IsInitialized() const {
+
   return true;
 }
 
@@ -725,18 +655,22 @@ void TypedValue::Swap(TypedValue* other) {
 void TypedValue::InternalSwap(TypedValue* other) {
   std::swap(value_, other->value_);
   std::swap(_oneof_case_[0], other->_oneof_case_[0]);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata TypedValue::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TypedValue_descriptor_;
+  metadata.reflection = TypedValue_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // TypedValue
 
-// bool bool_value = 1;
+// optional bool bool_value = 1;
 bool TypedValue::has_bool_value() const {
   return value_case() == kBoolValue;
 }
@@ -765,7 +699,7 @@ void TypedValue::set_bool_value(bool value) {
   // @@protoc_insertion_point(field_set:google.monitoring.v3.TypedValue.bool_value)
 }
 
-// int64 int64_value = 2;
+// optional int64 int64_value = 2;
 bool TypedValue::has_int64_value() const {
   return value_case() == kInt64Value;
 }
@@ -794,7 +728,7 @@ void TypedValue::set_int64_value(::google::protobuf::int64 value) {
   // @@protoc_insertion_point(field_set:google.monitoring.v3.TypedValue.int64_value)
 }
 
-// double double_value = 3;
+// optional double double_value = 3;
 bool TypedValue::has_double_value() const {
   return value_case() == kDoubleValue;
 }
@@ -823,7 +757,7 @@ void TypedValue::set_double_value(double value) {
   // @@protoc_insertion_point(field_set:google.monitoring.v3.TypedValue.double_value)
 }
 
-// string string_value = 4;
+// optional string string_value = 4;
 bool TypedValue::has_string_value() const {
   return value_case() == kStringValue;
 }
@@ -839,7 +773,7 @@ void TypedValue::clear_string_value() {
 const ::std::string& TypedValue::string_value() const {
   // @@protoc_insertion_point(field_get:google.monitoring.v3.TypedValue.string_value)
   if (has_string_value()) {
-    return value_.string_value_.GetNoArena();
+    return value_.string_value_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   }
   return *&::google::protobuf::internal::GetEmptyStringAlreadyInited();
 }
@@ -904,7 +838,7 @@ void TypedValue::set_allocated_string_value(::std::string* string_value) {
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.TypedValue.string_value)
 }
 
-// .google.api.Distribution distribution_value = 5;
+// optional .google.api.Distribution distribution_value = 5;
 bool TypedValue::has_distribution_value() const {
   return value_case() == kDistributionValue;
 }
@@ -961,6 +895,9 @@ void TypedValue::clear_has_value() {
 TypedValue::ValueCase TypedValue::value_case() const {
   return TypedValue::ValueCase(_oneof_case_[0]);
 }
+inline const TypedValue* TypedValue::internal_default_instance() {
+  return &TypedValue_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -972,33 +909,29 @@ const int TimeInterval::kStartTimeFieldNumber;
 
 TimeInterval::TimeInterval()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.TimeInterval)
 }
+
+void TimeInterval::InitAsDefaultInstance() {
+  end_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+  start_time_ = const_cast< ::google::protobuf::Timestamp*>(
+      ::google::protobuf::Timestamp::internal_default_instance());
+}
+
 TimeInterval::TimeInterval(const TimeInterval& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_end_time()) {
-    end_time_ = new ::google::protobuf::Timestamp(*from.end_time_);
-  } else {
-    end_time_ = NULL;
-  }
-  if (from.has_start_time()) {
-    start_time_ = new ::google::protobuf::Timestamp(*from.start_time_);
-  } else {
-    start_time_ = NULL;
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.TimeInterval)
 }
 
 void TimeInterval::SharedCtor() {
-  ::memset(&end_time_, 0, reinterpret_cast<char*>(&start_time_) -
-    reinterpret_cast<char*>(&end_time_) + sizeof(start_time_));
+  end_time_ = NULL;
+  start_time_ = NULL;
   _cached_size_ = 0;
 }
 
@@ -1008,10 +941,8 @@ TimeInterval::~TimeInterval() {
 }
 
 void TimeInterval::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &TimeInterval_default_instance_.get()) {
     delete end_time_;
-  }
-  if (this != internal_default_instance()) {
     delete start_time_;
   }
 }
@@ -1023,13 +954,15 @@ void TimeInterval::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* TimeInterval::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return TimeInterval_descriptor_;
 }
 
 const TimeInterval& TimeInterval::default_instance() {
   protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<TimeInterval> TimeInterval_default_instance_;
 
 TimeInterval* TimeInterval::New(::google::protobuf::Arena* arena) const {
   TimeInterval* n = new TimeInterval;
@@ -1041,13 +974,9 @@ TimeInterval* TimeInterval::New(::google::protobuf::Arena* arena) const {
 
 void TimeInterval::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.monitoring.v3.TimeInterval)
-  if (GetArenaNoVirtual() == NULL && end_time_ != NULL) {
-    delete end_time_;
-  }
+  if (GetArenaNoVirtual() == NULL && end_time_ != NULL) delete end_time_;
   end_time_ = NULL;
-  if (GetArenaNoVirtual() == NULL && start_time_ != NULL) {
-    delete start_time_;
-  }
+  if (GetArenaNoVirtual() == NULL && start_time_ != NULL) delete start_time_;
   start_time_ = NULL;
 }
 
@@ -1057,29 +986,32 @@ bool TimeInterval::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.monitoring.v3.TimeInterval)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.protobuf.Timestamp start_time = 1;
+      // optional .google.protobuf.Timestamp start_time = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_start_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_end_time;
         break;
       }
 
-      // .google.protobuf.Timestamp end_time = 2;
+      // optional .google.protobuf.Timestamp end_time = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_end_time:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_end_time()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1107,13 +1039,13 @@ failure:
 void TimeInterval::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.monitoring.v3.TimeInterval)
-  // .google.protobuf.Timestamp start_time = 1;
+  // optional .google.protobuf.Timestamp start_time = 1;
   if (this->has_start_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->start_time_, output);
   }
 
-  // .google.protobuf.Timestamp end_time = 2;
+  // optional .google.protobuf.Timestamp end_time = 2;
   if (this->has_end_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       2, *this->end_time_, output);
@@ -1126,14 +1058,14 @@ void TimeInterval::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.TimeInterval)
-  // .google.protobuf.Timestamp start_time = 1;
+  // optional .google.protobuf.Timestamp start_time = 1;
   if (this->has_start_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->start_time_, false, target);
   }
 
-  // .google.protobuf.Timestamp end_time = 2;
+  // optional .google.protobuf.Timestamp end_time = 2;
   if (this->has_end_time()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
@@ -1148,14 +1080,14 @@ size_t TimeInterval::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.TimeInterval)
   size_t total_size = 0;
 
-  // .google.protobuf.Timestamp end_time = 2;
+  // optional .google.protobuf.Timestamp end_time = 2;
   if (this->has_end_time()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->end_time_);
   }
 
-  // .google.protobuf.Timestamp start_time = 1;
+  // optional .google.protobuf.Timestamp start_time = 1;
   if (this->has_start_time()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
@@ -1171,7 +1103,7 @@ size_t TimeInterval::ByteSizeLong() const {
 
 void TimeInterval::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.TimeInterval)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const TimeInterval* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const TimeInterval>(
           &from);
@@ -1180,14 +1112,21 @@ void TimeInterval::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.TimeInterval)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void TimeInterval::MergeFrom(const TimeInterval& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.TimeInterval)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void TimeInterval::UnsafeMergeFrom(const TimeInterval& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.has_end_time()) {
     mutable_end_time()->::google::protobuf::Timestamp::MergeFrom(from.end_time());
   }
@@ -1207,10 +1146,11 @@ void TimeInterval::CopyFrom(const TimeInterval& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.TimeInterval)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool TimeInterval::IsInitialized() const {
+
   return true;
 }
 
@@ -1221,18 +1161,22 @@ void TimeInterval::Swap(TimeInterval* other) {
 void TimeInterval::InternalSwap(TimeInterval* other) {
   std::swap(end_time_, other->end_time_);
   std::swap(start_time_, other->start_time_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata TimeInterval::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = TimeInterval_descriptor_;
+  metadata.reflection = TimeInterval_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // TimeInterval
 
-// .google.protobuf.Timestamp end_time = 2;
+// optional .google.protobuf.Timestamp end_time = 2;
 bool TimeInterval::has_end_time() const {
   return this != internal_default_instance() && end_time_ != NULL;
 }
@@ -1276,7 +1220,7 @@ void TimeInterval::set_allocated_end_time(::google::protobuf::Timestamp* end_tim
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.TimeInterval.end_time)
 }
 
-// .google.protobuf.Timestamp start_time = 1;
+// optional .google.protobuf.Timestamp start_time = 1;
 bool TimeInterval::has_start_time() const {
   return this != internal_default_instance() && start_time_ != NULL;
 }
@@ -1320,10 +1264,107 @@ void TimeInterval::set_allocated_start_time(::google::protobuf::Timestamp* start
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.TimeInterval.start_time)
 }
 
+inline const TimeInterval* TimeInterval::internal_default_instance() {
+  return &TimeInterval_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
+const ::google::protobuf::EnumDescriptor* Aggregation_Aligner_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return Aggregation_Aligner_descriptor_;
+}
+bool Aggregation_Aligner_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 10:
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+    case 18:
+    case 19:
+    case 20:
+    case 21:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const Aggregation_Aligner Aggregation::ALIGN_NONE;
+const Aggregation_Aligner Aggregation::ALIGN_DELTA;
+const Aggregation_Aligner Aggregation::ALIGN_RATE;
+const Aggregation_Aligner Aggregation::ALIGN_INTERPOLATE;
+const Aggregation_Aligner Aggregation::ALIGN_NEXT_OLDER;
+const Aggregation_Aligner Aggregation::ALIGN_MIN;
+const Aggregation_Aligner Aggregation::ALIGN_MAX;
+const Aggregation_Aligner Aggregation::ALIGN_MEAN;
+const Aggregation_Aligner Aggregation::ALIGN_COUNT;
+const Aggregation_Aligner Aggregation::ALIGN_SUM;
+const Aggregation_Aligner Aggregation::ALIGN_STDDEV;
+const Aggregation_Aligner Aggregation::ALIGN_COUNT_TRUE;
+const Aggregation_Aligner Aggregation::ALIGN_FRACTION_TRUE;
+const Aggregation_Aligner Aggregation::ALIGN_PERCENTILE_99;
+const Aggregation_Aligner Aggregation::ALIGN_PERCENTILE_95;
+const Aggregation_Aligner Aggregation::ALIGN_PERCENTILE_50;
+const Aggregation_Aligner Aggregation::ALIGN_PERCENTILE_05;
+const Aggregation_Aligner Aggregation::Aligner_MIN;
+const Aggregation_Aligner Aggregation::Aligner_MAX;
+const int Aggregation::Aligner_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+const ::google::protobuf::EnumDescriptor* Aggregation_Reducer_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return Aggregation_Reducer_descriptor_;
+}
+bool Aggregation_Reducer_IsValid(int value) {
+  switch (value) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+    case 12:
+      return true;
+    default:
+      return false;
+  }
+}
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const Aggregation_Reducer Aggregation::REDUCE_NONE;
+const Aggregation_Reducer Aggregation::REDUCE_MEAN;
+const Aggregation_Reducer Aggregation::REDUCE_MIN;
+const Aggregation_Reducer Aggregation::REDUCE_MAX;
+const Aggregation_Reducer Aggregation::REDUCE_SUM;
+const Aggregation_Reducer Aggregation::REDUCE_STDDEV;
+const Aggregation_Reducer Aggregation::REDUCE_COUNT;
+const Aggregation_Reducer Aggregation::REDUCE_COUNT_TRUE;
+const Aggregation_Reducer Aggregation::REDUCE_FRACTION_TRUE;
+const Aggregation_Reducer Aggregation::REDUCE_PERCENTILE_99;
+const Aggregation_Reducer Aggregation::REDUCE_PERCENTILE_95;
+const Aggregation_Reducer Aggregation::REDUCE_PERCENTILE_50;
+const Aggregation_Reducer Aggregation::REDUCE_PERCENTILE_05;
+const Aggregation_Reducer Aggregation::Reducer_MIN;
+const Aggregation_Reducer Aggregation::Reducer_MAX;
+const int Aggregation::Reducer_ARRAYSIZE;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int Aggregation::kAlignmentPeriodFieldNumber;
 const int Aggregation::kPerSeriesAlignerFieldNumber;
@@ -1333,32 +1374,28 @@ const int Aggregation::kGroupByFieldsFieldNumber;
 
 Aggregation::Aggregation()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.monitoring.v3.Aggregation)
 }
+
+void Aggregation::InitAsDefaultInstance() {
+  alignment_period_ = const_cast< ::google::protobuf::Duration*>(
+      ::google::protobuf::Duration::internal_default_instance());
+}
+
 Aggregation::Aggregation(const Aggregation& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      group_by_fields_(from.group_by_fields_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_alignment_period()) {
-    alignment_period_ = new ::google::protobuf::Duration(*from.alignment_period_);
-  } else {
-    alignment_period_ = NULL;
-  }
-  ::memcpy(&per_series_aligner_, &from.per_series_aligner_,
-    reinterpret_cast<char*>(&cross_series_reducer_) -
-    reinterpret_cast<char*>(&per_series_aligner_) + sizeof(cross_series_reducer_));
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.monitoring.v3.Aggregation)
 }
 
 void Aggregation::SharedCtor() {
-  ::memset(&alignment_period_, 0, reinterpret_cast<char*>(&cross_series_reducer_) -
-    reinterpret_cast<char*>(&alignment_period_) + sizeof(cross_series_reducer_));
+  alignment_period_ = NULL;
+  ::memset(&per_series_aligner_, 0, reinterpret_cast<char*>(&cross_series_reducer_) -
+    reinterpret_cast<char*>(&per_series_aligner_) + sizeof(cross_series_reducer_));
   _cached_size_ = 0;
 }
 
@@ -1368,7 +1405,7 @@ Aggregation::~Aggregation() {
 }
 
 void Aggregation::SharedDtor() {
-  if (this != internal_default_instance()) {
+  if (this != &Aggregation_default_instance_.get()) {
     delete alignment_period_;
   }
 }
@@ -1380,13 +1417,15 @@ void Aggregation::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Aggregation::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2].descriptor;
+  return Aggregation_descriptor_;
 }
 
 const Aggregation& Aggregation::default_instance() {
   protobuf_InitDefaults_google_2fmonitoring_2fv3_2fcommon_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Aggregation> Aggregation_default_instance_;
 
 Aggregation* Aggregation::New(::google::protobuf::Arena* arena) const {
   Aggregation* n = new Aggregation;
@@ -1398,13 +1437,30 @@ Aggregation* Aggregation::New(::google::protobuf::Arena* arena) const {
 
 void Aggregation::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.monitoring.v3.Aggregation)
-  group_by_fields_.Clear();
-  if (GetArenaNoVirtual() == NULL && alignment_period_ != NULL) {
-    delete alignment_period_;
-  }
+#if defined(__clang__)
+#define ZR_HELPER_(f) \
+  _Pragma("clang diagnostic push") \
+  _Pragma("clang diagnostic ignored \"-Winvalid-offsetof\"") \
+  __builtin_offsetof(Aggregation, f) \
+  _Pragma("clang diagnostic pop")
+#else
+#define ZR_HELPER_(f) reinterpret_cast<char*>(\
+  &reinterpret_cast<Aggregation*>(16)->f)
+#endif
+
+#define ZR_(first, last) do {\
+  ::memset(&(first), 0,\
+           ZR_HELPER_(last) - ZR_HELPER_(first) + sizeof(last));\
+} while (0)
+
+  ZR_(per_series_aligner_, cross_series_reducer_);
+  if (GetArenaNoVirtual() == NULL && alignment_period_ != NULL) delete alignment_period_;
   alignment_period_ = NULL;
-  ::memset(&per_series_aligner_, 0, reinterpret_cast<char*>(&cross_series_reducer_) -
-    reinterpret_cast<char*>(&per_series_aligner_) + sizeof(cross_series_reducer_));
+
+#undef ZR_HELPER_
+#undef ZR_
+
+  group_by_fields_.Clear();
 }
 
 bool Aggregation::MergePartialFromCodedStream(
@@ -1413,24 +1469,26 @@ bool Aggregation::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.monitoring.v3.Aggregation)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .google.protobuf.Duration alignment_period = 1;
+      // optional .google.protobuf.Duration alignment_period = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_alignment_period()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_per_series_aligner;
         break;
       }
 
-      // .google.monitoring.v3.Aggregation.Aligner per_series_aligner = 2;
+      // optional .google.monitoring.v3.Aggregation.Aligner per_series_aligner = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_per_series_aligner:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -1439,12 +1497,14 @@ bool Aggregation::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_cross_series_reducer;
         break;
       }
 
-      // .google.monitoring.v3.Aggregation.Reducer cross_series_reducer = 4;
+      // optional .google.monitoring.v3.Aggregation.Reducer cross_series_reducer = 4;
       case 4: {
-        if (tag == 32u) {
+        if (tag == 32) {
+         parse_cross_series_reducer:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -1453,12 +1513,14 @@ bool Aggregation::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_group_by_fields;
         break;
       }
 
       // repeated string group_by_fields = 5;
       case 5: {
-        if (tag == 42u) {
+        if (tag == 42) {
+         parse_group_by_fields:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_group_by_fields()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -1469,6 +1531,8 @@ bool Aggregation::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_group_by_fields;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -1496,19 +1560,19 @@ failure:
 void Aggregation::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.monitoring.v3.Aggregation)
-  // .google.protobuf.Duration alignment_period = 1;
+  // optional .google.protobuf.Duration alignment_period = 1;
   if (this->has_alignment_period()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       1, *this->alignment_period_, output);
   }
 
-  // .google.monitoring.v3.Aggregation.Aligner per_series_aligner = 2;
+  // optional .google.monitoring.v3.Aggregation.Aligner per_series_aligner = 2;
   if (this->per_series_aligner() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       2, this->per_series_aligner(), output);
   }
 
-  // .google.monitoring.v3.Aggregation.Reducer cross_series_reducer = 4;
+  // optional .google.monitoring.v3.Aggregation.Reducer cross_series_reducer = 4;
   if (this->cross_series_reducer() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       4, this->cross_series_reducer(), output);
@@ -1531,20 +1595,20 @@ void Aggregation::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.monitoring.v3.Aggregation)
-  // .google.protobuf.Duration alignment_period = 1;
+  // optional .google.protobuf.Duration alignment_period = 1;
   if (this->has_alignment_period()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageNoVirtualToArray(
         1, *this->alignment_period_, false, target);
   }
 
-  // .google.monitoring.v3.Aggregation.Aligner per_series_aligner = 2;
+  // optional .google.monitoring.v3.Aggregation.Aligner per_series_aligner = 2;
   if (this->per_series_aligner() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       2, this->per_series_aligner(), target);
   }
 
-  // .google.monitoring.v3.Aggregation.Reducer cross_series_reducer = 4;
+  // optional .google.monitoring.v3.Aggregation.Reducer cross_series_reducer = 4;
   if (this->cross_series_reducer() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       4, this->cross_series_reducer(), target);
@@ -1568,31 +1632,31 @@ size_t Aggregation::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.monitoring.v3.Aggregation)
   size_t total_size = 0;
 
-  // repeated string group_by_fields = 5;
-  total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->group_by_fields_size());
-  for (int i = 0; i < this->group_by_fields_size(); i++) {
-    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
-      this->group_by_fields(i));
-  }
-
-  // .google.protobuf.Duration alignment_period = 1;
+  // optional .google.protobuf.Duration alignment_period = 1;
   if (this->has_alignment_period()) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
         *this->alignment_period_);
   }
 
-  // .google.monitoring.v3.Aggregation.Aligner per_series_aligner = 2;
+  // optional .google.monitoring.v3.Aggregation.Aligner per_series_aligner = 2;
   if (this->per_series_aligner() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->per_series_aligner());
   }
 
-  // .google.monitoring.v3.Aggregation.Reducer cross_series_reducer = 4;
+  // optional .google.monitoring.v3.Aggregation.Reducer cross_series_reducer = 4;
   if (this->cross_series_reducer() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::EnumSize(this->cross_series_reducer());
+  }
+
+  // repeated string group_by_fields = 5;
+  total_size += 1 *
+      ::google::protobuf::internal::FromIntSize(this->group_by_fields_size());
+  for (int i = 0; i < this->group_by_fields_size(); i++) {
+    total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
+      this->group_by_fields(i));
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
@@ -1604,7 +1668,7 @@ size_t Aggregation::ByteSizeLong() const {
 
 void Aggregation::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.monitoring.v3.Aggregation)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Aggregation* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Aggregation>(
           &from);
@@ -1613,15 +1677,22 @@ void Aggregation::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.monitoring.v3.Aggregation)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Aggregation::MergeFrom(const Aggregation& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.monitoring.v3.Aggregation)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  group_by_fields_.MergeFrom(from.group_by_fields_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Aggregation::UnsafeMergeFrom(const Aggregation& from) {
+  GOOGLE_DCHECK(&from != this);
+  group_by_fields_.UnsafeMergeFrom(from.group_by_fields_);
   if (from.has_alignment_period()) {
     mutable_alignment_period()->::google::protobuf::Duration::MergeFrom(from.alignment_period());
   }
@@ -1644,10 +1715,11 @@ void Aggregation::CopyFrom(const Aggregation& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.monitoring.v3.Aggregation)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Aggregation::IsInitialized() const {
+
   return true;
 }
 
@@ -1656,22 +1728,26 @@ void Aggregation::Swap(Aggregation* other) {
   InternalSwap(other);
 }
 void Aggregation::InternalSwap(Aggregation* other) {
-  group_by_fields_.UnsafeArenaSwap(&other->group_by_fields_);
   std::swap(alignment_period_, other->alignment_period_);
   std::swap(per_series_aligner_, other->per_series_aligner_);
   std::swap(cross_series_reducer_, other->cross_series_reducer_);
+  group_by_fields_.UnsafeArenaSwap(&other->group_by_fields_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Aggregation::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[2];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Aggregation_descriptor_;
+  metadata.reflection = Aggregation_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // Aggregation
 
-// .google.protobuf.Duration alignment_period = 1;
+// optional .google.protobuf.Duration alignment_period = 1;
 bool Aggregation::has_alignment_period() const {
   return this != internal_default_instance() && alignment_period_ != NULL;
 }
@@ -1715,7 +1791,7 @@ void Aggregation::set_allocated_alignment_period(::google::protobuf::Duration* a
   // @@protoc_insertion_point(field_set_allocated:google.monitoring.v3.Aggregation.alignment_period)
 }
 
-// .google.monitoring.v3.Aggregation.Aligner per_series_aligner = 2;
+// optional .google.monitoring.v3.Aggregation.Aligner per_series_aligner = 2;
 void Aggregation::clear_per_series_aligner() {
   per_series_aligner_ = 0;
 }
@@ -1729,7 +1805,7 @@ void Aggregation::set_per_series_aligner(::google::monitoring::v3::Aggregation_A
   // @@protoc_insertion_point(field_set:google.monitoring.v3.Aggregation.per_series_aligner)
 }
 
-// .google.monitoring.v3.Aggregation.Reducer cross_series_reducer = 4;
+// optional .google.monitoring.v3.Aggregation.Reducer cross_series_reducer = 4;
 void Aggregation::clear_cross_series_reducer() {
   cross_series_reducer_ = 0;
 }
@@ -1798,6 +1874,9 @@ Aggregation::mutable_group_by_fields() {
   return &group_by_fields_;
 }
 
+inline const Aggregation* Aggregation::internal_default_instance() {
+  return &Aggregation_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

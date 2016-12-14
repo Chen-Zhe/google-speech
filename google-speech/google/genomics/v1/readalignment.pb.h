@@ -24,8 +24,8 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/map.h>
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/unknown_field_set.h>
@@ -34,37 +34,6 @@
 #include "google/genomics/v1/position.pb.h"
 #include <google/protobuf/struct.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace genomics {
-namespace v1 {
-class CigarUnit;
-class CigarUnitDefaultTypeInternal;
-extern CigarUnitDefaultTypeInternal _CigarUnit_default_instance_;
-class LinearAlignment;
-class LinearAlignmentDefaultTypeInternal;
-extern LinearAlignmentDefaultTypeInternal _LinearAlignment_default_instance_;
-class Position;
-class PositionDefaultTypeInternal;
-extern PositionDefaultTypeInternal _Position_default_instance_;
-class Read;
-class ReadDefaultTypeInternal;
-extern ReadDefaultTypeInternal _Read_default_instance_;
-}  // namespace v1
-}  // namespace genomics
-namespace protobuf {
-class ListValue;
-class ListValueDefaultTypeInternal;
-extern ListValueDefaultTypeInternal _ListValue_default_instance_;
-class Struct;
-class StructDefaultTypeInternal;
-extern StructDefaultTypeInternal _Struct_default_instance_;
-class Value;
-class ValueDefaultTypeInternal;
-extern ValueDefaultTypeInternal _Value_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace genomics {
@@ -73,6 +42,11 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fgenomics_2fv1_2freadalignment_2eproto();
 void protobuf_InitDefaults_google_2fgenomics_2fv1_2freadalignment_2eproto();
+void protobuf_AssignDesc_google_2fgenomics_2fv1_2freadalignment_2eproto();
+void protobuf_ShutdownFile_google_2fgenomics_2fv1_2freadalignment_2eproto();
+
+class LinearAlignment;
+class Read;
 
 // ===================================================================
 
@@ -88,52 +62,47 @@ class LinearAlignment : public ::google::protobuf::Message /* @@protoc_insertion
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const LinearAlignment& default_instance();
 
-  static inline const LinearAlignment* internal_default_instance() {
-    return reinterpret_cast<const LinearAlignment*>(
-               &_LinearAlignment_default_instance_);
-  }
+  static const LinearAlignment* internal_default_instance();
 
   void UnsafeArenaSwap(LinearAlignment* other);
   void Swap(LinearAlignment* other);
 
   // implements Message ----------------------------------------------
 
-  inline LinearAlignment* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline LinearAlignment* New() const { return New(NULL); }
 
-  LinearAlignment* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  LinearAlignment* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const LinearAlignment& from);
   void MergeFrom(const LinearAlignment& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(LinearAlignment* other);
+  void UnsafeMergeFrom(const LinearAlignment& from);
   protected:
   explicit LinearAlignment(::google::protobuf::Arena* arena);
   private:
@@ -148,13 +117,13 @@ class LinearAlignment : public ::google::protobuf::Message /* @@protoc_insertion
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // .google.genomics.v1.Position position = 1;
+  // optional .google.genomics.v1.Position position = 1;
   bool has_position() const;
   void clear_position();
   static const int kPositionFieldNumber = 1;
@@ -172,7 +141,7 @@ class LinearAlignment : public ::google::protobuf::Message /* @@protoc_insertion
   void unsafe_arena_set_allocated_position(
       ::google::genomics::v1::Position* position);
 
-  // int32 mapping_quality = 2;
+  // optional int32 mapping_quality = 2;
   void clear_mapping_quality();
   static const int kMappingQualityFieldNumber = 2;
   ::google::protobuf::int32 mapping_quality() const;
@@ -203,12 +172,12 @@ class LinearAlignment : public ::google::protobuf::Message /* @@protoc_insertion
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2freadalignment_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2freadalignment_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2freadalignment_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2freadalignment_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2freadalignment_2eproto();
 
+  void InitAsDefaultInstance();
 };
-// -------------------------------------------------------------------
-
+extern ::google::protobuf::internal::ExplicitlyConstructed<LinearAlignment> LinearAlignment_default_instance_;
 
 // -------------------------------------------------------------------
 
@@ -224,52 +193,47 @@ class Read : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const Read& default_instance();
 
-  static inline const Read* internal_default_instance() {
-    return reinterpret_cast<const Read*>(
-               &_Read_default_instance_);
-  }
+  static const Read* internal_default_instance();
 
   void UnsafeArenaSwap(Read* other);
   void Swap(Read* other);
 
   // implements Message ----------------------------------------------
 
-  inline Read* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Read* New() const { return New(NULL); }
 
-  Read* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Read* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Read& from);
   void MergeFrom(const Read& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Read* other);
+  void UnsafeMergeFrom(const Read& from);
   protected:
   explicit Read(::google::protobuf::Arena* arena);
   private:
@@ -284,14 +248,14 @@ class Read : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
 
   // accessors -------------------------------------------------------
 
-  // string id = 1;
+  // optional string id = 1;
   void clear_id();
   static const int kIdFieldNumber = 1;
   const ::std::string& id() const;
@@ -305,7 +269,7 @@ class Read : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   void unsafe_arena_set_allocated_id(
       ::std::string* id);
 
-  // string read_group_id = 2;
+  // optional string read_group_id = 2;
   void clear_read_group_id();
   static const int kReadGroupIdFieldNumber = 2;
   const ::std::string& read_group_id() const;
@@ -319,7 +283,7 @@ class Read : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   void unsafe_arena_set_allocated_read_group_id(
       ::std::string* read_group_id);
 
-  // string read_group_set_id = 3;
+  // optional string read_group_set_id = 3;
   void clear_read_group_set_id();
   static const int kReadGroupSetIdFieldNumber = 3;
   const ::std::string& read_group_set_id() const;
@@ -333,7 +297,7 @@ class Read : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   void unsafe_arena_set_allocated_read_group_set_id(
       ::std::string* read_group_set_id);
 
-  // string fragment_name = 4;
+  // optional string fragment_name = 4;
   void clear_fragment_name();
   static const int kFragmentNameFieldNumber = 4;
   const ::std::string& fragment_name() const;
@@ -347,43 +311,43 @@ class Read : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   void unsafe_arena_set_allocated_fragment_name(
       ::std::string* fragment_name);
 
-  // bool proper_placement = 5;
+  // optional bool proper_placement = 5;
   void clear_proper_placement();
   static const int kProperPlacementFieldNumber = 5;
   bool proper_placement() const;
   void set_proper_placement(bool value);
 
-  // bool duplicate_fragment = 6;
+  // optional bool duplicate_fragment = 6;
   void clear_duplicate_fragment();
   static const int kDuplicateFragmentFieldNumber = 6;
   bool duplicate_fragment() const;
   void set_duplicate_fragment(bool value);
 
-  // int32 fragment_length = 7;
+  // optional int32 fragment_length = 7;
   void clear_fragment_length();
   static const int kFragmentLengthFieldNumber = 7;
   ::google::protobuf::int32 fragment_length() const;
   void set_fragment_length(::google::protobuf::int32 value);
 
-  // int32 read_number = 8;
+  // optional int32 read_number = 8;
   void clear_read_number();
   static const int kReadNumberFieldNumber = 8;
   ::google::protobuf::int32 read_number() const;
   void set_read_number(::google::protobuf::int32 value);
 
-  // int32 number_reads = 9;
+  // optional int32 number_reads = 9;
   void clear_number_reads();
   static const int kNumberReadsFieldNumber = 9;
   ::google::protobuf::int32 number_reads() const;
   void set_number_reads(::google::protobuf::int32 value);
 
-  // bool failed_vendor_quality_checks = 10;
+  // optional bool failed_vendor_quality_checks = 10;
   void clear_failed_vendor_quality_checks();
   static const int kFailedVendorQualityChecksFieldNumber = 10;
   bool failed_vendor_quality_checks() const;
   void set_failed_vendor_quality_checks(bool value);
 
-  // .google.genomics.v1.LinearAlignment alignment = 11;
+  // optional .google.genomics.v1.LinearAlignment alignment = 11;
   bool has_alignment() const;
   void clear_alignment();
   static const int kAlignmentFieldNumber = 11;
@@ -401,19 +365,19 @@ class Read : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   void unsafe_arena_set_allocated_alignment(
       ::google::genomics::v1::LinearAlignment* alignment);
 
-  // bool secondary_alignment = 12;
+  // optional bool secondary_alignment = 12;
   void clear_secondary_alignment();
   static const int kSecondaryAlignmentFieldNumber = 12;
   bool secondary_alignment() const;
   void set_secondary_alignment(bool value);
 
-  // bool supplementary_alignment = 13;
+  // optional bool supplementary_alignment = 13;
   void clear_supplementary_alignment();
   static const int kSupplementaryAlignmentFieldNumber = 13;
   bool supplementary_alignment() const;
   void set_supplementary_alignment(bool value);
 
-  // string aligned_sequence = 14;
+  // optional string aligned_sequence = 14;
   void clear_aligned_sequence();
   static const int kAlignedSequenceFieldNumber = 14;
   const ::std::string& aligned_sequence() const;
@@ -439,7 +403,7 @@ class Read : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
       mutable_aligned_quality();
 
-  // .google.genomics.v1.Position next_mate_position = 16;
+  // optional .google.genomics.v1.Position next_mate_position = 16;
   bool has_next_mate_position() const;
   void clear_next_mate_position();
   static const int kNextMatePositionFieldNumber = 16;
@@ -504,10 +468,13 @@ class Read : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fgenomics_2fv1_2freadalignment_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fgenomics_2fv1_2freadalignment_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fgenomics_2fv1_2freadalignment_2eproto();
+  friend void protobuf_AssignDesc_google_2fgenomics_2fv1_2freadalignment_2eproto();
   friend void protobuf_ShutdownFile_google_2fgenomics_2fv1_2freadalignment_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Read> Read_default_instance_;
+
 // ===================================================================
 
 
@@ -516,7 +483,7 @@ class Read : public ::google::protobuf::Message /* @@protoc_insertion_point(clas
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // LinearAlignment
 
-// .google.genomics.v1.Position position = 1;
+// optional .google.genomics.v1.Position position = 1;
 inline bool LinearAlignment::has_position() const {
   return this != internal_default_instance() && position_ != NULL;
 }
@@ -565,7 +532,7 @@ inline  void LinearAlignment::set_allocated_position(::google::genomics::v1::Pos
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.LinearAlignment.position)
 }
 
-// int32 mapping_quality = 2;
+// optional int32 mapping_quality = 2;
 inline void LinearAlignment::clear_mapping_quality() {
   mapping_quality_ = 0;
 }
@@ -609,19 +576,20 @@ LinearAlignment::cigar() const {
   return cigar_;
 }
 
-// -------------------------------------------------------------------
-
+inline const LinearAlignment* LinearAlignment::internal_default_instance() {
+  return &LinearAlignment_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // Read
 
-// string id = 1;
+// optional string id = 1;
 inline void Read::clear_id() {
   id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Read::id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Read.id)
-  return id_.Get();
+  return id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Read::set_id(const ::std::string& value) {
   
@@ -681,13 +649,13 @@ inline void Read::unsafe_arena_set_allocated_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.Read.id)
 }
 
-// string read_group_id = 2;
+// optional string read_group_id = 2;
 inline void Read::clear_read_group_id() {
   read_group_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Read::read_group_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Read.read_group_id)
-  return read_group_id_.Get();
+  return read_group_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Read::set_read_group_id(const ::std::string& value) {
   
@@ -747,13 +715,13 @@ inline void Read::unsafe_arena_set_allocated_read_group_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.Read.read_group_id)
 }
 
-// string read_group_set_id = 3;
+// optional string read_group_set_id = 3;
 inline void Read::clear_read_group_set_id() {
   read_group_set_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Read::read_group_set_id() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Read.read_group_set_id)
-  return read_group_set_id_.Get();
+  return read_group_set_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Read::set_read_group_set_id(const ::std::string& value) {
   
@@ -813,13 +781,13 @@ inline void Read::unsafe_arena_set_allocated_read_group_set_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.Read.read_group_set_id)
 }
 
-// string fragment_name = 4;
+// optional string fragment_name = 4;
 inline void Read::clear_fragment_name() {
   fragment_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Read::fragment_name() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Read.fragment_name)
-  return fragment_name_.Get();
+  return fragment_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Read::set_fragment_name(const ::std::string& value) {
   
@@ -879,7 +847,7 @@ inline void Read::unsafe_arena_set_allocated_fragment_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.genomics.v1.Read.fragment_name)
 }
 
-// bool proper_placement = 5;
+// optional bool proper_placement = 5;
 inline void Read::clear_proper_placement() {
   proper_placement_ = false;
 }
@@ -893,7 +861,7 @@ inline void Read::set_proper_placement(bool value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.Read.proper_placement)
 }
 
-// bool duplicate_fragment = 6;
+// optional bool duplicate_fragment = 6;
 inline void Read::clear_duplicate_fragment() {
   duplicate_fragment_ = false;
 }
@@ -907,7 +875,7 @@ inline void Read::set_duplicate_fragment(bool value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.Read.duplicate_fragment)
 }
 
-// int32 fragment_length = 7;
+// optional int32 fragment_length = 7;
 inline void Read::clear_fragment_length() {
   fragment_length_ = 0;
 }
@@ -921,7 +889,7 @@ inline void Read::set_fragment_length(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.Read.fragment_length)
 }
 
-// int32 read_number = 8;
+// optional int32 read_number = 8;
 inline void Read::clear_read_number() {
   read_number_ = 0;
 }
@@ -935,7 +903,7 @@ inline void Read::set_read_number(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.Read.read_number)
 }
 
-// int32 number_reads = 9;
+// optional int32 number_reads = 9;
 inline void Read::clear_number_reads() {
   number_reads_ = 0;
 }
@@ -949,7 +917,7 @@ inline void Read::set_number_reads(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.Read.number_reads)
 }
 
-// bool failed_vendor_quality_checks = 10;
+// optional bool failed_vendor_quality_checks = 10;
 inline void Read::clear_failed_vendor_quality_checks() {
   failed_vendor_quality_checks_ = false;
 }
@@ -963,7 +931,7 @@ inline void Read::set_failed_vendor_quality_checks(bool value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.Read.failed_vendor_quality_checks)
 }
 
-// .google.genomics.v1.LinearAlignment alignment = 11;
+// optional .google.genomics.v1.LinearAlignment alignment = 11;
 inline bool Read::has_alignment() const {
   return this != internal_default_instance() && alignment_ != NULL;
 }
@@ -1012,7 +980,7 @@ inline  void Read::set_allocated_alignment(::google::genomics::v1::LinearAlignme
   // @@protoc_insertion_point(field_set_allocated:google.genomics.v1.Read.alignment)
 }
 
-// bool secondary_alignment = 12;
+// optional bool secondary_alignment = 12;
 inline void Read::clear_secondary_alignment() {
   secondary_alignment_ = false;
 }
@@ -1026,7 +994,7 @@ inline void Read::set_secondary_alignment(bool value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.Read.secondary_alignment)
 }
 
-// bool supplementary_alignment = 13;
+// optional bool supplementary_alignment = 13;
 inline void Read::clear_supplementary_alignment() {
   supplementary_alignment_ = false;
 }
@@ -1040,13 +1008,13 @@ inline void Read::set_supplementary_alignment(bool value) {
   // @@protoc_insertion_point(field_set:google.genomics.v1.Read.supplementary_alignment)
 }
 
-// string aligned_sequence = 14;
+// optional string aligned_sequence = 14;
 inline void Read::clear_aligned_sequence() {
   aligned_sequence_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Read::aligned_sequence() const {
   // @@protoc_insertion_point(field_get:google.genomics.v1.Read.aligned_sequence)
-  return aligned_sequence_.Get();
+  return aligned_sequence_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Read::set_aligned_sequence(const ::std::string& value) {
   
@@ -1136,7 +1104,7 @@ Read::mutable_aligned_quality() {
   return &aligned_quality_;
 }
 
-// .google.genomics.v1.Position next_mate_position = 16;
+// optional .google.genomics.v1.Position next_mate_position = 16;
 inline bool Read::has_next_mate_position() const {
   return this != internal_default_instance() && next_mate_position_ != NULL;
 }
@@ -1203,14 +1171,14 @@ Read::mutable_info() {
   return info_.MutableMap();
 }
 
+inline const Read* Read::internal_default_instance() {
+  return &Read_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace genomics

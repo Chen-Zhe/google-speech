@@ -19,102 +19,111 @@
 
 namespace google {
 namespace api {
-class ContextDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<Context> {};
-ContextDefaultTypeInternal _Context_default_instance_;
-class ContextRuleDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<ContextRule> {};
-ContextRuleDefaultTypeInternal _ContextRule_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[2];
+const ::google::protobuf::Descriptor* Context_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Context_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ContextRule_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ContextRule_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fcontext_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fcontext_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Context, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fapi_2fcontext_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fapi_2fcontext_2eproto() {
+  protobuf_AddDesc_google_2fapi_2fcontext_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/api/context.proto");
+  GOOGLE_CHECK(file != NULL);
+  Context_descriptor_ = file->message_type(0);
+  static const int Context_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Context, rules_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ContextRule, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  Context_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      Context_descriptor_,
+      Context::internal_default_instance(),
+      Context_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(Context),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Context, _internal_metadata_));
+  ContextRule_descriptor_ = file->message_type(1);
+  static const int ContextRule_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ContextRule, selector_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ContextRule, requested_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ContextRule, provided_),
   };
-  return offsets;
+  ContextRule_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ContextRule_descriptor_,
+      ContextRule::internal_default_instance(),
+      ContextRule_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ContextRule),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ContextRule, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(Context)},
-  { 5, -1, sizeof(ContextRule)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_Context_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_ContextRule_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fapi_2fcontext_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/api/context.proto", schemas, file_default_instances, protobuf_Offsets_google_2fapi_2fcontext_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fapi_2fcontext_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 2);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      Context_descriptor_, Context::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ContextRule_descriptor_, ContextRule::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fapi_2fcontext_2eproto() {
-  _Context_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _ContextRule_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
+  Context_default_instance_.Shutdown();
+  delete Context_reflection_;
+  ContextRule_default_instance_.Shutdown();
+  delete ContextRule_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fapi_2fcontext_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _Context_default_instance_.DefaultConstruct();
-  _ContextRule_default_instance_.DefaultConstruct();
+  Context_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  ContextRule_default_instance_.DefaultConstruct();
+  Context_default_instance_.get_mutable()->InitAsDefaultInstance();
+  ContextRule_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fapi_2fcontext_2eproto_once_);
 void protobuf_InitDefaults_google_2fapi_2fcontext_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fapi_2fcontext_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fapi_2fcontext_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fapi_2fcontext_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fapi_2fcontext_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fapi_2fcontext_2eproto();
-  static const char descriptor[] = {
-      "\n\030google/api/context.proto\022\ngoogle.api\"1"
-      "\n\007Context\022&\n\005rules\030\001 \003(\0132\027.google.api.Co"
-      "ntextRule\"D\n\013ContextRule\022\020\n\010selector\030\001 \001"
-      "(\t\022\021\n\trequested\030\002 \003(\t\022\020\n\010provided\030\003 \003(\tB"
-      "n\n\016com.google.apiB\014ContextProtoP\001ZEgoogl"
-      "e.golang.org/genproto/googleapis/api/ser"
-      "viceconfig;serviceconfig\242\002\004GAPIb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 279);
+    "\n\030google/api/context.proto\022\ngoogle.api\"1"
+    "\n\007Context\022&\n\005rules\030\001 \003(\0132\027.google.api.Co"
+    "ntextRule\"D\n\013ContextRule\022\020\n\010selector\030\001 \001"
+    "(\t\022\021\n\trequested\030\002 \003(\t\022\020\n\010provided\030\003 \003(\tB"
+    "n\n\016com.google.apiB\014ContextProtoP\001ZEgoogl"
+    "e.golang.org/genproto/googleapis/api/ser"
+    "viceconfig;serviceconfig\242\002\004GAPIb\006proto3", 279);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/api/context.proto", &protobuf_RegisterTypes);
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_google_2fapi_2fcontext_2eproto);
@@ -132,6 +141,16 @@ struct StaticDescriptorInitializer_google_2fapi_2fcontext_2eproto {
   }
 } static_descriptor_initializer_google_2fapi_2fcontext_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -140,18 +159,19 @@ const int Context::kRulesFieldNumber;
 
 Context::Context()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fcontext_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fcontext_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.Context)
 }
+
+void Context::InitAsDefaultInstance() {
+}
+
 Context::Context(const Context& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      rules_(from.rules_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.Context)
 }
 
@@ -174,13 +194,15 @@ void Context::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* Context::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return Context_descriptor_;
 }
 
 const Context& Context::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fcontext_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<Context> Context_default_instance_;
 
 Context* Context::New(::google::protobuf::Arena* arena) const {
   Context* n = new Context;
@@ -201,20 +223,23 @@ bool Context::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.Context)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // repeated .google.api.ContextRule rules = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(input->IncrementRecursionDepth());
+         parse_loop_rules:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtualNoRecursionDepth(
                 input, add_rules()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(10)) goto parse_loop_rules;
         input->UnsafeDecrementRecursionDepth();
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -290,7 +315,7 @@ size_t Context::ByteSizeLong() const {
 
 void Context::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.Context)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const Context* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const Context>(
           &from);
@@ -299,14 +324,21 @@ void Context::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.Context)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void Context::MergeFrom(const Context& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.Context)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void Context::UnsafeMergeFrom(const Context& from) {
+  GOOGLE_DCHECK(&from != this);
   rules_.MergeFrom(from.rules_);
 }
 
@@ -321,10 +353,11 @@ void Context::CopyFrom(const Context& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.Context)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool Context::IsInitialized() const {
+
   return true;
 }
 
@@ -334,12 +367,16 @@ void Context::Swap(Context* other) {
 }
 void Context::InternalSwap(Context* other) {
   rules_.UnsafeArenaSwap(&other->rules_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Context::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Context_descriptor_;
+  metadata.reflection = Context_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
@@ -375,6 +412,9 @@ Context::rules() const {
   return rules_;
 }
 
+inline const Context* Context::internal_default_instance() {
+  return &Context_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -387,23 +427,19 @@ const int ContextRule::kProvidedFieldNumber;
 
 ContextRule::ContextRule()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fapi_2fcontext_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fapi_2fcontext_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.api.ContextRule)
 }
+
+void ContextRule::InitAsDefaultInstance() {
+}
+
 ContextRule::ContextRule(const ContextRule& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      requested_(from.requested_),
-      provided_(from.provided_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  selector_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.selector().size() > 0) {
-    selector_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.selector_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.api.ContextRule)
 }
 
@@ -428,13 +464,15 @@ void ContextRule::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* ContextRule::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return ContextRule_descriptor_;
 }
 
 const ContextRule& ContextRule::default_instance() {
   protobuf_InitDefaults_google_2fapi_2fcontext_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<ContextRule> ContextRule_default_instance_;
 
 ContextRule* ContextRule::New(::google::protobuf::Arena* arena) const {
   ContextRule* n = new ContextRule;
@@ -446,9 +484,9 @@ ContextRule* ContextRule::New(::google::protobuf::Arena* arena) const {
 
 void ContextRule::Clear() {
 // @@protoc_insertion_point(message_clear_start:google.api.ContextRule)
+  selector_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   requested_.Clear();
   provided_.Clear();
-  selector_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
 bool ContextRule::MergePartialFromCodedStream(
@@ -457,13 +495,13 @@ bool ContextRule::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.api.ContextRule)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string selector = 1;
+      // optional string selector = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_selector()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -473,12 +511,14 @@ bool ContextRule::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_requested;
         break;
       }
 
       // repeated string requested = 2;
       case 2: {
-        if (tag == 18u) {
+        if (tag == 18) {
+         parse_requested:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_requested()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -489,12 +529,15 @@ bool ContextRule::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_requested;
+        if (input->ExpectTag(26)) goto parse_provided;
         break;
       }
 
       // repeated string provided = 3;
       case 3: {
-        if (tag == 26u) {
+        if (tag == 26) {
+         parse_provided:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_provided()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -505,6 +548,8 @@ bool ContextRule::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_provided;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -532,7 +577,7 @@ failure:
 void ContextRule::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.api.ContextRule)
-  // string selector = 1;
+  // optional string selector = 1;
   if (this->selector().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->selector().data(), this->selector().length(),
@@ -569,7 +614,7 @@ void ContextRule::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.api.ContextRule)
-  // string selector = 1;
+  // optional string selector = 1;
   if (this->selector().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->selector().data(), this->selector().length(),
@@ -608,6 +653,13 @@ size_t ContextRule::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.api.ContextRule)
   size_t total_size = 0;
 
+  // optional string selector = 1;
+  if (this->selector().size() > 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::StringSize(
+        this->selector());
+  }
+
   // repeated string requested = 2;
   total_size += 1 *
       ::google::protobuf::internal::FromIntSize(this->requested_size());
@@ -624,13 +676,6 @@ size_t ContextRule::ByteSizeLong() const {
       this->provided(i));
   }
 
-  // string selector = 1;
-  if (this->selector().size() > 0) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->selector());
-  }
-
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = cached_size;
@@ -640,7 +685,7 @@ size_t ContextRule::ByteSizeLong() const {
 
 void ContextRule::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.api.ContextRule)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const ContextRule* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const ContextRule>(
           &from);
@@ -649,16 +694,23 @@ void ContextRule::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.api.ContextRule)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void ContextRule::MergeFrom(const ContextRule& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.api.ContextRule)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  requested_.MergeFrom(from.requested_);
-  provided_.MergeFrom(from.provided_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void ContextRule::UnsafeMergeFrom(const ContextRule& from) {
+  GOOGLE_DCHECK(&from != this);
+  requested_.UnsafeMergeFrom(from.requested_);
+  provided_.UnsafeMergeFrom(from.provided_);
   if (from.selector().size() > 0) {
 
     selector_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.selector_);
@@ -676,10 +728,11 @@ void ContextRule::CopyFrom(const ContextRule& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.api.ContextRule)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool ContextRule::IsInitialized() const {
+
   return true;
 }
 
@@ -688,27 +741,31 @@ void ContextRule::Swap(ContextRule* other) {
   InternalSwap(other);
 }
 void ContextRule::InternalSwap(ContextRule* other) {
+  selector_.Swap(&other->selector_);
   requested_.UnsafeArenaSwap(&other->requested_);
   provided_.UnsafeArenaSwap(&other->provided_);
-  selector_.Swap(&other->selector_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ContextRule::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ContextRule_descriptor_;
+  metadata.reflection = ContextRule_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // ContextRule
 
-// string selector = 1;
+// optional string selector = 1;
 void ContextRule::clear_selector() {
   selector_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& ContextRule::selector() const {
   // @@protoc_insertion_point(field_get:google.api.ContextRule.selector)
-  return selector_.GetNoArena();
+  return selector_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void ContextRule::set_selector(const ::std::string& value) {
   
@@ -856,6 +913,9 @@ ContextRule::mutable_provided() {
   return &provided_;
 }
 
+inline const ContextRule* ContextRule::internal_default_instance() {
+  return &ContextRule_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

@@ -24,28 +24,14 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/map.h>
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 #include "google/api/annotations.pb.h"
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-}  // namespace api
-namespace appengine {
-namespace v1 {
-class Service;
-class ServiceDefaultTypeInternal;
-extern ServiceDefaultTypeInternal _Service_default_instance_;
-class TrafficSplit;
-class TrafficSplitDefaultTypeInternal;
-extern TrafficSplitDefaultTypeInternal _TrafficSplit_default_instance_;
-}  // namespace v1
-}  // namespace appengine
-}  // namespace google
 
 namespace google {
 namespace appengine {
@@ -54,6 +40,11 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fappengine_2fv1_2fservice_2eproto();
 void protobuf_InitDefaults_google_2fappengine_2fv1_2fservice_2eproto();
+void protobuf_AssignDesc_google_2fappengine_2fv1_2fservice_2eproto();
+void protobuf_ShutdownFile_google_2fappengine_2fv1_2fservice_2eproto();
+
+class Service;
+class TrafficSplit;
 
 enum TrafficSplit_ShardBy {
   TrafficSplit_ShardBy_UNSPECIFIED = 0,
@@ -94,58 +85,55 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   static const ::google::protobuf::Descriptor* descriptor();
   static const Service& default_instance();
 
-  static inline const Service* internal_default_instance() {
-    return reinterpret_cast<const Service*>(
-               &_Service_default_instance_);
-  }
+  static const Service* internal_default_instance();
 
   void Swap(Service* other);
 
   // implements Message ----------------------------------------------
 
-  inline Service* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Service* New() const { return New(NULL); }
 
-  Service* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Service* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Service& from);
   void MergeFrom(const Service& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Service* other);
+  void UnsafeMergeFrom(const Service& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
   // accessors -------------------------------------------------------
 
-  // string name = 1;
+  // optional string name = 1;
   void clear_name();
   static const int kNameFieldNumber = 1;
   const ::std::string& name() const;
@@ -156,7 +144,7 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_name();
   void set_allocated_name(::std::string* name);
 
-  // string id = 2;
+  // optional string id = 2;
   void clear_id();
   static const int kIdFieldNumber = 2;
   const ::std::string& id() const;
@@ -167,7 +155,7 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   ::std::string* release_id();
   void set_allocated_id(::std::string* id);
 
-  // .google.appengine.v1.TrafficSplit split = 3;
+  // optional .google.appengine.v1.TrafficSplit split = 3;
   bool has_split() const;
   void clear_split();
   static const int kSplitFieldNumber = 3;
@@ -186,12 +174,12 @@ class Service : public ::google::protobuf::Message /* @@protoc_insertion_point(c
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
-// -------------------------------------------------------------------
-
+extern ::google::protobuf::internal::ExplicitlyConstructed<Service> Service_default_instance_;
 
 // -------------------------------------------------------------------
 
@@ -210,52 +198,49 @@ class TrafficSplit : public ::google::protobuf::Message /* @@protoc_insertion_po
   static const ::google::protobuf::Descriptor* descriptor();
   static const TrafficSplit& default_instance();
 
-  static inline const TrafficSplit* internal_default_instance() {
-    return reinterpret_cast<const TrafficSplit*>(
-               &_TrafficSplit_default_instance_);
-  }
+  static const TrafficSplit* internal_default_instance();
 
   void Swap(TrafficSplit* other);
 
   // implements Message ----------------------------------------------
 
-  inline TrafficSplit* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline TrafficSplit* New() const { return New(NULL); }
 
-  TrafficSplit* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  TrafficSplit* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const TrafficSplit& from);
   void MergeFrom(const TrafficSplit& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(TrafficSplit* other);
+  void UnsafeMergeFrom(const TrafficSplit& from);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
-    return NULL;
+    return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
-    return NULL;
+    return _internal_metadata_.raw_arena_ptr();
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -290,7 +275,7 @@ class TrafficSplit : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   // accessors -------------------------------------------------------
 
-  // .google.appengine.v1.TrafficSplit.ShardBy shard_by = 1;
+  // optional .google.appengine.v1.TrafficSplit.ShardBy shard_by = 1;
   void clear_shard_by();
   static const int kShardByFieldNumber = 1;
   ::google::appengine::v1::TrafficSplit_ShardBy shard_by() const;
@@ -324,10 +309,13 @@ class TrafficSplit : public ::google::protobuf::Message /* @@protoc_insertion_po
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fappengine_2fv1_2fservice_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fappengine_2fv1_2fservice_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fappengine_2fv1_2fservice_2eproto();
+  friend void protobuf_AssignDesc_google_2fappengine_2fv1_2fservice_2eproto();
   friend void protobuf_ShutdownFile_google_2fappengine_2fv1_2fservice_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<TrafficSplit> TrafficSplit_default_instance_;
+
 // ===================================================================
 
 
@@ -336,13 +324,13 @@ class TrafficSplit : public ::google::protobuf::Message /* @@protoc_insertion_po
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
 // Service
 
-// string name = 1;
+// optional string name = 1;
 inline void Service::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Service::name() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Service.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Service::set_name(const ::std::string& value) {
   
@@ -380,13 +368,13 @@ inline void Service::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Service.name)
 }
 
-// string id = 2;
+// optional string id = 2;
 inline void Service::clear_id() {
   id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Service::id() const {
   // @@protoc_insertion_point(field_get:google.appengine.v1.Service.id)
-  return id_.GetNoArena();
+  return id_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Service::set_id(const ::std::string& value) {
   
@@ -424,7 +412,7 @@ inline void Service::set_allocated_id(::std::string* id) {
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Service.id)
 }
 
-// .google.appengine.v1.TrafficSplit split = 3;
+// optional .google.appengine.v1.TrafficSplit split = 3;
 inline bool Service::has_split() const {
   return this != internal_default_instance() && split_ != NULL;
 }
@@ -463,13 +451,14 @@ inline void Service::set_allocated_split(::google::appengine::v1::TrafficSplit* 
   // @@protoc_insertion_point(field_set_allocated:google.appengine.v1.Service.split)
 }
 
-// -------------------------------------------------------------------
-
+inline const Service* Service::internal_default_instance() {
+  return &Service_default_instance_.get();
+}
 // -------------------------------------------------------------------
 
 // TrafficSplit
 
-// .google.appengine.v1.TrafficSplit.ShardBy shard_by = 1;
+// optional .google.appengine.v1.TrafficSplit.ShardBy shard_by = 1;
 inline void TrafficSplit::clear_shard_by() {
   shard_by_ = 0;
 }
@@ -501,14 +490,14 @@ TrafficSplit::mutable_allocations() {
   return allocations_.MutableMap();
 }
 
+inline const TrafficSplit* TrafficSplit::internal_default_instance() {
+  return &TrafficSplit_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace appengine

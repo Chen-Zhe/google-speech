@@ -21,108 +21,118 @@ namespace google {
 namespace cloud {
 namespace ml {
 namespace v1beta1 {
-class GetConfigRequestDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GetConfigRequest> {};
-GetConfigRequestDefaultTypeInternal _GetConfigRequest_default_instance_;
-class GetConfigResponseDefaultTypeInternal : public ::google::protobuf::internal::ExplicitlyConstructed<GetConfigResponse> {};
-GetConfigResponseDefaultTypeInternal _GetConfigResponse_default_instance_;
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[2];
+const ::google::protobuf::Descriptor* GetConfigRequest_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GetConfigRequest_reflection_ = NULL;
+const ::google::protobuf::Descriptor* GetConfigResponse_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  GetConfigResponse_reflection_ = NULL;
 
 }  // namespace
 
 
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto() GOOGLE_ATTRIBUTE_COLD;
-const ::google::protobuf::uint32* protobuf_Offsets_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto() {
-  static const ::google::protobuf::uint32 offsets[] = {
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetConfigRequest, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+void protobuf_AssignDesc_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto() GOOGLE_ATTRIBUTE_COLD;
+void protobuf_AssignDesc_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto() {
+  protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "google/cloud/ml/v1beta1/project_service.proto");
+  GOOGLE_CHECK(file != NULL);
+  GetConfigRequest_descriptor_ = file->message_type(0);
+  static const int GetConfigRequest_offsets_[1] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetConfigRequest, name_),
-    ~0u,  // no _has_bits_
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetConfigResponse, _internal_metadata_),
-    ~0u,  // no _extensions_
-    ~0u,  // no _oneof_case_
+  };
+  GetConfigRequest_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GetConfigRequest_descriptor_,
+      GetConfigRequest::internal_default_instance(),
+      GetConfigRequest_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GetConfigRequest),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetConfigRequest, _internal_metadata_));
+  GetConfigResponse_descriptor_ = file->message_type(1);
+  static const int GetConfigResponse_offsets_[2] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetConfigResponse, service_account_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetConfigResponse, service_account_project_),
   };
-  return offsets;
+  GetConfigResponse_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      GetConfigResponse_descriptor_,
+      GetConfigResponse::internal_default_instance(),
+      GetConfigResponse_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(GetConfigResponse),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(GetConfigResponse, _internal_metadata_));
 }
-
-static const ::google::protobuf::internal::MigrationSchema schemas[] = {
-  { 0, -1, sizeof(GetConfigRequest)},
-  { 5, -1, sizeof(GetConfigResponse)},
-};
-
-static const ::google::protobuf::internal::DefaultInstanceData file_default_instances[] = {
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GetConfigRequest_default_instance_), NULL},
-  {reinterpret_cast<const ::google::protobuf::Message*>(&_GetConfigResponse_default_instance_), NULL},
-};
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "google/cloud/ml/v1beta1/project_service.proto", schemas, file_default_instances, protobuf_Offsets_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto(), factory,
-      file_level_metadata, NULL, NULL);
-}
-
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 2);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GetConfigRequest_descriptor_, GetConfigRequest::internal_default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      GetConfigResponse_descriptor_, GetConfigResponse::internal_default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto() {
-  _GetConfigRequest_default_instance_.Shutdown();
-  delete file_level_metadata[0].reflection;
-  _GetConfigResponse_default_instance_.Shutdown();
-  delete file_level_metadata[1].reflection;
+  GetConfigRequest_default_instance_.Shutdown();
+  delete GetConfigRequest_reflection_;
+  GetConfigResponse_default_instance_.Shutdown();
+  delete GetConfigResponse_reflection_;
 }
 
 void protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto_impl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::google::api::protobuf_InitDefaults_google_2fapi_2fannotations_2eproto();
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _GetConfigRequest_default_instance_.DefaultConstruct();
-  _GetConfigResponse_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetConfigRequest_default_instance_.DefaultConstruct();
+  ::google::protobuf::internal::GetEmptyString();
+  GetConfigResponse_default_instance_.DefaultConstruct();
+  GetConfigRequest_default_instance_.get_mutable()->InitAsDefaultInstance();
+  GetConfigResponse_default_instance_.get_mutable()->InitAsDefaultInstance();
 }
 
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto_once_);
 void protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto_impl);
+  ::google::protobuf::GoogleOnceInit(&protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto_once_,
+                 &protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto_impl);
 }
 void protobuf_AddDesc_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto_impl() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
-  static const char descriptor[] = {
-      "\n-google/cloud/ml/v1beta1/project_servic"
-      "e.proto\022\027google.cloud.ml.v1beta1\032\034google"
-      "/api/annotations.proto\" \n\020GetConfigReque"
-      "st\022\014\n\004name\030\001 \001(\t\"M\n\021GetConfigResponse\022\027\n"
-      "\017service_account\030\001 \001(\t\022\037\n\027service_accoun"
-      "t_project\030\002 \001(\0032\255\001\n\030ProjectManagementSer"
-      "vice\022\220\001\n\tGetConfig\022).google.cloud.ml.v1b"
-      "eta1.GetConfigRequest\032*.google.cloud.ml."
-      "v1beta1.GetConfigResponse\",\202\323\344\223\002&\022$/v1be"
-      "ta1/{name=projects/*}:getConfigBs\n\037com.g"
-      "oogle.cloud.ml.api.v1beta1B\023ProjectServi"
-      "ceProtoP\001Z9google.golang.org/genproto/go"
-      "ogleapis/cloud/ml/v1beta1;mlb\006proto3"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 516);
+    "\n-google/cloud/ml/v1beta1/project_servic"
+    "e.proto\022\027google.cloud.ml.v1beta1\032\034google"
+    "/api/annotations.proto\" \n\020GetConfigReque"
+    "st\022\014\n\004name\030\001 \001(\t\"M\n\021GetConfigResponse\022\027\n"
+    "\017service_account\030\001 \001(\t\022\037\n\027service_accoun"
+    "t_project\030\002 \001(\0032\255\001\n\030ProjectManagementSer"
+    "vice\022\220\001\n\tGetConfig\022).google.cloud.ml.v1b"
+    "eta1.GetConfigRequest\032*.google.cloud.ml."
+    "v1beta1.GetConfigResponse\",\202\323\344\223\002&\022$/v1be"
+    "ta1/{name=projects/*}:getConfigBs\n\037com.g"
+    "oogle.cloud.ml.api.v1beta1B\023ProjectServi"
+    "ceProtoP\001Z9google.golang.org/genproto/go"
+    "ogleapis/cloud/ml/v1beta1;mlb\006proto3", 516);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/cloud/ml/v1beta1/project_service.proto", &protobuf_RegisterTypes);
   ::google::api::protobuf_AddDesc_google_2fapi_2fannotations_2eproto();
@@ -141,6 +151,16 @@ struct StaticDescriptorInitializer_google_2fcloud_2fml_2fv1beta1_2fproject_5fser
   }
 } static_descriptor_initializer_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto_;
 
+namespace {
+
+static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD GOOGLE_ATTRIBUTE_NORETURN;
+static void MergeFromFail(int line) {
+  ::google::protobuf::internal::MergeFromFail(__FILE__, line);
+}
+
+}  // namespace
+
+
 // ===================================================================
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
@@ -149,21 +169,19 @@ const int GetConfigRequest::kNameFieldNumber;
 
 GetConfigRequest::GetConfigRequest()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.GetConfigRequest)
 }
+
+void GetConfigRequest::InitAsDefaultInstance() {
+}
+
 GetConfigRequest::GetConfigRequest(const GetConfigRequest& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
-  }
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.GetConfigRequest)
 }
 
@@ -188,13 +206,15 @@ void GetConfigRequest::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GetConfigRequest::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0].descriptor;
+  return GetConfigRequest_descriptor_;
 }
 
 const GetConfigRequest& GetConfigRequest::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GetConfigRequest> GetConfigRequest_default_instance_;
 
 GetConfigRequest* GetConfigRequest::New(::google::protobuf::Arena* arena) const {
   GetConfigRequest* n = new GetConfigRequest;
@@ -215,13 +235,13 @@ bool GetConfigRequest::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.ml.v1beta1.GetConfigRequest)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
+      // optional string name = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_name()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -231,6 +251,7 @@ bool GetConfigRequest::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -258,7 +279,7 @@ failure:
 void GetConfigRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.ml.v1beta1.GetConfigRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -275,7 +296,7 @@ void GetConfigRequest::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.ml.v1beta1.GetConfigRequest)
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->name().data(), this->name().length(),
@@ -294,7 +315,7 @@ size_t GetConfigRequest::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.GetConfigRequest)
   size_t total_size = 0;
 
-  // string name = 1;
+  // optional string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
@@ -310,7 +331,7 @@ size_t GetConfigRequest::ByteSizeLong() const {
 
 void GetConfigRequest::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.GetConfigRequest)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GetConfigRequest* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetConfigRequest>(
           &from);
@@ -319,14 +340,21 @@ void GetConfigRequest::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.GetConfigRequest)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetConfigRequest::MergeFrom(const GetConfigRequest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.GetConfigRequest)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GetConfigRequest::UnsafeMergeFrom(const GetConfigRequest& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.name().size() > 0) {
 
     name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.name_);
@@ -344,10 +372,11 @@ void GetConfigRequest::CopyFrom(const GetConfigRequest& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.GetConfigRequest)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetConfigRequest::IsInitialized() const {
+
   return true;
 }
 
@@ -357,24 +386,28 @@ void GetConfigRequest::Swap(GetConfigRequest* other) {
 }
 void GetConfigRequest::InternalSwap(GetConfigRequest* other) {
   name_.Swap(&other->name_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GetConfigRequest::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[0];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GetConfigRequest_descriptor_;
+  metadata.reflection = GetConfigRequest_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GetConfigRequest
 
-// string name = 1;
+// optional string name = 1;
 void GetConfigRequest::clear_name() {
   name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GetConfigRequest::name() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.GetConfigRequest.name)
-  return name_.GetNoArena();
+  return name_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GetConfigRequest::set_name(const ::std::string& value) {
   
@@ -412,6 +445,9 @@ void GetConfigRequest::set_allocated_name(::std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.GetConfigRequest.name)
 }
 
+inline const GetConfigRequest* GetConfigRequest::internal_default_instance() {
+  return &GetConfigRequest_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
@@ -423,22 +459,19 @@ const int GetConfigResponse::kServiceAccountProjectFieldNumber;
 
 GetConfigResponse::GetConfigResponse()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
-  }
+  if (this != internal_default_instance()) protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.cloud.ml.v1beta1.GetConfigResponse)
 }
+
+void GetConfigResponse::InitAsDefaultInstance() {
+}
+
 GetConfigResponse::GetConfigResponse(const GetConfigResponse& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  service_account_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.service_account().size() > 0) {
-    service_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_account_);
-  }
-  service_account_project_ = from.service_account_project_;
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  UnsafeMergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:google.cloud.ml.v1beta1.GetConfigResponse)
 }
 
@@ -464,13 +497,15 @@ void GetConfigResponse::SetCachedSize(int size) const {
 }
 const ::google::protobuf::Descriptor* GetConfigResponse::descriptor() {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1].descriptor;
+  return GetConfigResponse_descriptor_;
 }
 
 const GetConfigResponse& GetConfigResponse::default_instance() {
   protobuf_InitDefaults_google_2fcloud_2fml_2fv1beta1_2fproject_5fservice_2eproto();
   return *internal_default_instance();
 }
+
+::google::protobuf::internal::ExplicitlyConstructed<GetConfigResponse> GetConfigResponse_default_instance_;
 
 GetConfigResponse* GetConfigResponse::New(::google::protobuf::Arena* arena) const {
   GetConfigResponse* n = new GetConfigResponse;
@@ -492,13 +527,13 @@ bool GetConfigResponse::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:google.cloud.ml.v1beta1.GetConfigResponse)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string service_account = 1;
+      // optional string service_account = 1;
       case 1: {
-        if (tag == 10u) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_service_account()));
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
@@ -508,12 +543,14 @@ bool GetConfigResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_service_account_project;
         break;
       }
 
-      // int64 service_account_project = 2;
+      // optional int64 service_account_project = 2;
       case 2: {
-        if (tag == 16u) {
+        if (tag == 16) {
+         parse_service_account_project:
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
@@ -521,6 +558,7 @@ bool GetConfigResponse::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
@@ -548,7 +586,7 @@ failure:
 void GetConfigResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:google.cloud.ml.v1beta1.GetConfigResponse)
-  // string service_account = 1;
+  // optional string service_account = 1;
   if (this->service_account().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->service_account().data(), this->service_account().length(),
@@ -558,7 +596,7 @@ void GetConfigResponse::SerializeWithCachedSizes(
       1, this->service_account(), output);
   }
 
-  // int64 service_account_project = 2;
+  // optional int64 service_account_project = 2;
   if (this->service_account_project() != 0) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(2, this->service_account_project(), output);
   }
@@ -570,7 +608,7 @@ void GetConfigResponse::SerializeWithCachedSizes(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
   // @@protoc_insertion_point(serialize_to_array_start:google.cloud.ml.v1beta1.GetConfigResponse)
-  // string service_account = 1;
+  // optional string service_account = 1;
   if (this->service_account().size() > 0) {
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->service_account().data(), this->service_account().length(),
@@ -581,7 +619,7 @@ void GetConfigResponse::SerializeWithCachedSizes(
         1, this->service_account(), target);
   }
 
-  // int64 service_account_project = 2;
+  // optional int64 service_account_project = 2;
   if (this->service_account_project() != 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(2, this->service_account_project(), target);
   }
@@ -594,14 +632,14 @@ size_t GetConfigResponse::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:google.cloud.ml.v1beta1.GetConfigResponse)
   size_t total_size = 0;
 
-  // string service_account = 1;
+  // optional string service_account = 1;
   if (this->service_account().size() > 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::StringSize(
         this->service_account());
   }
 
-  // int64 service_account_project = 2;
+  // optional int64 service_account_project = 2;
   if (this->service_account_project() != 0) {
     total_size += 1 +
       ::google::protobuf::internal::WireFormatLite::Int64Size(
@@ -617,7 +655,7 @@ size_t GetConfigResponse::ByteSizeLong() const {
 
 void GetConfigResponse::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:google.cloud.ml.v1beta1.GetConfigResponse)
-  GOOGLE_DCHECK_NE(&from, this);
+  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
   const GetConfigResponse* source =
       ::google::protobuf::internal::DynamicCastToGenerated<const GetConfigResponse>(
           &from);
@@ -626,14 +664,21 @@ void GetConfigResponse::MergeFrom(const ::google::protobuf::Message& from) {
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
   // @@protoc_insertion_point(generalized_merge_from_cast_success:google.cloud.ml.v1beta1.GetConfigResponse)
-    MergeFrom(*source);
+    UnsafeMergeFrom(*source);
   }
 }
 
 void GetConfigResponse::MergeFrom(const GetConfigResponse& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:google.cloud.ml.v1beta1.GetConfigResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  if (GOOGLE_PREDICT_TRUE(&from != this)) {
+    UnsafeMergeFrom(from);
+  } else {
+    MergeFromFail(__LINE__);
+  }
+}
+
+void GetConfigResponse::UnsafeMergeFrom(const GetConfigResponse& from) {
+  GOOGLE_DCHECK(&from != this);
   if (from.service_account().size() > 0) {
 
     service_account_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_account_);
@@ -654,10 +699,11 @@ void GetConfigResponse::CopyFrom(const GetConfigResponse& from) {
 // @@protoc_insertion_point(class_specific_copy_from_start:google.cloud.ml.v1beta1.GetConfigResponse)
   if (&from == this) return;
   Clear();
-  MergeFrom(from);
+  UnsafeMergeFrom(from);
 }
 
 bool GetConfigResponse::IsInitialized() const {
+
   return true;
 }
 
@@ -668,24 +714,28 @@ void GetConfigResponse::Swap(GetConfigResponse* other) {
 void GetConfigResponse::InternalSwap(GetConfigResponse* other) {
   service_account_.Swap(&other->service_account_);
   std::swap(service_account_project_, other->service_account_project_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata GetConfigResponse::GetMetadata() const {
   protobuf_AssignDescriptorsOnce();
-  return file_level_metadata[1];
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = GetConfigResponse_descriptor_;
+  metadata.reflection = GetConfigResponse_reflection_;
+  return metadata;
 }
 
 #if PROTOBUF_INLINE_NOT_IN_HEADERS
 // GetConfigResponse
 
-// string service_account = 1;
+// optional string service_account = 1;
 void GetConfigResponse::clear_service_account() {
   service_account_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 const ::std::string& GetConfigResponse::service_account() const {
   // @@protoc_insertion_point(field_get:google.cloud.ml.v1beta1.GetConfigResponse.service_account)
-  return service_account_.GetNoArena();
+  return service_account_.GetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 void GetConfigResponse::set_service_account(const ::std::string& value) {
   
@@ -723,7 +773,7 @@ void GetConfigResponse::set_allocated_service_account(::std::string* service_acc
   // @@protoc_insertion_point(field_set_allocated:google.cloud.ml.v1beta1.GetConfigResponse.service_account)
 }
 
-// int64 service_account_project = 2;
+// optional int64 service_account_project = 2;
 void GetConfigResponse::clear_service_account_project() {
   service_account_project_ = GOOGLE_LONGLONG(0);
 }
@@ -737,6 +787,9 @@ void GetConfigResponse::set_service_account_project(::google::protobuf::int64 va
   // @@protoc_insertion_point(field_set:google.cloud.ml.v1beta1.GetConfigResponse.service_account_project)
 }
 
+inline const GetConfigResponse* GetConfigResponse::internal_default_instance() {
+  return &GetConfigResponse_default_instance_.get();
+}
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)

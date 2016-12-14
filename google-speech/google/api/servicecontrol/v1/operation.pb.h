@@ -24,8 +24,8 @@
 #include <google/protobuf/generated_message_util.h>
 #include <google/protobuf/metadata.h>
 #include <google/protobuf/message.h>
-#include <google/protobuf/repeated_field.h>  // IWYU pragma: export
-#include <google/protobuf/extension_set.h>  // IWYU pragma: export
+#include <google/protobuf/repeated_field.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/map.h>
 #include <google/protobuf/map_field_inl.h>
 #include <google/protobuf/generated_enum_reflection.h>
@@ -35,31 +35,6 @@
 #include "google/api/servicecontrol/v1/metric_value.pb.h"
 #include <google/protobuf/timestamp.pb.h>
 // @@protoc_insertion_point(includes)
-namespace google {
-namespace api {
-namespace servicecontrol {
-namespace v1 {
-class LogEntry;
-class LogEntryDefaultTypeInternal;
-extern LogEntryDefaultTypeInternal _LogEntry_default_instance_;
-class MetricValue;
-class MetricValueDefaultTypeInternal;
-extern MetricValueDefaultTypeInternal _MetricValue_default_instance_;
-class MetricValueSet;
-class MetricValueSetDefaultTypeInternal;
-extern MetricValueSetDefaultTypeInternal _MetricValueSet_default_instance_;
-class Operation;
-class OperationDefaultTypeInternal;
-extern OperationDefaultTypeInternal _Operation_default_instance_;
-}  // namespace v1
-}  // namespace servicecontrol
-}  // namespace api
-namespace protobuf {
-class Timestamp;
-class TimestampDefaultTypeInternal;
-extern TimestampDefaultTypeInternal _Timestamp_default_instance_;
-}  // namespace protobuf
-}  // namespace google
 
 namespace google {
 namespace api {
@@ -69,6 +44,10 @@ namespace v1 {
 // Internal implementation detail -- do not call these.
 void protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2foperation_2eproto();
 void protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2foperation_2eproto();
+void protobuf_AssignDesc_google_2fapi_2fservicecontrol_2fv1_2foperation_2eproto();
+void protobuf_ShutdownFile_google_2fapi_2fservicecontrol_2fv1_2foperation_2eproto();
+
+class Operation;
 
 enum Operation_Importance {
   Operation_Importance_LOW = 0,
@@ -93,9 +72,6 @@ inline bool Operation_Importance_Parse(
 }
 // ===================================================================
 
-
-// -------------------------------------------------------------------
-
 class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.api.servicecontrol.v1.Operation) */ {
  public:
   Operation();
@@ -108,52 +84,47 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
     return *this;
   }
 
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
-    return GetArenaNoVirtual();
-  }
-  inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
+  inline ::google::protobuf::Arena* GetArena() const { return GetArenaNoVirtual(); }
+  inline void* GetMaybeArenaPointer() const {
     return MaybeArenaPtr();
   }
   static const ::google::protobuf::Descriptor* descriptor();
   static const Operation& default_instance();
 
-  static inline const Operation* internal_default_instance() {
-    return reinterpret_cast<const Operation*>(
-               &_Operation_default_instance_);
-  }
+  static const Operation* internal_default_instance();
 
   void UnsafeArenaSwap(Operation* other);
   void Swap(Operation* other);
 
   // implements Message ----------------------------------------------
 
-  inline Operation* New() const PROTOBUF_FINAL { return New(NULL); }
+  inline Operation* New() const { return New(NULL); }
 
-  Operation* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Operation* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
   void CopyFrom(const Operation& from);
   void MergeFrom(const Operation& from);
-  void Clear() PROTOBUF_FINAL;
-  bool IsInitialized() const PROTOBUF_FINAL;
+  void Clear();
+  bool IsInitialized() const;
 
-  size_t ByteSizeLong() const PROTOBUF_FINAL;
+  size_t ByteSizeLong() const;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedInputStream* input);
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+      ::google::protobuf::io::CodedOutputStream* output) const;
   ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output)
-      const PROTOBUF_FINAL {
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
     return InternalSerializeWithCachedSizesToArray(false, output);
   }
-  int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
+  int GetCachedSize() const { return _cached_size_; }
   private:
   void SharedCtor();
   void SharedDtor();
-  void SetCachedSize(int size) const PROTOBUF_FINAL;
+  void SetCachedSize(int size) const;
   void InternalSwap(Operation* other);
+  void UnsafeMergeFrom(const Operation& from);
   protected:
   explicit Operation(::google::protobuf::Arena* arena);
   private:
@@ -168,7 +139,7 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::google::protobuf::Metadata GetMetadata() const;
 
   // nested types ----------------------------------------------------
 
@@ -201,7 +172,7 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   // accessors -------------------------------------------------------
 
-  // string operation_id = 1;
+  // optional string operation_id = 1;
   void clear_operation_id();
   static const int kOperationIdFieldNumber = 1;
   const ::std::string& operation_id() const;
@@ -215,7 +186,7 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   void unsafe_arena_set_allocated_operation_id(
       ::std::string* operation_id);
 
-  // string operation_name = 2;
+  // optional string operation_name = 2;
   void clear_operation_name();
   static const int kOperationNameFieldNumber = 2;
   const ::std::string& operation_name() const;
@@ -229,7 +200,7 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   void unsafe_arena_set_allocated_operation_name(
       ::std::string* operation_name);
 
-  // string consumer_id = 3;
+  // optional string consumer_id = 3;
   void clear_consumer_id();
   static const int kConsumerIdFieldNumber = 3;
   const ::std::string& consumer_id() const;
@@ -243,7 +214,7 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   void unsafe_arena_set_allocated_consumer_id(
       ::std::string* consumer_id);
 
-  // .google.protobuf.Timestamp start_time = 4;
+  // optional .google.protobuf.Timestamp start_time = 4;
   bool has_start_time() const;
   void clear_start_time();
   static const int kStartTimeFieldNumber = 4;
@@ -261,7 +232,7 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   void unsafe_arena_set_allocated_start_time(
       ::google::protobuf::Timestamp* start_time);
 
-  // .google.protobuf.Timestamp end_time = 5;
+  // optional .google.protobuf.Timestamp end_time = 5;
   bool has_end_time() const;
   void clear_end_time();
   static const int kEndTimeFieldNumber = 5;
@@ -312,7 +283,7 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   const ::google::protobuf::RepeatedPtrField< ::google::api::servicecontrol::v1::LogEntry >&
       log_entries() const;
 
-  // .google.api.servicecontrol.v1.Operation.Importance importance = 11;
+  // optional .google.api.servicecontrol.v1.Operation.Importance importance = 11;
   void clear_importance();
   static const int kImportanceFieldNumber = 11;
   ::google::api::servicecontrol::v1::Operation_Importance importance() const;
@@ -347,27 +318,28 @@ class Operation : public ::google::protobuf::Message /* @@protoc_insertion_point
   mutable int _cached_size_;
   friend void  protobuf_InitDefaults_google_2fapi_2fservicecontrol_2fv1_2foperation_2eproto_impl();
   friend void  protobuf_AddDesc_google_2fapi_2fservicecontrol_2fv1_2foperation_2eproto_impl();
-  friend const ::google::protobuf::uint32* protobuf_Offsets_google_2fapi_2fservicecontrol_2fv1_2foperation_2eproto();
+  friend void protobuf_AssignDesc_google_2fapi_2fservicecontrol_2fv1_2foperation_2eproto();
   friend void protobuf_ShutdownFile_google_2fapi_2fservicecontrol_2fv1_2foperation_2eproto();
 
+  void InitAsDefaultInstance();
 };
+extern ::google::protobuf::internal::ExplicitlyConstructed<Operation> Operation_default_instance_;
+
 // ===================================================================
 
 
 // ===================================================================
 
 #if !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 // Operation
 
-// string operation_id = 1;
+// optional string operation_id = 1;
 inline void Operation::clear_operation_id() {
   operation_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Operation::operation_id() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.Operation.operation_id)
-  return operation_id_.Get();
+  return operation_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Operation::set_operation_id(const ::std::string& value) {
   
@@ -427,13 +399,13 @@ inline void Operation::unsafe_arena_set_allocated_operation_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.api.servicecontrol.v1.Operation.operation_id)
 }
 
-// string operation_name = 2;
+// optional string operation_name = 2;
 inline void Operation::clear_operation_name() {
   operation_name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Operation::operation_name() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.Operation.operation_name)
-  return operation_name_.Get();
+  return operation_name_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Operation::set_operation_name(const ::std::string& value) {
   
@@ -493,13 +465,13 @@ inline void Operation::unsafe_arena_set_allocated_operation_name(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.api.servicecontrol.v1.Operation.operation_name)
 }
 
-// string consumer_id = 3;
+// optional string consumer_id = 3;
 inline void Operation::clear_consumer_id() {
   consumer_id_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& Operation::consumer_id() const {
   // @@protoc_insertion_point(field_get:google.api.servicecontrol.v1.Operation.consumer_id)
-  return consumer_id_.Get();
+  return consumer_id_.Get(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Operation::set_consumer_id(const ::std::string& value) {
   
@@ -559,7 +531,7 @@ inline void Operation::unsafe_arena_set_allocated_consumer_id(
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:google.api.servicecontrol.v1.Operation.consumer_id)
 }
 
-// .google.protobuf.Timestamp start_time = 4;
+// optional .google.protobuf.Timestamp start_time = 4;
 inline bool Operation::has_start_time() const {
   return this != internal_default_instance() && start_time_ != NULL;
 }
@@ -608,7 +580,7 @@ inline  void Operation::set_allocated_start_time(::google::protobuf::Timestamp* 
   // @@protoc_insertion_point(field_set_allocated:google.api.servicecontrol.v1.Operation.start_time)
 }
 
-// .google.protobuf.Timestamp end_time = 5;
+// optional .google.protobuf.Timestamp end_time = 5;
 inline bool Operation::has_end_time() const {
   return this != internal_default_instance() && end_time_ != NULL;
 }
@@ -735,7 +707,7 @@ Operation::log_entries() const {
   return log_entries_;
 }
 
-// .google.api.servicecontrol.v1.Operation.Importance importance = 11;
+// optional .google.api.servicecontrol.v1.Operation.Importance importance = 11;
 inline void Operation::clear_importance() {
   importance_ = 0;
 }
@@ -749,12 +721,12 @@ inline void Operation::set_importance(::google::api::servicecontrol::v1::Operati
   // @@protoc_insertion_point(field_set:google.api.servicecontrol.v1.Operation.importance)
 }
 
+inline const Operation* Operation::internal_default_instance() {
+  return &Operation_default_instance_.get();
+}
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
-// -------------------------------------------------------------------
-
 
 // @@protoc_insertion_point(namespace_scope)
-
 
 }  // namespace v1
 }  // namespace servicecontrol
