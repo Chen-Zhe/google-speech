@@ -29,6 +29,9 @@
   <ItemGroup>
     <ClCompile Include="sync_transcribe.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9e0ef7cb-b88e-4343-866d-83b265be26d9}</ProjectGuid>
     <Keyword>Linux</Keyword>

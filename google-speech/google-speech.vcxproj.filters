@@ -3,4 +3,7 @@
   <ItemGroup>
     <ClCompile Include="sync_transcribe.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" />
+  </ItemGroup>
 </Project>
