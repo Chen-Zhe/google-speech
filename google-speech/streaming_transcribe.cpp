@@ -33,7 +33,7 @@ static void MicrophoneThreadMain(
     grpc::ClientReaderWriterInterface<StreamingRecognizeRequest,
                                       StreamingRecognizeResponse>* streamer) {
   StreamingRecognizeRequest request;
-  std::ifstream file_stream("testing-voice.pcm");
+  std::ifstream file_stream("brown-fox.pcm");
   const size_t chunk_size = 20 * 1024;
   std::vector<char> chunk(chunk_size);
 
@@ -54,30 +54,7 @@ static void MicrophoneThreadMain(
       std::this_thread::sleep_for(std::chrono::seconds(1));
     }
   }
-  std::ifstream file_stream2("brown-fox.pcm");
-  std::vector<char> chunk2(chunk_size);
-
-  while (true) {
-	  // Read another chunk from the file.
-	  std::streamsize bytes_read =
-		  file_stream2.rdbuf()->sgetn(&chunk2[0], chunk2.size());
-	  // And write the chunk to the stream.
-	  std::cout << "Sending " << bytes_read / 1024 << "k bytes." << std::endl;
-	  request.set_audio_content(&chunk2[0], bytes_read);
-	  
-	  streamer->Write(request);
-	  if (bytes_read < chunk2.size()) {
-		  // Done reading everything from the file, so done writing to the stream.
-		  streamer->WritesDone();
-		  break;
-	  }
-	  else {
-		  // Wait a second before writing the next chunk.
-		  std::this_thread::sleep_for(std::chrono::seconds(1));
-	  }
-  }
-
-
+ 
 }
 
 int main(int argc, char** argv) {
@@ -108,6 +85,7 @@ int main(int argc, char** argv) {
   StreamingRecognizeResponse response;
   while (streamer->Read(&response)) {  // Returns false when no more to read.
     // Dump the transcript of all the results.
+	  std::cout << "response read" << std::endl;
     for (int r = 0; r < response.results_size(); ++r) {
       auto result = response.results(r);
       std::cout << "Result stability: " << result.stability() << std::endl;
