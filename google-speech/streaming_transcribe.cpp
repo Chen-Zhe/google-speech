@@ -31,12 +31,12 @@ using google::cloud::speech::v1beta1::StreamingRecognizeResponse;
 // from a microphone.
 static void MicrophoneThreadMain(
     grpc::ClientReaderWriterInterface<StreamingRecognizeRequest,
-                                      StreamingRecognizeResponse>* streamer,
-    char* file_path) {
+                                      StreamingRecognizeResponse>* streamer) {
   StreamingRecognizeRequest request;
-  std::ifstream file_stream(file_path);
-  const size_t chunk_size = 64 * 1024;
+  std::ifstream file_stream("testing-voice.pcm");
+  const size_t chunk_size = 20 * 1024;
   std::vector<char> chunk(chunk_size);
+
   while (true) {
     // Read another chunk from the file.
     std::streamsize bytes_read =
@@ -47,13 +47,37 @@ static void MicrophoneThreadMain(
     streamer->Write(request);
     if (bytes_read < chunk.size()) {
       // Done reading everything from the file, so done writing to the stream.
-      streamer->WritesDone();
+      //streamer->WritesDone();
       break;
     } else {
       // Wait a second before writing the next chunk.
       std::this_thread::sleep_for(std::chrono::seconds(1));
     }
   }
+  std::ifstream file_stream2("brown-fox.pcm");
+  std::vector<char> chunk2(chunk_size);
+
+  while (true) {
+	  // Read another chunk from the file.
+	  std::streamsize bytes_read =
+		  file_stream2.rdbuf()->sgetn(&chunk2[0], chunk2.size());
+	  // And write the chunk to the stream.
+	  std::cout << "Sending " << bytes_read / 1024 << "k bytes." << std::endl;
+	  request.set_audio_content(&chunk2[0], bytes_read);
+	  
+	  streamer->Write(request);
+	  if (bytes_read < chunk2.size()) {
+		  // Done reading everything from the file, so done writing to the stream.
+		  streamer->WritesDone();
+		  break;
+	  }
+	  else {
+		  // Wait a second before writing the next chunk.
+		  std::this_thread::sleep_for(std::chrono::seconds(1));
+	  }
+  }
+
+
 }
 
 int main(int argc, char** argv) {
@@ -72,8 +96,6 @@ int main(int argc, char** argv) {
   streaming_config->mutable_config()->set_encoding(RecognitionConfig::LINEAR16);
   streaming_config->mutable_config()->set_language_code("en-US");
 
-  char* file_path = "testing-voice.pcm";
-
   // Begin a stream.
   grpc::ClientContext context;
   auto streamer = speech->StreamingRecognize(&context);
@@ -81,8 +103,7 @@ int main(int argc, char** argv) {
   streaming_config->set_interim_results(true);
   streamer->Write(request);
   // The microphone thread writes the audio content.
-  std::thread microphone_thread(&MicrophoneThreadMain, streamer.get(),
-                                file_path);
+  std::thread microphone_thread(&MicrophoneThreadMain, streamer.get());
   // Read responses.
   StreamingRecognizeResponse response;
   while (streamer->Read(&response)) {  // Returns false when no more to read.
