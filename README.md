@@ -1,5 +1,10 @@
 # gRPC-based Google API installation assistance for C++
- - Follow [Google's guide](https://github.com/GoogleCloudPlatform/cpp-docs-samples/tree/master/speech/api) to configure the system and run test: 
+ - Follow [Google's guide](https://github.com/GoogleCloudPlatform/cpp-docs-samples/tree/master/speech/api) to configure the system and run test
+**Installation Order**
+i. protobuf 3.1.0
+ii. latest gRPC (not release version)
+iii. Google APIs
+
  - use the Makefile to package and install the google APIs into the system for easier compilation:
  
 	```sh
