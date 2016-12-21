@@ -13,12 +13,12 @@
 // limitations under the License.
 #include <grpc++/grpc++.h>
 
-#include <chrono>
 #include <fstream>
 #include <iostream>
 #include <iterator>
 #include <string>
-#include <thread>
+#include <pthread.h>
+#include <unistd.h>
 
 #include "google/cloud/speech/v1beta1/cloud_speech.grpc.pb.h"
 
@@ -27,11 +27,14 @@ using google::cloud::speech::v1beta1::Speech;
 using google::cloud::speech::v1beta1::StreamingRecognizeRequest;
 using google::cloud::speech::v1beta1::StreamingRecognizeResponse;
 
+typedef std::unique_ptr<grpc::ClientReaderWriter<StreamingRecognizeRequest, StreamingRecognizeResponse>> RecognitionDataStreamer;
+
+RecognitionDataStreamer streamer;
+
 // Write the audio in 64k chunks at a time, simulating audio content arriving
 // from a microphone.
-static void MicrophoneThreadMain(
-    grpc::ClientReaderWriterInterface<StreamingRecognizeRequest,
-                                      StreamingRecognizeResponse>* streamer) {
+
+void *voiceActivityDetector(void *null) {
   StreamingRecognizeRequest request;
   std::ifstream file_stream("brown-fox.pcm");
   const size_t chunk_size = 20 * 1024;
@@ -47,11 +50,11 @@ static void MicrophoneThreadMain(
     streamer->Write(request);
     if (bytes_read < chunk.size()) {
       // Done reading everything from the file, so done writing to the stream.
-      //streamer->WritesDone();
+      streamer->WritesDone();
       break;
     } else {
       // Wait a second before writing the next chunk.
-      std::this_thread::sleep_for(std::chrono::seconds(1));
+		sleep(1);
     }
   }
  
@@ -75,12 +78,13 @@ int main(int argc, char** argv) {
 
   // Begin a stream.
   grpc::ClientContext context;
-  auto streamer = speech->StreamingRecognize(&context);
+  streamer = speech->StreamingRecognize(&context);
   // Write the first request, containing the config only.
   streaming_config->set_interim_results(true);
   streamer->Write(request);
   // The microphone thread writes the audio content.
-  std::thread microphone_thread(&MicrophoneThreadMain, streamer.get());
+  pthread_t microphone;
+  pthread_create(&microphone, NULL, voiceActivityDetector, (void *)NULL);
   // Read responses.
   StreamingRecognizeResponse response;
   while (streamer->Read(&response)) {  // Returns false when no more to read.
@@ -97,7 +101,7 @@ int main(int argc, char** argv) {
     }
   }
   grpc::Status status = streamer->Finish();
-  microphone_thread.join();
+  pthread_join(microphone, NULL);
   if (!status.ok()) {
     // Report the RPC failure.
     std::cerr << status.error_message() << std::endl;
