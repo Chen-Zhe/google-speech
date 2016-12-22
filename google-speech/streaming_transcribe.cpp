@@ -36,7 +36,6 @@ RecognitionDataStreamer streamer;
 
 void *StreamingSpeechRecognition(void *null) {
 
-
 	StreamingRecognizeResponse response;
 	while (streamer->Read(&response)) {  // Returns false when no more to read.
 										 // Dump the transcript of all the results.
@@ -52,71 +51,69 @@ void *StreamingSpeechRecognition(void *null) {
 		}
 	}
 
-
-
-  
- 
 }
 
 int main(int argc, char** argv) {
 	std::cout << "press enter to start" << std::endl;
 	getchar();
 
-  // Create a Speech Stub connected to the speech service.
-  auto creds = grpc::GoogleDefaultCredentials();
-  auto channel = grpc::CreateChannel("speech.googleapis.com", creds);
-  std::unique_ptr<Speech::Stub> speech(Speech::NewStub(channel));
-  // Parse command line arguments.
-  StreamingRecognizeRequest request;
-  auto* streaming_config = request.mutable_streaming_config();
+	// Create a Speech Stub connected to the speech service.
+	auto creds = grpc::GoogleDefaultCredentials();
+	auto channel = grpc::CreateChannel("speech.googleapis.com", creds);
+	std::unique_ptr<Speech::Stub> speech(Speech::NewStub(channel));
+	// Parse command line arguments.
+	StreamingRecognizeRequest configRequest;
+	auto* streaming_config = configRequest.mutable_streaming_config();
 
-  streaming_config->mutable_config()->set_sample_rate(16000);
-  streaming_config->mutable_config()->set_encoding(RecognitionConfig::LINEAR16);
-  streaming_config->mutable_config()->set_language_code("en-US");
-  streaming_config->set_interim_results(true);
+	streaming_config->mutable_config()->set_sample_rate(16000);
+	streaming_config->mutable_config()->set_encoding(RecognitionConfig::LINEAR16);
+	streaming_config->mutable_config()->set_language_code("en-US");
+	streaming_config->set_interim_results(true);
 
-  // Begin a stream.
-  grpc::ClientContext *context = new grpc::ClientContext;
-  streamer = speech->StreamingRecognize(context);
-  // Write the first request, containing the config only.
-  
-  streamer->Write(request);
-  // The microphone thread writes the audio content.
-  pthread_t microphone;
-  pthread_create(&microphone, NULL, StreamingSpeechRecognition, (void *)NULL);
-  // Read responses.
-  StreamingRecognizeRequest streamReq;
-  std::ifstream file_stream("brown-fox.pcm");
-  const size_t chunk_size = 20 * 1024;
-  std::vector<char> chunk(chunk_size);
-  while (true) {
-	  // Read another chunk from the file.
-	  std::streamsize bytes_read =
-		  file_stream.rdbuf()->sgetn(&chunk[0], chunk.size());
-	  // And write the chunk to the stream.
-	  streamReq.set_audio_content(&chunk[0], bytes_read);
-	  std::cout << "Sending " << bytes_read / 1024 << "k bytes." << std::endl;
-	  streamer->Write(streamReq);
-	  if (bytes_read < chunk.size()) {
-		  // Done reading everything from the file, so done writing to the stream.
-		  streamer->WritesDone();
-		  break;
-	  }
-	  else {
-		  // Wait a second before writing the next chunk.
-		  sleep(1);
-	  }
-  }
-  
-  grpc::Status status = streamer->Finish();
-  pthread_join(microphone, NULL);
-  if (!status.ok()) {
-    // Report the RPC failure.
-    std::cerr << status.error_message() << std::endl;
+	// Begin a stream.
+	grpc::ClientContext *context = new grpc::ClientContext;
+	streamer = speech->StreamingRecognize(context);
+	// Write the first request, containing the config only.
 
-	std::cerr << "If 'invalid authentication credential' error comes up"
-		<<", manually sync R-pi's time" << std::endl;
-    return -1;
-  }
-  return 0;
+	streamer->Write(configRequest);
+	// The microphone thread writes the audio content.
+	pthread_t microphone;
+	pthread_create(&microphone, NULL, StreamingSpeechRecognition, (void *)NULL);
+	// Read responses.
+	StreamingRecognizeRequest streamRequest;
+
+
+	std::ifstream file_stream("brown-fox.pcm");
+	const size_t chunk_size = 20 * 1024;
+	std::vector<char> chunk(chunk_size);
+	while (true) {
+		// Read another chunk from the file.
+		std::streamsize bytes_read =
+			file_stream.rdbuf()->sgetn(&chunk[0], chunk.size());
+		// And write the chunk to the stream.
+		streamRequest.set_audio_content(&chunk[0], bytes_read);
+		std::cout << "Sending " << bytes_read / 1024 << "k bytes." << std::endl;
+		streamer->Write(streamRequest);
+		if (bytes_read < chunk.size()) {
+			// Done reading everything from the file, so done writing to the stream.
+			streamer->WritesDone();
+			break;
+		}
+		else {
+			// Wait a second before writing the next chunk.
+			sleep(1);
+		}
+	}
+
+	grpc::Status status = streamer->Finish();
+	pthread_join(microphone, NULL);
+	if (!status.ok()) {
+		// Report the RPC failure.
+		std::cerr << status.error_message() << std::endl;
+
+		std::cerr << "If 'invalid authentication credential' error comes up"
+			<< ", manually sync R-pi's time" << std::endl;
+		return -1;
+	}
+	return 0;
 }
