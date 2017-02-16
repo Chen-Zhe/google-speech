@@ -15,7 +15,10 @@
 	```
 
 (this Makefile is modified from the same guide)
-- note that `GOOGLEAPIS_GENS_PATH` must be set correctly
+- link against 'googleapis' statically
+
+# Note
+- `GOOGLEAPIS_GENS_PATH` must be set correctly
 use ' nano ~/.bashrc' and add the following line to the end of the file :
 	```
 	export GOOGLEAPIS_GENS_PATH=$HOME/path/to/googleapis/gens
